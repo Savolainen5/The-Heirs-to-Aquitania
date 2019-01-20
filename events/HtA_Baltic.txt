@@ -1,0 +1,496 @@
+#There're events about the Latvian Rebellion that I put in HtA_Nordic instead. They have Nordic event codes instead of Baltic ones, which are 51450-51499
+
+
+########################################
+# Lithuania - Window to the West chain #
+########################################
+
+#$FROM_COUNTRY$ and the Window to the West
+country_event = {
+	id = 51450
+	title = "EVTNAME51450"
+	desc = "EVTDESC51450"
+	picture = "riga"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This will surely be a mutually beneficial arrangement."
+		money = 5000
+		FROM = {
+			diplomatic_influence = {
+				who = THIS
+				value = 500
+			}
+			relation = {
+				who = THIS
+				value = 100
+			}
+		}
+	}
+	
+	option = {
+		name = "It is not worth the risk to $COUNTRY$'s sovereignty."
+		FROM = {
+			money = 5000
+			relation = {
+				who = THIS
+				value = -40
+			}
+		}
+		relation = {
+			who = FROM
+			value = -40
+		}
+		country_event = {
+			id = 51452
+			days = 5
+		}
+	}
+}
+
+#LIT accepts
+country_event = {
+	id = 51451
+	title = "EVTNAME51451"
+	desc = "EVTDESC51451"
+	
+	trigger = {
+		OR = {
+			tag = SML										#ADD SOME KIND OF MODIFIER FOR LIT/LAT
+			tag = RUS
+		}
+		has_country_flag = window_to_the_west_LIT
+		is_greater_power = yes
+		neighbour = LIT
+		LIT = { in_sphere = THIS }
+		relation = {
+			who = LIT
+			value = 150
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+	}
+	
+	option = {
+		name = "Go ahead with the plan."
+		LIT = {
+			country_event = {
+				id = 51453
+				days = 3
+			}
+		}
+	}
+	
+	option = {
+		name = "Forget it."
+		clr_country_flag = window_to_the_west_LIT
+		set_country_flag = wttwLIT_concluded
+	}
+}
+
+#LIT's rejection of the initial WttW offer
+country_event = {
+	id = 51452
+	title = "EVTNAME51452"
+	desc = "EVTDESC51452"
+	picture = "riga"
+	
+	is_triggered_only = yes
+	
+	option =  {
+		name = "Force must be applied to accomplish our goals."
+		add_casus_belli = {
+			type = conquest
+			target = FROM
+			months = 5
+		}
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+		badboy = 8
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.66
+			}
+		}
+	}
+	
+	option = {
+		name = "We cannot afford to provoke an international crisis at the moment."
+		prestige = -5
+		badboy = 2
+		set_country_flag = wttwLIT_concluded
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { badboy = 0.66 }
+			}
+		}
+	}
+}
+
+#$FROMCOUNTRY$'s Influence Grows
+country_event = {
+	id = 51453
+	title = "EVTNAME51453"
+	desc = "EVTDESC51453"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We have no choice, we will submit."
+		FROM = {
+			country_event = {
+				id = 51454
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = "Lithuania is not yet lost!"
+		FROM = {
+			country_event = {
+				id = 51455
+				days = 2
+			}
+		}
+	}
+}
+
+#Notification of success of the above
+country_event = {
+	id = 51454
+	title = "EVTNAME51454"
+	desc = "EVTDESC51454"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The plan advances."
+		create_vassal = FROM
+	}
+}
+
+#Notification of rebellion
+country_event = {
+	id = 51455
+	title = "EVTNAME51455"
+	desc = "EVTDESC51455"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Order our troops into action!"
+		badboy = 8
+		add_casus_belli = {
+			target = FROM
+			type = conquest
+		}
+		release_vassal = FROM
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+	}
+}
+
+#Annexation
+country_event = {
+	id = 51456
+	title = "EVTNAME51456"
+	desc = "EVTDESC51456"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = RUS
+			tag = SML
+		}
+		has_country_flag = window_to_the_west_LIT
+		LIT = { is_our_vassal = THIS }
+		relation = {
+			who = LIT
+			value = 150
+		}
+		is_sphere_leader_of = LIT
+		NOT = { truce_with = LIT }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "At long last!"
+		inherit = LIT
+		prestige = 5
+		clr_country_flag = window_to_the_west_LIT
+		set_country_flag = wttwLIT_concluded
+	}
+}
+
+#####################################
+#				Latvia				#
+#####################################
+#See above chain, just repeated here for LAT instead of LIT
+
+#$FROM_COUNTRY$ and the Window to the West
+country_event = {
+	id = 51457
+	title = "EVTNAME51457"
+	desc = "EVTDESC51457"
+	picture = "riga"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This will surely be a mutually beneficial arrangement."
+		money = 5000
+		FROM = {
+			diplomatic_influence = {
+				who = THIS
+				value = 500
+			}
+			relation = {
+				who = THIS
+				value = 100
+			}
+		}
+	}
+	
+	option = {
+		name = "It is not worth the risk to $COUNTRY$'s sovereignty."
+		FROM = {
+			money = 5000
+			relation = {
+				who = THIS
+				value = -40
+			}
+		}
+		relation = {
+			who = FROM
+			value = -40
+		}
+		country_event = {
+			id = 51459
+			days = 5
+		}
+	}
+}
+
+country_event = {
+	id = 51458
+	title = "EVTNAME51458"
+	desc = "EVTDESC51458"
+	
+	trigger = {
+		OR = {
+			tag = SML
+			tag = RUS
+		}
+		has_country_flag = window_to_the_west_LAT
+		is_greater_power = yes
+		neighbour = LAT
+		LAT = { in_sphere = THIS }
+		relation = {
+			who = LAT
+			value = 150
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "Go ahead with the plan."
+		LAT = {
+			country_event = {
+				id = 51460
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 99
+		}
+	}
+	
+	option = {
+		name = "Eh, forget it."
+		clr_country_flag = window_to_the_west_LAT
+		set_country_flag = wttwLAT_concluded
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#LAT's rejection of the initial WttW offer
+country_event = {
+	id = 51459
+	title = "EVTNAME51452"
+	desc = "EVTDESC51452"
+	picture = "riga"
+	
+	is_triggered_only = yes
+	
+	option =  {
+		name = "Force must be applied to accomplish our goals."
+		add_casus_belli = {
+			type = conquest
+			target = FROM
+			months = 5
+		}
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+		badboy = 8
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.66
+			}
+		}
+	}
+	
+	option = {
+		name = "We cannot afford to provoke an international crisis at the moment."
+		prestige = -5
+		badboy = 2
+		set_country_flag = wttwLAT_concluded
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { badboy = 0.66 }
+			}
+		}
+	}
+}
+
+#Imposition of puppet status
+country_event = {
+	id = 51460
+	title = "EVTNAME51461"
+	desc = "EVTDESC51461"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We have no choice, we will submit."
+		FROM = {
+			country_event = {
+				id = 51462
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = "Latvia is not yet lost!"
+		FROM = {
+			country_event = {
+				id = 51463
+				days = 2
+			}
+		}
+	}
+}
+
+#Notification of success in the above
+country_event = {
+	id = 51462
+	title = "EVTNAME51462"
+	desc = "EVTDESC51462"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The plan advances."
+		create_vassal = FROM
+	}
+}
+
+#Notification of rebellion in the above
+country_event = {
+	id = 51463
+	title = "EVTNAME51463"
+	desc = "EVTDESC51463"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Order our troops into action!"
+		badboy = 8
+		add_casus_belli = {
+			target = FROM
+			type = conquest
+		}
+		release_vassal = FROM
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+	}
+}
+
+#Annexation
+country_event = {
+	id = 51464
+	title = "EVTNAME51464"
+	desc = "EVTDESC51464"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = RUS
+			tag = SML
+		}
+		has_country_flag = window_to_the_west_LAT
+		LAT = { is_our_vassal = THIS }
+		relation = {
+			who = LAT
+			value = 150
+		}
+		is_sphere_leader_of = LAT
+		NOT = { truce_with = LAT }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "At long last!"
+		inherit = LAT
+		prestige = 5
+		clr_country_flag = window_to_the_west_LAT
+		set_country_flag = wttwLAT_concluded
+	}
+}

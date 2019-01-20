@@ -1,0 +1,1227 @@
+#Event numbers 50500-50599
+#Events for Denmark, Norway, Sweden, Finland, and Iceland
+
+################Denmark##################
+
+#Death of the Duke of Holsten - HOL
+country_event = {
+	id = 50500
+	title = "EVTNAME50500"
+	desc = "EVTDESC50500"
+	picture = "alfonso_xii_bourbon"
+	
+	trigger = {
+		tag = HOL
+		year = 1853
+	}
+
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	option = {
+		name = "Truly do the times change."
+		DEN = {
+			country_event = {
+				id = 50501
+				days = 1
+			}
+		}
+	}
+}
+
+#Death of Duke of Holsten - DEN
+
+country_event = {
+	id = 50501
+	title = "EVTNAME50500"
+	desc = "EVTDESC50500"
+	picture = "alfonso_xii_bourbon"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will care for his people."
+		set_country_flag = HOL_inherited
+		inherit = HOL
+		HOL = {
+			all_core = {
+				add_core = DEN
+				remove_core = HOL
+			}
+		}
+	}
+}
+
+#Expansion of Ombunduland
+country_event = {
+	id = 50502
+	title = "EVTNAME50502"
+	desc = "EVTDESC50502"
+	picture = "colonial_factory"
+
+	fire_only_once = yes
+	
+	trigger = {
+		2003 = { owned_by = THIS }
+		invention = prophylaxis_against_malaria
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "Give it our support."
+		prestige = 5
+		money = -5000
+		2005 = { secede_province = THIS }
+		2008 = { secede_province = THIS life_rating = 5 }
+		
+		ai_chance = {
+			factor = 9
+			modifier = {
+				factor = 0
+				NOT = { money = 5000 }
+			}
+		}
+	}
+	
+	option = {
+		name = "It can pay for it itself."
+		prestige = 1
+		2005 = { secede_province = THIS }
+		2008 = { secede_province = THIS }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Lubeck renamed to Lybæk		Parallel event #50071 in HtA_GER
+country_event = {
+	id = 50503
+	title = "EVTNAME50503"
+	desc = "EVTDESC50503"
+	picture = "croatia_issue"
+	
+	trigger = {
+		primary_culture = danish
+		has_global_flag = german_lubeck
+		530 = {
+			owned_by = THIS
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 8
+	}
+	
+	option = {
+		name = "As it should be."
+		prestige = 1
+		530 = {
+			change_province_name = "Lybæk"
+		}
+		clr_global_flag = german_lubeck
+	}
+}
+
+#Latvian events 50504 and 50505 down below
+
+
+####################################################
+################Lubeck Negotiations#################
+####################################################
+#Germany wants to negotiate about Lubeck - DEN
+country_event = {
+	id = 50506
+	title = "EVTNAME50506"
+	desc = "EVTDESC50506"
+	picture = "treaty_of_paris_1856"
+	
+	is_triggered_only = yes	#triggered by decision in HtA_GER
+	
+	option = {
+		name = "We could part with it for a price."
+		FROM = { country_event = 50507 }
+		
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "The city shall remain in our hands."
+		FROM = { country_event = 50508 }
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				FROM = { NOT = { brigades_compare = 2 } }
+			}
+		}
+	}
+}
+
+#GER
+country_event = {
+	id = 50507
+	title = "EVTNAME50507"
+	desc = "EVTDESC50507"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Accept the price."
+		money = -25000
+		FROM = { country_event = 50509 }
+		
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.6
+				NOT = { money = 25000 }
+			}
+		}
+	}
+	
+	option = {
+		name = "The price is too high."
+		FROM = { country_event = 50510 }
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.7
+				NOT = { money = 25000 }
+			}
+		}
+	}
+}
+
+#GER
+country_event = {
+	id = 50508
+	title = "EVTNAME50508"
+	desc = "EVTDESC50508"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "That is unfortunate..."
+	}
+}
+
+#DEN
+country_event = {
+	id = 50509
+	title = "EVTNAME50509"
+	desc = "EVTDESC50509"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent news!"
+		money = 25000
+		530 = { secede_province = FROM remove_core = THIS }
+	}
+}
+
+#DEN
+country_event = {
+	id = 50510
+	title = "EVTNAME50510"
+	desc = "EVTDESC50510"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Accept a lower price."
+		FROM = { country_event = 50511 }
+	}
+	
+	option = {
+		name = "No deal, then."
+		FROM = { country_event = 50512 }
+	}
+}
+
+#GER
+country_event = {
+	id = 50511
+	title = "EVTNAME50511"
+	desc = "EVTDESC50511"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "That is acceptable."
+		money = -15000
+		FROM = { country_event = 50513 }
+	}
+	
+	option = {
+		name = "Still too high. Negotiations end here."
+		FROM = { country_event = 50514 }
+	}
+}
+
+#GER
+country_event = {
+	id = 50512
+	title = "EVTNAME50512"
+	desc = "EVTDESC50512"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "That is unfortunate."
+	}
+}
+
+#DEN
+country_event = {
+	id = 50513
+	title = "EVTNAME50513"
+	desc = "EVTDESC50509"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		money = 15000
+		530 = { secede_province = FROM remove_core = THIS }
+	}
+}
+
+#DEN
+country_event = {
+	id = 50514
+	title = "EVTNAME50514"
+	desc = "EVTDESC50514"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Very well."
+	}
+}
+###################End Lubeck Negotiations##########################
+
+#############Treaty of Anslo##############
+
+#Swedish winner, which is the event assumed in cb_types
+	#Revoke Danish cores
+country_event = {
+	id = 50515
+	title = "EVTNAME50515"
+	desc = "EVTDESC50515"
+	#picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "It is time to lay down arms."
+		SWE = { country_event = 50516 }
+	}
+}
+
+country_event = {
+	id = 50516
+	title = "EVTNAME50516"
+	desc = "EVTDESC50516"
+	#picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Let us negotiate the armistice."
+		NOR = {
+			country_event = {
+				id = 50517
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50517
+	title = "EVTNAME50517"
+	desc = "EVTDESC50517"
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "Skåne is Swedish."
+		334 = { remove_core = DEN remove_province_modifier = claimed_by_sweden }
+		335 = { remove_core = DEN remove_province_modifier = claimed_by_sweden }
+		SWE = { prestige = 5 }
+		prestige = 1
+	}
+}
+	
+#Danish winner
+	#Revoke Swedish cores and remove claimed_by_sweden province modifiers
+	country_event = {
+		id = 50518
+		title = "EVTNAME50517"
+		desc = "EVTDESC50518"
+		
+		fire_only_once = yes
+		
+		trigger = {
+			tag = SWE
+			334 = { has_province_modifier = claimed_by_sweden NOT = { owned_by = SWE } }
+			truce_with = DEN
+			has_recently_lost_war = yes
+			has_country_flag = swedish_skane
+		}
+		
+		mean_time_to_happen = {
+			months = 1
+			modifier = {
+				year = 1838
+				factor = 0.01
+			}
+		}
+		
+		option = {
+			name = "A dark day for Sweden!"
+			prestige = -5
+			334 = { remove_core = SWE remove_province_modifier = claimed_by_sweden }
+			335 = { remove_core = SWE remove_province_modifier = claimed_by_sweden }
+		}
+	}
+
+#White peace?
+#50519 reserved for that
+	country_event = {
+		id = 50519
+		title = "EVTNAME50519"
+		desc = "EVTDESC50519"
+		
+		fire_only_once = yes
+		
+		trigger = {
+			tag = SWE
+			has_recently_lost_war = no
+			DEN = { has_recently_lost_war = no }
+			has_country_flag = swedish_skane
+			truce_with = DEN
+			334 = { has_province_modifier = claimed_by_sweden NOT = { owned_by = SWE } }
+		}
+		
+		mean_time_to_happen = {
+			months = 1
+			modifier = {
+				year = 1838
+				factor = 0.01
+			}
+		}
+		
+		option = {
+			name = "We shall have to try again, then."
+			prestige = -1
+			clr_country_flag = swedish_skane
+		}
+	}
+
+
+
+#####################################################################################
+######			Skane Question						#################################
+#####################################################################################
+#Skane released in treaty after great war - (1/3)
+	country_event = {
+		id = 50520
+		title = "EVTNAME50520"
+		desc = "EVTDESC50520"
+		
+		is_triggered_only = yes
+		fire_only_once = yes
+		
+		option = {
+			name = "We must have Skåne!"
+			set_country_flag = skane_interest
+			random_country = {
+				limit = {
+					OR = {
+						AND = {
+							tag = NOR
+							NOT = { truce_with = THIS }
+							has_recently_lost_war = no
+						}
+						AND = {
+							NOT = { truce_with = THIS }
+							NOT = { has_recently_lost_war = yes }
+							capital_scope = { continent = europe }
+						}
+					}
+					NOT = { tag = DEN }
+					NOT = { tag = SWE }
+					NOT = { tag = SKA }
+					NOT = { tag = SCA }
+				}
+				country_event = {
+					id = 50521
+					days = 2
+				}
+			}
+			ai_chance = {
+				factor = 75
+			}
+		}
+		
+		option = {
+			name = "That would be acceptable to us."
+			random_country = {
+				limit = {
+					OR = {
+						AND = {
+							tag = NOR
+							NOT = { truce_with = THIS }
+							has_recently_lost_war = no
+						}
+						AND = {
+							NOT = { truce_with = THIS }
+							has_recently_lost_war = no
+							capital_scope = { continent = europe }
+						}
+					}
+					NOT = { tag = DEN }
+					NOT = { tag = SWE }
+					NOT = { tag = SKA }
+					NOT = { tag = SCA }
+				}
+				country_event = {
+					id = 50521
+					days = 2
+				}
+			}
+			ai_chance = {
+				factor = 25
+			}
+		}
+	}
+	
+	#Event to decide if Skane is released (2/3)
+	country_event = {
+		id = 50521
+		title = "EVTNAME50521"
+		desc = "EVTNAME50521"
+		
+		is_triggered_only = yes
+		fire_only_once = yes
+		
+		immediate = {
+			clr_global_flag = skane_question
+			set_global_flag = skane_question_settled
+		}
+		
+		option = {
+			name = "For the sake of peace, Skåne must be a free territory."
+			any_country = {
+				limit = {
+					owns = 334
+					owns = 335
+					has_recently_lost_war = yes
+				}
+				country_event = {
+					id = 50522
+					days = 1
+				}
+			}
+			random_country = {
+				limit = {
+					has_country_flag = skane_interest
+				}
+				relation = {
+					who = THIS
+					value = -50
+				}
+			}
+			FROM = {
+				country_event = {
+					id = 50524
+					days = 1
+				}
+			}
+			ai_chance = {
+				factor = 80
+			}
+		}
+		
+		option = {
+			name = "Give $FROMCOUNTRY$ control of Skåne."
+			FROM = {
+				country_event = {
+					id = 50523
+					days = 1
+				}
+			}
+			relation = {
+				who = FROM
+				value = 50
+			}
+			ai_chance = {
+				factor = 20
+				modifier = {
+					factor = 3
+					FROM = { has_country_modifier = skane_interest }
+				}
+			}
+		}
+	}
+	
+	#Event to release Skane (3/3)
+	country_event = {
+		id = 50522
+		title = "EVTNAME50522"
+		desc = "EVTDESC50522"
+		
+		is_triggered_only = yes
+		
+		option = {
+			name = "This is an insult to all of $COUNTRY$!"
+			334 = { add_core = SKA remove_core = SWE remove_core = DEN }
+			335 = { add_core = SKA remove_core = SWE remove_core = DEN }
+			release = SKA
+			prestige = -20
+			any_pop = { militancy = 1 }
+		}
+	}
+	
+	#Event to give Skane to FROMCOUNTRY (3.5/3)
+	country_event = {
+		id = 50523
+		title = "EVTNAME50523"
+		desc = "EVTDESC50523"
+		
+		is_triggered_only = yes
+		
+		option = {
+			name = "What excellent news!"
+			clr_country_flag = skane_interest
+			prestige = 5
+			334 = { secede_province = THIS remove_core = SWE remove_core = DEN add_core = THIS }
+			335 = { secede_province = THIS remove_core = SWE remove_core = DEN add_core = THIS }
+		}
+	}
+	
+	#Event to NOT give Skane to FROMCOUNTRY (3.75/3)
+	country_event = {
+		id = 50524
+		title = "EVTNAME50524"
+		desc = "EVTDESC50524"
+		
+		is_triggered_only = yes
+		
+		option = {
+			name = "A pity."
+			clr_country_flag = skane_interest
+			any_pop = { consciousness = 1 }
+		}
+	}
+	
+#########################################################################################
+###########		Latvian Rebellion/Revolution events			#############################
+#########################################################################################
+
+#Stirrings of Latvian nationalism
+country_event = {
+	id = 50504
+	title = "EVTNAME50504"
+	desc = "EVTDESC50504"
+	picture = "recruits"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FIN
+		354 = { owned_by = THIS }
+		has_country_flag = liberal_revolution_in_progress
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "We must monitor this situation carefully."
+		set_country_flag = latvian_nationalism
+		any_owned = {
+			limit = {
+				is_core = LAT
+			}
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 1300
+			}
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = latvian
+			}
+			consciousness = 3
+			militancy = 1
+		}
+	}
+}
+
+#Latvian Rebellion				Please blame Savs' poor planning and unwillingness to renumber events for the horrible numbering
+country_event = {
+	id = 50505
+	title = "EVTNAME50505"
+	desc = "EVTDESC50505"
+	picture = "luddites"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FIN
+		has_country_flag = latvian_nationalism
+		OR = {
+			has_country_flag = latvian_revolt
+			check_variable = {
+				which = latvian_revolt
+				value = 4
+			}
+		}
+		NOT = { has_country_flag = latvian_rebellion }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+		modifier = {
+			factor = 0.2
+			has_country_modifier = springtime_of_nations
+		}
+	}
+	
+	immediate = { clr_country_flag = latvian_revolt clr_country_flag = latvian_nationalism set_country_flag = lativan_rebellion }
+	
+	option = {
+		name = "Crush them!"
+		set_country_flag = crush_latvian_rebellion
+		any_pop = {
+			limit = {
+				has_pop_culture = latvian
+				location = { region = RUS_354 }
+			}
+			militancy = 9
+			consciousness = 9
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = latvian
+				location = { NOT = { region = RUS_354 }}
+			}
+			militancy = 7
+			consciousness = 7
+		}
+		any_owned = {
+			limit = {
+				region = RUS_354
+			}
+			add_province_modifier = {
+				name = suppress_revolt
+				duration = 2200
+			}
+		}
+		
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "They are of no consequence. Ignore the rabble."
+		set_country_flag = ignore_latvian_rebellion
+		prestige = -10
+		any_pop = {
+			limit = {
+				has_pop_culture = latvian
+				location = { region = RUS_354 }
+			}
+			militancy = 7
+			consciousness = 9
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = latvian
+				location = { NOT = { region = RUS_354 }}
+			}
+			militancy = 3
+			consciousness = 4
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = no
+			}
+			militancy = 3
+			consciousness = 3
+		}
+		any_owned = {
+			limit = {
+				region = RUS_354
+			}
+			add_province_modifier = {
+				name = ignore_revolt
+				duration = 3650
+			}
+		}
+		
+		ai_chance = {
+			factor = 20
+		}		
+	}
+	
+	option = {
+		name = "Grant them autonomy."
+		set_country_flag = latvian_autonomy
+		prestige = -15
+		any_pop = {
+			limit = {
+				has_pop_culture = latvian
+			}
+			consciousness = 2
+			militancy = -2
+		}
+		release_vassal = LAT
+		relation = {
+			who = LAT
+			value = 200
+		}
+		LAT = {
+			all_core = {
+				remove_core = FIN
+				remove_province_modifier = latvian_fomenters
+			}
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = no
+			}
+			militancy = 2
+			consciousness = 3
+		}
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "If they don't want to be part of our country, then let them leave!"
+		set_country_flag = latvian_release
+		clr_country_flag = latvian_rebellion
+		prestige = -25
+		release = LAT
+		leave_alliance = LAT
+		relation = {
+			who = LAT
+			value = -400
+		}
+		LAT = {
+			all_core = {
+				remove_core = FIN
+				remove_province_modifier = latvian_fomenters
+			}
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = no
+			}
+			militancy = 2
+			consciousness = 4
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#A Midnight Raid?
+	province_event = {
+		id = 50525
+		title = "EVTNAME50525"
+		desc = "EVTDESC50525"
+		
+		trigger = {
+			owner = {
+				tag = FIN
+				354 = { owned_by = THIS }
+				has_country_flag = latvian_nationalism
+				NOT = { has_country_flag = latvian_revolt }
+				NOT = { has_country_flag = raid_event }
+				NOT = { has_country_flag = latvian_rebellion }
+			}
+			is_core = LAT
+			has_province_modifier = nationalist_agitation
+			NOT = { has_province_modifier = suppressed }
+			NOT = { has_province_modifier = not_suppressed }
+			year = 1842
+		}
+		
+		mean_time_to_happen = {
+			months = 3
+			modifier = {	
+				factor = 0.5
+				OR = {
+					owner = { check_variable = {
+						which = latvian_revolt
+						value = 1
+					} }
+					owner = { check_variable = {
+						which = latvian_revolt
+						value = 2
+					} }
+					owner = { check_variable = {
+						which = latvian_revolt
+						value = 3
+					} }
+				}
+			}
+			modifier = {
+				factor = 0.75
+				has_country_modifier = springtime_of_nations
+			}
+		}
+		
+		immediate = { owner = { set_country_flag = raid_event } }
+		
+		option = {
+			name = "Conduct the raid."
+			owner = { set_country_flag = raid_it }
+			random_list = {
+				10 = {
+					add_province_modifier = {
+						name = suppressed
+						duration = -1
+					}
+					
+				}
+				10 = {
+					add_province_modifier = {
+						name = not_suppressed
+						duration = -1
+					}
+				}
+			}
+		}
+		
+		option = {
+			name = "This is nothing to be afraid of."
+			owner = { set_country_flag = blind_eye_to_latvian_rebels }
+			add_province_modifier = {	
+				name = latvian_fomenters
+				duration = -1
+			}
+		}
+	}
+	
+	#Successful Suppression
+	province_event = {
+		id = 50526
+		title = "EVTNAME50526"
+		desc = "EVTDESC50526"
+		
+		trigger = {
+			is_core = LAT
+			owner = {
+				tag = FIN
+				has_country_flag = raid_it
+				has_country_flag = latvian_nationalism
+			}
+			has_province_modifier = suppressed
+		}
+		
+		mean_time_to_happen = {
+			months = 1
+			modifier = {
+				factor = 0.01
+				has_province_modifier = suppressed
+				year = 1836
+			}
+		}
+		
+		option = {
+			name = "Great news!"
+			remove_province_modifier = suppressed 
+			any_pop = {
+				limit = {
+					has_pop_culture = latvian
+				}
+				militancy = -1
+				consciousness = -1
+			}
+			owner = {
+				clr_country_flag = raid_event
+				clr_country_flag = raid_it
+				set_variable = {
+					which = latvian_revolt
+					value = 0
+				}
+				change_variable = {
+					which = latvian_revolt
+					value = 1
+				}
+			}
+		}
+	}
+	
+	#backfire
+	province_event = {
+		id = 50527
+		title = "EVTNAME50527"
+		desc = "EVTDESC50527"
+		
+		trigger = {
+			is_core = LAT
+			owner = {
+				tag = FIN
+				has_country_flag = raid_it
+				has_country_flag = latvian_nationalism
+			}
+			has_province_modifier = not_suppressed
+		}
+		
+		mean_time_to_happen = {
+			months = 1
+			modifier = {
+				factor = 0.01
+				has_province_modifier = not_suppressed
+				year = 1836
+			}
+		}
+		
+		option = {
+			name = "This is getting out of hand..."
+			remove_province_modifier = not_suppressed
+			any_pop = {
+				limit = {
+					has_pop_culture = latvian
+				}
+				militancy = 8
+				consciousness = 8
+			}
+			owner = {
+				any_pop = {
+					limit = {
+						culture = latvian
+						location = { region = RUS_354 }
+					}
+					militancy = 6
+					consciousness = 6
+				}
+				set_country_flag = latvian_revolt
+				clr_country_flag = raid_event
+				clr_country_flag = raid_it
+			}
+		}
+	}
+	
+	#Latvian Fraternal Society
+	province_event = {
+		id = 50528
+		title = "EVTNAME50528"
+		desc = "EVTDESC50528"
+		
+		trigger = {
+			is_core = LAT
+			has_province_modifier = nationalist_agitation
+			owner = {
+				has_country_flag = blind_eye_to_latvian_rebels
+				has_country_flag = raid_event
+				has_country_flag = latvian_nationalism
+			}
+			NOT = { has_province_modifier = latvian_fomenters }
+		}
+		
+		mean_time_to_happen = {
+			months = 1
+		}
+		
+		option = {
+			name = "Lalala."
+			add_province_modifier = {
+				name = latvian_fomenters
+				duration = -1
+			}
+			set_country_flag = latvian_revolt
+		}
+	}
+
+	#Event to clear flags and such when LAT is independent
+	country_event = {
+		id = 50529
+		title = "EVTNAME50529"
+		desc = "EVTDESC50529"
+		#picture = ""
+		
+		trigger = {
+			tag = FIN
+			exists = LAT
+			NOT = { is_our_vassal = LAT }
+			OR = {
+				has_country_flag = crush_latvian_rebellion
+				has_country_flag = ignore_latvian_rebellion
+				has_country_flag = latvian_autonomy
+				has_country_flag = latvian_release
+				has_country_flag = latvian_rebellion
+			}
+		}
+		
+		mean_time_to_happen = {
+			months = 1
+			modifier = {
+				factor = 0.01
+				year = 1840
+			}
+		}
+		
+		option = {
+			name = "Good riddance!"
+			all_core = {
+				limit = {
+					is_core = LAT
+				}
+				remove_core = THIS
+			}
+			clr_country_flag = crush_latvian_rebellion
+			clr_country_flag = ignore_latvian_rebellion
+			clr_country_flag = latvian_autonomy
+			clr_country_flag = latvian_release
+			clr_country_flag = latvian_rebellion
+		}
+	}
+	
+	#Direct intervention in Latvia/Finland
+	country_event = {
+		id = 50530
+		title = "EVTNAME50530"
+		desc = "EVTDESC50530"
+		#picture = ""
+		
+		trigger = {
+			has_country_flag = support_latvian_rebels
+			NOT = {
+				exists = LAT
+				has_country_flag = latvian_cb_added
+				has_country_flag = continue_supporting_latvian_rebels
+			}
+			FIN = {
+				OR = {
+					has_country_flag = crush_latvian_rebellion
+					has_country_flag = ignore_latvian_rebellion
+				}
+				any_owned_province = {
+					is_core = LAT
+				}
+			}
+		}
+		
+		mean_time_to_happen = {
+			months = 60
+		}
+		
+		option = {
+			name = "The Latvian people deserve freedom."
+			clr_country_flag = support_latvian_rebels
+			set_country_flag = latvian_cb_added
+			casus_belli = {
+				target = FIN
+				type = free_latvia
+				months = 12
+			}
+			
+			ai_chance = {
+				factor = 50
+				modifier = {
+					factor = 1.75
+					has_global_flag = railroading_on
+					military_score = 20
+				}
+			}
+		}
+		
+		option = {
+			name = "Continue covert support."
+			clr_country_flag = support_latvian_rebels
+			set_country_flag = continue_supporting_latvian_rebels
+			money = -1000
+			FIN = {
+				any_pop = {
+					limit = {
+						culture = latvian
+					}
+					militancy = 3
+					consciousness = 3
+				}
+			}
+			
+			ai_chance = {
+				factor = 50
+				modifier = {	
+					factor = 0.5
+					NOT = { money = 1000 }
+				}
+			}
+		}
+	}
+	
+#Event to increase relations and such when a free latvia exists with the war declarer
+#50531 50532
+#
+
+	country_event = {
+		id = 50590
+		title = "EVTNAME50590"
+		desc = "EVTDESC50590"
+		#picture = ""
+		
+		fire_only_once = yes
+		
+		trigger = {
+			tag = FIN
+			impressionism = 1
+			year = 1887
+		}
+		
+		mean_time_to_happen = {
+			months = 16
+		}
+		
+		option = {
+			name = "A marvellous performance!"
+			prestige = 5
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+					strata = rich
+				}
+				consciousness = 0.5
+			}
+		}
+	}

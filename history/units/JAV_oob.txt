@@ -1,0 +1,34 @@
+army = {
+	name = "Army of the Sultan of Cirebon"
+	location = 1415
+	regiment = {
+		name = "1st Infantry"
+		home = 1415
+		type = irregular
+	}
+	regiment = {
+		name = "2nd Infantry"
+		home = 1418
+		type = irregular
+	}
+	regiment = {
+		name = "3rd Infantry"
+		home = 1414
+		type = irregular
+	}
+	regiment = {
+		name = "4th Infantry"
+		home = 1416
+		type = irregular
+	}
+	regiment = {
+		name = "5th Infantry"
+		home = 1420
+		type = irregular
+	}
+	regiment = {
+		name = "Sultan's Cavalry"
+		home = 1417
+		type = cavalry
+	}
+}

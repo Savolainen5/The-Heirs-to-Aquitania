@@ -1,0 +1,275 @@
+#Decisions for South America
+#What if there were a short event chain with Uilsc explorers getting killed by natives and not returning?
+#Perhaps this should be changed into a more equitable and random colonisation event thing like happens with NA?
+political_decisions = {
+	jordracisc_destiny = {
+		picture = our_brothers_the_gauchos
+		potential = {
+			tag = USR
+			2320 = { empty = yes }
+		}
+		
+		allow = {
+			money = 10000
+			medicine = 1
+			muzzle_loaded_rifles = 1
+		}
+		
+		effect = {
+			money = -10000
+			prestige = 5
+			2317 = { secede_province = THIS }
+			2319 = { secede_province = THIS }
+			2320 = { secede_province = THIS }
+			2321 = { secede_province = THIS }
+			2407 = { secede_province = THIS }
+			2417 = { secede_province = THIS }
+			2549 = { secede_province = THIS }
+			2550 = { secede_province = THIS }
+		}
+	}
+	
+	money_for_jord_dest = {
+		potential = {
+			tag = USR
+			ai = yes
+			year = 1862
+			NOT = { money = 10000 }
+			2317 = { empty = yes }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			money = 12500
+		}
+	}
+	
+#Look for a buyer for AQT SA
+	look_for_a_buyer_for_aqt_s_a = {
+		picture = claim_santa_catarina
+		
+		potential = {
+			tag = AQT
+			NOT = { has_country_flag = look_for_buyer_for_aqt_s_a }
+			NOT = { has_global_flag = aqt_s_a_purchase_concluded }
+			slavery = no_slavery
+		}
+		
+		allow = {
+			2414 = { owned_by = THIS }
+			2415 = { owned_by = THIS }
+		}
+		
+		effect = {
+			set_country_flag = look_for_buyer_for_aqt_s_a
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { year = 1842 }
+					slavery = yes_slavery
+				}
+			}
+		}
+	}			
+	
+#Buy Aquitanian South Ameriga
+	buy_aqt_s_ameriga = {
+		picture = claim_santa_catarina
+		potential = {
+			OR = {
+				tag = USR
+				tag = GDN
+			}
+			NOT = { has_country_flag = offer_to_buy_aqt_s_a }
+			NOT = { has_global_flag = aqt_s_a_purchase_concluded }
+			AQT = { has_country_flag = look_for_buyer_for_aqt_s_a }
+		}
+		
+		allow = {
+			money = 10000
+			relation = {
+				who = AQT
+				value = 50
+			}
+		}
+		
+		effect = {
+			set_country_flag = offer_to_buy_aqt_s_a
+			AQT = {
+				country_event = {
+					id = 51200
+					days = 1
+				}
+			}
+		}
+	}
+	
+#Help Gidan get money to buy AQT Selvenkes
+	GDN_ai_selvenkes_purchase = {
+		potential = {
+			tag = GDN
+			ai = yes
+			AQT = { has_country_flag = look_for_buyer_for_aqt_s_a }
+			NOT = { has_global_flag = aqt_s_a_purchase_concluded }
+			NOT = { money = 15000 }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			money = 22500
+		}
+	}
+	
+#Hegemony over Gidan
+	hegemony_gidan = {
+		picture = banda_oriental
+		potential = {
+			tag = USR
+			NOT = { has_country_flag = establish_gidan_hegemony }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			NOT = {
+				relation = {
+					who = GDN
+					value = 0
+				}
+			}
+			OR = {
+				war_policy = pro_military
+				war_policy = jingoism
+			}
+		}
+		
+		effect = {
+			GDN = {
+				all_core = {
+					limit = {
+						NOT = { is_core = AQT }
+					}
+					add_core = USR
+				}
+			}
+			relation = {
+				who = GDN
+				value = -150
+			}
+			set_country_flag = establish_gidan_hegemony
+		}
+	}
+			
+
+#Hoyekysten claiming Pastaza
+	inland_claims = {
+		picture = claim_santa_catarina
+		potential = {
+			tag = HOY
+			2286 = { empty = yes }
+			2288 = { empty = yes }
+			2289 = { empty = yes }
+		}
+		
+		allow = {
+			money = 5000
+			medicine = 1
+			muzzle_loaded_rifles = 1
+		}
+		
+		effect = {
+			money = -5000
+			prestige = 3
+			2286 = { secede_province = THIS }
+			2288 = { secede_province = THIS }
+			2289 = { secede_province = THIS }
+		}
+	}
+
+#Claim Carapara
+	claim_carapara = {
+		picture = dreams_of_empire
+		potential = {
+			owns = 2280
+			2285 = { empty = yes }
+		}
+		
+		allow = {
+			civilized = yes
+			money = 2500
+			total_amount_of_ships = 1
+		}
+		
+		effect = {
+			prestige = 1
+			2285 = { secede_province = THIS }
+		}
+	}
+	
+#Construct Stilhav Naval Base
+	stilhav_naval_base = {
+		picture = valparaiso_harbor
+		potential = {
+			owns = 2253
+			owns = 2258
+			2253 = {
+				NOT = {
+					has_building = naval_base
+					has_building = fort
+				}
+			}
+			2258 = {
+				NOT = {
+					has_building = naval_base
+				}
+			}
+		}
+		
+		allow = {
+			money = 5000
+			2253 = {
+				NOT = {
+					has_building = naval_base
+					has_building = fort
+				}
+			}
+			2258 = {
+				NOT = {
+					has_building = naval_base
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 2
+			money = -5000
+			2253 =  {
+				fort = 1
+				naval_base = 1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					year = 1837
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					money = 5500
+				}
+			}
+		}
+	}
+}

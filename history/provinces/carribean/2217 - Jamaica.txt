@@ -1,0 +1,7 @@
+owner = NET
+controller = NET
+add_core = JAM
+trade_goods = sulphur
+life_rating = 35
+colonial = 2
+

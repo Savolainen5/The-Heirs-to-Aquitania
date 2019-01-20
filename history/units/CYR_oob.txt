@@ -1,0 +1,19 @@
+MGH = {
+	value = 150
+}
+
+army = {
+	name = "Army of the Bey of Benghazi"
+	location = 1735
+	regiment = {
+		name= "1. Askäris"
+		type = irregular
+		home = 1735
+	}
+
+	regiment = {
+		name= "2. Askäris"
+		type = irregular
+		home = 1734
+	}
+}

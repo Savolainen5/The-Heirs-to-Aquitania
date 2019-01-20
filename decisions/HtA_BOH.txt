@@ -1,0 +1,695 @@
+political_decisions = {
+
+	restore_order_in_hungary = {
+		picture = budapest_city
+		potential = {
+			tag = BOH
+			OR = {
+				has_country_flag = liberal_revolution_in_progress
+				has_country_modifier = springtime_of_nations
+			}
+			OR = {
+				has_country_flag = allowed_study_room_meetings
+				has_country_flag = suppressed_study_room_meetings
+			}
+			NOT = { has_country_flag = restore_order_in_hungary }
+			HUN = {
+				any_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		
+		allow = {
+			average_militancy = 6
+		}
+		
+		effect = {
+			set_country_flag = restore_order_in_hungary
+			any_owned = {
+				limit = {
+					is_core = HUN
+				}
+				any_pop = { consciousness = -4 }
+				any_pop = { militancy = -3 }
+			}
+		}
+		
+	}
+
+	proclaim_new_bohemia = {
+		picture = map_bohemia
+		potential = {
+			tag = PRH
+			625 = { owned_by = THIS }
+		}
+		
+		allow = {
+			625 = { owned_by = THIS }
+			627 = { owned_by = THIS }
+			628 = { owned_by = THIS }
+			629 = { owned_by = THIS }
+			630 = { owned_by = THIS }
+		}
+		
+		effect = {
+			prestige = 25
+			change_tag = BOH
+			PRH = { all_core = { remove_core = PRH } }
+			AUS_625 = { add_core = BOH }
+			AUS_626 = { add_core = BOH }
+			AUS_633 = { add_core = BOH }
+		}
+	}
+	
+	bohemian_zadar = {
+		picture = conference1
+		potential = {
+			OR = { tag = BOH tag = HUN }
+			NOT = { has_country_flag = zadar_proposal }
+			781 = { owned_by = CRO }
+			NOT = { has_global_flag = zadar_lease_canceled }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			war = no
+			CRO = { in_sphere = THIS }
+			relation = {
+				who = CRO
+				value = 200
+			}
+			experimental_railroad = 1
+		}
+		
+		effect = {
+			set_country_flag = zadar_proposal
+			CRO = {
+				country_event = {
+					id = 50406
+					days = 1
+				}
+			}
+		}
+	}
+	
+	return_croatian_land = {
+		picture = of_state_n_government
+		potential = {
+			OR = { tag = BOH tag = HUN }
+			has_country_flag = return_croatian_land
+			NOT = { has_country_flag = talked_to_austria }
+			AUS_771 = {
+				owned_by = AUS
+			}
+		}
+		
+		allow = {
+			AUS = { war = no }
+			war = no
+			relation = {
+				who = AUS
+				value = 10
+			}
+		}
+		
+		effect = {
+			set_country_flag = talked_to_austria
+			AUS = {
+				country_event = {
+					id = 50416
+					days = 1
+				}
+			}
+		}
+	}
+
+	return_croatia_to_croatia = {
+		picture = reclaim_croatia
+		potential = {
+			OR = { tag = BOH tag = HUN }
+			has_country_flag = return_croatian_land
+			781 = { NOT = { owned_by = BOH owned_by = HUN } }
+			NOT = { has_global_flag = zadar_lease }
+		}
+		
+		allow = {
+			AUS_771 = { owned_by = THIS }
+		}
+		
+		effect = {
+			prestige = 3
+			771 = { secede_province = CRO }
+			773 = { secede_province = CRO }
+			774 = { secede_province = CRO }
+			775 = { secede_province = CRO }
+		set_global_flag = zadar_lease
+		clr_country_flag = return_croatian_land
+		clr_country_flag = talked_to_austria
+		}
+	}
+	
+	#If BOH gets rekt, this decision will revert the ownership of Zadar to Croatia. Possibly needs to be reworked a bit so that it'll work for PRH, should partition happen as a result of the Hungarian revolution
+	cancel_zadar_lease = {
+		picture = military_parade
+		potential = {
+			tag = CRO
+			781 = {
+				has_province_modifier = leased
+				owned_by = BOH
+			}
+			has_global_flag = zadar_lease
+		}
+		
+		allow = {
+			640 = { NOT = { owned_by = BOH } }
+			779 = { NOT = { owned_by = BOH } }
+		}
+		
+		effect = {
+			prestige = 3
+			badboy = 1
+			781 = {
+				secede_province = CRO
+				add_core = CRO
+				remove_core = BOH
+				remove_province_modifier = leased
+			}
+			BOH = { country_event = 50499 }
+			set_global_flag = zadar_lease_canceled
+		}
+	}
+	
+	cancel_zadar_lease_HUN = {	
+		picture = military_parade
+		potential = {
+			tag = CRO
+			781 = {
+				has_province_modifier = leased
+				owned_by = HUN
+			}
+			has_global_flag = zadar_lease
+		}
+		
+		allow = {
+			OR = {
+				relation = {
+					who = HUN
+					value = -50
+				}
+				war_with = HUN
+			}
+		}
+		
+		effect = {
+			prestige = 3
+			badboy = 1
+			781 = {
+				secede_province = CRO
+				add_core = CRO
+				remove_core = HUN
+				remove_province_modifier = leased
+			}
+			HUN = { country_event = 50499 }
+			set_global_flag = zadar_lease_canceled
+		}
+	}
+	
+	secure_silesia = {
+		picture = negotiations
+		potential = {
+			neighbour = SLS
+			NOT = { tag = SLS }
+			is_greater_power = yes
+			SLS = {
+				NOT = { is_secondary_power = yes }
+				NOT = { is_greater_power = yes }
+				is_vassal = no
+			}
+			NOT = { has_country_flag = silesia_secured }
+		}
+		
+		allow = {
+			SLS = { in_sphere = THIS }
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			badboy = 3
+			create_vassal = SLS
+			relation = {
+				who = SLS
+				value = 100
+			}
+			SLS = { nationalize = yes }
+			any_country = {
+				limit = {
+					is_greater_power = yes
+					neighbour = SLS
+					NOT = { tag = THIS }
+				}
+				relation = {
+					who = THIS
+					value = -50
+				}
+				diplomatic_influence = {
+					who = SLS
+					value = -100
+				}
+				relation = {
+					who = SLS
+					value = -100
+				}
+			}
+			set_country_flag = silesia_secured
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+			modifier = {
+				factor = 0
+				economic_policy = laissez_faire
+			}
+			modifier = {
+				factor = 0
+				war_policy = pacifism
+			}
+		}
+	}
+	
+	secure_silesia_2 = {
+		picture = negotiations
+		
+		potential = {
+			has_country_flag = silesia_secured
+			exists = SLS
+			revolution_n_counterrevolution = 1
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		
+		allow = {
+			is_our_vassal = SLS
+		}
+		
+		effect = {
+			badboy = 10
+			inherit = SLS
+			prestige = 5
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+			modifier = {
+				factor = 0
+				war_policy = pacifism
+			}
+		}
+	}
+	
+#Decisions related to EVT50426 - The Syrmian Rebellion
+
+	#Available after the first option Ardeal takes - massacre
+	intervene_in_syrmia = {
+		picture = balkan_war		
+		potential = {
+			tag = BOH
+			SIE = { has_country_flag = suppressed_syrm_rebellion }
+			NOT = { has_country_flag = syrm_intervention }
+		}
+		
+		allow = {
+			is_greater_power = yes
+		}
+		
+		effect = {
+			set_country_flag = syrm_intervention
+			prestige = 3
+			war = {
+				target = SIE
+				attacker_goal = {
+					casus_belli = cut_down_to_size
+				}
+				call_ally = no
+			}
+			badboy = -2
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.9
+			}
+		}
+	}
+	
+	#Available after the second option Ardeal takes - ignore the problem
+	keep_the_peace_in_syrmia = {
+		picture = balkan_war	
+		potential = {
+			tag = BOH
+			SIE = { has_country_flag = ignored_syrm_rebellion }
+			NOT = { has_country_flag = syrm_intervention }
+		}
+		
+		allow = {
+			is_greater_power = yes
+		}
+		
+		effect = {
+			set_country_flag = syrm_intervention
+			prestige = 3
+			war = {
+				target = SIE
+				attacker_goal = {
+					casus_belli = acquire_state
+					state_province_id = 2538
+				}
+				call_ally = no
+			}
+			badboy = -7
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+#Decisions related to EVT50428 - The Banat Rebellion
+
+	#Available after the first option Ardeal takes - massacre
+	intervene_in_banat = {
+		picture = balkan_war
+		potential = {
+			tag = BOH
+			SIE = { has_country_flag = suppressed_banat_rebellion }
+			NOT = { has_country_flag = banat_intervention }
+		}
+		
+		allow = {
+			is_greater_power = yes
+		}
+		
+		effect = {
+			set_country_flag = banat_intervention
+			prestige = 3
+			war = {
+				target = SIE
+				attacker_goal = {
+					casus_belli = cut_down_to_size
+				}
+				call_ally = no
+			}
+			badboy = -4
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.85
+			}
+		}
+	}
+	
+	#Available after the second option Ardeal takes - ignore the problem
+	keep_the_peace_in_banat = {
+		picture = balkan_war	
+		potential = {
+			tag = BOH
+			SIE = { has_country_flag = ignored_banat_rebellion }
+			NOT = { has_country_flag = banat_intervention }
+		}
+		
+		allow = {
+			is_greater_power = yes
+		}
+		
+		effect = {
+			set_country_flag = banat_intervention
+			prestige = 3
+			war = {
+				target = SIE
+				attacker_goal = {
+					casus_belli = acquire_state
+					state_province_id = 2538
+				}
+				call_ally = no
+			}
+			badboy = -7
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	#Accept Slovaks
+	embrace_slovaks = {	
+		picture = embrace_minority
+		potential = {
+			tag = BOH
+			NOT = { accepted_culture = slovak }
+			any_owned_province = { pop_majority_culture = slovak }
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			prestige = 25
+		}
+		
+		effect = {
+			prestige = -5
+			add_accepted_culture = slovak
+			any_pop = {
+				limit = {
+					culture = slovak
+				}
+				militancy = -1
+			}
+		}
+	}
+	
+	#Unite the crowns - an attempt at a solution to the Hungarian Rebellion
+	unite_crowns_BHN = {
+		picture = enact_dual_monarchy
+		potential = {
+			tag = BOH
+			has_global_flag = hungarian_revolution_occurred
+			HUN = { exists = no }
+			NOT = { has_global_flag = BHN }
+			NOT = { has_country_flag = bohemia_let_hungary_go }
+			any_owned_province = { is_core = HUN }
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			OR = {
+				government = absolute_monarchy
+				government = hms_government
+				government = prussian_constitutionalism
+			}
+		}
+		
+		effect = {
+			set_global_flag = BHN
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = BOH
+						is_core = HUN
+					}
+				}
+				add_core = BHN
+				remove_core = BOH
+			}
+			any_pop = {
+				limit = {
+					culture = hungarian
+					}
+				militancy = -1
+				consciousness = -1
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = liberal
+					factor = -3
+				}
+				scaled_consciousness = {
+					ideology = liberal
+					factor = -2
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 1
+				}
+				scaled_consciousness = {
+					ideology = reactionary
+					factor = 2
+				}
+			}
+			change_tag = BHN
+			add_accepted_culture = hungarian
+		}
+	}
+	
+	#Claim Hungary's historical borders - BHN
+	expand_BHN = {
+		picture = budapest_city
+		potential = {
+			tag = BHN
+			has_global_flag = BHN
+			HUN = {
+				exists = no 
+				any_core = { NOT = { owned_by = THIS } }
+			}
+			NOT = {
+				has_country_flag = BHN_expanded
+			}
+		}
+		
+		allow = {
+			prestige = 75
+			military_score = 50
+		}
+		
+		effect = {
+			prestige = 5
+			badboy = 2
+			HUN = { all_core = { add_core = BHN } }
+			any_pop = {
+				limit = {
+					culture = hungarian
+				}
+				militancy = -2
+			}
+			set_country_flag = BHN_expanded
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.9
+			}
+		}
+	}
+	
+	#Banat and/or Syrm join Hungary for AI
+	we_are_hungarian_ai = {
+		picture = map_balkans
+		potential = {
+			OR = {
+				tag = BAN
+				tag = SRM
+			}
+			ai = yes
+			HUN = {
+				exists = yes
+			}
+			NOT = { has_country_flag = we_are_hungarian }
+			OR = {
+				has_global_flag = treaty_of_szekes
+				BOH = { has_country_flag = bohemia_let_hungary_go }
+			}
+		}
+		
+		allow = {
+			HUN = { war = no }
+		}
+		
+		effect = {
+			HUN = {
+				country_event = {
+					id = 50458
+					days = 1
+				}
+			}
+			set_country_flag = we_are_hungarian
+		}
+	}
+	
+	#Banat and/or Syrm join Hungary for humans
+	we_are_hungarian_human = {
+		picture = map_balkans
+		potential = {
+			OR = {
+				tag = BAN
+				tag = SRM
+			}
+			ai = no
+			HUN = {
+				exists = yes
+			}
+			has_global_flag = treaty_of_szekes
+		}
+		
+		allow = {
+			HUN = { war = no }
+		}
+		
+		effect = {
+			change_tag = HUN
+			inherit = THIS
+		}
+	}
+	
+	#Support partisans in Bohemian territories
+	support_bohemian_partisans = {
+		picture = map_bohemia
+		potential = {
+			tag = PRH
+			NOT = { num_of_cities = 2 }
+			NOT = { has_global_flag = bohemian_partisans }
+		}
+		
+		allow = {
+			money = 1000
+		}
+		
+		effect = {
+			set_global_flag = bohemian_partisans
+			money = -1000
+		}
+	}
+	
+	#Move capital back to Prague, in case it isn't
+	move_capital_to_prague = {
+		picture = map_bohemia
+		potential = {
+			OR = {
+				tag = PRH
+				tag = BOH
+			}
+			NOT = { capital = 625 }
+		}
+		
+		allow = {
+			625 = { owned_by = THIS }
+		}
+		
+		effect = {
+			capital = 625
+		}
+	}
+			
+}

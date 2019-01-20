@@ -1,0 +1,129 @@
+SCO = {
+	value = -175
+	truce_until = "1838.2.11"
+}
+
+RAJ = {
+	value = -25
+}
+
+AGR = {
+	value = -15
+}
+
+army = {
+	name = "Arm na hÉireann"
+	location = 263
+	regiment = {
+		name = "1. An Cor Coisithe"
+		type = infantry
+		home = 263
+	}
+	regiment = {
+		name = "2. An Cor Coisithe"
+		type = infantry
+		home = 259
+	}
+	regiment = {
+		name = "1. An Cor Airtléire"
+		type = artillery
+		home = 261
+	}
+	regiment = {
+		name = "1. An Cor Marcra"
+		type = cuirassier
+		home = 260
+	}
+}
+
+army = {
+	name = "Arm na hGlaschun"
+	location = 271
+	regiment = {
+		name = "3. An Cor Coisithe"
+		type = infantry
+		home = 254
+	}
+	regiment = {
+		name = "1. Coisithe na hAlban"
+		type = infantry
+		home = 271
+	}
+	regiment = {
+		name = "1. Airtléire na hAlban"
+		type = artillery
+		home = 255
+	}
+}
+
+army = {
+	name = "Arm na hGhuisearait"
+	location = 1291
+	regiment = {
+		name = "4. An Cor Coisithe"
+		type = infantry
+		home = 258
+	}
+	regiment = {
+		name = "5. An Cor Coisithe"
+		type = infantry
+		home = 264
+	}
+	regiment = {
+		name = "4. An Cor Airtléire"
+		type = artillery
+		home = 262
+	}
+	regiment = {
+		name = "1. Cor na hGhuisearait"
+		type = infantry
+		home = 1291
+	}
+	regiment = {
+		name = "2. Cor na hGhuisearait"
+		type = infantry
+		home = 1292
+	}
+	regiment = {
+		name = "1. Marcra na hGhuisearait"
+		type = dragoon
+		home = 1293
+	}
+}
+
+navy = {
+	name = "Loingeas na hÉireann"
+	location = 263
+	ship = {
+		name = "Misneach"
+		type = manowar
+	}
+	ship = {
+		name = "Foirtile"
+		type = manowar
+	}
+	ship = {
+		name = "Bun na Spéire"
+		type = manowar
+	}
+	ship = {
+		name = "An Gaoth"
+		type = frigate
+	}
+	ship = {
+		name = "Iontaofa"
+		type = frigate
+	}
+	ship = {
+		name = "1. Iomparlong"
+		type = clipper_transport
+	}
+	ship = {
+		name = "2. Iomparlong"
+		type = clipper_transport
+	}
+	ship = {
+		name = "3. Iomparlong"
+		type = clipper_transport
+	}
+}

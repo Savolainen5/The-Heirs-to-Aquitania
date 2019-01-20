@@ -1,0 +1,9 @@
+owner = IRO
+controller = IRO
+add_core = IRO
+trade_goods = fish
+life_rating = 35
+
+
+
+

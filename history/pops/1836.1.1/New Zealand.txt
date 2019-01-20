@@ -1,0 +1,444 @@
+#New Zealand : 85000
+#uncolonized in 1836
+#North Island Region (61000)
+#Auckland (17000/4250 POPS)
+2509 = {
+	aristocrats = {
+		culture = maori
+		religion = animist
+		size = 150
+	}
+
+	clergymen = {
+		culture = maori
+		religion = animist
+		size = 225
+	}
+
+	artisans = {
+		culture = maori
+		religion = animist
+		size = 800
+	}
+
+	soldiers = {
+		culture = maori
+		religion = animist
+		size = 400
+	}
+
+	farmers = {
+		culture = maori
+		religion = animist
+		size = 8575
+	}
+
+	farmers = {
+		culture = berrian
+		religion = catholic
+		size = 1250
+	}
+}
+#New Plymouth (8000/2000 POPS)
+2510 = {
+	aristocrats = {
+		culture = berrian
+		religion = catholic
+		size = 150
+	}
+	
+	bureaucrats = {
+		culture = berrian
+		religion = catholic
+		size = 250
+	}
+		
+	artisans = {
+		culture = berrian
+		religion = catholic
+		size = 850
+	}
+	
+	soldiers = {
+		culture = berrian
+		religion = catholic
+		size = 1000
+	}
+	
+	farmers = {
+		culture = berrian
+		religion = catholic
+		size = 7250
+	}
+
+	aristocrats = {
+		culture = maori
+		religion = animist
+		size = 75
+	}
+
+	clergymen = {
+		culture = maori
+		religion = animist
+		size = 150
+	}
+
+	artisans = {
+		culture = maori
+		religion = animist
+		size = 300
+	}
+
+	soldiers = {
+		culture = maori
+		religion = animist
+		size = 150
+	}
+
+	farmers = {
+		culture = maori
+		religion = animist
+		size = 4775
+	}
+
+}
+#Napier (12000/3000 POPS)
+2511 = {
+	aristocrats = {
+		culture = berrian
+		religion = catholic
+		size = 75
+	}
+	
+	bureaucrats = {
+		culture = berrian
+		religion = catholic
+		size = 120
+	}
+		
+	artisans = {
+		culture = berrian
+		religion = catholic
+		size = 450
+	}
+	
+	soldiers = {
+		culture = berrian
+		religion = catholic
+		size = 500
+	}
+	
+	farmers = {
+		culture = berrian
+		religion = catholic
+		size = 3350
+	}
+	
+	aristocrats = {
+		culture = maori
+		religion = animist
+		size = 50
+	}
+
+	clergymen = {
+		culture = maori
+		religion = animist
+		size = 150
+	}
+
+	artisans = {
+		culture = maori
+		religion = animist
+		size = 300
+	}
+
+	soldiers = {
+		culture = maori
+		religion = animist
+		size = 150
+	}
+
+	farmers = {
+		culture = maori
+		religion = animist
+		size = 5075
+	}
+}
+#Wellington (12000/3000 POPS)
+2512 = {
+	aristocrats = {
+		culture = berrian
+		religion = catholic
+		size = 75
+	}
+	
+	bureaucrats = {
+		culture = berrian
+		religion = catholic
+		size = 120
+	}
+		
+	artisans = {
+		culture = berrian
+		religion = catholic
+		size = 450
+	}
+	
+	soldiers = {
+		culture = berrian
+		religion = catholic
+		size = 500
+	}
+	
+	farmers = {
+		culture = berrian
+		religion = catholic
+		size = 3350
+	}
+	aristocrats = {
+		culture = maori
+		religion = animist
+		size = 75
+	}
+
+	clergymen = {
+		culture = maori
+		religion = animist
+		size = 225
+	}
+
+	artisans = {
+		culture = maori
+		religion = animist
+		size = 450
+	}
+
+	soldiers = {
+		culture = maori
+		religion = animist
+		size = 275
+	}
+
+	farmers = {
+		culture = maori
+		religion = animist
+		size = 8675
+	}
+}
+#Tauranga (12000/3000 POPS)
+2571 = {
+
+	aristocrats = {
+		culture = berrian
+		religion = catholic
+		size = 45
+	}
+	
+	bureaucrats = {
+		culture = berrian
+		religion = catholic
+		size = 60
+	}
+		
+	artisans = {
+		culture = berrian
+		religion = catholic
+		size = 250
+	}
+	
+	soldiers = {
+		culture = berrian
+		religion = catholic
+		size = 200
+	}
+	
+	farmers = {
+		culture = berrian
+		religion = catholic
+		size = 3050
+	}
+	
+	aristocrats = {
+		culture = maori
+		religion = animist
+		size = 75
+	}
+
+	clergymen = {
+		culture = maori
+		religion = animist
+		size = 225
+	}
+
+	artisans = {
+		culture = maori
+		religion = animist
+		size = 450
+	}
+
+	soldiers = {
+		culture = maori
+		religion = animist
+		size = 255
+	}
+
+	farmers = {
+		culture = maori
+		religion = animist
+		size = 7675
+	}
+
+}
+#South Island Region (24000)
+#Dunedin (4000/1000 POPS)
+2513 = {
+	aristocrats = {
+		culture = maori
+		religion = animist
+		size = 100
+	}
+
+	clergymen = {
+		culture = maori
+		religion = animist
+		size = 250
+	}
+
+	artisans = {
+		culture = maori
+		religion = animist
+		size = 500
+	}
+
+	soldiers = {
+		culture = maori
+		religion = animist
+		size = 150
+	}
+
+	farmers = {
+		culture = maori
+		religion = animist
+		size = 9000
+	}
+	
+	farmers = {
+		culture = berrian
+		religion = catholic
+		size = 500
+	}
+}
+#Hokitikia (4000/1000 POPS)
+2514 = {
+	aristocrats = {
+		culture = maori
+		religion = animist
+		size = 100
+	}
+
+	clergymen = {
+		culture = maori
+		religion = animist
+		size = 250
+	}
+
+	artisans = {
+		culture = maori
+		religion = animist
+		size = 500
+	}
+
+	soldiers = {
+		culture = maori
+		religion = animist
+		size = 150
+	}
+
+	farmers = {
+		culture = maori
+		religion = animist
+		size = 9000
+	}
+	
+	farmers = {
+		culture = berrian
+		religion = catholic
+		size = 500
+	}
+}
+#Christchurch (4000/1000 POPS)
+2515 = {
+	aristocrats = {
+		culture = maori
+		religion = animist
+		size = 250
+	}
+
+	clergymen = {
+		culture = maori
+		religion = animist
+		size = 500
+	}
+
+	artisans = {
+		culture = maori
+		religion = animist
+		size = 1000
+	}
+
+	soldiers = {
+		culture = maori
+		religion = animist
+		size = 500
+	}
+
+	farmers = {
+		culture = maori
+		religion = animist
+		size = 17750
+	}
+	
+	farmers = {
+		culture = berrian
+		religion = catholic
+		size = 500
+	}
+}
+#Nelson (12000/3000 POPS)
+2516 = {
+	aristocrats = {
+		culture = maori
+		religion = animist
+		size = 250
+	}
+
+	clergymen = {
+		culture = maori
+		religion = animist
+		size = 750
+	}
+
+	artisans = {
+		culture = maori
+		religion = animist
+		size = 1500
+	}
+
+	soldiers = {
+		culture = maori
+		religion = animist
+		size = 750
+	}
+
+	farmers = {
+		culture = maori
+		religion = animist
+		size = 26750
+	}
+	
+	farmers = {
+		culture = berrian
+		religion = catholic
+		size = 500
+	}
+}

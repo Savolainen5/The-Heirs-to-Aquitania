@@ -1,0 +1,14 @@
+army = {
+	name = "Armata del Ducat"
+	location = 470
+	regiment = {
+		name = "1. Enfantaria"
+		type = infantry
+		home = 470
+	}
+	regiment = {
+		name = "2. Enfantaria"
+		type = infantry
+		home = 472
+	}
+}

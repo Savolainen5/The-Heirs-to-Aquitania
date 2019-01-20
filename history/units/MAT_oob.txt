@@ -1,0 +1,21 @@
+GAZ = {
+	value = 20
+}
+
+XHO = {
+	value = 50
+}
+
+SUA = {
+	value = 50
+}
+
+army = {
+	name = "Royal Mthwakazi Army"
+	location = 2108
+	regiment = {
+		name= "King's Warriors"
+		type = irregular
+		home = 2108
+	}
+}

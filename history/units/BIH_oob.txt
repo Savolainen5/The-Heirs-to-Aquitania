@@ -1,0 +1,39 @@
+army = {
+	name = "Army of the Raja of Bihar"
+	location = 1248
+	regiment = {
+		name = "1 Regiment"
+		type = irregular
+		home = 1248
+	}
+	regiment = {
+		name = "2 Regiment"
+		type = irregular
+		home = 1251
+	}
+	regiment = {
+		name = "3 Regiment"
+		type = irregular
+		home = 1253
+	}
+	regiment = {
+		name = "4 Regiment"
+		type = irregular
+		home = 1251
+	}
+	regiment = {
+		name = "5 Regiment"
+		type = irregular
+		home = 1251
+	}
+	regiment = {
+		name = "6 Regiment"
+		type = irregular
+		home = 1249
+	}
+	regiment = {
+		name = "1 Cavalry"
+		type = cavalry
+		home = 1249
+	}
+}

@@ -1,0 +1,8 @@
+owner = FIN
+controller = FIN
+add_core = FIN
+
+add_core = LAT
+trade_goods = grain
+life_rating = 35
+

@@ -1,0 +1,24 @@
+army = {
+	name = "Army of Navarra"
+	location = 493
+	regiment = {
+		name = "1st Regiment"
+		type = infantry
+		home = 460
+	}
+	regiment = {
+		name = "2nd Regiment"
+		type = infantry
+		home = 492
+	}
+	regiment = {
+		name = "Navarrese Hussars"
+		type = hussar
+		home = 492
+	}
+	regiment = {
+		name = "Basque Artillery"
+		type = artillery
+		home = 493
+	}
+}

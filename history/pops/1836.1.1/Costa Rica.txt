@@ -1,0 +1,111 @@
+#Costa Rica Region (84000)
+#Ruled by Central America 1836
+#San Jose (52000/13000 POPS)
+2201 = {
+	aristocrats = {
+		culture = mellomsk
+		religion = protestant
+		size = 400
+	}
+
+	bureaucrats = {
+		culture = mellomsk
+		religion = protestant
+		size = 100
+	}
+
+	officers = {
+		culture = mellomsk
+		religion = protestant
+		size = 50
+	}
+
+	clergymen = {
+		culture = mellomsk
+		religion = protestant
+		size = 255
+	}
+
+	artisans = {
+		culture = mellomsk
+		religion = protestant
+		size = 1350
+	}
+
+	soldiers = {
+		culture = mellomsk
+		religion = protestant
+		size = 1125
+	}
+
+	farmers = {
+		culture = mellomsk
+		religion = protestant
+		size = 23725
+	}
+}
+#Liberia (20000/5000 POPS)
+2202 = {
+	aristocrats = {
+		culture = mellomsk
+		religion = protestant
+		size = 450
+	}
+
+	clergymen = {
+		culture = mellomsk
+		religion = protestant
+		size = 250
+	}
+
+	artisans = {
+		culture = mellomsk
+		religion = protestant
+		size = 1250
+	}
+
+	soldiers = {
+		culture = mellomsk
+		religion = protestant
+		size = 250
+	}
+
+	farmers = {
+		culture = mellomsk
+		religion = protestant
+		size = 24500
+	}
+}
+#Limon (12000/3000 POPS)
+2203 = {
+	aristocrats = {
+		culture = mellomsk
+		religion = protestant
+		size = 300
+	}
+
+	clergymen = {
+		culture = mellomsk
+		religion = protestant
+		size = 500
+	}
+
+	artisans = {
+		culture = mellomsk
+		religion = protestant
+		size = 1500
+	}
+
+	soldiers = {
+		culture = mellomsk
+		religion = protestant
+		size = 250
+	}
+
+	farmers = {
+		culture = mellomsk
+		religion = protestant
+		size = 27000
+	}
+
+}

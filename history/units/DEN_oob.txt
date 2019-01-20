@@ -1,0 +1,145 @@
+
+SWE = { value = -55 truce_until = "1838.1.12" }
+
+army = {
+	name = "Danske Haeren"
+	location = 372
+	regiment = {
+		name= "1.1. Infanteridivision"
+		type = infantry
+		home = 372
+	}
+
+	regiment = {
+		name= "2.1. Infanteridivision"
+		type = infantry
+		home = 372
+	}
+
+	regiment = {
+		name= "3.1. Infanteridivision"
+		type = infantry
+		home = 373
+	}
+	
+	regiment = {
+		name= "1.2. Infanteridivision"
+		type = infantry
+		home = 366
+	}
+
+	regiment = {
+		name= "2.2. Infanteridivision"
+		type = infantry
+		home = 366
+	}
+
+	regiment = {
+		name= "3.2. Infanteridivision"
+		type = infantry
+		home = 372
+	}
+	
+	regiment = {
+		name= "1.1. Artilleridivision"
+		type = artillery
+		home = 372
+	}
+	
+	regiment = {
+		name= "1.2. Artilleridivision"
+		type = artillery
+		home = 530
+	}
+	
+	regiment = {
+		name= "1.3. Artilleridivision"
+		type = artillery
+		home = 373
+	}
+
+	regiment = {
+		name= "1.1. Kavalleridivision"
+		type = dragoon
+		home = 373
+	}
+
+}
+
+navy = {
+	name = "Royal Navy"
+	location = 372
+	ship = {
+		name= "Danmark"
+		type = manowar
+	}
+
+	ship = {
+		name= "Dronning Marie"
+		type = manowar
+	}
+
+	ship = {
+		name= "Frederik den sjette"
+		type = manowar
+	}
+
+
+	ship = {
+		name= "Bellona"
+		type = frigate
+	}
+
+	ship = {
+		name= "Diana"
+		type = frigate
+	}
+
+	ship = {
+		name= "Freja"
+		type = frigate
+	}
+
+	ship = {
+		name= "Fylla"
+		type = frigate
+	}
+	
+	ship = {
+		name= "1st Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2nd Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3rd Transport Flotilla"
+		type = clipper_transport
+	}
+
+}
+
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+	
+	befriend = { id="NOR" value=20 }
+	befriend = { id="FIN" value=90 }
+	befriend = { id="RUS" value=45 }
+	befriend = { id="HOL" value=200 }
+	befriend = { id="AEN" value=20 }
+	
+	protect = { id="HOL" value=200 }
+	
+	threat = { id="SWE" value=150 }
+	threat = { id="POL" value=50 }
+	
+	antagonize = { id="SWE" value = 150 }
+}

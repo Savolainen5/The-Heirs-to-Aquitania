@@ -1,0 +1,1289 @@
+#Event IDs 50250-50299 reserved for the Low Countries
+# New Brabant Purchase 1/3 - Events 50250-50252
+country_event = {
+	id = 50250
+	title = "EVTNAME50250" #the New Brabant Purchase
+	desc = "EVTDESC50250"
+	picture = "senate_debate"
+	
+	trigger = {
+		BRB = {
+			war = no
+			any_owned_province = {
+				region = AST_1097
+			}
+		}
+		NOT = {
+			has_global_flag = new_brabant_purchase_process_global
+			has_global_flag = new_brabant_purchase_completed
+			has_country_flag = refused_new_brabant
+			any_owned_province = { is_core = BRB }
+			truce_with = BRB
+		}
+		OR = {
+			relation = { who = BRB value = 0 }
+			alliance_with = BRB
+		}
+		#is_greater_power = yes
+		war = no
+		state_n_government = 1
+		has_country_flag = new_brabant_purchase_interest
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.8
+			alliance_with = BRB
+		}
+		modifier = {
+			factor = 0.8
+			relation = { who = BRB value = 100 }
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { relation = { who = BRB value = 50 } }
+		}
+		modifier = {
+			factor = 0.1
+			year = 1865
+		}
+	}
+	
+	immediate = {
+		set_global_flag = new_brabant_purchase_process_global
+	}
+	
+	option = {
+		name = "Make the offer."
+		treasury = -2500
+		BRB = { country_event = 50251 }
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0.1
+				NOT = { money = 1000 }
+			}
+		}
+	}
+	
+	option = {
+		name = "We don't need it."
+		clr_country_flag = new_brabant_purchase_interest
+		set_country_flag = refused_new_brabant
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 2
+				NOT = { money = 1000 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50251
+	title = "EVTNAME50251" #the New Brabant Purchase
+	desc = "EVTDESC50251"
+	picture = "senate_debate"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Sell it."
+		set_global_flag = new_brabant_purchase_completed
+		prestige = 10
+		treasury = 2500
+		AST_1097 = { remove_core = BRB }
+		FROM = { country_event = 50252 }
+		ai_chance = {
+			factor = 75
+#			modifier = {
+#				factor = 100
+#				has_global_flag = railroading_on
+#			}
+		}
+	}
+	
+	option = {
+		name = "Refuse, but find another buyer."
+		clr_global_flag = new_brabant_purchase_process_global
+		FROM = {
+			clr_country_flag = new_brabant_purchase_interest
+			country_event = 50253
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = BRB }
+				NOT = { has_country_flag = refused_new_brabant }
+				OR = {
+					is_greater_power = yes
+					is_secondary_power = yes
+				}
+				any_owned_province = {
+					OR = {
+						region = ENG_2468
+						region = ENG_2509
+						region = NET_1446
+						region = NET_1413
+						region = SPA_1463
+						region = NET_1447
+					}
+				}					
+			}
+			set_country_flag = new_brabant_purchase_interest
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	option = {
+		name = "We have changed our mind. The New Brabant Islands are not for sale."
+		prestige = -10
+		AST_1097 = { add_core = BRB }
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 50252
+	title = "Brabant Agrees"
+	desc = "Brabant has agreed to the sale. The New Brabant Islands is ours!"
+	picture = "senate_debate"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We welcome this new addition."
+		prestige = 10
+		AST_1097 = { add_core = THIS }
+		1097 = { secede_province = THIS }
+		2535 = { secede_province = THIS }
+		2508 = { secede_province = THIS }
+	}
+}
+
+country_event = {
+	id = 50253
+	title = "Brabant Refuses"
+	desc = "The talks with Brabant have broken down. They refuse to sell the New Brabant islands to us."
+	picture = "senate_debate"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "How disappointing."
+		prestige = -5
+		treasury = 2500
+		relation = { who = BRB value = -25 }
+	}
+}
+
+###########################################################################################################
+#Treaty of Twist - Event received by Netherlands after the proposition, whose decision is found in HtA_GER#
+###########################################################################################################
+country_event = {
+	id = 50254
+	title = "EVTNAME50254"
+	desc = "EVTDESC50254"
+	picture = "administration"
+	
+	is_triggered_only = yes
+	
+	immediate = { set_global_flag = treaty_of_twist }
+	
+	option = {
+		name = "Emden is not worth the tension it may cause."
+		prestige = 3
+		BRA = {
+			country_event = {
+				id = 50255
+				days = 1
+			}
+		}
+		relation = {
+			who = BRA
+			value = 50
+		}
+		set_country_flag = treaty_of_twist_yes
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.2
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 1.5
+				BRA = { brigades_compare = 1.5 }
+			}
+			modifier = {
+				factor = 1.5
+				average_militancy = 6
+			}
+		}
+	}
+	
+	option = {
+		name = "Emden shall remain Dutch."
+		prestige = 3
+		BRA = {
+			country_event = {
+				id = 50256
+				days = 1
+			}
+		}
+		relation = {
+			who = BRA
+			value = -50
+		}
+		set_country_flag = treaty_of_twist_no
+		543 = { remove_core = OLD remove_core = BRA }
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				BRA = { NOT = { brigades_compare = 0.66 } }
+			}
+			modifier = {
+				factor = 1.5
+				is_greater_power = yes
+			}
+		}
+	}
+}
+
+#Netherlands agrees to sign the Treaty of Twist - event received by Brunswick
+country_event = {
+	id = 50255
+	title = "EVTNAME50255"
+	desc = "EVTDESC50255"
+	picture = "administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent, they have our thanks!"
+		543 = {
+			secede_province = BRA
+			remove_core = NET
+		}
+		relation = {
+			who = NET
+			value = 50
+		}
+	}
+}
+
+#Netherlands refuses to sign the Treaty of Twist - event received by Brunswick
+country_event = {
+	id = 50256
+	title = "EVTNAME50256"
+	desc = "EVTDESC50256"
+	picture = "administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Unfortunate, but maybe it's for the best."
+		relation = {
+			who = NET
+			value = 20
+		}
+		badboy = -3
+		prestige = -3
+		
+		ai_chance = {
+			factor = 4
+		}
+	}
+	
+	option = {
+		name = "Unbelievable!"
+		prestige = -1
+		relation = {
+			who = NET
+			value = -50
+		}
+		
+		ai_chance = {
+			factor = 4
+		}
+	}
+	
+	option = {
+		name = "This cannot stand!"
+		set_country_flag = stupid_NET_y_u_no_give_emden
+		relation = {
+			who = NET
+			value = -100
+		}
+		add_casus_belli = {
+			target = NET
+			type = cut_down_to_size
+			months = 24
+		}
+		
+		ai_chance = {
+			factor = 2
+		}
+	}
+}
+
+#Event to change cores from NET to BRA if NET refuses the treaty but loses it in a subsequent war against Brunswick
+country_event = {
+	id = 50257
+	title = "EVTNAME50257"
+	desc = "EVTDESC50257"
+	picture = "croatia_issue"
+	
+	trigger = {
+		tag = BRA
+		543 = {
+			owned_by = THIS
+			NOT = { is_core = THIS }
+			is_core = NET
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "May it ever remain German."
+		prestige = 4
+		badboy = 1
+		543 = {
+			add_core = THIS
+			remove_core = NET
+		}
+	}
+}
+
+#Event to remove NET cores if NET refuses the treaty but loses it in a subsequent war against Germany
+country_event = {
+	id = 50258
+	title = "EVTNAME50257"
+	desc = "EVTDESC50257"
+	picture = "croatia_issue"
+	
+	trigger = {
+		OR = {
+			tag = GER
+			tag = NGF
+			tag = BRC
+		}
+		543 = {
+			owned_by = THIS
+			is_core = GER
+			is_core = NET
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "May it ever remain German."
+		prestige = 2
+		badboy = 1
+		543 = {
+			remove_core = NET
+		}
+	}
+}
+
+##################################################################################################
+#########Emden Accords with GER/NGF/BRC############# Triggered by decision in HtA_Low_Countries ##
+
+#The Dutch propose a meeting over Emden
+country_event = {
+	id = 50259
+	title = "EVTNAME50259"
+	desc = "EVTDESC50259"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will negotiate."
+		NET = {
+			country_event = {
+				id = 50260
+				days = 1
+			}
+		}
+		relation = {
+			who = NET
+			value = 20
+		}
+		
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Emden is ours, end of story."
+		NET = {
+			country_event = {
+				id = 50261
+				days = 1
+			}
+		}
+		relation = {
+			who = NET
+			value = -30
+		}
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#The Germans will Attend
+country_event = {
+	id = 50260
+	title = "EVTNAME50260"
+	desc = "EVTDESC50260"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Offer them monetary compensation."
+		FROM = {
+			country_event = {
+				id = 50262
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				NOT = { money = 15000 }
+			}
+		}
+	}
+	option = {
+		name = "Offer them Oostkaap."
+		FROM = {
+			country_event = {
+				id = 50263
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	option = {
+		name = "Offer them Mauritius and Hemelvaart."
+		FROM = {
+			country_event = {
+				id = 50264
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+#The Germans will not attend
+country_event = {
+	id = 50261
+	title = "EVTNAME50261"
+	desc = "EVTDESC50261"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This bodes ill."
+		set_global_flag = no_emden_accords
+	}
+}
+
+#The Dutch offer us money
+country_event = {
+	id = 50262
+	title = "EVTNAME50262"
+	desc = "EVTDESC50262"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Accept their kind offer."
+		FROM = {
+			country_event = {
+				id = 50265
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 20
+		}
+	}
+	option = {
+		name = "No, Oostkaap better."
+		FROM = {
+			country_event = {
+				id = 50266
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 2
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	option = {
+		name = "No, Mauritius and Hemelvaart are the best."
+		FROM = {
+			country_event = {
+				id = 50267
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 35
+		}
+	}
+}
+
+#The Dutch offer us Oostkaap
+country_event = {
+	id = 50263
+	title = "EVTNAME50263"
+	desc = "EVTDESC50263"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Accept their kind offer."
+		FROM = {
+			country_event = {
+				id = 50269
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 2
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	option = {
+		name = "No, compensation is better."
+		FROM = {
+			country_event = {
+				id = 50268
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = {
+		name = "No, Mauritius and Hemelvaart are the best."
+		FROM = {
+			country_event = {
+				id = 50278
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 35
+		}
+	}
+}
+
+#The Dutch offer us Mauritius and Hemelvaart
+country_event = {
+	id = 50264
+	title = "EVTNAME50264"
+	desc = "EVTDESC50264"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Accept their kind offer."
+		FROM = {
+			country_event = {
+				id = 50270
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 35
+		}
+	}
+	option = {
+		name = "No, Oostkaap is better."
+		FROM = {
+			country_event = {
+				id = 50277
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	option = {
+		name = "No, compensation is the best."
+		FROM = {
+			country_event = {
+				id = 50279
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 15
+		}
+	}
+}
+
+#The Germans accept compensation
+country_event = {
+	id = 50265
+	title = "EVTNAME50265"
+	desc = "EVTDESC50265"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "An excellent solution!"
+		money = -15000
+		FROM = {
+			country_event = {
+				id = 50271
+				days = 1
+			}
+		}
+	}
+}
+
+#The Germans demand Oostkaap instead of money
+country_event = {
+	id = 50266
+	title = "EVTNAME50266"
+	desc = "EVTDESC50266"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Oh, very well!"
+		FROM = {
+			country_event = {
+				id = 50272
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	option = {
+		name = "No, we will not give them Oostkaap."		
+		FROM = {
+			country_event = {
+				id = 50274	#The Dutch refuse: Money or nothing
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+#The Germans demand Mauritius and Hemelvaart instead of money
+country_event = {
+	id = 50267
+	title = "EVTNAME50267"
+	desc = "EVTDESC50267"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Oh, very well!"
+		FROM = {
+			country_event = {
+				id = 50273
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 70
+		}
+	}
+	option = {
+		name = "No, we will not give them Mauritius and Hemelvaart."
+		FROM = {
+			country_event = {
+				id = 50274	#The Dutch refuse: Money or nothing
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+#The Germans demand compensation instead of Oostkaap
+country_event = {
+	id = 50268
+	title = "EVTNAME50268"
+	desc = "EVTDESC50268"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Oh, very well!"
+		FROM = {
+			country_event = {
+				id = 50271
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				NOT = { money = 15000 }
+			}
+		}
+	}
+	
+	option = {
+		name = "No, we cannot afford such an expense."		#Add an event for them to accept the original offer
+		FROM = {
+			country_event = {
+				id = 50276	#The Dutch refuse: Oostkaap or nothing
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 75
+		}
+	}
+}
+
+#The Germans demand Oostkaap instead of Mauritius and Hemelvaart
+country_event = {
+	id = 50277
+	title = "EVTNAME50277"
+	desc = "EVTDESC50277"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Oh, very well!"
+		FROM = {
+			country_event = {
+				id = 50272
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 2.5
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "No, we will not give them Oostkaap."		#Add an event for them to accept the original offer
+		FROM = {
+			country_event = {
+				id = 50275	#The Dutch refuse: Mauritius and Hemelvaart or nothing
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0.4
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+#The Germans demand Mauritius and Hemelvaart instead of Oostkaap
+country_event = {
+	id = 50278
+	title = "EVTNAME50278"
+	desc = "EVTDESC50278"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Oh, very well!"
+		FROM = {
+			country_event = {
+				id = 50273
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 70
+		}
+	}
+	option = {
+		name = "No, we will not give them Mauritius and Hemelvaart."		#Add an event for them to accept the original offer
+		FROM = {
+			country_event = {
+				id = 50276	#The Dutch refuse: Oostkaap or nothing
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+#The Germans demand compensation instead of Mauritius and Hemelvaart
+country_event = {
+	id = 50279
+	title = "EVTNAME50279"
+	desc = "EVTDESC50279"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Oh, very well!"
+		FROM = {
+			country_event = {
+				id = 50271
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { money = 15000 }
+			}
+		}
+	}
+	option = {
+		name = "No, we cannot afford such an expense."		#Add an event for them to accept the original offer
+		FROM = {
+			country_event = {
+				id = 50275	#The Dutch refuse: Mauritius and Hemelvaart or nothing
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+#The Germans accept Oostkaap
+country_event = {
+	id = 50269
+	title = "EVTNAME50269"
+	desc = "EVTDESC50269"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "An excellent solution!"
+		FROM = {
+			country_event = {
+				id = 50272
+				days = 1
+			}
+		}
+	}
+}
+
+#The Germans accept Mauritius and Hemelvaart
+country_event = {
+	id = 50270
+	title = "EVTNAME50270"
+	desc = "EVTDESC50270"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "An excellent solution!"
+		FROM = {
+			country_event = {
+				id = 50273
+				days = 1
+			}
+		}
+	}
+}
+
+#The Dutch accept the deal - compensation
+country_event = {
+	id = 50271
+	title = "EVTNAME50271"
+	desc = "EVTDESC50271"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great news!"
+		money = 15000
+		543 = { remove_core = GER }
+		relation = {
+			who = FROM
+			value = 25
+		}
+		set_global_flag = emden_accords_concluded
+	}
+}
+
+#The Dutch accept the deal - Oostkaap
+country_event = {
+	id = 50272
+	title = "EVTNAME50272"
+	desc = "EVTDESC50272"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great news!"
+		prestige = 5
+		2100 = { secede_province = THIS change_controller = THIS remove_core = SAF }
+		2099 = { secede_province = THIS change_controller = THIS remove_core = SAF }
+		2098 = { secede_province = THIS change_controller = THIS remove_core = SAF }
+		543 = { remove_core = GER }
+		relation = {
+			who = FROM
+			value = 25
+		}
+		set_global_flag = emden_accords_concluded
+	}
+}
+
+#The Dutch accept the deal - Mauritius and Hemelvaart
+country_event = {
+	id = 50273
+	title = "EVTNAME50272"
+	desc = "EVTDESC50273"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great news!"
+		prestige = 2
+		2130 = { secede_province = THIS }
+		2125 = { secede_province = THIS }
+		543 = { remove_core = GER }
+		relation = {
+			who = FROM
+			value = 25
+		}
+		set_global_flag = emden_accords_concluded
+	}
+}
+
+#The Dutch refuse - Money or nothing
+country_event = {
+	id = 50274
+	title = "EVTNAME50274"
+	desc = "EVTDESC50274"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Very well, take the original offer."
+		prestige = -1
+		relation = {
+			who = FROM
+			value = -10
+		}
+		FROM = { country_event = 50265 }
+		
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "Unbelievable. Abandon the negotiations."
+		relation = {
+			who = FROM
+			value = -25
+		}
+		FROM = {
+			country_event = {
+				id = 50280		#The Germans abandon the accord talks
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { relation = { who = NET value = 50 } }
+			}
+			modifier = {
+				factor = 1.3
+				NOT = { relation = { who = NET value = 0 } }
+			}
+		}
+	}
+}
+
+#The Dutch refuse - Mauritius and Hemelvaart or nothing
+country_event = {
+	id = 50275
+	title = "EVTNAME50275"
+	desc = "EVTDESC50275"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Very well, take the original offer."
+		prestige = -2
+		relation = {
+			who = FROM
+			value = -10
+		}
+		FROM = { country_event = 50270 }
+		
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "Unbelievable. Abandon the negotiations."
+		relation = {
+			who = FROM
+			value = -25
+		}
+		FROM = {
+			country_event = {
+				id = 50280		#The Germans abandon the accord talks
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { relation = { who = NET value = 50 } }
+			}
+			modifier = {
+				factor = 1.3
+				NOT = { relation = { who = NET value = 0 } }
+			}
+		}
+	}
+}
+
+#The Dutch refuse - Oostkaap or nothing
+country_event = {
+	id = 50276
+	title = "EVTNAME50276"
+	desc = "EVTDESC50276"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Very well, take the original offer."
+		prestige = -2
+		relation = {
+			who = FROM
+			value = -10
+		}
+		FROM = { country_event = 50269 }
+		
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "Unbelievable. Abandon the negotiations."
+		relation = {
+			who = FROM
+			value = -25
+		}
+		FROM = {
+			country_event = {
+				id = 50280		#The Germans abandon the accord talks
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 1.1
+				NOT = { relation = { who = NET value = 50 } }
+			}
+			modifier = {
+				factor = 1.3
+				NOT = { relation = { who = NET value = 0 } }
+			}
+		}
+	}
+}
+
+#The Germans abandon the accord talks
+country_event = {
+	id = 50280
+	title = "EVTNAME50280"
+	desc = "EVTDESC50280"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "How unfortunate."
+		prestige = 1
+		relation = {
+			who = FROM
+			value = -40
+		}
+		set_global_flag = emden_accords_abandoned
+	}
+}
+
+#Event for Germany: Set a country modifier when in a war in whcih the target is Emden
+#Event: Emden is no longer German (after a war in which they fail to take it) (makes use of the above modifier)
+
+#############################################
+# End Emden Events ##########################
+#############################################
+#############################################
+
+
+#Event to remove cores for BRB. Taken from /gsg/Vickymod and modified
+country_event = {
+	
+	id = 993516
+	title = "The Duchy of Brabant"
+	desc = "Brabant as a real political entity has not existed in years and whatever legitimacy it once held is long gone."
+	picture = "treaty"
+	
+	trigger = {
+		tag = NET
+		BRB = {
+			exists = no
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	option = {
+		name = "Good."
+		prestige = 3
+		BEL_394 = {
+			remove_core = BRB
+		}
+		NET_379 = {
+			remove_core = BRB
+		}
+	}
+}

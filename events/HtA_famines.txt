@@ -1,0 +1,154 @@
+#Some of the 50800-50849 block is here
+#Poor Harvest 1
+country_event = {
+	id = 50840
+	title = "EVTNAME50840"
+	desc = "EVTDESC50840"
+
+	trigger = {
+		NOT = { has_country_modifier = poor_harvest has_country_modifier = normal_harvest }
+		NOT = {
+			check_variable = {
+				which = poor_harvest
+				value = 0
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 1.5
+			year = 1870
+		}
+		modifier = {
+			factor = 1.5
+			year = 1890
+		}
+		modifier = {
+			factor = 2
+			year = 1910
+		}
+		modifier = {
+			factor = 0.9
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 0.9
+			num_of_cities = 30
+		}
+		modifier = {
+			factor = 0.9
+			num_of_cities = 40
+		}
+		modifier = {
+			factor = 0.9
+			num_of_cities = 50
+		}
+	}
+	
+	option = {
+		name = "Alas!"
+		add_country_modifier = {
+			name = poor_harvest
+			duration = 365
+		}
+		set_variable = {
+			which = poor_harvest
+			value = 0
+		}
+		change_variable = {
+			which = poor_harvest
+			value = 1
+		}
+	}
+}
+
+#Poor Harvest 2
+country_event = {
+	id = 50841
+	title = "EVTNAME50841"
+	desc = "EVTDESC50841"
+
+	trigger = {
+		NOT = { has_country_modifier = poor_harvest }
+		NOT = {
+			check_variable = {
+				which = poor_harvest
+				value = 2
+			}
+		}
+		check_variable = {
+			which = poor_harvest
+			value = 1
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 1.5
+			year = 1870
+		}
+		modifier = {
+			factor = 1.5
+			year = 1890
+		}
+		modifier = {
+			factor = 2
+			year = 1910
+		}
+		modifier = {
+			factor = 0.15
+			check_variable = {
+				which = poor_harvest
+				value = 1
+			}
+		}
+	}
+	
+	option = {
+		name = "Not again!"
+		add_country_modifier = {
+			name = poor_harvest
+			duration = 365
+		}
+		change_variable = {
+			which = poor_harvest
+			value = 1
+		}
+	}
+}
+
+#No more poor harvests
+country_event = {
+	id = 50842
+	title = "EVTNAME50842"
+	desc = " EVTDESC50842"
+	
+	trigger = {
+		NOT = {
+			has_country_modifier = poor_harvest
+		}
+		check_variable = {
+			which = poor_harvest
+			value = 1
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Hurrah!"
+		set_country_variable = {
+			which = poor_harvest
+			value = 0
+		}
+		add_country_modifier = {
+			name = normal_harvest
+			duration = 365
+		}
+	}
+}

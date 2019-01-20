@@ -1,0 +1,531 @@
+# The Revolution of Maria de Fonte events
+country_event = {
+
+	id = 97000
+	title = "EVTNAME97000" #The Revolution of Maria de Fonte
+	desc = "EVTDESC97000"
+	news = yes
+	news_desc_long = "EVTDESC97000"
+	news_desc_medium = "EVTDESC97000_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC97000_NEWS_SHORT"
+	picture = "streetriot"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		government = hms_government
+		has_global_flag = liberal_revolution_somewhere
+		NOT = { ruling_party_ideology = reactionary }
+		NOT = {
+			has_country_flag = liberal_revolution_in_progress
+			has_country_modifier = springtime_of_nations
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.8
+			militancy = 2
+		}
+		modifier = {
+			factor = 0.8
+			militancy = 3
+		}
+		modifier = {
+			factor = 0.8
+			militancy = 4
+		}
+		modifier = {
+			factor = 0.8
+			consciousness = 4
+		}
+	}
+
+	option = {
+		name = "This will come to nothing."
+		set_country_flag = maria_de_fonte_revolution
+		random_owned = {
+			limit = {
+				is_colonial = no
+				is_capital = no
+				has_pop_type = farmers
+			}
+			add_province_modifier = {
+				name = peasant_revolt
+				duration = 1095
+			}
+			farmers = {
+				ideology = {
+					value = reactionary
+					factor = 0.5
+				}
+				consciousness = -2
+				militancy = 8
+			}
+		}
+	}
+}
+
+province_event = {
+	
+	id = 97001
+	title = "EVTNAME97001" #Peasant Revolt
+	desc = "EVTDESC97001"
+	
+	trigger = {
+		owner = {
+			tag = POR
+			has_country_flag = maria_de_fonte_revolution
+			government = hms_government
+			NOT = { ruling_party_ideology = reactionary }
+		}
+		is_capital = no
+		is_colonial = no
+		NOT = { has_province_modifier = peasant_revolt }
+		any_neighbor_province = { has_province_modifier = peasant_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "That is not going to happen."
+		add_province_modifier = {
+			name = peasant_revolt
+			duration = 365
+		}
+		poor_strata = {
+			ideology = {
+				value = reactionary
+				factor = 0.3
+			}
+			consciousness = -2
+			militancy = 6
+		}
+	}
+}
+
+country_event = {
+	
+	id = 97002
+	title = "EVTNAME97002" #End of the Revolution
+	desc = "EVTDESC97002"
+	picture = "administration"
+
+	trigger = {
+		tag = POR
+		has_country_flag = maria_de_fonte_revolution
+	}
+
+	mean_time_to_happen = {
+		months = 36
+		modifier = {
+			factor = 1.5
+			num_of_revolts = 1
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { government = hms_government }
+		}
+		modifier = {
+			factor = 0.1
+			ruling_party_ideology = reactionary
+		}
+	}
+	
+	immediate = {
+		clr_country_flag = maria_de_fonte_revolution
+	}
+
+	option = {
+		name = "I told you it would come to nothing."
+		prestige = 10
+		any_owned = {
+			limit = { has_province_modifier = peasant_revolt }
+			remove_province_modifier = peasant_revolt
+		}
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+			}
+			militancy = -6
+			consciousness = 1
+		}
+	}
+}
+
+country_event = {
+
+	id = 97003
+	title = "EVTNAME97003" #The Emboscada
+	desc = "EVTDESC97003"
+	news = yes
+	news_desc_long = "EVTDESC97000_NEWS_LONG"
+	news_desc_medium = "EVTDESC97000_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC97000_NEWS_SHORT"
+	picture = "Lola"
+
+	trigger = {
+		tag = POR
+		has_country_flag = maria_de_fonte_revolution
+		any_owned_province = { has_province_modifier = peasant_revolt }
+		government = hms_government
+		NOT = { ruling_party_ideology = reactionary }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			num_of_revolts = 1
+		}
+		modifier = {
+			factor = 0.1
+			capital_scope = { controlled_by_rebels = yes }
+		}
+	}
+	
+	immediate = {
+		clr_country_flag = maria_de_fonte_revolution
+	}
+
+	option = {
+		name = "There may be trouble ahead."
+		prestige = -5
+		ruling_party_ideology = reactionary
+		political_reform = appointed
+		political_reform = harassment
+		government = prussian_constitutionalism
+		clr_country_flag = tory_election_win
+		clr_country_flag = socialist_election_win
+		clr_country_flag = liberal_election_win
+		clr_country_flag = communist_election_win
+		clr_country_flag = fascist_election_win
+		set_country_flag = reactionary_election_win
+		clr_country_flag = anarcho_liberal_election_win
+		clr_country_flag = social_liberal_election_win
+		remove_country_modifier = expert_diplomat
+		remove_country_modifier = successful_industrialist
+		remove_country_modifier = ivory_tower_intellectual
+		remove_country_modifier = man_of_the_people
+		remove_country_modifier = landed_gentleman
+		remove_country_modifier = military_man
+		remove_country_modifier = lord_admiral
+		remove_country_modifier = raving_loon
+		remove_country_modifier = luddite
+		remove_country_modifier = great_statesman
+		remove_country_modifier = backroom_boy
+		remove_country_modifier = great_reformer
+		remove_country_modifier = gauche_buffoon
+		remove_country_modifier = administrative_genius
+		remove_country_modifier = visionary_thinker
+		remove_country_modifier = competent_placeholder
+		remove_country_modifier = imperious_autocrat
+		remove_country_modifier = prince_of_terror
+		remove_country_modifier = efficient_sociopath
+		remove_country_modifier = pig_headed_isolationist
+		remove_country_modifier = ambitious_union_boss
+		remove_country_modifier = dour_economist
+		add_country_modifier = {
+			name = national_confusion
+			duration = 365
+		}
+		any_owned = {
+			limit = { has_province_modifier = peasant_revolt }
+			remove_province_modifier = peasant_revolt
+		}
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = 8
+			}
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 4
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -8
+			}
+		}
+		soldiers = { militancy = -4 }
+	}
+}
+
+country_event = {
+	id = 97008
+	title = "Zanzibar Purchase"
+	desc = "$FROMCOUNTRY$ has offered to sell the Zanzibar coast to our current colonial administration in Tanganyika. It seems like a reasonable deal."
+	picture = "treaty"
+
+	is_triggered_only = yes	
+	
+	option = {
+		name = "Accept the offer."
+		prestige = 5
+		relation = {
+			who = FROM
+			value = 20
+		}
+		money = -100000
+		FROM = {
+			money = 100000
+			any_owned = {
+				limit = {
+					OR = {
+						region = ENG_2036
+						region = ENG_2039
+					}
+				}
+				secede_province = THIS
+			}
+		}
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0
+				NOT = { money = 100000 }
+			}
+		}
+	}
+	
+	option = {
+		name = "Reject the offer."
+		prestige = -5
+		relation = {
+			who = FROM
+			value = -15
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}	
+}
+
+country_event = {
+	id = 97009
+	title = "Mombasa Purchase"
+	desc = "$FROMCOUNTRY$ has offered to sell the Mombasa coast to our current colonial administration in Kenya. It seems like a reasonable deal."
+	picture = "treaty"
+
+	is_triggered_only = yes	
+	
+	option = {
+		name = "Accept the offer."
+		prestige = 5
+		relation = {
+			who = FROM
+			value = 20
+		}
+		money = -100000
+		FROM = {
+			money = 100000
+			any_owned = {
+				limit = {
+					region = ENG_2024
+				}
+				secede_province = THIS
+			}
+		}
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0
+				NOT = { money = 100000 }
+			}
+		}
+	}
+	
+	option = {
+		name = "Reject the offer."
+		prestige = -5
+		relation = {
+			who = FROM
+			value = -15
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}	
+}
+
+#Republican Takeover of Portugal
+country_event = {
+
+	id = 97015
+	title = "EVTNAME97015" #Regicide of King Carlos I
+	desc = "EVTDESC97015"
+	news = yes
+	news_desc_long = "EVTDESC97015_NEWS_LONG"
+	news_desc_medium = "EVTDESC97015_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC97015_NEWS_SHORT"
+	picture = "Assassination_fail"
+
+	trigger = {
+		tag = POR
+		year = 1905
+		is_greater_power = no
+		government = hms_government
+		NOT = {
+			has_country_flag = regicide_king_carlos
+			year = 1915
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 50
+		modifier = {
+			factor = 0.9
+			average_militancy = 2
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 0.7
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.6
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.5
+			average_militancy = 6
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 0.9
+			average_consciousness = 7
+		}
+		modifier = {
+			factor = 1.2
+			war = yes
+		}
+	}
+
+	option = {
+		name = "A national tragedy!"
+		set_country_flag = regicide_king_carlos
+		prestige = -2
+		add_country_modifier = {
+			name = national_confusion
+			duration = 365
+		}
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = 4
+			}
+		}
+	}
+}
+
+country_event = {
+	
+	id = 97020
+	title = "EVTNAME97020" #The Republican Coup D'Etat
+	desc = "EVTDESC97020"
+	news = yes
+	news_desc_long = "EVTDESC97020_NEWS_LONG"
+	news_desc_medium = "EVTDESC97020_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC97020_NEWS_SHORT"
+	picture = "Fascist"
+	major = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		has_country_flag = regicide_king_carlos
+		is_greater_power = no
+		government = hms_government
+		NOT = { year = 1915 }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.8
+			militancy = 3
+		}
+		modifier = {
+			factor = 0.8
+			militancy = 4
+		}
+		modifier = {
+			factor = 0.8
+			militancy = 5
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { militancy = 2 }
+		}
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+	}
+
+	option = {
+		name = "Long live the Republic!"
+		prestige = -10
+		ruling_party_ideology = liberal
+		government = democracy
+		political_reform = universal_weighted_voting
+		political_reform = population_equal_weight
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = non_socialist
+		political_reform = gerrymandering
+		clr_country_flag = tory_election_win
+		clr_country_flag = socialist_election_win
+		set_country_flag = liberal_election_win
+		clr_country_flag = communist_election_win
+		clr_country_flag = fascist_election_win
+		clr_country_flag = reactionary_election_win
+		clr_country_flag = anarcho_liberal_election_win
+		clr_country_flag = social_liberal_election_win
+		clr_country_flag = maria_de_fonte_revolution
+		remove_country_modifier = expert_diplomat
+		remove_country_modifier = successful_industrialist
+		remove_country_modifier = ivory_tower_intellectual
+		remove_country_modifier = man_of_the_people
+		remove_country_modifier = landed_gentleman
+		remove_country_modifier = military_man
+		remove_country_modifier = lord_admiral
+		remove_country_modifier = raving_loon
+		remove_country_modifier = luddite
+		remove_country_modifier = great_statesman
+		remove_country_modifier = backroom_boy
+		remove_country_modifier = great_reformer
+		remove_country_modifier = gauche_buffoon
+		remove_country_modifier = administrative_genius
+		remove_country_modifier = visionary_thinker
+		remove_country_modifier = competent_placeholder
+		remove_country_modifier = imperious_autocrat
+		remove_country_modifier = prince_of_terror
+		remove_country_modifier = efficient_sociopath
+		remove_country_modifier = pig_headed_isolationist
+		remove_country_modifier = ambitious_union_boss
+		remove_country_modifier = dour_economist
+		add_country_modifier = {
+			name = national_confusion
+			duration = 365
+		}
+		country_event = 800054
+	}
+}

@@ -1,0 +1,10 @@
+owner = NET
+controller = NET
+add_core = TKG
+trade_goods = fish
+life_rating = 35
+colonial = 2
+
+
+
+#NB - this is now moved to a trade port near Nagasaki in Japan

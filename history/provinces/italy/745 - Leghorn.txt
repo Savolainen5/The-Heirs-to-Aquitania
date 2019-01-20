@@ -1,0 +1,7 @@
+owner = TUS
+controller = TUS
+add_core = TUS
+trade_goods = fish
+life_rating = 35
+
+

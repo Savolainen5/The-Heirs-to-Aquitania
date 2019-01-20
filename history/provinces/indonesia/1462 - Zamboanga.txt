@@ -1,0 +1,7 @@
+owner = NET
+controller = NET
+add_core = PHL
+trade_goods = iron
+life_rating = 30
+colonial = 2
+

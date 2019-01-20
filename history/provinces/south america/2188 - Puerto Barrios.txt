@@ -1,0 +1,6 @@
+owner = YUC
+controller = YUC
+add_core = YUC
+trade_goods = fruit
+life_rating = 30
+

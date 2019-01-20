@@ -1,0 +1,587 @@
+
+country_event = {
+
+	id = 33003 #parallel event is BAY 33403
+	news = yes
+	news_desc_long = "EVTDESC33403_NEWS_LONG"
+	news_desc_medium = "EVTDESC33403_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC33403_NEWS_SHORT"
+
+	trigger = {
+		tag = GER
+		year = 1875
+		nationalism_n_imperialism = 1 #has the nationalism tech
+		owns = 598 #Bayreuth
+		NOT = {
+			exists = BAV
+			year = 1885
+			has_global_flag = RichardWagner
+		}
+	}
+ 
+	mean_time_to_happen =  {
+		months = 6
+
+		modifier = {
+			factor = 0.85 #increase likelihood to happen
+			year = 1876
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1877
+		}
+	}
+
+	title = "EVTNAME33403"
+	desc = "EVTDESC33403"
+	picture = "wagner"
+
+	option = {
+		name = "EVTOPTA33403" 
+		prestige = 10
+		treasury = -200
+		set_global_flag = RichardWagner
+	}
+}
+
+province_event = {
+
+	id = 33004 #will set up DAN36206
+	news = yes
+	news_desc_long = "EVTDESC33004_NEWS_LONG"
+	news_desc_medium = "EVTDESC33004_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC33004_NEWS_SHORT"
+
+	trigger = {
+		province_id = 371 #Aabenra/North Schleswig
+		owned_by = GER
+		year = 1896
+		culture = danish
+		NOT = {
+			year = 1899
+			has_global_flag = GermanizeSchlewsigDanes
+			has_global_flag = NOGermanizeSchlewsigDanes
+			}
+		}
+ 
+	mean_time_to_happen =  {
+		months = 6
+
+		modifier = {
+			factor = 0.85 #increase likelihood to happen
+			year = 1897
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1898
+		}
+	}
+
+	title = "EVTNAME33004"
+	desc = "EVTDESC33004"
+
+	option = {
+		name = "EVTOPTA33004" 
+		any_pop = {
+			limit = {
+				has_pop_culture = danish
+			}
+			militancy = 2
+		}
+		DEN = { country_event = 36206 }
+		set_global_flag = GermanizeSchlewsigDanes
+	}
+
+	option = {
+		name = "EVTOPTB33004" 
+		any_pop = {
+			dominant_issue = {
+				value = jingoism
+				factor = 0.1
+			}
+		}
+		relation = { who = DEN value = 100 }
+		set_global_flag = NOGermanizeSchlewsigDanes
+	}
+}
+
+country_event = {
+
+	id = 33000
+	news = yes
+	news_desc_long = "EVTDESC33000_NEWS_LONG"
+	news_desc_medium = "EVTDESC33000_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC33000_NEWS_SHORT"
+
+	trigger = {
+		tag = GER
+		year = 1916
+		NOT = {
+			year = 1920
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1917
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1918
+		}
+	}
+
+	title = "EVTNAME33000"
+	desc = "EVTDESC33000"
+	picture = "theatre"
+
+	option = {
+		name = "EVTOPTA33000" 
+		prestige = 1
+	}
+
+}
+
+country_event = {
+
+	id = 33001
+	news = yes
+	news_desc_long = "EVTDESC33001_NEWS_LONG"
+	news_desc_medium = "EVTDESC33001_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC33001_NEWS_SHORT"
+
+	trigger = {
+		tag = GER
+		year = 1874
+		NOT = {
+			year = 1877
+			}	
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1875
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1876
+		}
+	}
+
+	title = "EVTNAME33001"
+	desc = "EVTDESC33001"
+	picture = "Circus"
+
+	option = {
+		name = "EVTOPTA33001" 
+		prestige = 1
+		any_pop = {
+			consciousness = 1
+		}
+	}
+}
+
+country_event = {
+
+	id = 33002
+	news = yes
+	news_desc_long = "EVTDESC33002_NEWS_LONG"
+	news_desc_medium = "EVTDESC33002_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC33002_NEWS_SHORT"
+
+	trigger = {
+		tag = GER
+		year = 1880
+		NOT = {
+			year = 1883
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1881
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1882
+		}
+	}
+
+	title = "EVTNAME33002"
+	desc = "EVTDESC33002"
+	picture = "School"
+
+	option = {
+		name = "EVTOPTA33002" 
+		prestige = 5
+	}
+
+}
+
+#German East Africa
+country_event = {
+	id = 33030
+	title = "EVTNAME33030" #The German East Africa Company
+	desc = "EVTDESC33030"
+	picture = "scramble_for_africa"
+	
+	trigger = {
+		OR = {
+			tag = NGF
+			tag = GER
+			tag = BRC
+		}
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+		is_greater_power = yes
+		invention = prophylaxis_against_malaria
+		invention = mission_to_civilize
+		invention = colonial_negotiations
+		has_global_flag = berlin_conference
+		NOT = { has_country_flag = german_east_africa_company }
+		ZAN = {
+			war = no
+			civilized = no
+			any_owned_province = {
+				OR = {
+					region = ENG_2024
+					region = ENG_2036
+					region = ENG_2039
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 25
+		modifier = {
+			factor = 0.5
+			is_sphere_leader_of = ZAN
+		}
+		modifier = {
+			factor = 0.5
+			year = 1885
+		}
+		modifier = {
+			factor = 0.5
+			year = 1888
+		}
+		modifier = {
+			factor = 2
+			NOT = { is_sphere_leader_of = ZAN }
+			ZAN = { part_of_sphere = yes }
+		}
+	}
+	
+	option = {
+		name = "Claim the coast as a $COUNTRY_ADJ$ colony."
+		set_country_flag = german_east_africa_company
+		badboy = 3
+		ZAN = { country_event = 33031 }
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0
+				badboy = 0.88
+			}
+		}		
+	}
+	
+	option = {
+		name = "We have no interest in this."
+		set_country_flag = german_east_africa_company
+		badboy = -1
+		relation = { who = ZAN value = 100 }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 3
+				any_owned_province = { continent = africa }
+			}
+			modifier = {
+				factor = 3
+				NOT = { is_sphere_leader_of = ZAN }
+				ZAN = { part_of_sphere = yes }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 33031
+	title = "EVTNAME33031" #German Warships
+	desc = "EVTDESC33031"
+	picture = "scramble_for_africa"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "An outrage! We refuse!"
+		clr_country_flag = delay_unciv_annexation
+		prestige = 5
+		relation = { who = FROM value = -200 }
+		add_casus_belli = {
+			target = FROM
+			type = demand_concession_BC_casus_belli
+			months = 60
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 5
+				part_of_sphere = yes
+			}
+			modifier = {
+				factor = 4
+				any_greater_power = { alliance_with = THIS }
+				NOT = { alliance_with = FROM }
+			}
+			modifier = {
+				factor = 0
+				in_sphere = FROM
+			}
+		}
+	}
+	
+	option = {
+		name = "It seems we have no choice."
+		clr_country_flag = delay_unciv_annexation
+		prestige = -5
+		FROM = { prestige = 5 }
+		relation = { who = FROM value = 400 }
+		FROM = { diplomatic_influence = { who = THIS value = 50 } }
+		any_owned = {
+			limit = {
+				OR = {
+					region = ENG_2024
+					region = ENG_2036
+					region = ENG_2039
+				}
+				NOT = { province_id = 2048 }
+			}
+			secede_province = FROM
+		}
+		any_country = {
+			limit = {
+				civilized = yes
+				OR = {
+					alliance_with = THIS
+					is_sphere_leader_of = THIS
+				}
+				NOT = { tag = FROM }
+			}
+			casus_belli = {
+				target = FROM
+				type = place_in_the_sun
+				months = 12
+			}
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+}
+
+country_event = {
+	id = 33035
+	title = "The New Challenger"
+	desc = "A new contender for the German Confederation leadership has arisen!"
+	picture = "greatpowers"
+	
+	trigger = {
+		ai = yes
+		war = no
+		is_culture_group = germanic
+		nationalism_n_imperialism = 1
+		OR = {
+			capital = 549
+			capital = 619
+		}
+		any_greater_power = {
+			is_culture_group = germanic
+			NOT = { capital = 549 }
+			NOT = { capital = 619 }
+			OR = {
+				alliance_with = THIS
+				relation = { who = THIS value = 0 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "Unacceptable!"
+		random_country = {
+			limit = {
+				is_greater_power = yes
+				is_culture_group = germanic
+				NOT = { capital = 549 }
+				NOT = { capital = 619 }
+				OR = {
+					alliance_with = THIS
+					relation = { who = THIS value = 0 }
+				}
+			}
+			leave_alliance = THIS
+			relation = { who = THIS value = -100 }
+		}
+	}
+}
+
+country_event = {
+	id = 330353
+	title = "The Annexation of Baltic States"
+	desc = "The pro-German leadership of our Baltic puppet is petitioning for annexation into the German nation, how should we respond?"
+	picture = "greatpowers"
+	
+	trigger = {
+		war = no
+		tag = GER
+		UBD = {
+			vassal_of = THIS
+			primary_culture = north_german
+		}
+		NOT = { has_country_flag = balticannex }
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.9
+			UBD = {
+				ruling_party_ideology = conservative
+			}
+		}
+		modifier = {
+			factor = 0.8
+			UBD = {
+				ruling_party_ideology = reactionary
+			}
+		}			
+	}
+	
+	option = {
+		name = "Glorious! Send the troops!"
+		prestige = 25
+		UBD = {
+			all_core = {
+				add_core = GER
+				remove_core = UBD
+			}
+		}
+		inherit = UBD
+		set_country_flag = balticannex
+		ai_chance = {
+			factor = 70
+		}		
+	}
+
+	option = {
+		name = "Maintain the status quo"
+		prestige = -20
+		diplomatic_influence = {
+			who = UBD
+			value = -100
+		}
+		relation = {
+			who = UBD
+			value = -100
+		}
+		set_country_flag = balticannex
+		ai_chance = {
+			factor = 30
+		}		
+	}	
+	
+}
+
+country_event = {
+	id = 330354
+	title = "The Baltic States"
+	desc = "The Baltic States have been reunited under our rule, but who shall be the rulers of this new state?"
+	picture = "greatpowers"
+	
+	trigger = {
+		war = no
+		UBD = {
+			vassal_of = THIS
+			NOT = { primary_culture = north_german }
+		}
+		OR = {
+			tag = GER
+			tag = BRC
+			tag = NGF
+			tag = SGF
+			tag = AUS
+		}
+		NOT = { has_country_flag = balticruler }
+	}
+	
+	mean_time_to_happen = {
+		months = 1		
+	}
+	
+	option = {
+		name = "The Germans shall rule of course"
+		set_country_flag = balticruler
+		UBD = {
+			primary_culture = north_german
+		}
+		ai_chance = {
+			factor = 70
+		}		
+	}
+
+	option = {
+		name = "Give power to the Lithuanians"
+		set_country_flag = balticruler
+		UBD = {
+			primary_culture = lithuanian
+			add_accepted_culture = latvian
+		}
+		ai_chance = {
+			factor = 10
+		}		
+	}
+
+	option = {
+		name = "I like the Latvians, so they can be in charge"
+		set_country_flag = balticruler
+		UBD = {
+			primary_culture = latvian
+			add_accepted_culture = lithuanian
+		}
+		ai_chance = {
+			factor = 20
+		}		
+	}		
+}

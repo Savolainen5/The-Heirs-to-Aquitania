@@ -1,0 +1,40 @@
+capital = 46
+primary_culture = iroquois
+religion = animist
+government = absolute_monarchy
+plurality = 0.05
+nationalvalue = nv_tradition
+literacy = 0.17
+
+# Political reforms
+
+slavery = no_slavery
+upper_house_composition = appointed
+vote_franschise = none_voting
+public_meetings = yes_meeting
+press_rights = state_press
+trade_unions = no_trade_unions
+voting_system = first_past_the_post
+political_parties = underground_parties
+
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
+
+health_care = no_health_care
+unemployment_subsidies = no_subsidies
+pensions = no_pensions 
+school_reforms = no_schools
+
+ruling_party = IRO_conservative_3
+upper_house = {
+	fascist = 0
+	liberal = 6
+	conservative = 82
+	reactionary = 12
+	anarcho_liberal = 0
+	socialist = 0
+	communist = 0
+}
+
+oob = "IRO_oob.txt"

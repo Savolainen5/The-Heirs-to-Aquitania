@@ -1,0 +1,23 @@
+BAD = {
+	value = -175
+}
+BAV = {
+	value = -175
+}
+WUR = {
+	value = -175
+}
+army = {
+	name = "Armee von Bremen"
+	location = 539
+	regiment = {
+		name = "I Bremenische Infanterie"
+		type = infantry
+		home = 539
+	}
+	regiment = {
+		name = "II Bremenische Infanterie"
+		type = infantry
+		home = 531
+	}
+}

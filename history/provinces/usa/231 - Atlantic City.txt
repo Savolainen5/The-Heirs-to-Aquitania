@@ -1,0 +1,12 @@
+owner = VST
+controller = VST
+add_core = VST
+trade_goods = fish
+life_rating = 35
+state_building = {
+	level = 2 
+	building = canned_food_factory
+	upgrade = yes
+}
+
+

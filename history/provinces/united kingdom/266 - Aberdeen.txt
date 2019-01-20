@@ -1,0 +1,11 @@
+owner = SCO
+controller = SCO
+add_core = SCO
+trade_goods = wool
+life_rating = 35
+naval_base = 1
+state_building = {
+	level = 2 
+	building = fertilizer_factory
+	upgrade = yes
+}

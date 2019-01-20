@@ -1,0 +1,6 @@
+owner = USR
+controller = USR
+add_core = USR
+trade_goods = grain
+life_rating = 25
+

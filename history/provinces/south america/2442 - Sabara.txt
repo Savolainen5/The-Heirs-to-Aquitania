@@ -1,0 +1,7 @@
+owner = USR
+controller = USR
+add_core = USR
+add_core = LTS
+trade_goods = coffee
+life_rating = 35
+

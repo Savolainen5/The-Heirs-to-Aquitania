@@ -1,0 +1,6 @@
+owner = MDT
+controller = MDT
+add_core = MDT
+trade_goods = coffee
+life_rating = 30
+

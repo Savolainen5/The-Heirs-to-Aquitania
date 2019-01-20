@@ -1,0 +1,93 @@
+army = {
+	name = "1. Infanterie Divisie"
+	location = 387 #Brussels
+	regiment = {
+		name= "1. Infanterie Brigade"
+		type = infantry
+		home = 387 #Brussels
+	}
+
+	regiment = {
+		name= "2. Infanterie Brigade"
+		type = infantry
+		home = 388 #Bruges
+	}
+
+	regiment = {
+		name= "3. Infanterie Brigade"
+		type = infantry
+		home = 389 #Ghent
+	}
+
+	regiment = {
+		name= "1. Artillerie Brigade"
+		type = artillery
+		home = 379 #Eindhoven
+	}
+
+}
+
+army = {
+	name = "2. Infanterie Division"
+	location = 396 #Spa
+	regiment = {
+		name= "4. Infanterie Brigade"
+		type = infantry
+		home = 390 #Antwerp
+	}
+
+	regiment = {
+		name= "5. Infanterie Brigade"
+		type = infantry
+		home = 379 #Eindhoven
+	}
+
+	regiment = {
+		name= "6. Infanterie Brigade"
+		type = infantry
+		home = 378 #Middelberg
+	}
+
+}
+
+army = {
+	name = "1. Cavalerie Divisie"
+	location = 395 #Namur
+	regiment = {
+		name= "1er Cavalerie Brigade"
+		type = dragoon
+		home = 387 #Brussels
+	}
+
+	regiment = {
+		name= "2eme Cavalerie Brigade"
+		type = cuirassier
+		home = 381 #Limburg
+	}
+
+	regiment = {
+		name= "3e Cavalerie Brigade"
+		type = cuirassier
+		home = 391 #Hasselt
+	}
+
+}
+
+navy = {
+	name = "Brabantische Koninklijk Marine"
+	location = 388
+	ship = {
+		name= "1. Transport Flottille"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2. Transport Flotille"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3. Transport Flotille"
+		type = clipper_transport
+	}
+}

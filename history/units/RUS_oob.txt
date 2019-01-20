@@ -1,0 +1,135 @@
+SML = {
+	value = -180
+	level = 0
+}
+
+army = {
+	name = "Army Corps of the Guard"
+	location = 1008
+	regiment = {
+		name= "1.1-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 1008
+	}
+
+	regiment = {
+		name= "2.1-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 1020
+	}
+
+	regiment = {
+		name= "3.1-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 1026
+	}
+
+	regiment = {
+		name= "1.2-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 1031
+	}
+
+	regiment = {
+		name= "2.2-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 1009
+	}
+
+	regiment = {
+		name= "3.2-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 1022
+	}
+
+	regiment = {
+		name= "1.1-ya Gvardeiskaya Artilleriskaya Diviziya"
+		type = artillery
+		home = 1013
+	}
+
+	regiment = {
+		name= "2.1-ya Gvardeiskaya Artilleriskaya Diviziya"
+		type = artillery
+		home = 1028
+	}
+
+	regiment = {
+		name= "3.1-ya Gvardeiskaya Artilleriskaya Diviziya"
+		type = artillery
+		home = 1006
+	}
+}
+
+army = {
+	name = "Guards Cavalry Corps"
+	location = 1030
+	regiment = {
+		name= "1.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
+		type = dragoon
+		home = 998
+	}
+
+	regiment = {
+		name= "2.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
+		type = dragoon
+		home = 999
+	}
+
+	regiment = {
+		name= "3.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
+		type = dragoon
+		home = 991
+	}
+
+	regiment = {
+		name= "4.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
+		type = cuirassier
+		home = 1029
+	}
+}
+
+
+navy = {
+	name = "Imperial Fleet"
+	location = 981
+	ship = {
+		name= "Dvenadtsat' Apostolov"
+		type = manowar
+	}
+	
+	ship = {
+		name= "Ratnyi"
+		type = manowar
+	}
+
+	ship = {
+		name= "Hiagudil"
+		type = manowar
+	}
+
+	ship = {
+		name= "Paraskevia"
+		type = manowar
+	}
+
+	ship = {
+		name= "Borislav"
+		type = frigate
+	}
+
+}
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	threat = { id="SML" value=400 }
+
+	antagonize = { id="SML" value=400 }
+
+	rival = { id="SML" value=400 }
+}

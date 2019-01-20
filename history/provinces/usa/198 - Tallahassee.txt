@@ -1,0 +1,8 @@
+owner = MRG
+controller = MRG
+add_core = MRG
+trade_goods = cotton
+life_rating = 35
+is_slave = yes
+naval_base = 1
+

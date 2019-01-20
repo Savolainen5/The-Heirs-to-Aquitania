@@ -1,0 +1,7 @@
+owner = MAJ
+controller = MAJ
+add_core = GEL
+add_core = MAJ
+trade_goods = grain
+life_rating = 15
+

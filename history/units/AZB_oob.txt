@@ -1,0 +1,39 @@
+army = {
+	name = "Army of the Shah of Azerbaijan"
+	location = 1102
+	regiment = {
+		name = "1st Infantry"
+		type = infantry
+		home = 1052
+	}
+	regiment = {
+		name = "2nd Infantry"
+		type = infantry
+		home = 1053
+	}
+	regiment = {
+		name = "1st Warriors"
+		type = irregular
+		home = 1055
+	}
+	regiment = {
+		name = "2nd Warriors"
+		type = irregular
+		home = 1056
+	}
+	regiment = {
+		name = "3rd Warriors"
+		type = irregular
+		home = 1108
+	}
+	regiment = {
+		name = "1st Cavalry"
+		type = cavalry
+		home = 1057
+	}
+	regiment = {
+		name = "2nd Cavalry"
+		type = cavalry
+		home = 1052
+	}
+}

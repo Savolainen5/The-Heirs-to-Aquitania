@@ -1,0 +1,339 @@
+political_decisions = {
+
+#Formally create the Padan Union
+	PDN_create = {
+		picture = court_yard_speech
+		potential = {
+			tag = LOM
+			has_country_flag = padan_conference
+			GEN = { has_country_flag = padan_conference }
+			MOD = { has_country_flag = padan_conference }
+			VEN = { has_country_flag = padan_conference }
+			NOT = { has_global_flag = PDN_created }
+		}
+		
+		allow = {
+			prestige = 5
+		}
+		
+		effect = {
+			change_tag = PDN
+			set_global_flag = PDN_created
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = LOM
+						is_core = GEN
+						is_core = MOD
+						is_core = VEN
+					}
+				}
+				add_core = PDN
+				remove_core = LOM
+				remove_core = GEN
+				remove_core = MOD
+				remove_core = VEN
+			}
+			prestige = 5
+		}
+	}
+
+#Other countries join
+	PDN_join = {
+		picture = conference1
+		potential = {
+			OR = {
+				tag = VEN
+				tag = GEN
+				tag = MOD
+			}
+			has_global_flag = padan_conference_concluded
+			has_global_flag = PDN_created
+			NOT = { has_country_flag = joined_PDN }
+		}
+
+		allow = {
+			prestige = 1
+		}
+
+		effect = {
+			set_country_flag = joined_PDN
+			all_core = {
+				limit = { is_core = THIS }
+				add_core = PDN
+				remove_core = THIS
+			}
+			random_country = {
+				limit = {
+					tag = PDN
+					ai = yes
+					THIS = { ai = yes }
+				}
+				inherit = THIS
+			}
+			random_country = {
+				limit = {
+					tag = PDN
+					ai = yes
+					THIS = { ai = no }
+				}
+				any_owned = { secede_province = THIS }
+				THIS = {
+					random_owned = {
+						limit = { province_id = 726 }
+						owner = { capital = 726 }
+					}
+					change_tag = PDN
+				}
+			}
+			random_country = {
+				limit = {
+					tag = PDN
+					ai = no
+					THIS = { ai = yes }
+				}
+				inherit = THIS
+			}	
+		}
+	}
+
+	#The Matter of Venice, in case Bavaria takes Venice, as Crushric so often seems to do
+	claim_venice_PDN = {
+		picture = Venice_panorama
+		potential = {
+			tag = PDN
+			729 = { NOT = { is_core = THIS } }
+			730 = { NOT = { is_core = THIS } }
+			731 = { NOT = { is_core = THIS } }
+			732 = { NOT = { is_core = THIS } }
+			733 = { NOT = { is_core = THIS } }
+			734 = { NOT = { is_core = THIS } }
+			NOT = { has_country_flag = claim_venice_PDN }
+		}
+
+		allow = {
+			war = no
+			729 = { NOT = { is_core = THIS } }
+			730 = { NOT = { is_core = THIS } }
+			731 = { NOT = { is_core = THIS } }
+			732 = { NOT = { is_core = THIS } }
+			733 = { NOT = { is_core = THIS } }
+			734 = { NOT = { is_core = THIS } }
+		}
+
+		effect = {
+			prestige = 10
+			set_country_flag = claim_venice_PDN
+			729 = {
+				add_core = PDN
+				remove_core = VEN	
+			}
+			730 = {
+				add_core = PDN
+				remove_core = VEN	
+			}
+			731 = {
+				add_core = PDN
+				remove_core = VEN	
+			}
+			732 = {
+				add_core = PDN
+				remove_core = VEN	
+			}
+			733 = {
+				add_core = PDN
+				remove_core = VEN	
+			}
+			734 = {
+				add_core = PDN
+				remove_core = VEN	
+			}
+			736 = {
+				add_core = PDN
+				remove_core = VEN	
+			}
+			737 = {
+				add_core = PDN
+				remove_core = VEN	
+			}
+			770 = {
+				add_core = PDN
+				remove_core = VEN	
+			}
+			778 = {
+				add_core = PDN
+				remove_core = VEN	
+			}
+		}
+	}   
+	
+#Declaration of Mantua - PDN gains Free People CBs against NPL for TUS and adds core on RMG
+	declaration_of_mantua_ai = {
+		potential = {
+			tag = PDN
+			ai = yes
+			NOT = {
+				has_country_flag = declaration_of_mantua
+				RMG = {
+					any_core = {
+						OR = {
+							owned_by = RMG
+							owned_by = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		allow = {
+			OR = {
+				THIS = { military_score = NPL }
+				military_score = 20
+			}
+			year = 1849
+		}
+		
+		effect = {
+			set_country_flag = declaration_of_mantua
+			prestige = 5
+			badboy = 4
+			PAP_741 = {
+				add_core = THIS
+			}
+			casus_belli = {
+				target = NPL
+				type = free_peoples
+				months = 120
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { year = 1849 }
+			}
+		}
+	}
+
+	declaration_of_mantua = {
+		picture = corwin_amendment #or maybe something more regal?
+		potential = {
+			tag = PDN
+			ai = no
+			NOT = {
+				has_country_flag = declaration_of_mantua
+				RMG = {
+					any_core = {
+						OR = {
+							owned_by = RMG
+							owned_by = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		allow = {
+			NOT = {
+				relation = {
+					who = NPL
+					value = 0
+				}
+			}
+			year = 1849
+		}
+		
+		effect = {
+			set_country_flag = declaration_of_mantua
+			prestige = 5
+			badboy = 4
+			PAP_741 = {
+				add_core = THIS
+			}
+			casus_belli = {
+				target = NPL
+				type = free_peoples
+				months = 120
+			}
+			war = {
+				target = NPL
+				attacker_goal = {
+					casus_belli = acquire_core_state
+					state_province_id = 741
+				}
+			}
+		}
+	}
+#Invite Tuscany into the Union
+	invite_tuscany_PDN = {
+		picture = conference1
+		potential = {
+			tag = PDN
+			TUS = { exists = yes war = no}
+			NOT = { has_country_flag = TUS_in_PDN }
+		}
+		
+		allow = {
+			prestige = 5
+			relation = {
+				who = TUS
+				value = 150
+			}
+			TUS = {
+				OR = {
+					vassal_of = THIS
+					is_vassal = no
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 5
+			inherit = TUS
+			TUS = {
+				all_core = {
+					add_core = PDN
+					remove_core = TUS
+				}
+			}
+			set_country_flag = TUS_in_PDN
+		}
+	}
+	
+#Invite Romagna into the Union
+	invite_romagna_PDN = {
+		picture = conference1
+		potential = {
+			tag = PDN
+			RMG = { exists = yes war = no}
+			NOT = { has_country_flag = RMG_in_PDN }
+		}
+		
+		allow = {
+			prestige = 5
+			relation = {
+				who = RMG
+				value = 150
+			}
+			RMG = {
+				OR = {
+					vassal_of = THIS
+					is_vassal = no
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 5
+			inherit = RMG
+			RMG = {
+				all_core = {
+					add_core = PDN
+					remove_core = RMG
+				}
+			}
+			set_country_flag = RMG_in_PDN
+		}
+	}
+}

@@ -1,0 +1,179 @@
+AEN = {
+	value = -20
+	truce_until = "1837.6.12"
+}
+
+IRE = {
+	value = -175
+	truce_until = "1838.2.11"
+}
+
+army = {
+	name = "Armn'Alban"
+	location = 269
+	regiment = {
+		name = "1. Cor Cosite"
+		type = infantry
+		home = 267
+	}
+	regiment = {
+		name = "2. Cor Cosite"
+		type = infantry
+		home = 268
+	}
+	regiment = {
+		name = "3. Cor Cosite"
+		type = infantry
+		home = 269
+	}
+	regiment = {
+		name = "1. Cor Artléir"
+		type = artillery
+		home = 266
+	}
+	regiment = {
+		name = "1. Cor Marcra"
+		type = dragoon
+		home = 270
+	}
+}
+
+army = {
+	name = "Armn'Indinéis"
+	location = 1413
+	regiment = {
+		name = "1. Coilineach Resimint"
+		type = infantry
+		home = 1413
+	}
+	regiment = {
+		name = "2. Coilineach Resimint"
+		type = infantry
+		home = 1426
+	}
+	regiment = {
+		name = "3. Coilineach Resimint"
+		type = infantry
+		home = 1403
+	}
+	regiment = {
+		name = "4. Coilineach Resimint"
+		type = artillery
+		home = 1429
+	}
+	regiment = {
+		name = "5. Coilineach Resimint"
+		type = dragoon
+		home = 1413
+	}
+}
+
+navy = {
+	name = "Cablachn'Alba"
+	location =  269
+	ship = {
+		name = "Alba"
+		type = manowar
+	}
+	ship = {
+		name = "Orla"
+		type = manowar
+	}
+	ship = {
+		name = "Balor"
+		type = manowar
+	}
+	ship = {
+		name = "Ciara"
+		type = frigate
+	}
+	ship = {
+		name = "Roisin"
+		type = frigate
+	}
+	ship = {
+		name = "Emer"
+		type = frigate
+	}
+	ship = {
+		name = "1. Omparlong"
+		type = clipper_transport
+	}
+	ship = {
+		name = "2. Omparlong"
+		type = clipper_transport
+	}
+	ship = {
+		name = "3. Omparlong"
+		type = clipper_transport
+	}
+}
+	
+navy = {
+	name = "Cablachn'Indinéis"
+	location =  1413
+	ship = {
+		name = "Eithen"
+		type = manowar
+	}
+	ship = {
+		name = "Banba"
+		type = manowar
+	}
+	ship = {
+		name = "Niam"
+		type = frigate
+	}
+	ship = {
+		name = "Fola"
+		type = frigate
+	}
+	ship = {
+		name = "1. I. Omparlong"
+		type = clipper_transport
+	}
+	ship = {
+		name = "2. I. Omparlong"
+		type = clipper_transport
+	}
+}
+	
+navy = {
+	name = "Scaothn'Afraic"
+	location =  1884
+	ship = {
+		name = "Cilona"
+		type = frigate
+	}
+	ship = {
+		name = "Cináed macAlpin"
+		type = frigate
+	}
+}
+
+navy = {
+	name = "Scaoth na Socotra"
+	location =  1177
+	ship = {
+		name = "Bridei"
+		type = frigate
+	}
+	ship = {
+		name = "Abhainn Dubh"
+		type = frigate
+	}
+}
+
+
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	threat = { id="AEN" value=75 }
+
+	antagonize = { id="AEN" value=75 }
+}

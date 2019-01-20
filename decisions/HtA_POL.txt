@@ -1,0 +1,109 @@
+#Decisions for Poland
+political_decisions = {
+
+#Setup decision for Sejm
+	HtA_POL_setup = {
+		potential = {
+			tag = POL
+			NOT = { year = 1837 }
+			NOT = { has_country_modifier = sejm }
+		}
+		
+		allow = {
+			tag = POL
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = sejm
+				duration = -1
+			}
+		}
+	}
+	
+	
+	#Demand Brest
+	treaty_of_brest = {
+		picture = russian_building
+		potential = {
+			tag = POL
+			719 = { owned_by = SML }
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			NOT = { has_country_flag = demanded_brest }
+		}
+		
+		allow = {
+			SML = { war_with = RUS }
+			719 = { owned_by = SML }
+			war = no
+		}
+		
+		effect = {
+			SML = {
+				country_event = {
+					id = 50380 #in HtA_RUS
+					days = 1
+				}
+			}
+			set_country_flag = demanded_brest
+		}
+	}
+
+	#Incite the Byelorussians - come up with some inventive name for this
+	incite_byelorussians = {
+		picture = rebellious_minorities
+		potential = {
+			tag = POL
+			OR = {
+				has_country_flag = demanded_brest
+				year = 1850
+			}
+			exists = SML
+			neighbour = SML
+			OR = {
+				718 = { owned_by = SML }
+				940 = { owned_by = SML }
+			}
+			NOT = { has_country_flag = byelorussians_incited }
+		}
+		
+		allow = {
+			NOT = { 
+				relation = {
+					who = SML
+					value = 50
+				}
+			}
+		}
+		
+		effect = {
+			SML = {
+				country_event = {
+					id = 50383
+					days = 1
+				}
+			}
+			any_pop = {
+				limit = {
+					culture = byelorussian
+				}
+				militancy = 2
+				consciousness = 2
+			}
+			money = -5000
+			set_country_flag = byelorussians_incited
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { money = 5000 }
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,12 @@
+FRA = {
+	value = -65
+}
+army = {
+	name = "Force Orleanaise"
+	location = 438
+	regiment = {
+		name = "1e Regiment d'Infanteri"
+		type = infantry
+		home = 446
+	}
+}

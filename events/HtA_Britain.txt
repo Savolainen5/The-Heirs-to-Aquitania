@@ -1,0 +1,1254 @@
+#Events for the British Isles, called in HtA lore the "Northern Isles", reserved with 50100-50150 event IDs
+
+#The return of Monkceastre (in exchange for Man and an alliance)
+country_event = {
+	id = 50100
+	title = "EVTNAME50100"
+	desc = "EVTDESC50100"
+	picture = "monarchy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will sign the Treaty of Wyk!"
+		set_global_flag = treaty_of_wyk
+		set_country_flag = yes_wyk
+		SCO = {
+			country_event = {
+				id = 50101 
+				days = 2
+			}
+		}
+		
+		ai_chance = {
+			factor = 85
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We are not interested."
+		set_global_flag = no_treaty_of_wyk
+		set_country_flag = no_wyk
+		SCO = {
+			country_event = {
+				id = 50102 
+				days = 2
+			}
+		}
+		
+		ai_chance = {
+			factor = 15
+		}
+	}
+}
+
+#Aengland agrees
+country_event = {
+	id = 50101
+	title = "EVTNAME50101"
+	desc = "EVTDESC50101"
+	picture = "monarchy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "That's great news!"
+		prestige = 5
+		280 = {
+			remove_core = SCO
+			secede_province = AEN 
+		}
+		304 = {
+			remove_core = AEN
+			secede_province = SCO
+		}
+		create_alliance = AEN
+		relation = {
+			who = AEN
+			value = 200
+		}
+	}
+}
+
+#Aengland refuses
+country_event = {
+	id = 50102
+	title = "EVTNAME50102"
+	desc = "EVTDESC50102"
+	picture = "monarchy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Blast!"
+		prestige = -2
+		relation = {
+			who = AEN
+			value = -50
+		}
+	}
+}
+
+#IRE receives Glaschu Ultimatum
+country_event = {
+	id = 50103
+	title = "EVTNAME50103"
+	desc = "EVTDESC50103"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Return Glaschu to them."
+		prestige = -5
+		SCO = {
+			country_event = {
+				id = 50104
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.6
+				SCO = { alliance_with = AEN }
+			}
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "If they want it, they'll have to pay in blood!"
+		prestige = 2
+		SCO = {
+			country_event = {
+				id = 50105
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				war = yes
+				factor = 0.5
+			}
+		}
+	}
+}
+
+#Eire gives in
+country_event = {
+	id = 50104
+	title = "EVTNAME50104"
+	desc = "EVTDESC50104"
+	picture = "Celebration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "That's the power of diplomacy!"
+		prestige = 5
+		271 = { secede_province = SCO }
+		relation = {
+			who = IRE
+			value = 30
+		}
+	}
+}
+
+#Eire refuses to return Glaschu
+country_event = {
+	id = 50105
+	title = "EVTNAME50105"
+	desc = "EVTDESC50105"
+	picture = "supportwar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Then war it is."
+		war = {
+			target = IRE
+			attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 271
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = yes
+		}
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 1.2
+				alliance_with = AEN
+			}
+		}
+	}
+	
+	option = {
+		name = "We can't afford a war right now."
+		prestige = -5
+		relation = {
+			who = IRE
+			value = -100
+		}
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				war = yes
+			}
+			modifier = {
+				factor = 1.3
+				NOT = { alliance_with = AEN }
+			}
+		}
+	}
+}
+
+#Aengland demands integration
+country_event = {
+	id = 50106
+	title = "EVTNAME50106"
+	desc = "EVTDESC50106"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We have no choice..."
+		AEN = {
+			country_event = {
+				id = 50107
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.33
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We will not give up our freedom!"
+		prestige = 5
+		AEN = {
+			country_event = {
+				id = 50108
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 3
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+#Cyrmu accepts
+country_event = {
+	id = 50107
+	title = "EVTNAME50107"
+	desc = "EVTDESC50107"
+	picture = "battle_pavon"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great news!"
+		prestige = 3
+		WHA = { all_core = { add_core = THIS } }
+		inherit = WHA
+		add_accepted_culture = cymry
+	}
+}
+
+#Cyrmu refuses
+country_event = {
+	id = 50108
+	title = "EVTNAME50108"
+	desc = "EVTDESC50108"
+	picture = "battle_pavon"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Then we, too, must gather our armies!"
+		prestige = 3
+		WHA = { all_core = { add_core = THIS } }
+		release_vassal = WHA
+		relation = {
+			who = WHA
+			value = -300
+		}
+		diplomatic_influence = {
+			who = WHA
+			value = -300
+		}
+		leave_alliance = WHA
+		war = {
+			target = WHA
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+		}
+		add_accepted_culture = cymry
+	}
+	
+	option = {
+		name = "He has called our bluff."
+		prestige = -10
+		WHA = { prestige = 5 }
+		relation = {
+			who = WHA
+			value = -200
+		}
+		diplomatic_influence = {
+			who = WHA
+			value = -300
+		}
+		release_vassal = WHA
+		leave_alliance = WHA
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+
+#################################################################################################
+
+
+#Cod war start
+country_event = {
+	id = 50109
+	title = "EVTNAME50109"
+	desc = "EVTDESC50109"
+	picture = "ships_to_bangkok"
+	
+	trigger = {
+		owns = 269
+		owns = 267
+		OR = {
+			primary_culture = aenglisc
+			is_culture_group = celtic
+		}
+		ICL = {
+			OR = {
+				vassal_of = NOR
+				in_sphere = NOR
+			}
+		}
+		NOR = { war = no }
+		year = 1870
+		war = no
+		NOT = {
+			truce_with = NOR
+			truce_with = ICL
+			has_global_flag = cod_war_start
+		}			
+	}
+	
+	mean_time_to_happen = {
+		months = 15
+	}
+	
+	immediate = {
+		set_global_flag = cod_war_start
+	}
+	
+	option = {
+		name = "There is a diplomatic solution."
+		prestige = -10
+		relation = {
+			who = NOR
+			value = 50
+		}
+		
+		ai_chance = {
+			factor = 30
+		}
+	}
+	
+	option = {
+		name = "Demand compensation!"
+		NOR = {
+			country_event = {
+				id = 50110
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+#$FROMCOUNTRY$ demands compensation
+country_event = {
+	id = 50110
+	title = "EVTNAME50110"
+	desc = "EVTDESC50110"
+	picture = "ships_to_bangkok"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will give them just compensation."
+		prestige = -1
+		money = -5000
+		FROM = {
+			country_event = {
+				id = 50111
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 70
+		}
+	}
+	
+	option = {
+		name = "Refuse to compensate them."
+		prestige = 3
+		FROM = {
+			country_event = {
+				id = 50112
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+#Norway acquiesces
+country_event = {
+	id = 50111
+	title = "EVTNAME50111"
+	desc = "EVTDESC50111"
+	picture = "ships_to_bangkok"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This should help."
+		prestige = 3
+		money = 5000
+	}
+}
+
+#Norway refuses to compensate us
+country_event = {
+	id = 50112
+	title = "EVTNAME50112"
+	desc = "EVTDESC50112"
+	picture = "ships_to_bangkok"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Then we have no choice. To war!"
+		casus_belli = {
+			target = FROM
+			type = cut_down_to_size
+			months = 12
+		}
+		badboy = 2
+		war = {
+			target = FROM
+			attacker_goal = { casus_belli = cut_down_to_size }
+		}
+		
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We did our best..."
+		prestige = -3
+		
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#The End of Albina
+country_event = {
+	id = 50113
+	title = "EVTNAME50113"
+	desc = "EVTDESC50113"
+	picture = "chartists"
+	
+	trigger = {
+		tag = ABN
+		has_global_flag = albina_formed
+		OR = {
+			AND = {
+				273 = { NOT = { owned_by = THIS } }
+				299 = { NOT = { owned_by = THIS } }
+				is_greater_power = no
+			}
+			AND = {
+				267 = { NOT = { owned_by = THIS } }
+				269 = { NOT = { owned_by = THIS } }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Alas!"
+		change_tag = AEN
+		ABN = { all_core = { remove_core = ABN } }
+		ENG_277 = { add_core = AEN }
+		ENG_280 = { add_core = AEN }
+		ENG_284 = { add_core = AEN }
+		ENG_291 = { add_core = AEN }
+		ENG_296 = { add_core = AEN }
+		ENG_300 = { add_core = AEN }
+	}
+}
+
+#Event to set Aenglisc interest in the Albannach colonies
+country_event = {
+	id = 50114
+	title = "EVTNAME50114"
+	desc = "EVTDESC50114"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AEN
+		has_country_flag = alba_reclaimed
+		war_with = SCO
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.2
+			war_with = SCO
+		}
+	}
+	
+	option = {
+		name = "We want to reclaim the colonies of Alba."
+		set_country_flag = albannach_indonesia_interest
+		set_country_flag = claim_albannach_colonies
+	}
+	
+	option = {
+		name = "We have no interest in acquiring more colonies."
+		set_global_flag = albas_colonies_for_free
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Event to claim non-Indonesian colonies of Alba
+country_event = {
+	id = 50115
+	title = "EVTNAME50115"
+	desc = "EVTDESC50115"
+	
+	trigger = {
+		tag = AEN
+		has_country_flag = alba_reclaimed
+		has_country_flag = claim_albannach_colonies
+		OR = {
+			AND = {
+				war_with = SCO
+				OR = {
+					owns = 271
+					owns = 266
+				}
+			}
+			AND = {
+				owns = 271
+				owns = 266
+			}
+		}
+		NOT = { has_country_flag = albas_colonies_claimed }
+		NOT = { has_country_flag = albannach_indonesia_claimed }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Assemble the ships and make the claims."
+		set_country_flag = albas_colonies_claimed
+		SCO = {
+			any_owned = {
+				limit = {
+					OR = {
+						NOT = { continent = asia }
+						province_id = 1320
+						province_id = 1177
+					}
+					OR = {
+						NOT = { is_core = SCO }
+						is_colonial = yes
+					}
+				}
+				secede_province = AEN
+			}
+		}
+	}
+}
+######################End end of Alba events#################################
+
+#Captain strikes a deal with King of Comoros
+country_event = {
+	id = 50116
+	title = "EVTNAME50116"
+	desc = "EVTDESC50116"
+	picture = "sultan"
+	
+	trigger = {
+		OR = {
+			tag = IRE
+			AND = {
+				tag = AEN
+				NOT = { exists = IRE }
+			}
+			AND = {
+				tag = CLT
+				NOT = { exists = IRE }
+			}
+			AND = {
+				tag = ABN
+				NOT = { exists = IRE }
+			}
+		}
+		OR = {
+			is_secondary_power = yes
+			is_greater_power = yes
+		}
+		2123 = { empty = yes } #Comoros
+		total_amount_of_ships = 10
+		year = 1854
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+		modifier = {
+			factor = 0.1
+			2124 = { empty = no }
+		}
+	}
+	
+	option = {
+		name = "Commend him for his pluckishness!"
+		prestige = 1
+		2123 = { secede_province = THIS }
+	}
+}
+
+#Merchant strikes a deal with the King of Maore
+country_event = {
+	id = 50117
+	title = "EVTNAME50117"
+	desc = "EVTDESC50117"
+	picture = "sultan"
+	
+	trigger = {
+		OR = {
+			tag = AEN
+			tag = ABN
+			AND = {
+				OR = {
+					tag = IRE
+					tag = CLT
+				}
+				AEN = {
+					is_greater_power = no
+					is_secondary_power = no
+				}
+			}
+		}
+		OR = {
+			is_secondary_power = yes
+			is_greater_power = yes
+		}
+		2124 = { empty = yes } #Maore/Mayotte
+		total_amount_of_ships = 10
+		year = 1854
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+		modifier = {
+			factor = 0.1
+			2123 = { empty = no }
+		}
+	}
+	
+	option = {
+		name = "Promote that man!"
+		prestige = 1
+		2124 = { secede_province = THIS }
+	}
+}
+
+#Aenglisc defeat
+country_event = {
+	id = 50118
+	title = "EVTNAME50118"
+	desc = "EVTDESC50118"
+	picture = "parade"
+	
+	trigger = {
+		tag = SCO
+		war_with = AEN
+		300 = { controlled_by = SCO }
+		273 = { owned_by = AEN controlled_by = SCO }
+		299 = { owned_by = AEN controlled_by = SCO }
+		277 = { controlled_by = SCO }
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+	
+	option = {
+		name = "We welcome peace."
+		end_war = AEN
+		AEN = {
+			release = WHA
+			release = KER
+			prestige = -100
+			relation = {
+				who = WHA
+				value = -400
+			}
+			diplomatic_influence = {
+				who = WHA
+				value = -400
+			}
+			relation = {
+				who = KER
+				value = -400
+			}
+			diplomatic_influence = {
+				who = KER
+				value = -400
+			}
+		}
+		relation = {
+			who = WHA
+			value = 400
+		}
+		diplomatic_influence = {
+			who = WHA
+			value = 200
+		}
+		relation = {
+			who = KER
+			value = 400
+		}
+		diplomatic_influence = {
+			who = KER
+			value = 200
+		}
+		create_alliance = WHA
+		create_alliance = KER
+		WHA = { all_core = { remove_core = AEN } }
+		KER = { all_core = { remove_core = AEN } }
+		prestige = 50
+	}
+}
+
+#Eireann Potato famine		Removed in 0.35 because it doesn't make sense in this timeline after all
+#country_event = {
+#	id = 50119
+#	title = "EVTNAME50119"
+#	desc = "EVTDESC50119"
+#	picture = "famine"
+#	
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		tag = IRE
+#		year = 1845
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 4
+#	}
+#	
+#	immediate = {
+#		set_country_flag = potato_blight
+#	}
+#	
+#	option = {
+#		name = "Attempt to mitigate the problem."
+#		prestige = -1
+#		any_pop = {
+#			limit = {
+#				NOT = { strata = rich }
+#				location = {
+#					is_core = THIS
+#					continent = europe
+#				}
+#			}
+#			ideology = {
+#				factor = 0.1
+#				value = liberal
+##			}
+	#	}
+#		any_owned = {
+#			limit = {
+##				is_core = THIS
+#				continent = europe
+#			}
+#			add_province_modifier = {
+#				name = irish_potato_blight
+#				duration = 36
+#			}
+#		}
+#		
+#		ai_chance = {
+#			factor = 30
+#			modifier = {
+#				factor = 0
+#				has_global_flag = railroading_on
+#			}
+#		}
+#	}
+#	
+##	option = {
+#		name = "They'll get by. They always have."
+#		prestige = 1
+##		any_pop = {
+#			limit = {
+#				NOT = { strata = rich }
+#				location = {
+#					is_core = THIS
+#					continent = europe
+#				}
+#			}
+##			ideology = {
+#				factor = 0.2
+#				value = liberal
+#			}
+#		}
+#		any_owned = {
+#			limit = {
+#				is_core = THIS
+#				continent = europe
+#			}
+#			add_province_modifier = {
+#				name = irish_potato_blight
+#				duration = 72
+#			}
+#		}
+#		
+#		ai_chance = {
+#			factor = 70
+#			modifier = {
+#				factor = 100
+#				has_global_flag = railroading_on
+#			}
+#		}
+#	}
+#}
+#		
+#
+#Eireann Potato famine
+#country_event = {
+#	id = 50120
+#	title = "EVTNAME50120"
+#	desc = "EVTDESC50120"
+#	picture = "starving"
+#	
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		tag = IRE
+#		year = 1847
+#		has_country_flag = potato_blight
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 15
+###	}
+#	
+#	option = {
+#		name = "Let them eat cake."
+#		prestige = 5
+#		any_pop = {
+#			limit = {
+#				location = { continent = europe }
+#				strata = poor
+#			}
+#			militancy = 8
+#			consciousness = 5
+#		}
+#		any_pop = {
+#			limit = {
+#				location = { continent = europe }
+#				strata = middle
+#			}
+#			militancy = 3
+#			consciousness = 5
+#		}
+#		any_pop = {
+#			limit = {
+#				location = { continent = europe }
+#				strata = rich
+#			}
+##			militancy = -1
+#			consciousness = 2
+#		}
+#		
+#		ai_chance = {
+#			factor = 85
+#		}
+#	}
+#	
+#	option = {
+#		name = "Naturally, we must help the peasantry."
+#		prestige = -25
+#		any_pop = {
+#			limit = {
+#				location = { continent = europe }
+#				strata = poor
+#			}
+#			militancy = -5
+#			consciousness = 3
+#		}
+#		any_pop = {
+#			limit = {
+#				location = { continent = europe }
+#				strata = middle
+#			}
+#			militancy = -2
+#			consciousness = 5
+#		}
+#		any_pop = {
+#			limit = {
+#				location = { continent = europe }
+#				strata = rich
+#			}
+#			militancy = 3
+#			consciousness = 5
+#		}
+#		
+#		ai_chance = {
+#			factor = 15
+#		}
+#	}
+#}
+#
+#Eireann Potato famine ends
+#country_event = {
+#	id = 50121
+#	title = "EVTNAME50121"
+#	desc = "EVTDESC50121"
+#	picture = "starving"
+#	
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		tag = IRE
+#		has_country_flag = potato_blight
+#		year = 1847
+#		NOT = {
+#			any_owned_province = {
+#				has_province_modifier = irish_potato_blight
+#			}
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+##		months = 2
+#	}
+#	
+#	option = {
+#		name = "Thank god!"
+#		any_pop = {
+#			militancy = -2
+#			consciousness = -1
+#		}
+#	}
+#}
+#
+#Eireann Constitutional reform (or not)
+country_event = {
+	id = 50122
+	title = "EVTNAME50122"
+	desc = "EVTDESC50122"
+	picture = "storming_palace"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = IRE
+		263 = { controlled_by = REB }
+		NOT = {
+			year = 1880
+			vote_franschise = wealth_voting
+			vote_franschise = universal_weighted_voting
+			vote_franschise = universal_voting
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "We cannot do more than a compromise."
+		prestige = -10
+		any_pop = {
+			limit = {
+				location = { is_core = THIS }
+				OR = {
+					strata = poor
+					strata = middle
+				}
+			}
+			militancy = -6
+			consciousness = -4
+		}
+		any_pop = {
+			limit = {
+				location = { is_core = THIS }
+				strata = rich
+			}
+			militancy = 2
+			consciousness = 4
+		}
+		political_reform = universal_weighted_voting
+		political_reform = gerrymandering
+		political_reform = censored_press
+		
+		ai_chance = {
+			factor = 65
+		}
+	}
+	
+	option = {
+		name = "These upstarts need to be put in their place!"
+		prestige = -5
+		263 = { change_controller = THIS }
+		any_pop = {
+			limit = {
+				location = { is_core = THIS }
+				OR = {
+					strata = poor
+					strata = middle
+				}
+			}
+			militancy = 6
+			consciousness = 4
+		}
+		any_pop = {
+			limit = {
+				location = { province_id = 263 }
+				OR = {
+					strata = poor
+					strata = middle
+				}
+			}
+			reduce_pop = 0.98
+		}
+		any_pop = {
+			limit = {
+				location = { is_core = THIS }
+				strata = rich
+			}
+			militancy = -2
+			consciousness = -4
+		}
+		political_reform = no_meeting
+		political_reform = state_press
+		
+		ai_chance = {
+			factor = 35
+		}
+	}
+}
+
+#Disposal of Irish colonies if it's annexed
+country_event = {
+	id = 50123
+	title = "EVTNAME50123"
+	desc = "EVTDESC50123"
+	picture = "storming_palace"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {	
+			tag = AEN
+			tag = ABN
+		}
+		war_with = IRE
+		OR = {
+			AND = {
+				owns = 254
+				owns = 258
+				owns = 260
+				owns = 263
+				NOT = { IRE = {
+					any_core = {
+#						limit = {
+#							region = ENG_254
+#							region = ENG_258
+#							region = ENG_260
+#							region = ENG_263
+#						}
+						owned_by = IRE
+					}
+				} }
+			}
+			AND = {
+				254 = { controlled_by = THIS }
+				258 = { controlled_by = THIS }
+				260 = { controlled_by = THIS }
+				263 = { controlled_by = THIS }
+				NOT = { IRE = {
+					any_core = {
+#						limit = {
+#							region = ENG_254
+#							region = ENG_258
+#							region = ENG_260
+#							region = ENG_263
+#						}
+						controlled_by = IRE
+					}
+				} }
+			}
+		}				
+	}
+
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			year = 1836									#Just to make it happen the day after you fulfill the conditions
+		}
+	}
+	
+	option = {
+		name = "Seize them."
+		IRE = {
+			any_owned = {
+				limit = {
+					NOT = { region = ENG_254 }
+					NOT = { region = ENG_258 }
+					NOT = { region = ENG_260 }
+					NOT = { region = ENG_263 }
+				}
+				secede_province = THIS
+			}
+		}
+	}
+}
+
+#Seumas Ó Máille's education reforms
+country_event = {
+	id = 50124
+	title = "EVTNAME50124"
+	desc = "EVTDESC50124"
+	picture = "HoraceMann"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = IRE
+		year = 1846
+		school_reforms = no_schools
+	}
+	
+	mean_time_to_happen = {
+		months = 7
+	}
+	
+	option = {
+		name = "Education is key."
+		prestige = 3
+		plurality = 1
+		years_of_research = 0.5
+		social_reform = low_schools
+	}
+}
+
+#Bretagne belonging to CLT will have its original names once again
+country_event = {
+	id = 50125
+	title = "EVTNAME50125"
+	desc = "EVTDESC50125"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CLT
+		422 = { owned_by = THIS is_core = FRA }
+		has_global_flag = french_bretagne
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "As it should be."
+		prestige = 5
+		421 = { change_province_name = "Sant-Brieg" }
+		422 = { change_province_name = "Gwened" }
+		423 = { change_province_name = "Naoned" }
+		424 = { change_province_name = "Reshon" }
+		422 = { state_scope = { change_region_name = "Breizh" } }
+		BRT = { all_core = { remove_core = FRA } }
+	}
+}

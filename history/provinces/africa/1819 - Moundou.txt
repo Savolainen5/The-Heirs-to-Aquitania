@@ -1,0 +1,5 @@
+add_core = ADW
+trade_goods = cotton
+life_rating = 15
+
+

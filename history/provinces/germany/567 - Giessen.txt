@@ -1,0 +1,8 @@
+owner = HEK
+controller = HEK
+add_core = HEK
+add_core = GER
+trade_goods = cattle
+life_rating = 35
+
+

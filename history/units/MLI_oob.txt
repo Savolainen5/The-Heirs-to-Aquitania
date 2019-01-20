@@ -1,0 +1,92 @@
+GBU = {
+	value = 130
+}
+WOL = {
+	value = 140
+}
+MOS = {
+	value = 135
+}
+DND = {
+	value = 100
+}
+
+army = {
+	name = "Army of the Empire of Mali"
+	location = 1794
+	regiment = {
+		name = "1st Warriors"
+		type = irregular
+		home = 1794
+	}
+	regiment = {
+		name = "2nd Warriors"
+		type = irregular
+		home = 1804
+	}
+	regiment = {
+		name = "3rd Warriors"
+		type = irregular
+		home = 1799
+	}
+	regiment = {
+		name = "4th Warriors"
+		type = irregular
+		home = 1797
+	}
+	regiment = {
+		name = "5th Warriors"
+		type = irregular
+		home = 1881
+	}
+	regiment = {
+		name = "1st Cavalry"
+		type = cavalry
+		home = 1797
+	}
+	regiment = {
+		name = "2nd Cavalry"
+		type = cavalry
+		home = 1882
+	}
+}
+
+army = {
+	name = "Army of the Almam of Tooro"
+	location = 1788
+	regiment = {
+		name = "1st Guards"
+		type = irregular
+		home = 1788
+	}
+	regiment = {
+		name = "2nd Guards"
+		type = irregular
+		home = 1789
+	}
+	regiment = {
+		name = "3rd Guards"
+		type = irregular
+		home = 1790
+	}
+}
+
+army = {
+	name = "Army of the Emir of Kong"
+	location = 1898
+	regiment = {
+		name = "1st Emiris"
+		type = irregular
+		home = 1898
+	}
+	regiment = {
+		name = "2nd Emiris"
+		type = irregular
+		home = 1899
+	}
+	regiment = {
+		name = "3rd Emiris"
+		type = irregular
+		home = 1900
+	}
+}

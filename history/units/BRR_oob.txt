@@ -1,0 +1,9 @@
+army = {
+	name = "Armée Contale"
+	location = 411
+	regiment = {
+		name = "1e Regiment d'Infanteri"
+		type = infantry
+		home = 411
+	}
+}

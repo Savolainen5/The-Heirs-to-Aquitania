@@ -1,0 +1,28 @@
+BAD = {
+	value = -175
+}
+BAV = {
+	value = -175
+}
+WUR = {
+	value = -175
+}
+army = {
+	name = "Pommernische Heer"
+	location = 546
+	regiment = {
+		name = "I. Pommernische Infanterie"
+		type = infantry
+		home = 546
+	}
+	regiment = {
+		name = "II. Pommernische Infanterie"
+		type = infantry
+		home = 546
+	}
+	regiment = {
+		name = "I. Pommernische Artillerie"
+		type = infantry
+		home = 547
+	}
+}

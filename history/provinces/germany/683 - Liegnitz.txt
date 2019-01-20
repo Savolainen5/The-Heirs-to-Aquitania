@@ -1,0 +1,7 @@
+owner = SLS
+controller = SLS
+add_core = SLS
+trade_goods = fruit
+life_rating = 35
+
+

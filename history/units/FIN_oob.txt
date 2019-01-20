@@ -1,0 +1,130 @@
+SWE = { value = -5 }
+DEN = { value = 50 }
+NOR = { value = -65 }
+
+army = {
+	name = "Kuninkaan Joukko"
+	location = 345
+	regiment = {
+		name= "1. Rykmentti"
+		type = infantry
+		home = 345
+	}
+	regiment = {
+		name= "2. Rykmentti"
+		type = infantry
+		home = 343
+	}
+	regiment = {
+		name= "3. Rykmentti"
+		type = infantry
+		home = 343
+	}
+	regiment = {
+		name= "1. Tykistö"
+		type = artillery
+		home = 345
+	}
+	regiment = {
+		name= "2. Tykistö"
+		type = artillery
+		home = 349
+	}
+	regiment = {
+		name= "3. Tykistö"
+		type = artillery
+		home = 355
+	}
+	regiment = {
+		name= "1. Ratsuväki"
+		type = cuirassier
+		home = 994
+	}
+}
+
+army = {
+	name = "Nevansuun Joukko"
+	location = 994
+	regiment = {
+		name= "4. Rykmentti"
+		type = infantry
+		home = 354
+	}
+	regiment = {
+		name= "5. Rykmentti"
+		type = infantry
+		home = 339
+	}
+	regiment = {
+		name= "4. Tykistö"
+		type = artillery
+		home = 346
+	}
+}
+
+navy = {
+	name = "Itämeren Laivasto"
+	location = 345
+	ship = {
+		name = "Ilmatar"
+		type = manowar
+	}
+	ship = {
+		name = "Pyhä Yrjö"
+		type = manowar
+	}
+	ship = {
+		name = "Louhi"
+		type = manowar
+	}
+	ship = {
+		name = "Saimaa"
+		type = frigate
+	}
+	ship = {
+		name = "Ii"
+		type = frigate
+	}
+	ship = {
+		name = "Joutsen"
+		type = frigate
+	}
+	ship = {
+		name = "Peijo"
+		type = frigate
+	}
+}
+
+navy = {
+	name = "Vienanmeren Laivasto"
+	location = 984
+	ship = {
+		name = "Ukko"
+		type = manowar
+	}
+	ship = {
+		name = "Tuoni"
+		type = frigate
+	}
+	ship = {
+		name = "Karhu"
+		type = frigate
+	}
+}
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+	
+	befriend = { id="POL" value=65 }
+	befriend = { id="SWE" value=65 }
+	
+	threat = { id="RUS" value=50 }
+	threat = { id="SWE" value=15 }
+	threat = { id="NOR" value=15 }
+	
+	
+}

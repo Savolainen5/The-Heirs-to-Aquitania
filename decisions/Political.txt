@@ -1,0 +1,198 @@
+political_decisions = {
+	enact_liquor_prohibition = {
+		potential = {
+			social_science = 1
+			has_country_modifier = temperance_league
+			NOT = {
+				OR = {
+					has_country_modifier = liquor_prohibition
+					has_country_flag = prohibition_repealed
+				}
+			}
+		}
+		allow = {
+			OR = {
+				moralism = 30
+				liberal = 60
+				government = proletarian_dictatorship
+				government = fascist_dictatorship
+				government = bourgeois_dictatorship
+				government = presidential_dictatorship
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = liquor_prohibition
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						moralism = 30
+						liberal = 60
+					}
+				}
+			}		
+		}
+	}
+	abolish_prohibition = {
+		potential = {
+			has_country_modifier = liquor_prohibition
+		}
+		allow = {
+				OR = {
+					government = proletarian_dictatorship
+					government = fascist_dictatorship
+					government = bourgeois_dictatorship
+					government = presidential_dictatorship
+					NOT = {	
+						liberal = 50 
+					}
+					NOT = { 
+						moralism = 20
+					}
+				}
+		}
+		effect = {
+			remove_country_modifier = liquor_prohibition
+			set_country_flag = prohibition_repealed
+
+		}
+	}
+	institute_central_bank = {
+		potential = {
+			NOT = {
+				has_country_modifier = central_bank_established
+			}
+			central_bank_money_bill_printing = 1
+		}
+		
+		allow = {
+			money = 1000
+			modern_central_bank_system = 1
+		}
+		
+		effect = {
+			money = -1000
+			add_country_modifier = {
+				name = central_bank_established
+				duration = -1
+			}
+		}
+	}
+	
+	enact_female_suffrage = {
+		potential = {
+			year = 1870
+			civilized = yes
+			NOT = { has_country_modifier = female_suffrage }
+			OR = {
+				government = prussian_constitutionalism
+				government = hms_government
+				government = democracy
+			}
+			OR = {
+				vote_franschise = universal_weighted_voting
+				vote_franschise = universal_voting
+			}	
+		}
+		
+		allow = {
+			social_science = 1
+			revolution_n_counterrevolution = 1
+			OR = {
+				upper_house = {
+					ideology = socialist
+					value = 0.3
+				}
+				upper_house = {
+					ideology = liberal
+					value = 0.3
+				}
+				AND = {
+					upper_house = {
+						ideology = socialist
+						value = 0.15
+					}
+					upper_house = {
+						ideology = liberal
+						value = 0.15
+					}
+				}
+			}
+			OR = {
+				political_reform_want = 0.15
+				vote_franschise = universal_voting
+			}
+			average_consciousness = 4
+		}
+		
+		effect = {
+			war_exhaustion = -2
+			add_country_modifier = {
+				name = female_suffrage
+				duration = -1
+			}
+		}
+	}
+
+	leave_soi = {
+		alert = no
+		picture = sign_the_geneva_convention
+		potential = {
+			part_of_sphere = yes			
+		}
+		
+		allow = {
+			is_secondary_power = yes
+			sphere_owner = {
+				NOT = {
+					relation = { who = THIS value = -100 }
+					truce_with = THIS
+				}
+			}
+		}
+		effect = {
+			sphere_owner = {
+				country_event = 13202
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			# Ai will do, if sphere owner has LESS than thrice our brigades.
+			modifier = {
+				factor = 0
+				sphere_owner = {
+						# Factor = (sphere_owner regiments) / (our regiments).
+						# Returns true if( factor >= x ).
+						# Use NOT statement to check if( factor < x )
+						brigades_compare = 3
+				}
+			}
+		}
+	}
+	
+	nationalize = {
+		alert = no
+			
+		potential = {
+			can_nationalize = yes 
+		}
+		allow = {
+			NOT = { part_of_sphere = yes }
+		}
+		effect = {
+			nationalize = yes
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

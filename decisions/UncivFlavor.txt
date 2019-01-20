@@ -1,0 +1,581 @@
+political_decisions = {
+	establish_the_dar_al_funun = {
+		potential = {
+			tag = PER
+			NOT = { has_country_flag = dar_al_funun_built }
+		}
+		allow = {
+			literacy = 0.32
+		}
+		effect = {
+			years_of_research = 0.5
+			any_pop = { consciousness = 0.5 }
+			set_country_flag = dar_al_funun_built
+			add_country_modifier = {
+				name = dar_al_funun
+				duration = -1
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						civilized = no
+						education_reform = no_education_reform
+					}
+				}
+				owner = {
+					economic_reform = yes_education_reform
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = conservative
+							factor = 1
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 3
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	begin_zemene_mesafint = {
+		potential = {
+			civilized = no
+			primary_culture = amhara
+			any_neighbor_country = { primary_culture = amhara }
+			NOT = { 
+				has_global_flag = is_negusa_nagast
+				has_country_modifier = zemene_mesafint
+				foreign_training = yes_foreign_training
+			}
+		}
+		
+		allow = {
+			any_neighbor_country = {
+				primary_culture = amhara
+				war_with = THIS
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = zemene_mesafint
+				duration = 365
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	become_negusa_nagast = {
+		potential = {
+			OR = {
+				tag = GON
+				tag = SHW
+				tag = TIG
+			}
+			primary_culture = amhara
+			ETH = { exists = no }
+		}
+		
+		allow = {
+			war = no
+			ETH = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						empty = yes
+						province_id = 1848
+						province_id = 1849
+						province_id = 1850
+						owner = {
+							NOT = { primary_culture = amhara }
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			set_global_flag = is_negusa_nagast
+			prestige = 10
+			years_of_research = 0.5
+			add_accepted_culture = tigray
+			add_accepted_culture = sidama
+			GON = {
+				all_core = { remove_core = GON }
+			}
+			SHW = {
+				all_core = { remove_core = SHW }
+			}
+			TIG = {
+				primary_culture = tigray
+				all_core = { remove_core = TIG }
+			}
+			1856 = { add_core = TIG }
+			1857 = { add_core = TIG }
+			1848 = { add_core = TIG }
+			1849 = { add_core = TIG }
+			1850 = { add_core = TIG }
+			relation = {
+				who = EGY
+				value = 100
+			}
+			change_tag = ETH
+			any_pop = { militancy = -4 }
+		}
+	}
+	
+	
+	build_addis_ababa = {
+		picture = move_capital_to_algiers
+		potential = {
+			tag = ETH
+			owns = 1859
+			NOT = { has_country_flag = addis_ababa_built }
+		}
+		
+		allow = {
+			war = no
+			civilized = yes
+			owns = 1859
+		}
+		
+		effect = {
+			set_country_flag = addis_ababa_built
+			prestige = 5
+			1859 = {
+				change_province_name = "Addis Ababa"
+				life_rating = 5
+			}
+			capital = 1859
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	eth_mission_to_cairo = {
+		potential = {
+			tag = ETH
+			ai = yes
+			EGY = {
+				ai = yes
+				exists = yes
+				neighbour = ETH
+				NOT = {
+					any_owned_province = { is_core = ETH }
+					casus_belli = ETH
+				}
+			}
+			NOT = {
+				has_country_flag = mission_to_cairo
+				any_owned_province = { is_core = EGY }
+				any_owned_province = { is_core = SUD }
+				casus_belli = EGY
+				truce_with = EGY
+			}
+		}
+		
+		allow = {
+			NOT = { war_with = EGY }
+		}
+		
+		effect = {
+			set_country_flag = mission_to_cairo
+			years_of_research = 0.25
+			relation = { who = EGY value = 200 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	build_the_tower_of_babylon = {
+		potential = {
+			tag = IRQ
+			is_greater_power = yes
+		}
+		
+		allow = {
+			advanced_metallurgy = 1
+			the_historical_theory = 1
+		}
+		
+		effect = {
+			IRQ = {
+				all_core = {
+					add_core = BAB
+				}
+			}
+			926 = {
+				change_province_name = Babylon
+			}
+			change_tag = BAB
+			prestige = 20
+		}
+	}
+	move_capital_to_algiers = {
+		potential = {
+			tag = ALD
+			NOT = { capital = 1700 }
+		}
+
+		allow = {
+			owns = 1700
+		}
+
+		effect = {
+			prestige = 2
+			capital = 1700
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	become_hausaland = {
+		potential = {
+			tag = SOK
+			NOT = { has_country_flag = became_hausaland }
+		}
+
+		allow = {
+			flintlock_rifles = 1
+			year = 1860
+		}
+
+		effect = {
+			set_country_flag = became_hausaland
+			prestige = 5
+			primary_culture = hausa
+			add_accepted_culture = fulbe
+			years_of_research = 0.5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	become_toucouleur = {
+		
+		potential = {
+			OR = {
+				tag = MAS
+				tag = MOS
+				tag = TOO
+				tag = JAL
+				tag = KNG
+				tag = WOL
+				tag = DND
+				tag = DAM
+				tag = SOK
+				tag = DOS
+				tag = ASH
+			}
+			NOT = { has_global_flag = toucouleur_created }
+		}
+
+		allow = {
+			war = no
+			government = absolute_monarchy
+			owns = 1800
+			owns = 1804
+			owns = 1808	
+		}
+
+		effect = {
+			set_global_flag = toucouleur_created
+			prestige = 10
+			add_accepted_culture = fulbe
+			add_accepted_culture = bambara
+			add_accepted_culture = songhai
+			add_accepted_culture = tuareg
+			add_accepted_culture = african_minor
+			all_core = { add_core = TOU }
+			SEG = { all_core = { add_core = TOU } }
+			DND = { all_core = { add_core = TOU } }
+			MAS = { all_core = { add_core = TOU } }
+			change_tag = TOU
+			capital = 1800		
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	become_mali_empire = {
+		
+		potential = {
+			OR = {
+				tag = MAS
+				tag = TOO
+				tag = MOS
+				tag = JAL
+				tag = KNG
+				tag = WOL
+				tag = DND
+				tag = DAM
+				tag = SOK
+				tag = TOU
+				tag = DOS
+				tag = BAM
+				tag = ADW
+				tag = ASH
+			}
+			NOT = { has_global_flag = mali_empire_created }
+		}
+
+		allow = {
+			war = no
+			government = absolute_monarchy
+			owns = 1794
+			owns = 1786
+			owns = 1789
+			owns = 1800
+			owns = 1804
+			owns = 1808
+			owns = 1878
+			owns = 1880
+			OR = {
+				owns = 1898
+				KNG = { alliance_with = THIS }
+			}
+			OR = {
+				owns = 1901
+				MOS = { alliance_with = THIS }
+			}
+		}
+
+		effect = {
+			set_global_flag = mali_empire_created
+			prestige = 20
+			add_accepted_culture = fulbe
+			add_accepted_culture = bambara
+			add_accepted_culture = songhai
+			add_accepted_culture = tuareg
+			add_accepted_culture = wolof
+			add_accepted_culture = mande
+			add_accepted_culture = dyula
+			add_accepted_culture = senufo
+			add_accepted_culture = mossi
+			add_accepted_culture = african_minor
+			random_country = {
+				limit = {
+					tag = KNG
+					ai = yes
+					NOT = { tag = THIS }
+				}
+				annex_to = THIS
+			}
+			random_country = {
+				limit = {
+					tag = MOS
+					ai = yes
+				}
+				annex_to = THIS
+			}
+			all_core = { add_core = MLI }
+			SEG = { all_core = { add_core = MLI } }
+			DND = { all_core = { add_core = MLI } }
+			MAS = { all_core = { add_core = MLI } }
+			JAL = { all_core = { add_core = MLI } }
+			TOO = { all_core = { add_core = MLI } }
+			KNG = { all_core = { add_core = MLI } }
+			GBU = { all_core = { add_core = MLI } }
+			MOS = { all_core = { add_core = MLI } }
+			WOL = { all_core = { add_core = MLI } }
+			random_owned = {
+				limit = {
+					owner = { tag = TOU }
+				}
+				owner = {
+					all_core = { remove_core = TOU }
+				}
+			}
+			capital = 1794
+			change_tag = MLI		
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_biafra = {
+		potential = {
+			OR = {
+				tag = ARO
+				tag = CLA
+			}
+		}
+
+		allow = {
+			war = no
+			civilized = yes
+			owns = 1932
+			owns = 1935
+			owns = 1934	
+		}
+
+		effect = {
+			prestige = 10
+			add_accepted_culture = itsekari
+			add_accepted_culture = ibibio
+			add_accepted_culture = ibo
+			change_tag = BIA
+			1930 = { add_core = BIA }
+			1931 = { add_core = BIA }
+			1932 = { add_core = BIA }
+			1934 = { add_core = BIA }
+			1933 = { add_core = BIA }
+			1935 = { add_core = BIA }
+			ARO = { all_core = { remove_core = ARO } }
+			CLA = { all_core = { remove_core = CLA } }
+			capital = 1935		
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+
+
+	unite_somalia = {
+		potential = {
+			OR = {
+				tag = GEL
+				tag = MAJ
+				tag = WRS
+			}
+			NOT = { has_global_flag = somalia_united }
+		}
+
+		allow = {
+			war = no
+			1868 = { owned_by = THIS }
+			1872 = { owned_by = THIS }
+			1873 = { owned_by = THIS }
+		}
+
+		effect = {
+			set_global_flag = somalia_united
+			prestige = 5
+			change_tag = SOM
+			SOM_1868 = { add_core = SOM }
+			SOM_1872 = { add_core = SOM }
+			ETH_1865 = { add_core = SOM }
+			2031 = { add_core = SOM }
+			GEL = { all_core = { remove_core = GEL } }
+			MAJ = { all_core = { remove_core = MAJ } }
+			WRS = { all_core = { remove_core = WRS } }
+			any_pop = { militancy = -4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	become_kitara = {
+		potential = {
+			OR = {
+				tag = ANK
+				tag = BUG
+				tag = BNY
+				tag = RWA
+				tag = BRD
+			}
+			NOT = { has_global_flag = become_kitara }
+		}
+		
+		allow = {
+			war = no
+			2019 = { owned_by = THIS }
+			2020 = { owned_by = THIS }
+			2021 = { owned_by = THIS }
+			2034 = { owned_by = THIS }
+			2035 = { owned_by = THIS }
+		}
+		
+		effect = {
+			set_global_flag = become_kitara
+			prestige = 10
+			years_of_research = 2
+			add_accepted_culture = nyoro
+			add_accepted_culture = hema
+			add_accepted_culture = ruanda
+			add_accepted_culture = rundi
+			add_accepted_culture = sukuma
+			2019 = { add_core = THIS }
+			2020 = { add_core = THIS }
+			2021 = { add_core = THIS }
+			2034 = { add_core = THIS }
+			2035 = { add_core = THIS }
+			1991 = { add_core = THIS }
+			1997 = { add_core = THIS }
+			random_owned = {
+				limit = {
+					2022 = { empty = yes }
+					2023 = { empty = yes }
+					2028 = { empty = yes }
+					2044 = { empty = yes }
+				}
+				2022 = {
+					life_rating = 10
+					secede_province = THIS
+					any_pop = { militancy = 4 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2022 = { empty = no }
+					2023 = { empty = yes }
+					2028 = { empty = yes }
+					2044 = { empty = yes }
+				}
+				2023 = {
+					life_rating = 10
+					secede_province = THIS
+					any_pop = { militancy = 4 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2022 = { empty = no }
+					2023 = { empty = no }
+					2028 = { empty = yes }
+					2044 = { empty = yes }
+				}
+				2028 = {
+					life_rating = 10
+					secede_province = THIS
+					any_pop = { militancy = 4 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2022 = { empty = no }
+					2023 = { empty = no }
+					2028 = { empty = no }
+					2044 = { empty = yes }
+				}
+				2044 = {
+					life_rating = 10
+					secede_province = THIS
+					any_pop = { militancy = 4 }
+				}
+			}
+			any_pop = { militancy = -1 }
+		}
+	}
+}

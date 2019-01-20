@@ -1,0 +1,7 @@
+owner = NHL
+controller = NHL
+add_core = NHL
+trade_goods = timber
+life_rating = 35
+naval_base = 1
+

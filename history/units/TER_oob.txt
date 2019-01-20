@@ -1,0 +1,9 @@
+army = {
+	name = "Milicia Largana"
+	location =  2468
+	regiment = {
+		name = "Infanteria Capitala"
+		type = infantry
+		home = 2468
+	}
+}

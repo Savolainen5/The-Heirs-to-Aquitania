@@ -1,0 +1,800 @@
+#Event IDs 50300-50349 reserved for HIS and other Iberian countries
+# Halesca Purchase 1/3 - Events 50300-50302
+country_event = {
+	id = 50300
+	title = "EVTNAME50300" #the Alaskan Purchase
+	desc = "EVTDESC50300"
+	picture = "alaska"
+	
+	trigger = {
+		HIS = {
+			war = no
+			any_owned_province = {
+				region = USA_1
+			}
+		}
+		NOT = {
+			has_global_flag = alaska_purchase_process_global
+			has_global_flag = alaska_purchase_completed
+			has_country_flag = refused_alaska
+			any_owned_province = { is_core = HIS }
+			truce_with = HIS
+		}
+		OR = {
+			tag = SKM
+			relation = { who = HIS value = 0 }
+			alliance_with = HIS
+		}
+		#is_greater_power = yes
+		war = no
+		#state_n_government = 1
+		has_country_flag = alaska_purchase_interest
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.5
+			tag = SKM
+		}
+		modifier = {
+			factor = 0.8
+			alliance_with = HIS
+		}
+		modifier = {
+			factor = 0.8
+			relation = { who = HIS value = 100 }
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { relation = { who = HIS value = 50 } }
+		}
+		modifier = {
+			factor = 0.1
+			year = 1870
+		}
+	}
+	
+	immediate = {
+		set_global_flag = alaska_purchase_process_global
+	}
+	
+	option = {
+		name = "Make the offer."
+		treasury = -25000
+		HIS = { country_event = 50301 }
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0.1
+				NOT = { money = 10000 }
+			}
+		}
+	}
+	
+	option = {
+		name = "We don't need it."
+		clr_country_flag = alaska_purchase_interest
+		set_country_flag = refused_alaska
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 2
+				NOT = { money = 10000 }
+			}
+			modifier = {
+				factor = 0
+				tag = SKM
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50301
+	title = "EVTNAME50301" #the Alaskan Purchase
+	desc = "EVTDESC50301"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Sell it."
+		set_global_flag = alaska_purchase_completed
+		prestige = 10
+		treasury = 25000
+		USA_1 = { remove_core = HIS }
+		FROM = { country_event = 50302 }
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "Refuse, but find another buyer."
+		clr_global_flag = alaska_purchase_process_global
+		FROM = {
+			clr_country_flag = alaska_purchase_interest
+			country_event = 50303
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = HIS }
+				NOT = { has_country_flag = refused_alaska }
+				OR = {
+					is_greater_power = yes
+					is_secondary_power = yes
+				}
+				any_owned_province = {
+					OR = {
+						region = USA_78
+						region = RUS_2590
+						region = JAP_1088
+					}
+				}					
+			}
+			set_country_flag = alaska_purchase_interest
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				FROM = {
+					tag = SKM
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We have changed our mind. Halesca is not for sale."
+		prestige = -10
+		USA_1 = { add_core = HIS }
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 50302
+	title = "Hispania Agrees"
+	desc = "Hispania has agreed to the sale. Halesca is ours!"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We welcome this new addition."
+		prestige = 10
+		USA_1 = { add_core = THIS }
+		FROM = {
+			any_owned = {
+				limit = { is_core = LSK }
+				secede_province = THIS
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50303
+	title = "Hispania Refuses"
+	desc = "The talks with Hispania have broken down. They refuse to sell Halesca to us."
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "How disappointing."
+		prestige = -5
+		treasury = 25000
+		relation = { who = HIS value = -25 }
+	}
+}
+
+#############END HALESCA PURCHASE EVENTS#########################
+
+# Hispania proposes union with Basque provinces, events 50304-50306
+country_event = {
+	id = 50304 
+	title = "EVTNAME50304" # Hispania invites Navarra 
+	desc = "EVTDESC50304"
+	picture = "carlists"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We agree!"
+		HIS = { country_event = 50305}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+					OR = {
+						alliance_with = HIS 
+						relation = { who = HIS value = 150 }
+					}
+			}
+			modifier = { 
+				factor = .5 
+				is_secondary_power = yes 
+			}
+		}
+	}
+	
+	option = {
+		name = "We refuse."
+		prestige = 15 
+		HIS = { country_event = 50306 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2 
+				is_secondary_power = yes 
+			}
+			modifier = {
+				factor = 1.5 
+				government = democracy
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50305 
+	title = "EVTNAME50305" # Navarra accepts union 
+	desc = "EVTDESC50305"
+	picture = "threehurrahs"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = "We welcome back our Navarran brothers."
+		badboy = 3 
+		prestige = 10 
+		create_vassal = FROM 
+		AQT = {
+			relation = { who = THIS value = -50 }
+			leave_alliance = THIS
+		}
+		ai_chance = {
+			factor = 95 
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}	
+	}
+	
+	option = { 
+		name = "Now is not the right time."
+		prestige = -10
+		badboy = -3 
+		relation = { who = FROM value = -50 }
+		ai_chance = {
+			factor = 5 
+		}
+	}
+}
+
+country_event = {
+	id = 50306
+	title = "EVTNAME50306" # Navarra refuses union 
+	desc = "EVTDESC50306"
+	picture = "carlists"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "An unfortunate choice."
+		badboy = 10 
+		diplomatic_influence = { who = FROM value = -400 }
+		relation = { who = FROM value = -400 }
+		FROM = {
+			all_core = { add_core = HIS }
+		}
+		AQT = {
+			relation = { who = THIS value = -50 }
+			leave_alliance = THIS
+		}
+		ai_chance = {
+			factor = 60 
+			modifier = {
+				factor = 0.1
+				badboy = 0.2
+			}
+		}
+	}
+	option = {
+		name = "We shall accept their decision."
+		prestige = -15
+		badboy = -3 
+		relation = { who = FROM value = 50 }
+		ai_chance = {
+			factor = 30 
+			modifier = {
+				factor = 3 
+					OR = {
+					war_policy = anti_military
+					war_policy = pacifism
+				}
+			}
+			modifier = {
+				factor = 0.5
+				war_policy = jingoism
+			}
+		}
+	}
+}
+
+# Portuguese separatists event chain. This causes confrontation between Portugal
+# and Hispania, which could lead to Aquitanian intervention.
+
+country_event = {
+	id = 50307
+	title = "EVTNAME50307" # Portuguese nationalist rebels
+	desc = "EVTDESC50307"
+	picture = "recruits"
+	
+	trigger = {
+		tag = POR 
+		year = 1870 
+		war = no 
+		is_vassal = no
+		is_disarmed = no 
+		NOT = {
+			alliance_with = HIS 
+			truce_with = HIS 
+			relation = { who = HIS value = 100 }
+			has_global_flag = portuguese_anarchists
+			has_global_flag = no_portuguese_anarchists
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 90
+		modifier = {
+			factor = 0.6
+			invention = terrorism
+		}
+		modifier = {
+			factor = 0.8
+			invention = separatism
+		}
+		
+		modifier = {
+			factor = 1.5
+			NOT = { invention = national_fraternity }
+		}
+		modifier = {
+			factor = 0.8
+			militancy = 2
+		}
+		modifier = {
+			factor = 0.6
+			militancy = 4
+		}
+		modifier = {
+			factor = 0.5
+			militancy = 6
+		}
+	}	
+	
+	option = {
+		name = "We will support him, but quietly."
+		treasury = -200
+		HIS = {
+			any_pop = {
+				scaled_militancy = {
+					ideology = anarcho_liberal
+					factor = 5
+				}
+				scaled_militancy = {
+					ideology = socialist
+					factor = 6
+				}
+				scaled_militancy = {
+					ideology = communist
+					factor = 7
+				}
+			}
+			relation = {
+				who = THIS
+				value = -50
+			}
+		}
+		set_global_flag = portuguese_separatists
+		ai_chance = {
+			factor = 80 
+			modifier = {
+				factor = 0.5
+				badboy = 0.8
+			}
+			modifier = {
+				factor = 2
+				war_policy = pro_military
+			}
+		}
+	}
+	
+	option = {
+		name = "It's too risky."
+		set_global_flag = no_portuguese_anarchists
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			scaled_militancy = {
+				factor = 3
+				issue = jingoism
+			}
+			scaled_militancy = {
+				factor = 3
+				ideology = reactionary
+			}
+		}
+		ai_chance = {
+			factor = 20 
+			modifier = {
+				factor = 1.5
+				badboy = 0.5
+			}
+			modifier = {
+				factor = 0.5
+				war_policy = jingoism
+			}	
+		}
+	}
+}
+
+country_event = {
+	id = 50308
+	title = "EVTNAME50308" # Hispania discovers rebels 
+	desc = "EVTDESC50308"
+	picture = "arrested"
+	
+	trigger = {
+		tag = HIS 
+		war = no
+		has_global_flag = portuguese_separatists
+		NOT = { has_country_flag = rebels_discovered }
+	}
+	
+	mean_time_to_happen = {
+		months = 30 
+		modifier = {
+			factor = 0.5
+			has_country_flag = guardia_civil_established
+		}
+	}
+	
+	immediate = { set_country_flag = rebels_discovered }
+	
+	option = {
+		name = "Give the Portuguese government our ultimatum."
+		badboy = 5 
+		POR = {
+			country_event = 50309
+			relation = { who = THIS value = -100 }
+		}
+		ai_chance = {
+			factor = 50 
+			modifier = {
+				factor = 1.5
+				has_country_flag = conquer_hispania
+			}
+			modifier = { 
+				factor = 0.1  
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 0.3 
+				war_policy = anti_military
+			}
+		}
+	}
+	
+	option = {
+		name = "Perhaps we should seek a less aggressive response."
+		prestige = -5 
+		any_pop = {
+			limit = { is_primary_culture = yes }		
+			scaled_militancy = {
+				factor = 1
+				issue = jingoism
+			}
+		}
+		ai_chance = {
+			factor = 50 
+			modifier = { 
+				factor = 0.3 
+				has_country_flag = conquer_hispania
+			}
+			modifier = {
+				factor = 0.5
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 2 
+				badboy = 0.8 
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50309
+	title = "EVTNAME50309" # Portugal receives ultimatum 
+	desc = "EVTDESC50309"
+	picture = "arrested"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = "We must turn to Aquitania for support!"
+		AQT = { country_event = 50310 } # seeks alliance with AQT
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.5 
+				AQT = {
+					OR = {
+						is_greater_power = no 
+						is_disarmed = yes 
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We should give in."
+		prestige = -25
+		HIS = { country_event = 50311 } # become HIS vassal
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			consciousness = 6
+			militancy = 6
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.5 
+				war_policy = pacifism
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50310
+	title = "EVTNAME50310" # Troubles in Iberia
+	desc = "EVTDESC50310"
+	picture = "greatpowers"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "If it's war they want, it's war they'll get."
+		prestige = 15 
+		relation = { who = FROM value = 150 }
+		create_alliance = FROM
+		HIS = {
+			leave_alliance = THIS
+			relation = { who = THIS value = -100 }
+			country_event = 50312
+		}
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			dominant_issue = {
+				factor = 0.05
+				value = jingoism
+			}
+		}
+		ai_chance = {
+			factor = 75 
+			modifier = {
+				factor = 0.5
+				is_greater_power = no
+				HIS = { is_greater_power = yes }
+			}
+			modifier = {
+				factor = 0.2 
+				is_disarmed = yes
+			}
+			modifier = {
+				factor = 0.5
+				war = yes 
+			}
+		}
+	}
+	
+	option = {
+		name = "This is not our fight."
+		prestige = -15
+		relation = { who = FROM value = -50 }
+		relation = { who = HIS value = 50 }
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			scaled_militancy = {
+				issue = jingoism
+				factor = 8
+			}
+			scaled_militancy = {
+				issue = pacifism
+				factor = -4
+			}
+		}
+		POR = {
+			leave_alliance = THIS
+			relation = { who = THIS value = -100 }
+			country_event = 50313
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.5
+				war_policy = pro_military
+			}
+			modifier = {
+				factor = 0.2
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 2
+				war = yes 
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50311
+	title = "EVTNAME50311" # Portugal gives in
+	desc = "EVTDESC50311"
+	picture = "greatpowers"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "Well that went easier than expected."
+		prestige = 5 
+		create_vassal = FROM 
+		diplomatic_influence = { who = FROM value = 400 }
+		relation = { who = FROM value = 400 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = { 
+	id = 50312
+	title = "EVTNAME50312" # AQT supports Portugal 
+	desc = "EVTDESC50312"
+	picture = "greatpowers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Then the die is cast."
+		badboy = 7 
+		AQT = {
+			relation = { who = THIS value = -100 }
+		}
+		POR = {
+			relation = { who = THIS value = -150 }
+		}
+		casus_belli = {
+				target = POR 
+				type = make_puppet
+				months = 24
+		}
+		casus_belli = {
+				target = AQT 
+				type = humiliate
+				months = 24
+		}
+		ai_chance = {
+			factor = 50 
+			modifier = {
+				factor = 1.5
+				has_country_flag = conquer_hispania
+			}
+			modifier = { 
+				factor = 0.1  
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 0.3 
+				war_policy = anti_military
+			}
+		}
+	}
+	
+	option = {
+		name = "Back down, we didn't expect this."
+		prestige = -10 
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			scaled_militancy = {
+				issue = jingoism
+				factor = 8
+			}
+			scaled_militancy = {
+				issue = pacifism
+				factor = -4
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					war_policy = anti_military
+					war_policy = pacifism
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50313
+	title = "EVTNAME50313" # AQT does not support us
+	desc = "EVTDESC50313"
+	picture = Artillery
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We shall fight on alone."
+		prestige = 15
+		HIS = {
+			casus_belli = {
+				target = THIS  
+				type = make_puppet
+				months = 24
+			}
+		}
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			scaled_militancy = {
+				issue = jingoism
+				factor = -4
+			}
+			scaled_militancy = {
+				issue = pacifism
+				factor = 2
+			}
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "Give in."
+		prestige = -25
+		HIS = { country_event = 50311 } # become HIS vassal
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			consciousness = 6
+			militancy = 6
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.5 
+				war_policy = pacifism
+			}
+		}
+	}
+}

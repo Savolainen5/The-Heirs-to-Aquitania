@@ -1,0 +1,1728 @@
+#Anatolia reclaimed
+country_event = {
+	id = 50600
+	title = "EVTNAME50600"
+	desc = "EVTDESC50600"
+	picture = "slaughter"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BYZ
+		owns = 873
+		owns = 878
+	}
+	
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	option = {
+		name = "At last!"
+		prestige = 2
+		any_owned = {
+			limit = {
+				is_core = ARM
+			}
+			add_province_modifier = {
+				name = anatole_boom
+				duration = 2525
+			}
+		}
+		set_country_flag = anatolia_reclaimed
+	}
+}
+
+#Death of Autokrator Isaakios
+country_event = {
+	id = 50601
+	title = "EVTNAME50601"
+	desc = "EVTDESC50601"
+	picture = "autocracy"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BYZ
+		year = 1848
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 0.1
+			month = 4
+		}
+	}
+	
+	option = {
+		name = "May Ioannes XII guard the Empire."
+		set_country_flag = ioannesxii
+	}
+}
+
+country_event = {
+	id = 50602
+	title = "EVTNAME50602" #Evangelos Melisurgos becomes a General
+	desc = "EVTDESC50602"
+	picture = "rosas_urquiza" #Grabbed the pic from HPM, called it good enough
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BYZ
+		year = 1847
+	}
+
+	mean_time_to_happen = { months = 5 }
+	
+	option = {
+		name = "Good for him!"
+		define_general = {
+			name = "Evangelos Melisurgos"
+			personality = audacious
+			background = natural_born_leader
+		}
+	}
+}
+
+#Greek liberal uprising
+country_event = {
+	id = 50603
+	title = "EVTNAME50603"
+	desc = "EVTDESC50603"
+	picture = "banquet"
+	
+	trigger = {
+		tag = BYZ
+		OR = {
+			has_country_flag = liberal_revolution_in_progress
+			year = 1848
+		}
+		NOT = { has_country_flag = greek_liberals }
+		year = 1843
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.9
+			year = 1845
+		}
+		modifier = {
+			factor = 0.7
+			year = 1846
+		}
+		modifier = {
+			factor = 0.5
+			year = 1847
+		}
+		modifier = {
+			factor = 0.1
+			year = 1848
+		}
+		modifier = {
+			factor = 0.1
+			exists = ANA
+		}
+	}
+	
+	option = {
+		name = "Damn them!"
+		set_country_flag = greek_liberals
+		
+		#Greece
+		819 = { add_core = GRE }
+		820 = { add_core = GRE }
+		821 = { add_core = GRE }
+		824 = { add_core = GRE }
+		825 = { add_core = GRE }
+		826 = { add_core = GRE }
+		827 = { add_core = GRE }
+		831 = { add_core = GRE }
+		832 = { add_core = GRE }
+		833 = { add_core = GRE }
+		834 = { add_core = GRE }
+		835 = { add_core = GRE }
+		836 = { add_core = GRE }
+		837 = { add_core = GRE }
+		838 = { add_core = GRE }
+		839 = { add_core = GRE }
+		840 = { add_core = GRE }
+		841 = { add_core = GRE }
+		842 = { add_core = GRE }
+		
+		any_pop = {
+			limit = {
+				culture = greek
+			}
+			militancy = 5
+			consciousness = 7
+			ideology = {
+				factor = 0.3
+				value = liberal
+			}
+		}
+	}
+}
+
+#Nationalist insurrection in Bulgaria
+country_event = {
+	id = 50604
+	title = "EVTNAME50604" 
+	desc = "EVTDESC50604"
+	picture = "storming_palace"
+	
+	fire_only_once = yes
+	
+	immediate = { set_country_flag = Roman_BUL_insurrection }
+	
+	trigger = {
+		tag = BYZ
+		has_country_modifier = springtime_of_nations
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+		modifier = {
+			factor = 0.2
+			has_country_flag = Roman_ALB_insurrection
+		}
+	}
+	
+	option = {
+		name = "Put down the rebels!"
+		any_pop = {
+			limit = {
+				culture = bulgarian
+			}
+			militancy = 9
+			consciousness = 8
+		}
+		any_owned = {
+			limit = {
+				is_core = BUL
+			}
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 3650
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Grant them autonomy. We will deal with them later."
+		prestige = -3
+		release_vassal = BUL
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "They are no longer worth the trouble."
+		release = BUL
+		BUL = {
+			all_core = {
+				remove_core = BYZ
+			}
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {
+		name = "Bulgaria will rise!"
+		release = BUL
+		BUL = {
+			all_core = {
+				remove_core = BYZ
+			}
+		}
+		change_tag_no_core_switch = BUL
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Secessionist Rebellion in Arbenon
+country_event = {
+	id = 50605
+	title = "EVTNAME50605" 
+	desc = "EVTDESC50605"
+	picture = "storming_palace"
+	
+	fire_only_once = yes
+	
+	immediate = { set_country_flag = Roman_ALB_insurrection }
+	
+	trigger = {
+		tag = BYZ
+		has_country_modifier = springtime_of_nations
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+		modifier = {
+			factor = 0.2
+			has_country_flag = Roman_BUL_insurrection
+		}
+	}
+	
+	option = {
+		name = "Put down the rebels!"
+		any_pop = {
+			limit = {
+				culture = albanian
+			}
+			militancy = 9
+			consciousness = 8
+		}
+		any_owned = {
+			limit = {
+				is_core = ALB
+			}
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 3650
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Grant them autonomy. We will deal with them later."
+		prestige = -3
+		release_vassal = ALB
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "They are no longer worth the trouble."
+		release = ALB
+		ALB = {
+			all_core = {
+				remove_core = BYZ
+			}
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {
+		name = "Arbenon is better off on its own!"
+		release = ALB
+		ALB = {
+			all_core = {
+				remove_core = BYZ
+			}
+		}
+		change_tag_no_core_switch = ALB
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Death of Autokrator Ioannes
+country_event = {
+	id = 50606
+	title = "EVTNAME50606"
+	desc = "EVTDESC50606"
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BYZ
+		year = 1858
+		has_country_flag = ioannesxii
+		#war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 8
+		modifier = {
+			factor = 0.2
+			month = 7
+		}
+	}
+	
+	option = {
+		name = "There are difficult times ahead for the Empire."
+		clr_country_flag = ioannesxii
+		set_country_flag = georgius
+	}
+}
+
+#Evangelos Coup Attempt
+country_event = {
+	id = 50607
+	title = "EVTNAME50607" 
+	desc = "EVTDESC50607"
+	picture = "Arrested"
+	
+	trigger = {
+		tag = BYZ
+		has_country_flag = georgius
+		NOT = { has_country_flag = BYZ_coup_attempt }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "He must pay for his treason!"
+		set_country_flag = BYZ_coup_attempt
+		kill_leader = 25
+		866 = { add_core = ANA }
+		869 = { add_core = ANA }
+		870 = { add_core = ANA }
+		871 = { add_core = ANA }
+		872 = { add_core = ANA }
+		873 = { add_core = ANA }
+		874 = { add_core = ANA }
+		875 = { add_core = ANA }
+		876 = { add_core = ANA }
+		877 = { add_core = ANA }
+		878 = { add_core = ANA }
+		883 = { add_core = ANA }
+		release_vassal = ANA
+		ANA = {
+			define_general = {
+				name = "Evangelos Melisurgos"
+				personality = audacious
+				background = natural_born_leader
+			}
+			define_general = {
+				name = "Seiranos Kanayou"
+				personality = efficient
+				background = school_of_offense
+			}
+			country_event = {
+				id = 100040006
+				days = 2
+			}
+		}
+	}
+	
+	option = {
+		name = "Follow the events from Anatolia."
+		set_country_flag = BYZ_coup_attempt
+		kill_leader = 25
+		866 = { add_core = ANA }
+		869 = { add_core = ANA }
+		870 = { add_core = ANA }
+		871 = { add_core = ANA }
+		872 = { add_core = ANA }
+		873 = { add_core = ANA }
+		874 = { add_core = ANA }
+		875 = { add_core = ANA }
+		876 = { add_core = ANA }
+		877 = { add_core = ANA }
+		878 = { add_core = ANA }
+		883 = { add_core = ANA }
+		release_vassal = ANA
+		ANA = {
+			define_general = {
+				name = "Evangelos Melisurgos"
+				personality = audacious
+				background = natural_born_leader
+			}
+			define_general = {
+				name = "Seiranos Kanayou"
+				personality = efficient
+				background = school_of_offense
+			}
+			country_event = {
+				id = 100040006
+				days = 2
+			}
+		}
+		change_tag_no_core_switch = ANA
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#The Roman Succession War for every situation except human ANA
+country_event = {
+	id = 50608
+	title = "EVTNAME50608"
+	desc = "EVTDESC50608"
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BYZ
+		has_country_flag = BYZ_coup_attempt
+		ANA = {
+			ai = yes
+			vassal_of = THIS
+			military_score = 20
+		}
+		exists = GRE
+		NOT = { has_global_flag = roman_succession_war_start }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Marshal the armies! He will hang!"
+		set_global_flag = roman_succession_war_start
+		release_vassal = ANA
+		war = {
+			target = ANA
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = civil_war }
+		}
+		ANA = { 
+			add_country_modifier = {
+				name = fighting_civil_war
+				duration = -1
+			}
+		}
+	}
+}
+
+#The Roman Succession War for human ANA
+country_event = { ###Note: This event will only fire if the player does not take the decision to start the war early
+	id = 50609
+	title = "EVTNAME50608"
+	desc = "EVTDESC50608"
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ANA
+		ai = no
+		vassal_of = BYZ
+		military_score = 20
+		BYZ = {
+			has_country_flag = BYZ_coup_attempt
+		}
+		exists = GRE
+		NOT = { has_global_flag = roman_succession_war_start }
+	}
+	
+	mean_time_to_happen = {
+		months = 9
+	}
+	
+	option = {
+		name = "The throne is ours!"
+		set_country_flag = human_ANA #####################Is this necessary?########################
+		set_global_flag = roman_succession_war_start
+		BYZ = {
+			release_vassal = ANA
+			set_country_flag = civil_war_ANA
+			war = {
+				target = ANA
+				attacker_goal = { casus_belli = civil_war }
+				defender_goal = { casus_belli = civil_war }
+			}
+		}
+		add_country_modifier = {
+			name = fighting_civil_war
+			duration = -1
+		}
+	}
+}
+
+#Control over Greece slips
+country_event = {
+	id = 50610
+	title = "EVTNAME50610" 
+	desc = "EVTDESC50610"
+	picture = "Finepeople"
+	
+	trigger = {
+		tag = BYZ
+		has_country_flag = georgius
+		NOT = { has_country_flag = GRE_controlproblems }
+		has_country_flag = greek_liberals
+		exists = ANA
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.2
+			has_global_flag = BYZ_coup_attempt
+		}
+		modifier = {
+			factor = 0.5
+			average_militancy = 3
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 0.5
+			has_global_flag = roman_succession_war_start
+		}
+		modifier = {
+			factor = 0.1
+			war = yes
+		}
+		modifier = {
+			factor = 0.2
+			exists = ANA
+		}
+	}
+	
+	immediate = {
+		set_country_flag = GRE_controlproblems
+	}
+	
+	option = {
+		name = "We must investigate this matter."
+		prestige = -15
+		release_vassal = GRE
+		GRE = {
+			country_event = {
+				id = 100060004
+				days = 5
+			}
+			define_general = {
+				name = "Nikos Patoulidou"
+				personality = resourceful
+				background = artillerist
+			}
+			define_general = {
+				name = "Zisis Kanonidou"
+				personality = audacious
+				background = school_of_the_bayonet
+			}
+			government = democracy
+			political_reform = wealth_voting
+			political_reform = jefferson_method
+			political_reform = state_equal_weight
+			political_reform = yes_meeting
+			political_reform = non_secret_ballots
+			political_reform = non_socialist
+			political_reform = free_press
+			election = yes
+		}
+	}
+	
+	option = {
+		name = "Do you hear the people sing?"
+		prestige = -15
+		release = GRE
+		change_tag_no_core_switch = GRE
+		GRE = {
+			country_event = {
+				id = 100040004
+				days = 5
+			}
+			define_general = {
+				name = "Nikos Patoulidou"
+				personality = resourceful
+				background = artillerist
+			}
+			define_general = {
+				name = "Zisis Kanonidou"
+				personality = audacious
+				background = school_of_the_bayonet
+			}
+			government = democracy
+			political_reform = wealth_voting
+			political_reform = jefferson_method
+			political_reform = state_equal_weight
+			political_reform = yes_meeting
+			political_reform = non_secret_ballots
+			political_reform = non_socialist
+			political_reform = free_press
+			election = yes
+		}
+	
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Crete and Cyprus Cease Contributing
+country_event = {
+	id = 50611
+	title = "EVTNAME50611" 
+	desc = "EVTDESC50611"
+	picture = "map_crete"
+	
+	trigger = {
+		tag = BYZ
+		has_global_flag = roman_succession_war_start
+		has_country_flag = GRE_controlproblems
+		NOT = { has_global_flag = CRE_and_CYP }
+	}
+	
+	immediate = {
+		set_global_flag = CRE_and_CYP
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "In time, they will pay for their treason!"
+		prestige = -10
+		release = CRE
+		release = CYP
+		relation = {
+			who = CRE
+			value = -150
+		}
+		relation = {
+			who = CYP
+			value = -150
+		}
+	}
+	
+	option = {
+		name = "Join the Cretans!"
+		prestige = -10
+		release = CRE
+		release = CYP
+		relation = {
+			who = CRE
+			value = -150
+		}
+		relation = {
+			who = CYP
+			value = -150
+		}
+		change_tag_no_core_switch = CRE
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {
+		name = "The Cypriots are forging a great path."
+		prestige = -10
+		release = CRE
+		release = CYP
+		relation = {
+			who = CRE
+			value = -150
+		}
+		relation = {
+			who = CYP
+			value = -150
+		}
+		change_tag_no_core_switch = CYP
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Bulgaria has a proposition
+country_event = {
+	id = 50612
+	title = "EVTNAME50612" 
+	desc = "EVTDESC50612"
+	#picture = 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Desparate times call for desparate measures."
+		prestige = -2
+		create_alliance = BUL
+		set_country_flag = BUL_promise_independence
+		war = {
+			attacker_goal = { casus_belli = humiliate }
+			call_ally = yes
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We don't need their help."
+		prestige = 2
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+#Arbenon has a proposition
+country_event = {
+	id = 50613
+	title = "EVTNAME50612" 
+	desc = "EVTDESC50612"
+	#picture = 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Desparate times call for desparate measures."
+		prestige = -2
+		create_alliance = ALB
+		set_country_flag = ALB_promise_independence
+		war = {
+			attacker_goal = { casus_belli = humiliate }
+			call_ally = yes
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We don't need their help."
+		prestige = 2
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+#############################################################
+#Events with Volasea in the time of the Roman Succession War#
+#############################################################
+
+#Moldavia declares intention to unite Volasea
+country_event = {
+	id = 50614
+	title = "EVTNAME50614" 
+	desc = "EVTDESC50614"
+	picture = "Recruits"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will not give up Wallachia!"
+		release_vassal = WAL
+		create_alliance = WAL
+		MOL = {
+			country_event = {
+				id = 50615				#The Empire will not back down
+				days = 2
+			}
+		}
+		relation = {
+			who = MOL
+			value = -300
+		}
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+			modifier = {
+				factor = 0.33
+				is_greater_power = no
+			}
+		}
+	}
+	
+	option = {
+		name = "Let them go and maintain relations."
+		MOL = {
+			country_event = {
+				id = 50616				#The Empire accedes to our demands
+				days = 2 
+			}
+		}
+		relation = {
+			who = MOL
+			value = 100
+		}
+		release_vassal = WAL
+		WAL = {
+			country_event = {
+				id = 50617				#The Empire has released us!
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				war_with = ANA
+				war_with = GRE
+			}
+			modifier = {
+				factor = 1.5
+				has_recently_lost_war = yes
+			}
+			modifier = {
+				factor = 2
+				war_exhaustion = 50
+			}
+		}
+	}
+	
+	option = {
+		name = "Let us be rid of them!"
+		MOL = {
+			country_event = {
+				id = 50618				#The Empire washes its hands of Volasea
+				days = 2
+			}
+		}
+		relation = {
+			who = MOL
+			value = -300
+		}
+		diplomatic_influence = { 
+			who = MOL
+			value = -200
+		}
+		release_vassal = WAL
+		WAL = {
+			country_event = {
+				id = 50619				#The Empire has abandoned us!
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+
+#The Empire will not back down
+country_event = {
+	id = 50615
+	title = "EVTNAME50615" 
+	desc = "EVTDESC50615"
+	picture = "map_romania"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Then war it is!"
+		set_global_flag = moldavian_ambition
+		prestige = 5
+		war = {
+			target = WAL
+			attacker_goal = { casus_belli = conquest }
+			defender_goal = { casus_belli = cut_down_to_size }
+		}
+		add_country_modifier = {
+			name = fighting_civil_war
+			duration = -1
+		}
+		
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We don't stand a chance in a military conflict."
+		prestige = -10
+		
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#The Empire Accedes to our Demands
+country_event = {
+	id = 50616
+	title = "EVTNAME50616" 
+	desc = "EVTDESC50616"
+	picture = "map_romania"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Good news! Inform the Hospodar in Bucharest of our proposal."
+		prestige = 5
+		any_country = {
+			limit = {	
+				tag = WAL
+				ai = yes
+			}
+			country_event = {
+				id = 50620  #Moldavia proposes unification
+				days = 1
+			}
+		}
+		any_country = {
+			limit = {	
+				tag = WAL
+				ai = no
+			}
+			country_event = {
+				id = 50621  #Moldavia proposes unification
+				days = 1
+			}
+		}
+	}
+}
+
+#The Empire has released us!
+country_event = {
+	id = 50617
+	title = "EVTNAME50617"
+	desc = "EVTDESC50617"
+	picture = "map_romania"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We welcome freedom!"
+		prestige = 5
+	}
+}
+
+#The Empire washes its hands of Volasea
+country_event = {
+	id = 50618
+	title = "EVTNAME50618"
+	desc = "EVTDESC50618"
+	picture = "map_romania"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Good riddance."
+		prestige = 10
+		relation = {
+			who = BYZ
+			value = -200
+		}
+	}
+}
+
+#The Empire has abandoned us!
+country_event = {
+	id = 50619
+	title = "EVTNAME50618"
+	desc = "EVTDESC50618"
+	picture = "Recruits"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will be better off without them!"
+		prestige = 5
+		relation = {
+			who = BYZ
+			value = -150
+		}
+	}
+}
+
+#Moldavia proposes unification! AI
+country_event = {
+	id = 50620
+	title = "EVTNAME50620"
+	desc = "EVTDESC50620"
+	picture = "map_romania"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Accept their offer."
+		MOL = {
+			country_event = {
+				id = 50622				#Wallachia accepts
+				days = 2
+			}
+		}
+		
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "We prefer to remain independent for now."
+		prestige = 5
+		MOL = {
+			country_event = {
+				id = 50623				#Wallachia refuses
+				days = 2
+			}
+		}
+		
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#Moldavia proposes unification! human
+country_event = {
+	id = 50621
+	title = "EVTNAME50620"
+	desc = "EVTDESC50620"
+	picture = "map_romania"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Accept their offer."
+		change_tag = MOL
+		inherit = WAL
+	}
+	
+	option = {
+		name = "We prefer to remain independent for now."
+		prestige = 5
+		MOL = {
+			country_event = {
+				id = 50623				#Wallachia refuses
+				days = 2
+			}
+		}
+	}
+}
+
+#Wallachia accepts!
+country_event = {
+	id = 50622
+	title = "Wallachia accepts!"
+	desc = "They have decided to agree to our offer to join us in union."
+	picture = "map_romania"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "I knew their Hospodar would see reason!"
+		prestige = 5
+		inherit = WAL
+	}
+}
+
+#Wallachia refuses!
+country_event = {
+	id = 50623
+	title = "Wallachia refuses!"
+	desc = "The foolish Hospodar in Bucharest would prefer to stay on his own."
+	picture = "map_romania"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "They will submit to us."
+		badboy = 5
+		war = {
+			target = WAL
+			attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = status_quo }
+		}
+		add_country_modifier = {
+			name = fighting_civil_war
+			duration = -1
+		}
+		
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "This is only a temporary setback."
+		prestige = -5
+		
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#Moldavia is defeated
+country_event = {				#Note that this event revassalises WAL
+	id = 50624
+	title = "EVTNAME50624"
+	desc = "EVTDESC50624"
+	picture = "treaty"
+	
+	trigger = {
+		tag = BYZ
+		has_global_flag = moldavian_ambition
+		MOL = {
+			has_recently_lost_war = yes
+			truce_with = BYZ
+		}
+		644 = { NOT = { owned_by = MOL } }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01			#This is here just to make sure that it fires the next day after the war ends
+			year = 1858
+		}
+	}
+	
+	immediate = {
+		clr_global_flag = moldavian_ambition
+		clr_global_flag = moldavian_rebellion
+		set_global_flag = failed_moldavian_rebellion
+		MOL = { remove_country_modifier = fighting_civil_war }
+	}
+	
+	option = {
+		name = "Annex Moldavia and execute the rebels."
+		inherit = MOL
+		MOL = {
+			all_core = {
+				add_core = BYZ
+			}
+		}
+		create_vassal = WAL
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "Grant Wallachia Moldavia."
+		create_vassal = WAL
+		MOL = {
+			all_core = {
+				add_core = WAL
+			}
+			annex_to = WAL
+		}
+		
+		ai_chance = {
+			factor = 40
+		}
+	}
+	
+	option = {
+		name = "Install a new regime in Moldavia."
+		create_vassal = MOL
+		create_alliance = MOL
+		relation = {
+			who = MOL
+			value = 100
+		}
+		diplomatic_influence = {
+			who = MOL
+			value = 400
+		}
+		create_vassal = WAL
+		
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	option = {
+		name = "Unite Volasea under the loyal Hospodar of Wallachia."
+		create_vassal = WAL
+		WAL = {
+			country_event = {
+				id = 50625
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+#We are repaid for our loyalty!
+country_event = {
+	id = 50625
+	title = "EVTNAME50625"
+	desc = "EVTDESC50625"
+	picture = "map_romania"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		prestige = 10
+		change_tag = VOL
+		inherit = MOL
+	}
+}
+
+#Moldavia is victorious
+country_event = {
+	id = 50626
+	title = "EVTNAME50626"
+	desc = "EVTDESC50626"
+	picture = "treaty"
+	
+	trigger = {
+		tag = BYZ
+		has_global_flag = moldavian_ambition
+		truce_with = MOL
+		OR = {
+			MOL = { is_our_vassal = WAL }
+			644 = { owned_by = MOL }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01			#This is here just to make sure that it fires the next day after the war ends
+			year = 1858
+		}
+	}
+	
+	option = {
+		name = "Damn!"
+		prestige = -15
+		clr_global_flag = moldavian_ambition
+		clr_global_flag = moldavian_rebellion
+		set_global_flag = successful_moldavian_rebellion
+		MOL = { remove_country_modifier = fighting_civil_war }
+	}
+}
+
+#####################################################################
+#				Succession War Cleanup events						#
+#####################################################################
+
+#Event to declare victory for the Roman Empire
+
+country_event = {
+	id = 50627
+	title = "EVTNAME50627"
+	desc = "EVTDESC50627"
+
+	major = yes
+	
+	trigger = {
+		tag = BYZ
+		has_global_flag = roman_succession_war_start
+		ANA = { exists = no }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Justice has been done!"
+		clr_global_flag = roman_succession_war_start
+		set_global_flag = roman_succession_war_finish_BYZ
+		prestige = 10
+		ANA = {
+			all_core = {
+				remove_core = ANA
+			}
+			remove_country_modifier = fighting_civil_war
+		}
+	}
+}
+
+#Event to declare victory for Anatole
+country_event = {
+	id = 50628
+	title = "EVTNAME50628"
+	desc = "EVTDESC50628"
+
+	major = yes
+	
+	trigger = {
+		tag = ANA
+		has_global_flag = roman_succession_war_start
+		BYZ = { exists = no }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "We have emerged victorious!"
+		clr_global_flag = roman_succession_war_start
+		set_global_flag = roman_succession_war_finish_ANA
+		prestige = 20
+		remove_country_modifier = fighting_civil_war
+		change_tag = BYZ
+		ANA = {
+			all_core = {
+				remove_core = ANA
+			}
+		}
+	}
+}
+
+#$FROMCOUNTRY$ (BUL or ALB) demands that the Empire hold true to its bargain
+country_event = {
+	id = 50629
+	title = "EVTNAME50629"
+	desc = "EVTDESC50629"
+	picture = "Recruits"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Hold true to our word."
+		release_vassal = FROM
+		FROM = {
+			any_owned = {
+				remove_core = BYZ
+			}
+		}
+	}
+	
+	option = {
+		name = "They will remain Imperial subjects."
+		badboy = 3
+		prestige = -5
+		relation = {
+			who = FROM
+			value = -100
+		}
+		FROM = {
+			country_event = {
+				id = 50630
+				days = 1
+			}
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = albanian
+					has_pop_culture = bulgarian
+				}
+			}
+			militancy = 4
+			consciousness = 4
+		}
+	}
+}
+
+#The Empire has refused to honour the deal
+country_event = {
+	id = 50630
+	title = "EVTNAME50630"
+	desc = "EVTDESC50630"
+	picture = "Recruits"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Unbelievable!"
+		relation = {
+			who = BYZ
+			value = -400
+		}
+		BYZ = {
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+		}
+	}
+}
+
+#Greece rises in revolt
+country_event = {
+	id = 50631
+	title = "EVTNAME50631" 
+	desc = "EVTDESC50631"
+	picture = "Artillery"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = GRE_revolt
+	}
+	
+	option = {
+		name = "Crush them!"
+		prestige = -20
+		release_vassal = GRE
+		war = {
+			target = GRE
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = status_quo }
+		}
+		GRE = {
+			add_country_modifier = {
+				name = fighting_civil_war
+				duration = -1
+			}
+		}
+		
+		ai_chance = {
+			factor = 67
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We will deal with them later."
+		prestige = -20
+		release = GRE
+		
+		ai_chance = {
+			factor = 33
+		}
+	}
+}
+
+
+#
+#
+#
+#   Events 50632 up are in HtA_RomanEmpireFlavor
+#
+#
+#
+#
+
+#Armenia loses its claims on Anatolikon and Boukellarion
+country_event = {
+	id = 50680
+	title = "EVTNAME50680"
+	desc = "EVTDESC50680"
+	picture = "poor"
+	
+	trigger = {
+		tag = ARM
+		is_greater_power = no
+		873 = {
+			is_core = ARM
+			NOT = { owned_by = ARM }
+		}
+		876 = {
+			is_core = ARM
+			NOT = { owned_by = ARM }
+		}
+		NOT = { has_country_flag = RIP_armenian_anatolia }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.75
+			TUR_894 = { NOT = { owned_by = ARM } }
+		}
+	}
+	
+	option = {
+		name = "This is unacceptable!"
+		prestige = -10
+		TUR_873 = {
+			remove_core = ARM
+		}
+		TUR_876 = {
+			remove_core = ARM
+		}
+		set_country_flag = RIP_armenian_anatolia
+	}
+}
+	
+	
+
+#Restoration of the pentarchy
+country_event = {
+	id = 50689
+	title = "EVTNAME50689"
+	desc = "EVTDESC50689"
+	picture = "orthodox_priests"
+	
+	major = yes
+	
+	trigger = {
+		tag = BYZ
+		860 = { owned_by = BYZ } #Constantinople
+		749 = { owned_by = BYZ } #Rome
+		900 = { owned_by = BYZ } #Antioch
+		917 = { owned_by = BYZ } #Jerusalem
+		1751 = { owned_by = BYZ } #Alexandria
+		NOT = { has_global_flag = pentarchy_restored }
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "Glory be to God!"
+		set_global_flag = pentarchy_restored
+		prestige = 100
+		any_pop = {
+			limit = {
+				has_pop_religion = orthodox
+			}
+			militancy = -9
+		}
+	}
+}
+
+##############Fun events with a human trade republic on Med islands
+
+#$FROMCOUNTRY$ wishes to join our republic
+country_event = {
+	id = 50690
+	title = "EVTNAME50690"
+	desc = "EVTDESC50690"
+	picture = "map_cyprus"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We welcome them with open arms!"
+		prestige = 5
+		inherit = FROM
+		FROM = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+		set_country_flag = cyp_cre_union
+	}
+}
+
+#Irakleio invites us to join their republic
+country_event = {
+	id = 50691
+	title = "EVTNAME50691"
+	desc = "EVTDESC50691"
+	picture = "map_crete"
+	
+	is_triggered_only = yes
+	
+	immediate = { set_country_flag = IRK_invitation }
+	
+	option = {
+		name = "Join them in prosperity!"
+		IRK = {
+			inherit = THIS
+		}
+		all_core = {
+			add_core = IRK
+		}
+		
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "Refuse politely."
+		set_country_flag = refuse_IRK
+		IRK = {
+			country_event = {
+				id = 50692
+				days = 2
+			}
+		}
+		
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#$FROMCOUNTRY$ refuses our offer
+country_event = {
+	id = 50692
+	title = "EVTNAME50692"
+	desc = "EVTDESC50692"
+	picture = "map_crete"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "They will realise their mistake after our troops have landed!"
+		casus_belli = {
+			target = FROM
+			type = conquest
+			months = 60
+		}
+	}
+	
+	option = {
+		name = "Oh well..."
+		relation = {
+			who = FROM
+			value = -50
+		}
+	}
+}

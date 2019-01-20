@@ -1,0 +1,24 @@
+army = {
+	name = "Landwehr I"
+	location = 603
+	regiment = {
+		name= "1. Brigade"
+		type = infantry
+		home = 603
+	}
+	regiment = {
+		name= "2. Brigade"
+		type = infantry
+		home = 604
+	}
+	regiment = {
+		name= "3. Brigade"
+		type = infantry
+		home = 605
+	}
+	regiment = {
+		name= "4. Brigade"
+		type = infantry
+		home = 606
+	}
+}

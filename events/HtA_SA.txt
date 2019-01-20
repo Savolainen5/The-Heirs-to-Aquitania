@@ -1,0 +1,173 @@
+#Sale of Aquitanian South America
+country_event = {
+	id = 51200
+	title = "EVTNAME51200"
+	desc = "EVTDESC51200"
+	picture = "SAjungle"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Proceed with the sale."
+		FROM = {
+			country_event = {
+				id = 51201
+				days = 2
+			}
+		}
+		relation = {
+			who = FROM
+			value = 25
+		}
+		
+		ai_chance = {
+			factor = 60
+		}
+	}
+	
+	option = {
+		name = "Wait for another buyer."
+		FROM = {
+			country_event = {
+				id = 51202
+				days = 2
+			}
+		}
+		relation = {
+			who = FROM
+			value = -25
+		}
+		
+		ai_chance = {
+			factor = 30
+		}
+	}
+	
+	option = {
+		name = "Actually, now is not the right time to sell the colony."
+		FROM = {
+			country_event = {
+				id = 51202
+				days = 2
+			}
+		}
+		relation = {
+			who = FROM
+			value = -25
+		}
+		clr_country_flag = look_for_buyer_for_aqt_s_a
+		add_country_modifier = {
+			name = stop_aqt_s_a_sale
+			duration = 3650
+		}
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				slavery = yes_slavery
+			}
+		}
+	}
+}
+
+#Aquitania agrees to the sale
+country_event = {
+	id = 51201
+	title = "EVTNAME51201"
+	desc = "EVTDESC51201"
+	picture = "SAjungle"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great news!"
+		prestige = 2
+		money = -15000
+		AQT = { money = 15000 }
+		2414 = {
+			secede_province = THIS
+			remove_core = AQT
+			add_core = THIS
+		}
+		2415 = {
+			secede_province = THIS
+			remove_core = AQT
+			add_core = THIS
+		}
+		set_global_flag = aqt_s_a_purchase_concluded
+	}
+}
+
+#Aquitania refuses our offer
+country_event = {
+	id = 51202
+	title = "EVTNAME51202"
+	desc = "EVTDESC51202"
+	picture = "SAjungle"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Damn."
+		prestige = -1
+		relation = {
+			who = AQT
+			value = -25
+		}
+		
+		ai_chance = {
+			factor = 67
+		}
+	}
+	
+	option = {
+		name = "Then we'll have to take it from them."
+		prestige = -1
+		badboy = 3
+		relation = {
+			who = AQT
+			value = -25
+		}
+		casus_belli = {
+			target = AQT
+			type = place_in_the_sun
+			months = 60
+		}
+	
+		ai_chance = {
+			factor = 33
+		}
+	}
+}
+
+
+#We have lost control of our SA Colonies
+country_event = {
+	id = 51203
+	title = "EVTNAME51203"
+	desc = "EVTDESC51203"
+	picture = "la_trinitaria"
+	trigger = {
+		tag = AQT
+		2414 = {
+			is_core = AQT
+			NOT = { owned_by = THIS }
+		}
+		2415 = {
+			is_core = AQT
+			NOT = { owned_by = THIS }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "So be it."
+		prestige = -2
+		2414 = { remove_core = AQT }
+		2415 = { remove_core = AQT }
+	}
+}

@@ -1,0 +1,9 @@
+army = {
+	name = "Armée du Rhin"
+	location = 412
+	regiment = {
+		name = "1e Regiment d'Infanteri"
+		type = infantry
+		home = 414
+	}
+}

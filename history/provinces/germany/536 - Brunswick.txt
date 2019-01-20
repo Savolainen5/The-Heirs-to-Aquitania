@@ -1,0 +1,23 @@
+owner = BRA
+controller = BRA
+add_core = BRA
+add_core = GER
+trade_goods = fruit
+life_rating = 40
+state_building = {
+	level = 2 
+	building = ammunition_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2 
+	building = small_arms_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2 
+	building = canned_food_factory
+	upgrade = yes
+}
+
+

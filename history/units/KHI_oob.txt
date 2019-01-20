@@ -1,0 +1,22 @@
+army = {
+	name = "Army of the Khanate of Khiva"
+	location = 1191
+	regiment = {
+		name= "1.Yomud"
+		type = cavalry
+		home = 1191
+	}
+
+	regiment = {
+		name= "1.Kirgiz"
+		type = cavalry
+		home = 1192
+	}
+
+	regiment = {
+		name= "2.Kirgiz"
+		type = cavalry
+		home = 1196
+	}
+
+}

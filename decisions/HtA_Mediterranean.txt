@@ -1,0 +1,658 @@
+political_decisions = {
+	
+	#Declare a trade republic
+	med_islands_trade_republic = {
+		picture = megali_idea
+		potential = {
+			OR = {
+				tag = CYP
+				tag = CRE
+			}
+			ai = no
+			NOT = { has_country_flag = mediterranean_trade_republic }
+		}
+		
+		allow = {
+			military_score = 1
+			total_amount_of_ships = 2
+		}
+		
+		effect = {
+			prestige = 5
+			government = democracy
+			political_reform = wealth_voting
+			political_reform = jefferson_method
+			political_reform = state_equal_weight
+			political_reform = yes_meeting
+			political_reform = non_secret_ballots
+			political_reform = non_socialist
+			political_reform = free_press
+			nationalvalue = nv_prosperity
+			election = yes
+			set_country_flag = mediterranean_trade_republic
+		}
+	}
+	
+	#AI island joins non-AI island
+	med_islands_join_forces_crete = {
+		potential = {
+			tag = CYP
+			ai = yes
+			CRE = {
+				ai = no
+				has_country_flag = mediterranean_trade_republic
+			}
+		}
+		
+		allow = {
+			CRE = {
+				prestige = 5
+				military_score = 1
+				total_amount_of_ships = 3
+				government = democracy
+			}
+		}
+		
+		effect = {
+			CRE = { country_event = 50690 }
+		}
+	}
+	
+	#AI island joins non-AI island
+	med_islands_join_forces_cyprus = {
+		potential = {
+			tag = CRE
+			ai = yes
+			CYP = {
+				ai = no
+				has_country_flag = mediterranean_trade_republic
+			}
+		}
+		
+		allow = {
+			CYP = {
+				prestige = 5
+				military_score = 1
+				total_amount_of_ships = 1
+				government = democracy
+			}
+		}
+		
+		effect = {
+			CYP = { country_event = 50690 }
+		}
+	}
+	
+	#Claim Aegean Islands
+	claim_aegean = {
+		picture = map_aegean
+		potential = {
+			has_country_flag = cyp_cre_union
+			NOT = { has_country_flag = aegean_claimed }
+		}
+		
+		allow = {
+			prestige = 20
+			military_score = 10
+			total_amount_of_ships = 5
+		}
+		
+		effect = {
+			prestige = 5
+			843 = { add_core = THIS }
+			844 = { add_core = THIS }
+			845 = { add_core = THIS }
+			846 = { add_core = THIS }
+			set_country_flag = aegean_claimed
+		}
+	}
+	
+	#Form the Irakleian Republic
+	form_irakleio = {
+		picture = dreams_of_empire
+		potential = {
+			has_country_flag = cyp_cre_union
+			has_country_flag = aegean_claimed
+			NOT = { has_country_flag = irk_republic }
+		}
+		
+		allow = {
+			prestige = 30
+			military_score = 15
+			total_amount_of_ships = 10
+			owns = 846
+		}
+		
+		effect = {
+			prestige = 15
+			change_tag = IRK
+			all_core = {
+				add_core = IRK
+				remove_core = CRE
+			}
+			set_country_flag = irk_republic
+		}
+	}
+	
+	#Invite Malta
+	invite_malta_irk = {
+		picture = slave_ship
+		potential = {
+			tag = IRK
+			NOT = { has_country_flag = MLT_invited }
+			MLT = { NOT = { has_country_flag = IRK_invitation } }
+		}
+		
+		allow = {
+			MLT = { exists = yes }
+			prestige = 15
+			military_score = 15
+		}
+		
+		effect = {
+			MLT = {
+				country_event = {
+					id = 50691
+					days = 1
+				}
+			}
+			set_country_flag = MLT_invited
+		}
+	}
+	
+	#Claim Malta
+	claim_malta = {
+		picture = ionian_islands_question
+		potential = {
+			tag = IRK
+			NOT = { has_country_flag = malta_claimed }
+			MLT = { has_country_flag = refuse_IRK }
+		}
+		
+		allow = {
+			total_amount_of_ships = 15
+			military_score = 15
+		}
+		
+		effect = {
+			prestige = 5
+			854 = { add_core = THIS }
+			set_country_flag = malta_claimed
+		}
+	}
+			
+	#Embrace Maltese
+	embrace_maltese = {
+		picture = law_of_guarantees
+		potential = {
+			tag = IRK
+			has_country_flag = MLT_invited
+			NOT = { has_country_flag = maltese_embraced }
+		}
+		
+		allow = {
+			owns = 854
+			state_n_government = 1
+		}
+		
+		effect = {
+			add_accepted_culture = maltese
+			set_country_flag = maltese_embraced
+		}
+	}
+	
+	#Claim Heptanese Islands
+	claim_heptanesa = {
+		picture = ionian_islands_question
+		potential = {
+			tag = IRK
+			NOT = { has_country_flag = heptanesa_claimed }
+		}
+		
+		allow = {
+			total_amount_of_ships = 15
+			military_score = 15
+		}
+		
+		effect = {
+			prestige = 5
+			826 = { add_core = THIS }
+			827 = { add_core = THIS }
+			set_country_flag = heptanesa_claimed
+		}
+	}
+	
+	#Invite Sicily
+	invite_sicily_irk = {
+		picture = law_of_guarantees
+		potential = {
+			tag = IRK
+			NOT = { has_country_flag = SIC_invited }
+			SIC = { NOT = { has_country_flag = IRK_invitation } }
+		}
+		
+		allow = {
+			SIC = { exists = yes }
+			prestige = 35
+			military_score = 15
+		}
+		
+		effect = {
+			SIC = {
+				country_event = {
+					id = 50691
+					days = 1
+				}
+			}
+			set_country_flag = SIC_invited
+		}
+	}
+	
+	#Claim Sicily
+	claim_sicily = {
+		picture = ionian_islands_question
+		potential = {
+			tag = IRK
+			NOT = { has_country_flag = sicily_claimed }
+			SIC = { has_country_flag = refuse_IRK }
+		}
+		
+		allow = {
+			total_amount_of_ships = 15
+			military_score = 15
+		}
+		
+		effect = {
+			prestige = 5
+			SIC_763 = { add_core = THIS }
+			set_country_flag = sicily_claimed
+		}
+	}
+	
+	#Embrace Sicilians
+	embrace_sicilians = {
+		picture = court_yard_speech
+		potential = {
+			tag = IRK
+			has_country_flag = SIC_invited
+			NOT = { has_country_flag = sicilians_embraced }
+		}
+		
+		allow = {
+			owns = 762
+			state_n_government = 1
+		}
+		
+		effect = {
+			add_accepted_culture = sicilian
+			set_country_flag = sicilians_embraced
+		}
+	}
+	
+	#Invite Corsica
+	invite_corsica_irk = {
+		potential = {
+			tag = IRK
+			NOT = { has_country_flag = CRS_invited }
+			CRS = { NOT = { has_country_flag = IRK_invitation } }
+		}
+		
+		allow = {
+			CRS = { exists = yes }
+			prestige = 35
+			military_score = 15
+		}
+		
+		effect = {
+			CRS = {
+				country_event = {
+					id = 50691
+					days = 1
+				}
+			}
+			set_country_flag = CRS_invited
+		}
+	}
+	
+	#Claim Corsica and Sardinia
+	claim_corsar = {
+		picture = ionian_islands_question
+		potential = {
+			tag = IRK
+			NOT = { has_country_flag = corsar_claimed }
+			CRS = { has_country_flag = refuse_IRK }
+		}
+		
+		allow = {
+			total_amount_of_ships = 15
+			military_score = 15
+		}
+		
+		effect = {
+			prestige = 5
+			SAR_765 = { add_core = THIS }
+			set_country_flag = corsar_claimed
+		}
+	}
+	
+	#Embrace Maretans
+	embrace_maretans = {
+		picture = court_yard_speech
+		potential = {
+			tag = IRK
+			has_country_flag = CRS_invited
+			NOT = { has_country_flag = maretans_embraced }
+		}
+		
+		allow = {
+			owns = 473
+			state_n_government = 1
+		}
+		
+		effect = {
+			add_accepted_culture = maretan
+			set_country_flag = maretans_embraced
+		}
+	}
+	
+	#Claim Balearic Islands
+	claim_balearics = {
+		picture = ionian_islands_question
+		potential = {
+			tag = IRK
+			NOT = { has_country_flag = balearics_claimed }
+			has_country_flag = maretans_embraced
+		}
+		
+		allow = {
+			owns = 762
+			owns = 854
+			total_amount_of_ships = 15
+			military_score = 15
+		}
+		
+		effect = {
+			prestige = 5
+			SPA_502 = { add_core = THIS }
+			set_country_flag = balearics_claimed
+		}
+	}
+	
+	#Embrace Catalans
+	embrace_catalans_IRK = {
+		picture = court_yard_speech
+		potential = {
+			tag = IRK
+			has_country_flag = balearics_claimed
+			NOT = { has_country_flag = cat_embraced }
+		}
+		
+		allow = {
+			owns = 502
+			state_n_government = 1
+		}
+		
+		effect = {
+			add_accepted_culture = catalan
+			set_country_flag = cat_embraced
+		}
+	}
+
+	###################################
+	### Decisions regarding Corsica ###
+	###################################
+	
+	approach_aqt = {
+		picture = Corsica
+		potential = {
+			tag = CRS
+			government = democracy
+			NOT = { has_country_flag = approach_aqt }
+			OR = {
+				PDN = { has_country_flag = corsica_interest }
+				NPL = { has_country_flag = corsica_interest }
+				ITA = { has_country_flag = corsica_interest }
+			}
+		}
+		
+		allow = {
+			AQT = { government = democracy }
+		}
+		
+		effect = {
+			set_country_flag = approach_aqt
+			relation = {
+				who = AQT
+				value = 50
+			}
+			AQT = {
+				country_event = 51652
+			}
+		}
+	}
+	
+	invite_corsica_AQT = {
+		picture = Corsica
+		potential = {
+			tag = AQT
+			government = democracy
+			exists = CRS
+			CRS = {
+				government = democracy
+				has_country_flag = approach_aqt
+			}
+			has_global_flag = longtime_aqt_crs_friendship
+			NOT = { has_country_flag = CRS_invited }
+		}
+		
+		allow = {
+			CRS = {
+				in_sphere = THIS
+				is_vassal = no
+			}
+			relation = {
+				who = CRS
+				value = 180
+			}
+			war = no
+			NOT = { truce_with = CRS }
+		}
+		
+		effect = {
+			CRS = {
+				country_event = {
+					id = 51653 #Invitation to the republic
+					days = 1
+				}
+			}
+			set_country_flag = CRS_invited
+			clr_global_flag = longtime_aqt_crs_friendship
+		}
+	}
+	
+	demand_corsica_owned = {
+		picture = Corsica
+		potential = {
+			OR = {
+				tag = PDN
+				tag = ITA
+				tag = NPL
+			}
+			has_country_flag = still_interested_in_corsica
+			CRS = { all_core = { owned_by = AQT } }
+			has_global_flag = corsica_joins_AQT
+		}
+		
+		allow = {
+			NOT = {
+				relation = {
+					who = AQT
+					value = 100
+				}
+			}
+			military_score = 20
+		}
+		
+		effect = {
+			prestige = 3
+			AQT = { country_event = 51658 }
+			clr_country_flag = still_interested_in_corsica
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+			modifier = {
+				factor = 0.1
+				AQT = { military_score = THIS }
+			}
+			modifier = {
+				factor = 0
+				truce_with = AQT
+			}
+			modifier = {
+				factor = 0
+				is_disarmed = yes
+			}
+		}
+	}
+	
+	demand_corsica_puppet = {
+		picture = Corsica
+		potential = {
+			OR = {
+				tag = PDN
+				tag = ITA
+				tag = NPL
+			}
+			has_country_flag = still_interested_in_corsica
+			CRS = { is_our_vassal = AQT }
+			has_global_flag = corsica_vassal_AQT
+		}
+		
+		allow = {
+			NOT = {
+				relation = {
+					who = AQT
+					value = 100
+				}
+			}
+			military_score = 20
+		}
+		
+		effect = {
+			prestige = 3
+			AQT = { country_event = 51662 }
+			clr_country_flag = still_interested_in_corsica
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+			modifier = {
+				factor = 0.1
+				AQT = { military_score = THIS }
+			}
+			modifier = {
+				factor = 0
+				truce_with = AQT
+			}
+			modifier = {
+				factor = 0
+				is_disarmed = yes
+			}
+		}
+	}
+	
+	#Cleanup decision to take CRS puppet from AQT after war
+	take_CRS = {
+		picture = Corsica
+		potential = {
+			has_country_flag = war_to_release_CRS
+			truce_with = AQT
+			CRS = {
+				exists = yes
+				is_vassal = no
+			}
+		}
+		allow = {
+			CRS = { is_vassal = no }
+		}
+		effect = {
+			clr_country_flag = war_to_release_CRS
+			create_vassal = CRS
+			prestige = 5
+		}
+	}
+	
+	unify_western_med = {
+		potential = {
+			OR = {
+				tag = AQT
+				tag = CAT
+				tag = HIS
+				tag = PDN
+				tag = NPL
+				tag = ITA
+				tag = CRS
+			}
+			is_greater_power = yes
+			year = 1855
+		}
+		
+		allow = {
+			prestige = 500
+			military_score = 300
+			473 = { owned_by = THIS }
+			OR = {
+				tag = HIS
+				AND = {
+					HIS = { is_greater_power = no }
+					498 = { NOT = { owned_by = HIS } }
+				}
+			}
+			OR = {
+				tag = AQT
+				AND = {
+					HIS = { is_greater_power = no }
+					498 = { NOT = { owned_by = HIS } }
+				}
+			}
+			OR = {
+				exists = PDN
+				AND = {
+					NOT = { exists = PDN }
+					726 = { owned_by = THIS }
+				}
+			}
+			OR = {
+				AND = {
+					exists = NPL
+					NPL = { is_greater_power = no }
+				}
+				AND = {
+					exists = ITA
+					ITA = { is_greater_power = no }
+				}
+			}
+		}
+				
+		effect = {
+			set_global_flag = mare_occidentis_nostrum
+			prestige = 50
+			badboy = 25
+			CAT = { all_core = { add_core = THIS } }
+			AQT = { all_core = { add_core = THIS } }
+			CRS = { all_core = { add_core = THIS } }
+			PDN = { all_core = { add_core = THIS } }
+			ITA = { all_core = { add_core = THIS } }
+			NPL = { all_core = { add_core = THIS } }
+		}
+	}
+}

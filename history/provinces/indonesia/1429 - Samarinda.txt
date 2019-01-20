@@ -1,0 +1,7 @@
+owner = SCO
+controller = SCO
+add_core = KTI
+trade_goods = sulphur
+life_rating = 20
+colonial = 2
+

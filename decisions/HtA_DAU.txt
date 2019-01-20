@@ -1,0 +1,116 @@
+##Decisions relating directly to DAU, mostly in relation with their neighbours, PDN and AQT
+
+
+political_decisions = {
+	#Invite Daufinat into the Union for AI DAU
+	invite_daufinat_PDN_ai = {
+		picture = court_yard_speech
+		potential = {
+			tag = PDN
+			war = no
+			has_global_flag = RIP_Guigues
+			DAU = {
+				exists = yes
+				ai = yes
+			}
+			NOT = { has_country_flag = invite_DAU }
+		}
+		allow = {
+			prestige = 30
+			military_score = 30
+			DAU = {
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+			}
+			NOT = { war_with = DAU }
+		}
+		effect = {
+			prestige = 2
+			DAU = { country_event = 50037 }
+			DAU = { set_country_flag = considering_PDN }
+			set_country_flag = invite_DAU
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+
+#Invite Daufinat into the Union for human DAU (you never know, right?)
+	invite_daufinat_PDN = {
+		picture = court_yard_speech
+		potential = {
+			tag = PDN
+			war = no
+			has_global_flag = RIP_Guigues
+			DAU = { exists = yes }
+			DAU = { ai = no }
+			NOT = { has_country_flag = invite_DAU }
+		}
+		allow = {
+			prestige = 30
+			military_score = 30
+			DAU = {
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 2
+			DAU = { country_event = 50038 }
+			DAU = { set_country_flag = considering_PDN }
+			set_country_flag = invite_DAU
+		}
+	}
+	
+#Negotiations between AQT and PDN over partitioning DAU if it doesn't want to join PDN and isn't a vassal
+	partition_daufinat = {
+		picture = conference1
+		potential = {
+			tag = AQT
+			war = no
+			has_global_flag = RIP_Guigues
+			DAU = { is_vassal = no }
+			DAU = { exists = yes }
+			OR = {
+				DAU = {
+					NOT = { has_country_flag = considering_PDN }
+				}
+				has_global_flag = No_DAU_in_PDN
+				year = 1854
+			}
+			NOT = {	has_country_flag = partition_DAU_proposed }
+		}
+		allow = {
+			prestige = 50
+			military_score = 50
+			war = no
+			PDN = { war = no }
+		}
+		effect = {
+			prestige = 2
+			badboy = 10
+			set_country_flag = partition_DAU_proposed
+			PDN = { country_event = 50040 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.59
+			}
+			modifier = {
+				factor = 0
+				PDN = { badboy = 0.8 }
+			}
+		}
+	}
+}

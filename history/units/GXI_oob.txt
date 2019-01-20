@@ -1,0 +1,168 @@
+POR = {
+	value = 125		#relation
+}
+
+army = {
+	name = "1st Grey Banner Army"
+	location = 1493
+	regiment = {
+		name= "1st Grey Banners"
+		type = irregular
+		home = 1493
+	}
+	regiment = {
+		name= "2nd Grey Banners"
+		type = irregular
+		home = 1497
+	}
+	regiment = {
+		name= "3rd Grey Banners"
+		type = irregular
+		home = 1486
+	}
+	regiment = {
+		name= "4th Grey Banners"
+		type = irregular
+		home = 1545
+	}
+	regiment = {
+		name= "5th Grey Banners"
+		type = irregular
+		home = 1530
+	}
+	regiment = {
+		name= "6th Grey Banners"
+		type = irregular
+		home = 1503
+	}
+	regiment = {
+		name= "7th Grey Banners"
+		type = irregular
+		home = 1501
+	}
+	regiment = {
+		name= "8th Grey Banners"
+		type = irregular
+		home = 1499
+	}
+	regiment = {
+		name= "9th Grey Banners"
+		type = irregular
+		home = 1500
+	}
+	regiment = {
+		name= "10th Grey Banners"
+		type = irregular
+		home = 1547
+	}
+}
+
+army = {
+	name = "2nd Grey Banner Army"
+	location = 1484
+	regiment = {
+		name= "11th Grey Banners"
+		type = irregular
+		home = 1493
+	}
+	regiment = {
+		name= "12th Grey Banners"
+		type = irregular
+		home = 1494
+	}
+	regiment = {
+		name= "13th Grey Banners"
+		type = irregular
+		home = 1487
+	}
+	regiment = {
+		name= "14th Grey Banners"
+		type = irregular
+		home = 1550
+	}
+	regiment = {
+		name= "15th Grey Banners"
+		type = irregular
+		home = 1483
+	}
+	regiment = {
+		name= "16th Grey Banners"
+		type = irregular
+		home = 1549
+	}
+	regiment = {
+		name= "17th Grey Banners"
+		type = irregular
+		home = 1551
+	}
+	regiment = {
+		name= "18th Grey Banners"
+		type = irregular
+		home = 1527
+	}
+	regiment = {
+		name= "19th Grey Banners"
+		type = irregular
+		home = 1504
+	}
+	regiment = {
+		name= "20th Grey Banners"
+		type = irregular
+		home = 1495
+	}
+}
+
+army = {
+	name = "Army of the South"
+	location = 1370
+	regiment = {
+		name= "1st Red Standards"
+		type = irregular
+		home = 1369
+	}
+	regiment = {
+		name= "2nd Red Standards"
+		type = irregular
+		home = 1502
+	}
+	regiment = {
+		name= "3rd Red Standards"
+		type = irregular
+		home = 1370
+	}
+	regiment = {
+		name= "4th Red Standards"
+		type = irregular
+		home = 1374
+	}
+	regiment = {
+		name= "5th Red Standards"
+		type = irregular
+		home = 1376
+	}
+	regiment = {
+		name= "6th Red Standards"
+		type = irregular
+		home = 1499
+	}
+	regiment = {
+		name= "7th Red Standards"
+		type = irregular
+		home = 1503
+	}
+	regiment = {
+		name= "8th Red Standards"
+		type = irregular
+		home = 1550
+	}
+	regiment = {
+		name= "9th Red Standards"
+		type = irregular
+		home = 1482
+	}
+	regiment = {
+		name= "10th Red Standards"
+		type = irregular
+		home = 1484
+	}
+}

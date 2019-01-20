@@ -1,0 +1,9 @@
+owner = NET
+controller = NET
+add_core = NET
+add_core = OLD
+add_core = GER
+trade_goods = fish
+life_rating = 35
+
+

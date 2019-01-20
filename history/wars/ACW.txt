@@ -1,0 +1,28 @@
+#name = "War of Northern Aggression"
+
+1821.4.13 = {
+	add_attacker = USA
+	add_defender = CSA
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = civil_war
+		actor = USA
+		receiver = CSA
+	}
+	war_goal = {
+		casus_belli = status_quo
+		actor = CSA
+		receiver = USA
+	}
+
+}
+
+1822.1.1 = {
+	rem_attacker = USA
+	rem_defender = CSA
+}

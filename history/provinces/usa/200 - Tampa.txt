@@ -1,0 +1,8 @@
+owner = AQT
+controller = AQT
+add_core = SOL
+trade_goods = fruit
+life_rating = 25
+colonial = 2
+is_slave = yes
+

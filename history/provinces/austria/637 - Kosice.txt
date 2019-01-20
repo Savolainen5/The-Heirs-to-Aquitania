@@ -1,0 +1,8 @@
+owner = POL
+controller = POL
+add_core = POL
+add_core = SLV
+trade_goods = coal
+life_rating = 35
+
+

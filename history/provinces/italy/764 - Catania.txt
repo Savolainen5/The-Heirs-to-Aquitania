@@ -1,0 +1,9 @@
+owner = NPL
+controller = NPL
+add_core = NPL
+add_core = ITA
+add_core = SIC
+trade_goods = sulphur
+life_rating = 35
+
+

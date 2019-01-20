@@ -1,0 +1,20 @@
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	befriend = { id="AQT" value = 100 }
+	befriend = { id="RMG" value = 200 }
+	befriend = { id="TUS" value = 200 }
+
+	protect = { id="RMG" value = 200 }
+	protect = { id="TUS" value = 200 }
+
+	threat = { id="NPL" value=200 }
+
+	antagonize = { id="NPL" value=200 }
+
+	rival = { id="NPL" value=200 }
+}

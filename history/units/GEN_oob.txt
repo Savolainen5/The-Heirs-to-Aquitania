@@ -1,0 +1,41 @@
+NPL = {
+	value = -75
+}
+
+army = {
+	name = "Esercito di Genova"
+	location = 724
+	regiment = {
+		name = "1. Reggimento di Fanteria"
+		type = infantry
+		home = 724
+	}
+	regiment = {
+		name = "2. Reggimento di Fanteria"
+		type = infantry
+		home = 738
+	}
+	regiment = {
+		name = "1. Reggimento d'Artiglieria"
+		type = artillery
+		home = 723
+	}
+	regiment = {
+		name = "1. Reggimento di Cavalleria"
+		type = cuirassier
+		home = 725
+	}
+}
+
+navy = {
+	name = "Flotta di Genova"
+	location = 724
+	ship = {
+		name = "Marco"
+		type = manowar
+	}
+	ship = {
+		name = "Aliseo"
+		type = manowar
+	}
+}

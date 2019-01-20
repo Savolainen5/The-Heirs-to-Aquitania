@@ -1,0 +1,8 @@
+owner = SHA
+controller = SHA
+add_core = SHA
+add_core = BUR
+trade_goods = opium
+life_rating = 35
+
+

@@ -1,0 +1,404 @@
+GLC = { value = -15 truce_until = 1839.9.25 }
+CAT = {	value = -25 truce_until = 1839.9.25 }
+POR = {	value = 0 truce_until = 1839.9.25 }
+AQT = { value = 40 truce_until = 1839.9.25 }
+PRE = { value = 40 truce_until = 1839.9.25 }
+ORL = { value = 40 truce_until = 1839.9.25 }
+CMP = { value = 40 truce_until = 1839.9.25 }
+FRA = { value = 40 truce_until = 1839.9.25 }
+GEN = { value = 40 truce_until = 1839.9.25 }
+NPL = { value = 40 truce_until = 1839.9.25 }
+BOH = { value = 40 truce_until = 1839.9.25 }
+BAV = { value = 40 truce_until = 1839.9.25 }
+AEN = { value = 40 truce_until = 1839.9.25 }
+
+NAV = {
+	value = 65		#relation
+	level = 4		#3=cordial, 4 = friendly, 5 = sphere
+	influence_value = 25
+}
+
+BNG = {
+	value = 115
+	level = 5
+	influence_value = 10
+}
+
+army = {
+	name = "Armada del Rey"
+	location = 489
+	regiment = {
+		name = "1. Granaderos del Rey"
+		type = infantry
+		home = 487
+	}
+
+	regiment = {
+		name= "2. Granaderos del Rey"
+		type = infantry
+		home = 489
+	}
+
+	regiment = {
+		name= "1. Brigada de Infantería"
+		type = infantry
+		home = 503
+	}
+
+	regiment = {
+		name= "2. Brigada de Infantería"
+		type = infantry
+		home = 509
+	}
+
+	regiment = {
+		name= "3. Brigada de Infantería"
+		type = infantry
+		home = 513
+	}
+
+	regiment = {
+		name= "1. Brigada de Ingenieros"
+		type = engineer
+		home = 495
+	}
+
+	regiment = {
+		name= "1. Caballeros del Rey"
+		type = cuirassier
+		home = 487
+	}
+
+	regiment = {
+		name= "2. Caballeros del Rey"
+		type = cuirassier
+		home = 489
+	}
+
+	regiment = {
+		name= "1. Artillería del Rey"
+		type = artillery
+		home = 488
+	}
+}
+
+army = {
+	name = "Ejército del Norte"
+	location = 475
+	
+	regiment = {
+		name= "4. Brigada de Infantería 'San Jorge'"
+		type = infantry
+		home = 475
+	}
+
+	regiment = {
+		name= "1. Brigada de Artillería"
+		type = artillery
+		home = 481
+	}
+	
+	regiment = {
+		name= "5. Brigada de Infantería"
+		type = infantry
+		home = 482
+	}
+	
+	regiment = {
+		name= "6. Brigada de Infantería"
+		type = infantry
+		home = 483
+	}
+
+	regiment = {
+		name= "7. Brigada de Infantería"
+		type = infantry
+		home = 497
+	}
+}
+
+army = {
+	name = "Ejército de Bangla"
+	location = 1251
+
+	regiment = {
+		name= "8. Brigada de Infantería"
+		type = infantry
+		home = 512
+	}
+
+	regiment = {
+		name= "9. Brigada de Infantería"
+		type = infantry
+		home = 514
+	}
+
+	regiment = {
+		name= "10. Brigada de Infantería"
+		type = infantry
+		home = 510
+	}
+	
+	regiment = {
+		name= "2. Brigada de Artillería"
+		type = artillery
+		home = 515
+	}
+}
+
+army = {
+	name = "Armada Colonial de Bangla"
+	location = 1256
+	regiment = {
+		name= "1. Brigada Bangala"
+		type = infantry
+		home = 1251
+	}
+	regiment = {
+		name= "2. Brigada Bangala"
+		type = infantry
+		home = 1251
+	}
+	regiment = {
+		name= "3. Brigada Bangala"
+		type = infantry
+		home = 1256
+	}
+	regiment = {
+		name= "4. Brigada Bangala"
+		type = artillery
+		home = 1256
+	}
+	regiment = {
+		name= "5. Brigada Bangala"
+		type = artillery
+		home = 1257
+	}
+}
+
+army = {
+	name = "Guardia de Goa"
+	location = 1303
+	regiment = {
+		name = "Guardia de Goa"
+		home = 1303
+		type = irregular
+	}
+}
+	
+army = {
+	name = "Ejército de Cuba"
+	location = 2209
+	
+	regiment = {
+		name = "1. Brigada Colonial"
+		type = infantry
+		home = 513
+	}
+	
+	regiment = {
+		name = "2. Brigada Colonial"
+		type = infantry
+		home = 2209
+	}
+}
+
+army = {
+	name = "Ejército de las Indias"
+	location = 1432
+	
+	regiment = {
+		name = "3. Brigada Colonial"
+		type = infantry
+		home = 1432
+	}
+}
+
+army = {
+	name = "Ejército de Mali"
+	location = 1894
+	regiment = {
+		name= "11. Brigada de Infantería"
+		type = infantry
+		home = 516
+	}
+}
+
+navy = {
+	name = "Armada Real Española"
+	location = 512
+	ship = {
+		name= "Hispania"
+		type = manowar
+	}
+
+	ship = {
+		name= "Héroe"
+		type = manowar
+	}
+
+	ship = {
+		name= "San Pablo"
+		type = manowar
+	}
+
+	ship = {
+		name= "Ceres"
+		type = frigate
+	}
+
+	ship = {
+		name= "Gloria"
+		type = frigate
+	}
+
+	ship = {
+		name= "Nuestra Señora de Asunción"
+		type = frigate
+	}
+
+	ship = {
+		name= "Nuestra Señora de Atocha"
+		type = frigate
+	}
+
+	ship = {
+		name= "Santa Sabina"
+		type = frigate
+	}
+
+	ship = {
+		name= "1a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3a Flotilla de Transporte"
+		type = clipper_transport
+	}
+}
+
+navy = {
+	name = "Armada de Cuba"
+	location = 2212
+	
+	ship = {
+		name = "Santiago"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Hespérides"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Isla de Cuba"
+		type = frigate
+	}
+	
+	
+	ship = {
+		name= "1a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+}
+
+navy = {
+	name = "Armada de Bangla"
+	location = 1251
+	
+	ship = {
+		name = "Alerta"
+		type = manowar
+	}
+	
+	ship = {
+		name = "San Fernando"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Orienta"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Victoria"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Nuestra Señora del Patrocinio"
+		type = frigate
+	}
+	
+	ship = {
+		name= "1a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+}
+
+navy = {
+	name = "Armada de las Indias"
+	location = 1432	
+	ship = {
+		name = "Maddalena"
+		type = frigate
+	}
+	ship = {
+		name= "1a Flotilla de Transporte"
+		type = clipper_transport
+	}
+}
+
+navy = {
+	name = "Armada de Mali"
+	location = 1894	
+	ship = {
+		name = "Maria"
+		type = frigate
+	}
+	ship = {
+		name= "1a Flotilla de Transporte"
+		type = clipper_transport
+	}
+}
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	befriend = { id="NAV" value = 100 }
+	befriend = { id="NPL" value = 100 }
+
+	threat = { id="CAT" value = 50 }
+	threat = { id="POR" value = 50 }
+	threat = { id="AQT" value = 80 }
+	threat = { id="SLW" value = 50 }
+
+	antagonize = { id="AEN" value = 60 }
+	antagonize = { id="AQT" value = 80 }
+	antagonize = { id="NET" value = 75 }
+	antagonize = { id="SLW" value = 50 }
+}

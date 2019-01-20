@@ -1,0 +1,43 @@
+BAD = {
+	value = -175
+}
+BAV = {
+	value = -175
+}
+WUR = {
+	value = -175
+}
+army = {
+	name = "I. Armee"
+	location = 575
+	regiment = {
+		name = "I Infanterie"
+		type = infantry
+		home = 575
+	}
+	regiment = {
+		name = "II Infanterie"
+		type = infantry
+		home = 578
+	}
+	regiment = {
+		name = "III Infanterie"
+		type = infantry
+		home = 2561
+	}
+	regiment = {
+		name = "I Artillerie"
+		type = artillery
+		home = 577
+	}
+	regiment = {
+		name = "II Artillerie"
+		type = artillery
+		home = 576
+	}
+	regiment = {
+		name = "I Reiter"
+		type = dragoon
+		home = 575
+	}
+}

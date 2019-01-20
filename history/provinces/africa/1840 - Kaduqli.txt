@@ -1,0 +1,9 @@
+owner = EGY
+controller = EGY
+add_core = EGY
+add_core = SUD
+add_core = SHL
+add_core = DAR
+trade_goods = wool
+life_rating = 30
+

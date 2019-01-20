@@ -1,0 +1,10 @@
+owner = FIN
+controller = FIN
+add_core = FIN
+trade_goods = timber
+life_rating = 35
+state_building = {
+	level = 1
+	building = lumber_mill
+	upgrade = yes
+}

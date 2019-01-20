@@ -1,0 +1,35 @@
+BAD = {
+	value = -175
+}
+BAV = {
+	value = -175
+}
+WUR = {
+	value = -175
+}
+army = {
+	name = "Münsterische Heer"
+	location = 581
+	regiment = {
+		name = "1. Infanterie-Regiment"
+		type = infantry
+		home = 581
+	}
+	regiment = {
+		name = "2. Infanterie-Regiment"
+		type = infantry
+		home = 580
+	}
+	regiment = {
+		name = "1. Artillerie-Regiment"
+		type = artillery
+		home = 581
+	}
+	regiment = {
+		name = "1. Dragoner-Regiment"
+		type = dragoon
+		home = 580
+	}
+	
+}
+		

@@ -1,0 +1,100 @@
+political_decisions = {
+	call_geneva_convention = {
+		potential = {
+			owns = 607
+			NOT = {
+				has_global_flag = geneva_convention_held
+			}
+		}
+		
+		allow = {
+			any_greater_power = {
+				war_exhaustion = 5
+			}
+			empiricism = 1
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = signed_the_geneva_convention
+				duration = -1
+			}
+			set_global_flag = geneva_convention_held
+			prestige = 10
+		}
+	}
+	
+	sign_the_geneva_convention = {
+		potential = {
+			civilized = yes
+			has_global_flag = geneva_convention_held
+			NOT = {
+				has_country_modifier = signed_the_geneva_convention
+			}
+		}
+		
+		allow = {
+			NOT = {
+				badboy = 1
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = signed_the_geneva_convention
+				duration = -1
+			}
+			badboy = -1
+		}
+	}
+	
+	build_gotthard_tunnel = {
+		potential = {
+			owns = 606
+			NOT = {
+				has_country_flag = gotthard_tunnel_built
+			}
+		}
+		
+		allow = {
+			invention = machine_tools
+		}
+		
+		effect = {
+			606 = {
+				infrastructure = 4
+			}
+			prestige = 5
+			set_country_flag = gotthard_tunnel_built
+		}
+	}
+
+	#Embrace Romansh
+	embrace_romansh = {
+        	picture = negotiations
+		potential = {	
+			OR = {
+				tag = SGF
+				tag = GER
+				tag = BAV
+			}   
+			NOT = { has_country_flag = romansh_embraced }
+		}
+        
+		allow = {
+			SWI = { all_core = { owned_by = THIS } }   
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = socialist
+			}
+		}
+        
+		effect = {
+			prestige = -5
+			badboy = -1
+			add_accepted_culture = romansh
+			set_country_flag = romansh_embraced
+			SWI = { all_core = { any_pop = { militancy = -1 consciousness = -1 } } }
+		}
+	}
+}

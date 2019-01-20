@@ -1,0 +1,59 @@
+army = {
+	name = "Armeta del Ovesto"
+	location = 454
+	regiment = {
+		name = "1a Enfanteria"
+		type = infantry
+		home = 453
+	}
+	regiment = {
+		name = "2a Enfanteria"
+		type = infantry
+		home = 454
+	}
+	regiment = {
+		name = "3a Enfanteria"
+		type = infantry
+		home = 451
+	}
+	regiment = {
+		name = "1a Artileria"
+		type = artillery
+		home = 720
+	}
+	regiment = {
+		name = "2a Artileria"
+		type = artillery
+		home = 452
+	}
+	regiment = {
+		name = "1a Cavalaria"
+		type = cuirassier
+		home = 607
+	}
+}
+
+army = {
+	name = "Armeta del Esto"
+	location = 720
+	regiment = {
+		name = "4a Enfanteria"
+		type = infantry
+		home = 720
+	}
+	regiment = {
+		name = "5a Enfanteria"
+		type = infantry
+		home = 722
+	}
+	regiment = {
+		name = "3a Artileria"
+		type = artillery
+		home = 720
+	}
+	regiment = {
+		name = "2a Cavalaria"
+		type = hussar
+		home = 609
+	}
+}

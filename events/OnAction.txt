@@ -1,0 +1,120 @@
+# Nation that owns your debt goes bankrupt
+country_event = {
+	id = 70002
+	title = "EVTNAME70002"
+	desc = "EVTDESC70002"
+	picture = "Bankruptcy"
+	trigger = {
+		NOT = { tag = FROM }
+	}
+
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA70002"
+		relation = { who = FROM value = -50 }
+		random_country = {
+			limit = {
+				tag = FROM
+				is_vassal = no
+				THIS = { is_greater_power = yes }
+			}
+			add_casus_belli = {
+				target = THIS
+				type = gunboat
+				months = 12
+			}
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				is_vassal = no
+				part_of_sphere = no
+				THIS = { is_greater_power = yes }
+			}
+			add_casus_belli = {
+				target = THIS
+				type = add_to_sphere
+				months = 12
+			}
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				OR = {
+					neighbour = THIS
+					THIS = { ai = no }
+				}
+				is_disarmed = no
+				is_vassal = no
+				THIS = { is_greater_power = no }
+			}
+			add_casus_belli = {
+				target = THIS
+				type = cut_down_to_size
+				months = 12
+			}
+		}
+	}
+	
+	option = {
+		name = "Look the other way"
+		relation = { who = FROM value = -50 }
+		prestige = -5
+		any_pop = {
+			limit = {
+				strata = rich
+			}
+			militancy = 2
+		}
+	}	
+	
+}
+
+# Nation that owns your debt goes bankrupt in definace of our gunboats
+country_event = {
+	id = 70003
+	title = "EVTNAME70002"
+	desc = "EVTDESC70002"
+	picture = "Bankruptcy"
+	trigger = {
+		NOT = { tag = FROM }
+	}
+
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA70002"
+		casus_belli = {
+			type = cut_down_to_size
+			target = FROM
+			months = 12
+		}
+	}
+	
+	option = {
+		name = "We'll let it slide"
+		prestige = -2
+		relation = { who = FROM value = -20 }
+		any_pop = {
+			limit = {
+				strata = rich
+			}
+			militancy = 1
+		}
+	}	
+	
+}
+
+
+# Nation that owns your debt goes bankrupt, but the amount is small
+country_event = {
+	id = 70004
+	title = "EVTNAME70002"
+	desc = "EVTDESC70002"
+	picture = "Bankruptcy"
+
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA70002"
+		relation = { who = FROM value = -20 }
+	}
+}

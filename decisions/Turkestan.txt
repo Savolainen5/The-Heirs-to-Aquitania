@@ -1,0 +1,266 @@
+political_decisions = {
+	become_uzbekistan_khiva = {
+		picture = become_uzbekistan
+		potential = {
+			tag = KHI
+			NOT = { exists = UZB }
+		}
+
+		allow = {
+			war = no
+			civilized = yes
+			state_n_government = 1
+			BUK = { exists = no }
+			owns = 1195
+		}
+
+		effect = {
+			set_global_flag = uzbekistan_created
+			prestige = 10
+			BUK = {
+				all_core = { remove_core = BUK }
+			}
+			KHI = {
+				all_core = { remove_core = KHI }
+			}
+			1193 = { add_core = UZB } #Kyzylorda
+			1192 = { add_core = UZB } #Nukus
+			1191 = { add_core = UZB } #Khiva
+			1198 = { add_core = UZB } #Bukhara
+			1200 = { add_core = UZB } #Qarshi
+			1201 = { add_core = UZB } #Khojand
+			1199 = { add_core = UZB } #Samarkand
+			1197 = { add_core = UZB } #Shymkent
+			1195 = { add_core = UZB } #Tashkent
+			1202 = { add_core = UZB } #Kokand
+			change_tag = UZB
+			capital = 1195
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	become_uzbekistan_bukkhara = {
+		picture = become_uzbekistan
+		potential = {
+			tag = BUK
+			NOT = { exists = UZB }
+		}
+
+		allow = {
+			war = no
+			civilized = yes
+			state_n_government = 1
+			KHI = { exists = no }
+			owns = 1195
+		}
+
+		effect = {
+			set_global_flag = uzbekistan_created
+			prestige = 10
+			BUK = {
+				all_core = { remove_core = BUK }
+			}
+			KHI = {
+				all_core = { remove_core = KHI }
+			}
+			1193 = { add_core = UZB } #Kyzylorda
+			1192 = { add_core = UZB } #Nukus
+			1191 = { add_core = UZB } #Khiva
+			1198 = { add_core = UZB } #Bukhara
+			1200 = { add_core = UZB } #Qarshi
+			1201 = { add_core = UZB } #Khojand
+			1199 = { add_core = UZB } #Samarkand
+			1197 = { add_core = UZB } #Shymkent
+			1195 = { add_core = UZB } #Tashkent
+			1202 = { add_core = UZB } #Kokand
+			change_tag = UZB
+			capital = 1195
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	become_kyrgyzstan = {
+		potential = {
+			tag = KOK
+			NOT = { exists = KYR }
+		}
+
+		allow = {
+			war = no
+			civilized = yes
+			state_n_government = 1
+			owns = 1189
+		}
+
+		effect = {
+			set_global_flag = kyrgyzstan_created
+			KOK = {
+				all_core = { remove_core = KOK }
+			}
+			prestige = 10
+			1190 = { add_core = KYR } #Naryn
+			1195 = { add_core = KYR } #Tashkent
+			1186 = { add_core = KYR } #Alma Ata
+			1189 = { add_core = KYR } #Bishkek
+			1208 = { add_core = KYR } #Khorug
+			1203 = { add_core = KYR } #Osh
+			1202 = { add_core = KYR } #Kokand
+			change_tag = KYR
+			capital = 1189
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	unite_turkestan = {
+		potential = {
+			OR = {
+				tag = TKM
+				tag = UZB
+				tag = TAJ
+				tag = KYR
+				tag = UYG
+				tag = KAZ
+			}
+			NOT = {
+				exists = TKS
+				has_global_flag = turkestan_created
+			}
+		}
+
+		allow = {
+			war = no
+			civilized = yes
+			1189 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+			1191 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+			1195 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+			1198 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+			1202 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+			1204 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+			1207 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}	
+		}
+
+		effect = {
+			set_global_flag = turkestan_created
+			prestige = 20
+			change_tag = TKS
+			add_accepted_culture = turkmen
+			add_accepted_culture = uzbek
+			add_accepted_culture = kazak
+			add_accepted_culture = kirgiz
+			add_accepted_culture = tajik
+			add_accepted_culture = uighur
+			RUS_1182 = { add_core = TKS } #Guryev region
+			RUS_1184 = { add_core = TKS } #Qaraganda region
+			RUS_1185 = { add_core = TKS } #Yasi region
+			1197 = { add_core = TKS } #Shymkent
+			1189 = { add_core = TKS } #Bishkek
+			1190 = { add_core = TKS } #Naryn
+			1595 = { add_core = TKS } #Ili
+			1596 = { add_core = TKS } #Tulta
+			1205 = { add_core = TKS } #Kyzyl Arvat
+			1204 = { add_core = TKS } #Ashkabad
+			1196 = { add_core = TKS } #Dashhowuz
+			1206 = { add_core = TKS } #Merv
+			1200 = { add_core = TKS } #Qarshi
+			1116 = { add_core = TKS } #Gorgan
+			1150 = { add_core = TKS } #Bojnurd
+			1147 = { add_core = TKS } #Mashhad
+			1193 = { add_core = TKS } #Kyzylorda
+			1192 = { add_core = TKS } #Nukus
+			1191 = { add_core = TKS } #Khiva
+			1198 = { add_core = TKS } #Bukhara
+			1200 = { add_core = TKS } #Qarshi
+			1201 = { add_core = TKS } #Khojand
+			1199 = { add_core = TKS } #Samarkand
+			1197 = { add_core = TKS } #Shymkent
+			1195 = { add_core = TKS } #Tashkent
+			1202 = { add_core = TKS } #Kokand
+			1195 = { add_core = TKS } #Tashkent
+			1200 = { add_core = TKS } #Qarshi
+			1201 = { add_core = TKS } #Khojand
+			1207 = { add_core = TKS } #Kulob
+			1208 = { add_core = TKS } #Khorug
+			1210 = { add_core = TKS } #Faizabad
+			1211 = { add_core = TKS } #Balkh
+			1209 = { add_core = TKS } #Kabul
+			1213 = { add_core = TKS } #Bamyan
+			1212 = { add_core = TKS } #Herat
+			1214 = { add_core = TKS } #Farrah
+			1190 = { add_core = TKS } #Naryn
+			1195 = { add_core = TKS } #Tashkent
+			1186 = { add_core = TKS } #Alma Ata
+			1189 = { add_core = TKS } #Bishkek
+			1208 = { add_core = TKS } #Khorug
+			1203 = { add_core = TKS } #Osh
+			1202 = { add_core = TKS } #Kokand
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = turkmen
+						primary_culture = uzbek
+						primary_culture = kirgiz
+						primary_culture = tajik
+					}
+					in_sphere = THIS
+					NOT = { tag = THIS }
+				}
+				annex_to = THIS
+			}			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+}

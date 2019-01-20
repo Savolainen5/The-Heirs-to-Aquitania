@@ -1,0 +1,18 @@
+BAD = {
+	value = -175
+}
+BAV = {
+	value = -175
+}
+WUR = {
+	value = -175
+}
+army = {
+	name = "Armee von Mainz"
+	location = 570
+	regiment = {
+		name = "1. Infanterie-Regiment"
+		type = infantry
+		home = 2560
+	}
+}

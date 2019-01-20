@@ -1,0 +1,19 @@
+army = {
+	name = "Armée de Dabimon"
+	location = 50
+	regiment = {
+		name = "1er Infanterie"
+		type = infantry
+		home = 50
+	}
+	regiment = {
+		name = "2e Infanterie"
+		type = infantry
+		home = 50
+	}
+	regiment = {
+		name = "1er Éclaireurs"
+		type = hussar
+		home = 51
+	}
+}

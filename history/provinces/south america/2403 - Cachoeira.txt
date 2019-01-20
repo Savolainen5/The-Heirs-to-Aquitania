@@ -1,0 +1,7 @@
+owner = USR
+controller = USR
+add_core = USR
+trade_goods = tobacco
+life_rating = 25
+
+

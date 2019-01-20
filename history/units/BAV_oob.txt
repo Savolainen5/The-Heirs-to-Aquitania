@@ -1,0 +1,212 @@
+
+#North Germans
+BRA = {
+	value = -175
+	level = 0
+	truce_until = 1840.4.13
+}
+BRE = {
+	value = -105
+	level = 0
+	truce_until = 1840.4.13
+}
+BRN = {
+	value = -175
+	level = 0
+	truce_until = 1840.4.13
+}
+FRM = {
+	value = -165
+	level = 0
+	truce_until = 1840.4.13
+}
+HAN = {
+	value = -145
+	level = 0
+	truce_until = 1840.4.13
+}
+HEK = {
+	value = -115
+	level = 0
+	truce_until = 1840.4.13
+}
+MEC = {
+	value = -105
+	level = 0
+	truce_until = 1840.4.13
+}
+MNR = {
+	value = -145
+	level = 0
+	truce_until = 1840.4.13
+}
+MNZ = {
+	value = -165
+	level = 0
+	truce_until = 1840.4.13
+}
+NAS = {
+	value = -145
+	level = 0
+	truce_until = 1840.4.13
+}
+OLD = {
+	value = -105
+	level = 0
+	truce_until = 1840.4.13
+}
+POM = {
+	value = -115
+	level = 0
+	truce_until = 1840.4.13
+}
+RHI = {
+	value = -135
+	level = 0
+	truce_until = 1840.4.13
+}
+SAX = {
+	value = -5
+	level = 1
+	truce_until = 1840.4.13
+}
+THU = {
+	value = -145
+	level = 0
+	truce_until = 1840.4.13
+}
+TRR = {
+	value = -145
+	level = 0
+	truce_until = 1840.4.13
+}
+WES = {
+	value = -155
+	level = 0
+	truce_until = 1840.4.13
+}
+
+#South Germans
+BAD = {
+	value = 155		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+WUR = {
+	value = 155		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+ALS = {
+	value = 95
+	level = 4
+	influence_value = 15
+}
+
+#Others
+BOH = {
+	value = -15
+}
+AUS = {
+	value = 75
+	level = 3
+	influence_value = 35
+}
+
+army = {
+	name = "I. Korps"
+	location = 599
+	regiment = {
+		name= "1. Kgl. Bayer. Infanteriebrigade"
+		type = infantry
+		home = 599
+	}
+
+	regiment = {
+		name= "2. Kgl. Bayer. Infanteriebrigade"
+		type = infantry
+		home = 592
+	}
+	regiment = {
+		name= "3. Kgl. Bayer. Infanteriebrigade"
+		type = infantry
+		home = 602
+	}
+	regiment = {
+		name= "1. Kgl. Bayer. Artilleriebrigade"
+		type = artillery
+		home = 601
+	}
+	regiment = {
+		name= "1. Kgl. Bayer. Reiterbrigade"
+		type = cuirassier
+		home = 595
+	}
+
+}
+
+army = {
+	name = "II. Korps"
+	location = 595
+	regiment = {
+		name= "4. Kgl. Bayer. Infanteriebrigade"
+		type = infantry
+		home = 595
+	}
+	regiment = {
+		name= "5. Kgl. Bayer. Infanteriebrigade"
+		type = infantry
+		home = 597
+	}
+	regiment = {
+		name = "2. Kgl. Bayer. Artilleriebrigade"
+		type = artillery
+		home = 593
+	}
+	regiment = {
+		name = "2. Kgl. Bayer. Reiterbrigade"
+		type = cuirassier
+		home = 612
+	}
+
+}
+
+army = {
+	name = "III. Korps"
+	location = 593
+	regiment = {
+		name= "6. Kgl. Bayer. Infanteriebrigade"
+		type = infantry
+		home = 593
+	}
+	regiment = {
+		name= "7. Kgl. Bayer. Infanteriebrigade"
+		type = infantry
+		home = 599
+	}
+	regiment = {
+		name= "3. Kgl. Bayer. Artilleriebrigade"
+		type = artillery
+		home = 612
+	}
+}
+
+army = {
+	name = "IV. Korps"
+	location = 612
+	regiment = {
+		name = "8. Kgl. Bayer. Infanteriebrigade"
+		type = infantry
+		home = 613
+	}
+	regiment = {
+		name = "9. Kgl. Bayer. Infanteriebrigade"
+		type = infantry
+		home = 614
+	}
+	regiment = {
+		name = "4. Kgl. Bayer. Artilleriebrigade"
+		type = artillery
+		home = 615
+	}
+}

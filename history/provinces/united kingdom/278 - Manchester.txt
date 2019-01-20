@@ -1,0 +1,12 @@
+owner = AEN
+
+controller = AEN
+
+add_core = AEN
+
+trade_goods = coal
+
+life_rating = 40
+
+railroad = 1
+

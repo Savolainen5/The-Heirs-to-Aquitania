@@ -1,0 +1,29 @@
+army = {
+	name = "Haer av Vestland"
+	location = 223
+	regiment = {
+		name = "1. Infanteribataljon"
+		type = infantry
+		home = 223
+	}
+	regiment = {
+		name = "2. Infanteribataljon"
+		type = infantry
+		home = 241
+	}
+	regiment = {
+		name = "3. Infanteribataljon"
+		type = infantry
+		home = 232
+	}
+	regiment = {
+		name = "1. Artileribataljon"
+		type = artillery
+		home = 243
+	}
+	regiment = {
+		name = "1. Dragoner"
+		type = dragoon
+		home = 234
+	}
+}

@@ -1,0 +1,8 @@
+owner = PER
+controller = PER
+add_core = PER
+add_core = BUK
+add_core = AFG
+trade_goods = grain
+life_rating = 35
+

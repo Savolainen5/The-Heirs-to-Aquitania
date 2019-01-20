@@ -1,0 +1,6 @@
+owner = SLS
+controller = SLS
+add_core = SLS
+trade_goods = coal
+life_rating = 35
+

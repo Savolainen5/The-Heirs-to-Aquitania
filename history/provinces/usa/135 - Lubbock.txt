@@ -1,0 +1,6 @@
+add_core = GNC
+trade_goods = sulphur
+life_rating = 35
+
+
+

@@ -1,0 +1,28 @@
+leader = {
+	name = "Antun Simic"
+	type = land
+	date = 1836.1.1
+	personality = glory_hound
+	background = old_school
+}
+
+army = {
+	name = "Army of Croatia"
+	location = 772
+	regiment = {
+		name= "1.Infantry Division"
+		type = infantry
+		home = 771
+	}
+	regiment = {
+		name= "2.Infantry Division"
+		type = infantry
+		home = 781
+	}
+	regiment = {
+		name= "1.Artillery Division"
+		type = infantry
+		home = 785
+	}
+}
+

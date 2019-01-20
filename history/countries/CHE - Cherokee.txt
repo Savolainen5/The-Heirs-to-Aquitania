@@ -1,0 +1,38 @@
+capital = 2555
+primary_culture = cherokee
+religion = animist
+government = absolute_monarchy
+plurality = 5.0
+nationalvalue = nv_tradition
+literacy = 0.15
+civilized = no
+
+ruling_party = CHE_conservative
+upper_house = {
+	fascist = 0
+	liberal = 26
+	conservative = 62
+	reactionary = 12
+	anarcho_liberal = 0
+	socialist = 0
+	communist = 0
+}
+
+slavery = no_slavery
+upper_house_composition = appointed
+vote_franschise = none_voting
+public_meetings = yes_meeting
+press_rights = state_press
+trade_unions = no_trade_unions
+voting_system = first_past_the_post
+political_parties = underground_parties
+
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
+health_care = no_health_care
+unemployment_subsidies = no_subsidies
+pensions = no_pensions 
+school_reforms = no_schools
+
+oob = "CHE_oob.txt"

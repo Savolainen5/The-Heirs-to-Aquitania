@@ -1,0 +1,1290 @@
+country_event = {
+	id = 53000 # Shi Jiahao
+	title = EVTNAME53000
+	desc = EVTDESC53000
+	picture = "asian_ruler"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GXI 
+		year = 1839
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "The bureaucracy need to be improved."
+		prestige = 10
+		economic_reform = yes_admin_reform
+		economic_reform = yes_land_reform
+		random_country = {
+			limit = { 
+				OR = {
+					is_greater_power = yes
+					AND = {
+						tag = SCO
+						SCO = { any_owned_province = { continent = asia } }
+					}
+					AND = {
+						tag = NPL
+						NPL = { any_owned_province = { continent = asia } }
+					}
+					AND = {
+						tag = IRE
+						IRE = { any_owned_province = { continent = asia } }
+					}
+				}
+				num_of_ports = 1
+				NOT = { tag = RUS }
+				NOT = { tag = SML }
+				NOT = { tag = POL }
+				NOT = { tag = FIN }
+				NOT = { tag = BYZ }
+				any_owned_province = {
+					limit = {
+						is_capital = yes
+					}
+						continent = europe
+				}
+			}
+			country_event = 53001
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Focus on trade." # needs more
+		prestige = 10
+		economic_reform = yes_transport_improv
+		economic_reform = yes_finance_reform
+		random_country = {
+			limit = { 
+				is_greater_power = yes 
+				num_of_ports = 1
+			}
+			country_event = 53001
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Let us first build a strong army."
+		prestige = 10
+		military_reform = yes_foreign_weapons
+		military_reform = yes_foreign_training
+		random_country = {
+			limit = {
+				is_greater_power = yes 
+				num_of_ports = 1
+			}
+			country_event = 53001
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Old ways are the best ways!"
+		prestige = 5 
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = -4
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -6
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 53001
+	title = "EVTNAME53001"
+	desc = "EVTDESC53001"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "A splendid proposition!"
+		prestige = 10
+		relation = { who = FROM value = 100 }
+		1498 = {
+			secede_province = THIS
+			remove_core = QIN
+		}
+		diplomatic_influence = {
+			who = FROM
+			value = 200
+		}
+		FROM = {
+			add_country_modifier = {
+				name = technological_assistance
+				duration = -1
+			}
+		}
+		set_country_flag = giving_nanyue_tech_assistance
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "Sounds like a chore."
+		prestige = -5
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+	
+# Imperial Chinese War
+country_event = {
+	id = 53002 # Charting the Course of Nanyue
+	title = "EVTNAME53002"
+	desc = "EVTDESC53002"
+	picture = "taiping"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GXI 
+		war = no
+		civilized = no
+		NOT = { truce_with = QIN }
+		OR = {
+			AND = {
+				year = 1860
+				QIN = { has_recently_lost_war = yes }
+			}
+			AND = {
+				year = 1870
+				QIN = { revolt_percentage = 0.15 }
+			}
+			AND = {
+				QIN = { NOT = { civilization_progress = .5 } }
+				THIS = { civilization_progress = .7 }
+			}
+			AND = {
+				QIN = { civilized = no }
+				THIS = { civilization_progress = .8 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			QIN = { is_disarmed = yes }
+		}
+		modifier = {
+			factor = .75
+			QIN = { war_exhaustion = 30 }
+		}
+		modifier = {
+			factor = .125
+			THIS = { civilization_progress = .8 }
+		}
+	}
+	
+	option = { 
+		name = "We claim the Mandate of Heaven!"
+		set_global_flag = gxi_claimed_mandate
+		prestige = 15
+		GXI = {
+				all_core = { add_core = CHI }
+			}
+		QIN = { 
+			country_event = 53003 
+			relation = { who = THIS value = -200 }
+		}
+		any_pop = {
+			limit = { has_pop_culture = yue }
+			militancy = -2
+		}
+		any_pop = {
+			limit = { has_pop_culture = zhuang }
+			militancy = -2
+		}
+		any_pop = {
+			limit = { has_pop_culture = vietnamese }
+			militancy = 3
+		}
+		remove_accepted_culture = vietnamese
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				is_disarmed = yes
+			}
+			modifier = {
+				factor = .5
+				QIN = { brigades_compare = 4 }
+			}
+		}
+	}
+	
+	option = { 
+		name = "Our destiny lies in Southeast Asia."
+		set_global_flag = nanyue_abandon_china
+		prestige = 5
+		QIN = { 
+			country_event = 53004
+			relation = { who = THIS value = -100 }
+		}
+		any_pop = {
+			limit = { has_pop_culture = yue }
+			militancy = 3
+		}
+		any_pop = {
+			limit = { has_pop_culture = zhuang }
+			militancy = 2
+		}
+		any_pop = {
+			limit = { has_pop_culture = vietnamese }
+			militancy = -2
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+country_event = {
+	id = 53003 # Nanyue Claims the Mandate of Heaven 
+	title = "EVTNAME53003"
+	desc = "EVTDESC53003"
+	picture = qing_emperor
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Then it is war."
+		prestige = 10 
+		war = {
+			target = GXI
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			
+			defender_goal = {
+				casus_belli = civil_war
+			}
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = zhuang
+					has_pop_culture = yue
+				}
+			}
+			militancy = 5
+		}
+		set_global_flag = qin_civil_war
+	}
+}
+	
+country_event = {
+	id = 53004 # Nanyue Leaves China
+	title = "EVTNAME53004"
+	desc = "EVTDESC53004"
+	picture = qing_emperor
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Nanyue is a part of China!"
+		prestige = 10 
+		war = {
+			target = GXI
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			
+			defender_goal = {
+				casus_belli = status_quo # Sphere owner can intervene
+			}
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = zhuang
+					has_pop_culture = yue
+				}
+			}
+			militancy = 5
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = beifaren
+					has_pop_culture = nanfaren
+				}
+			}
+			militancy = -3
+		}
+		set_global_flag = qin_civil_war
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "Let them go."
+		prestige = -20
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = beifaren
+					has_pop_culture = nanfaren
+				}
+			}
+			militancy = 5
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 53005 # Mongolia intervenes
+	title =  "EVTNAME53005"
+	desc = "EVTDESC53005"
+	picture = "tonghak_rebellion"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MGL
+		has_global_flag = qin_civil_war
+		war = no
+		is_disarmed = no
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+		
+	option = {
+		name = "Invade Inner Mongolia."
+		set_global_flag = mongolia_intervention
+		add_country_modifier = {
+			name = fighting_civil_war
+			duration = 365
+			}
+		random_country = {
+			limit = {
+				tag = QIN
+				}
+			relation = { who = THIS value = -150 }
+		}
+		war = {
+			target = QIN
+			attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 1532
+			}
+			call_ally = yes
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "On second thought, no."
+		random_country = {
+			limit = {
+				tag = QIN
+				}
+			relation = { who = THIS value = 50 }
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}	
+
+country_event = {
+	id = 53006 # Manchuria intervenes
+	title =  "EVTNAME53006"
+	desc = "EVTDESC53006"
+	picture = "storm_of_samarkand"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MCK
+		has_global_flag = qin_civil_war
+		war = no
+		is_disarmed = no
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+		
+	option = {
+		name = "We'll teach them a lesson!"
+		set_global_flag = manchuria_intervention
+		add_country_modifier = {
+			name = fighting_civil_war
+			duration = 365
+			}
+		QIN = {
+			relation = { who = THIS value = -150 }
+		}
+		war = {
+			target = QIN
+			attacker_goal = {
+				casus_belli = humiliate
+			}
+			call_ally = yes
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "On second thought, no."
+		random_country = {
+			limit = {
+				tag = QIN
+			}
+			relation = { who = THIS value = 50 }
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 53007 # Vassals revolt
+	title = EVTNAME53007
+	desc = EVTDESC53007
+	picture = "Rebellion"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = YNN
+			tag = XBI
+		}
+		has_global_flag = qin_civil_war
+		OR = {
+			has_global_flag = manchuria_intervention
+			has_global_flag = mongolia_intervention
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1 
+	}
+	
+	option = {
+		name = "Independence!"
+		add_country_modifier = {
+			name = fighting_civil_war
+			duration = 365
+			}
+		random_country = {
+			limit = { war_with = THIS }
+			end_war = THIS
+		}
+		QIN = {	
+			release_vassal = THIS
+			leave_alliance = THIS
+			relation = { who = THIS value = -150 }
+			country_event = 53008
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "We owe fealty to the Emperor."
+		ai_chance = {
+			factor = 10
+		}
+	}
+}	
+
+country_event = {
+	id = 53008
+	title = EVTNAME53008
+	desc = EVTDESC53008
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "They shall submit to the All-Under-Heaven."
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+		
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	option = {
+		name = "We can not afford another enemy."
+		prestige = -15
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = beifaren
+					has_pop_culture = nanfaren
+				}
+			}
+			militancy = 3
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 53009
+	title = EVTNAME53009
+	desc = EVTDESC53009
+	picture = "qing_emperor"
+	
+	trigger = {
+		tag = GXI
+		war = no 
+		NOT = { 
+			exists = QIN 
+			has_country_flag = moved_capital
+		}
+		has_global_flag = qin_civil_war
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Zhengzhou, in the former palaces of the Qin."
+		set_country_flag = moved_capital
+		capital = 1511
+		prestige = 10
+		QIN = {
+			all_core = { add_core = GXI }
+			all_core = { remove_core = QIN }
+		}
+		add_country_modifier = {
+			name = mandate_of_heaven
+			duration = -1
+		}
+		add_country_modifier = {
+			name = academic_confusion
+			duration = 3650
+		}
+		primary_culture = beifaren
+		add_accepted_culture = yue
+		any_pop = {
+			limit = { has_pop_culture = beifaren }
+			militancy = -3
+		}
+		any_pop = {
+			limit = { has_pop_culture = nanfaren }
+			militancy = -1
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "Nanjing shall bind North and South China together."
+		set_country_flag = moved_capital
+		capital = 2221
+		prestige = 10
+		QIN = {
+			all_core = { add_core = GXI }
+			all_core = { remove_core = QIN }
+		}
+		add_country_modifier = {
+			name = mandate_of_heaven
+			duration = -1
+		}
+		add_country_modifier = {
+			name = academic_confusion
+			duration = 3650
+		}
+		primary_culture = nanfaren
+		add_accepted_culture = beifaren
+		add_accepted_culture = yue
+		any_pop = {
+			limit = { has_pop_culture = beifaren }
+			militancy = -2
+		}
+		any_pop = {
+			limit = { has_pop_culture = nanfaren }
+			militancy = -2
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+	
+	option = {
+		name = "Guangzhou shall remain our home."
+		set_country_flag = moved_capital
+		prestige = 10
+		QIN = {
+			all_core = { add_core = GXI }
+			all_core = { remove_core = QIN }
+		}
+		add_country_modifier = {
+			name = mandate_of_heaven
+			duration = -1
+		}
+		primary_culture = nanfaren
+		add_accepted_culture = yue
+		any_pop = {
+			limit = { has_pop_culture = nanfaren }
+			militancy = -2
+		}
+		any_pop = {
+			limit = { has_pop_culture = yue }
+			militancy = -2
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+}	
+
+country_event = {
+	id = 53010 # Qin win - formation of Greater China concept
+	title = EVTNAME53010
+	desc = EVTDESC53010
+	picture = "taiping"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = QIN 
+		NOT = { exists = GXI }
+		has_global_flag = qin_civil_war
+		war = no 
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "We are the heirs to China."
+		prestige = 10
+		GXI = { 
+			all_core = { add_core = CHI }
+			all_core = { remove_core = GXI }
+		}
+		MCK = { 
+			all_core = { add_core = CHI }
+		}
+		XBI = { 
+			all_core = { add_core = CHI }
+		}
+		CHI_1082 = { add_core = CHI }
+		any_pop = {	
+			militancy = -3
+			consciousness = 2
+		}
+	}
+}
+
+## Korean War
+
+country_event = {
+	id = 53011 # Korea conference 
+	title = EVTNAME53011
+	desc = EVTDESC53011
+	picture = "warlords"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We shall attend the conference."
+		FROM = { country_event = 53012 }
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "Don't even bother responding."
+		relation = { who = FROM value = -100 }
+		FROM = { country_event = 53017 }
+		ai_chance = {
+			factor = 20
+		}
+	}	
+}
+
+country_event = {
+	id = 53012 # Conference begins
+	title = EVTNAME53012
+	desc = EVTDESC53012
+	picture = "asian_administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA53012" # Liberation
+		badboy = 6
+		JAP = { country_event = 53013 }
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2
+				war_policy = pro_military
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB53012" # Demilitarized Korea
+		badboy = 3
+		JAP = { country_event = 53014 }
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 3
+				war_policy = pacifism
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC53012" # Partition
+		badboy = 6
+		JAP = { country_event = 53015 }
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 3
+				government = fascist_dictatorship
+			}
+			modifier = {
+				factor = .5
+				war_policy = anti_military
+			}
+			modifier = {
+				factor = 0
+				war_policy = pacifism
+			}
+		}
+	}	
+}
+
+country_event = {
+	id = 53013 # Full liberation
+	title = EVTNAME53013
+	desc = EVTDESC53013
+	picture = "asian_administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Absolutely not."
+		FROM = {
+			country_event = {
+				id = 53017
+				days = 5
+			}
+		}
+		prestige = 5
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = .5
+				war_policy = pacifism
+			}	
+		}
+	}
+	
+	option = {
+		name = "We cannot confront the Chinese now, do as they say."
+		FROM = {
+			country_event = {
+				id = 53018
+				days = 5
+			}
+		}
+		prestige_factor = -.1
+		badboy = -7
+		release_vassal = KOR
+		any_owned = { 
+			limit = {
+				is_core = KOR
+			}
+			secede_province = KOR 
+		}
+		KOR = {
+			diplomatic_influence = { who = THIS value = -200 }
+			relation = { who = THIS value = -50 }
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = socialist
+				factor = -3
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = 3
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 6
+			}
+		}		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 3
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 2
+				FROM = { brigades_compare = 3 }
+			}		
+		}
+	}
+}
+
+country_event = {
+	id = 53014 # Demilitarization 
+	title = EVTNAME53014
+	desc = EVTDESC53014
+	picture = "asian_administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will not yield direct control of Korea."
+		FROM = {
+			country_event = {
+				id = 53017
+				days = 5
+			}
+		}
+		prestige = 5
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "This is acceptable."
+		FROM = {
+			country_event = {
+				id = 53018
+				days = 5
+			}
+			set_country_flag = annexed_korea # stops Japan from annexing civilized KOR via decision
+		}
+		prestige_factor = -.05
+		badboy = -5
+		any_owned = { 
+			limit = {
+				is_core = KOR
+			}
+			secede_province = KOR
+		}
+		create_vassal = KOR 
+		KOR = {
+			relation = { who = THIS value = 50 }
+			diplomatic_influence = { who = THIS value = 200 }
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = socialist
+				factor = -2
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = 3
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 5
+			}
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 3
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 2
+				FROM = { brigades_compare = 3 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 53015 # Partition
+	title = EVTNAME53015
+	desc = EVTDESC53015
+	picture = "asian_administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will not share Korea with $FROMCOUNTRY$."
+		FROM = {
+			country_event = {
+				id = 53017
+				days = 5
+			}
+		}
+		prestige = 5
+		ai_chance = {
+			factor = 70
+		}
+	}
+	
+	option = {
+		name = "Perhaps we can find a compromise after all."
+		FROM = {
+			country_event = {
+				id = 53016 
+				days = 5
+			}
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 3
+				exists = KOR 
+			}
+		}	
+	}
+}	
+
+country_event = {
+	id = 53016 # The Partition of Korea
+	title = EVTNAME53015
+	desc = EVTDESC53016
+	picture = "boxers"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Keep northern Korea as a vassal." # Best Korea 
+		inherit = KOR
+		badboy = 1 # already has 6 infamy from taking partition option
+		1624 =  { 
+			secede_province = JAP 
+		} # Seoul
+		1632 = {
+			secede_province = JAP
+		} # Busan
+		1619 = {
+			secede_province = KOR 
+		} # Pyongyang
+		1627 = {
+			secede_province = KOR 
+		} # Sariwon
+		create_vassal = KOR 
+		KOR = {
+			relation = { who = THIS value = 100 }
+			diplomatic_influence = { who = THIS value = 200 }
+		}
+		ai_chance = {
+			factor = 70
+		}
+	}
+	
+	option = {
+		name = "We shall rule Korea directly."
+		inherit = KOR 
+		badboy = 2 # already has 6 infamy from taking partition option
+		1624 =  { 
+			secede_province = JAP 
+		} # Seoul
+		1632 = {
+			secede_province = JAP
+		} # Busan
+		any_pop = {
+			limit = { has_pop_culture = korean }
+			militancy = 3
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 3
+				government = fascist_dictatorship
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 53017 # Japan refuses 
+	title = EVTNAME53017
+	desc = EVTDESC53017
+	picture = "tonghak_rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Very well then, $FROMCOUNTRY$ leaves us no choice!"
+		relation = { who = FROM value = -100 }
+		add_casus_belli = {
+			target = FROM
+			type = liberate_country
+			months = 36
+		}
+		any_pop = {
+			dominant_issue = {
+				factor = 0.10
+				value = jingoism
+			}
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "The issue isn't worth pressing."
+		prestige = -15
+		relation = { who = FROM value = 50 }
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+country_event = {
+	id = 53018 # Japan accepts Korea loss
+	title = EVTNAME53018
+	desc = EVTDESC53018
+	picture = "xinhai"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		prestige = 20
+		any_pop = {
+			militancy = -1
+			consciousness = 1
+		}
+		relation = { who = JAP value = 50 }
+		KOR = {
+			diplomatic_influence = { who = THIS value = 50 }
+			relation = { who = THIS value = 100 }
+		}
+	}
+}
+
+country_event = {
+	id = 53019 # GP opens Qin
+	title = EVTNAME53019
+	desc = EVTDESC53019
+	picture = "Opiumwar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The foreigners do not belong here."
+		prestige = 5
+		FROM = { country_event = 53020 }
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "We submit to the foreigners."
+		prestige = -15
+		random_owned = {
+			limit = {
+				OR = {
+					province_id = 1481 #Port Arthur
+					province_id = 1496 #Hong Kong
+					province_id = 1498 #Macao
+					province_id = 1499 #Hainan
+					province_id = 1538 #Shanghai
+					province_id = 1540 #Taicangzhou
+					province_id = 1566 #Qindao
+					province_id = 1569 #Weihaiwei
+					province_id = 1606 #Jiaxing
+					province_id = 1608 #Ningbo
+				}
+			}
+			secede_province = FROM   
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = legation_quarter
+				duration = -1
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = 4
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 6
+			}
+		}
+		remove_country_modifier = uncivilized_isolationism
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 53020
+	title = EVTNAME53020
+	desc = EVTDESC53020
+	picture = "qing_emperor"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Their insolence must be punished!"
+		any_pop = {
+			dominant_issue = {
+				factor = 0.10
+				value = jingoism
+			}
+		}
+		war = {
+			target = QIN 
+			attacker_goal = {
+				casus_belli = humiliate
+			}
+			call_ally = yes 
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "Let us not disturb a sleeping giant."
+		prestige = -15
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+#Nanyue no longer receives technological assistance
+country_event = {
+	id = 53021
+	title = "No More Foreign Assistance"
+	desc = "The deal we made to exchange Macao for technological assistance is no longer valid, whether because of war or the fact that we no longer need it."
+
+	trigger = {
+		tag = GXI
+		1498 = { NOT = { owned_by = THIS } }
+		OR = {
+			civilized = yes
+			1498 = {
+				owner = {
+					has_country_flag = giving_nanyue_tech_assistance
+					war_with = THIS
+				}
+			}
+			1498 = {
+				owner = {
+					has_country_flag = giving_nanyue_tech_assistance
+					NOT = { relation = {
+						who = THIS
+						value = 0
+					} }
+				}
+			}
+			1498 = {
+				owner = {
+					NOT = { has_country_flag = giving_nanyue_tech_assistance }
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "We don't need it anymore, anyways."
+		any_country = {
+			limit = {
+				has_country_flag = giving_nanyue_tech_assistance
+			}
+			clr_country_flag = giving_nanyue_tech_assistance
+		}
+		remove_country_modifier = technological_assistance
+		1498 = { add_core = THIS }
+	}
+}

@@ -1,0 +1,6 @@
+controller = DAH
+owner = DAH
+add_core = DAH
+trade_goods = coffee
+life_rating = 25
+

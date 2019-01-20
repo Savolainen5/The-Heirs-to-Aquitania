@@ -1,0 +1,5 @@
+owner = HIS
+controller = HIS
+trade_goods = fruit
+life_rating = 35
+colonial = 2

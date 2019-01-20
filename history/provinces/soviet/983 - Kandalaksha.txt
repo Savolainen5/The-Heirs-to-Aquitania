@@ -1,0 +1,7 @@
+owner = FIN
+controller = FIN
+add_core = FIN
+add_core = SAM
+trade_goods = sulphur
+life_rating = 35
+

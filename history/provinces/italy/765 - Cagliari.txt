@@ -1,0 +1,16 @@
+owner = CRS
+controller = CRS
+add_core = CRS
+add_core = SRD
+trade_goods = sulphur
+life_rating = 35
+state_building = {
+	level = 2 
+	building = canned_food_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2 
+	building = glass_factory
+	upgrade = yes
+}

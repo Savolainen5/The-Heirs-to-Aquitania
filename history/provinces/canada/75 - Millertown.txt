@@ -1,0 +1,7 @@
+owner = NHL
+controller = NHL
+add_core = NHL
+trade_goods = iron
+life_rating = 35
+
+

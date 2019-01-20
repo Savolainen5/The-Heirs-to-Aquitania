@@ -1,0 +1,486 @@
+political_decisions = {
+	abolish_serfdom = {
+		potential = {
+			tag = RUS
+			has_country_flag = serfdom_not_abolished
+			government = absolute_monarchy
+		}
+		allow = {
+			OR = {
+				AND = {
+					upper_house = {
+						ideology = liberal
+						value = 0.3
+					}
+					average_consciousness = 3
+				}	
+				AND = {
+					ruling_party_ideology = liberal
+					average_consciousness = 4
+				}
+				average_militancy = 4
+			}
+		}
+		effect = {
+			farmers = {
+				militancy = -2
+				consciousness = 1
+			}
+			labourers = {
+				militancy = -2
+				consciousness = 1
+			}
+			badboy = -4
+			years_of_research = 0.05
+			clr_country_flag = serfdom_not_abolished
+		}
+	}
+	
+	establish_the_sovnarkom = {
+		potential = {
+			tag = RUS
+			NOT = {
+				has_country_flag = big_brother_is_watching
+			}
+			government = proletarian_dictatorship
+		}
+		allow = {
+			mass_politics = 1
+		}
+		
+		effect = {
+			any_pop = {
+				militancy = -1
+				consciousness = -1
+				ideology = {
+					value = socialist
+					factor = 0.05
+				}
+			}
+			prestige = 5
+			set_country_flag = big_brother_is_watching
+		}
+	}
+	
+	manifesto_on_unshakable_autocracy = {
+		potential = {
+			tag = RUS
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = the_manifesto
+			}
+			nationalism_n_imperialism = 1
+		}
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+		}
+		
+		effect = {
+			prestige = 5
+			badboy = 3
+			any_pop = {
+				consciousness = -0.5
+				militancy = -0.5
+			}
+			set_country_flag = the_manifesto
+		}
+	}
+	
+	promulgate_the_ems_ukaz = {
+		potential = {
+			tag = RUS
+			NOT = {
+				has_country_flag = ems_ukaz_dispatched
+			}
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+			}
+			owns = 958
+			phenomenalism = 1
+			exists = GER
+			GER = {
+				owns = 570
+			}
+		}
+		
+		allow = {
+			biologism = 1
+		}
+		
+		effect = {
+			any_pop = {
+				limit = {
+					has_pop_culture = ukrainian
+				}
+				militancy = 3
+				consciousness = -2
+			}
+			set_country_flag = ems_ukaz_dispatched
+		}
+	}
+
+	convention_of_peking = {
+		picture = peking_convention
+		potential = {
+			tag = RUS
+			is_greater_power = yes
+			1082 = {
+				owner = {
+					OR = {
+						tag = QIN
+						vassal_of = QIN
+						substate_of = QIN
+					}
+				}
+			}
+			NOT = { has_global_flag = convention_of_peking }
+			QIN = {
+				exists = yes
+				OR = {
+					has_country_flag = arrow_incident
+					AND = {
+						has_global_flag = taiping_has_happened
+						in_sphere = RUS
+					}
+				}
+			}
+		}
+		
+		allow = {
+			war = no
+			NOT = { truce_with = QIN }
+			QIN = {
+				OR = {
+					part_of_sphere = no
+					in_sphere = RUS
+				}
+			}
+		}
+		
+		effect = {
+			set_global_flag = convention_of_peking
+			1082 = { add_core = RUS }
+			1083 = { add_core = RUS }
+			1084 = { add_core = RUS }
+			1085 = { add_core = RUS }
+			2617 = { add_core = RUS }
+			1469 = { add_core = RUS }
+			QIN = { country_event = 80110 }
+		}
+	}	
+	
+	mongolian_protectorate = {
+		picture = unequal_treaty
+		potential = {
+			tag = RUS
+			is_greater_power = yes
+			MGL = {
+				exists = yes
+				is_vassal = no
+				neighbour = RUS
+				OR = {
+					in_sphere = RUS
+					part_of_sphere = no
+				}
+			}
+			NOT = { has_country_flag = mongolian_protectorate }
+		}
+		
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			MGL = {
+				war = no
+				NOT = { truce_with = RUS }
+				OR = {
+					in_sphere = RUS
+					any_owned_province = { is_core = CHI }
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = mongolian_protectorate
+			MGL = { country_event = 80115 }
+		}
+	}
+	
+	peking_convention_TPG = {
+		picture = peking_convention
+		potential = {
+			tag = RUS
+			is_greater_power = yes
+			TPG = { owns = 1082 }
+			NOT = { has_global_flag = convention_of_peking }
+			has_global_flag = taiping_has_happened
+		}
+		
+		allow = {
+			war = no
+			NOT = { truce_with = TPG }
+			TPG = {
+				war = no
+				OR = {
+					part_of_sphere = no
+					in_sphere = RUS
+				}
+			}
+		}
+		
+		effect = {
+			set_global_flag = convention_of_peking
+			CHI_1082 = {
+				add_core = RUS
+			}
+			1469 = {
+				add_core = RUS
+			}
+			TPG = {
+				country_event = 80110
+			}
+		}
+	}
+
+	russian_vladivostok = {
+		potential = {
+			tag = RUS
+			owns = 1085
+			owns = 1084
+			owns = 2617
+			owns = 1083
+        		owns = 1082
+			NOT = { has_global_flag = russian_vladivostok }
+		}
+		
+		allow = {
+			prestige = 10
+		}
+		
+		effect = {
+			1469 = {
+				change_province_name = "Kyzyl"
+				add_core = RUS
+				add_province_modifier = {
+					name = colonial_recruitment
+					duration = 5475
+				}
+			}
+			1085 = {
+				change_province_name = "Blagoveshchensk"
+				add_core = RUS
+				add_province_modifier = {
+					name = colonial_recruitment
+					duration = 5475
+				}
+			}
+			1084 = {
+				change_province_name = "Nikolayevsk-na-amure"
+				add_core = RUS
+				add_province_modifier = {
+					name = colonial_recruitment
+					duration = 5475
+				}
+			}
+			1083 = {
+				change_province_name = "Khabarovsk"
+				add_core = RUS
+				add_province_modifier = {
+					name = colonial_recruitment
+					duration = 5475
+				}
+			}
+			2617 = {
+				change_province_name = "Pashkovo"
+				add_core = RUS
+				add_province_modifier = {
+					name = colonial_recruitment
+					duration = 5475
+				}
+			}
+			1082 = {
+				change_province_name = "Vladivostok"
+				add_core = RUS
+				add_province_modifier = {
+					name = colonial_recruitment
+					duration = 5475
+				}
+				state_scope = {
+					change_region_name = "Primorye"
+				}
+			}
+			prestige = 5
+			set_global_flag = russian_vladivostok
+		}
+	}
+	
+	establish_panslavism = {
+		potential = {
+			tag = SER
+			government = absolute_monarchy
+			exists = BYZ
+			NOT = { has_global_flag = panslavism }
+		}
+		
+		allow = {
+			year = 1845
+			NOT = {
+				relation = {
+					who = BYZ
+					value = 0
+				}
+			}
+		}
+		
+		effect = {
+			set_global_flag = panslavism
+			BYZ = {
+				any_pop = { 
+					limit = { religion = orthodox }
+					militancy = 8
+				}
+				casus_belli = {	
+					target = THIS
+					type = humiliate
+					months = 12
+				}
+			}
+		}
+	}
+
+	the_great_game_bukhara = {
+		picture = gtfo
+		potential = {
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			is_greater_power = yes
+			tag = RUS
+			SML = { exists = no }
+			year = 1865
+			exists = BUK
+			BUK = {
+				civilized = no
+				ai = yes
+			}
+		}
+		
+		allow = {
+			BUK = {
+				OR = {
+					in_sphere = RUS
+					vassal_of = RUS
+				}
+			}
+		}
+		
+		effect = {
+			BUK = { annex_to = THIS }
+		}
+	}
+
+	the_great_game_kokand = {
+		picture = gtfo
+		potential = {
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			is_greater_power = yes
+			tag = RUS
+			SML = { exists = no }
+			year = 1865
+			exists = KOK
+			KOK = {
+				civilized = no
+				ai = yes
+			}
+		}
+		
+		allow = {
+			KOK = {
+				OR = {
+					in_sphere = RUS
+					vassal_of = RUS
+				}
+			}
+		}
+		
+		effect = {
+			KOK = { annex_to = THIS }
+		}
+	}
+
+	the_great_game_khiva = {
+		picture = gtfo
+		potential = {
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			is_greater_power = yes
+			tag = RUS
+			SML = { exists = no }
+			year = 1865
+			exists = KHI
+			KHI = {
+				civilized = no
+				ai = yes
+			}
+		}
+		
+		allow = {
+			KHI = {
+				OR = {
+					in_sphere = RUS
+					vassal_of = RUS
+				}
+			}
+		}
+		
+		effect = {
+			KHI = { annex_to = THIS }
+		}
+	}
+
+	the_great_game_kazakh = {
+		picture = gtfo
+		potential = {
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			is_greater_power = yes
+			tag = RUS
+			SML = { exists = no }
+			year = 1865
+			exists = KZH
+			KZH = {
+				civilized = no
+				ai = yes
+			}
+		}
+		
+		allow = {
+			KZH = {
+				OR = {
+					in_sphere = RUS
+					vassal_of = RUS
+				}
+			}
+		}
+		
+		effect = {
+			KZH = { annex_to = THIS }
+		}
+	}
+	
+
+
+}

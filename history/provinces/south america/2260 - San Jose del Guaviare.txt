@@ -1,0 +1,6 @@
+owner = HOY
+controller = HOY
+add_core = HOY
+trade_goods = cattle
+life_rating = 25
+

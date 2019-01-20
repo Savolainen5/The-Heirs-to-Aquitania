@@ -1,0 +1,32 @@
+FRA = {
+	value = -45
+}
+army = {
+	name = "Armé du Doux"
+	location = 418
+	regiment = {
+		name = "1er Infanteri"
+		type = infantry
+		home = 418
+	}
+	regiment = {
+		name = "2e Infanteri"
+		type = infantry
+		home = 415
+	}
+	regiment = {
+		name = "3e Infanteri"
+		type = infantry
+		home = 434
+	}
+	regiment = {
+		name = "1er Artilleri"
+		type = artillery
+		home = 416
+	}
+	regiment = {
+		name = "1er Cavalleri"
+		type = hussar
+		home = 417
+	}
+}

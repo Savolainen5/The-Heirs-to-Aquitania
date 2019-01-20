@@ -1,0 +1,51 @@
+#Flavor events for the Roman Empire
+
+#History of the Empire
+country_event = {
+	id = 50632
+	title = "EVTNAME50632"
+	desc = "EVTDESC50632"
+	picture = "Emerson"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BYZ
+		year = 1895
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	option = {
+		name = "A great achievement!"
+		prestige = 2
+		any_pop = { consciousness = 0.1 }
+	}
+}
+
+#Police reform
+country_event = {
+	id = 50633
+	title = "EVTNAME50633"
+	desc = "EVTDESC50633"
+	picture = "Greek_police"
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BYZ
+		has_country_flag = threshing_effects
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "Let order reign in the realm."
+		any_pop = { militancy = -0.25 }
+	}
+}
+	

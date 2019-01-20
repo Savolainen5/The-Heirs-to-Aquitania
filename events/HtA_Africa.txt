@@ -1,0 +1,234 @@
+# Events for all of Africa except the southern part. For now
+#51900-51999
+
+##################################################
+##	Wolof Raider Woes are Finnish Opportunities	##
+##################################################
+
+#Wolof struck by raiders
+country_event = {
+	id = 51900
+	title = "EVTNAME51900"
+	desc = "EVTDESC51900"
+	#picture = "?"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WOL
+		year = 1855
+		is_vassal = no
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	immediate = {
+		set_country_flag = raiders
+	}
+	
+	option = {
+		name = "Seek protection from the Finns."
+		any_pop = {
+			reduce_pop = 0.995
+		}
+		FIN = {
+			country_event = {
+				id = 51901
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = "We will stand on our own!"
+		any_pop = {
+			reduce_pop = 0.995
+		}
+		prestige = 2
+		set_country_flag = alone_against_raiders
+		set_variable = {
+			which = raiders
+			value = 0
+		}
+	}
+}
+
+#Väyrynen's Expedition for Wolof
+country_event = {
+	id = 51901
+	title = "EVTNAME51901"
+	desc = "EVTDESC51901"
+	#picture = "??"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Dispatch the expedition."
+		create_vassal = FROM
+		create_alliance = FROM
+		relation = {
+			who = FROM
+			value = 100
+		}
+		
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 1.1
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "They cannot be helped."
+		FROM = { set_country_flag = alone_against_raiders }
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#Raiders strike
+country_event = {
+	id = 51902
+	title = "EVTNAME51902"
+	desc = "EVTDESC51902"
+	#picture = "??"
+	
+	trigger = {
+		tag = WOL
+		has_country_flag = alone_against_raiders
+		is_vassal = no
+		OR = {
+			check_variable = {
+				which = raiders
+				value = 0
+			}
+			check_variable = {
+				which = raiders
+				value = 1
+			}
+			check_variable = {
+				which = raiders
+				value = 2
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	option = {
+		name = "Our warriors must do something!"
+		random_owned = {
+			any_pop = {
+				reduce_pop = 0.98
+			}
+		}
+		change_variable = {
+			which = raiders
+			value = 1
+		}
+	}
+}
+
+#Big raid leaves government in ruins
+country_event = {
+	id = 51903
+	title = "EVTNAME51903"
+	desc = "EVTDESC51903"
+	#picture = "??"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WOL
+		has_country_flag = alone_against_raiders
+		is_vassal = no
+		check_variable = {
+			which = raiders
+			value = 3
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "This is not a good thing."
+		any_neighbor_country = {
+			limit = {
+				civilized = yes
+				NOT = { truce_with = THIS }
+				OR = {
+					tag = FIN
+					FIN = { NOT = { neighbour = THIS } }
+				}
+			}
+			country_event = {
+				id = 51904
+				days = 1
+			}
+		}
+	}
+}
+
+#Option to annex Wolof
+country_event = {
+	id = 51904
+	title = "EVTNAME51904"
+	desc = "EVTDESC51904"
+	#picture = "??"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Restore order to the tribes."
+		inherit = FROM
+		prestige = 2
+		badboy = 1
+	}
+}
+
+#Annex vassal Wolof
+country_event = {
+	id = 51905
+	title = "EVTNAME51905"
+	desc = "EVTDESC51905"
+	#picture = "??"
+
+	trigger = {
+		tag = FIN
+		is_our_vassal = WOL
+		WOL = {
+			has_country_flag = raiders
+			civilized = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.9
+			relation = {
+				who = WOL
+				value = 150
+			}
+		}
+	}
+	
+	option = {
+		name = "Establish direct control."
+		inherit = WOL
+		prestige = 2
+	}
+}
+	
+
+################################################

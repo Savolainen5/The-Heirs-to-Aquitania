@@ -1,0 +1,7 @@
+owner = HIS
+controller = HIS
+add_core = MLD
+trade_goods = fish
+life_rating = 32
+colonial = 2
+

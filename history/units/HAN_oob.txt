@@ -1,0 +1,29 @@
+BAD = {
+	value = -175
+}
+BAV = {
+	value = -175
+}
+WUR = {
+	value = -175
+}
+army = {
+	name = "Hannöversche Heer"
+	location = 534
+	regiment = {
+		name= "1. Hannöversche Infanteriebrigade"
+		type = infantry
+		home = 534
+	}
+
+	regiment = {
+		name= "2. Hannöversche Infanteriebrigade"
+		type = infantry
+		home = 535
+	}
+	regiment = {
+		name= "1. Hannöversche Artilleriebrigade"
+		type = artillery
+		home = 534
+	}
+}

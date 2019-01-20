@@ -1,0 +1,112 @@
+SIE = { value = -50 }
+BOH = { value = 75 }
+army = {
+	name = "Armee von Österreich"
+	location = 619
+	regiment = {
+		name = "I. Infanterie"
+		type = infantry
+		home = 619
+	}
+	regiment = {
+		name = "II. Infanterie"
+		type = infantry
+		home = 619
+	}
+	regiment = {
+		name = "III. Infanterie"
+		type = infantry
+		home = 621
+	}
+	regiment = {
+		name = "I. Dragoner"
+		type = dragoon
+		home = 622
+	}
+	regiment = {
+		name = "I. Feldkanonen"
+		type = artillery
+		home = 622
+	}
+	regiment = {
+		name = "IV. Infanterie"
+		type = infantry
+		home = 617
+	}
+	regiment = {
+		name = "V. Infanterie"
+		type = infantry
+		home = 624
+	}
+	regiment = {
+		name = "II. Feldkanonen"
+		type = artillery
+		home = 618
+	}
+}
+
+army = {
+	name = "Armee von Adriatische"
+	location = 736
+	regiment = {
+		name = "VI. Infanterie"
+		type = infantry
+		home = 619
+	}
+	regiment = {
+		name = "VII. Infanterie"
+		type = infantry
+		home = 622
+	}
+	regiment = {
+		name = "VIII. Infanterie"
+		type = infantry
+		home = 617
+	}
+	regiment = {
+		name = "II. Dragoner"
+		type = dragoon
+		home = 618
+	}
+	regiment = {
+		name = "III. Feldkanonen"
+		type = artillery
+		home = 620
+	}
+	regiment = {
+		name = "IX. Infanterie"
+		type = infantry
+		home = 616
+	}
+	regiment = {
+		name = "X. Infanterie"
+		type = infantry
+		home = 624
+	}
+	regiment = {
+		name = "IV. Feldkanonen"
+		type = artillery
+		home = 768
+	}
+}
+
+navy = {
+	name = "Österreichische Kriegsmarine"
+	location = 778
+	ship = {
+		name = "Ulan"
+		type = manowar
+	}
+	ship = {
+		name = "Lissa"
+		type = frigate
+	}
+	ship = {
+		name = "Maros"
+		type = clipper_transport
+	}
+	ship = {
+		name = "Leitha"
+		type = clipper_transport
+	}
+}

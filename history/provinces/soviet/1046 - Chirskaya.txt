@@ -1,0 +1,8 @@
+owner = DON
+controller = DON
+add_core = DON
+add_core = SML
+add_core = RUS
+trade_goods = coal
+life_rating = 35
+

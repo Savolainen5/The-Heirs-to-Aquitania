@@ -1,0 +1,13 @@
+owner = POM
+controller = POM
+add_core = POM
+add_core = GER
+trade_goods = fish
+life_rating = 35
+#state_building = {
+#	level = 2 
+#	building = fertilizer_factory
+#	upgrade = yes
+#}
+
+

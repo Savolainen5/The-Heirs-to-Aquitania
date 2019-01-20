@@ -1,0 +1,5 @@
+add_core = AZA
+add_core = ANK
+trade_goods = fruit
+life_rating = 15
+

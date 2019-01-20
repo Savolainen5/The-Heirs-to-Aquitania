@@ -1,0 +1,9 @@
+owner = NPL
+controller = NPL
+add_core = HYD
+add_core = HND
+trade_goods = grain
+life_rating = 32
+naval_base = 1
+colonial = 2
+

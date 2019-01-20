@@ -1,0 +1,7 @@
+owner = PER
+controller = PER
+add_core = PER
+add_core = KHI
+trade_goods = grain
+life_rating = 35
+

@@ -1,0 +1,23 @@
+BAD = {
+	value = -175
+}
+BAV = {
+	value = -175
+}
+WUR = {
+	value = -175
+}
+army = {
+	name = "Kurhessische Armee"
+	location = 566
+	regiment = {
+		name= "1. Kurhessisches Infanterie-Brigade"
+		type = infantry
+		home = 566
+	}
+    regiment = {
+		name= "2. Kurhessisches Infanterie-Brigade"
+		type = infantry
+		home = 566
+	}
+}

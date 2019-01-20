@@ -1,0 +1,168 @@
+political_decisions = {
+	colonise_rouge_ues = {
+		potential = {
+			tag = QUE
+			NOT = {
+				owns = 30
+				has_country_flag = colonise_rouge_ues
+			}
+		}
+		
+		allow = {
+			money = 5000
+			owns = 41
+			owns = 118
+			medicine = 1
+		}
+		
+		effect = {
+			prestige = 2
+			money = -2500
+			30 = { secede_province = THIS }
+			31 = { secede_province = THIS }
+			32 = { secede_province = THIS }
+			33 = { secede_province = THIS }
+			34 = { secede_province = THIS }
+			set_country_flag = colonise_rouge_ues
+		}
+	}
+	
+	colonise_ters_dauror = {
+		potential = {
+			tag = QUE
+			NOT = {
+				owns = 2596
+				has_country_flag = colonise_ters_dauror
+			}
+		}
+		
+		allow = {
+			money = 5000
+			owns = 43
+			owns = 31
+			medicine = 1
+		}
+		
+		effect = {
+			prestige = 2
+			money = -5000
+			2596 = { secede_province = THIS }
+			11 = { secede_province = THIS }
+			12 = { secede_province = THIS }
+			set_country_flag = colonise_ters_dauror
+		}
+	}
+	
+	colonise_drytsiben = {
+		potential = {
+			tag = SKM
+			NOT = {
+				owns = 26
+				has_country_flag = colonise_drytsiben
+			}
+		}
+		
+		allow = {
+			money = 5000
+			owns = 2
+			owns = 17
+			owns = 18
+			owns = 21
+			owns = 28
+			owns = 114
+			medicine = 1
+		}
+		
+		effect = {
+			prestige = 3
+			money = -5000
+			22 = { secede_province = THIS }
+			24 = { secede_province = THIS }
+			25 = { secede_province = THIS }
+			26 = { secede_province = THIS }
+			27 = { secede_province = THIS }
+			23 = { secede_province = THIS }
+			2629 = { secede_province = THIS }
+			2597 = { secede_province = THIS }
+			set_country_flag = colonise_drytsiben
+		}
+	}
+	
+	colonise_jukuna = {
+		potential = {
+			tag = SKM
+			NOT = {
+				owns = 8
+				has_country_flag = colonise_jukuna
+			}
+		}
+		
+		allow = {
+			money = 5000
+			owns = 2
+			owns = 17
+			owns = 2629
+			medicine = 1
+		}
+		
+		effect = {
+			prestige = 2
+			money = -4500
+			6 = { secede_province = THIS }
+			7 = { secede_province = THIS }
+			8 = { secede_province = THIS }
+			9 = { secede_province = THIS }
+			10 = { secede_province = THIS }
+			2598 = { secede_province = THIS }
+			set_country_flag = colonise_jukuna
+		}
+	}
+	
+	colonise_oai = {
+		potential = {
+			capital_scope = { continent = north_america }
+			126 = { empty = yes }
+			127 = { empty = yes }
+			123 = { empty = yes }
+			any_owned_province = {
+				has_empty_adjacent_province = yes
+				OR = {
+					province_id = 120
+					province_id = 122
+					province_id = 124
+					province_id = 125
+					province_id = 128
+					province_id = 130
+					province_id = 147
+					province_id = 149
+					province_id = 150
+					province_id = 151
+					province_id = 154
+				}
+			}
+			year = 1850
+			has_country_flag = colonisation_finished
+		}
+		
+		allow = {
+			money = 4000
+		}
+		
+		effect = {
+			prestige = 3
+			money = -4000
+			126 = { secede_province = THIS add_core = THIS }
+			127 = { secede_province = THIS add_core = THIS }
+			123 = { secede_province = THIS add_core = THIS }
+			#123 = { state_scope = { change_region_name = "Oailand" } }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { money = 4500 }
+			}
+		}
+	}
+}

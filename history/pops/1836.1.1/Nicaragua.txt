@@ -1,0 +1,167 @@
+#Nicaragua Region (292000)
+#Ruled by Central America 1836
+#Managua (192000/48000 POPS)
+2197 = {
+	aristocrats = {
+		culture = mellomsk
+		religion = protestant
+		size = 1050
+	}
+
+	bureaucrats = {
+		culture = mellomsk
+		religion = protestant
+		size = 100
+	}
+
+	officers = {
+		culture = mellomsk
+		religion = protestant
+		size = 75
+	}
+
+	clergymen = {
+		culture = mellomsk
+		religion = protestant
+		size = 475
+	}
+
+	artisans = {
+		culture = mellomsk
+		religion = protestant
+		size = 2400
+	}
+
+	soldiers = {
+		culture = mellomsk
+		religion = protestant
+		size = 1475
+	}
+
+	farmers = {
+		culture = mellomsk
+		religion = protestant
+		size = 43425
+	}
+}
+#Rivas (40000/10000 POPS)
+2198 = {
+	aristocrats = {
+		culture = mellomsk
+		religion = protestant
+		size = 275
+	}
+
+	clergymen = {
+		culture = mellomsk
+		religion = protestant
+		size = 300
+	}
+
+	artisans = {
+		culture = mellomsk
+		religion = protestant
+		size = 1500
+	}
+
+	soldiers = {
+		culture = mellomsk
+		religion = protestant
+		size = 300
+	}
+
+	farmers = {
+		culture = mellomsk
+		religion = protestant
+		size = 28025
+	}
+}
+#Esteli (48000/12000 POPS)
+2199 = {
+	aristocrats = {
+		culture = mellomsk
+		religion = protestant
+		size = 325
+	}
+
+	clergymen = {
+		culture = mellomsk
+		religion = protestant
+		size = 325
+	}
+
+	artisans = {
+		culture = mellomsk
+		religion = protestant
+		size = 1600
+	}
+
+	soldiers = {
+		culture = mellomsk
+		religion = protestant
+		size = 325
+	}
+
+	farmers = {
+		culture = mellomsk
+		religion = protestant
+		size = 26825
+	}
+}
+#Bluefields (12000/3000 POPS)
+2200 = {
+	aristocrats = {
+		culture = mellomsk
+		religion = protestant
+		size = 55
+	}
+
+	clergymen = {
+		culture = mellomsk
+		religion = protestant
+		size = 250
+	}
+
+	artisans = {
+		culture = mellomsk
+		religion = protestant
+		size = 500
+	}
+
+	soldiers = {
+		culture = mellomsk
+		religion = protestant
+		size = 100
+	}
+
+	farmers = {
+		culture = mellomsk
+		religion = protestant
+		size = 9000
+	}
+
+	clergymen = {
+		culture = afro_caribbean
+		religion = protestant
+		size = 500
+	}
+
+	artisans = {
+		culture = afro_caribbean
+		religion = protestant
+		size = 1000
+	}
+
+	soldiers = {
+		culture = afro_caribbean
+		religion = protestant
+		size = 500
+	}
+
+	farmers = {
+		culture = afro_caribbean
+		religion = protestant
+		size = 12000
+	}
+
+}

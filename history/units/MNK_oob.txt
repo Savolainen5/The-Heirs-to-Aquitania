@@ -1,0 +1,19 @@
+army = {
+	name = "Milits ov Mankemmark"
+	location = 2193
+	regiment = {
+		name = "1. Infanteribataljon"
+		type = infantry
+		home = 2193
+	}
+	regiment = {
+		name = "2. Infanteribataljon"
+		type = infantry
+		home = 2197
+	}
+	regiment = {
+		name = "1. Artilleribataljon"
+		type = artillery
+		home = 2191
+	}
+}

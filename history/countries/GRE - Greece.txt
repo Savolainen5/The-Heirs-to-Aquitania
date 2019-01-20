@@ -1,0 +1,64 @@
+capital = 834
+primary_culture = greek
+culture = roman
+religion = orthodox
+government = democracy
+plurality = 25.0
+nationalvalue = nv_order
+literacy = 0.22
+civilized = yes
+prestige = 5
+
+# Political reforms
+slavery = no_slavery
+upper_house_composition = state_equal_weight
+vote_franschise = wealth_voting
+public_meetings = yes_meeting
+press_rights = free_press
+trade_unions = non_socialist
+voting_system = jefferson_method
+political_parties = non_secret_ballots
+
+# Social Reforms
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
+health_care = no_health_care
+unemployment_subsidies = no_subsidies
+pensions = no_pensions
+school_reforms = no_schools
+
+ruling_party = GRE_liberal
+upper_house = {
+	fascist = 0
+	liberal = 65
+	conservative = 25
+	reactionary = 10
+	anarcho_liberal = 0
+	socialist = 0
+	communist = 0
+}
+
+# Technologies
+post_napoleonic_thought = 1
+flintlock_rifles = 1
+bronze_muzzle_loaded_artillery = 1
+army_command_principle = 1
+post_nelsonian_thought = 1
+the_command_principle = 1
+private_banks = 1
+no_standard = 1
+guild_based_production = 1
+classicism_n_early_romanticism = 1
+late_enlightenment_philosophy = 1
+enlightenment_thought = 1
+water_wheel_power = 1
+publishing_industry = 1
+
+# Inventions
+
+#Starting Consciousness
+consciousness = 2
+nonstate_consciousness = 0
+
+oob = "GRE_oob.txt"

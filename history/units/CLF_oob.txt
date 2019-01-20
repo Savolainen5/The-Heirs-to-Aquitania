@@ -1,0 +1,9 @@
+army = {
+	name = "Milicia de Califiana"
+	location = 89
+	regiment = {
+		name= "1. Brigada de Infantería"
+		type = infantry
+		home = 89
+	}
+}

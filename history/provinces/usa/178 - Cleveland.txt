@@ -1,0 +1,7 @@
+owner = SHC
+controller = SHC
+add_core = SHC
+add_core = IRO
+trade_goods = coal
+life_rating = 35
+

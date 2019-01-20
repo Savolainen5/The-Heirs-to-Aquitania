@@ -1,0 +1,553 @@
+##Event possibly should be added for 1907 - Accra - for the Norwegians to sell their territory. That or we can keep the slave trade going.
+
+country_event = {
+
+	id = 49501
+	title = "EVTNAME49501" #Reforming the Kalmar Union
+	desc = "EVTDESC49501"
+	picture = "danishgovernment"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA49501" #Agree
+		random_country = {
+			limit = {
+				is_sphere_leader_of = THIS
+				NOT = { tag = FROM }
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = -100
+			}
+		}
+		FROM = {
+			relation = {
+				who = THIS
+				value = 100
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = 100
+			}
+		}
+		create_alliance = FROM
+		add_country_modifier = {
+			name = kalmar_union
+			duration = -1
+		}
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.5
+				NOT = {
+					OR = {
+						government = absolute_monarchy
+						government = prussian_constitutionalism
+						government = hms_government
+						government = democracy
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					NOT = {
+						OR = {
+							government = absolute_monarchy
+							government = prussian_constitutionalism
+							government = hms_government
+							government = democracy
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB49501" #Refuse
+		set_country_flag = refused_kalmar_union
+		FROM = { country_event = 49502 }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.5
+				in_sphere = FROM
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 49502
+	title = "EVTNAME49502" #Refused!
+	desc = "EVTDESC49502"
+	picture = "danishgovernment"
+	
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA49502" #Let them go
+		FROM = {
+			relation = {
+				who = THIS
+				value = -100
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = -100
+			}
+			remove_country_modifier = kalmar_union
+			remove_country_modifier= customs_union 
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0.5
+				war_policy = jingoism
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB49502" #Conquer them
+		badboy = 4
+		any_pop = {
+			scaled_militancy = {
+				issue = pacifism
+				factor = 4
+			}
+		}
+		random_country = {
+			limit = {
+				tag = FROM
+				vassal_of = THIS
+			}
+			THIS = { release_vassal = FROM }
+		}
+		leave_alliance = FROM
+		relation = {
+			who = FROM
+			value = -200
+		}
+		diplomatic_influence = {
+			who = FROM
+			value = -200
+		}		
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = conquest_any
+			}
+		}
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0
+				badboy = 0.84
+			}
+			modifier = {
+				factor = 0
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 0.5
+				war_policy = anti_military
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 49503
+	title = "EVTNAME49503" #Form a Customs Union?
+	desc = "EVTDESC49503"
+	picture = "danishgovernment"
+
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA49503" #Agree
+		random_country = {
+			limit = {
+				is_sphere_leader_of = THIS
+				NOT = { tag = FROM }
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = -100
+			}
+		}
+		FROM = {
+			relation = {
+				who = THIS
+				value = 100
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = 100
+			}
+		}
+		add_country_modifier = {
+			name = customs_union 
+			duration = -1
+		}
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.5
+				NOT = {
+					OR = {
+						government = absolute_monarchy
+						government = prussian_constitutionalism
+						government = hms_government
+						government = democracy
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					NOT = {
+						OR = {
+							government = absolute_monarchy
+							government = prussian_constitutionalism
+							government = hms_government
+							government = democracy
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB49503" #Refuse
+		set_country_flag = refused_kalmar_union
+		FROM = { country_event = 49502 }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.5
+				in_sphere = FROM
+			}
+			modifier = {
+				factor = 3
+				NOT = {
+					relation = { who = FROM value = 100 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 49504
+	title = "EVTNAME49504" #Form a Political Union?
+	desc = "EVTDESC49504"
+	picture = "danishgovernment"
+
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA49504" #Agree
+		random_country = {
+			limit = {
+				is_sphere_leader_of = THIS
+				NOT = { tag = FROM }
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = -100
+			}
+		}
+		FROM = {
+			relation = {
+				who = THIS
+				value = 100
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = 100
+			}
+		}
+		any_owned = { 
+			limit = {
+			is_colonial = no
+			is_core = THIS
+			}
+			add_core = SCA 
+		}
+		add_accepted_culture = swedish
+		add_accepted_culture = danish
+		add_accepted_culture = norwegian
+		add_accepted_culture = icelandic
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.5
+				NOT = {
+					OR = {
+						government = absolute_monarchy
+						government = prussian_constitutionalism
+						government = hms_government
+						government = democracy
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = {
+					NOT = {
+						OR = {
+							government = absolute_monarchy
+							government = prussian_constitutionalism
+							government = hms_government
+							government = democracy
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB49504" #Refuse
+		set_country_flag = refused_kalmar_union
+		FROM = {
+			country_event = 49502 
+			}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.5
+				in_sphere = FROM
+			}
+			modifier = {
+				factor = 3
+				NOT = {
+					relation = { who = FROM value = 100 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 49509
+
+	title = "EVTNAME49509" #Leadership of Kalmar changes hands
+	desc = "EVTDESC49509"
+	picture = "danishgovernment"
+
+	is_triggered_only = yes		
+	option = {
+		name = "Well, damn."
+		FROM = {
+			relation = {
+				who = THIS
+				value = 100
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = 100
+			}
+		}
+		create_alliance = FROM
+		remove_country_modifier = leader_of_kalmar
+		add_country_modifier = {
+			name = kalmar_union
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+
+	id = 495091
+
+	title = "The Sale of the Cape Coast territory"
+	desc = "The forts in the Danish Gold Coast haven't been profitable since the ban on the slave trade, it's time we sold them off."
+	picture = "danishgovernment"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DEN
+		year = 1850
+		slavery = no_slavery
+		exists = HIS
+		exists = NPL
+		owns = 1908
+	}
+	
+	option = {
+		name = "It's a useful port, I see no reason to be rid of it"
+		prestige = 2
+		ai_chance = {
+			factor = 20
+		}	
+	}
+	
+	option = {
+		name = "Offer it to the Hispanians"
+		HIS = { country_event = 495092 }
+		ai_chance = {
+			factor = 30
+		}		
+	}	
+	
+	option = {
+		name = "Offer it to the Neapolitans"
+		NPL = { country_event = 495095 }
+		ai_chance = {
+			factor = 50
+		}	
+	}		
+	
+}
+
+country_event = {
+
+	id = 495092
+
+	title = "The Sale of the Cape Coast territory"
+	desc = "The Danes are offering us their forts in the Cape Coast, for a price of course."
+	picture = "danishgovernment"
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "We'll take it!"
+		DEN = { country_event = 495093 }
+		money = -10000
+		1908 = {
+			secede_province = THIS
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}	
+	
+	option = {
+		name = "No thank you."
+		DEN = { country_event = 495094 }
+		prestige = -2
+		ai_chance = {
+			factor = 10
+		}		
+	}		
+	
+}
+
+country_event = {
+
+	id = 495093
+
+	title = "The Sale of the Cape Coast territory"
+	desc = "The Hispanians have purchased our forts and all is well."
+	picture = "danishgovernment"
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Gimme them Krones man"
+		money = 10000
+	}	
+	
+}
+
+country_event = {
+
+	id = 495094
+
+	title = "The Sale of the Cape Coast territory"
+	desc = "The Hispanians have refused us."
+	picture = "danishgovernment"
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Blast"
+		prestige = -2
+	}	
+	
+}
+
+country_event = {
+
+	id = 495095
+
+	title = "The Sale of the Cape Coast territory"
+	desc = "The Danes are offering us their forts in the Cape Coast territory, for a price of course."
+	picture = "danishgovernment"
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "We'll take it!"
+		DEN = { country_event = 495096 }
+		money = -10000
+		1908 = {
+			secede_province = THIS
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}	
+	
+	option = {
+		name = "No thank you."
+		DEN = { country_event = 495097 }
+		prestige = -2
+		ai_chance = {
+			factor = 10
+		}		
+	}		
+	
+}
+
+country_event = {
+
+	id = 495096
+
+	title = "The Sale of the Cape Coast territory"
+	desc = "The Neapolitans have purchased our forts and all is well."
+	picture = "danishgovernment"
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Gimme them Krones man"
+		money = 10000
+	}	
+	
+}
+
+country_event = {
+
+	id = 495097
+
+	title = "The Sale of the Cape Coast territory"
+	desc = "The Neapolitans have refused us."
+	picture = "danishgovernment"
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Blast"
+		prestige = -2
+	}	
+	
+}

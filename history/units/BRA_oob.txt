@@ -1,0 +1,48 @@
+BAD = {	value = -175 truce_until = 1840.4.13 }
+BAV = {	value = -175 truce_until = 1840.4.13 }
+WUR = {	value = -175 truce_until = 1840.4.13 }
+OLD = {	value = 125 }
+MNR = {	value = 100 }
+HAN = {	value = 200 }
+BRN = {	value = 125 }
+BRE = {	value = 130 }
+
+army = {
+	name = "Braunschweigische Armee"
+	location = 536
+	regiment = {
+		name= "1. Braunschweigische Infanterie-Brigade"
+		type = infantry
+		home = 536
+	}
+	regiment = {
+		name= "2. Braunschweigische Infanterie-Brigade"
+		type = infantry
+		home = 536
+	}
+	regiment = {
+		name= "3. Braunschweigische Infanterie-Brigade"
+		type = infantry
+		home = 537
+	}
+	regiment = {
+		name= "1. Braunschweigische Reiter-Brigade"
+		type = hussar
+		home = 553
+	}
+	regiment = {
+		name= "1. Braunschweigische Artillerie-Brigade"
+		type = artillery
+		home = 528
+	}	            	            
+}
+
+army = {
+	name = "Garnison Lingenische"
+	location = 542
+	regiment = {
+		name = "Lingenische Brigade"
+		type = infantry
+		home = 542
+	}
+}

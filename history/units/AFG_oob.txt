@@ -1,0 +1,87 @@
+leader = {
+	name = "Dost Mohammed"
+	type = land
+	date = 1836.1.1
+	personality = stalwart
+	background = debutante
+}
+
+leader = {
+	name = "Yar Mohammed"
+	type = land
+	date = 1836.1.1
+	personality = intuitive 
+	background = aristocrat
+}
+
+army = {
+	name = "Army of Dost Mohammed"
+	location = 1216
+	regiment = {
+		name= "1. Mohammedzi"
+		type = irregular
+		home = 1209
+	}
+
+	regiment = {
+		name= "2. Mohammedzi"
+		type = irregular
+		home = 1209
+	}
+
+	regiment = {
+		name= "3. Mohammedzi"
+		type = irregular
+		home = 1216
+	}
+
+	regiment = {
+		name= "1. Uzbeki"
+		type = irregular
+		home = 1210
+	}
+
+	regiment = {
+		name= "4. Tajiki"
+		type = irregular
+		home = 1210
+	}
+
+	regiment = {
+		name= "5. Tajiki"
+		type = irregular
+		home = 1210
+	}
+
+
+	regiment = {
+		name= "1. Barakzai"
+		type = cavalry
+		home = 1216
+	}
+
+}
+
+army = {
+	name = "Army of Kohun-dil-Khan"
+	location = 1215
+	regiment = {
+		name= "1. Durranni"
+		type = irregular
+		home = 1215
+	}
+
+	regiment = {
+		name= "2. Durranni"
+		type = irregular
+		home = 1215
+	}
+
+	regiment = {
+		name= "3. Durranni"
+		type = irregular
+		home = 1214
+	}
+
+}
+

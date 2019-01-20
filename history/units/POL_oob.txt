@@ -1,0 +1,143 @@
+SLS = {
+	value = 125
+	level = 4
+	influence_value = 15
+}
+LIT = {
+	value = 80
+	level = 3
+	influence_value = 5
+}
+
+SIE = {
+	value = 90
+	level = 4
+	influence_value = 15
+}
+
+BOH = {	value = 45 }
+BRN = {	value = 65 }
+SML = { value = -75 }
+RUS = { value = 30 }
+
+army = {
+	name = "1. Wojsko Polskie"
+	location = 706
+	regiment = {
+		name = "1. Dywizja Piechoty"
+		type = infantry
+		home = 696
+	}
+	regiment = {
+		name = "2. Dywizja Piechoty"
+		type = infantry
+		home = 696
+	}
+	regiment = {
+		name = "3. Dywizja Piechoty"
+		type = infantry
+		home = 695
+	}
+	regiment = {
+		name = "4. Dywizja Piechoty"
+		type = infantry
+		home = 704
+	}
+	regiment = {
+		name = "1. Dywizja Artylerii"
+		type = artillery
+		home = 700
+	}
+	regiment = {
+		name = "2. Dywizja Artylerii"
+		type = artillery
+		home = 706
+	}
+	regiment = {
+		name = "1. Dywizja Huzara"
+		type = hussar
+		home = 701
+	}
+	regiment = {
+		name = "2. Dywizja Huzara"
+		type = hussar
+		home = 714
+	}
+}
+
+army = {
+	name = "2. Wojsko Polskie"
+	location = 703
+	regiment = {
+		name = "5. Dywizja Piechoty"
+		type = infantry
+		home = 699
+	}
+	regiment = {
+		name = "6. Dywizja Piechoty"
+		type = infantry
+		home = 705
+	}
+	regiment = {
+		name = "7. Dywizja Piechoty"
+		type = infantry
+		home = 695
+	}
+	regiment = {
+		name = "3. Dywizja Artylerii"
+		type = artillery
+		home = 703
+	}
+	regiment = {
+		name = "4. Dywizja Artylerii"
+		type = artillery
+		home = 711
+	}
+	regiment = {
+		name = "3. Dywizja Huzara"
+		type = hussar
+		home = 712
+	}
+}
+
+army = {
+	name = "Armata z Lodomerie"
+	location = 702
+	regiment = {
+		name = "1. Dywizja Lodomerie"
+		type = infantry
+		home = 702
+	}
+	regiment = {
+		name = "2. Dywizja Lodomerie"
+		type = infantry
+		home = 952
+	}
+	regiment = {
+		name = "3. Dywizja Lodomerie"
+		type = artillery
+		home = 953
+	}
+}
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	befriend = { id="LIT" value=100 }
+	befriend = { id="BYZ" value=80 }
+
+	protect = { id="SLS" value=150 }
+	protect = { id="BRT" value=200 }
+
+	antagonize = { id="BRN" value=75}
+	
+	threat = { id="SML" value=125 }
+	threat = { id="BOH" value=80 }
+
+	rival = { id="SML" value=125 }
+	rival = { id="BOH" value=50 }
+}

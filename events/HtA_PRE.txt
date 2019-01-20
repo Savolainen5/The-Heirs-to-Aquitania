@@ -1,0 +1,978 @@
+#The influence of Pier Moncani
+country_event = {
+	id = 50200
+	title = "EVTNAME50200"
+	desc = "EVTDESC50200"
+	picture = "ccastro"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PRE
+		has_country_flag = liberal_revolution_in_progress
+		average_militancy = 2
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Deal with him." #Leads to a rebellion of commoners who storm the palace in Touloun and murder the royal family
+		set_country_flag = pier_moncani_killed
+		poor_strata = {
+			militancy = 5
+			consciousness = 4
+		}
+		middle_strata = {
+			militancy = 2
+			consciousness = 2
+		}
+		add_country_modifier = {
+			name = pier_moncani_outrage
+			duration = 730
+		}
+		ai_chance = {
+			factor = 70
+		}
+	}
+	
+	option = {
+		name = "He can't cause us any harm."
+		set_country_flag = pier_moncani_dismissed
+		prestige = 2
+		poor_strata = {
+			militancy = 0.5
+			consciousness = 1
+		}
+		add_country_modifier = {
+			name = pier_moncani_influence1
+			duration = -1
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Work with him. (Humans: This is the best way to not get annexed.)"
+		prestige = -10
+		any_pop = {
+			limit = {
+				strata = poor
+			}
+			ideology = {
+				factor = 0.5
+				value = liberal
+			}
+		}
+		upper_house = {
+				ideology = liberal
+				value = 0.25
+		}
+		set_country_flag = work_with_moncani
+		country_event = 50205
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Commoners storm the royal palace, for monarchical AQT
+country_event = {
+	id = 50201
+	title = "EVTNAME50201"
+	desc = "EVTDESC50201"
+	picture = "streetriot"
+	
+	trigger = {
+		tag = PRE
+		has_country_flag = liberal_revolution_in_progress
+		has_country_flag = pier_moncani_killed
+		AQT = { OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			}
+		}
+		OR = {
+			average_militancy = 8
+			470 = {
+				controlled_by_rebels = yes
+			}
+		}
+		NOT = { has_country_flag = moncanis_revolutionaries }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "A dictatorship of the commoners?!"
+		set_country_flag = moncanis_revolutionaries
+		prestige = -20
+		government = democracy
+		political_reform = universal_voting
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = non_socialist
+		political_reform = non_secret_ballots
+		any_pop = {
+			militancy = -7
+			consciousness = -2
+		}
+		remove_country_modifier = pier_moncani_outrage
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = -2
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = -7
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = -3
+			}
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = reactionary
+				factor = 2
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 4
+			}
+		}
+		release_vassal = THIS
+		AQT = { country_event = 50206 } #Rebellion in Prouvença
+	}
+}
+
+#Commoners storm the royal palace, for republican AQT
+country_event = {
+	id = 50202
+	title = "EVTNAME50201"
+	desc = "EVTDESC50201"
+	picture = "streetriot"
+	
+	trigger = {
+		tag = PRE
+		has_country_flag = liberal_revolution_in_progress
+		has_country_flag = pier_moncani_killed
+		AQT = { NOT = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			}
+		}
+		OR = {
+			average_militancy = 8
+			470 = {
+				controlled_by_rebels = yes
+			}
+		}
+		NOT = { has_country_flag = moncanis_revolutionaries }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "A dictatorship of the commoners?!"
+		set_country_flag = moncanis_revolutionaries
+		prestige = -20
+		government = democracy
+		political_reform = universal_voting
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = non_socialist
+		political_reform = non_secret_ballots
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = -2
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = -7
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = -3
+			}
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = reactionary
+				factor = 2
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 4
+			}
+		}
+		remove_country_modifier = pier_moncani_outrage
+		release_vassal = THIS
+		AQT = { country_event = 50206 } #Rebellion in Prouvença
+	}
+}
+
+#Moncani proposes a solution, monarchical AQT
+country_event = {
+	id = 50203
+	title = "EVTNAME50203"
+	desc = "EVTDESC50203"
+	picture = "ccastro"
+	
+	trigger = {
+		tag = PRE
+		has_country_flag = liberal_revolution_in_progress
+		has_country_flag = pier_moncani_dismissed
+		AQT = { OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			}
+		}
+		average_militancy = 5
+		NOT = { has_country_flag = moncanis_aid }
+		NOT = { has_country_flag = moncani_removed }
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "We have little choice but to accept his offer."
+		government = prussian_constitutionalism
+		political_reform = universal_weighted_voting
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = non_secret_ballots
+		prestige = -15
+		remove_country_modifier = pier_moncani_influence1
+		add_country_modifier = {
+			name = pier_moncani_influence2
+			duration  = -1
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = -2
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = -7
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = -4
+			}
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = reactionary
+				factor = 2
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 3
+			}
+		}
+		remove_country_modifier = expert_diplomat
+		remove_country_modifier = successful_industrialist
+		remove_country_modifier = ivory_tower_intellectual
+		remove_country_modifier = man_of_the_people
+		remove_country_modifier = landed_gentleman
+		remove_country_modifier = military_man
+		remove_country_modifier = lord_admiral
+		remove_country_modifier = raving_loon
+		remove_country_modifier = luddite
+		remove_country_modifier = great_statesman
+		remove_country_modifier = backroom_boy
+		remove_country_modifier = great_reformer
+		remove_country_modifier = gauche_buffoon
+		remove_country_modifier = administrative_genius
+		remove_country_modifier = visionary_thinker
+		remove_country_modifier = competent_placeholder
+		remove_country_modifier = imperious_autocrat
+		remove_country_modifier = prince_of_terror
+		remove_country_modifier = efficient_sociopath
+		remove_country_modifier = pig_headed_isolationist
+		remove_country_modifier = ambitious_union_boss
+		remove_country_modifier = dour_economist
+		add_country_modifier = {
+			name = pier_moncani
+			duration = 3650
+		}
+		AQT = { country_event = 50207 }
+	}
+}
+
+#Moncani proposes a solution, republican AQT
+country_event = {
+	id = 50204
+	title = "EVTNAME50203"
+	desc = "EVTDESC50203"
+	picture = "ccastro"
+	
+	trigger = {
+		tag = PRE
+		has_country_flag = liberal_revolution_in_progress
+		has_country_flag = pier_moncani_dismissed
+		AQT = { NOT = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			}
+		}
+		average_militancy = 5
+		NOT = { has_country_flag = moncanis_aid }
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "We have little choice. Accept his offer."
+		government = prussian_constitutionalism
+		political_reform = universal_weighted_voting
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = non_secret_ballots
+		prestige = -15
+		remove_country_modifier = pier_moncani_influence1
+		add_country_modifier = {
+			name = pier_moncani_influence2
+			duration  = -1
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = -2
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = -7
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = -4
+			}
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = reactionary
+				factor = 2
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 3
+			}
+		}
+		remove_country_modifier = expert_diplomat
+		remove_country_modifier = successful_industrialist
+		remove_country_modifier = ivory_tower_intellectual
+		remove_country_modifier = man_of_the_people
+		remove_country_modifier = landed_gentleman
+		remove_country_modifier = military_man
+		remove_country_modifier = lord_admiral
+		remove_country_modifier = raving_loon
+		remove_country_modifier = luddite
+		remove_country_modifier = great_statesman
+		remove_country_modifier = backroom_boy
+		remove_country_modifier = great_reformer
+		remove_country_modifier = gauche_buffoon
+		remove_country_modifier = administrative_genius
+		remove_country_modifier = visionary_thinker
+		remove_country_modifier = competent_placeholder
+		remove_country_modifier = imperious_autocrat
+		remove_country_modifier = prince_of_terror
+		remove_country_modifier = efficient_sociopath
+		remove_country_modifier = pig_headed_isolationist
+		remove_country_modifier = ambitious_union_boss
+		remove_country_modifier = dour_economist
+		add_country_modifier = {
+			name = pier_moncani
+			duration = 3650
+		}
+		AQT = { country_event = 50207 }
+	}
+}
+
+#Event for human PRE players 
+country_event = {
+	id = 50205
+	title = "EVTNAME50205"
+	desc = "EVTDESC50205"
+	picture = "ccastro"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "He will become First Minister."
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = -3
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = -8
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = -4
+			}
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = reactionary
+				factor = 1
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 3
+			}
+		}
+		remove_country_modifier = expert_diplomat
+		remove_country_modifier = successful_industrialist
+		remove_country_modifier = ivory_tower_intellectual
+		remove_country_modifier = man_of_the_people
+		remove_country_modifier = landed_gentleman
+		remove_country_modifier = military_man
+		remove_country_modifier = lord_admiral
+		remove_country_modifier = raving_loon
+		remove_country_modifier = luddite
+		remove_country_modifier = great_statesman
+		remove_country_modifier = backroom_boy
+		remove_country_modifier = great_reformer
+		remove_country_modifier = gauche_buffoon
+		remove_country_modifier = administrative_genius
+		remove_country_modifier = visionary_thinker
+		remove_country_modifier = competent_placeholder
+		remove_country_modifier = imperious_autocrat
+		remove_country_modifier = prince_of_terror
+		remove_country_modifier = efficient_sociopath
+		remove_country_modifier = pig_headed_isolationist
+		remove_country_modifier = ambitious_union_boss
+		remove_country_modifier = dour_economist
+		add_country_modifier = {
+			name = pier_moncani
+			duration = 3650
+		}
+	}
+}
+
+#Rebellion in Prouvença - Event AQT receives
+country_event = {
+	id = 50206
+	title = "EVTNAME50206"
+	desc = "EVTDESC50206"
+	picture = "Revolution"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This cannot stand! Establish direct control!"
+		set_country_flag = conquer_provence
+		relation = {
+			who = PRE
+			value = -300
+		}
+		diplomatic_influence = {
+			who = PRE
+			value = -300
+		}
+		war = {
+			target = PRE
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+		badboy = -18
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						government = absolute_monarchy
+						government = prussian_constitutionalism
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We will extend our friendship to this new state."
+		set_country_flag = befriend_revolutionary_provence
+		relation = {
+			who = PRE
+			value = 100
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.1
+				OR = {
+					government = absolute_monarchy
+					government = prussian_constitutionalism
+				}
+			}
+			modifier = {
+				factor = 100
+				NOT = {
+					OR = {
+						government = absolute_monarchy
+						government = prussian_constitutionalism
+					}
+				}
+			}
+		}
+	}
+}
+
+#Political shakeup in Prouvença - Event AQT receives
+country_event = {
+	id = 50207
+	title = "EVTNAME50207"
+	desc = "EVTDESC50207"
+	picture = "stortinget"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Demand that the Duke remove him."
+		PRE = { country_event = 50208 }#Aquitania demands Moncani's removal
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						government = absolute_monarchy
+						government = prussian_constitutionalism
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Take this opportunity to establish direct control over Prouvença."
+		badboy = 1
+		prestige = 2
+		inherit = PRE
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						government = absolute_monarchy
+						government = hms_government
+						government = prussian_constitutionalism
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We wish them the best of luck."
+		set_country_flag = befriend_revolutionary_provence
+		relation = {
+			who = PRE
+			value = 30
+		}
+		diplomatic_influence = {
+			who = PRE
+			value = 30
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 100
+				NOT = {
+					OR = {
+						government = absolute_monarchy
+						government = hms_government
+						government = prussian_constitutionalism
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					government = absolute_monarchy
+					government = hms_government
+					government = prussian_constitutionalism
+				}
+			}
+		}
+	}
+}
+
+#Aquitania demands Moncani's removal
+country_event = {
+	id = 50208
+	title = "EVTNAME50208"
+	desc = "EVTDESC50208"
+	picture = "senate_debate"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Very well, reinstate the previous chairman."
+		prestige = -1
+		set_country_flag = moncani_removed
+		remove_country_modifier = pier_moncani
+		add_country_modifier = {
+			name = pier_moncani_influence1
+			duration = -1
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 2
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = 7
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = 1
+			}
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = reactionary
+				factor = -2
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -3
+			}
+		}
+		country_event = 100040005
+		AQT = { country_event = 50209 } #Prouvença agrees
+		
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "They don't understand, it can't be done."
+		scaled_militancy = {
+			ideology = liberal
+			factor = -2
+		}
+		AQT = { country_event = 50210 } #Prouvença refuses
+		
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#Prouvença agrees
+country_event = {
+	id = 50209
+	title = "Prouvença agrees"
+	desc = "Duke Huc II has assented to removing Moncani from the chairmanship."
+	picture = "senate_debate"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great!"
+		prestige = 2
+		relation = {
+			who = PRE
+			value = 25
+		}
+	}
+}
+
+#Prouvença refuses
+country_event = {
+	id = 50210
+	title = "Prouvença refuses"
+	desc = "Duke Huc II has refused to remove Moncani from the chairmanship of the Royal Council."
+	picture = "senate_debate"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Use this as an excuse to establish direct control!"
+		prestige = 2
+		set_country_flag = conquer_provence
+		release_vassal = PRE
+		relation = {
+			who = PRE
+			value = -300
+		}
+		diplomatic_influence = {
+			who = PRE
+			value = -300
+		}
+		war = {
+			target = PRE
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+		badboy = -18
+	}
+}
+
+#Rebels under Pier Moncani storm the Royal Palace
+country_event = {
+	id = 50211
+	title = "EVTNAME50211"
+	desc = "EVTDESC50211"
+	picture = "streetriot"
+	
+	trigger = {
+		tag = PRE
+		NOT = { year = 1878 }
+		has_country_flag = moncani_removed
+		OR = {
+			average_militancy = 6
+			470 = {
+				controlled_by_rebels = yes
+			}
+		}
+		NOT = { has_country_flag = moncanis_revolutionaries }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "A dictatorship of the commoners?!"
+		set_country_flag = moncanis_revolutionaries
+		prestige = -20
+		government = democracy
+		political_reform = universal_voting
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = non_socialist
+		political_reform = non_secret_ballots
+		remove_country_modifier = pier_moncani_outrage
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = -2
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = -7
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = -3
+			}
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = reactionary
+				factor = 2
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 4
+			}
+		}
+		release_vassal = THIS
+		AQT = { country_event = 50212 } #Rebellion in Prouvença
+	}
+}
+
+#Rebellion in Prouvença
+country_event = {
+	id = 50212
+	title = "EVTNAME50212"
+	desc = "EVTDESC50212"
+	picture = "Revolution"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This cannot stand! Establish direct control!"
+		set_country_flag = conquer_provence
+		release_vassal = PRE
+		relation = {
+			who = PRE
+			value = -300
+		}
+		diplomatic_influence = {
+			who = PRE
+			value = -300
+		}
+		war = {
+			target = PRE
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+		badboy = -18
+	}
+}
+
+#Moncani captured!
+country_event = {
+	id = 50213
+	title = "EVTNAME50213"
+	desc = "EVTDESC50213"
+	picture = "ccastro"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AQT
+		has_country_flag = conquer_provence
+		owns = 470
+		PRE = { exists = no }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "He will face justice for defying us!"
+		prestige = 1
+		PRE = {
+			all_core = {
+				add_core = AQT
+				remove_core = PRE
+			}
+		}
+	}
+}
+
+
+#Aquitania invites us into their republic
+country_event = {
+	id = 50214
+	title = "EVTNAME50214"
+	desc = "EVTDESC50214"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Agree to join."
+		AQT = { country_event = 50215 }
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Decline their offer."
+		AQT = { country_event = 50216 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#Prouvenca agrees!
+country_event = {
+	id = 50215
+	title = "Prouvença agrees to join!"
+	desc = "The Republic has agreed to be joined with ours!"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "A great day for the liberal cause!"
+		prestige = 10
+		PRE = { all_core = { add_core = AQT } }
+		inherit = PRE
+	}
+}
+
+#Prouvenca declines!
+country_event = {
+	id = 50216
+	title = "Prouvença declines to join!"
+	desc = "The Republic has declined to be joined with ours!"
+	picture = "treaty"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Alas!"
+	}
+}
+
+#Prouvenca is part of Aquitania!
+country_event = {
+	id = 50217
+	title = "EVTNAME50217"
+	desc = "EVTDESC50217"
+	picture = "treaty"
+	
+	trigger = {
+		tag = AQT
+		PRE = {
+			any_core = {
+				owned_by = AQT
+				NOT = { is_core = AQT }
+			}
+			exists = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "The people of Prouvença always have stood with us!"
+		PRE = {
+			all_core = {
+				add_core = AQT
+			}
+		}
+	}
+}
+	

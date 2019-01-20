@@ -1,0 +1,8 @@
+owner = CRS
+controller = CRS
+add_core = CRS
+add_core = SRD
+trade_goods = grain
+life_rating = 35
+
+

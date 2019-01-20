@@ -1,0 +1,9 @@
+army = {
+	name = "Letzebuergische Armee"
+	location = 397
+	regiment = {
+		name = "1. Infanteri-Regiment"
+		type = infantry
+		home = 397
+	}
+}

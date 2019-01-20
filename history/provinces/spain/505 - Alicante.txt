@@ -1,0 +1,7 @@
+owner = HIS
+controller = HIS
+add_core = HIS
+add_core = CAT
+trade_goods = fruit
+life_rating = 35
+

@@ -1,0 +1,356 @@
+# Decision to assign continent flags to countries for certain events
+
+political_decisions = {
+	HtA_Europe_Setup = {
+		potential= {
+			ai = yes
+			any_owned_province = { continent = europe }
+			NOT = { has_global_flag = continent_flags_assigned }
+			NOT = { any_neighbor_country = { ai = no } }
+		}
+
+		allow = {
+			year = 1836
+		}
+
+		effect = {
+			set_global_flag = continent_flags_assigned
+			ICL = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			IRE = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			SCO = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			AEN = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			WHA = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			BRT = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			NRM = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+				set_country_flag = normandy
+			}
+			ORL = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+				set_country_flag = orleans
+			}
+			CMP = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+				set_country_flag = champagne
+			}
+			AQT = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			FRA = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			PRE = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			NAV = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			HIS = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			CAT = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			GLC = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			POR = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			DAU = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			SWI = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			BRR = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			LOR = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			BRB = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			WLL = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			NET = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			NOR = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			SWE = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			DEN = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			HOL = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			BRA = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			BRE = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			OLD = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			HAN = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			WES = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			MNR = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			RHI = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			TRR = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			LUX = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			NAS = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			HEK = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			MEC = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			POM = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			THU = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			BRN = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			SAX = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			MNZ = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			ALS = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			BAD = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			WUR = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			BAV = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			SLS = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			POL = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			LIT = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			FIN = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			BOH = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			AUS = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			VEN = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			LOM = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			GEN = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			MOD = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			NPL = {
+				set_country_flag = HtAeurope
+			}
+			PAP = {
+				set_country_flag = HtAeurope
+			}
+			CRS = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			CRO = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			SIE = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			SER = {
+				set_country_flag = HtAeurope
+			}
+			MNT = {
+				set_country_flag = HtAeurope
+			}
+			MOL = {
+				set_country_flag = HtAeurope
+			}
+			WAL = {
+				set_country_flag = HtAeurope
+			}
+			BYZ = {
+				set_country_flag = HtAeurope
+			}
+			MAL = {
+				set_country_flag = HtAeurope
+			}
+			FRM = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			RUS = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+			SML = {
+				set_country_flag = HtAeurope
+				set_country_flag = volcano_path
+			}
+		}
+	}
+	
+	turn_on_railroading = {
+		alert = no
+		potential = {
+			ai = no
+			NOT = { has_global_flag = railroading_on }
+		}
+		
+		allow = {
+			year = 1836
+		}
+		
+		effect = {
+			set_global_flag = railroading_on
+		}
+	}
+	
+	turn_off_railroading = {
+		alert = no
+		potential = {
+			ai = no
+			has_global_flag = railroading_on
+		}
+		
+		allow = {
+			year = 1836
+		}
+		
+		effect = {
+			clr_global_flag = railroading_on
+		}
+	}
+
+	reduce_infamy = {
+		potential = {
+			ai = no
+			badboy = 1
+		}
+
+		allow = {
+			badboy = 1
+		}
+
+		effect = {
+			badboy = -3
+		}
+	}
+
+	
+}		

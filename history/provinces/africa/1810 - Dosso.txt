@@ -1,0 +1,8 @@
+controller = DND
+owner = DND
+add_core = DND
+add_core = DOS
+add_core = DAM
+trade_goods = grain
+life_rating = 25
+

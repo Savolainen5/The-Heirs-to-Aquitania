@@ -1,0 +1,7 @@
+owner = USR
+controller = USR
+add_core = USR
+add_core = TCN
+trade_goods = fruit
+life_rating = 35
+

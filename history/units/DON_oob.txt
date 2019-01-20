@@ -1,0 +1,49 @@
+SML = {
+	value = 30
+}
+
+army = {
+	name = "1. Don Cossacks"
+	location = 979
+	regiment = {
+		name= "1.1. Don Cossacks"
+		type = cavalry
+		home = 976
+	}
+
+	regiment = {
+		name= "2.1. Don Cossacks"
+		type = cavalry
+		home = 979
+	}
+
+	regiment = {
+		name= "3.1. Don Cossacks"
+		type = cavalry
+		home = 980
+	}
+
+}
+
+army = {
+	name = "2. Don Cossacks"
+	location = 1047
+	regiment = {
+		name= "1.2. Don Cossacks"
+		type = cavalry
+		home = 979
+	}
+
+	regiment = {
+		name= "2.2. Don Cossacks"
+		type = cavalry
+		home = 1047
+	}
+
+	regiment = {
+		name= "3.2. Don Cossacks"
+		type = cavalry
+		home = 1051
+	}
+
+}

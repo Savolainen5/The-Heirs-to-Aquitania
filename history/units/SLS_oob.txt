@@ -1,0 +1,33 @@
+BOH = {
+	value = 150
+}
+POL = {
+	value = 145
+}
+BRN = {
+	value = 65
+}
+army = {
+	name = "Woiska Slunska"
+	location = 682
+	regiment = {
+		name = "1. Diwizja Pechotyn"
+		type = infantry
+		home = 682
+	}
+	regiment = {
+		name = "2. Diwizja Pechotyn"
+		type = infantry
+		home = 685
+	}
+	regiment = {
+		name = "1. Diwizja Husary"
+		type = hussar
+		home = 684
+	}
+	regiment = {
+		name = "1. Diwizja Artylerii"
+		type = artillery
+		home = 682
+	}
+}

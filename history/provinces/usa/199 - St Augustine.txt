@@ -1,0 +1,8 @@
+owner = AQT
+controller = AQT
+add_core = SOL
+trade_goods = cotton
+life_rating = 35
+colonial = 2
+is_slave = yes
+

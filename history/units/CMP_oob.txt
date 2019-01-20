@@ -1,0 +1,22 @@
+FRA = {
+	value = -65
+}
+army = {
+	name = "Force Champagnoise"
+	location = 425
+	regiment = {
+		name = "1e Regiment d'Infanterie"
+		type = infantry
+		home = 425
+	}
+	regiment = {
+		name = "2e Regiment d'Infanterie"
+		type = infantry
+		home = 425
+	}
+	regiment = {
+		name = "1e Regiment d'Artillerie"
+		type = infantry
+		home = 427
+	}
+}

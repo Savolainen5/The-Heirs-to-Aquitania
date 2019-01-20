@@ -1,0 +1,163 @@
+;;;;;;;;;;;;;x  
+active_serial_killer;Active Serial Killer;;;;;;;;;x
+active_serial_killer_desc;Some beast of a man (or woman) is murdering citizens in this province. Police have so far failed to apprehend him.;;;;;;;;;x
+anatole_boom;Anatolian Population Boom;;;;;;;;;x
+bohemian_partisans;Bohemian Partisans;;;;;;;;;;x
+bohemian_partisans_desc;Some local Czech-speaking people have taken up arms against the owners of this province, whom they view as occupiers.;;;;;;;;;;;x
+building_oheskewen_canal;Building the Oheskewen Canal;;;;;;;;;;;x                                                                                                                                                                                                                ,,,
+countrywide_famine;Countrywide Famine;;;;;;;;;;;x,,,
+countrywide_famine_desc;Because of recent events, natural or otherwise, our country is currently experiencing a famine. Many will die or leave for a new home. Many will demand action.;;;;;;;;;;;;;x
+countrywide_famine_immigrant_push;Countrywide Famine;;;;;;;;;;x,,,
+countrywide_famine_immigrant_push_desc;Because of the famine caused by Eyjafjallajokul's ash, people are more willing to seek greener pastures in the New World. Of those that remain, many will die and many more will demand action.;;;;;;;;;;;x 
+disaster_damage;Disaster Damage;;;;;;;;;;;;x
+disaster_damage_desc;This province is recovering from a recent natural disaster.;;;;;;;;;;x
+fighting_civil_war;Fighting in a Civil War;;;;;;;;;x
+fighting_civil_war_desc;This country is taking part in a civil war against its former rulers.;;;;;;;;;x
+garda_civica;La Garda Civica;;;;;;;;;;x
+garda_civica_desc;This police force is active in the country, restoring order.;;;;;;;;;x
+grand_army;Grand Army;;;;;;;;;;;;x
+grand_army_desc;Our country possesses an army which is the marvel of the entire world!;;;;;;;;;;;;x
+grand_navy;Grand Navy;;;;;;;;;;;;x
+grand_navy_desc;Our country possesses a navy which is the marvel of the entire world!;;;;;;;;;;;;x
+great_fire_happened;Recent Great Fire;;;;;;;;;;x
+great_fire_recovery;Great Fire Recovery;;;;;;;;;;x
+great_fire_recovery_desc;This province is still recovering from the recent devastating great fire which swept through one of its cities.;;;;;;;;;;x
+hate_NPL;Naples: We remember;;;;;;;;;x
+hate_ITA;Italy: We remember;;;;;;;;;x
+hungarian_pamphlets;Hungarian Liberal Pamphlets;;;;;;;;;x
+ignore_revolt;Latvian Revolt Ignored;;;;;;;;;;x
+jacin_ilmunt;Jacin Ilmunt;;;;;;;;;;;;x
+jacin_ilmunt_desc;The first to serve as First Councilor of the Republic of Aquitània, Ilmunt was famous for his popular support, the reforms undertaken by the government under his leadership, and his ability to inspire the entire country.;;;;;;;;;;;;x
+latvian_fomenters;Latvian Fomenters of Rebellion;;;;;;;;;;x
+latvian_fomenters_desc;Local Latvians in the province are actively organising and fomenting rebellion against Finnish rule.;;;;;;;;;;x
+leased;This province is leased to the current owner.;;;;;;;;;;x
+liberal_rebels;Albesan Rebels;x
+liberal_rebels_name;Albesan Rebels;;;;;;;;;;x
+liberal_rebels_desc;In an absolute monarchy, Albesans will seek to impose a constitutional monarchy. Otherwise, Albesans will strive to create a democratic government with a liberal ideology and a focus on political reform.;;;;;;;;;;;;;x,
+native_societies1;Rejection of Outsiders;;;;;;;;;;x                                                                                                                                                                                          ,,,
+native_societies1_desc;As survivors and original inhabitants of our land, we do not attract alien immigrants, nor do we want them.;;;;;;;;;;;;;;;;;x                                                                                 ,
+native_societies2;Sons to Defend Our Homes;;;;;;;;;;;x,,,
+native_societies2_desc;If we wish to survive among our hostile neighbours, we must have many sons to defend ourselves.;;;;;;;;;;;;;;x
+not_suppressed;Raid Result;;;;;;;;;;;;x
+not_suppressed_desc;Pretend this doesn't exist, it's a workaround for code limitations.;;;;;;;;;;;;x
+obbite;Obbite;;;;;;;;;x
+oheskewen_canal;Oheskewen Canal;;;;;;;;;;x
+oheskewen_canal_dividend;Dividends from the Oheskewen Canal;;;;;;;;;;x
+pier_moncani;Pier Moncani as First Minister;;;;;;;;;;;x
+pier_moncani_influence1;Pier Moncani's Influence;;;;;;;;;;x
+pier_moncani_influence2;Pier Moncani's Influence;;;;;;;;;;x
+pier_moncani_outrage;Public Outrage over Moncali's Death;;;;;;;;;;;x
+rebellious_minorities;Rebellious Minorities;;;;;;;;;;;;;;x
+rebellious_minorities_desc;For some reason, the minorities in this province are particularly rebellious at the moment.;;;;;;;;;;;;;x
+russian_regency;Regency;;;;;;;;;;x
+russian_regency_desc;Until Michael comes of age, he will be assisted in his rule by a regent.;;;;;;;;;;;;;x
+sejm;Sejm;;;;;;;;;;;x
+sejm_desc;The power of the king of Poland is checked by the Sejm, a sort of legislature of the nobility, who continue to be the majority landholders in the country. Their willingness to accept royal decrees and rule depends on a number of factors, such as the attitude of the king toward the body and his relationship with them. It is a staunchly conservative body, against liberalism and anything else that threatens the power of the nobility.;;;;;;;;;;;x
+small_immigration_boom;Small Immigration Boom;;;;;;;;;x
+study_room_meetings;Study Room Meetings;;;;;;;;;x
+study_room_meetings_desc;Hungarian nobility are holding meetings at their estates to discuss and debate liberal theories. Word about these is spreading and contributing to a rising sense of nationalism among the upper classes. This will surely filter down to the lower classes, too.;;;;;;;;;;x
+successful_ds_reform;Successful Reform;;;;;;;;;x
+successful_ds_reform_desc;In the wake of the publishing of Gogol's "Dead Souls," the government has attempted to make some reforms to improve productivity and reduce corruption. It has largely been successful.;;;;;;;;;;x
+suppressed;Raid Result;;;;;;;;;;;;x
+suppressed_desc;Pretend this doesn't exist, it's a workaround for code limitations.;;;;;;;;;;;;x
+suppress_revolt;Active Revolt Suppression;;;;;;;;;x
+technological_assistance;Technological Assistance;;;;;;;;;x
+technological_assistance_desc;We are being provided with European experts in various field of technology to aid our progress in adopting their technology and systems.;;;;;;;;x
+tsar_batyushka;Tsar Batyushka;;;;;;;;;;x
+tsar_batyushka_desc;Dear Father Tsar - The Tsar looks over us and protects us, a father to the whole Empire!;;;;;;;;;;x
+unsuccessful_ds_reform;Unsuccessful Reform;;;;;;;;;x
+unsuccessful_ds_reform_desc;In the wake of the publishing of Gogol's "Dead Souls," the government has attempted to make some reforms to improve productivity and reduce corruption. It has largely been unsuccessful.;;;;;;;;;;x
+city_state;City-State;;;;;;;;;;;;x
+city_state_desc;With only one major city under our rule, our nation is easily overlooked.;;;;;;;;;;;;x
+small_nation;Small Nation;;;;;;;;;;;;x
+small_nation_desc;Our nation governs less territory than most.;;;;;;;;;;;;x
+large_nation;Large Nation;;;;;;;;;;;;x
+large_nation_desc;Ours is a large nation, a power to be reckoned with.;;;;;;;;;;;;x
+sprawling_empire;Sprawling Empire;;;;;;;;;;;;x
+sprawling_empire_desc;Ours is one of the largest nations in the world, a power to be reckoned with.;;;;;;;;;;;;x
+CANAL_4;Oheskewen Canal;;;;;;;;;;;;;x,,,
+confucian;Confucian;;;;;;;;;;x
+UNIT_BUILD_TIME_IW;$VAL$ days.;$VAL$ jours.;$VAL$ Tage.;;$VAL$ días.;;;;;;;;;x;
+DIPLOMACY_FILTER_NORTH_AMERICA;North Ameriga;Amérique du nord;Nordamerika;;Norteamérica;;;;;;;;;x;;;;
+DIPLOMACY_FILTER_SOUTH_AMERICA;South Ameriga;Amérique du sud;Südamerika;;Sudamérica;;;;;;;;;x;;;;
+DIPLOMACY_FILTER_OCEANIA;Volturnia;Océanie;Ozeanien;;Oceanía;;;;;;;;;x;;;;
+DIPLOMACY_FILTER_NORTH_AMERICA_TOOLTIP;List §YNorth Amerigan§W countries;Afficher les pays §Yd'Amérique du nord§W;§YNordamerikanische§W Länder auflisten;;Mostrar países §Ynorteamericanos§W;;;;;;;;;x;;;;
+DIPLOMACY_FILTER_SOUTH_AMERICA_TOOLTIP;List §YSouth Amerigan§W countries;Afficher les pays §Yd'Amérique du sud§W;§YSüdamerikanische§W Länder auflisten;;Mostrar países §Ysudamericanos§W;;;;;;;;;x;;;;
+DIPLOMACY_FILTER_OCEANIA_TOOLTIP;List countries in §YVolturnia§W;Afficher les pays §Yd'Océanie§W;Länder in §YOzeanien§W auflisten;;Mostrar países de §YOceania§W;;;;;;;;;x;;;;
+north_america;North Ameriga;Nord Amérique;Nordamerika;Afryka;Norteamérica;africa;afrika;Afrika;;;;;;x;;;;
+south_america;South Ameriga;Sud Amérique;Südamerika;Ameryka P³n.;Sudamérica;nord america;észak-amerika;Severní Amerika;;;;;;x;;;;
+oceania;Volturnia;Océanie;Ozeanien;Ameryka P³d.;Oceanía;south_america;dél-amerika;Jižní Amerika;;;;;;x;;;;
+GC_DESC;This is an era of change. The past two decades of wars and failed revolutions were just the beginning. The Hispanian Revolution of the 1820s hardened the hearts of Europe's royalty against the liberal cause. The Imperial War (1829-1835) saw the dissolution of the Holy Roman Empire, leaving a gaping hole in Europe. The ossified political and social structures of Old Europe will no doubt be swept away as well. No matter who you are, there are riches and glory to be had in this age of upheaval, if only you have the vision to claim them. Choose your nation and guide it to its destiny!;;;;;;;;;;;x
+germany_acquire_state;German Hegemony;;;;;;;;;x
+germany_acquire_state_short;Acquire German state $STATE$;;;;;;;;;;;x
+germany_acquire_state_setup;Acquire German state $STATE$ from $RECIPIENT$;;;;;;;;;;;;x
+germany_acquire_state_desc;Claim a state belonging to another German ruler and incorporate it into your realm, bringing you one step closer to hegemony in Germany.;;;;;;;;;;x
+skane_cb;Claim Skåne;;;;;;;;;;;x
+skane_cb_desc;Reclaim this §Ystate§W which rightfully belongs to us!;;;;;;;;;;x
+skane_cb_short;Take Skåne;;;;;;;;;;x
+skane_cb_setup;Choose §YSkåne§W from the list to the right.;;;;;;;;;;;;x
+free_latvia;Free Latvia;;;;;;;;;;;x
+free_latvia_short;Free Latvia;;;;;;;;;;x
+free_latvia_setup;Free Latvia from $RECIPIENT$;;;;;;;;;x
+free_latvia_desc;Release Latvia from the clutches of the Finns, granting you an ally and weakening Finnish power.;;;;;;;;;;;x
+WAR_GERMAN_UNIFICATION;$ORDER$ War of German Hegemony;;;;;;;;x
+NORMAL_WAR_GERMAN_UNIFICATION;$ORDER$ War of German Hegemony;;;;;;;;x
+AGRESSION_WAR_GERMAN_UNIFICATION;$ORDER$ War of German Hegemony;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME;$ORDER$ War of the Conquest of $SECOND_COUNTRY$;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME;$ORDER$ $FIRST$ Reclamation of $SECOND_COUNTRY$;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME;$ORDER$ $FIRST$ Reclamation of $SECOND_COUNTRY$;;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME_AQT_DAU;Daufinat Partition War;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_NAME_AQT_DAU;Daufinat Partition War;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_AQT_DAU;Daufinat Succession War;;;;;;;;;;;x
+AGRESSION_WAR_PUPPET_NAME_AQT_DAU;Daufinat Succession War;;;;;;;;;;;x
+NORMAL_WAR_PUPPET_NAME_PDN_DAU;Daufinat Succession War;;;;;;;;;;;x
+AGRESSION_WAR_PUPPET_NAME_PDN_DAU;Daufinat Succession War;;;;;;;;;;;x
+NORMAL_WAR_CONQUEST_NAME_AQT_DAU;$ORDER$ Daufinat Succession War;;;;;;;;;;;x
+AGRESSION_WAR_CONQUEST_NAME_AQT_DAU;$ORDER$ Daufinat Succession War;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_BOH_HUN;Hungarian Rebellion War;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_BOH_HUN;Hungarian Rebellion War;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_BOH_HUN_HUN;Hungarian Independence War;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_FRA_ORL;$ORDER$ War of French Reunification;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_FRA_ORL;$ORDER$ War of French Reunification;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_FRA_CMP;$ORDER$ War of French Reunification;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_FRA_CMP;$ORDER$ War of French Reunification;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_FRA_NRM;$ORDER$ War of French Reunification;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_FRA_NRM;$ORDER$ War of French Reunification;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_FRA_ORL;$ORDER$ War of French Reunification;;;;;;;;;;x
+AGRESSION_WAR_TAKE_CORE_NAME_FRA_ORL;$ORDER$ War of French Reunification;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_FRA_CMP;$ORDER$ War of French Reunification;;;;;;;;;;x
+AGRESSION_WAR_TAKE_CORE_NAME_FRA_CMP;$ORDER$ War of French Reunification;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_FRA_NRM;$ORDER$ War of French Reunification;;;;;;;;;;x
+AGRESSION_WAR_TAKE_CORE_NAME_FRA_NRM;$ORDER$ War of French Reunification;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_NAME_BYZ_ARM;$ORDER$ Anatolian War;;;;;;;;;;x
+AGRESSION_WAR_TAKE_CORE_NAME_BYZ_ARM;$ORDER$ Anatolian War;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_BYZ_ANA;Roman Civil War;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_BYZ_GRE;Roman Civil War;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_RUS_YKT;Yakut War;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_RUS_YKT;Yakut War;;;;;;;;;;;x
+NORMAL_WAR_PROTECTORATE_NAME_SML_YKT;Yakut War;;;;;;;;;;;x
+AGRESSION_WAR_PROTECTORATE_NAME_SML_YKT;Yakut War;;;;;;;;;;;x
+NORMAL_WAR_MAKE_PUPPET_NAME_NET_XHO;$ORDER$ Xhosa War;;;;;;;;;;;x
+AGRESSION_WAR_MAKE_PUPPET_NAME_NET_XHO;$ORDER$ Xhosa War;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_NET_XHO;$ORDER$ Xhosa War;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_NET_XHO;$ORDER$ Xhosa War;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_HIS_GLC;$ORDER$ Reconquista War;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_HIS_GLC;$ORDER$ Reconquista War;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_HIS_CAT;$ORDER$ Reconquista War;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_HIS_CAT;$ORDER$ Reconquista War;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_HIS_POR;$ORDER$ Reconquista War;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_HIS_POR;$ORDER$ Reconquista War;;;;;;;;;;;;x
+NORMAL_WAR_CUT_DOWN_TO_SIZE_NAME_SCO_NOR;Cod War;;;;;;;;;;;;;x
+AGRESSION_WAR_CUT_DOWN_TO_SIZE_NAME_SCO_NOR;Cod War;;;;;;;;;;;;;x
+NORMAL_WAR_CUT_DOWN_TO_SIZE_NAME_AEN_NOR;Herring War;;;;;;;;;;;;;x
+AGRESSION_WAR_CUT_DOWN_TO_SIZE_NAME_AEN_NOR;Herring War;;;;;;;;;;;;;x
+NORMAL_WAR_CUT_DOWN_TO_SIZE_NAME_ABN_NOR;Herring War;;;;;;;;;;;;;x
+AGRESSION_WAR_CUT_DOWN_TO_SIZE_NAME_ABN_NOR;Herring War;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_CB_NAME_SWE_DEN;$ORDER$ Skåne War;;;;;;;;;;;;;x
+AGRESSION_WAR_TAKE_CORE_CB_NAME_SWE_DEN;$ORDER$ Skåne War;;;;;;;;;;;;;x
+NORMAL_WAR_TAKE_CORE_CB_NAME_DEN_SWE;$ORDER$ Skåne War;;;;;;;;;;;;;x
+AGRESSION_WAR_TAKE_CORE_CB_NAME_DEN_SWE;$ORDER$ Skåne War;;;;;;;;;;;;;x
+NORMAL_WAR_SKANE_CB_NAME;$ORDER$ Skåne War;;;;;;;;;;;;;x
+AGRESSION_WAR_SKANE_CB_NAME;$ORDER$ Skåne War;;;;;;;;;;;;;x
+NORMAL_WAR_FREE_LATVIA_NAME;$ORDER$ Latvian War;;;;;;;;;;;;x
+AGRESSION_WAR_FREE_LATVIA_NAME;$ORDER$ Latvian War;;;;;;;;;;;;;;x

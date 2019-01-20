@@ -1,0 +1,6 @@
+owner = AEN
+controller = AEN
+naval_base = 1
+trade_goods = wool
+life_rating = 15
+colonial = 2

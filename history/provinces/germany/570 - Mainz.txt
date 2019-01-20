@@ -1,0 +1,7 @@
+owner = MNZ
+controller = MNZ
+add_core = MNZ
+add_core = GER
+trade_goods = sulphur
+life_rating = 35
+

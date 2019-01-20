@@ -1,0 +1,7 @@
+owner = SKM
+controller = SKM
+add_core = SKM
+trade_goods = timber
+life_rating = 35
+
+

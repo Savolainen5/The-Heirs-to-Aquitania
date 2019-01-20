@@ -1,0 +1,903 @@
+#Events for France - 50003 to 50023 (for now)
+
+
+
+########################################################################################################
+# Demand our colonies back (BRT and whoever else - when coast reclaimed, buy/intimidate colonies back) #
+########################################################################################################
+country_event = {
+	id = 50003
+	title = "EVTNAME50003" #The return of our colony in the Iles Bleues
+	desc = "EVTDESC50003" #How shall we ask for its return? Now called Glasenezenn
+	picture = "administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA50003" #Offer to buy
+		set_global_flag = FRA_try_buy_colony_BRT
+		BRT = { country_event = 50004 } #France offers to buy back their former colony
+		
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB50003" #Demand its return with no compensation
+		set_global_flag = FRA_try_demand_colony_BRT
+		BRT = { country_event = 50007 } #France demands the return of their former colony
+		badboy = 2
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC50003" #Seize the colony - this may lead to war
+		set_global_flag = FRA_seize_colony_BRT
+		BRT = { country_event = 50010 } #France seizes colony
+		2134 = {
+			secede_province = FRA
+		}
+		badboy = 5
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 3
+				ruling_party_ideology = reactionary
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50004
+	title = "EVTNAME50004" #France offers to buy Glasenezenn
+	desc = "EVTDESC50004" #They may not take our refusal quietly. If it comes to war, we may be able to ask Aquitania for aid
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Very well."
+		clr_global_flag = FRA_try_buy_colony_BRT
+		set_global_flag = FRA_bought_colony_BRT
+		FRA = { country_event = 50005 } #Brittany agrees to the sale
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 3
+				relation = {
+					who = FROM
+					value = 100
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "I think not."
+		clr_global_flag = FRA_try_buy_colony_BRT
+		set_global_flag = FRA_didn't_buy_colony_BRT
+		FRA = { country_event = 50006 } 
+		prestige = 3
+		
+		ai_chance = {
+			factor = 75
+		}
+	}
+}
+
+
+
+		
+country_event = {
+	id = 50005
+	title = "Brittany agrees to the sale"
+	desc = "The Bretons have wisely agreed to our generous offer to buy our colony back."
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		set_country_flag = iles_purchased
+		set_global_flag = FRA_our_colony_returned_BRT
+		FRA = { treasury = -50000 }
+		BRT = { treasury = 50000 }
+		2134 = {
+			secede_province = FRA
+			change_province_name = "Îles Bleues"
+			remove_core = BRT
+			add_core = FRA
+		}
+		relation = {
+			who = BRT
+			value = 75
+		}
+	}
+}
+
+country_event = {
+	id = 50006
+	title = "EVTNAME50006" #Brittany has refused to sell the islands to us
+	desc = "EVTDESC50006"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Well, we tried."
+		relation = {
+			who = BRT
+			value = -25
+		}
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.2
+				AQT = { brigades_compare = 1.5 }
+			}
+		}
+	}
+	
+	option = {
+		name = "We will not be stopped! To war!"
+		set_global_flag = FRA_BRT_colony_war
+		casus_belli = {
+			target = BRT
+			type = place_in_the_sun
+			months = 3
+		}
+		war = {
+			target = BRT
+			attacker_goal = {
+				casus_belli = place_in_the_sun
+				state_province_id = 2134
+				}
+		}
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 4
+				AQT = { brigades_compare = 1.5 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50007
+	title = "EVTNAME50007" #France demands the return of the colony
+	desc = "EVTDESC50007" #or else. We may be able to appeal to Aquitania
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will hand them over peacefully."
+		clr_global_flag = FRA_try_demand_colony_BRT
+		set_global_flag = FRA_demanded_colony_BRT
+		FRA = { country_event = 50008 } #Brittany acquiesces
+		prestige = -5
+		
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	option = {
+		name = "We will not be intimidated."
+		clr_global_flag = FRA_try_demand_colony_BRT
+		set_global_flag = FRA_didn't_get_colony_BRT
+		FRA = { country_event = 50009 } 
+		prestige = 5
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0
+				FRA = { AQT = { brigades_compare = 1.5 } }
+				NOT = { has_global_flag = railroading_on }
+			}
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50008
+	title = "Brittany agrees to our demands"
+	desc = "The duke in Brittany has wisely agreed to return our colony."
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Wise indeed!"
+		2134 = {
+			secede_province = FRA
+		}
+		relation = {
+			who = BRT
+			value = -75
+		}
+	}
+}
+	
+country_event = {
+	id = 50009
+	title = "EVTNAME50009" #Brittany has refused our gracious demand
+	desc = "EVTDESC50009"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Well, we tried."
+		relation = {
+			who = BRT
+			value = -50
+		}
+		prestige = -5
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				AQT = { brigades_compare = 1.5 }
+				NOT = { has_global_flag = railroading_on }
+			}
+		}
+	}
+		
+		
+	
+	option = {
+		name = "We will have what's ours! To war!"
+		set_global_flag = FRA_BRT_colony_war
+		casus_belli = {
+			target = BRT
+			type = place_in_the_sun
+			months = 3
+		}
+		war = {
+			target = BRT
+			attacker_goal = {
+				casus_belli = place_in_the_sun
+				state_province_id = 2134
+			}
+		}
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+	
+	
+	
+country_event = {
+	id = 50010
+	title = "EVTNAME50010" #France has unlawfully seized our colony
+	desc = "EVTDESC50010" #How will we respond to this trespass? Refusing may mean war. Perhaps we can appeal to Aquitania for aid if it comes to this?
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will not risk war."
+		clr_global_flag = FRA_seize_colony_BRT
+		set_global_flag = FRA_keeps_colony_BRT
+		FRA = { country_event = 50011 } #Brittany acquisces
+		prestige = -10
+		
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				FRA = { AQT = { brigades_compare = 1.5 } }
+			}
+		}
+	}
+	
+	option = {
+		name = "We will not be intimidated."
+		clr_global_flag = FRA_try_demand_colony_BRT
+		set_global_flag = FRA_didn't_get_colony_BRT
+		FRA = { country_event = 50012 }
+		prestige = 5
+		2134 = {
+			secede_province = BRT
+		}
+		
+		ai_chance = {
+			factor = 67
+		}
+	}
+}
+
+country_event = {
+	id = 50011
+	title = "Brittany rolls over"
+	desc = "The Bretons dare not oppose us."
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The cowards!"
+		2134 = {
+			secede_province = FRA
+			add_core = FRA
+		}
+		relation = {
+			who = BRT
+			value = -75
+		}
+	}
+}
+	
+country_event = {
+	id = 50012
+	title = "Brittany dares to defy us!"
+	desc = "Despite their size, Brittany has refused to accept the current state of affairs in our colonial dispute."
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Well, we tried."
+		relation = {
+			who = BRT
+			value = -100
+		}
+		prestige = -25
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				AQT = { brigades_compare = 1.5 }
+			}
+		}
+	}
+	
+	option = {
+		name = "We will have what's ours! To war!"
+		set_global_flag = FRA_BRT_colony_war
+		casus_belli = {
+			target = BRT
+			type = place_in_the_sun
+			months = 3
+		}
+		war = {
+			target = BRT
+			attacker_goal = {
+				casus_belli = place_in_the_sun
+				state_province_id = 2134
+				}
+		}
+		
+		ai_chance = {
+			factor = 75
+		}
+	}
+}
+
+country_event = {
+	id = 50013
+	title = "EVTNAME50013" #War with France
+	desc = "EVTDESC50013" #We are now at war with our old nightmare. We cannot win alone. Should we call for the aid of Aquitania?
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRT
+		war_with = FRA
+		has_global_flag = FRA_BRT_colony_war
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			war_with = FRA
+		}
+	}
+	
+	option = {
+		name = "We will fight this war alone."
+		prestige = 5
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "Call for aid!"
+		AQT = { country_event = 50014 }
+		
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50014
+	title = "EVTNAME50014" #Brittany calls for aid!
+	desc = "EVTDESC50014" #Will Aquitania answer the call of its old ally?
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Yes she shall!"
+		create_alliance = BRT
+		BRT = {
+			war = {
+				attacker_goal = {
+					casus_belli = humiliate
+				}
+				call_ally = yes
+			}
+			badboy = -6
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				alliance_with = BRT
+			}
+			modifier = {
+				factor = 1.5
+				is_sphere_leader_of = BRT
+			}
+			modifier = {
+				factor = 1.1
+				relation = {
+					who = BRT
+					value = 125
+				}
+			}
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We cannot, sadly."
+		prestige = -5
+		relation = {
+			who = BRT
+			value = -100
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				war_exhaustion = 50
+			}
+			modifier = {
+				factor = 1.1
+				war = yes
+			}
+			modifier = {
+				factor = 1.5
+				truce_with = FRA
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { FRA = { brigades_compare = 1 } }
+			}
+		}
+	}
+}
+
+#The end of the war
+
+country_event = {
+	id = 50015
+	title = "We have regained our colony!"
+	desc = "We have triumphed!"
+	
+	trigger = {
+		tag = FRA
+		2134 = {
+			owned_by = FRA
+		}
+		NOT = { has_global_flag = FRA_our_colony_returned_BRT }
+		has_global_flag = FRA_BRT_colony_war
+		NOT = { has_country_flag = iles_purchased }
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "Let it be the first of many victories!"
+		prestige = 10
+		2134 = {
+			change_province_name = "Îles Bleues"
+			remove_core = BRT
+			add_core = FRA
+		}
+		set_global_flag = FRA_our_colony_returned_BRT
+		clr_global_flag = FRA_BRT_colony_war
+		clr_global_flag = FRA_didn't_get_colony
+	}
+}
+
+country_event = {
+	id = 50016
+	title = "We could not regain our colony"
+	desc = "Despite our best efforts."
+		
+	trigger = {
+		tag = FRA
+		NOT = {
+			2134 = {
+				owned_by = FRA
+			}
+		}
+		has_global_flag = FRA_BRT_colony_war
+		NOT = { has_global_flag = FRA_our_colony_returned_BRT }
+		truce_with = BRT
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "The shame!"
+		prestige = -25
+		set_global_flag = FRA_our_colony_not_returned_BRT
+		clr_global_flag = FRA_BRT_colony_war
+		clr_global_flag = FRA_didn't_get_colony
+	}
+}
+
+#Annexation of Brittany
+
+country_event = {
+	id = 50017
+	title = "EVTNAME50017" #France demands annexation
+	desc = "EVTDESC50017" #Will we submit or resist?
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We have seen enough death."
+		clr_global_flag = BRT_annexation_demanded
+		set_global_flag = BRT_annexed
+		FRA = { country_event = 50018 } #Brittany acquisces
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 6
+				has_global_flag = FRA_BRT_colony_war
+				2134 = { owned_by = FRA }
+			}
+			modifier = {
+				factor = 10
+				NOT = { alliance_with = AQT }
+			}
+		}
+	}
+	
+	option = {
+		name = "We will not give up without a fight."
+		clr_global_flag = BRT_annexation_demanded
+		set_global_flag = BRT_annexation_resisted
+		FRA = { country_event = 50019 }
+		
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.1
+				FRA = { AQT = { brigades_compare = 1.5 } }
+				NOT = { has_global_flag = railroading_on }
+			}
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50018
+	title = "Brittany submits"
+	desc = "The duke in Brittany does not dare oppose us. He would be a fool to do fight again!"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Good!"
+		BRT = {
+			annex_to = FRA
+			all_core = { add_core = FRA }
+		}
+		prestige = 5
+		clr_global_flag = FRA_BRT_colony_war
+	}
+}
+	
+country_event = {
+	id = 50019
+	title = "Brittany dares to defy us!"
+	desc = "Despite their size and the last war, Brittany will not come quietly."
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Actually, we can't do this now."
+		relation = {
+			who = BRT
+			value = -100
+		}
+		prestige = -25
+		clr_global_flag = FRA_BRT_colony_war
+		
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	option = {
+		name = "No matter. They do not have a choice"
+		set_global_flag = FRA_BRT_annexation_war
+		clr_global_flag = FRA_BRT_colony_war
+		casus_belli = {
+			target = BRT
+			type = conquest
+			months = 3
+		}
+		war = {
+			target = BRT
+			attacker_goal = {
+				casus_belli = conquest
+			}
+		}
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.75
+				war_exhaustion = 50
+			}
+			modifier = {
+				factor = 0.75
+				war = yes
+			}
+			modifier = {
+				factor = 100
+				AQT = { brigades_compare = 1.5 }
+			}
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = 50020
+	title = "EVTNAME50020" #War with France
+	desc = "EVTDESC50020" #We are once again at war with our old nightmare. We cannot win alone. Should we call for the aid of Aquitania once more?
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRT
+		war_with = FRA
+		has_global_flag = FRA_BRT_annexation_war
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			war_with = FRA
+		}
+	}
+	
+	option = {
+		name = "We will fight this war alone."
+		prestige = 5
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "Call for aid!"
+		AQT = { country_event = 50021 }
+		
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50021
+	title = "EVTNAME50021" #Brittany calls for aid!
+	desc = "EVTDESC50021" #Will Aquitania answer the call of its old ally once more?
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Yes, she shall!"
+		create_alliance = BRT
+		BRT = {
+			war = {
+				attacker_goal = {
+					casus_belli = humiliate
+				}
+				call_ally = yes
+			}
+			badboy = -6
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				alliance_with = BRT
+			}
+			modifier = {
+				factor = 1.5
+				is_sphere_leader_of = BRT
+			}
+			modifier = {
+				factor = 1.1
+				relation = {
+					who = BRT
+					value = 125
+				}
+			}
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We cannot, sadly."
+		prestige = -5
+		relation = {
+			who = BRT
+			value = -100
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				war_exhaustion = 50
+			}
+			modifier = {
+				factor = 1.1
+				war = yes
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { FRA = { brigades_compare = 1 } }
+			}
+			modifier = {
+				factor = 1.5
+				truce_with = FRA
+			}
+		}
+	}
+}
+
+#Event to add cores on Brittany if you own it
+country_event = {
+	id = 50022
+	title = "EVTNAME50022"
+	desc = "EVTDESC50022"
+	picture = "treaty_of_paris_1856"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+		BRT = { exists = no }
+		BRT = { all_core = { owned_by = THIS } }
+		NOT = { 421 = { is_core = THIS } }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Gloire à la Patrie!"
+		prestige = 5
+		BRT = { all_core = { add_core = THIS } }
+		421 = { change_province_name = "St. Brieuc" }
+		422 = { change_province_name = "Vannes" }
+		423 = { change_province_name = "Nantes" }
+		424 = { change_province_name = "Rennes" }
+		422 = { state_scope = { change_region_name = "Bretagne" } }
+		set_global_flag = french_bretagne
+	}
+}
+		
+#50023 unused
+
+##############################
+#	End chains with Brittany #
+##############################
+
+# The Picards and Walloons are French!
+#51401, 51402 reserved for this
+
+#Event which removes cores for Bar and Lorraine
+country_event = {
+	id = 51400
+	title = "EVTNAME51400"
+	desc = "EVTDESC51400"
+	#picture = "?"
+	
+	trigger = {
+		tag = FRA
+		has_country_flag = bar_lorraine_claimed
+		BRR = { all_core = { is_core = FRA owned_by = FRA } }
+		LOR = { all_core = { is_core = FRA owned_by = FRA } }
+		NOT = { has_country_flag = bar_lorraine_cores_removed }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "We will trouble ourselves with them no more."
+		prestige = 5
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = BRR
+					is_core = LOR
+				}
+			}
+			remove_core = BRR
+			remove_core = LOR
+		}
+		set_country_flag = bar_lorraine_cores_removed
+	}
+}
+			

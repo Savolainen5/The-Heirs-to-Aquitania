@@ -1,0 +1,71 @@
+political_decisions = {
+
+	#############################################
+	#				Indian States				#
+	#############################################
+	create_indian_states = {
+		potential = {
+			ai = yes
+			is_culture_group = south_asian
+			NOT = { has_global_flag = indian_states_created }
+			NOT = { any_neighbor_country = { ai = no } }
+		}
+		allow = {
+			year = 1836
+		}
+		effect = {
+			set_global_flag = indian_states_created
+			
+			#Bastar
+			1305 = { add_core = BAS }
+			1306 = { add_core = BAS }
+			
+			#Bengal
+			1251 = { add_core = BNG }
+			1252 = { add_core = BNG }
+			1253 = { add_core = BNG }
+			1254 = { add_core = BNG }
+			1255 = { add_core = BNG }
+			1256 = { add_core = BNG }
+			1257 = { add_core = BNG }
+			2566 = { add_core = BNG }
+			
+			#Beroda
+			1296 = { add_core = BER }
+			
+			#Karnatak
+			1304 = { add_core = KRN }
+			1309 = { add_core = KRN }
+			1310 = { add_core = KRN }
+			1311 = { add_core = KRN }
+			1312 = { add_core = KRN }
+			
+			#Maharashtra (Bombay)
+			1284 = { add_core = MAH }
+			1286 = { add_core = MAH }
+			1296 = { add_core = MAH }
+			1297 = { add_core = MAH }
+			1298 = { add_core = MAH }
+			1299 = { add_core = MAH }
+			1300 = { add_core = MAH }
+			1301 = { add_core = MAH }
+			1302 = { add_core = MAH }
+			1303 = { add_core = MAH }
+			
+			#Nagpur
+			1278 = { add_core = NAG }
+			
+			#Nepal
+			1238 = { add_core = NEP }
+			
+			#Sindh
+			1293 = { add_core = SIN }
+			
+			#Travancore
+			1317 = { add_core = TRA }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,35 @@
+#Gibraltar : 16000
+#Ruled by Hispania 1836
+#Gibraltar (16000/4000 POPS)
+517 = {
+	artisans = {
+		culture = sephardic
+		religion = jewish
+		size = 400
+	}
+
+	clergymen = {
+		culture = spanish
+		religion = catholic
+		size = 50
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 3000
+	}
+
+	soldiers = {
+		culture = spanish
+		religion = catholic
+		size = 50
+	}
+
+	farmers = {
+		culture = spanish
+		religion = catholic
+		size = 200
+	}
+
+}

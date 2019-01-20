@@ -1,0 +1,7 @@
+owner = MLI
+controller = MLI
+add_core = MLI
+add_core = MAS
+trade_goods = grain
+life_rating = 30
+

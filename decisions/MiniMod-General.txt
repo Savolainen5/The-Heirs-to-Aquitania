@@ -1,0 +1,176 @@
+political_decisions = {	
+	encourage_war = {
+		picture = leave_soi
+		alert = no
+		potential = {
+			ideological_thought = 1
+			NOT = {
+				has_country_modifier = war_encouraged
+			}
+			war = yes
+		}
+		allow = {
+			military_score = 150
+		}
+		effect = {
+			prestige = -15
+			any_pop = {
+				scaled_militancy = {
+					ideology = fascist
+					factor = -4
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = -2
+				}
+				scaled_militancy = {
+					issue = pro_military
+					factor = 2
+				}
+				scaled_militancy = {
+					issue = anti_military
+					factor = 4
+				}
+				scaled_militancy = {
+					issue = pacifism
+					factor = 6
+				}
+				consciousness = 3
+			}
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				dominant_issue = {
+					value = anti_military
+					factor = 0.05
+				}
+				dominant_issue = {
+					value = pro_military
+					factor = 0.10
+				}
+				dominant_issue = {
+					value = jingoism
+					factor = 0.15
+				}
+			}
+			any_pop = {
+				limit = {
+					NOT = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				dominant_issue = {
+					value = jingoism
+					factor = 0.05
+				}
+				dominant_issue = {
+					value = pro_military
+					factor = 0.10
+				}
+				dominant_issue = {
+					value = anti_military
+					factor = 0.15
+				}
+				dominant_issue = {
+					value = pacifism
+					factor = 0.20
+				}
+			}
+			upper_house = {
+				ideology = reactionary
+				value = 0.25
+			}
+			upper_house = {
+				ideology = conservative
+				value = 0.10
+			}  			
+			add_country_modifier = {
+				name = war_encouraged
+				duration = 5400
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}	
+	}	
+
+#	remove_undesireables = {
+#		alert = no
+#		potential = {
+#			NOT = {
+#				has_country_modifier = kebabbies
+#			}
+#			OR = {
+#				government = fascist_dictatorship
+#				government = absolute_monarchy
+#				government = prussian_constitutionalism
+#				government = presidential_dictatorship
+#				government = proletarian_dictatorship
+#			}
+#			ideological_thought = 1
+#		}
+#		allow = {
+#			ideological_thought = 1
+#		}
+#		effect = {
+#			any_pop = {
+#				limit = {
+#					location = { is_colonial = no }
+#					is_primary_culture = no
+#					is_accepted_culture = no
+#				}
+#				reduce_pop = 0.65
+#				militancy = 9
+#				consciousness = 5
+#			}
+#			any_pop = {
+#				limit = {
+#					OR = {
+#						is_primary_culture = yes
+#						is_accepted_culture = yes
+#					}
+#				}
+#				scaled_militancy = {
+#					ideology = fascist
+#					factor = -8
+#				}
+#				scaled_militancy = {
+#					ideology = reactionary
+#					factor = -4
+#				}
+#				scaled_militancy = {
+#					ideology = socialist
+#					factor = 4
+#				}
+##				scaled_militancy = {
+###					ideology = communist
+#					factor = 1
+#				}
+#				scaled_militancy = {
+#					ideology = conservative
+#					factor = -1
+#				}
+#				scaled_militancy = {
+#					ideology = liberal
+#					factor = 6
+#				}
+#				scaled_militancy = {
+#					ideology = anarcho_liberal
+#					factor = 7
+#				}
+#			}	
+#			add_country_modifier = {
+#				name = kebabbies
+#				duration = 3650
+#			}
+#		}
+#		ai_will_do = {
+##			factor = 0
+#		}
+#	}	
+}

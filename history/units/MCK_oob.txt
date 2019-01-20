@@ -1,0 +1,85 @@
+army = {
+	name = "Army of Forbidden Banners"
+	location = 1479
+	regiment = {
+		name= "1. Manchu Yellow Banner"
+		type = infantry
+		home = 1612
+	}
+
+	regiment = {
+		name= "2.Manchu Yellow Banner"
+		type = infantry
+		home = 1479
+	}
+
+	regiment = {
+		name= "3.Manchu Yellow Banner"
+		type = infantry
+		home = 1480
+	}
+	
+	regiment = {
+		name= "4.Manchu Yellow Banner"
+		type = infantry
+		home = 1612
+	}
+
+	regiment = {
+		name= "5.Manchu  Yellow Banner"
+		type = infantry
+		home = 1552
+	}
+
+	regiment = {
+		name= "6.Manchu Yellow Banner"
+		type = infantry
+		home = 1553
+	}
+}
+
+army = {
+	name = "Army of The Manchu White Banner"
+	location = 1554
+
+	regiment = {
+		name= "1.Manchu White Banner"
+		type = infantry
+		home = 1554
+	}
+
+	regiment = {
+		name= "2.Manchu White Banner"
+		type = infantry
+		home = 1555
+	}
+
+	regiment = {
+		name= "3.Manchu White Banner"
+		type = infantry
+		home = 1002
+	}
+}
+
+army = {
+	name = "Army of The Manchu Red Banner"
+	location = 1479
+
+	regiment = {
+		name= "1.Manchu Red Banner"
+		type = infantry
+		home = 1612
+	}
+
+	regiment = {
+		name= "2.Manchu Red Banner"
+		type = infantry
+		home = 1479
+	}
+
+	regiment = {
+		name= "3.Manchu Red Banner"
+		type = infantry
+		home = 1552
+	}
+}

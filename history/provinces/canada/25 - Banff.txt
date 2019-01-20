@@ -1,0 +1,8 @@
+add_core = SKM
+trade_goods = coal
+life_rating = 30
+
+
+
+
+

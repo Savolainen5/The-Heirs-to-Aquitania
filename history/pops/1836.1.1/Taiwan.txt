@@ -1,0 +1,134 @@
+#Taiwan Region (2980000) 
+#under the rule of China in 1836  
+#Taipei (1452000/363000 POPS) #91000 gaoshan  
+1485 = {
+
+	aristocrats = {
+		culture = pingpu
+		religion = animist
+		size = 1525
+	}
+	
+	bureaucrats = {
+		culture = pingpu
+		religion = animist
+		size = 1000
+	}
+
+	officers = {
+		culture = pingpu
+		religion = animist
+		size = 725
+	}
+
+	artisans = {
+		culture = pingpu
+		religion = animist
+		size = 6150
+	}
+
+	farmers = {
+		culture = min
+		religion = mahayana
+		size = 10625
+	}
+
+	aristocrats = {
+		culture = pingpu
+		religion = animist
+		size = 3000
+	}
+
+	clergymen = {
+		culture = pingpu
+		religion = animist
+		size = 2400
+	}
+
+	artisans = {
+		culture = pingpu
+		religion = animist
+		size = 11000
+	}
+	
+	artisans = {
+		culture = pingpu
+		religion = animist
+		size = 2000
+	}
+
+	soldiers = {
+		culture = pingpu
+		religion = animist
+		size= 3650
+	}
+
+	farmers = {
+		culture = pingpu
+		religion = animist
+		size = 170200
+	}
+	
+	farmers = {
+		culture = gaoshan
+		religion = animist
+		size = 92400
+	}
+}
+#Tainan (1528000/382000 POPS) #gaoshan 150000
+2562 = {
+	artisans = {
+		culture = gaoshan
+		religion = animist
+		size = 6600
+	}
+
+	aristocrats = {
+		culture = gaoshan
+		religion = animist
+		size = 3500
+	}
+
+	clergymen = {
+		culture = pingpu
+		religion = animist
+		size = 2500
+	}
+
+	artisans = {
+		culture = pingpu
+		religion = animist
+		size = 11000
+	}
+	
+	artisans = {
+		culture = pingpu
+		religion = animist
+		size = 2500
+	}
+
+	soldiers = {
+		culture = gaoshan
+		religion = animist
+		size= 3900
+	}
+
+	farmers = {
+		culture = gaoshan
+		religion = animist
+		size = 192400
+	}	
+	
+	farmers = {
+		culture = pingpu
+		religion = animist
+		size = 129000
+	}
+
+	farmers = {
+		culture = min
+		religion = mahayana
+		size = 12625
+	}
+
+}

@@ -1,0 +1,233 @@
+#Events 50024-50050 reserved for Italy and Daufinat (which are located in HtA_DAU)
+#Fall of Tuscany
+country_event = {
+	id = 50024
+	title = "EVTNAME50024"
+	desc = "EVTDESC50024"
+	picture = "cityfire"
+	
+	trigger = {
+		OR = {
+			tag = GEN
+			tag = LOM
+			tag = MOD
+			tag = VEN
+		}
+		744 = {
+			owned_by = NPL
+		}
+		TUS = {
+			exists = no
+		}
+		NOT = {
+			has_country_flag = padan_conference
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "We will attend!"
+		set_country_flag = padan_conference
+		set_global_flag = TUS_fell
+		prestige = 1
+		relation = {
+			who = NPL
+			value = -100
+		}
+	}
+}
+
+#Padan Conference, when concluded activates an event for LOM to enact to form PDN
+country_event = {
+	id = 50025
+	title = "EVTNAME50025"
+	desc = "EVTDESC50025"
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = PDN
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			NOT = { exists = LOM }
+		}
+	}
+	
+	option = {
+		name = "A resounding success!"
+		set_global_flag = padan_conference_concluded
+		prestige = 5
+	}
+}
+
+#Members contribute to Padan Union
+country_event = {
+	id = 50026
+	title = "EVTNAME50026"
+	desc = "EVTDESC50026"
+	picture = "administration"
+	
+	trigger = {
+		tag = PDN
+		NOT = { has_country_flag = member_contributions }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Excellent!"
+		set_country_flag = member_contributions
+		money = 50000
+	}
+}
+
+#Yearly event to fire that destroys relations and influence between PDN and NPL until Tuscany is free and Romagna belongs to PDN
+country_event = {
+	id = 50034
+	title = "EVTNAME50034"
+	desc = "EVTDESC50034"
+	picture = "meeting"
+	
+	trigger = {
+		tag = PDN
+		NOT = { has_country_modifier = hate_NPL }
+		NOT = { month = 1 }
+		ITA = { exists = no }
+		OR = {
+			PAP_741 = { owned_by = NPL } 
+			TUS_744 = { owned_by = NPL } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "We will remember."
+		relation = {
+			who = NPL
+			value = -100
+		}
+		NPL = {
+			diplomatic_influence = {
+				who = THIS
+				value = -100
+			}
+		}
+		add_country_modifier = {
+			name = hate_NPL
+			duration = 31
+		}
+	}
+}
+
+#Yearly event to fire that destroys relations and influence between PDN and ITA until Tuscany is free and Romagna belongs to PDN
+country_event = {
+	id = 50035
+	title = "EVTNAME50034"
+	desc = "EVTDESC50035"
+	picture = "meeting"
+	
+	trigger = {
+		tag = PDN
+		NOT = { has_country_modifier = hate_ITA }
+		NOT = { month = 1 }
+		ITA = { exists = yes }
+		OR = {
+			PAP_741 = { owned_by = ITA } 
+			TUS_744 = { owned_by = ITA } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "We will remember."
+		relation = {
+			who = ITA
+			value = -200
+		}
+		ITA = {
+			diplomatic_influence = {
+				who = THIS
+				value = -100
+			}
+		}
+		add_country_modifier = {
+			name = hate_ITA
+			duration = 31
+		}
+	}
+}
+
+#Event to set a flag that TUS has been revived when freed from Naples by PDN so PDN can take the decision to inherit them
+country_event = {
+	id = 50036
+	title = "EVTNAME50036"
+	desc = "EVTDESC50036"
+	picture = "meeting"
+	
+	trigger = {
+		tag = TUS
+		has_global_flag = TUS_fell
+		exists = yes
+		TUS_744 = { owned_by = TUS }
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Great!"
+		prestige = 5
+		relation = {
+			who = PDN
+			value = 100
+		}
+		clr_global_flag = TUS_fell
+		set_global_flag = TUS_revived
+	}
+}
+
+#Event to get a core on Tuscany if PDN somehow acquires it
+country_event = {
+	id = 50099
+	title = "EVTNAME50099"
+	desc = "EVTDESC50099"
+	picture = "meeting"
+	
+	trigger = {
+		tag = PDN
+		744 = {
+			owned_by = PDN
+			NOT = { is_core = PDN }
+		}
+		TUS = { exists = no }
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = "Good news!"
+		prestige = 5
+		TUS_744 = {
+			add_core = THIS
+		}
+	}
+}

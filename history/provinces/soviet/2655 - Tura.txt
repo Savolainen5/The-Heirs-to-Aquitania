@@ -1,0 +1,4 @@
+add_core = RUS
+trade_goods = iron
+life_rating = 25
+

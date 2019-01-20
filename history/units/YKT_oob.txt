@@ -1,0 +1,9 @@
+army = {
+	name = "Yakut Warband"
+	location  = 2648
+	regiment = {
+		name = "Yakut Warriors"
+		home = 2648
+		type = irregular
+	}
+}

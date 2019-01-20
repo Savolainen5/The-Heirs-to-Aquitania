@@ -1,0 +1,1239 @@
+#############################################
+#											#
+#        	Discovering New Mines			#
+#											#
+#############################################
+
+province_event = {
+	id = 199005
+	title = "EVTNAME199005" #Prospector Strikes Coal!
+	desc = "EVTDESC199005"
+	
+	trigger = {
+		owned_by = THIS
+		controlled_by = THIS
+		province_control_days = 1095
+		owner = {
+			war = no
+			mechanized_mining = 1
+		}
+		NOT = {
+			trade_goods = coal
+			has_province_modifier = switched_production
+		}
+		OR = {
+			AND = {
+				unemployment_by_type = { type = farmers value = 0.5  }
+				has_pop_type = farmers
+				work_available = { worker = farmers }
+			}
+			AND = {
+				unemployment_by_type = { type = labourers value = 0.5  }
+				has_pop_type = labourers
+				work_available = { worker = labourers }
+			}
+		}
+		OR = {
+			terrain = hills
+			terrain = mountain
+			terrain = arctic
+			terrain = marsh
+			terrain = desert
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 1.5
+			OR = {
+				terrain = arctic
+				terrain = marsh
+				terrain = desert
+			}
+		}
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
+	}
+
+	option = {
+		name = "They should get to work immediately."
+		trade_goods = coal
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		ai_chance = { factor = 0 }
+	}
+}
+
+province_event = {
+	id = 199007
+	title = "EVTNAME199007" #Prospector Strikes Iron!
+	desc = "EVTDESC199007"
+	
+	trigger = {
+		owned_by = THIS
+		controlled_by = THIS
+		province_control_days = 1095
+		owner = {
+			war = no
+			mechanized_mining = 1
+		}
+		NOT = {
+			trade_goods = iron
+			has_province_modifier = switched_production
+		}
+		OR = {
+			AND = {
+				unemployment_by_type = { type = farmers value = 0.5  }
+				has_pop_type = farmers
+				work_available = { worker = farmers }
+			}
+			AND = {
+				unemployment_by_type = { type = labourers value = 0.5  }
+				has_pop_type = labourers
+				work_available = { worker = labourers }
+			}
+		}
+		OR = {
+			terrain = hills
+			terrain = mountain
+			terrain = arctic
+			terrain = marsh
+			terrain = forest
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 1.5
+			OR = {
+				terrain = arctic
+				terrain = marsh
+				terrain = forest
+			}
+		}
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
+	}
+
+	option = {
+		name = "They should get to work immediately."
+		trade_goods = iron
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		ai_chance = { factor = 0 }
+	}
+}
+
+province_event = {
+	id = 199009
+	title = "EVTNAME199009" #Prospector Strikes Sulphur!
+	desc = "EVTDESC199009"
+	
+	trigger = {
+		owned_by = THIS
+		controlled_by = THIS
+		province_control_days = 1095
+		owner = {
+			war = no
+			mechanized_mining = 1
+		}
+		NOT = {
+			trade_goods = sulphur
+			has_province_modifier = switched_production
+		}
+		OR = {
+			AND = {
+				unemployment_by_type = { type = farmers value = 0.5  }
+				has_pop_type = farmers
+				work_available = { worker = farmers }
+			}
+			AND = {
+				unemployment_by_type = { type = labourers value = 0.5  }
+				has_pop_type = labourers
+				work_available = { worker = labourers }
+			}
+		}
+		OR = {
+			terrain = hills
+			terrain = mountain
+			terrain = marsh
+			terrain = desert
+			terrain = forest
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3000
+		modifier = {
+			factor = 1.5
+			OR = {
+				terrain = marsh
+				terrain = desert
+				terrain = forest
+			}
+		}
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
+	}
+
+	option = {
+		name = "They should get to work immediately."
+		trade_goods = sulphur
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		ai_chance = { factor = 0 }
+	}
+}
+
+#############################################
+#											#
+#        		Cash Crops					#
+#											#
+#############################################
+
+province_event = {
+	id = 199015
+	title = "EVTNAME199015" #Cash Crops - Cotton
+	desc = "EVTDESC199015"
+	
+	trigger = {
+		owned_by = THIS
+		controlled_by = THIS
+		province_control_days = 1095
+		owner = {
+			war = no
+			civilized = yes
+		}
+		NOT = {
+			trade_goods = cotton
+			has_province_modifier = switched_production
+		}
+		OR = {
+			AND = {
+				unemployment_by_type = { type = farmers value = 0.5  }
+				has_pop_type = farmers
+				work_available = { worker = farmers }
+			}
+			AND = {
+				unemployment_by_type = { type = labourers value = 0.5  }
+				has_pop_type = labourers
+				work_available = { worker = labourers }
+			}
+		}
+		OR = {
+			terrain = desert
+			terrain = plains
+			terrain = coastal_desert
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
+	}
+
+	option = {
+		name = "They should get to work immediately."
+		trade_goods = cotton
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		ai_chance = { factor = 0 }
+	}
+}
+
+province_event = {
+	id = 199016
+	title = "EVTNAME199015" #Cash Crops - Tea
+	desc = "EVTDESC199016"
+	
+	trigger = {
+		owned_by = THIS
+		controlled_by = THIS
+		province_control_days = 1095
+		owner = {
+			war = no
+			civilized = yes
+		}
+		NOT = {
+			trade_goods = tea
+			has_province_modifier = switched_production
+		}
+		OR = {
+			AND = {
+				unemployment_by_type = { type = farmers value = 0.5  }
+				has_pop_type = farmers
+				work_available = { worker = farmers }
+			}
+			AND = {
+				unemployment_by_type = { type = labourers value = 0.5  }
+				has_pop_type = labourers
+				work_available = { worker = labourers }
+			}
+		}
+		OR = {
+			continent = asia
+			continent = africa
+			is_core = ARG
+		}
+		OR = {
+			terrain = farmlands
+			terrain = marsh
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
+	}
+
+	option = {
+		name = "They should get to work immediately."
+		trade_goods = tea
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		ai_chance = { factor = 0 }
+	}
+}
+
+province_event = {
+	id = 199018
+	title = "EVTNAME199015" #Cash Crops - Wool
+	desc = "EVTDESC199018"
+	
+	trigger = {
+		owned_by = THIS
+		controlled_by = THIS
+		province_control_days = 1095
+		owner = {
+			war = no
+			civilized = yes
+		}
+		NOT = {
+			trade_goods = wool
+			has_province_modifier = switched_production
+		}
+		OR = {
+			AND = {
+				unemployment_by_type = { type = farmers value = 0.5  }
+				has_pop_type = farmers
+				work_available = { worker = farmers }
+			}
+			AND = {
+				unemployment_by_type = { type = labourers value = 0.5  }
+				has_pop_type = labourers
+				work_available = { worker = labourers }
+			}
+		}
+		OR = {
+			terrain = hills
+			terrain = steppe
+			terrain = plains
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
+	}
+
+	option = {
+		name = "They should get to work immediately."
+		trade_goods = wool
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		ai_chance = { factor = 0 }
+	}
+}
+
+province_event = {
+	id = 199019
+	title = "EVTNAME199015" #Cash Crops - Fruit
+	desc = "EVTDESC199019"
+	
+	trigger = {
+		owned_by = THIS
+		controlled_by = THIS
+		province_control_days = 1095
+		owner = {
+			war = no
+			civilized = yes
+		}
+		NOT = {
+			trade_goods = fruit
+			has_province_modifier = switched_production
+		}
+		OR = {
+			AND = {
+				unemployment_by_type = { type = farmers value = 0.5  }
+				has_pop_type = farmers
+				work_available = { worker = farmers }
+			}
+			AND = {
+				unemployment_by_type = { type = labourers value = 0.5  }
+				has_pop_type = labourers
+				work_available = { worker = labourers }
+			}
+		}
+		OR = {
+			terrain = farmlands
+			terrain = woods
+			terrain = jungle
+			terrain = marsh
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
+	}
+
+	option = {
+		name = "They should get to work immediately."
+		trade_goods = fruit
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		ai_chance = { factor = 0 }
+	}
+}
+
+province_event = {
+	id = 199020
+	title = "EVTNAME199015" #Cash Crops - Tobacco
+	desc = "EVTDESC199020"
+	
+	trigger = {
+		owned_by = THIS
+		controlled_by = THIS
+		province_control_days = 1095
+		owner = {
+			war = no
+			civilized = yes
+		}
+		NOT = {
+			trade_goods = tobacco
+			continent = europe
+			has_province_modifier = switched_production
+		}
+		OR = {
+			AND = {
+				unemployment_by_type = { type = farmers value = 0.5  }
+				has_pop_type = farmers
+				work_available = { worker = farmers }
+			}
+			AND = {
+				unemployment_by_type = { type = labourers value = 0.5  }
+				has_pop_type = labourers
+				work_available = { worker = labourers }
+			}
+		}
+		terrain = farmlands
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
+	}
+
+	option = {
+		name = "They should get to work immediately."
+		trade_goods = tobacco
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		ai_chance = { factor = 0 }
+	}
+}
+
+province_event = {
+	id = 199021
+	title = "EVTNAME199015" #Cash Crops - Coffee
+	desc = "EVTDESC199021"
+	
+	trigger = {
+		owned_by = THIS
+		controlled_by = THIS
+		province_control_days = 1095
+		owner = {
+			war = no
+			civilized = yes
+		}
+		NOT = {
+			trade_goods = coffee
+			continent = europe
+			has_province_modifier = switched_production
+		}
+		OR = {
+			AND = {
+				unemployment_by_type = { type = farmers value = 0.5  }
+				has_pop_type = farmers
+				work_available = { worker = farmers }
+			}
+			AND = {
+				unemployment_by_type = { type = labourers value = 0.5  }
+				has_pop_type = labourers
+				work_available = { worker = labourers }
+			}
+		}
+		terrain = jungle
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
+	}
+
+	option = {
+		name = "They should get to work immediately."
+		trade_goods = coffee
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		ai_chance = { factor = 0 }
+	}
+}
+
+province_event = {
+	id = 199022
+	title = "EVTNAME199015" #Cash Crops - Silk
+	desc = "EVTDESC199022"
+	
+	trigger = {
+		owned_by = THIS
+		controlled_by = THIS
+		province_control_days = 1095
+		continent = asia
+		owner = {
+			war = no
+			civilized = yes
+		}
+		NOT = {
+			trade_goods = silk
+			continent = europe
+			continent = south_america
+			has_province_modifier = switched_production
+		}
+		OR = {
+			AND = {
+				unemployment_by_type = { type = farmers value = 0.5  }
+				has_pop_type = farmers
+				work_available = { worker = farmers }
+			}
+			AND = {
+				unemployment_by_type = { type = labourers value = 0.5  }
+				has_pop_type = labourers
+				work_available = { worker = labourers }
+			}
+		}
+		OR = {
+			terrain = jungle
+			AND = {
+				terrain = farmlands
+				OR = {
+					is_core = CHI
+					is_core = HND
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
+	}
+
+	option = {
+		name = "They should get to work immediately."
+		trade_goods = silk
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		ai_chance = { factor = 0 }
+	}
+}
+
+#############################################
+#											#
+#        	Traditional Farming				#
+#											#
+#############################################
+
+province_event = {
+	id = 199030
+	title = "EVTNAME199030" #Fisheries in $PROVINCENAME$
+	desc = "EVTDESC199030"
+
+	trigger = {
+		owned_by = THIS
+		controlled_by = THIS
+		province_control_days = 1095
+		owner = {
+			war = no
+			civilized = yes
+		}
+		NOT = {
+			trade_goods = fish
+			has_province_modifier = switched_production
+		}
+		OR = {
+			AND = {
+				unemployment_by_type = { type = farmers value = 0.5  }
+				has_pop_type = farmers
+				work_available = { worker = farmers }
+			}
+			AND = {
+				unemployment_by_type = { type = labourers value = 0.5  }
+				has_pop_type = labourers
+				work_available = { worker = labourers }
+			}
+		}
+		is_coastal = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
+	}
+
+	option = {
+		name = "We will encourage the fisheries."
+		trade_goods = fish
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		ai_chance = { factor = 0 }
+	}
+}
+
+province_event = {
+	id = 199031
+	title = "EVTNAME199031" #Lumberyards in $PROVINCENAME$
+	desc = "EVTDESC199031"
+
+	trigger = {
+		owned_by = THIS
+		controlled_by = THIS
+		province_control_days = 1095
+		owner = {
+			war = no
+			civilized = yes
+		}
+		NOT = {
+			trade_goods = timber
+			has_province_modifier = switched_production
+		}
+		OR = {
+			AND = {
+				unemployment_by_type = { type = farmers value = 0.5  }
+				has_pop_type = farmers
+				work_available = { worker = farmers }
+			}
+			AND = {
+				unemployment_by_type = { type = labourers value = 0.5  }
+				has_pop_type = labourers
+				work_available = { worker = labourers }
+			}
+		}
+		OR = {
+			terrain = forest
+			terrain = woods
+			terrain = mountain
+			terrain = arctic
+			terrain = hills
+			terrain = marsh
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
+	}
+
+	option = {
+		name = "We will encourage the lumberyards."
+		trade_goods = timber
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		ai_chance = { factor = 0 }
+	}
+}
+
+province_event = {
+	id = 199032
+	title = "EVTNAME199032" #Tropical Lumberyards in $PROVINCENAME$
+	desc = "EVTDESC199032"
+
+	trigger = {
+		owned_by = THIS
+		controlled_by = THIS
+		province_control_days = 1095
+		owner = {
+			war = no
+			civilized = yes
+		}
+		NOT = {
+			trade_goods = tropical_wood
+			has_province_modifier = switched_production
+		}
+		OR = {
+			AND = {
+				unemployment_by_type = { type = farmers value = 0.5  }
+				has_pop_type = farmers
+				work_available = { worker = farmers }
+			}
+			AND = {
+				unemployment_by_type = { type = labourers value = 0.5  }
+				has_pop_type = labourers
+				work_available = { worker = labourers }
+			}
+		}
+		terrain = jungle
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
+	}
+
+	option = {
+		name = "We will encourage the tropical lumberyards."
+		trade_goods = tropical_wood
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		ai_chance = { factor = 0 }
+	}
+}
+
+province_event = {
+	id = 199033
+	title = "EVTNAME199033" #Ranches in $PROVINCENAME$
+	desc = "EVTDESC199033"
+
+	trigger = {
+		owned_by = THIS
+		controlled_by = THIS
+		province_control_days = 1095
+		owner = {
+			war = no
+			civilized = yes
+		}
+		NOT = {
+			trade_goods = cattle
+			has_province_modifier = switched_production
+		}
+		OR = {
+			AND = {
+				unemployment_by_type = { type = farmers value = 0.5  }
+				has_pop_type = farmers
+				work_available = { worker = farmers }
+			}
+			AND = {
+				unemployment_by_type = { type = labourers value = 0.5  }
+				has_pop_type = labourers
+				work_available = { worker = labourers }
+			}
+		}
+		OR = {
+			terrain = plains
+			terrain = hills
+			terrain = farmlands
+			terrain = steppe
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
+	}
+
+	option = {
+		name = "We will encourage the ranches."
+		trade_goods = cattle
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		ai_chance = { factor = 0 }
+	}
+}
+
+province_event = {
+	id = 199034
+	title = "EVTNAME199034" #Grain Farms in $PROVINCENAME$
+	desc = "EVTDESC199034"
+
+	trigger = {
+		owned_by = THIS
+		controlled_by = THIS
+		province_control_days = 1095
+		owner = {
+			war = no
+			civilized = yes
+		}
+		NOT = {
+			trade_goods = grain
+			has_province_modifier = switched_production
+		}
+		OR = {
+			AND = {
+				unemployment_by_type = { type = farmers value = 0.5  }
+				has_pop_type = farmers
+				work_available = { worker = farmers }
+			}
+			AND = {
+				unemployment_by_type = { type = labourers value = 0.5  }
+				has_pop_type = labourers
+				work_available = { worker = labourers }
+			}
+		}
+		OR = {
+			terrain = farmlands
+			terrain = steppe
+			terrain = plains
+			terrain = hills
+			terrain = coastal_desert
+			terrain = desert
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			factor = 0.001
+			NOT = { trade_goods = cotton }
+			NOT = { trade_goods = dye } 
+			NOT = { trade_goods = wool } 
+			NOT = { trade_goods = silk } 
+			NOT = { trade_goods = coal } 
+			NOT = { trade_goods = sulphur } 
+			NOT = { trade_goods = iron } 
+			NOT = { trade_goods = timber } 
+			NOT = { trade_goods = tropical_wood } 
+			NOT = { trade_goods = rubber }
+			NOT = { trade_goods = oil }
+			NOT = { trade_goods = precious_metal }
+			NOT = { trade_goods = cattle }
+			NOT = { trade_goods = fish }
+			NOT = { trade_goods = fruit }
+			NOT = { trade_goods = grain }
+			NOT = { trade_goods = tobacco }
+			NOT = { trade_goods = tea }
+			NOT = { trade_goods = coffee }
+			NOT = { trade_goods = opium }
+		}
+	}
+
+	option = {
+		name = "We will encourage the grain farms."
+		trade_goods = grain
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "No-- $PROVINCENAME$'s current production is too valuable."
+		ai_chance = { factor = 0 }
+	}
+}
+

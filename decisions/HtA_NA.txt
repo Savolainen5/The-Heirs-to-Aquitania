@@ -1,0 +1,164 @@
+political_decisions = {
+	protect_iroquois = {
+		potential = {
+			tag = SHC
+			exists = IRO
+			NOT = { has_country_flag = protect_IRO }
+		}
+		
+		allow = {
+			prestige = 15
+			civilized = yes
+			IRO = { vassal_of = THIS }
+			relation = {
+				who = IRO
+				value = 150
+			}
+		}
+		
+		effect = {
+			set_country_flag = protect_IRO
+			prestige = 2
+			badboy = 1
+			inherit = IRO
+			IRO = {	all_core = { add_core = THIS } }
+		}
+	}
+	
+	protect_cherokee = {
+		potential = {
+			tag = SHC
+			exists = CHE
+			NOT = { has_country_flag = protect_CHE }
+		}
+		
+		allow = {
+			prestige = 15
+			civilized = yes
+			CHE = { vassal_of = THIS }
+			relation = {
+				who = CHE
+				value = 150
+			}
+		}
+		
+		effect = {
+			set_country_flag = protect_CHE
+			prestige = 2
+			badboy = 1
+			inherit = CHE
+			CHE = {	all_core = { add_core = THIS } }
+		}
+	}
+	
+	skamisc_ai_halesca_purchase = {
+		potential = {
+			ai = yes
+			tag = SKM
+			has_country_flag = alaska_purchase_interest
+			NOT = { money = 30000 }
+			NOT = { has_global_flag = alaska_purchase_completed }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			money = 30000
+		}
+	}
+	
+	sell_solelha = {
+		potential = {
+			tag = AQT
+			NOT = { has_country_flag = sell_solelha }
+			NOT = { has_global_flag = solelha_sold }
+			slavery = no_slavery
+			war = no
+		}
+		
+		allow = {
+			slavery = no_slavery
+			200 = { owned_by = THIS }
+		}
+		
+		effect = {
+			set_country_flag = sell_solelha
+			MRG = {	
+				country_event = {
+					id = 51001
+					days = 2
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { year = 1845 }
+					slavery = yes_slavery
+				}
+			}
+		}
+	}
+	
+	margaria_ai_solelha_purchase = {
+		potential = {
+			ai = yes
+			tag = MRG
+			AQT = { has_country_flag = sell_solelha }
+			NOT = { money = 30000 }
+			NOT = { has_global_flag = solelha_sold }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			money = 30000
+		}
+	}
+	
+	new_life_in_the_new_world = {
+		picture = new_life
+		potential = {
+			OR = {
+				capital_scope = { continent = north_america }
+				capital_scope = { continent = south_america }
+				tag = TER
+				tag = NFB
+			}
+			is_greater_power = no
+			NOT = { has_country_flag = come_to_the_new_world }
+			number_of_states = 2
+			num_of_ports = 1
+		}
+		
+		allow = {
+			war = no
+			is_vassal = no
+			is_greater_power = no
+			state_n_government = 1
+			slavery = no_slavery
+			public_meetings = yes_meeting
+			press_rights = free_press
+			vote_franschise = universal_voting
+			NOT = { citizenship_policy = residency }
+			NOT = { religious_policy = moralism }
+			OR = {
+				government = democracy
+				government = hms_government
+			}
+			money = 25000
+		}
+		
+		effect = {
+			set_country_flag = come_to_the_new_world
+			treasury = -25000
+			add_country_modifier = { name = small_immigration_boom duration = 730 }
+		}
+	}
+}
+	

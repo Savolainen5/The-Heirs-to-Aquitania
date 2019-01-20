@@ -1,0 +1,7 @@
+owner = SCO
+controller = SCO
+add_core = SAK
+trade_goods = timber
+life_rating = 30
+colonial = 2
+

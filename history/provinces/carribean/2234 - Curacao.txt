@@ -1,0 +1,7 @@
+owner = AEN
+controller = AEN
+trade_goods = fish
+#oil
+life_rating = 35
+colonial = 2
+

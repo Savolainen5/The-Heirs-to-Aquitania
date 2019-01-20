@@ -1,0 +1,104 @@
+RYU = { value = 125 }
+SUL = { value = 100 }
+BRU = { value = 100 }
+
+army = {
+	name = "Army of the Tokugawa Shogunate"
+	location = 1649
+	regiment = {
+		name= "1.Samurai"
+		type = cavalry
+		home = 1649
+	}
+	regiment = {
+		name= "2.Samurai"
+		type = cavalry
+		home = 1649
+	}
+	regiment = {
+		name= "3.Samurai"
+		type = cavalry
+		home = 1645
+	}
+	regiment = {
+		name= "1.Edo"
+		type = irregular
+		home = 1650
+	}
+	regiment = {
+		name= "2.Edo"
+		type = irregular
+		home = 1655
+	}
+	regiment = {
+		name= "3.Edo"
+		type = irregular
+		home = 1658
+	}
+	regiment = {
+		name= "4.Edo"
+		type = irregular
+		home = 1652
+	}
+}
+
+army = {
+	name = "Army of Tohoku"
+	location = 1668
+	regiment = {
+		name= "1. Tohoku Samurai"
+		type = cavalry
+		home = 1668
+	}
+	regiment = {
+		name= "1. Tohoku"
+		type = irregular
+		home = 1668
+	}
+	regiment = {
+		name= "2. Tohoku"
+		type = irregular
+		home = 1669
+	}
+	regiment = {
+		name= "2. Tohoku Samurai"
+		type = cavalry
+		home = 1673
+	}
+	regiment = {
+		name= "3. Tohoku"
+		type = irregular
+		home = 1673
+	}
+}
+
+army = {
+	name = "Army of Chubu"
+	location = 1675
+	regiment = {
+		name= "1. Chubu Samurai"
+		type = cavalry
+		home = 1675
+	}
+	regiment = {
+		name= "1. Chubu"
+		type = irregular
+		home = 1675
+	}
+	regiment = {
+		name= "2. Chubu"
+		type = irregular
+		home = 1675
+	}
+}
+
+navy = {
+	name = "Imperial Fleet"
+	location = 1659
+	ship = {
+		name= "1 Yusosentai"
+		type = clipper_transport
+	}
+
+}
+

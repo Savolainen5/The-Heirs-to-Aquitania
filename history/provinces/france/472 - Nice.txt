@@ -1,0 +1,7 @@
+owner = PRE
+controller = PRE
+add_core = PRE
+trade_goods = fruit
+life_rating = 35
+terrain = hills
+

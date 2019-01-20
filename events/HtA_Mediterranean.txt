@@ -1,0 +1,723 @@
+#Events for various parts of the Mediterranean
+#51650 - 51699
+
+#Corsica, Aquitania, PDN, and Naples/Italy
+
+#Corsican Revolution
+country_event = {
+	id = 51650
+	title = "EVTNAME51650"
+	desc = "EVTDESC51650"
+	picture = "storming_palace"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CRS
+		year = 1847
+		OR = {
+			government = absolute_monarchy
+			government = hms_government
+			government = prussian_constitutionalism
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "Long live the Republic!"
+		government = democracy
+		election = yes
+		ruling_party_ideology = liberal
+		political_reform = universal_voting
+		political_reform = state_equal_weight
+		political_reform = jefferson_method
+		political_reform = yes_meeting
+		political_reform = censored_press
+		political_reform = non_socialist
+		political_reform = non_secret_ballots
+	}
+}
+
+#Claims in Corsica?
+country_event = {
+	id = 51651
+	title = "EVTNAME51651"
+	desc = "EVTDESC51651"
+	picture = "Corsica_Sardinia"
+	
+	trigger = {
+		OR = {
+			tag = PDN
+			tag = ITA
+			tag = NPL
+		}
+		NOT = { has_country_flag = corsica_interest_prompt }
+		OR = {
+			government = absolute_monarchy
+			government = hms_government
+			government = prussian_constitutionalism
+		}
+		CRS = { exists = yes government = democracy is_independant = yes }
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+		modifier = {
+			factor = 0.1
+			NOT = { has_country_flag = corsica_interest_prompt }
+			OR = {
+				PDN = { has_country_flag = corsica_interest_prompt }
+				ITA = { has_country_flag = corsica_interest_prompt }
+				NPL = { has_country_flag = corsica_interest_prompt }
+			}
+		}
+	}
+	
+	immediate = { set_country_flag = corsica_interest_prompt }
+	
+	option = {
+		name = "An interesting proposition."
+		relation = {
+			who = CRS
+			value = -100
+		}
+		casus_belli = {
+			target = CRS
+			type = conquest
+			months = 36
+		}
+		badboy = 7
+		prestige = 3
+		set_country_flag = corsica_interest
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0
+				badboy = 0.75
+			}
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "This seems unneccessary."
+		prestige = -2
+		any_pop = {
+			consciousness = 0.1
+		}
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 100
+				NOT = { badboy = 0.75 }
+			}
+		}
+	}
+}
+
+#Corsican delegates arrive
+country_event = {
+	id = 51652
+	title = "EVTNAME51652"
+	desc = "EVTDESC51652"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The people of Corsica-Sardinia shall always be our friends!"
+		relation = {
+			who = FROM
+			value = 100
+		}
+		diplomatic_influence = {
+			who = FROM
+			value = 200
+		}
+		create_alliance = FROM
+		set_global_flag = aqt_crs_friendship
+		
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We don't need this at this time."
+		relation = {
+			who = FROM
+			value = -10
+		}
+		
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+#An Invitation to the Republic (from AQT)
+country_event = {
+	id = 51653
+	title = "EVTNAME51653"
+	desc = "EVTDESC51653"
+	picture = "Corsica_Sardinia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will join as full members."
+		AQT = { country_event = 51654 }
+		
+		ai_chance = {
+			factor = 20
+			modifier = {	
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We will join, maintaining our autonomy."
+		AQT = { country_event = 51655 }
+		
+		ai_chance = {
+			factor = 50
+			modifier = {	
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We will keep our distance."
+		AQT = { country_event = 51656 }
+		
+		ai_chance = {
+			factor = 30
+			modifier = {	
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+#Corsica-Sardinia agrees to join
+country_event = {
+	id = 51654
+	title = "EVTNAME51654"
+	desc = "EVTDESC51654"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The republic grows!"
+		inherit = CRS
+		CRS = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+		prestige = 5
+		any_pop = {
+			consciousness = 0.1
+		}
+		add_accepted_culture = maretan
+		set_global_flag = corsica_joins_AQT
+	}
+}
+
+#Corsica-Sardinia agrees to join as an autonomous member
+country_event = {
+	id = 51655
+	title = "EVTNAME51655"
+	desc = "EVTDESC51655"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "That will do just fine!"
+		create_vassal = FROM
+		relation = {
+			who = FROM
+			value = 200
+		}
+		diplomatic_influence = {
+			who = FROM
+			value = 400
+		}
+		prestige = 3
+		set_global_flag = corsica_vassal_AQT
+	}
+}
+
+#Corsica-Sardinia refuses to join
+country_event = {
+	id = 51656
+	title = "EVTNAME51656"
+	desc = "EVTDESC51656"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Truly a pity, but we will remain friends."
+	}
+}
+
+#PDN/NPL/ITA get an event about Corsica's fate regarding their interest in that country
+country_event = {
+	id = 51657
+	title = "EVTNAME51657"
+	desc = "EVTDESC51657"
+	picture = "Corsica_Sardinia"
+	
+	trigger = {
+		OR = {
+			tag = PDN
+			tag = ITA
+			tag = NPL
+		}
+		has_country_flag = corsica_interest
+		NOT = { has_country_flag = informed_of_corsica_joining_aqt }
+		OR = {
+			has_global_flag = corsica_joins_AQT
+			has_global_flag = corsica_vassal_AQT
+		}
+		OR = {
+			CRS = { is_vassal = yes }
+			CRS = { exists = no }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	immediate = { set_country_flag = informed_of_corsica_joining_aqt }
+	
+	option = {
+		name = "This needs to be considered."
+		set_country_flag = still_interested_in_corsica
+		clr_country_flag = corsica_interest
+		
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 1.1
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "The fate of Corsica is none of our concern."
+		prestige = -1
+		clr_country_flag = corsica_interest
+		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				AQT = { military_score = THIS }
+			}
+		}
+	}
+}
+
+#$FROMCOUNTRY$ demands Corsica
+country_event = {
+	id = 51658
+	title = "EVTNAME51658"
+	desc = "EVTDESC51658"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "What a ridiculous demand."
+		FROM = { country_event = 51659 }
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 1.1
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We will do what we must to avert war."
+		prestige = -30
+		any_pop = {
+			limit = {
+				has_pop_culture = maretan
+			}
+			militancy = 3
+			consciousness = 3
+		}
+		any_pop = {
+			limit = {
+				NOT = {
+					has_pop_culture = maretan
+				}
+			}
+			militancy = 1
+			consciousness = 2
+		}
+		FROM = { country_event = 51660 }
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 1.5
+				is_disarmed = yes
+			}
+			modifier = {
+				factor = 1.1
+				is_greater_power = no
+			}
+			modifier = {
+				factor = 1.3
+				is_secondary_power = no
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { military_score = 30 }
+			}
+			modifier = {
+				factor = 3
+				NOT = { military_score = 20 }
+			}
+			modifier = {
+				factor = 1.1
+				num_of_revolts = 2
+			}
+		}
+	}
+}
+
+#Aquitania refuses
+country_event = {
+	id = 51659
+	title = "EVTNAME51659"
+	desc = "EVTDESC51659"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Then we will rely on force of arms!"
+		AQT = {
+			add_casus_belli = {
+				target = THIS
+				type = acquire_state
+				months = 3
+			}
+		}
+		war = {
+			target = AQT
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 473
+			}
+			call_ally = yes
+		}
+	
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.66
+				AQT = { military_score = THIS }
+			}
+			modifier = {
+				factor = 1.2
+				has_global_flag = railroading_on
+			}
+			modifier = {
+				factor = 0.5
+				war = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "They have called our bluff..."
+		prestige = -25
+		any_country = {
+			limit = {
+				OR = {
+					neighbour = THIS
+					is_greater_power = yes
+				}
+			}
+			relation = {
+				who = THIS
+				value = -50
+			}
+		}
+		badboy = 5
+	}
+}
+
+#Aquitania accepts
+country_event = {
+	id = 51660
+	title = "EVTNAME51660"
+	desc = "EVTDESC51660"
+	picture = "deliberation"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Diplomacy is the most powerful weapon."
+		prestige = 10
+		473 = {
+			remove_core = AQT
+			secede_province = THIS
+			add_core = THIS
+		}
+		765 = {
+			remove_core = AQT
+			secede_province = THIS
+			add_core = THIS
+		}
+		766 = {
+			remove_core = AQT
+			secede_province = THIS
+			add_core = THIS
+		}
+	}
+}
+
+#Flavour event for some friendship between AQT and CRS
+country_event = {
+	id = 51661
+	title = "EVTNAME51661"
+	desc = "EVTDESC51661"
+	picture = "Corsica_Sardinia"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AQT
+		has_global_flag = aqt_crs_friendship
+		OR = {
+			is_greater_power = yes
+			is_secondary_power = yes
+		}
+		OR = {	
+			CRS = {
+				in_sphere = THIS
+				OR = {
+					is_vassal = no
+					is_our_vassal = THIS
+				}
+			}
+			AND = {
+				THIS = {
+					is_greater_power = no
+					relation = {
+						who = CRS
+						value = 150
+					}
+				}
+				CRS = {
+					OR = {
+						is_vassal = no
+						is_our_vassal = THIS
+					}
+					NOT = { in_sphere = THIS }
+				}
+			}
+		}	
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	option = {
+		name = "Truly a blessed friendship of our peoples."
+		relation = {
+			who = CRS
+			value = 50
+		}
+		CRS = {
+			relation = {
+				who = AQT
+				value = 50
+			}
+		}
+		set_global_flag = aqt_crs_friendship_longtime
+	}
+}
+
+#$FROMCOUNTRY$ demands Corsica be released to them
+country_event = {
+	id = 51662
+	title = "EVTNAME51658"
+	desc = "EVTDESC51658"
+	picture = "deliberation"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "What a ridiculous demand."
+		FROM = { country_event = 51663 }
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 1.1
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We will do what we must to avert war."
+		prestige = -30
+		relation = {
+			who = CRS
+			value = -100
+		}
+		diplomatic_influence = {
+			who = CRS
+			value = -100
+		}
+		FROM = { country_event = 51664 }
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 1.5
+				is_disarmed = yes
+			}
+			modifier = {
+				factor = 1.1
+				is_greater_power = no
+			}
+			modifier = {
+				factor = 1.3
+				is_secondary_power = no
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { military_score = 30 }
+			}
+			modifier = {
+				factor = 3
+				NOT = { military_score = 20 }
+			}
+			modifier = {
+				factor = 1.1
+				num_of_revolts = 2
+			}
+		}
+	}
+}
+	
+#Aquitania refuses
+country_event = {
+	id = 51663
+	title = "EVTNAME51659"
+	desc = "EVTDESC51659"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Then we will rely on force of arms!"
+		AQT = {
+			add_casus_belli = {
+				target = THIS
+				type = release_puppet
+				months = 3
+			}
+		}
+		war = {
+			target = AQT
+			attacker_goal = {
+				casus_belli = release_puppet
+				tag = CRS
+			}
+			call_ally = yes
+		}
+		set_country_flag = war_to_release_CRS
+	
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.66
+				AQT = { military_score = THIS }
+			}
+			modifier = {
+				factor = 1.2
+				has_global_flag = railroading_on
+			}
+			modifier = {
+				factor = 0.5
+				war = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "They have called our bluff..."
+		prestige = -15
+		any_country = {
+			limit = {
+				OR = {
+					neighbour = THIS
+					is_greater_power = yes
+				}
+			}
+			relation = {
+				who = THIS
+				value = -50
+			}
+		}
+		badboy = 3
+	}
+}	
+
+#Aquitania accepts
+country_event = {
+	id = 51664
+	title = "EVTNAME51660"
+	desc = "EVTDESC51660"
+	picture = "deliberation"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Diplomacy is the most powerful weapon."
+		prestige = 7
+		AQT = {
+			release_vassal = CRS
+		}
+		create_vassal = CRS
+	}
+}

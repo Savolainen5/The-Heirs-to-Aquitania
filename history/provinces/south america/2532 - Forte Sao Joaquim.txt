@@ -1,0 +1,6 @@
+owner = GDN
+controller = GDN
+add_core = GDN
+trade_goods = tropical_wood
+life_rating = 25
+

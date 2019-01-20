@@ -1,0 +1,25 @@
+political_decisions = {
+	danmarks_riges_grundlov = {
+		potential = {
+			tag = DEN
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = danish_constitutionalism
+			}
+		}
+		
+		allow = {
+			state_n_government = 1
+			NOT = {
+				average_militancy = 3
+			}
+		}
+		
+		effect = {
+			political_reform = landed_voting
+			government = hms_government
+			prestige = 5
+			set_country_flag = danish_constitutionalism
+		}
+	}
+}

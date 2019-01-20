@@ -1,0 +1,9 @@
+owner = AEN
+controller = AEN
+add_core = AEN
+trade_goods = grain
+life_rating = 35
+naval_base = 2
+fort = 1
+
+

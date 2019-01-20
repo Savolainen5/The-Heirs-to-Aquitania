@@ -1,0 +1,5 @@
+add_core = SHC
+trade_goods = timber
+life_rating = 35
+
+

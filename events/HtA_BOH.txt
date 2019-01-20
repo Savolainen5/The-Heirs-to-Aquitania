@@ -1,0 +1,2643 @@
+#For events relating to Bohemia. Include events that affect Croatia, Hungary, Austria, and Ardeal (tag SIE, aka Transylvania) - Also one for Bavaria
+#Events 50403 - 50499? - Current free IDs: 50458-50493
+#Hungarian Revolution events are found in LiberalRevolutions with IDs 10225-7
+
+#Hungarian nobility begin holding Study Room functions
+country_event = {
+	id = 50403
+	title = "EVTNAME50403"
+	desc = "EVTDESC50403"	
+	picture = "meeting"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BOH
+		year = 1840
+		owns = 643		#Orczy estate in Szekes
+		NOT = { has_country_flag = allowed_study_room_meetings }
+		NOT = { has_country_flag = suppressed_study_room_meetings }
+		NOT = { has_global_flag = hungarian_revolution_occurred }
+	}
+
+	mean_time_to_happen = {
+		months = 10
+		modifier = {
+			factor = 0.8
+			year = 1841
+		}
+		modifier = {
+			factor = 0.5
+			year = 1842
+		}
+		modifier = {
+			factor = 0.2
+			year = 1843
+		}
+	}
+	
+	option = {
+		name = "This poses no threat to us."
+		set_country_flag = allowed_study_room_meetings
+		643 = {
+			add_province_modifier = {
+				name = study_room_meetings
+				duration = 3650
+			}
+		}
+	}
+	
+	option = {
+		name = "Take steps to ensure this doesn't happen again."
+		any_pop = {
+			limit = {
+				culture = hungarian
+				strata = rich
+			}
+			militancy = 3
+			consciousness = 5
+			ideology = {
+				factor = 0.2
+				value = liberal
+			}
+		}
+		set_country_flag = suppressed_study_room_meetings
+	}
+}
+
+#Pamphlets uncovered - province event (hopefully it works in 3.04)
+#This event happens only if BOH chooses the second option above
+province_event = {
+	id = 50404
+	title = "EVTNAME50404"
+	desc = "EVTDESC50404"
+	picture = "Strike"
+	
+	trigger = {
+		is_core = HUN
+		NOT = { has_province_modifier = pamphlets_stopped }
+		NOT = { has_province_modifier = hungarian_pamphlets }
+		owner = {
+			tag = BOH
+			has_country_flag = suppressed_study_room_meetings
+			NOT = { has_country_flag = had_liberal_revolution }
+		}
+		NOT = { has_global_flag = hungarian_revolution_occurred }
+		year = 1841
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+		modifier = {
+			factor = 0.8
+			year = 1842
+		}
+		modifier = {
+			factor = 0.5
+			year = 1843
+		}
+		modifier = {
+			factor = 0.3
+			year = 1844
+		}
+	}
+	
+	option = {
+		name = "Stop this rabble-rousing."
+		any_pop = {
+			limit = {
+				culture = hungarian
+			}
+			consciousness = 1
+			militancy = 2
+		}
+		add_province_modifier = {
+			name = pamphlets_stopped
+			duration = 270
+		}
+	}
+	
+	option = {
+		name = "Let it be."
+		any_pop = {
+			limit = {
+				culture = hungarian
+			}
+			consciousness = 1
+		}
+		add_province_modifier = {
+			name = hungarian_pamphlets
+			duration = 3650
+		}
+	}
+}
+
+#More Study Room Meetings!
+province_event = {
+	id = 50405
+	title = "EVTNAME50405"
+	desc = "EVTDESC50405"
+	picture = "meeting"
+	
+	trigger = {
+		is_core = HUN
+		NOT = { has_province_modifier = study_room_meetings }
+		NOT = { has_province_modifier = stopped_meetings }
+		owner = {
+			tag = BOH
+			has_country_flag = allowed_study_room_meetings
+			NOT = { has_country_flag = had_liberal_revolution }
+		}
+		NOT = { has_global_flag = hungarian_revolution_occurred }
+		year = 1841
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+		modifier = {
+			factor = 0.9
+			year = 1842
+		}
+		modifier = {
+			factor = 0.9
+			year = 1843
+		}
+		modifier = {
+			factor = 0.9
+			year = 1844
+		}
+	}
+	
+	option = {
+		name = "Stop this rabble-rousing."
+		any_pop = {
+			limit = {
+				culture = hungarian
+			}
+			consciousness = 1
+			militancy = 2
+		}
+		add_province_modifier = {
+			name = stopped_meetings
+			duration = 275
+		}
+	}
+	
+	option = {
+		name = "Let it be."
+		add_province_modifier = {
+			name = study_room_meetings
+			duration = 3650
+		}
+	}
+}
+
+##################################################################################
+###########################Zadar Port Lease Event Chain###########################
+#########################Triggered by decision in HtA_BOH#########################
+###########################Event numbers 50406 to 50425###########################
+#############################And also 50494 to 50498##############################
+##################################################################################
+
+#Bohemia has a proposition######################################Change event number?
+country_event = {
+	id = 50406
+	title = "EVTNAME50406"
+	desc = "EVTDESC50406"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Accept the deal in return for greater funds - 30000."
+		BOH = {
+			country_event = {
+				id = 50407
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 35
+		}
+	}
+	
+	option = {
+		name = "Money is good, but land is better."
+		BOH = {
+			country_event = {
+				id = 50408
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+			modifier = {
+				factor = 0
+				AUS_771 = { owned_by = CRO }
+			}
+		}
+	}
+	
+	option = {
+		name = "Refuse the offer."
+		BOH = {
+			country_event = {
+				id = 50409
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#Croatia accepts monetary compensation for the lease
+country_event = {
+	id = 50407
+	title = "EVTNAME50407"			#somethingsomething lease is good for twenty years
+	desc = "EVTDESC50407"			#also, they ended up asking 30000
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	immediate = { set_global_flag = money_for_zadar }
+	
+	option = {
+		name = "Great news! We will pay it all at once!"
+		money = -30000
+		CRO = {
+			country_event = {
+				id = 50410
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { money = 30000 }
+			}
+		}
+	}
+	
+	option = {
+		name = "We'll pay in yearly installments."
+		money = -5000
+		add_country_modifier = {			#Installments are paid yearly and their events are at the end of the event chain section here
+			name = zadar_payment_1
+			duration = 365
+		}
+		set_country_flag = zadar_payment_1
+		781 = {	secede_province = BOH }
+		CRO = {
+			country_event = {
+				id = 50411
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "Forget the whole thing."
+		set_country_flag = abandoned_zadar_deal
+		CRO = {
+			country_event = {
+				id = 50413
+				days = 1
+			}
+		}
+	}
+}
+
+#Croatia wants more than just money
+country_event = {
+	id = 50408
+	title = "EVTNAME50408"			#somethingsomething lease is good for twenty years. Well, actually, it's infinite ATM
+	desc = "EVTDESC50408"			#they want their land back from austria, only turn over Zadar after being given Croatia proper
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	immediate = { set_global_flag = land_for_zadar }
+	
+	option = {
+		name = "This will be difficult, but very well."
+		set_country_flag = return_croatian_land
+		money = -20000
+		CRO = {
+			country_event = {
+				id = 50414
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Forget the whole thing."
+		set_country_flag = abandoned_zadar_deal
+		CRO = {
+			country_event = {
+				id = 50413
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				military_score = 10
+			}
+		}
+	}
+}		
+
+#Croatia refuses the offer
+country_event = {
+	id = 50409
+	title = "EVTNAME50409"
+	desc = "EVTDESC50409"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	immediate = { set_global_flag = cro_said_no_zadar }
+	
+	option = {
+		name = "Then we will have to resort to force."
+		set_country_flag = BOH_conquer_CRO
+		relation = {
+			who = CRO
+			value = -300
+		}
+		diplomatic_influence = {
+			who = CRO
+			value = -300
+		}
+		war = {
+			target = CRO
+			attacker_goal = { casus_belli = conquest }
+			call_ally = no
+		}
+		badboy = -12
+		
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Set up a government which will approve the deal."
+		set_country_flag = BOH_puppet_CRO
+		relation = {
+			who = CRO
+			value = -300
+		}
+		diplomatic_influence = {
+			who = CRO
+			value = -300
+		}
+		war = {
+			target = CRO
+			attacker_goal = { casus_belli = make_puppet }
+			call_ally = no
+		}
+		badboy = -7
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	option = {
+		name = "Then we will have to look elsewhere."
+		relation = {
+			who = CRO
+			value = -100
+		}
+		
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#Bohemia accepts and pays all at once
+country_event = {
+	id = 50410
+	title = "EVTNAME50410"
+	desc = "EVTDESC50410"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	immediate = { set_global_flag = zadar_lease_begins }
+	
+	option = {
+		name = "May it prove to be a useful deal."
+		781 = {
+			naval_base = 1
+			infrastructure = 1
+			secede_province = BOH
+			remove_core = CRO
+			add_core = BOH
+			add_province_modifier = {
+				name = leased
+				duration = -1
+			}
+		}
+		money = 30000
+		772 = { infrastructure = 1 }
+		776 = { infrastructure = 1 }
+		784 = { infrastructure = 1 }
+	}
+}
+
+#Bohemia accepts and pays in installments
+country_event = {
+	id = 50411
+	title = "EVTNAME50411"
+	desc = "EVTDESC50411"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	immediate = { set_global_flag = zadar_lease_begins }
+	
+	option = {
+		name = "May it prove to be a useful deal."
+		781 = {
+			naval_base = 1
+			infrastructure = 1
+			secede_province = BOH
+			remove_core = CRO
+			add_core = BOH
+			add_province_modifier = {
+				name = leased
+				duration = -1
+			}
+		}
+		money = 5000
+		772 = { infrastructure = 1 }
+		776 = { infrastructure = 1 }
+		784 = { infrastructure = 1 }
+	}
+}
+
+#Bohemia pays an installment
+country_event = {
+	id = 50412
+	title = "EVTNAME50412"
+	desc = "EVTDESC50412"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Good!"
+		money = 5000
+	}
+}
+
+#Bohemia abandons the Zadar deal
+country_event = {
+	id = 50413
+	title = "EVTNAME50413"
+	desc = "EVTDESC50413"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Very well."
+	}
+}
+
+#Bohemia agrees to get our land back for us
+country_event = {
+	id = 50414
+	title = "EVTNAME50414"
+	desc = "EVTDESC50414"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent! We will be happy to turn Zadar over to them!"
+		set_country_flag = waiting_for_lands
+	}
+}
+
+#Our land returned!
+country_event = {
+	id = 50415
+	title = "EVTNAME50415"
+	desc = "EVTDESC50415"
+	picture = "croatia_issue"
+	
+	trigger = {
+		tag = CRO
+		has_country_flag = waiting_for_lands
+		AUS_771 = { owned_by = THIS }
+		781 = { owned_by = THIS }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			tag = CRO
+		}
+	}
+	
+	option = {
+		name = "A great day! Time to uphold our end of the bargain."
+		money = 20000
+		clr_country_flag = waiting_for_lands
+		781 = {
+			naval_base = 1
+			infrastructure = 1
+			secede_province = BOH
+			remove_core = CRO
+			add_core = BOH
+			add_province_modifier = {
+				name = leased
+				duration = -1
+			}
+		}
+		772 = { infrastructure = 1 }
+		776 = { infrastructure = 1 }
+		784 = { infrastructure = 1 }
+	}
+}
+
+#Austria receives request from Bohemia to transfer Old Croatia to the Duchy of Croatia
+country_event = {
+	id = 50416
+	title = "EVTNAME50416"
+	desc = "EVTDESC50416"
+	picture = "map_upper_croatia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Accept small compensation."
+		BOH = {
+			country_event = {
+				id = 50417
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 4
+				in_sphere = BOH
+			}
+		}
+	}
+	
+	option = {
+		name = "Accept significant compensation."
+		BOH = {
+			country_event = {
+				id = 50418
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 2
+				NOT = { in_sphere = BOH }
+				relation = {
+					who = BOH
+					value = 150
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Impossible."
+		prestige = 3	
+		BOH = {
+			country_event = {
+				id = 50419
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				in_sphere = BOH
+			}
+		}
+	}
+}
+
+#Austria asks for small compensation - 15000
+country_event = {
+	id = 50417
+	title = "EVTNAME50417"
+	desc = "EVTDESC50417"
+	picture = "map_upper_croatia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Yes."
+		money = -15000
+		AUS = {
+			money = 15000
+			country_event = {
+				id = 50420
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "On second thought, maybe not."
+		AUS = {
+			country_event = {
+				id = 50421
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Austria asks for significant compensation - 35000
+country_event = {
+	id = 50418
+	title = "EVTNAME50418"
+	desc = "EVTDESC50418"
+	picture = "map_upper_croatia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "It is a steep price, but yes."
+		money = -35000
+		AUS = {
+			money = 35000
+			country_event = {
+				id = 50420
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "On second thought, maybe not."
+		AUS = {
+			country_event = {
+				id = 50421
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Austria refuses
+country_event = {
+	id = 50419
+	title = "EVTNAME50419"
+	desc = "EVTDESC50419"
+	picture = "map_upper_croatia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Then we will have to rely on force of arms."
+		war = {
+			target = AUS
+			attacker_goal = {
+				casus_belli = acquire_state
+				state_province_id = 771
+			}
+			call_ally = no
+		}
+		badboy = -5
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "How can we close the deal with Croatia now?"
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Bohemia agrees to pay
+country_event = {
+	id = 50420
+	title = "EVTNAME50420"
+	desc = "EVTDESC50420"	#Have already received payment
+	picture = "map_upper_croatia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent! Turn Old Croatia over to them."
+		771 = { secede_province = BOH }
+		773 = { secede_province = BOH }
+		774 = { secede_province = BOH }
+		775 = { secede_province = BOH }
+	}
+}
+
+#Bohemia abandons the deal
+country_event = {
+	id = 50421
+	title = "EVTNAME50421"
+	desc = "EVTDESC50421"
+	picture = "map_upper_croatia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Very well. This deal is closed, then."
+	}
+}
+
+
+#First of the installment payment events. Future lease renewals could use this same chain for the lease, but it feels weird...
+#Bohemia must pay installment 2
+country_event = {
+	id = 50494
+	title = "EVTNAME50494"
+	desc = "EVTDESC50494"
+	picture = "zadar"
+	
+	trigger = {
+		tag = BOH
+		781 = {
+			owned_by = THIS
+			has_province_modifier = leased
+		}
+		has_country_flag = zadar_payment_1
+		NOT = { has_country_flag = zadar_payment_2 }
+		NOT = { has_country_flag = zadar_payment_3 }
+		NOT = { has_country_flag = zadar_payment_4 }
+		NOT = { has_country_flag = zadar_payment_5 }
+		NOT = { has_country_flag = zadar_lease_1_finished }
+		NOT = { has_country_modifier = zadar_payment_1 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			tag = BOH
+		}
+	}
+	
+	option = {
+		name = "Make the payment."
+		money = -5000
+		set_country_flag = zadar_payment_2
+		add_country_modifier = {
+			name = zadar_payment_2
+			duration = 365
+		}
+		CRO = {
+			country_event = {
+				id = 50412
+				days = 1
+			}
+		}
+	}
+}
+
+#Bohemia must pay the installment 3
+country_event = {
+	id = 50495
+	title = "EVTNAME50494"
+	desc = "EVTDESC50495"
+	picture = "zadar"
+	
+	trigger = {
+		tag = BOH
+		781 = {
+			owned_by = THIS
+			has_province_modifier = leased
+		}
+		has_country_flag = zadar_payment_2
+		NOT = { has_country_flag = zadar_payment_3 }
+		NOT = { has_country_flag = zadar_payment_4 }
+		NOT = { has_country_flag = zadar_payment_5 }
+		NOT = { has_country_flag = zadar_lease_1_finished }
+		NOT = { has_country_modifier = zadar_payment_2 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			tag = BOH
+		}
+	}
+	
+	option = {
+		name = "Make the payment."
+		money = -5000
+		set_country_flag = zadar_payment_3
+		add_country_modifier = {
+			name = zadar_payment_3
+			duration = 365
+		}
+		CRO = {
+			country_event = {
+				id = 50412
+				days = 1
+			}
+		}
+	}
+}
+
+#Bohemia must pay the installment 4
+country_event = {
+	id = 50496
+	title = "EVTNAME50494"
+	desc = "EVTDESC50496"
+	picture = "zadar"
+	
+	trigger = {
+		tag = BOH
+		781 = {
+			owned_by = THIS
+			has_province_modifier = leased
+		}
+		has_country_flag = zadar_payment_3
+		NOT = { has_country_flag = zadar_payment_4 }
+		NOT = { has_country_flag = zadar_payment_5 }
+		NOT = { has_country_flag = zadar_lease_1_finished }
+		NOT = { has_country_modifier = zadar_payment_3 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			tag = BOH
+		}
+	}
+	
+	option = {
+		name = "Make the payment."
+		money = -5000
+		set_country_flag = zadar_payment_4
+		add_country_modifier = {
+			name = zadar_payment_4
+			duration = 365
+		}
+		CRO = {
+			country_event = {
+				id = 50412
+				days = 1
+			}
+		}
+	}
+}
+
+#Bohemia must pay installment 5
+country_event = {
+	id = 50497
+	title = "EVTNAME50494"
+	desc = "EVTDESC50497"
+	picture = "zadar"
+	
+	trigger = {
+		tag = BOH
+		781 = {
+			owned_by = THIS
+			has_province_modifier = leased
+		}
+		has_country_flag = zadar_payment_4
+		NOT = { has_country_flag = zadar_payment_5 }
+		NOT = { has_country_flag = zadar_lease_1_finished }
+		NOT = { has_country_modifier = zadar_payment_4 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			tag = BOH
+		}
+	}
+	
+	option = {
+		name = "Make the payment."
+		money = -5000
+		set_country_flag = zadar_payment_5
+		add_country_modifier = {
+			name = zadar_payment_5
+			duration = 365
+		}
+		CRO = {
+			country_event = {
+				id = 50412
+				days = 1
+			}
+		}
+	}
+}
+
+#Bohemia must pay the installment 6
+country_event = {
+	id = 50498
+	title = "EVTNAME50498"
+	desc = "EVTDESC50498"
+	picture = "zadar"
+	
+	trigger = {
+		tag = BOH
+		781 = {
+			owned_by = THIS
+			has_province_modifier = leased
+		}
+		has_country_flag = zadar_payment_5
+		NOT = { has_country_flag = zadar_lease_1_finished }
+		NOT = { has_country_modifier = zadar_payment_5 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			tag = BOH
+		}
+	}
+	
+	option = {
+		name = "Make the payment."
+		money = -5000
+		set_country_flag = zadar_lease_1_finished
+		clr_country_flag = zadar_payment_1
+		clr_country_flag = zadar_payment_2
+		clr_country_flag = zadar_payment_3
+		clr_country_flag = zadar_payment_4
+		clr_country_flag = zadar_payment_5
+		CRO = {
+			country_event = {
+				id = 50412
+				days = 1
+			}
+		}
+	}
+}
+
+#Croatia cancels the lease
+country_event = {
+	id = 50499
+	title = "EVTNAME50499"
+	desc = "EVTDESC50499"
+	picture = zadar
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Blast it all!"
+		prestige = -5
+		relation = {
+			who = FROM
+			value = -200
+		}
+		add_casus_belli = {
+			target = FROM
+			type = cut_down_to_size
+			months = 36
+		}
+	}
+}
+
+#################################################################################################################################
+#####################################################Zadar Port Lease chain end##################################################
+#################################################################################################################################
+
+#Peasant rebellion in Syrmia (for SIE)
+country_event = {
+	id = 50426
+	title = "EVTNAME50426"
+	desc = "EVTDESC50426"
+	picture = "recruits"
+	
+	trigger = {
+		tag = SIE
+		791 = {
+			owned_by = THIS
+			average_militancy = 1
+		}
+		793 = {
+			owned_by = THIS
+			average_militancy = 1
+		}
+		779 = {
+			owned_by = THIS
+			average_militancy = 1
+		}
+		2538 = {
+			owned_by = THIS
+			average_militancy = 1
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Put them down, before this gets out of hand."
+		set_country_flag = suppressed_syrm_rebellion
+		AUS_2538 = {
+			any_pop = {
+				reduce_pop = 0.9
+				militancy = -2
+				consciousness = 4
+			}
+		}
+		
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 2
+				militancy = 2
+				NOT = { militancy = 5 }
+			}
+		}
+	}
+	
+	option = {
+		name = "This fire will burn itself out."
+		set_country_flag = ignored_syrm_rebellion
+		AUS_2538 = {
+			any_pop = {
+				militancy = 1
+				consciousness = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 2
+				NOT = { militancy = 2 }
+			}
+		}
+	}
+	
+	option = {
+		name = "Grant Syrm autonomy"
+		prestige = -5
+		set_country_flag = syrm_vassal
+		AUS_2538 = {
+			any_pop = {
+				militancy = -2
+				consciousness = 1
+			}
+		}
+		release_vassal = SRM
+		relation = {
+			who = SRM
+			value = -50
+		}
+		SRM = { all_core = { remove_core = SIE } }
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 3
+				average_militancy = 5
+				NOT = { average_militancy = 6 }
+			}
+		}
+	}
+	
+	option = {
+		name = "They have always been trouble, let us be rid of them!"
+		set_country_flag = syrm_released
+		prestige = -10
+		AUS_2538 = {
+			any_pop = {
+				militancy = -2
+				consciousness = 1
+			}
+		}
+		release = SRM
+		relation = {
+			who = SRM
+			value = -150
+		}
+		SRM = { all_core = { remove_core = SIE } }
+		
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 15
+				average_militancy = 6
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					has_recently_lost_war = yes
+					truce_with = BOH
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "The rebels have the right of it!"
+		set_country_flag = syrm_released
+		AUS_2538 = {
+			any_pop = {
+				militancy = -2
+				consciousness = 1
+			}
+		}
+		relation = {
+			who = SRM
+			value = -150
+		}
+		release = SRM
+		change_tag_no_core_switch = SRM
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 50427
+	title = "EVTNAME50427"
+	desc = "EVTDESC50427"
+	picture = "carlists"
+	
+	trigger = {
+		tag = SIE
+		is_our_vassal = SRM
+		NOT = { neighbour = SRM }
+		AUS_652 = {
+			owner = { NOT = { vassal_of = THIS } }
+			NOT = { owned_by = THIS }
+		}				
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Blast it all!"
+		release_vassal = SRM
+		relation = {
+			who = SRM
+			value = -100
+		}
+		SRM = { all_core = { remove_core = SIE } }
+		prestige = -5
+	}
+}
+
+country_event = {
+	id = 50428
+	title = "EVTNAME50428"
+	desc = "EVTDESC50428"
+	picture = "rhineland"
+	
+	trigger = {
+		tag = SIE
+		SRM = { exists = yes }
+		OR = {
+			has_country_flag = syrm_vassal
+			has_country_flag = syrm_released
+		}
+		NOT = { has_country_flag = banat_revolt }
+		BAN = { exists = no }
+		AUS_652 = {
+			owned_by = THIS
+			OR = {
+				average_militancy = 5
+				average_consciousness = 7
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.5
+			SRM = { is_vassal = no }
+		}
+	}
+	
+	option = {
+		name = "Take strong action."
+		set_country_flag = suppressed_banat_rebellion
+		AUS_652 = {
+			any_pop = {
+				reduce_pop = 0.9
+				militancy = -2
+				consciousness = 4
+			}
+		}
+		
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 2
+				militancy = 2
+				NOT = { militancy = 5 }
+			}
+		}
+	}
+	
+	option = {
+		name = "This is a passing threat."
+		set_country_flag = ignored_banat_rebellion
+		AUS_652 = {
+			any_pop = {
+				militancy = 1
+				consciousness = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 2
+				NOT = { militancy = 2 }
+			}
+		}
+	}
+	
+	option = {
+		name = "Grant the Banat autonomy"
+		set_country_flag = banat_vassal
+		prestige = -5
+		BAN = { all_core = { remove_core = SIE } }
+		AUS_652 = {
+			any_pop = {
+				militancy = -2
+				consciousness = 1
+			}
+		}
+		relation = {
+			who = BAN
+			value = -50
+		}
+		release_vassal = BAN
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 3
+				average_militancy = 5
+				NOT = { average_militancy = 6 }
+			}
+		}
+	}
+	
+	option = {
+		name = "How tedious. Expel them from Ardeal!"
+		set_country_flag = banat_released
+		prestige = -10
+		AUS_652 = {
+			any_pop = {
+				militancy = -2
+				consciousness = 1
+			}
+		}
+		release = BAN
+		relation = {
+			who = BAN
+			value = -150
+		}
+		BAN = { all_core = { remove_core = SIE } }
+		
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 15
+				average_militancy = 6
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					has_recently_lost_war = yes
+					truce_with = BOH
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "The Banat has the right of it!"
+		set_country_flag = banat_released
+		AUS_652 = {
+			any_pop = {
+				militancy = -2
+				consciousness = 1
+			}
+		}
+		relation = {
+			who = SRM
+			value = -150
+		}
+		release = BAN
+		change_tag_no_core_switch = BAN
+		BAN = { all_core = { remove_core = SIE } }
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 50429
+	title = "EVTNAME50429"
+	desc = "EVTDESC50429"
+	picture = "carlists"
+	
+	trigger = {
+		tag = SIE
+		is_our_vassal = BAN
+		NOT = { neighbour = BAN }
+		AUS_654 = {
+			owner = { NOT = { vassal_of = THIS } }
+			NOT = { owned_by = THIS }
+		}				
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Blast it all!"
+		release_vassal = BAN
+		BAN = { all_core = { remove_core = SIE } }
+		relation = {
+			who = BAN
+			value = -100
+		}
+		prestige = -5
+	}
+}
+
+country_event = {
+	id = 50430
+	title = "EVTNAME50430"
+	desc = "EVTDESC50430"
+	picture = "carlists"
+	
+	trigger = {
+		tag = SIE
+		AUS_2538 = { owned_by = THIS }
+		AUS_652 = { NOT = { owned_by = THIS } }
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "Alas!"
+		prestige = -2
+		release = SRM
+		SRM = { all_core = { remove_core = SIE } }
+	}
+}
+
+country_event = {
+	id = 50431
+	title = "EVTNAME50431"
+	desc = "EVTDESC50431"
+	picture = "carlists"
+	
+	trigger = {
+		tag = SIE
+		AUS_2538 = { NOT = { owned_by = THIS } }
+		AUS_652 = { owned_by = THIS }
+		AUS_654 = { NOT = { owned_by = THIS } }
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "Alas!"
+		prestige = -2
+		release = BAN
+		relation = {
+			who = BAN
+			value = -50
+		}
+		BAN = { all_core = { remove_core = SIE } }
+	}
+}
+
+#############################################################################
+#########	Hungarian Revolution Events	   ##################################
+#########  Starting from 50440				#################################
+#############################################################################
+
+#Committee for Hungarian Independence visits a Bohemian neighbour
+country_event = {
+	id = 50440
+	title = "EVTNAME50440"
+	desc = "EVTDESC50440"
+	picture = "meeting"
+	
+	trigger = {
+		HUN = { exists = no }
+		OR = {
+			owns = 619 #Vienna - Austria
+			owns = 684 #Oppeln/Opava - Silesia
+			owns = 560 #Chemnitz - Saxony
+			owns = 600 #Landshut - Bavaria
+		}
+		NOT = { tag = BOH }
+		NOT = { has_country_flag = hungarian_committee_visited }
+		year = 1845
+		NOT = { year = 1848 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.1
+			year = 1846
+		}
+	}
+	
+	immediate = {
+		set_country_flag = hungarian_committee_visited
+		set_global_flag = hungary_committee_visited
+	}
+	
+	option = {
+		name = "Accept their proposition."
+		badboy = 5
+		set_country_flag = agreed_to_aid_hungary
+		
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	option = {
+		name = "We have no interest in such subterfuge."
+		badboy = -1
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+##############It's at this point that the game now looks to LiberalRevolutions.txt and event 10225 
+
+#Call in those that agreed to aid the independence war
+country_event = {
+	id = 50441
+	title = "EVTNAME50441"
+	desc = "EVTDESC50441"
+	picture = "meeting"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "It's now, or it's never."
+		any_country = {
+			limit = {
+				has_country_flag = agreed_to_aid_hungary
+			}
+			relation = {
+				who = HUN
+				value = 400
+			}
+			create_alliance = HUN
+		}
+		war = {
+			attacker_goal = { casus_belli = humiliate }
+			call_ally = yes
+		}
+		badboy = -3
+	}
+}
+
+#Puppets and spherelings and allies who are at war with BOH abandon it during the independence war
+country_event = {
+	id = 50442
+	title = "EVTNAME50442"
+	desc = "EVTDESC50442"
+	picture = "meeting"
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = agreed_to_aid_hungary
+		OR = {
+			in_sphere = BOH
+			alliance_with = BOH
+			is_our_vassal = BOH
+		}
+		war_with = BOH
+		has_global_flag = hungarian_revolution_occurred
+		NOT = { year = 1852 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Very well."
+		BOH = {
+			prestige = -5
+			diplomatic_influence = {
+				who = THIS
+				value = -300
+			}
+			relation = {
+				who = THIS
+				value = -300
+			}
+			leave_alliance = THIS
+		}
+		release_vassal = THIS
+	}
+}
+		
+#######################################################################################################
+#################################### Treaty of Szekesfehervar #########################################
+#######################################################################################################
+
+#Triggered by 50448
+
+#Treaty of Szekesfehervar 1
+country_event = {
+	id = 50443
+	title = "EVTNAME50443"
+	desc = "EVTDESC50443"
+	picture = "map_bohemia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Proceed with neogtiations."
+		set_country_flag = treaty_of_szekes_negotiations
+	}
+}
+
+#Treaty of Szekesfehervar 1 - BOH
+country_event = {
+	id = 50444
+	title = "EVTNAME50444"
+	desc = "EVTDESC50444"
+	picture = "map_bohemia"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We are at their mercy..."
+		set_country_flag = treaty_of_szekes_negotiations_BOH
+	}
+}
+
+#Treaty of Szekesfehervar 2
+country_event = {
+	id = 50445
+	title = "EVTNAME50445"
+	desc = "EVTDESC50445"
+	picture = "map_bohemia"
+	
+	trigger = {
+		NOT = { has_global_flag = treaty_of_szekes }
+		BOH = {
+			has_country_flag = treaty_of_szekes_negotiations_BOH 
+			NOT = { has_country_flag = bohemia_let_hungary_go }
+		}
+		has_country_flag = treaty_of_szekes_negotiations
+		NOT = { has_country_flag = treaty_of_szekes_signed }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			BOH = { has_recently_lost_war = yes }
+		}
+	}
+	
+	option = {
+		name = "Sign the treaty."
+		prestige = 5
+		badboy = 3
+		relation = {
+			who = BOH
+			value = -400
+		}
+		set_country_flag = treaty_of_szekes_signed
+	}
+}
+
+#Treaty of Szekesfehervar 2 - BOH
+country_event = {
+	id = 50446
+	title = "EVTNAME50446"
+	desc = "EVTDESC50446"
+	picture = "map_bohemia"
+	
+	trigger = {
+		tag = BOH
+		NOT = { has_global_flag = treaty_of_szekes }
+		has_country_flag = treaty_of_szekes_negotiations_BOH
+		NOT = { has_country_flag = treaty_of_szekes_signed_BOH }
+		NOT = { has_country_flag = bohemia_let_hungary_go }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "This is the end of Bohemia..."
+		set_country_flag = treaty_of_szekes_signed_BOH
+	}
+}
+
+#Treaty of Szekesfehervar 3 - Final
+country_event = {
+	id = 50447
+	title = "EVTNAME50447"
+	desc = "EVTDESC50447"
+	
+	major = yes
+	
+	trigger = {
+		tag = BOH
+		has_country_flag = treaty_of_szekes_signed_BOH
+		HUN = { has_country_flag = treaty_of_szekes_signed }
+		AUS = { OR = { has_country_flag = treaty_of_szekes_signed exists = no } }
+		BAV = { OR = { has_country_flag = treaty_of_szekes_signed exists = no } }
+		SLS = { OR = { has_country_flag = treaty_of_szekes_signed exists = no } }
+		NOT = { has_global_flag = treaty_of_szekes }
+		NOT = { has_country_flag = bohemia_let_hungary_go }
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "Its terms now go into effect."
+		set_global_flag = treaty_of_szekes
+		HUN = { prestige = 25 }
+		633 = { secede_province = HUN add_core = HUN } #Bratislava
+		635 = { secede_province = HUN add_core = HUN } #Nitra
+		638 = { secede_province = HUN add_core = HUN } #Roznava
+		
+		626 = { secede_province = SLS add_core = SLS } #Hradec Kralove
+		632 = { secede_province = SLS add_core = SLS } #Olomouc
+		634 = { secede_province = SLS add_core = SLS } #Trencin
+		636 = { secede_province = SLS add_core = SLS } #Banska Bystrica
+		
+		630 = { secede_province = AUS add_core = AUS } #Brno
+		631 = { secede_province = AUS add_core = AUS } #Budejovice
+		
+		629 = { secede_province = BAV add_core = BAV } #Plzen
+		
+		627 = { secede_province = BRN add_core = BRN } #Karlovy Vary
+		628 = { secede_province = BRN add_core = BRN } #Usti nad Labem
+		any_owned = {# This should clear up any extra territory they happen to own, though it may be weird if they get a chunk of Poland or something. This needs to be dealt with still.
+			limit = {
+				NOT = { is_core = BOH }
+			}
+			secede_province = HUN
+			add_core = HUN
+		}
+		
+		BOH = {
+			country_event = {
+				id = 50450
+				days = 1
+			}
+		}
+	}
+}
+
+#Trigger the Treaty of Szekes, happens BEFORE 50443
+country_event = {
+	id = 50448
+	title = "EVTNAME50448"
+	desc = "EVTDESC50448"
+	picture = "map_bohemia"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BOH
+		has_recently_lost_war = yes
+		truce_with = HUN
+		HUN = { exists = yes }
+		641 = { owned_by = HUN }
+		has_global_flag = hungary_committee_visited
+		NOT = { has_country_flag = bohemia_let_hungary_go }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Is this the end of Bohemia?"
+		any_country = {
+			limit = {
+				OR = {
+					tag = HUN
+					AND = {
+						has_country_flag = agreed_to_aid_hungary
+						exists = yes
+					}
+				}
+			}
+			country_event = 50443
+		}
+		country_event = {
+			id = 50444
+			days = 1
+		}
+		set_global_flag = treaty_of_szekes_start
+	}
+}
+
+country_event = {
+	id = 50449
+	title = "Fixing Brandenburg"
+	desc = "What if Brandenburg doesn't exist?"
+	
+	trigger = {
+		has_global_flag = treaty_of_szekes
+		627 = { owned_by = BRN }
+		628 = { owned_by = BRN }
+		558 = { NOT = { owned_by = BRN } }
+		549 = { NOT = { owned_by = BRN } }
+		558 = { owned_by = THIS }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 0.01
+			BRN = { capital = 627 }
+		}
+	}
+	
+	option = {
+		name = "Good."
+		627 = { secede_province = THIS }
+		628 = { secede_province = THIS }
+	}
+}
+
+#OPM Bohemia becomes Prague after Treaty of Szekes
+country_event = {
+	id = 50450
+	title = "EVTNAME50450"
+	desc = "EVTDESC50450"
+	picture = "map_bohemia"
+	
+#	trigger = {							#This stuff removed so as to make it happen sooner and more reliably. Leaving in just in case it somehow is useful in the future
+#		tag = BOH
+#		has_global_flag = treaty_of_szekes
+#		625 = { owned_by = THIS }
+#		633 = { NOT = { owned_by = THIS } }
+#		626 = { NOT = { owned_by = THIS } }
+#		630 = { NOT = { owned_by = THIS } }
+#		628 = { NOT = { owned_by = THIS } }
+#		HUN = { exists = yes }
+#		NOT = { has_country_flag = bohemia_let_hungary_go }
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 1
+#		modifier = {
+#			factor = 0.01
+#			has_country_flag = treaty_of_szekes
+#		}
+#	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Truly a terrible day for Bohemia!"
+		prestige = -1000
+		change_tag = PRH
+		625 = { add_core = PRH }
+		government = democracy
+		political_reform = wealth_weighted_voting
+		political_reform = jefferson_method
+		political_reform = state_equal_weight
+		political_reform = yes_meeting
+		political_reform = non_secret_ballots
+		political_reform = non_socialist
+		political_reform = free_press
+		election = yes
+		any_pop = {
+			militancy = -5
+			consciousness = 6
+		}
+		set_global_flag = prague_free_city
+		PRH = { all_core = {
+			limit = {
+				NOT = { province_id = 625 }
+				NOT = { province_id = 627 }
+				NOT = { province_id = 628 }
+				NOT = { province_id = 629 }
+				NOT = { province_id = 630 }
+			}
+			remove_core = PRH
+			}
+		}
+		BOH = {
+			all_core = {
+				limit = {
+					NOT = { province_id = 626 }
+					NOT = { province_id = 631 }
+					NOT = { province_id = 632 }
+				}
+				remove_core = BOH } }
+		any_country = {
+			limit = {
+				alliance_with = PRH
+			}
+			leave_alliance = PRH
+		}
+	}
+}
+
+#########################################################################################################
+#################################### End of Treaty of Szekesfehervar ####################################
+#########################################################################################################
+
+#Flavour events
+
+#Influence in Austria (for BOH)
+country_event = {
+	id = 50451
+	title = "EVTNAME50451"
+	desc = "EVTDESC50451"
+	picture = "meeting"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BOH
+		AUS = {
+			exists = yes
+			is_vassal = no
+			NOT = { in_sphere = BOH }
+			OR = {
+				government = absolute_monarchy
+				government = hms_government
+				government = prussian_constitutionalism
+			}
+		}
+		OR = { government = absolute_monarchy government = hms_government government = prussian_constitutionalism }
+		is_greater_power = yes
+		BAV = { is_greater_power = yes }
+		NOT = { war_with = AUS }
+		NOT = { has_global_flag = hungarian_revolution_occurred }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "Make it so!"
+		set_country_flag = friend_austria
+		relation = {
+			who = AUS
+			value = 50
+		}
+		relation = {
+			who = BAV
+			value = -25
+		}
+		diplomatic_influence = {
+			who = AUS
+			value = 50
+		}
+		BAV = {
+			country_event = 50453
+		}
+		
+		ai_chance = {
+			factor = 8
+		}
+	}
+	
+	option = {
+		name = "No, times have changed."
+		set_country_flag = withdraw_austria
+		relation = {
+			who = AUS
+			value = -20
+		}
+		relation = {
+			who = BAV
+			value = 25
+		}
+		diplomatic_influence = {
+			who = AUS
+			value = -25
+		}
+		BAV = {
+			country_event = 50454
+		}
+		
+		ai_chance = {
+			factor = 2
+		}
+	}
+}
+
+#Influence in Austria (for BAV)
+country_event = {
+	id = 50452
+	title = "EVTNAME50452"
+	desc = "EVTDESC50452"
+	picture = "meeting"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BAV
+		AUS = {
+			exists = yes
+			is_vassal = no
+			NOT = { in_sphere = BAV }
+			OR = {
+				government = absolute_monarchy
+				government = hms_government
+				government = prussian_constitutionalism
+			}
+		}
+		OR = { government = absolute_monarchy government = hms_government government = prussian_constitutionalism }
+		is_greater_power = yes
+		BOH = { is_greater_power = yes }
+		NOT = { war_with = AUS }
+		NOT = { has_global_flag = hungarian_revolution_occurred }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "Make it so!"
+		set_country_flag = friend_austria
+		relation = {
+			who = AUS
+			value = 50
+		}
+		relation = {
+			who = BOH
+			value = -25
+		}
+		diplomatic_influence = {
+			who = AUS
+			value = 50
+		}
+		BOH = {	
+			country_event = 50453
+		}
+		
+		ai_chance = {
+			factor = 8
+		}
+	}
+	
+	option = {
+		name = "No, times have changed."
+		set_country_flag = withdraw_austria
+		relation = {
+			who = AUS
+			value = -20
+		}
+		relation = {
+			who = BOH
+			value = 25
+		}
+		diplomatic_influence = {
+			who = AUS
+			value = -25
+		}
+		BOH = {
+			country_event = 50454
+		}
+		
+		ai_chance = {
+			factor = 2
+		}
+	}
+}
+
+#$COUNTRY$ Pushes its agenda in Austria
+country_event = {
+	id = 50453
+	title = "EVTNAME50453"
+	desc = "EVTDESC50453"
+	picture = "meeting"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Make them pay!"
+		relation = {
+			who = FROM
+			value = -100
+		}
+		add_casus_belli = {
+			target = FROM
+			type = humiliate
+		}
+		
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0
+				truce_with = FROM
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = withdraw_austria
+			}
+		}
+	}
+	
+	option = {
+		name = "Contest them in Vienna!"
+		relation = {
+			who = FROM
+			value = -50
+		}
+		relation = {
+			who = AUS
+			value = 20
+		}
+		diplomatic_influence = {
+			who = AUS
+			value = 40
+		}
+		
+		ai_chance = {
+			factor = 4
+			modifier = {
+				factor = 0.25
+				has_country_flag = withdraw_austria
+			}
+		}
+	}
+	
+	option = {
+		name = "They are welcome to it."
+		prestige = -5
+		relation = {
+			who = FROM
+			value = 20
+		}
+		diplomatic_influence = {
+			who = AUS
+			value = -20
+		}
+		
+		ai_chance = {
+			factor = 4
+		}
+	}
+}
+
+#$COUNTRY$ seemingly withdraws from Austria
+country_event = {
+	id = 50454
+	title = "EVTNAME50454"
+	desc = "EVTDESC50454"
+	picture = "meeting"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Huzzah!"
+		prestige = 6
+		relation = {
+			who = AUS
+			value = 100
+		}
+		diplomatic_influence = {
+			who = AUS
+			value = 100
+		}
+		
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_country_flag = withdraw_austria
+			}
+		}
+	}
+	
+	option = {
+		name = "Our efforts are better spent elsewhere."
+		prestige = -5
+		diplomatic_influence = {
+			who = AUS
+			value = -100
+		}
+		
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0.2
+				tag = BAV
+			}
+			modifier = {
+				factor = 0.5
+				tag = BOH
+			}
+		}
+	}
+}
+
+#Pospisil's Hats
+country_event = {
+	id = 50455
+	title = "EVTNAME50455"
+	desc = "EVTDESC50455"
+	picture = "tophats"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BOH
+		year = 1843
+		NOT = { year = 1848 }
+	}
+	
+	mean_time_to_happen = {
+		months = 7
+		modifier = {
+			factor = 0.2
+			year = 1846
+		}
+	}
+	
+	option = {
+		name = "I want one, too!"
+		prestige = 5
+	}
+}
+
+#Carpathian Dances performed
+country_event = {
+	id = 50456
+	title = "EVTNAME50456"
+	desc = "EVTDESC50456"
+	picture = "Lind"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BOH
+		owns = 641
+		year = 1837
+		NOT = { year = 1847 }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			romanticism = 1
+		}
+	}
+	
+	option = {
+		name = "It was a marvelous performance!"
+		prestige = 5
+	}
+}
+
+#The King's cousin appears as Father Cech in a controversial painting
+country_event = {
+	id = 50457
+	title = "EVTNAME50457"
+	desc = "EVTDESC50457"
+	picture = "father_cech"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BOH
+		year = 1840
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "It certainly has."
+		prestige = 5
+		consciousness = 1
+		relation = {
+			who = POL
+			value = -5
+		}
+		relation = {
+			who = SLS
+			value = -5
+		}
+	}
+}
+
+#Banat/Syrm requests annexation
+country_event = {
+	id = 50458
+	title = "EVTNAME50458"
+	desc = "EVTDESC50458"
+	picture = "news"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We welcome them."
+		inherit = FROM
+		prestige = 4
+	}
+	
+	option = {
+		name = "No."
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Ladislaus IV dies (for non-monarchical situations)
+country_event = {
+	id = 50459
+	title = "EVTNAME50459"
+	desc = "EVTDESC50459"
+	picture = "news"
+	
+	trigger = {
+		OR = {
+			tag = BOH
+			tag = PRH
+		}
+		OR = {
+			has_global_flag = treaty_of_szekes
+			government = democracy
+		}
+		year = 1851
+		NOT = { has_country_flag = RIP_ladislaus }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	immediate = { set_country_flag = RIP_ladislaus }
+	
+	option = {
+		name = "I say 'Good riddance.'"
+	}
+	
+	option = {
+		name = "He will be missed."
+	}
+}
+
+#Ladislaus IV dies (for monarchical situations)
+country_event = {
+	id = 50460
+	title = "EVTNAME50460"
+	desc = "EVTDESC50460"
+	picture = "news"
+	
+	trigger = {
+		OR = {
+			tag = BOH
+			tag = BHN
+		}
+		NOT = { has_global_flag = treaty_of_szekes }
+		NOT = { has_country_flag = RIP_ladislaus }
+		OR = {
+			government = absolute_monarchy
+			government = hms_government
+			government = prussian_constitutionalism
+		}
+		year = 1851
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	immediate = { set_country_flag = RIP_ladislaus }
+	
+	option = {
+		name = "Long live the king!"
+		prestige = 1
+	}
+}
+
+#Czech partisans arise in provinces
+province_event = {
+	id = 50461
+	title = "EVTNAME50461"
+	desc = "EVTDESC50461"
+	picture = "recruits"
+	
+	trigger = {
+		is_core = PRH
+		is_primary_culture = PRH			#According to the wiki, this should make the event check for having Czech primary culture
+		NOT = { has_province_modifier = bohemian_partisans }
+		has_global_flag = treaty_of_szekes
+		has_global_flag = bohemian_partisans
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "Hunt them down and destroy them."
+		any_pop = {
+			militancy = 1
+			reduce_pop = 0.98
+		}
+		add_province_modifier = {
+			name = bohemian_partisans
+			duration = 730
+		}
+	}
+	
+	option = {
+		name = "Make sure they don't cause too much disruption."
+		add_province_modifier = {
+			name = bohemian_partisans
+			duration = 1825
+		}
+	}
+}
+
+#Bohemian Partisans supported by Prague
+country_event = {
+	id = 50462
+	title = "EVTNAME50462"
+	desc = "EVTDESC50462"
+	picture = "deliberation"
+	
+	trigger = {
+		has_global_flag = treaty_of_szekes
+		OR = {
+			is_greater_power = yes
+			is_secondary_power = yes
+		}
+		any_owned_province = {
+			is_core = PRH
+			has_province_modifier = bohemian_partisans
+		}
+		PRH = {
+			exists = yes
+			neighbour = THIS
+			NOT = { num_of_cities = 4 }
+			war = no
+		}
+		war = no
+		NOT = { truce_with = PRH }
+	}
+	
+	mean_time_to_happen = {
+		months = 7
+		modifier = {
+			factor = 0.5
+			628 = { owned_by = THIS }
+		}
+	}
+	
+	option = {
+		name = "This must be stopped!"
+		prestige = 5
+		badboy = 3
+		any_owned = {
+			limit = { OR = { is_core = PRH is_core = BOH } }
+			aristocrats = {
+				reduce_pop = 0.9
+			}
+			poor_strata = {
+				limit = { has_pop_culture = czech }
+				militancy = 6
+			}
+		}
+		relation = {
+			who = PRH
+			value = -200
+		}
+		diplomatic_influence = {
+			who = PRH
+			value = -200
+		}
+		leave_alliance = PRH
+		random_country = {
+			limit = {
+				tag = PRH
+				ai = no
+			}
+			add_casus_belli = {
+				target = THIS
+				type = conquest
+				months = 120
+			}
+		}
+		random_country = {
+			limit = {
+				tag = PRH
+				ai = yes
+			}
+			add_casus_belli = {
+				target = THIS
+				type = conquest
+				months = 12
+			}
+			THIS = {
+				war = {
+					target = PRH
+					attacker_goal = {
+						casus_belli = conquest
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_global_flag = railroading_on
+				factor = 50
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.9
+			}
+		}
+	}
+	
+	option = {
+		name = "A diplomatic solution is best."
+		prestige = -10
+		badboy = -3
+		diplomatic_influence = { who = PRH value = 100 }
+		any_country = {
+			limit = {
+				is_greater_power = yes
+				neighbour = PRH
+			}
+			diplomatic_influence = { who = PRH value = -100 }
+		}
+		any_owned = {
+			limit = { OR = { is_core = BOH is_core = PRH } }
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 1095
+			}
+			aristocrats = {
+				reduce_pop = 0.9
+			}
+			poor_strata = {
+				limit = { has_pop_culture = czech }
+				militancy = 6
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				PRH = { ai = yes }
+			}
+		}
+	}
+}
+
+#Event for the end of the Hungarian revolution
+country_event = {
+	id = 50463
+	title = "EVTNAME50463"
+	desc = "EVTDESC50463"
+	picture = "battle_pavon"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BOH
+		has_global_flag = hungarian_revolution_occurred
+		HUN = { exists = no }
+		any_owned_province = { is_core = HUN }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "After the storm, sunlight."
+		set_global_flag = hungarian_revolution_defeated
+		any_owned = {
+			limit = {
+				is_core = HUN
+			}
+			add_core = THIS
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = hungarian
+			}
+			militancy = -9
+		}
+	}
+}

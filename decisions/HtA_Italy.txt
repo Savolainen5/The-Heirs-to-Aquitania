@@ -1,0 +1,25 @@
+political_decisions = {
+	scaglia_decree = {
+		picture = the_rights_of_man
+		potential = {
+			OR = {
+				tag = ITA
+				tag = NPL
+			}
+			744 = { owned_by = THIS NOT = { is_core = THIS } }
+			743 = { owned_by = THIS NOT = { is_core = THIS } }
+			has_country_flag = post_war_tuscan_crackdown
+		}
+		
+		allow = {
+			NOT = { exists = PAP }
+			NOT = { government = democracy }
+		}
+		
+		effect = {
+			prestige = 5
+			add_accepted_culture = north_italian
+			TUS_744 = { add_core = THIS }
+		}
+	}
+}

@@ -1,0 +1,9 @@
+owner = NET
+controller = NET
+add_core = PHL
+trade_goods = fruit
+life_rating = 30
+colonial = 2
+fort = 1
+naval_base = 1
+

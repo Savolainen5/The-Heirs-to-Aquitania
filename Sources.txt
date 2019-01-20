@@ -1,0 +1,29 @@
+Sources for images used in Heirs to Aquitania that are not included in the base game or component mods:
+Not noted are the many pictures I've taken from HPM and other Vic2 mods. My thanks to the developers of those mods for providing said pictures
+
+- https://upload.wikimedia.org/wikipedia/commons/c/c8/Leopold-Lorraine.jpg - Decision picture entitled Leopold_of_Lorraine
+- https://upload.wikimedia.org/wikipedia/commons/2/27/Francesco_V_d'austria_este_Duca_Modena_young.jpg - Decision picture entitled FrancisVofModena
+- https://upload.wikimedia.org/wikipedia/commons/8/80/Marquis_de_Bouille.jpg - Decision picture entitled Marquis_de_Bouille
+- https://upload.wikimedia.org/wikipedia/commons/1/1b/AdelheidAnBeSchHoyOld.jpg - Event picture entitled Adelheid
+- https://upload.wikimedia.org/wikipedia/commons/3/3a/Schatzkammer_Residenz_Muenchen_Krone_des_Koenigreichs_Bayern2.jpg - Event picture entitled Crown_Jewels
+- https://en.wikipedia.org/wiki/Sakha_Republic#/media/File:Coat_of_Arms_of_Sakha_%28Yakutia%29.svg - Basis of the flag for Yakuts (YKT)
+- https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Aquitaine.svg/1280px-Flag_of_Aquitaine.svg.png - Reworked AQT_monarchy flag, event pictures entitled Aquitania and Aquitania2
+- http://cyprussite.com/img/map23.jpg - Event picture entitled map_cyprus
+- http://www.holiday-crete.com/geography_maps_en.html - Event picture entitled map_crete
+- http://www.antiqueprints.com/images/ag1/g1609.jpg - Decision picture entitled map_aegean
+- https://upload.wikimedia.org/wikipedia/commons/0/0b/Map_of_Crimea_in_1791_by_Reilly_061.jpg - Decision picture entitled map_crimea
+- http://ecx.images-amazon.com/images/I/61AFTv0CvqL._SX425_.jpg - Event picture entitled map_romania
+- http://www.antiqueprints.com/images/ag8/g8336.jpg - Event and decision pictures entitled map_bohemia
+- http://digital.library.upenn.edu/women/bird/chersonese/280.gif - Event picture entitled SAjungle
+- fca.dromgan.top / http://i.imgur.com/BvAtOtX.png - Default flag for the Inca
+- https://en.wikipedia.org/wiki/Inca_Empire#/media/File:Banner_of_the_Inca_Empire.svg - Flag for Incan monarchy
+- https://upload.wikimedia.org/wikipedia/commons/e/e9/Josef_Mathauser_-_Praotec_%C4%8Cech_na_ho%C5%99e_%C5%98%C3%ADp.jpg - Source of the event picture called father_cech, used in events/HtA_BOH
+- http://www.zadar.travel/images/original/Zadar_1910_1294071080.jpg - Event picture entitled zadar
+- http://www.nflibrary.ca/nfplindex/data/8/5/98985-520427.jpg - Picture of the Welland Canal used for the Oheskewen Canal in-game, picture entitled oheskwewn_canal
+- https://www.bergbook.com/images/19161-01.jpg - Event picture entitled map_upper_croatia
+- http://www.gettyimages.co.uk/detail/news-photo/group-of-peelers-circa-1870-news-photo/508719336# - Event picture entitled tophats
+- https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Eura.vaakuna.svg/2000px-Eura.vaakuna.svg.png - Part of the FIN_monarchy flag
+- http://www.crwflags.com/fotw/flags/fi!prop2.html and associated webpages - Ideas for the Finland flags
+- http://www.antiqueprints.com/proddetail.php?prod=h1111 - Decision picture entitled tatars
+- https://www.sanderusmaps.com/detail.cfm?c=6140 - Event picture entitled Corsica_Sardinia
+- https://commons.wikimedia.org/wiki/File:1794_Jeffreys_Map_of_Corsica,_France_-_Geographicus_-_Corsica-jeffreys-1794.jpg - Decision picture entitled Corsica

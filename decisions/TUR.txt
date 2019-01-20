@@ -1,0 +1,76 @@
+political_decisions = {	
+	form_israel = {
+		potential = {
+			civilized = yes
+			NOT = {
+				has_global_flag = israel_has_her_cores
+			}
+			916 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+					controlled_by = THIS
+				}
+			}
+			917 = {
+				OR = {
+					owned_by = THIS
+					controlled_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			918 = {
+				OR = {
+					owned_by = THIS
+					controlled_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			919 = {
+				OR = {
+					owned_by = THIS
+					controlled_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			920 = {
+				OR = {
+					owned_by = THIS
+					controlled_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			921 = {
+				OR = {
+					owned_by = THIS
+					controlled_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		allow = {
+			is_greater_power = yes
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			EGY_921 = { add_core = ISR }
+			prestige = 10
+			set_global_flag = israel_has_her_cores
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+}

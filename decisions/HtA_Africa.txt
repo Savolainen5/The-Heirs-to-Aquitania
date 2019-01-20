@@ -1,0 +1,22 @@
+political_decisions = {
+	claim_suazi = {
+		picture = map_africa
+		potential = {
+			tag = ZUL
+			OR = {
+				2114 = { owned_by = THIS }
+				military_score = 20
+			}
+			NOT = { 2114 = { is_core = THIS } }
+		}
+		
+		allow = {
+			prestige = 5
+		}
+		
+		effect = {
+			prestige = 2
+			2114 = { add_core = THIS }
+		}
+	}
+}

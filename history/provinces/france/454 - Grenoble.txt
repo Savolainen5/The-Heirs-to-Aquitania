@@ -1,0 +1,7 @@
+owner = DAU
+controller = DAU
+add_core = DAU
+trade_goods = tobacco
+life_rating = 35
+
+

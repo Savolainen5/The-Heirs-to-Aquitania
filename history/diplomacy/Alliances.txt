@@ -1,0 +1,159 @@
+# Aquitania-Provence
+alliance = {
+	first = AQT
+	second = PRE
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Aquitania-Brittany
+alliance = {
+	first = AQT
+	second = BRT
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Aquitania-Catalonia
+alliance = {
+	first = AQT
+	second = CAT
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Aquitania-Catalonia
+alliance = {
+	first = AQT
+	second = NPL
+	start_date = 1810.1.1
+	end_date = 1949.1.1
+}
+
+# Shawnee-Cherokee
+alliance = {
+	first = SHC
+	second = CHE
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Shawnee-Iroquois
+alliance = {
+	first = SHC
+	second = IRO
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Hispania-Navarra
+alliance = {
+	first = HIS
+	second = NAV
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# French Dukes
+
+alliance = {
+	first = NRM
+	second = CMP
+	start_date = 1836.1.1
+	end_date = 1936.1.1
+}
+
+alliance = {
+	first = ORL
+	second = CMP
+	start_date = 1836.1.1
+	end_date = 1936.1.1
+}
+
+alliance = {
+	first = NRM
+	second = ORL
+	start_date = 1836.1.1
+	end_date = 1936.1.1
+}
+
+# German states
+
+alliance = {
+	first = BRA
+	second = HAN
+	start_date = 1836.1.1
+	end_date = 1936.1.1
+}
+
+alliance = {
+	first = BAV
+	second = BAD
+	start_date = 1836.1.1
+	end_date = 1936.1.1
+}
+
+alliance = {
+	first = BAV
+	second = WUR
+	start_date = 1836.1.1
+	end_date = 1936.1.1
+}
+
+##Puppets##
+
+# Hispania-Bengal
+alliance = {
+	first = HIS
+	second = BNG
+	start_date = 1781.1.1
+	end_date = 1949.1.1
+}
+
+# Aengland-Cymru
+alliance = {
+	first = AEN
+	second = WHA
+	start_date = 1806.1.1
+	end_date = 1949.1.1
+}
+
+# Aengland-Sri Lamka
+vassal = {
+	first = AEN
+	second = SRI
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Denmark-Holsten
+alliance = {
+	first = DEN
+	second = HOL
+	start_date = 1822.1.1
+	end_date = 1949.1.1
+}
+
+# Romans-Wallachia
+alliance = {
+	first = BYZ
+	second = WAL
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Romans-Moldavia
+alliance = {
+	first = BYZ
+	second = MOL
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+#Hongsawatoi-Siam
+alliance = {
+	first = HNG
+	second = SIA
+	start_date = 1836.1.1
+	end_Date = 1949.1.1
+}

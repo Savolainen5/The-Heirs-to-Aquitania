@@ -1,0 +1,114 @@
+#51000-51199 - North Amerigan events
+
+#The Iroquois and Cherokee break away
+country_event = {
+	id = 51000
+	title = "EVTNAME51000"
+	desc = "EVTDESC51000"
+	picture = "geronimo"
+	
+	trigger = {
+		tag = SHC
+		war = no
+		OR = {
+			NOT = { military_score = 1 }
+			AND = {
+				IRO = { brigades_compare = 1 }
+				CHE = { brigades_compare = 1 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "They have betrayed our long history together."
+		prestige = -10
+		release_vassal = IRO
+		leave_alliance = IRO
+		relation = {
+			who = IRO
+			value = -200
+		}
+		release_vassal = CHE
+		leave_alliance = CHE
+		relation = {
+			who = CHE
+			value = -200
+		}
+	}
+}
+
+#Event Margaria asks asking to buy Solelha
+country_event = {
+	id = 51001
+	title = "EVTNAME51001"
+	desc = "EVTDESC51001"
+	picture = "treaty_of_paris_1856"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We are definitely interested."
+		money = -25000
+		FROM = {
+			country_event = {
+				id = 51002
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 95
+		}
+	}
+	
+	option = {
+		name = "No thanks."
+		FROM = {
+			country_event = {
+				id = 51003
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+#Margaria will buy
+country_event = {
+	id = 51002
+	title = "EVTNAME51002"
+	desc = "EVTDESC51002"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		money = 25000
+		199 = { secede_province = FROM remove_core = AQT add_core = MRG }
+		200 = { secede_province = FROM remove_core = AQT add_core = MRG }
+		set_global_flag = solelha_sold
+	}
+}
+
+#Margaria not interested
+country_event = {
+	id = 51003
+	title = "EVTNAME51003"
+	desc = "EVTDESC51003"
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Alas!"
+		set_global_flag = no_solelha_sale
+	}
+}

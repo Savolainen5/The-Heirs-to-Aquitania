@@ -1,0 +1,8 @@
+owner = AGR
+controller = AGR
+add_core = AGR
+
+add_core = HND
+trade_goods = timber
+life_rating = 32
+

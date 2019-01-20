@@ -1,0 +1,157 @@
+political_decisions = {
+
+	become_poland = {
+
+		potential = {
+			primary_culture = polish
+			NOT = { exists = POL }
+			NOT = { has_country_flag = post_colonial_country }
+			NOT = { tag = ZAC }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			prestige = 45
+			owns = 706
+		}
+
+		effect = {
+			prestige = 20
+			all_core = { remove_core = THIS }
+			change_tag = POL
+			capital = 706
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	unite_with_poland = {
+
+		potential = {
+			primary_culture = polish
+			NOT = { tag = POL }
+			NOT = { tag = SLS }
+			OR = {
+				exists = POL
+				exists = ZAC
+			}
+			NOT = { has_country_flag = unite_with_poland }
+			NOT = { has_country_flag = post_colonial_country }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			OR = {
+				part_of_sphere = no
+				sphere_owner = { is_sphere_leader_of = POL }
+			}
+			POL = {
+				war = no
+				neighbour = THIS
+				is_vassal = no
+			}
+		}
+
+		effect = {
+			set_country_flag = unite_with_poland
+			random_country = {
+				limit = {
+					OR = {
+						tag = POL
+						tag = ZAC
+					}
+					ai = yes
+					THIS = { ai = yes }
+				}
+				inherit = THIS
+			}
+			random_country = {
+				limit = {
+					OR = {
+						tag = POL
+						tag = ZAC
+					}
+					ai = yes
+					THIS = { ai = no }
+				}
+				THIS = {
+					inherit = POL
+					random_owned = {
+						limit = { province_id = 706 }
+						owner = { capital = 706 }
+					}
+					change_tag = POL
+				}	
+			}
+			random_country = {
+				limit = {
+					OR = {
+						tag = POL
+						tag = ZAC
+					}
+					ai = no
+				}
+				country_event = 60130
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				government = fascist_dictatorship
+				POL = {
+					NOT = { government = fascist_dictatorship }
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { government = fascist_dictatorship }
+				POL = { government = fascist_dictatorship }
+			}
+			modifier = {
+				factor = 0
+				NOT = { government = proletarian_dictatorship }
+				POL = { government = proletarian_dictatorship }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					government = democracy
+					government = hms_government
+				}
+				POL = {
+					NOT = {
+						government = democracy
+						government = hms_government
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				POL = {
+					OR = {
+						government = democracy
+						government = hms_government
+					}
+				}
+				NOT = {
+					government = democracy
+					government = hms_government
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					government = presidential_dictatorship
+					government = bourgeois_dictatorship
+					government = absolute_monarchy
+				}
+			}
+		}
+	}
+}

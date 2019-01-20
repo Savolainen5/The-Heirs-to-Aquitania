@@ -1,0 +1,1336 @@
+#########################################################
+#														#
+#      		North American Events						#
+#														#
+#########################################################
+
+
+
+country_event = {
+	id = 97091
+	title = "EVTNAME97091" #Settling the Interior SKM
+	desc = "EVTDESC97091"
+	picture = "pioneer_wagons"
+	
+	trigger = {
+		tag = SKM
+		OR = {
+			83 = { empty = yes }
+			86 = { empty = yes }
+			91 = { empty = yes }
+			92 = { empty = yes }
+			93 = { empty = yes }
+			111 = { empty = yes }
+			113 = { empty = yes }
+			114 = { empty = yes }
+			116 = { empty = yes }
+			21 = { empty = yes }
+			29 = { empty = yes }
+			28 = { empty = yes }
+			17 = { empty = yes }
+			18 = { empty = yes }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+		modifier = {
+			factor = 0.8
+			year = 1845
+		}
+		modifier = {
+			factor = 0.5
+			year = 1860
+		}
+		modifier = {
+			factor = 0.5
+			state_n_government = 1
+		}
+	}
+	
+	option = {
+		name = "For the glory of $COUNTRY$!"
+		prestige = 1
+		random_owned = {
+			limit = {
+				83 = { empty = no }
+				86 = { empty = no }
+				91 = { empty = no }
+				92 = { empty = no }
+				93 = { empty = no }
+				111 = { empty = no }
+				113 = { empty = no }
+				114 = { empty = no }
+				116 = { empty = no }
+				17 = { empty = no }
+				18 = { empty = no }
+				21 = { empty = no }
+				29 = { empty = yes }
+				28 = { owned_by = THIS }
+			}
+			29 = { secede_province = THIS }			#Soitaabe
+		}
+		random_owned = {
+			limit = {
+				83 = { empty = no }
+				86 = { empty = no }
+				91 = { empty = no }
+				92 = { empty = no }
+				93 = { empty = no }
+				111 = { empty = no }
+				113 = { empty = no }
+				114 = { empty = no }
+				116 = { empty = no }
+				17 = { empty = no }
+				18 = { empty = no }
+				21 = { empty = no }
+				28 = { empty = yes }
+				21 = { owned_by = THIS }
+			}
+			28 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				83 = { empty = no }
+				86 = { empty = no }
+				91 = { empty = no }
+				92 = { empty = no }
+				93 = { empty = no }
+				111 = { empty = no }
+				113 = { empty = no }
+				114 = { empty = no }
+				116 = { empty = no }
+				17 = { empty = no }
+				18 = { empty = no }
+				21 = { empty = yes }
+				18 = { owned_by = THIS }
+			}
+			21 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				83 = { empty = no }
+				86 = { empty = no }
+				91 = { empty = no }
+				92 = { empty = no }
+				93 = { empty = no }
+				111 = { empty = no }
+				113 = { empty = no }
+				114 = { empty = no }
+				116 = { empty = no }
+				17 = { empty = no }
+				18 = { empty = yes }
+				17 = { owned_by = THIS }
+			}
+			18 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				83 = { empty = no }
+				86 = { empty = no }
+				91 = { empty = no }
+				92 = { empty = no }
+				93 = { empty = no }
+				111 = { empty = no }
+				113 = { empty = no }
+				114 = { empty = no }
+				116 = { empty = no }
+				17 = { empty = yes }
+				116 = { owned_by = THIS }
+			}
+			17 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				83 = { empty = no }
+				86 = { empty = no }
+				91 = { empty = no }
+				92 = { empty = no }
+				93 = { empty = no }
+				111 = { empty = no }
+				113 = { empty = no }
+				114 = { empty = no }
+				116 = { empty = yes }
+				114 = { owned_by = THIS }
+			}
+			116 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				83 = { empty = no }
+				86 = { empty = no }
+				91 = { empty = no }
+				92 = { empty = no }
+				93 = { empty = no }
+				114 = { empty = no }
+				113 = { empty = no }
+				111 = { empty = yes }
+				113 = { owned_by = THIS }
+			}
+			111 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				83 = { empty = no }
+				86 = { empty = no }
+				91 = { empty = no }
+				92 = { empty = no }
+				93 = { empty = no }
+				114 = { empty = no }
+				113 = { empty = yes }
+				114 = { owned_by = THIS }
+			}
+			113 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				83 = { empty = no }
+				86 = { empty = no }
+				91 = { empty = no }
+				92 = { empty = no }
+				93 = { empty = no }
+				114 = { empty = yes }
+				93 = { owned_by = THIS }
+			}
+			114 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				83 = { empty = no }
+				86 = { empty = no }
+				91 = { empty = no }
+				92 = { empty = no }
+				93 = { empty = yes }
+				92 = { owned_by = THIS }
+			}
+			93 = { secede_province = THIS } #Byrdcam
+		}
+		random_owned = {
+			limit = {
+				83 = { empty = no }
+				86 = { empty = no }
+				91 = { empty = no }
+				92 = { empty = yes }
+				91 = { owned_by = THIS }
+			}
+			92 = { secede_province = THIS } #Skitsubur
+		}
+		random_owned = {
+			limit = {
+				83 = { empty = no }
+				86 = { empty = no }
+				91 = { empty = yes }
+				86 = { owned_by = THIS }
+			}
+			91 = { secede_province = THIS } #Riscflode
+		}
+		random_owned = {
+			limit = {
+				83 = { empty = no }
+				86 = { empty = yes }
+				83 = { owned_by = THIS }
+			}
+			86 = { secede_province = THIS } #Neorxna
+		}
+		random_owned = {
+			limit = {
+				83 = { empty = yes }
+				79 = { owned_by = THIS }
+			}
+			83 = { secede_province = THIS } #Yahusken
+			set_country_flag = colonisation_finished
+		}
+	}
+}
+
+country_event = {
+	id = 97092
+	title = "EVTNAME97091" #Settling the Interior CLF
+	desc = "EVTDESC97091"
+	picture = "pioneer_wagons"
+	
+	trigger = {
+		tag = CLF
+		OR = {
+			88 = { empty = yes }
+			94 = { empty = yes }
+			95 = { empty = yes }
+			96 = { empty = yes }
+			99 = { empty = yes }
+			101 = { empty = yes }
+			104 = { empty = yes }
+			98 = { empty = yes }
+			97 = { empty = yes }
+			108 = { empty = yes }
+			107 = { empty = yes }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+		modifier = {
+			factor = 0.8
+			year = 1845
+		}
+		modifier = {
+			factor = 0.5
+			year = 1855
+		}
+		modifier = {
+			factor = 0.3
+			year = 1865
+		}
+		modifier = {
+			factor = 0.5
+			state_n_government = 1
+		}
+		modifier = {
+			factor = 0.5
+			medicine = 1
+		}
+	}
+	
+	option = {
+		name = "For the glory of $COUNTRY$!"
+		prestige = 1
+		random_owned = {
+			limit = {
+				88 = { empty = no }
+				104 = { empty = no }
+				101 = { empty = no }
+				98 = { empty = no }
+				97 = { empty = no }
+				108 = { empty = no }
+				95 = { empty = no }
+				96 = { empty = no }
+				99 = { empty = no }
+				108 = { empty = no }
+				107 = { empty = yes }
+				108 = { owned_by = THIS }
+			}
+			107 = { secede_province = THIS }			#Estribacion
+		}
+		random_owned = {
+			limit = {
+				88 = { empty = no }
+				104 = { empty = no }
+				101 = { empty = no }
+				94 = { empty = no }
+				98 = { empty = no }
+				97 = { empty = no }
+				95 = { empty = no }
+				96 = { empty = no }
+				99 = { empty = no }
+				108 = { empty = yes }
+				99 = { owned_by = THIS }
+			}
+			108 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				88 = { empty = no }
+				96 = { empty = no }
+				101 = { empty = no }
+				94 = { empty = no }
+				98 = { empty = no }
+				104 = { empty = no }
+				95 = { empty = no }
+				99 = { empty = no }
+				97 = { empty = yes }
+				98 = { owned_by = THIS }
+			}
+			97 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				88 = { empty = no }
+				96 = { empty = no }
+				101 = { empty = no }
+				95 = { empty = no }
+				94 = { empty = no }
+				104 = { empty = no }
+				99 = { empty = no }
+				98 = { empty = yes }
+				94 = { owned_by = THIS }
+			}
+			98 = { secede_province = THIS }				#Ponderosas
+		}
+		random_owned = {
+			limit = {
+				88 = { empty = no }
+				96 = { empty = no }
+				101 = { empty = no }
+				95 = { empty = no }
+				99 = { empty = no }
+				104 = { empty = no }
+				94 = { empty = yes }
+				104 = { owned_by = THIS }
+			}
+			94 = { secede_province = THIS }				#Daon
+		}
+		random_owned = {
+			limit = {
+				88 = { empty = no }
+				96 = { empty = no }
+				101 = { empty = no }
+				95 = { empty = no }
+				99 = { empty = no }
+				104 = { empty = yes }
+				99 = { owned_by = THIS }
+			}
+			104 = { secede_province = THIS }			#Cabrera
+		}
+		random_owned = {
+			limit = {
+				88 = { empty = no }
+				96 = { empty = no }
+				101 = { empty = no }
+				95 = { empty = no }
+				99 = { empty = yes }
+				95 = { owned_by = THIS }
+			}
+			99 = { secede_province = THIS }				#San Esteban
+		}
+		random_owned = {
+			limit = {
+				88 = { empty = no }
+				101 = { empty = no }
+				96 = { empty = no }
+				95 = { empty = yes }
+				96 = { owned_by = THIS }
+			}
+			95 = { secede_province = THIS }				#Los Planos
+		}
+		random_owned = {
+			limit = {
+				88 = { empty = no }
+				101 = { empty = no }
+				96 = { empty = yes }
+				101 = { owned_by = THIS }
+				}
+			96 = { secede_province = THIS }				#Las Vegas
+		}
+		random_owned = {
+			limit = {
+				88 = { empty = no }
+				101 = { empty = yes }
+				88 = { owned_by = THIS }
+			}
+			101 = { secede_province = THIS }			#Los Richuelos
+		}
+		random_owned = {
+			limit = {
+				88 = { empty = yes }
+				100 = { owned_by = THIS }
+			}
+			88 = { secede_province = THIS }				#Fortaleza Alta
+			set_country_flag = colonisation_finished
+		}
+	}
+}
+
+country_event = {
+	id = 97093
+	title = "EVTNAME97091" #Settling the Interior GNC
+	desc = "EVTDESC97091"
+	picture = "pioneer_wagons"
+	
+	trigger = {
+		tag = GNC
+		OR = {
+			103 = { empty = yes }
+			106 = { empty = yes }
+			109 = { empty = yes }
+			125 = { empty = yes }
+			128 = { empty = yes }
+			129 = { empty = yes }
+			135 = { empty = yes }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+		modifier = {
+			factor = 0.8
+			year = 1845
+		}
+		modifier = {
+			factor = 0.5
+			year = 1855
+		}
+		modifier = {
+			factor = 0.5
+			state_n_government = 1
+		}
+	}
+	
+	option = {
+		name = "For the glory of $COUNTRY$!"
+		prestige = 1
+		random_owned = {
+			limit = {
+				129 = { empty = no }
+				135 = { empty = no }
+				103 = { empty = no }
+				109 = { empty = no }
+				128 = { empty = no }
+				106 = { empty = no }
+				125 = { empty = yes }
+				106 = { owned_by = THIS }
+			}
+			125 = { secede_province = THIS }			#Oklala
+		}
+		random_owned = {
+			limit = {
+				129 = { empty = no }
+				135 = { empty = no }
+				103 = { empty = no }
+				109 = { empty = no }
+				128 = { empty = no }
+				106 = { empty = yes }
+				128 = { owned_by = THIS }
+			}
+			106 = { secede_province = THIS }			#Somercester
+		}
+		random_owned = {
+			limit = {
+				129 = { empty = no }
+				135 = { empty = no }
+				103 = { empty = no }
+				109 = { empty = no }
+				128 = { empty = yes }
+				109 = { owned_by = THIS }
+			}
+			128 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				129 = { empty = no }
+				135 = { empty = no }
+				103 = { empty = no }
+				109 = { empty = yes }
+				103 = { owned_by = THIS }
+			}
+			109 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				129 = { empty = no }
+				135 = { empty = no }
+				103 = { empty = yes }
+				129 = { owned_by = THIS }
+			}
+			103 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				135 = { empty = no }
+				129 = { empty = yes }
+				135 = { owned_by = THIS }
+			}
+			129 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				135 = { empty = yes }
+				105 = { owned_by = THIS }
+			}
+			135 = { secede_province = THIS }
+			set_country_flag = colonisation_finished
+		}
+	}
+}
+
+country_event = {
+	id = 97094
+	title = "EVTNAME97091" #Settling the Interior MRG
+	desc = "EVTDESC97091"
+	picture = "pioneer_wagons"
+	
+	trigger = {
+			tag = MRG
+		OR = {
+			147 = { empty = yes }
+			148 = { empty = yes }
+			149 = { empty = yes }
+			150 = { empty = yes }
+			146 = { empty = yes }
+			152 = { empty = yes }
+			151 = { empty = yes }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+		modifier = {
+			factor = 0.8
+			year = 1845
+		}
+		modifier = {
+			factor = 0.5
+			year = 1855
+		}
+		modifier = {
+			factor = 0.5
+			state_n_government = 1
+		}
+	}
+	
+	option = {
+		name = "For the glory of $COUNTRY$!"
+		prestige = 1
+		random_owned = {
+			limit = {
+				147 = { empty = no }
+				148 = { empty = yes }
+				146 = { empty = yes }
+				152 = { empty = yes }
+				151 = { empty = yes }
+				150 = { empty = yes }
+				149 = { empty = yes }
+				147 = { owned_by = THIS }
+			}
+			148 = { secede_province = THIS }			#Orje #2
+		}
+		random_owned = {
+			limit = {
+				145 = { empty = no }
+				147 = { empty = yes }
+				146 = { empty = yes }
+				152 = { empty = yes }
+				151 = { empty = yes }
+				150 = { empty = yes }
+				149 = { empty = yes }
+				145 = { owned_by = THIS }
+			}
+			147 = { secede_province = THIS }			#Sinnes #1
+		}
+		random_owned = {
+			limit = {
+				148 = { empty = no }
+				146 = { empty = yes }
+				148 = { owned_by = THIS }
+				152 = { empty = yes }
+				151 = { empty = yes }
+				150 = { empty = yes }
+				149 = { empty = yes }
+			}
+			146 = { secede_province = THIS }			#Kaokja #3
+		}
+		random_owned = {
+			limit = {
+				146 = { empty = no }
+				149 = { empty = yes }
+				146 = { owned_by = THIS }
+				152 = { empty = yes }
+				151 = { empty = yes }
+				150 = { empty = yes }
+			}
+			149 = { secede_province = THIS }			#Osake #4
+		}
+		random_owned = {
+			limit = {
+				149 = { empty = no }
+				152 = { empty = yes }
+				149 = { owned_by = THIS }
+				151 = { empty = yes }
+				150 = { empty = yes }
+			}
+			152 = { secede_province = THIS }			#Osgalus #5
+		}
+		random_owned = {
+			limit = {
+				152 = { empty = no }
+				150 = { empty = yes }
+				152 = { owned_by = THIS }
+				151 = { empty = yes }
+			}
+			150 = { secede_province = THIS }			#Kansej #6
+		}
+		random_owned = {
+			limit = {
+				150 = { empty = no }
+				151 = { empty = yes }
+				150 = { owned_by = THIS }
+			}
+			151 = { secede_province = THIS }			#Moingona #7
+			set_country_flag = colonisation_finished
+		}
+	}
+}
+country_event = {
+	id = 97095
+	title = "EVTNAME97091" #Settling the Interior SHC
+	desc = "EVTDESC97095"
+	picture = "pioneer_wagons"
+	
+	trigger = {
+			tag = SHC
+		OR = {
+			159 = { empty = yes }
+			162 = { empty = yes }
+			163 = { empty = yes }
+			164 = { empty = yes }
+			165 = { empty = yes }
+			166 = { empty = yes }
+			167 = { empty = yes }
+			168 = { empty = yes }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+		modifier = {
+			factor = 0.8
+			year = 1845
+		}
+		modifier = {
+			factor = 0.5
+			year = 1855
+		}
+		modifier = {
+			factor = 0.5
+			state_n_government = 1
+		}
+	}
+	
+	option = {
+		name = "For the glory of $COUNTRY$!"
+		prestige = 1
+		random_owned = {
+			limit = {
+				163 = { empty = no }
+				164 = { empty = no }
+				165 = { empty = no }
+				166 = { empty = no }
+				167 = { empty = no }
+				168 = { empty = no }
+				159 = { empty = no }
+				162 = { empty = yes }
+				159 = { owned_by = THIS }
+			}
+			162 = { secede_province = THIS }			#Iline
+		}
+		random_owned = {
+			limit = {
+				163 = { empty = no }
+				164 = { empty = no }
+				165 = { empty = no }
+				167 = { empty = no }
+				168 = { empty = no }
+				166 = { empty = no }
+				159 = { empty = yes }
+				166 = { owned_by = THIS }
+			}
+			159 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				163 = { empty = no }
+				164 = { empty = no }
+				165 = { empty = no }
+				168 = { empty = no }
+				167 = { empty = no }
+				166 = { empty = yes }
+				167 = { owned_by = THIS }
+			}
+			166 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				163 = { empty = no }
+				164 = { empty = no }
+				165 = { empty = no }
+				168 = { empty = no }
+				167 = { empty = yes }
+				168 = { owned_by = THIS }
+			}
+			167 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				163 = { empty = no }
+				164 = { empty = no }
+				165 = { empty = no }
+				168 = { empty = yes }
+				165 = { owned_by = THIS }
+			}
+			168 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				163 = { empty = no }
+				165 = { empty = no }
+				164 = { empty = yes }
+				165 = { owned_by = THIS }
+			}
+			164 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				163 = { empty = no }
+				165 = { empty = yes }
+				163 = { owned_by = THIS }
+			}
+			165 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				163 = { empty = yes }
+				169 = { owned_by = THIS }
+			}
+			163 = { secede_province = THIS }
+		}
+	}
+}
+
+country_event = {
+	id = 97096
+	title = "EVTNAME97091" #Settling the Interior QUE
+	desc = "EVTDESC97091"
+	picture = "pioneer_wagons"
+	
+	trigger = {
+			tag = QUE
+		OR = {
+			41 = { empty = yes }
+			118 = { empty = yes }
+			117 = { empty = yes }
+			157 = { empty = yes }
+			158 = { empty = yes }
+			160 = { empty = yes }
+			161 = { empty = yes }
+			177 = { empty = yes }
+			120 = { empty = yes }  #4
+			153 = { empty = yes }  #3
+			154 = { empty = yes }  #5
+			155 = { empty = yes }  #2
+			156 = { empty = yes }  #1
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+		modifier = {
+			factor = 0.8
+			year = 1845
+		}
+		modifier = {
+			factor = 0.5
+			year = 1855
+		}
+		modifier = {
+			factor = 0.5
+			state_n_government = 1
+		}
+	}
+	
+	option = {
+		name = "For the glory of $COUNTRY$!"
+		prestige = 1
+		random_owned = {
+			limit = {
+				177 = { empty = no }
+				118 = { empty = no }
+				41 = { empty = no }
+				157 = { empty = no }
+				158 = { empty = no }
+				160 = { empty = no }
+				117 = { empty = no }
+				161 = { empty = no }
+				156 = { empty = no }
+				155 = { empty = no }
+				153 = { empty = no }
+				120 = { empty = no }
+				154 = { empty = yes }
+				120 = { owned_by = THIS }
+			}
+			154 = { secede_province = THIS }		#Brugier
+		}
+		random_owned = {
+			limit = {
+				177 = { empty = no }
+				118 = { empty = no }
+				41 = { empty = no }
+				157 = { empty = no }
+				158 = { empty = no }
+				160 = { empty = no }
+				117 = { empty = no }
+				161 = { empty = no }
+				156 = { empty = no }
+				155 = { empty = no }
+				153 = { empty = no }
+				120 = { empty = yes }
+				153 = { owned_by = THIS }
+			}
+			120 = { secede_province = THIS }		#Chutes Lakotes
+		}
+		random_owned = {
+			limit = {
+				177 = { empty = no }
+				118 = { empty = no }
+				41 = { empty = no }
+				157 = { empty = no }
+				158 = { empty = no }
+				160 = { empty = no }
+				117 = { empty = no }
+				161 = { empty = no }
+				156 = { empty = no }
+				155 = { empty = no }
+				153 = { empty = yes }
+				155 = { owned_by = THIS }
+			}
+			153 = { secede_province = THIS }		#Ouaskioua
+		}
+		random_owned = {
+			limit = {
+				177 = { empty = no }
+				118 = { empty = no }
+				41 = { empty = no }
+				157 = { empty = no }
+				158 = { empty = no }
+				160 = { empty = no }
+				117 = { empty = no }
+				161 = { empty = no }
+				156 = { empty = no }
+				155 = { empty = yes }
+				156 = { owned_by = THIS }
+			}
+			155 = { secede_province = THIS }		#Villeneuve
+		}
+		random_owned = {
+			limit = {
+				177 = { empty = no }
+				118 = { empty = no }
+				41 = { empty = no }
+				157 = { empty = no }
+				158 = { empty = no }
+				160 = { empty = no }
+				117 = { empty = no }
+				161 = { empty = no }
+				156 = { empty = yes }
+				161 = { owned_by = THIS }
+			}
+			156 = { secede_province = THIS }		#Perce'
+		}
+		random_owned = {
+			limit = {
+				177 = { empty = no }
+				118 = { empty = no }
+				41 = { empty = no }
+				157 = { empty = no }
+				158 = { empty = no }
+				160 = { empty = no }
+				117 = { empty = no }
+				161 = { empty = yes }
+				117 = { owned_by = THIS }
+			}
+			161 = { secede_province = THIS }		#Surlac
+		}
+		random_owned = {
+			limit = {
+				177 = { empty = no }
+				118 = { empty = no }
+				41 = { empty = no }
+				157 = { empty = no }
+				158 = { empty = no }
+				160 = { empty = no }
+				117 = { empty = yes }
+				160 = { owned_by = THIS }
+			}
+			117 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				177 = { empty = no }
+				118 = { empty = no }
+				41 = { empty = no }
+				157 = { empty = no }
+				158 = { empty = no }
+				160 = { empty = yes }
+				158 = { owned_by = THIS }
+			}
+			160 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				177 = { empty = no }
+				158 = { empty = no }
+				157 = { empty = no }
+				41 = { empty = no }
+				118 = { empty = yes }
+				41 = { owned_by = THIS }
+			}
+			118 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				177 = { empty = no }
+				158 = { empty = no }
+				157 = { empty = no }
+				41 = { empty = yes }
+				157 = { owned_by = THIS }
+			}
+			41 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				177 = { empty = no }
+				158 = { empty = no }
+				157 = { empty = yes }
+				158 = { owned_by = THIS }
+			}
+			157 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				177 = { empty = no }
+				158 = { empty = yes }
+				177 = { owned_by = THIS }
+			}
+			158 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				177 = { empty = yes }
+				42 = { owned_by = THIS }
+			}
+			177 = { secede_province = THIS }
+		}
+	}
+}
+
+#province_event = {				#NB - 97097 is the railroading event that pops at the beginning of the game
+#	id = 97098
+#	title = "EVTNAME97098"
+#	desc = "EVTDESC97098"
+#	picture = "pioneer_wagons"
+#	
+#	trigger = {
+#		#owner = { capital_scope = { continent = north_america } }
+#		any_neighbor_province = {
+#			empty = yes
+#			NOT = {
+#				is_core = SKM
+#				is_core = QUE
+#				is_core = SHC
+#				is_core = MRG
+#				is_core = GNC
+#				is_core = CLF
+#			}
+#		}
+#		civilized = yes
+#		year = 1880
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 6
+#	}
+#	
+#	option = {
+#		name = "$COUNTRY$ spreads her wings!"
+#		random_neighbor_province = {
+#			limit = {
+#				NOT = {
+#					is_core = SKM
+#					is_core = QUE
+#					is_core = SHC
+#					is_core = MRG
+#					is_core = GNC
+#					is_core = CLF
+#				}
+#				empty = yes
+#			}
+#			secede_province = THIS
+#			add_core = THIS
+#		}
+#	}
+#}
+
+#Event taken from /gsg/ base mod from event file British Dominions
+country_event = {
+	
+	id = 44339
+	title = "EVTNAME44339" #The Northwest Territories
+	desc = "EVTDESC44339"
+	picture = "Southpole3"
+	
+	trigger = {
+		tag = QUE
+		war = no
+		money = 1000
+		OR = {
+			revolution_n_counterrevolution = 1
+			year = 1880
+		}
+		OR = {
+			NOT = { has_global_flag = berlin_conference }
+			NOT = { invention = mission_to_civilize }
+			NOT = { invention = colonial_negotiations }
+			AND = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		OR = {
+			AND = {
+				6 = { empty = yes } #Whitehorse
+				owns = 17
+			}
+			AND = {
+				6 = { empty = no }
+				7 = { empty = yes } #Dawson
+				OR = {
+					owns = 6
+					owns = 8
+				}
+			}
+			AND = {
+				6 = { empty = no }
+				7 = { empty = no }
+				8 = { empty = yes } #Ross River
+				OR = {
+					owns = 17
+					owns = 2629
+				}
+			}		
+			AND = {
+				6 = { empty = no }
+				7 = { empty = no }
+				8 = { empty = no }
+				2596 = { empty = yes } #Fort Resolution
+				OR = {
+					owns = 23
+					owns = 43
+				}
+			}
+			AND = {
+				6 = { empty = no }
+				7 = { empty = no }
+				8 = { empty = no }
+				2596 = { empty = no }
+				2598 = { empty = yes } #Fort Liard
+				OR = {
+					owns = 2629
+					owns = 8
+				}
+			}
+			AND = {
+				6 = { empty = no }
+				7 = { empty = no }
+				8 = { empty = no }
+				2596 = { empty = no }
+				2598 = { empty = no }
+				9 = { empty = yes } #Fort Simpson
+				OR = {
+					owns = 2598
+					owns = 11
+				}
+			}
+			AND = {
+				6 = { empty = no }
+				7 = { empty = no }
+				8 = { empty = no }
+				2596 = { empty = no }
+				2598 = { empty = no }
+				9 = { empty = no }
+				11 = { empty = yes } #Echo Bay
+				OR = {
+					owns = 23
+					owns = 2596
+				}
+			}
+			AND = {
+				6 = { empty = no }
+				7 = { empty = no }
+				8 = { empty = no }
+				2596 = { empty = no }
+				2598 = { empty = no }
+				9 = { empty = no }
+				11 = { empty = no }
+				12 = { empty = yes } #Reliance
+				OR = {
+					owns = 43
+					owns = 2596
+				}
+			}
+			AND = {
+				6 = { empty = no }
+				7 = { empty = no }
+				8 = { empty = no }
+				2596 = { empty = no }
+				2598 = { empty = no }
+				9 = { empty = no }
+				11 = { empty = no }
+				12 = { empty = no }
+				10 = { empty = yes } #Inuvik
+				OR = {
+					owns = 9
+					owns = 8
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.2
+			6 = { empty = yes }
+		}
+		modifier = {
+			factor = 3
+			6 = { empty = no }
+			7 = { empty = no }
+			8 = { empty = no }
+			2596 = { empty = no }
+			NOT = { year = 1880 }
+		}
+		modifier = {
+			factor = 1.5
+			6 = { empty = no }
+			7 = { empty = no }
+			8 = { empty = no }
+			2596 = { empty = no }
+			year = 1880
+			NOT = { year = 1900 }
+		}
+	}
+
+	option = {
+		name = "We must claim the Great White North."
+		treasury = -1000
+		random_owned = {
+			limit = {
+				6 = { empty = no }
+				7 = { empty = no }
+				8 = { empty = no }
+				2596 = { empty = no }
+				2598 = { empty = no }
+				9 = { empty = no }
+				11 = { empty = no }
+				12 = { empty = no }
+				10 = { empty = yes }
+				OR = {
+					9 = { owned_by = THIS }
+					8 = { owned_by = THIS }
+				}
+			}
+			owner = { prestige = -3 }
+			10 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				6 = { empty = no }
+				7 = { empty = no }
+				8 = { empty = no }
+				2596 = { empty = no }
+				2598 = { empty = no }
+				9 = { empty = no }
+				11 = { empty = no }
+				12 = { empty = yes }
+				OR = {
+					43 = { owned_by = THIS }
+					2596 = { owned_by = THIS }
+				}
+			}
+			owner = { prestige = -3 }
+			12 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				6 = { empty = no }
+				7 = { empty = no }
+				8 = { empty = no }
+				2596 = { empty = no }
+				2598 = { empty = no }
+				9 = { empty = no }
+				11 = { empty = yes }
+				OR = {
+					23 = { owned_by = THIS }
+					2596 = { owned_by = THIS }
+				}
+			}
+			owner = { prestige = -3 }
+			11 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				6 = { empty = no }
+				7 = { empty = no }
+				8 = { empty = no }
+				2596 = { empty = no }
+				2598 = { empty = no }
+				9 = { empty = yes }
+				OR = {
+					2598 = { owned_by = THIS }
+					11 = { owned_by = THIS }
+				}
+			}
+			owner = { prestige = -3 }
+			9 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				6 = { empty = no }
+				7 = { empty = no }
+				8 = { empty = no }
+				2596 = { empty = no }
+				2598 = { empty = yes }
+				OR = {
+					2629 = { owned_by = THIS }
+					8 = { owned_by = THIS }
+				}
+			}
+			owner = { prestige = -3 }
+			2598 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				6 = { empty = no }
+				7 = { empty = no }
+				8 = { empty = no }
+				2596 = { empty = yes }
+				OR = {
+					23 = { owned_by = THIS }
+					43 = { owned_by = THIS }
+				}
+			}
+			owner = { prestige = -5 }
+			2596 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				6 = { empty = no }
+				7 = { empty = no }
+				8 = { empty = yes }
+				OR = {
+					17 = { owned_by = THIS }
+					2629 = { owned_by = THIS }
+				}
+			}
+			owner = { prestige = -3 }
+			8 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				6 = { empty = no }
+				7 = { empty = yes }
+				OR = {
+					6 = { owned_by = THIS }
+					8 = { owned_by = THIS }
+				}
+			}
+			owner = { prestige = -3 }
+			7 = { secede_province = THIS }
+		}
+		random_owned = {
+			limit = {
+				6 = { empty = yes }
+				17 = { owned_by = THIS }
+			}
+			owner = { prestige = -5 }
+			6 = { secede_province = THIS }
+		}
+	}
+}

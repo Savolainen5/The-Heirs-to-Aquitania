@@ -1,0 +1,82 @@
+capital = 919
+primary_culture = ashkenazi
+culture = sephardic
+religion = jewish
+government = democracy
+plurality = 0.15
+nationalvalue = nv_equality
+literacy = 0.87
+civilized = yes
+
+# Political reforms
+slavery = no_slavery
+upper_house_composition = appointed
+vote_franschise = universal_weighted_voting
+public_meetings = yes_meeting
+press_rights = free_press
+trade_unions = all_trade_unions
+voting_system = first_past_the_post
+political_parties = non_secret_ballots
+
+# Social Reforms
+wage_reform = low_minimum_wage
+work_hours = twelve_hours
+safety_regulations = good_safety
+health_care = good_health_care
+unemployment_subsidies = low_subsidies
+pensions = good_pensions 
+school_reforms = no_schools
+
+
+ruling_party = ISR_liberal
+upper_house = {
+	fascist = 0
+	liberal = 35
+	conservative = 45
+	reactionary = 20
+	anarcho_liberal = 0
+	socialist = 0
+	communist = 0
+}
+
+# Technologies
+post_napoleonic_thought = 1
+flintlock_rifles = 1
+bronze_muzzle_loaded_artillery = 1
+military_staff_system = 1
+army_command_principle = 1
+post_nelsonian_thought = 1
+clipper_design = 1
+steamers = 1
+naval_design_bureaus = 1
+alphabetic_flag_signaling = 1
+the_command_principle = 1
+private_banks = 1
+no_standard = 1
+early_classical_theory_and_critique = 1
+freedom_of_trade = 1
+guild_based_production = 1
+classicism_n_early_romanticism = 1
+late_enlightenment_philosophy = 1
+malthusian_thought = 1
+enlightenment_thought = 1
+introspectionism = 1
+water_wheel_power = 1
+publishing_industry = 1
+mechanized_mining = 1
+experimental_railroad = 1
+basic_chemistry = 1
+practical_steam_engine = 1
+mechanical_production = 1
+battleship_column_doctrine = 1
+naval_professionalism = 1
+stock_exchange = 1
+ad_hoc_money_bill_printing = 1
+private_bank_money_bill_printing = 1
+late_classical_theory = 1
+market_structure = 1
+
+# Inventions
+#corvettes = yes
+commerce_raiders = yes
+precision_work = yes

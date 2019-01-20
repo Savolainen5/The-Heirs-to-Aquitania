@@ -1,0 +1,9 @@
+owner = AGR
+controller = AGR
+add_core = AGR
+add_core = BUN
+add_core = HND
+trade_goods = fruit
+life_rating = 32
+
+

@@ -1,0 +1,57 @@
+#South Atlantic Islands (4240/1060 POPS)
+#Ruled by Hispania 1836
+#Saint Helena (4000/1000 POPS)
+2129 = {
+	bureaucrats = {
+		culture = spanish
+		religion = catholic
+		size = 5
+	}
+
+	clergymen = {
+		culture = spanish
+		religion = catholic
+		size = 25
+	}
+
+	soldiers = {
+		culture = spanish
+		religion = catholic
+		size = 20
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 50
+	}
+
+	farmers = {
+		culture = spanish
+		religion = catholic
+		size = 900
+	}
+}
+#Ascension (140/35 POPS) - Netherlands
+2130 = {
+	soldiers = {
+		culture = dutch
+		religion = protestant
+		size = 10
+	}
+
+	farmers = {
+		culture = dutch
+		religion = protestant
+		size = 25
+	}
+}
+#Tristan da Cunha (100/25 POPS) - Hispania
+2132 = {
+	farmers = {
+		culture = spanish
+		religion = catholic
+		size = 25
+	}
+
+}

@@ -1,0 +1,8 @@
+owner = FIN
+controller = FIN
+add_core = WOL
+trade_goods = grain
+life_rating = 30
+naval_base = 1
+colonial = 2
+

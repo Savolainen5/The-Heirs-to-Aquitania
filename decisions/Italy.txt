@@ -1,0 +1,440 @@
+political_decisions = {	
+	award_order_of_st_francis = {
+		potential = {
+			tag = NPL
+			government = absolute_monarchy
+			NOT = { has_country_flag = order_awarded }
+		}
+
+		allow = {
+			prestige = 75
+			war = no
+		}
+		
+		effect = {
+			years_of_research = 0.2
+			prestige = 2
+			set_country_flag = order_awarded
+		}
+	}
+	
+	suppress_tuscan_resistance = {
+		picture = enslave_albanians
+		potential = {
+			tag = NPL
+			TUS_744 = { owned_by = THIS }
+			NOT = { has_country_flag = post_war_tuscan_crackdown }
+		}
+		
+		allow = {
+			TUS_744 = { average_militancy = 5 }
+		}
+		
+		effect = {
+			badboy = 1
+			set_country_flag = post_war_tuscan_crackdown
+			TUS_744 = {
+				any_pop = {
+					militancy = -4
+					reduce_pop = 0.98
+				}
+			}
+		}
+	}
+
+	build_vittoriano = {
+		potential = {
+			tag = ITA
+			government = absolute_monarchy
+			NOT = { has_country_flag = vittoriano_built }
+		}
+
+		allow = {
+			realism = 1
+		}
+		
+		effect = {
+			prestige = 5
+			any_pop = {
+				militancy = -1
+			}
+			set_country_flag = vittoriano_built
+		}
+	}
+
+	the_case_of_edgardo_mortara = {
+		potential = {
+			tag = PAP
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			NOT = { has_country_flag = edgardo_mortara }
+			year = 1858
+			owns = 741
+		}
+		
+		allow = {
+			idealism = 1
+		}
+		
+		effect = {
+			prestige = 15
+			badboy = 1
+			any_greater_power = {
+				relation = {
+					value = -20
+					who = THIS
+				}
+			}
+			set_country_flag = edgardo_mortara
+		}
+	}
+	
+	the_first_vatican_council = {
+		potential = {
+			tag = PAP
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			NOT = { has_country_flag = first_vatican_council_held }
+		}
+
+		allow = {
+			empiricism = 1
+		}
+
+		effect = {
+			prestige = 10
+			badboy = 1
+			any_country = {
+				limit = {
+					religion = catholic
+				}
+				relation = {
+					who = THIS
+					value = 10
+				}
+			}
+			set_country_flag = first_vatican_council_held
+		}
+	}
+
+	law_of_guarantees = {
+		potential = {
+			tag = ITA
+			#NOT = { has_country_flag = law_of_guarantees } #Removed so it's repeatable because apparently the AI is dumb
+			any_owned_province = {
+				OR = {
+					is_core = NPL
+					is_core = PAP
+				}
+			}
+		}
+
+		allow = {
+			owns = 749
+		}
+
+		effect = {
+			set_country_flag = law_of_guarantees
+			capital = 749
+			prestige = 5
+			badboy = -2
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = NPL
+						is_core = PAP
+					}
+				}
+				add_core = ITA
+				remove_core = NPL
+				remove_core = PAP
+			}
+		}
+	}
+	
+	#This one can be used for some future time when ITA and PDN have duked it out a bit and ITA decides to take over PDN
+	law_of_guarantees2 = {
+		picture = law_of_guarantees
+		potential = {
+			tag = ITA
+			has_country_flag = law_of_guarantees
+			any_owned_province = {
+				is_core = THIS
+				OR = {
+					is_core = NPL
+					is_core = SRD
+					is_core = DAU
+					is_core = MOD
+					is_core = TUS
+					is_core = LUC
+					is_core = PAR
+					is_core = PAP
+					is_core = PDN
+					is_core = LOM
+					is_core = RMG
+					is_core = GEN
+					is_core = VEN
+					is_core = DLM
+				}
+			}
+		}
+
+		allow = {
+			owns = 749
+			owns = 726 #Milan
+		}
+
+		effect = {
+			any_owned = {
+				limit = {
+					is_core = ITA
+				}
+				remove_core = NPL
+				remove_core = SRD
+				remove_core = DAU
+				remove_core = CRS
+				remove_core = MOD
+				remove_core = TUS
+				remove_core = LUC
+				remove_core = PAR
+				remove_core = PAP
+				remove_core = PDN
+				remove_core = LOM
+				remove_core = RMG
+				remove_core = GEN
+				remove_core = VEN
+				remove_core = DLM
+			}
+		}
+	}	
+	
+#	italia_irredenta = {
+#		potential = {
+#			tag = ITA
+#			NOT = { has_country_flag = italia_ulterior }
+#		}
+#
+#		allow = {
+#			invention = national_fraternity
+#			is_greater_power = yes
+#		}
+#
+#		effect = {
+#			set_country_flag = italia_ulterior
+#			AUS_729 = {
+#				add_core = ITA
+#			}
+#			AUS_726 = {
+#				add_core = ITA
+#			}
+#			AUS_734 = {
+#				add_core = ITA
+#			}
+#			AUS_736 = {
+#				add_core = ITA
+#			}	
+#			780 = {
+#				add_core = ITA
+#			}
+#			781 = {
+#				add_core = ITA
+#			}
+#		}
+#	}	
+
+
+#	we_are_italian = {
+#		picture = form_italy
+#		potential = {
+#			OR = {
+#				tag = TRE
+#				tag = FIU
+#			}
+#			exists = yes
+#			NOT = { has_country_flag = we_are_italian }
+#		}
+#
+#		allow = {
+#			war = no
+#		}
+#
+#		effect = {
+#			set_country_flag = we_are_italian
+#			all_core = { add_core = ITA }
+#			any_pop = {
+#				limit = {
+#					OR = {
+#						has_pop_culture = north_italian
+#						has_pop_culture = south_italian
+#					}
+#				}
+#				militancy = -4
+#			}
+#			random_country = {
+#				limit = {
+#					is_culture_group = italian
+#					is_greater_power = yes
+#					THIS = {
+#						NOT = { sphere_owner = { is_culture_group = italian } }
+#					}
+#				}
+#				diplomatic_influence = {
+#					who = THIS
+#					value = 100
+#				}
+#			}
+#			any_country = {
+#				limit = {
+#					is_culture_group = italian
+#				}
+#				relation = {
+#					who = THIS
+#					value = 100
+#				}
+#			}
+#		}
+#	}
+
+	cisalpines_are_italian = {
+		picture = marching_soldiers
+		potential = {
+			tag = ITA
+			NOT = { accepted_culture = north_italian }
+			NOT = { exists = PAP }
+			744 = { is_core = THIS }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			prestige = 100
+			OR = {
+				war_policy = jingoism
+				war_policy = pro_military
+			}
+			PDN = {
+				is_greater_power = no
+				is_secondary_power = no
+			}
+		}
+		
+		effect = {
+			prestige = 5
+			badboy = 5
+			PDN = {
+				all_core = {
+					add_core = ITA
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+
+	maretans_are_italian = {
+		picture = marching_soldiers
+		potential = {
+			tag = ITA
+			NOT = { exists = PAP }
+			NOT = { accepted_culture = maretan }
+			744 = { is_core = THIS }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			prestige = 125
+			OR = {
+				war_policy = jingoism
+				war_policy = pro_military
+			}
+		}
+		
+		effect = {
+			prestige = 5
+			badboy = 5
+			CRS = {
+				all_core = {
+					add_core = ITA
+				}
+			}
+			add_accepted_culture = maretan
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+
+	second_irredentism = {
+		picture = form_italy
+		potential = {
+			tag = ITA
+			has_country_flag = italia_ulterior
+			NOT = { has_country_flag = second_irredentism }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			OR = {
+				government = fascist_dictatorship
+				government = presidential_dictatorship
+				ITA = {
+					all_core = {
+						owned_by = THIS
+					}
+				}
+			}	
+		}
+		
+		effect = {
+			badboy = 12
+			prestige = 25
+			set_country_flag = second_irredentism 
+			854 = {
+				add_core = ITA
+			}
+			473 = {
+				add_core = ITA
+			}
+			826 = {
+				add_core = ITA
+			}
+			774 = {
+				add_core = ITA
+			}
+			SAR_466 = {
+				add_core = ITA
+			}
+			2568 = {
+				add_core = ITA
+			}
+			782 = {
+				add_core = ITA
+			}
+			2852 = {
+				add_core = ITA
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.5
+			}
+		}	
+	} 	
+
+}

@@ -1,0 +1,50 @@
+army = {
+	name = "Army of the Sultan of Muscat"
+	location = 1166
+	regiment = {
+		name= "1. Brigade"
+		type = irregular
+		home = 1166
+	}
+}
+
+army = {
+	name = "Army of the Wali of Zanzibar"
+	location = 2048
+
+	regiment = {
+		name= "1. Askaris"
+		type = irregular
+		home = 2048
+	}
+}
+
+army = {
+	name = "Army of the Wali of Mombasa"
+	location = 2029
+	
+	regiment = {
+		name= "2. Askaris"
+		type = irregular
+		home = 2029
+	}
+}
+
+navy = {
+	name = "Red Sea Fleet"
+	location = 1166
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+}
+
+navy = {
+	name = "Indian Fleet"
+	location = 2048
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+}

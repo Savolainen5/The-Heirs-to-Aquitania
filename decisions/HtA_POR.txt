@@ -1,0 +1,27 @@
+political_decisions = {
+
+	#Claim Galicia
+	claim_galicia = {
+		#picture = ?
+	
+		potential = {
+			tag = POR
+			474 = { NOT = { is_core = THIS } }
+		}
+	
+		allow = {
+			is_greater_power = yes
+			state_n_government = 1
+		}
+	
+		effect = {
+			prestige = 4
+			add_core = 474
+			add_core = 476
+			relation = {
+				who = HIS
+				value = -50
+			}
+		}
+	}
+}

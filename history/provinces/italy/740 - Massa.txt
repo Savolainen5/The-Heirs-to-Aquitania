@@ -1,0 +1,6 @@
+owner = MOD
+controller = MOD
+add_core = MOD
+trade_goods = timber
+life_rating = 35
+

@@ -1,0 +1,38 @@
+MAT = { value = 130 }
+GAZ = { value = 90 }
+SUA = { value = 75 }
+
+army = {
+	name = "Royal Rozvi Army"
+	location = 2070
+	regiment = {
+		name = "Mutare Warriors"
+		type = irregular
+		home = 2070
+	}
+	regiment = {
+		name = "Gweru Warriors"
+		type = irregular
+		home = 2069
+	}
+	regiment = {
+		name = "Songo Warriors"
+		type = irregular
+		home = 2055
+	}
+	regiment = {
+		name = "Massekisse Warriors"
+		type = irregular
+		home = 2052
+	}
+}
+
+army = {
+	name = "Army of Ibo"
+	location = 2063
+	regiment = {
+		name = "Ibo Warriors"
+		type = irregular
+		home = 2063
+	}
+}

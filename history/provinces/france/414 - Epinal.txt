@@ -1,0 +1,6 @@
+owner = LOR
+controller = LOR
+add_core = LOR
+trade_goods = sulphur
+life_rating = 35
+

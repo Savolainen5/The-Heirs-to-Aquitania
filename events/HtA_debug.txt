@@ -1,0 +1,32 @@
+#events to make certain sticky things work properly
+#59950-59999
+
+#Force Brunswick Congress annexations
+country_event = {
+	id = 59950
+	title = "Fire the annexations"
+	desc = "Why did they stick?"
+	picture = "Aquitania2"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Who knows. Fix it, Savs."
+		BRA = { country_event = 50067 }
+	}
+}
+
+#Force Brunswick Congress main event
+country_event = {
+	id = 59951
+	title = "Fire the BC Main Event"
+	desc = "Why did it fail?"
+	picture = "Aquitania2"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Who knows. Fix it, Savs."
+		BRA = { country_event = 50064 }
+	}
+}

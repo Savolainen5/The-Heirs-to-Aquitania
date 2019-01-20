@@ -1,0 +1,173 @@
+WHA = {
+	value = 105		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+
+SCO = {
+	value = -20
+	truce_until = "1837.6.12"
+}
+
+ATJ = {
+	value = 125
+	level = 5
+	influence_value = 40
+}
+SRI = {
+	value = 105
+	level = 5
+	influence_value = 5
+}
+
+army = {
+	name = "Norten Here"
+	location = 278
+	regiment = {
+		name = "1. Fedehere"
+		type = infantry
+		home = 278
+	}
+	regiment = {
+		name = "2. Fedehere"
+		type = infantry
+		home = 277
+	}
+	regiment = {
+		name = "1. Artiliehere"
+		type = artillery
+		home = 283
+	}
+	regiment = {
+		name = "2. Artiliehere"
+		type = artillery
+		home = 293
+	}
+	regiment = {
+		name = "1. Radehere"
+		type = cuirassier
+		home = 292
+	}
+}
+
+army = {
+	name = "Setlen Here"
+	location = 300
+	regiment = {
+		name = "1. Fedehere"
+		type = infantry
+		home = 300
+	}
+	regiment = {
+		name = "2. Fedehere"
+		type = infantry
+		home = 294
+	}
+	regiment = {
+		name = "3. Fedehere"
+		type = infantry
+		home = 299
+	}
+	regiment = {
+		name = "1. Artiliehere"
+		type = artillery
+		home = 300
+	}
+	regiment = {
+		name = "2. Artiliehere"
+		type = artillery
+		home = 282
+	}
+	regiment = {
+		name = "1. Radehere"
+		type = hussar
+		home = 300
+	}
+	regiment = {
+		name = "2. Radehere"
+		type = hussar
+		home = 300
+	}
+}
+
+army = {
+	name = "Here ov Welighefen"
+	location = 2222
+	regiment = {
+		name = "3. Fedehere"
+		type = infantry
+		home = 284
+	}
+}
+
+navy = {
+	name = "Cyneflota"
+	location = 303
+	ship = {
+		name = "Anmedla"
+		type = manowar
+	}
+	ship = {
+		name = "Andett"
+		type = manowar
+	}
+	ship = {
+		name = "Orlscip"
+		type = manowar
+	}
+	ship = {
+		name = "Gumcyst"
+		type = manowar
+	}
+	ship = {
+		name = "Renc"
+		type = manowar
+	}
+	ship = {
+		name = "Are"
+		type = frigate
+	}
+	ship = {
+		name = "Ret"
+		type = frigate
+	}
+}
+
+navy = {
+	name = "Aescflota"
+	location = 303
+	ship = {
+		name = "1. Sciplest"
+		type = clipper_transport
+	}
+	ship = {
+		name = "2. Sciplest"
+		type = clipper_transport
+	}
+	ship = {
+		name = "3. Sciplest"
+		type = clipper_transport
+	}
+	ship = {
+		name = "4. Sciplest"
+		type = clipper_transport
+	}
+	ship = {
+		name = "5. Sciplest"
+		type = clipper_transport
+	}
+}
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	threat = { id="SCO" value=75 }
+
+	antagonize = { id="SCO" value=75 }
+
+	rival = { id="HIS" value=50 }
+}

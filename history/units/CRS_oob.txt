@@ -1,0 +1,19 @@
+army = {
+	name = "Armata Reale del' Isole"
+	location = 473
+	regiment = {
+		name = "1o Esersito"
+		type = infantry
+		home = 473
+	}
+	regiment = {
+		name = "2o Esersito"
+		type = infantry
+		home = 765
+	}
+	regiment = {
+		name = "3o Esersito"
+		type = infantry
+		home = 766
+	}
+}

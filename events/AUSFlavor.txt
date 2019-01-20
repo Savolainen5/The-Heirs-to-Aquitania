@@ -1,0 +1,54 @@
+#Lose control of Old Croatia if you don't have Slovenia or something
+country_event = {
+	id = 50807
+	title = "Loss of Old Croatia"
+	desc = "As we no longer control any territory connected to Old Croatia, we can no longer exercise effective control over the region. We will pull out our troops and people."
+	
+	trigger = {
+		tag = AUS
+		owns = 771
+		768 = {
+			NOT = { owned_by = THIS }
+			NOT = { owner = { vassal_of = THIS } }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.1
+			768 = {
+				owner = {
+					NOT = {
+						relation = {
+							who = THIS
+							value = 0
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Austria retreats..."
+		772 = { owner = { country_event = 50808 } }
+	}
+}
+
+#Croatia or whoever owns Sisak
+country_event = {
+	id = 50808
+	title = "Austria Abandons Old Croatia"
+	desc = "With their loss of control of Slovenia, Austria has had no choice but to retreat from Old Croatia, and we are free to reclaim it for ourselves!"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Truly a great day for Croatia!"
+		771 = { secede_province = THIS }
+		773 = { secede_province = THIS }
+		774 = { secede_province = THIS }
+		775 = { secede_province = THIS }
+	}
+}

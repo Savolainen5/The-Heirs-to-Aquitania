@@ -1,0 +1,7 @@
+owner = TER
+controller = TER
+add_core = TER
+trade_goods = timber
+life_rating = 30
+
+

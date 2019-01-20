@@ -1,0 +1,48 @@
+
+army = {
+
+	name = "Army of the Ashanti Confederacy"
+
+	location = 1910
+	regiment = {
+
+		name= "Asantehene's Guards"
+	
+	type = cavalry
+
+		home = 1910
+	}
+
+
+	regiment = {
+
+		name= "1st Ashanti Warriors"
+	
+	type = irregular
+	
+	home = 1910
+
+	}
+
+	regiment = {
+
+		name= "2nd Ashanti Warriors"
+	
+	type = irregular
+
+
+		home = 1911
+	}
+	regiment = {
+
+		name= "3rd Ashanti Warriors"
+	
+	type = irregular
+
+
+		home = 1912
+
+	}
+
+}
+

@@ -1,0 +1,50 @@
+political_decisions = {
+
+	#############################################
+	#				North America				#
+	#############################################
+	create_north_american_states = {
+		potential = {
+			ai = yes
+			any_owned_province = { continent = north_america }
+			NOT = { has_global_flag = north_american_states_created }
+			NOT = { any_neighbor_country = { ai = no } }
+		}
+		allow = {
+			year = 1836
+		}
+		effect = {
+			set_global_flag = north_american_states_created
+			
+			#Alaska
+			3 = { add_core = LSK }
+			4 = { add_core = LSK }
+			5 = { add_core = LSK }
+			2599 = { add_core = LSK }
+			2630 = { add_core = LSK }
+			2631 = { add_core = LSK }
+
+			#Greenland
+			2636 = { add_core = GRN	}
+			2591 = { add_core = GRN }
+			2632 = { add_core = GRN }
+			251 = { add_core = GRN 	}
+			
+			#Jamaica
+			2217 = { add_core = JAM }
+
+			#Oaxaca
+			2177 = { add_core = OAX }
+			2178 = { add_core = OAX }
+			
+			#Tarasco
+			2179 = { add_core = TRS }
+			2180 = { add_core = TRS }
+			2171 = { add_core = TRS }
+			2170 = { add_core = TRS }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

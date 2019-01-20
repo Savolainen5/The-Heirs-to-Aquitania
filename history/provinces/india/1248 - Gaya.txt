@@ -1,0 +1,8 @@
+owner = BIH
+controller = BIH
+add_core = BIH
+add_core = HND
+trade_goods = opium
+life_rating = 32
+
+

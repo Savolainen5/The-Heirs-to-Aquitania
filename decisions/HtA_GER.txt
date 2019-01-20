@@ -1,0 +1,399 @@
+political_decisions = {
+
+#Claim Elsass-Lothringen
+#									This decision not currently necessary as Elsass is already a core of Germany
+#	claim_elsass_lothringen = {
+#		picture = reichsland_elsass
+#		potential = {
+#			tag = GER
+#			NOT = { has_country_flag = elsass_lothringen }
+#		}
+#		
+#		allow = {
+#			is_greater_power = yes
+#			nationalism_n_imperialism = 1
+#		}
+#		
+#		effect = {
+#			prestige = 5
+#			FRA_412 = {
+#				add_core = THIS
+#			}
+#			relation = {
+#				who = FRA
+#				value = -100
+#			}
+#			set_country_flag = elsass_lothringen
+#		}
+#	}
+
+#Call the Congress of Brunswick
+
+	call_brunswick_congress = {
+		picture = clay_and_douglas_draft
+		potential = {
+			tag = BRA
+			has_global_flag = RIP_HAN_Adelheid
+			has_global_flag = BAV_violate_MNZ
+			NOT = {
+				has_country_flag = brunswick_congress_called
+				has_global_flag = brunswick_congress_concluded
+			}
+		}
+		
+		allow = {
+			prestige = 5
+		}
+		
+		effect = {
+			prestige = 5
+			set_global_flag = brunswick_congress1
+			set_country_flag = brunswick_congress_called
+			clr_global_flag = BAV_violate_MNZ
+			any_country = {
+				limit = {
+					primary_culture = north_german
+					NOT = { tag = THIS }
+				}
+				country_event = {
+					id = 50061 #Invitation to Brunswick Congress
+					days = 2
+				}
+			}
+			BAV = {
+				country_event = {
+					id = 50062
+					days = 3
+				}
+			}
+		}
+	}
+	
+#Call the Congress of Brunswick 2
+	call_brunswick_congress2 = {
+		picture = clay_and_douglas_draft
+		potential = {
+			tag = BRA
+			has_global_flag = RIP_HAN_Adelheid
+			has_global_flag = dont_pursue_steinberger_gang
+			NOT = {
+				has_country_flag = brunswick_congress_called
+			}
+		}
+		
+		allow = {
+			prestige = 5
+		}
+		
+		effect = {
+			prestige = 5
+			set_global_flag = brunswick_congress1
+			set_country_flag = brunswick_congress_called
+			any_country = {
+				limit = {
+					primary_culture = north_german
+					NOT = { tag = THIS }
+				}
+				country_event = {
+					id = 50061 #Invitation to Brunswick Congress
+					days = 2
+				}
+			}
+			BAV = {
+				country_event = {
+					id = 50062
+					days = 3
+				}
+			}
+		}
+	}
+	
+	claim_empire_BAV = {
+		picture = form_germany
+		
+		potential = {
+			tag = BAV
+			has_global_flag = brunswick_congress_concluded
+			NOT = { has_country_flag = claim_empire exists = NGF }
+		}
+		
+		allow = {
+			OR = {
+				AND = {
+					prestige = 50
+					nationalism_n_imperialism = 1
+				}
+				BRA = { has_country_flag = claim_empire }
+				BRN = { has_country_flag = claim_empire }
+			}
+		}
+		
+		effect = {
+			prestige = 25
+			set_country_flag = claim_empire
+			any_pop = {
+				consciousness = 2
+			}
+		}
+	}
+	claim_empire_BRA = {
+		picture = form_germany
+		
+		potential = {
+			tag = BRA
+			has_global_flag = brunswick_congress_concluded
+			NOT = { has_country_flag = claim_empire exists = NGF }
+		}
+		
+		allow = {
+			OR = {
+				AND = {
+					prestige = 50
+					nationalism_n_imperialism = 1
+				}
+				BRA = { has_country_flag = claim_empire }
+				BRN = { has_country_flag = claim_empire }
+			}
+		}
+		
+		effect = {
+			prestige = 25
+			set_country_flag = claim_empire
+			any_pop = {
+				consciousness = 2
+			}
+		}
+	}
+	claim_empire_BRN = {
+		picture = form_germany
+		
+		potential = {
+			tag = BRN
+			has_global_flag = brunswick_congress_concluded
+			NOT = { has_country_flag = claim_empire exists = NGF }
+		}
+		
+		allow = {
+			OR = {
+				AND = {
+					prestige = 50
+					nationalism_n_imperialism = 1
+				}
+				BRA = { has_country_flag = claim_empire }
+				BRN = { has_country_flag = claim_empire }
+			}
+		}
+		
+		effect = {
+			prestige = 25
+			set_country_flag = claim_empire
+			any_pop = {
+				consciousness = 2
+			}
+		}
+	}
+	
+	#Host Munich Conference - causes Baden and Wurttemburg to be annexed to Bavaria
+	host_munich_conference = {
+		picture = negotiations
+		potential = {
+			tag = BAV
+			has_global_flag = brunswick_congress_concluded
+			NOT = { has_country_flag = munich_conference }
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+	
+		allow = {
+			BAD = {
+				OR = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+								OR = {
+									is_vassal = no
+									vassal_of = THIS
+								}
+								war = no
+								is_greater_power = no
+							}
+						}
+					}
+					relation = {
+						who = THIS
+						value = 100
+					}
+				}
+			}
+			WUR = {
+				OR = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+								OR = {
+									is_vassal = no
+									vassal_of = THIS
+								}
+								war = no
+								is_greater_power = no
+							}
+						}
+					}
+					relation = {
+						who = THIS
+						value = 100
+					}
+				}
+			}
+			ALS = {
+				OR = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+								OR = {
+									is_vassal = no
+									vassal_of = THIS
+								}
+								war = no
+								is_greater_power = no
+							}
+						}
+					}
+					relation = {
+						who = THIS
+						value = 100
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			badboy = 5
+			set_country_flag = munich_conference
+			inherit = BAD
+			BAD = { all_core = { add_core = THIS } }
+			inherit = WUR
+			WUR = { all_core = { add_core = THIS } }
+			inherit = ALS
+			ALS = { all_core = { add_core = THIS } }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	helvetian_patrimony = {
+		picture = negotiations
+		potential = {
+			OR = {
+				tag = SGF
+				tag = GER
+			}
+			exists = SWI
+			NOT = { has_country_flag = helvetian_patrimony }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			war = no
+			ideology = fascist
+			SWI = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 5
+			badboy = 7
+			set_country_flag = helvetian_patrimony
+			inherit = SWI
+			SWI = { all_core = { any_pop = { militancy = 6 consciousness = 6 } } }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+	
+	#Treaty of Twist
+	treaty_of_twist = {
+		picture = negotiations
+		potential = {
+			tag = BRA
+			has_global_flag = brunswick_congress_concluded
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			NOT = { has_country_flag = treaty_over_emden }
+			543 = { owned_by = NET is_core = BRA }
+			year = 1846
+		}
+		
+		allow = {
+			prestige = 15
+			military_score = 20
+			war = no
+		}
+		
+		effect = {
+			set_country_flag = treaty_over_emden
+			prestige = 1
+			NET = {
+				country_event = {
+					id = 50254
+					days = 1
+				}
+			}
+		}
+	}
+	
+	request_return_of_lubeck = {
+		picture = negotiations
+		potential = {
+			OR = {
+				tag = NGF
+				tag = GER
+			}
+			NOT = { has_country_flag = lubeck_return }
+			530 = { owner = { NOT = { primary_culture = north_german } } }
+		}
+		
+		allow = {
+			prestige = 50
+		}
+		
+		effect = {
+			any_neighbor_country = {
+				limit = {
+					owns = 530
+				}
+				country_event = {
+					id = 50506 #in events/HtA_Nordic
+					days = 1
+				}
+			}
+			set_country_flag = lubeck_return
+		}
+	}
+}

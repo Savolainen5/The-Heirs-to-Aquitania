@@ -1,0 +1,6 @@
+owner = HNG
+controller = HNG
+add_core = HNG
+trade_goods = grain
+life_rating = 30
+

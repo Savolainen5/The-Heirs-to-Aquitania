@@ -1,0 +1,9 @@
+owner = AQT
+controller = AQT
+add_core = AQT
+trade_goods = fish
+life_rating = 35
+naval_base = 2
+
+
+

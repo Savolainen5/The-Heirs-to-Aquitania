@@ -1,0 +1,18 @@
+army = {
+
+	name = "Army of the Sultan of Makassar"
+
+	location = 1431
+
+	regiment = {
+
+		name= "1st Regiment"
+
+		type = irregular
+
+		home = 1430
+	}
+
+
+}
+

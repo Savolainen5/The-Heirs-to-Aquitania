@@ -1,0 +1,6 @@
+owner = SKM
+controller = SKM
+add_core = SKM
+trade_goods = fish
+life_rating = 40
+

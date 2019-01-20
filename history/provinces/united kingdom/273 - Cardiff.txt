@@ -1,0 +1,11 @@
+owner = WHA
+controller = WHA
+add_core = WHA
+trade_goods = coal
+life_rating = 35
+naval_base = 1
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}

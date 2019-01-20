@@ -1,0 +1,8 @@
+owner = MAT
+controller = MAT
+add_core = MAT
+trade_goods = grain
+life_rating = 25
+terrain = steppe
+
+

@@ -1,0 +1,152 @@
+country_event = {
+	id = 32512
+	title = "EVTNAME32512" #Intervention in Hungary?
+	desc = "EVTDESC32512"
+	picture = "deliberation"
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = POL
+		war = no
+		has_global_flag = hungarian_revolution_occurred
+		exists = HUN
+		NOT = { truce_with = HUN }
+		BOH = {
+			NOT = { has_country_flag = bohemia_let_hungary_go }
+			NOT = { truce_with = POL }
+			war_with = HUN
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 3
+			num_of_revolts = 1
+		}
+		modifier = {
+			factor = 0.5
+			BOH = {
+				any_owned_province = { controlled_by = HUN }
+			}
+		}
+	}
+
+	option = {
+		name = "The Hungarians must be crushed!"
+		prestige = 5
+		casus_belli = {
+			target = HUN
+			type = cut_down_to_size
+			months = 12
+		}
+		war = {
+			target = HUN
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+		}
+		military_access = BOH
+		random_owned = {
+			limit = {
+				owner = { ai = yes }
+				BOH = { ai = yes }
+			}
+			owner = {
+				relation = {
+					who = BOH
+					value = 300
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				OR = {
+					owner = { ai = no }
+					BOH = { ai = no }
+				}
+			}
+			owner = {
+				relation = {
+					who = BOH
+					value = 100
+				}
+			}
+		}
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.5
+				HUN = { national_provinces_occupied = .25 }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					relation = { who = BOH value = 0 }
+				}
+			}
+			modifier = {
+				factor = 0.6
+				has_global_flag = railroading_on
+			}
+		}
+	}
+
+	option = {
+		name = "Let the Bohemians deal with them."
+		any_owned = {
+			limit = {
+				NOT = { has_province_modifier = nationalist_agitation }
+				any_core = {
+					OR = {
+						primary_culture = ukrainian
+						primary_culture = lithuanian
+						primary_culture = byelorussian
+						primary_culture = ruthenian
+					}
+					exists = no
+				}
+			}
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 1095
+			}
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = no
+				location = {
+					any_core = {
+						NOT = { primary_culture = polish }
+					}
+				}
+			}
+			militancy = 4
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 4
+				HUN = { national_provinces_occupied = .25 }
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					relation = { who = POL value = 50 }
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					relation = { who = POL value = 0 }
+				}
+			}
+			modifier = {
+				factor = 0.25
+				relation = { who = POL value = 50 }
+			}
+		}
+	}
+}

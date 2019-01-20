@@ -1,0 +1,179 @@
+##Europe##
+
+# Byzantine Empire-Wallachia
+vassal = {
+	first = BYZ
+	second = WAL
+	start_date = 1836.1.1
+	end_date = 1859.1.24	# Reunification of Wallachia and Moldavia
+}
+
+# Byzantine Empire-Moldavia
+vassal = {
+	first = BYZ
+	second = MOL
+	start_date = 1836.1.1
+	end_date = 1859.1.24	# Reunification of Wallachia and Moldavia
+}
+
+# Aquitania-Provence
+vassal = {
+	first = AQT
+	second = PRE
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Shawnee-Cherokee
+vassal = {
+	first = SHC
+	second = CHE
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Shawnee-Iroquois
+vassal = {
+	first = SHC
+	second = IRO
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Qin-Yunnan
+vassal = {
+	first = QIN
+	second = YNN
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Qin-Qinghai
+vassal = {
+	first = QIN
+	second = XBI
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Bohemia-Saxony
+vassal = {
+	first = BOH
+	second = SAX
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Denmark-Holsten
+vassal = {
+	first = DEN
+	second = HOL
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Aengland-Cymru
+vassal = {
+	first = AEN
+	second = WHA
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Aengland-Sri Lamka
+vassal = {
+	first = AEN
+	second = SRI
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Maghreb-Cyrenacia
+vassal = {
+	first = MGH
+	second = CYR
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Norway-Iceland		#for some reason, this plasters Norway's name over lots of uncolonised territory
+vassal = {
+	first = NOR
+	second = ICL
+	start_date = 1826.1.1
+	end_date = 1936.1.1
+}
+
+# Hispania-Bengal
+vassal = {
+	first = HIS
+	second = BNG
+	start_date = 1782.1.1
+	end_date = 1949.1.1
+}
+
+##Mali substates##
+
+# Mali-Gabu
+vassal = {
+	first = MLI
+	second = GBU
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Mali-Wolof
+vassal = {
+	first = MLI
+	second = WOL
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Mali-Kanem Bornu
+vassal = {
+	first = MLI
+	second = KBO
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Mali-Mossi
+vassal = {
+	first = MLI
+	second = MOS
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Mali-Sokoto
+vassal = {
+	first = MLI
+	second = SOK
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Mali-Dendi
+vassal = {
+	first = MLI
+	second = DND
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+# Shona-Gaza
+vassal = {
+	first = SHO
+	second = GAZ
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}
+
+#Smolensk-Cossacks
+vassal = {
+	first = SML
+	second = DON
+	start_date = 1835.1.1
+	end_date = 1949.1.1
+}

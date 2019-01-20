@@ -1,0 +1,79 @@
+#Salvador Region (416000)
+#Ruled by Central America 1836
+#San Salvador (260000/65000 POPS)
+2191 = {
+	aristocrats = {
+		culture = mellomsk
+		religion = protestant
+		size = 1425
+	}
+
+	bureaucrats = {
+		culture = mellomsk
+		religion = protestant
+		size = 150
+	}
+
+	officers = {
+		culture = mellomsk
+		religion = protestant
+		size = 125
+	}
+
+	clergymen = {
+		culture = mellomsk
+		religion = protestant
+		size = 650
+	}
+
+	artisans = {
+		culture = mellomsk
+		religion = protestant
+		size = 3250
+	}
+
+	soldiers = {
+		culture = mellomsk
+		religion = protestant
+		size = 1100
+	}
+
+	farmers = {
+		culture = mellomsk
+		religion = protestant
+		size = 58350
+	}
+}
+#San Miguel (156000/44000 POPS)
+2192 = {
+	aristocrats = {
+		culture = mellomsk
+		religion = protestant
+		size = 950
+	}
+
+	clergymen = {
+		culture = mellomsk
+		religion = protestant
+		size = 450
+	}
+
+	artisans = {
+		culture = mellomsk
+		religion = protestant
+		size = 2200
+	}
+
+	soldiers = {
+		culture = mellomsk
+		religion = protestant
+		size = 450
+	}
+
+	farmers = {
+		culture = mellomsk
+		religion = protestant
+		size = 39950
+	}
+
+}

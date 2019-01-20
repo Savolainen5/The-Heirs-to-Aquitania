@@ -1,0 +1,35 @@
+#ID numbers: 51700-51750
+
+#Eruption of Mount Pelée / Monte Pelado
+country_event = {
+	id = 51750
+	title = "EVTNAME51700"
+	desc = "EVTDESC51700"
+
+	fire_only_once =  yes
+	major = yes
+
+	trigger = {
+		2228 = { owned_by = THIS }
+		year = 1902
+		NOT = { month = 3 }
+		month = 5
+	}
+
+	mean_time_to_happen = {
+		days = 8
+	}
+
+	option = {
+		name = "What a disaster!"
+		2228 = {
+			any_pop = {
+				reduce_pop = 0.25
+			}
+			add_province_modifier = {
+				name = disaster_damage
+				duration = 70
+			}
+		}
+	}
+}

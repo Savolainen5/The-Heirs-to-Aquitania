@@ -1,0 +1,6 @@
+controller = ADW
+owner = ADW
+add_core = ADW
+trade_goods = fruit
+life_rating = 35
+

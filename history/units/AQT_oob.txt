@@ -1,0 +1,154 @@
+PRE = {
+	value = 175
+	level = 5
+	influence_value = 25
+}
+
+CAT = {
+	value = 100
+	level = 5
+	influence_value = 25
+}
+
+NAV = {
+	value = 75
+	level = 4
+	influence_value = 25
+}
+
+GLC = {
+	value = 50
+	level = 4
+	influence_value = 25
+}
+
+POR = {
+	value = 25
+	level = 4
+	influence_value = 25
+}
+
+DAU = {
+	value = 100
+	level = 4
+	influence_value = 25
+}
+
+BRT = {
+	value = 75
+	level = 4
+	influence_value = 25
+}
+
+HIS = {
+	truce_until = 1839.9.25
+}
+
+MEX = { value = -50 }
+YUC = { value = -30 }
+NPL = { value = 5 }
+
+army = {
+	name = "Armada Reial"
+	location = 461
+	regiment = {
+		name= "Palace Guards"
+		type = infantry
+		home = 461
+	}
+	regiment = {
+		name= "1. Enfantaria"
+		type = infantry
+		home = 458
+	}
+	regiment = {
+		name= "2. Enfantaria"
+		type = infantry
+		home = 447
+	}
+	regiment = {
+		name= "3. Enfantaria"
+		type = infantry
+		home = 448
+	}
+	regiment = {
+		name= "1. Artilharia"
+		type = artillery
+		home = 455
+	}
+	regiment = {
+		name= "2. Artilharia"
+		type = artillery
+		home = 462
+	}
+	regiment = {
+		name= "1. Cavalaria"
+		type = dragoon
+		home = 456
+	}
+	regiment = {
+		name= "2. Cavalaria"
+		type = dragoon
+		home = 459
+	}
+}
+
+navy = {
+	name = "Scadrona Europaen"
+	location = 461
+	ship = {
+		name = "Aymar II"
+		type = manowar
+	}
+	ship = {
+		name = "Raimond V"
+		type = manowar
+	}
+	ship = {
+		name = "Loui I"
+		type = manowar
+	}
+	ship = {
+		name = "Archambaut IV"
+		type = manowar
+	}
+	ship = {
+		name = "Tolosa"
+		type = frigate
+	}
+	ship = {
+		name = "St. Guilhem"
+		type = frigate
+	}
+}
+
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	befriend = { id="PRE" value=100 }
+	befriend = { id="CAT" value=200 }
+	befriend = { id="PDN" value=150 }
+	befriend = { id="BRT" value=200 }
+
+	protect = { id="CAT" value=200 }
+	protect = { id="BRT" value=200 }
+
+	antagonize = { id="DAU" value=75}
+	antagonize= { id="CMP" value=50 }
+	antagonize= { id="NRM" value=50 }
+	antagonize= { id="ORL" value=50 }
+	
+	threat = { id="HIS" value=125 }
+	threat = { id="CMP" value=50 }
+	threat = { id="NRM" value=50 }
+	threat = { id="ORL" value=50 }
+	threat = { id="FRA" value=75 }
+
+	rival = { id="HIS" value=125 }
+	rival = { id="FRA" value=50 }
+}

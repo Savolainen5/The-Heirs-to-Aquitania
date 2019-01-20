@@ -1,0 +1,307 @@
+#Events 50000, 50002, and later 50220-50249
+
+#Death of King Raimond VIII
+country_event = {
+	id = 50000
+	title = "EVTNAME50000"
+	desc = "EVTDESC50000"
+	picture = "Sisi"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AQT
+		year = 1836
+	}
+	
+	mean_time_to_happen = {
+		months = 7
+	}
+	
+	option = {
+		name = "Long live the King!"
+		prestige = 1
+		set_country_flag = RIP_raimondVIII
+	}
+}
+
+# The Peasantry demands their food (from Raimond IX)
+country_event = {
+	id = 50002
+	title = "EVTNAME50002"
+	desc = "EVTDESC50002"
+	picture = "amadeo_of_savoy"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AQT
+		has_country_flag = RIP_raimondVIII
+		has_global_flag = european_famine
+		has_country_modifier = countrywide_famine
+	}
+	
+	mean_time_to_happen = {
+		months = 8
+		modifier = {
+			year = 1838
+			factor = 0.01
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA50002" #Dismiss the rabble
+		set_country_flag = NOfoodaidAQT
+		prestige = 2
+		any_pop = {
+			limit = {
+				OR = {
+					strata = poor
+					strata = middle
+				}
+				NOT = { type = slaves }
+				location = { continent = europe  }
+			}
+			militancy = 2
+			consciousness = 1
+		}		
+		ai_chance = {
+			factor = 0.7
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB50002" #Distribute royal aid
+		set_country_flag = YESfoodaidAQT
+		prestige = -2 #CHANGE THIS - WOULD THIS BE VIEWED AS A DEFEAT?
+		any_pop = {
+			limit = {
+				OR = {
+					strata = poor
+					strata = middle
+				}
+				NOT = { type = slaves }
+				location = { continent = europe  }
+			}
+			militancy = -2
+			consciousness = 1
+		}
+		
+		ai_chance = {
+			factor = 0.3
+		}
+	}
+}
+
+#50200-17 are over in HtA_PRE
+
+#50220-50249 starts here
+#Event for AQT when DAU joins PDN
+country_event = {
+	id = 50220
+	title = "EVTNAME50220"
+	desc = "EVTDESC50220"
+	picture = "monarchy"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "It remains an option."
+		set_country_flag = claim_rose
+		relation = {
+			who = FROM
+			value = -100
+		}
+	
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We must respect the Daufinens decision."
+		prestige = -1
+		
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#The Mauguios flee the capital
+country_event = {
+	id = 50221
+	title = "EVTNAME50221"
+	desc = "EVTDESC50221"
+	#picture = "storming_palace"
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = AQT
+		461 = { controlled_by = REB }
+		OR = {
+			has_country_flag = liberal_revolution_in_progress
+			has_country_modifier = springtime_of_nations
+			AND = {
+				year = 1848
+				NOT = { year = 1878 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "It is the dawn of a New Aquitània."
+		set_country_flag = revolution_in_blood
+		clr_country_flag = liberal_revolution_in_progress
+		government = democracy
+		any_pop = {
+			militancy = -7
+			consciousness = 4
+		}
+		country_event = 50222
+		any_country = {
+			limit = {
+				war_with = THIS		#I'm guessing it'll just be like Daufinat and friends normally
+			}
+			country_event = {
+				id = 50224
+				days = 2
+			}
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					strata = poor
+					strata = middle
+				}
+			}
+			ideology = {
+				factor = 0.4
+				value = liberal
+			}
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					strata = poor
+					strata = middle
+				}
+			}
+			ideology = {
+				factor = 0.15
+				value = anarcho_liberal
+			}
+		}
+	}
+}
+
+#Formation of the National Council
+country_event = {
+	id = 50222
+	title = "EVTNAME50222"
+	desc = "EVTDESC50222"
+	picture = "senate_debate"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Glory to the Republic!"
+		election = yes
+		ruling_party_ideology = liberal
+		political_reform = universal_voting
+		political_reform = state_equal_weight
+		political_reform = jefferson_method
+		political_reform = yes_meeting
+		political_reform = censored_press
+		political_reform = non_socialist
+		political_reform = non_secret_ballots
+		social_reform = low_minimum_wage
+		social_reform = twelve_hours
+		social_reform = low_schools
+	}
+}
+
+#The Heirs to Aquitania Speech
+country_event = {
+	id = 50223
+	title = "EVTNAME50223"
+	desc = "EVTDESC50223"
+	#picture = "courtyard_speech"
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = AQT
+		has_country_flag = revolution_in_blood
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "A speech for the history books!"
+		plurality = 1
+		any_pop = {
+			militancy = -1
+		}
+		remove_country_modifier = expert_diplomat
+		remove_country_modifier = successful_industrialist
+		remove_country_modifier = ivory_tower_intellectual
+		remove_country_modifier = man_of_the_people
+		remove_country_modifier = landed_gentleman
+		remove_country_modifier = military_man
+		remove_country_modifier = lord_admiral
+		remove_country_modifier = raving_loon
+		remove_country_modifier = luddite
+		remove_country_modifier = great_statesman
+		remove_country_modifier = backroom_boy
+		remove_country_modifier = great_reformer
+		remove_country_modifier = gauche_buffoon
+		remove_country_modifier = administrative_genius
+		remove_country_modifier = visionary_thinker
+		remove_country_modifier = competent_placeholder
+		remove_country_modifier = imperious_autocrat
+		remove_country_modifier = prince_of_terror
+		remove_country_modifier = efficient_sociopath
+		remove_country_modifier = pig_headed_isolationist
+		remove_country_modifier = ambitious_union_boss
+		remove_country_modifier = dour_economist
+		add_country_modifier = {
+			name = jacin_ilmunt
+			duration = 10950
+		}
+	}
+}
+
+#Revolutionary forces cease fighting
+country_event = {
+	id = 50224
+	title = "EVTNAME50224"
+	desc = "EVTDESC50224"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Interesting."
+		prestige = 1
+		end_war = FROM
+	}
+}
+
+#Repeatable Event to remove influence from countries which aren't democratic after the revolution

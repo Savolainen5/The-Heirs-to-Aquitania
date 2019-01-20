@@ -1,0 +1,7 @@
+owner = YNN
+controller = YNN
+add_core = YNN
+add_core = CHI
+trade_goods = sulphur
+life_rating = 35
+

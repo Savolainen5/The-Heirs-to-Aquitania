@@ -1,0 +1,54 @@
+army = {
+	name = "Folks Here"
+	location = 2410
+	regiment = {
+		name = "1. Fedehere"
+		type = infantry
+		home = 2410
+	}
+	regiment = {
+		name = "2. Fedehere"
+		type = infantry
+		home = 2447
+	}
+	regiment = {
+		name = "1. Artiliehere"
+		type = artillery
+		home = 2447
+	}
+	regiment = {
+		name = "2. Artiliehere"
+		type = artillery
+		home = 2450
+	}
+	regiment = {
+		name = "1. Radehere"
+		type = cuirassier
+		home = 2410
+	}
+}
+
+navy = {
+	name = "Cyneflota"
+	location = 303
+	ship = {
+		name = "Byre"
+		type = manowar
+	}
+	ship = {
+		name = "Eastanwind"
+		type = frigate
+	}
+	ship = {
+		name = "Nordanwind"
+		type = frigate
+	}
+	ship = {
+		name = "Weastanwind"
+		type = frigate
+	}
+	ship = {
+		name = "Sujanwind"
+		type = frigate
+	}
+}

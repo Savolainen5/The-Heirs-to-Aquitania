@@ -1,0 +1,10 @@
+owner = AQT
+controller = AQT
+add_core = AQT
+trade_goods = fruit
+life_rating = 35
+state_building = {
+	level = 2 
+	building = winery
+	upgrade = yes
+}

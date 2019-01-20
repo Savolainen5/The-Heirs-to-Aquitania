@@ -1,0 +1,7 @@
+owner = MOL
+controller = MOL
+add_core = MOL
+add_core = VOL
+trade_goods = cattle
+life_rating = 35
+

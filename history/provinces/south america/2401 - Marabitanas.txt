@@ -1,0 +1,7 @@
+owner = HOY
+controller = HOY
+add_core = HOY
+trade_goods = tropical_wood
+life_rating = 25
+
+

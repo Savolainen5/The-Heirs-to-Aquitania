@@ -1,0 +1,24 @@
+name = "Massina Jihad"
+
+1825.10.2 = {
+	add_attacker = MAS
+	add_defender = SEG
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = acquire_core_state
+		state_province_id = 1803
+		actor = MAS
+		receiver = SEG
+	}
+
+}
+
+1826.6.6 = {
+	rem_attacker = MAS
+	rem_defender = SEG
+}

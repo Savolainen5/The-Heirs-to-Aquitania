@@ -1,0 +1,21 @@
+owner = MEC
+controller = MEC
+add_core = MEC
+add_core = GER
+trade_goods = grain
+life_rating = 35
+state_building = {
+	level = 2 
+	building = fabric_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2 
+	building = cement_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = luxury_clothes_factory
+	upgrade = yes
+}

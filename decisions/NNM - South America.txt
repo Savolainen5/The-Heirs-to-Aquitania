@@ -1,0 +1,40 @@
+political_decisions = {
+
+	#############################################
+	#			South American States			#
+	#############################################
+	create_south_american_states = {
+		potential = {
+			ai = yes
+			any_owned_province = { continent = south_america }
+			NOT = { has_global_flag = south_american_states_created }
+			NOT = { any_neighbor_country = { ai = no } }
+		}
+		allow = {
+			year = 1836
+		}
+		effect = {
+			set_global_flag = south_american_states_created
+			
+			#Patagonia
+			2328 = { add_core = PTG }
+			2329 = { add_core = PTG }
+			2332 = { add_core = PTG }
+			2333 = { add_core = PTG }
+			2334 = { add_core = PTG }
+			2335 = { add_core = PTG }
+			2391 = { add_core = PTG }
+			2392 = { add_core = PTG }
+			2394 = { add_core = PTG }
+			2396 = { add_core = PTG }
+			2397 = { add_core = PTG }
+			2398 = { add_core = PTG }
+			2399 = { add_core = PTG }
+			2400 = { add_core = PTG }
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}

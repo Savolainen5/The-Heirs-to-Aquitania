@@ -1,0 +1,385 @@
+Version 0.35 31/12/16 - The Nordic New Year Update
+
+*Major*
+
+- Events and decisions for Scandinavia
+- Events and decisions for Finland
+	- Latvian rebellion (poorly implemented for the moment), added a Free Latvia CB for Finland's European neighbours
+	- Some events with neighbour Wolof
+	- A few other things
+- Specific dismantlement events after Great Wars for most big, important countries. More may be needed
+- Reverted the change for North Amerigan provinces being colonial. Colonies-by-event are now immediately states again
+- Liberal revolution events in Aquitania, more will be needed
+- Event chain for transfer of Lubeck to NGF/Germany from DEN/SCA. As it stands now, the Germans have to buy it or take it by force
+- Readded Unequal Treaty stuff for QIN and copied them for Nanyue and the Manchu. Also expanded number the possible ports that can be demanded
+- Reduced life rating needed to see population growth from 30 to 25. This may reduce performance for those with lower-end CPUs
+- Halved SOLDER_TO_POP_DAMAGE to 0.1, reducing the amount of soldier POPs killed when soldiers in armies are killed. Will probably need need adjustment
+- Made nationalist rebels who are successful in besieging provinces stronger 
+
+*Minor*
+
+- Tweaks to Roman Empire flavour decisions
+- Removed Eireannaigh famine because it doesn't make sense in this timeline
+- Modified AI choices to make it more unlikely for vassals to attend the Brunswick Congress
+- Changed prestige gained by Brunswick and Brandenburg from 5 to 25 at the end of the Brunswick Congress
+- Tweak to Free Balkans CB so it's only usable if the Romans have cores of SER, ROM, MNT, BUL, or ALB which aren't Roman cores
+- Beginning to tweak CBs that can be used against Nanyue, Qin, and Manchu so that less wonkiness happens. It is no longer possible to use the Demand Concession CB to claim whole states
+- Proper Greek for the parties of Roman Empire, Greece, and Crete/Irakleio - Thanks to Over421 for this
+- Added some small province events for serial killers, great fires, and Italian earthquakes. Yay flavour!
+- Localisation fixes and cleanup
+- AI behaviour and relations for Nordic countries
+- Tweaks to events related to Daufinat (AI behaviour, effects, infamy gain)
+- Added more soldier POPs to France so they start with 7 regiments instead of 3, and in 1836 could recruit up to 9 regiments
+- RGO Tweaks in Ireland per Ahearne's suggestion - More coal and iron
+- Reworked Irish names by Ahearne 
+- Reworked Breton names
+- Added an event for Austria to lose Old Croatia if it loses control of Slovenia
+- Added a decision and event for Aquitania to sell Solelha
+- Added decisions for countries whose AI sucks at money management to be able to afford to buy for-sale colonies
+- Added a decision for the blobby Roman Empire player to add Italian as an accepted culture
+- POP adjustments in Finland and parts of the Scandinavian countries
+- A bit of decisions cleanup
+- Added Grand Army, Grand Navy, and country territory size triggered modifiers from PDM via Divergences
+- Reinstated a couple of events from the base mod's BritishDominions.txt and cleaned it up, distributing the events to more relevant places
+	- These include an event for Kaapland dominion for NET, moving the NWT colonisation events into the proper NA event file, and moving the generic 'give a vassal its rightful land' event into Vassal Rebllino
+- Added GAGA Extrem's Synergy Inventions from here: http://forum.paradoxplaza.com/forum/index.php?threads/victoria-2-3-04-beta-patch-merry-christmas.898844/page-43#post-22239476
+- Lots of little things, as always (terrain changes, made Hamburg naval base work again, removed Hamburg core, POP and industry adjustments in AQT, and much more)
+
+*Bugfixes*
+
+- Klöterland now civilized on release, although it may still have noculture on release (not sure why)
+- The Roman Empire no longer loses its cores in Anatolia when dismantled
+- Removed forgotten strait between Caen and Orkney
+- Removed forgotten strait between Newfoundland and Tomioka (originally St. Pierre et Miquelon)
+- Fixed some more infamy things with events related to Daufinat
+- Fixed songs not working properly (but maybe it was just me)
+- Fixed the "X East India Company" event, which gives free CBs on Indonesian uncivs. Now it works for HIS and SCO too, not just NET
+- Brunswick Congress now always finishes properly (maybe?)
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Version 0.34 13/8/16 - The Northern Isles Update
+
+*Major*
+
+- Events and decisions for the Northern isles (IRE, SCO, AEN, WAL)
+- The end of Alba: If Aengland reincorporates the country, it gets most of Alba's colonies, but Indonesia is a bit split up
+- Same for Ireland if Aengland/Albina goes through with incorporating them.
+- Rewrote Aenglisc leader names and ship names. Drew heavily from A-S personal names in the Domesday Book. Aengland is now free of British taint (except maybe in some overlooked events)
+- Began adding AI personality/attitude settings to OOBs
+
+*Minor*
+
+- Map adjustments
+	- New Guinea has 25 (West) and 20 (East) life rating, so it may be colonisable a bit earlier
+	- Channel Islands have become Orkney, with region, ownership, and POP changes to acciompany
+	- Gave Dutch Moluccas to Hispania
+	- Added the map overlay from MishMashMapMod as the default. If you want the vanilla grid overlay, you'll have to change the file names in map/terrain (change map_overlay_tile to something else and map_overlay_tile_original to have its name)
+	- Life rating tweaks here and there
+- Added Stellaland to the GTFO decisions list
+- Tweaks to AI behaviour in events for the Netherlands in South Africa
+- New country: Albina (a sort of UK for Aengland)
+- North Ameriga, South Ameriga, and Volturnia are all now called such properly in diplomacy, map, and other screens
+- Netherlands has more troops in South Africa to make the story go better there (with a couple fewer regiments in Europe, now)
+- Relation tweaks to prevent certain wars
+- Steenkoolers have a -10 penalty to assimilating to some other culture (like Dutch) in Africa
+- Tweaked the cost of the New Brabant Purchase so it'll happen faster/more easily
+- Added a decision for a civilized country to claim the Carapara (Galapagos) Islands
+- Added a decision for the Netherlands to accept Flemish if they own Brussels and Brabant doesn't exist
+- Added a long-overdue debug decision to reduce infamy. ONLY TO BE USED WHEN IT'S MY FAULT YOU HAVE SO MUCH INFAMY, YOU WARMONGER!
+- Added a decision for Russia to remove Smolensk cores when it no longer exists and all its cores are owned by Russia, its spherelings, or countries with relations greater than 50
+- Added an event for Aquitania to react to Daufinat joining the Padan Union when invited
+- Improved South African colony events to ensure in a more elegant way that they'll always be colonies
+- Event for Hispania to declare war on Sulawesi and annex it
+- Made Bengal a vassal and ally of Hispania
+- Made Sri Lamka a vassal and ally of Aengland
+- Made Iceland a vassal and ally of Norway
+- Gave Hoyekysten an army and fiddled with its pops and regions
+- Removed some useless/buggy stuff from Great War events, more needs to be added to that file to adapt it to HtA
+- Tweaked craftsmen, factories, and an RGO or two in the countries for this update
+- Came to terms with the misspelling of 'franchise' in the game files
+- Made NNM and HtA setup decisions firable only by countries that aren't your neighbour. Hopefully there aren't any countries in any particular area that border every other country (that is, hopefully this will always fire)
+- Significantly expanded Finnish naming system and removed most Swedish/German references, since Germanic languages have had less cultural impact in this timeline
+- Gave normal starting techs to North Amerigan countries because it was ridiculous that they didn't have some very basic techs
+- Readded Doctrine of Lapse events and expanded them for all conceivable Indian masters
+- Tweaked the Establish Protectorate CB: the Nat&Imp version requires that the target has fewer than 5 states, and the Berlin Conference version fewer than 9 states. This will make it harder for Nanyue and Suryavamsi to be targeted. May still need more tweaking
+- And of course, tons of little things not worth mentioning
+
+*Bugfixes*
+
+- Localisation error fixes
+- AQT no longer gets crazy infamy (like, over the 25 limit) from the Daufinat partition
+- Same for France for attacking/conquering Brittany (problem was in how I coded things)
+- North and South Amerigan colonies-by-event/decision will now always be colonies and not states
+- Religion icons now work properly
+- Obbite migration events work properly
+- Roman Civil War chain should always fire properly now
+
+
+-------------------------------------------------------------------------------------------------
+
+
+Version 0.33 5/7/16 - The Netherlands Update
+
+*Major*
+
+* Made some colonise-by-event things give actual colonies rather than states (though in NA it doesn't work well)- It currently depends on various uncivs existing, so it may need to be changed a different unciv which survives for ages
+* Added a small decision/event chain for Aengland to annex Cymru
+* Added a slightly different Hungarian Revolution event for a democratic Bohemia, and other governments get the normal event
+* Added an extensive event chain for NGF or GER to negotiate with NET over the status of Emden
+* Added decisions for the Shawnee to inherit Iroquois and Cherokee when they civilise
+* Adaptation and changing of the Boer events from NNM and friends
+* Replaced Boer culture with new Steenkooler culture - an agglomeration of Dutch and Frisian German cultures settled in South Africa
+* Added new countries: Gosen (Steenkooler republic), Klöterland (post-colonial country)
+* Significant nerfing of Roman Empire soldier POPs fomr v0.32 (they started with 164 recruitable brigades and were destroying the rebels super easily) - Probably needs more adjustment
+* Lots of map changes and adjustments in the relevant parts of southern Africa. More needs to be done in the Africa chain of updates much later
+
+*Minor*
+
+* Nerfed colonial migration techs from +100% to +50% - let me know if you see less crazy colonial migration
+* Added a flavour event for Helvetia which gives them a nice general
+* Messed with UBD formation decisions and moved it to HtA_Baltic
+* POP adjustments in Finland, Skåne, Russia, southern Africa
+* Reduced prestige gain for Hungary. My attempts to make it be the warleader failed.
+* Made custom war names work for real
+* Some file cleanup
+* Map adjustment and lots of province renaming in SA
+* New flags for a few countries
+* Added some missing straits (Tomioka and the surrounding provinces, between the UP and LP of Michigan (for this I also extended Lake Michigan a bit so that it would be more clear which zone you have to blockade)
+* Cleaned up Hausa cores
+* Armies for Shona and Gaza
+* Slashed the number of parties in Hispania
+* And lots of small things, as always
+
+*Bugfixes*
+
+* Fixed the Croatian irredentist decision to give core on Kotor rather than a random Siberian province, thanks to NesquikScoper
+* Conditions for the event to end the Yakut War have been fixed, so it should work properly now
+* A German country can no longer use the German Hegemony CB on the Netherlands for Emden
+* The German Hegemony CB should no longer alway return territory to the original German-culture owner, but WILL return provinces which aren't a German core (such as Slesvig-Holsten)
+* The Form Zachadia decision no longer requires that its constituent countries exist
+* You will now gain cores on all of your core territory when forming Hindustan, in addition to the other gains. This decision needs to be looked at more in-depth in the India update
+
+More updates to come to fix the numerous mid- and late-game problems that I anticipate will arise from new content in this update
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+Version 0.321 22/5/16 - The Bohemian Update Bugfix 1
+
+*Minor*
+
+* Slightly nerfed the ill effects from the Eyjafjallajokul eruption, which should result in slightly less inopportune liberal revolutions. But it is meant to be a time of violent liberal resurgence
+* Changed Silesia's starting conservative party from laissez-faire to state capitalism
+* Added an event to drastically reduce Hungarian militancy after the Hungarian Revolution
+* Changed the name of Conquest wars because they were annoying me
+* Added a number of custom names for wars in this mod
+* Made militancy be drastically reduced for both sides during the Hungarian Revolution
+* Made Poland's military better. Something I was going to do for 0.32, but forgot.
+* Increased prestige gain for Hungary in the Revolution so that it might be the warleader and be able to call in more than one ally
+
+*Bugfixes*
+
+* Norway's Ovimbunduland colonisation event is no longer spammable
+* Secure Silesia decision no longer spammable or even repeatable for a given country
+* Stopped pre-Hungarian revolution events from spamming if BOH wins the Hungarian Revolution
+* Fixed the Form Zachadia decision, in theory. May need more adjustment: Now it requires either that you have the states of Bohemia, Moravia, and Slovakia entirely sphered/owned/puppeted, or, if the Treaty of Szekesfehervar has happened, merely that you also have Prague sphered/puppeted, without worrying about cores.
+
+------------------------------------------------------------------------------------------------------------
+
+Version 0.32 15/5/16 - The Bohemian Update
+
+**Major**
+
+* Events and decisions for Bohemia and nearby countries
+	* Added a new country: Prague (the Krakow of HtA)
+	* Added a new country: Syrmia (think Banat, but in the Vojvodina instead)
+	* Rebellions in Ardeal
+	* Adriatic port lease event chain
+	* Revamped Hungarian revolution with disastrous consequences for Bohemia if it loses
+	* Some flavour events and decisions
+	* And a number of other events and decisions
+	* New parties for Bohemia, Austria, Silesia, and more
+* Incorporated POP changes from /u/Rangerage, forum user Crushric, and me
+	* Extra Russian POPs past the Urals and in uncolonised territory and were replaced with indigenous POPs
+	* Many more Tatars in southern Ukraine and in the plains north of the Caucasus
+	* Tatars in Smolensk and Russia are now Orthodox in the north and Sunni in the south
+	* More Yue in Vietnam
+	* More Manchu and Mongol POPs in northern Qin
+	* More Bulgarians on the Black Sea coast
+	* French POPs in the Levant (remnant of crusader states) - May need to be changed to some other culture
+	* MANY more soldier POPs in Greece, Bulgaria, Roman Empire, Anatole, and Armenia as a means of making the Roman Civil War a bit more crazy - also makes Armenia a great power in the beginning
+	* Way fewer Czechs in Hungary
+	* Fewer South Germans in Hungary, Croatia, and Romania (that is, provinces which are owned by Austria, and besides there was less German migration ITL)
+	* Doubled POPs in Norway
+	* Some other small things
+* Incorporated and modified the RDS Mapping Project, leading to a more detailed and realistic Earth - Please let me know if you find stray pixels or broken shoreline.
+	* A bit more province shape changing in this
+* Integrated music from Victoria: Revolutions. See the Music document for more info
+* Added decisions and events for the sale of AQT's South American colonies
+* Added decisions for HOY and USR to fill in the gaps in the inner Amazon region (which is called the Jordrac River in-game)
+* Added a decision for Bavaria to annex Baden, Wurttemburg, and Elsass if they're all in its sphere after the Brunswick Congress ends
+	* Also one for fascist SGF/GER to annex a puppeted/sphered Helvetia
+* Added a decision and small event chain to transfer Emden to a post-Congress Brunswick
+* Added an event for the Roman Empire when it regains the provinces of the Tetrarchy (Rome, Constantinople, Antioch, Jerusalem, and Alexandria) 
+* Added decisions for Roman Empire to reclaim Cilicia, Italy, and the rest of the Adriatic Coast
+* Added an event for Armenia to lose cores on Anatolikon and Boukellarion, and a decision to regain them if it becomes a GP 
+* Balanced and buffed GP prestige a bit, so there should be somewhat less GP shifting in the beginning of the game
+
+**Minor**
+
+* Made Armenians in Azerbaijan Sunni
+* Gave Norway Mocamedes and Benguela in Angola as very recently-settled colonies
+	* Wrote an event for them to expand to Ondjiva and possibly Huambo, too
+* Modified the German Hegemony CB so only Great or Secondary Powers can use it (I think), also removed references to BOS in the file
+* Added decisions for a GP Italy to claim PDN and CRS
+* Added decisions a for French minor which usurps the throne of France and becomes that Kingdom to dissolve the duchies, thus removing cores and permanently uniting its original territory with that of France.
+* Added an event for France which removes cores of Bar and Lorraine when France owns all of them
+* Added a decision for Naples to significantly reduce militancy after the war. This should prevent the AI from getting swamped by Tuscan Independence rebels in the first 20 years of the game
+* Added an event for PDN to gain cores on Tuscany if it wins it in military conflict, and thus doesn't inherit it the normal way.
+* Added an event for RUS/SML that will end the Yakut War early if they have destroyed all YKT troops and either occupt Yakutsk or have 10% of YKT territory occupied
+* Added some events for Denmark and a German country to rename Lubeck if they control it. Just a little flavour for ya
+* Messed around with some events relating to AQT, DAU, PDN, and PRE, making them WAD and tweaking AI behaviour for them
+* Expanded the navy of Naples and gave it some leaders
+* Halesca is no longer Russian, Protestant, and Uncivilized if released from Hispania
+* A lot more flags redone with huge thanks to BobSagini, Necro991, and /u/firenine09
+* Finished renaming provinces and regions of South Ameriga
+* Renamed some sea provinces
+* Gave Wallonia, Brabant, and Netherlands the Machine Parts and Experimental Railroad tech, some factories
+* Did some localisation adjustments for the liberal events, renamed Jacobin rebels to Albesan rebels
+* Changed some localisation to fit the world, shortened the Canals localisation considerably and made it make sense in our world. The Panama Canal is now called the Mellom Canal.
+* Wrote history for Bohemia, Austria, and a few others
+* Changed the max relations in order to fabricate a CB be 0 instead of 100. May need further adjustment (This is currently not working on my copy, so it may not work on yours for some reason)
+* Changed the Eyjafjallajokull eruption event's modifier to mess up only European provinces, not all of a European country's holdings everywhere in the world.
+* Fiddled with the Create Italy decision to make it so that they retain their overseas holdings rather than ceding them to the creator
+* As always, lots of little things not worth mentioning
+
+**Bugfixes**
+
+* Modified the German Hegemony CB so that the AI will no longer keep the parts of Danish Slesvig-Holsten that aren't Lubeck
+* PDN and AQT no longer gets a ton of infamy from an event involving DAU (pro-tip, modders, if you have a war-by-event/-decision, the country declaring the war takes the full infamy for the wargoal unless they already have that CB. I've gone the inelegant route of simply reducing infamy for such situations, rather than adding a CB)
+* Portugal no longer spams prestige and infamy from some event/decision
+* Fixed a bug where the Create Italy decision would annex PDN to the decision taker. Now it remains outside of the newly-formed Italy
+* Changed Montenegro's tag from MON to MNT, because for some reason, MON can't be recognised by the code very well. MNT should now be able to have proper decision and event interactions, and I've re-enabled its GTFO decision now that it isn't spammy.
+* World Wars localisation bug fixed by moving the localisation file from vanilla to the mod
+* Brunswick Congress now ALWAYS finishes correctly without problems
+
+
+Version 0.31 6/3/16 - The Roman Update
+
+**Major**
+
+* Implemented decisions and events for/relating to the Roman Empire (both story and some flavour), as well as parties for countries
+* Made compatible with Beta 3.04
+* Incorporated events and decisions for Hispania (and Iberia as a whole) written by /u/ChortlingGnome
+* Decision for HIS to expand the Alaska colony to the 141st parallel, so as to cut off any other countries. AI is currently dumb and may get into the 1870s without researching Medicine, a requirement to take this decision
+* Decision for HIS to gain cores on CAT (and I've removed HIS cores on CAT at game start. Partly because it was messing with AQT AI for the scripted wars with PRE, DAU, and PDN)
+* Added a bunch of flags that were missing, replaced a lot, too
+* Event for SML/RUS to gain cores on the two uncolonised provinces, so that then RUS can use restore order if it wants. There will be further work on SML/RUS in a later update.
+* Event for the death of the childless Duke of Holsten, whose realm is inherited by Denmark
+* Event where a weak Shawnee Confederation loses its vassals in Iroquois and Cherokee, for a more dynamic eastern NA
+* Messed with Romania formation: Now there's a war where Moldavia rebels and tries to conquer Wallachia and thus form Romania
+* Added a challenge nation: The Republic of Irakleio. It is a player-only nation and should only arise when CRE and CYP break away from the Roman Empire. It got almost two dozen decisions and events to help it spread throughout the islands of the Mediterranean. GLHF
+* Made the Baleric Islands its own region with the three main islands (sorry Formentera) being their own provinces
+* A large amount of region shuffling and renaming of provinces and regions
+
+**Minor**
+
+* Added decisions to turn railroading off/on at your discretion
+* Expanded names in cultures and cleaned out a few unused cultures
+* Added cores for Maluku in the Moluccas
+* Borrowed another Siberian province and made Ternate province take up the Obi and Bacan Islands (it's funny how Ternate and Tidore aren't actually on the map), made the old Ternate become the Sula Islands (province name Lipo)
+* Made Lake St. Clair (with an Iroquois name) between Lakes Huron and Superior so that the crossing isn't blocked by ships in Huron. Took the province from somewhere in the irrelevant South Pacific
+* Gave the Dutch a trade port just south of Nagasaki. Maybe others will get trade ports in Japan one day, too (see To Do list)
+* Consolidated some localisation files from NNM and some event and decision files
+* POP adjustments in the Roman Empire and added some small Roman minorities on the Black sea coast
+* Added silk production in a few provinces in the Roman Empire and Italy (Syrallum, Corinth, Catanzaro, Lucca). ITTL, silk production wasn't totally wiped out by war in the Roman Empire. It remained somewhat important in the Italian peninsula, too
+* Also shifted some other RGOs around in southern Italy a tiny bit
+* Expanded NA colonisation events for a couple countries
+* Changed the Create Yugoslavia decision to make it make more sense (Austria cannot own any of Croatia's cores like it does at game start)
+* Increased the size of the Roman army, because before it was only using about 1/3 of its available soldier pops. Now it's closer to 2/3, drawing from pops greater than 1.5k
+* Renamed Lonko to Lonca, because it felt right. VIVA LA LONCA!
+* And a lot of other small things
+
+**Bugfixes**
+
+* South Germans can form SGF and Germany
+* Prouvenca no longer annexes Aquitania in one of the Pier Moncani events
+* No more problems with Daufinat/AQT vassal war (I hope?)
+* Brunswick Congress fixed (for real this time, I swear)
+* Califiana's colonisations work properly
+* Greater Netherlands decision now is enactable (and I deleted a parallel decision that was carried over from /gsg/Vickymod)
+
+----------------------------------------------------------------------------------------------------------------------
+
+Version 0.30 24/1/15
+
+**Major**
+
+- Major rework of the Brunswick Congress event chain and made it not spam anymore
+- Lots bugfixes with events and decisions that were not working as intended
+- Fixed vassal release decisions (gtfo)
+- Split Iceland in half so it's more viable - Now, similarly to EU3 and 4, it has two provinces: Reykjavik and Akureyri. Also separated Greenland and Iceland and added Jan Mayen to Iceland's region and ownership. Because why not?
+- Made the Boshin War work properly and removed Kaga, Sendai, and Yonezawa from the mod files, since they don't exist in-game. Still needs some work to reflect the different situation on the ground in this game compared to Vanilla
+- Added a decision for France to get cores on Bar and Lorraine, removed the decision to revoke those countries' cores because there's no history of French ownership over those lands since they were in the HRE
+- Added a decision for Portugal to claim the territory of Galicia
+- Added a decision for Russia to finish claiming Okhotsk region after subjugating the Yakuts, and an event to raise the life ratings back to normal 30-35
+- Added a decision for Aengland to claim Eire and thus unite the Northern Isles under their rule
+- Added a decision for a French minor to become France if it owns Dijon (French capital at game start) and France doesn't exist. It COULD be used more than once per game if the new France gets destroyed by yet another French minor, but that's just about impossible
+- Added a Western Slavic union nation, Zachadia, and the decision to form it, with associated events for members joining/declining, all drawn from the NNM version of Yugoslavia's formation - Applies to POL, SLS, BOH, SLV. It doesn't have any flags now, though, just the placeholder
+- Added a Ruthenian culture which is close to Ukrainian but different in that they're Catholic and have a long history of Polish rule and influence. Ruthenia is their nation and has cores in Lodomeria (Captial Halych) and Podillia
+- Added a day 1 event for humans which will result in a more predictable sequence of events for my AAR. Made it have effects on most of my custom events
+- Incorporated the Rectangular Flag Frames mod instead of including it separately
+
+**Minor**
+
+- Fixed some localisation errors and inconsistencies, including figuring out the bloody localisation changes not being recognised (Roman Empire, Maputo) - had to copy a vanilla localisation file in and change the localisations there
+- Renamed Philippines to Panaja
+- Renamed a bunch of Finnish provinces to be less Swedish
+- Renamed many provinces and regions in Mexico and Central America
+- Made provinces in Teralarga (Australia) not look so ridiculous
+- Some other province border adjustment so it's less ridiculous and makes more sense - Way too much, in fact. So many hours spent adjusting borders to match rivers, or so that regions don't look silly. Send help
+- Removed Greek cores in preparation for the Roman (Byzantine) Civil War events. We wouldn't want the Roman Empire to release a random part of Greece in a peace deal
+- Released Qinghai as a vassal of Qin, added an army for it, adjusted Qin's army accordingly
+- Added Sicily as a country with cores on the island and the toe of Italy (Reggio Calabria)
+- Removed Schleswig
+- Made the Confucian icon actually work
+- Made more Slovaks exist, added Slovak cores
+- Made more Slovenes exist, made Slovenia have cores in all of Friuli and removed Croatian ones
+- Fiddled with some POPs in Uilscyr, Hungary
+- Tried to fix the SGF formation event for this mod. Needs further testing to see if it worked
+- Added a military for Suryavamsi
+And many little things
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Version 0.28 31/12/15
+
+**Major**
+
+- Added tons of events and a few decisions, mostly for AQT-DAU-PDN and AQT-PRE
+	- Sale of Alaska, Brabant's Pacific Islands (Thanks to NNM for really reducing the workload here)
+	- Decisions for Netherlands to claim Zeeland, then the rest of Brabant.
+- Renamed regions in the British Isles
+- Made Cyrenacia a puppet under Maghreb
+- Freed many countries from Mali, made many puppets that become free in an event around 1843
+	- Also fiddled with some colonies and made some former Malian territory uncolonised
+	- Modified life rating accordingly
+- Added some text to the menu screen to indicate HtA. It'd be cool to have a proper custom menu screen.
+- Fixed tons of bugs from poor coding and planning in my decisions and events
+- Added a super-weak Yakut tribal country and a decision and event related to its subjugation and the replacement of its cores with Yakutia Republic cores
+	-The intention is to make it easier for Russia/Smolensk to colonise all of Siberia so that the map looks nicer quicker and there's less chance for an enterprising player to colonise Kamchatka or something
+
+**Minour**
+
+- Localised parties for Aengland and Aenglisc post-colonial countries, made new party names for PDN (though they have the same policies still as LOM's)
+- Changed Irish and Scots cultures to their native names
+- Removed excess craftsmen from Aengland
+- Fiddled with localisation (SOK renamed to Hausa, German Hegemony CB localisation refinished, tweaked the Grand Campaign description a bit, etc.)
+- Added army for Mali
+- Gave Naples a colony in Saint-Louis (Senegal), Scotland on the coast in Liberia or something, Hispania got a little more, Singapore no longer non-colonial
+- Renamed Byzantine Empire to Roman Empire and did a couple other small localisation things, fixed BYZ flags to be most of those from SPQ (though there's still the bit about how the monarchy flag hasn't the ERE emblem in the middle, but the WRE)
+- Fiddled with names for some cultures, particularly Finnish, Ugrian (which can be imagined to contain Karelian and other further-flung dialects in the Finno-Ugrian family/continuum)
+- Got rid of Linyati (Caprivi Strip) (from OTL Namibia) and made some other nearby provinces less ridiculous. Renamed Linyati to Ghanzi, Lourenco Marques province and region to Maputo
+- Added some silk cultivation into Prouvenca

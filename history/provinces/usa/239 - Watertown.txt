@@ -1,0 +1,6 @@
+owner = VST
+controller = VST
+add_core = VST
+trade_goods = iron
+life_rating = 35
+

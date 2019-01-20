@@ -1,0 +1,31 @@
+AQT = {
+	value = 150
+}
+FRA = {
+	value = -100
+}
+
+army = {
+	name = "Breizh Arme"
+	location = 420
+	regiment = {
+		name = "1. Troadegiezh"
+		type = infantry
+		home = 420
+	}
+	regiment = {
+		name = "2. Troadegiezh"
+		type = infantry
+		home = 421
+	}
+	regiment = {
+		name = "3. Troadegiezh"
+		type = infantry
+		home = 424
+	}
+	regiment = {
+		name = "1. Kanolierezh"
+		type = artillery
+		home = 422
+	}
+}

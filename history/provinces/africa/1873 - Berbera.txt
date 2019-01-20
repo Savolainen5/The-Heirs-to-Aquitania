@@ -1,0 +1,8 @@
+owner = WRS
+controller = WRS
+add_core = WRS
+add_core = MAJ
+add_core = GEL
+trade_goods = cotton
+life_rating = 30
+

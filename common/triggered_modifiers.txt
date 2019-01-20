@@ -1,0 +1,153 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+
+dutch_east_india = {
+	trigger = {
+		1413 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1418 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+	}
+	research_points = 0.5
+	prestige = 0.01
+	icon = 19
+}
+
+vassal_nation = {
+	trigger = {
+		is_vassal = yes
+	}
+	icon = 10
+	prestige = -0.1
+}
+
+chinese_substate = {
+	trigger = {
+		OR = {
+			substate_of = QIN
+			vassal_of = QIN
+		}
+		civilized = no
+		QIN = {	government = absolute_monarchy }
+	}
+	icon = 10
+	research_points_modifier = -0.2
+	global_pop_consciousness_modifier = 0.05
+}
+
+#Added into HtA from PDM via Divergences
+
+grand_navy = {
+	trigger = {
+	civilized = yes
+	total_amount_of_ships = 100
+	}
+	prestige = 0.01
+	icon = 9
+}
+
+grand_army = {
+	trigger = {
+	total_amount_of_divisions = 100
+	civilized = yes
+	}
+	icon = 9
+	prestige = 0.01
+}
+
+
+
+city_state = {
+
+	trigger = {
+
+		NOT = {
+
+			num_of_cities = 2
+
+		}
+
+	}
+
+	icon = 10
+
+	prestige = -0.05
+
+}
+
+
+
+small_nation = {
+
+	trigger = {
+
+		civilized = yes
+
+		num_of_cities = 2
+
+		NOT = {
+
+			num_of_cities = 8
+
+		}
+
+	}
+
+	icon = 10
+
+	prestige = -0.025
+
+}
+
+
+
+large_nation = {
+
+	trigger = {
+
+		civilized = yes
+
+		num_of_cities = 50
+
+		NOT = {
+
+			num_of_cities = 100
+
+		}
+
+	}
+
+	icon = 9
+
+	prestige = 0.025
+
+}
+
+
+
+sprawling_empire = {
+
+	trigger = {
+
+		civilized = yes
+
+		num_of_cities = 100
+
+	}
+
+	icon = 9
+
+	prestige = 0.05
+
+}
+
+#New to HtA
+
+#One for French revanchism?

@@ -1,0 +1,143 @@
+BYZ = {
+	value = -50
+}
+
+army = {
+	name = "Army of Hayastan"
+	location = 1098
+	regiment = {
+		name= "1-1 Hayastan Guard"
+		type = infantry
+		home = 1098
+	}
+	regiment = {
+		name= "1-2 Hayastan Guard"
+		type = infantry
+		home = 885
+	}
+	regiment = {
+		name= "1-3 Hayastan Guard"
+		type = infantry
+		home = 886
+	}
+	regiment = {
+		name= "1-4 Hayastan Guard"
+		type = infantry
+		home = 887
+	}
+	regiment = {
+		name= "2-2 Hayastan Guard"
+		type = artillery
+		home = 1098
+	}
+	regiment = {
+		name= "2-3 Hayastan Guard"
+		type = artillery
+		home = 882
+	}
+	regiment = {
+		name= "2-1 Hayastan Guard"
+		type = cuirassier
+		home = 887
+	}
+}
+
+army = {
+	name = "Army of Trapizon"
+	location = 888
+	regiment = {
+		name= "1-1 Line Infantry"
+		type = infantry
+		home = 888
+	}
+	regiment = {
+		name= "1-2 Line Infantry"
+		type = infantry
+		home = 888
+	}
+	regiment = {
+		name= "1-3 Line Infantry"
+		type = infantry
+		home = 879
+	}
+	regiment = {
+		name= "1-4 Line Infantry"
+		type = infantry
+		home = 887
+	}
+	regiment = {
+		name= "1-5 Line Infantry"
+		type = infantry
+		home = 873
+	}
+	regiment = {
+		name= "1-6 Line Infantry"
+		type = infantry
+		home = 874
+	}
+	regiment = {
+		name= "1-1 Artillery Division"
+		type = artillery
+		home = 888
+	}
+	regiment = {
+		name= "1-2 Artillery Division"
+		type = artillery
+		home = 882
+	}
+	regiment = {
+		name= "1-3 Artillery Division"
+		type = artillery
+		home = 884
+	}
+}
+
+army = {
+	name = "1. Cavalry Guards"
+	location = 878
+	regiment = {
+		name= "1. Cavalry Guards"
+		type = hussar
+		home = 879
+	}
+	regiment = {
+		name= "2. Cavalry Guards"
+		type = hussar
+		home = 879
+	}
+	regiment = {
+		name= "3. Cavalry Guards"
+		type = cavalry
+		home = 878
+	}
+	regiment = {
+		name= "4. Cavalry Guards"
+		type = cavalry
+		home = 876
+	}
+	regiment = {
+		name= "5. Cavalry Guards"
+		type = cavalry
+		home = 875
+	}
+	regiment = {
+		name= "6. Cavalry Guards"
+		type = cavalry
+		home = 876
+	}
+}
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	threat = { id="BYZ" value=200 }
+
+	antagonize = { id="BYZ" value=200 }
+
+	rival = { id="BYZ" value=200 }
+}
+

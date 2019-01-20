@@ -1,0 +1,65 @@
+BAD = { value = -175 truce_until = 1840.4.13 }
+BAV = {	value = -175 truce_until = 1840.4.13 }
+WUR = { value = -175 truce_until = 1840.4.13 }
+BRA = { value = 125 }
+THU = { value = 140 }
+POM = {	value = 155
+	level = 5
+	influence_value = 10
+}
+
+MEC = {	value = 125
+	level = 5
+	influence_value = 15
+}
+
+
+army = {
+	name = "Brandenburgische Armee"
+	location = 549
+	regiment = {
+		name = "I Infanterie-Regiment"
+		type = infantry
+		home = 549
+	}
+	regiment = {
+		name = "II Infanterie-Regiment"
+		type = infantry
+		home = 550
+	}
+	regiment = {
+		name = "III Infanterie-Regiment"
+		type = infantry
+		home = 551
+	}
+	regiment = {
+		name = "I Reiter-Regiment"
+		type = hussar
+		home = 552
+	}
+	regiment = {
+		name = "I Artillerie-Regiment"
+		type = artillery
+		home = 681
+	}
+	regiment = {
+		name = "II Artillerie-Regiment"
+		type = artillery
+		home = 556
+	}
+}
+
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	befriend = { id="BRA" value=50 }
+
+	rival = { id="BAV" value = 125 }
+
+	antagonize = { id="BOH" value=50 }
+}

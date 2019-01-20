@@ -1,0 +1,7 @@
+owner = GLC
+controller = GLC
+add_core = GLC
+add_core = HIS
+trade_goods = fish
+life_rating = 35
+

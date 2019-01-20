@@ -1,0 +1,9 @@
+owner = AEN
+controller = AEN
+add_core = AEN
+add_core = KER
+trade_goods = fish
+life_rating = 35
+naval_base = 2
+
+

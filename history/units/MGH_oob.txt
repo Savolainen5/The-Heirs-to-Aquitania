@@ -1,0 +1,238 @@
+CYR = {
+	value = 150
+}
+
+army = {
+	name = "Army of the Bashaw of Tripoli"
+	location = 1733
+	regiment = {
+		name= "7. Sipahis"
+		type = cavalry
+		home = 1733
+	}
+
+	regiment = {
+		name= "8. Sipahis"
+		type = cavalry
+		home = 1731
+	}
+}
+
+army = {
+	name = "Army of the Bey of Tunis"
+	location = 1725
+	regiment = {
+		name= "1.Askäris"
+		type = infantry
+		home = 1725
+	}
+
+	regiment = {
+		name= "2.Askäris"
+		type = infantry
+		home = 1725
+	}
+
+	regiment = {
+		name= "3.Askäris"
+		type = infantry
+		home = 1726
+	}
+
+}
+
+army = {
+	name = "Army of Ifriqiya"
+	location = 1730
+	regiment = {
+		name= "1.Kroumir"
+		type = irregular
+		home = 1727
+	}
+
+	regiment = {
+		name= "2.Kroumir"
+		type = irregular
+		home = 1728
+	}
+
+	regiment = {
+		name= "3.Kroumir"
+		type = irregular
+		home = 1730
+	}
+
+}
+
+army = {
+	name = "Army of Morocco"
+	location = 1681
+	regiment = {
+		name= "1. Infantry Brigade 'Askäria'"
+		type = irregular
+		home = 1680
+	}
+
+	regiment = {
+		name= "2. Infantry Brigade"
+		type = irregular
+		home = 1681
+	}
+
+	regiment = {
+		name= "3. Infantry Brigade"
+		type = irregular
+		home = 1682
+	}
+
+}
+
+army = {
+	name = "Army of the Atlas"
+	location = 1684
+	regiment = {
+		name= "4. Infantry Brigade 'Ait 'Atta'"
+		type = irregular
+		home = 1683
+	}
+
+	regiment = {
+		name= "5. Infantry Brigade"
+		type = irregular
+		home = 1688
+	}
+
+	regiment = {
+		name= "6. Infantry Brigade 'Ait Mnad'"
+		type = irregular
+		home = 1694
+	}
+}
+
+army = {
+	name = "Army of Sahara"
+	location = 1698
+	regiment = {
+		name= "7. Infantry Brigade 'Dawi Mani'"
+		type = irregular
+		home = 1690
+	}
+
+	regiment = {
+		name= "8. Infantry Brigade 'Sahrawi'"
+		type = irregular
+		home = 2563
+	}
+
+	regiment = {
+		name= "9. Infantry Brigade"
+		type = irregular
+		home = 1691
+	}
+
+}
+
+army = {
+	name = "Army of the Rif"
+	location = 1686
+	regiment = {
+		name= "10. Infantry Brigade"
+		type = irregular
+		home = 1686
+	}
+
+	regiment = {
+		name= "11. Infantry Brigade"
+		type = irregular
+		home = 1687
+	}
+
+	regiment = {
+		name= "12. Infantry Brigade"
+		type = irregular
+		home = 1685
+	}
+
+}
+
+army = {
+	name = "Army of the Bey of Algiers"
+	location = 1700
+	regiment = {
+		name= "1.Askäris"
+		type = infantry
+		home = 1707
+	}
+
+	regiment = {
+		name= "2.Askäris"
+		type = irregular
+		home = 1702
+	}
+
+	regiment = {
+		name= "3.Askäris"
+		type = irregular
+		home = 1705
+	}
+
+	regiment = {
+		name= "1.Spahis"
+		type = cavalry
+		home = 1705
+	}
+
+	regiment = {
+		name= "2.Spahis"
+		type = cavalry
+		home = 1715
+	}
+
+	regiment = {
+		name= "3.Spahis"
+		type = cavalry
+		home = 1713
+	}
+
+}
+
+army = {
+	name = "Army of the Bey of Constantine"
+	location = 1708
+	regiment = {
+		name= "4.Askäris"
+		type = irregular
+		home = 1708
+	}
+
+	regiment = {
+		name= "5.Askäris"
+		type = irregular
+		home = 1703
+	}
+
+	regiment = {
+		name= "6.Askäris"
+		type = irregular
+		home = 1702
+	}
+
+	regiment = {
+		name= "7.Askäris"
+		type = irregular
+		home = 1703
+	}
+
+	regiment = {
+		name= "3.Spahis"
+		type = irregular
+		home = 1708
+	}
+
+	regiment = {
+		name= "4.Spahis"
+		type = irregular
+		home = 1710
+	}
+
+}

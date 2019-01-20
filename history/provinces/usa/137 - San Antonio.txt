@@ -1,0 +1,8 @@
+owner = GNC
+controller = GNC
+add_core = GNC
+trade_goods = cattle
+life_rating = 35
+#No Alamo here, this is Ginnaecer!
+naval_base = 1
+

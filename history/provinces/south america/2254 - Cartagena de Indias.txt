@@ -1,0 +1,8 @@
+owner = HOY
+controller = HOY
+add_core = HOY
+trade_goods = coffee
+life_rating = 35
+naval_base = 1
+fort = 1
+

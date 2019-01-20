@@ -1,0 +1,1192 @@
+#Events relating directly to DAU, mostly in relation with their neighbours, PDN and AQT
+#Death of Duke Guigues XI of Dauphine - spawns events 50027-33
+country_event = {
+	id = 50027
+	title = "EVTNAME50027"
+	desc = "EVTDESC50027"
+	picture = "leopold_von_hohenzollern"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		year = 1842
+		tag = DAU
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "He chose his nephew, Amedeo Morecini"
+		set_global_flag = DAU_Morecini
+		set_global_flag = RIP_Guigues
+		PDN = {
+			country_event = {
+				id = 50028
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 2
+				relation = {
+					who = PDN
+					value = 150
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					relation = {
+						who = PDN
+						value = 50
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					relation = {
+						who = PDN
+						value = -50
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "He chose his cousin, Guiges de Mauguio"
+		set_global_flag = DAU_Mauguio
+		set_global_flag = RIP_Guigues
+		AQT = {
+			country_event = {
+				id = 50030
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 2
+				relation = {
+					who = AQT
+					value = 150
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					relation = {
+						who = AQT
+						value = 50
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					relation = {
+						who = AQT
+						value = -50
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "He chose his second cousin, Aymon de Buonavi"
+		set_global_flag = DAU_Buonavi
+		set_global_flag = RIP_Guigues
+		#AND MORE - no potential allies, AQT may try to press claim of nephew######################################################
+		AQT = {
+			country_event = {
+				id = 50032
+				days = 1
+			}
+		}
+		PDN = {
+			country_event = {
+				id = 50033
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+#Event that PDN (or LOM if no PDN) gets upon death of Guiges when they choose to support Morecini
+country_event = {
+	id = 50028
+	title = "EVTNAME50028"
+	desc = "EVTDESC50028"
+	picture = "administration" #PICK A PROPER PICTURE FOR THIS
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great news! Keep him on a short leash!"
+		create_vassal = DAU
+		create_alliance = DAU
+		relation = {
+			who = DAU
+			value = 300
+		}
+		AQT = {
+			country_event = {
+				id = 50031
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "Good for him!"
+		create_alliance = DAU
+		relation = {
+			who = DAU
+			value = 300
+		}
+		AQT = {
+			country_event = {
+				id = 50031
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+	
+
+#Event that PDN gets if they choose to support AQT's candidate - 50029
+
+country_event = {
+	id = 50029
+	title = "EVTNAME50029"
+	desc = "EVTDESC50029"
+	picture = "administration" #PICK A PROPER PICTURE FOR THIS
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "No matter."
+		
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	option = {
+		name = "Bide our time."
+		casus_belli = {
+			target = DAU
+			type = make_puppet
+			months = 60
+		}
+		badboy = 2
+		
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "We cannot pass up this opportunity! To war!"
+		casus_belli = {
+			target = DAU
+			type = make_puppet
+			months = 60
+		}
+		war = {
+			target = DAU
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		badboy = 4
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 3
+				ruling_party_ideology = reactionary
+			}
+		}
+	}
+}
+
+#Event that AQT gets if they choose to support de Mauguio - 50030
+
+country_event = {
+	id = 50030
+	title = "EVTNAME50030"
+	desc = "EVTDESC50030"
+	picture = "administration" #PICK A PROPER PICTURE FOR THIS
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great news! Keep him on a short leash!"
+		create_vassal = DAU
+		create_alliance = DAU
+		relation = {
+			who = DAU
+			value = 300
+		}
+		PDN = { 
+			country_event = {
+				id = 50029
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "Good for him!"
+		create_alliance = DAU
+		relation = {
+			who = DAU
+			value = 300
+		}
+		PDN = { 
+			country_event = {
+				id = 50029
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#Event that AQT gets if they choose to support PDN's candidate - 50031
+
+country_event = {
+	id = 50031
+	title = "EVTNAME50031"
+	desc = "EVTDESC50031"
+	picture = "administration" #PICK A PROPER PICTURE FOR THIS
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "No matter."
+		
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	option = {
+		name = "Bide our time."
+		casus_belli = {
+			target = DAU
+			type = make_puppet
+			months = 60
+		}
+		badboy = 5
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	option = {
+		name = "We cannot pass up this opportunity! To war!"
+		casus_belli = {
+			target = DAU
+			type = make_puppet
+			months = 60
+		}
+		war = {
+			target = DAU
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		badboy = 5
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 3
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.78
+			}
+		}
+	}
+}
+
+#Event that AQT and PDN get if DAU choose to support Aymon- 50032 (AQT) and 50033 (PDN)
+
+country_event = {
+	id = 50032
+	title = "EVTNAME50032"
+	desc = "EVTDESC50032"
+	picture = "administration" #PICK A PROPER PICTURE FOR THIS
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "No matter."
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				NOT = { military_score = 25 }
+			}
+			modifier = {
+				factor = 1.25
+				war = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "Bide our time."
+		casus_belli = {
+			target = DAU
+			type = make_puppet
+			months = 60
+		}
+		badboy = 5
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	option = {
+		name = "We cannot pass up this opportunity! To war!"
+		casus_belli = {
+			target = DAU
+			type = make_puppet
+			months = 60
+		}
+		war = {
+			target = DAU
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		badboy = 5
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 3
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 0
+				war = yes
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.78
+			}
+			modifier = {
+				factor = 0.5
+				DAU = { alliance_with = BAV }
+			}
+			modifier = {
+				factor = 0.5
+				DAU = { alliance_with = NPL }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 50033
+	title = "EVTNAME50033"
+	desc = "EVTDESC50033"
+	picture = "administration" #PICK A PROPER PICTURE FOR THIS
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "No matter."
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				NOT = { military_score = 25 }
+			}
+			modifier = {
+				factor = 1.25
+				war = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "Bide our time."
+		casus_belli = {
+			target = DAU
+			type = make_puppet
+			months = 60
+		}
+		badboy = 5
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	option = {
+		name = "We cannot pass up this opportunity! To war!"
+		casus_belli = {
+			target = DAU
+			type = make_puppet
+			months = 60
+		}
+		war = {
+			target = DAU
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		badboy = 5
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 3
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 0
+				war = yes
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.78
+			}
+		}
+	}
+}
+
+#Event AI Daufinat receives when invited into PDN
+country_event = {
+	id = 50037
+	title = "EVTNAME50037"
+	desc = "EVTDESC50037"
+	picture = "meeting"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We are not interested in joining."
+		prestige = 5
+		PDN = {
+			country_event = {
+				id = 50039 #DAU refuses to join
+				days = 1
+			}
+		} 
+		set_global_flag = No_DAU_in_PDN
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+					part_of_sphere = yes
+					NOT = { in_sphere = PDN }
+			}
+			modifier = {
+				factor = 0.1
+				relation = {
+					who = FROM
+					value = 150
+				}
+			}
+		}
+	}
+	option = {
+		name = "We will gladly join!"
+		PDN = { country_event = 50049 } #Daufinat accepts
+		set_global_flag = DAU_in_PDN
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				in_sphere = PDN
+			}
+			modifier = {
+				factor = 1.1
+				relation = {
+					who = FROM
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 1.3
+				relation = {
+					who = FROM
+					value = 150
+				}
+			}
+			modifier = {
+				factor = 1.5
+				relation = {
+					who = FROM
+					value = 200
+				}
+			}
+			modifier = {
+				factor = 100
+				vassal_of = FROM
+			}
+		}
+	}
+}
+
+#Event human Daufinat receives when invited into PDN
+country_event = {
+	id = 50038
+	title = "EVTNAME50037"
+	desc = "EVTDESC50037"
+	picture = "meeting"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We are not interested in joining."
+		prestige = 5
+		PDN = { 
+			country_event = {
+				id = 50039 #DAU refuses to join
+				days = 1
+			}
+		} 
+	}
+	option = {
+		name = "We will gladly join!"
+		change_tag = PDN
+		prestige = 5
+		DAU = {
+			any_owned = { secede_province = PDN }
+			all_core = { add_core = PDN }
+		}
+		set_global_flag = DAU_in_PDN
+	}
+}
+
+#DAU refuses to join
+country_event = {
+	id = 50039
+	title = "EVTNAME50039"
+	desc = "EVTDESC50039"
+	picture = "meeting"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		DAU = { clr_country_flag = considering_PDN }
+		set_global_flag = No_DAU_in_PDN
+	}
+	
+	option = {
+		name = "Alas!"
+		prestige = -5
+		ai_chance = {
+			factor = 75
+		}
+	}
+	option = {
+		name = "They will join, whether they like it or not!"
+		badboy = 5
+		relation = {
+			who = DAU
+			value = -100
+		}
+		casus_belli = {
+			target = DAU
+			type = conquest
+			months = 120
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+#######################################################################################
+#Event PDN receives when negotiating with AQT over the partition of an independent DAU#
+country_event = {
+	id = 50040
+	title = "EVTNAME50040"
+	desc = "EVTDESC50040"
+	picture = "meeting"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Agree to the partition."
+		prestige = 5
+		badboy = 5
+		AQT = {
+			country_event = {
+				id = 50041
+				days = 1
+			}
+		}
+		create_alliance = AQT
+		relation = {
+			who = AQT
+			value = 100
+		}
+		set_country_flag = partition_DAU
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	option = {
+		name = "We have no interest in violating the territorial integrity of Daufinat."
+		prestige = 5
+		badboy = -1
+		AQT = {
+			country_event = {
+				id = 50042
+				days = 1
+			}
+		}
+		set_country_flag = no_partition_DAU
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#Event AQT receives after PDN agrees to partition DAU
+country_event = {
+	id = 50041
+	title = "EVTNAME50041"
+	desc = "EVTDESC50041"
+	picture = "meeting"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Inform the Duke of our decision."
+		prestige = 5
+		DAU = {
+			country_event = {
+				id = 50043
+				days = 1
+			}
+		}
+		set_country_flag = partition_DAU
+	}
+}
+
+#Event AQT receives after PDN turns down the offer of partition
+country_event = {
+	id = 50042
+	title = "EVTNAME50042"
+	desc = "EVTDESC50042"
+	picture = "meeting"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Well, more for us!"
+		prestige = 3
+		casus_belli = {
+			type = conquest
+			target = DAU
+			months = 6
+		}
+		war = {
+			target = DAU
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		ai_chance = {
+			factor = 85
+		}
+		set_country_flag = no_partition_DAU_war
+	}
+	
+	option = {
+		name = "On second thought, maybe not."
+		prestige = -5
+		badboy = 1
+		ai_chance = {
+			factor = 15
+		}
+		set_country_flag = no_partition_DAU
+	}
+}
+
+#DAU receives word from AQT about partition
+country_event = {
+	id = 50043
+	title = "EVTNAME50043"
+	desc = "EVTDESC50043"
+	picture = "meeting"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Resist, no matter how futile!"
+		prestige = 5
+		AQT = { 
+			country_event = {
+				id = 50044
+				days = 1
+			}
+		}
+		set_country_flag = resist_partition
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				num_of_allies = 3
+			}
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "I will not see my people slaughtered needlessly. Acquiesce."
+		prestige = -50
+		AQT = { 
+			country_event = {
+				id = 50045
+				days = 1
+			}
+		}
+		set_country_flag = acquiesce_to_partition
+		ai_chance = {
+			factor = 75
+		}
+	}
+}
+
+#Daufinat will resist partition
+country_event = {
+	id = 50044
+	title = "EVTNAME50044"
+	desc = "EVTDESC50044"
+	picture = "meeting"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This is what we've been preparing for!"
+		prestige = 3
+		create_alliance = PDN
+		casus_belli = {
+			target = DAU
+			type = conquest
+			months = 3
+		}
+		war = {
+			target = DAU
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			call_ally = yes
+		}
+		set_country_flag = partition_war_in_progress
+	}
+}
+
+#Peaceful partition of Daufinat
+country_event = {
+	id = 50045
+	title = "EVTNAME50045"
+	desc = "EVTDESC50045"
+	picture = "meeting"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent! Proceed with the partition!"
+		prestige = 10
+		DAU = {
+			any_owned = {
+				limit = { has_pop_culture = north_italian } #Cisalpine
+				secede_province = PDN
+				add_core = PDN
+			}
+			any_owned = {
+				secede_province = AQT
+				add_core = AQT
+			}
+		}
+		set_country_flag = DAU_partition_success
+		clr_country_flag = DAU_partition
+		PDN = { 
+			country_event = {
+				id = 50046
+				days = 1
+			}
+		}
+	}
+}
+
+#PDN receives notification of partition
+country_event = {
+	id = 50046
+	title = "EVTNAME50045"
+	desc = "EVTDESC50046"
+	picture = "meeting"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Truly a great day for the Cisalpine people!"
+		prestige = 10
+		set_country_flag = DAU_partition_success
+		clr_country_flag = DAU_partition
+	}
+}
+
+#After successful conquest of DAU by AQT, proceed with partitioning and coring
+country_event = {
+	id = 50047
+	title = "EVTNAME50047"
+	desc = "EVTDESC50047"
+	picture = "meeting"
+	
+	trigger = {
+		tag = AQT
+		has_country_flag = partition_war_in_progress
+		DAU = { all_core = { owned_by = AQT } }
+		DAU = { exists = no }
+		war = no
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = "Proceed with the partitioning as planned."
+		prestige = 10
+#		any_owned = {
+#			limit = { is_core = DAU pop_majority_culture = north_italian } #Cisalpine
+#			secede_province = PDN
+#			add_core = PDN
+#	This above bit is the old way, but I didn't like how it tended to split up Savoie, so I decided to just make sure that AQT gets it every time for nicer borders
+		533 = { secede_province = PDN add_core = PDN } # Coni
+		609 = { secede_province = PDN add_core = PDN } # Sion
+		720 = { secede_province = PDN add_core = PDN } # Turin
+		721 = { secede_province = PDN add_core = PDN } # Aouta
+		722 = { secede_province = PDN add_core = PDN } # Noara
+		any_owned = {
+			limit = { is_core = DAU }
+			add_core = AQT
+		}
+		set_country_flag = DAU_partition_success
+		clr_country_flag = DAU_partition
+		clr_country_flag = partition_war_in_progress
+		PDN = {
+			country_event = {
+				id = 50046
+				days = 1
+			}
+		}
+	}
+}
+
+#Event to inherit DAU if it's a puppet of PDN or AQT
+country_event = {
+	id = 50048
+	title = "EVTNAME50048"
+	desc = "EVTDESC50048"
+	picture = "meeting"
+	
+	trigger = {
+		DAU = { vassal_of = THIS }
+		year = 1860
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+	}
+	
+	option = {
+		name = "We will assume control for the good of all."
+		badboy = 2
+		prestige = 2
+		inherit = DAU
+		DAU = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "It is of no concern to us."
+		prestige = 2
+		release_vassal = DAU
+		DAU = {
+			relation = {
+				who = THIS
+				value = -150
+			}
+			leave_alliance = THIS
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#Event PDN receives when DAU accepts an invitation into PDN	
+country_event = {
+	id = 50049
+	title = "EVTNAME50049"
+	desc = "EVTDESC50049"
+	picture = "meeting"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great news!"
+		prestige = 10
+		inherit = DAU
+		DAU = {
+			all_core = {
+				add_core = THIS
+				remove_core = DAU
+			}
+		}
+		AQT = {
+			country_event = {
+				id = 50220
+				days = 1
+			}
+		}
+	}
+}
+
+#Event DAU receives when AQT forces democracy
+country_event = {
+	id = 51600
+	title = "EVTNAME51600"
+	desc = "EVTDESC51600"
+	picture = "storming_palace"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We cannot stand against both our own people and Aquitània's."
+		prestige = -5
+		government = democracy
+		election = yes
+		ruling_party_ideology = liberal
+		political_reform = universal_voting
+		political_reform = state_equal_weight
+		political_reform = jefferson_method
+		political_reform = yes_meeting
+		political_reform = censored_press
+		political_reform = non_socialist
+		political_reform = gerrymandering
+		social_reform = twelve_hours
+		social_reform = low_schools
+		any_pop = {
+			militancy = -7
+			consciousness = -4
+		}
+		FROM = {
+			country_event = {
+				id = 51601
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "We will die to defend what is ours!"
+		relation = {
+			who = FROM
+			value = -50
+		}
+		FROM = {
+			country_event = {
+				id = 51602
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+	
+#AQT receives word of successful transition
+country_event = {
+	id = 51601
+	title = "EVTNAME51601"
+	desc = "EVTDESC51601"
+	picture = "election_win"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We welcome them with open arms."
+		relation = {
+			who = FROM
+			value = 20
+		}
+		diplomatic_influence = {
+			who = FROM
+			value = 20
+		}
+		prestige = 2
+	}
+}
+
+#DAU Refuses, AQT decides whether to go to war
+country_event = {
+	id = 51602
+	title = "EVTNAME51602"
+	desc = "EVTDESC51602"
+	picture = "deliberation"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The Revolution will be spread with the sword, then."
+		add_casus_belli = {
+			target = DAU
+			type = install_democracy
+			months = 6
+		}
+		war = {
+			target = DAU
+			attacker_goal = { casus_belli = install_democracy }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = no
+		}
+		
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0
+				NOT = { military_score = 20 }
+			}
+		}
+	}
+	
+	option = {
+		name = "We must stabilise the republic first."
+		prestige = -10
+		relation = {
+			who = FROM
+			value = -20
+		}
+		any_pop = {
+			militancy = 1
+		}
+		
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+country_event = {
+	id = 51603
+	title = "The War Cannot Continue"
+	desc = "As Daufinat has joined the Padanians, we cannot claim to wage war directly against their country."
+
+	trigger = {
+		tag = AQT
+		war_with = DAU
+		NOT = { exists = DAU }
+		454 = { owned_by = PDN }
+	}
+
+	option = {
+		name = "Let us take the war to the Padanese."
+		end_war = DAU
+	}
+}

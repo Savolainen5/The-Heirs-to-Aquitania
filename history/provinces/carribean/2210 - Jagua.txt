@@ -1,0 +1,7 @@
+owner = HIS
+controller = HIS
+add_core = CUB
+trade_goods = tobacco
+#sugar
+life_rating = 35
+colonial = 2

@@ -1,0 +1,4 @@
+add_core = CLF
+trade_goods = iron
+life_rating = 25
+

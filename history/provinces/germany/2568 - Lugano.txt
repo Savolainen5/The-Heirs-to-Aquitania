@@ -1,0 +1,7 @@
+owner = LOM
+controller = LOM
+add_core = LOM
+trade_goods = wool
+life_rating = 35
+
+

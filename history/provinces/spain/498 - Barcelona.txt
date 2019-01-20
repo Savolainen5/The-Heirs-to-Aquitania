@@ -1,0 +1,12 @@
+owner = CAT
+controller = CAT
+add_core = CAT
+trade_goods = cattle
+life_rating = 40
+naval_base = 2
+state_building = {
+	level = 2 
+	building = fabric_factory
+	upgrade = yes
+}
+

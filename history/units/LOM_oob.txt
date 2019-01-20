@@ -1,0 +1,33 @@
+NPL = {
+	value = -95
+}
+
+army = {
+	name = "Esercito di Lombardia"
+	location = 726
+	regiment = {
+		name = "1. Fanteria di Linea"
+		type = infantry
+		home = 726
+	}
+	regiment = {
+		name = "2. Fanteria di Linea"
+		type = infantry
+		home = 728
+	}
+	regiment = {
+		name = "3. Fanteria di Linea"
+		type = infantry
+		home = 727
+	}
+	regiment = {
+		name = "1. Artigleria"
+		type = artillery
+		home = 726
+	}
+	regiment = {
+		name = "2. Artigleria"
+		type = artillery
+		home = 2568
+	}
+}

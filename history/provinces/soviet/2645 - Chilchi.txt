@@ -1,0 +1,6 @@
+owner = YKT
+controller = YKT
+add_core = YKT
+trade_goods = coal
+life_rating = 35
+

@@ -1,0 +1,18 @@
+BAD = {
+	value = -175
+}
+BAV = {
+	value = -175
+}
+WUR = {
+	value = -175
+}
+army = {
+	name = "Armee von Trier"
+	location = 572
+	regiment = {
+		name = "1. Trierische Infanteriebrigade"
+		type = infantry
+		home = 572
+	}
+}

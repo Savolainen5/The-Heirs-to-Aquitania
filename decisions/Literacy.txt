@@ -1,0 +1,224 @@
+political_decisions = {
+	literacy_AUS = {
+		potential = {
+			tag = AUS
+			always = no
+		}
+		
+		allow = {
+			tag = AUS
+		}
+		
+		effect = {
+			any_pop = {
+				limit = { has_pop_culture = north_italian }
+				literacy = 0.20
+			}
+			any_pop = {
+				limit = { has_pop_culture = slovak }
+				literacy = 0.02
+			}
+			any_pop = {
+				limit = { has_pop_culture = slovene }
+				literacy = 0.05
+			}
+		}
+	}
+	
+	literacy_EGY = {
+		potential = {
+			tag = EGY
+			always = no
+		}
+		
+		allow = {
+			tag = EGY
+		}
+		
+		effect = {
+			any_pop = {
+				limit = { has_pop_culture = kurdish }
+				literacy = 0.02
+			}
+			any_pop = {
+				limit = { has_pop_culture = tigray }
+				literacy = 0.05
+			}
+		}
+	}
+	
+	literacy_ENG = {
+		potential = {
+			tag = HIS
+			always = no
+		}
+		
+		allow = {
+			tag = HIS
+		}
+		
+		effect = {
+			any_pop = {
+				limit = {
+					location = { is_colonial = yes }
+					is_primary_culture = no
+					NOT = { is_culture_group = south_asian }
+				}
+				literacy = -0.05
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = yes
+					location = { province_id = 489 }
+				}
+				literacy = 0.05
+			}
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = asian_minor
+						has_pop_culture = african_minor
+					}
+				}
+				literacy = -0.03
+			}
+		}
+	}
+	
+	literacy_FRA = {
+		potential = {
+			tag = AEN
+			always = no
+		}
+		
+		allow = {
+			tag = AEN
+		}
+		
+		effect = {
+			any_pop = {
+				limit = {
+					location = { is_colonial = yes }
+					is_primary_culture = no
+				}
+				literacy = -0.10
+			}
+		}
+	}
+	
+	literacy_NET = {
+		potential = {
+			tag = NET
+			always = no
+		}
+		
+		allow = {
+			tag = NET
+		}
+		
+		effect = {
+			any_pop = {
+				limit = {
+					location = { is_colonial = yes }
+					is_primary_culture = no
+				}
+				literacy = -0.05
+			}
+			any_pop = {
+				limit = { has_pop_culture = ashkenazi }
+				literacy = 0.25
+			}
+			any_pop = {
+				limit = { has_pop_culture = north_german }
+				literacy = 0.30
+			}
+			any_pop = {
+				limit = { has_pop_culture = asian_minor }
+				literacy = -0.03
+			}
+		}
+	}
+	
+	
+	literacy_PRU = {
+		potential = {
+			tag = BRC
+			always = no
+		}
+		
+		allow = {
+			tag = BRC
+		}
+		
+		effect = {
+			any_pop = {
+				limit = { has_pop_culture = ashkenazi }
+				literacy = 0.05
+			}
+			any_pop = {
+				limit = { has_pop_culture = polish }
+				literacy = -0.05
+			}
+		}
+	}
+		
+	literacy_all = {
+		potential = {
+			ai = yes
+			NOT = { has_global_flag = literacy_fixed }
+			NOT = {
+				any_neighbor_country = {
+					ai = no
+				}
+			}
+		}
+		
+		allow = {
+			ai = yes
+		}
+		
+		effect = {
+			set_global_flag = literacy_fixed
+			any_country = {
+				limit = {
+					is_culture_group = germanic
+					NOT = { tag = BRC }
+				}
+				any_pop = {
+					limit = { has_pop_culture = ashkenazi }
+					literacy = 0.20
+				}
+			}
+			any_country = {
+				limit = {
+					NOT = { is_culture_group = germanic }
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = ashkenazi
+							has_pop_culture = sephardic
+						}
+					}
+					literacy = 0.05
+				}
+			}
+			any_country = {
+				slaves = {
+					literacy = -0.05
+				}
+			}
+			any_country = {
+				any_pop = {
+					limit = {
+						OR = {
+							is_culture_group = native_american
+							is_culture_group = oceanic
+						}
+					}
+					literacy = -0.03
+				}
+			}
+		}
+	}
+}

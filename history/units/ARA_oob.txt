@@ -1,0 +1,129 @@
+army = {
+	name = "Army of King of Arabia"
+	location = 1151
+	regiment = {
+		name= "1. 'Ateba"
+		type = cavalry
+		home = 1151
+	}
+	regiment = {
+		name= "2. 'Ateba"
+		type = cavalry
+		home = 1152	
+	}
+	regiment = {
+		name= "3. 'Ateba"
+		type = cavalry
+		home = 1153	
+	}
+	regiment = {
+		name= "4. 'Ateba"
+		type = cavalry
+		home = 1157	
+	}
+	regiment = {
+		name= "1. Division"
+		type = irregular
+		home = 1155	
+	}
+	regiment = {
+		name = "2. Division"
+		type = irregular
+		home = 1157
+	}
+	regiment = {
+		name = "3. Division"
+		type = irregular
+		home = 1160
+	}
+}
+
+army = {
+	name = "Army of the Sheikh of Abu Dhabi"
+	location = 1167
+	regiment = {
+		name= "1. Cavalry"
+		type = cavalry
+		home = 1167
+	}
+	regiment = {
+		name= "2. Cavalry"
+		type = cavalry
+		home = 1162	
+	}
+	regiment = {
+		name= "3. Cavalry"
+		type = cavalry
+		home = 1168	
+	}
+}
+
+army = {
+	name = "Army of the Sheikh of Sana"
+	location = 1178
+	regiment = {
+		name= "1. Abdali"
+		type = cavalry
+		home = 1178
+	}
+	regiment = {
+		name= "2. Abdali"
+		type = cavalry
+		home = 1179
+	}
+	regiment = {
+		name= "3. Abdali"
+		type = cavalry
+		home = 1180	
+	}
+}
+
+army = {
+	name = "Army of the Sheikh of Aden"
+	location = 1412
+	regiment = {
+		name= "1. Abdali"
+		type = cavalry
+		home = 1412
+	}
+	regiment = {
+		name= "2. Abdali"
+		type = cavalry
+		home = 1175
+	}
+	regiment = {
+		name= "3. Abdali"
+		type = cavalry
+		home = 1176	
+	}
+	regiment = {
+		name = "4. Abdali"
+		type = irregular
+		home = 1173
+	}
+}
+
+army = {
+	name = "Army of the Sheikh of Muscat"
+	location = 1166
+	regiment = {
+		name= "1. Brigade"
+		type = irregular
+		home = 1166
+	}
+	regiment = {
+		name= "2. Brigade"
+		type = irregular
+		home = 1166
+	}
+	regiment = {
+		name= "3. Brigade"
+		type = irregular
+		home = 1170
+	}
+	regiment = {
+		name= "4. Brigade"
+		type = irregular
+		home = 1174
+	}
+}

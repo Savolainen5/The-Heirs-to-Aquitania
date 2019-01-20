@@ -1,0 +1,40 @@
+army = {
+	name = "Army of the Principality of Serbia"
+	location = 794
+	regiment = {
+		name= "1st Infantry"
+		type = infantry
+		home = 794
+	}
+
+	regiment = {
+		name= "2nd Infantry"
+		type = infantry
+		home = 795
+	}
+
+	regiment = {
+		name= "3rd Infantry"
+		type = infantry
+		home = 798
+	}
+	
+	regiment = {
+		name= "1st Artillery"
+		type = artillery
+		home = 797
+	}
+	
+	regiment = {
+		name= "2nd Artillery"
+		type = artillery
+		home = 796
+	}
+	
+	regiment = {
+		name= "1st Cavaly"
+		type = cavalry
+		home = 798
+	}
+}
+

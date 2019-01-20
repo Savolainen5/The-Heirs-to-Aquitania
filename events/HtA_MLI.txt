@@ -1,0 +1,79 @@
+#African events have 50150-50200 reserved
+#Death of King of Mali
+country_event = {
+	id = 50150
+	title = "EVTNAME50150"
+	desc = "EVTDESC50150"
+	#picture = ?
+
+	trigger = {
+		tag = MLI
+		year = 1843
+		NOT = { has_country_flag = RIP_King_of_Mali }
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "Long live the king!"
+		set_country_flag = RIP_King_of_Mali
+	}
+}
+
+#Event for Malian puppets to randomly break away - puppets
+country_event = {
+	id = 50151
+	title = "EVTNAME50151"
+	desc = "EVTDESC50151"
+	#picture = ?
+	
+	trigger = {
+		vassal_of = MLI
+		MLI = { has_country_flag = RIP_KING_of_Mali }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 10
+			part_of_sphere = no
+		}
+		modifier = {
+			factor = 2
+			part_of_sphere = yes
+		}
+	}
+	
+	option = {
+		name = "Do it!"
+		prestige = 3
+		release_vassal = THIS
+		relation = {
+			who = MLI
+			value = -100
+		}
+		MLI = { country_event = 50152 } #Our vassal revolts!
+	}
+}
+
+#Our vassal revolts! - Event Mali gets when its vassal stops being its vassal
+country_event = {
+	id = 50152
+	title = "EVTNAME50152"
+	desc = "EVTDESC50152"
+	#picture = ?
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This cannot stand!"
+		prestige = -2
+		casus_belli = {
+			target = FROM
+			type = make_puppet
+			months = 120
+		}
+	}
+}

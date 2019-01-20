@@ -1,0 +1,527 @@
+#Events for the Indonesia region
+
+#Sultan of Aceh dies
+country_event = {
+	id = 51500
+	title = "EVTNAME51500"
+	desc = "EVTDESC51500"
+	picture = "asian_ruler"
+	
+	trigger = {
+		tag = ATJ
+		year = 1847
+		NOT = { has_country_flag = sultan_ali_dead }
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "We will mourn his loss and look to the future."
+		set_country_flag = sultan_ali_dead
+		random_country = {
+			limit = {
+				is_sphere_leader_of = THIS
+			}
+			country_event = {
+				id = 51501
+				days = 2
+			}
+		}
+	}
+}
+
+#Sultan of Aceh dies
+country_event = {
+	id = 51501
+	title = "EVTNAME51501"
+	desc = "EVTDESC51501"
+	picture = "asian_ruler"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Send him the ultimatum!"
+		relation = {
+			who = FROM
+			value = -50
+		}
+		FROM = {
+			country_event = {
+				id = 51502
+				days = 2
+			}
+		}
+		
+		ai_chance = {
+			factor = 95
+		}
+	}
+	
+	option = {
+		name = "Send our condolences and withdraw."
+		prestige = -10
+		ATJ = { prestige = 10 }
+		relation = {
+			who = FROM
+			value = 20
+		}
+		diplomatic_influence = {
+			who = FROM
+			value = -200
+		}
+		
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+
+#Aceh Protectorate
+country_event = {
+	id = 51502
+	title = "EVTNAME51502"
+	desc = "EVTDESC51502"
+	picture = "ships_to_bangkok"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will not submit!"
+		FROM = {
+			casus_belli = {
+				type = establish_protectorate_casus_belli
+				target = THIS
+				months = 6
+			}
+			war = {
+				target = THIS
+				attacker_goal = {
+					casus_belli = establish_protectorate_casus_belli
+				}
+			}
+			badboy = 4
+		}
+		
+		ai_chance = {
+			factor = 30
+		}
+	}
+	
+	option = {
+		name = "We have no choice."
+		FROM = {
+			inherit = THIS
+			prestige = 5
+		}
+		
+		ai_chance = {
+			factor = 70
+		}
+	}
+}
+
+#Sulawesi Protectorate
+country_event = {
+	id = 51503
+	title = "EVTNAME51503"
+	desc = "EVTDESC51503"
+	picture = "ships_to_bangkok"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 1432
+		owns = 1436
+		exists = SLW
+		SLW = { neighbour = THIS owns = 1430 }
+		year = 1842
+		war = no
+		is_disarmed = no
+		OR = {
+			is_greater_power = yes
+			is_secondary_power = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "Send in the troops."
+		casus_belli = {
+			target = SLW
+			type = establish_protectorate_casus_belli
+			months = 3
+		}
+		war = {
+			target = SLW
+			attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+		}
+		
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Use diplomacy to resolve the situation."
+		prestige = 1
+		relation = {
+			who = SLW
+			value = 50
+		}
+		diplomatic_influence = {
+			who = SLW
+			value = 100
+		}
+		
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#Event to set interest for European countries which will seek to gain Albannach colonies in Indonesia
+country_event = {
+	id = 51504
+	title = "EVTNAME51504"
+	desc = "EVTDESC51504"
+	picture = "ships_to_bangkok"
+	
+	trigger = {
+		civilized = yes
+		capital_scope = { continent = europe }
+		NOT = { tag = SCO tag = CLT tag = AEN }
+		AEN = { has_country_flag = alba_reclaimed }
+		any_owned_province = {
+			OR = {
+				region = BRU_1394
+				region = BRU_1396
+				region = NET_1398
+				region = NET_1401
+				region = ATJ_1405
+				region = NET_1417
+				region = NET_1418
+				region = NET_1423
+				region = NET_1426
+				region = BAL_1438
+				region = NET_1446
+				region = NET_1449
+				region = SPA_1455
+				region = ENG_1384
+			}
+		}
+		SCO = {
+			any_owned_province = {
+				OR = {
+					region = BRU_1394
+					region = BRU_1396
+					region = NET_1398
+					region = NET_1401
+					region = ATJ_1405
+					region = NET_1417
+					region = NET_1418
+					region = NET_1423
+					region = NET_1426
+					region = BAL_1438
+					region = NET_1446
+					region = NET_1449
+					region = ENG_1384
+				}
+			}
+		}
+		total_amount_of_ships = 5
+		NOT = { has_country_flag = indonesia_interest_prompted }
+		NOT = { has_country_flag = albannach_indonesia_claimed }
+		SCO = {
+			exists = yes
+			OR = {
+				AND = {
+					war_with = AEN
+					capital_scope = { controlled_by = AEN NOT = { country_units_in_province = SCO } }
+				}
+				AND = {
+					capital_scope = { controlled_by_rebels = yes NOT = { country_units_in_province = SCO } }
+					SCO = { NOT = { military_score = 15 } }
+				}
+				267 = { OR = { owned_by = AEN owned_by = ABN } } #Inverness
+				AND = {
+					271 = { OR = { owned_by = AEN owned_by = ABN } } #Glasgow
+					SCO = { has_country_flag = glaschu_ultimatum }
+				}
+			}
+		}				
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.1
+			year = 1840
+		}
+	}
+	
+	immediate = {
+		set_country_flag = indonesia_interest_prompted
+	}
+	
+	option = {
+		name = "We will look into means of taking them over."
+		badboy = 3
+		set_country_flag = albannach_indonesia_interest
+		
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.1
+				badboy = 0.9
+			}
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We will not interfere."
+		badboy = -1
+		prestige = 1
+		set_country_flag = no_indonesia_interest
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_global_flag=  railroading_on
+			}
+		}
+	}
+}
+
+#Aengland gets Alba's Indonesian colonies
+country_event = {
+	id = 51505
+	title = "EVTNAME51505"
+	desc = "EVTDESC51505"
+	
+	trigger = {
+		tag = AEN
+		has_country_flag = albannach_indonesia_interest
+		has_country_flag = albas_colonies_claimed
+		271 = { owned_by = AEN }
+		266 = { owned_by = AEN }
+		NOT = { has_country_flag = albannach_indonesia_claimed }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.1
+			OR = {
+				HIS = { has_country_flag = albannach_indonesia_claimed }
+				NET = { has_country_flag = albannach_indonesia_claimed }
+				NPL = { has_country_flag = albannach_indonesia_claimed }
+			}
+		}
+	}
+	
+	option = {
+		name = "Make our move."
+		clr_country_flag = albannach_indonesia_interest
+		set_country_flag = albannach_indonesia_claimed
+		SCO = { any_owned = {
+			limit = {
+				OR = {
+					region = ATJ_1405 #Aceh
+					region = NET_1398 #Sumatra
+					region = NET_1401 #Siak
+					region = NET_1413 #W Java(NET or AEN will get it)
+					region = NET_1417 #C Java(NET or AEN will get it)
+					region = NET_1418 #E Java(NET or AEN will get it)
+				}
+			}
+			secede_province = THIS
+		} }
+	}
+}
+
+#Naples gets Alba's Indonesian colonies
+country_event = {
+	id = 51506
+	title = "EVTNAME51505"
+	desc = "EVTDESC51505"
+	
+	trigger = {
+		tag = NPL
+		has_country_flag = albannach_indonesia_interest
+		271 = { owned_by = AEN }
+		266 = { owned_by = AEN }
+		AEN = { has_country_flag = albas_colonies_claimed }
+		NOT = { has_country_flag = albannach_indonesia_claimed }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.1
+			OR = {
+				HIS = { has_country_flag = albannach_indonesia_claimed }
+				NET = { has_country_flag = albannach_indonesia_claimed }
+				AEN = { has_country_flag = albannach_indonesia_claimed }
+			}
+		}
+	}
+	
+	option = {
+		name = "Make our move."
+		clr_country_flag = albannach_indonesia_interest
+		set_country_flag = albannach_indonesia_claimed
+		SCO = { any_owned = {
+			limit = {
+				OR = {
+					region = BRU_1394 #W. Borneo
+					region = ENG_1384 #S. Malaya (Just in case)
+					region = ENG_1391 #N. Malaya (Just in case)
+					region = SIA_1352 #Pattani (Just in case)
+				}
+			}
+			secede_province = THIS
+		} }
+	}
+}
+
+#Netherlands gets Alba's Indonesian colonies
+country_event = {
+	id = 51507
+	title = "EVTNAME51505"
+	desc = "EVTDESC51505"
+	
+	trigger = {
+		tag = NET
+		has_country_flag = albannach_indonesia_interest
+		271 = { owned_by = AEN }
+		266 = { owned_by = AEN }
+		AEN = { has_country_flag = albas_colonies_claimed }
+		NOT = { has_country_flag = albannach_indonesia_claimed }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.1
+			OR = {
+				HIS = { has_country_flag = albannach_indonesia_claimed }
+				NPL = { has_country_flag = albannach_indonesia_claimed }
+				AEN = { has_country_flag = albannach_indonesia_claimed }
+			}
+		}
+	}
+	
+	option = {
+		name = "Make our move."
+		clr_country_flag = albannach_indonesia_interest
+		set_country_flag = albannach_indonesia_claimed
+		SCO = { any_owned = {
+			limit = {
+				OR = {
+					region = BRU_1396 #Sabah
+					region = CHI_1485 #Formosa/Taiwan (Just in case)
+					region = BAL_1438 #Sunda Islands (Just in case)
+					region = NET_1413 #W Java (NET or AEN will get it)
+					region = NET_1417 #C Java (NET or AEN will get it)
+					region = NET_1418 #E Java (NET or AEN will get it)
+				}
+			}
+			secede_province = THIS
+		} }
+	}
+}
+
+#Hispania gets Alba's Indonesian colonies
+country_event = {
+	id = 51508
+	title = "EVTNAME51505"
+	desc = "EVTDESC51505"
+	
+	trigger = {
+		tag = HIS
+		has_country_flag = albannach_indonesia_interest
+		271 = { owned_by = AEN }
+		266 = { owned_by = AEN }
+		AEN = { has_country_flag = albas_colonies_claimed }
+		NOT = { has_country_flag = albannach_indonesia_claimed }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.1
+			OR = {
+				NET = { has_country_flag = albannach_indonesia_claimed }
+				NPL = { has_country_flag = albannach_indonesia_claimed }
+				AEN = { has_country_flag = albannach_indonesia_claimed }
+			}
+		}
+	}
+	
+	option = {
+		name = "Make our move."
+		clr_country_flag = albannach_indonesia_interest
+		set_country_flag = albannach_indonesia_claimed
+		SCO = { any_owned = {
+			limit = {
+				OR = {
+					region = NET_1423 #E. Borneo
+					region = NET_1426 #S. Borneo
+					region = NET_1447 #Moluccas (Just in case)
+				}
+			}
+			secede_province = THIS
+		} }
+	}
+}
+
+#Aengland claims any remaining colonies of Alba
+country_event = {
+	id = 51509
+	title = "EVTNAME51509"
+	desc = "EVTDESC51509"
+	
+	trigger = {
+		tag = AEN
+		has_country_flag = albannach_indonesia_claimed
+		HIS = { OR = { has_country_flag = albannach_indonesia_claimed has_country_flag = no_indonesia_interest } }
+		NET = { OR = { has_country_flag = albannach_indonesia_claimed has_country_flag = no_indonesia_interest } }
+		NPL = { OR = { has_country_flag = albannach_indonesia_claimed has_country_flag = no_indonesia_interest } }
+		exists = SCO
+		NOT = { has_country_flag = albannach_colonies_finished }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.1
+			HIS = { has_country_flag = albannach_indonesia_claimed }
+			NET = { has_country_flag = albannach_indonesia_claimed }
+			NPL = { has_country_flag = albannach_indonesia_claimed }
+		}
+	}
+	
+	option = {
+		name = "Let's clean this up."
+		SCO = {
+			any_owned = {
+				secede_province = AEN
+			}
+		}
+	}
+}

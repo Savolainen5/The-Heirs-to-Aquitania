@@ -1,0 +1,16 @@
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	threat = { id="BAV" value=200 }
+	threat = { id="AUS" value=200 }
+	threat = { id="SLS" value=200 }
+	threat = { id="HUN" value=200 }
+
+	befriend = { id="POL" value=100 }
+	befriend = { id="RUS" value=100 }
+	befriend = { id="BYZ" value=100 }
+}

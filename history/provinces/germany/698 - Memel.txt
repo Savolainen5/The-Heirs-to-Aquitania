@@ -1,0 +1,7 @@
+owner = LIT
+controller = LIT
+add_core = LIT
+trade_goods = fish
+life_rating = 35
+
+

@@ -1,0 +1,7 @@
+owner = SCO
+controller = SCO
+add_core = KLM
+trade_goods = sulphur
+life_rating = 30
+colonial = 2
+

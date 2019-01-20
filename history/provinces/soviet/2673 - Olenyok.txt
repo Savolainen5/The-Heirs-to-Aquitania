@@ -1,0 +1,8 @@
+owner = HIS
+controller = HIS
+add_core = MAL
+trade_goods = fish
+life_rating = 35
+colonial = 2
+
+#Moved to Indonesia to be the new Ternate

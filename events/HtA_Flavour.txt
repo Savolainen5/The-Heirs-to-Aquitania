@@ -1,0 +1,388 @@
+###Miscellaneous, generic events, mostly flavour
+#50800 - 50849
+
+#50001
+#Eyjafjallajokul explodes, causing poor harvests
+country_event = {
+	id = 50001
+	title = "EVTNAME50001"
+	desc = "EVTDESC50001"
+	picture = "famine"
+
+	trigger = {
+		year = 1837
+		has_country_flag = volcano_path
+		NOT = { has_country_flag = european_famine }
+		NOT = { year = 1839 }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "The wine will be poor this year, too."
+		add_country_modifier = {
+				name = countrywide_famine
+				duration = 480
+			}
+		any_owned = {
+			limit = {
+				continent = europe
+			}
+			add_province_modifier = {
+				name = countrywide_famine_immigrant_push
+				duration = 450
+			}
+		}
+		set_country_flag = european_famine
+	}
+}
+
+#1500 years of Venice
+#Credit to vyshan for the idea
+country_event = {
+	id = 50800
+	title = "EVTNAME50800"
+	desc = "EVTDESC50800"
+	picture = "Parade"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 729 #Venice
+		year = 1921
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "A momentous occasion!"
+		prestige = 3
+		any_pop = {
+			limit = {
+				location = {
+					province_id = 729
+				}
+			}
+			militancy = -1
+		}
+	}
+}
+
+#A serial killer?!
+province_event = {
+	id = 50801
+	title = "EVTNAME50801"
+	desc = "EVTDESC50801"
+	
+	trigger = {
+		owner = {
+			civilized = yes
+			NOT = { has_country_flag = famous_serial_killer }
+		}
+		NOT = { average_militancy = 5 }
+		total_pops = 100000
+		is_colonial = no
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+	}
+	
+	option = {
+		name = "Track him down!"
+		set_country_flag = famous_serial_killer
+		add_province_modifier = {
+			name = active_serial_killer
+			duration = -1
+		}
+		any_pop = {
+			consciousness = 0.5
+			militancy = 0.5
+		}
+	}
+}
+
+#Serial Killer strikes again!
+province_event = {
+	id = 50802
+	title = "EVTNAME50802"
+	desc = "EVTDESC50802"
+	
+	trigger = {
+		has_province_modifier = active_serial_killer
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Blast!"
+		any_pop = {
+			consciousness = 0.25
+			militancy = 0.25
+		}
+	}
+}
+
+#Serial killer apprehended
+province_event = {
+	id = 50803
+	title = "EVTNAME50803"
+	desc = "EVTDESC50803"
+	
+	trigger = {
+		has_province_modifier = active_serial_killer
+	}
+	
+	mean_time_to_happen = {
+		months = 7
+	}
+	
+	option = {
+		name = "We can rest easy, finally!"
+		any_pop = {
+			militancy = -1
+			consciousness = -1
+		}
+		remove_province_modifier = active_serial_killer
+		owner = { clr_country_flag = famous_serial_killer }
+	}
+}
+
+#Great Fire
+province_event = {
+	id = 50804
+	title = "EVTNAME50804"
+	desc = "EVTDESC50804"
+	
+	trigger = {
+		OR = {
+			is_capital = yes
+			is_state_capital = yes
+		}
+		total_pops = 100000
+		NOT = { has_province_modifier = great_fire_recovery }
+		NOT = { has_province_modifier = great_fire_happened }
+		is_colonial = no
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 2
+			year = 1860
+			NOT = { year = 1900 }
+		}
+		modifier = {
+			factor = 3
+			year = 1900
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				any_owned_province = {
+					has_province_modifier = great_fire_happened
+				}
+			}
+		}
+	}
+	
+	immediate = { remove_province_modifier = great_fire_happened remove_province_modifier = great_fire_recovery }
+	
+	option = {
+		name = "Contribute significantly to the rebuilding."
+		treasury = -5000
+		any_pop = {
+			militancy = -0.5
+			consciousness = 0.5
+		}
+		add_province_modifier = {
+			name = great_fire_happened
+			duration = 3650
+		}
+		add_province_modifier = {
+			name = great_fire_recovery
+			duration = 730
+		}
+	}
+	
+	option = {
+		name = "We cannot spare much."
+		treasury = -2000
+		any_pop = {
+			militancy = 0.5
+			consciousness = 0.5
+		}
+		add_province_modifier = {
+			name = great_fire_happened
+			duration = 2800
+		}
+		add_province_modifier = {
+			name = great_fire_recovery
+			duration = 1460
+		}
+	}
+	
+	option = {
+		name = "They'll be fine on their own."
+		any_pop = {
+			militancy = 1
+			consciousness = 1
+		}
+		add_province_modifier = {
+			name = great_fire_happened
+			duration = 2000
+		}
+		add_province_modifier = {
+			name = great_fire_recovery
+			duration = 2000
+		}
+	}
+}
+
+#1857 Potenza Earthquake
+country_event = {
+	id = 50805
+	title = "EVTNAME50805"
+	desc = "EVTDESC50805"
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		owns = 761
+		year = 1857
+	}
+	
+	mean_time_to_happen = {
+		months = 11
+		modifier = {
+			factor = 0.05
+			NOT = { month = 11 }
+		}
+	}
+	
+	option = {
+		name = "What a horror!"
+		set_country_flag = potenza_earthquake
+		761 = {
+			any_pop = {
+				reduce_pop = 0.85
+			}
+			add_province_modifier = {
+				name = disaster_damage
+				duration = 70
+			}
+		}
+	}
+}
+
+#1915 Avezzano Earthquake
+country_event = {
+	id = 50806
+	title = "EVTNAME50806"
+	desc = "EVTDESC50806"
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		owns = 753
+		year = 1915
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.4
+			year = 1815
+		}
+	}
+	
+	option = {
+		name = "O Madonna!"
+		753 = {
+			any_pop = {
+				reduce_pop = 0.75
+			}
+			add_province_modifier = {
+				name = disaster_damage
+				duration = 111
+			}
+		}
+	}
+}
+
+#50807 and 50808 are in AUSFlavor
+
+#Event for de-escalating militancy after Eyjafjallajokull eruption
+country_event = {
+	id = 50809
+	title = "EVTNAME50809"
+	desc = "EVTDESC50809"
+	picture = "famine"
+	
+	trigger = {
+		has_country_flag = european_famine
+		NOT = { has_country_modifier = countrywide_famine }
+		NOT = { has_country_flag = european_famine_weathered }
+		year = 1838
+		NOT = { year = 1850 }
+	}
+	
+	mean_time_to_happen = {
+		months = 7
+	}
+	
+	option = {
+		name = "Praise the Lord!"
+		clr_country_flag = european_famine
+		set_country_flag = european_famine_weathered
+		any_pop = {
+			limit = {
+				location = { continent = europe }
+			}
+			militancy = -2
+			consciousness = -1
+		}
+	}
+}
+
+#Social impacts of the thresher - Automation and the Peasantry
+country_event = {
+	id = 50810
+	title = "EVTNAME50810"
+	desc = "EVTDESC50810"
+	picture = "Threshing_machine"
+	
+	trigger = {
+		NOT = { has_country_flag = threshing_effects }
+		invention = pitts_threshing_machine
+		NOT = { year = 1870 }
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+	}
+	
+	option = {
+		name = "They must keep up with the times!"
+		any_pop = {
+			limit = {
+				type = farmers
+			}
+			consciousness = 0.1
+		}
+		set_country_flag = threshing_effects
+	}
+}
+			
+
+			
+			
+			

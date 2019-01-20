@@ -1,0 +1,7 @@
+owner = BYZ
+controller = BYZ
+add_core = BYZ
+add_core = ALB
+trade_goods = cattle
+life_rating = 35
+

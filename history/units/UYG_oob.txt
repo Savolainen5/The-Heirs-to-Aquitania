@@ -1,0 +1,9 @@
+army = {
+	name = "Kashgar Army"
+	location = 1594
+	regiment = {
+		name = "Kashgar Riders"
+		type = cavalry
+		home = 1594
+	}
+}

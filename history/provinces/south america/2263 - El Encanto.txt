@@ -1,0 +1,6 @@
+owner = HOY
+controller = HOY
+add_core = HOY
+trade_goods = timber
+life_rating = 25
+

@@ -1,0 +1,7 @@
+owner = YUC
+controller = YUC
+add_core = YUC
+trade_goods = cotton
+life_rating = 30
+
+

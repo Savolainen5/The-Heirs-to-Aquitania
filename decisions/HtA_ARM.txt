@@ -1,0 +1,26 @@
+political_decisions = {
+	
+	#Reclaim Anatolia
+	revive_armenian_anatolia = {
+		picture = enact_muhammad_alis_reforms
+		potential = {
+			tag = ARM
+			has_country_flag = RIP_armenian_anatolia
+			873 = { NOT = { is_core = ARM } }
+			876 = { NOT = { is_core = ARM } }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			military_score = 20
+		}
+		
+		effect = {
+			prestige = 10
+			badboy = 1
+			TUR_873 = { add_core = ARM }
+			TUR_876 = { add_core = ARM }
+		}
+	}
+	
+}

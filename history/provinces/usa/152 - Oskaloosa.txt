@@ -1,0 +1,6 @@
+add_core = MRG
+trade_goods = grain
+life_rating = 30
+
+
+

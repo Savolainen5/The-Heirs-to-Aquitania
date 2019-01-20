@@ -1,0 +1,6 @@
+owner = ZAN
+controller = ZAN
+add_core = ZAN
+trade_goods = cattle
+life_rating = 35
+

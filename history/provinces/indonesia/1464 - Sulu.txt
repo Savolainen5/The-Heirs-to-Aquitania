@@ -1,0 +1,8 @@
+owner = NET
+controller = NET
+add_core = SUL
+add_core = PHL
+trade_goods = fish
+life_rating = 30
+colonial = 2
+

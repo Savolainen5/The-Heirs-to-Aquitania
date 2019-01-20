@@ -1,0 +1,86 @@
+army = {
+	name = "1er Armé de Walloni"
+	location = 392
+	regiment = {
+		name = "1er Divisi d'Infanteri"
+		type = infantry
+		home = 399
+	}
+	regiment = {
+		name = "2e Divisi d'Infanteri"
+		type = infantry
+		home = 400
+	}
+	regiment = {
+		name = "3e Divisi d'Infanteri"
+		type = infantry
+		home = 399
+	}
+	regiment = {
+		name = "1er Divisi d'Artiléri"
+		type = artillery
+		home = 403
+	}
+	regiment = {
+		name = "2e Divisi d'Artiléri"
+		type = artillery
+		home = 402
+	}
+	regiment = {
+		name = "1er Divisi d'Usars"
+		type = hussar
+		home = 400
+	}
+}
+
+army = {
+	name = "2e Armé de Walloni"
+	location = 399
+	regiment = {
+		name = "4e Divisi d'Infanteri"
+		type = infantry
+		home = 392
+	}
+	regiment = {
+		name = "5e Divisi d'Infanteri"
+		type = infantry
+		home = 392
+	}
+	regiment = {
+		name = "6e Divisi d'Infanteri"
+		type = infantry
+		home = 393
+	}
+	regiment = {
+		name = "3e Divisi d'Artiléri"
+		type = artillery
+		home = 396
+	}
+	regiment = {
+		name = "4e Divisi d'Artiléri"
+		type = artillery
+		home = 398
+	}
+	regiment = {
+		name = "2e Divisi d'Usars"
+		type = hussar
+		home = 394
+	}
+}
+
+navy = {
+	name = "Marine de Walloni"
+	location = 400
+	ship = {
+		name = "Curage"
+		type = manowar
+	}
+	ship = {
+		name = "Duc Robert"
+		type = manowar
+	}
+	ship = {
+		name = "Athene"
+		type = frigate
+	}
+}

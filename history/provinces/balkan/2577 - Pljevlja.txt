@@ -1,0 +1,6 @@
+owner = MNT
+controller = MNT
+add_core = MNT
+trade_goods = iron
+life_rating = 35
+

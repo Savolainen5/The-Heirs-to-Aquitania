@@ -1,0 +1,255 @@
+OLD = { value = -75 }
+BRE = { value = -65 }
+BRB = { value = -25 }
+AEN = { value = 45 }
+XHO = { value = -90 }
+SCO = { value = 35 }
+HIS = { value = 50 }
+
+army = {
+	name = "1e Divisie"
+	location = 375 
+	regiment = {
+		name= "1e Cavalerie Brigade"
+		type = cuirassier
+		home = 375
+	}
+
+	regiment = {
+		name = "1e Infanterie Brigade"
+		type = infantry
+		home = 376
+	}
+
+	regiment = {
+		name = "2e Infanterie Brigade"
+		type = infantry
+		home = 385
+	}
+
+	regiment = {
+		name = "3e Infanterie Brigade"
+		type = infantry
+		home = 377
+	}
+
+	regiment = {
+		name = "1e Artillerie Brigade"
+		type = artillery
+		home = 375
+	}
+
+}
+
+army = {
+	name = "2e Divisie"
+	location = 382
+	regiment = {
+		name= "2e Cavalerie Brigade"
+		type = cuirassier
+		home = 383
+	}
+	regiment = {
+		name = "4e Infanterie Brigade"
+		type = infantry
+		home = 386
+	}
+	regiment = {
+		name = "5e Infanterie Brigade"
+		type = infantry
+		home = 382
+	}
+	regiment = {
+		name = "6e Infanterie Brigade"
+		type = infantry
+		home = 383
+	}
+}
+
+army = {
+	name = "Afrika Divisie"
+	location = 2087
+	regiment = {
+		name = "1e Afrika Brigade"
+		type = infantry
+		home = 2087
+	}
+	regiment = {
+		name = "2e Afrika Brigade"
+		type = infantry
+		home = 2096
+	}
+	regiment = {
+		name = "3e Afrika Brigade"
+		type = artillery
+		home = 384
+	}
+	regiment = {
+		name= "4e Afrika Brigade"
+		type = cuirassier
+		home = 384
+	}
+}
+
+army = {
+	name = "Panaja Divisie"
+	location = 1455
+	regiment = {
+		name = "1e Panaja Brigade"
+		type = infantry
+		home = 1455
+	}
+	regiment = {
+		name = "2e Panaja Brigade"
+		type = infantry
+		home = 1457
+	}
+	regiment = {
+		name = "3e Panaja Brigade"
+		type = infantry
+		home = 1456
+	}
+}
+
+navy = {
+	name = "Koninklijke Marine"
+	location = 375 #Amsterdam
+	ship = {
+		name= "Doggersbank"
+		type = manowar
+	}
+
+	ship = {
+		name= "Amsterdam"
+		type = manowar
+	}
+
+	ship = {
+		name= "Maria Regensbergen"
+		type = frigate
+	}
+
+	ship = {
+		name= "Pallas"
+		type = frigate
+	}
+
+	ship = {
+		name= "Proserpine"
+		type = frigate
+	}
+
+	ship = {
+		name= "Daphne"
+		type = frigate
+	}
+
+	ship = {
+		name= "Espion"
+		type = frigate
+	}
+
+	ship = {
+		name= "Zeepaard"
+		type = frigate
+	}
+
+	ship = {
+		name= "Irene"
+		type = frigate
+	}
+
+	ship = {
+		name= "Orpheus"
+		type = frigate
+	}
+
+	ship = {
+		name= "1e Transport Eskader"
+		type = clipper_transport
+	}
+}
+
+navy = {
+	name = "Panajaner Eskader"
+	location = 1455 #Manila
+	
+	
+	ship = {
+		name = "Groot Hollandia"
+		type = manowar
+	}
+
+	ship = {
+		name = "Scheveningen"
+		type = frigate
+	}
+
+	ship = {
+		name = "Duivenvoorde"
+		type = frigate
+	}
+
+	ship = {
+		name = "Liefde"
+		type = frigate
+	}
+	ship = {
+		name = "1e Panajaner Transport"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name = "2e Panajaner Transport"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name = "3e Panajaner Transport"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name = "4e Panajaner Transport"
+		type = clipper_transport
+	}
+}
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	antagonize = { id="BRB" value=150 }
+	antagonize = { id="XHO" value=100 }
+	antagonize = { id="SUA" value=100 }
+	antagonize = { id="ZUL" value=100 }
+	antagonize = { id="BSH" value=100 }
+
+	rival = { id="BRB" value=150 }
+	rival = { id="AEN" value=50 }
+	rival = { id="HIS" value=40 }
+
+	befriend = { id="BRA" value=100 }
+	befriend = { id="WLL" value=50 }
+
+	threat = { id="BRB" value=150 }
+	threat = { id="XHO" value=100 }
+	threat = { id="SUA" value=100 }
+	threat = { id="ZUL" value=100 }
+	threat = { id="BSH" value=100 }
+	threat = { id="BAL" value=100 }
+	threat = { id="GER" value=30 }
+	threat = { id="NGF" value=30 }
+
+	conquer_prov = { id = 2100 value = 50 }
+	conquer_prov = { id = 2113 value = 20 }
+	conquer_prov = { id = 2104 value = 20 }
+	conquer_prov = { id = 2114 value = 40 }
+	conquer_prov = { id = 2082 value = 20 }
+	conquer_prov = { id = 1438 value = 20 }
+	conquer_prov = { id = 380 value = 50 }
+}
+	

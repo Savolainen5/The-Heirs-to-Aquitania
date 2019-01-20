@@ -1,0 +1,16 @@
+owner = AEN
+controller = AEN
+add_core = AEN
+trade_goods = grain
+life_rating = 35
+#state_building = {
+#	level = 2 
+#	building = clipper_shipyard
+#	upgrade = yes
+#}
+#state_building = {
+#	level = 2 
+#	building = cement_factory
+#	upgrade = yes
+#}
+

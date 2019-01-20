@@ -1,0 +1,11 @@
+owner = BNG
+
+controller = BNG
+add_core = BNG
+add_core = HND
+
+trade_goods = silk
+
+life_rating = 32
+
+

@@ -1,0 +1,7 @@
+owner = CLF
+controller = CLF
+add_core = CLF
+trade_goods = grain
+life_rating = 40
+naval_base = 1
+fort = 1

@@ -1,0 +1,28 @@
+name = "Ragamuffin War"
+
+1825.10.2 = {
+	add_attacker = BRZ
+	add_defender = RGS
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = conquest
+		actor = BRZ
+		receiver = RGS
+	}
+	war_goal = {
+		casus_belli = acquire_state
+		actor = RGS
+		receiver = BRZ
+		state_province_id = 2461
+	}
+}
+
+1826.4.21 = {
+	rem_attacker = BRZ
+	rem_defender = RGS
+}

@@ -1,0 +1,7 @@
+owner = GDN
+controller = GDN
+add_core = GDN
+trade_goods = coffee
+life_rating = 30
+
+

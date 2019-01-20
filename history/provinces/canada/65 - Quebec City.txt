@@ -1,0 +1,8 @@
+owner = NHL
+controller = NHL
+add_core = NHL
+trade_goods = grain
+life_rating = 40
+fort = 1
+naval_base = 1
+

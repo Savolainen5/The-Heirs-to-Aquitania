@@ -1,0 +1,35 @@
+army = {
+	name = "Royal Army of Hongsawatoi"
+	location = 1332
+	regiment = {
+		name = "1st Dhas"
+		type = irregular
+		home = 1332
+	}
+	regiment = {
+		name = "2nd Dhas"
+		type = irregular
+		home = 1332
+	}
+	regiment = {
+		name = "3rd Dhas"
+		type = irregular
+		home = 1330
+	}
+	regiment = {
+		name = "4th Dhas"
+		type = irregular
+		home = 1332
+	}
+	regiment = {
+		name = "5th Dhas"
+		type = irregular
+		home = 1333
+	}
+	regiment = {
+		name = "6th Dhas"
+		type = irregular
+		home = 1333
+	}
+}
+

@@ -1,0 +1,29 @@
+army = {
+	name = "Landhird"
+	location = 2276
+	regiment = {
+		name = "1. Fede"
+		type = infantry
+		home = 2264
+	}
+	regiment = {
+		name = "2. Fede"
+		type = infantry
+		home = 2276
+	}
+	regiment = {
+		name = "3. Fede"
+		type = infantry
+		home = 2276
+	}
+	regiment = {
+		name = "1. Artilere"
+		type = infantry
+		home = 2264
+	}
+	regiment = {
+		name = "1. Riddan"
+		type = hussar
+		home = 2268
+	}
+}

@@ -1,0 +1,18 @@
+BAD = {
+	value = -175
+}
+BAV = {
+	value = -175
+}
+WUR = {
+	value = -175
+}
+army = {
+	name = "Mecklenburgische Armee"
+	location = 544
+	regiment = {
+		name= "1. Mecklenburgische Infanterie-Brigade"
+		type = infantry
+		home = 544
+	}
+}

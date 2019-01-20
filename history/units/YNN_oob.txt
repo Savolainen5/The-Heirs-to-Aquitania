@@ -1,0 +1,24 @@
+army = {
+	name = "Army of Yunnan"
+	location = 1601
+	regiment = {
+		name = "1st Yellow Shirts"
+		type = irregular
+		home = 1601
+	}
+	regiment = {
+		name = "2nd Yellow Shirts"
+		type = irregular
+		home = 1601
+	}
+	regiment = {
+		name = "3rd Yellow Shirts"
+		type = irregular
+		home = 1601
+	}
+	regiment = {
+		name = "4th Yellow Shirts"
+		type = irregular
+		home = 1602
+	}
+}

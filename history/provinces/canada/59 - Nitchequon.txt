@@ -1,0 +1,6 @@
+owner = NHL
+controller = NHL
+add_core = NHL
+trade_goods = fish
+life_rating = 35
+

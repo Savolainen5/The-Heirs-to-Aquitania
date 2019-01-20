@@ -1,0 +1,83 @@
+leader = {
+	name = "Begum Sinha"
+	type = land
+	date = 1836.1.1
+	background = school_of_the_bayonet
+	personality = tactful
+	prestige = 0
+}
+
+army = {
+	name = "Army of Begum Sinha"
+	location = 1253
+	regiment = {
+		name = "1. Rifles"
+		type = infantry
+		home = 1254
+	}
+	regiment = {
+		name = "2. Rifles"
+		type = infantry
+		home = 1252
+	}
+	regiment = {
+		name = "3. Rifles"
+		type = infantry
+		home = 1252
+	}
+	regiment = {
+		name = "4. Rifles"
+		type = infantry
+		home = 1253
+	}
+	regiment = {
+		name = "Khalasa Cavalry"
+		type = cavalry
+		home = 1252
+	}
+}
+
+army = {
+	name = "Army of the Raja of Bangla"
+	location = 1254
+	regiment = {
+		name = "1. Warriors"
+		type = infantry
+		home = 1253
+	}
+	regiment = {
+		name = "2. Warriors"
+		type = infantry
+		home = 1253
+	}
+	regiment = {
+		name = "3. Warriors"
+		type = infantry
+		home = 1254
+	}
+	regiment = {
+		name = "4. Warriors"
+		type = infantry
+		home = 1254
+	}
+	regiment = {
+		name = "5. Warriors"
+		type = infantry
+		home = 1255
+	}
+	regiment = {
+		name = "6. Warriors"
+		type = infantry
+		home = 1255
+	}
+	regiment = {
+		name = "1. Cavalry"
+		type = cavalry
+		home = 1255
+	}
+	regiment = {
+		name = "2. Cavalry"
+		type = cavalry
+		home = 1252
+	}
+}

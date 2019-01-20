@@ -1,0 +1,6 @@
+owner = MAT
+controller = MAT
+add_core = TSW
+trade_goods = wool
+life_rating = 25
+

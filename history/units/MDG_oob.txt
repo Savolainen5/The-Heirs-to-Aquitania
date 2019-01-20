@@ -1,0 +1,29 @@
+army = {
+	name = "Army of the King of Middag"
+	location = 1485
+	regiment = {
+		name = "1st Pingpu"
+		type = irregular
+		home = 1485
+	}
+	regiment = {
+		name = "2nd Pingpu"
+		type = irregular
+		home = 1485
+	}
+}
+
+army = {
+	name = "Army of the Gaoshan"
+	location = 2562
+	regiment = {
+		name = "1st Gaoshan"
+		type = irregular
+		home = 2562
+	}
+	regiment = {
+		name = "2nd Gaoshan"
+		type = irregular
+		home = 2562
+	}
+}

@@ -1,0 +1,664 @@
+political_decisions = {
+	settle_namaqualand = {
+		picture = embrace_the_boer
+		potential = {
+			owns = 2087
+			owns = 2088
+			owns = 2093
+			NOT = { owns = 2084 }
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			prestige = 2
+			money = -3500
+			2084 = { secede_province = THIS add_core = SAF life_rating = 10 }
+			2085 = { secede_province = THIS add_core = SAF life_rating = 10 }
+			2086 = { secede_province = THIS add_core = SAF life_rating = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { money = 3500 }
+			}
+		}
+	}
+	
+	boer_republic = {
+		potential = {
+			OR = {
+				tag = NAL
+				tag = TRN
+				tag = ORA
+				tag = GOS
+			}
+			NOT = { has_country_flag = republic_founded }
+		}
+		
+		allow = {
+			NOT = { has_country_modifier = trek_boers }
+		}
+		
+		effect = {
+			set_country_flag = republic_founded
+			random_owned = {
+				limit = {
+					owner = { NOT = { government = democracy } }
+				}
+				owner = { government = democracy }
+			}
+			small_arms = 50
+			regular_clothes = 50
+			add_country_modifier = {
+				name = trek_boers
+				duration = 730
+			}
+			add_country_modifier = {
+				name = boer_republic
+				duration = 7300
+			}
+			any_pop = {
+				limit = { has_pop_culture = steenkooler }
+				militancy = -8
+				ideology = {
+					value = conservative
+					factor = 0.50
+				}
+				ideology = {
+					value = reactionary
+					factor = 0.30
+				}
+			}
+			any_pop = {
+				limit = { is_culture_group = southern_african }
+				militancy = -4
+				reduce_pop = 0.90
+			}
+			random_owned = {
+				limit = {
+					owner = { is_vassal = no }
+				}
+				owner = {
+					add_country_modifier = {
+						name = small_country_draft
+						duration = 365
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sand_river_convention = {
+		potential = {
+			is_our_vassal = TRN
+			TRN = {
+				NOT = { any_owned_province = { is_core = THIS } }
+			}
+			NOT = { has_country_flag = had_sand_river_convention }
+		}
+		allow = {
+			TRN = {
+				war = no
+				total_amount_of_divisions = 1
+				NOT = { has_country_modifier = trek_boers }
+			}
+		}
+		effect = {
+			set_country_flag = had_sand_river_convention
+			release_vassal = TRN
+			TRN = {
+				all_core = {
+					remove_core = THIS
+					remove_core = SAF
+				}
+				country_event = 98230
+			}
+		}
+	}
+	
+	orange_river_convention = {
+		potential = {
+			is_our_vassal = ORA
+			ORA = {
+				NOT = { any_owned_province = { is_core = THIS } }
+			}
+			NOT = { has_country_flag = had_orange_river_convention }
+		}
+		
+		allow = {
+			ORA = {
+				war = no
+				total_amount_of_divisions = 1
+				NOT = { has_country_modifier = trek_boers }
+			}
+		}
+		
+		effect = {
+			set_country_flag = had_orange_river_convention
+			release_vassal = ORA
+			ORA = {
+				all_core = {
+					remove_core = THIS
+					remove_core = SAF
+				}
+				country_event = 98231
+			}
+		}
+	}
+	
+	claim_transvaal = {
+		potential = {
+			primary_culture = steenkooler
+			NOT = { 
+				tag = TRN
+				has_country_flag = claimed_transvaal
+			}
+		}
+		
+		allow = {
+			OR = {
+				is_our_vassal = TRN
+				TRN = { in_sphere = THIS }
+				TRN = {
+					all_core = { owned_by = THIS }
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = claimed_transvaal
+			prestige = 10
+			TRN = {
+				all_core = {
+					remove_core = TRN
+					add_core = THIS
+				}
+			}
+			random_country = {
+				limit = {
+					tag = TRN
+					exists = yes
+				}
+				THIS = { inherit = TRN }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	claim_oranje = {
+		picture = claim_transvaal
+		potential = {
+			primary_culture = steenkooler
+			NOT = {
+				tag = ORA
+				has_country_flag = claimed_oranje
+			}
+		}
+		
+		allow = {
+			OR = {
+				is_our_vassal = ORA
+				ORA = { in_sphere = THIS }
+				ORA = {
+					all_core = { owned_by = THIS }
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = claimed_oranje
+			prestige = 10
+			ORA = {
+				all_core = {
+					remove_core = ORA
+					add_core = THIS
+				}
+			}
+			random_country = {
+				limit = {
+					tag = ORA
+					exists = yes
+				}
+				THIS = { inherit = ORA }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	claim_natalia = {
+		picture = claim_transvaal
+		potential = {
+			primary_culture = steenkooler
+			NOT = {
+				tag = NAL
+				has_country_flag = claimed_natalia
+			}
+		}
+		
+		allow = {
+			OR = {
+				is_our_vassal = NAL
+				NAL = { in_sphere = THIS }
+				NAL = {
+					all_core = { owned_by = THIS }
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = claimed_natalia
+			prestige = 10
+			NAL = {
+				all_core = {
+					remove_core = NAL
+					add_core = THIS
+				}
+			}
+			random_country = {
+				limit = {
+					tag = NAL
+					exists = yes
+				}
+				THIS = { inherit = NAL }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_stellaland = {
+		picture = embrace_the_boer
+		potential = {
+			primary_culture = steenkooler
+			STE = { exists = no }
+			NOT = { has_global_flag = stellaland_formed }
+		}
+		
+		allow = {
+			war = no
+			owns = 2105
+			owns = 2101
+			owns = 2049
+		}
+		
+		effect = {
+			set_global_flag = stellaland_formed
+			prestige = 20
+			TRN = { all_core = { add_core = STE } }
+			ORA = { all_core = { add_core = STE } }
+			NAL = { all_core = { add_core = STE } }
+			GOS = { all_core = { add_core = STE } }
+			#ENG_2087 = { add_core = SAF }
+			#ENG_2092 = { add_core = SAF }
+			change_tag = STE
+			any_pop = {
+				limit = { is_primary_culture = yes }
+				militancy = -4
+			}
+			any_country = {
+				limit = {
+					OR = {
+						tag = TRN
+						tag = ORA
+						tag = NAL
+						tag = GOS
+					}
+					exists = yes
+					NOT = { tag = THIS }
+				}
+				country_event = 11101
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	reorganize_south_africa = {
+		picture = form_south_africa
+		potential = {
+			civilized = yes
+			owns = 2087
+			SAF = {
+				exists = no
+				NOT = { is_culture_group = THIS }
+			}
+			NOT = {
+				capital_scope = { continent = africa }
+			}
+		}
+		
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			owns = 2087
+		}
+		
+		effect = {
+			prestige = 10
+			SAF = {
+				all_core = {
+					limit = {
+						NOT = { owned_by = THIS }
+					}
+					remove_core = SAF
+				}
+				primary_culture = THIS
+				add_accepted_culture = steenkooler
+			}
+			any_pop = {
+				limit = {
+					location = { is_core = SAF }
+				}
+				militancy = -3
+			}
+		}	
+	}
+
+	appeal_to_the_british = {
+		picture = treaty_signing
+		potential = {
+			OR = {
+				tag = ORA
+				tag = TRN
+				tag = NAL
+			}
+			war = yes
+			NOT = {
+				has_country_flag = appealed_to_the_british
+				in_sphere = NET
+				war_with = NET
+				truce_with = NET
+				any_owned_province = { is_core = NET }
+				war_with = ZUL
+			}
+			NET = {
+				is_greater_power = yes
+				owns = 2087
+			}
+		}
+
+		allow = {
+			OR = {
+				AND = {
+					NOT = { total_amount_of_divisions = 1 }
+					national_provinces_occupied = 0.25
+				}
+				national_provinces_occupied = 0.5
+			}
+		}
+
+		effect = {
+			set_country_flag = appealed_to_the_british
+			NET = { country_event = 98241 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					war_with = ORA
+					war_with = TRN
+					war_with = NAL
+				}
+			}
+		}
+	}
+	
+	treaty_of_vereeniging = {
+		picture = treaty_signing
+		potential = {
+			OR = {
+				tag = TRN
+				tag = ORA
+				tag = NAL
+				AND = {
+					tag = SAF
+					primary_culture = steenkooler
+				}
+			}
+			2087 = {
+				owner = {
+					NOT = { primary_culture = steenkooler }
+					war_with = THIS
+				}
+			}
+			OR = {
+				tag = SAF
+				SAF = { exists = no }
+			}
+		}
+		
+		allow = {
+			war = yes
+			2087 = { controlled_by = THIS }
+			SAF = {
+				all_core = {
+					OR = {
+						controlled_by = THIS
+						controller = { alliance_with = THIS }
+						empty = yes
+						province_id = 2083
+						owner = {
+							NOT = { war_with = THIS }
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			random_country = {
+				limit = {
+					owns = 2087
+					war_with = THIS
+				}
+				country_event = 98247
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+#	claim_north_cape_colony = {
+#		picture = map_africa
+#		potential = {
+#			tag = NET
+#			2093 = {
+#				empty = no
+#				NOT = { owned_by = THIS }
+#				NOT = { owned_by = SAF }
+#			}
+#			NOT = { has_country_flag = claimed_north_cape_colony }
+#		}
+#		
+#		allow = {
+#			owns = 2087
+#			2093 = {
+#				NOT = { is_core = THIS }
+#			}
+#		}
+#		
+#		effect = {
+#			set_country_flag = claimed_north_cape_colony
+#			2088 = { add_core = THIS }
+#			2092 = { add_core = THIS }
+#			2093 = { add_core = THIS }
+#			2558 = { add_core = THIS }
+#			random_country = {
+#				limit = { owns = 2093 }
+#				relation = { who = THIS value = -100 }
+#				leave_alliance = THIS
+#			}
+#		}
+#	}
+	
+	claim_xhosa_lands = {
+		picture = map_africa
+		potential = {
+			tag = NET
+			owns = 2087
+			2100 = {
+				OR = {
+					owned_by = THIS
+					NOT = { owned_by = XHO }
+					has_global_flag = berlin_conference
+				}
+				NOT = { is_core = THIS }
+			}
+			NOT = { has_country_flag = claimed_xhosa }
+		}
+		
+		allow = {
+			2100 = {
+				NOT = { is_core = THIS }
+			}
+		}
+		
+		effect = {
+			set_country_flag = claimed_xhosa
+			badboy = 2
+			2098 = {
+				add_core = THIS
+			}
+			2099 = {
+				add_core = THIS
+			}
+			2100 = {
+				add_core = THIS
+			}
+			random_country = {
+				limit = { owns = 2100 }
+				relation = { who = THIS value = -100 }
+				leave_alliance = THIS
+			}
+		}
+	}
+	
+	treaty_of_umtata = {
+		picture = treaty_signing
+		potential = {
+			owns = 2087
+			is_our_vassal = XHO
+			XHO = {
+				OR = {
+					owns = 2098
+					owns = 2099
+				}
+				truce_with = THIS
+			}
+		}
+		
+		allow = {
+			war = no
+			XHO = {
+				truce_with = THIS
+			}
+			is_our_vassal = XHO
+		}
+		
+		effect = {
+			badboy = 1
+			prestige = 3
+			relation = { who = XHO value = 200 }
+			diplomatic_influence = { who = XHO value = -200 }
+			random_country = {
+				limit = {
+					tag = XHO
+					NOT = { owns = 2098 }
+					owns = 2099
+				}
+				2099 = {
+					add_core = THIS
+					add_core = SAF
+					secede_province = THIS
+				}
+			}
+			random_country = {
+				limit = {
+					tag = XHO
+					owns = 2098
+				}
+				2098 = {
+					add_core = THIS
+					add_core = SAF
+					secede_province = THIS
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#This decision can follow the Emden Accords
+	sell_dutch_natal = {
+		picture = map_africa
+		potential = {
+			owns = 2100
+			NOT = { tag = NET }
+			has_global_flag = emden_accords_concluded
+			NOT = { has_country_flag = buy_natal }
+		}
+		
+		allow = {
+			money = 15000
+			2111 = { owned_by = NET }
+			2112 = { owned_by = NET }
+		}
+		
+		effect = {
+			set_country_flag = buy_natal
+			NET = {
+				country_event = {
+					id = 52005
+					days = 1
+				}
+			}
+		}
+	}
+
+	#Retained and modified from /gsg/Vickymod 1.06, the base mod for this one
+	boer_government = {
+		potential = {
+			NOT = { year = 1838 }
+			tag = SAF
+			NOT = {
+				has_country_flag = steenkooler_govt
+			}
+		}
+		
+		allow = {
+			is_vassal = no
+			war = no
+		}
+		
+		effect = {
+			primary_culture = steenkooler
+			add_accepted_culture = dutch
+			set_country_flag = steenkooler_govt
+		}
+	}
+}

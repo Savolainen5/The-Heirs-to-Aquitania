@@ -1,0 +1,244 @@
+army = {
+	name = "Army of the Samraja"
+	location = 1240
+	regiment = {
+		name = "1st Samraja Guard"
+		type = infantry
+		home = 1240
+	}
+	regiment = {
+		name = "2nd Samraja Guard"
+		type = infantry
+		home = 1240
+	}
+	regiment = {
+		name = "3rd Samraja Guard"
+		type = infantry
+		home = 1240
+	}
+	regiment = {
+		name = "1st Delhi Contingent"
+		type = irregular
+		home = 1236
+	}
+	regiment = {
+		name = "1st Panipat Contingent"
+		type = irregular
+		home = 1237
+	}
+	regiment = {
+		name = "1st Meerut Contingent"
+		type = irregular
+		home = 1239
+	}
+	regiment = {
+		name = "2nd Meerut Contingent"
+		type = irregular
+		home = 1239
+	}
+	regiment = {
+		name = "1st Dehra Dun Contingent"
+		type = irregular
+		home = 1238
+	}
+	regiment = {
+		name = "1st Cavalry Guards"
+		type = cavalry
+		home = 1242
+	}
+	regiment = {
+		name = "2nd Cavalry Guards"
+		type = cavalry
+		home = 1242
+	}
+}
+
+army = {
+	name = "Army of the Confluence"
+	location = 1243
+	regiment = {
+		name = "1st Pragaya Contingent"
+		type = irregular
+		home = 1243
+	}
+	regiment = {
+		name = "2nd Pragaya Contingent"
+		type = irregular
+		home = 1243
+	}
+	regiment = {
+		name = "3rd Pragaya Contingent"
+		type = irregular
+		home = 1243
+	}
+	regiment = {
+		name = "1st Gorakhpur Contingent"
+		type = irregular
+		home = 1246
+	}
+	regiment = {
+		name = "2nd Gorakhpur Contingent"
+		type = irregular
+		home = 1246
+	}
+	regiment = {
+		name = "3rd Gorakhpur Contingent"
+		type = irregular
+		home = 1246
+	}
+	regiment = {
+		name = "1st Benares Cavalry"
+		type = cavalry
+		home = 1245
+	}
+	regiment = {
+		name = "2nd Benares Cavalry"
+		type = cavalry
+		home = 1245
+	}
+}
+
+army = {
+	name = "Marathi Army of Fanindrapur"
+	location = 1277
+	regiment = {
+		name = "1st Fanindrapur Marathis"
+		type = irregular
+		home = 1277
+	}
+	regiment = {
+		name = "2nd Fanindrapur Marathis"
+		type = irregular
+		home = 1277
+	}
+	regiment = {
+		name = "1st Amarati Marathis"
+		type = irregular
+		home = 1278
+	}
+	regiment = {
+		name = "1st Nizamabad Marathis"
+		type = irregular
+		home = 1285
+	}
+	regiment = {
+		name = "1st Khadki Marathis"
+		type = irregular
+		home = 1284
+	}
+	regiment = {
+		name = "1st Jubbulpore Marathis"
+		type = irregular
+		home = 1275
+	}
+	regiment = {
+		name = "2nd Jubbulpore Marathis"
+		type = cavalry
+		home = 1275
+	}
+	regiment = {
+		name = "1st Hoshangabad Marathis"
+		type = cavalry
+		home = 1276
+	}
+}
+
+army = {
+	name = "Marathi Army of Indore"
+	location = 1271
+	regiment = {
+		name = "1st Indore Marathis"
+		type = irregular
+		home = 1271
+	}
+	regiment = {
+		name = "2nd Indore Marathis"
+		type = irregular
+		home = 1271
+	}
+	regiment = {
+		name = "1st Bhopal Marathis"
+		type = irregular
+		home = 1272
+	}
+	regiment = {
+		name = "2nd Bhopal Marathis"
+		type = irregular
+		home = 1272
+	}
+	regiment = {
+		name = "1st Gwalior Marathis"
+		type = irregular
+		home = 1270
+	}
+	regiment = {
+		name = "2nd Gwalior Marathis"
+		type = irregular
+		home = 1270
+	}
+	regiment = {
+		name = "1st Mombai Marathis"
+		type = cavalry
+		home = 1297
+	}
+	regiment = {
+		name = "2nd Mombai Marathis"
+		type = cavalry
+		home = 1297
+	}
+	regiment = {
+		name = "1st Nasik Marathis"
+		type = cavalry
+		home = 1298
+	}
+}
+
+army = {
+	name = "Bhagnagar Guards Army"
+	location = 1283
+	regiment = {
+		name = "Royal Guards of Bhagnagar"
+		type = infantry
+		home = 1283
+	}
+	regiment = {
+		name = "1st Bhagnagar Contingent"
+		type = irregular
+		home = 1283
+	}
+	regiment = {
+		name = "2nd Bhagnagar Contingent"
+		type = irregular
+		home = 1283
+	}
+	regiment = {
+		name = "3rd Bhagnagar Contingent"
+		type = irregular
+		home = 1283
+	}
+	regiment = {
+		name = "1st Warangal Contingent"
+		type = irregular
+		home = 1287
+	}
+	regiment = {
+		name = "1st Gulbarga Contingent"
+		type = irregular
+		home = 1286
+	}
+	regiment = {
+		name = "1st Bijapur Contingent"
+		type = cavalry
+		home = 1300
+	}
+	regiment = {
+		name = "1st Kolhapur Contingent"
+		type = cavalry
+		home = 1301
+	}
+	regiment = {
+		name = "2nd Warangal Contingent"
+		type = cavalry
+		home = 1287
+	}
+}

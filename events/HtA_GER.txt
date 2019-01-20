@@ -1,0 +1,1019 @@
+#Germany events, 50050 - 50099 reserved for these
+
+#Duchess Adelheid of Hannover dies (AI HAN)
+
+country_event = {
+	id = 50050
+	title = "EVTNAME50050"
+	desc = "EVTDESC50050"
+	picture = "Adelheid"
+
+	trigger = {
+		tag = HAN
+		ai = yes
+		year = 1842
+		NOT = { has_global_flag = RIP_HAN_Adelheid }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "May she rest in peace."
+		set_global_flag = RIP_HAN_Adelheid
+		BRA = { country_event = 50052 } #Inheritance of HAN
+	}
+}
+
+#Duchess Adelheid of Hannover dies (human HAN)
+country_event = {
+	id = 50051
+	title = "EVTNAME50050"
+	desc = "EVTDESC50050"
+	picture = "Adelheid"
+
+	trigger = {
+		tag = HAN
+		ai = no
+		year = 1842
+		NOT = { has_global_flag = RIP_HAN_Adelheid }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "May she rest in peace."
+		set_global_flag = RIP_HAN_Adelheid
+		change_tag = BRA
+		inherit = HAN
+		HAN = {
+			all_core = { add_core = BRA	}
+		}
+		capital = 536
+	}
+}
+
+#Duchess Adelheid of Hannover dies (BRA) (Inheritance of HAN)
+country_event = {
+	id = 50052
+	title = "EVTNAME50050"
+	desc = "EVTDESC50050"
+	picture = "Adelheid"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "May she rest in peace."
+		prestige = 5
+		inherit = HAN
+		HAN = {
+			all_core = { add_core = BRA	}
+		}
+	}
+}
+
+##########################################################################################################################
+#Thieves strike the Royal Treasury in Munich - Spawns event chain between BAV and MNZ (50053-60) and then the Brunswick congress
+country_event = {
+	id = 50053
+	title = "EVTNAME50053"
+	desc = "EVTDESC50053"
+	picture = "Crown_Jewels"
+	
+	trigger = {
+		tag = BAV
+		year = 1843
+		NOT = { has_country_flag = steinberger_gang_strikes }
+	}
+	
+	mean_time_to_happen = {
+		months = 8
+	}
+	
+	option = {
+		name = "Pursue them no matter the consequences!"
+		treasury = -10000
+		prestige = -10
+		relation = {
+			who = MNZ
+			value = -70
+		}
+		MNZ = {
+			country_event = {
+				id = 50054
+				days = 3
+			}
+		}
+		set_country_flag = steinberger_gang_strikes
+		set_global_flag = BAV_violate_MNZ
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We cannot risk an incident, even for the crown jewels."
+		treasury = -20000
+		prestige = -20
+		relation = {
+			who = MNZ
+			value = -50
+		}
+		set_country_flag = steinberger_gang_strikes
+		set_global_flag = dont_pursue_steinberger_gang
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+#Bavarian troops cross the border
+country_event = {
+	id = 50054
+	title = "EVTNAME50054"
+	desc = "EVTDESC50054"
+	picture = "Artillery"
+		
+	is_triggered_only = yes
+	major = yes
+		
+	option = {
+		name = "Demand their immediate withdrawal from the King himself!"
+		relation = {
+			who = BAV
+			value = -100
+		}
+		BAV = {
+			country_event = {
+				id = 50055 #Mainz demands the withdrawal of our troops
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	option = {
+		name = "They'll only stay a little while, right?"
+		relation = {
+			who = BAV
+			value = -50
+		}
+		prestige = -20
+		BAV = {
+			country_event = {
+				id = 50056 #Mainz allows us to stay
+				days = 1
+			}
+			country_event = {
+				id = 50057 #Steinberger Gang caught!
+				days = 4
+			}
+		}
+		
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#Mainz demands the withdrawal of our troops
+
+country_event = {
+	id = 50055
+	title = "EVTNAME50055"
+	desc = "EVTDESC50055"
+	picture = "administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Our men will stay until the job is done!"
+		relation = {
+			who = MNZ
+			value = -200
+		}
+		MNZ = { country_event = 50058 } #Bavarians refuse to withdraw
+		set_global_flag = BAV_stay_in_MNZ
+
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We will withdraw our soldiers."
+		relation = {
+			who = MNZ
+			value = 10
+		}
+		MNZ = { country_event = 50059 } #Bavarians withdraw
+
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#Mainz allows us to stay
+country_event = {
+	id = 50056
+	title = "EVTNAME50056"
+	desc = "EVTDESC50056"
+	picture = "administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent! Let's find those thieves!"
+		prestige = 1
+		relation = {
+			who = MNZ
+			value = 25
+		}
+		military_access = MNZ
+	}
+}
+
+#Steinberger Gang caught!
+country_event = {
+	id = 50057
+	title = "EVTNAME50057"
+	desc = "EVTDESC50057"
+	picture = "arrested"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The troops will stay."
+		prestige = 5
+		badboy = 5
+		set_global_flag = steinberger_gang_caught
+		diplomatic_influence = {
+			who = MNZ
+			value = 400
+		}
+		create_vassal = MNZ
+		
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "The troops will leave."
+		prestige = 5
+		set_global_flag = steinberger_gang_caught
+		diplomatic_influence = {
+			who = MNZ
+			value = 50
+		}
+		relation = {
+			who = MNZ
+			value = 35
+		}
+		
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#Bavarians refuse to withdraw
+country_event = {
+	id = 50058
+	title = "EVTNAME50058"
+	desc = "EVTDESC50058"
+	picture = "Artillery"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Eject them by force."
+		prestige = 2
+		BAV = { country_event = 50060 }
+
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	option = {
+		name = "Fine, let them stay after all."
+		prestige = -5
+		BAV = {
+			country_event = {
+				id = 50056 #Mainz allows us to stay
+				days = 1
+			}
+			country_event = {
+				id = 50057 #Steinberger Gang caught!
+				days = 4
+			}
+		}
+
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+	
+#Bavarians withdraw
+country_event = {
+	id = 50059
+	title = "EVTNAME50059"
+	desc = "EVTDESC50059"
+	picture = "administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "A great day for Mainz!"
+		prestige = 5
+		relation = {
+			who = BAV
+			value = 20
+		}
+		set_global_flag = BAV_leave_MNZ
+	}
+}
+		
+#Our troops physically ejected!
+country_event = {
+	id = 50060
+	title = "EVTNAME50060"
+	desc = "EVTDESC50060"
+	picture = "supportwar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Intolerable! They will pay!"
+		prestige = -5
+		set_global_flag = MNZ_threatened
+		relation = {
+			who = FROM
+			value = -100
+		}
+		add_casus_belli = {
+			target = MNZ
+			type = cut_down_to_size
+			months = 60
+		}
+		add_casus_belli = {
+			target = MNZ
+			type = add_to_sphere
+			months = 60
+		}
+	}
+}
+
+######BAV-MNZ event chain end
+
+############################################################################################################
+##########################################Brunswick congress begin##########################################
+############################################################################################################
+
+#Brunswick calls a congress
+country_event = {
+	id = 50061
+	title = "EVTNAME50061"
+	desc = "EVTDESC50061"
+	picture = "danishgovernment"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will attend!"
+		set_country_flag = attend_brunswick_congress
+		
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 100
+				tag = MNZ
+				NOT = { vassal_of = BAV }
+				NOT = {
+					relation = {
+						who = BAV
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				NOT = { tag = LUX }
+				NOT = { tag = MNZ }
+				is_vassal = no
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "We will not attend."
+		set_country_flag = no_attend_brunswick_congress
+		
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 5
+				in_sphere = BAV
+			}
+			modifier = {
+				factor = 10
+				is_vassal = yes
+			}
+			modifier = {
+				factor = 10
+				vassal_of = BAV
+			}
+			modifier = {
+				factor = 100
+				tag = LUX
+			}
+		}
+	}
+}
+
+#Brunswick calls a congress - BAV
+country_event = {
+	id = 50062
+	title = "EVTNAME50061"
+	desc = "EVTDESC50062"
+	picture = "danishgovernment"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We must watch these developments carefully."
+		relation = {
+			who = BRA
+			value = -30
+		}
+		any_country = {
+			limit = {
+				primary_culture = north_german
+				has_country_flag = attend_brunswick_congress
+			}
+			relation = {
+				who = THIS
+				value = -25
+			}
+		}
+		any_country = {
+			limit = {
+				primary_culture = north_german
+				has_country_flag = no_brunswick_congress
+			}
+			relation = {
+				who = THIS
+				value = 25
+			}
+		}
+	}
+}
+
+#The Congress is opened
+country_event = {
+	id = 50063
+	title = "EVTNAME50063"
+	desc = "EVTDESC50063"
+	picture = "danishgovernment"
+	
+	trigger = {
+		NOT = { tag = BRA }
+		primary_culture = north_german
+		has_country_flag = attend_brunswick_congress
+		has_global_flag = brunswick_congress1
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "The Congress is opened."
+		prestige = 2
+		clr_country_flag = attend_brunswick_congress
+		set_country_flag = attending_brunswick_congress
+	}
+}
+
+#The Main Event for BRA
+country_event = {
+	id = 50064
+	title = "EVTNAME50064"
+	desc = "EVTDESC50064"
+	
+	trigger = {
+		tag = BRA
+		has_global_flag =  brunswick_congress1
+		NOT = { has_country_flag = brunswick_congress_in_progress }
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "Now we make our case!"
+		prestige = 3
+		set_country_flag = brunswick_congress_in_progress
+		clr_global_flag = brunswick_congress1
+		set_global_flag = brunswick_congress2
+		set_country_flag = attending_brunswick_congress
+		any_country = {											#Apparently this stuff doesn't work unless the player is Brunswick, and it messes everything up
+			limit = {
+				ai = yes
+				has_country_flag = attending_brunswick_congress
+				NOT = { tag = BRN }
+				NOT = { tag = BRA }
+			}
+			country_event = 50065
+		}
+		any_country = {
+			limit = {
+				ai = no
+				has_country_flag = attending_brunswick_congress
+				NOT = { tag = BRA }
+				NOT = { tag = BRN }
+			}
+			country_event = 50066
+		}
+	}
+}
+
+#The Main Event for AI North German minours (not BRA or BRN). 
+country_event = {
+	id = 50065
+	title = "EVTNAME50065"
+	desc = "EVTDESC50065"
+	
+	trigger = {
+		has_country_flag = attending_brunswick_congress
+		NOT = { tag = BRA }
+		NOT = { tag = BRN }
+		has_global_flag = brunswick_congress2
+		ai = yes
+		not = { has_country_flag = made_a_decision }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.1
+			year = 1843			#Just so that it'll fire almost instantly
+		}
+	}
+	
+#	is_triggered_only = yes	#This is the old, broken way. RIP
+	
+	option = {
+		name = "We will join forces with Brunswick!"
+		set_country_flag = join_BRA
+		set_country_flag = made_a_decision
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2.5
+				BRA = { is_greater_power = yes }
+				THIS = { in_sphere = BRA }
+			}
+			modifier = {
+				factor = 1.5
+				relation = { who = BRA value = 200 }
+			}
+			modifier = {
+				factor = 1.5
+				relation = { who = BRA value = 150 }
+			}
+			modifier = {
+				factor = 1.1
+				relation = { who = BRA value = 50 }
+			}
+			modifier = {
+				factor = 1.5
+				alliance_with = BRA
+			}
+			modifier = {
+				factor = 1.5
+				neighbour = BRA
+			}
+			modifier = {
+				factor = 0
+				THIS = { in_sphere = BRN }
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					tag = OLD
+					tag = BRE
+					tag = NAS
+					tag = LUX
+				}
+			}
+			modifier = {
+				factor = 0.1
+				OR = {
+					tag = MEC
+					tag = POM
+					tag = SAX
+					tag = THU
+				}
+			}
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+				OR = {
+					tag = WES
+					tag = MNR
+				}
+			}
+			modifier = {
+				factor = 4
+				has_global_flag = railroading_on
+				OR = {
+					tag = RHI
+					tag = TRR
+					tag = MNZ
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We will throw our lot in with Brandenburg!"
+		set_country_flag = join_BRN
+		set_country_flag = made_a_decision		
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2.5
+				BRN = { is_greater_power = yes }
+				THIS = { in_sphere = BRN }
+			}
+			modifier = {
+				factor = 1.5
+				relation = { who = BRN value = 200 }
+			}
+			modifier = {
+				factor = 1.5
+				relation = { who = BRN value = 150 }
+			}
+			modifier = {
+				factor = 1.1
+				relation = { who = BRN value = 50 }
+			}
+			modifier = {
+				factor = 1.5
+				alliance_with = BRN
+			}
+			modifier = {
+				factor = 1.5
+				neighbour = BRN
+			}
+			modifier = {
+				factor = 0.2
+				BRA = { is_greater_power = yes }
+				THIS = { in_sphere = BRA }
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					tag = MEC
+					tag = POM
+					tag = SAX
+					tag = THU
+				}
+			}
+			modifier = {
+				factor = 0.1
+				OR = {
+					tag = OLD
+					tag = BRE
+					tag = RHI
+					tag = NAS
+					tag = TRR
+					tag = LUX
+					tag = MNZ
+				}
+			}
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+				tag = THU
+			}
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+				tag = HEK
+			}
+		}
+	}
+
+	option = {
+		name = "It is better to remain totally independent."
+		prestige = 5
+		set_country_flag = dont_annex_me_bro_brunswick_congress
+		set_country_flag = made_a_decision	
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				OR = {
+					THIS = { in_sphere = BRA }
+					THIS = { in_sphere = BRN }
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					relation = { who = BRA value = 0 }
+					relation = { who = BRN value = 0 }
+				}
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+#The Main Event for human North German minours (not BRA or BRN)
+country_event = {
+	id = 50066
+	title = "EVTNAME50065"
+	desc = "EVTDESC50065"
+	picture = "meeting"
+	
+	trigger = {
+		has_country_flag = attending_brunswick_congress
+		NOT = { tag = BRA }
+		NOT = { tag = BRN }
+		has_global_flag = brunswick_congress2
+		ai = no
+		not = { has_country_flag = made_a_decision }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.1
+			year = 1843			#Just so that it'll fire almost instantly
+		}
+	}
+	
+#	is_triggered_only = yes	#This is the old, broken way. RIP
+	
+	option = {
+		name = "We will join forces with Brunswick!"
+		set_country_flag = made_a_decision
+		change_tag = BRA
+		inherit = THIS
+		THIS = {
+			all_core = { add_core = BRA }
+		}
+	}
+	
+	option = {
+		name = "We will throw our lot in with Brandenburg!"
+		set_country_flag = made_a_decision
+		change_tag = BRN
+		inherit = THIS
+		THIS = {
+			all_core = { add_core = BRN }
+		}
+	}
+
+	option = {
+		name = "It is better to remain totally independent."
+		prestige = 10
+		set_country_flag = dont_annex_me_bro_brunswick_congress
+		set_country_flag = made_a_decision
+	}
+}
+
+#Brunswick inherits loyal princes
+country_event = {
+	id = 50067
+	title = "EVTNAME50067"
+	desc = "EVTDESC50067" 
+	picture = "administration"
+	
+	trigger = {
+		tag = BRA
+		has_global_flag = brunswick_congress2
+		has_country_flag = brunswick_congress_in_progress
+		NOT = { has_country_flag = brunswick_congress_annexations }
+		BRE = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		FRM = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		HEK = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		MEC = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		MNR = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		MNZ = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		NAS = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		OLD = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		POM = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		RHI = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		SAX = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		THU = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		TRR = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		WES = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Excellent!"
+		set_country_flag = brunswick_congress_annexations
+		prestige = 25
+		any_country = {
+			limit = {
+				has_country_flag = join_BRA
+			}
+			annex_to = BRA
+			all_core = { add_core = BRA }
+		}
+		country_event = {
+			id = 50069
+			days = 2
+		}
+	}
+}
+
+#Brandenburg inherits loyal princes
+country_event = {
+	id = 50068
+	title = "EVTNAME50067"
+	desc = "EVTDESC50067" 
+	picture = "administration"
+	
+	trigger = {
+		tag = BRN
+		has_global_flag = brunswick_congress2
+		BRA = { has_country_flag = brunswick_congress_in_progress }
+		NOT = { has_country_flag = brunswick_congress_annexations }
+		BRE = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		FRM = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		HEK = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		MEC = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		MNR = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		MNZ = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		NAS = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		OLD = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		POM = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		RHI = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		SAX = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		THU = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		TRR = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+		WES = { OR = { exists = no has_country_flag = made_a_decision has_country_flag = no_attend_brunswick_congress } }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Brilliant!"
+		set_country_flag = brunswick_congress_annexations
+		prestige = 25
+		any_country = {
+			limit = {
+				has_country_flag = join_BRN
+			}
+			annex_to = BRN
+			all_core = { add_core = BRN }
+		}
+	}
+}
+
+#Event fires to signal the end of the Brunswick Congress
+country_event = {
+	id = 50069
+	title = "EVTNAME50069"
+	desc = "EVTDESC50069" 
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "The Congress is now closed."
+		clr_global_flag = brunswick_congress2
+		set_global_flag = brunswick_congress_concluded
+	}
+}
+
+################################
+# Brunswick Congress Chain end #
+################################
+
+#Event to activate the German Hegemony CB
+country_event = {
+	id = 50070
+	title = "EVTNAME50070"
+	desc = "EVTDESC50070"
+	picture = "threehurrahs"
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		ai = yes
+		OR = {
+			tag = SWI
+			tag = LUX
+			tag = NOR
+		}
+		has_global_flag = brunswick_congress_concluded
+		BAV = { has_country_flag = claim_empire }
+		BRA = { has_country_flag = claim_empire }
+		BRN = { has_country_flag = claim_empire }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "The situation in Germany is deteriorating."
+		set_global_flag = german_hegemony_wars_start
+	}
+}
+
+#Lybæk renamed to Lubeck		Parallel event #50503 in HtA_Scandinavia
+country_event = {
+	id = 50071
+	title = "EVTNAME50071"
+	desc = "EVTDESC50071"
+	picture = "croatia_issue"
+	
+	trigger = {
+		OR = {
+			primary_culture = north_german
+			primary_culture = central_german
+		}
+		530 = {
+			owned_by = THIS
+		}
+			NOT = { has_global_flag = german_lubeck }
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+	
+	option = {
+		name = "As it should be."
+		prestige = 1
+		set_global_flag = german_lubeck
+		530 = {
+			change_province_name = "Lübeck"
+		}
+	}
+}
+
+#Netherlands cede Emden to us!
+country_event = {
+	id = 50072
+	title = "EVTNAME50072"
+	desc = "EVTDESC50072"
+	picture = "croatia_issue"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent news!"
+		prestige = 2
+		543 = { secede_province = THIS add_core = THIS }
+	}
+}
+
+#Event to set a flag 
+	
+#Event for troubles in the south of the Austrian domain if SGF forms
+
+#Event ID 50099 is over in HtA_ITA. I wish I'd allocated more numbers.

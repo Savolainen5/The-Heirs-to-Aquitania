@@ -1,0 +1,133 @@
+SAX = {
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+
+SLS = {
+	value = 175		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+
+POL = {	value = 50 }
+BAD = { value = -5 }
+BAV = {	value = -15 }
+WUR = { value = -5 }
+
+AUS = {
+	value = 75
+	level = 3
+	influence_value = 20
+}
+
+army = {
+	name = "Armada Cechy"
+	location = 625
+	regiment = {
+		name = "1. Pechota"
+		type = infantry
+		home = 625
+	}
+	regiment = {
+		name = "2. Pechota"
+		type = infantry
+		home = 631
+	}
+	regiment = {
+		name = "3. Pechota"
+		type = infantry
+		home = 626
+	}
+	regiment = {
+		name = "1. Dela"
+		type = artillery
+		home = 628
+	}
+	regiment = {
+		name = "2. Dela"
+		type = artillery
+		home = 629
+	}
+	regiment = {
+		name = "1. Kyrysniki"
+		type = cuirassier
+		home = 625
+	}
+	regiment = {
+		name = "2. Kyrysniki"
+		type = cuirassier
+		home = 627
+	}
+}
+
+army = {
+	name = "Madarska Armada"
+	location = 641
+	regiment = {
+		name = "1. Madarska Pechota"
+		type = infantry
+		home = 641
+	}
+	regiment = {
+		name = "2. Madarska Pechota"
+		type = infantry
+		home = 641
+	}
+	regiment = {
+		name = "1. Husari"
+		type = hussar
+		home = 639
+	}
+	regiment = {
+		name = "2. Husari"
+		type = hussar
+		home = 642
+	}
+	regiment = {
+		name = "1. Madarski Dela"
+		type = artillery
+		home = 623
+	}
+	regiment = {
+		name = "2. Madarski Dela"
+		type = artillery
+		home = 639
+	}
+}
+
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	befriend = { id="SLS" value=100 }
+	befriend = { id="POL" value = 25 }
+	befriend = { id="AUS" value = 10 }
+	befriend = { id="CRO" value = 55 }
+
+	protect = { id="SLS" value=100 }
+
+	threat = { id="HUN" value=200 }
+	threat = { id="BAV" value = 50 }
+	threat = { id="SML" value = 50 }
+	threat = { id="RUS" value = 50 }
+	threat = { id="BYZ" value = 25 }
+	threat = { id="BRN" value = 50 }
+	threat = { id="NGF" value = 50 }
+	threat = { id="GER" value = 50 }
+
+	antagonize = { id="SIE" value = 100 }
+	antagonize = { id="BAN" value = 25 }
+	antagonize = { id="SRM" value = 25 }
+	antagonize = { id="VOL" value = 20 }
+
+	rival = { id="BAV" value = 50 }
+	rival = { is="BRN" value = 10 }
+
+	conquer_prov = { id=652 value=65 }
+	conquer_prov = { id=2538 value = 75 }
+}

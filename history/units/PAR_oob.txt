@@ -1,0 +1,10 @@
+army = {
+	name = "Esercito di Parma"
+	location = 738
+	regiment = {
+		name= "1.Fanteria di Linea"
+		type = infantry
+		home = 738
+	}
+}
+

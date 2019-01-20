@@ -1,0 +1,219 @@
+political_decisions = {
+#Claim Zeeland
+	claim_zeeland = {
+		picture = military_parade
+		potential = {
+			tag = NET
+			NOT = { has_country_flag = zeeland_claimed }
+		}
+		
+		allow = {
+			is_greater_power = yes
+		}
+		
+		effect = {
+			set_country_flag = zeeland_claimed
+			prestige = 5
+			badboy = 2
+			NET_379 = { add_core = THIS }
+		}
+	}
+
+#Sell the New Brabant islands
+	BRB_sell_new_brabant_islands = {
+		picture = valparaiso_harbor
+		potential = {
+			tag = BRB
+			OR = {
+				NOT = { owns = 380 }
+				year = 1870
+			}
+			NOT = { has_country_flag = new_brabant_purchase_started }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_country_flag = new_brabant_purchase_started
+			any_country = {
+				limit = {
+					NOT = { tag = BRB }
+					OR = {
+						is_greater_power = yes
+						is_secondary_power = yes
+						tag = NFB
+						tag = TER
+					}
+					num_of_ports = 2
+					any_owned_province = {
+						OR = {
+							region = ENG_2468
+							region = ENG_2509
+							region = NET_1446
+							region = NET_1413
+							region = SPA_1463
+							region = NET_1447
+							region = ENG_1384
+							region = ATJ_1405
+						}
+					}					
+				}
+				set_country_flag = new_brabant_purchase_interest
+			}
+		}
+	}
+	
+#Incorporate Brabant into the Netherlands
+	incorporate_brabant = {
+		picture = support_biesterfelds
+		potential = {
+			tag = NET
+			has_country_flag = zeeland_claimed
+			NOT = { has_country_flag = brabant_incorporated }
+			NOT = { AST_1097 = { owned_by = BRB } }
+		}
+		
+		allow = {
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			prestige = 50
+			NET_379 = {
+				owned_by = THIS
+			}
+		}
+		
+		effect = {
+			prestige = 5
+			badboy = 5
+			set_country_flag = brabant_incorporated
+			BEL_387 = {
+				add_core = NET
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+#Propose a solution to the Emden tension (with Germany, post-Twist)
+	emden_accords = {
+		picture = conference1
+		potential = {
+			tag = NET
+			NOT = { has_global_flag = emden_accords }
+			NOT = { has_global_flag = emden_accords_concluded }
+			543 = {
+				owned_by = THIS
+				is_core = NET
+				is_core = GER
+			}
+			OR = {
+				exists = GER
+				exists = NGF
+				exists = BRC
+			}
+			has_global_flag = treaty_of_twist
+		}
+		
+		allow = {
+			is_vassal = no
+			prestige = 15
+			military_score = 15
+		}
+		
+		effect = {
+			set_global_flag = emden_accords
+			any_neighbor_country = {
+				limit = {
+					OR = {
+						tag = GER
+						tag = NGF
+						tag = BRC
+					}
+				}
+				country_event = {
+					id = 50259
+					days = 1
+				}
+			}
+		}
+	}
+	
+#Cede Emden
+	cede_emden = {
+		picture = conference1
+		potential = {
+			tag = NET
+			543 = {
+				owned_by = THIS
+				is_core = NET
+				is_core = GER
+			}
+			OR = {
+				has_global_flag = no_emden_accords
+				has_global_flag = emden_accords_abandoned
+			}
+		}
+		
+		allow = {
+			any_neighbor_country = {
+				owns = 540
+				owns = 542
+				military_score = THIS
+			}
+		}
+		
+		effect = {
+			prestige = -3
+			543 = {
+				remove_core = NET
+			}
+			any_neighbor_country = {
+				limit = {
+					OR = {
+						tag = GER
+						tag = NGF
+						tag = BRC
+					}
+					owns = 540
+					owns = 542
+				}
+				country_event = 50072 #Netherlands cede Emden to us
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						exists = GER
+						neighbour = GER
+						military_score = GER
+					}
+					AND = {
+						exists = NGF
+						neighbour = NGF
+						military_score = NGF
+					}
+					AND = {
+						exists = BRC
+						neighbour = BRC
+						military_score = BRC
+					}
+				}
+			}
+		}
+	}
+				
+}

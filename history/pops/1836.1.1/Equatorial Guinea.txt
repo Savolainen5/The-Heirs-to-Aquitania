@@ -1,0 +1,92 @@
+#Equatorial Guinea (143000)
+#Ruled By Finland in 1836
+#Fernando Po (11000/2750 POPS)
+1955 = {
+	aristocrats = {
+		culture = finnish
+		religion = protestant
+		size = 3
+	}
+
+	bureaucrats = {
+		culture = finnish
+		religion = protestant
+		size = 2
+	}
+
+	clergymen = {
+		culture = finnish
+		religion = protestant
+		size = 5
+	}
+
+	artisans = {
+		culture = finnish
+		religion = protestant
+		size = 5
+	}
+
+	soldiers = {
+		culture = finnish
+		religion = protestant
+		size = 5
+	}
+
+	artisans = {
+		culture = fang
+		religion = protestant
+		size = 120
+	}
+
+	soldiers = {
+		culture = fang
+		religion = protestant
+		size = 50
+	}
+
+	farmers = {
+		culture = fang
+		religion = protestant
+		size = 1530
+	}
+
+	slaves = {
+		culture = fang
+		religion = animist
+		size = 1100
+	}
+}
+#uncolonized in 1836
+#Bata (132000/33000 POPS) 
+1973 = {
+	aristocrats = {
+		culture = fang
+		religion = animist
+		size = 350
+	}
+
+	clergymen = {
+		culture = fang
+		religion = animist
+		size = 300
+	}
+
+	artisans = {
+		culture = fang
+		religion = animist
+		size = 1500
+	}
+
+	soldiers = {
+		culture = fang
+		religion = animist
+		size = 350
+	}
+
+	farmers = {
+		culture = fang
+		religion = animist
+		size = 31500
+	}
+
+}

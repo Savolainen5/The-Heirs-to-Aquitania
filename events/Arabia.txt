@@ -1,0 +1,236 @@
+#########################################################
+#														#
+#      			   Arabia Events						#
+#														#
+#########################################################
+
+#Mahdist War in the Sudan
+country_event = {
+	id = 97170
+	title = "EVTNAME97170" #The Mahdist Uprising
+	desc = "EVTDESC97170"
+	news = yes
+	news_desc_long = "EVTDESC96170_NEWS_LONG"
+	news_desc_medium = "EVTDESC96170_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC96170_NEWS_SHORT"
+	picture = "arab_revolt"
+	
+	trigger = {
+		owns = 1827
+		SUD = { exists = no }
+		year = 1870
+		NOT = {
+			has_global_flag = mahdist_uprising
+			tag = ARU
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 1.5
+			NOT = { revolution_n_counterrevolution = 1 }
+		}
+		modifier = {
+			factor = 0.9
+			invention = separatism
+		}
+		modifier = {
+			factor = 0.8
+			any_state = {
+				any_owned_province = { is_core = SUD }
+				average_militancy = 3
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_state = {
+				any_owned_province = { is_core = SUD }
+				average_militancy = 4
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_state = {
+				any_owned_province = { is_core = SUD }
+				average_militancy = 5
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_state = {
+				any_owned_province = { is_core = SUD }
+				average_militancy = 6
+			}
+		}
+	}
+	
+	option = {
+		name = "This could be trouble."
+		set_global_flag = mahdist_uprising
+		SUD = {
+			all_core = {
+				remove_core = EGY
+			}
+		}
+		any_owned = {
+			limit = { is_core = SUD }
+			random_list = {
+				25 = {
+					poor_strata = {
+						limit = { has_pop_culture = sudanese }
+						militancy = 6
+					}
+					add_province_modifier = {
+						name = nationalist_agitation
+						duration = 1095
+					}
+				}
+				50 = {
+					poor_strata = {
+						limit = { has_pop_culture = sudanese }
+						militancy = 4
+					}
+					add_province_modifier = {
+						name = nationalist_agitation
+						duration = 730
+					}
+				}
+				25 = {
+				}
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 97171
+	title = "EVTNAME97171" #Mahdists in $PROVINCENAME$
+	desc = "EVTDESC97171"
+	
+	trigger = {
+		is_core = SUD
+		NOT = { controlled_by = REB }
+		NOT = {
+			owned_by = SUD
+			owned_by = ARU
+			has_province_modifier = nationalist_agitation
+			year = 1884
+		}
+		owner = {
+			OR = {
+				civilized = yes
+				tag = EGY
+			}
+			has_global_flag = mahdist_uprising
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = { has_province_modifier = nationalist_agitation }
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 3
+			units_in_province = 1
+		}
+	}
+	
+	option = {
+		name = "Put down the uprising at once!"
+		state_scope = {
+			any_pop = {
+				limit = { has_pop_culture = sudanese }
+				militancy = 6
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = nationalist_agitation
+					duration = 730
+				}
+			}
+		}
+	}
+}
+			
+#Arab Union
+country_event = {
+	id = 98725
+	title = "EVTNAME98725" #The Call for Arab Unity
+	desc = "EVTDESC98725"
+	picture = "arab_revolt"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will lead the Arab world!"
+		any_country = {
+			limit = {
+				NOT = { tag = THIS }
+				is_culture_group = arab
+			}
+			all_core = { add_core = ARU }
+		}
+		MOR_1696 = { add_core = ARU }
+		any_country = {
+			limit = {
+				NOT = { is_culture_group = arab }
+				any_owned_province = { is_core = THIS }
+			}
+			relation = { who = THIS value = -100 }
+			leave_alliance = THIS
+			casus_belli = {
+				target = THIS
+				type = free_peoples
+				months = 60
+			}
+			casus_belli = {
+				target = THIS
+				type = humiliate
+				months = 60
+			}
+			any_owned = {
+				limit = { is_core = THIS }
+				add_province_modifier = {
+					name = nationalist_agitation
+					duration = 1095
+				}
+				any_pop = {
+					limit = { is_culture_group = arab }
+					militancy = 5
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				ai = yes
+				is_culture_group = arab
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					AND = {
+						is_vassal = no
+						part_of_sphere = no
+						relation = { who = THIS value = 100 }
+					}
+				}
+			}
+			country_event = 98650
+		}
+	}
+}

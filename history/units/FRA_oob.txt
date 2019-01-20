@@ -1,0 +1,97 @@
+CMP = {	value = -50 }
+NRM = {	value = -45 }
+ORL = {	value = -65 }
+AQT = {	value = 45 }
+
+leader = {
+	name = "Hugo Bugeaud de Seurre"
+	picture = european_general_3
+	date = 1835.1.1
+	type = land
+	personality = daring
+	background = school_of_the_bayonet
+	prestige = 0.1
+}
+
+army = {
+	name = "L'Armée de France"
+	location = 428
+	regiment = {
+		name = "1er Régiment d'Infanterie"
+		type = infantry
+		home = 428
+	}
+	regiment = {
+		name = "2e Régiment d'Infanterie"
+		type = infantry
+		home = 430
+	}
+	regiment = {
+		name = "3e Régiment d'Infanterie"
+		type = infantry
+		home = 432
+	}
+	regiment = {
+		name = "1er Régiment d'Artillerie"
+		type = artillery
+		home = 431
+	}
+	regiment = {
+		name = "2e Régiment d'Artillerie"
+		type = artillery
+		home = 431
+	}
+	regiment = {
+		name = "1er Régiment de Hussards"
+		type = hussar
+		home = 432
+	}
+	regiment = {
+		name = "2e Régiment de Hussards"
+		type = hussar
+		home = 428
+	}
+}
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	threat = { id="CMP" value = 200 }
+	threat = { id="NRM" value = 200 }
+	threat = { id="ORL" value = 200 }
+	threat = { id="AQT" value = 20 }
+	threat = { id="WLL" value = 20 }
+	threat = { id="AEN" value = 20 }
+
+	rival = { id="AQT" value = 40 }
+
+	antagonize = { id="CMP" value = 200 }
+	antagonize = { id="NRM" value = 200 }
+	antagonize = { id="ORL" value = 200 }
+	antagonize = { id="BRR" value = 100 }
+	antagonize = { id="LOR" value = 100 }
+	antagonize = { id="BRT" value = 50 }
+
+	befriend = { id="DAU" value = 100 }
+	befriend = { id="PDN" value = 100 }
+	befriend = { id="BAV" value = 20 }
+	befriend = { id="BRA" value = 20 }
+	befriend = { id="HIS" value = 20 }
+	befriend = { id="NET" value = 20 }
+	befriend = { id="BRB" value = 20 }
+	befriend = { id="WLL" value = 20 }
+
+	conquer_prov = { id = 415 value = 100 }
+	conquer_prov = { id = 425 value = 100 }
+	conquer_prov = { id = 435 value = 150 }
+	conquer_prov = { id = 438 value = 200 }
+	conquer_prov = { id = 406 value = 200 }
+	conquer_prov = { id = 411 value = 60 }
+	conquer_prov = { id = 412 value = 60 }
+	conquer_prov = { id = 424 value = 50 }
+	conquer_prov = { id = 1934 value = 40 }
+}

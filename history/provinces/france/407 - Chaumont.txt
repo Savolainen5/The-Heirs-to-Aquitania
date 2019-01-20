@@ -1,0 +1,32 @@
+owner = BRR
+controller = BRR
+add_core = BRR
+add_core = LOR
+trade_goods = iron
+life_rating = 35
+state_building = {
+	level = 2 
+	building = steel_factory
+	upgrade = yes
+}
+#state_building = {
+#	level = 2 
+#	building = ammunition_factory
+#	upgrade = yes
+#}
+#state_building = {
+#	level = 2 
+#	building = small_arms_factory
+#	upgrade = yes
+#}
+#state_building = {
+#	level = 2 
+#	building = paper_mill
+#	upgrade = yes
+#}
+#state_building = {
+#	level = 2 
+#	building = artillery_factory
+#	upgrade = yes
+#}
+

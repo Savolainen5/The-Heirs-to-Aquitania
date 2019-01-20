@@ -1,0 +1,217 @@
+ASH = {
+	value = 50
+}
+
+MLI = {
+	value = 50
+}
+
+DAH = {
+	value = 40
+}
+
+MOR = {
+	value = 75
+}
+
+
+
+HIS = {
+	truce_until = 1839.9.25
+}
+
+army = {
+
+	name = "Exército Português"
+
+	location = 521
+
+	regiment = {
+
+		name= "1. Brigada de Infantaria"
+
+		type = infantry
+
+		home = 521
+	}
+
+
+	regiment = {
+
+		name= "2. Brigada de Infantaria"
+
+		type = infantry
+
+		home = 524
+
+	}
+
+
+	regiment = {
+
+		name= "3. Brigada de Infantaria"
+
+		type = infantry
+
+		home = 518
+
+	}
+
+
+	regiment = {
+
+		name= "4. Brigada de Infantaria"
+
+		type = infantry
+
+		home = 520
+
+	}
+
+
+	regiment = {
+
+		name= "5. Brigada de Infantaria"
+
+		type = infantry
+
+		home = 522
+
+	}
+
+
+	regiment = {
+
+		name= "1. Brigada de Caballaria"
+
+		type = cuirassier
+
+		home = 519
+
+	}
+
+}
+
+
+
+navy = {
+
+	name = "Portugese Royal Navy"
+
+	location = 524
+
+	ship = {
+
+		name= "Rainha de Portugal"
+
+		type = manowar
+
+	}
+
+
+	ship = {
+
+		name= "Dom João VI"
+
+		type = manowar
+
+	}
+
+
+	ship = {
+
+		name= "Nossa Senhora da Conceição"
+
+		type = manowar
+
+	}
+
+
+	ship = {
+
+		name= "São Sebastião"
+
+		type = manowar
+
+	}
+
+
+	ship = {
+
+		name= "Maria"
+
+		type = manowar
+
+	}
+
+
+	ship = {
+
+		name= "Princesa Carlota"
+
+		type = manowar
+
+	}
+
+
+	ship = {
+
+		name= "Teresa"
+
+		type = manowar
+
+	}
+
+
+
+	ship = {
+
+		name= "1o Navios de Transporte"
+
+		type = clipper_transport
+
+	}
+
+
+	ship = {
+
+		name= "2o Navios de Transporte"
+
+		type = clipper_transport
+
+	}
+
+
+	ship = {
+
+		name= "3o Navios de Transporte"
+
+		type = clipper_transport
+
+	}
+
+
+}
+
+
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	threat = { id="HIS" value = 200 }
+
+	befriend = { id="GLC" value = 150 }
+	befriend = { id="AEN" value = 100 }
+	befriend = { id="CAT" value = 150 }
+	befriend = { id="AQT" value = 50 }
+
+	protect = { id="GLC" value = 10 }
+	protect = { id="CAT" value = 10 }
+
+	conquer_prov = { id=1982 value = 75 }
+	conquer_prov = { id=1977 value = 65 }
+}

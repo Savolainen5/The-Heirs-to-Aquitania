@@ -1,0 +1,19 @@
+army = {
+	name = "Cherokee Warband"
+	location = 2555
+	regiment = {
+		name = "Wotkokokpe Warriors"
+		type = irregular
+		home = 2555
+	}
+	regiment = {
+		name = "Dilagadohi Warriors"
+		type = irregular
+		home = 206
+	}
+	regiment = {
+		name = "Tributary Cavalry"
+		type = cavalry
+		home = 205
+	}
+}

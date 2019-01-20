@@ -1,0 +1,48 @@
+NPL = {
+	value = -75
+}
+
+army = {
+	name = "Armada di Venezia"
+	location = 729
+	regiment = {
+		name = "1. Linea d'Infanteria"
+		type = infantry
+		home = 730
+	}
+	regiment = {
+		name = "2. Linea d'Infanteria"
+		type = infantry
+		home = 731
+	}
+	regiment = {
+		name = "1. Artilleria"
+		type = artillery
+		home = 730
+	}
+}
+
+navy = {
+	name = "Marina della Reppublica"
+	location = 729
+	ship = { 
+		name = "Veneziana"
+		type = manowar
+	}
+	ship = { 
+		name = "Marco Polo"
+		type = manowar
+	}
+	ship = { 
+		name = "Dandolo"
+		type = frigate
+	}
+	ship = { 
+		name = "San Marco"
+		type = frigate
+	}
+	ship = { 
+		name = "Santa Croce"
+		type = frigate
+	}
+}

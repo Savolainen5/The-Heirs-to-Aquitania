@@ -1,0 +1,14 @@
+army = {
+	name = "Army of the Sultan of Zanzibar"
+	location = 2048
+	regiment = {
+		name = "Zanzibaris"
+		home = 2048
+		type = irregular
+	}
+	regiment = {
+		name = "Mombasa Warriors"
+		home = 2029
+		type = irregular
+	}
+}

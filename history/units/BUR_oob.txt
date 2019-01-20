@@ -1,0 +1,29 @@
+army = {
+	name = "Army of Burma"
+	location = 1336
+	regiment = {
+		name= "1. Brigade"
+		type = irregular
+		home = 1337
+	}
+	regiment = {
+		name= "2. Brigade"
+		type = irregular
+		home = 1336
+	}
+	regiment = {
+		name= "3. Brigade"
+		type = irregular
+		home = 1345
+	}
+	regiment = {
+		name = "4. Brigade"
+		type = irregular
+		home = 1331
+	}
+	regiment = {
+		name = "Mon Fighters"
+		type = irregular
+		home = 1331
+	}
+}

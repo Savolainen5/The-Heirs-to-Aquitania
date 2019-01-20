@@ -1,0 +1,7 @@
+owner = AQT
+controller = AQT
+add_core = AQT
+add_core = GDN
+trade_goods = tropical_wood
+life_rating = 35
+colonial = 2

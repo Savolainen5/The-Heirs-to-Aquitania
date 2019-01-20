@@ -1,0 +1,246 @@
+SER = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+
+MOL = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+WAL = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+GEO = {
+	value = 125
+	level = 5
+	influence_value = 25
+}
+
+ARM = {	value = -90 }
+
+CRO = {
+	value = 45
+	level = 3
+	influence_value = 25
+}
+
+MNT = {
+	value = 50
+	level = 3
+	influence_value = 25
+}
+
+SML = {	value = 50 }
+
+army = {
+	name = "Guard of the Basileus"
+	location = 860
+	regiment = {
+		name = "I. Scholai"
+		type = infantry
+		home = 860
+	}
+	regiment = {
+		name = "II. Scholai"
+		type = infantry
+		home = 828
+	}
+	regiment = {
+		name = "III. Scholai"
+		type = infantry
+		home = 859
+	}
+	regiment = {
+		name = "IV. Scholai"
+		type = infantry
+		home = 861
+	}
+	regiment = {
+		name = "V. Scholai"
+		type = infantry
+		home = 858
+	}
+	regiment = {
+		name = "I. Pyrovolikos B."
+		type = artillery
+		home = 814
+	}
+	regiment = {
+		name = "II. Pyrovolikos B."
+		type = artillery
+		home = 863
+	}
+	regiment = {
+		name = "III. Pyrovolikos B."
+		type = artillery
+		home = 861
+	}
+	regiment = {
+		name = "IV. Pyrovolikos B."
+		type = artillery
+		home = 864
+	}
+	regiment = {
+		name = "I. Koursouses"
+		type = cuirassier
+		home = 806
+	}
+	regiment = {
+		name = "II. Koursoses"
+		type = cuirassier
+		home = 835
+	}
+}
+
+army = {
+	name = "Stereas Army"
+	location = 821
+	regiment = {
+		name = "I. Grekoi"
+		type = infantry
+		home = 834
+	}
+	regiment = {
+		name = "II. Grekoi"
+		type = infantry
+		home = 839
+	}
+	regiment = {
+		name = "III. Grekoi"
+		type = infantry
+		home = 837
+	}
+	regiment = {
+		name = "I. Ippikos"
+		type = hussar
+		home = 840
+	}
+	regiment = {
+		name = "I. Pyrovolikos G."
+		type = artillery
+		home = 836
+	}
+	regiment = {
+		name = "II. Pyrovolikos G."
+		type = artillery
+		home = 841
+	}
+}
+
+army = {
+	name = "Hemia Guard"
+	location = 809
+	regiment = {
+		name = "I. Hemioi"
+		type = infantry
+		home = 809
+	}
+	regiment = {
+		name = "II. Hemioi"
+		type = infantry
+		home = 849
+	}
+	regiment = {
+		name = "III. Hemioi"
+		type = infantry
+		home = 850
+	}
+	regiment = {
+		name = "I. Pyrovolikos H."
+		type = artillery
+		home = 812
+	}
+	regiment = {
+		name = "II. Pyrovolikos H."
+		type = artillery
+		home = 811
+	}
+}
+
+navy = {
+	name = "Imperial Roman Navy"
+	location = 860
+	ship = {
+		name = "Basileus Leon"
+		type = manowar
+	}
+	ship = {
+		name = "Paralos"
+		type = manowar
+	}
+	ship = {
+		name = "Leontophoros"
+		type = manowar
+	}
+	ship = {
+		name = "Eirene"
+		type = manowar
+	}
+	ship = {
+		name = "Kyzikos"
+		type = manowar
+	}
+	ship = {
+		name = "Volos"
+		type = frigate
+	}
+	ship = {
+		name = "Kelis"
+		type = frigate
+	}
+	ship = {
+		name = "Augustus"
+		type = frigate
+	}
+}
+
+army = {
+	name = "Anatole Garrison"
+	location = 866
+	regiment = {
+		name = "I. Anatolioi"
+		type = infantry
+		home = 883
+	}
+	regiment = {
+		name = "II. Anatolioi"
+		type = infantry
+		home = 869
+	}
+	regiment = {
+		name = "I. Pyrovolikos A."
+		type = artillery
+		home = 807
+	}
+}
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	protect = { id="GEO" value = 150 }
+
+	threat = { id="ARM" value=200 }
+	threat = { id="ANA" value = 150 }
+	threat = { id="GRE" value = 100 }
+
+	antagonize = { id="ARM" value=200 }
+	antagonize = { id="ANA" value=150 }
+	antagonize = { id="GRE" value=100 }
+	antagonize = { id="NPL" value=100 }
+	antagonize = { id="ITA" value=100 }
+
+	rival = { id="ARM" value=200 }
+	rival = { id="NPL" value=100 }
+	rival = { id="ITA" value=100 }
+	rival = { id="ANA" value=150 }
+}

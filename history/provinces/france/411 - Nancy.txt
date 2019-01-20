@@ -1,0 +1,7 @@
+owner = BRR
+controller = BRR
+add_core = BRR
+add_core = LOR
+trade_goods = iron
+life_rating = 35
+

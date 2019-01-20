@@ -1,0 +1,228 @@
+
+country_event = {
+	
+	id = 97110
+	title = "EVTNAME97110" #The Stirrings of Indian Nationalism
+	desc = "EVTDESC97110"
+	news = yes
+	news_desc_long = "EVTDESC97110"
+	news_desc_medium = "EVTDESC97110_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC97110_NEWS_SHORT"
+	picture = "national_congress"
+	
+	trigger = {
+		OR = {
+			is_culture_group = south_asian
+			any_owned_province = { is_core = HND }
+		}
+		is_vassal = no
+		revolution_n_counterrevolution = 1
+		NOT = { has_global_flag = indian_call_to_union }
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+		modifier = {
+			factor = 0.5
+			OR = {
+				tag = DRA
+				tag = HDU
+				tag = MRT
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = { is_culture_group = south_asian }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { is_culture_group = south_asian }
+			war = yes
+		}
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				is_core = HND
+				average_militancy = 2
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				is_core = HND
+				average_militancy = 3
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				is_core = HND
+				average_militancy = 4
+			}
+		}
+		modifier = {
+			factor = 0.5
+			mass_politics = 1
+		}
+		modifier = {
+			factor = 0.5
+			is_secondary_power = yes
+			is_culture_group = south_asian
+		}
+		modifier = {
+			factor = 0.1
+			is_greater_power = yes
+			is_culture_group = south_asian
+		}
+	}
+	
+	option = {
+		name = "Interesting."
+		set_global_flag = indian_call_to_union
+		any_owned = {
+			limit = {
+				owner = {
+					OR = {
+						is_greater_power = no
+						NOT = { is_culture_group = south_asian }
+					}
+				}
+				is_core = HND
+				OR = {
+					culture = assamese
+					culture = bengali
+					culture = bihari
+					culture = nepali
+					culture = oriya
+					culture = avadhi
+					culture = kanauji
+					culture = panjabi
+					culture = kashmiri
+					culture = gujarati
+					culture = marathi
+					culture = sindi
+					culture = rajput
+					culture = kannada
+					culture = malayalam
+					culture = tamil
+					culture = telegu
+				}
+			}
+			random_list = {
+				25 = {
+					add_province_modifier = {
+						name = nationalist_agitation
+						duration = 1095
+					}
+				}
+				50 = {
+					add_province_modifier = {
+						name = nationalist_agitation
+						duration = 730
+					}
+				}
+				25 = {
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = THIS }
+				any_owned_province = { is_core = HND }
+			}
+			country_event = 97111
+		}
+	}
+}
+
+country_event = {
+	
+	id = 97111
+	title = "EVTNAME97110"
+	desc = "EVTDESC97111"
+	picture = "national_congress"	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "This could be trouble."
+		any_owned = {
+			limit = {
+				owner = {
+					OR = {
+						is_greater_power = no
+						NOT = { is_culture_group = south_asian }
+					}
+				}
+				is_core = HND
+				OR = {
+					culture = assamese
+					culture = bengali
+					culture = bihari
+					culture = nepali
+					culture = oriya
+					culture = avadhi
+					culture = kanauji
+					culture = panjabi
+					culture = kashmiri
+					culture = gujarati
+					culture = marathi
+					culture = sindi
+					culture = rajput
+					culture = kannada
+					culture = malayalam
+					culture = tamil
+					culture = telegu
+				}
+			}
+			random_list = {
+				25 = {
+					add_province_modifier = {
+						name = nationalist_agitation
+						duration = 1095
+					}
+				}
+				50 = {
+					add_province_modifier = {
+						name = nationalist_agitation
+						duration = 730
+					}
+				}
+				25 = {
+				}
+			}
+		}
+	}
+}
+
+#################################################################################
+#																				#
+#             					Panjab Events									#
+#																				#
+#################################################################################
+## Removed events leading to conflict between ENG and PNJ over death of Ranjit Singh.
+country_event = {
+
+	id = 97115
+	title = "EVTNAME97115" #The Death of Ranjit Singh
+	desc = "EVTDESC97115"
+	picture = "india"
+	
+	trigger = {
+		tag = PNJ
+		has_country_flag = singh
+		NOT = { has_leader = "Ranjit Singh" }
+		NOT = { has_country_flag = ranjit_singh_dead }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "We mourn the Maharajah's passing."
+		set_country_flag = ranjit_singh_dead
+		remove_country_modifier = military_man
+		any_pop = { militancy = 4 }
+	}
+}

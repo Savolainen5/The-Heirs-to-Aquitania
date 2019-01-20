@@ -1,0 +1,19 @@
+army = {
+	name = "Assamese Army of the Raja"
+	location = 1258
+	regiment = {
+		name = "1st Warriors"
+		type = irregular
+		home = 1258
+	}
+	regiment = {
+		name = "2nd Warriors"
+		type = irregular
+		home = 1260
+	}
+	regiment = {
+		name = "3rd Warriors"
+		type = irregular
+		home = 1259
+	}
+}

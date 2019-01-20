@@ -1,0 +1,8 @@
+owner = HNG
+controller = HNG
+add_core = HNG
+add_core = BUR
+add_core = KAR
+trade_goods = opium
+life_rating = 30
+

@@ -1,0 +1,14 @@
+army = {
+	name = "Byddin Cymru"
+	location = 273
+	regiment = {
+		name = "I Gwyr Traed"
+		type = infantry
+		home = 273
+	}
+	regiment = {
+		name = "II Gwyr Traed"
+		type = infantry
+		home = 274
+	}
+}

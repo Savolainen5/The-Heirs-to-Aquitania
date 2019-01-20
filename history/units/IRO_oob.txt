@@ -1,0 +1,19 @@
+army = {
+	name = "Iroquois Warband"
+	location = 46
+	regiment = {
+		name = "Karonta Warriors"
+		type = irregular
+		home = 46
+	}
+	regiment = {
+		name = "Ohskewen Raiders"
+		type = irregular
+		home = 55
+	}
+	regiment = {
+		name = "Ontario Scouts"
+		type = cavalry
+		home = 54
+	}
+}

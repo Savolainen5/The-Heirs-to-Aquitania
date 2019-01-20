@@ -1,0 +1,28 @@
+BAD = {
+	value = -175
+}
+BAV = {
+	value = -175
+}
+WUR = {
+	value = -175
+}
+army = {
+	name = "Thuringisches Heer"
+	location = 554
+	regiment = {
+		name = "I Infanterieregiment"
+		type = infantry
+		home = 554
+	}
+	regiment = {
+		name = "II Infanterieregiment"
+		type = infantry
+		home = 554
+	}
+	regiment = {
+		name = "I Kavallerieregiment"
+		type = dragoon
+		home = 554
+	}
+}

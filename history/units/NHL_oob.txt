@@ -1,0 +1,14 @@
+army = {
+	name = "Leger van Nieuw Holland"
+	location = 65
+	regiment = {
+		name = "1. Voetvolk Regiment"
+		type = infantry
+		home = 65
+	}
+	regiment = {
+		name = "2. Voetvolk Regiment"
+		type = infantry
+		home = 45
+	}
+}

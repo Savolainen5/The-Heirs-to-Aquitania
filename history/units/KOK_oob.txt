@@ -1,0 +1,32 @@
+army = {
+	name = "Army of the Khanate of Kokand"
+	location = 1202
+	regiment = {
+		name= "1st Brigade"
+		type = irregular
+		home = 1189
+	}
+
+	regiment = {
+		name= "2nd Brigade"
+		type = irregular
+		home = 1189
+	}
+	
+	regiment = {
+		name= "3rd Brigade"
+		type = irregular
+		home = 1203
+	}
+	regiment = {
+		name= "4th Brigade"
+		type = irregular
+		home = 1190
+	}
+
+	regiment = {
+		name= "5th Brigade"
+		type = irregular
+		home = 1203
+	}
+}

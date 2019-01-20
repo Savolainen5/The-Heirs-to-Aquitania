@@ -1,0 +1,29 @@
+BAD = {
+	value = -175
+}
+BAV = {
+	value = -175
+}
+WUR = {
+	value = -175
+}
+army = {
+	name = "Nassauische Heer"
+	location = 565
+	
+	regiment = {
+		name = "1. Infanteriebrigade"
+		type = infantry
+		home = 565
+	}
+	regiment = {
+		name = "2. Infanteriebrigade"
+		type = infantry
+		home = 584
+	}
+	regiment = {
+		name = "1. Artilleriebrigade"
+		type = infantry
+		home = 565
+	}
+}

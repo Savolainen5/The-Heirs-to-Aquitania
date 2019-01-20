@@ -1,0 +1,64 @@
+army = {
+	name = "Army of the Governor"
+	location = 1490
+	regiment = {
+		name = "1st Infantry"
+		home = 1490
+		type = irregular
+	}
+	regiment = {
+		name = "2nd Infantry"
+		home = 1489
+		type = irregular
+	}
+	regiment = {
+		name = "3rd Infantry"
+		home = 1492
+		type = irregular
+	}
+	regiment = {
+		name = "4th Infantry"
+		home = 1491
+		type = irregular
+	}
+	regiment = {
+		name = "5th Infantry"
+		home = 1488
+		type = irregular
+	}
+	regiment = {
+		name = "6th Infantry"
+		home = 1490
+		type = irregular
+	}
+	regiment = {
+		name = "7th Infantry"
+		home = 1489
+		type = irregular
+	}
+	regiment = {
+		name = "8th Infantry"
+		home = 1492
+		type = irregular
+	}
+}
+
+army = {
+	name = "Western Guards"
+	location = 1558
+	regiment = {
+		name = "1st Guard Cavalry"
+		home = 1488
+		type = cavalry
+	}
+	regiment = {
+		name = "2nd Guard Cavalry"
+		home = 1488
+		type = cavalry
+	}
+	regiment = {
+		name = "3rd Guard Cavalry"
+		home = 1490
+		type = cavalry
+	}
+}

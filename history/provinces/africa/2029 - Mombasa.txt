@@ -1,0 +1,6 @@
+owner = ZAN
+controller = ZAN
+add_core = ZAN
+trade_goods = fish
+life_rating = 35
+

@@ -1,0 +1,8 @@
+owner = HOY
+controller = HOY
+add_core = HOY
+add_core = INC
+trade_goods = fish
+life_rating = 30
+fort = 1
+

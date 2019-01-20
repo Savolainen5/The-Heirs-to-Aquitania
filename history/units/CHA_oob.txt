@@ -1,0 +1,9 @@
+army = {
+	name = "Royal Army of Champa"
+	location = 1379
+	regiment = {
+		name = "1st Infantry"
+		type = irregular
+		home = 1379
+	}
+}

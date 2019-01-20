@@ -1,0 +1,6 @@
+owner = TUS
+controller = TUS
+add_core = TUS
+trade_goods = silk
+life_rating = 35
+

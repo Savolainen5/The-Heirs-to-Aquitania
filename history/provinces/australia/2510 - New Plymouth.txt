@@ -1,0 +1,7 @@
+owner = NFB
+controller = NFB
+add_core = NFB
+add_core = AOT
+trade_goods = cattle
+life_rating = 30
+

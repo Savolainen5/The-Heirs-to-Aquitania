@@ -1,0 +1,24 @@
+army = {
+	name = "Army of the Kazakh Khan"
+	location = 1185
+	regiment = {
+		name = "Khan's Riders"
+		type = cavalry
+		home = 1185
+	}
+	regiment = {
+		name = "Orma Zhuz Riders"
+		type = cavalry
+		home = 2606
+	}
+	regiment = {
+		name = "Irtysh Riders"
+		type = cavalry
+		home = 1187
+	}
+	regiment = {
+		name = "Aq Mechet Riders"
+		type = cavalry
+		home = 1193
+	}
+}

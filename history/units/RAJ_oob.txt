@@ -1,0 +1,44 @@
+army = {
+	name = "Army of the Maharaja of Rajputana"
+	location = 1268
+	regiment = {
+		name = "1st Regiment"
+		type = irregular
+		home = 1266
+	}
+	regiment = {
+		name = "2nd Regiment"
+		type = irregular
+		home = 1267
+	}
+	regiment = {
+		name = "3rd Regiment"
+		type = irregular
+		home = 1268
+	}
+	regiment = {
+		name = "4th Regiment"
+		type = irregular
+		home = 1269
+	}
+	regiment = {
+		name = "5th Regiment"
+		type = irregular
+		home = 1266
+	}
+	regiment = {
+		name = "6th Regiment"
+		type = irregular
+		home = 1267
+	}
+	regiment = {
+		name = "7th Regiment"
+		type = irregular
+		home = 1268
+	}
+	regiment = {
+		name = "8th Regiment"
+		type = irregular
+		home = 1269
+	}
+}

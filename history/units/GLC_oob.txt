@@ -1,0 +1,36 @@
+HIS = {
+	truce_until = 1839.9.25
+}
+
+army = {
+	name = "Armada de Galicia"
+	location = 474
+	regiment = {
+		name = "1a Infanteria"
+		type = infantry
+		home = 474
+	}
+	regiment = {
+		name = "2a Infanteria"
+		type = infantry
+		home = 474
+	}
+	regiment = {
+		name = "1a Artilleria"
+		type = artillery
+		home = 476
+	}
+}
+
+navy = {
+	name = "Marina de Galicia"
+	location = 474
+	ship = {
+		name = "Santa Maria"
+		type = manowar
+	}
+	ship = {
+		name = "Pontevedra"
+		type = frigate
+	}
+}

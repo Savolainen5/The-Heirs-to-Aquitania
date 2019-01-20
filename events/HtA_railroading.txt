@@ -1,0 +1,29 @@
+country_event = {
+	id = 97097
+	title = "EVTNAME97097"
+	desc = "EVTDESC97097"
+	picture = "Aquitania2"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+	}
+
+	mean_time_to_happen =  {
+		months = 1
+		modifier = {
+			factor = 0.01
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "Yes, make it more railroady."
+		set_global_flag = railroading_on
+	}
+	
+	option = {
+		name = "No railroading, thanks."
+	}
+}

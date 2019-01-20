@@ -1,0 +1,81 @@
+political_decisions = {
+
+
+# This decision rendered obsolete by something more interesting in a small event chain
+#	aceh_protectorate = {
+#		picture = dreams_of_empire
+#		potential = {
+#			OR = {
+#				tag = AEN
+#				AND = {
+#					is_greater_power = yes
+#					NOT = { tag = SCO }
+#					number_of_ports = 3
+#					any_owned_province = { continent = asia }
+#				}
+#			}
+#			year = 1852
+#			NOT = { has_country_flag = aceh_protectorate }
+#		}
+#		
+#		allow = {
+#			ATJ = { in_sphere = THIS }
+#		}
+#		
+#		effect = {
+#			ATJ = {
+#				country_event = {
+#					id = 51500
+#					days = 1
+#				}
+#			}
+#			set_country_flag = aceh_protectorate
+#		}
+#	}
+			
+	siak_protectorate = {
+		picture = dreams_of_empire
+		potential = {
+			owns = 1403
+			civilized = yes
+			NOT = { owns = 1405 }
+			1405 = {
+				owner = {
+					is_greater_power = yes
+				}
+			}
+			exists = SAK
+			SAK = { civilized = no }
+			war = no
+		}
+		
+		allow = {
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			SAK = {
+				OR = {
+					in_sphere = THIS
+					part_of_sphere = no
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 1
+			badboy = 3
+			casus_belli = {
+				target = SAK
+				type = establish_protectorate_casus_belli
+				months = 12
+			}
+			war = {
+				target = SAK
+				attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+			}
+		}
+	}
+
+
+}

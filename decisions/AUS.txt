@@ -1,0 +1,114 @@
+political_decisions = {	
+	the_grunderzeit = {
+		potential = {
+			capital = 619
+			NOT = {
+				has_country_flag = grunderzeit_we_have_done
+			}
+		}
+		allow = {
+			iron_railroad = 1
+			cheap_iron = 1
+		}
+		effect = {
+			619 = {
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.2
+					}
+				}
+				life_rating = 5
+			}
+			prestige = 25
+			set_country_flag = grunderzeit_we_have_done
+		}
+	}
+	embrace_slovene_minority = {
+		picture = embrace_minority
+		potential = {
+			tag = AUS
+			any_owned_province = { is_core = SLO }
+			NOT = {
+				accepted_culture = slovene
+			}
+			OR = {
+				accepted_culture = croat
+				NOT = { any_owned_province = { is_core = CRO } }
+			}
+		}
+		allow = {
+			year = 1875
+			prestige = 50
+			revolution_n_counterrevolution = 1
+			psychoanalysis = 1
+			social_science = 1
+		}
+		effect = {
+			set_country_flag = embraced_slovenes
+			add_accepted_culture = slovene
+			prestige = -25
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = hungarian
+						has_pop_culture = czech
+						has_pop_culture = croat
+					}
+				}
+				militancy = 4
+				consciousness = 4
+			}
+			any_pop = {
+				limit = { has_pop_culture = slovene }
+				militancy = -4
+				consciousness = -4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+#	embrace_croat_minority = {
+#		picture = embrace_minority
+#		potential = {
+#			tag = AUS
+#			any_owned_province = { is_core = CRO }
+#			NOT = {
+#				accepted_culture = croat
+#			}
+#			accepted_culture = slovene
+#		}
+#		allow = {
+#			year = 1870
+#			prestige = 50
+#			revolution_n_counterrevolution = 1
+#			psychoanalysis = 1
+#		}
+#		effect = {
+#			set_country_flag = embraced_croats
+#			add_accepted_culture = croat
+#			prestige = -25
+#			any_pop = {
+#				limit = {
+#					OR = {
+#						has_pop_culture = hungarian
+#						has_pop_culture = czech
+#					}
+#				}
+#				militancy = 4
+#				consciousness = 4
+#			}
+#			any_pop = {
+#				limit = { has_pop_culture = croat }
+#				militancy = -4
+#				consciousness = -4
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+}
+

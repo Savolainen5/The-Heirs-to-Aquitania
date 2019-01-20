@@ -1,0 +1,16 @@
+army = {
+	name = "Army of the Raj of Shimla"
+	location = 1235
+	regiment = {
+		name= "1. Infantry"
+		type = irregular
+		home = 1235
+	}
+
+	regiment = {
+		name= "2. Infantry"
+		type = irregular
+		home = 1235
+	}
+}
+

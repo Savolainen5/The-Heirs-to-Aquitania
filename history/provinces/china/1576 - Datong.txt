@@ -1,0 +1,7 @@
+owner = QIN
+controller = QIN
+add_core = QIN
+add_core = CHI
+trade_goods = timber
+life_rating = 32
+

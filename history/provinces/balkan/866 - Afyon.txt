@@ -1,0 +1,8 @@
+owner = BYZ
+controller = BYZ
+add_core = BYZ
+trade_goods = opium
+life_rating = 35
+
+
+

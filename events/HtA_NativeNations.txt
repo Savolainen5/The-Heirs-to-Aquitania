@@ -1,0 +1,44 @@
+#Event to set up native nations
+country_event = {
+
+	title = "EVTNAME95599"
+	desc = "EVTDESC95599"
+	id = 95599
+
+	picture = "geronimo"
+
+	trigger = {
+		OR = {
+			tag = SHC
+			tag = AZT
+			tag = INC
+			tag = CHE
+			tag = IRO
+			is_culture_group = native_american
+		}
+		NOT = {
+			has_country_flag = has_native_societies
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			year = 1836
+		}
+	}
+
+	option = {
+		name = "EVTOPTA95599"
+		set_country_flag = has_native_societies
+		add_country_modifier = {
+			name = native_societies1
+			duration = -1
+		}
+		add_country_modifier = {
+			name = native_societies2
+			duration = -1
+		}
+	}
+}

@@ -1,0 +1,7 @@
+controller = DAH
+owner = DAH
+add_core = DAH
+trade_goods = fish
+life_rating = 30
+
+

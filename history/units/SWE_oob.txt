@@ -1,0 +1,137 @@
+NOR = { value = 75 }
+DEN = { value = -55 truce_until = "1838.1.12" }
+FIN = { value = -5 }
+
+army = {
+	name = "Svenska Armén"
+	location = 322
+	regiment = {
+		name= "Svea Livgarde"
+		type = guard
+		home = 322
+	}
+
+	regiment = {
+		name= "Södermanlands Regemente"
+		type = infantry
+		home = 326
+	}
+
+	regiment = {
+		name= "Första Livgrenadjärregementet"
+		type = infantry
+		home = 325
+	}
+
+	regiment = {
+		name= "Upplands Regemente"
+		type = infantry
+		home = 324
+	}
+
+	regiment = {
+		name= "Västgöta Regemente"
+		type = infantry
+		home = 330
+	}
+
+	regiment = {
+		name= "Kalmar Regemente"
+		type = infantry
+		home = 332
+	}
+
+	regiment = {
+		name= "Jönköpings Regemente"
+		type = infantry
+		home = 333
+	}
+
+	regiment = {
+		name= "Götborgs Infanteriregementet"
+		type = infantry
+		home = 329
+	}
+
+	regiment = {
+		name= "Kronprinsens Husarregemente"
+		type = hussar
+		home = 322
+	}
+
+}
+
+navy = {
+	name = "Swedish Navy"
+	location = 322
+	ship = {
+		name= "Karl XIII"
+		type = manowar
+	}
+
+	ship = {
+		name= "Karl XIV Johan"
+		type = manowar
+	}
+
+	ship = {
+		name= "Fäderneslandet"
+		type = manowar
+	}
+
+	ship = {
+		name= "Manligheten"
+		type = manowar
+	}
+
+
+	ship = {
+		name= "Camilla"
+		type = frigate
+	}
+
+	ship = {
+		name= "Eurydice"
+		type = frigate
+	}
+
+	ship = {
+		name= "Galatea"
+		type = frigate
+	}
+
+
+	ship = {
+		name= "1st Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2nd Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3rd Transport Flotilla"
+		type = clipper_transport
+	}
+
+}
+
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+	
+	befriend = { id="NOR" value=50 }
+	befriend = { id="FIN" value=30 }
+	befriend = { id="RUS" value=80 }
+	befriend = { id="POL" value=60 }
+	
+	threat = { id="DEN" value=150 }
+	
+	antagonize = { id="DEN" value = 150 }
+}

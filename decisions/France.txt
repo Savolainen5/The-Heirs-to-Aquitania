@@ -1,0 +1,288 @@
+political_decisions = {
+
+# Move the capital back to Paris
+	move_capital_to_paris = {
+	picture = of_state_n_government
+		potential = {
+			tag = FRA
+			capital = 428
+			NOT = { has_country_flag = paris_capital }
+		}
+
+		allow = {
+			owns = 425
+		}
+
+		effect = {
+			capital = 425
+			prestige = 5
+			set_country_flag = paris_capital
+		}
+	}
+
+# Return to the sea! (Reclaim interior cores, regain cores on the Normandy coast)
+	return_to_the_sea = {
+		picture = valparaiso_harbor
+		potential = {
+			tag = FRA
+			NOT = { has_country_flag = FRA_man_and_the_sea }
+		}
+		
+		allow = {
+			OR = {
+				all_core = { owned_by = THIS }
+				NRM = { all_core = { owned_by = THIS } }
+			}
+			war = no
+		}
+		
+		effect = {
+			prestige = 5
+			FRA_418 = { add_core = FRA }
+			set_country_flag = FRA_man_and_the_sea
+		}
+	}
+
+# Demand our colonies back (BRT and whoever else - when coast reclaimed, buy/intimidate colonies back)
+
+	FRA_return_our_colonies = {
+		potential = {
+			tag = FRA
+			has_country_flag = FRA_man_and_the_sea
+			NOT = { has_global_flag = FRA_wants_their_colonies_BRT }
+		}
+		
+		allow = {
+			total_amount_of_ships = 5
+		}
+		
+		effect = {
+			FRA = { country_event = 50003 } #Choose how to ask, 50004,7,10 will fire for BRT to choose how to respond
+			set_global_flag = FRA_wants_their_colonies_BRT
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.75
+			}
+			modifier = {
+				factor = 0
+				war = yes
+			}
+		}
+	}
+
+# Bretagne belongs to France! (annex BRT)
+
+	BRT_is_France = {
+		picture = military_parade
+		potential = {
+			tag = FRA
+			NOT = { has_country_flag = BRT_annexation_demanded }
+			has_global_flag = FRA_our_colony_returned_BRT
+		}
+		
+		allow = {
+			2134 = { owned_by = FRA }
+			NOT = { truce_with = BRT}
+		}
+		
+		effect = {
+			BRT = { country_event = 50017 }
+			set_country_flag = BRT_annexation_demanded
+			badboy = 5
+		}
+		
+		ai_will_do = {#Maybe mod this a bit? Ideology = jingoism or something?
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+
+# End the nobility
+
+	end_the_nobility = {
+		picture = Marquis_de_Bouille
+		potential = {
+			tag = FRA
+			has_country_flag = FRA_man_and_the_sea
+			NOT = { has_country_flag = no_more_nobles }
+			any_owned_province = {
+				OR = {
+					is_core = CMP
+					is_core = ORL
+					is_core = NRM
+				}
+			}
+		}
+
+		allow = {
+			owns = 418
+			CMP = { exists = no }
+			ORL = { exists = no }
+			NRM = { exists = no }
+		}
+
+		effect = {
+			prestige = 3
+			set_country_flag = no_more_nobles
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = CMP
+						is_core = ORL
+						is_core = NRM
+					}
+				}
+				remove_core = CMP
+				remove_core = ORL
+				remove_core = NRM
+			}
+		}
+	}
+
+#Claim Bar and Lorraine
+
+	claim_bar_lorraine = {
+		picture = Leopold_of_Lorraine
+		potential = {
+			tag = FRA
+			OR = {
+				has_country_flag = no_more_nobles
+				AND = {
+					BRR = { all_core = { owned_by = FRA } }
+					LOR = { all_core = { owned_by = FRA } }
+				}
+			}
+			NOT = { has_country_flag = bar_lorraine_claimed }
+		}
+		
+		allow = {
+			prestige = 15
+			military_score = 20
+		}
+		
+		effect = {
+			prestige = 2
+			badboy = 6
+			set_country_flag = bar_lorraine_claimed
+			BRR = { all_core = { add_core = FRA } }
+			LOR = { all_core = { add_core = FRA } }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.77
+			}
+		}
+	}
+
+# The Picards and Walloons are French!
+
+# Usurp the crown of France
+	usurp_french_crown = {
+		picture = gesture_of_defiance
+		potential = {
+			primary_culture = french
+			NOT = { tag = FRA }
+			NOT = { has_country_flag = france }
+		}
+		
+		allow = {
+			prestige = 50
+			owns = 428
+			FRA = { exists = no }
+		}
+		
+		effect = {
+			prestige = 10
+			change_tag = FRA
+			set_country_flag = france
+		}
+	}
+
+#Clear ducal core decisions (one for each of the three minours)
+#Only enactable when one of the duchies usurps the crown of France
+#The ducal country flags are set up by the HtA_setup decision
+	dissolve_old_duchy_NRM = {
+		picture = gesture_of_defiance
+		potential = {
+			tag = FRA
+			has_country_flag = normandy
+			NRM = { exists = no }
+			NOT = { has_country_flag = NRM_cores_removed }
+		}
+		
+		allow = {
+			NRM = { all_core = { owned_by = THIS } }
+		}
+		
+		effect = {
+			set_country_flag = NRM_cores_removed
+			NRM = {
+				all_core = {
+					remove_core = NRM
+				}
+			}
+		}
+	}
+	
+	dissolve_old_duchy_ORL = {
+		picture = gesture_of_defiance
+		potential = {
+			tag = FRA
+			has_country_flag = orleans
+			ORL = { exists = no }
+			NOT = { has_country_flag = ORL_cores_removed }
+		}
+		
+		allow = {
+			ORL = { all_core = { owned_by = THIS } }
+		}
+		
+		effect = {
+			set_country_flag = ORL_cores_removed
+			ORL = {
+				all_core = {
+					remove_core = ORL
+				}
+			}
+		}
+	}
+	
+	dissolve_old_duchy_CMP = {
+		picture = gesture_of_defiance
+		potential = {
+			tag = FRA
+			has_country_flag = champagne
+			CMP = { exists = no }
+			NOT = { has_country_flag = CMP_cores_removed }
+		}
+		
+		allow = {
+			CMP = { all_core = { owned_by = THIS } }
+		}
+		
+		effect = {
+			set_country_flag = CMP_cores_removed
+			CMP = {
+				all_core = {
+					remove_core = CMP
+				}
+			}
+		}
+	}
+	
+	
+}

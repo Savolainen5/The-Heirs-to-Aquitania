@@ -1,0 +1,36 @@
+AUS = { value = -50 }
+army = {
+	name = "Army of the Principality of Ardeal"
+	location = 657
+	
+	regiment = {
+		name = "1. Regiment Infanterie"
+		type = infantry
+		home = 655
+	}
+	regiment = {
+		name = "2. Regiment Infanterie"
+		type = infantry
+		home = 651
+	}
+	regiment = {
+		name = "3. Regiment Infanterie"
+		type = infantry
+		home = 657
+	}
+	regiment = {
+		name = "1. Regiment Artilerie"
+		type = artillery
+		home = 661
+	}
+	regiment = {
+		name = "3. Regiment Artilerie"
+		type = artillery
+		home = 653
+	}
+	regiment = {
+		name = "1. Regiment Cavalerie"
+		type = hussar
+		home = 652
+	}
+}

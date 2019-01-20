@@ -1,0 +1,281 @@
+MOD = {
+	value = -75
+}
+
+VEN = {
+	value = -75
+}
+
+LOM = {
+	value = -75
+}
+
+GEN = {
+	value = -75
+}
+
+TUS = {
+	value = -200
+}
+
+DAU = {
+	value = -25
+}
+
+AQT = {
+	value = 100
+}
+
+PAP = {
+	value = 150
+	influence_value = 10
+	level = 3
+}
+
+leader = {
+	name = "Jacopo Brandozzi di Lucero"
+	picture = european_general_2
+	date = 1835.1.1
+	type = land
+	personality = calm
+	background = aristocrat
+}
+
+leader = {
+	name = "Gianluca Ambroglio"
+	picture = european_general_4
+	date = 1832.8.3
+	type = land
+	personality = glory_hound
+	background = cavalry_school
+}
+
+leader = {
+	name = "Angelo di Librari"
+	picture = european_admiral_8
+	date = 1827.9.10
+	type = sea
+	personality = mediocre
+	background = war_college
+}
+
+army = {
+	name = "Esercito Realo"
+	location = 754
+	regiment = {
+		name = "1a Guardia Reale"
+		type = infantry
+		home = 754
+	}
+	regiment = {
+		name = "2a Guardia Reale"
+		type = infantry
+		home = 754
+	}
+	regiment = {
+		name = "1a Fanteria di Linea"
+		type = infantry
+		home = 2567
+	}
+	regiment = {
+		name = "2a Fanteria di Linea"
+		type = infantry
+		home = 755
+	}
+	regiment = {
+		name = "1a Artigleria"
+		type = artillery
+		home = 761
+	}
+	regiment = {
+		name = "2a Artigleria"
+		type = artillery
+		home = 760
+	}
+	regiment = {
+		name = "3a Artigleria"
+		type = artillery
+		home = 759
+	}
+}
+
+army = {
+	name = "Divisione a Cavallo"
+	location = 748
+	regiment = {
+		name = "1a Cavalleria"
+		type = cuirassier
+		home = 753
+	}
+	regiment = {
+		name = "2a Cavalleria"
+		type = cuirassier
+		home = 758
+	}
+	regiment = {
+		name = "3a Cavalleria"
+		type = hussar
+		home = 757
+	}
+}
+
+army = {
+	name = "Esercito del Nord"
+	location = 743
+	regiment = {
+		name = "3a Fanteria di Linea"
+		type = infantry
+		home = 762
+	}
+	regiment = {
+		name = "4a Fanteria di Linea"
+		type = infantry
+		home = 763
+	}
+	regiment = {
+		name = "5a Fanteria di Linea"
+		type = infantry
+		home = 764
+	}
+	regiment = {
+		name = "6a Fanteria di Linea"
+		type = infantry
+		home = 741
+	}
+	regiment = {
+		name = "4a Artigleria"
+		type = artillery
+		home = 751
+	}
+	regiment = {
+		name = "5a Artigleria"
+		type = artillery
+		home = 756
+	}
+}
+navy = {
+	name = "Marina Reala di Napoli"
+	location = 754
+	ship = {
+		name= "Carlo I"
+		type = manowar
+	}
+	ship = {
+		name= "La Napoletana"
+		type = manowar
+	}
+
+	ship = {
+		name= "Christina"
+		type = frigate
+	}
+
+	ship = {
+		name= "Regina Vittoria"
+		type = frigate
+	}
+
+	ship = {
+		name= "Principe Umberto"
+		type = frigate
+	}
+
+	ship = {
+		name= "Lysia"
+		type = frigate
+	}
+
+	ship = {
+		name= "Cacciatore"
+		type = frigate
+	}
+
+	ship = {
+		name= "1a Squadrone Transporti"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2a Squadrone Transporti"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3a Squadrone Transporti"
+		type = clipper_transport
+	}
+
+}
+
+navy = {
+	name = "Squadra d'Africa"
+	location = 1784
+
+	ship = {
+		name= "Urgolio"
+		type = frigate
+	}
+
+	ship = {
+		name= "Atena"
+		type = frigate
+	}
+}
+
+navy = {
+	name = "Squadra d'India"
+	location = 1312
+
+	ship = {
+		name= "Regina dell'Oriente"
+		type = manowar
+	}
+
+	ship = {
+		name= "Re Manfredo"
+		type = frigate
+	}
+
+	ship = {
+		name= "Etna"
+		type = frigate
+	}
+
+	ship = {
+		name= "Monte Garambano"
+		type = frigate
+	}
+}
+
+navy = {
+	name = "Squadra di Malacca"
+	location = 1384
+
+	ship = {
+		name= "Erculo"
+		type = frigate
+	}
+
+	ship = {
+		name= "Capri"
+		type = frigate
+	}
+}
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+
+	befriend = { id="HIS" value = 100 }
+
+	threat = { id="PDN" value=200 }
+	threat = { id="MGH" value = 50 }
+	threat = { id="BYZ" value = 65 }
+
+	antagonize = { id="PDN" value=200 }
+
+	rival = { id="PDN" value=200 }
+}

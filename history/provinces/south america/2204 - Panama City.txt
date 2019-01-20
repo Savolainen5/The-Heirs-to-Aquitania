@@ -1,0 +1,7 @@
+owner = MDT
+controller = MDT
+add_core = MDT
+trade_goods = fruit
+life_rating = 30
+
+

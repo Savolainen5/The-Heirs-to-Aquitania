@@ -1,0 +1,10 @@
+army = {
+	name = "Ejército del Uruguay"
+	location = 2344
+	regiment = {
+		name= "1. División de Infantería"
+		type = irregular
+		home = 2344
+	}
+}
+

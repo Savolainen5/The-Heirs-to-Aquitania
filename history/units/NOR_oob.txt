@@ -1,0 +1,120 @@
+DEN = { value = 100 }
+SWE = { value = 100 }
+FIN = { value = -5 }
+RUS = { value = 150 }
+ICL = { value = 125 }
+
+army = {
+	name = "Norsk Haeren"
+	location = 313
+	regiment = {
+		name = "1. Infanteribataljon"
+		type = infantry
+		home = 313
+	}
+	regiment = {
+		name = "2. Infanteribataljon"
+		type = infantry
+		home = 309
+	}
+	regiment = {
+		name = "3. Infanteribataljon"
+		type = infantry
+		home = 313
+	}
+	regiment = {
+		name = "1. Artilleribataljon"
+		type = artillery
+		home = 305
+	}
+}
+
+army = {
+	name = "Gullkystens Garnison"
+	location = 1907
+	regiment = {
+		name = "1. Colonibataljon"
+		type = infantry
+		home = 310
+	}
+	regiment = {
+		name = "2. Colonibataljon"
+		type = infantry
+		home = 1907
+	}
+}
+
+navy = {
+	name = "Konelig Norske Marine"
+	location = 310
+	ship = {
+		name = "Otra"
+		type = manowar
+	}
+	ship = {
+		name = "Karmøy"
+		type = manowar
+	}
+	ship = {
+		name = "Glomma"
+		type = frigate
+	}
+	ship = {
+		name = "Uredd"
+		type = frigate
+	}
+	ship = {
+		name = "Steil"
+		type = frigate
+	}
+	ship = {
+		name = "1st Transport Squadron"
+		type = clipper_transport
+	}
+	ship = {
+		name = "2nd Transport Squadron"
+		type = clipper_transport
+	}
+}
+
+navy = {
+	name = "Gyllkustens Skvadron"
+	location = 1907
+	ship = {
+		name = "Hysnes"
+		type = frigate
+	}
+	ship = {
+		name = "Hellen"
+		type = frigate
+	}
+	ship = {
+		name = "3rd Transport Squadron"
+		type = clipper_transport
+	}
+	ship = {
+		name = "4th Transport Squadron"
+		type = clipper_transport
+	}
+}
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.1"
+	static = no
+	personality = balanced
+	
+	befriend = { id="SWE" value=20 }
+	befriend = { id="FIN" value=60 }
+	befriend = { id="RUS" value=45 }
+	befriend = { id="DEN" value=25 }
+	befriend = { id="ICL" value=145 }
+	befriend = { id="POL" value=70 }
+	
+	protect = { id="ICL" value=200 }
+	
+	threat = { id="SWE" value=110 }
+	threat = { id="DEN" value=110 }
+	threat = { id="FIN" value=70 }
+}

@@ -1,0 +1,56 @@
+HIS = {
+	truce_until = 1839.9.25
+	value = -50
+}
+
+AQT = { value = 160 }
+
+army = {
+	name = "Exèrcit Catalan"
+	location = 498
+	regiment = {
+		name = "1er Divisió de Infanteria"
+		type = infantry
+		home = 498
+	}
+	regiment = {
+		name = "2o Divisió de Infanteria"
+		type = infantry
+		home = 464
+	}
+	regiment = {
+		name = "1er Divisió de Cavalleria"
+		type = dragoon
+		home = 498
+	}
+	regiment = {
+		name = "1er Divisió d'Artilleria"
+		type = artillery
+		home = 501
+	}
+}
+
+navy = {
+	name = "Esquadró Catalan"
+	location = 498
+	ship = {
+		name = "Catalunya"
+		type = manowar
+	}
+	ship = {
+		name = "Magnana"
+		type = frigate
+	}
+	ship = {
+		name = "Ceres"
+		type = frigate
+	}
+	ship = {
+		name = "Sant Gabriel"
+		type = clipper_transport
+	}
+	ship = {
+		name = "Sant Antoni"
+		type = clipper_transport
+	}
+}

@@ -1,0 +1,7 @@
+owner = ARM
+controller = ARM
+add_core = ARM
+add_core = GEO
+trade_goods = tea
+life_rating = 35
+

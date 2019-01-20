@@ -1,0 +1,7 @@
+owner = BYZ
+controller = BYZ
+add_core = BYZ
+add_core = VOL 
+trade_goods = grain
+life_rating = 35
+

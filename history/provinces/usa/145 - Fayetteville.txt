@@ -1,0 +1,6 @@
+owner = MRG
+controller = MRG
+add_core = MRG
+trade_goods = timber
+life_rating = 35
+
