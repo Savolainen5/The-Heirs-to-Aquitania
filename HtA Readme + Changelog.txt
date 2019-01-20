@@ -12,8 +12,9 @@ There's an event numbers list at the bottom of this file
 Feel free to use anything from this mod without asking me. Please do attribute it, though.
 
 **INSTALLATION INSTRUCTIONS**
-Put the folder this file is in, plus the Heirs to Aquitania file with the .mod extension (it might look like a movie file of some kind for you) in your game files' mod folder.
-If you're using Steam, that's gonna be Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod
+Put the folder this file is in in your game files' mod folder. Take the .mod file (it might look like a movie file of some kind for you) out and have it also be in the mod file next to the Heirs to Aquitania folder.
+If you're using Steam, the target directry is gonna be Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod. So, to be clear, in the end you'll have an Heirs to Aquitania folder and an Heirs to Aquitania .mod
+file both in your Vic2 mod folder with the aforementioned path.
 
 Thanks to:
 
@@ -40,13 +41,15 @@ Thanks to:
 - Over421 for Greek-language parties and flags
 - Discux for parties for lots of New World countries
 
+NB for the changelog - Anything with lots of # or * after it is something Savs is still working on or hasn't gotten fully/correctly implemented yet
+
 **CHANGELOG**
 
-Version 0.36 X/Y/18 - The Russias & China Update
+Version 0.36 X/Y/19 - The Russias & China Update
 
 *Major*
 
-- Story and flavour for Russia, Smolensk, and Poland
+- Story and flavour for Russia, Smolensk, and Poland (maybe?)
 - Events and decisions for China by /u/chortlinggnome, see changelog below
 - Incorporated HPM's crisis locking system and election event spam reduction system
 - HtA story chain regarding Corsica involving Aquitania, PDN, and Naples/Italy
