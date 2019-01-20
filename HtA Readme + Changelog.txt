@@ -156,7 +156,7 @@ To do:
 50500-50599 - Nordic Countries (NOR, SWE, DEN, ICL, FIN)
 50600-50699 - Roman Empire and related
 50700-50799 - Armenia events
-50800-50849 - Miscellaneous events (some in Hta_famines)
+50800-50849 - Miscellaneous events (some in HtA_famines, some in HtA_Flavor)
 51000-51199 - North Amerigan events (separate file for each country?)
 51200-51399 - South Amerigan events
 51400-51449 - More FRA

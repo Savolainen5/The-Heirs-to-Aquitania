@@ -382,7 +382,132 @@ country_event = {
 	}
 }
 			
+#Bet with the Duke of Pomerania?
+country_event = {
+	id = 50811
+	title = "EVTNAME50811"
+	desc = "EVTDESC50811"
 
-			
-			
-			
+	is_triggered_only = yes	#See the HtA_Flavour decision file
+
+	option = {
+		name = "Easy money - Bet on Smolensk"
+		money = -1000
+		relation = {
+			who = FROM
+			value = 20
+		}
+		set_global_flag = POM_MEC_bet_on_RUS_SML_war
+		FROM = {
+			country_event = {
+				id = 50812
+				days = 1
+			}
+		}
+
+		ai_chance = {
+			factor = 80
+		}
+	}
+	option = {
+		name = "I'm sure Russia will win, no need to bet."
+		relation = {
+			who = FROM
+			value = 30
+		}
+		FROM = {
+			country_event = {
+				id = 50813
+				days = 1
+			}
+		}
+
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#The bet is on
+country_event = {
+	id = 50812
+	title = "EVTNAME50812"
+	desc = "EVTDESC50812"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "He will be so surprised when I win!"
+		relation = {
+			who = FROM
+			value = 20
+		}
+	}
+}
+
+
+#No bet
+country_event = {
+	id = 50813
+	title = "EVTNAME50813"
+	desc = "EVTDESC50813"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "At least we have that in common."
+		relation = {
+			who = FROM
+			value = 30
+		}
+	}
+}
+
+#POM wins the bet
+country_event = {
+	id = 50814
+	title = "EVTNAME50814"
+	desc = "EVTDESC50814"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POM
+		has_global_flag = POM_MEC_bet_on_RUS_SML_war
+		SML = { has_country_flag = defeated_by_russia }
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "I knew it!"
+		money = 1750
+	}
+}
+
+#MEc wins the bet
+country_event = {
+	id = 50815
+	title = "EVTNAME50815"
+	desc = "EVTDESC50815"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MEC
+		SML = {
+			NOT = { has_country_flag = defeated_by_russia }
+			truce_with = RUS
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "Why did he even make that bet?"
+		money = 1750
+	}
+}

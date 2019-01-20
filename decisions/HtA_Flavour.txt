@@ -1,0 +1,24 @@
+political_decisions = {
+
+	#Bet on the outcome of the Russian-Smolensk War
+	russia_smolensk_bet = {
+		potential = {
+			tag = POM
+			RUS = { war_with = SML }
+			NOT = { has_country_flag = RUS_SML_bet }
+			SML = { NOT = { has_country_flag = defeated_by_russia } }
+		}
+		allow = {
+			money = 1000
+		}
+		effect = {
+			money = -750
+			set_country_flag = RUS_SML_bet
+			MEC = { 
+				country_event = {
+					id = 50811
+					days = 1
+				}
+			}
+		}
+}

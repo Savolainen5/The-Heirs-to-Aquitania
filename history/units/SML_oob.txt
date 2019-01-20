@@ -97,7 +97,7 @@ army = {
 	regiment = {
 		name= "2.5-ya Pekhotnaya Diviziya"
 		type = infantry
-		home = 1012
+		home = 943
 	}
 
 	regiment = {

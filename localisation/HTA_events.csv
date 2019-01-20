@@ -314,7 +314,9 @@ EVTDESC50365;On this day, Tsar Michael II has come of age, acceeding to the thro
 EVTNAME50366;Tsar Batyushka Feodor;;;;;;;;;;;x
 EVTDESC50366;Our beloved Tsar has been cultivating his image as a father figure to his entire country. Most of the peasantry now see him as a loving man who looks out for them and wants the best for them.;;;;;;;;;;;x
 EVTNAME50371;Rebellious Ukrainians;x
-EVTDESC50371;The people of Ukraine, with whom we have frequently had troubles in the many years they have lived under our rule, have once again begun to agitate against our rule. What began as a local protest against high taxation has spread and been taken up by Ukrainian nobility. We have two options. If we decide to grant them concessions to placate them in the short term, it will certainly cause us to lose face with the many other peoples in our empire. If, instead, we decide to send troops and suppress them, we may face yet further troubles down the road.;x
+EVTDESC50371;The people of Ukraine, with whom we have frequently had troubles in the many years they have lived under our rule, have once again begun to agitate against our rule. What began as a local protest against high taxation has spread and been taken up by Ukrainian nobility. We have two options. If we decide to grant them concessions to placate them in the short term, it will certainly cause us to lose face with the many other peoples in our empire, particularly our own. If, instead, we decide to send troops and suppress them, we may face yet further troubles down the road.;x
+EVTNAME50372;Ruthenian Unrest;x
+EVTDESC50372;The Ruthenian people in the southwest of our country have long been a thorn in our sides. Divided between Smolensk and Poland, they are staunch Catholics who speak a language closely related to that of the White Russians and Ukranians. Of late, there have been stirrings of nationalism in their towns and villages. Many have seen our treatment of their Ukranian cousins and have begun to rebel, hoping for their own chance at freedom. We could grant them concessions or suppress them violently. Each may have further repercussions.;x
 EVTNAME50380;Polish Territorial Claims in Brest;;;;;;;;;;x
 EVTDESC50380;The Poles, although soundly defeated in the Belarussian War in 1748, continue to claim the region of Brest, which happens to be home to significant numbers of Poles. Now that we have gone to war with Russia, the cowards, sensing weakenss, have seen fit to demand that we return the territory, despite our own good claims on it. We must ask ourselves if we can risk war with Poland and the so-called Russia at the same time.;;;;;;;;;;;x
 EVTNAME50381;The Treaty of Brest;;;;;;;;;x
@@ -329,6 +331,10 @@ EVTNAME50385;The Tatars Revolt;;;;;;;;;;;;x
 EVTDESC50385;Our relationship with the Tatars has always been tense, and it has largely been our military prowess that has kept them in check. Now they have seen an opportunity in the Russians to gain new freedoms for themselves. Their troops have left the front and begun raiding our lands!;;;;;;;;;;x
 EVTNAME50386;The Tatars Join the War;;;;;;;;;;;x
 EVTDESC50386;Honouring our agreement, the Cossacks of the pre-Caucasian steppe have ceased their cooperation with the Smolenskiis and are now joining our side in the war.;;;;;;;;x
+EVTNAME50387;Smolensk Chastened;x
+EVTDESC50387;We have achieved a stunning victory. International opinion certainly favoured our defeat - we are told that the Duke of Mecklenburg lost a sizable amount in his bet with the Duke of Pomerania. We have proven the strength of our faith and our great nation. While we were unable to crush the Smolensk Knyaz completely, it is now only a matter of time before his people dethrone him and join us.;x
+EVTNAME50388;Defeat;x
+EVTDESC50388;The palace, at last empty of Russian soldiers, seems a darker place than before the war. The bitter defeat which we have suffered at the hands of our numerically inferior enemy has shocked everyone, from the highest minister - and the Knyaz himself - to the illiterate peasant, be he Great Russian or otherwise. As they begin turning against us, our position looks weak. Can Smolensk survive the coming years intact?;x
 EVTNAME50390;The Development of $PROVINCENAME$;;;;;;;;;;;x
 EVTDESC50390;A number of advisors and members of the military establishment have recently proposed that the government develop $PROVINCENAME$ as the main port for our navy in the Black Sea. They have already gathered some of the requisite funds, but request a cash infusion from and the blessing of the government to begin the project in earnest. They will begin fortification of the port and city as soon as possible.;;;;;;;;;x
 EVTNAME50391;Dead Souls;;;;;;;;;;;;x
@@ -583,6 +589,16 @@ EVTNAME50809;Eyjafjallajokul's Legacy;;;;;;;;;;;x
 EVTDESC50809;The eruption of that volcano in 1837 darkened skies across Europe and resulted in the greatest famine in recent memory on the continent. As the skies clear and temperatures climb once more, a sense of normalcy is beginning to return, and hitherto upset peasants and city-dwellers are once again going about their everyday business of producing - not agitating against the government. We have weathered the storm.;;;;;;;;;;;;x
 EVTNAME50810;Automation and the Peasantry;;;;;;;;;;;;x
 EVTDESC50810;The invention and popularisation of the threshing machine caused headaches for governments throughout the world. Previously, threshing was done by hand in a laborious and time-consuming manner. The adoption of mechanised means of accomplishing the same task meant that fewer hands were needed in the field. Idle hands are the devil's plaything, as the old saying goes. And so, there were riots and unemployment in the first half of the 19th century as many farm labourers struggled to adjust and found themselves out of work. While in some countries, they were successfully moved to new arable land, in others they moved into the cities, with attendant issues regarding crime and overcrowding. Our country is now facing this problem.;;;;;;;;;;;;x
+EVTNAME50811;Bet with the Duke of Pomerania?;x
+EVTDESC50811;The Duke of our neighbouring duchy is convinced that Russia will win in its current war against Smolensk, despite the odds. We stand to win a bit of money making the easy bet.;;;;;;;;x
+EVTNAME50812;The Bet is On!;x
+EVTDESC50812;The Duke of Mecklenburg has agreed to our wager. We will eagerly await the results of the war.;x
+EVTNAME50813;No Bet;x
+EVTDESC50813;The Duke of Mecklenburg actually agrees with us about this war. Oh well!;x
+EVTNAME50814;Russian victory;x
+EVTDESC50814;The Russians have won against all odds - and so have we! It took some time to convince the Duke to pay out, but we have our winnings.;x
+EVTNAME50815;Smolensk victory;x
+EVTDESC50815;The Smolenskii Knyaz has won - and so have we! It was an easy bet, and it took some time for the Duke to pay out, but we have now received our winnings and some bragging rights.;x
 EVTNAME51000;The Iroquois and Cherokee Break Away!;;;;;;;;;;x
 EVTDESC51000;Our long-time friends and brothers to our north and south have seen fit to take advantage of our momentary weakness after fighting against the whiteskins to seek their fortunes without our aid or protection. It is truly a misfortune that they should forsake the friendship our great tribes have had for generations.;;;;;;;;;;;x
 EVTNAME51001;The Solelha Purchase;;;;;;;;;;x
