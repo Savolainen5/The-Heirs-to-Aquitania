@@ -27,6 +27,7 @@ country_event = {
 				value = 100
 			}
 		}
+		#ai_cha
 	}
 	
 	option = {
@@ -37,14 +38,14 @@ country_event = {
 				who = THIS
 				value = -40
 			}
+			country_event = {
+				id = 51452
+				days = 5
+			}
 		}
 		relation = {
 			who = FROM
 			value = -40
-		}
-		country_event = {
-			id = 51452
-			days = 5
 		}
 	}
 }
@@ -102,7 +103,7 @@ country_event = {
 	
 	option =  {
 		name = "Force must be applied to accomplish our goals."
-		add_casus_belli = {
+		casus_belli = {
 			type = conquest
 			target = FROM
 			months = 5
@@ -281,14 +282,14 @@ country_event = {
 				who = THIS
 				value = -40
 			}
+			country_event = {
+				id = 51459
+				days = 5
+			}
 		}
 		relation = {
 			who = FROM
 			value = -40
-		}
-		country_event = {
-			id = 51459
-			days = 5
 		}
 	}
 }
@@ -353,7 +354,7 @@ country_event = {
 	
 	option =  {
 		name = "Force must be applied to accomplish our goals."
-		add_casus_belli = {
+		casus_belli = {
 			type = conquest
 			target = FROM
 			months = 5

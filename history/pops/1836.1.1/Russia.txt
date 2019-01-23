@@ -2467,7 +2467,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 1000
+		size= 3000
 
 	}
 
