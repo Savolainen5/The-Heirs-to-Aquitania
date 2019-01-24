@@ -3059,9 +3059,12 @@ germany_acquire_state = {
 		is_vassal = no
 		THIS = {											#The one using the CB has these conditions
 			OR = {
-				primary_culture = north_german
-				primary_culture = central_german
-				primary_culture = south_german
+				#primary_culture = north_german
+				#primary_culture = central_german
+				#primary_culture = south_german
+				tag = BRA									#Temporary(?) fix added on 24.1.19 to ensure that only the big three can fight
+				tag = BRN
+				tag = BAV
 			}
 			OR = {
 				is_greater_power = yes
@@ -3070,6 +3073,10 @@ germany_acquire_state = {
 			NOT = { has_country_modifier = neutrality }
 			NOT = { war_policy = pacifism }
 			has_global_flag = german_hegemony_wars_start
+			NOT = {
+				tag = LUX
+				ai = yes
+			}
 		}
 		NOT = { has_country_modifier = neutrality }
 		OR = {
@@ -3081,6 +3088,19 @@ germany_acquire_state = {
 	}
 	
 	allowed_states = {
+		any_owned_province = { any_neighbor_province = { owned_by = THIS } }	#Must target neighbouring state
+		OR = {
+			AND ={
+				NOT = {
+					any_owned_province = { is_capital = yes }			#Can't demand a capital if the nation has more than one state
+				}
+				owner = { number_of_states = 2 }
+			}
+			AND = {
+				NOT =  { owner = { number_of_states = 2 } }					#Unless it has only one state, in which case you can demand the capital
+				#any_owned_province = { is_capital = yes }
+			}
+		}
 		OR = {
 			any_owned_province = {								#For German countries holding German territory
 				NOT = {	is_core = THIS }
@@ -3111,7 +3131,24 @@ germany_acquire_state = {
 				is_core = GER
 				NOT = { is_core = THIS }
 			}
-		}			
+		}
+		#AI will not grab cores of allies/spherelings
+		OR = {
+			THIS = { ai = no }
+			NOT = {
+				any_owned_province = {
+					any_core = {
+						exists = yes
+						OR = {
+							alliance_with = THIS
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+		}
+		
 	}
 
 	po_demand_state = yes

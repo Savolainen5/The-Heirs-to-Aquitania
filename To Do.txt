@@ -43,6 +43,7 @@ Decisions:
 - Portugal claims Atlantic islands
 - Update gtfo_HtA with new tags
 - check NationalUnification to see if the Arab Union needs to have the relevant culture group excluded in order to be able to form
+- A union of Margaria and Vestland
 
 POPs:
 

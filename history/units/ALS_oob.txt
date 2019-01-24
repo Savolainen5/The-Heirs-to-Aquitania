@@ -7,3 +7,5 @@ army = {
 		home = 571
 	}
 }
+BAD = { value = 130 }
+WUR = { value = 140 }

@@ -391,7 +391,7 @@ country_event = {
 ######BAV-MNZ event chain end
 
 ############################################################################################################
-##########################################Brunswick congress begin##########################################
+########################################  Brunswick congress begin  ########################################
 ############################################################################################################
 
 #Brunswick calls a congress
@@ -525,6 +525,7 @@ country_event = {
 	id = 50064
 	title = "EVTNAME50064"
 	desc = "EVTDESC50064"
+	picture = "danishgovernment"
 	
 	trigger = {
 		tag = BRA
@@ -569,6 +570,7 @@ country_event = {
 	id = 50065
 	title = "EVTNAME50065"
 	desc = "EVTDESC50065"
+	picture = "danishgovernment"
 	
 	trigger = {
 		has_country_flag = attending_brunswick_congress
@@ -628,7 +630,6 @@ country_event = {
 				factor = 2
 				OR = {
 					tag = OLD
-					tag = BRE
 					tag = NAS
 					tag = LUX
 				}
@@ -648,6 +649,7 @@ country_event = {
 				OR = {
 					tag = WES
 					tag = MNR
+					tag = BRE
 				}
 			}
 			modifier = {
@@ -766,7 +768,7 @@ country_event = {
 	id = 50066
 	title = "EVTNAME50065"
 	desc = "EVTDESC50065"
-	picture = "meeting"
+	picture = "danishgovernment"
 	
 	trigger = {
 		has_country_flag = attending_brunswick_congress

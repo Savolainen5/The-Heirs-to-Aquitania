@@ -1,51 +1,57 @@
 BRA = {
-	value = -175
+	value = -75
 }
 BRE = {
-	value = -175
+	value = -15
 }
 BRN = {
-	value = -175
+	value = -75
 }
 FRM = {
-	value = -175
+	value = -25
 }
 HAN = {
-	value = -175
+	value = -75
 }
 MEC = {
-	value = -175
+	value = -5
 }
 MNR = {
-	value = -175
+	value = -25
 }
 MNZ = {
-	value = -175
+	value = -15
 }
 NAS = {
-	value = -175
+	value = -5
 }
 OLD = {
-	value = -175
+	value = -5
 }
 POM = {
-	value = -175
+	value = -5
 }
 RHI = {
-	value = -175
+	value = -15
 }
 SAX = {
 	value = -5
 }
 THU = {
-	value = -175
+	value = -15
 }
 WES = {
-	value = -175
+	value = -5
 }
 
+ALS = {
+	value = 105
+}
 BAV = {
 	value = 155
+}
+WUR = {
+	value = 110
 }
 army = {
 	name = "Badische Armee"

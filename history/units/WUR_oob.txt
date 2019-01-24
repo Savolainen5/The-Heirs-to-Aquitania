@@ -1,47 +1,56 @@
 BRA = {
-	value = -175
+	value = -35
 }
 BRE = {
-	value = -175
+	value = -5
 }
 BRN = {
-	value = -175
+	value = -45
 }
 FRM = {
-	value = -175
+	value = -5
 }
 HAN = {
-	value = -175
+	value = -15
 }
 MEC = {
-	value = -175
+	value = -15
 }
 MNR = {
-	value = -175
+	value = -15
 }
 MNZ = {
-	value = -175
+	value = -15
 }
 NAS = {
-	value = -175
+	value = -15
 }
 OLD = {
-	value = -175
+	value = -15
 }
 POM = {
-	value = -175
+	value = -15
 }
 RHI = {
-	value = -175
+	value = -15
 }
 SAX = {
 	value = -5
 }
 THU = {
-	value = -175
+	value = -15
 }
 WES = {
-	value = -175
+	value = -15
+}
+BAD = {
+	value = 115
+}
+BAV = {
+	value = 100
+}
+ALS = {
+	value = 95
 }
 
 army = {

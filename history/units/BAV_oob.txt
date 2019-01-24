@@ -98,7 +98,7 @@ WUR = {
 	influence_value = 25
 }
 ALS = {
-	value = 95
+	value = 135
 	level = 4
 	influence_value = 15
 }

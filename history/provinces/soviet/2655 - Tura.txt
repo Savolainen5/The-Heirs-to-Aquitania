@@ -1,4 +1,4 @@
 add_core = RUS
 trade_goods = iron
-life_rating = 25
+life_rating = 35 #to enable colonization
 
