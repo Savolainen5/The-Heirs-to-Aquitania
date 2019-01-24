@@ -55,6 +55,9 @@ country_event = {
 	id = 51451
 	title = "EVTNAME51451"
 	desc = "EVTDESC51451"
+	picture = "riga"
+	
+	fire_only_once = yes
 	
 	trigger = {
 		OR = {
@@ -72,7 +75,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 40
+		months = 20
 	}
 	
 	option = {
@@ -115,6 +118,8 @@ country_event = {
 			}
 		}
 		badboy = 8
+		clr_country_flag = window_to_the_west_LIT
+		set_country_flag = wttwLIT_concluded
 		
 		ai_chance = {
 			factor = 1
@@ -146,6 +151,7 @@ country_event = {
 	id = 51453
 	title = "EVTNAME51453"
 	desc = "EVTDESC51453"
+	picture = "deliberation"
 	
 	is_triggered_only = yes
 	
@@ -175,6 +181,7 @@ country_event = {
 	id = 51454
 	title = "EVTNAME51454"
 	desc = "EVTDESC51454"
+	picture = "deliberation"
 	
 	is_triggered_only = yes
 	
@@ -189,13 +196,14 @@ country_event = {
 	id = 51455
 	title = "EVTNAME51455"
 	desc = "EVTDESC51455"
+	picture = "crisis_revolution_enabled"
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = "Order our troops into action!"
 		badboy = 8
-		add_casus_belli = {
+		casus_belli = {
 			target = FROM
 			type = conquest
 		}
@@ -206,6 +214,8 @@ country_event = {
 				casus_belli = conquest
 			}
 		}
+		clr_country_flag = window_to_the_west_LIT
+		set_country_flag = wttwLIT_concluded
 	}
 }
 
@@ -214,6 +224,7 @@ country_event = {
 	id = 51456
 	title = "EVTNAME51456"
 	desc = "EVTDESC51456"
+	picture = "autocracy"
 	
 	fire_only_once = yes
 	
@@ -233,7 +244,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 12
+		months = 24
 	}
 	
 	option = {
@@ -298,6 +309,7 @@ country_event = {
 	id = 51458
 	title = "EVTNAME51458"
 	desc = "EVTDESC51458"
+	picture = "riga"
 	
 	trigger = {
 		OR = {
@@ -366,6 +378,8 @@ country_event = {
 			}
 		}
 		badboy = 8
+		clr_country_flag = window_to_the_west_LAT
+		set_country_flag = wttwLAT_concluded
 		
 		ai_chance = {
 			factor = 1
@@ -397,6 +411,7 @@ country_event = {
 	id = 51460
 	title = "EVTNAME51461"
 	desc = "EVTDESC51461"
+	picture = "deliberation"
 	
 	is_triggered_only = yes
 	
@@ -426,6 +441,7 @@ country_event = {
 	id = 51462
 	title = "EVTNAME51462"
 	desc = "EVTDESC51462"
+	picture = "deliberation"
 	
 	is_triggered_only = yes
 	
@@ -440,13 +456,14 @@ country_event = {
 	id = 51463
 	title = "EVTNAME51463"
 	desc = "EVTDESC51463"
+	picture = "crisis_revolution_enabled"
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = "Order our troops into action!"
 		badboy = 8
-		add_casus_belli = {
+		casus_belli = {
 			target = FROM
 			type = conquest
 		}
@@ -457,6 +474,8 @@ country_event = {
 				casus_belli = conquest
 			}
 		}
+		clr_country_flag = window_to_the_west_LAT
+		set_country_flag = wttwLAT_concluded
 	}
 }
 
@@ -465,6 +484,7 @@ country_event = {
 	id = 51464
 	title = "EVTNAME51464"
 	desc = "EVTDESC51464"
+	picture = "autocracy"
 	
 	fire_only_once = yes
 	
