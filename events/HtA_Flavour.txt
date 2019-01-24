@@ -387,6 +387,7 @@ country_event = {
 	id = 50811
 	title = "EVTNAME50811"
 	desc = "EVTDESC50811"
+	picture = "meeting"
 
 	is_triggered_only = yes	#See the HtA_Flavour decision file
 
@@ -433,6 +434,7 @@ country_event = {
 	id = 50812
 	title = "EVTNAME50812"
 	desc = "EVTDESC50812"
+	picture = "meeting"
 
 	is_triggered_only = yes
 	
@@ -451,6 +453,7 @@ country_event = {
 	id = 50813
 	title = "EVTNAME50813"
 	desc = "EVTDESC50813"
+	picture = "meeting"
 
 	is_triggered_only = yes
 	
@@ -468,6 +471,7 @@ country_event = {
 	id = 50814
 	title = "EVTNAME50814"
 	desc = "EVTDESC50814"
+	picture = "meeting"
 
 	fire_only_once = yes
 
@@ -475,6 +479,7 @@ country_event = {
 		tag = POM
 		has_global_flag = POM_MEC_bet_on_RUS_SML_war
 		SML = { has_country_flag = defeated_by_russia }
+	}
 
 	mean_time_to_happen = {
 		months = 3
@@ -491,15 +496,13 @@ country_event = {
 	id = 50815
 	title = "EVTNAME50815"
 	desc = "EVTDESC50815"
+	picture = "meeting"
 
 	fire_only_once = yes
 
 	trigger = {
 		tag = MEC
-		SML = {
-			NOT = { has_country_flag = defeated_by_russia }
-			truce_with = RUS
-		}
+		RUS = { has_country_flag = defeated_by_smolensk }
 	}
 
 	mean_time_to_happen = {
@@ -509,5 +512,31 @@ country_event = {
 	option = {
 		name = "Why did he even make that bet?"
 		money = 1750
+	}
+}
+
+#Owner of POM hears about the bet by the Duke, in case they're already part of a bigger country
+country_event = {
+	id = 50816
+	title = "EVTNAME50816"
+	desc = "EVTDESC50816"
+	picture = "news"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		546 = { owned_by = THIS }
+		OR = {
+			SML = { has_country_flag = defeated_by_russia }
+			RUS = { has_country_flag = defeated_by_smolensk }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "He always was a gambler."
 	}
 }

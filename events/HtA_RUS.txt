@@ -593,6 +593,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				SML = { war = yes }
+			}
 		}
 	}
 	
@@ -1032,15 +1033,79 @@ country_event = {
 		}
 	}
 }
+#Russia Chastened
+country_event = {
+	id = 50389
+	title = "EVTNAME50389"
+	desc = "EVTDESC50389"
+	picture = "battle_pavon"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SML
+		truce_with = RUS
+		RUS = { has_recently_lost_war = yes }
+		#has_recently_lost_war = no				#This event will get fucked up easily if there are extra wars that Russia loses, even if it wins the SML war
+		any_owned_province = { is_core = RUS NOT = { is_core = SML } }
+		exists = RUS
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "Sweet victory."
+		prestige = 10
+		RUS = {
+			country_event = {
+				id = 50390 #Defeat
+				days = 1
+			}
+		}
+	}
+}
 
+#For Russia- Defeat
+country_event = {
+	id = 50390
+	title = "EVTNAME50390"
+	desc = "EVTDESC50390"
+	picture = "food_shortage"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This bodes ill."
+		prestige = -10
+		set_country_flag = defeated_by_smolensk
+		any_pop = {
+			limit = {
+				is_accepted_culture = no
+				is_primary_culture = no
+			}
+			militancy = 7
+			consciousness = 5
+		}
+		any_pop = {
+			limit = {
+				is_accepted_culture = yes
+				is_primary_culture = yes
+			}
+			militancy = 3
+			consciousness = 5
+		}
+	}
+}
 
 ###Flavour events###
 
 #Development of Sevastopol
 province_event = {
-	id = 50390
-	title = "EVTNAME50390"
-	desc = "EVTDESC50390"
+	id = 50391
+	title = "EVTNAME50391"
+	desc = "EVTDESC50391"
 	
 	fire_only_once = yes
 	
@@ -1070,9 +1135,9 @@ province_event = {
 
 #Dead souls
 country_event = {
-	id = 50391
-	title = "EVTNAME50391"
-	desc = "EVTDESC50391"
+	id = 50392
+	title = "EVTNAME50392"
+	desc = "EVTDESC50392"
 	
 	fire_only_once = yes
 	
@@ -1137,7 +1202,7 @@ country_event = {
 
 #Workaround to get a truly random effect for the above
 country_event = {
-	id = 50392
+	id = 50393
 	title = "Ignore me"
 	desc = "I'm just fixing something."
 	
@@ -1147,7 +1212,8 @@ country_event = {
 		ai = yes
 		RUS = {
 			has_country_flag = dead_souls
-			has_country_modifier = successful_ds_reform
+			NOT = { has_country_modifier = successful_ds_reform }
+			NOT = { has_country_modifier = unsuccessful_ds_reform }
 		}
 	}
 	
@@ -1166,6 +1232,7 @@ country_event = {
 				name = successful_ds_reform
 				duration = 3650
 			}
+			clr_country_flag=  dead_souls
 		}
 	}
 }

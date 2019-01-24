@@ -21,4 +21,5 @@ political_decisions = {
 				}
 			}
 		}
+	}
 }

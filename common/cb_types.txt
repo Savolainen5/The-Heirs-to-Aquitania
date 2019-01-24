@@ -83,6 +83,7 @@ place_in_the_sun
 dismantle_forts
 china_acquire_state
 germany_acquire_state
+germany_conquer
 acquire_state
 acquire_any_state
 acquire_substate_region
@@ -3089,18 +3090,145 @@ germany_acquire_state = {
 	
 	allowed_states = {
 		any_owned_province = { any_neighbor_province = { owned_by = THIS } }	#Must target neighbouring state
+		NOT = {	any_owned_province = { is_capital = yes } }		
+		owner = { number_of_states = 2 }						#Can't demand a capital if the nation has more than one state (that's the next cb down)
 		OR = {
-			AND ={
-				NOT = {
-					any_owned_province = { is_capital = yes }			#Can't demand a capital if the nation has more than one state
+			any_owned_province = {								#For German countries holding German territory
+				NOT = {	is_core = THIS }
+				OR = {
+					owner = { primary_culture = north_german }
+					owner = { primary_culture = central_german }
+					owner = { primary_culture = south_german }
 				}
-				owner = { number_of_states = 2 }
+				is_core = GER
 			}
-			AND = {
-				NOT =  { owner = { number_of_states = 2 } }					#Unless it has only one state, in which case you can demand the capital
-				#any_owned_province = { is_capital = yes }
+			any_owned_province = {								#For German countries holding non-German territory
+				OR = {
+					owner = { primary_culture = north_german }
+					owner = { primary_culture = central_german }
+					owner = { primary_culture = south_german }
+				}
+				NOT = { is_core = GER }
+				NOT = { owner = { tag = LUX } }
+			}
+			#any_owned_province = {								#For non-German countries holding German territory
+			#	NOT = {
+			#		OR = {
+			#			owner = { primary_culture = north_german }
+			#			owner = { primary_culture = central_german }
+			#			owner = { primary_culture = south_german }
+			#		}
+			#	}
+			#	is_core = GER
+			#	NOT = { is_core = THIS }
+			#}
+		}
+		#AI will not grab cores of allies/spherelings
+		OR = {
+			THIS = { ai = no }
+			NOT = {
+				any_owned_province = {
+					any_core = {
+						exists = yes
+						OR = {
+							alliance_with = THIS
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
 			}
 		}
+		
+	}
+
+	po_demand_state = yes
+	
+	on_po_accepted = {
+		country_event =	2650	# Territorial Loss event
+	}
+	
+	war_name = WAR_GERMAN_UNIFICATION
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.05
+		}
+	}
+}
+
+# German Unification by force (HtA)
+germany_conquer = {
+	sprite_index = 2
+	is_triggered_only = yes
+	months = 12
+	crisis = no
+
+	badboy_factor = 0.25
+	prestige_factor = 0
+	peace_cost_factor = 0.5
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 6
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	always = yes											#I think this means you don't have to justify it?
+
+	can_use = {												#Details who can use it and who can be targeted
+		NOT = { is_our_vassal = THIS }
+		NOT = { tag = GER }									#Germany can't use it, nor can it be targeted with this CB
+		OR = {
+			any_owned_province = {							#The target owns a core of Germany that isn't its own core
+				NOT = { is_core = THIS }
+				is_core = GER
+				NOT = { province_id = 543 }					#Emden, so that it can't be used against the Netherlands
+			}
+			primary_culture = north_german					#The target is North German or Central German culture
+			primary_culture = central_german
+			primary_culture = south_german
+		}
+		is_vassal = no
+		THIS = {											#The one using the CB has these conditions
+			OR = {
+				#primary_culture = north_german
+				#primary_culture = central_german
+				#primary_culture = south_german
+				tag = BRA									#Temporary(?) fix added on 24.1.19 to ensure that only the big three can fight
+				tag = BRN
+				tag = BAV
+			}
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			NOT = { has_country_modifier = neutrality }
+			NOT = { war_policy = pacifism }
+			has_global_flag = german_hegemony_wars_start
+			NOT = {
+				tag = LUX
+				ai = yes
+			}
+		}
+		NOT = { has_country_modifier = neutrality }
+		OR = {
+			war_with = THIS									#You can use it against a country with whom you're already at war
+			THIS = {										#You can't use it if you have said modifier
+				NOT = {	has_country_modifier = no_more_war }
+			}
+		}
+	}
+	
+	allowed_states = {
+		any_owned_province = { any_neighbor_province = { owned_by = THIS } }	#Must target neighbouring state
+		NOT =  { owner = { number_of_states = 2 } }					#Unless it has only one state, in which case you can demand the capital
 		OR = {
 			any_owned_province = {								#For German countries holding German territory
 				NOT = {	is_core = THIS }
@@ -3151,11 +3279,11 @@ germany_acquire_state = {
 		
 	}
 
-	po_demand_state = yes
+	po_annex = yes
 	
-	on_po_accepted = {
-		country_event =	2650	# Territorial Loss event
-	}
+#	on_po_accepted = {
+#		country_event =	2650	# Territorial Loss event
+#	}
 	
 	war_name = WAR_GERMAN_UNIFICATION
 	
