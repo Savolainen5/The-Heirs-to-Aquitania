@@ -392,7 +392,7 @@ political_decisions = {
 			money = -5000
 			set_country_flag = ukrainians_incited
 			SML = {
-				any_province = {
+				any_owned = {
 					limit = {
 						is_core = UKR
 					}

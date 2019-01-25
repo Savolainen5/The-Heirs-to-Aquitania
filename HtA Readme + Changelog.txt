@@ -80,7 +80,7 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - Tweaked the population growth maluses for Disaster Damage and Fire Recovery event modifiers
 - Added an event for France to get cores on Brittany if it doesn't have them and to change the province names to the French ones
 - Added an event for the Celtic Federation (CLT) owning Brittany to revert names from possible French names to Breton ones
-- Added some flavour events
+- Added a number of flavour events
 - Changed the name of Romania to Volasea (as a sort of quasi-plausible development of Volcae/Vlach/Wallach into something that isn't Romania, because, you know, Romans exist)
 	- The new tag is VOL, though I haven't changed other things, like party name codes, regions, or the culture code
 - Tweaked the colour of Central German culture to be more distinguishable from North German
@@ -109,6 +109,7 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - Fixed the form SGF decision to actually work. Thanks to /u/Hirotsugu for pointing it out
 - Russian steppe event no longer spams when annexing Smolensk
 - Hispania's OOB works
+- Fixed and greatly improved the German Hegemony CB
 
 *China/Japan content changelog by /u/chortlinggnome:*
 - added event chain for civil war between Qin and Nanyue, pulling in Qin vassals, Mongolia and Manchuria

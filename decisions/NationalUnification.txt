@@ -1038,6 +1038,14 @@ political_decisions = {
 							}
 							relation = { who = THIS value = 100 }
 						}
+						owner = {
+							in_sphere = THIS
+							NOT = {
+								is_culture_group = polish_culture_group
+								is_culture_group = czecho_slovak_culture_group
+							}
+							vassal_of = THIS
+						}
 					}
 				}
 			}

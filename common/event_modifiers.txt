@@ -2002,7 +2002,7 @@ rebellious_minorities = {
 	icon = 18
 }
 
-very_rebellious_minorities
+very_rebellious_minorities = {
 	pop_militancy_modifier = 0.5
 	pop_consciousness_modifier = 0.5
 	icon = 18
