@@ -12,8 +12,6 @@ country_event = {
 	trigger = {
 		2228 = { owned_by = THIS }
 		year = 1902
-		NOT = { month = 3 }
-		month = 5
 	}
 
 	mean_time_to_happen = {

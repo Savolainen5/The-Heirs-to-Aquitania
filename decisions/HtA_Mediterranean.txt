@@ -602,43 +602,58 @@ political_decisions = {
 				tag = ITA
 				tag = CRS
 			}
+			is_secondary_power = yes
 			is_greater_power = yes
-			year = 1855
 		}
 		
 		allow = {
+			rank = 2
 			prestige = 500
 			military_score = 300
-			473 = { owned_by = THIS }
-			OR = {
-				tag = HIS
-				AND = {
-					HIS = { is_greater_power = no }
-					498 = { NOT = { owned_by = HIS } }
+			nationalism_n_imperialism = 1
+			498 = {	#Barcelona
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						is_our_vassal = THIS
+					}
 				}
 			}
-			OR = {
-				tag = AQT
-				AND = {
-					HIS = { is_greater_power = no }
-					498 = { NOT = { owned_by = HIS } }
+			461 = { #Mauguio
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						is_our_vassal = THIS
+					}
 				}
 			}
-			OR = {
-				exists = PDN
-				AND = {
-					NOT = { exists = PDN }
-					726 = { owned_by = THIS }
+			726 = { #Milan
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						is_our_vassal = THIS
+					}
 				}
 			}
-			OR = {
-				AND = {
-					exists = NPL
-					NPL = { is_greater_power = no }
+			749 = { #Rome
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						is_our_vassal = THIS
+					}
 				}
-				AND = {
-					exists = ITA
-					ITA = { is_greater_power = no }
+			}
+			754 = { #Naples
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						is_our_vassal = THIS
+					}
 				}
 			}
 		}
