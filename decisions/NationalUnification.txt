@@ -1050,49 +1050,15 @@ political_decisions = {
 				}
 			}
 			OR = {
-				AND = {
-					AUS_625 = {
-						OR = {
-							owner = {
-								OR = {
-									in_sphere = THIS
-									vassal_of = THIS
-								}
-								OR = {
-									is_culture_group = polish_culture_group
-									is_culture_group = czecho_slovak_culture_group
-								}
-								relation = { who = THIS value = 100 }
-							}
-							owned_by = THIS
-						}
-					}
-					AUS_626 = {
-						OR = {
-							owner = {
-								OR = {
-									in_sphere = THIS
-									vassal_of = THIS
-								}
-								OR = {
-									is_culture_group = polish_culture_group
-									is_culture_group = czecho_slovak_culture_group
-								}
-								relation = { who = THIS value = 100 }
-							}
-							owned_by = THIS
-						}
-					}
+				PRH = {
+					in_sphere = THIS
+					is_our_vassal = THIS
+					relation = { who = THIS value = 100 }
 				}
-				AND = {
-					has_global_flag = treaty_of_szekes
-					PRH = {
-						exists = yes
-						OR = {
-							in_sphere = THIS
-							vassal_of = THIS
-						}
-					}
+				BOH = {
+					in_sphere = THIS
+					is_our_vassal = THIS
+					relation = { who = THIS value = 100 }
 				}
 			}
 		}
@@ -1104,6 +1070,7 @@ political_decisions = {
 			POL = { all_core = { add_core = ZAC } }
 			SLS = { all_core = { add_core = ZAC } }
 			SLV = { all_core = { add_core = ZAC } }
+			LUZ = { all_core = { add_core = ZAC } }
 			AUS_625 = { add_core = ZAC } 
 			AUS_626 = { add_core = ZAC }
 			add_accepted_culture = polish

@@ -1,0 +1,5 @@
+This is mostly a document for Savs to help remember some less-known things
+
+- If OOBs are messed up, consolidate multiple instances of identical soldier POPs
+- Events without an MTTH fire immediately
+- 

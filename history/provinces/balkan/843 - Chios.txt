@@ -3,5 +3,5 @@ controller = BYZ
 add_core = BYZ
 trade_goods = sulphur
 life_rating = 35
-
+terrain = small_island
 

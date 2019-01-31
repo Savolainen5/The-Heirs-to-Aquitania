@@ -84,9 +84,9 @@ DIPLOMACY_FILTER_OCEANIA;Volturnia;Océanie;Ozeanien;;Oceanía;;;;;;;;;x;;;;
 DIPLOMACY_FILTER_NORTH_AMERICA_TOOLTIP;List §YNorth Amerigan§W countries;Afficher les pays §Yd'Amérique du nord§W;§YNordamerikanische§W Länder auflisten;;Mostrar países §Ynorteamericanos§W;;;;;;;;;x;;;;
 DIPLOMACY_FILTER_SOUTH_AMERICA_TOOLTIP;List §YSouth Amerigan§W countries;Afficher les pays §Yd'Amérique du sud§W;§YSüdamerikanische§W Länder auflisten;;Mostrar países §Ysudamericanos§W;;;;;;;;;x;;;;
 DIPLOMACY_FILTER_OCEANIA_TOOLTIP;List countries in §YVolturnia§W;Afficher les pays §Yd'Océanie§W;Länder in §YOzeanien§W auflisten;;Mostrar países de §YOceania§W;;;;;;;;;x;;;;
-north_america;North Ameriga;Nord Amérique;Nordamerika;Afryka;Norteamérica;africa;afrika;Afrika;;;;;;x;;;;
+north_america;North Ameriga;Nord Amérique;Nordamerika;Norteamérica;;;;;;;x;;;;
 south_america;South Ameriga;Sud Amérique;Südamerika;Ameryka P³n.;Sudamérica;nord america;észak-amerika;Severní Amerika;;;;;;x;;;;
-oceania;Volturnia;Océanie;Ozeanien;Ameryka P³d.;Oceanía;south_america;dél-amerika;Jižní Amerika;;;;;;x;;;;
+oceania;Volturnia;Océanie;Ozeanien;Ameryka P³d.;Oceanía;;;;;;;x;;;;
 GC_DESC;This is an era of change. The past two decades of wars and failed revolutions were just the beginning. The Hispanian Revolution of the 1820s hardened the hearts of Europe's royalty against the liberal cause. The Imperial War (1829-1835) saw the dissolution of the Holy Roman Empire, leaving a gaping hole in Europe. The ossified political and social structures of Old Europe will no doubt be swept away as well. No matter who you are, there are riches and glory to be had in this age of upheaval, if only you have the vision to claim them. Choose your nation and guide it to its destiny!;;;;;;;;;;;x
 germany_acquire_state;German Hegemony;;;;;;;;;x
 germany_acquire_state_short;Acquire the German state of $STATE$;;;;;;;;;;;x
@@ -104,6 +104,20 @@ free_latvia;Free Latvia;;;;;;;;;;;x
 free_latvia_short;Free Latvia;;;;;;;;;;x
 free_latvia_setup;Free Latvia from $RECIPIENT$;;;;;;;;;x
 free_latvia_desc;Release Latvia from the clutches of the Finns, granting you an ally and weakening Finnish power.;;;;;;;;;;;x
+russia_annex;Russian Unification;x
+russia_annex_short;Conquer $RECIPIENT$;x
+russia_annex_setup;Conquer $RECIPIENT$ to unite Russia once and for all.;x
+russia_annex_desc;It is time to unite the Great Russian people and put an end to the centuries-long stalemate between our two countries.;xrussia_annex;Russian Unification;x
+russia_hegemony;Russian Hegemony;x
+russia_hegemony_short;Russian Hegemony - Conquest of $STATE$;x
+russia_hegemony_setup;Acquire a part of our neighbour and make strides towards their ultimate defeat.;x
+russia_hegemony_desc;It is time to unite the Great Russian people and put an end to the centuries-long stalemate between our two countries. First we must cause their people and rulers to understand that further resistance is futile.;x
+WAR_RUSSIA_HEGEMONY_NAME;$ORDER$ Russian War;x
+NORMAL_WAR_RUSSIA_HEGEMONY_NAME;$ORDER$ Russian War;x
+AGRESSION_WAR_RUSSIA_HEGEMONY_NAME;$ORDER$ Russian War;x
+WAR_RUSSIA_ANNEX_NAME;$ORDER$ Russian War;x
+NORMAL_WAR_RUSSIA_ANNEX_NAME;$ORDER$ Russian War;x
+AGRESSION_WAR_RUSSIA_ANNEX_NAME;$ORDER$ Russian War;x
 WAR_GERMAN_UNIFICATION;$ORDER$ War of German Hegemony;;;;;;;;x
 NORMAL_WAR_GERMAN_UNIFICATION;$ORDER$ War of German Hegemony;;;;;;;;x
 AGRESSION_WAR_GERMAN_UNIFICATION;$ORDER$ War of German Hegemony;;;;;;;;x

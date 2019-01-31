@@ -40,6 +40,11 @@ army = {
 		home = 626
 	}
 	regiment = {
+		name = "4. Pechota"
+		type = infantry
+		home = 631
+	}
+	regiment = {
 		name = "1. Dela"
 		type = artillery
 		home = 628
@@ -48,6 +53,11 @@ army = {
 		name = "2. Dela"
 		type = artillery
 		home = 629
+	}
+	regiment = {
+		name = "3. Dela"
+		type = artillery
+		home = 625
 	}
 	regiment = {
 		name = "1. Kyrysniki"
@@ -62,6 +72,41 @@ army = {
 }
 
 army = {
+	name = "Slovensko Armada"
+	location = 633
+	regiment = {
+		name = "5. Pechota"
+		type = infantry
+		home = 626
+	}
+	regiment =  {
+		name = "6. Pechota"
+		type = infantry
+		home = 649
+	}
+	regiment = {
+		name = "7. Pechota"
+		type = infantry
+		home = 632
+	}
+	regiment =  {
+		name = "4. Dela"
+		type = artillery
+		home = 633
+	}
+	regiment =  {
+		name = "5. Dela"
+		type = artillery
+		home = 627
+	}
+	regiment = {
+		name = "1. Dragouni"
+		type = dragoon
+		home = 630
+	}
+}
+
+army = {
 	name = "Madarska Armada"
 	location = 641
 	regiment = {
@@ -72,7 +117,7 @@ army = {
 	regiment = {
 		name = "2. Madarska Pechota"
 		type = infantry
-		home = 641
+		home = 643
 	}
 	regiment = {
 		name = "1. Husari"

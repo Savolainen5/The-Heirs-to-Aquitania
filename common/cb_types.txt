@@ -95,6 +95,8 @@ conquest
 conquest_any
 annex_africa
 annex_africa_full
+russia_hegemony
+russia_annex
 establish_protectorate_BC_casus_belli
 establish_protectorate_NI_casus_belli
 establish_protectorate_casus_belli
@@ -392,6 +394,19 @@ acquire_core_state = {
 			THIS = { NOT = { has_country_flag = in_great_war } }
 			THIS = { ai = no }
 		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
+		}
 	}
 	
 	allowed_states = {
@@ -468,6 +483,19 @@ acquire_all_cores = {
 			NOT = { has_country_flag = dismantle_declared }
 			THIS = { NOT = { has_country_flag = in_great_war } }
 			THIS = { ai = no }
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
 		}
 	}
 	
@@ -561,6 +589,19 @@ colonial_reconquest_cb = {
 			war_with = THIS
 			THIS = {
 				NOT = { has_country_modifier = punitive_effects }
+			}
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
 			}
 		}
 	}
@@ -743,6 +784,19 @@ unification_casus_belli = {
 				NOT = { has_country_modifier = punitive_effects }
 			}
 		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
+		}
 	}
 	allowed_states = {
 		any_owned_province = {
@@ -862,6 +916,19 @@ unification_annex_casus_belli = {
 				NOT = { has_country_modifier = punitive_effects }
 			}
 		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
+		}
 	}
 	
 	po_annex = yes
@@ -922,6 +989,19 @@ annex_core_country = {
 			NOT = { has_country_flag = dismantle_declared }
 			THIS = { NOT = { has_country_flag = in_great_war } }
 			THIS = { ai = no }
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
 		}
 	}
 
@@ -987,6 +1067,19 @@ add_to_sphere = {
 				NOT = { is_cultural_union = THIS }
 			}
 		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
+		}
 	}
 	
 	po_add_to_sphere = yes
@@ -1041,6 +1134,19 @@ unification_humiliate_cb = {
 			war_with = THIS
 			THIS = {
 				NOT = { has_country_modifier = no_more_war }
+			}
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
 			}
 		}
 	}
@@ -1111,6 +1217,19 @@ unification_GP_humiliate = {
 			war_with = THIS
 			NOT = { relation = { who = THIS value = -50 } }
 		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
+		}
 	}
 
 	po_remove_prestige = yes
@@ -1168,7 +1287,20 @@ unification_release_puppet_cb = {
 		NOT = {
 			is_cultural_union = yes
 			is_culture_group = THIS
-		}		
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
+		}	
 	}
 	
 	# THIS - us
@@ -1236,6 +1368,19 @@ unification_add_to_sphere = {
 				has_country_modifier = neutrality
 			}
 		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
+		}
 	}
 	
 	po_add_to_sphere = yes
@@ -1284,6 +1429,19 @@ take_from_sphere = {
 			war_with = THIS
 			THIS = {
 				NOT = {	has_country_modifier = no_more_war }
+			}
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
 			}
 		}
 	}
@@ -1361,6 +1519,19 @@ free_peoples = {
 			THIS = { NOT = { has_country_flag = in_great_war } }
 			FROM = { involved_in_crisis = yes }
 			THIS = { ai = no }
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
 		}
 	}
 
@@ -1657,6 +1828,19 @@ liberate_country = {
 			FROM = { involved_in_crisis = yes }
 			THIS = { ai = no }
 		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
+		}
 	}
 
 	# THIS - us
@@ -1852,6 +2036,19 @@ free_allied_cores = {
 			THIS = { NOT = { has_country_flag = in_great_war } }
 			THIS = { ai = no }
 		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
+		}
 	}
 
 	# THIS - us
@@ -1967,7 +2164,20 @@ free_balkans = {
 			NOT = { has_country_flag = dismantle_declared }
 			THIS = { NOT = { has_country_flag = in_great_war } }
 			THIS = { ai = no }
-		}		
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
+		}	
 	}
 
 	# THIS - us
@@ -2085,6 +2295,19 @@ free_latvia = {
 			NOT = { has_country_flag = dismantle_declared }
 			THIS = { NOT = { has_country_flag = in_great_war } }
 			THIS = { ai = no }
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
 		}		
 	}
 
@@ -2249,6 +2472,19 @@ release_puppet = {
 			THIS = { NOT = { has_country_flag = in_great_war } }
 			THIS = { ai = no }
 		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
+		}
 	}
 	
 	# THIS - us
@@ -2320,6 +2556,19 @@ release_puppet_AI = {
 			NOT = { has_country_flag = dismantle_declared }
 			THIS = { NOT = { has_country_flag = in_great_war } }
 			THIS = { ai = no }
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
 		}
 	}
 	
@@ -2398,6 +2647,19 @@ gunboat = {
 			NOT = { relation = { who = THIS value = 0 } }
 			THIS = { ai = no }
 		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
+		}
 	}
 
 	on_add = {
@@ -2459,6 +2721,19 @@ cut_down_to_size = {
 			NOT = { has_country_flag = dismantle_declared }
 			THIS = { NOT = { has_country_flag = in_great_war } }
 			THIS = { ai = no }
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
 		}
 	}
 	
@@ -2567,6 +2842,19 @@ humiliate = {
 				}
 			}
 		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
+		}
 	}
 
 	po_remove_prestige = yes
@@ -2621,6 +2909,19 @@ place_in_the_sun = {
 			war_with = THIS
 			THIS = {
 				NOT = { has_country_modifier = no_more_war }
+			}
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
 			}
 		}
 	}
@@ -2738,6 +3039,19 @@ acquire_state = {
 					cultural_union = { exists = no }
 					is_greater_power = yes
 					THIS = { is_greater_power = yes }
+				}
+			}
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
 				}
 			}
 		}
@@ -3042,11 +3356,11 @@ germany_acquire_state = {
 	good_relation_infamy_factor = 1
 	good_relation_militancy_factor = 1
 	
-	always = yes											#I think this means you don't have to justify it?
+	always = yes											#you don't have to justify it
 
 	can_use = {												#Details who can use it and who can be targeted
 		NOT = { is_our_vassal = THIS }
-		NOT = { tag = GER }									#Germany can't use it, nor can it be targeted with this CB
+		NOT = { tag = GER }									#Germany can't use it
 		OR = {
 			any_owned_province = {							#The target owns a core of Germany that isn't its own core
 				NOT = { is_core = THIS }
@@ -3078,6 +3392,7 @@ germany_acquire_state = {
 				tag = LUX
 				ai = yes
 			}
+			NOT = { tag = GER }
 		}
 		NOT = { has_country_modifier = neutrality }
 		OR = {
@@ -3844,6 +4159,19 @@ rude_boy = {
 			THIS = { NOT = { has_country_flag = in_great_war } }
 			THIS = { ai = no }
 		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
+		}
 	}
 	
 	po_remove_prestige = yes
@@ -4015,6 +4343,19 @@ conquest = {
 							}
 						}
 					}
+				}
+			}
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
 				}
 			}
 		}
@@ -4217,6 +4558,143 @@ annex_africa_full = {
 			from = jingoism 
 			to = pro_military
 			value = 0.1
+		}
+	}
+}
+
+# Russia Humiliate/Hegemony. Maybe also take a big state?
+russia_hegemony = {
+	sprite_index = 5
+	is_triggered_only = yes
+	months = 12
+	crisis = no
+	
+#	construction_speed = 0.8
+
+	badboy_factor = 1
+	prestige_factor = 5
+	peace_cost_factor = 2
+	penalty_factor = 3
+	
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 0
+	
+	always = no
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	can_use = {
+		is_vassal = no
+		OR = {
+			tag = RUS
+			tag = SML
+		}
+		OR = {
+			THIS = { tag = RUS }
+			THIS = { tag = SML }
+		}
+		any_owned_province = {
+			OR = {
+				is_core = RUS
+				is_core = SML
+			}
+		}
+		THIS = { ai = yes }
+		OR = {
+			war_with = THIS
+			THIS = { NOT = { has_country_modifier = no_more_war } }
+		}
+		NOT = { has_country_flag = won_RUS_war }
+		NOT = { has_country_flag = lost_RUS_war }
+		any_state = {
+			is_colonial = no
+			NOT = { any_owned_province = { is_capital = yes } }
+		}
+	}
+	
+	allowed_states = {
+		OR = {
+			any_owned_province = { is_core = RUS }
+			any_owned_province = { is_core = SML }
+		}
+		any_owned_province = { any_neighbor_province = { owned_by = THIS } NOT = { is_core = BYE } }	#Must target neighbouring state, can't be a Belarussian core because that would mess up other stuff
+		NOT = {	any_owned_province = { is_capital = yes } }												#can't target the capital
+	}
+
+	po_demand_state = yes
+	po_remove_prestige = yes
+	
+	war_name = WAR_RUSSIA_HEGEMONY_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+	
+	on_po_accepted = {
+		prestige_factor = -0.4
+		country_event = 50388 #The Peace of $CAPITAL$ - in events/HtA_RUS
+	}
+}
+
+russia_annex = {
+	sprite_index = 5
+	is_triggered_only = yes
+	months = 12
+	crisis = no
+
+	badboy_factor = 0.5
+	prestige_factor = 5
+	peace_cost_factor = 0.7
+	penalty_factor = 1
+	always = no
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		is_vassal = no
+		OR = {
+			THIS = { tag = RUS has_country_flag = lost_the_RUS_war }
+			THIS = { tag = SML has_country_flag = lost_the_RUS_war }
+		}
+		OR = {
+			tag = RUS
+			tag = SML
+		}
+		THIS = {
+			NOT = { has_country_modifier = punitive_effects }
+		}
+		OR = {
+			NOT = { has_country_flag = dismantle_declared }
+			THIS = { NOT = { has_country_flag = in_great_war } }
+			THIS = { ai = no }
+		}
+	}
+
+	po_annex = yes
+	
+	war_name = WAR_RUSSIA_ANNEX_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
 		}
 	}
 }
@@ -4553,6 +5031,19 @@ make_puppet = {
 				THIS = { is_secondary_power = no }
 				NOT = { is_secondary_power = yes }
 				NOT = { total_pops = 500000 }
+			}
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
 			}
 		}
 	}
@@ -5286,6 +5777,19 @@ dismantle_forts = {
 		OR = {
 			war_with = THIS
 			THIS = { NOT = { has_country_modifier = no_more_war } }
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+			}
 		}
 	}
 

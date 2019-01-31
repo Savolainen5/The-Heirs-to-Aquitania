@@ -1,6 +1,5 @@
 - In events/GreatPowers, the Validator suggests that the node "world_wars_enabled = yes" is not valid. Not sure if correct.
 - Many countries build and instantly disband regiments and ships
-- Many provinces don't contribute the regiments designated in OOBs. It's as if there aren't actually enough soldier POPs in these provinces. This is a problem with game mechanics, I believe, rather than a modding problem, though there may be a workaround I don't know of.
 - Comparing military score to another country doesn't work (not even doing something like "THIS = { military_score = TAG }"). This isn't an HtA bug so much as me not understanding the limitations/capabilities of the game engine in this case
 - Calling BYZ into a war against ARM deletes your CB and replaces it with a BYZ acquire state CB on ARM. (Tested with GEO and acquire state CB, see: http://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-39#post-23231981)
 - Something crashes the game when Gidan offers to buy provinces from AQT. Dunno what. Probably something in HtA_SA event or decision files

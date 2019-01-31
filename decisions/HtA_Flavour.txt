@@ -6,7 +6,10 @@ political_decisions = {
 			tag = POM
 			RUS = { war_with = SML }
 			NOT = { has_country_flag = RUS_SML_bet }
-			SML = { NOT = { has_country_flag = defeated_by_russia } }
+			SML = {
+				NOT = { has_country_flag = won_RUS_war }
+				NOT = { has_country_flag = lost_RUS_war }
+			}
 		}
 		allow = {
 			money = 1000

@@ -35,8 +35,7 @@
 	soldiers = {
 		culture = slovak
 		religion = catholic
-		size= 1250
-
+		size = 1750
 	}
 
 	farmers = {
@@ -102,8 +101,7 @@
 	soldiers = {
 		culture = hungarian
 		religion = catholic
-		size= 200
-
+		size = 200
 	}
 
 	farmers = {
@@ -127,8 +125,7 @@
 	soldiers = {
 		culture = hungarian
 		religion = protestant
-		size= 150
-
+		size = 150
 	}
 
 	farmers = {
@@ -158,8 +155,7 @@
 	soldiers = {
 		culture = ashkenazi
 		religion = jewish
-		size= 200
-
+		size = 200
 	}
 
 	farmers = {
@@ -201,8 +197,7 @@
 	soldiers = {
 		culture = south_german
 		religion = catholic
-		size= 175
-
+		size = 175
 	}
 
 	farmers = {
@@ -221,12 +216,6 @@
 		culture = silesian
 		religion = catholic
 		size = 200
-	}
-	
-	soldiers = {
-		culture = silesian
-		religion = catholic
-		size = 5
 	}
 	
 	farmers = {
@@ -252,8 +241,7 @@
 	soldiers = {
 		culture = slovak
 		religion = catholic
-		size= 500
-
+		size = 800
 	}
 
 	farmers = {
@@ -261,12 +249,6 @@
 		religion = catholic
 		size = 47000
 	}
-	
-	farmers = {
-		culture = czech
-		religion = catholic
-		size = 1400
-	}	
 
 	clergymen = {
 		culture = ashkenazi
@@ -314,14 +296,13 @@
 	soldiers = {
 		culture = czech
 		religion = catholic
-		size= 250
-
+		size = 250
 	}
 
 	farmers = {
 		culture = czech
 		religion = catholic
-		size = 8450 
+		size = 9850 
 	}
 	
 	clergymen = {
@@ -365,8 +346,7 @@
 	soldiers = {
 		culture = slovak
 		religion = catholic
-		size= 650
-
+		size = 650
 	}
 
 	farmers = {
@@ -396,8 +376,7 @@
 	soldiers = {
 		culture = czech
 		religion = catholic
-		size= 100
-
+		size = 100
 	}
 
 	farmers = {
@@ -422,7 +401,6 @@
 		culture = hungarian
 		religion = catholic
 		size= 75
-
 	}
 
 	farmers = {
@@ -447,7 +425,6 @@
 		culture = hungarian
 		religion = protestant
 		size= 75
-
 	}
 
 	farmers = {
@@ -472,7 +449,6 @@
 		culture = ashkenazi
 		religion = jewish
 		size= 25
-
 	}
 
 	farmers = {
@@ -497,7 +473,6 @@
 		culture = south_german
 		religion = catholic
 		size= 50
-
 	}
 
 	farmers = {
@@ -524,7 +499,6 @@
 		culture = slovak
 		religion = catholic
 		size= 500
-
 	}
 
 	farmers = {

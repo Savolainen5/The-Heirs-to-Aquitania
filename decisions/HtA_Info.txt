@@ -1,0 +1,19 @@
+#These are decisions which just contain info for the human player about their countries. Perhaps will be expanded to include the backstory/history of the country in the future.
+political_decisions = {
+	info_RUS = {
+		potential = {
+			ai = no
+			tag = RUS
+		}
+		allow = { }
+		effect = { }
+	}
+	info_SML = {
+		potential = {
+			ai = no
+			tag = SML
+		}
+		allow =  { }
+		effect = { }
+	}
+}

@@ -331,10 +331,10 @@ EVTNAME50385;The Tatars Revolt;;;;;;;;;;;;x
 EVTDESC50385;Our relationship with the Tatars has always been tense, and it has largely been our military prowess that has kept them in check. Now they have seen an opportunity in the Russians to gain new freedoms for themselves. Their troops have left the front and begun raiding our lands!;;;;;;;;;;x
 EVTNAME50386;The Tatars Join the War;;;;;;;;;;;x
 EVTDESC50386;Honouring our agreement, the Cossacks of the pre-Caucasian steppe have ceased their cooperation with the Smolenskiis and are now joining our side in the war.;;;;;;;;x
-EVTNAME50387;Smolensk Chastened;x
-EVTDESC50387;We have achieved a stunning victory. International opinion certainly favoured our defeat - we are told that the Duke of Mecklenburg lost a sizable amount in his bet with the Duke of Pomerania. We have proven the strength of our faith and our great nation. While we were unable to crush the Smolensk Knyaz completely, it is now only a matter of time before his people dethrone him and join us.;x
-EVTNAME50388;Defeat;x
-EVTDESC50388;The palace, at last empty of Russian soldiers, seems a darker place than before the war. The bitter defeat which we have suffered at the hands of our numerically inferior enemy has shocked everyone, from the highest minister - and the Knyaz himself - to the most illiterate peasant, be he Great Russian or otherwise. As they begin turning against us, our position looks weak. Can Smolensk survive the coming years intact?;x
+EVTNAME50387;$FROMCOUNTRY$ Chastened;x
+EVTDESC50387;We have achieved a glorious victory. International opinion was certainly divided - we are told that the Duke of Mecklenburg lost a sizable amount in his bet with the Duke of Pomerania. We have proven the strength of our faith and our great nation. While we were unable to crush the $FROMCOUNTRY_ADJ$ state completely, it is now only a matter of time before the people dethrone their ruler and join us.;x
+EVTNAME50388;The Peace of $CAPITAL$;x
+EVTDESC50388;The palace, at last empty of $FROMCOUNTRY_ADJ$ soldiers, seems a darker place than before the war. The bitter defeat which we have suffered at the hands of our inferior enemy has shocked everyone, from the highest minister to the lowest illiterate peasant, be he Great Russian or otherwise. As they begin turning against us, our position looks extremely weak. Can $COUNTRY$ survive the coming years?;x
 EVTNAME50389;Russia Chastened;x
 EVTDESC50389;We have achieved a stunning victory. International opinion certainly favoured our victory - we are told that the Duke of Pomerania lost a sizable amount in his bet with the Duke of Pomerania. We have proven the strength of our faith and our great nation. While we were unable to crush the Russian Tsar completely, it is now only a matter of time before his people dethrone him and join us.;x
 EVTNAME50390;Defeat;x

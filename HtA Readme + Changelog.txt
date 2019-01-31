@@ -12,8 +12,9 @@ There's an event numbers list at the bottom of this file
 Feel free to use anything from this mod without asking me. Please do attribute it, though.
 
 **INSTALLATION INSTRUCTIONS**
-Put the folder this file is in in your game files' mod folder. Take the .mod file (it might look like a movie file of some kind for you) out and have it also be in the mod file next to the Heirs to Aquitania folder.
-If you're using Steam, the target directry is gonna be Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod. So, to be clear, in the end you'll have an Heirs to Aquitania folder and an Heirs to Aquitania .mod
+- If you downloaded a .rar (from the official forum, for example): Extract the .mod and the folder to Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod
+- If you downloaded HtA from Github: Put the folder this file is in in your game files' mod folder. Take the .mod file (it might look like a movie file of some kind for you) out and have it also be in the mod file next to the Heirs to Aquitania folder.
+If you're using Steam, the target directory is gonna be Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod. So, to be clear, in the end you'll have an Heirs to Aquitania folder and an Heirs to Aquitania .mod
 file both in your Vic2 mod folder with the aforementioned path.
 
 Thanks to:
@@ -91,8 +92,8 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - Incorporated decision for Norway to claim some Caribbean islands, courtesy of /u/Flapjack731. Thanks!
 - Forum user Discux made tons of new party names for the Amerigas, added them. Thanks!
 - Renamed and adjusted some provinces in Russia
-- Added some Sephardic POPs to Aquitania and Ashkenazi to SOME of France. Needs more
-- Added island terrain types from HPM (still WIP)*************************************************************************************
+- Added some Sephardic POPs to Aquitania and Ashkenazi to SOME of France. Needs more - ALWAYS
+- Began adding island terrain types from HPM (still needs to continue)
 - Made Don Cossacks exist from game start as Smolensk puppet
 - Updated some diplomacy
 - Halved POP growth bonus for Steenkooler republics

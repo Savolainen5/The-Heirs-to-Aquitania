@@ -540,7 +540,7 @@
 	clergymen = {
 		culture = slovene
 		religion = catholic
-		size = 50
+		size = 80
 	}
 	bureaucrats = {
 		culture = south_german
@@ -550,19 +550,19 @@
 	artisans = {
 		culture = slovene
 		religion = catholic
-		size = 1200
+		size = 1300
 	}
 
 	soldiers = {
 		culture = slovene
 		religion = catholic
-		size = 50
+		size = 150
 	}
 
 	farmers = {
 		culture = slovene
 		religion = catholic
-		size = 4700
+		size = 5700
 	}
 
 	aristocrats = {
@@ -580,7 +580,7 @@
 	clergymen = {
 		culture = north_italian
 		religion = catholic
-		size = 50
+		size = 150
 	}
 
 	artisans = {
@@ -592,7 +592,7 @@
 	artisans = {
 		culture = south_german
 		religion = catholic
-		size = 50
+		size = 150
 	}	
 
 	soldiers = {
@@ -604,31 +604,31 @@
 	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 4425
+		size = 5425
 	}
 
 	clergymen = {
 		culture = croat
 		religion = protestant
-		size = 25
+		size = 105
 	}
 
 	artisans = {
 		culture = croat
 		religion = protestant
-		size = 250
+		size = 950
 	}
 
 	soldiers = {
 		culture = croat
 		religion = protestant
-		size = 25
+		size = 125
 	}
 
 	farmers = {
 		culture = croat
 		religion = protestant
-		size = 700
+		size = 4400
 	}
 }
 #Baranya Region (180000) #see Hungary.txt for balance of Region

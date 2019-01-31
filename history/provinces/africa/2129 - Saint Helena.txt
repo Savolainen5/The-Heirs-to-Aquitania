@@ -2,5 +2,6 @@ owner = HIS
 controller = HIS
 trade_goods = fish
 life_rating = 35
+terrain = small_island
 colonial = 2
 naval_base = 1

@@ -2,5 +2,6 @@ owner = AEN
 controller = AEN
 trade_goods = fish
 life_rating = 30
+terrain = small_island
 colonial = 2
 
