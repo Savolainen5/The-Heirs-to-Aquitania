@@ -2,4 +2,5 @@ owner = RYU
 controller = RYU
 add_core = RYU
 trade_goods = grain
+terrain = small_island
 life_rating = 35

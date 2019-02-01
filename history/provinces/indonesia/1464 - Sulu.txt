@@ -3,6 +3,7 @@ controller = NET
 add_core = SUL
 add_core = PHL
 trade_goods = fish
+terrain = small_island
 life_rating = 30
 colonial = 2
 

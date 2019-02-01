@@ -23,13 +23,13 @@
 	soldiers = {
 		culture = romanian
 		religion = orthodox
-		size = 1350    
+		size = 1850    
 	}
 
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 86900   
+		size = 85900   
 	}
 
 	aristocrats = {
@@ -65,13 +65,13 @@
 	soldiers = {
 		culture = hungarian
 		religion = catholic
-		size = 300 
+		size = 2300 
 	}
 
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 32250 
+		size = 30250 
 	}
 
 	aristocrats = {

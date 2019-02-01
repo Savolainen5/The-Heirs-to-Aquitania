@@ -89,7 +89,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 1200
+		months = 6000
 	}
 	
 	option = {
@@ -117,7 +117,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 2
+		months = 5
 	}
 	
 	option = {
@@ -140,7 +140,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 7
+		months = 9
 	}
 	
 	option = {
@@ -172,7 +172,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 2000
 		modifier = {
 			factor = 2
 			year = 1860
@@ -478,7 +478,7 @@ country_event = {
 	trigger = {
 		tag = POM
 		has_global_flag = POM_MEC_bet_on_RUS_SML_war
-		SML = { has_country_flag = defeated_by_russia }
+		SML = { has_country_flag = lost_RUS_war }
 	}
 
 	mean_time_to_happen = {
@@ -502,7 +502,7 @@ country_event = {
 
 	trigger = {
 		tag = MEC
-		RUS = { has_country_flag = defeated_by_smolensk }
+		RUS = { has_country_flag = lost_RUS_war }
 	}
 
 	mean_time_to_happen = {
@@ -527,8 +527,8 @@ country_event = {
 	trigger = {
 		546 = { owned_by = THIS }
 		OR = {
-			SML = { has_country_flag = defeated_by_russia }
-			RUS = { has_country_flag = defeated_by_smolensk }
+			SML = { has_country_flag = lost_RUS_war }
+			RUS = { has_country_flag = lost_RUS_war }
 		}
 	}
 	

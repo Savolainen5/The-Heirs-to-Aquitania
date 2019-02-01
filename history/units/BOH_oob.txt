@@ -99,6 +99,11 @@ army = {
 		type = artillery
 		home = 627
 	}
+	regiment =  {
+		name = "6. Dela"
+		type = artillery
+		home = 629
+	}
 	regiment = {
 		name = "1. Dragouni"
 		type = dragoon
@@ -120,6 +125,16 @@ army = {
 		home = 643
 	}
 	regiment = {
+		name = "3. Madarska Pechota"
+		type = infantry
+		home = 650
+	}
+	regiment = {
+		name = "4. Madarska Pechota"
+		type = infantry
+		home = 647
+	}
+	regiment = {
 		name = "1. Husari"
 		type = hussar
 		home = 639
@@ -138,6 +153,11 @@ army = {
 		name = "2. Madarski Dela"
 		type = artillery
 		home = 639
+	}
+	regiment = {
+		name = "3. Madarski Dela"
+		type = artillery
+		home = 640
 	}
 }
 

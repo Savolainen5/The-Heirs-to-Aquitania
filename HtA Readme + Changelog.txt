@@ -65,17 +65,20 @@ Version 0.36 X/Y/19 - The Russias & China Update
 	- Added a second fun cheese decision to follow to get cores on Netherlands and accept Dutch. You must hold some French cores and some German cores in order to take the decision
 - Localisation file consolidation
 - Added some relationships from the EU3 save
+- Updated some diplomacy
 - Gave some Persian provinces to Azerbaijan to better reflect the state of the world
+- Forum user Discux made tons of new party names for the Amerigas, added them. Thanks!
 - Improved Scandinavian parties per over421's recommendations/suggestions
+- Small party policy changes for Naples/Italy
 - UBD no longer has Estonian as a primary
 - Updated a bunch of flags, with special thanks to Athemos
+- Halved POP growth bonus for Steenkooler republics
 - Halved MIL and CON gain during famine from volcano
 - Expanded Margaria's expansion events to include more commonly-empty provinces
 - Added a decision for Margaria/Ginnaecer (or conceivably some other country) to expand into Oai (typically the last state to be colonised in NA)
 - Added a decision to annex Silesia after it has been puppeted by the Secure Silesia decision
 - ###############Added an event for any country which has finished its colonisation events to get a random event to colonise an empty province with no cores which it neighbours. EXCEPT THAT IT'S BROKEN AT THE MOMENT
 - Forming Bohemia-Hungary now removes Bohemia cores
-- Small party policy changes for Naples/Italy
 - Tweaked/added decisions for Naples/Italy to better deal with Tuscany and getting cores on the Padan Union, thanks to Spudgun
 - Tweak/fix for decision for forming SGF so that it works
 - Tweaked the population growth maluses for Disaster Damage and Fire Recovery event modifiers
@@ -85,20 +88,18 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - Changed the name of Romania to Volasea (as a sort of quasi-plausible development of Volcae/Vlach/Wallach into something that isn't Romania, because, you know, Romans exist)
 	- The new tag is VOL, though I haven't changed other things, like party name codes, regions, or the culture code
 - Tweaked the colour of Central German culture to be more distinguishable from North German
+- Modified the Cherokee country colour
 - Italian (that is, south_italian) added as an accepted culture to Sicily
 - Treaty of Szekes gives signatories cores on the provices they get from Bohemia, Bohemia keeps its cores in Moravia and isn't releasable
 - PDN can get cores on VEN even if someone snipes Venice first, like Crushric likes to do when playing as BAV
 - Greece now will declare war on the Roman Empire in the Roman Civil War as soon as war with Anatolia begins, rather than waiting for 20 military score
 - Incorporated decision for Norway to claim some Caribbean islands, courtesy of /u/Flapjack731. Thanks!
-- Forum user Discux made tons of new party names for the Amerigas, added them. Thanks!
 - Renamed and adjusted some provinces in Russia
-- Added some Sephardic POPs to Aquitania and Ashkenazi to SOME of France. Needs more - ALWAYS
-- Began adding island terrain types from HPM (still needs to continue)
+- Added old world island terrain type from HPM - New world islands need to be added
 - Made Don Cossacks exist from game start as Smolensk puppet
-- Updated some diplomacy
-- Halved POP growth bonus for Steenkooler republics
 - Improved some OOBs, added some missing ones
 - Adjusted POPs in a number of places with the above in mind
+- Added some Sephardic POPs to Aquitania and Ashkenazi to SOME of France. Needs more - ALWAYS
 - Lots more tweaks
 
 *Bugfixes*

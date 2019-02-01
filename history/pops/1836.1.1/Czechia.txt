@@ -309,13 +309,13 @@
 	soldiers = {
 		culture = czech
 		religion = catholic
-		size = 2800
+		size = 4800
 	}
 
 	farmers = {
 		culture = czech
 		religion = catholic
-		size = 173100 
+		size = 171800 
 	}
 
 	clergymen = {

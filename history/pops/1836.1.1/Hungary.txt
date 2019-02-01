@@ -29,7 +29,7 @@
 	soldiers = {
 		culture = czech
 		religion = catholic
-		size= 30
+		size = 30
 	}
 
 	farmers = {
@@ -330,7 +330,7 @@
 	soldiers = {
 		culture = hungarian
 		religion = catholic
-		size= 1100
+		size = 1500
 
 	}
 
@@ -355,8 +355,7 @@
 	soldiers = {
 		culture = south_german
 		religion = catholic
-		size= 1050
-
+		size = 450
 	}
 
 	farmers = {
@@ -444,7 +443,7 @@
 	aristocrats = {
 		culture = hungarian
 		religion = catholic
-		size = 3350 
+		size = 3050 
 	}
 
 	bureaucrats = {
@@ -480,8 +479,7 @@
 	soldiers = {
 		culture = hungarian
 		religion = catholic
-		size= 2100
-
+		size = 7100
 	}
 
 	craftsmen = {
@@ -498,35 +496,30 @@
 
 	aristocrats = {
 		culture = south_german
-
 		religion = catholic
-		size = 50
+		size = 10
 	}
 
 	clergymen = {
 		culture = south_german
-
 		religion = catholic
 		size = 45
 	}
 
 	artisans = {
 		culture = south_german
-
 		religion = catholic
 		size = 750
 	}
 
 	soldiers = {
 		culture = south_german
-
 		religion = catholic
 		size= 250
 	}
 
 	farmers = {
 		culture = south_german
-
 		religion = catholic
 		size =  3805  
 	}
@@ -558,49 +551,49 @@
 	aristocrats = {
 		culture = czech
 		religion = catholic
-		size = 20
+		size = 60
 	}
 
 	bureaucrats = {
 		culture = czech
 		religion = catholic
-		size = 125
+		size = 175
 	}
 
 	officers = {
 		culture = czech
 		religion = catholic
-		size = 15
+		size = 75
 	}
 
 	clergymen = {
 		culture = czech
 		religion = catholic
-		size = 15
+		size = 315
 	}
 
 	artisans = {
 		culture = czech
 		religion = catholic
-		size = 75
+		size = 2075
 	}
 
 	soldiers = {
 		culture = czech
 		religion = catholic
-		size= 50
+		size = 550
 	}
 
 	farmers = {
 		culture = czech
 		religion = catholic
-		size = 850
+		size = 4850
 	}
 
 	craftsmen = {
 		culture = czech
 		religion = catholic
-		size = 500
+		size = 1500
 	}
 }
 #Gyor (384000/96000 POPS) 
@@ -608,7 +601,7 @@
 	aristocrats = {
 		culture = hungarian
 		religion = catholic
-		size = 2250 
+		size = 2050 
 	}
 
 	clergymen = {
@@ -626,15 +619,7 @@
 	soldiers = {
 		culture = hungarian
 		religion = catholic
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = hungarian
-		religion = catholic
-		size= 1100
-
+		size = 4100
 	}
 
 	farmers = {
@@ -658,8 +643,7 @@
 	soldiers = {
 		culture = south_german
 		religion = catholic
-		size= 50
-
+		size = 50
 	}
 
 	farmers = {
@@ -683,8 +667,7 @@
 	soldiers = {
 		culture = hungarian
 		religion = jewish
-		size= 25
-
+		size = 25
 	}
 
 	farmers = {
@@ -732,8 +715,7 @@
 	soldiers = {
 		culture = slovak
 		religion = catholic
-		size= 300
-
+		size = 300
 	}
 
 	farmers = {
@@ -741,13 +723,43 @@
 		religion = catholic
 		size = 29925 
 	}
+	
+	aristocrats = {
+		culture = czech
+		religion = catholic
+		size = 80
+	}
+	
+	bureaucrats = {
+		culture = czech
+		religion = catholic
+		size = 65
+	}
+	
+	clergymen = {
+		culture = czech
+		religion = catholic
+		size = 135
+	}
+	
+	artisans = {
+		culture = czech
+		religion = catholic
+		size = 1250
+	}
+	
+	farmers = {
+		culture = czech
+		religion = catholic
+		size = 2850
+	}
 }
 #Szekesfehervar (364000/91000 POPS) 
 643 = {
 	aristocrats = {
 		culture = hungarian
 		religion = catholic
-		size = 2400 
+		size = 2300 
 	}
 
 	officers = {
@@ -771,13 +783,13 @@
 	soldiers = {
 		culture = hungarian
 		religion = catholic
-		size= 1500
+		size = 1500
 	}
 
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size =  61000
+		size =  61400
 	}
 
 	aristocrats = {
@@ -1369,7 +1381,7 @@
 	soldiers = {
 		culture = hungarian
 		religion = catholic
-		size= 2100
+		size = 5100
 	}
 
 	farmers = {
@@ -1458,7 +1470,7 @@
 		size = 5375  
 	}
 }
-#Bekescsab (328000/82000 POPS) 
+#Bekescsaba (328000/82000 POPS) 
 650 = {
 	aristocrats = {
 		culture = hungarian
@@ -1487,8 +1499,7 @@
 	soldiers = {
 		culture = hungarian
 		religion = catholic
-		size= 325
-
+		size= 2325
 	}
 
 	farmers = {

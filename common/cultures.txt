@@ -2047,10 +2047,10 @@ native_american = {
 		}
 	}
 	cherokee = {
-		color = {191 52 103}
-		first_names = { John Tahlonteeskee Takatoka Charles William Lweis Dennis Joel Thomas Frank Andrew Edward
+		color = {222 113 18}
+		first_names = { Moytoy Attakullakulla Tahlonteeskee Takatoka Amo-sgasite Konokotko Tsiyu Kolesqua Utsi'dsata Savanukah Okonostota Tah-Chee Enola Guwisguwi Yonaguska Guna-gadoga Watasata Kolona
 		}
-		last_names = { Ross Downing Potter Thompson Wolf Mayes Buffington Harris Rogers Boudinot
+		last_names = { Uku Gansini Outasite Echota Danuwa'analihi Ugwyuhi Didatinehi
 		}
 	}
 	pueblo = {
