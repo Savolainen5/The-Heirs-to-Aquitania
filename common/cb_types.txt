@@ -4603,7 +4603,7 @@ russia_hegemony = {
 				is_core = SML
 			}
 		}
-		THIS = { ai = yes }
+		#THIS = { ai = no }
 		OR = {
 			war_with = THIS
 			THIS = { NOT = { has_country_modifier = no_more_war } }
