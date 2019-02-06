@@ -2163,9 +2163,9 @@ boxer_rebels = {
 }
 
 ###################################
-# Italian Redshirts
+# Russian unification rebels (needs better name) #former Italian Redshirts repurposed for Russia
 ###################################
-red_shirts = {
+russian_rebels = {
 	icon = 6
 	
 	area = nation
@@ -2233,11 +2233,11 @@ red_shirts = {
 		}		
 		modifier = {
 			factor = 0.1
-			has_country_modifier = springtime_of_nations
+			has_country_flag = lost_RUS_war
 		}
 		modifier = {
-			factor = 0.5
-			has_country_modifier = global_liberal_agitation
+			factor = 0
+			NOT = { has_country_flag = lost_RUS_war }
 		}
 	}
 	
@@ -2247,30 +2247,13 @@ red_shirts = {
 		
 		modifier = {
 			factor = 0
-			OR = { 
-				culture_has_union_tag = no
-				NOT = { is_culture_group = THIS }
-				ITA = { exists = yes }
-			}
-		}
-		modifier = {
-			factor = 0
-			country = {
-				OR = {
-					is_greater_power = yes
-					tag = NPL
-					NOT = { has_global_flag = garibaldi_redshirts }
-				}
-			}
+			NOT = { has_country_flag = lost_RUS_war }
 		}
 		
 		modifier = {
 			factor = 0
 			NOT = {
-				OR = {
-					culture = south_italian
-					culture = north_italian
-				}
+				culture = russian
 			}
 		}
 		
@@ -2278,7 +2261,7 @@ red_shirts = {
 			factor = 0
 			location = {
 				NOT = {
-					is_core = ITA
+					is_core = RUS
 				}
 			}
 		}
@@ -2287,45 +2270,37 @@ red_shirts = {
 		modifier = {
 			factor = 30
 			country = {
-				OR = {
-					has_country_modifier = global_liberal_agitation
-					has_country_modifier = springtime_of_nations
-				}
+				has_country_flag = lost_RUS_war
 			}
 		}
 		
-		modifier = {
-			factor = 10
-			ITA = { exists = no }
-		}
+#		modifier = {
+#			factor = 20
+#			pop_majority_ideology = liberal
+#		}
 		
-		modifier = {
-			factor = 20
-			pop_majority_ideology = liberal
-		}
+#		modifier = {
+#			factor = 10
+#			pop_majority_ideology = anarcho_liberal
+#		}
 		
-		modifier = {
-			factor = 10
-			pop_majority_ideology = anarcho_liberal
-		}
-		
-		modifier = {
-			factor = 10
-			pop_majority_ideology = conservative
-		}
+#		modifier = {
+#			factor = 10
+#			pop_majority_ideology = conservative
+#		}
 
-		modifier = {
-			factor = 1.5
-			political_reform_want = 0.05
-		}
-		modifier = {
-			factor = 1.5
-			political_reform_want = 0.1
-		}
-		modifier = {
-			factor = 1.5
-			political_reform_want = 0.15
-		}
+#		modifier = {
+#			factor = 1.5
+#			political_reform_want = 0.05
+#		}
+#		modifier = {
+#			factor = 1.5
+#			political_reform_want = 0.1
+#		}
+#		modifier = {
+#			factor = 1.5
+#			political_reform_want = 0.15
+#		}
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -2374,12 +2349,6 @@ red_shirts = {
 
 	# Country scope
 	demands_enforced_trigger = {
-		NOT = {
-			is_cultural_union = THIS
-		}
-		ITA = {
-			exists = no
-		}
 		capital_scope = {
 			controlled_by = REB
 			province_control_days = 90
@@ -2390,20 +2359,10 @@ red_shirts = {
 		any_pop = { militancy = -6 }
 		random_country = {
 			limit = {
-				is_culture_group = THIS
-				OR = {
-					AND = {
-						NOT = { exists = NPL }
-						is_greater_power = yes
-					}
-					tag = NPL
-				}
-				NOT = {
-					is_cultural_union = yes
-					has_country_flag = does_not_want_to_be_unified
-				}
+				culture = russian
+				NOT = { has_country_flag = lost_RUS_war }
 			}
-			country_event = 11103
+			country_event = 50389
 		}
 	}
 }

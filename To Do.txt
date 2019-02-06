@@ -78,6 +78,7 @@ Map:
 - Mess with overall region/province shapes in Africa so they're less OTL-y
 - Do some province reshaping and add another province in the border region between AQT and NAV
 - Make provinces conform better to new RDS rivers. Especially Khiva-Persia
+- Make the Oheskewen canal be in its own small province.
 
 Flags: More about this can be found in the "List of small things to be done" on the forum (https://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-5#post-20555393)
 
