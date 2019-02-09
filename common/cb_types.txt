@@ -4604,6 +4604,12 @@ russia_hegemony = {
 			}
 		}
 		#THIS = { ai = no }
+		OR = { 
+			year = 1850
+			has_country_flag = ukrainian_concessions
+			has_country_flag = ukrainians_suppressed
+			has_country_flag = ukrainians_incited
+		}
 		OR = {
 			war_with = THIS
 			THIS = { NOT = { has_country_modifier = no_more_war } }
