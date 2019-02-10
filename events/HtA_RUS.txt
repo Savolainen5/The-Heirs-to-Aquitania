@@ -707,21 +707,23 @@ country_event = {
 		name = "Put them down!"
 		set_country_flag = tatar_revolt
 		release_vassal = DON
+		leave_alliance = DON
+		RUS = { end_war = DON }
+		POL = { end_war = DON } #Just in case Poland has already declared war?
 		DON = {
-			end_war = RUS
 			relation = {
 				who = RUS
-				value = 200
+				value = 400
 			}
 			create_alliance = RUS
 		}
 		relation = {
 			who = DON
-			value = -200
+			value = -400
 		}
 		relation = {
 			who = RUS
-			value = -50
+			value = -150
 		}
 		RUS = {
 			country_event = {
@@ -760,11 +762,11 @@ country_event = {
 		name = "Great news!"
 		relation = {
 			who = DON
-			value = 200
+			value = 400
 		}
 		prestige = 5
 		war = {
-			attacker_goal = { casus_belli = humiliate }
+			attacker_goal = { casus_belli = call_allies_cb }
 			call_ally = yes									#This will be dodgy because other countries will be dragged into the war besides just the Tatars
 		}
 		set_country_flag = tatars_revolted

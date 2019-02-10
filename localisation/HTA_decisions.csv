@@ -7,6 +7,8 @@ aid_BYZ_BUL_title;Propose Military Aid to the Empire;;;;;;;;;x
 aid_BYZ_BUL_desc;The Empire is facing a difficult time right now, and we have managed to secure autonomy. If we play our cards right, we can attain independence! By offering military aid in exchange for the promise of full sovereignty after the rebellions are over, we can offer a peaceful, respectable solution to Autokrator Georgius' problems.;;;;;;;;;;x
 ANA_claim_victory_title;Claim Victory;;;;;;;;;;x
 ANA_claim_victory_desc;By capturing Constantinople, the seat of the Empire and Georgius, we can end this war and claim the throne. Let Georgius flee if he likes. He who controls the city controls the Empire.;;;;;;;;;x
+annexation_of_saxony_title;The Annexation of Saxony;x
+annexation_of_saxony_desc;Saxony failed to take part in the Brunswick Congress, but they must not be allowed to remain outside the German question. They will join us peacefully, as much for their protection against our neighbors as for the protection of all Germans. If they do not, war is no doubt near for them.;x
 approach_aqt_title;Approach Aquitània;;;;;;;;;x
 approach_aqt_desc;Both Naples and the Padan Union have expressed a territorial interest in our islands. As they know we would refuse to join them, this interest is expressed as a military threat to our sovereignty. Aquitània is a new-born republic like our own. We should build our relations with them, in order to secure our republic.;;;;;;;;;x 
 barbarian_islands_title;Settle the Barbarian Islands;;;;;;;;;x
@@ -195,6 +197,8 @@ honour_vikings_title;Honour the Vikings;;;;;;;;;;x
 honour_vikings_desc;The people of $COUNTRY$ were fierce warriors, feared throughout Europe, not much more than 600 years ago, and they had a lasting impact on the world. Let us honour their enterprising spirit!;;;;;;;;;;;;x
 host_munich_conference_title;Call the Munich Conference;;;;;;;;;x
 host_munich_conference_desc;With the unification of the northern states into just two major powers, both of whom are strong enough to challenge Bavaria, it is time that we, too, unify with our brethren, Baden and Wurttemburg. We will call this conference and coerce their heads of state into joining us, for the good of us all and all Germany.;;;;;;;;;;;x
+host_munich_conference_ai_title;Call the Munich Conference;;;;;;;;;x
+host_munich_conference_ai_desc;With the unification of the northern states into just two major powers, both of whom are strong enough to challenge Bavaria, it is time that we, too, unify with our brethren, Baden and Wurttemburg. We will call this conference and coerce their heads of state into joining us, for the good of us all and all Germany.;;;;;;;;;;;x
 HtA_POL_setup_title;Poland Setup;x
 HtA_POL_setup_desc;Poland is ruled not only by the king, but also by the Sejm - a legislative chamber composed of nobles of the realm who vote by majority rule. This body has met semi-annually for six weeks since time immemorial. A democratic body, it stands in stark opposition to the more absolutist methods of rule Poland's neighbours employ. The involvement of nobility tends to guarantee their investment in the well-being of the state, and this has effects beyond the legislation the body produces: each member ensures that the land he owns is as prosperous as can be.;x
 incite_byelorussians_title;Incite Byelorussians;;;;;;;;;;;x

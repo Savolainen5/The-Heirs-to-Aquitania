@@ -193,7 +193,7 @@ political_decisions = {
 		}
 	}
 	
-	#Host Munich Conference - causes Baden and Wurttemburg to be annexed to Bavaria
+	#Host Munich Conference - causes Baden, Wurttemburg, and Elsass to be annexed to Bavaria
 	host_munich_conference = {
 		picture = negotiations
 		potential = {
@@ -272,6 +272,87 @@ political_decisions = {
 						value = 100
 					}
 				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			badboy = 5
+			set_country_flag = munich_conference
+			inherit = BAD
+			BAD = { all_core = { add_core = THIS } }
+			inherit = WUR
+			WUR = { all_core = { add_core = THIS } }
+			inherit = ALS
+			ALS = { all_core = { add_core = THIS } }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+#Host Munich Conference - causes Baden, Wurttemburg, and Elsass to be annexed to Bavaria
+	host_munich_conference_ai = {
+		picture = negotiations
+		potential = {
+			tag = BAV
+			has_global_flag = brunswick_congress_concluded
+			NOT = { has_country_flag = munich_conference }
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			ai = yes
+		}
+	
+		allow = {
+			year = 1850
+			has_global_flag = railroading_on
+			war = no
+			state_n_government = 1
+			BAD = {
+				exists = yes
+#				relation = {
+#					who = THIS
+#					value = 100
+#				}
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+				war = no
+				is_greater_power = no
+			}
+			WUR = {
+				exists = yes
+#				relation = {
+#					who = THIS
+#					value = 100
+#				}
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+				war = no
+				is_greater_power = no
+			}
+			ALS = {
+				exists = yes
+#				relation = {
+#					who = THIS
+#					value = 100
+#				}
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+				war = no
+				is_greater_power = no
 			}
 		}
 		
@@ -394,6 +475,37 @@ political_decisions = {
 				}
 			}
 			set_country_flag = lubeck_return
+		}
+	}
+	
+	annexation_of_saxony = {
+		picture = negotiations
+		potential = {
+			OR = {
+				tag = BRN
+				tag = NGF
+				AND = {
+					is_greater_power = yes
+					OR = {
+						primary_culture = north_german
+						primary_culture = central_german
+					}
+				}
+			}
+			exists = SAX
+			has_country_flag = claim_empire
+		}
+		allow = {
+			is_greater_power = yes
+			SAX = { in_sphere = THIS }
+			OR = {
+				SAX = { is_vassal = no }
+				SAX = { is_our_vassal = THIS }
+			}
+		}
+		effect = {
+			prestige = 2
+			inherit = SAX
 		}
 	}
 }

@@ -1920,25 +1920,28 @@ country_event = {
 			consciousness = 6
 		}
 		set_global_flag = prague_free_city
-		PRH = { all_core = {
-			limit = {
-				NOT = { province_id = 625 }
-				NOT = { province_id = 627 }
-				NOT = { province_id = 628 }
-				NOT = { province_id = 629 }
-				NOT = { province_id = 630 }
-			}
-			remove_core = PRH
+		PRH = {
+			all_core = {
+				limit = {
+					NOT = { province_id = 625 }
+					NOT = { province_id = 627 }
+					NOT = { province_id = 628 }
+					NOT = { province_id = 629 }
+					NOT = { province_id = 630 }
+				}
+				remove_core = PRH
 			}
 		}
 		BOH = {
 			all_core = {
-				limit = {
-					NOT = { province_id = 626 }
-					NOT = { province_id = 631 }
-					NOT = { province_id = 632 }
-				}
-				remove_core = BOH } }
+#				limit = {
+#					NOT = { province_id = 626 }
+#					NOT = { province_id = 631 }
+#					NOT = { province_id = 632 }
+#				}
+				remove_core = BOH
+			}
+		}
 		any_country = {
 			limit = {
 				alliance_with = PRH
@@ -2528,31 +2531,11 @@ country_event = {
 		random_country = {
 			limit = {
 				tag = PRH
-				ai = no
 			}
 			add_casus_belli = {
 				target = THIS
 				type = conquest
-				months = 120
-			}
-		}
-		random_country = {
-			limit = {
-				tag = PRH
-				ai = yes
-			}
-			add_casus_belli = {
-				target = THIS
-				type = conquest
-				months = 12
-			}
-			THIS = {
-				war = {
-					target = PRH
-					attacker_goal = {
-						casus_belli = conquest
-					}
-				}
+				months = 24
 			}
 		}
 		ai_chance = {

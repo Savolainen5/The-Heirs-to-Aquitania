@@ -417,7 +417,7 @@ political_decisions = {
 			SML = {
 				country_event = {
 					id = 50385
-					days = 1
+					days = 2
 				}
 			}
 			set_country_flag = tatar_revolt

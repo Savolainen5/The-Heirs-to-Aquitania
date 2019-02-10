@@ -1,7 +1,7 @@
 country_event = {
 	id = 203902
 	title = "Bukovina"
-	desc = "Now that Galicia-Lodomeria has fallen under our control, we should aim to retake Bukovina as well"
+	desc = "There are Poles and Ruthenians to be found in Bukovina, so we should take it for ourselves."
 	picture = "ferdinand"
 	
 	trigger = {
@@ -9,6 +9,7 @@ country_event = {
 		owns = 951
 		owns = 953
 		owns = 952
+		war_policy = jingoism
 	}
 	
 	mean_time_to_happen = {
@@ -33,7 +34,7 @@ country_event = {
 	}
 
 	option = {
-		name = "It's not worth it"
+		name = "It's not worth it."
 		ai_chance = {
 			factor = 25
 		}	

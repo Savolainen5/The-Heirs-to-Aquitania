@@ -653,7 +653,7 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 4
+				factor = 5
 				has_global_flag = railroading_on
 				OR = {
 					tag = RHI
@@ -701,7 +701,7 @@ country_event = {
 				THIS = { in_sphere = BRA }
 			}
 			modifier = {
-				factor = 2
+				factor = 5
 				OR = {
 					tag = MEC
 					tag = POM
@@ -727,7 +727,7 @@ country_event = {
 				tag = THU
 			}
 			modifier = {
-				factor = 100
+				factor = 5
 				has_global_flag = railroading_on
 				tag = HEK
 			}
