@@ -764,11 +764,18 @@ country_event = {
 			who = DON
 			value = 400
 		}
-		prestige = 5
-		war = {
-			attacker_goal = { casus_belli = call_allies_cb }
-			call_ally = yes									#This will be dodgy because other countries will be dragged into the war besides just the Tatars
+		all_core = {
+			limit = {
+				owned_by = DON
+			}
+			remove_core = THIS
 		}
+		create_vassal = DON				#This removes the need to use the call_allies cb because Russia should just automatically call in DON. I hope.
+		prestige = 5
+#		war = {
+#			attacker_goal = { casus_belli = call_allies_cb }
+#			call_ally = yes									#This will be dodgy because other countries will be dragged into the war besides just the Tatars
+#		}
 		set_country_flag = tatars_revolted
 	}
 }
