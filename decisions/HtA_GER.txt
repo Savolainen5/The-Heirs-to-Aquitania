@@ -193,7 +193,7 @@ political_decisions = {
 		}
 	}
 	
-	#Host Munich Conference - causes Baden, Wurttemburg, and Elsass to be annexed to Bavaria
+#Host Munich Conference - causes Baden, Wurttemburg, and Elsass to be annexed to Bavaria
 	host_munich_conference = {
 		picture = negotiations
 		potential = {

@@ -2039,6 +2039,8 @@ ignore_revolt = {
 	icon = 20
 }
 
+buffer_state_spam_reduction = { }
+
 #Other
 
 dutch_constitutional_reform_cooldown = {

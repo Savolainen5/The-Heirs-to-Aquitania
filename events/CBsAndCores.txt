@@ -884,6 +884,10 @@ country_event = {
 					months = 24
 				}
 			}
+			add_country_modifier = {
+				name = buffer_state_spam_reduction
+				duration = 720
+			}
 		}
 	}
 }

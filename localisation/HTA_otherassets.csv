@@ -4,6 +4,8 @@ active_serial_killer_desc;Some beast of a man (or woman) is murdering citizens i
 anatole_boom;Anatolian Population Boom;;;;;;;;;x
 bohemian_partisans;Bohemian Partisans;;;;;;;;;;x
 bohemian_partisans_desc;Some local Czech-speaking people have taken up arms against the owners of this province, whom they view as occupiers.;;;;;;;;;;;x
+buffer_state_spam_reduction;BSSR;x
+buffer_state_spam_reduction_desc;Don't mind me, I'm just reducing spam from the Buffer State event in CBandCores.txt;x
 building_oheskewen_canal;Building the Oheskewen Canal;;;;;;;;;;;x                                                                                                                                                                                                                ,,,
 countrywide_famine;Countrywide Famine;;;;;;;;;;;x,,,
 countrywide_famine_desc;Because of recent events, natural or otherwise, our country is currently experiencing a famine. Many will die or leave for a new home. Many will demand action.;;;;;;;;;;;;;x
@@ -71,6 +73,8 @@ tsar_batyushka;Tsar Batyushka;;;;;;;;;;x
 tsar_batyushka_desc;Dear Father Tsar - The Tsar looks over us and protects us, a father to the whole Empire!;;;;;;;;;;x
 unsuccessful_ds_reform;Unsuccessful Reform;;;;;;;;;x
 unsuccessful_ds_reform_desc;In the wake of the publishing of Gogol's "Dead Souls," the government has attempted to make some reforms to improve productivity and reduce corruption. It has largely been unsuccessful.;;;;;;;;;;x
+very_rebellious_minorities;Very Rebellious Minorities;x
+very_rebellious_minorities;For some reason, the minorities in this province are extremely rebellious at the moment!;x
 city_state;City-State;;;;;;;;;;;;x
 city_state_desc;With only one major city under our rule, our nation is easily overlooked.;;;;;;;;;;;;x
 small_nation;Small Nation;;;;;;;;;;;;x

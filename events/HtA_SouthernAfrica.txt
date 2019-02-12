@@ -528,6 +528,7 @@ country_event = {
 				}
 				secede_province = THIS
 				remove_core = SAF
+				remove_core = NET
 			}
 		}
 		2113 = { change_province_name = Ludwigsbucht }

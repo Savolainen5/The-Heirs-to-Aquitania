@@ -253,6 +253,10 @@ country_event = {
 				factor = 1.5
 				is_greater_power = yes
 			}
+			modifier = {
+				factor = 0.2
+				BRA = { is_greater_power = yes }
+			}
 		}
 	}
 }
@@ -1029,9 +1033,9 @@ country_event = {
 	option = {
 		name = "Great news!"
 		prestige = 5
-		2100 = { secede_province = THIS change_controller = THIS remove_core = SAF }
-		2099 = { secede_province = THIS change_controller = THIS remove_core = SAF }
-		2098 = { secede_province = THIS change_controller = THIS remove_core = SAF }
+		2100 = { secede_province = THIS change_controller = THIS remove_core = SAF remove_core = NET }
+		2099 = { secede_province = THIS change_controller = THIS remove_core = SAF remove_core = NET }
+		2098 = { secede_province = THIS change_controller = THIS remove_core = SAF remove_core = NET }
 		543 = { remove_core = GER }
 		relation = {
 			who = FROM
