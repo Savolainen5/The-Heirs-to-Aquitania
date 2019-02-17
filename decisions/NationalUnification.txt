@@ -1031,20 +1031,28 @@ political_decisions = {
 					OR = {
 						owned_by = THIS
 						owner = {
-							in_sphere = THIS
 							OR = {
 								is_culture_group = polish_culture_group
 								is_culture_group = czecho_slovak_culture_group
 							}
+							in_sphere = THIS
 							relation = { who = THIS value = 100 }
 						}
 						owner = {
-							in_sphere = THIS
 							NOT = {
 								is_culture_group = polish_culture_group
 								is_culture_group = czecho_slovak_culture_group
 							}
+							in_sphere = THIS
 							vassal_of = THIS
+						}
+						owner = {
+							NOT = {
+								is_culture_group = polish_culture_group
+								is_culture_group = czecho_slovak_culture_group
+							}
+							in_sphere = THIS
+							revolution_n_counterrevolution = 1
 						}
 					}
 				}

@@ -2492,13 +2492,21 @@ country_event = {
 			neighbour = THIS
 			NOT = { num_of_cities = 4 }
 			war = no
+			is_vassal = no
+			NOT = { in_sphere = THIS }
+			NOT = {
+				relation = {
+					who = THIS
+					value = 75
+				}
+			}
 		}
-		war = no
+		#war = no
 		NOT = { truce_with = PRH }
 	}
 	
 	mean_time_to_happen = {
-		months = 7
+		months = 17
 		modifier = {
 			factor = 0.5
 			628 = { owned_by = THIS }
@@ -2553,8 +2561,8 @@ country_event = {
 	
 	option = {
 		name = "A diplomatic solution is best."
-		prestige = -10
-		badboy = -3
+		prestige = -5
+		#badboy = -3
 		diplomatic_influence = { who = PRH value = 100 }
 		any_country = {
 			limit = {
