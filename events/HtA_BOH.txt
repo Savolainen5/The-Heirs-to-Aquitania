@@ -1100,6 +1100,10 @@ country_event = {
 			owned_by = THIS
 			average_militancy = 1
 		}
+		NOT = { has_country_flag = suppressed_syrm_rebellion }
+		NOT = { has_country_flag = ignored_syrm_rebellion }
+		NOT = { has_country_flag = syrm_vassal }
+		NOT = { has_country_flag = syrm_released }
 	}
 	
 	mean_time_to_happen = {
