@@ -5,9 +5,11 @@ Events:
 - Russia and Smolensk go at it, with Poland helping one or the other
 - Springtime of Nations should hit Roman Empire harder?
 	- Remove cores from GRE and ANA when they're released as vassals so impatient players can't just release and annex them
-- Revisit that ability of German states to not attend the Brunswick congress - AI will currently always attend
 - French popular radicalism in Paris that begins uniting. Not really necessary now that France is buffed. Pan-Nationalists are strong, too
 - Event/Decision to try to mediate Germany?
+- Revisit that ability of German states to not attend the Brunswick congress - AI will currently always attend
+- Tweak Bavarian choices for Brunswick Congress so they're better
+- Saxony making problems for Brandenburg when it attends the Brunswick congress and is still a BOH ally.
 - Danubian Federation-thing for Roman Empire
 - Massive problem for the Roman Empire if they fail to take Rome, or if they lose it.
 - Small event chain to change Wallonia into some other country which accepts Picard (or to separate Wallonia and Picardy)
@@ -19,7 +21,6 @@ Events:
 - Some kind of country/nationalism for Solelha in Florida
 - Qin civil war of some kind?
 - Dissolution of Maghreb
-- Tweak Bavarian choices for Brunswick Congress so they're better
 
 Decisions:
 

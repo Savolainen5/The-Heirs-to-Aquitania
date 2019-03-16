@@ -50,7 +50,7 @@ Version 0.36 X/Y/19 - The Russias & China Update
 
 *Major*
 
-- Story and flavour for Russia, Smolensk, and Poland (maybe?)
+- Story and flavour for Russia and Smolensk
 - Events and decisions for China by /u/chortlinggnome, see changelog below
 - Incorporated HPM's crisis locking system and election event spam reduction system
 - HtA story chain regarding Corsica involving Aquitania, PDN, and Naples/Italy
@@ -76,8 +76,8 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - Halved MIL and CON gain during famine from volcano
 - Expanded Margaria's expansion events to include more commonly-empty provinces
 - Added a decision for Margaria/Ginnaecer (or conceivably some other country) to expand into Oai (typically the last state to be colonised in NA)
+- Added an event for any NA country which has borders on a coreless empty province to get a random event to own that province. SAVS THINKS THIS SHOULD BE MADE TO BE A REAL cOLONY PROVINcE, NOT A STATE
 - Added a decision to annex Silesia after it has been puppeted by the Secure Silesia decision
-- ###############Added an event for any country which has finished its colonisation events to get a random event to colonise an empty province with no cores which it neighbours. EXCEPT THAT IT'S BROKEN AT THE MOMENT
 - Forming Bohemia-Hungary now removes Bohemia cores
 - Tweaked/added decisions for Naples/Italy to better deal with Tuscany and getting cores on the Padan Union, thanks to Spudgun
 - Tweak/fix for decision for forming SGF so that it works

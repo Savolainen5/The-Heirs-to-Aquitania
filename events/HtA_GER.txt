@@ -443,6 +443,7 @@ country_event = {
 			modifier = {
 				factor = 10
 				is_vassal = yes
+				NOT = { tag = SAX }
 			}
 			modifier = {
 				factor = 10

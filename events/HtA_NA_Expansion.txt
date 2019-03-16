@@ -35,16 +35,20 @@ country_event = {
 	mean_time_to_happen = {
 		months = 18
 		modifier = {
-			factor = 0.8
+			factor = 0.75
 			year = 1845
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.75
 			year = 1860
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.75
 			state_n_government = 1
+		}
+		modifier = {
+			factor = 0.75
+			medicine = 1
 		}
 	}
 	
@@ -69,6 +73,7 @@ country_event = {
 				28 = { owned_by = THIS }
 			}
 			29 = { secede_province = THIS }			#Soitaabe
+			set_country_flag = colonisation_finished
 		}
 		random_owned = {
 			limit = {
@@ -238,7 +243,6 @@ country_event = {
 				79 = { owned_by = THIS }
 			}
 			83 = { secede_province = THIS } #Yahusken
-			set_country_flag = colonisation_finished
 		}
 	}
 }
@@ -273,19 +277,19 @@ country_event = {
 			year = 1845
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.75
 			year = 1855
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.75
 			year = 1865
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.75
 			state_n_government = 1
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.75
 			medicine = 1
 		}
 	}
@@ -309,6 +313,7 @@ country_event = {
 				108 = { owned_by = THIS }
 			}
 			107 = { secede_province = THIS }			#Estribacion
+			set_country_flag = colonisation_finished
 		}
 		random_owned = {
 			limit = {
@@ -424,7 +429,6 @@ country_event = {
 				100 = { owned_by = THIS }
 			}
 			88 = { secede_province = THIS }				#Fortaleza Alta
-			set_country_flag = colonisation_finished
 		}
 	}
 }
@@ -455,7 +459,7 @@ country_event = {
 			year = 1845
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.75
 			year = 1855
 		}
 		modifier = {
@@ -479,6 +483,7 @@ country_event = {
 				106 = { owned_by = THIS }
 			}
 			125 = { secede_province = THIS }			#Oklala
+			set_country_flag = colonisation_finished
 		}
 		random_owned = {
 			limit = {
@@ -536,7 +541,6 @@ country_event = {
 				105 = { owned_by = THIS }
 			}
 			135 = { secede_province = THIS }
-			set_country_flag = colonisation_finished
 		}
 	}
 }
@@ -548,7 +552,7 @@ country_event = {
 	picture = "pioneer_wagons"
 	
 	trigger = {
-			tag = MRG
+		tag = MRG
 		OR = {
 			147 = { empty = yes }
 			148 = { empty = yes }
@@ -561,13 +565,13 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 18
+		months = 24
 		modifier = {
-			factor = 0.8
+			factor = 0.75
 			year = 1845
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.75
 			year = 1855
 		}
 		modifier = {
@@ -581,19 +585,6 @@ country_event = {
 		prestige = 1
 		random_owned = {
 			limit = {
-				147 = { empty = no }
-				148 = { empty = yes }
-				146 = { empty = yes }
-				152 = { empty = yes }
-				151 = { empty = yes }
-				150 = { empty = yes }
-				149 = { empty = yes }
-				147 = { owned_by = THIS }
-			}
-			148 = { secede_province = THIS }			#Orje #2
-		}
-		random_owned = {
-			limit = {
 				145 = { empty = no }
 				147 = { empty = yes }
 				146 = { empty = yes }
@@ -604,6 +595,19 @@ country_event = {
 				145 = { owned_by = THIS }
 			}
 			147 = { secede_province = THIS }			#Sinnes #1
+		}
+		random_owned = {
+			limit = {
+				147 = { empty = no }
+				148 = { empty = yes }
+				146 = { empty = yes }
+				152 = { empty = yes }
+				151 = { empty = yes }
+				150 = { empty = yes }
+				149 = { empty = yes }
+				147 = { owned_by = THIS }
+			}
+			148 = { secede_province = THIS }			#Orje #2
 		}
 		random_owned = {
 			limit = {
@@ -665,16 +669,16 @@ country_event = {
 	picture = "pioneer_wagons"
 	
 	trigger = {
-			tag = SHC
+		tag = SHC
 		OR = {
-			159 = { empty = yes }
-			162 = { empty = yes }
-			163 = { empty = yes }
-			164 = { empty = yes }
-			165 = { empty = yes }
-			166 = { empty = yes }
-			167 = { empty = yes }
-			168 = { empty = yes }
+			163 = { empty = yes }	#1
+			165 = { empty = yes }	#2
+			164 = { empty = yes }	#3
+			168 = { empty = yes }	#4
+			167 = { empty = yes }	#5
+			166 = { empty = yes }	#6
+			159 = { empty = yes }	#7
+			162 = { empty = yes }	#8
 		}
 	}
 	
@@ -709,7 +713,8 @@ country_event = {
 				162 = { empty = yes }
 				159 = { owned_by = THIS }
 			}
-			162 = { secede_province = THIS }			#Iline
+			162 = { secede_province = THIS }	#Iline
+			set_country_flag = colonisation_finished
 		}
 		random_owned = {
 			limit = {
@@ -722,7 +727,7 @@ country_event = {
 				159 = { empty = yes }
 				166 = { owned_by = THIS }
 			}
-			159 = { secede_province = THIS }
+			159 = { secede_province = THIS }	#Milouaki
 		}
 		random_owned = {
 			limit = {
@@ -734,7 +739,7 @@ country_event = {
 				166 = { empty = yes }
 				167 = { owned_by = THIS }
 			}
-			166 = { secede_province = THIS }
+			166 = { secede_province = THIS }	#Peoarua
 		}
 		random_owned = {
 			limit = {
@@ -745,7 +750,7 @@ country_event = {
 				167 = { empty = yes }
 				168 = { owned_by = THIS }
 			}
-			167 = { secede_province = THIS }
+			167 = { secede_province = THIS }	#Kaskaskia
 		}
 		random_owned = {
 			limit = {
@@ -755,7 +760,7 @@ country_event = {
 				168 = { empty = yes }
 				165 = { owned_by = THIS }
 			}
-			168 = { secede_province = THIS }
+			168 = { secede_province = THIS }	#Makanda
 		}
 		random_owned = {
 			limit = {
@@ -764,7 +769,7 @@ country_event = {
 				164 = { empty = yes }
 				165 = { owned_by = THIS }
 			}
-			164 = { secede_province = THIS }
+			164 = { secede_province = THIS }	#Minuwaka
 		}
 		random_owned = {
 			limit = {
@@ -772,14 +777,14 @@ country_event = {
 				165 = { empty = yes }
 				163 = { owned_by = THIS }
 			}
-			165 = { secede_province = THIS }
+			165 = { secede_province = THIS }	#Watseka
 		}
 		random_owned = {
 			limit = {
 				163 = { empty = yes }
 				169 = { owned_by = THIS }
 			}
-			163 = { secede_province = THIS }
+			163 = { secede_province = THIS }	#Shikakwa
 		}
 	}
 }
@@ -791,21 +796,21 @@ country_event = {
 	picture = "pioneer_wagons"
 	
 	trigger = {
-			tag = QUE
+		tag = QUE
 		OR = {
-			41 = { empty = yes }
-			118 = { empty = yes }
-			117 = { empty = yes }
-			157 = { empty = yes }
-			158 = { empty = yes }
-			160 = { empty = yes }
-			161 = { empty = yes }
-			177 = { empty = yes }
-			120 = { empty = yes }  #4
-			153 = { empty = yes }  #3
-			154 = { empty = yes }  #5
-			155 = { empty = yes }  #2
-			156 = { empty = yes }  #1
+			177 = { empty = yes }	#1
+			158 = { empty = yes }	#2
+			157 = { empty = yes }	#3
+			41 = { empty = yes }	#4
+			118 = { empty = yes }	#5
+			160 = { empty = yes }	#6
+			117 = { empty = yes }	#7
+			161 = { empty = yes }	#8
+			156 = { empty = yes }	#9
+			155 = { empty = yes }	#10
+			153 = { empty = yes }	#11
+			120 = { empty = yes }	#12
+			154 = { empty = yes }	#13
 		}
 	}
 	
@@ -846,6 +851,7 @@ country_event = {
 				120 = { owned_by = THIS }
 			}
 			154 = { secede_province = THIS }		#Brugier
+			set_country_flag = colonisation_finished
 		}
 		random_owned = {
 			limit = {
@@ -925,7 +931,7 @@ country_event = {
 				161 = { empty = yes }
 				117 = { owned_by = THIS }
 			}
-			161 = { secede_province = THIS }		#Surlac
+			161 = { secede_province = THIS }		#Longuebai
 		}
 		random_owned = {
 			limit = {
@@ -938,7 +944,7 @@ country_event = {
 				117 = { empty = yes }
 				160 = { owned_by = THIS }
 			}
-			117 = { secede_province = THIS }
+			117 = { secede_province = THIS }		#Ternas
 		}
 		random_owned = {
 			limit = {
@@ -950,7 +956,7 @@ country_event = {
 				160 = { empty = yes }
 				158 = { owned_by = THIS }
 			}
-			160 = { secede_province = THIS }
+			160 = { secede_province = THIS }		#Eau claire
 		}
 		random_owned = {
 			limit = {
@@ -961,7 +967,7 @@ country_event = {
 				118 = { empty = yes }
 				41 = { owned_by = THIS }
 			}
-			118 = { secede_province = THIS }
+			118 = { secede_province = THIS }		#Fleurbaix
 		}
 		random_owned = {
 			limit = {
@@ -971,7 +977,7 @@ country_event = {
 				41 = { empty = yes }
 				157 = { owned_by = THIS }
 			}
-			41 = { secede_province = THIS }
+			41 = { secede_province = THIS }			#Ennordres
 		}
 		random_owned = {
 			limit = {
@@ -980,7 +986,7 @@ country_event = {
 				157 = { empty = yes }
 				158 = { owned_by = THIS }
 			}
-			157 = { secede_province = THIS }
+			157 = { secede_province = THIS }		#Rivere Rouge
 		}
 		random_owned = {
 			limit = {
@@ -988,64 +994,85 @@ country_event = {
 				158 = { empty = yes }
 				177 = { owned_by = THIS }
 			}
-			158 = { secede_province = THIS }
+			158 = { secede_province = THIS }		#Portage
 		}
 		random_owned = {
 			limit = {
 				177 = { empty = yes }
 				42 = { owned_by = THIS }
 			}
-			177 = { secede_province = THIS }
+			177 = { secede_province = THIS }		#Lezigne
 		}
 	}
 }
 
-#province_event = {				#NB - 97097 is the railroading event that pops at the beginning of the game
-#	id = 97098
-#	title = "EVTNAME97098"
-#	desc = "EVTDESC97098"
-#	picture = "pioneer_wagons"
-#	
-#	trigger = {
-#		#owner = { capital_scope = { continent = north_america } }
-#		any_neighbor_province = {
-#			empty = yes
-#			NOT = {
-#				is_core = SKM
-#				is_core = QUE
-#				is_core = SHC
-#				is_core = MRG
-#				is_core = GNC
-#				is_core = CLF
-#			}
-#		}
-#		civilized = yes
-#		year = 1880
-#	}
-#	
-#	mean_time_to_happen = {
-#		months = 6
-#	}
-#	
-#	option = {
-#		name = "$COUNTRY$ spreads her wings!"
-#		random_neighbor_province = {
-#			limit = {
-#				NOT = {
-#					is_core = SKM
-#					is_core = QUE
-#					is_core = SHC
-#					is_core = MRG
-#					is_core = GNC
-#					is_core = CLF
-#				}
-#				empty = yes
-#			}
-#			secede_province = THIS
-#			add_core = THIS
-#		}
-#	}
-#}
+province_event = {				#NB - 97097 is the railroading event that pops at the beginning of the game
+	id = 97098
+	title = "EVTNAME97098"
+	desc = "EVTDESC97098"
+	picture = "pioneer_wagons"
+	
+	trigger = {
+		owner = { capital_scope = { continent = north_america } }
+		any_neighbor_province = {
+			empty = yes
+			OR = {				
+				province_id = 35 #Foaligne
+				province_id = 115 #Pikan
+				province_id = 119 #Nakota
+				province_id = 121 #Sihasipi
+				province_id = 112 #Pahasasa
+				province_id = 122 #chunkase
+				province_id = 110 #Quesada
+				province_id = 124 #chasmu Okahmi
+			}
+			NOT = {
+				is_core = SKM
+				is_core = QUE
+				is_core = SHC
+				is_core = MRG
+				is_core = GNC
+				is_core = CLF
+			}
+		}
+		owner = { civilized = yes }
+		year = 1860
+	}
+	
+	mean_time_to_happen = {
+		months = 8
+	}
+	
+	option = {
+		name = "$COUNTRY$ spreads her wings!"
+		owner = { prestige = 1 }
+		random_neighbor_province = {
+			limit = {
+				NOT = {
+					is_core = SKM
+					is_core = QUE
+					is_core = SHC
+					is_core = MRG
+					is_core = GNC
+					is_core = CLF
+				}
+				OR = {
+					province_id = 35 #Foaligne
+					province_id = 115 #Pikan
+					province_id = 119 #Nakota
+					province_id = 121 #Sihasipi
+					province_id = 112 #Pahasasa
+					province_id = 122 #chunkase
+					province_id = 110 #Quesada
+					province_id = 124 #chasmu Okahmi
+				}
+				empty = yes
+			}
+			secede_province = THIS
+			add_core = THIS
+		}
+	}
+}
 
 #Event taken from /gsg/ base mod from event file British Dominions
 country_event = {
@@ -1127,33 +1154,33 @@ country_event = {
 					owns = 11
 				}
 			}
-			AND = {
-				6 = { empty = no }
-				7 = { empty = no }
-				8 = { empty = no }
-				2596 = { empty = no }
-				2598 = { empty = no }
-				9 = { empty = no }
-				11 = { empty = yes } #Echo Bay
-				OR = {
-					owns = 23
-					owns = 2596
-				}
-			}
-			AND = {
-				6 = { empty = no }
-				7 = { empty = no }
-				8 = { empty = no }
-				2596 = { empty = no }
-				2598 = { empty = no }
-				9 = { empty = no }
-				11 = { empty = no }
-				12 = { empty = yes } #Reliance
-				OR = {
-					owns = 43
-					owns = 2596
-				}
-			}
+#			AND = {
+#				6 = { empty = no }
+#				7 = { empty = no }
+#				8 = { empty = no }
+#				2596 = { empty = no }
+#				2598 = { empty = no }
+#				9 = { empty = no }
+#				11 = { empty = yes } #Echo Bay
+#				OR = {
+#					owns = 23
+#					owns = 2596
+#				}
+#			}
+#			AND = {
+#				6 = { empty = no }
+#				7 = { empty = no }
+#				8 = { empty = no }
+#				2596 = { empty = no }
+#				2598 = { empty = no }
+#				9 = { empty = no }
+#				11 = { empty = no }
+#				12 = { empty = yes } #Reliance
+#				OR = {
+#					owns = 43
+#					owns = 2596
+#				}
+#			}
 			AND = {
 				6 = { empty = no }
 				7 = { empty = no }

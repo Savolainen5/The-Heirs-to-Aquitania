@@ -1,5 +1,6 @@
 political_decisions = {
 	colonise_rouge_ues = {
+		picture = "wagons"
 		potential = {
 			tag = QUE
 			NOT = {
@@ -28,12 +29,15 @@ political_decisions = {
 	}
 	
 	colonise_ters_dauror = {
+		picture = "settle_north"
 		potential = {
 			tag = QUE
 			NOT = {
 				owns = 2596
 				has_country_flag = colonise_ters_dauror
 			}
+			2596 = { empty = yes }
+			has_country_flag = colonies_rouge_ues
 		}
 		
 		allow = {
@@ -46,14 +50,23 @@ political_decisions = {
 		effect = {
 			prestige = 2
 			money = -5000
-			2596 = { secede_province = THIS }
-			11 = { secede_province = THIS }
-			12 = { secede_province = THIS }
+			2596 = { secede_province = THIS add_core = THIS }
+			11 = { secede_province = THIS add_core = THIS }
+			12 = { secede_province = THIS add_core = THIS }
 			set_country_flag = colonise_ters_dauror
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { money = 6000 }
+			}
 		}
 	}
 	
 	colonise_drytsiben = {
+		picture = "wagons"
 		potential = {
 			tag = SKM
 			NOT = {
@@ -89,12 +102,14 @@ political_decisions = {
 	}
 	
 	colonise_jukuna = {
+		picture = "settle_north"
 		potential = {
 			tag = SKM
 			NOT = {
-				owns = 8
+				owns = 7
 				has_country_flag = colonise_jukuna
 			}
+			7 = { empty = yes }			
 		}
 		
 		allow = {
@@ -108,17 +123,18 @@ political_decisions = {
 		effect = {
 			prestige = 2
 			money = -4500
-			6 = { secede_province = THIS }
-			7 = { secede_province = THIS }
-			8 = { secede_province = THIS }
-			9 = { secede_province = THIS }
-			10 = { secede_province = THIS }
-			2598 = { secede_province = THIS }
+			6 = { secede_province = THIS add_core = THIS }
+			7 = { secede_province = THIS add_core = THIS }
+			8 = { secede_province = THIS add_core = THIS }
+			9 = { secede_province = THIS add_core = THIS }
+			10 = { secede_province = THIS add_core = THIS }
+			2598 = { secede_province = THIS add_core = THIS }
 			set_country_flag = colonise_jukuna
 		}
 	}
 	
 	colonise_oai = {
+		picture = "wagons"
 		potential = {
 			capital_scope = { continent = north_america }
 			126 = { empty = yes }
@@ -132,7 +148,7 @@ political_decisions = {
 					province_id = 124
 					province_id = 125
 					province_id = 128
-					province_id = 130
+					province_id = 130 #This is the one that should make MRG get it
 					province_id = 147
 					province_id = 149
 					province_id = 150
@@ -140,21 +156,22 @@ political_decisions = {
 					province_id = 154
 				}
 			}
-			year = 1850
+			year = 1843
 			has_country_flag = colonisation_finished
 		}
 		
 		allow = {
 			money = 4000
+			medicine = 1
 		}
 		
 		effect = {
-			prestige = 3
+			prestige = 2
 			money = -4000
 			126 = { secede_province = THIS add_core = THIS }
 			127 = { secede_province = THIS add_core = THIS }
 			123 = { secede_province = THIS add_core = THIS }
-			#123 = { state_scope = { change_region_name = "Oailand" } }
+			123 = { state_scope = { change_region_name = "Oailand" } }
 		}
 		
 		ai_will_do = {
