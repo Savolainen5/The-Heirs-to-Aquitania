@@ -30,7 +30,7 @@ country_event = {
 	#picture = ?
 	
 	trigger = {
-		vassal_of = MLI
+		substate_of = MLI
 		MLI = { has_country_flag = RIP_KING_of_Mali }
 	}
 	

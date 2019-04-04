@@ -100,6 +100,8 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - Improved some OOBs, added some missing ones
 - Adjusted POPs in a number of places with the above in mind
 - Added some Sephardic POPs to Aquitania and Ashkenazi to SOME of France. Needs more - ALWAYS
+- Transcaucasia formation decisions are only available when Railroading is off
+- Armenia will move its capital to Erivan when it loses Yerzenka
 - Lots more tweaks
 
 *Bugfixes*

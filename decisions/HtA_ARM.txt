@@ -23,4 +23,19 @@ political_decisions = {
 		}
 	}
 	
+	#Retreat to Hayastan
+	retreat_to_hayastan = {
+		picture = restart_the_caucasian_war
+		potential = {
+			tag = ARM
+			888 = { is_capital = no }
+			1098 = { is_capital = no }
+		}
+		allow = {
+			888 = { NOT = { owned_by = THIS } }
+		}
+		effect = {
+			capital = 1098
+		}
+	}
 }

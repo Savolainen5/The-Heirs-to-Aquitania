@@ -1,6 +1,6 @@
 #Thrace Region (364000) #see Greece.txt for balance of region 
 #under the rule of Roman Empire in 1836
-#Edirne (172000/43000 POPS)
+#Adrianopole (172000/43000 POPS) Edirne
 828 = {
 	aristocrats = {
 		culture = roman
@@ -255,7 +255,7 @@
 	clergymen = {
 		culture = roman
 		religion = orthodox
-		size = 12125
+		size = 4125
 	}
 
 	artisans = {

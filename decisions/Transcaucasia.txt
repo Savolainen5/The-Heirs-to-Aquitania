@@ -9,6 +9,7 @@ political_decisions = {
 			}
 			NOT = { exists = TCA }
 			NOT = { has_global_flag = transcaucasia_formed }
+			NOT = { has_global_flag = railroading_on }
 		}
 
 		allow = {
@@ -113,6 +114,7 @@ political_decisions = {
 			}
 			NOT = { exists = TCA }
 			NOT = { has_global_flag = transcaucasia_formed }
+			NOT = { has_global_flag = railroading_on }
 			OR = {
 				any_owned_province = { is_core = GEO }
 				any_owned_province = { is_core = AZB }

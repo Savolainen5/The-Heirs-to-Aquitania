@@ -25,7 +25,7 @@ vassal = {
 }
 
 # Shawnee-Cherokee
-vassal = {
+substate = {
 	first = SHC
 	second = CHE
 	start_date = 1836.1.1
@@ -33,7 +33,7 @@ vassal = {
 }
 
 # Shawnee-Iroquois
-vassal = {
+substate = {
 	first = SHC
 	second = IRO
 	start_date = 1836.1.1
@@ -41,7 +41,7 @@ vassal = {
 }
 
 # Qin-Yunnan
-vassal = {
+substate = {
 	first = QIN
 	second = YNN
 	start_date = 1836.1.1
@@ -49,7 +49,7 @@ vassal = {
 }
 
 # Qin-Qinghai
-vassal = {
+substate = {
 	first = QIN
 	second = XBI
 	start_date = 1836.1.1
@@ -89,14 +89,14 @@ vassal = {
 }
 
 # Maghreb-Cyrenacia
-vassal = {
+substate = {
 	first = MGH
 	second = CYR
 	start_date = 1836.1.1
 	end_date = 1949.1.1
 }
 
-# Norway-Iceland		#for some reason, this plasters Norway's name over lots of uncolonised territory
+# Norway-Iceland
 vassal = {
 	first = NOR
 	second = ICL
@@ -115,7 +115,7 @@ vassal = {
 ##Mali substates##
 
 # Mali-Gabu
-vassal = {
+substate = {
 	first = MLI
 	second = GBU
 	start_date = 1836.1.1
@@ -123,7 +123,7 @@ vassal = {
 }
 
 # Mali-Wolof
-vassal = {
+substate = {
 	first = MLI
 	second = WOL
 	start_date = 1836.1.1
@@ -131,7 +131,7 @@ vassal = {
 }
 
 # Mali-Kanem Bornu
-vassal = {
+substate = {
 	first = MLI
 	second = KBO
 	start_date = 1836.1.1
@@ -139,7 +139,7 @@ vassal = {
 }
 
 # Mali-Mossi
-vassal = {
+substate = {
 	first = MLI
 	second = MOS
 	start_date = 1836.1.1
@@ -147,7 +147,7 @@ vassal = {
 }
 
 # Mali-Sokoto
-vassal = {
+substate = {
 	first = MLI
 	second = SOK
 	start_date = 1836.1.1
@@ -155,15 +155,16 @@ vassal = {
 }
 
 # Mali-Dendi
-vassal = {
+substate = {
 	first = MLI
 	second = DND
 	start_date = 1836.1.1
 	end_date = 1949.1.1
 }
 
+
 # Shona-Gaza
-vassal = {
+substate = {
 	first = SHO
 	second = GAZ
 	start_date = 1836.1.1
