@@ -1,3 +1,4 @@
+#Well, railroading and some other stuff
 country_event = {
 	id = 97097
 	title = "EVTNAME97097"
@@ -24,6 +25,49 @@ country_event = {
 	}
 	
 	option = {
-		name = "No railroading, thanks."
+		name = "No railroading, thanks. I'll turn it on later if I want to."
+	}
+}
+
+country_event = {
+	id = 97098
+	title = "New World Nation"
+	desc = "You are a new world nation, yet you do not have the flag for it. Let me fix that. That way you'll get some immigration or something."
+	
+	trigger = {
+		NOT = { has_country_flag = new_world_nation }
+		OR = {
+			AND = {
+				capital_scope = {
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+				}
+				NOT = {
+					tag = INC
+					tag = PTG
+					tag = CHE
+					tag = DAK
+					tag = GRN
+					tag = HAW
+					tag = IRO
+					tag = SHC
+					tag = TRS
+					tag = OAX
+				}
+			}
+			tag = NFB
+			tag = TER
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Thanks!"
+		set_country_flag = new_world_nation
 	}
 }

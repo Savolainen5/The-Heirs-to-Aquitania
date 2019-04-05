@@ -91,6 +91,8 @@ colonise_drytsiben_title;Colonise Drytsiben;;;;;;;;;x
 colonise_drytsiben_desc;We should expand out to the edge of our claims on the plains so that no one else can take them from us. These lands may be fertile farmlands, or perhaps some useful resources might be found in them. Besides, more land for our growing population is always good.;;;;;;;;;x
 colonise_jukuna_title;Colonise Jukuna;;;;;;;;x
 colonise_jukuna_desc;The lands that the natives call Jukuna are, quite frankly, inhospitable. But with the gold and other riches we found in Iggatlan, there may be more further north! Besides, some opportunistic states, like Dabimon or Hispania, may in time try to lay claim to the north, and thus try to envelop us in some way. Let us instead settle some key outposts and ensure that these lands are made ours!;;;;;;;;;;x
+colonise_necen_title;Colonise Necen;x
+colonise_necen_desc;The interior of Ameriga just east of the great mountains is good farming land, and sparsely inhabited by natives. Let us claim it for $COUNTRY$!;x
 colonise_oai_title;Colonise Oailand;;;;;;;;;;x
 colonise_oai_desc;There yet remain unclaimed areas of the inner plains of Ameriga, inhabited by a few savages clinging to their ways. If these lands are anything like the neighbouring provinces we own, they could be fertile farm- and grazelands. Let us claim the territory for our own, before someone else takes it!;;;;;;;;;;x
 colonise_rouge_ues_title;Colonise Rouge-Ues;;;;;;;;;x
@@ -321,6 +323,8 @@ request_return_of_lubeck_title;Request the Return of Lübeck;;;;;;;;;;x
 request_return_of_lubeck_desc;The Danes have held the port city of Lübeck for centuries and insisted on their right to the surrounding area. Now that we have unified, we have heard reports of rising German nationalism in the city itself. Let us negotiate for the cession of the port with Denmark, and keep the peace.;;;;;;;;;;x
 restore_order_in_hungary_title;Restore Order in Hungary;;;;;;;;;;x
 restore_order_in_hungary_desc;With the rising tide of unrest and chaos in Hungary, it is time for the to monarchy make a strong response to the situation in its southern component. Let us restore order in Hungary before a full-blown rebellion breaks loose!;;;;;;;;;;x 
+retreat_to_hayastan_title;Retreat to Hayastan;x
+retreat_to_hayastan_desc;With the loss of our lands in Asia Minor and particularly the capital of Yerzinka, it is time to fall back to the mountains of old Hayastan and dig in against any further Roman attacks. We have lost Asia Minor, but surely we will regain it some day!;x
 return_croatian_land_title;Seek the Return of Croatian Land;;;;;;;;;;;x
 return_croatian_land_desc;Per our agreement with Croatia, we should see if we can convince Austria to hand over Old Croatia peacefully, using our relationship with them. Alternatively, we could simply coerce them with strength of arms. In any case, after returning Zagreb and its surroundings to Croatia, we can finally acquire our port. Austria will probably ask for compensation.;;;;;;;;;;x
 return_croatia_to_croatia_title;Return Croatia its Land;;;;;;;;;;;x

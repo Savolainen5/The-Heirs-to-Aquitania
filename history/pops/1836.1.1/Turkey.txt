@@ -5,7 +5,7 @@
 	aristocrats = {
 		culture = roman
 		religion = orthodox
-		size = 1800
+		size = 1500
 	}
 
 	bureaucrats = {
@@ -29,7 +29,7 @@
 	artisans = {
 		culture = roman
 		religion = orthodox
-		size = 18000
+		size = 10000
 	}
 
 	soldiers = {
@@ -41,13 +41,7 @@
 	farmers = {
 		culture = roman
 		religion = orthodox
-		size = 43825
-	}
-
-	farmers = {
-		culture = roman
-		religion = orthodox
-		size = 29825
+		size = 59825
 	}
 
 	clergymen = {
@@ -92,12 +86,12 @@
 		size = 8950
 	}
 }
-#Kirklareli (112000/28000 POPS)
+#Syrallum/Kirklareli (112000/28000 POPS)
 858 = {
 	aristocrats = {
 		culture = roman
 		religion = orthodox
-		size = 2100
+		size = 1900
 	}
 
 	clergymen = {
@@ -109,7 +103,7 @@
 	artisans = {
 		culture = roman
 		religion = orthodox
-		size = 12050
+		size = 10050
 	}
 
 	soldiers = {
@@ -121,7 +115,7 @@
 	farmers = {
 		culture = roman
 		religion = orthodox
-		size = 51575
+		size = 41575
 	}
 
 	clergymen = {
@@ -139,7 +133,7 @@
 	farmers = {
 		culture = bulgarian
 		religion = orthodox
-		size = 23825
+		size = 20825
 	}
 
 	clergymen = {
@@ -157,7 +151,7 @@
 	farmers = {
 		culture = greek
 		religion = orthodox
-		size = 32775
+		size = 22775
 	}	
 	
 }
@@ -377,25 +371,25 @@
 	clergymen = {
 		culture = roman
 		religion = orthodox
-		size = 1900
+		size = 1800
 	}
 
 	artisans = {
 		culture = roman
 		religion = orthodox
-		size = 19000
+		size = 18000
 	}
 
 	soldiers = {
 		culture = roman
 		religion = orthodox
-		size = 3855
+		size = 3255
 	}
 
 	farmers = {
 		culture = roman
 		religion = orthodox
-		size = 84250
+		size = 74250
 	}
 
 	clergymen = {
@@ -463,7 +457,7 @@
 	farmers = {
 		culture = roman
 		religion = orthodox
-		size = 45250
+		size = 47250
 	}
 
 	clergymen = {
@@ -481,13 +475,13 @@
 	farmers = {
 		culture = anatolian
 		religion = orthodox
-		size = 28475
+		size = 32475
 	}
 
 	farmers = {
 		culture = greek
 		religion = orthodox
-		size = 8375
+		size = 1375
 	}
 }
 #Hudavendigar Region (736000)
@@ -527,7 +521,7 @@
 	artisans = {
 		culture = roman
 		religion = orthodox
-		size = 16000
+		size = 14000
 	}
 
 	soldiers = {
@@ -539,7 +533,7 @@
 	farmers = {
 		culture = roman
 		religion = orthodox
-		size = 85575
+		size = 80575
 	}
 
 	clergymen = {
@@ -596,7 +590,7 @@
 	soldiers = {
 		culture = roman
 		religion = orthodox
-		size = 3477
+		size = 2477
 	}
 
 	farmers = {

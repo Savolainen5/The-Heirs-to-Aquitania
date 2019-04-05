@@ -182,4 +182,49 @@ political_decisions = {
 			}
 		}
 	}
+
+	colonise_necen = {
+		potential = {
+			capital_scope = { continent = north_america }
+			has_country_flag = colonisation_finished
+			any_owned_province = {
+				has_empty_adjacent_province = yes
+			}
+			112 = { empty = yes }
+		}
+		
+		allow = {
+			OR = {
+				110 = {
+					any_neighbor_province = {
+						owned_by = THIS
+					}
+				}
+				112 = {
+					any_neighbor_province = {
+						owned_by = THIS
+					}
+				}
+				122 = {
+					any_neighbor_province = {
+						owned_by = THIS
+					}
+				}
+				124 = {
+					any_neighbor_province = {
+						owned_by = THIS
+					}
+				}
+			}
+		}
+		
+		effect = {
+			110 = { secede_province = THIS add_core = THIS }
+			112 = { secede_province = THIS add_core = THIS }
+			122 = { secede_province = THIS add_core = THIS }
+			124 = { secede_province = THIS add_core = THIS }
+			prestige = 1
+		}
+	}
+					
 }

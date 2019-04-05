@@ -1,0 +1,97 @@
+These are what others have suggested. I want to collect them here so as to have a unified list.
+
+BobSagini - http://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-18#post-21233954
+Teralarga
+
+-Event in order to increase immigration that makes them a democracy
+-if a GP, it should get an event named "Form Volturnia" which allows them to annex Naffrakosa Berria
+-later, if fascist, gain events to conquer the rest of the continent ("The swan of the Pacific") for infamy. 
+
+--------------------------------------------------------------------------------------------------------------------
+
+Crushric - https://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-11#post-20857457
+Roman Empire and related
+
+Emperor What's-his-name, the young one, has romantic notions of a Reforged Roman Empire. With the Imperial Victory over Greece and Anatole, and over the small nations that fell upon Rome in her darkest hour since the fall of Rome itself, it seems like Rome can do anything, owning to the industriousness of the Rome and the might of her arms.
+
+Roma Victoriosa (Rome Victorious) should be the name of the event Rome gets upon a total victory in the civil war. Actually, I could certainly see the Roman Civil War being a parallel to the American Civil War. The first instance of total war. Internal repercussions. Legendary generals. Incredibly bloody days. And the forgery of a new, more nationalistic, er, national self-image for the Roman Empire.
+
+Other events that could happen for Rome during the way, while I'm at it:
+
+Something to give Rome, Greece, and Anatole some noteworthy generals at the very start.
+—I humbly request that the very best general be a Roman named Skantarios Laskaris after a certain Medieval II: Total War AAR
+
+
+Total War Events:
+In order to give flavor to the idea of Rome coming into its own and fighting a proper total war, some event to give the flavor of all of Rome working together might be handy.
+
+    -"Old Roman Money"—Roman aristocrats donate money to the state to help fund the war, though it is clear that many of them just wish to have favorable treatment by the regime should they win. Greece and Anatole should get their own versions of this event.
+    -"War Bonds"—in an effort to keep the Roman budget in line, Roman Minister of Finance, Sotirios Spiros, invent the novel idea of war bonds. Rome would accept private donations from citizens, and would promise to pay them back with interests after victory. (Gives Rome some money. Other nations can follow suit.)
+    (Decision?) "Imperial Enabling Acts"—Passed by the majority of the Imperial Senate, the Imperial Enabling Acts would grant untold power to the Emperor in a grand act of centralization. The intent of the Acts were to give the Emperor the power he needed to guide Rome without bureaucratic red tape, and were supposed to be rescinded following the end of the war. In reality, the acts would end up turning the Imperial Senate into little more than an advisory board, turn the Emperor into a de facto autocrat with nigh unlimited authority, and become the bedrock of the so-called New Roman Order. In the words of Senator Korzyis, a former student who had fought to liberalize the Roman Regime, "So this is how Roman Democracy dies—with thunderous applause." (Sets political reforms to no voting because to hell with the Springtime of Nations)
+    -"Formation of the New Roman Legion"—At the onset of the War, the Emperor's first project under the Imperial Enabling acts would be to reorganization the Roman Legions an try to modernize in order to fight Greece and Antole. To this effect, all Roman Legionnaires had to swear a personal oath of loyalty to the Emperor. (Rome gains some minor tactics/organization bonuses + prestige.)
+    -"The Varangian Guard and the New Roman Order"—The Varangian Guard (Tagma ton Varangon) stands as oldest living organization remaining in the Roman Empire. For nearly a thousand years the Varangians were Norsemen who lived to serve the Emperor as his bodyguards. Over time, these Norseman would settle in their own regions of Constantinople, and their population would expand far beyond the point were all Varangian men could serve as Imperial bodyguards. The Varangians of today represent a distinct ethnic minority in Constantinople with strong military ties who maintain their ancient duties to the Emperor. In an effort to expand his power, the Emperor was once again invoked the Imperial Enabling Acts to complete restructure the Varangian Guard and expand their duties in every respect. The new Varangian Guard would take on more proactive roles to protect the Emperor and, by extension, the Empire. New roles would include being able to summarily execute suspected traitors, arrest dissents at will, and to root out and destroy any subversive elements within the Empire. (Basically, they become the Secret Police. You might even want to rename the Secret Police tech "The New Varangian Model". This event will give Rome some prestige and reduce all rebel organization rates)
+    -"Roman Industry"—As the war began in earnest, under the guide of the Emperor via the Imperial Enabling Acts, Rome would create the Ministry of Industry (MoI). The MoI's job was to regulate Roman industry to streamline the process of getting goods produced and shipped to the front. Under its first Minister, Silas Eleutherios, the MoI would grow to become one of the most powerful branches of the Roman government. — This event (decision?) will make factories cheaper to operate in Rome, as well as produce more, and will provide Rome with periodical shipments of war-related resources such as boots/steamers/ammo/small arms/artillery. Will also help Rome industrialize better in general, since they have problems with it in my games. Maybe all set union reforms to state-run only
+    -"The Sedition Act"—Passed under the Enabling Acts, this act would seek to control the press and weed out "Anti-Roman Liars". It was met with popular support. (Press set to Censored/State Press)
+    -"Onwards, Roman Legions!" — Popular support for the war exploded in Rome, with every paper printing nonstop encouragement for the New Roman Legions. Old differences between parties were forgotten as Romans united to defeat their common foes. All Romans (and Greeks/Anatolians still in the Empire) gain a big increase to Jingoism, as well as get their consciousness and militancy dropped to zero, and modifiers to keep it that way until the war ends.
+    -"Legio I Valachia"—The Prince of Wallachia offers his support to Rome and has reformed his armies along the lines of the New Roman Legion. (Relationships bonus. Wallachia gets the benefits of the Roman military reforms + military supplies.)
+
+Religion also gets a special part in the total war:
+
+    -"The Patriarch Blesses Us." The Patriarch of Constantinople can give his support to one of the 3 factions. Usually Rome. But he could give his support to Greece or Anatole if Rome itself is too liberal-leaning for his liking. This event would give someone prestige, take it away from others, and give the chosen faction some more organization/tactics for its battles.
+    -"Bless This Rifle, Holy Father." The Orthodox Church (or Patriarch of Constantinople?) can start giving holy blessing to Roman firearms and canons. Could just be like +5 prestige and some flavor.
+    -"Everybody Fights. Everybody Serves." A prominent chaplain of a Roman Legion has the idea that every man must work and fight, including himself, against the enemies of Rome. (Yes, this is inspired by Starship Troopers, the book.) Rome gains a modest increase to tactics/organization.
+    -"Churches Organize Meatless Mondays"—In an effort to help support the Roman Legions, church fathers have organization a national campaign to forgo meat on Mondays in order to save more to be sent to the troops. Players can choose to support it for a helpful gain in cattle/canned food + a little prestige, or to say it's not needed for a slightly bigger prestige bonus.
+    -"The Battle Hymn of the Empire"—A New Song has started to gain popularity amongst the Roman Legions, and it has become a popular marching tune. It is called the Battle Hymn of the Empire. Powerful in sound, the Hymn is about the judgement of the wicked at the end of time (Old Testament, Isaiah 63; New Testament, Rev. 19), and how Christ Jesus Himself with fight alongside Roman Legionaries in the End of Days, just as he today fights alongside the sons of Rome against the treacherous Greece and Anatole. Modest prestige bonus. Maybe some organization bonus?
+    -"Jews Flee to Greece"—With the passing of the Imperial Enabling Acts and the increased religious fevor amongst Roman citizens, an overwhelming percentage of the Empire's Jewish population has become uneasy under the New Roman Order and has subsequently fled to Greece, bringing with them their wealth and banking to Athens. (Rome loses some money. Greece is given that same amount. Sephardi Jew pops in Rome get moved to Athens. Build a stock exchange in Athens?)
+
+
+Some sort of event for Rome conquering Anatole and Athens. Like Sherman's March to the Sea. "The Roman March to Athens", for example, which does damage to the Attican regions population and might take away one liferating from Athens. Ditto one for Anatole and its capital. Can be recouped later.
+
+I think in order to balance some of these org/tactics gains, Rome should start off with a malus to them that finally gets fixed during the civil war. Then, with the reforms, Rome actually ends up slightly ahead in those departments.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Mattoni54 - https://www.reddit.com/r/paradoxplaza/comments/42etyg/has_anyone_done_a_full_run_ck2_to_hoi3/cza7vop/?context=3
+Various
+
+    -If Armenia takes over all of Asia Minor, the Roman Empire moves it's capital to Athens, and triggers an event (City of the World's Desire) for Armenia to conquer it, or deny it for a massive prestige loss. Other countries can get involved for or against the empire.
+
+    -Add Jerusalem cores in Palestine.
+
+    -In order to help Russia, the late 1800s, add in event in Smolensk called "The Peasant Revolt" for Smolensk in Ukraine, allowing Russia to assist them in exchange for removing cores, or help Smolensk to get some land off them - but they can refuse
+
+    -Spain get a mission to ally the Papal State on the eve of Italian invasion, and can possibly allow them to gain Lazio (and Malta?)
+
+    -Armenia get an event to take Syria + Jerusalem if they are a Secondary Power, and Persia has not westernised.
+
+-----Maybe extend France's ability to expand by giving them a mission to the Rhine, in exchange for a lot of infamy and war with Germany.
+
+-----Should Norway be a Great Power or secondary powe, and the year is past 1845, Norway gets an event to reclaim Vestland for infamy, or to settle an alliance (the Vestland question)
+
+-----If Alban falls, they can flee to South East Asia.
+
+-----If Armenia border the Magreb states, they get an event similar to the French one in vanilla 1840's, where they can try to overthrow the state.
+
+-----Should Armenia conquer/sphere Constantinople, Jerusalem, Mecca, and Tunis, they can become the Caliphate of Rum, and reduce Byzantium to "Greece"
+
+-----French genocide policies for the Bretons, Picard and Occitan pops (or a similar infamous assimilation policy)
+
+-----Westernised China could get a Quest for Fusang, causing tensions between them and the holders of RL californian provinces.
+
+-----Allow Austria to challenge German hegemony
+
+-----Allow Francia to form - if they are sphereing/puppetting/owning Wallonia, the French states, Lorraine, Trier, (the other rhine states) and Brabante, they can take a "Form the Empire of the Franks", declaring war on both Germany and Aquitania, but annexing these lands.
+
+-----If a nation with a capital in Europe owns land in America, after roughly 15 years, it will have a Quest for Independence event, forming the United States of America as long as it does not already exist.
+
+    -Event chain with Catholics moving into Byzantium after armenian persecution, and, in 1866, a civil war could erupt in Asia Minor and the Balkans.
+
+---------------------------------------------------------------------------------------------------------------------
+
+Athemos - https://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-37#post-23067397
+Maghreb
+
+-A civilized and strong enough Maghreb should be able to get cores on the Sahara down to the borders of modern Algeria and Lybia and maybe down to Mauretania with Nationalism and Imperialism
+-It should start with more reforms unlocked or have some decisions to gain research points or modifiers, maybe It could sell a port to Hispania in exchange for bonuses.
+-Doing so could start an event chain that ends with Tunisia and Tripoli revolting and Cyrenaica becoming independent, or something along those lines. It could add some conflict and give us the option of annexing Cyrenaica.
+-One final thing could be giving the option for fascist Maghreb to annex some of the islands of the western Mediterranean. After all, they have a strong tradition of resisting Barbary raids, and conquering them could make for some great symbolic victories for a fascist regime. 

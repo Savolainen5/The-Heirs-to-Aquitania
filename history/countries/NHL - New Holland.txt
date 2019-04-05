@@ -24,6 +24,8 @@ liberal = 13
 anarcho_liberal = 0
 }
 
+set_country_flag = new_world_nation
+
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed

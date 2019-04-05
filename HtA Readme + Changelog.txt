@@ -102,6 +102,8 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - Added some Sephardic POPs to Aquitania and Ashkenazi to SOME of France. Needs more - ALWAYS
 - Transcaucasia formation decisions are only available when Railroading is off
 - Armenia will move its capital to Erivan when it loses Yerzenka
+- Tweaked POP migration a bit, taking inspiration from HPM
+- Added a flag for New World countries which helps with the above (and an event to assign it if it's not there from the beginning)
 - Lots more tweaks
 
 *Bugfixes*
