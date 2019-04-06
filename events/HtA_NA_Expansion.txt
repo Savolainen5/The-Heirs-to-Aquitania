@@ -1,11 +1,11 @@
 #########################################################
-#														#
-#      		North American Events						#
-#														#
+#							#
+#      	North American colonisation Events		#
+#							#
 #########################################################
 
 
-
+#Skamisc - The order goes bottom to top
 country_event = {
 	id = 97091
 	title = "EVTNAME97091" #Settling the Interior SKM
@@ -72,7 +72,7 @@ country_event = {
 				29 = { empty = yes }
 				28 = { owned_by = THIS }
 			}
-			29 = { secede_province = THIS }			#Soitaabe
+			29 = { secede_province = THIS }	#Soitaabe
 			set_country_flag = colonisation_finished
 		}
 		random_owned = {
@@ -92,7 +92,7 @@ country_event = {
 				28 = { empty = yes }
 				21 = { owned_by = THIS }
 			}
-			28 = { secede_province = THIS }
+			28 = { secede_province = THIS } #Dunente
 		}
 		random_owned = {
 			limit = {
@@ -110,7 +110,7 @@ country_event = {
 				21 = { empty = yes }
 				18 = { owned_by = THIS }
 			}
-			21 = { secede_province = THIS }
+			21 = { secede_province = THIS } #Kutene
 		}
 		random_owned = {
 			limit = {
@@ -127,7 +127,7 @@ country_event = {
 				18 = { empty = yes }
 				17 = { owned_by = THIS }
 			}
-			18 = { secede_province = THIS }
+			18 = { secede_province = THIS } #Unjega
 		}
 		random_owned = {
 			limit = {
@@ -143,7 +143,7 @@ country_event = {
 				17 = { empty = yes }
 				116 = { owned_by = THIS }
 			}
-			17 = { secede_province = THIS }
+			17 = { secede_province = THIS } #Marsburt
 		}
 		random_owned = {
 			limit = {
@@ -158,7 +158,7 @@ country_event = {
 				116 = { empty = yes }
 				114 = { owned_by = THIS }
 			}
-			116 = { secede_province = THIS }
+			116 = { secede_province = THIS } #Ritryne
 		}
 		random_owned = {
 			limit = {
@@ -172,7 +172,7 @@ country_event = {
 				111 = { empty = yes }
 				113 = { owned_by = THIS }
 			}
-			111 = { secede_province = THIS }
+			111 = { secede_province = THIS } #Scoscona
 		}
 		random_owned = {
 			limit = {
@@ -185,7 +185,7 @@ country_event = {
 				113 = { empty = yes }
 				114 = { owned_by = THIS }
 			}
-			113 = { secede_province = THIS }
+			113 = { secede_province = THIS } #Esidekarsi
 		}
 		random_owned = {
 			limit = {
@@ -197,7 +197,7 @@ country_event = {
 				114 = { empty = yes }
 				93 = { owned_by = THIS }
 			}
-			114 = { secede_province = THIS }
+			114 = { secede_province = THIS } #Gronof
 		}
 		random_owned = {
 			limit = {
@@ -247,6 +247,7 @@ country_event = {
 	}
 }
 
+#califiana - order goes bottom to top
 country_event = {
 	id = 97092
 	title = "EVTNAME97091" #Settling the Interior CLF
@@ -312,7 +313,7 @@ country_event = {
 				107 = { empty = yes }
 				108 = { owned_by = THIS }
 			}
-			107 = { secede_province = THIS }			#Estribacion
+			107 = { secede_province = THIS } #Estribacion
 			set_country_flag = colonisation_finished
 		}
 		random_owned = {
@@ -329,7 +330,7 @@ country_event = {
 				108 = { empty = yes }
 				99 = { owned_by = THIS }
 			}
-			108 = { secede_province = THIS }
+			108 = { secede_province = THIS } #Gran Vista
 		}
 		random_owned = {
 			limit = {
@@ -344,7 +345,7 @@ country_event = {
 				97 = { empty = yes }
 				98 = { owned_by = THIS }
 			}
-			97 = { secede_province = THIS }
+			97 = { secede_province = THIS } #Salinas
 		}
 		random_owned = {
 			limit = {
@@ -358,7 +359,7 @@ country_event = {
 				98 = { empty = yes }
 				94 = { owned_by = THIS }
 			}
-			98 = { secede_province = THIS }				#Ponderosas
+			98 = { secede_province = THIS }	#Ponderosas
 		}
 		random_owned = {
 			limit = {
@@ -371,7 +372,7 @@ country_event = {
 				94 = { empty = yes }
 				104 = { owned_by = THIS }
 			}
-			94 = { secede_province = THIS }				#Daon
+			94 = { secede_province = THIS }	#Daon
 		}
 		random_owned = {
 			limit = {
@@ -383,7 +384,7 @@ country_event = {
 				104 = { empty = yes }
 				99 = { owned_by = THIS }
 			}
-			104 = { secede_province = THIS }			#Cabrera
+			104 = { secede_province = THIS } #Cabrera
 		}
 		random_owned = {
 			limit = {
@@ -394,7 +395,7 @@ country_event = {
 				99 = { empty = yes }
 				95 = { owned_by = THIS }
 			}
-			99 = { secede_province = THIS }				#San Esteban
+			99 = { secede_province = THIS }	#San Esteban
 		}
 		random_owned = {
 			limit = {
@@ -404,7 +405,7 @@ country_event = {
 				95 = { empty = yes }
 				96 = { owned_by = THIS }
 			}
-			95 = { secede_province = THIS }				#Los Planos
+			95 = { secede_province = THIS }	#Los Planos
 		}
 		random_owned = {
 			limit = {
@@ -413,7 +414,7 @@ country_event = {
 				96 = { empty = yes }
 				101 = { owned_by = THIS }
 				}
-			96 = { secede_province = THIS }				#Las Vegas
+			96 = { secede_province = THIS }	#Las Vegas
 		}
 		random_owned = {
 			limit = {
@@ -421,18 +422,19 @@ country_event = {
 				101 = { empty = yes }
 				88 = { owned_by = THIS }
 			}
-			101 = { secede_province = THIS }			#Los Richuelos
+			101 = { secede_province = THIS } #Los Richuelos
 		}
 		random_owned = {
 			limit = {
 				88 = { empty = yes }
 				100 = { owned_by = THIS }
 			}
-			88 = { secede_province = THIS }				#Fortaleza Alta
+			88 = { secede_province = THIS }	#Fortaleza Alta
 		}
 	}
 }
 
+#Ginnaecer - Order goes bottom to top
 country_event = {
 	id = 97093
 	title = "EVTNAME97091" #Settling the Interior GNC
@@ -482,7 +484,7 @@ country_event = {
 				125 = { empty = yes }
 				106 = { owned_by = THIS }
 			}
-			125 = { secede_province = THIS }			#Oklala
+			125 = { secede_province = THIS } #Oklala
 			set_country_flag = colonisation_finished
 		}
 		random_owned = {
@@ -495,7 +497,7 @@ country_event = {
 				106 = { empty = yes }
 				128 = { owned_by = THIS }
 			}
-			106 = { secede_province = THIS }			#Somercester
+			106 = { secede_province = THIS } #Somercester
 		}
 		random_owned = {
 			limit = {
@@ -506,7 +508,7 @@ country_event = {
 				128 = { empty = yes }
 				109 = { owned_by = THIS }
 			}
-			128 = { secede_province = THIS }
+			128 = { secede_province = THIS } #Wishitah
 		}
 		random_owned = {
 			limit = {
@@ -516,7 +518,7 @@ country_event = {
 				109 = { empty = yes }
 				103 = { owned_by = THIS }
 			}
-			109 = { secede_province = THIS }
+			109 = { secede_province = THIS } #Rendalsham
 		}
 		random_owned = {
 			limit = {
@@ -525,7 +527,7 @@ country_event = {
 				103 = { empty = yes }
 				129 = { owned_by = THIS }
 			}
-			103 = { secede_province = THIS }
+			103 = { secede_province = THIS } #Nerweld
 		}
 		random_owned = {
 			limit = {
@@ -533,18 +535,19 @@ country_event = {
 				129 = { empty = yes }
 				135 = { owned_by = THIS }
 			}
-			129 = { secede_province = THIS }
+			129 = { secede_province = THIS } #cadaudacho
 		}
 		random_owned = {
 			limit = {
 				135 = { empty = yes }
 				105 = { owned_by = THIS }
 			}
-			135 = { secede_province = THIS }
+			135 = { secede_province = THIS } #Kitsai
 		}
 	}
 }
 
+#Margaria - order goes top to bottom
 country_event = {
 	id = 97094
 	title = "EVTNAME97091" #Settling the Interior MRG
@@ -594,7 +597,7 @@ country_event = {
 				149 = { empty = yes }
 				145 = { owned_by = THIS }
 			}
-			147 = { secede_province = THIS }			#Sinnes #1
+			147 = { secede_province = THIS } #Sinnes #1
 		}
 		random_owned = {
 			limit = {
@@ -607,7 +610,7 @@ country_event = {
 				149 = { empty = yes }
 				147 = { owned_by = THIS }
 			}
-			148 = { secede_province = THIS }			#Orje #2
+			148 = { secede_province = THIS } #Orje #2
 		}
 		random_owned = {
 			limit = {
@@ -619,7 +622,7 @@ country_event = {
 				150 = { empty = yes }
 				149 = { empty = yes }
 			}
-			146 = { secede_province = THIS }			#Kaokja #3
+			146 = { secede_province = THIS } #Kaokja #3
 		}
 		random_owned = {
 			limit = {
@@ -630,7 +633,7 @@ country_event = {
 				151 = { empty = yes }
 				150 = { empty = yes }
 			}
-			149 = { secede_province = THIS }			#Osake #4
+			149 = { secede_province = THIS } #Osake #4
 		}
 		random_owned = {
 			limit = {
@@ -640,7 +643,7 @@ country_event = {
 				151 = { empty = yes }
 				150 = { empty = yes }
 			}
-			152 = { secede_province = THIS }			#Osgalus #5
+			152 = { secede_province = THIS } #Osgalus #5
 		}
 		random_owned = {
 			limit = {
@@ -649,7 +652,7 @@ country_event = {
 				152 = { owned_by = THIS }
 				151 = { empty = yes }
 			}
-			150 = { secede_province = THIS }			#Kansej #6
+			150 = { secede_province = THIS } #Kansej #6
 		}
 		random_owned = {
 			limit = {
@@ -657,16 +660,17 @@ country_event = {
 				151 = { empty = yes }
 				150 = { owned_by = THIS }
 			}
-			151 = { secede_province = THIS }			#Moingona #7
+			151 = { secede_province = THIS } #Moingona #7
 			set_country_flag = colonisation_finished
 		}
 	}
 }
+
 country_event = {
 	id = 97095
 	title = "EVTNAME97091" #Settling the Interior SHC
 	desc = "EVTDESC97095"
-	picture = "pioneer_wagons"
+	picture = "Sioux"
 	
 	trigger = {
 		tag = SHC
@@ -1243,7 +1247,7 @@ country_event = {
 					8 = { owned_by = THIS }
 				}
 			}
-			owner = { prestige = -3 }
+			owner = { prestige = 1 }
 			10 = { secede_province = THIS }
 		}
 		random_owned = {
@@ -1261,7 +1265,7 @@ country_event = {
 					2596 = { owned_by = THIS }
 				}
 			}
-			owner = { prestige = -3 }
+			owner = { prestige = 1 }
 			12 = { secede_province = THIS }
 		}
 		random_owned = {
@@ -1278,7 +1282,7 @@ country_event = {
 					2596 = { owned_by = THIS }
 				}
 			}
-			owner = { prestige = -3 }
+			owner = { prestige = 1 }
 			11 = { secede_province = THIS }
 		}
 		random_owned = {
@@ -1294,7 +1298,7 @@ country_event = {
 					11 = { owned_by = THIS }
 				}
 			}
-			owner = { prestige = -3 }
+			owner = { prestige = 1 }
 			9 = { secede_province = THIS }
 		}
 		random_owned = {
@@ -1309,7 +1313,7 @@ country_event = {
 					8 = { owned_by = THIS }
 				}
 			}
-			owner = { prestige = -3 }
+			owner = { prestige = 1 }
 			2598 = { secede_province = THIS }
 		}
 		random_owned = {
@@ -1323,7 +1327,7 @@ country_event = {
 					43 = { owned_by = THIS }
 				}
 			}
-			owner = { prestige = -5 }
+			owner = { prestige = 1 }
 			2596 = { secede_province = THIS }
 		}
 		random_owned = {
@@ -1336,7 +1340,7 @@ country_event = {
 					2629 = { owned_by = THIS }
 				}
 			}
-			owner = { prestige = -3 }
+			owner = { prestige = 1 }
 			8 = { secede_province = THIS }
 		}
 		random_owned = {
@@ -1348,7 +1352,7 @@ country_event = {
 					8 = { owned_by = THIS }
 				}
 			}
-			owner = { prestige = -3 }
+			owner = { prestige = 1 }
 			7 = { secede_province = THIS }
 		}
 		random_owned = {
@@ -1356,7 +1360,7 @@ country_event = {
 				6 = { empty = yes }
 				17 = { owned_by = THIS }
 			}
-			owner = { prestige = -5 }
+			owner = { prestige = 1 }
 			6 = { secede_province = THIS }
 		}
 	}

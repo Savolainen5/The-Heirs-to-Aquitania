@@ -1,6 +1,6 @@
 political_decisions = {
 	colonise_rouge_ues = {
-		picture = "wagons"
+		picture = "trail_of_tears"
 		potential = {
 			tag = QUE
 			NOT = {
@@ -32,12 +32,7 @@ political_decisions = {
 		picture = "settle_north"
 		potential = {
 			tag = QUE
-			NOT = {
-				owns = 2596
-				has_country_flag = colonise_ters_dauror
-			}
 			2596 = { empty = yes }
-			has_country_flag = colonies_rouge_ues
 		}
 		
 		allow = {
@@ -69,10 +64,7 @@ political_decisions = {
 		picture = "wagons"
 		potential = {
 			tag = SKM
-			NOT = {
-				owns = 26
-				has_country_flag = colonise_drytsiben
-			}
+			26 = { empty = yes }
 		}
 		
 		allow = {
@@ -105,10 +97,6 @@ political_decisions = {
 		picture = "settle_north"
 		potential = {
 			tag = SKM
-			NOT = {
-				owns = 7
-				has_country_flag = colonise_jukuna
-			}
 			7 = { empty = yes }			
 		}
 		
@@ -137,6 +125,7 @@ political_decisions = {
 		picture = "wagons"
 		potential = {
 			capital_scope = { continent = north_america }
+			civilized = yes
 			126 = { empty = yes }
 			127 = { empty = yes }
 			123 = { empty = yes }
@@ -156,13 +145,22 @@ political_decisions = {
 					province_id = 154
 				}
 			}
-			year = 1843
-			has_country_flag = colonisation_finished
 		}
 		
 		allow = {
 			money = 4000
 			medicine = 1
+			OR = {
+				AND = {
+					tag = MRG
+					owns = 147
+				}
+				tag = SHC
+				tag = GNC
+				tag = QUE
+				tag = SKM
+				tag = CLF
+			}
 		}
 		
 		effect = {
@@ -184,38 +182,69 @@ political_decisions = {
 	}
 
 	colonise_necen = {
+		picture = "trail_of_tears"
 		potential = {
-			capital_scope = { continent = north_america }
-			has_country_flag = colonisation_finished
-			any_owned_province = {
-				has_empty_adjacent_province = yes
+			civilized = yes
+			OR = {
+				tag = SKM
+				tag = GNC
+				tag = SHC
+				AND = {
+					tag = QUE
+					owns = 117
+				}
+				AND = {
+					tag = CLF
+					owns = 98
+				}
+				AND = {
+					tag = MRG
+					owns = 123
+				}
 			}
 			112 = { empty = yes }
 		}
 		
 		allow = {
 			OR = {
-				110 = {
-					any_neighbor_province = {
-						owned_by = THIS
+				AND = { #Skamisc
+					tag = SKM
+					owns = 116
+					owns = 111
+				}
+				AND = { #Ginnaecer
+					tag = GNC
+					owns = 106
+					owns = 125
+				}
+				AND = { #Lucky Dabimon
+					tag = QUE
+					owns = 120
+					owns = 121
+				}
+				AND = {
+					tag = CLF
+					OR = {
+						owns = 111
+						owns = 107
+					}
+					OR = {
+						owns = 107
+						owns = 106
 					}
 				}
-				112 = {
-					any_neighbor_province = {
-						owned_by = THIS
-					}
+				AND = {
+					tag = MRG
+					owns = 125
+					owns = 123
 				}
-				122 = {
-					any_neighbor_province = {
-						owned_by = THIS
-					}
-				}
-				124 = {
-					any_neighbor_province = {
-						owned_by = THIS
-					}
+				AND = {
+					tag = SHC
+					owns = 120
+					owns = 123
 				}
 			}
+			money = 5000
 		}
 		
 		effect = {
@@ -224,7 +253,61 @@ political_decisions = {
 			122 = { secede_province = THIS add_core = THIS }
 			124 = { secede_province = THIS add_core = THIS }
 			prestige = 1
+			money = -5000
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { money = 5500 }
+			}
 		}
 	}
-					
+
+	colonise_newea = {
+		picture = "wagons"
+		potential = {
+			OR = {
+				tag = SKM
+				tag = QUE
+			}
+			35 = { empty = yes }
+		}
+		
+		allow = {
+			OR = {
+				AND = { #Skamisc with luck
+					owns = 29
+					owns = 116
+				}
+				AND = { #Dabimon with money
+					owns = 30
+					owns = 118
+				}
+				AND = { #Dabimon with no money
+					owns = 118
+					owns = 117
+				}
+			}
+			money = 5000
+		}
+		
+		effect = {
+			35 = { secede_province = THIS add_core = THIS }
+			115 = { secede_province = THIS add_core = THIS }
+			119 = { secede_province = THIS add_core = THIS }
+			121 = { secede_province = THIS add_core = THIS }
+			prestige = 1
+			money = -5000
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { money = 5500 }
+			}
+		}
+	}			
 }

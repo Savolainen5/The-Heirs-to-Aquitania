@@ -393,8 +393,7 @@ migration_chance = {
 }
 
 #general colonial migration mtth, same for all pops
-colonialmigration_chance = 
-{
+colonialmigration_chance = {
 	factor = 0.01
 	
 	modifier = {
@@ -816,6 +815,7 @@ assimilation_chance = {
 #general conversion mtth, same for all pops
 conversion_chance = {
 	factor = 0.1
+	
 	group = {
 		modifier = {
 			factor = 0.2

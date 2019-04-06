@@ -1,5 +1,6 @@
 political_decisions = {
 	protect_iroquois = {
+		picture = "native_man"
 		potential = {
 			tag = SHC
 			exists = IRO
@@ -26,6 +27,7 @@ political_decisions = {
 	}
 	
 	protect_cherokee = {
+		picture = "native_man"
 		potential = {
 			tag = SHC
 			exists = CHE

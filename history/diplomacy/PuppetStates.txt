@@ -105,7 +105,7 @@ vassal = {
 }
 
 # Hispania-Bengal
-vassal = {
+substate = {
 	first = HIS
 	second = BNG
 	start_date = 1782.1.1

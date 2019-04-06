@@ -2768,63 +2768,33 @@
 #Tahlequah (12000/3000 POPS)
 130 = {
 	aristocrats = {
-		culture = cherokee
-		religion = animist
-		size = 25
-	}
-
-	clergymen = {
-		culture = cherokee
-		religion = animist
-		size = 50
-	}
-
-	artisans = {
-		culture = cherokee
-		religion = animist
-		size = 100
-	}
-
-	soldiers = {
-		culture = cherokee
-		religion = animist
-		size = 25
-	}
-
-	farmers = {
-		culture = cherokee
-		religion = animist
-		size = 1600
-	}
-
-	aristocrats = {
 		culture = native_american_minor
 		religion = animist
-		size = 10
+		size = 35
 	}
 
 	clergymen = {
 		culture = native_american_minor
 		religion = animist
-		size = 25
+		size = 75
 	}
 
 	artisans = {
 		culture = native_american_minor
 		religion = animist
-		size = 50
+		size = 150
 	}
 
 	soldiers = {
 		culture = native_american_minor
 		religion = animist
-		size = 15
+		size = 55
 	}
 
 	farmers = {
 		culture = native_american_minor
 		religion = animist
-		size = 900
+		size = 2800
 	}
 }
 #Okmulgee (8000/2000 POPS)
@@ -3814,10 +3784,16 @@
 }
 #Fayetteville (16000/4000 POPS)
 145 = {
+	aristocrats = {
+		culture = margarian
+		religion = protestant
+		size = 5
+	}
+
 	clergymen = {
 		culture = margarian
 		religion = protestant
-		size = 35
+		size = 15
 	}
 
 	artisans = {
@@ -3835,25 +3811,25 @@
 	farmers = {
 		culture = margarian
 		religion = protestant
-		size = 2000
+		size = 1300
 	}
 	clergymen = {
-		culture = cherokee
+		culture = native_american_minor
 		religion = animist
 		size = 35
 	}
 	artisans = {
-		culture = cherokee
+		culture = native_american_minor
 		religion = animist
 		size = 100
 	}
 	soldiers = {
-		culture = cherokee
+		culture = native_american_minor
 		religion = animist
 		size = 25
 	}
 	farmers = {
-		culture = cherokee
+		culture = native_american_minor
 		religion = animist
 		size = 2000
 	}

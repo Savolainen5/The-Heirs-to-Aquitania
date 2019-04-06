@@ -78,6 +78,7 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - Added a decision for Margaria/Ginnaecer (or conceivably some other country) to expand into Oai (typically the last state to be colonised in NA)
 - Added an event for any NA country which has borders on a coreless empty province to get a random event to own that province. SAVS THINKS THIS SHOULD BE MADE TO BE A REAL cOLONY PROVINcE, NOT A STATE
 - Added a decision to annex Silesia after it has been puppeted by the Secure Silesia decision
+- Added decisions to colonise the oft-empty states of Newea and Necen in NA
 - Forming Bohemia-Hungary now removes Bohemia cores
 - Tweaked/added decisions for Naples/Italy to better deal with Tuscany and getting cores on the Padan Union, thanks to Spudgun
 - Tweak/fix for decision for forming SGF so that it works
@@ -102,6 +103,7 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - Added some Sephardic POPs to Aquitania and Ashkenazi to SOME of France. Needs more - ALWAYS
 - Transcaucasia formation decisions are only available when Railroading is off
 - Armenia will move its capital to Erivan when it loses Yerzenka
+- Made lots of vassals at game start into substates so that the Acquire Substate State cb can be used against their overlords
 - Tweaked POP migration a bit, taking inspiration from HPM
 - Added a flag for New World countries which helps with the above (and an event to assign it if it's not there from the beginning)
 - Lots more tweaks
