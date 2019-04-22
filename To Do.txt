@@ -2,7 +2,6 @@ To Do, v0.36
 
 Events:
 
-- Russia and Smolensk go at it, with Poland helping one or the other
 - Springtime of Nations should hit Roman Empire harder?
 	- Remove cores from GRE and ANA when they're released as vassals so impatient players can't just release and annex them
 - French popular radicalism in Paris that begins uniting. Not really necessary now that France is buffed. Pan-Nationalists are strong, too
@@ -21,6 +20,7 @@ Events:
 - Some kind of country/nationalism for Solelha in Florida
 - Qin civil war of some kind?
 - Dissolution of Maghreb
+- Competition for colonies in SEA, especially between NAP and HIS in the Malay peninsula
 
 Decisions:
 
@@ -44,6 +44,7 @@ Decisions:
 - Update gtfo_HtA with new tags
 - check NationalUnification to see if the Arab Union needs to have the relevant culture group excluded in order to be able to form
 - A union of Margaria and Vestland
+- A GP with power in the area can get Hong Kong somehow if they aren't the one that got Macao
 
 POPs:
 

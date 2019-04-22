@@ -3,24 +3,28 @@ SML = {
 	level = 0
 }
 
+POL = {
+	value = 85
+}
+
 army = {
 	name = "Army Corps of the Guard"
 	location = 1008
 	regiment = {
 		name= "1.1-ya Gvardeiskaya Pekhotnaya Diviziya"
-		type = infantry
+		type = guard
 		home = 1008
 	}
 
 	regiment = {
 		name= "2.1-ya Gvardeiskaya Pekhotnaya Diviziya"
-		type = infantry
+		type = guard
 		home = 1020
 	}
 
 	regiment = {
 		name= "3.1-ya Gvardeiskaya Pekhotnaya Diviziya"
-		type = infantry
+		type = guard
 		home = 1026
 	}
 
@@ -89,6 +93,91 @@ army = {
 	}
 }
 
+army = {
+	name = "1st Line Corps"
+	location = 1026
+	regiment = {
+		name = "1.1-ya Pekhotnaya Divisiya"
+		type = infantry
+		home = 989
+	}
+	
+	regiment = {
+		name = "2.1-ya Pekhotnaya Divisiya"
+		type = infantry
+		home = 1001
+	}
+	
+	regiment = {
+		name = "3.1-ya Pekhotnaya Divisiya"
+		type = infantry
+		home = 1008
+	}
+	
+	regiment = {
+		name = "1.2-ya Pekhotnaya Divisiya"
+		type = infantry
+		home = 1030
+	}
+	
+	regiment = {
+		name = "2.2-ya Pekhotnaya Divisiya"
+		type = infantry
+		home = 998
+	}
+	
+	regiment = {
+		name = "3.2-ya Pekhotnaya Divisiya"
+		type = infantry
+		home = 1026
+	}
+	
+	regiment = {
+		name= "1.1-ya Artilleriskaya Diviziya"
+		type = artillery
+		home = 1032
+	}
+
+	regiment = {
+		name= "2.1-ya Artilleriskaya Diviziya"
+		type = artillery
+		home = 991
+	}
+
+	regiment = {
+		name= "3.1-ya Artilleriskaya Diviziya"
+		type = artillery
+		home = 1023
+	}
+}
+
+army = {
+	name = "1. Cavalry Corps"
+	location = 999
+	regiment = {
+		name= "1.1-ya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1001
+	}
+
+	regiment = {
+		name= "2.1-ya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1020
+	}
+
+	regiment = {
+		name= "3.1-ya Kavaleriiskaya Diviziya"
+		type = cuirassier
+		home = 1007
+	}
+
+	regiment = {
+		name= "4.1-ya Kavaleriiskaya Diviziya"
+		type = cuirassier
+		home = 1008
+	}
+}
 
 navy = {
 	name = "Imperial Fleet"

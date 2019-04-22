@@ -1,3 +1,5 @@
+POL = { value = 80 }
+
 army = {
 	name = "Lietuvos Kariuomene"
 	location = 360

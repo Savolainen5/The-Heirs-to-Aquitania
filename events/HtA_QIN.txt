@@ -8,11 +8,11 @@ country_event = {
 	
 	trigger = {
 		tag = GXI 
-		year = 1839
+		year = 1838
 	}
 	
 	mean_time_to_happen = {
-		months = 6
+		months = 2
 	}
 	
 	option = {
@@ -21,34 +21,26 @@ country_event = {
 		economic_reform = yes_admin_reform
 		economic_reform = yes_land_reform
 		random_country = {
-			limit = { 
+			limit = {
 				OR = {
-					is_greater_power = yes
 					AND = {
 						tag = SCO
 						SCO = { any_owned_province = { continent = asia } }
 					}
 					AND = {
-						tag = NPL
+						tag = NET
 						NPL = { any_owned_province = { continent = asia } }
 					}
 					AND = {
-						tag = IRE
-						IRE = { any_owned_province = { continent = asia } }
+						tag = HIS
+						HIS = { any_owned_province = { continent = asia } }
+					}
+					AND = {
+						tag = AEN
+						AEN = { any_owned_province = { continent = asia } }
 					}
 				}
 				num_of_ports = 1
-				NOT = { tag = RUS }
-				NOT = { tag = SML }
-				NOT = { tag = POL }
-				NOT = { tag = FIN }
-				NOT = { tag = BYZ }
-				any_owned_province = {
-					limit = {
-						is_capital = yes
-					}
-						continent = europe
-				}
 			}
 			country_event = 53001
 		}
@@ -68,7 +60,24 @@ country_event = {
 		economic_reform = yes_finance_reform
 		random_country = {
 			limit = { 
-				is_greater_power = yes 
+				OR = {
+					AND = {
+						tag = SCO
+						SCO = { any_owned_province = { continent = asia } }
+					}
+					AND = {
+						tag = NET
+						NPL = { any_owned_province = { continent = asia } }
+					}
+					AND = {
+						tag = HIS
+						HIS = { any_owned_province = { continent = asia } }
+					}
+					AND = {
+						tag = AEN
+						AEN = { any_owned_province = { continent = asia } }
+					}
+				}
 				num_of_ports = 1
 			}
 			country_event = 53001
@@ -89,7 +98,28 @@ country_event = {
 		military_reform = yes_foreign_training
 		random_country = {
 			limit = {
-				is_greater_power = yes 
+				OR = {
+					AND = {
+						tag = SCO
+						SCO = { any_owned_province = { continent = asia } }
+					}
+					AND = {
+						tag = NET
+						NPL = { any_owned_province = { continent = asia } }
+					}
+					AND = {
+						tag = HIS
+						HIS = { any_owned_province = { continent = asia } }
+					}
+					AND = {
+						tag = AEN
+						AEN = { any_owned_province = { continent = asia } }
+					}
+					AND = {
+						tag = NPL
+						NPL = { any_owned_province = { continent = asia } }
+					}
+				}
 				num_of_ports = 1
 			}
 			country_event = 53001

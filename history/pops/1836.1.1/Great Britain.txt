@@ -220,8 +220,7 @@
 	soldiers = {
 		culture = scots
 		religion = protestant
-		size= 1100
-
+		size = 1100
 	}
 
 	farmers = {
@@ -336,6 +335,12 @@
 		religion = protestant
 		size = 111800
 	}
+	
+	soldiers = {
+		culture = scots
+		religion = protestant
+		size = 2600
+	}
 
 	farmers = {
 		culture = aenglisc
@@ -345,7 +350,7 @@
 
 }
 # Wales Region : 970000
-#Cardiff (380000/95000 POPS)
+#Cardiff (380000/95000 POPS) caerdydd
 273 = {
 	aristocrats = {
 		culture = cymry
@@ -398,8 +403,7 @@
 	soldiers = {
 		culture = cymry
 		religion = protestant
-		size= 1100
-
+		size = 1200
 	}
 
 	labourers = {
@@ -408,7 +412,7 @@
 		size = 88000
 	}
 }
-#Cardigan (168000/42000 POPS)
+#Cardigan (168000/42000 POPS) Aberteifi
 274 = {
 	aristocrats = {
 		culture = cymry
@@ -425,8 +429,7 @@
 	soldiers = {
 		culture = cymry
 		religion = protestant
-		size= 1100
-
+		size = 1100
 	}
 
 	artisans = {
@@ -458,8 +461,7 @@
 	soldiers = {
 		culture = cymry
 		religion = protestant
-		size= 500
-
+		size = 500
 	}
 
 	artisans = {
@@ -474,7 +476,7 @@
 		size = 42250
 	}
 }
-#Holyhead (240000/60000 POPS)
+#Holyhead (240000/60000 POPS) Bangor
 276 = {
 	aristocrats = {
 		culture = cymry
@@ -491,14 +493,7 @@
 	soldiers = {
 		culture = cymry
 		religion = protestant
-		size= 750
-
-	}
-
-	clerks = {
-		culture = cymry
-		religion = protestant
-		size = 150
+		size = 750
 	}
 
 	craftsmen = {
@@ -521,7 +516,7 @@
 
 }
 #Lancashire Region : 1896000
-#Liverpool (936000/234000 POPS)
+#Liverpool (936000/234000 POPS) Marsebur
 277 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -556,34 +551,28 @@
 	clerks = {
 		culture = aenglisc 
 		religion = catholic
-		size = 175
+		size = 275
 	}
 
 	craftsmen = {
 		culture = aenglisc 
 		religion = catholic
-		size = 3000
+		size = 11000
 	}
 
 	artisans = {
 		culture = aenglisc 
 		religion = catholic
-		size = 11000
-	}
-	
-	artisans = {
-		culture = aenglisc 
-		religion = catholic
-		size = 2600
+		size = 13600
 	}
 
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 3000
+		size = 3000
 	}
 
-	labourers = {
+	farmers = {
 		culture = aenglisc 
 		religion = catholic
 		size = 158850
@@ -613,7 +602,7 @@
 		size = 785
 	}
 }
-#Manchester (744000/186000 POPS)
+#Manchester (744000/186000 POPS) Selhford
 278 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -624,37 +613,25 @@
 	clergymen = {
 		culture = aenglisc 
 		religion = catholic
-		size = 2100
-	}
-
-	clerks = {
-		culture = aenglisc 
-		religion = catholic
-		size = 115
-	}
-
-	craftsmen = {
-		culture = aenglisc 
-		religion = catholic
-		size = 8250
+		size = 1100
 	}
 
 	artisans = {
 		culture = aenglisc 
 		religion = catholic
-		size = 11000
+		size = 4250
 	}
-	
-	artisans = {
+
+	labourers = {
 		culture = aenglisc 
 		religion = catholic
-		size = 900
+		size = 11900
 	}
 
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 3000
+		size = 2000
 	}
 
 	artisans = {
@@ -669,7 +646,7 @@
 		size = 2075
 	}
 }
-#Carlisle (216000/54000 POPS)
+#Carlisle (216000/54000 POPS) carves
 279 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -692,7 +669,7 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 500
+		size = 500
 	}
 
 	farmers = {
@@ -709,7 +686,7 @@
 
 }
 #Yorkshire-Northumbria Region : 2190000
-#Newcastle-upon-Tyne (552000/138000 POPS)
+#Newcastle-upon-Tyne (552000/138000 POPS)	Monkceastre
 280 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -762,7 +739,7 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 500
+		size = 500
 	}
 
 	soldiers = {
@@ -783,7 +760,7 @@
 		size = 24000
 	}
 }
-#Hull (512000/128000 POPS)
+#Hull (512000/128000 POPS)	Wyk
 281 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -800,19 +777,13 @@
 	artisans = {
 		culture = aenglisc 
 		religion = catholic
-		size = 11000
-	}
-	
-	artisans = {
-		culture = aenglisc 
-		religion = catholic
-		size = 1300
+		size = 12300
 	}
 
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 1100
+		size = 1200
 	}
 
 	labourers = {
@@ -821,7 +792,7 @@
 		size = 104950
 	}
 }
-#Leeds (468000/117000 POPS)
+#Leeds (468000/117000 POPS)	Otonlea
 282 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -835,24 +806,16 @@
 		size = 625
 	}
 
-
 	artisans = {
 		culture = aenglisc 
 		religion = catholic
-		size = 11000
-	}
-	
-	artisans = {
-		culture = aenglisc 
-		religion = catholic
-		size = 750
+		size = 11750
 	}
 
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 1250
-
+		size = 1550
 	}
 
 	labourers = {
@@ -861,13 +824,13 @@
 		size = 92625
 	}
 
-	farmers = {
+	labourers = {
 		culture = scots
 		religion = protestant
 		size = 3000
 	}
 }
-#Sheffield (658000/164500 POPS)
+#Sheffield (658000/164500 POPS)		Dor
 283 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -902,20 +865,13 @@
 	artisans = {
 		culture = aenglisc 
 		religion = catholic
-		size = 11000
-	}
-	
-	artisans = {
-		culture = aenglisc 
-		religion = catholic
-		size = 750
+		size = 11750
 	}
 
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 1500
-
+		size = 2500
 	}
 
 	labourers = {
@@ -924,7 +880,7 @@
 		size = 122825
 	}
 
-	farmers = {
+	labourers = {
 		culture = scots
 		religion = protestant
 		size = 4000
@@ -932,12 +888,12 @@
 
 }
 #West Midlands Region : 1760000
-#Birmingham (644000/161000 POPS)
+#Birmingham (644000/161000 POPS)	Berminham
 284 = {
 	aristocrats = {
 		culture = aenglisc 
 		religion = catholic
-		size = 1350
+		size = 1650
 	}
 
 	officers = {
@@ -973,25 +929,19 @@
 	craftsmen = {
 		culture = aenglisc
 		religion = catholic
-		size = 1275
+		size = 4275
 	}
 
 	artisans = {
 		culture = aenglisc 
 		religion = catholic
-		size = 11000
-	}
-	
-	artisans = {
-		culture = aenglisc 
-		religion = catholic
-		size = 2000
+		size = 13000
 	}
 
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 3000
+		size = 3000
 	}
 
 	labourers = {
@@ -1000,13 +950,13 @@
 		size = 138900
 	}
 
-	farmers = {
+	labourers = {
 		culture = cymry
 		religion = catholic
 		size = 1100
 	}
 }
-#Chester (368000/92000 POPS)
+#Chester (368000/92000 POPS)	Legaces
 285 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -1029,20 +979,13 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 1100
-
-	}
-
-	labourers = {
-		culture = aenglisc 
-		religion = catholic
-		size = 82625
+		size = 1700
 	}
 
 	farmers = {
-		culture = aenglisc
+		culture = aenglisc 
 		religion = catholic
-		size = 1100
+		size = 82625
 	}
 
 	artisans = {
@@ -1056,7 +999,7 @@
 	aristocrats = {
 		culture = aenglisc 
 		religion = catholic
-		size = 500
+		size = 550
 	}
 
 	clergymen = {
@@ -1074,7 +1017,7 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 600
+		size = 600
 	}
 
 	labourers = {
@@ -1083,7 +1026,7 @@
 		size = 68875
 	}
 }
-#Coventry (432000/108000 POPS)
+#Coventry (432000/108000 POPS)		Rodhstadh
 287 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -1106,10 +1049,10 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 680
+		size = 1680
 	}
 
-	labourers = {
+	farmers = {
 		culture = aenglisc 
 		religion = catholic
 		size = 112000
@@ -1117,7 +1060,7 @@
 
 }
 #East Midlands Region : 1224000
-#Nottingham (484000/121000 POPS)
+#Nottingham (484000/121000 POPS)	Snotihham
 288 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -1158,8 +1101,7 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 1100
-
+		size = 1850
 	}
 
 	labourers = {
@@ -1167,14 +1109,8 @@
 		religion = catholic
 		size = 99700
 	}
-
-	farmers = {
-		culture = aenglisc
-		religion = catholic
-		size = 5000
-	}
 }
-#Leicester (404000/101000 POPS)
+#Leicester (404000/101000 POPS)		Ligocestre
 289 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -1197,22 +1133,21 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 400
-
+		size = 400
 	}
 
-	labourers = {
+	farmers = {
 		culture = aenglisc 
 		religion = catholic
 		size = 90375
 	}
 }
-#Lincoln (336000/84000 POPS)
+#Lincoln (336000/84000 POPS)	Romweldon
 290 = {
 	aristocrats = {
 		culture = aenglisc 
 		religion = catholic
-		size = 500
+		size = 550
 	}
 
 	clergymen = {
@@ -1230,7 +1165,7 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 300
+		size = 400
 	}
 
 	labourers = {
@@ -1241,12 +1176,12 @@
 
 }
 #East Anglia Region : 1260000
-#Cambridge (308000/77000 POPS)
+#Cambridge (308000/77000 POPS)	Grantabryc
 291 = {
 	aristocrats = {
 		culture = aenglisc 
 		religion = catholic
-		size = 500
+		size = 550
 	}
 
 	officers = {
@@ -1279,13 +1214,13 @@
 		size= 600
 	}
 
-	labourers = {
+	farmers = {
 		culture = aenglisc 
 		religion = catholic
 		size = 68500
 	}
 }
-#Ipswich (676000/169000 POPS)
+#Ipswich (676000/169000 POPS)	Gippelwyk
 292 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -1308,22 +1243,22 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 1500
+		size = 2500
 
 	}
 
-	labourers = {
+	farmers = {
 		culture = aenglisc 
 		religion = catholic
-		size = 156500
+		size = 126500
 	}
 }
-#Chelmsford (276000/69000 POPS)
+#Chelmsford (276000/69000 POPS)	celmersfort
 293 = {
 	aristocrats = {
 		culture = aenglisc 
 		religion = catholic
-		size = 500
+		size = 550
 	}
 
 	clergymen = {
@@ -1341,17 +1276,17 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 1500
+		size = 1500
 	}
 
-	labourers = {
+	farmers = {
 		culture = aenglisc 
 		religion = catholic
 		size = 57125
 	}
 }
 #Oxfordshire/Buckinghamshire Region : 616000
-#294 : Oxford (304000/76000 POPS)
+#294 : Oxford (304000/76000 POPS)				Netford
 294 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -1386,7 +1321,7 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 1500
+		size = 1500
 	}
 
 	farmers = {
@@ -1395,7 +1330,7 @@
 		size = 66625
 	}
 }
-#St. Albans (312000/78000 POPS)
+#St. Albans (312000/78000 POPS)	Halg'Alban
 295 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -1418,8 +1353,7 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 500
-
+		size = 500
 	}
 
 	farmers = {
@@ -1430,7 +1364,7 @@
 
 }
 #Cornwall-Dorset Region : 2032000
-#Bristol (404000/101000 POPS)
+#Bristol (404000/101000 POPS)	Brycstow
 296 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -1471,7 +1405,7 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 600
+		size = 900
 	}
 
 	labourers = {
@@ -1480,13 +1414,13 @@
 		size = 63275
 	}
 
-	farmers = {
+	labourers = {
 		culture = cymry
 		religion = catholic
 		size = 2000
 	}
 }
-#Salisbury (408000/102000 POPS)
+#Salisbury (408000/102000 POPS)		Serobur
 297 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -1508,7 +1442,7 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 400
+		size = 750
 	}
 
 	labourers = {
@@ -1517,7 +1451,7 @@
 		size = 82375
 	}
 }
-#Bath (408000/102000 POPS)
+#Bath (408000/102000 POPS)		Acmansbet
 298 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -1561,19 +1495,19 @@
 		size= 400
 	}
 
-	labourers = {
+	farmers = {
 		culture = aenglisc 
 		religion = catholic
 		size = 40625
 	}
 
-	labourers = {
+	farmers = {
 		culture = cornish 
 		religion = catholic
 		size = 30625
 	}
 }
-#Plymouth (812000/203000 POPS)
+#Plymouth (812000/203000 POPS)	Essa
 299 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -1614,31 +1548,25 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 1500
+		size = 500
 	}
 
 	soldiers = {
 		culture = cornish 
 		religion = catholic
-		size= 600
+		size = 1600
 	}
 
-	labourers = {
+	farmers = {
 		culture = aenglisc 
 		religion = catholic
 		size = 66250
 	}
 
-	labourers = {
+	farmers = {
 		culture = cornish 
 		religion = catholic
 		size = 126250
-	}
-
-	farmers = {
-		culture = aenglisc
-		religion = catholic
-		size = 1100
 	}
 
 	farmers = {
@@ -1684,7 +1612,7 @@
 	clerks = {
 		culture = aenglisc 
 		religion = catholic
-		size = 540
+		size = 2540
 	}
 
 	craftsmen = {
@@ -1696,83 +1624,25 @@
 	artisans = {
 		culture = aenglisc 
 		religion = catholic
-		size = 11000
-	}
-	
-	artisans = {
-		culture = aenglisc 
-		religion = catholic
-		size = 11000
-	}
-	
-	artisans = {
-		culture = aenglisc 
-		religion = catholic
-		size = 11000
-	}
-	
-	artisans = {
-		culture = aenglisc 
-		religion = catholic
-		size = 11000
-	}
-	
-	artisans = {
-		culture = aenglisc 
-		religion = catholic
-		size = 11000
-	}
-	
-	artisans = {
-		culture = aenglisc 
-		religion = catholic
-		size = 9500
+		size = 64500
 	}
 
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 3000
-
+		size = 12000
 	}
 
-	soldiers = {
+	farmers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = aenglisc 
-		religion = catholic
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = aenglisc 
-		religion = catholic
-		size= 3000
-
-	}
-
-	labourers = {
-		culture = aenglisc 
-		religion = catholic
-		size = 228250
+		size = 245250
 	}
 
 	artisans = {
 		culture = scots
 		religion = protestant
 		size = 8000
-	}
-
-	labourers = {
-		culture = aenglisc
-		religion = catholic
-		size = 17000
 	}
 
 	clerks = {
@@ -1802,18 +1672,12 @@
 	artisans = {
 		culture = cymry
 		religion = catholic
-		size = 11000
-	}
-	
-	artisans = {
-		culture = cymry
-		religion = catholic
-		size = 2000
+		size = 13000
 	}
 
 }
 #Sussex-Kent Region : 1212000
-#Canterbury (476000/98000 POPS)
+#Canterbury (476000/98000 POPS)	centwurbur
 301 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -1836,8 +1700,7 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 450
-
+		size = 1050
 	}
 
 	labourers = {
@@ -1845,14 +1708,8 @@
 		religion = catholic
 		size = 90625
 	}
-
-	artisans = {
-		culture = cymry
-		religion = catholic
-		size = 1100
-	}
 }
-#Brighton (404000/101000 POPS)
+#Brighton (404000/101000 POPS)	Briselsdun
 302 = {
 	aristocrats = {
 		culture = aenglisc 
@@ -1869,20 +1726,13 @@
 	artisans = {
 		culture = aenglisc 
 		religion = catholic
-		size = 11000
-	}
-	
-	artisans = {
-		culture = aenglisc 
-		religion = catholic
-		size = 1250
+		size = 12350
 	}
 
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 240
-
+		size = 1640
 	}
 
 	labourers = {
@@ -1891,12 +1741,12 @@
 		size = 87500
 	}
 }
-#Southampton (332000/83000 POPS)
+#Southampton (332000/83000 POPS)	Wencaster
 303 = {
 	aristocrats = {
 		culture = aenglisc 
 		religion = catholic
-		size = 750
+		size = 780
 	}
 
 	officers = {
@@ -1926,8 +1776,7 @@
 	soldiers = {
 		culture = aenglisc 
 		religion = catholic
-		size= 300
-
+		size = 1300
 	}
 
 	labourers = {
@@ -1938,7 +1787,7 @@
 
 }
 #Isle Of Man Region - 46000
-#Douglas (46000/11500 POPS)
+#Douglas (46000/11500 POPS)			Ellan Mannin
 304 = {
 	aristocrats = {
 		culture = scots
@@ -1967,17 +1816,16 @@
 	soldiers = {
 		culture = scots
 		religion = protestant
-		size= 100
-
+		size = 100
 	}
 
-	labourers = {
+	farmers = {
 		culture = scots
 		religion = protestant
 		size = 7600
 	}
 
-	labourers = {
+	farmers = {
 		culture = scots
 		religion = catholic
 		size = 300

@@ -35,7 +35,7 @@
 	soldiers = {
 		culture = slovak
 		religion = catholic
-		size = 1750
+		size = 3750
 	}
 
 	farmers = {
@@ -47,7 +47,7 @@
 	craftsmen = {
 		culture = slovak
 		religion = catholic
-		size = 2500
+		size = 4500
 	}
 	
 	farmers = {
@@ -71,7 +71,7 @@
 	craftsmen = {
 		culture = czech
 		religion = catholic
-		size = 500
+		size = 1500
 	}
 
 	bureaucrats = {
@@ -346,7 +346,7 @@
 	soldiers = {
 		culture = slovak
 		religion = catholic
-		size = 650
+		size = 1650
 	}
 
 	farmers = {
@@ -388,25 +388,25 @@
 	clergymen = {
 		culture = hungarian
 		religion = catholic
-		size = 75
+		size = 150
 	}
 
 	artisans = {
 		culture = hungarian
 		religion = catholic
-		size = 350 
+		size = 700 
 	}
 
 	soldiers = {
 		culture = hungarian
 		religion = catholic
-		size= 75
+		size= 200
 	}
 
 	farmers = {
 		culture = hungarian
 		religion = catholic
-		size = 5400 
+		size = 10400 
 	}
 
 	clergymen = {

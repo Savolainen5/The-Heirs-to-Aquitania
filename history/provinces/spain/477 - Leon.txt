@@ -4,7 +4,7 @@ add_core = HIS
 trade_goods = coal
 life_rating = 35
 state_building = {
-	level = 2 
+	level = 1 
 	building = steel_factory
 	upgrade = yes
 }

@@ -18,11 +18,16 @@ SIE = {
 BOH = {	value = 45 }
 BRN = {	value = 65 }
 SML = { value = -75 }
-RUS = { value = 30 }
+RUS = { value = 85 }
 
 army = {
 	name = "1. Wojsko Polskie"
 	location = 706
+	regiment = {
+		name = "1. Dywizja Piechoty Gwardii"
+		type = guard
+		home = 712
+	}
 	regiment = {
 		name = "1. Dywizja Piechoty"
 		type = infantry
@@ -52,6 +57,16 @@ army = {
 		name = "2. Dywizja Artylerii"
 		type = artillery
 		home = 706
+	}
+	regiment = {
+		name = "3. Dywizja Artylerii"
+		type = artillery
+		home = 708
+	}
+	regiment = {
+		name = "4. Dywizja Artylerii"
+		type = artillery
+		home = 710
 	}
 	regiment = {
 		name = "1. Dywizja Huzara"
@@ -84,14 +99,24 @@ army = {
 		home = 695
 	}
 	regiment = {
-		name = "3. Dywizja Artylerii"
+		name = "8. Dywizja Piechoty"
+		type = infantry
+		home = 706
+	}
+	regiment = {
+		name = "5. Dywizja Artylerii"
 		type = artillery
 		home = 703
 	}
 	regiment = {
-		name = "4. Dywizja Artylerii"
+		name = "6. Dywizja Artylerii"
 		type = artillery
 		home = 711
+	}
+	regiment = {
+		name = "7. Dywizja Artylerii"
+		type = artillery
+		home = 690
 	}
 	regiment = {
 		name = "3. Dywizja Huzara"
@@ -117,6 +142,42 @@ army = {
 		name = "3. Dywizja Lodomerie"
 		type = artillery
 		home = 953
+	}
+	regiment = {
+		name = "9. Dywizja Piechoty"
+		type = infantry
+		home = 701
+	}
+	regiment = {
+		name = "10. Dywizja Piechoty"
+		type = infantry
+		home = 715
+	}
+	regiment = {
+		name = "1. Dywizja Kirasjerzya"
+		type = cuirassier
+		home = 699
+	}
+}
+
+navy = {
+	name = "Flota Polska"
+	location = 690
+	ship = {
+		name = "Czarny Orzel"
+		type = manowar
+	}
+	ship = {
+		name = "Prorok Samuel"
+		type = manowar
+	}
+	ship = {
+		name = "Charitas"
+		type = frigate
+	}
+	ship = {
+		name = "Gwiazda"
+		type = frigate
 	}
 }
 

@@ -4,4 +4,8 @@ add_core = POL
 add_core = SLV
 trade_goods = grain
 life_rating = 35
-
+state_building = {
+	level = 1
+	building = glass_factory
+	upgrade = yes
+}

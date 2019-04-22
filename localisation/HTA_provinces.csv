@@ -523,7 +523,9 @@ PROV1456;Bigan;;;;;;;;;x
 PROV1457;Velde;;;;;;;;;x
 PROV1458;Goumijn;;;;;;;;;;;x
 PROV1469;Uriankhai;;;;;;;;;;;;x
+PROV1481;Liushun;x
 PROV1485;Middag;;;;;;;;;;x
+PROV1498;Lintou;x
 PROV1523;Xiangyang;;;;;;;;;;;;x            
 PROV1531;Kavieng;;;;;;;;;;;;x
 PROV1542;Xuzhou;;;;;;;;;;;;x
@@ -829,6 +831,14 @@ PROV2495;Udnadata;;;;;;;;;x
 PROV2496;Tarcula;;;;;;;;;x
 PROV2497;Fiestras;;;;;;;;;x
 PROV2508;Haring Island;;;;;;;;;x
+PROV2509;Murueta;x
+PROV2510;Etxano;x
+PROV2511;Remiritz;x
+PROV2512;Aiza;x
+PROV2513;Beramendi;x
+PROV2514;Okitika;x
+PROV2515;Gordexola;x
+PROV2516;Igantzi;x
 PROV2532;Sucester;;;;;;;;;;;;x
 PROV2535;Zonsop Islands;;;;;;;;;;x
 PROV2537;Kokopo;;;;;;;;;;;;x 
@@ -840,6 +850,7 @@ PROV2556;Ikhedodala;;;;;;;;;;;;x
 PROV2557;Kolding;;;;;;;;;;;;x
 PROV2562;Paiwan;;;;;;;;;;;;x
 PROV2570;Bieuvais;;;;;;;;;;;;x
+PROV2571;Txauraga;x
 PROV2580;Salo;;;;;;;;;;;;x
 PROV2587;Kuolla;;;;;;;;;;;;x
 PROV2588;Airoranta;;;;;;;;;;;;x
@@ -875,6 +886,12 @@ PROV2836;Coast of Kamchatka;;;;;;;;;;x
 PROV2837;Sea of Okhotsk;;;;;;;;;;;;x
 PROV2838;Coast of Sakhalin;;;;;;;;;;x
 PROV2843;Seto Inland Sea;;;;;;;;;;;;x
+PROV2876;Urrutia Strait;x
+PROV2878;Cape Ekaitzak;x
+PROV2879;Gulf of Naffaroako Berria;x
+PROV2881;Zumaia Bight;x
+PROV2882;Tierlinck Sea;x
+PROV2884;Zonsop Sea;x
 PROV2943;Karel Gulf;;;;;;;;;;;;x
 PROV2953;Rena Bight;;;;;;;;;;x
 PROV2966;Mopan Bay;;;;;;;;;;;;x
@@ -909,9 +926,12 @@ PROV3116;Lac Auglais;;;;;;;;;;;;x
 PROV3117;Lac Nimipigone;;;;;;;;;;;;x
 PROV3118;Lac Manitobe;;;;;;;;;;;;x
 PROV3157;Coast of the Carapara Islands;;;;;;;;;x
+PROV3184;Navarta Islands;x
+PROV3192;Tierlinck Basin;x
 PROV3195;Ganachio;;;;;;;;;;x
 PROV3211;Demonseg Approaches;;;;;;;;;;;;x
 PROV3126;Coast of Minami;;;;;;;;;;;x
+PROV3220;Coast of Haring Island;x
 PROV3225;Lago Salado;;;;;;;;;;;;x
 PROV3227;Lac des Ésclaves;;;;;;;;;;;;x
 PROV3228;Dene Lake;;;;;;;;;;;;x

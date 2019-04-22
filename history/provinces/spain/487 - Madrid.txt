@@ -2,15 +2,5 @@ owner = HIS
 controller = HIS
 add_core = HIS
 trade_goods = cattle
-life_rating = 40
-state_building = {
-	level = 2 
-	building = glass_factory
-	upgrade = yes
-}
-state_building = {
-	level = 2 
-	building = steel_factory
-	upgrade = yes
-}
+life_rating = 35
 

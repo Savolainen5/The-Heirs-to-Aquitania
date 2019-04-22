@@ -15,7 +15,7 @@ Feel free to use anything from this mod without asking me. Please do attribute i
 - If you downloaded a .rar (from the official forum, for example): Extract the .mod and the folder to Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod
 - If you downloaded HtA from Github: Put the folder this file is in in your game files' mod folder. Take the .mod file (it might look like a movie file of some kind for you) out and have it also be in the mod file next to the Heirs to Aquitania folder.
 If you're using Steam, the target directory is gonna be Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod. So, to be clear, in the end you'll have an Heirs to Aquitania folder and an Heirs to Aquitania .mod
-file both in your Vic2 mod folder with the aforementioned path.
+file both in your Vic2 mod folder with the aforementioned path. If the main HtA folder is called The-Heirs-to-Aquitania-Master, rename it to The Heirs to Aquitania.
 
 Thanks to:
 
@@ -56,6 +56,7 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - HtA story chain regarding Corsica involving Aquitania, PDN, and Naples/Italy
 - Blobby decision added to get cores on most of the European Western Mediterranean as a Romance country
 - Added a de-escalation event after the Eyjafjallajokul eruption and subsequent famine which SHOULD cut down on the number of rebels. But expect to see many countries of Europe fall to them still. That's more or less what I want
+- Added lots more soldier and craftsman POPs to normal GPs, did some industrial boosting
 
 *Minor*
 
@@ -106,6 +107,7 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - Made lots of vassals at game start into substates so that the Acquire Substate State cb can be used against their overlords
 - Tweaked POP migration a bit, taking inspiration from HPM
 - Added a flag for New World countries which helps with the above (and an event to assign it if it's not there from the beginning)
+- Gave Hispania the port of Penang on the Malay Peninsula
 - Lots more tweaks
 
 *Bugfixes*

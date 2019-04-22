@@ -5,10 +5,11 @@ government = absolute_monarchy
 plurality = 0.2
 nationalvalue = nv_liberty
 literacy = 0.24
+non_state_culture_literacy = 0.18
 civilized = yes
 
 #GP7 in theory
-prestige = 45
+prestige = 72
 
 # Political reforms
 slavery = no_slavery

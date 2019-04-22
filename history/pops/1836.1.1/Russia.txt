@@ -964,7 +964,7 @@
 		size = 3325
 	}
 }
-#Petsamo (2100/525 POPS)
+#Petsamo (2100/525 POPS)	Finland
 982 = {
 	clergymen = {
 		culture = finnish
@@ -990,7 +990,7 @@
 		size = 5025
 	}
 }
-#Kandalasksha/Kantalahti (7000/1750 POPS)
+#Kandalasksha/Kantalahti (7000/1750 POPS)	Finland
 983 = {
 
 	aristocrats = {
@@ -1053,7 +1053,7 @@
 		size = 340
 	}
 }
-#Kostomuksha (20000/5000 POPS)
+#Kostomuksha (20000/5000 POPS)	Finland
 984 = {
 
 	aristocrats = {
@@ -1122,7 +1122,7 @@
 		size = 890
 	}
 }
-#Povyents (28000/7000 POPS)
+#Povyents/Karhumäki (28000/7000 POPS) Finland
 988 = {
 	clergymen = {
 		culture = finnish
@@ -1173,7 +1173,7 @@
 		size = 11725
 	}
 }
-#Kola (2200/550 POPS)
+#Kola (2200/550 POPS)	Finland
 2587 = {	
 	clergymen = {
 		culture = finnish
@@ -1199,7 +1199,7 @@
 		size = 1300
 	}
 }
-#Onega/Airoranta (22000/5500 POPS)
+#Onega/Airoranta (22000/5500 POPS)	Finland
 2588 = {
 	aristocrats = {
 		culture = finnish
@@ -1638,8 +1638,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 1850
-
+		size = 4850
 	}
 
 	farmers = {
@@ -1663,8 +1662,7 @@
 	soldiers = {
 		culture = ugrian
 		religion = orthodox
-		size= 100
-
+		size = 100
 	}
 
 	farmers = {
@@ -1748,11 +1746,10 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 1100
-
+		size = 3100
 	}
 
-	farmers = {
+	labourers = {
 		culture = russian
 		religion = orthodox
 		size = 100875
@@ -1782,7 +1779,7 @@
 		size = 12000
 	}
 }
-#Belozersk/Vaukejarvi (380000/95000 POPS)
+#Belozersk/Vaukejarvi (380000/95000 POPS)		Finland
 992 = {
 	aristocrats = {
 		culture = finnish
@@ -1813,16 +1810,19 @@
 		religion = protestant
 		size = 14450
 	}
+	
 	soldiers = {
 		culture = ugrian
 		religion = protestant
 		size = 500
 	}
+	
 	artisans = {
 		culture = ugrian
 		religion = protestant
 		size = 500
 	}
+	
 	farmers = {
 		culture = ugrian
 		religion = protestant
@@ -1853,7 +1853,7 @@
 		size = 4850
 	}
 }
-#Vyterga/Tova (96000/24000 POPS)
+#Vyterga/Tova (96000/24000 POPS)		Finland
 993 = {
 	aristocrats = {
 		culture = finnish
@@ -1876,8 +1876,7 @@
 	soldiers = {
 		culture = ugrian
 		religion = protestant
-		size= 200
-
+		size = 200
 	}
 
 	farmers = {
@@ -1901,8 +1900,7 @@
 	soldiers = {
 		culture = finnish
 		religion = protestant
-		size= 50
-
+		size = 50
 	}
 
 	farmers = {
@@ -1926,7 +1924,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 5
+		size = 5
 	}
 
 	farmers = {
@@ -2187,7 +2185,7 @@
 	farmers = {
 		culture = finnish
 		religion = protestant
-		size = 7175
+		size = 8175
 	}
 	
 	artisans = {
@@ -2211,7 +2209,7 @@
 	farmers = {
 		culture = ugrian
 		religion = protestant
-		size = 8375
+		size = 9375
 	}
 	
 	clergymen = {
@@ -2253,7 +2251,7 @@
 	farmers = {
 		culture = russian
 		religion = orthodox
-		size = 3850
+		size = 1850
 	}
 	
 }
@@ -2467,8 +2465,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 3000
-
+		size = 3500
 	}
 
 	farmers = {
@@ -2524,8 +2521,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 1000
-
+		size = 2100
 	}
 
 	farmers = {
@@ -2549,8 +2545,7 @@
 	soldiers = {
 		culture = ugrian
 		religion = orthodox
-		size= 100
-
+		size = 100
 	}
 
 	farmers = {
@@ -2582,8 +2577,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 525
-
+		size = 1525
 	}
 
 	farmers = {
@@ -2601,8 +2595,7 @@
 	soldiers = {
 		culture = ugrian
 		religion = orthodox
-		size= 100
-
+		size = 100
 	}
 
 	farmers = {
@@ -2634,8 +2627,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 1100
-
+		size = 3100
 	}
 
 	farmers = {
@@ -2819,8 +2811,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 875
-
+		size = 1875
 	}
 
 	farmers = {
@@ -2864,8 +2855,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size = 1150
-
+		size = 1250
 	}
 
 	farmers = {
@@ -2913,8 +2903,7 @@
 	soldiers = {
 		culture = latvian
 		religion = protestant
-		size= 90
-
+		size = 90
 	}
 
 	farmers = {
@@ -2970,8 +2959,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 800
-
+		size = 1800
 	}
 
 	farmers = {
@@ -2987,7 +2975,7 @@
 	aristocrats = {
 		culture = russian
 		religion = orthodox
-		size = 1600
+		size = 1700
 	}
 
 	bureaucrats = {
@@ -3005,67 +2993,19 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 1050
+		size = 1950
 	}
 
 	artisans = {
 		culture = russian
 		religion = orthodox
-		size = 6000
-	}
-	
-	artisans = {
-		culture = russian
-		religion = orthodox
-		size = 11000
-	}
-	
-	artisans = {
-		culture = russian
-		religion = orthodox
-		size = 11000
-	}
-	
-	artisans = {
-		culture = russian
-		religion = orthodox
-		size = 11000
-	}
-	
-	artisans = {
-		culture = russian
-		religion = orthodox
-		size = 11000
-	}
-	
-	artisans = {
-		culture = russian
-		religion = orthodox
-		size = 11000
-	}
-	
-	artisans = {
-		culture = russian
-		religion = orthodox
-		size = 11000
-	}
-	
-	artisans = {
-		culture = russian
-		religion = orthodox
-		size = 11000
-	}
-	
-	artisans = {
-		culture = russian
-		religion = orthodox
-		size = 5000
+		size = 46000
 	}
 
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 2000
+		size = 9500
 
 	}
 	craftsmen = {
@@ -3074,10 +3014,10 @@
 		size = 5800
 	}
 
-	farmers = {
+	labourers = {
 		culture = russian
 		religion = orthodox
-		size = 50800
+		size = 100800
 	}
 
 	clergymen = {
@@ -3092,7 +3032,7 @@
 		size = 540
 	}
 }
-#Borodino (572000/143000 POPS)
+#Borodino/Mozhaysk (572000/143000 POPS)
 1009 = {
 	aristocrats = {
 		culture = russian
@@ -3115,8 +3055,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 1450
-
+		size = 3450
 	}
 
 	farmers = {
@@ -3203,7 +3142,7 @@
 		size = 264725
 	}
 }
-#Riazan (1192000/298000 POPS)
+#Ryazan (1192000/298000 POPS)
 1012 = {
 	aristocrats = {
 		culture = russian
@@ -3271,8 +3210,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 1350
-
+		size = 2350
 	}
 
 	farmers = {
@@ -3283,7 +3221,7 @@
 }
 #Nizhni Novgorod Region (4420000)
 #under the rule of Russia in 1836
-#Nizhni Novgorod (1068000/267000 POPS)
+#Nizhni Novgorod/Oka (1068000/267000 POPS)
 1020 = {
 	aristocrats = {
 		culture = russian
@@ -3312,26 +3250,20 @@
 	artisans = {
 		culture = russian
 		religion = orthodox
-		size = 8000
-	}
-	
-	artisans = {
-		culture = russian
-		religion = orthodox
-		size = 600
+		size = 8600
 	}
 
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 2650
+		size = 5650
 
 	}
 
 	farmers = {
 		culture = russian
 		religion = orthodox
-		size = 241975
+		size = 239975
 	}
 
 	clergymen = {
@@ -3349,8 +3281,7 @@
 	soldiers = {
 		culture = tatar
 		religion = sunni
-		size= 25
-
+		size = 25
 	}
 
 	farmers = {
@@ -3440,17 +3371,16 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 1350
-
+		size = 2350
 	}
 
 	farmers = {
 		culture = russian
 		religion = orthodox
-		size = 123775
+		size = 122775
 	}
 }
-#Kostorma (312000/78000 POPS)
+#Kostroma (312000/78000 POPS)
 1023 = {
 	aristocrats = {
 		culture = russian
@@ -3473,8 +3403,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 775
-
+		size = 1575
 	}
 
 	farmers = {
@@ -3506,8 +3435,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 750
-
+		size = 1350
 	}
 
 	farmers = {
@@ -3533,27 +3461,13 @@
 	artisans = {
 		culture = russian
 		religion = orthodox
-		size = 11000
-	}
-	
-	artisans = {
-		culture = russian
-		religion = orthodox
-		size = 5000
+		size = 16000
 	}
 
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = russian
-		religion = orthodox
-		size= 100
-
+		size = 3100
 	}
 
 	farmers = {
@@ -3571,8 +3485,7 @@
 	soldiers = {
 		culture = tatar
 		religion = sunni
-		size= 25
-
+		size = 25
 	}
 
 	farmers = {
@@ -3588,13 +3501,13 @@
 	aristocrats = {
 		culture = russian
 		religion = orthodox
-		size = 2800
+		size = 2500
 	}
 
 	bureaucrats = {
 		culture = russian
 		religion = orthodox
-		size = 725
+		size = 625
 	}
 
 	officers = {
@@ -3606,33 +3519,55 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 1350
+		size = 1150
 	}
-
 	
 	artisans = {
 		culture = russian
 		religion = orthodox
-		size = 8000
+		size = 6500
 	}
 
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 2375
-
+		size = 4375
 	}
 
 	farmers = {
 		culture = russian
 		religion = orthodox
-		size = 66200
+		size = 84200
+	}
+	
+	aristocrats = {
+		culture = ugrian
+		religion = orthodox
+		size = 800
+	}
+
+	bureaucrats = {
+		culture = ugrian
+		religion = orthodox
+		size = 225
+	}
+
+	clergymen = {
+		culture = ugrian
+		religion = orthodox
+		size = 850
+	}
+	
+	artisans = {
+		culture = ugrian
+		religion = orthodox
+		size = 2000
 	}
 	
 	farmers = {
 		culture = ugrian
 		religion = orthodox
-		size = 96200
+		size = 71200
 	}	
 
 	artisans = {
@@ -3645,7 +3580,6 @@
 		culture = tatar
 		religion = sunni
 		size= 25
-
 	}
 
 	farmers = {
@@ -3677,14 +3611,13 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 775
-
+		size = 975
 	}
 
 	farmers = {
 		culture = russian
 		religion = orthodox
-		size = 70655
+		size = 70455
 	}
 }
 #Vyatkha (504000/126000 POPS)
@@ -3710,8 +3643,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 1200
-
+		size = 1950
 	}
 
 	farmers = {
@@ -3729,8 +3661,7 @@
 	soldiers = {
 		culture = ugrian
 		religion = orthodox
-		size= 50
-
+		size = 50
 	}
 
 	farmers = {
@@ -3744,7 +3675,7 @@
 	aristocrats = {
 		culture = russian
 		religion = orthodox
-		size = 1575
+		size = 1375
 	}
 
 	clergymen = {
@@ -3756,20 +3687,43 @@
 	artisans = {
 		culture = russian
 		religion = orthodox
-		size = 5600
+		size = 5000
 	}
 
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 1125
-
+		size = 1625
 	}
 
 	farmers = {
 		culture = russian
 		religion = orthodox
 		size = 80575
+	}
+	
+	aristocrats = {
+		culture = ugrian
+		religion = orthodox
+		size = 475
+	}
+
+	clergymen = {
+		culture = ugrian
+		religion = orthodox
+		size = 325
+	}
+
+	artisans = {
+		culture = ugrian
+		religion = orthodox
+		size = 2100
+	}
+
+	soldiers = {
+		culture = ugrian
+		religion = orthodox
+		size = 325
 	}
 	
 	farmers = {
@@ -3817,7 +3771,6 @@
 		culture = russian
 		religion = orthodox
 		size = 850
-
 	}
 
 	farmers = {
@@ -3854,7 +3807,6 @@
 		culture = tatar
 		religion = sunni
 		size = 2450
-
 	}
 
 	farmers = {
@@ -3897,8 +3849,7 @@
 	soldiers = {
 		culture = ugrian
 		religion = orthodox
-		size= 150
-
+		size = 150
 	}
 
 	farmers = {
@@ -3930,14 +3881,13 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 1325
-
+		size = 2225
 	}
 
 	farmers = {
 		culture = russian
 		religion = orthodox
-		size = 121850
+		size = 120850
 	}
 
 	artisans = {
@@ -3949,8 +3899,7 @@
 	soldiers = {
 		culture = tatar
 		religion = sunni
-		size= 25
-
+		size = 25
 	}
 
 	farmers = {
@@ -3968,8 +3917,7 @@
 	soldiers = {
 		culture = ugrian
 		religion = orthodox
-		size= 50
-
+		size = 50
 	}
 
 	farmers = {
@@ -4001,14 +3949,13 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 550
-
+		size = 1550
 	}
 
 	farmers = {
 		culture = russian
 		religion = orthodox
-		size = 51375
+		size = 50375
 	}
 
 	aristocrats = {
@@ -4026,8 +3973,7 @@
 	soldiers = {
 		culture = tatar
 		religion = sunni
-		size= 750
-
+		size = 950
 	}
 
 	farmers = {
@@ -4051,8 +3997,7 @@
 	soldiers = {
 		culture = ugrian
 		religion = orthodox
-		size= 50
-
+		size = 50
 	}
 
 	farmers = {
@@ -4076,8 +4021,7 @@
 	soldiers = {
 		culture = tatar
 		religion = orthodox
-		size= 150
-
+		size = 150
 	}
 
 	farmers = {
@@ -4109,8 +4053,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 725
-
+		size = 925
 	}
 
 	farmers = {
@@ -4134,8 +4077,7 @@
 	soldiers = {
 		culture = tatar
 		religion = orthodox
-		size= 100
-
+		size = 100
 	}
 
 	farmers = {
@@ -4165,8 +4107,7 @@
 	soldiers = {
 		culture = tatar
 		religion = orthodox
-		size= 50
-
+		size = 50
 	}
 
 	farmers = {
@@ -4311,8 +4252,7 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 75
-
+		size = 75
 	}
 
 	farmers = {

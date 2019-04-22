@@ -35,13 +35,13 @@
 	craftsmen = {
 		culture = czech
 		religion = catholic
-		size = 14000
+		size = 19000
 	}
 
 	soldiers = {
 		culture = czech
 		religion = catholic
-		size = 8750
+		size = 11750
 	}
 
 	farmers = {
@@ -367,10 +367,10 @@
 	soldiers = {
 		culture = czech
 		religion = catholic
-		size = 1750
+		size = 2750
 	}
 
-	farmers = {
+	labourers = {
 		culture = czech
 		religion = catholic
 		size = 109200 
@@ -394,7 +394,7 @@
 		size= 25
 	}
 
-	farmers = {
+	labourers = {
 		culture = czech
 		religion = jewish
 		size = 925  
