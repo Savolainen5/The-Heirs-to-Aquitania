@@ -3,7 +3,7 @@ primary_culture = armenian
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
-nationalvalue = nv_order
+nationalvalue = nv_might
 literacy = 0.55
 civilized = yes
 

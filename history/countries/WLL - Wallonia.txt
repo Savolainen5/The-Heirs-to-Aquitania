@@ -4,7 +4,7 @@ culture = picard
 religion = catholic
 government = absolute_monarchy
 plurality = 0.05
-nationalvalue = nv_equality
+nationalvalue = nv_prosperity
 literacy = 0.28
 civilized = yes
 

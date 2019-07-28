@@ -3,7 +3,7 @@ primary_culture = irish
 religion = catholic
 government = absolute_monarchy
 plurality = 0.1
-nationalvalue = nv_order
+nationalvalue = nv_unity
 literacy = 0.55
 civilized = yes
 

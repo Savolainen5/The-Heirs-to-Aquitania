@@ -1,3 +1,20 @@
 political_decisions = {
+#	sub_unit_test = {		#This works, and is used for building ships. 'current' can be any province ID.
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			tag = AQT
+#		}
+#		effect = {
+#			461 = {
+#				sub_unit = {
+#					type = manowar
+#					value = current
+#				}
+#			}
+#		}
+#	}
+	
 
 }

@@ -1,3 +1,4 @@
+##############NB - This is Suryavamsi
 capital = 1240
 primary_culture = avadhi
 culture = marathi
@@ -5,7 +6,7 @@ culture = kanauji
 religion = hindu
 government = absolute_monarchy
 plurality = 0.0
-nationalvalue = nv_order
+nationalvalue = nv_tradition
 literacy = 0.1
 non_state_culture_literacy = 0.03
 
