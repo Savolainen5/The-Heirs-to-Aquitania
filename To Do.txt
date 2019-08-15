@@ -114,5 +114,5 @@ Other:
 - More to be done with rebels wanting to break free of Italy in the north?
 - Look into tweaking migration so that it's more likely to happen toward neighbouring countries Dictatorship > Democracy
 - Nerf colonial migration? (There was the case of Blackhog's insane Suez colonial migration)
-
+- Buff population growth
 Savs, remember that Birth of a Nation is in CleanUp and has the ID 60160

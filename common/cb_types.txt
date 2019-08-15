@@ -4675,8 +4675,8 @@ russia_annex = {
 		NOT = { is_our_vassal = THIS }
 		is_vassal = no
 		OR = {
-			THIS = { tag = RUS has_country_flag = lost_the_RUS_war }
-			THIS = { tag = SML has_country_flag = lost_the_RUS_war }
+			THIS = { tag = RUS has_country_flag = won_RUS_war }
+			THIS = { tag = SML has_country_flag = won_RUS_war }
 		}
 		OR = {
 			tag = RUS

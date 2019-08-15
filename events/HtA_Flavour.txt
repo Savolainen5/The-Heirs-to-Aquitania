@@ -13,6 +13,7 @@ country_event = {
 		year = 1837
 		has_country_flag = volcano_path
 		NOT = { has_country_flag = european_famine }
+		NOT = { has_country_flag = european_famine_weathered }
 		NOT = { year = 1839 }
 	}
 

@@ -98,7 +98,7 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - Incorporated decision for Norway to claim some Caribbean islands, courtesy of /u/Flapjack731. Thanks!
 - Renamed and adjusted some provinces in Russia
 - Added old world island terrain type from HPM - New world islands need to be added
-- Made Don Cossacks exist from game start as Smolensk puppet
+- Made Don Cossacks exist from game start as Smolensk puppet for inclusion in Russia stuff
 - Improved some OOBs, added some missing ones
 - Adjusted POPs in a number of places with the above in mind
 - Added some Sephardic POPs to Aquitania and Ashkenazi to SOME of France. Needs more - ALWAYS
@@ -108,6 +108,8 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - Tweaked POP migration a bit, taking inspiration from HPM
 - Added a flag for New World countries which helps with the above (and an event to assign it if it's not there from the beginning)
 - Gave Hispania the port of Penang on the Malay Peninsula
+- Gave a number of countries different ideals
+- The Oheskewen canal now has stricter requirements for construction - you must either own the province yourself, or your vassal must
 - Lots more tweaks
 
 *Bugfixes*

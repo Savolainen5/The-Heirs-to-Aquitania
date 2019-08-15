@@ -296,7 +296,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			NOT = { exists = SML }
+			SML = { exists = no }
 			SML = {
 				all_core = {
 					OR = {
@@ -344,6 +344,13 @@ political_decisions = {
 			prestige = 2
 			money = -5000
 			add_accepted_culture = tatar
+			any_pop = {
+				limit = {
+					NOT = { has_pop_culture = tatar }
+				}
+				militancy = 1
+				consciousness = 1
+			}
 			set_country_flag = tatars_accepted
 		}
 	}
@@ -402,7 +409,7 @@ political_decisions = {
 	
 	#Cossack Hetmanate Rebels
 	revolt_against_smolensk = {
-		#picture = 
+		picture = enslave_the_undesireables
 		potential = {
 			tag = DON
 			has_country_flag = russian_support
@@ -423,4 +430,94 @@ political_decisions = {
 			set_country_flag = tatar_revolt
 		}
 	}
+	
+	#Debug-type decision to make people not sphere SML
+	hta_no_sml_sphere = {
+		potential = {
+			ai = yes
+			has_global_flag = railroading_on
+			is_greater_power = yes
+		}
+		allow = {
+			OR = {
+				SML = { in_sphere = THIS }
+				relation = {
+					who = SML
+					value = 50
+				}
+			}
+		}
+		effect = {
+			relation = {
+				who = SML
+				value = -150
+			}
+			diplomatic_influence = {
+				who = SML
+				value = -400
+			}
+		}
+	}
+	
+	yoke_the_tatars = {
+		picture = enslave_the_undesirables
+		potential = {
+			OR = {
+				tag = RUS
+				tag = SML
+			}
+			OR = {
+				has_country_flag = won_RUS_war
+				AND = { tag = SML NOT = { exists = RUS } }
+				AND = { tag = RUS NOT = { exists = SML } }
+			}
+			exists = DON
+		}
+		allow = {
+			is_our_vassal = DON
+			OR = {
+				AND = { tag = SML NOT = { exists = RUS } }
+				AND = { tag = RUS NOT = { exists = SML } }
+			}
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			prestige = 2
+			inherit = DON
+			DON = { all_core = { add_core = THIS	} }
+			any_pop = {
+				limit = {
+					has_pop_culture = tatar
+				}
+				militancy = 4
+				consciousness = 4
+			}
+		}
+	}
+	
+	embrace_little_russians = {
+		picture = embrace_minority
+		potential = {
+			OR = {
+				AND = {
+					tag = RUS
+					NOT = { exists = SML }
+				}
+				AND = {
+					tag = SML
+					NOT = { exists = RUS }
+				}
+			}
+			NOT = { accepted_culture = ukrainian }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			prestige = 2
+			add_accepted_culture = ukrainian
+			add_accepted_culture = byelorussian
+		}
+	}
+			
 }

@@ -70,17 +70,18 @@ country_event = {
 		name = "Excellent work by our intrepid explorers!"
 		prestige = 5
 		set_country_flag = western_coast_explored
-		1072 = { life_rating = 20 }
-		1073 = { life_rating = 20 }
-		1074 = { life_rating = 20 }
+		1072 = { life_rating = 15 }
+		1073 = { life_rating = 10 }
+		1074 = { life_rating = 10 }
 		2616 = { life_rating = 5 }
-		2618 = { life_rating = 20 }
+		2618 = { life_rating = 10 }
+		2621 = { life_rating = -20 }
 		2622 = { life_rating = -15 }
 		2634 = { life_rating = 5 }
 		2637 = { life_rating = 5 }
 		2638 = { life_rating = 5 }
-		2639 = { life_rating = 20 }
-		2641 = { life_rating = 20 }
+		2639 = { life_rating = 10 }
+		2641 = { life_rating = 15 }
 		2642 = { life_rating = 15 }
 		2660 = { life_rating = -15 }
 		2662 = { life_rating = -15 }
@@ -402,6 +403,7 @@ country_event = {
 	id = 50365
 	title = "EVTNAME50365"
 	desc = "EVTDESC50365"
+	picture = "Michael"
 	
 	fire_only_once = yes
 	
@@ -435,6 +437,7 @@ country_event = {
 	id = 50366
 	title = "EVTNAME50366"
 	desc = "EVTDESC50366"
+	picture = "Feodor"
 	
 	fire_only_once = yes
 	
@@ -873,8 +876,8 @@ country_event = {
 				has_pop_culture = ukrainian
 				location = { is_core = UKR }
 			}
-			militancy = 3
-			consciousness = 3
+			militancy = 8
+			consciousness = 6
 			reduce_pop = 0.96
 		}
 	}
@@ -986,8 +989,8 @@ country_event = {
 			limit = {
 				has_pop_culture = ruthenian
 			}
-			militancy = 3
-			consciousness = 3
+			militancy = 7
+			consciousness = 4
 			reduce_pop = 0.95
 		}
 	}

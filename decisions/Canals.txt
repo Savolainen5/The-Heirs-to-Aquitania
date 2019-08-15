@@ -130,7 +130,8 @@ political_decisions = {
 		}
 		allow = {
 			OR = {
-				55 = { owner = { in_sphere = THIS } }
+				#55 = { owner = { is_vassal = no in_sphere = THIS } }  #I want it to be really stict. You either own it or you puppet its owner.
+				55 = { owner = { vassal_of = THIS } }
 				owns = 55
 			}
 			invention = machine_tools

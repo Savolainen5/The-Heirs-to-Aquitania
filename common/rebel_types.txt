@@ -2250,12 +2250,12 @@ russian_rebels = {
 			NOT = { has_country_flag = lost_RUS_war }
 		}
 		
-		modifier = {
-			factor = 0
-			NOT = {
-				culture = russian
-			}
-		}
+#		modifier = {
+#			factor = 0
+#			NOT = {
+#				culture = russian
+#			}
+#		}
 		
 		modifier = {
 			factor = 0
