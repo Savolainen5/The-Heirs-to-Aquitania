@@ -1897,7 +1897,7 @@ fighting_civil_war = {
 	org_regain = 0.1
 	ruling_party_support = 0.2
 	supply_consumption = -0.1
-	land_organisation = 0.1
+	land_organisation = 0.15
 	icon = 15
 }
 

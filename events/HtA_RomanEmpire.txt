@@ -511,6 +511,7 @@ country_event = {
 		name = "Marshal the armies! He will hang!"
 		set_global_flag = roman_succession_war_start
 		release_vassal = ANA
+		release_vassal = GRE
 		war = {
 			target = ANA
 			attacker_goal = { casus_belli = civil_war }
@@ -717,6 +718,10 @@ country_event = {
 			who = CYP
 			value = -150
 		}
+		
+		ai_chance = {
+			factor = 100
+		}
 	}
 	
 	option = {
@@ -770,7 +775,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Desparate times call for desparate measures."
+		name = "Desperate times call for desperate measures."
 		prestige = -2
 		create_alliance = BUL
 		set_country_flag = BUL_promise_independence
@@ -812,7 +817,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Desparate times call for desparate measures."
+		name = "Desperate times call for desperate measures."
 		prestige = -2
 		create_alliance = ALB
 		set_country_flag = ALB_promise_independence
@@ -1512,12 +1517,12 @@ country_event = {
 	option = {
 		name = "Crush them!"
 		prestige = -20
-		release_vassal = GRE
 		war = {
 			target = GRE
-			attacker_goal = { casus_belli = annex_core_country }
+			attacker_goal = { casus_belli = civil_war }	#annex_core_country
 			defender_goal = { casus_belli = status_quo }
 		}
+		badboy = -25
 		GRE = {
 			add_country_modifier = {
 				name = fighting_civil_war
@@ -1549,11 +1554,100 @@ country_event = {
 #
 #
 #
-#   Events 50632 up are in HtA_RomanEmpireFlavor
+#   Events 50632 and 50633 are in HtA_RomanEmpireFlavor
 #
 #
 #
 #
+
+#If ANA and BYZ white peace, this one fires - Succession War Stalemate
+country_event = {
+	id = 50634
+	title = "EVTNAME50634"
+	desc = "EVTDESC50634"
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BYZ
+		exists = ANA
+		truce_with = ANA
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			870 = { owned_by = ANA }
+		}
+	}
+	
+	option = {
+		name = "This is not over."
+		prestige = -20
+		ANA = { prestige = 20 }
+		867 = { add_core = ANA }
+		868 = { add_core = ANA }
+		TUR_863 = { add_core = ANA }
+		TUR_860 = { add_core = ANA }
+		TUR_880 = { add_core = ANA }
+	}
+}
+
+country_event = {
+	id  = 50634
+	title = "Not at war"
+	desc = "You're not in civil war. You don't need this modifier."
+	
+	trigger = {
+		OR = {
+			tag = ANA
+			tag = GRE
+		}
+		has_country_modifier = fighting_civil_war
+		NOT = { war_with = BYZ }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Too bad for me."
+		remove_country_modifier = fighting_civil_war
+	}
+}
+
+country_event = {
+	id = 50635
+	title = "You're at war"
+	desc = "You're back in the civil war. Have a modifier."
+	
+	trigger = {
+		OR = {
+			tag = ANA
+			tag = GRE
+		}
+		war_with = BYZ
+		NOT = { has_country_modifier = fighting_civil_war }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Great, I guess."
+		add_country_modifier = {
+			name = fighting_civil_war
+			duration = -1
+		}
+	}
+}
+
+
+########################################
 
 #Armenia loses its claims on Anatolikon and Boukellarion
 country_event = {
@@ -1574,6 +1668,12 @@ country_event = {
 			NOT = { owned_by = ARM }
 		}
 		NOT = { has_country_flag = RIP_armenian_anatolia }
+		NOT = { war_with = BYZ }
+		NOT = { war_with = ANA }
+		OR = {
+			has_global_flag = roman_succession_war_finish_ANA
+			has_global_flag = roman_succession_war_finish_BYZ
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -1585,7 +1685,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This is unacceptable!"
+		name = "This is terrible!"
 		prestige = -10
 		TUR_873 = {
 			remove_core = ARM
@@ -1630,7 +1730,7 @@ country_event = {
 			limit = {
 				has_pop_religion = orthodox
 			}
-			militancy = -9
+			militancy = -5
 		}
 	}
 }

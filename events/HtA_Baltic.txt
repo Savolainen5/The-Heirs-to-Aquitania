@@ -57,11 +57,9 @@ country_event = {
 	desc = "EVTDESC51451"
 	picture = "riga"
 	
-	fire_only_once = yes
-	
 	trigger = {
 		OR = {
-			tag = SML										#ADD SOME KIND OF MODIFIER FOR LIT/LAT
+			tag = SML
 			tag = RUS
 		}
 		has_country_flag = window_to_the_west_LIT
@@ -72,6 +70,8 @@ country_event = {
 			who = LIT
 			value = 150
 		}
+		NOT = { has_country_flag = wttwLIT_Part1 }
+		NOT = { has_country_flag = wttwLIT_concluded }
 	}
 	
 	mean_time_to_happen = {
@@ -80,6 +80,7 @@ country_event = {
 	
 	option = {
 		name = "Go ahead with the plan."
+		set_country_flag = wttwLIT_Part1
 		LIT = {
 			country_event = {
 				id = 51453
@@ -132,7 +133,7 @@ country_event = {
 	
 	option = {
 		name = "We cannot afford to provoke an international crisis at the moment."
-		prestige = -5
+		prestige = -15
 		badboy = 2
 		set_country_flag = wttwLIT_concluded
 		
@@ -216,7 +217,32 @@ country_event = {
 		}
 		clr_country_flag = window_to_the_west_LIT
 		set_country_flag = wttwLIT_concluded
+	
+		ai_chance = {
+			factor = 99
+			modifier = {
+				factor = 0
+				badboy = 0.66
+			}
+		}
 	}
+	
+	option = {
+		name = "Never mind, now is not the right time."
+		badboy = 1
+		prestige = -25
+		clr_country_flag = window_to_the_west_LIT
+		set_country_flag = wttwLIT_concluded
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				badboy = 0.66
+			}
+		}
+	}
+	
 }
 
 #Annexation
@@ -244,7 +270,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 24
+		months = 72
 	}
 	
 	option = {
@@ -324,6 +350,8 @@ country_event = {
 			who = LAT
 			value = 150
 		}
+		NOT = { has_country_flag = wttwLAT_Part1 }
+		NOT = { has_country_flag = wttwLAT_concluded }
 	}
 	
 	mean_time_to_happen = {
@@ -332,6 +360,7 @@ country_event = {
 	
 	option = {
 		name = "Go ahead with the plan."
+		set_country_flag = wttwLAT_Part1
 		LAT = {
 			country_event = {
 				id = 51460
@@ -392,7 +421,7 @@ country_event = {
 	
 	option = {
 		name = "We cannot afford to provoke an international crisis at the moment."
-		prestige = -5
+		prestige = -15
 		badboy = 2
 		set_country_flag = wttwLAT_concluded
 		
@@ -476,6 +505,30 @@ country_event = {
 		}
 		clr_country_flag = window_to_the_west_LAT
 		set_country_flag = wttwLAT_concluded
+		
+		ai_chance = {
+			factor = 99
+			modifier = {
+				factor = 0
+				badboy = 0.66
+			}
+		}
+	}
+	
+	option = {
+		name = "Never mind, now is not the right time."
+		badboy = 1
+		prestige = -25
+		clr_country_flag = window_to_the_west_LAT
+		set_country_flag = wttwLIT_concluded
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				badboy = 0.66
+			}
+		}
 	}
 }
 
@@ -504,7 +557,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 12
+		months = 72
 	}
 	
 	option = {

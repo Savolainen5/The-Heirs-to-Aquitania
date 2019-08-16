@@ -903,11 +903,13 @@ unification_annex_casus_belli = {
 				THIS = { NOT = { tag = AUS } }
 			}
 		}
-		NOT = { number_of_states = 2 }
-		any_owned_province = {
-			any_core = {
-				this_culture_union = this_union
-				is_cultural_union = yes
+		AND = {
+			NOT = { number_of_states = 2 }
+			any_owned_province = {
+				any_core = {
+					this_culture_union = this_union
+					is_cultural_union = yes
+				}
 			}
 		}
 		OR = {
@@ -1003,6 +1005,19 @@ annex_core_country = {
 				}
 			}
 		}
+#		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+#		NOT = {
+#			AND = {
+#				NOT = {
+#					tag = BYZ
+#					tag = ANA
+#				}
+#				NOT = {
+#					THIS = { tag = BYZ }
+#					THIS = { tag = ANA }
+#				}
+#			}
+#		}
 	}
 
 	po_annex = yes
@@ -1080,6 +1095,19 @@ add_to_sphere = {
 				}
 			}
 		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
+				}
+			}
+		}
 	}
 	
 	po_add_to_sphere = yes
@@ -1146,6 +1174,19 @@ unification_humiliate_cb = {
 				OR = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
+				}
+			}
+		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
 				}
 			}
 		}
@@ -1230,6 +1271,19 @@ unification_GP_humiliate = {
 				}
 			}
 		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
+				}
+			}
+		}
 	}
 
 	po_remove_prestige = yes
@@ -1298,6 +1352,19 @@ unification_release_puppet_cb = {
 				OR = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
+				}
+			}
+		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
 				}
 			}
 		}	
@@ -1381,6 +1448,19 @@ unification_add_to_sphere = {
 				}
 			}
 		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
+				}
+			}
+		}
 	}
 	
 	po_add_to_sphere = yes
@@ -1441,6 +1521,19 @@ take_from_sphere = {
 				OR = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
+				}
+			}
+		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
 				}
 			}
 		}
@@ -1530,6 +1623,19 @@ free_peoples = {
 				OR = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
+				}
+			}
+		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
 				}
 			}
 		}
@@ -1841,6 +1947,19 @@ liberate_country = {
 				}
 			}
 		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
+				}
+			}
+		}
 	}
 
 	# THIS - us
@@ -2049,6 +2168,19 @@ free_allied_cores = {
 				}
 			}
 		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
+				}
+			}
+		}
 	}
 
 	# THIS - us
@@ -2177,6 +2309,19 @@ free_balkans = {
 					THIS = { tag = RUS }
 				}
 			}
+		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
+				}
+			}
 		}	
 	}
 
@@ -2277,6 +2422,7 @@ free_latvia = {
 			}
 		}
 		THIS = {
+			nationalism_n_imperialism = 1
 			OR = {
 				AND = {
 					neighbour = FIN
@@ -2306,6 +2452,19 @@ free_latvia = {
 				OR = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
+				}
+			}
+		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
 				}
 			}
 		}		
@@ -2485,6 +2644,19 @@ release_puppet = {
 				}
 			}
 		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
+				}
+			}
+		}
 	}
 	
 	# THIS - us
@@ -2567,6 +2739,19 @@ release_puppet_AI = {
 				OR = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
+				}
+			}
+		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
 				}
 			}
 		}
@@ -2660,6 +2845,19 @@ gunboat = {
 				}
 			}
 		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
+				}
+			}
+		}
 	}
 
 	on_add = {
@@ -2732,6 +2930,19 @@ cut_down_to_size = {
 				OR = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
+				}
+			}
+		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
 				}
 			}
 		}
@@ -2855,6 +3066,19 @@ humiliate = {
 				}
 			}
 		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
+				}
+			}
+		}
 	}
 
 	po_remove_prestige = yes
@@ -2921,6 +3145,19 @@ place_in_the_sun = {
 				OR = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
+				}
+			}
+		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
 				}
 			}
 		}
@@ -3052,6 +3289,19 @@ acquire_state = {
 				OR = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
+				}
+			}
+		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
 				}
 			}
 		}
@@ -4172,6 +4422,19 @@ rude_boy = {
 				}
 			}
 		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
+				}
+			}
+		}
 	}
 	
 	po_remove_prestige = yes
@@ -4356,6 +4619,19 @@ conquest = {
 				OR = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
+				}
+			}
+		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
 				}
 			}
 		}
@@ -5049,6 +5325,19 @@ make_puppet = {
 				OR = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
+				}
+			}
+		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
 				}
 			}
 		}
@@ -5794,6 +6083,19 @@ dismantle_forts = {
 				OR = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
+				}
+			}
+		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
 				}
 			}
 		}

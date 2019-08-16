@@ -483,8 +483,8 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 2
+			DON = { all_core = { add_core = THIS } }
 			inherit = DON
-			DON = { all_core = { add_core = THIS	} }
 			any_pop = {
 				limit = {
 					has_pop_culture = tatar

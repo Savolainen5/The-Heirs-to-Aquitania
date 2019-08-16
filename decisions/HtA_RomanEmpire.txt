@@ -400,8 +400,10 @@ political_decisions = {
 			}
 		}
 	}
-	
-#Decisions for Greece
+
+######################
+#Decisions for Greece#
+######################
 	
 	begin_greek_rebellion = {
 		picture = die_wacht_am_rhein
@@ -462,6 +464,7 @@ political_decisions = {
 				remove_core = BYZ
 			}
 			remove_country_modifier = fighting_civil_war
+			end_war = ANA
 		}
 	}
 	
@@ -492,4 +495,6 @@ political_decisions = {
 			TUR_853 = { add_core = GRE }
 		}
 	}
+	
+
 }
