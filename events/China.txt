@@ -194,3 +194,31 @@ country_event = {
 		civilized = yes
 	}
 }
+
+country_event = {
+	id = 90905
+	title = "Nanyue Defeated"
+	desc = "The southerners pose no more threat to the Mandate of Heaven now that their kingdom has been absorbed by our great Empire."
+	
+	picture = "qing_emperor"
+	
+	trigger = {
+		tag = QIN
+		NOT = { exists = GXI }
+		has_global_flag = gxi_claimed_mandate
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	effect = {
+		name = "All is right in the world."
+		clr_global_flag = gxi_claimed_mandate
+		add_country_modifier = {
+			name = mandate_of_heaven
+			duration = -1
+		}
+		add_country_flag = mandate
+	}
+}

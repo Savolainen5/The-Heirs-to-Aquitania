@@ -3,7 +3,6 @@ To Do, v0.36
 Events:
 
 - Springtime of Nations should hit Roman Empire harder?
-	- Remove cores from GRE and ANA when they're released as vassals so impatient players can't just release and annex them
 - French popular radicalism in Paris that begins uniting. Not really necessary now that France is buffed. Pan-Nationalists are strong, too
 - Event/Decision to try to mediate Germany?
 - Revisit that ability of German states to not attend the Brunswick congress - AI will currently always attend
@@ -19,8 +18,9 @@ Events:
 - Unequal Treaty events for Nanyue, tweak it for Qin
 - Some kind of country/nationalism for Solelha in Florida
 - Qin civil war of some kind?
-- Dissolution of Maghreb
+- Dissolution of Maghreb (see suggestions)
 - Competition for colonies in SEA, especially between NAP and HIS in the Malay peninsula
+- Generic event to annex countries that you have full cores on, as happens with Rome sometimes
 
 Decisions:
 
@@ -58,8 +58,8 @@ POPs:
 - Boost POPs of Uganda and Rwanda regions which have had their province size increased?
 - Add some Turkmen folks (maybe minorities) in Syria
 - Change the French in the Holy Land to Outremer or Levantine or whatever
-- Add more Jews throughout Europe!
-- Add more minorities in Europe on the other side of orders
+- Add more Jews throughout Europe! (Partly done, maybe needs more)
+- Add more minorities in Europe on the other side of borders
 - Too many German POPs?
 
 Militaries:

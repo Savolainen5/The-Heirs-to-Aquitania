@@ -323,11 +323,6 @@ political_decisions = {
 				}
 				1654 = { secede_province = THIS }
 			}
-#			JAP_1088 = { add_core = THIS }#Hokkaido######################Incorporate this into a separate decision
-#			random_owned = {
-#				limit = { province_id = 1089 } #southern half of Sakhalin
-#				add_core = THIS
-#			}
 			any_pop = {
 				limit = { is_primary_culture = yes }
 				ideology = {
@@ -1352,8 +1347,11 @@ political_decisions = {
 		}
 		
 		allow = {
-			war = no 
-			is_greater_power = yes
+			war = no
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
 		}
 		
 		effect = {

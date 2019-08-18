@@ -3,7 +3,7 @@ primary_culture = aquitanian
 religion = catholic
 government = absolute_monarchy
 plurality = 0.1
-nationalvalue = nv_unity
+nationalvalue = nv_order
 literacy = 0.58
 civilized = yes
 

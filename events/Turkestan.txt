@@ -114,6 +114,7 @@ country_event = {
 		1190 = { add_core = KAZ } #Naryn
 		1595 = { add_core = KAZ } #Ili
 		1596 = { add_core = KAZ } #Tulta
+		KZH = { all_core = { remove_core = KZH } }
 		any_owned = {
 			limit = { is_core = KAZ }
 			add_province_modifier = {

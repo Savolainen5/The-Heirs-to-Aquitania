@@ -761,6 +761,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
  		tag = QIN
+		exists = GXI
 		has_global_flag = gxi_claimed_mandate
 		has_country_flag = mandate
 	}
@@ -792,6 +793,7 @@ country_event = {
 			}
 			militancy = 4
 		}
+		prestige = -50
 	}
 }
 

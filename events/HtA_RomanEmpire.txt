@@ -1596,7 +1596,7 @@ country_event = {
 }
 
 country_event = {
-	id  = 50634
+	id  = 50635
 	title = "Not at war"
 	desc = "You're not in civil war. You don't need this modifier."
 	
@@ -1620,7 +1620,7 @@ country_event = {
 }
 
 country_event = {
-	id = 50635
+	id = 50636
 	title = "You're at war"
 	desc = "You're back in the civil war. Have a modifier."
 	
@@ -1646,6 +1646,47 @@ country_event = {
 	}
 }
 
+#BYZ annexes spherelings it has cores on
+country_event = {
+	id = 50637
+	title = "EVTNAME50637"
+	desc = "EVTDESC50637"
+	picture = "senate_debate"
+	
+	trigger = {
+		tag = BYZ
+		any_country = {
+			limit = {
+				in_our_sphere = THIS
+			}
+			all_core = {
+				is_core = BYZ
+			}
+		}
+		OR = {
+			has_global_flag = roman_succession_war_finish_BYZ
+			has_global_flag = roman_succession_war_finish_ANA
+		}
+		year = 1874
+		nationalism_n_imperialism = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "We welcome them with open arms."
+		random_country = {
+			limit = {
+				in_sphere = THIS
+				all_core = { is_core = THIS }
+			}
+			annex_to = THIS
+		}
+	}
+}
+		
 
 ########################################
 

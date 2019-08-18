@@ -160,7 +160,7 @@ country_event = {
 	id = 50354
 	title = "EVTNAME50354"
 	desc = "EVTDESC50354"
-	#picture = "SOME PICTUREOF A TSAR OR WHATEVER"
+	picture = "autocracy"
 	
 	fire_only_once = yes
 	
@@ -238,6 +238,7 @@ country_event = {
 	id = 50355
 	title = "EVTNAME50355"
 	desc = "EVTDESC50355"
+	picture = "communist_riot"
 	
 	fire_only_once = yes
 	
@@ -271,6 +272,7 @@ country_event = {
 	id = 50356
 	title = "EVTNAME50356"
 	desc = "EVTDESC50356"
+	picture = "carlists"
 	
 	fire_only_once = yes
 	
@@ -335,6 +337,7 @@ country_event = {
 	id = 50357
 	title = "EVTNAME50357"
 	desc = "EVTDESC50357"
+	picture = "communist_riot"
 	
 	fire_only_once = yes
 	
@@ -372,6 +375,7 @@ country_event = {
 	id = 50364
 	title = "EVTNAME50364"
 	desc = "EVTDESC50364"
+	picture = "Vsevolod"
 	
 	fire_only_once = yes
 	
@@ -469,6 +473,7 @@ country_event = {
 	id = 50380
 	title = "EVTNAME50380"
 	desc = "EVTDESC50380"
+	picture = "treaty_of_paris_1856"
 	
 	is_triggered_only = yes
 	
@@ -566,6 +571,7 @@ country_event = {
 	id = 50382
 	title = "EVTNAME50382"
 	desc = "EVTDESC50382"
+	picture = "treaty_of_paris_1856"
 	
 	is_triggered_only = yes	
 	
@@ -788,7 +794,7 @@ country_event = {
 	id = 50371
 	title = "EVTNAME50371"
 	desc = "EVTDESC50371"
-	picture = rebellious_minorities
+	picture = "rebellious_minorities"
 	
 	is_triggered_only = yes
 	
@@ -888,7 +894,7 @@ country_event = {
 	id = 50372
 	title = "EVTNAME50372"
 	desc = "EVTDESC50372"
-	picture = rebellious_minorities
+	picture = "rebellious_minorities"
 
 	fire_only_once = yes
 	
@@ -1118,6 +1124,7 @@ province_event = {
 	id = 50391
 	title = "EVTNAME50391"
 	desc = "EVTDESC50391"
+	#picture = ""#Actual Sebastopol
 	
 	fire_only_once = yes
 	
