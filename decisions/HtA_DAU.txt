@@ -105,7 +105,7 @@ political_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				badboy = 0.59
+				badboy = 0.6
 			}
 			modifier = {
 				factor = 0

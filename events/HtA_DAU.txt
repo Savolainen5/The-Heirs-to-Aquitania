@@ -876,17 +876,21 @@ country_event = {
 	option = {
 		name = "Excellent! Proceed with the partition!"
 		prestige = 10
-		DAU = {
-			any_owned = {
-				limit = { has_pop_culture = north_italian } #Cisalpine
-				secede_province = PDN
-				add_core = PDN
-			}
-			any_owned = {
-				secede_province = AQT
-				add_core = AQT
-			}
-		}
+#		DAU = {
+#			any_owned = {
+#				limit = { has_pop_culture = north_italian } #Cisalpine
+#				secede_province = PDN
+#				add_core = PDN
+#			}
+#			any_owned = {
+#				secede_province = AQT
+#				add_core = AQT
+#			}
+#		}
+		inherit = DAU
+		FRA_451 = { add_core = AQT }
+		SAR_466 = { secede_province = PDN add_core = PDN }
+		SAR_720 = { secede_province = PDN add_core = PDN }
 		set_country_flag = DAU_partition_success
 		clr_country_flag = DAU_partition
 		PDN = { 

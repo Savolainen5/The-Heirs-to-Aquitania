@@ -1655,24 +1655,35 @@ country_event = {
 	
 	trigger = {
 		tag = BYZ
-		any_country = {
-			limit = {
-				in_our_sphere = THIS
+		OR = {
+			any_neighbor_country = {
+				in_sphere = THIS
+				any_core = {
+					NOT = { is_core = BYZ }
+				}
 			}
-			all_core = {
-				is_core = BYZ
+			CRE = {
+				in_sphere = THIS
+				any_core = {
+					NOT = { is_core = BYZ }
+				}
+			}
+			CYP = {
+				in_sphere = THIS
+				any_core = {
+					NOT = { is_core = BYZ }
+				}
 			}
 		}
 		OR = {
 			has_global_flag = roman_succession_war_finish_BYZ
 			has_global_flag = roman_succession_war_finish_ANA
 		}
-		year = 1874
 		nationalism_n_imperialism = 1
 	}
 	
 	mean_time_to_happen = {
-		months = 24
+		months = 36
 	}
 	
 	option = {

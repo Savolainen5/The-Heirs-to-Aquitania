@@ -13,6 +13,8 @@ countrywide_famine;Countrywide Famine;;;;;;;;;;;x,,,
 countrywide_famine_desc;Because of recent events, natural or otherwise, our country is currently experiencing a famine. Many will die or leave for a new home. Many will demand action.;;;;;;;;;;;;;x
 countrywide_famine_immigrant_push;Countrywide Famine;;;;;;;;;;x,,,
 countrywide_famine_immigrant_push_desc;Because of the famine caused by Eyjafjallajokul's ash, people are more willing to seek greener pastures in the New World. Of those that remain, many will die and many more will demand action.;;;;;;;;;;;x 
+derzhavin;Derzhavin Regency;x
+derzhavin_desc;Afanasii Gregorevich Derzhavin is a tried-and-tested bureaucrat, whose extensive experience abroad and in Russia have contributed to Moscow county's relative prosperity compared to other parts of the country. As a seasoned administrator, his increased power in the role of the regent gives some benefits, but some contend he is too liberal and western.;x
 disaster_damage;Disaster Damage;;;;;;;;;;;;x
 disaster_damage_desc;This province is recovering from a recent natural disaster.;;;;;;;;;;x
 fighting_civil_war;Fighting in a Civil War;;;;;;;;;x
@@ -47,6 +49,8 @@ not_suppressed_desc;Pretend this doesn't exist, it's a workaround for code limit
 obbite;Obbite;;;;;;;;;x
 oheskewen_canal;Oheskewen Canal;;;;;;;;;;x
 oheskewen_canal_dividend;Dividends from the Oheskewen Canal;;;;;;;;;;x
+orlov;Orlov Regency;x
+orlov_desc;Igor Timofeevich Orlov is one of the leading generals in the Imperial Army. His extensive experience in matters of war have meant that his increased influence in the state as regent have led to improvements in military performance.;x
 pier_moncani;Pier Moncani as First Minister;;;;;;;;;;;x
 pier_moncani_influence1;Pier Moncani's Influence;;;;;;;;;;x
 pier_moncani_influence2;Pier Moncani's Influence;;;;;;;;;;x
@@ -76,7 +80,9 @@ tsar_batyushka_desc;Dear Father Tsar - The Tsar looks over us and protects us, a
 unsuccessful_ds_reform;Unsuccessful Reform;;;;;;;;;x
 unsuccessful_ds_reform_desc;In the wake of the publishing of Gogol's "Dead Souls," the government has attempted to make some reforms to improve productivity and reduce corruption. It has largely been unsuccessful.;;;;;;;;;;x
 very_rebellious_minorities;Very Rebellious Minorities;x
-very_rebellious_minorities;For some reason, the minorities in this province are extremely rebellious at the moment!;x
+very_rebellious_minorities_desc;For some reason, the minorities in this province are extremely rebellious at the moment!;x
+vorontsov;Vorontsov Regency;x
+vorontsov_desc;Daniil Petrovich Vorontsov was chosen by the late Tsar Feodor II as regent while his grandson, current Tsar Michael, was under age. Mistrusted by many due to his recent addition to the court and strange political and religious views, there is much rumour about how and why he was chosen.;x
 city_state;City-State;;;;;;;;;;;;x
 city_state_desc;With only one major city under our rule, our nation is easily overlooked.;;;;;;;;;;;;x
 small_nation;Small Nation;;;;;;;;;;;;x
@@ -189,3 +195,5 @@ NORMAL_WAR_SKANE_CB_NAME;$ORDER$ Skåne War;;;;;;;;;;;;;x
 AGRESSION_WAR_SKANE_CB_NAME;$ORDER$ Skåne War;;;;;;;;;;;;;x
 NORMAL_WAR_FREE_LATVIA_NAME;$ORDER$ Latvian War;;;;;;;;;;;;x
 AGRESSION_WAR_FREE_LATVIA_NAME;$ORDER$ Latvian War;;;;;;;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME_JAP_MDG;Japanese Invasion of Middag;x
+AGRESSION_WAR_RESTORE_ORDER_NAME_JAP_MDG;Japanese Invasion of Middag;x

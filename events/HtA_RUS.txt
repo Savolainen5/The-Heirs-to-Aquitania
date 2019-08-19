@@ -216,7 +216,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Afanasii Derzhavin, advisor and former governor of the Moscow raion."
+		name = "Afanasii Derzhavin, advisor and former governor of Moscow county."
 		#ok gov modifier
 		add_country_modifier = {
 			name = derzhavin

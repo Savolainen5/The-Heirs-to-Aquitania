@@ -2057,24 +2057,24 @@ technological_assistance = {
 vorontsov = {
 	prestige = -0.025
 	pop_consciousness_modifier = 0.05
-	icon = 16
+	icon = 4
 }
 
 orlov = {
 	leadership = 0.05
 	mobilisation_size = 0.005
-	icon = 16
+	icon = 15
 }
 
 derzhavin = {
 	ruling_party_support = 0.2
 	diplomatic_points_modifier = 0.1
 	pop_consciousness_modifier = 0.05
-	icon = 16
+	icon = 5
 }
 
 russian_regency = {
-	icon = 5
+	
 }
 
 tsar_batyushka = {

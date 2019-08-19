@@ -3774,39 +3774,63 @@
 #Chambery (228400/57100 POPS)
 466 = {
 	aristocrats = {
-		culture = north_italian
+		culture = aquitanian
 		religion = catholic
 		size = 550
 	}
 
 	clergymen = {
-		culture = north_italian
+		culture = aquitanian
 		religion = catholic
 		size = 575
 	}
 
 	artisans = {
-		culture = north_italian
+		culture = aquitanian
 		religion = catholic
 		size = 2800
 	}
 
 	soldiers = {
+		culture = aquitanian
+		religion = catholic
+		size = 1200
+	}
+
+	farmers = {
+		culture = aquitanian
+		religion = catholic
+		size = 26175
+	}
+
+	aristocrats = {
 		culture = north_italian
 		religion = catholic
-		size= 1000
+		size = 150
+	}
+
+	clergymen = {
+		culture = north_italian
+		religion = catholic
+		size = 175
+	}
+
+	artisans = {
+		culture = north_italian
+		religion = catholic
+		size = 800
+	}
+
+	soldiers = {
+		culture = north_italian
+		religion = catholic
+		size = 200
 	}
 
 	farmers = {
 		culture = north_italian
 		religion = catholic
-		size = 26175
-	}
-    
-	farmers = {
-		culture = aquitanian
-		religion = catholic
-		size = 26175
+		size = 11175
 	}
 
 }

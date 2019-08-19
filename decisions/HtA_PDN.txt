@@ -265,6 +265,41 @@ political_decisions = {
 			}
 		}
 	}
+	
+#Liberation of Tuscany
+	liberate_tuscany = {
+		picture = Tuscany
+		potential = {
+			tag = PDN
+			NOT = { exists = TUS }
+			744 = { owned_by = NPL }
+			NOT = { has_country_flag = liberate_tuscany }
+			has_country_flag = declaration_of_mantua
+		}
+		allow = {
+			prestige = 50
+			military_score = 50
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
+		}
+		effect = {
+			set_country_flag = liberate_tuscany
+			TUS_744 = { add_core = THIS }
+			badboy = 2
+			prestige = 5
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.88
+			}
+		}
+	}
+
+
 #Invite Tuscany into the Union
 	invite_tuscany_PDN = {
 		picture = conference1
@@ -275,7 +310,11 @@ political_decisions = {
 		}
 		
 		allow = {
-			prestige = 5
+			prestige = 25
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
 			relation = {
 				who = TUS
 				value = 150
@@ -311,7 +350,11 @@ political_decisions = {
 		}
 		
 		allow = {
-			prestige = 5
+			prestige = 25
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
 			relation = {
 				who = RMG
 				value = 150
