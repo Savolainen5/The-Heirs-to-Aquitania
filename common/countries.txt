@@ -189,7 +189,7 @@ TRR		= "countries/Trier.txt"
 WES		= "countries/Westfalen.txt"
 WUR		= "countries/Wurttemberg.txt"
 
-#Russia
+#Russia - see also the Middle East below for some more, like Kazakh
 AKH		= "countries/Astrakhan.txt"
 ALT		= "countries/Altai Republic.txt"
 DON		= "countries/Cossackia.txt"

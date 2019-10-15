@@ -50538,17 +50538,22 @@
 
 # Dashhowuz
 1196 = {
-    unit = {
-        x = 3740.000000
-        y = 1455.000000
-    }
-
     text_position = {
         x = 3738.000000
         y = 1444.800049
     }
 
     text_scale = 3.699999
+    unit = {
+        x = 3740.000000
+        y = 1455.000000
+    }
+
+    factory = {
+        x = 3721.000000
+        y = 1462.000000
+    }
+
     building_construction = {
         x = 3761.000000
         y = 1436.000000
@@ -50559,28 +50564,10 @@
         y = 1442.000000
     }
 
-    factory = {
-        x = 3721.000000
-        y = 1462.000000
-    }
-
     building_position = {
         fort = {
             x = 3766.000000
             y = 1450.000000
-        }
-
-    }
-
-    spawn_railway_track = {
-        {
-            x = 3741.300293
-            y = 1466.099487
-        }
-
-        {
-            x = 3729.000000
-            y = 1465.000000
         }
 
     }
@@ -50737,25 +50724,30 @@
 
 # Khojand
 1201 = {
+    text_position = {
+        x = 3886.251923
+        y = 1427.596154
+    }
+
+    text_scale = 3.299999
     unit = {
         x = 3881.000000
         y = 1428.000000
     }
 
-    text_position = {
-        x = 3881.000000
-        y = 1420.900024
+    factory = {
+        x = 3893.948077
+        y = 1434.098077
     }
 
-    text_scale = 3.299999
     building_construction = {
         x = 3867.000000
         y = 1422.500000
     }
 
-    factory = {
-        x = 3892.000000
-        y = 1443.000000
+    military_construction = {
+        x = 3897.840385
+        y = 1428.569231
     }
 
 }
@@ -50805,17 +50797,22 @@
 
 # Osh
 1203 = {
+    text_position = {
+        x = 3935.984615
+        y = 1431.630769
+    }
+
+    text_scale = 2.899999
     unit = {
         x = 3927.000000
         y = 1434.000000
     }
 
-    text_position = {
-        x = 3927.000000
-        y = 1430.000000
+    factory = {
+        x = 3952.000000
+        y = 1447.000000
     }
 
-    text_scale = 2.899999
     building_construction = {
         x = 3944.000000
         y = 1444.000000
@@ -50824,11 +50821,6 @@
     military_construction = {
         x = 3913.000000
         y = 1433.000000
-    }
-
-    factory = {
-        x = 3952.000000
-        y = 1447.000000
     }
 
     building_position = {
@@ -50975,30 +50967,30 @@
 
 # Kulob
 1207 = {
+    text_position = {
+        x = 3889.613462
+        y = 1404.032051
+    }
+
+    text_scale = 3.299999
     unit = {
         x = 3892.000000
         y = 1408.000000
     }
 
-    text_position = {
-        x = 3891.000000
-        y = 1399.199951
+    factory = {
+        x = 3905.000000
+        y = 1420.000000
     }
 
-    text_scale = 3.299999
     building_construction = {
-        x = 3898.000000
-        y = 1419.000000
+        x = 3906.755128
+        y = 1414.270513
     }
 
     military_construction = {
         x = 3885.000000
         y = 1413.000000
-    }
-
-    factory = {
-        x = 3905.000000
-        y = 1420.000000
     }
 
     building_position = {

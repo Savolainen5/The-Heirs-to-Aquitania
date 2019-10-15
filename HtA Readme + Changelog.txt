@@ -51,6 +51,10 @@ Version 0.36 X/Y/19 - The Russias & China Update
 *Major*
 
 - Story and flavour for Russia and Smolensk
+	-Final resolution of the two-state problem in Russia via war
+	-Expansion to the Pacific coast of Asia
+	-Expansion into central Asia
+	-Expansion against the Baltics
 - Events and decisions for China by /u/chortlinggnome, see changelog below
 - Incorporated HPM's crisis locking system and election event spam reduction system
 - HtA story chain regarding Corsica involving Aquitania, PDN, and Naples/Italy
@@ -60,11 +64,29 @@ Version 0.36 X/Y/19 - The Russias & China Update
 
 *Minor*
 
-- Some Luxembourg buffing
-	- Added Wallonian to accepted cultures of Luxembourg
-	- Added a fun cheese decision for a GP Luxembourg to get cores on all of France, Wallonia, and Germany (and it will get Central German as an accepted culture)
-	- Added a second fun cheese decision to follow to get cores on Netherlands and accept Dutch. You must hold some French cores and some German cores in order to take the decision
-- Localisation file consolidation
+**Decisions**
+- Added a decision for Margaria/Ginnaecer (or conceivably some other country) to expand into Oai (typically the last state to be colonised in NA)
+- Added decisions to colonize the often-empty states of Newea and Necen in NA
+- Added a decision to annex Silesia after it has been puppeted by the Secure Silesia decision
+- Tweaked/added decisions for Naples/Italy to better deal with Tuscany and getting cores on the Padan Union, thanks to Spudgun
+- Tweak/fix for decision for forming SGF so that it works
+- Greece now will declare war on the Roman Empire in the Roman Civil War as soon as war with Anatolia begins, rather than waiting for 20 military score
+- Incorporated decision for Norway to claim some Caribbean islands, courtesy of /u/Flapjack731. Thanks!
+- Transcaucasia formation decisions are only available when Railroading is off
+- The Oheskewen canal now has stricter requirements for construction - you must either own the province yourself, or your vassal must
+- Forming Bohemia-Hungary now removes Bohemia cores
+- Armenia will move its capital to Erivan when it loses Yerzenka
+
+**Events**
+- Expanded Margaria's expansion events to include more commonly-empty provinces
+- Added an event for any NA country which has borders on a coreless empty province to get a random event to own that province. SAVS THINKS THIS SHOULD BE MADE TO BE A REAL cOLONY PROVINcE, NOT A STATE
+- Added an event for France to get cores on Brittany if it doesn't have them and to change the province names to the French ones
+- Added an event for the Celtic Federation (CLT) owning Brittany to revert names from possible French names to Breton ones
+- Added a number of flavour events
+- The Treaty of Szekes gives signatories cores on the provices they get from Bohemia, Bohemia keeps its cores in Moravia and isn't releasable
+- PDN can get cores on VEN even if someone snipes Venice first, like Crushric likes to do when playing as BAV
+
+**The world**
 - Added some relationships from the EU3 save
 - Updated some diplomacy
 - Gave some Persian provinces to Azerbaijan to better reflect the state of the world
@@ -73,43 +95,32 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - Small party policy changes for Naples/Italy
 - UBD no longer has Estonian as a primary
 - Updated a bunch of flags, with special thanks to Athemos
-- Halved POP growth bonus for Steenkooler republics
-- Halved MIL and CON gain during famine from volcano
-- Expanded Margaria's expansion events to include more commonly-empty provinces
-- Added a decision for Margaria/Ginnaecer (or conceivably some other country) to expand into Oai (typically the last state to be colonised in NA)
-- Added an event for any NA country which has borders on a coreless empty province to get a random event to own that province. SAVS THINKS THIS SHOULD BE MADE TO BE A REAL cOLONY PROVINcE, NOT A STATE
-- Added a decision to annex Silesia after it has been puppeted by the Secure Silesia decision
-- Added decisions to colonise the oft-empty states of Newea and Necen in NA
-- Forming Bohemia-Hungary now removes Bohemia cores
-- Tweaked/added decisions for Naples/Italy to better deal with Tuscany and getting cores on the Padan Union, thanks to Spudgun
-- Tweak/fix for decision for forming SGF so that it works
-- Tweaked the population growth maluses for Disaster Damage and Fire Recovery event modifiers
-- Added an event for France to get cores on Brittany if it doesn't have them and to change the province names to the French ones
-- Added an event for the Celtic Federation (CLT) owning Brittany to revert names from possible French names to Breton ones
-- Added a number of flavour events
-- Changed the name of Romania to Volasea (as a sort of quasi-plausible development of Volcae/Vlach/Wallach into something that isn't Romania, because, you know, Romans exist)
-	- The new tag is VOL, though I haven't changed other things, like party name codes, regions, or the culture code
-- Tweaked the colour of Central German culture to be more distinguishable from North German
-- Modified the Cherokee country colour
 - Italian (that is, south_italian) added as an accepted culture to Sicily
-- Treaty of Szekes gives signatories cores on the provices they get from Bohemia, Bohemia keeps its cores in Moravia and isn't releasable
-- PDN can get cores on VEN even if someone snipes Venice first, like Crushric likes to do when playing as BAV
-- Greece now will declare war on the Roman Empire in the Roman Civil War as soon as war with Anatolia begins, rather than waiting for 20 military score
-- Incorporated decision for Norway to claim some Caribbean islands, courtesy of /u/Flapjack731. Thanks!
-- Renamed and adjusted some provinces in Russia
-- Added old world island terrain type from HPM - New world islands need to be added
+- Modified the Cherokee country colour
 - Made Don Cossacks exist from game start as Smolensk puppet for inclusion in Russia stuff
 - Improved some OOBs, added some missing ones
 - Adjusted POPs in a number of places with the above in mind
 - Added some Sephardic POPs to Aquitania and Ashkenazi to SOME of France. Needs more - ALWAYS
-- Transcaucasia formation decisions are only available when Railroading is off
-- Armenia will move its capital to Erivan when it loses Yerzenka
-- Made lots of vassals at game start into substates so that the Acquire Substate State cb can be used against their overlords
 - Tweaked POP migration a bit, taking inspiration from HPM
 - Added a flag for New World countries which helps with the above (and an event to assign it if it's not there from the beginning)
-- Gave Hispania the port of Penang on the Malay Peninsula
 - Gave a number of countries different ideals
-- The Oheskewen canal now has stricter requirements for construction - you must either own the province yourself, or your vassal must
+- Made lots of vassals at game start into substates so that the Acquire Substate State cb can be used against their overlords
+- Gave Hispania the port of Penang on the Malay Peninsula
+- Renamed and adjusted some provinces in Russia, central Asia
+
+**Other**
+- Some Luxembourg buffing
+	- Added Wallonian to accepted cultures of Luxembourg
+	- Added a fun cheese decision for a GP Luxembourg to get cores on all of France, Wallonia, and Germany (and it will get Central German as an accepted culture)
+	- Added a second fun cheese decision to follow to get cores on Netherlands and accept Dutch. You must hold some French cores and some German cores in order to take the decision
+- Localisation file consolidation
+- Halved POP growth bonus for Steenkooler republics
+- Halved MIL and CON gain during famine from volcano
+- Tweaked the population growth maluses for Disaster Damage and Fire Recovery event modifiers
+- Changed the name of Romania to Volasea (as a sort of quasi-plausible development of Volcae/Vlach/Wallach into something that isn't Romania, because, you know, Romans exist)
+	- The new tag is VOL, though I haven't changed other things, like party name codes, regions, or the culture code
+- Tweaked the colour of Central German culture to be more distinguishable from North German
+- Added old world island terrain type from HPM - New world islands need to be added*
 - Lots more tweaks
 
 *Bugfixes*

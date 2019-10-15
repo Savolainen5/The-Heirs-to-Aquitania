@@ -450,7 +450,7 @@ political_decisions = {
 		effect = {
 			relation = {
 				who = SML
-				value = -150
+				value = -50
 			}
 			diplomatic_influence = {
 				who = SML
@@ -459,6 +459,7 @@ political_decisions = {
 		}
 	}
 	
+	#Annex the Hetmanate
 	yoke_the_tatars = {
 		picture = enslave_the_undesirables
 		potential = {
@@ -514,10 +515,57 @@ political_decisions = {
 			nationalism_n_imperialism = 1
 		}
 		effect = {
-			prestige = 2
+			prestige = 5
 			add_accepted_culture = ukrainian
 			add_accepted_culture = byelorussian
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = ukrainian
+						has_pop_culture = byelorussian
+					}
+				}
+				consciousness = 4
+			}
 		}
 	}
-			
+	
+	#Dominate the Kazakhs
+	dominate_the_kazakhs = {
+		picture = tatars
+		potential = {
+			OR = {
+				tag = SML
+				tag = RUS
+			}
+			is_greater_power = yes
+			exists = KZH
+			RUS = { NOT = { has_country_flag = dominate_kzh } }
+			SML = { NOT = { has_country_flag = dominate_kzh } }
+			year = 1854
+		}
+		allow = {
+			neighbour = KZH
+			nationalism_n_imperialism = 1
+			relation = {
+				who = KZH
+				value = 50
+			}
+			KZH = { part_of_sphere = no }
+			KZH = { is_vassal = no }
+		}
+		effect = {
+			prestige = 5
+			relation = {
+				who = KZH
+				value = 100
+			}
+			diplomatic_influence = {
+				who = KZH
+				value = 400
+			}
+			create_alliance = KZH
+			set_country_flag = dominate_kzh
+		}
+	}
 }

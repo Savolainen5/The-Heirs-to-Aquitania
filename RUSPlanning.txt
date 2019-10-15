@@ -1,19 +1,14 @@
 POL
 -Black sea stuff
 -Oppose GER formation
--Pressure BYZ to form Romania, either as an independent or by attacking Ardeal to make a vassal Romania
+-Pressure BYZ to form Romania/Volasea, either as an independent or by attacking Ardeal to make a vassal Romania
 
 SML
 - War with BYZ for some reason, if they win they can free the S. Slavs
 - Intervene on behalf of Anatole in civil war?
 - Make it so that Ukraine isn't a country but there's something else
-- Why can't it just  attack Russia immediately? Allies? Power of the church in favour of Russia?
-- SML has precarious peace with the nomads like cossack, kazakh (and someone else?), which makes them less powerful than they appear
 
 RUS
-- Event/decision to sphere Kazakh Khanate and Cossack Hetmanate
-- Puppet Kazakh
-- After Smolensk is no longer a threat, some chain to either annex Kazakh peacefully or go to war with Kazakh
 - Continue south into C. Asia - conflict with Persia
 
 Make Albesan rebels rebel less
@@ -30,3 +25,6 @@ Hispania and Navarra from this post: http://forum.paradoxplaza.com/forum/index.p
 Make forming BHN remove BOH cores
 Write events to get the rest of NA states just because it's annoying they aren't being colonised
 Nerf Steenkooler growth modifier (reduced global pop growth modifier from 0.1 to 0.05. Maybe that'll do it?
+- Event/decision to sphere Kazakh Khanate and Cossack Hetmanate
+- Why can't it just  attack Russia immediately? Allies? Power of the church in favour of Russia?
+- SML has precarious peace with the nomads like cossack, kazakh (and someone else?), which makes them less powerful than they appear

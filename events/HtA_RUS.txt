@@ -1223,7 +1223,7 @@ country_event = {
 country_event = {
 	id = 50393
 	title = "Ignore me"
-	desc = "I'm just fixing something."
+	desc = "I'm just fixing something with the Dead Souls event."
 	
 	fire_only_once = yes
 	
@@ -1251,7 +1251,72 @@ country_event = {
 				name = successful_ds_reform
 				duration = 3650
 			}
-			clr_country_flag=  dead_souls
+			clr_country_flag = dead_souls
 		}
+	}
+}
+
+#The Great Drive South
+country_event = {
+	id = 50394
+	title = "EVTNAME50394"
+	desc = "EVTDESC50394"
+	picture = "central_asian_tribes"
+	
+	trigger = {
+		OR = {
+			AND = {
+				tag = RUS
+				NOT = { exists = SML }
+			}
+			AND = {
+				tag = SML
+				NOT = { exists = RUS }
+			}
+		}
+		OR = {
+			KZH = { in_sphere = THIS }
+			KHI = { in_sphere = THIS }
+			BUK = { in_sphere = THIS }
+			KOK = { in_sphere = THIS }
+		}
+		nationalism_n_imperialism = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+	}
+	
+	option = {
+		name = "A capital idea!"
+		random_country = {
+			limit = {
+				OR = {
+					tag = KZH
+					tag = KHI
+					tag = BUK
+					tag = KOK
+				}
+				in_sphere = THIS
+			}
+			any_core = {
+				add_core = THIS
+			}w
+			annex_to = THIS
+			
+		}
+		badboy = 2
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.94
+			}
+		}
+	}
+	
+	option = {
+		name = "They are still useful to us."
 	}
 }

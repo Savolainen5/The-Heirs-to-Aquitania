@@ -425,43 +425,7 @@
 	soldiers = {
 		culture = uzbek
 		religion = sunni
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = uzbek
-		religion = sunni
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = uzbek
-		religion = sunni
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = uzbek
-		religion = sunni
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = uzbek
-		religion = sunni
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = uzbek
-		religion = sunni
-		size= 1000
-
+		size= 16000
 	}
 
 	farmers = {
@@ -523,7 +487,6 @@
 		culture = mashriqi
 		religion = sunni
 		size= 50
-
 	}
 
 	farmers = {
@@ -567,22 +530,7 @@
 	soldiers = {
 		culture = uzbek
 		religion = sunni
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = uzbek
-		religion = sunni
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = uzbek
-		religion = sunni
-		size= 1000
-
+		size= 7000
 	}
 
 	farmers = {
@@ -612,8 +560,7 @@
 	soldiers = {
 		culture = tajik
 		religion = sunni
-		size= 50
-
+		size = 50
 	}
 
 	farmers = {

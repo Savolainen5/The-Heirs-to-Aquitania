@@ -878,7 +878,7 @@ country_event = {
 		prestige = 10
 #		DAU = {
 #			any_owned = {
-#				limit = { has_pop_culture = north_italian } #Cisalpine
+#				limit = { has_pop_culture = north_italian } #Cisalpine					#This didn't work correctly, so I got rid of it
 #				secede_province = PDN
 #				add_core = PDN
 #			}
