@@ -107,6 +107,7 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - Made lots of vassals at game start into substates so that the Acquire Substate State cb can be used against their overlords
 - Gave Hispania the port of Penang on the Malay Peninsula
 - Renamed and adjusted some provinces in Russia, central Asia
+- Renamed some provinces in New Holland and the surrounding seas
 
 **Other**
 - Some Luxembourg buffing

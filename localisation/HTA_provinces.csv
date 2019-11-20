@@ -42,7 +42,7 @@ PROV40;Crouy-sur-Lac;;;;;;;;x
 PROV41;Ennordres;;;;;;;;;x    
 PROV42;Val-Pembine;;;;;;;;;x  
 PROV44;Barthelemeia;;;;;;;;;;;x 
-PROV45;Groot Eylandt;;;;;;;;;;x
+PROV45;Verlaten Eylandt;;;;;;;;;;x
 PROV46;Karonta;;;;;;;;;;x     
 PROV47;Groseilliers;;;;;;;;;x 
 PROV48;Fortin de la Baie;;;;;;;;;x
@@ -855,7 +855,7 @@ PROV2580;Salo;;;;;;;;;;;;x
 PROV2587;Kuolla;;;;;;;;;;;;x
 PROV2588;Airoranta;;;;;;;;;;;;x
 PROV2592;Jan Dekkers Land;;;;;;;;;;x
-PROV2593;Chisasijbij;;;;;;;;;;x
+PROV2593;Chisasibij;;;;;;;;;;x
 PROV2594;Combre;;;;;;;;;;;;x  
 PROV2595;Kivallique;;;;;;;;;;;
 PROV2596;Deninouque;;;;;;;;;;;x
@@ -892,7 +892,19 @@ PROV2879;Gulf of Naffaroako Berria;x
 PROV2881;Zumaia Bight;x
 PROV2882;Tierlinck Sea;x
 PROV2884;Zonsop Sea;x
+PROV2936;Landeind Strait;x
+PROV2937;Verlaten Bay;x
+PROV2938;Teylingen Strait;x
+PROV2939;Brederode Bay;x
+PROV2940;Western Teylingen Bay;x
+PROV2941;Eastern Teylingen Bay;x
+PROV2942;Lumey Basin;x
 PROV2943;Karel Gulf;;;;;;;;;;;;x
+PROV2945;Bay of Vandij;x
+PROV2946;Strait of Mooi Eylandt;x
+PROV2948;Onze Dame Bay;x
+PROV2949;Niuewland Sea;x
+PROV2952;Krofylk Bay;x
 PROV2953;Rena Bight;;;;;;;;;;x
 PROV2966;Mopan Bay;;;;;;;;;;;;x
 PROV2968;Mellom Gulf;;;;;;;;;;;x
@@ -912,6 +924,7 @@ PROV2999;Bay of Huancavilcas;x
 PROV3000;Tachina Coast;;;;;;;;;;;x
 PROV3001;Panaben Gulf;;;;;;;;;;x
 PROV3006;Bermejo Sea;;;;;;;;;;x
+PROV3022;Nieuw Zeeland Seamounts;x
 PROV3025;West Demonseg Sea;;;;;;;;;;;;x
 PROV3026;East Demonseg Sea;;;;;;;;;;;;x
 PROV3062;W. Karel River;;;;;;;;;;;;x

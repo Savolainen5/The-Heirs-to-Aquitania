@@ -208,7 +208,7 @@ political_decisions = {
 	the_ruhr_boom = {
 		potential = {
 			OR = {
-				tag = BRC
+				tag = BRU
 				tag = GER
 			}
 			owns = 578
