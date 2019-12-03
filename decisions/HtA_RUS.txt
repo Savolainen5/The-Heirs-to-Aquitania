@@ -66,12 +66,12 @@ political_decisions = {
 				exists = URA
 				exists = YAK
 			}
+			invention = national_fraternity
 		}
 
 		allow = {
 			war = no
 			prestige = 45
-			invention = national_fraternity
 			SIB = {
 				all_core = {
 					owned_by = THIS
@@ -156,12 +156,12 @@ political_decisions = {
 				exists = KAM
 				exists = YAK
 			}
+			invention = national_fraternity
 		}
 
 		allow = {
 			war = no
 			prestige = 45
-			invention = national_fraternity
 			CHI_1082 = { owned_by = THIS }
 			SIB = {
 				all_core = {
@@ -310,6 +310,7 @@ political_decisions = {
 								value = 100
 							}
 						}
+						owner = POL
 					}
 				}
 			}
@@ -443,7 +444,7 @@ political_decisions = {
 				SML = { in_sphere = THIS }
 				relation = {
 					who = SML
-					value = 50
+					value = 150
 				}
 			}
 		}
@@ -454,7 +455,7 @@ political_decisions = {
 			}
 			diplomatic_influence = {
 				who = SML
-				value = -400
+				value = -100
 			}
 		}
 	}
@@ -568,4 +569,7 @@ political_decisions = {
 			set_country_flag = dominate_kzh
 		}
 	}
+	
+	#Warmwater Pacific Port chain (to be done in 0.41)
+	
 }

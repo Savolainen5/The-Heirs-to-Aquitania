@@ -1,0 +1,70 @@
+The following overall schedule shows what areas will be completed by the version number listed
+
+Overall schedule:
+0.40 - Europe
+0.50 - Asia
+0.60 - NA + Caribbean
+0.70 - SA + CA
+0.80 - Volturnia and the Pacific
+0.90 - Africa
+1.0 - Finishing bits
+
+Europe
+0.31 and earlier - France, Brittany, British Isles (Northern Isles in-game), Roman Empire, Hispania
+0.32 - Bohemia, Ardeal, Austria, Croatia
+0.33 - The Netherlands
+0.34 - Northern Isles part 2
+0.35 - Nordic countries and some of the Baltics
+0.36 - Smolensk vs. Russia
+0.40 - Miscellaneous, flavour events
+
+Asia (Ideas for things to do follow the colon)
+0.41 - Japan and Korea: Pacific Port chain for Russia (Korea/Manchuria)
+0.42 - China (partly done in 0.36)
+0.43 - SEA and Indonesia
+0.44 - India
+0.45 - Persia, Mesopotamia, and the Levant: Russian-Persian conflict
+0.46 - Central Asia
+0.47 - Caucasus and Armenia
+0.48 - Arabia
+0.50 - Miscellaneous
+
+North Ameriga
+0.51 - New Holland and Dabimon
+0.52 - Vestland and Margaria
+0.53 - Shawnee Confederation and friends
+0.54 - Mexika and Yucutan
+0.55 - Califiana and Skamisc
+0.57 - Caribbean
+0.60 - Miscellaneous
+
+South Ameriga
+0.61 - Mankemmark, Midtenland, Hoyekysten
+0.62 - Inca
+0.63 - Gidan
+0.64 - Uilscyr
+0.65 - Altallia and Ysun
+0.66 - Argentina
+0.67 - Chile
+0.70 - Miscellaneous
+
+Volturnia and the Pacific
+0.71 - Teralarga and Naffaroako Berria
+0.72 - Pacific Islands (interactions with Europeans and colonisers, etc.)
+0.73 - Papua New Guinea
+0.74 - Hawaii
+0.80 - Miscellaneous
+
+Africa
+0.81 - Africa - colonial borders
+0.82 - Maghreb
+0.83 - East Coast of Africa (Somalia, Zanzibar, Shona)
+0.84 - Southern Africa
+0.85 - Central Africa (Congo area)
+0.86 - Eastern Africa (Mali and friends)
+0.90 - Miscellaneous
+
+Finishing bits
+0.91 - Fixes, localisations, flavour events
+0.92 to 0.95 - HtA Megacampaign story events/decisions
+0.96 to 1.0 - Fulfilling requests and dreams of me and others

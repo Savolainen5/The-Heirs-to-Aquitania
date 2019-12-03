@@ -5,14 +5,14 @@ political_decisions = {
 			tag = AQT
 			NOT = {
 				has_country_flag = catalans_embraced
-				}
+			}
+			is_greater_power = yes
 		}
 		
 		allow = {
 			prestige = 100
 			war = no
 			nationalism_n_imperialism = 1
-			is_greater_power = yes
 			CAT = {
 				all_core = {
 					OR = {
