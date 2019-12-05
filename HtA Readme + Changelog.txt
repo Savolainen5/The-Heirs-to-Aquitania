@@ -121,7 +121,7 @@ Version 0.36 X/Y/19 - The Russias & China Update
 - Changed the name of Romania to Volasea (as a sort of quasi-plausible development of Volcae/Vlach/Wallach into something that isn't Romania, because, you know, Romans exist)
 	- The new tag is VOL, though I haven't changed other things, like party name codes, regions, or the culture code
 - Tweaked the colour of Central German culture to be more distinguishable from North German
-- Added old world island terrain type from HPM - New world islands need to be added*
+- Added island terrain types from HPM and so changed a bunch of terrain to small islands
 - Lots more tweaks
 
 *Bugfixes*

@@ -3,3 +3,5 @@ controller = HAW
 add_core = HAW
 trade_goods = fish
 life_rating = 10
+terrain = coral_island
+

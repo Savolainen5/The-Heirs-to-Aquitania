@@ -254,14 +254,14 @@ categories =  {
 		attrition = 1
 		color = { 210 155 11 }
 
-		farm_rgo_size = -10.5
+		farm_rgo_size = -1.5
 		farm_rgo_eff = 0.0
-		mine_rgo_size = -10.5
+		mine_rgo_size = -1.5
 		mine_rgo_eff = 0.0
 		supply_limit = 2
 		combat_width = -0.3
-		assimilation_rate = -0.5
-		immigrant_attract = -0.75
+		assimilation_rate = -0.25
+		immigrant_attract = -0.25
 	}
 }
 

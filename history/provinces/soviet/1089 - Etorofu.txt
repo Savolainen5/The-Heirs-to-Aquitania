@@ -3,4 +3,5 @@ controller = AIN
 add_core = AIN
 trade_goods = fish
 life_rating = 20
+terrain = small_island
 

@@ -4,4 +4,5 @@ add_core = CUB
 trade_goods = fruit
 life_rating = 35
 colonial = 2
+terrain = new_world_small_island
 

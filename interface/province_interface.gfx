@@ -336,6 +336,18 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_terrainimg_coral_island"
+		texturefile = "gfx\\interface\\terrain_coral_island.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_terrainimg_new_world_small_island"
+		texturefile = "gfx\\interface\\terrain_new_world_small_island.tga"
+		norefcount = yes
+	}
+	
+	spriteType = {
 		name = "GFX_terrainimg_ocean"
 		texturefile = "gfx\\interface\\terrain_mountains.tga"
 		norefcount = yes

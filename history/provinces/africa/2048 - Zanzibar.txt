@@ -3,4 +3,5 @@ controller = ZAN
 add_core = ZAN
 trade_goods = grain
 life_rating = 35
+terrain = small_island
 

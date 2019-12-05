@@ -3,5 +3,6 @@ controller = NOR
 add_core = NOR
 trade_goods = fish
 life_rating = 30
+terrain = small_island
 #Now actually Orkney up north. The Channel Islands aren't interesting
 

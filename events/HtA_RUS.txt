@@ -170,7 +170,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 2
 	}
 	
 	immediate = {
@@ -247,7 +247,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 18
+		months = 8
 	}
 	
 	option = {
@@ -282,7 +282,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 12
+		months = 5
 	}
 	
 	option = {
@@ -357,7 +357,7 @@ country_event = {
 			}
 			militancy = -4
 			consciousness = -4
-			reduce_pop = 0.8
+			reduce_pop = 0.9
 		}
 		any_pop = {
 			limit = {
@@ -1301,7 +1301,7 @@ country_event = {
 			}
 			any_core = {
 				add_core = THIS
-			}w
+			}
 			annex_to = THIS
 			
 		}
