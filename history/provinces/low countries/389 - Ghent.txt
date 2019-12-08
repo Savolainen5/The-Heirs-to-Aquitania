@@ -1,10 +1,7 @@
 owner = BRB
-
 controller = BRB
 add_core = BRB
-
 trade_goods = wool
-
 life_rating = 35
 
 

@@ -1,10 +1,7 @@
 owner = WLL
-
 controller = WLL
 add_core = WLL
-
 trade_goods = coal
-
 life_rating = 35
 
 

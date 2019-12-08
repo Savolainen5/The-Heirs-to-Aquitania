@@ -374,7 +374,7 @@ PROV467;Marselha;;;;;;;;;;;;x
 PROV468;Avinhon;;;;;;;;;;;;x
 PROV469;Digno;;;;;;;;;;;;x
 PROV470;Touloun;;;;;;;;;;;;x
-PROV471;Frejùs;;;;;;;;;;;;x
+PROV471;Frejús;;;;;;;;;;;;x
 PROV472;Niça;;;;;;;;;;;;x
 PROV474;A Coruña;;;;;;;;;;;;x
 PROV492;Bilbo;;;;;;;;;;;;x
@@ -413,6 +413,14 @@ PROV711;Siedlce;;;;;;;;;;;;x
 PROV719;Bialystok;;;;;;;;;;;;x   
 PROV721;Aoûta;;;;;;;;;;;;x
 PROV722;Noara;;;;;;;;;;;;x
+PROV723;Lissandria;x
+PROV724;Zena;x
+PROV725;Savonna;x
+PROV728;Brèsa;x
+PROV729;Venesia;x
+PROV731;Pàdova;x
+PROV732;Trevixo;x
+PROV734;Trento;x
 PROV748;Grosseto;;;;;;;;;;;;x      
 PROV806;Skupol;;;;;;;;;;;;x
 PROV807;Voutelion;;;;;;;;;;;;x
@@ -849,6 +857,7 @@ PROV2555;Wotkokokpe;;;;;;;;;;;;x
 PROV2556;Ikhedodala;;;;;;;;;;;;x
 PROV2557;Kolding;;;;;;;;;;;;x
 PROV2562;Paiwan;;;;;;;;;;;;x
+PROV2568;Lugan;x
 PROV2570;Bieuvais;;;;;;;;;;;;x
 PROV2571;Txauraga;x
 PROV2580;Salo;;;;;;;;;;;;x
