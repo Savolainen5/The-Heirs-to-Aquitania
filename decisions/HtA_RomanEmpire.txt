@@ -436,8 +436,9 @@ political_decisions = {
 				factor = 0
 				BYZ = {
 					any_owned_province = {
-						country_units_in_province = THIS
+						NOT = { country_units_in_province = THIS }
 					}
+					war_with = ANA
 				}
 			}
 		}

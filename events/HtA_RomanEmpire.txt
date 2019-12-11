@@ -609,6 +609,10 @@ country_event = {
 			factor = 0.2
 			exists = ANA
 		}
+		modifier =  {
+			factor = 0.1
+			war_with = ANA
+		}
 	}
 	
 	immediate = {
@@ -1366,12 +1370,10 @@ country_event = {
 #####################################################################
 
 #Event to declare victory for the Roman Empire
-
 country_event = {
 	id = 50627
 	title = "EVTNAME50627"
 	desc = "EVTDESC50627"
-
 	major = yes
 	
 	trigger = {

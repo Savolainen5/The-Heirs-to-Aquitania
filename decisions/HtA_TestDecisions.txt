@@ -16,5 +16,22 @@ political_decisions = {
 #		}
 #	}
 
+#	troops_in_prov = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			tag = AQT
+#			HIS = {
+#				any_owned_province = {
+#					NOT = { country_units_in_province = THIS }
+#				}
+#			}
+#		}
+#		effect = {
+#			prestige = 1
+#		}
+#	}
+
 
 }
