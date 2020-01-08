@@ -301,6 +301,7 @@ political_decisions = {
 		effect = {
 			badboy = 10
 			inherit = SLS
+			SLS = { all_core = {  add_core = THIS } }
 			prestige = 5
 		}
 		

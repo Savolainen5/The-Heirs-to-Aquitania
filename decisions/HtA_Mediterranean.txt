@@ -602,8 +602,10 @@ political_decisions = {
 				tag = ITA
 				tag = CRS
 			}
-			is_secondary_power = yes
-			is_greater_power = yes
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
 		}
 		
 		allow = {
