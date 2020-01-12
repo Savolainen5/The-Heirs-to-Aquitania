@@ -420,6 +420,7 @@ political_decisions = {
 		}
 		
 		effect = {
+			prestige = 2
 			set_country_flag = approach_aqt
 			relation = {
 				who = AQT

@@ -415,6 +415,7 @@ political_decisions = {
 			tag = DON
 			has_country_flag = russian_support
 			NOT = { has_country_flag = tatar_revolt }
+			RUS = { has_country_flag = ukrainians_incited }
 		}
 		allow = {
 			RUS = { war_with = SML }

@@ -307,6 +307,7 @@ political_decisions = {
 	
 	turn_on_railroading = {
 		alert = no
+		picture = HtALion1
 		potential = {
 			ai = no
 			NOT = { has_global_flag = railroading_on }
@@ -323,6 +324,7 @@ political_decisions = {
 	
 	turn_off_railroading = {
 		alert = no
+		picture = HtALion1
 		potential = {
 			ai = no
 			has_global_flag = railroading_on

@@ -20,6 +20,7 @@ country_event = {
 			government = hms_government
 			government = prussian_constitutionalism
 		}
+		ai = yes
 	}
 	
 	mean_time_to_happen = {
@@ -89,7 +90,7 @@ country_event = {
 			type = conquest
 			months = 36
 		}
-		badboy = 7
+		badboy = 3
 		prestige = 3
 		set_country_flag = corsica_interest
 		
@@ -97,7 +98,7 @@ country_event = {
 			factor = 75
 			modifier = {
 				factor = 0
-				badboy = 0.75
+				badboy = 0.88
 			}
 			modifier = {
 				factor = 100
@@ -107,17 +108,17 @@ country_event = {
 	}
 	
 	option = {
-		name = "This seems unneccessary."
+		name = "This is not in our best interests now."
 		prestige = -2
 		any_pop = {
-			consciousness = 0.1
+			consciousness = 0.25
 		}
 		
 		ai_chance = {
 			factor = 25
 			modifier = {
 				factor = 100
-				NOT = { badboy = 0.75 }
+				badboy = 0.88
 			}
 		}
 	}
@@ -230,7 +231,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "The republic grows!"
+		name = "The Republic grows!"
 		inherit = CRS
 		CRS = {
 			all_core = {
@@ -523,6 +524,7 @@ country_event = {
 	trigger = {
 		tag = AQT
 		has_global_flag = aqt_crs_friendship
+		year = 1865
 		OR = {
 			is_greater_power = yes
 			is_secondary_power = yes
@@ -555,7 +557,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 60
 	}
 	
 	option = {
