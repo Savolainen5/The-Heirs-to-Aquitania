@@ -500,7 +500,8 @@ country_event = {
 	id = 50063
 	title = "EVTNAME50063"
 	desc = "EVTDESC50063"
-	picture = "danishgovernment"
+	
+	major = yes
 	
 	trigger = {
 		NOT = { tag = BRA }

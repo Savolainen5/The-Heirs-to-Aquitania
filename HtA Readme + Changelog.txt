@@ -194,6 +194,7 @@ To do:
 
 51900-51999 - Rest of Africa
 52000-52100 - South Africa
+52200-52300 - Southeast Asia (not including Indonesia, obviously)
 53000-53200 - China, Korea, etc.
 59950-59999 - Debugging events
 97091-97098 - North American settlement events

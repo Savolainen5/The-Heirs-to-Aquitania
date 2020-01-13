@@ -436,6 +436,7 @@ MCK		= "countries/Manchukuo.txt"
 MDG		= "countries/Middag.txt"
 MGL		= "countries/Mongolia.txt"
 MLY		= "countries/Malaya.txt"
+PAT		= "countries/Pattani.txt"
 PHL		= "countries/Philippines.txt"
 QIN		= "countries/Qin China.txt"
 QNG		= "countries/Qing China.txt" #Does not exist in-game, maybe should be deleted from here, but leave country file for QIN

@@ -1,3 +1,4 @@
+#NB - also check decision in the decision file called HTA_Low_Countries
 political_decisions = {
 	gold_coast_treaty = {
 		picture = treaty_signing
@@ -105,8 +106,7 @@ political_decisions = {
 			diplomatic_influence = {
 				who = LUX
 				value = 300
-			}						
-			add_accepted_culture = flemish	
+			}
 			any_pop = {
 				dominant_issue = {
 					factor = 0.15
@@ -131,40 +131,22 @@ political_decisions = {
 	accepting_walloon_people = {
 		potential = {
 			tag = NET
-			NOT = { has_country_flag = accepting_walloon_people }
-			year = 1860
+			NOT = { accepted_culture = wallonian }
+			has_country_flag = wallonia_integrated
+			WLL = {
+				any_core = {
+					owned_by = THIS
+				}
+			}
 		}
 
 		allow = {
 			war = no
 			is_greater_power = yes
-			BRB = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-							war = no
-						}
-					}
-				}
-			}
-			WLL = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-							war = no
-						}
-					}
-				}
-			}
 		}
 
 		effect = {
-			set_country_flag = accepting_walloon_people
-			prestige = -15
+			prestige = -10
 			any_pop = {
 				limit = {
 					OR = {

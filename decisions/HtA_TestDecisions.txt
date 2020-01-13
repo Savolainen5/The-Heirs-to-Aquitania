@@ -45,4 +45,17 @@ political_decisions = {
 #		}
 #	}
 
+#	cb_condition_test = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			casus_belli = FIN
+#			casus_belli = POL
+#		}
+#		effect = {
+#			prestige = 1
+#		}
+#	}
+
 }

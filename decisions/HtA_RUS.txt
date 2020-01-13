@@ -416,6 +416,7 @@ political_decisions = {
 			has_country_flag = russian_support
 			NOT = { has_country_flag = tatar_revolt }
 			RUS = { has_country_flag = ukrainians_incited }
+			RUS = { casus_belli = SML }
 		}
 		allow = {
 			RUS = { war_with = SML }
@@ -447,16 +448,20 @@ political_decisions = {
 					who = SML
 					value = 150
 				}
+				diplomatic_influence = {
+					who = SML
+					value = 50
+				}
 			}
 		}
 		effect = {
 			relation = {
 				who = SML
-				value = -50
+				value = -100
 			}
 			diplomatic_influence = {
 				who = SML
-				value = -100
+				value = -200
 			}
 		}
 	}

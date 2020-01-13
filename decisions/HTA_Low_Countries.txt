@@ -1,3 +1,4 @@
+#NB - Also check decisions in the decision file NET
 political_decisions = {
 #Claim Zeeland
 	claim_zeeland = {
@@ -65,33 +66,95 @@ political_decisions = {
 		}
 	}
 	
-#Incorporate Brabant into the Netherlands
-	incorporate_brabant = {
+#Incorporate Brabant into the Netherlands - made unnecessary by the decision in NET to Form the Greater Netherlands
+#	incorporate_brabant = {
+#		picture = support_biesterfelds
+#		potential = {
+#			tag = NET
+#			has_country_flag = zeeland_claimed
+#			NOT = { has_country_flag = brabant_incorporated }
+#			NOT = { AST_1097 = { owned_by = BRB } }
+#		}
+#		
+#		allow = {
+#			OR = {
+#				is_greater_power = yes
+#				is_secondary_power = yes
+#			}
+#			prestige = 50
+#			NET_379 = {
+#				owned_by = THIS
+#			}
+#		}
+#		
+#		effect = {
+#			prestige = 5
+#			badboy = 5
+#			set_country_flag = brabant_incorporated
+#			BEL_387 = {
+#				add_core = NET
+#			}
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0
+#				badboy = 0.8
+#			}
+#		}
+#	}
+	
+	integrate_wallonia = {
 		picture = support_biesterfelds
 		potential = {
 			tag = NET
-			has_country_flag = zeeland_claimed
-			NOT = { has_country_flag = brabant_incorporated }
-			NOT = { AST_1097 = { owned_by = BRB } }
+			exists = WLL
+			has_country_flag = form_greater_netherlands
 		}
 		
 		allow = {
-			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
-			}
-			prestige = 50
-			NET_379 = {
-				owned_by = THIS
-			}
+			war = no
+			WLL = { vassal_of = THIS }
+			revolution_n_counterrevolution = 1
 		}
 		
 		effect = {
-			prestige = 5
+			inherit = WLL
+			prestige = 10
 			badboy = 5
-			set_country_flag = brabant_incorporated
-			BEL_387 = {
-				add_core = NET
+			set_country_flag = wallonia_integrated
+			any_country = {
+				limit = {
+					OR = {
+						is_greater_power = yes
+						neighbour = THIS
+						neighbour = WLL
+					}
+					OR ={ 
+						NOT = {
+							alliance_with = THIS
+						}
+						NOT = {
+							in_sphere = THIS
+						}
+						NOT = {
+							relation = {
+								who = THIS
+								value = 150
+							}
+						}
+					}
+				}
+				relation = {
+					who = THIS
+					value = -100
+				}
+				casus_belli = {
+					target = THIS
+					type = liberate_country
+					months = 24
+				}
 			}
 		}
 		

@@ -1,8 +1,6 @@
 #Event from NNM and/or /gsg/Vickymod, reinstated in 0.34. Taken from BrtishDominions event file
 country_event = {
-
 	id = 44334
-
 	title = "The Dominion of Kaapland"
 	desc = "The Kaapland colony has asked to be governed as an autonomous dominion within the empire."
 	picture = "danishgovernment"
@@ -296,7 +294,7 @@ country_event = {
 				2558 = { empty = yes }
 				2096 = { owned_by = THIS }
 			}
-			2558 = { secede_province = THIS add_core = SAF }
+			2558 = { secede_province = THIS life_rating = 10 add_core = SAF }
 		}
 		random_owned = {
 			limit = {
@@ -304,7 +302,7 @@ country_event = {
 				2092 = { empty = yes }
 				2096 = { owned_by = THIS }
 			}
-			2092 = { secede_province = THIS add_core = SAF }
+			2092 = { secede_province = THIS life_rating = 15 add_core = SAF }
 		}
 	}
 }
@@ -2597,9 +2595,10 @@ country_event = {
 	}
 }
 
+#The Final Straw
 country_event = {
 	id = 98256
-	title = "EVTNAME98256" #The Final Straw
+	title = "EVTNAME98256"
 	desc = "EVTDESC98256"
 	picture = "zulu"
 	

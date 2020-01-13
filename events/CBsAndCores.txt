@@ -2296,6 +2296,18 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 0
+				OR = {
+					tag = BRN
+					tag = BRA
+					tag = BAV
+				}
+				FROM = {
+					OR = {
+						primary_culture = north_german
+						primary_culture = central_german
+						primary_culture = south_german
+					}
+				}
 				NOT = { has_country_flag = claim_empire }
 			}
 		}

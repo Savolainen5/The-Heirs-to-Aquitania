@@ -18,4 +18,13 @@ political_decisions = {
 		allow =  { }
 		effect = { }
 	}
+	info_POL = {
+		picture = HtALion1
+		potential = {
+			ai = no
+			tag = POL
+		}
+		allow =  { }
+		effect = { }
+	}
 }

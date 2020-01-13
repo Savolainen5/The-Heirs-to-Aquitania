@@ -373,6 +373,7 @@ political_decisions = {
 		}	
 	}
 
+	#Appeal to the Dutch
 	appeal_to_the_british = {
 		picture = treaty_signing
 		potential = {

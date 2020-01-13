@@ -1,0 +1,36 @@
+#Events for SEA - 52200-52300
+
+#Pattani Rebels
+country_event = {
+	picture = "aceh_jihad"
+	id = 52200
+	title = "EVTNAME52200"
+	desc = "EVTDESC52200"
+	
+	trigger = {
+		tag = JOH
+		1392 = {
+			owned_by = THIS
+		}
+		1389 = {
+			NOT = {
+				owned_by = THIS
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+	}
+	
+	option = {
+		name = "Something must be done!"
+		release = PAT
+		relation = {
+			who = PAT
+			value = -25
+		}
+		prestige = -5
+		set_country_flag = pattani_rebels
+	}
+}
