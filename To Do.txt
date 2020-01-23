@@ -9,6 +9,7 @@ Events:
 - Tweak Bavarian choices for Brunswick Congress so they're better
 - Saxony making problems for Brandenburg when it attends the Brunswick congress and is still a BOH ally.
 - Danubian Federation-thing for Roman Empire
+- Some Autokrator grants a constitution?
 - Massive problem for the Roman Empire if they fail to take Rome, or if they lose it.
 - Small event chain to change Wallonia into some other country which accepts Picard (or to separate Wallonia and Picardy)
 - What happens with the Hungarian event chain if Bohemia becomes a democracy?
@@ -61,6 +62,7 @@ POPs:
 - Add more Jews throughout Europe! (Partly done, needs more)
 - Add more minorities in Europe on the other side of borders
 - Too many German POPs?
+- Add a few more aristocrats to Holland and Friesland
 
 Militaries:
 - Navies for much of the world
@@ -75,7 +77,7 @@ Localisation:
 - Rewrite Death of Emperor Iesada event to reflect the situation on the ground
 
 Map:
-- Trade ports in Japan for Naples, Alba and/or others? Added a small port in v0.31 for Netherlands
+- Trade ports in Japan for Naples, Alba and/or others? Added a small port in v0.31 for Netherlands - do something with that in the Japan update
 - Mess with the Argentinian Andes. Maybe give Lonca more control over them. That way, Argentina doesn't so easily get a crazy snaky shape up into Inca
 - Mess with overall region/province shapes in Africa so they're less OTL-y
 - Do some province reshaping and add another province in the border region between AQT and NAV

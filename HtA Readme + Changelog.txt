@@ -46,7 +46,7 @@ NB for the changelog - Anything with lots of # or * after it is something Savs i
 
 **CHANGELOG**
 
-Version 0.36 X/Y/19 - The Russias & China Update
+Version 0.36 X/Y/20 - The Russias & China Update
 
 *Major*
 

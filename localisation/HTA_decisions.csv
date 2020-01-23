@@ -2,11 +2,11 @@
 accepting_flemish_people_title;Embracing the Flemish;;;;;;;;;;x
 accepting_flemish_people_desc;The Flemish of the late Duchy of Brabant are very similar to our own people linguistically and culturally. Really, we are the same people separated for too long by political borders. Let us rectify this by embracing the Flemish as our brothers!;;;;;;;;;x
 aid_BYZ_ALB_title;Propose Military Aid to the Empire;;;;;;;;;x
-aid_BYZ_ALB_desc;The Empire is facing a difficult time right now, and we have managed to secure autonomy. If we play our cards right, we can attain independence! By offering military aid in exchange for the promise of full sovereignty after the rebellions are over, we can offer a peaceful, respectable solution to Autokrator Georgius' problems.;;;;;;;;;;x
+aid_BYZ_ALB_desc;The Empire is facing a difficult time right now, and we have managed to secure autonomy. If we play our cards right, we can attain independence! By offering military aid in exchange for the promise of full sovereignty after the rebellions are over, we can offer a peaceful, respectable solution to Autokrator Georgios' problems.;;;;;;;;;;x
 aid_BYZ_BUL_title;Propose Military Aid to the Empire;;;;;;;;;x
-aid_BYZ_BUL_desc;The Empire is facing a difficult time right now, and we have managed to secure autonomy. If we play our cards right, we can attain independence! By offering military aid in exchange for the promise of full sovereignty after the rebellions are over, we can offer a peaceful, respectable solution to Autokrator Georgius' problems.;;;;;;;;;;x
+aid_BYZ_BUL_desc;The Empire is facing a difficult time right now, and we have managed to secure autonomy. If we play our cards right, we can attain independence! By offering military aid in exchange for the promise of full sovereignty after the rebellions are over, we can offer a peaceful, respectable solution to Autokrator Georgios' problems.;;;;;;;;;;x
 ANA_claim_victory_title;Claim Victory;;;;;;;;;;x
-ANA_claim_victory_desc;By capturing Constantinople, the seat of the Empire and Georgius, we can end this war and claim the throne. Let Georgius flee if he likes. He who controls the city controls the Empire.;;;;;;;;;x
+ANA_claim_victory_desc;By capturing Constantinople, the seat of the Empire and Georgios, we can end this war and claim the throne. Let Georgios flee if he likes. He who controls the city controls the Empire.;;;;;;;;;x
 annexation_of_saxony_title;The Annexation of Saxony;x
 annexation_of_saxony_desc;Saxony failed to take part in the Brunswick Congress, but they must not be allowed to remain outside the German question. They will join us peacefully, as much for their protection against our neighbors as for the protection of all Germans. If they do not, war is no doubt near for them.;x
 approach_aqt_title;Approach Aquitània;;;;;;;;;x
@@ -74,7 +74,7 @@ claim_malta_desc;Malta has refused our offer to join our republic. We must incor
 claim_remote_siberia_title;Claim Remote Siberia;;;;;;;;;;;;;;x,,,,
 claim_remote_siberia_desc;We should mount an expedition to explore and formally claim the northern interior of Siberia for $COUNTRY$!;;;;;;;;;;x,,,,
 claim_roman_throne_title;Claim the Roman Throne;;;;;;;;;;;x
-claim_roman_throne_desc;Evangelos Melisurgos, uncle to 15-year old Georgius, the current Autokrator of the Roman Empire through his father, Ioannes, feels that he is better suited to lead the Roman Empire in this time of rebellions and crises. By enacting this decision, you will preempt the game event which will fire approximately 9 months after Anatole has a military score of 10. You have until then to prepare for war to take the throne.;;;;;;;;;;;;;x
+claim_roman_throne_desc;Evangelos Melisurgos, uncle to 15-year old Georgios, the current Autokrator of the Roman Empire through his father, Ioannes, feels that he is better suited to lead the Roman Empire in this time of rebellions and crises. By enacting this decision, you will preempt the game event which will fire approximately 9 months after Anatole has a military score of 10. You have until then to prepare for war to take the throne.;;;;;;;;;;;;;x
 claim_rose_title;Claim Rosè;;;;;;;;;;;x
 claim_rose_desc;Daufinat has chosen to join the Padan Union, but this is primarily because of the Cisalpine inhabitants of the Piemont. The inhabitants of the Rosè River valley and regions nearby - even in the Alps - are much closer to ours in terms of culture and language, and it would be better if they were united with their kin!;;;;;;;;;;;;x
 claim_sicily_title;Claim Sicily;;;;;;;;;x
@@ -114,7 +114,7 @@ demand_corsica_owned_desc;We have claims in the Maretan islands. Let us make goo
 demand_corsica_puppet_title;Demand Corsica & Sardinia;;;;;;;;;;x
 demand_corsica_puppet_desc;We have claims in the Maretan islands. Let us make good on them and demand what's rightfully ours from Aquitània. $RNote for the player: This may lead to war almost immediately$W.;;;;;;;;;;;x
 demand_independence_BYZ_title;Demand Independence from the Empire;;;;;;;;;;;x
-demand_independence_BYZ_desc;Now that the war is over and Georgius has defeated his uncle, the Empire is restabilized. At the beginning of the war, we offered our military support in exchange for independence after peace had been restored. Let us now remind Georgius and his counselors of his promise so that we may stand on our own.;;;;;;;;;;;x
+demand_independence_BYZ_desc;Now that the war is over and Georgios has defeated his uncle, the Empire is restabilized. At the beginning of the war, we offered our military support in exchange for independence after peace had been restored. Let us now remind Georgios and his counselors of his promise so that we may stand on our own.;;;;;;;;;;;x
 dissolve_old_duchy_CMP_title;Dissolve the old Duchy of Champagne;;;;;;;;;x
 dissolve_old_duchy_CMP_desc;Now that we have claimed the throne of France, the Duchy of Champagne should pass from a legitimate title of power to one merely of respect. Our house will forever be known as Kings of France and Dukes of Champagne, but no longer will the Duchy exist, within our borders or without.;;;;;;;;;;x
 dissolve_old_duchy_ORL_title;Dissolve the old Duchy of Orléans;;;;;;;;;x

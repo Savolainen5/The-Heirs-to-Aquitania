@@ -310,7 +310,7 @@ political_decisions = {
 								value = 100
 							}
 						}
-						owner = POL
+						owned_by = POL
 					}
 				}
 			}
