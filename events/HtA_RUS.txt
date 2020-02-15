@@ -1299,7 +1299,7 @@ country_event = {
 				}
 				in_sphere = THIS
 			}
-			any_core = {
+			all_core = {
 				add_core = THIS
 			}
 			annex_to = THIS

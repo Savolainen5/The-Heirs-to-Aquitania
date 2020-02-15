@@ -13,7 +13,7 @@ Feel free to use anything from this mod without asking me. Please do attribute i
 
 **INSTALLATION INSTRUCTIONS**
 - If you downloaded a .rar (from the official forum, for example): Extract the .mod and the folder to Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod
-- If you downloaded HtA from Github: Put the folder this file is in in your game files' mod folder. Take the .mod file (it might look like a movie file of some kind for you) out and have it also be in the mod file next to the Heirs to Aquitania folder.
+- If you downloaded HtA from Github: Put the folder this file is in into your game files' mod folder. Take the .mod file (it might look like a movie file of some kind for you) out and have it also be in the mod file next to the Heirs to Aquitania folder.
 If you're using Steam, the target directory is gonna be Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod. So, to be clear, in the end you'll have an Heirs to Aquitania folder and an Heirs to Aquitania .mod
 file both in your Vic2 mod folder with the aforementioned path. If the main HtA folder is called The-Heirs-to-Aquitania-Master, rename it to The Heirs to Aquitania.
 
@@ -108,6 +108,8 @@ Version 0.36 X/Y/20 - The Russias & China Update
 - Gave Hispania the port of Penang on the Malay Peninsula
 - Renamed and adjusted some provinces in Russia, central Asia
 - Renamed some provinces in New Holland and the surrounding seas
+- Added island terrain types from HPM and so changed a bunch of terrain to small islands
+- Added the colormaps from HPM Map Modded, which makes it way fancier looking, and made SOME adjustments. Still lots of work to be done (see the To-Do list)
 
 **Other**
 - Some Luxembourg buffing
@@ -121,7 +123,6 @@ Version 0.36 X/Y/20 - The Russias & China Update
 - Changed the name of Romania to Volasea (as a sort of quasi-plausible development of Volcae/Vlach/Wallach into something that isn't Romania, because, you know, Romans exist)
 	- The new tag is VOL, though I haven't changed other things, like party name codes, regions, or the culture code
 - Tweaked the colour of Central German culture to be more distinguishable from North German
-- Added island terrain types from HPM and so changed a bunch of terrain to small islands
 - Lots more tweaks
 
 *Bugfixes*

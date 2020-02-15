@@ -82,6 +82,7 @@ Map:
 - Mess with overall region/province shapes in Africa so they're less OTL-y
 - Do some province reshaping and add another province in the border region between AQT and NAV
 - Make provinces conform better to new RDS rivers. Especially Khiva-Persia
+- Continue making the map fit the new watermap better, the one from HFMmm - see the map files
 
 Flags: More about this can be found in the "List of small things to be done" on the forum (https://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-5#post-20555393)
 
@@ -95,7 +96,7 @@ CB:
 
 Other:
 - Go back through eventually and add newspaper entries
-- Balance factories, infrastructure, prestige
+- FIX THE BLOODY ECONOMY - remember the guy who was a GP Dabimon and had a REALLY hard time gathering goods for military?
 - Add silk/wine-related industry to PRE
 - One day in the future: Incorporate (some of?) PDM. I want spices right now, but maybe in the future when I have a better computer that can handle it, I'll maybe incorporate it for a bit more variety and closer realism
 	- Spices for Indonesia would be nice anyways
@@ -114,5 +115,5 @@ Other:
 - More to be done with rebels wanting to break free of Italy in the north?
 - Look into tweaking migration so that it's more likely to happen toward neighbouring countries Dictatorship > Democracy
 - Nerf colonial migration? (There was the case of Blackhog's insane Suez colonial migration)
-- Buff population growth
+- Buff population growth, especially in the new world
 Savs, remember that Birth of a Nation is in CleanUp and has the ID 60160

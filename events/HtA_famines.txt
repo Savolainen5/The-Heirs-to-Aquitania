@@ -142,7 +142,7 @@ country_event = {
 	
 	option = {
 		name = "Hurrah!"
-		set_country_variable = {
+		set_variable = {
 			which = poor_harvest
 			value = 0
 		}

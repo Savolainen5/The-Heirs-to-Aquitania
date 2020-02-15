@@ -1512,24 +1512,23 @@
 
 }
 #Norfolk Island Region (1000)
-#Ruled by Britain 1836
-#Norfolk Island (1000/250 POPS)
+#Ruled by Brabant in 1836
+#Norfolk Island/Haring (1000/250 POPS)
 2508 = {
 	clergymen = {
-		culture = largano
+		culture = flemish
 		religion = catholic
 		size = 3
 	}
 
 	soldiers = {
-		culture = largano
+		culture = flemish
 		religion = catholic
-		size= 2
-
+		size = 2
 	}
 
 	farmers = {
-		culture = largano
+		culture = polynesian
 		religion = catholic
 		size = 235
 	}
