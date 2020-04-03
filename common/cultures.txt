@@ -229,7 +229,7 @@ finnic = {
 		Kaakkola Karjalainen Kinnunen Kirveennummi Korhonen Koskinen Kuhanen Laine Laitinen Lautamies
 		Lehtonen Lehtinen Leikkil‰ Lemmetty Luukkainen Mahkonen Maitopuro Multam‰ki 
 		M‰ntykoski Mentunen Muotio Myllysilta M‰kinen Nenonen Niemi Niskaj‰rvi Nuutinen Onnela 
-		Ojanper‰Ounasvuori Paasikivi Pekkanen Puistosalo Pylv‰nen P‰iv‰honka
+		Ojanper‰ Ounasvuori Paasikivi Pekkanen Puistosalo Pylv‰nen P‰iv‰honka
 		Raappana Raevaara Rantanen Rantakokko Repola Romusaari Ruutiainen Saarinen Saarivirta
 		Salminen Salo Salonen Saunam‰ki Savolainen Sihvo Siilasvuo Siipola Sillanp‰‰ Talvela
 		Taiminen Teirikko Tommola Tuominen Tuompo Turunen Uuksulainen Uusikallio Vaaramaa Vainenon

@@ -593,6 +593,7 @@ political_decisions = {
 	}
 	
 	unify_western_med = {
+		picture = WesternMed
 		potential = {
 			OR = {
 				tag = AQT
@@ -619,7 +620,7 @@ political_decisions = {
 					owned_by = THIS
 					owner = {
 						in_sphere = THIS
-						is_our_vassal = THIS
+						vassal_of = THIS
 					}
 				}
 			}
@@ -628,7 +629,7 @@ political_decisions = {
 					owned_by = THIS
 					owner = {
 						in_sphere = THIS
-						is_our_vassal = THIS
+						vassal_of = THIS
 					}
 				}
 			}
@@ -637,7 +638,7 @@ political_decisions = {
 					owned_by = THIS
 					owner = {
 						in_sphere = THIS
-						is_our_vassal = THIS
+						vassal_of = THIS
 					}
 				}
 			}
@@ -646,7 +647,7 @@ political_decisions = {
 					owned_by = THIS
 					owner = {
 						in_sphere = THIS
-						is_our_vassal = THIS
+						vassal_of = THIS
 					}
 				}
 			}
@@ -655,7 +656,7 @@ political_decisions = {
 					owned_by = THIS
 					owner = {
 						in_sphere = THIS
-						is_our_vassal = THIS
+						vassal_of = THIS
 					}
 				}
 			}
