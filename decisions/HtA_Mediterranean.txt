@@ -608,6 +608,7 @@ political_decisions = {
 				is_secondary_power = yes
 				is_greater_power = yes
 			}
+			NOT = { has_global_flag = mare_occidentis_nostrum }
 		}
 		
 		allow = {
@@ -661,9 +662,10 @@ political_decisions = {
 				}
 			}
 		}
-				
+
 		effect = {
 			set_global_flag = mare_occidentis_nostrum
+			set_country_flag = our_western_sea
 			prestige = 50
 			badboy = 25
 			CAT = { all_core = { add_core = THIS } }
@@ -672,6 +674,162 @@ political_decisions = {
 			PDN = { all_core = { add_core = THIS } }
 			ITA = { all_core = { add_core = THIS } }
 			NPL = { all_core = { add_core = THIS } }
+			PAP = { all_core = { add_core = THIS } }
+			SIC = { all_core = { add_core = THIS } }
+			PRE = { all_core = { add_core = THIS } }
+			any_country = {
+				limit = {
+					vassal_of = THIS
+					OR = {
+						tag = CAT
+						tag = AQT
+						tag = CRS
+						tag = PDN
+						tag = ITA
+						tag = NPL
+						tag = PAP
+						tag = SIC
+						tag = PRE
+					}
+				}
+				country_event = {
+					id = 51698
+					days = 1
+				}
+			}
+		}
+	}
+	
+	#Our Brothers, the Aquitanians (same name repeated for each culture below)
+	mediterranean_aquitanians = {
+		picture = WesternMed
+		
+		potential = {
+			has_country_flag = our_western_sea
+			NOT = { accepted_culture = aquitanian }
+		}
+		
+		allow = {
+			AQT = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -2
+			add_accepted_culture = aquitanian
+		}
+	}
+	
+	mediterranean_catalans = {
+		picture = WesternMed
+		
+		potential = {
+			has_country_flag = our_western_sea
+			NOT = { accepted_culture = catalan }
+		}
+		
+		allow = {
+			CAT = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -2
+			add_accepted_culture = catalan
+		}
+	}
+	
+	mediterranean_cisalpines = {
+		picture = WesternMed
+		
+		potential = {
+			has_country_flag = our_western_sea
+			NOT = { accepted_culture = north_italian }
+		}
+		
+		allow = {
+			PDN = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -2
+			add_accepted_culture = north_italian
+		}
+	}
+	
+	mediterranean_italians = {
+		picture = WesternMed
+		
+		potential = {
+			has_country_flag = our_western_sea
+			NOT = { accepted_culture = south_italian }
+		}
+		
+		allow = {
+			NPL = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -2
+			add_accepted_culture = south_italian
+		}
+	}
+	
+	mediterranean_maretans = {
+		picture = WesternMed
+		
+		potential = {
+			has_country_flag = our_western_sea
+			NOT = { accepted_culture = maretan }
+		}
+		
+		allow = {
+			CRS = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -2
+			add_accepted_culture = maretan
+		}
+	}
+	
+	mediterranean_sicilians = {
+		picture = WesternMed
+		
+		potential = {
+			has_country_flag = our_western_sea
+			NOT = { accepted_culture = sicilian }
+		}
+		
+		allow = {
+			SIC = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -2
+			add_accepted_culture = sicilian
 		}
 	}
 }

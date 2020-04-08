@@ -723,3 +723,38 @@ country_event = {
 		create_vassal = CRS
 	}
 }
+
+#Sirocco (related to the Mare Occidentis Nostrum / Unify Western Mediterranean decision)
+country_event = {
+	id = 51698
+	title = "EVTNAME51698"
+	desc = "EVTDESC51698"
+	picture = "WesternMed"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will embrace the wind."
+		FROM = {
+			country_event = {
+				id = 51699
+				days = 1
+			}
+		}
+	}
+}
+
+#Sirocco (receiver)
+country_event = {
+	id = 51699
+	title = "EVTNAME51699"
+	desc = "EVTDESC51699"
+	picture = "WesternMed"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The Sirocco binds us all."
+		inherit = FROM
+	}
+}
