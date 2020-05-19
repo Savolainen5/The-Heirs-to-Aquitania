@@ -179,6 +179,12 @@ form_stellaland_title;Form Stellaland;;;;;;;;;;x
 form_stellaland_desc;With the lands of the Steenkoolers united under our banner, we can seek a greater destiny for everyone under the four stars of our people. Let us never bow to Europeans or Africans.;;;;;;;;;;;;x
 form_zachadia_title;Form Zachadia;;;;;;;;;;;x
 form_zachadia_desc;Some philologists have confirmed what we have already long known: that the Poles, Czechs, Silesians, Slovaks, and Sorbs all speak closely related languages. These languages they have come to call the Western Slavic family. Given our cultural, linguistic, and geographical proximity, we could unite our peoples into a truly great nation.'\n\n\ $Y NB: Western Slavs must control Silesian and Polish cores (Slovakia can be owned by them, or Hungary can be puppeted), and Prague/Bohemia must be sphered and puppeted with +100 relations.;;;;;;;;;;x
+FRA_embrace_bretons_title;Integrate the Bretons;x
+FRA_embrace_bretons_desc;The Bretons will continue to be troublesome and agitate for independence unless something is done to appease them. By granting them the same rights that proper French citizens have, perhaps we may succeed in appeasing them and reducing their unruliness and restlessness.;x
+FRA_embrace_picards_title;Embrace the Picards;x
+FRA_embrace_picards_desc;While they may speak a strange variant of our own language, we must look to the Picards as cousins, at least. Let us show them that they will do just as well under the French umbrella as under the Wallonian one, even if it leaves a bad taste in our mouth to make such a concession to them.;x
+FRA_embrace_walloons_title;Walloon Societal Integration;x
+FRA_embrace_walloons_desc;The Walloons will be restive for generations unless we grant them some place in our society. We will grant them concessions if only so that their rich lands will be more productive for us than they currently are.;x
 FRA_return_our_colonies_title;Seek the return of our former colonies;;;;;;;;;;;;;x,,,,
 FRA_return_our_colonies_desc;Now that we once again have access to the sea and a proper navy, we can start reclaiming our former colonies. Let's start with our colony in the Iles Bleus, which is administered by Brittany at the moment.;;;;;;;;;;;;;x
 further_the_revolution_in_DAU_title;Further the Revolution in Daufinat;;;;;;;;x

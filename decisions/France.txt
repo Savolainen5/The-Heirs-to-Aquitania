@@ -189,7 +189,196 @@ political_decisions = {
 		}
 	}
 
-# The Picards and Walloons are French!
+# The Picards and Walloons are French! - planned to have some war to annex them ################################################################# (notice this, Savs)
+#NB - they're called wallonian in the code, not walloon
+#Embrace the Picards
+	FRA_embrace_picards = {
+		picture = become_belgium
+		potential = {
+			tag = FRA
+			NOT = { accepted_culture = picard }
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			OR = {
+				owns = 2570
+				owns = 403
+			}
+		}
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			OR = {
+				WLL = { exists = no }
+				WLL = { vassal_of = THIS }
+			}
+		}
+		
+		effect = {
+			prestige = -1
+			add_accepted_culture = picard
+			any_pop = {
+				limit = {
+					has_pop_culture = french
+				}
+				consciousness = 1
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = wallonian
+				}
+				consciousness = 2
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = picard
+				}
+				consciousness = 2
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = breton
+				}
+				consciousness = 1
+			}
+			any_pop = {
+				limit = {
+					is_accepted_culture = no
+					NOT = {
+						has_pop_culture = french
+						has_pop_culture = wallonian
+						has_pop_culture = picard
+						has_pop_culture = breton
+					}
+				}
+				consciousness = 0.5
+			}
+		}
+	}
+
+#Walloon Societal Integration
+	FRA_embrace_wallonians = {
+		picture = become_wallonia
+		potential = {
+			tag = FRA
+			NOT = { accepted_culture = wallonian }
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			OR = {
+				owns = 398
+				owns = 403
+			}
+		}
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			OR = {
+				WLL = { exists = no }
+				WLL = { vassal_of = THIS }
+			}
+		}
+		
+		effect = {
+			prestige = -2
+			add_accepted_culture = wallonian
+			any_pop = {
+				limit = {
+					has_pop_culture = french
+				}
+				consciousness = 1
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = wallonian
+				}
+				consciousness = 2
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = picard
+				}
+				consciousness = 2
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = breton
+				}
+				consciousness = 1
+			}
+			any_pop = {
+				limit = {
+					is_accepted_culture = no
+					NOT = {
+						has_pop_culture = french
+						has_pop_culture = wallonian
+						has_pop_culture = picard
+						has_pop_culture = breton
+					}
+				}
+				consciousness = 0.5
+			}
+		}
+	}
+
+	#Integrate the Bretons
+	FRA_embrace_bretons = {
+		picture = genocide_minorities
+		potential = {
+			tag = FRA
+			NOT = { accepted_culture = breton }
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			owns = 423
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			OR = {
+				BRT = { exists = no }
+				BRT = { vassal_of = THIS }
+			}
+		}
+		
+		effect = {
+			prestige = -2
+			add_accepted_culture = breton
+			any_pop = {
+				limit = {
+					has_pop_culture = french
+				}
+				consciousness = 1
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = wallonian
+				}
+				consciousness = 2
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = picard
+				}
+				consciousness = 2
+			}
+			any_pop = {
+				limit = {
+					is_accepted_culture = no
+					NOT = {
+						has_pop_culture = french
+						has_pop_culture = wallonian
+						has_pop_culture = picard
+						has_pop_culture = breton
+					}
+				}
+				consciousness = 0.5
+			}
+		}
+	}
 
 # Usurp the crown of France
 	usurp_french_crown = {
