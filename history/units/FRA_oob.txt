@@ -1,7 +1,8 @@
 CMP = {	value = -50 }
 NRM = {	value = -45 }
 ORL = {	value = -65 }
-AQT = {	value = 45 }
+AQT = {	value = 15 }
+BRT = { value = -50 }
 
 leader = {
 	name = "Hugo Bugeaud de Seurre"

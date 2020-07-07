@@ -47,10 +47,12 @@ political_decisions = {
 # Demand our colonies back (BRT and whoever else - when coast reclaimed, buy/intimidate colonies back)
 
 	FRA_return_our_colonies = {
+		picture = channel_islands
 		potential = {
 			tag = FRA
 			has_country_flag = FRA_man_and_the_sea
 			NOT = { has_global_flag = FRA_wants_their_colonies_BRT }
+			owns = 418
 		}
 		
 		allow = {
@@ -58,7 +60,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			FRA = { country_event = 50003 } #Choose how to ask, 50004,7,10 will fire for BRT to choose how to respond
+			country_event = 50003 #Choose how to ask, 50004,7,10 will fire for BRT to choose how to respond
 			set_global_flag = FRA_wants_their_colonies_BRT
 		}
 		

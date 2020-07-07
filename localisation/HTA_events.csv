@@ -622,7 +622,7 @@ EVTDESC51202;The Aquitànians have decided to not sell their land to us, after al
 EVTNAME51203;We have lost our South Amerigan colonies;;;;;;;;;;x
 EVTDESC51203;Now that we no longer control Porterei and Nova Bordeu, and haven't for years, we cannot maintain our claim on these former colonies.;;;;;;;;;;;;x
 EVTNAME51400;Bar and Lorraine Subjugated;;;;;;;;;;x
-EVTDESC51400;With the defeat of the dukes of Bar and Lorraine, and their territory being returned to us, their power is broken. They will no longer be able to claim indepedent rule of these lands, which are rightfully French.;;;;;;;;;;;x
+EVTDESC51400;With the defeat of the dukes of Bar and Lorraine, and their territory being returned to us, their power is broken. They will no longer be able to claim independent rule of these lands, which are, of course, rightfully French.;;;;;;;;;;;x
 EVTNAME51450;$FROMCOUNTRY$ and the Window to the West;;;;;;;;;;;;;x
 EVTDESC51450;$FROMCOUNTRY$, seeking to expand its influence and even perhaps project into the Baltic, has approached us with an offer: a cash infusion and continued support in our economy and military in exchange. This is, of course, almost certainly not merely a charitable donation. It is clear that the $FROMCOUNTRY_ADJ$s would expect to have significant clout within $THIS$, which should in and of itself be viewed with suspicion. It is no secret that they wish to have a port in the Baltic for the own purposes, and it should be plain that their idea is to use our country to that end if this deal goes through.;;;;;;;;;;;;;x
 EVTNAME51451;Aid for Lithuania;;;;;;;;;;;;x

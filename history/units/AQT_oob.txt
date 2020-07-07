@@ -45,6 +45,7 @@ HIS = {
 }
 
 MEX = { value = -50 }
+FRA = { value = -50 }
 YUC = { value = -30 }
 NPL = { value = 5 }
 

@@ -20,9 +20,9 @@ country_event = {
 		FRA = {
 			exists = yes
 			has_country_flag = FRA_man_and_the_sea
-			owns = 411
-			owns = 412
-			owns = 418
+			owns = 411 #Bar
+			owns = 412 #Metz
+			owns = 418 #Caen
 		}	
     }
 

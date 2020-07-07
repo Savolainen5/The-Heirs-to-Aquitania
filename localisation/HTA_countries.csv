@@ -207,7 +207,14 @@ GDN_conservative;Redbers Meg;;;;;;;;;x
 GDN_fascist;Edniwid Firgene;;;;;;;;;x
 GDN_liberal;Doeres Meg;;;;;;;;;x
 GDN_reactionary;Sundoranwals Meg;;;;;;;;x    
-GDN_socialist;Bigeneres Gade;;;;;;;;x                                               
+GDN_socialist;Bigeneres Gade;;;;;;;;x
+GLC_anarcho_liberal;Partido Minarquista;x
+GLC_communist;Frente Popular Galega;x
+GLC_conservative;Dereita Galeguista;x
+GLC_fascist;Falanxe das Xuntas Nacional Sindicalistas;x
+GLC_liberal;Liga Galega;;x
+GLC_reactionary;Converxencia Nacionalista Galega;x
+GLC_socialist;Esquerda Obrerista Galega;x                                       
 GNC;Ginnaecer;;;;;;;;;;;;;x                                                
 GNC_ADJ;Ginnaecerisc;;;;;;;;;;;;;x
 GNC_anarcho_liberal;Bursgade;;;;;;;;;;x

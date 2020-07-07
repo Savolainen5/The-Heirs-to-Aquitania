@@ -879,7 +879,7 @@ country_event = {
 	id = 51400
 	title = "EVTNAME51400"
 	desc = "EVTDESC51400"
-	#picture = "?"
+	picture = "rhineland"
 	
 	trigger = {
 		tag = FRA
