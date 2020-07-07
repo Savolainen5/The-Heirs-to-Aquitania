@@ -975,6 +975,7 @@ country_event = {
 	
 	trigger = {
 		DAU = { vassal_of = THIS }
+		neighbour = DAU
 		year = 1860
 	}
 	

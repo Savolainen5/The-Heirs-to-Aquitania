@@ -185,6 +185,10 @@ FRA_embrace_picards_title;Embrace the Picards;x
 FRA_embrace_picards_desc;While they may speak a strange variant of our own language, we must look to the Picards as cousins, at least. Let us show them that they will do just as well under the French umbrella as under the Wallonian one, even if it leaves a bad taste in our mouth to make such a concession to them.;x
 FRA_embrace_walloons_title;Walloon Societal Integration;x
 FRA_embrace_walloons_desc;The Walloons will be restive for generations unless we grant them some place in our society. We will grant them concessions if only so that their rich lands will be more productive for us than they currently are.;x
+FRA_levant_ultimatum_title;The Outremer Question;x
+FRA_levant_ultimatum_desc;The Outremer people of the Levant, descendents of French crusaders from the Middle Ages, have long languished under the Persian yoke. With a now-unified and strong France, and unrest in the Levant rising to a fever pitch, it is our moral imperative to unite with our long-sundered brethren. Repeated intransigence by the Shah's government leaves us no choice - they must accept our ultimatum or face our wrath.;x
+FRA_levant_war_title;War in the Levant;x
+FRA_levant_war_desc;With the Shah having arrogantly dismissed our just demands, now only one recourse remains - war! We will conquer the Levant, as our predecessors did 800 years ago.;x
 FRA_return_our_colonies_title;Seek the return of our former colonies;;;;;;;;;;;;;x,,,,
 FRA_return_our_colonies_desc;Now that we once again have access to the sea and a proper navy, we can start reclaiming our former colonies. Let's start with our colony in the Iles Bleus, which is administered by Brittany at the moment.;;;;;;;;;;;;;x
 further_the_revolution_in_DAU_title;Further the Revolution in Daufinat;;;;;;;;x
@@ -333,6 +337,16 @@ PDN_create_title;Create the Padan Union;;;;;;;;;;;;x
 PDN_create_desc;Now that the treaty has been signed and the groundwork has been laid, for the good of our people and our houses, let us unite against the threat of the south!;;;;;;;;;;;x
 PDN_join_title;Join the Padan Union;;;;;;;;;;;;x
 PDN_join_desc;As agreed by the terms of the treaty in Milan, we will now join our fellow northerners in staving off the southern menace. For the good of our people and our houses, we must stop the Neapolitans at all costs!;;;;;;;;;;x 
+PER_abadan_treaty_port_title;The Port of Abadan;x
+PER_abadan_treaty_port_desc;The Port of Abadan is located on the salty delta at the terminus of the great Mesopotamian rivers. Although its golden days are long past, taking Abadan would allow us to make inroads deeper into Mesopotamia and establish a sphere of influence in the Near East.;;;;;;;;;;;;;;;
+PER_bandar_abbas_treaty_port_title;The Port of Bandar Abbas;x
+PER_bandar_abbas_treaty_port_desc;The Port of Bandar Abbas occupies a strategic position controlling the Strait of Hormuz. Controlling it would give us an ideal position to control trade between the Near East and India as well as projecting power in the region.;x
+PER_bushire_treaty_port_title;The Port of Bushire;x
+PER_bushire_treaty_port_desc;The port of Bushire has had a key role in maritime trade for Iranian polities since antiquity. Taking it would give us a commercial foothold in the region, as well as giving us leverage over the rump Persia.;x
+PER_chabahar_treaty_port_title;The Port of Chabahar;x
+PER_chabahar_treaty_port_desc;The Port of Chabahar has historically been a major trade node in the trade between India and the West. Taking it would give us a port on the Indian Ocean and allow us to project power on the mouth of the Indus and beyond.;x
+PER_levant_victory_title;Victory in the Levant;x
+PER_levant_victory_desc;The Persian armies have braved great trials in our war against the warmongering westerners who came seeking to carve our Levantine possessions up for themselves, achieving a victory that many even in Persia did not consider to be possible. Triumph, however, has come at a great cost, and now we must ensure that the Outremer people, who were the source of these troubles, be dealt with in such a way that our hold on the Levant will never again be threatened. We shall exile them to the mountainous interior of our country.;x
 proclaim_new_bohemia_title;Proclaim Bohemia Anew;;;;;;;;;;x
 proclaim_new_bohemia_desc;Now that the old lands of Bohemia have been returned to us from the partitioners, we can once again claim to be a Kingdom, and seek to right the wrongs that were done to us.;;;;;;;;;;x
 protect_cherokee_title;Protect the Cherokee;;;;;;;;;;x

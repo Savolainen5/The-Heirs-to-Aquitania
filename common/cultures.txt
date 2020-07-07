@@ -290,14 +290,14 @@ british = {
 		last_names = {
 		Aelfstan Aethelwerd Alby Algot Alston Altone Autibern
 		Bennag Birkenfod Blec Bodwin Brictric Bruning
-		Carlyle Chatham Colling Conded Corelmann Daging Danmann Denholm Dirling
+		Carlel Cetham Colling Conded Corelmann Daging Danmann Denholm Dirling
 		Edwys Elton Erle Estone Etwell Felcener Fingast
-		Gren Grencin Grimbald Hallewell Hayden Hayhurst Hering Holcastre
-		Kemp Ketilbern Kollung Langfer "Latton Parhome" Lester Lincley Lyter
+		Gren Grencin Grimbald Halwel Hegden Heghurst Hering Holcastre
+		Kemp Ketilbern Kollung Langfer "Latton Parhome" Lester Lincleg Lyter
 		Marculf Mertuna Mundred Nawen Normann Nortuna
 		Oforbert Ogercin Othenkar "of Alwold" "of Cottesbec" "of Crawa" "of Grensted" "of Hesdin" "of Hopa"
 		"of Marck" "of Niwetun" "of Torcy" "of Tosny" "of Tregole" "of Waddsdone"
-		Paddan Peasmor Prest Ramsey Reeve Rid Roscow Rowleg
+		Paddan Peasmor Prest Ramseg Reeve Rid Roscow Rowleg
 		Saswalo Scottow Serlo Shelswell Somes Smid Still Swening
 		Thein Tomsete Totibarn Urso Vilgrip Vitalis Waler Weld Wulfno
 		}
@@ -449,6 +449,20 @@ french = {
 		"de Largillière" "de Laporte" "de Montaignac" "de Saint Arnaud" "de Saint Chamond" "d'Orleans" Dubail Dubois Duchêne Dupetit-Thouars 
 		Ducrot Ferry Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Greuze Guillaumat Hamelin Hoche Hébert
 		Jaurès Joffre Lebouef Lebrun Lecomte Mansart Nivelle Péllissier Poirier Vaillans Vivien }
+	}
+	outremer = {
+		color = {0 38 100}
+		first_names = { Achille Adolphe Adrien Alphonse Amédée Antoine Armand August Augustin
+		Charles Claude Daniel Denis Édouard Étiene Eugène Félicien Félix Fernand
+		François Frédéric Georges Guillaume Gustave Henri Hubers Hugo Jacques Jean "Jean-François" "Jean-Luc" "Jean-Jacques"
+		Joseph Jules Julien Laurens Léopold Leroy Louis "Louis Antoine" Lucien Matthieu Maxilmilien Michel
+		Nicolas Olivier Patrice Paul Philippe Pierre Robers Thibaus Thierry Thomas }
+		
+		last_names = { Anthoine "Baraguey d'Hilliers" Barras Bazaine Billos Bertin Bosques Bonnas Boulanger 
+		Bugeaud Caillard Canrobert Courbet Chardin "d'Airan" "d'Armenville" "de Castellane" "de Castelnau" "de Chambron" "de Poitiers" 
+		"de Largillière" "de Laporte" "de Montaignac" "de Saint Arnaud" "de Saint Chamond" "d'Orleans" Dubail Dubois Duchêne Dupetit-Thouars 
+		Ducrot Ferry Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Greuze Guillaumat Hamelin Hoche Hébert
+		Jaurès Joffre Lebouef Lebrun Lecomte Mansart Nivelle Péllissier Poirier Vaillans Vivien "de Lusignan" Theos "le Borgne" "le Buege"}
 	}
 	picard = {
 		color = {100 110 136}
@@ -1861,12 +1875,18 @@ far_east_asian = {
 		}
 	}
 	korean = {
-		color = {87 89 25}
-		first_names = { Yi Jo Bak Yun Sim Kim Hong Seo Jeong Kwon Han 
-		}
-		last_names = { Hwan Chung Hyong Shinjong Haung Ch'ok Taek Seon Si Jip Guk Mok Bo Yong Sun Gyu Hu
-		}
-	}
+        color = {87 89 25}
+        first_names = { Yi Cho Bak Eun Sim Kim Hong Seo Jeong Kwon Han Sung Cha Hyeon Hyung Lee Pak Paik Park Song Min Seung Byul Moon Won Yun Chung Hwang Heo Hwan Taek Joon Ma 
+        }
+        last_names = { Beomseok Beomsoo Byongchul Byungho Byunghoon Byunghun Byungjoon Byungwook Hyuntae Hyunwoo Hyunwook Hyungjoon Hyungmin Hyungwon Ilsung Insik Chanwoo
+        Chanyoung Changho Changwoo Cheolmin Daehyun Daesung Daewon Daewoo Deoksu Dohan Dohyun Dowon Dongchan Dongchul Donggeun Donghoon Dongha Eunsang Geun Jaeho Jaeseok
+        Jitae Jaejin Jaehyun Jaehoon Jaejoon Jaehyuk Jinhwan Jinhyuk Jinkyu Jinwook Jongho Jonghoon Jonghyuk Jongkook Jihun Jiseok Jiwoon Jihwan Hajoon Hae-il Haeseong
+        Hanjae Hanjin Hanbin Heechul Hojin Hosung Honggi Hoon Hyuk Hyukseok Hyunjun Hyunseung Joonho Jongil Junghoon Jungjin Jungmyung Junsu Jungsik Jungil Junha Junseo
+        Nam-il Nam-gi Sangchul Sanghoon Sanghyun Sangjun Sangwook Sangwoo Sangwon Sehun Seojun Seokho Ohseong Ohsik Myungyong Myungsoo Myungjun Myunghwan Myunghoon Myungbak
+        Minwoo Minseok Minjun Minki Minkyu Moonsik Moonsoo Kyungwan Kyungtaek Kyungmo Kyunghwan Kyungjoon Kyungchul Kyungho Kyungseol Kyungjae Kwangho Kwangjae Kwanghyok 
+        Kwanghyun Kwangjo Kwangseon Kwangsik Kwangsu Kwanghwan Ki-tae Ki-woo Kun-woo Manseok Mansik Kangmin Ki-woong Jaeyoon Jaedong Youngho Byunggoo 
+        }
+    }
 	ainu = {
 		color = {130 130 130}
 		first_names = { Seimei Resaak Akihi Petennouk Unayanke Shiratekka Apniainu Pasekur Munkeke Shitekka Shinriki Shiromainu Menkakush

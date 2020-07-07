@@ -105,6 +105,16 @@ BYZ_anarcho_liberal;Ispanofiliko Komma;;;;;;;;x
 BYZ_socialist;Simvoulio Ergazomenon;;;;;;;;x
 BYZ_communist;KKES;;;;;;;;;;x #Kommounistiko Komma tis Enosis Symvoulion
 BYZ_fascist;Phoenix Front;;;;;;;;;;;x #**************************************************************************************************************************
+CAT_conservative;Renaixença Catalana;x
+CAT_liberal;Centre Democràtic Català;x
+CAT_anarcho_liberal;Patronal Catalana;x
+CAT_conservative_2;Lliga Regionalista;x
+CAT_liberal_2;Solidaritat Catalana;x
+CAT_socialist;Socialistes de Catalunya;x
+CAT_liberal_3;Partit Republicà Radical;x
+CAT_reactionary;Partit Nacionalista de Catalunya;x
+CAT_communist;Partit Comunista dels Països Catalans;x
+CAT_fascist;Confederació Nacional Sindicalista;x
 CHE_conservative;Anisahoni;;;;;;;;;;;;;;;x
 CHE_liberal;Ahnigilohi;;;;;;;;;;;;;;;x
 CHE_reactionary;Aniawi;;;;;;;;;;;;;;;x
@@ -320,6 +330,15 @@ JAM_anarcho_liberal;Hervormingspartij;;;;;;;;;;;;;;;x
 JAM_socialist;Arbeiderspartij;;;;;;;;;;;;;;;x
 JAM_communist;Algemene Arbeidersunie;;;;;;;;;;;;;;;x
 JAM_fascist;Volksalliantie voor Broederschap;;;;;;;;;;;;;;;x
+JER;Jerusalem;;;;;;;;;x;;;;;;
+JER_ADJ;Outramarin;;;;;;;;;;x;;;;;
+JER_conservative;Royalistes;;;;;;;;;;;;;;;x
+JER_liberal;Union Démocratique;;;;;;;;;;;;;;;x
+JER_reactionary;Parti Outremer;;;;;;;;;;;;;;;x
+JER_anarcho_liberal;Société Cosmopolitaine;;;;;;;;;;;;;;;x
+JER_socialist;Parti Socialiste;;;;;;;;;;;;;;;x
+JER_communist;Parti Ouvrière du Levant;;;;;;;;;;;;;;;x
+JER_fascist;Croix d'Or;;;;;;;;;;;;;;;x
 KAR;Karen;;;;;;;;;x
 KAR_ADJ;Karen;;;;;;;;;;x
 KER;Kerno;;;;;;;;;;x

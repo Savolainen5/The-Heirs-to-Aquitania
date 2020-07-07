@@ -6,43 +6,43 @@ HIS = {
 AQT = { value = 160 }
 
 army = {
-	name = "Exèrcit Catalan"
+	name = "Exèrcit Català"
 	location = 498
 	regiment = {
-		name = "1er Divisió de Infanteria"
+		name = "1era Divisió d'Infanteria"
 		type = infantry
 		home = 498
 	}
 	regiment = {
-		name = "2o Divisió de Infanteria"
+		name = "2ona Divisió d'Infanteria"
 		type = infantry
 		home = 464
 	}
 	regiment = {
-		name = "1er Divisió de Cavalleria"
+		name = "1era Divisió de Cavalleria"
 		type = dragoon
 		home = 498
 	}
 	regiment = {
-		name = "1er Divisió d'Artilleria"
+		name = "1era Divisió d'Artilleria"
 		type = artillery
 		home = 501
 	}
 }
 
 navy = {
-	name = "Esquadró Catalan"
+	name = "Esquadró Català"
 	location = 498
 	ship = {
 		name = "Catalunya"
 		type = manowar
 	}
 	ship = {
-		name = "Magnana"
+		name = "Noguera"
 		type = frigate
 	}
 	ship = {
-		name = "Ceres"
+		name = "Mart"
 		type = frigate
 	}
 	ship = {

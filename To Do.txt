@@ -105,6 +105,7 @@ Other:
 - Factionalism in the Philippines (Panaja) with several different states on different islands fighting each other, either during or after Dutch rule
 - Hispania loses cores on countries in time?
 - Union in Iberia?
+- Italy tag replaced with something like Mezzogiorno, reserve Italy for a unification of PDN and Naples-Rome?
 - Trans-Hungary for Hungarian-Romanian interaction, particularly in Transylvania
 - Jewish state somewhere different, like Poland-Belarus?
 - If necessary, add a Cancel Zadar Lease decision for Hungary with the same effects as that for Bohemia

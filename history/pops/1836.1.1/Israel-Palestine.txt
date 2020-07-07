@@ -3,7 +3,7 @@
 #Acre (52000/13000 POPS) #now part of Israel-Palestine  mashriqi-animist = druze 
 916 = {
 	aristocrats = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 75
 	}
@@ -15,7 +15,7 @@
 	}
 
 	artisans = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 250
 	}
@@ -27,7 +27,7 @@
 	}
 
 	farmers = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 4575
 	}
@@ -91,13 +91,13 @@
 #Jerusalem (68000/17000 POPS)
 917 = {
 	aristocrats = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 200
 	}
 
 	bureaucrats = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 50
 	}
@@ -115,7 +115,7 @@
 	}
 
 	artisans = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 2300
 	}
@@ -133,7 +133,7 @@
 	}
 
 	farmers = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 8100
 	}	
@@ -151,7 +151,7 @@
 	}
 
 	farmers = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 3100
 	}
@@ -177,7 +177,7 @@
 #Nablus (44000/11000 POPS)
 918 = {
 	aristocrats = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 125
 	}
@@ -189,7 +189,7 @@
 	}
 
 	artisans = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 1025
 	}
@@ -219,7 +219,7 @@
 	}
 
 	farmers = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 850
 	}
@@ -231,7 +231,7 @@
 	}
 
 	artisans = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 100
 	}
@@ -245,7 +245,7 @@
 #Jaffa (48000/12000 POPS)
 919 = {
 	aristocrats = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 125
 	}
@@ -257,7 +257,7 @@
 	}
 
 	artisans = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 1100
 	}
@@ -287,7 +287,7 @@
 	}
 
 	farmers = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 4875
 	}
@@ -313,7 +313,7 @@
 #Gaza (44000/11000 POPS)
 920 = {
 	aristocrats = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 125
 	}
@@ -325,7 +325,7 @@
 	}
 
 	artisans = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 1250
 	}
@@ -355,7 +355,7 @@
 	}
 
 	farmers = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 1725
 	}
@@ -363,7 +363,7 @@
 #Beersheba (36000/9000 POPS)
 921 = {
 	aristocrats = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 75
 	}

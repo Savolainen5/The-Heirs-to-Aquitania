@@ -78,6 +78,8 @@ make_puppet
 gunboat
 cut_down_to_size
 cut_down_to_size_boxer
+dismantle_PER
+status_quo_levant
 humiliate
 place_in_the_sun
 dismantle_forts
@@ -6269,4 +6271,88 @@ conquest_any = {
 	
 	on_add = {
 	}
+}
+
+#Levantine War
+dismantle_PER = {
+	sprite_index = 8
+	is_triggered_only = yes
+	months = 12
+	
+	badboy_factor = 0
+	prestige_factor = 1
+	peace_cost_factor = 35
+	penalty_factor = 0
+	constructing_cb = no
+	crisis = no
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	po_reparations = yes
+
+	war_name = CUT_DOWN_TO_SIZE_PERSIA_WAR_NAME
+	
+	can_use = {
+		has_global_flag = levantine_war
+	}
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+	
+	on_po_accepted = {
+		set_country_flag = lost_levantine_war
+		set_country_flag = dismantling_treaty
+		set_global_flag = levant_crisis_over		
+	}
+}
+
+status_quo_levant = {
+	sprite_index = 1
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	
+	can_use = {
+		has_global_flag = levantine_war
+	}
+
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+	
+	badboy_factor = 1
+	prestige_factor = 1
+	peace_cost_factor = 1
+	penalty_factor = 1
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+	
+	po_status_quo = yes
+	
+	war_name = WAR_NAME
+
+	on_po_accepted = {
+		set_country_flag = lost_levantine_war
+		set_global_flag = levant_crisis_over
+	}	
+	
 }

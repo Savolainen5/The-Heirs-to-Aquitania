@@ -1,6 +1,5 @@
 owner = AEN
 controller = AEN
 add_core = AEN
-trade_goods = coal
+trade_goods = wool
 life_rating = 35
-

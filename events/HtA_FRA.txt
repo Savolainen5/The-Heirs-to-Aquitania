@@ -603,6 +603,10 @@ country_event = {
 				factor = 10
 				NOT = { alliance_with = AQT }
 			}
+			modifier = {
+				factor = 100
+				vassal_of = FRA
+			}
 		}
 	}
 	
@@ -622,6 +626,11 @@ country_event = {
 			modifier = {
 				factor = 100
 				has_global_flag = railroading_on
+				NOT = { vassal_of = FRA }
+			}
+			modifier = {
+				factor = 0
+				vassal_of = FRA
 			}
 		}
 	}

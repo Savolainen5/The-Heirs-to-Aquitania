@@ -51,8 +51,8 @@
 	}
 	
 	farmers = {
-		culture = french
-		religion = shiite
+		culture = outremer
+		religion = catholic
 		size = 1450
 	}	
 
@@ -79,7 +79,7 @@
 #Beirut (128000/32000 POPS) #mashriqi-animist = druze; mashriqi-catholic = maronites
 913 = {
 	aristocrats = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 150
 	}
@@ -97,7 +97,7 @@
 	}
 
 	clergymen = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 150
 	}
@@ -157,7 +157,7 @@
 	}
 
 	farmers = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 8350
 	}
@@ -213,7 +213,7 @@
 #Askaleh (48000/12000 POPS) 
 914 = {
 	aristocrats = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 125
 	}
@@ -225,7 +225,7 @@
 	}
 
 	artisans = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 500
 	}
@@ -243,19 +243,19 @@
 	}
 
 	clergymen = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 25
 	}
 
 	artisans = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 100
 	}
 
 	farmers = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 2875
 	}
@@ -263,7 +263,7 @@
 #Sidon (84000/21000 POPS) 
 915 = {
 	aristocrats = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 25
 	}
@@ -275,7 +275,7 @@
 	}
 
 	artisans = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 100
 	}
@@ -317,19 +317,19 @@
 	}
 
 	clergymen = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 50
 	}
 
 	artisans = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 250
 	}
 
 	farmers = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 5050
 	}
@@ -371,7 +371,7 @@
 	}
 
 	farmers = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 4350
 	}

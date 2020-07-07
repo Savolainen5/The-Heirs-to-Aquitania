@@ -104,6 +104,10 @@ north_america;North Ameriga;;;;;;;;x;;;;
 south_america;South Ameriga;;;;;;;x;;;;
 oceania;Volturnia;;;;;;;;x;;;;
 GC_DESC;This is an era of change. The past two decades of wars and failed revolutions were just the beginning. The Hispanian Revolution of the 1820s hardened the hearts of Europe's royalty against the liberal cause. The Imperial War (1829-1835) saw the dissolution of the Holy Roman Empire, leaving a gaping hole in Europe. The ossified political and social structures of Old Europe will no doubt be swept away as well. No matter who you are, there are riches and glory to be had in this age of upheaval, if only you have the vision to claim them. Choose your nation and guide it to its destiny!;;;;;;;;;;;x
+dismantle_PER;Claim the Holy Land;x
+dismantle_PER_desc;Liberate the Outremer people living in the Persian Empire;x
+dismantle_PER_short;Liberate the Outremer people;x
+dismantle_PER_setup;Triggers peace conference over Persian lands;x
 germany_acquire_state;German Hegemony;;;;;;;;;x
 germany_acquire_state_short;Acquire the German state of $STATE$;;;;;;;;;;;x
 germany_acquire_state_setup;Acquire the German state of $STATE$ from $RECIPIENT$;;;;;;;;;;;;x
@@ -128,18 +132,24 @@ russia_hegemony;Russian Hegemony;x
 russia_hegemony_short;Russian Hegemony - Conquest of $STATE$;x
 russia_hegemony_setup;Acquire a part of our neighbour and make strides towards their ultimate defeat.;x
 russia_hegemony_desc;It is time to unite the Great Russian people and put an end to the centuries-long stalemate between our two countries. First we must cause their people and rulers to understand that further resistance is futile.;x
+status_quo_levant;Status Quo;x
+status_quo_levant_desc;Defend the current Order in the Levant;x
+status_quo_levant_short;Enforce Status Quo;x
+status_quo_levant_setup;Forces a white peace;x
+NORMAL_WAR_CONQUEST_NAME;$ORDER$ War of the Conquest of $SECOND_COUNTRY$;;;;;;;;;;;x
+NORMAL_CUT_DOWN_TO_SIZE_PERSIA_WAR_NAME;$ORDER$$FIRST$-$SECOND$ Levantine War;x
+AGRESSION_CUT_DOWN_TO_SIZE_PERSIA_WAR_NAME;$ORDER$$FIRST$-$SECOND$ Levantine War;x
+WAR_GERMAN_UNIFICATION;$ORDER$ War of German Hegemony;;;;;;;;x
+NORMAL_WAR_GERMAN_UNIFICATION;$ORDER$ War of German Hegemony;;;;;;;;x
+AGRESSION_WAR_GERMAN_UNIFICATION;$ORDER$ War of German Hegemony;;;;;;;;x
+NORMAL_WAR_RESTORE_ORDER_NAME;$ORDER$ $FIRST$ Reclamation of $SECOND_COUNTRY$;;;;;;;;;;;;x
+AGRESSION_WAR_RESTORE_ORDER_NAME;$ORDER$ $FIRST$ Reclamation of $SECOND_COUNTRY$;;;;;;;;;;;;x
 WAR_RUSSIA_HEGEMONY_NAME;$ORDER$ Russian War;x
 NORMAL_WAR_RUSSIA_HEGEMONY_NAME;$ORDER$ Russian War;x
 AGRESSION_WAR_RUSSIA_HEGEMONY_NAME;$ORDER$ Russian War;x
 WAR_RUSSIA_ANNEX_NAME;$ORDER$ Russian War;x
 NORMAL_WAR_RUSSIA_ANNEX_NAME;$ORDER$ Russian War;x
 AGRESSION_WAR_RUSSIA_ANNEX_NAME;$ORDER$ Russian War;x
-WAR_GERMAN_UNIFICATION;$ORDER$ War of German Hegemony;;;;;;;;x
-NORMAL_WAR_GERMAN_UNIFICATION;$ORDER$ War of German Hegemony;;;;;;;;x
-AGRESSION_WAR_GERMAN_UNIFICATION;$ORDER$ War of German Hegemony;;;;;;;;x
-NORMAL_WAR_CONQUEST_NAME;$ORDER$ War of the Conquest of $SECOND_COUNTRY$;;;;;;;;;;;x
-NORMAL_WAR_RESTORE_ORDER_NAME;$ORDER$ $FIRST$ Reclamation of $SECOND_COUNTRY$;;;;;;;;;;;;x
-AGRESSION_WAR_RESTORE_ORDER_NAME;$ORDER$ $FIRST$ Reclamation of $SECOND_COUNTRY$;;;;;;;;;;;;x
 NORMAL_WAR_CONQUEST_NAME_AQT_DAU;Daufinat Partition War;;;;;;;;;;;x
 AGRESSION_WAR_CONQUEST_NAME_AQT_DAU;Daufinat Partition War;;;;;;;;;;;x
 NORMAL_WAR_PUPPET_NAME_AQT_DAU;Daufinat Succession War;;;;;;;;;;;x

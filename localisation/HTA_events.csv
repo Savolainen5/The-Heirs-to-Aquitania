@@ -762,3 +762,30 @@ EVTNAME97097;Enable Story Railroading?;;;;;;;;;;;x
 EVTDESC97097;The story in the Heirs to Aquitània mod has been crafted in such a way that some events simply must happen the way the mod's maker, Savs, intends them to. This is meant to make the sequence of events in the game more challenging (maybe), interesting, and most of all, predictable. He's included this because this mod will be the basis of his megacampaign AAR, and this is part of the story. Anyways, don't select this option if you don't want a game where the outcomes of many major events are already essentially decided.;;;;;;;;;;;;;;x
 EVTNAME97098;Staking our claim;;;;;;;;;x
 EVTDESC97098;There yet remain unclaimed areas of the interior of the Amerigan continent. Our burgeoning population is searching for new opportunities, and have begun to make their way to the uncolonised lands of their own accord, pledging to remain loyal to our government.;;;;;;;;;;;;;x
+EVTNAME97099;Ultimatum from France;;;;;;;;;;;;;;;
+EVTDESC97099;After our refusal to hand over administration of the Levantine provinces of our empire to the Outremer, France has stepped up its aggression and sent us a sternly-worded memorandum. There is no question about it - if we wish to keep control of our Mediterranean coast, we will have to fight for it.;x
+EVT97099OPTA;We cannot afford war with a Western power.;x
+EVT97099OPTB;We shall defend the Holy Land agains the infidels, as did our ancestors!;x
+EVTNAME97100;War in the Levant;x
+EVTDESC97100;The winds of change that have swept through Europe, bringing revolution in their wake, now threaten the precarious equilibrium in the Levant, as France seeks to carve out a new empire for itself. Joining the French expedition to the Levant could bring us some compensation on the negotiating table, but we need to consider whether such a commitment would be in our best interest.;x
+EVT97100OPTA;The Persian Empire shall crumble!;x
+EVT97100OPTB;Persia? Let them keep their so-called empire for all I care.;x
+EVTNAME97101;End of the Levantine War;x
+EVTDESC97101;The war in the Levant is now over - it is time for our troops to return home;x
+EVT97101PTA;Europe reigns supreme again in the Middle East;x
+EVTDESC97101_NEWS_LONG;With the military situation becoming increasingly hopeless by the day for the Persian armies, the Shah has had no choice but to accept the demands of France or face internal revolution. The French expedition to the Levant has been a resounding success, and the Outremer population welcoms their new overlords as liberators. Meanwhile, the Great Powers of Europe now hungrily eye the remains of the Persian Empire.;x
+EVTDESC97101_NEWS_MEDIUM;After successive military setbacks, the Shah has had no choice but to accept the demands of France or face internal revolution. The expedition to the Levant has been a resounding success, leaving Great Powers of Europe hungry for their own piece of the Persian Empire.;x
+EVTDESC97101_NEWS_SHORT;With the military situation becoming increasingly hopeless Persia, the Shah has had no choice but to accept the demands of France or face internal revolution. The war is over.;x
+EVTNAME97102;The Treaty of $CAPITAL$;x
+EVTDESC97102;Our defeat in the Levantine War has left us helpless against the imperial ambitions of France. We have no choice but to accept their demands, and hope that the precarious situation in our remaining lands does not spiral into anarchy;x
+EVTDESC97102_NEWS_LONG;The Treaty of $CAPITAL$ - Persia has been decisively defeated by an expedition led by the resurgent France. Now it is up to a conference between the Great European powers to decide the fate of the agonizing Persian Empire, and begin negotations that will decide the future of the Middle East;;;;;;;;;;;;;;;
+EVTDESC97102_NEWS_MEDIUM;The Treaty of $CAPITAL$ - Persia has been decisively defeated by an expedition led by the resurgent France.;;;;;;;;;;;;;;;
+EVTDESC97102_NEWS_SHORT;The Treaty of $CAPITAL$ - With Persia defeated, the Western Powers now divide the corpse of a once-mighty Empire;;;;;;;;;;;;;;;
+EVT97102OPTA;The dismantling of the Persian Empire;x
+EVTNAME97103;The Persian Gulf Ports;x
+EVTDESC97103;The Persian Gulf has traditionally been part of major trade routes connecting Africa, the Near East and the Orient. With the Great Powers of Europe now at the conference table discussing the territorial acquisitions in Persia as part of terms of the treaty, we can decide to make a case for taking a port on the Persian Gulf.;x
+EVT97103OPTA;We shall demand a Treaty Port.;x
+EVTNAME97107;Legacy of the Crusades;x
+EVTDESC97107;In our Levantine possessions live the Outremer people, descendants of the Frankish pilgrims who settled the Holy Land with the establishment of the Crusader states several centuries ago. Having persisted as an affluent community for centuries under Muslim rule, the recent unification of the French motherland has sparked newfound ambitions in the Outremer elite, who are now demanding that they be granted rule over large tracts of the Levantine coast where they hold sway. We could bow down to their demands, risking widespread riots throughout our empire - for this would represent a great loss of face -, or crack down on the Outremer, risking the French reaction.;x
+EVT97107OPTA;Grant self-rule to the Outremer;x
+EVT97107OPTB;We shall not bend to the demands of these kafirs.;x

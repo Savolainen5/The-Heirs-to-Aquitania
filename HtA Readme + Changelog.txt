@@ -20,6 +20,7 @@ file both in your Vic2 mod folder with the aforementioned path. If the main HtA 
 Thanks to:
 
 - /u/ChortlingGnome, who contributed A LOT for Hispania, China, and other things
+- /u/capitanloco6, who wrote events and decisions regarding French ambitions in the Holy Land and the dismantling of Persia, as well as giving some flags and fixing Catalan military/party names
 - /u/firenine09, /u/1tobedoneX, and /u/Sommern, for being a sounding board and giving many good ideas and flags
 - /u/_Rosseau_, for the new Norway flags. Incorporated with permission
 - /u/Rangerage, who did a lot of POP rebalancing in BYZ/ARM based off of my EU3 save
@@ -55,7 +56,8 @@ Version 0.36 X/Y/20 - The Russias & China Update
 	-Expansion to the Pacific coast of Asia
 	-Expansion into central Asia
 	-Expansion against the Baltics
-- Events and decisions for China by /u/chortlinggnome, see changelog below
+- Events and decisions for China by /u/chortlinggnome, see changelog below.
+- Events and decisions for the Outremer Question by /u/capitanloco6 - A united France can take on Persia to gain control over land at the eastern end of the Mediterranean.
 - Incorporated HPM's crisis locking system and election event spam reduction system
 - HtA story chain regarding Corsica involving Aquitania, PDN, and Naples/Italy
 - Blobby decision added to get cores on most of the European Western Mediterranean as a Romance country
@@ -108,6 +110,7 @@ Version 0.36 X/Y/20 - The Russias & China Update
 - Gave Hispania the port of Penang on the Malay Peninsula
 - Renamed and adjusted some provinces in Russia, central Asia
 - Renamed some provinces in New Holland and the surrounding seas
+- Renamed a couple of provinces in Aengland and replaced lots of wheat with sheep in the southeast
 - Added island terrain types from HPM and so changed a bunch of terrain to small islands
 - Added the colormaps from HPM Map Modded, which makes it way fancier looking, and made SOME adjustments. Still lots of work to be done (see the To-Do list)
 
@@ -167,7 +170,7 @@ See the OldChangelogs file for previous version changelogs. You can also see the
 To do:
 - See the "To Do" text file
 
-**Event numbers**
+**Event numbers** - both currently used and planned
 50000&50002 - AQT
 50003-50023 - FRA
 50024-50049 - ITA and DAU (This is about the time I started actually being smart and allocating numbers beforehand. All are used up, must allocate more IDs. Added 50099 here)
@@ -200,3 +203,5 @@ To do:
 59950-59999 - Debugging events
 97091-97098 - North American settlement events
 97097 - Event/decision to enable railroading
+97098 - Claiming Amerigan interior provinces
+97099-97107 - Outremer-related events

@@ -138,6 +138,12 @@
 		size = 525
 	}	
 	
+    slaves = {
+        culture = azerbaijani
+        religion = orthodox
+        size = 500
+    }	
+	
 }
 #Arbil (104000/26000 POPS)
 924 = {
@@ -558,6 +564,13 @@
 		religion = sunni
 		size = 7350
 	}
+
+    slaves = {
+        culture = african_minor
+        religion = animist
+        size = 1000
+    }	
+	
 }
 #Samarra (92000/23000 POPS)
 927 = {

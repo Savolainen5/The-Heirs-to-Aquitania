@@ -105,6 +105,23 @@
 		religion = orthodox
 		size = 1475
 	}
+    slaves = {
+        culture = circassian
+        religion = orthodox
+        size = 6000
+    }
+
+    slaves = {
+        culture = georgian
+        religion = orthodox
+        size = 8000
+    }
+
+    slaves = {
+        culture = armenian
+        religion = coptic
+        size = 5000
+    }	
 }
 #Khvoy (168000/42000 POPS)
 1109 = {
@@ -237,6 +254,12 @@
 		religion = sunni
 		size = 11925
 	}
+ 
+	slaves = {
+        culture = armenian
+        religion = coptic
+        size = 5000
+    }	
 }
 #Urumia (192000/48000 POPS) 17k azer 8k kurd 2k persian 16k assyr 4k armenian 1k jew
 1110 = {
@@ -552,6 +575,12 @@
 		religion = sunni
 		size = 15425
 	}
+	
+    slaves = {
+        culture = tatar
+        religion = orthodox
+        size = 5000
+    }		
 }
 #Gilan-Maznadaran Region (448000)
 #under the rule of Persia in 1836
@@ -606,6 +635,11 @@
 		size = 20125
 	}	
 	
+    slaves = {
+        culture = armenian
+        religion = coptic
+        size = 2000
+    }	
 }
 #Noshehr (88000/22000 POPS)
 1114 = {
@@ -639,6 +673,13 @@
 		religion = sunni
 		size =21050
 	}
+
+    slaves = {
+        culture = ukrainian
+        religion = orthodox
+        size = 3000
+    }	
+	
 }
 #Sari (52000/13000 POPS)
 1115 = {
@@ -742,6 +783,19 @@
 		religion = sunni
 		size = 13200
 	}
+
+    slaves = {
+        culture = armenian
+        religion = coptic
+        size = 2000
+    }	
+
+    slaves = {
+        culture = tatar
+        religion = orthodox
+        size = 1000
+    }		
+	
 }
 #Luristan-Ardelan Region (476000)
 #under the rule of Persia in 1836
@@ -863,6 +917,13 @@
 		religion = sunni
 		size = 8400
 	}
+
+    slaves = {
+        culture = sindi
+        religion = sunni
+        size = 4000
+    }	
+	
 }
 #Sanandaj (92000/23000 POPS)
 1118 = {
@@ -960,6 +1021,12 @@
 		religion = sunni
 		size = 3625
 	}
+
+	slaves = {
+		culture = baluchi
+		religion = sunni
+		size = 1000
+	}	
 }
 #Khorramabad (64000/16000 POPS)
 1120 = {
@@ -993,6 +1060,19 @@
 		religion = sunni
 		size = 13950
 	}
+
+	slaves = {
+		culture = sindi
+		religion = sunni
+		size = 3000
+	}
+
+	slaves = {
+		culture = baluchi
+		religion = sunni
+		size = 2500
+	}		
+	
 }
 #Ajami Region (888000)
 #under the rule of Persia in 1836
@@ -1076,7 +1156,21 @@
 		religion = orthodox
 		size = 1475
 	}
+	
+    slaves = {
+        culture = african_minor
+        religion = animist
+        size = 6000
+    }
+
+    slaves = {
+        culture = georgian
+        religion = orthodox
+        size = 2000
+    }
+
 }
+
 #Hamadan (118000/29500 POPS)
 1122 = {
 	aristocrats = {
@@ -1133,6 +1227,13 @@
 		religion = orthodox
 		size = 490
 	}
+
+    slaves = {
+        culture = north_caucasian
+        religion = orthodox
+        size = 2000
+    }	
+	
 }
 #Zanjan (44000/11000 POPS)
 1123 = {
@@ -1199,6 +1300,13 @@
 		religion = sunni
 		size = 27925
 	}
+
+    slaves = {
+        culture = sindi
+        religion = sunni
+        size = 3000
+    }	
+	
 }
 #Qom (200000/50000 POPS)
 1125 = {
@@ -1265,6 +1373,19 @@
 		religion = sunni
 		size = 10900
 	}
+
+	slaves = {
+		culture = tatar
+		religion = orthodox
+		size = 1500
+	}
+	
+	slaves = {
+		culture = sindi
+		religion = sunni
+		size = 1000
+	}	
+	
 }
 #Isfahan Region (700000)
 #under the rule of Persia in 1836
@@ -1342,6 +1463,19 @@
 		religion = orthodox
 		size = 2925
 	}
+
+    slaves = {
+        culture = african_minor
+        religion = animist
+        size = 9000
+    }
+
+    slaves = {
+        culture = marathi
+        religion = hindu
+        size = 6000
+    }	
+	
 }
 #Arak (60000/15000 POPS)
 1128 = {
@@ -1375,6 +1509,13 @@
 		religion = sunni
 		size = 13700
 	}
+
+	slaves = {
+		culture = turkmen
+		religion = sunni
+		size = 2000
+	}	
+	
 }
 #Kashan (112000/28000 POPS)
 1129 = {
@@ -1465,6 +1606,13 @@
 		religion = orthodox
 		size = 490
 	}
+
+	slaves = {
+		culture = baluchi
+		religion = sunni
+		size = 1000
+	}	
+	
 }
 #Khuzestan Region (164000)
 #under the rule of Persia in 1836
@@ -1555,6 +1703,13 @@
 		religion = jewish
 		size = 245
 	}
+
+	slaves = {
+		culture = shilluk
+		religion = animist
+		size = 1000
+	}	
+	
 }
 #Abadan (44000/11000 POPS)
 1132 = {
@@ -1588,6 +1743,19 @@
 		religion = shiite
 		size = 10050
 	}
+
+	slaves = {
+		culture = shilluk
+		religion = animist
+		size = 1000
+	}
+
+	slaves = {
+		culture = beja
+		religion = animist
+		size = 1000
+	}		
+	
 }
 #Dezful (32000/8000 POPS)
 1133 = {
@@ -1652,6 +1820,19 @@
 		religion = sunni
 		size = 5475
 	}
+
+	slaves = {
+		culture = african_minor
+		religion = animist
+		size = 1500
+	}
+
+	slaves = {
+		culture = nuba
+		religion = animist
+		size = 500
+	}		
+	
 }
 #Shahr-e Kord (32000/8000 POPS)
 1134 = {
@@ -1743,6 +1924,19 @@
 		religion = jewish
 		size = 245
 	}
+
+    slaves = {
+        culture = african_minor
+        religion = animist
+        size = 500
+    }
+
+    slaves = {
+        culture = panjabi
+        religion = sikh
+        size = 2000
+    }	
+	
 }
 #Bushehr (100000/25000 POPS)
 1136 = {
@@ -1776,6 +1970,13 @@
 		religion = sunni
 		size = 22800
 	}
+
+    slaves = {
+        culture = shona
+        religion = sunni
+        size = 1500
+    }	
+	
 }
 #Yasuj (144000/36000 POPS)
 1137 = {
@@ -1809,6 +2010,18 @@
 		religion = sunni
 		size = 32150
 	}
+
+    slaves = {
+        culture = african_minor
+        religion = animist
+        size = 1500
+    }	
+
+    slaves = {
+        culture = shona
+        religion = animist
+        size = 1000
+    }	
 }
 #Kangan (48000/12000 POPS)
 1138 = {
@@ -1875,6 +2088,13 @@
 		religion = sunni
 		size = 3675
 	}
+
+    slaves = {
+        culture = afar
+        religion = sunni
+        size = 1500
+    }	
+	
 }
 #Kerman Region (332000)
 #under the rule of Persia in 1836
@@ -1922,6 +2142,19 @@
 		religion = sunni
 		size = 18125
 	}
+
+    slaves = {
+        culture = african_minor
+        religion = animist
+        size = 2500
+    }
+
+    slaves = {
+        culture = pashtun
+        religion = shiite
+        size = 1000
+    }	
+	
 }
 #Lengeh (76000/19000 POPS)
 1141 = {
@@ -1986,6 +2219,19 @@
 		religion = shiite
 		size = 2750
 	}
+
+    slaves = {
+        culture = pashtun
+        religion = shiite
+        size = 1000
+    }
+
+    slaves = {
+        culture = baluchi
+        religion = shiite
+        size = 2500
+    }	
+	
 }
 #Bandar Abbas (96000/24000 POPS)
 1142 = {
@@ -2050,6 +2296,25 @@
 		religion = shiite
 		size = 6400
 	}
+
+    slaves = {
+        culture = pashtun
+        religion = shiite
+        size = 1500
+    }	
+
+    slaves = {
+        culture = sindi
+        religion = shiite
+        size = 1000
+    }
+
+    slaves = {
+        culture = baluchi
+        religion = shiite
+        size = 2000
+    }
+	
 }
 #Bam (80000/20000 POPS)
 1143 = {
@@ -2114,6 +2379,19 @@
 		religion = sunni
 		size = 8200
 	}
+
+    slaves = {
+        culture = african_minor
+        religion = shiite
+        size = 1500
+    }
+
+    slaves = {
+        culture = sindi
+        religion = shiite
+        size = 1000
+    }	
+	
 }
 #Sistan Region (260000)
 #under the rule of Persia in 1836
@@ -2192,7 +2470,15 @@
 		religion = sunni
 		size = 6375
 	}
-}
+
+    slaves = {
+        culture = african_minor
+        religion = animist
+        size = 2000
+    }
+
+}	
+	
 #Jask (92000/23000 POPS)
 1145 = {
 	aristocrats = {
@@ -2256,6 +2542,13 @@
 		religion = sunni
 		size = 6075
 	}
+
+    slaves = {
+        culture = panjabi
+        religion = hindu
+        size = 4000
+    }	
+	
 }
 #Chabahar (96000/24000 POPS)
 1146 = {
@@ -2320,6 +2613,25 @@
 		religion = sunni
 		size = 11375
 	}
+
+    slaves = {
+        culture = panjabi
+        religion = hindu
+        size = 1500
+    }
+
+    slaves = {
+        culture = marathi
+        religion = hindu
+        size = 1500
+    }
+
+    slaves = {
+        culture = pashtun
+        religion = shiite
+        size = 500
+    }	
+	
 }
 #Khurasan Region (600000)
 #under the rule of Persia in 1836
@@ -2422,6 +2734,18 @@
 		religion = jewish
 		size = 245
 	}
+
+    slaves = {
+        culture = african_minor
+        religion = animist
+        size = 8000
+    }
+
+    slaves = {
+        culture = pashtun
+        religion = shiite
+        size = 4000
+    }		
 }
 #Birjand (92000/23000 POPS)
 1148 = {
@@ -2455,6 +2779,19 @@
 		religion = sunni
 		size = 20250
 	}
+
+    slaves = {
+        culture = pashtun
+        religion = shiite
+        size = 1000
+    }
+
+    slaves = {
+        culture = russian
+        religion = orthodox
+        size = 1500
+    }	
+	
 }
 #Sabzevar (72000/18000 POPS)
 1149 = {
@@ -2565,5 +2902,17 @@
 		religion = sunni
 		size = 5225
 	}
+	
+    slaves = {
+        culture = pashtun
+        religion = shiite
+        size = 500
+    }
+
+    slaves = {
+        culture = russian
+        religion = shiite
+        size = 1000
+    }	
 
 }

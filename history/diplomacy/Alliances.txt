@@ -155,5 +155,5 @@ alliance = {
 	first = HNG
 	second = SIA
 	start_date = 1836.1.1
-	end_Date = 1949.1.1
+	end_date = 1949.1.1
 }

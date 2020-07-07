@@ -1,0 +1,385 @@
+#################################################################################################################
+#																												#
+#                       						Outremer War Events												#
+#											Written by /u/capitanloco6											#
+#																												#
+#################################################################################################################
+
+country_event = {
+    id = 97107
+    title = "EVTNAME97107" # Legacy of the Crusades
+    desc = "EVTDESC97107"
+    picture = "crisis_levant"
+	
+	fire_only_once = yes
+	
+    trigger = {
+        tag = PER
+		owns = 912
+		owns = 917			
+		FRA = {
+			exists = yes
+			has_country_flag = FRA_man_and_the_sea
+			owns = 411
+			owns = 412
+			owns = 418
+		}	
+    }
+
+    mean_time_to_happen = {
+        months = 6
+        modifier = {
+            factor = 0.5
+            FRA = { 
+				is_secondary_power = yes 
+			}
+        }        
+		modifier = {
+            factor = 0.5
+            FRA = {
+				is_greater_power = yes 
+			}
+        }
+        modifier = {
+            factor = 0.5
+            PER = {
+				any_pop = {
+					is_culture_group = french
+					location = { is_core = PER }
+					militancy = 3
+				}
+			}
+        }
+        modifier = {
+            factor = 0.5
+            PER = {
+				any_pop = {
+					is_culture_group = french
+					location = { is_core = PER }
+					militancy = 5
+				}
+			}
+       }
+        modifier = {
+            factor = 0.5
+            PER = {
+				any_pop = {
+					is_culture_group = french
+					location = { is_core = PER }
+					militancy = 7
+				}
+			}
+       }
+
+    }
+
+    option = {
+        name = "EVT97107OPTA" #Grant home rule to Outremer
+        set_global_flag = outremer_self_rule_granted
+        PER = {
+            any_owned = {
+				limit = { 
+					is_core = JER		
+				}
+				secede_province = JER   #If this doesn't work, try using release_vassal
+			}
+			create_vassal = JER
+			prestige = -50
+            any_pop = {
+				limit = {
+					is_culture_group = arab
+					location = { is_core = PER }
+				}
+				militancy = 5
+			}
+            any_pop = {
+				limit = {
+					is_culture_group = iranian_turanian
+					location = { is_core = PER }
+				}
+				militancy = 5
+			}			
+        }
+    }
+    option = {
+        name = "EVT97107OPTB" #Refuse home rule to Outremer
+        set_global_flag = outremer_self_rule_refused
+        PER = {
+			prestige = 50
+            any_pop = {
+				limit = {
+					is_culture_group = french
+					location = { is_core = PER }
+				}
+				militancy = 5
+				reduce_pop = 0.99
+			}
+            any_pop = {
+				limit = {
+					is_culture_group = iranian_turanian
+					location = { is_core = PER }
+				}
+				militancy = -5
+			}
+            any_pop = {
+				limit = {
+					is_culture_group = arab
+					location = { is_core = PER }
+				}
+				militancy = -5
+			}			
+        }
+    }	
+}
+
+country_event = {
+    id = 97099
+    title = "EVTNAME97099" # France demands the Levant
+    desc = "EVTDESC97099"
+    picture = "crisis_levant_2"
+	is_triggered_only = yes
+
+#    trigger = {
+#        tag = PER
+#        NOT = { war_with = FRA }
+#		NOT = { has_global_flag = PER_accept_ultimatum }
+#		NOT = { has_global_flag = PER_refuse_ultimatum }
+#		owns = 912
+#		owns = 917
+#		has_global_flag = FRA_demands_levant
+#   }
+
+#    mean_time_to_happen = {
+#        months = 3
+#    }
+
+    option = {
+        name = "EVT97099OPTA" #Cede Levant to FRA
+        set_global_flag = PER_accept_ultimatum
+		clr_global_flag = FRA_demands_levant
+        PER = {
+            any_owned = { limit = { is_core = JER } secede_province = FRA }
+			prestige = -50
+            any_pop = {
+				limit = {
+					is_culture_group = arab
+					location = { is_core = PER }
+				}
+				militancy = 5
+			}
+            any_pop = {
+				limit = {
+					is_culture_group = iranian_turanian
+					location = { is_core = PER }
+				}
+				militancy = 5
+			}			
+        }
+    }
+    option = {
+        name = "EVT97099OPTB" #Refuse FRA ultimatum
+        set_global_flag = PER_refuse_ultimatum
+		clr_global_flag = FRA_demands_levant
+        PER = {
+			prestige = 25
+            any_pop = {
+				limit = {
+					is_culture_group = french
+					location = { is_core = PER }
+				}
+				militancy = 3
+			}
+        }
+    }	
+}
+
+country_event = {
+    id = 97100
+    title = "EVTNAME97100" # War in the Levant
+    desc = "EVTDESC97100"
+    picture = "crisis_levant"
+
+    trigger = {
+        rank = 16
+        capital_scope = { continent = europe }
+		num_of_ports = 1
+		NOT = {
+			tag = BYZ
+		}
+		war = no
+        has_global_flag = levantine_war
+        FRA = { war_with = PER }
+        OR = {
+            alliance_with = FRA
+            relation = { who = FRA value = 100 }
+            NOT = { relation = { who = PER value = -50 } }
+        }
+        PER = { any_owned_province = { is_core = JER } }
+        NOT = {
+            has_global_flag = PER_accept_ultimatum
+			has_global_flag = outremer_self_rule_granted
+			has_country_flag = refused_FRA_levant
+            relation = { who = PER value = 100 }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 3
+        modifier = {
+            factor = 0.5
+            alliance_with = FRA
+        }
+        modifier = {
+            factor = 2
+            PER = { national_provinces_occupied = 0.01 }
+        }
+        modifier = {
+            factor = 0.5
+            PER = { national_provinces_occupied = 0.01 }
+        }
+        modifier = {
+            factor = 0.5
+            PER = { national_provinces_occupied = 0.10 }
+        }
+    }
+
+    option = {
+        name = "EVT97100OPTA"
+		set_country_flag = accepted_FRA_levant
+        diplomatic_influence = {
+            who = PER
+            value = -50
+        }
+        casus_belli = {
+            target = PER
+            type = cut_down_to_size
+            months = 12
+        }
+        war = {
+            target = PER
+            attacker_goal = {
+                casus_belli = cut_down_to_size
+            }
+        }
+        ai_chance = {
+            factor = 75
+            modifier = {
+                factor = 1.25
+                FRA = { has_recently_lost_war = yes }
+            }
+            modifier = {
+                factor = 1.25
+                alliance_with = FRA
+            }
+            modifier = {
+                factor = 1.25
+                relation = {
+                    who = FRA
+                    value = 100
+                }
+            }
+        }
+    }
+
+    option = {
+        name = "EVT97100OPTB"
+		set_country_flag = refused_FRA_levant
+        prestige = -5
+        leave_alliance = FRA
+        relation = {
+            who = FRA
+            value = -25
+        }
+        ai_chance = {
+            factor = 25
+            modifier = {
+                factor = 0.75
+                FRA = { has_recently_lost_war = yes }
+            }
+            modifier = {
+                factor = 0.75
+                relation = {
+                    who = FRA
+                    value = 100
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+#Event to stop separate event wars with PER after FRA has peaced out
+    id = 97101
+
+    title = "EVTNAME97101" #The Persian Surrender
+    desc = "EVTDESC97101"
+    news = yes
+    news_desc_long = "EVTDESC97101_NEWS_LONG"
+    news_desc_medium = "EVTDESC97101_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC97101_NEWS_SHORT"
+    picture = "crisis_levant_2"
+    major = yes
+
+    trigger = {
+        capital_scope = { continent = europe }
+        war_with = PER
+		has_global_flag = levantine_war
+        FRA = { truce_with = PER }
+    }	
+
+    option = {
+        name = "EVT97101OPTA"
+        prestige = 15
+        end_war = PER
+		set_country_flag = participated_levant
+    }
+}
+
+country_event = {
+#Event to unlock decisions to take Persian ports
+    id = 97103
+
+    title = "EVTNAME97103"
+    desc = "EVTDESC97103"
+    picture = "bushire"
+
+    trigger = {
+        rank = 16
+        capital_scope = { continent = europe }
+		num_of_ports = 1
+		NOT = {
+			tag = FIN
+			has_country_flag = took_persian_port
+		}	
+		war = no
+		has_global_flag = levant_crisis_over
+        PER = {
+			has_country_flag = lost_levantine_war
+			OR = {
+				owns = 1146
+				owns = 1136
+				owns = 1142
+				owns = 1132
+			}
+		}
+		OR = {
+			has_country_flag = accepted_FRA_levant 
+			has_country_flag = participated_levant
+			truce_with = PER
+			tag = FRA
+		}
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = "EVT97103OPTA"
+        prestige = 5
+		set_country_flag = persian_gulf_negotiations
+        ai_chance = {
+            factor = 100
+        }
+    }
+}
