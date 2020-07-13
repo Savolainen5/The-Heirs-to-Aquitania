@@ -11,19 +11,12 @@ political_decisions = {
 			tag = FRA
 			has_global_flag = outremer_self_rule_refused
 			has_country_flag = FRA_man_and_the_sea
+			has_unclaimed_cores = no
 			NOT = {
 				has_global_flag = outremer_self_rule_granted
-			}
-			NOT = {
 				has_global_flag = PER_refuse_ultimatum
-			}
-			NOT = {
 				has_global_flag = PER_accept_ultimatum
-			}
-			NOT = {
 				has_country_flag = lost_levantine_war
-			}
-			NOT = {
 				has_global_flag = levant_crisis_over
 			}			
 		}
@@ -34,7 +27,6 @@ political_decisions = {
 				war = no
 			}
 			FRA = {
-				has_unclaimed_cores = no
 				nationalism_n_imperialism = 1
 				war_policy = jingoism
 				total_amount_of_ships = 15
@@ -351,7 +343,7 @@ political_decisions = {
 			prestige = 1
 			913 = { change_province_name = "Beyrouth" }
 			914 = { change_province_name = "Tripolis" }
-			918 = { change_province_name = "Nablous" }
+			918 = { change_province_name = "Naplouse" }
 			919 = { change_province_name = "Yafa" }
 			920 = { change_province_name = "Ghazze"	}		
         }

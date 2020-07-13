@@ -15,8 +15,8 @@ country_event = {
 	
     trigger = {
         tag = PER
-		owns = 912
-		owns = 917			
+		owns = 912 #Baalbeck
+		owns = 917 #Jerusalem
 		FRA = {
 			exists = yes
 			has_country_flag = FRA_man_and_the_sea
@@ -76,60 +76,55 @@ country_event = {
     option = {
         name = "EVT97107OPTA" #Grant home rule to Outremer
         set_global_flag = outremer_self_rule_granted
-        PER = {
-			release_vassal = JER
-			prestige = -50
-            any_pop = {
-				limit = {
-					is_culture_group = arab
-					location = { is_core = PER }
-				}
-				militancy = 5
-			}
-            any_pop = {
-				limit = {
-					is_culture_group = iranian_turanian
-					location = { is_core = PER }
-				}
-				militancy = 5
-			}			
-        }
-		any_country = {
+		release_vassal = JER
+		prestige = -30
+        any_pop = {
 			limit = {
-				capital_scope = { continent = europe }
-				exists = yes
+				is_culture_group = arab
+				location = { is_core = PER }
 			}
-			country_event = 97104
+			militancy = 5
+		}
+        any_pop = {
+			limit = {
+				is_culture_group = iranian_turanian
+				location = { is_core = PER }
+			}
+			militancy = 5
+		}			
+        AQT = {
+			country_event = {
+				id = 97104
+				days = 1
+			}
 		}
     }
     option = {
         name = "EVT97107OPTB" #Refuse home rule to Outremer
         set_global_flag = outremer_self_rule_refused
-        PER = {
-			prestige = 50
-            any_pop = {
-				limit = {
-					is_culture_group = french
-					location = { is_core = PER }
-				}
-				militancy = 5
-				reduce_pop = 0.99
+		prestige = 30
+        any_pop = {
+			limit = {
+				is_culture_group = french
+				location = { is_core = PER }
 			}
-            any_pop = {
-				limit = {
-					is_culture_group = iranian_turanian
-					location = { is_core = PER }
-				}
-				militancy = -5
+			militancy = 5
+			reduce_pop = 0.99
+		}
+        any_pop = {
+			limit = {
+				is_culture_group = iranian_turanian
+				location = { is_core = PER }
 			}
-            any_pop = {
-				limit = {
-					is_culture_group = arab
-					location = { is_core = PER }
-				}
-				militancy = -5
-			}			
-        }
+			militancy = -5
+		}
+        any_pop = {
+			limit = {
+				is_culture_group = arab
+				location = { is_core = PER }
+			}
+			militancy = -5
+		}			
     }	
 }
 
@@ -393,10 +388,9 @@ country_event = {
     news_desc_long = "EVTDESC97104_NEWS_LONG"
     news_desc_medium = "EVTDESC97104_NEWS_MEDIUM"
     news_desc_short = "EVTDESC97104_NEWS_SHORT"
-    picture = "jer_released"
-#   major = yes		
+    #picture = "jer_released"
+	major = yes		
     is_triggered_only = yes
-    allow_multiple_instances = no	
 
     mean_time_to_happen = {
         months = 3

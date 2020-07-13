@@ -1,7 +1,0 @@
-owner = PER
-controller = PER
-add_core = PER
-add_core = JER
-trade_goods = fruit
-life_rating = 35
-

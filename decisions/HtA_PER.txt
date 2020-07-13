@@ -17,7 +17,15 @@ political_decisions = {
 			is_greater_power = yes
 			capital_scope = { continent = europe }
 			NOT = { has_global_flag = persian_intervention }
-			PER = { civilized = no }
+			PER = {
+				civilized = no
+				any_owned_province = {
+					OR = {
+						is_core = SYR
+						is_core = IRQ
+					}
+				}
+			}
 		}
 		
 		allow = {
@@ -50,7 +58,10 @@ political_decisions = {
 			has_global_flag = persian_decline
 			NOT = { has_global_flag = persian_intervention }
 			NOT = { has_global_flag = persian_intervention_FRA }
-			PER = { civilized = no }
+			PER = {
+				civilized = no
+				owns = 917 #Jerusalem
+			}
 		}
 		
 		allow = {
