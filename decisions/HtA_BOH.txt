@@ -227,6 +227,7 @@ political_decisions = {
 				is_vassal = no
 			}
 			NOT = { has_country_flag = silesia_secured }
+			NOT = { has_country_flag = silesia_secured2 }
 		}
 		
 		allow = {
@@ -283,18 +284,24 @@ political_decisions = {
 	
 	secure_silesia_2 = {
 		picture = negotiations
-		
 		potential = {
-			has_country_flag = silesia_secured
+			OR = {
+				AND = {
+					has_country_flag = silesia_secured
+					SLS = { in_sphere = THIS }
+				}
+				is_our_vassal = SLS
+			}
 			exists = SLS
-			revolution_n_counterrevolution = 1
 			OR = {
 				is_greater_power = yes
 				is_secondary_power = yes
 			}
+			NOT = { has_country_flag = silesia_secured2 }
 		}
 		
 		allow = {
+			revolution_n_counterrevolution = 1
 			is_our_vassal = SLS
 		}
 		
@@ -303,6 +310,7 @@ political_decisions = {
 			inherit = SLS
 			SLS = { all_core = {  add_core = THIS } }
 			prestige = 5
+			set_country_flag = silesia_secured2
 		}
 		
 		ai_will_do = {

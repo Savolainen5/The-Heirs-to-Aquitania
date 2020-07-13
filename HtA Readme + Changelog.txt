@@ -63,6 +63,8 @@ Version 0.36 X/Y/20 - The Russias & China Update
 - Blobby decision added to get cores on most of the European Western Mediterranean as a Romance country
 - Added a de-escalation event after the Eyjafjallajokul eruption and subsequent famine which SHOULD cut down on the number of rebels. But expect to see many countries of Europe fall to them still. That's more or less what I want
 - Added lots more soldier and craftsman POPs to normal GPs, did some industrial boosting
+- Story chain for Outremer POPs in Persia to revolt and a strong France to intervene on their behalf (Thanks to capitanloco6)
+- Story chain for Arab/Mashriqi revolts in Persia (Thanks to ChortlingGnome, still a WIP)
 
 *Minor*
 

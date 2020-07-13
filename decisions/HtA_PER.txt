@@ -1,0 +1,125 @@
+political_decisions = {
+
+## European Establishment of Arab States by ChortlingGnome
+	me_intervention = {
+		picture = claim_greater_armenia
+		potential = {
+			OR = {
+				SYR = {
+					any_core = { owner = { in_sphere = THIS } }
+				}
+				IRQ = {
+					any_core = { owner = { in_sphere = THIS } }
+				}
+				owns = 1755 #Suez
+				neighbour = PER
+			}
+			is_greater_power = yes
+			capital_scope = { continent = europe }
+			NOT = { has_global_flag = persian_intervention }
+			PER = { civilized = no }
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			war = no 
+		}
+		
+		effect = {
+			set_global_flag = persian_intervention
+			set_country_flag = ME_interest
+			PER = { country_event = 97173 }
+			prestige = 5
+			badboy = 3
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	me_intervention_FRA = {
+		picture = protect_eastern_christians
+		potential = {
+			tag = FRA
+			has_global_flag = FRA_our_colony_returned_BRT
+			has_global_flag = persian_decline
+			NOT = { has_global_flag = persian_intervention }
+			NOT = { has_global_flag = persian_intervention_FRA }
+			PER = { civilized = no }
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			war = no 
+			is_greater_power = yes
+			total_amount_of_ships = 10
+		}
+		
+		effect = {
+			set_global_flag = persian_intervention_FRA
+			PER = { country_event = 97174 }
+			prestige = 5
+			badboy = 2
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	extend_to_arabia = {
+		picture = map_arabia
+		potential = {
+			is_greater_power = yes
+			OR = {
+				AND = {
+					is_our_vassal = SYR
+					is_our_vassal = IRQ
+				}
+				AND = {
+					SYR = { all_core = { owned_by = THIS } }
+					IRQ = { all_core = { owned_by = THIS } }
+				}
+			}
+			has_country_flag = ME_interest
+			exists = ARA
+		}
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			war = no
+			ARA = { is_vassal = no }
+			OR = {
+				ARA = { in_sphere = THIS }
+				ARA = { part_of_sphere = no }
+			}
+		}
+		
+		effect = {
+			create_vassal = ARA
+			diplomatic_influence = {
+				who = ARA
+				value = 300
+			}
+			prestige = 5
+			badboy = 2
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.9
+			}
+		}
+	}
+}

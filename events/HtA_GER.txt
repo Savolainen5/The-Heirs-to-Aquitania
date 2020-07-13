@@ -501,8 +501,6 @@ country_event = {
 	title = "EVTNAME50063"
 	desc = "EVTDESC50063"
 	
-	major = yes
-	
 	trigger = {
 		NOT = { tag = BRA }
 		primary_culture = north_german
@@ -528,6 +526,8 @@ country_event = {
 	title = "EVTNAME50064"
 	desc = "EVTDESC50064"
 	picture = "danishgovernment"
+	
+	#major = yes
 	
 	trigger = {
 		tag = BRA

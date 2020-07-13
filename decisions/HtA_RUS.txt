@@ -468,7 +468,7 @@ political_decisions = {
 	
 	#Annex the Hetmanate
 	yoke_the_tatars = {
-		picture = enslave_the_undesirables
+		picture = enslave_the_undesireables
 		potential = {
 			OR = {
 				tag = RUS

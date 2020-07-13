@@ -97,6 +97,7 @@ CB:
 Other:
 - Go back through eventually and add newspaper entries
 - FIX THE BLOODY ECONOMY - remember the guy who was a GP Dabimon and had a REALLY hard time gathering goods for military?
+	- Incorporate this patch for the interest bug: https://forum.paradoxplaza.com/forum/threads/global-event-to-force-rax-refunds.1377441/ and/or https://forum.paradoxplaza.com/forum/threads/does-the-national-bank-still-have-the-interest-bug.1393731/
 - Add silk/wine-related industry to PRE
 - One day in the future: Incorporate (some of?) PDM. I want spices right now, but maybe in the future when I have a better computer that can handle it, I'll maybe incorporate it for a bit more variety and closer realism
 	- Spices for Indonesia would be nice anyways

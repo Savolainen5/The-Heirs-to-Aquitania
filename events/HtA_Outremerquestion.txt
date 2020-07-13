@@ -77,13 +77,7 @@ country_event = {
         name = "EVT97107OPTA" #Grant home rule to Outremer
         set_global_flag = outremer_self_rule_granted
         PER = {
-            any_owned = {
-				limit = { 
-					is_core = JER		
-				}
-				secede_province = JER   #If this doesn't work, try using release_vassal
-			}
-			create_vassal = JER
+			release_vassal = JER
 			prestige = -50
             any_pop = {
 				limit = {
@@ -100,6 +94,13 @@ country_event = {
 				militancy = 5
 			}			
         }
+		any_country = {
+			limit = {
+				capital_scope = { continent = europe }
+				exists = yes
+			}
+			country_event = 97104
+		}
     }
     option = {
         name = "EVT97107OPTB" #Refuse home rule to Outremer
@@ -381,5 +382,29 @@ country_event = {
         ai_chance = {
             factor = 100
         }
+    }
+}
+
+country_event = {
+    id = 97104
+    title = "EVTNAME97104" # The Paper Lion of the Orient
+    desc = "EVTDESC97104"
+    news = yes
+    news_desc_long = "EVTDESC97104_NEWS_LONG"
+    news_desc_medium = "EVTDESC97104_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC97104_NEWS_SHORT"
+    picture = "jer_released"
+#   major = yes		
+    is_triggered_only = yes
+    allow_multiple_instances = no	
+
+    mean_time_to_happen = {
+        months = 3
+    }
+
+    option = {
+        name = "EVT97104OPTA" #Grant home rule to Outremer
+        set_global_flag = outremer_self_rule_granted
+        THIS = { relation = { who = PER value = 50 } }
     }
 }

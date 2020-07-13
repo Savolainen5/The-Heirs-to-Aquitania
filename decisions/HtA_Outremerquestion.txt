@@ -326,5 +326,37 @@ political_decisions = {
 
         ai_will_do = { factor = 1 }
     }	
+
+    FRA_rename_levant = {
+        picture = jer_rename
+        potential = {
+            owns = 913 #Beirut
+			owns = 917 #Jerusalem
+			OR = {
+				is_culture_group = french
+				primary_culture = french
+				primary_culture = outremer
+			}
+			NOT = {
+				has_global_flag = jerusalem_beirut_french
+			}
+        }
+
+        allow = {
+			war = no
+        }
+
+        effect = {
+			set_global_flag = jerusalem_beirut_french
+			prestige = 1
+			913 = { change_province_name = "Beyrouth" }
+			914 = { change_province_name = "Tripolis" }
+			918 = { change_province_name = "Nablous" }
+			919 = { change_province_name = "Yafa" }
+			920 = { change_province_name = "Ghazze"	}		
+        }
+
+        ai_will_do = { factor = 1 }
+    }	
 	
 }

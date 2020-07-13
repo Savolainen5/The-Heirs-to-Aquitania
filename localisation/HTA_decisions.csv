@@ -167,6 +167,8 @@ expand_to_kilikia_title;Expand to Kilikia;;;;;;;;;;x
 expand_to_kilikia_desc;With the war over and peace restored, we can once again look outward. The Muslims in Armenia are weak and hold territory that was once Roman. Let us reclaim it and cut them off from the Mediterranean, thus weakening them further.;;;;;;;;x
 expedition_to_okhotsk_title;Mount the Svetaev Expedition;;;;;;;;;;x
 expedition_to_okhotsk_desc;In 1845, Count Bogdan Svetayev was commissioned by the $COUNTRY_ADJ$ government to explore and lay claim to lands at the western coast of Asia beyond the recently conquered lands of the Yakuts. Svetayev and his men mapped out the coast of the Sea of Okhotsk from the border of Manchurian-claimed land to the Bay of Ayan, claiming it in the name of $COUNTRY$.;;;;;;;;;;;x
+extend_to_arabia_title;Extend to Arabia;x
+extend_to_arabia_desc;We can more directly influence the Bedouin tribes of the Arabian peninsula.;x
 fight_for_latvia_title;Fight for Latvia;;;;;;;;;;x
 fight_for_latvia_desc;It is clear that military intervention is necessary in Latvia if we are to guarantee that their movement for independence succeeds. To war!;;;;;;;;;;x
 form_greater_netherlands_title;Form the Greater Netherlands;;;;;;;;;x
@@ -189,6 +191,8 @@ FRA_levant_ultimatum_title;The Outremer Question;x
 FRA_levant_ultimatum_desc;The Outremer people of the Levant, descendents of French crusaders from the Middle Ages, have long languished under the Persian yoke. With a now-unified and strong France, and unrest in the Levant rising to a fever pitch, it is our moral imperative to unite with our long-sundered brethren. Repeated intransigence by the Shah's government leaves us no choice - they must accept our ultimatum or face our wrath.;x
 FRA_levant_war_title;War in the Levant;x
 FRA_levant_war_desc;With the Shah having arrogantly dismissed our just demands, now only one recourse remains - war! We will conquer the Levant, as our predecessors did 800 years ago.;x
+FRA_rename_levant_title;Rename the Levantine Provinces;x
+FRA_rename_levant_desc;Now that we have established firm control over the Ouremer provinces, it is time to show the world that we are their rightful owners by returning the major settlements to their original French names.;x
 FRA_return_our_colonies_title;Seek the return of our former colonies;;;;;;;;;;;;;x,,,,
 FRA_return_our_colonies_desc;Now that we once again have access to the sea and a proper navy, we can start reclaiming our former colonies. Let's start with our colony in the Iles Bleus, which is administered by Brittany at the moment.;;;;;;;;;;;;;x
 further_the_revolution_in_DAU_title;Further the Revolution in Daufinat;;;;;;;;x
@@ -289,6 +293,10 @@ maretans_are_italian_title;The Maretans are Italian!;;;;;;;;;x
 maretans_are_italian_desc;The Maretans of Corsica and Sardinia speak a language quite similar to ours, and have long shared in the cultural and economic life of the Tyrrhenian coast and general Mediterranean sea. Now that we control the north of the peninsula, having brought the Padan Union to heel, there's no reason for them to properly resist us. Gloria per la patria!;;;;;;;;x
 margaria_ai_solelha_purchase_title;Totally Innocuous Decision;;;;;;;;;;x
 margaria_ai_solelha_purchase_desc;Definitely doesn't exist to help AI Margaria buy Solelha. Nope.;;;;;;;;x
+me_intervention_title;Intervene in Persia;x
+me_intervention_desc;The Shah's rule in the Middle East is collapsing. We should take the opportunity to stabilize the region under our rule.;x
+me_intervention_FRA_title;Protect the Outremers;x
+me_intervention_FRA_desc;The Frankish-speaking Outremers, a legacy of the Crusades, are threatened by the recent ethnic strife in the Holy Land. We should intervene to protect them.;x
 med_islands_join_forces_crete_title;Join forces with Cyprus!;;;;;;;;x
 med_islands_join_forces_crete_desc;Cyprus is a rising star, and if we offer to join them, we can contribute to their fledgling republic and forge for ourselves a bright future!;;;;;;;;x
 med_islands_join_forces_cyprus_title;Join forces with Crete!;;;;;;;;x
