@@ -70,8 +70,11 @@ country_event = {
 				}
 			}
        }
-
     }
+
+	immediate = {
+		set_global_flag = outremer_chain_start
+	}
 
     option = {
         name = "EVT97107OPTA" #Grant home rule to Outremer

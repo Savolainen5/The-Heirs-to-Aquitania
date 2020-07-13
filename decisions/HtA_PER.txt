@@ -56,8 +56,11 @@ political_decisions = {
 			tag = FRA
 			has_global_flag = FRA_our_colony_returned_BRT
 			has_global_flag = persian_decline
-			NOT = { has_global_flag = persian_intervention }
-			NOT = { has_global_flag = persian_intervention_FRA }
+			NOT = {
+				has_global_flag = persian_intervention 
+				has_global_flag = persian_intervention_FRA
+				has_global_flag = outremer_chain_start
+			}
 			PER = {
 				civilized = no
 				owns = 917 #Jerusalem
