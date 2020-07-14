@@ -535,7 +535,7 @@ country_event = {
 	
 	option = {
 		name = "Let it be the first of many victories!"
-		prestige = 10
+		prestige = 4
 		2134 = {
 			change_province_name = "Îles Bleues"
 			remove_core = BRT
@@ -570,7 +570,7 @@ country_event = {
 	
 	option = {
 		name = "The shame!"
-		prestige = -25
+		prestige = -15
 		set_global_flag = FRA_our_colony_not_returned_BRT
 		clr_global_flag = FRA_BRT_colony_war
 		clr_global_flag = FRA_didn't_get_colony

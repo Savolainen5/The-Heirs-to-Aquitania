@@ -23,11 +23,17 @@ country_event = {
 			owns = 411 #Bar
 			owns = 412 #Metz
 			owns = 418 #Caen
-		}	
+		}
+		year = 1857
+		JER = {
+			all_core = {
+				controlled_by = THIS
+			}
+		}
     }
 
     mean_time_to_happen = {
-        months = 6
+        months = 24
         modifier = {
             factor = 0.5
             FRA = { 
