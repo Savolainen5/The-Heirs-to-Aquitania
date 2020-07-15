@@ -3,7 +3,7 @@ A total conversion mod by Savs
 Based on the HtA megacampaign
 
 Features a new world with nearly 800 years of different history (mostly as determined by the computer in CK2 and EU3)
-Development has been in fits and spurts since June 2014. The mod is based on /gsg/Vickymod v1.06, which was popular at that time.
+Development has been in fits and spurts since June 2014. The mod is based on /gsg/Vickymod v1.06, which was popular at that time. It is not based on PDM, nor on HPM/HFM.
 If you want to contact me, find me on reddit as /u/Savolainen5 or on the Paradox forums as Savolainen5
 Also check out reddit.com/r/savs, where history and other stuff are posted. However, please direct discussion about the mod to the thread as much as possible, in keeping with Paradox rules.
 Forum thread for the mod: https://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/
