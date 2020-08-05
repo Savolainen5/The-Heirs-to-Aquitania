@@ -2,6 +2,7 @@ owner = SML
 controller = SML
 add_core = SML
 add_core = RUS
+add_core = UKR
 add_core = RUT
 trade_goods = cattle
 life_rating = 35

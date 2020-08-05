@@ -360,10 +360,22 @@ political_decisions = {
 				has_country_flag = continue_supporting_latvian_rebels
 			}
 			NOT = { has_country_flag = fight_for_latvia }
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
 		}
 		
 		allow = {
-			NOT = { truce_with = FIN }
+			NOT = {
+				truce_with = FIN
+				alliance_with = FIN
+				relation = {
+					who = FIN
+					value = 0
+				}
+			}
+			war = no
 		}
 		
 		effect = {
@@ -371,7 +383,7 @@ political_decisions = {
 			casus_belli = {
 				target = FIN
 				type = free_latvia
-				months = 1
+				months = 24
 			}
 #			war = {		#Temporarily removed because the AI might just take the decision without considering the conseque
 #				target = FIN

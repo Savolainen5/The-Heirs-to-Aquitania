@@ -93,13 +93,14 @@ country_event = {
 		tag = PRE
 		has_country_flag = liberal_revolution_in_progress
 		has_country_flag = pier_moncani_killed
-		AQT = { OR = {
-			government = absolute_monarchy
-			government = prussian_constitutionalism
+		AQT = {
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
 			}
 		}
 		OR = {
-			average_militancy = 8
+			average_militancy = 7
 			470 = {
 				controlled_by_rebels = yes
 			}
@@ -168,13 +169,14 @@ country_event = {
 		tag = PRE
 		has_country_flag = liberal_revolution_in_progress
 		has_country_flag = pier_moncani_killed
-		AQT = { NOT = {
-			government = absolute_monarchy
-			government = prussian_constitutionalism
+		AQT = {
+			NOT = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
 			}
 		}
 		OR = {
-			average_militancy = 8
+			average_militancy = 7
 			470 = {
 				controlled_by_rebels = yes
 			}
@@ -239,9 +241,10 @@ country_event = {
 		tag = PRE
 		has_country_flag = liberal_revolution_in_progress
 		has_country_flag = pier_moncani_dismissed
-		AQT = { OR = {
-			government = absolute_monarchy
-			government = prussian_constitutionalism
+		AQT = {
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
 			}
 		}
 		average_militancy = 5
@@ -333,9 +336,10 @@ country_event = {
 		tag = PRE
 		has_country_flag = liberal_revolution_in_progress
 		has_country_flag = pier_moncani_dismissed
-		AQT = { NOT = {
-			government = absolute_monarchy
-			government = prussian_constitutionalism
+		AQT = {
+			NOT = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
 			}
 		}
 		average_militancy = 5
@@ -568,10 +572,8 @@ country_event = {
 			modifier = {
 				factor = 0
 				NOT = {
-					OR = {
-						government = absolute_monarchy
-						government = prussian_constitutionalism
-					}
+					government = absolute_monarchy
+					government = prussian_constitutionalism
 				}
 			}
 		}
@@ -587,12 +589,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				NOT = {
-					OR = {
-						government = absolute_monarchy
-						government = hms_government
-						government = prussian_constitutionalism
-					}
+					government = absolute_monarchy
+					government = hms_government
+					government = prussian_constitutionalism
 				}
+			}
+			modifier = {
+				factor = 99
+				has_global_flag = railroading_on
 			}
 		}
 	}
@@ -613,11 +617,9 @@ country_event = {
 			modifier = {
 				factor = 100
 				NOT = {
-					OR = {
-						government = absolute_monarchy
-						government = hms_government
-						government = prussian_constitutionalism
-					}
+					government = absolute_monarchy
+					government = hms_government
+					government = prussian_constitutionalism
 				}
 			}
 			modifier = {

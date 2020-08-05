@@ -64,6 +64,7 @@ POPs:
 - Add more minorities in Europe on the other side of borders
 - Too many German POPs?
 - Add a few more aristocrats to Holland and Friesland
+- Sort out Transylvania
 
 Militaries:
 - Navies for much of the world
@@ -109,11 +110,12 @@ Other:
 - Union in Iberia?
 - Italy tag replaced with something like Mezzogiorno, reserve Italy for a unification of PDN and Naples-Rome?
 - Trans-Hungary for Hungarian-Romanian interaction, particularly in Transylvania
+- Figure out what to do with Ardeal having cores in funny places and then getting annexed to Volasea
 - Jewish state somewhere different, like Poland-Belarus?
 - If necessary, add a Cancel Zadar Lease decision for Hungary with the same effects as that for Bohemia
 - Add POP Migration Mod? https://www.reddit.com/r/victoria2/comments/2mtl11/pop_migration_mod_hod
 - Add Better AI Mod?https://forum.paradoxplaza.com/forum/index.php?threads/better-ai-mod.925608/#post-21373359
-- KoJ revived with a reverse oriental crisis over protection of holy sites/lands?
+- KoJ revived with a reverse oriental crisis over protection of holy sites/lands? (Partially done in 0.36)
 - Fascism happen sooner?
 - More to be done with rebels wanting to break free of Italy in the north?
 - Look into tweaking migration so that it's more likely to happen toward neighbouring countries Dictatorship > Democracy

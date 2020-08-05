@@ -83,19 +83,27 @@ political_decisions = {
 	}
 	
 	claim_rose = {
-		picture = form_union_nation
+		picture = german_tyrol
 		potential = {
 			tag = AQT
 			NOT = { exists = DAU }
-			454 = { is_core = PDN NOT = { is_core = AQT is_core = DAU } }
+			454 = { 				#Grenoblo
+				is_core = PDN
+				NOT = {
+					is_core = AQT
+					is_core = DAU
+				}
+			}
 			has_country_flag = claim_rose
 		}
 		
 		allow = {
-			NOT = { relation = {
-				who = PDN
-				value = 50
-			} }
+			NOT = {
+				relation = {
+					who = PDN
+					value = 50
+				}
+			}
 			nationalism_n_imperialism = 1
 		}
 		
@@ -165,7 +173,7 @@ political_decisions = {
 	}
 	
 	further_the_revolution_in_DAU = {
-		#picture = 
+		picture = names_of_the_rev
 		potential = {
 			tag = AQT
 			government = democracy
@@ -220,6 +228,48 @@ political_decisions = {
 		effect = {
 			prestige = 2
 			add_accepted_culture = north_italian
+		}
+	}
+	
+	#Prouvençal annexation
+	annex_provence = {
+		picture = negotiations
+		
+		potential = {
+			tag = AQT
+			PRE = {
+				has_country_flag = had_liberal_revolution
+				has_country_flag = pier_moncani_dismissed
+				vassal_of = AQT
+			}
+			year = 1861
+		}
+		
+		allow = {
+			PRE = {
+				vassal_of = THIS
+			}
+			prestige = 50
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			prestige = 3
+			badboy = 3
+			inherit = PRE
+			PRE = { all_core = { add_core = THIS } }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.85
+			}
 		}
 	}
 }	

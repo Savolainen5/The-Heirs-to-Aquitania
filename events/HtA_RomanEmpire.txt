@@ -1660,20 +1660,37 @@ country_event = {
 		OR = {
 			any_neighbor_country = {
 				in_sphere = THIS
-				any_core = {
-					NOT = { is_core = BYZ }
+				NOT = {
+					any_owned = { is_core = BYZ }
+				}
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+				OR = {
+					tag = ALB
+					tag = BUL
+					tag = GRE
 				}
 			}
 			CRE = {
 				in_sphere = THIS
-				any_core = {
-					NOT = { is_core = BYZ }
+				NOT = {
+					any_owned = { is_core = BYZ }
+				}
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
 				}
 			}
 			CYP = {
 				in_sphere = THIS
-				any_core = {
-					NOT = { is_core = BYZ }
+				NOT = {
+					any_owned = { is_core = BYZ }
+				}
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
 				}
 			}
 		}
@@ -1685,7 +1702,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 36
+		months = 240
 	}
 	
 	option = {
@@ -1696,6 +1713,7 @@ country_event = {
 				all_core = { is_core = THIS }
 			}
 			annex_to = THIS
+			all_core = { add_core = THIS }
 		}
 	}
 }
