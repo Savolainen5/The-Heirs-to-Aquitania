@@ -284,19 +284,19 @@
 #Damascus (328000/82000 POPS)
 902 = {
 	aristocrats = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 900
 	}
 
 	bureaucrats = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 275
 	}
 
 	officers = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 225
 	}
@@ -308,7 +308,7 @@
 	}
 
 	artisans = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 10000
 	}
@@ -320,7 +320,7 @@
 	}
 
 	soldiers = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size= 825
 
@@ -333,7 +333,7 @@
 	}
 	
 	farmers = {
-		culture = french
+		culture = outremer
 		religion = catholic
 		size = 15200
 	}	

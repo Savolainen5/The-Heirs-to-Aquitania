@@ -54,6 +54,7 @@ POPs:
 - Increase POPs in the super-low-POP countries like SKM, MDT, YKT, KZH, YUC
 - Reduce POPs in Vestland, Margaria, Hoyekysten because there aren't a lot of Scandinavians to migrate to these countries
 - Orthodox minorities in the Middle East, Armenian heartland, see http://i.imgur.com/7uVsYh4.png
+- POP rework in the former KOJ, per Glocky's suggestion on Discord and https://www.youtube.com/watch?v=I8pc0PkaZaQ
 - Adjust POPs in USR - Fewer in the south (as in Brazil today), more in the north around the capital, more Guarani in Paraguay/Brazil
 - Remove Andean POPs from the southern part of Inca?
 - Boost POPs of Uganda and Rwanda regions which have had their province size increased?
