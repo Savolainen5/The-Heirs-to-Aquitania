@@ -1320,3 +1320,33 @@ country_event = {
 		name = "They are still useful to us."
 	}
 }
+
+#Fiscal support for RUS
+country_event = {
+	id = 50399
+	title = "EVTNAME50399"
+	desc = "EVTDESC50399"
+	trigger = {
+		has_country_flag = hta_fiscal_support
+		NOT = { has_country_modifier = hta_fiscal_support }
+		SML = {
+			exists = yes
+			is_vassal = no
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			month = 1
+		}
+	}
+	option = {
+		name = "Good."
+		add_country_modifier = {
+			name = hta_fiscal_support
+			duration = 365
+		}
+		money = 20000
+	}
+}

@@ -1660,23 +1660,27 @@ country_event = {
 		OR = {
 			any_neighbor_country = {
 				in_sphere = THIS
-				NOT = {
-					any_owned = { is_core = BYZ }
-				}
-				OR = {
-					is_vassal = no
-					vassal_of = THIS
-				}
 				OR = {
 					tag = ALB
 					tag = BUL
 					tag = GRE
 				}
+				NOT = {
+					any_owned_province = {
+						is_core = BYZ
+					}
+				}
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
 			}
 			CRE = {
 				in_sphere = THIS
 				NOT = {
-					any_owned = { is_core = BYZ }
+					any_owned_province = {
+						is_core = BYZ
+					}
 				}
 				OR = {
 					is_vassal = no
@@ -1686,7 +1690,9 @@ country_event = {
 			CYP = {
 				in_sphere = THIS
 				NOT = {
-					any_owned = { is_core = BYZ }
+					any_owned_province = {
+						is_core = BYZ
+					}
 				}
 				OR = {
 					is_vassal = no
@@ -1710,7 +1716,17 @@ country_event = {
 		random_country = {
 			limit = {
 				in_sphere = THIS
-				all_core = { is_core = THIS }
+				OR = {
+					is_vassal = no
+					vassal_of = THIS
+				}
+				OR = {
+					tag = ALB
+					tag = BUL
+					tag = GRE
+					tag = CRE
+					tag = CYP
+				}
 			}
 			annex_to = THIS
 			all_core = { add_core = THIS }

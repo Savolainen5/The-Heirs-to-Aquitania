@@ -2096,6 +2096,10 @@ unsuccessful_ds_reform = {
 	icon = 6
 }
 
+hta_fiscal_support = {
+	icon = 9
+}
+
 #Poland
 
 sejm = {

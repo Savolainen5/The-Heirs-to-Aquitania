@@ -576,6 +576,20 @@ political_decisions = {
 		}
 	}
 	
+	#Railroaded-only decision to give money to RUS
+	RUS_fiscal_support = {
+		potential = {
+			tag = RUS
+			ai = yes
+			has_global_flag = railroading_on
+			NOT = { has_country_flag = hta_fiscal_support }
+		}
+		allow = {}
+		effect = {
+			set_country_flag = hta_fiscal_support
+		}
+	}
+	
 	#Warmwater Pacific Port chain (to be done in 0.41)
 	
 }
