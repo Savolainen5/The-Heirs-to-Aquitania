@@ -1,3 +1,0 @@
-sprite = Suez_Canal
-x = -1.75
-y = 3.33

@@ -1,3 +1,0 @@
-I've already taken all the colormaps from this, and this means that there are lots of weird shadows all over the place.
-One day, I want to have the HtA map conform to these as much as possible, but given the millions of tiny changes and
-how much effort it would be to adapt the HtA map to this, it could be tricky...
