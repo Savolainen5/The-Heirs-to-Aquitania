@@ -2568,7 +2568,8 @@ skane_cb = {
 			NOT = { has_country_flag = dismantle_declared }
 			THIS = { NOT = { has_country_flag = in_great_war } }
 			THIS = { ai = no }
-		}		
+		}
+		NOT = { has_global_flag = treaty_of_anslo }
 	}
 
 	# THIS - us
@@ -5317,6 +5318,9 @@ make_puppet = {
 				NOT = { total_pops = 500000 }
 			}
 		}
+		THIS = {
+			NOT = { has_country_flag = exclusive_make_puppet_CB }
+		}	
 		#RUS and SML can't use fabricate it against each other (can't use either?)
 		NOT = {
 			AND = {

@@ -370,6 +370,7 @@ country_event = {
 		335 = { remove_core = DEN remove_province_modifier = claimed_by_sweden }
 		SWE = { prestige = 5 }
 		prestige = 1
+		set_global_flag = treaty_of_anslo
 	}
 }
 	

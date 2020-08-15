@@ -106,7 +106,7 @@
 		size = 1475
 	}
     slaves = {
-        culture = circassian
+        culture = north_caucasian
         religion = orthodox
         size = 6000
     }

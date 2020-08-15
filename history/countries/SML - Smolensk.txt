@@ -10,6 +10,8 @@ civilized = yes
 
 prestige = 15
 
+set_country_flag = exclusive_make_puppet_CB
+
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
