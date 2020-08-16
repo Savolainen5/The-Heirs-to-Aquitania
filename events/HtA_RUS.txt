@@ -1281,6 +1281,9 @@ country_event = {
 			KOK = { in_sphere = THIS }
 		}
 		nationalism_n_imperialism = 1
+		NOT = {
+			has_country_flag = no_central_asian_annexation
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -1288,7 +1291,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "A capital idea!"
+		name = "Of course!"
 		random_country = {
 			limit = {
 				OR = {
@@ -1317,7 +1320,15 @@ country_event = {
 	}
 	
 	option = {
-		name = "They are still useful to us."
+		name = "There will be time for this in the future."
+	}
+	
+	option = {
+		name = "This does not interest us and never will. Do not remind me again."
+		set_country_flag = no_central_asian_annexation
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 

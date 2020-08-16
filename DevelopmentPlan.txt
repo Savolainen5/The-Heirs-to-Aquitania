@@ -18,6 +18,7 @@ Europe
 0.36 - Smolensk vs. Russia
 0.37 - Italy
 0.38 - The Balkans: Sort out Hungarians and other cultures
+0.39 - Iberia
 0.40 - Miscellaneous, flavour events
 
 Asia (Ideas for things to do follow the colon)

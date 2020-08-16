@@ -91,6 +91,7 @@ Version 0.36 X/Y/20 - The Russias & China Update
 - PDN can get cores on VEN even if someone snipes Venice first, like Crushric likes to do when playing as BAV
 
 **The world**
+- To get an alliance, you need a minimum 50 relationship with the target country
 - Added some relationships from the EU3 save
 - Updated some diplomacy
 - Gave some Persian provinces to Azerbaijan to better reflect the state of the world
@@ -115,8 +116,10 @@ Version 0.36 X/Y/20 - The Russias & China Update
 - Renamed a couple of provinces in Aengland and replaced lots of wheat with sheep in the southeast
 - Added island terrain types from HPM and so changed a bunch of terrain to small islands
 - Added the colormaps from HPM Map Modded, which makes it way fancier looking, and made SOME adjustments. Still lots of work to be done (see the To-Do list)
+- Started incorporating the physical map from the above
 
 **Other**
+- Tweaked POP migration targets to improve migration to low-population provinces and MajorMajor added culture-based migration targets (Iberians are more likely to go to former Iberian colonies etc.)
 - Some Luxembourg buffing
 	- Added Wallonian to accepted cultures of Luxembourg
 	- Added a fun cheese decision for a GP Luxembourg to get cores on all of France, Wallonia, and Germany (and it will get Central German as an accepted culture)

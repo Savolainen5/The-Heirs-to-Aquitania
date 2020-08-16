@@ -558,8 +558,13 @@ political_decisions = {
 				who = KZH
 				value = 50
 			}
-			KZH = { part_of_sphere = no }
-			KZH = { is_vassal = no }
+			KZH = {
+				is_vassal = no 
+				OR = {
+					part_of_sphere = no
+					in_sphere = THIS
+				}
+			}
 		}
 		effect = {
 			prestige = 5
