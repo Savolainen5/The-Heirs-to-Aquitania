@@ -2980,6 +2980,51 @@
 	}
 }
 
+#Arviat (3200/800 POPS) Now in Ginnaecer, called Welric
+43 = {
+	aristocrats = {
+		culture = ginnaecerisc
+		religion = catholic
+		size = 55
+	}
+
+	clergymen = {
+		culture = ginnaecerisc
+		religion = catholic
+		size = 185
+	}
+
+	artisans = {
+		culture = ginnaecerisc
+		religion = catholic
+		size = 220
+	}
+
+	soldiers = {
+		culture = ginnaecerisc
+		religion = catholic
+		size = 120
+	}
+
+	farmers = {
+		culture = ginnaecerisc
+		religion = catholic
+		size = 5725
+	}
+	
+	clergymen = {
+		culture = native_american_minor
+		religion = animist
+		size = 15
+	}
+	
+	farmers = {
+		culture = native_american_minor
+		religion = animist
+		size = 150
+	}
+}
+
 #San Antonio (10000/2500 POPS)
 137 = {
 	aristocrats = {
@@ -3418,18 +3463,6 @@
 		size = 150
 	}
 
-	bureaucrats = {
-		culture = margarian
-		religion = protestant
-		size = 50
-	}
-
-	officers = {
-		culture = margarian
-		religion = protestant
-		size = 45
-	}
-
 	clergymen = {
 		culture = margarian
 		religion = protestant
@@ -3458,18 +3491,6 @@
 		culture = margarian
 		religion = catholic
 		size = 125
-	}
-
-	bureaucrats = {
-		culture = margarian
-		religion = catholic
-		size = 50
-	}
-
-	officers = {
-		culture = margarian
-		religion = catholic
-		size = 30
 	}
 
 	clergymen = {
@@ -3649,6 +3670,109 @@
 		culture = afro_american
 		religion = protestant
 		size = 5875
+	}
+}
+
+#Fort Simpson (2400/600 POPS) owned by Margaria, called Hovden
+9 = {
+	aristocrats = {
+		culture = margarian
+		religion = catholic
+		size = 150
+	}
+
+	clergymen = {
+		culture = margarian
+		religion = catholic
+		size = 250
+	}
+
+	artisans = {
+		culture = margarian
+		religion = catholic
+		size = 300
+	}
+
+	soldiers = {
+		culture = margarian
+		religion = catholic
+		size = 500
+
+	}
+
+	farmers = {
+		culture = margarian
+		religion = catholic
+		size = 1920
+	}
+	
+	clergymen = {
+		culture = native_american_minor
+		religion = animist
+		size = 25
+	}
+	
+	farmers = {
+		culture = native_american_minor
+		religion = animist
+		size = 450
+	}
+	
+	slaves = {
+		culture = afro_american
+		religion = catholic
+		size = 7800
+	}
+}
+
+#Reliance (2000/500 POPS) now in Margaria, called Vadheim
+12 = {
+	aristocrats = {
+		culture = margarian
+		religion = catholic
+		size = 210
+	}
+
+	clergymen = {
+		culture = margarian
+		religion = catholic
+		size = 370
+	}
+
+	artisans = {
+		culture = margarian
+		religion = catholic
+		size = 413
+	}
+
+	soldiers = {
+		culture = margarian
+		religion = catholic
+		size = 655
+	}
+
+	farmers = {
+		culture = margarian
+		religion = catholic
+		size = 2450
+	}
+	
+	clergymen = {
+		culture = native_american_minor
+		religion = animist
+		size = 25
+	}
+	
+	farmers = {
+		culture = native_american_minor
+		religion = animist
+		size = 450
+	}
+	
+	slaves = {
+		culture = afro_american
+		religion = catholic
+		size = 9800
 	}
 }
 #Arkansas Region (88000)
@@ -6528,6 +6652,18 @@
 		size = 20050
 	}
 
+	bureaucrats = {
+		culture = margarian
+		religion = catholic
+		size = 50
+	}
+
+	officers = {
+		culture = margarian
+		religion = catholic
+		size = 30
+	}
+
 	clergymen = {
 		culture = afro_american
 		religion = protestant
@@ -6614,6 +6750,18 @@
 		culture = margarian
 		religion = protestant
 		size = 250
+	}
+
+	bureaucrats = {
+		culture = margarian
+		religion = protestant
+		size = 50
+	}
+
+	officers = {
+		culture = margarian
+		religion = protestant
+		size = 45
 	}
 
 	clergymen = {

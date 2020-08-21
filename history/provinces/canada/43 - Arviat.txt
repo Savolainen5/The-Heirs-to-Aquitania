@@ -1,7 +1,7 @@
-owner = QUE
-controller = QUE
-add_core = QUE
-trade_goods = fish
-life_rating = 25
-colonial = 2
+#Now actually the province of Welric in Ginnaecer (Texas area)
+owner = GNC
+controller = GNC
+add_core = GNC
+trade_goods = grain
+life_rating = 35
 

@@ -66,23 +66,4 @@
 		size = 300
 	}
 }
-#Egedesminde (816/204 POPS)
-2636 = {
-	clergymen = {
-		culture = icelandic
-		religion = protestant
-		size = 2
-	}
-
-	artisans = {
-		culture = icelandic
-		religion = protestant
-		size = 2
-	}
-
-	farmers = {
-		culture = inuit
-		religion = protestant
-		size = 200
-	}
-}
+#2636 Egdeseminde or whatever, moved to Canada

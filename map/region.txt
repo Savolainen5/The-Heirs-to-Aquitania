@@ -2,9 +2,9 @@
 
 USA_1 = { 4 3 5 2599 2630 2631 } #Alaska(v)/Halesca
 
-ENG_6 = { 8 6 7 9 10 2598 } #Yukon(v)/Jukuna
+ENG_6 = { 6 7 2598 } #Yukon(v)/Jukuna
 
-ENG_9 = { 43 11 12 44 2595 2596 } #Northwest Territories(v)/Ters d'Auror
+ENG_9 = { 2595 11 2596 } #Northwest Territories(v)/Ters d'Auror
 
 CAN_13 = { 13 14 15 78 } #Columbia(v)/Iggatlan
 
@@ -14,11 +14,13 @@ ENG_22 = { 22 23 27 2597 2629 } #Alberta(v)/Drytsiben
 
 ENG_30 = { 30 31 32 33 34 } #Saskatchewan(v)/Rouge-Ues
 
-ENG_36 = { 36 37 38 39 40 } #Manitoba(v)/Manitobe
+ENG_36 = { 36 38 39 40 } #Manitoba(v)/Manitobe
+
+QUE_47 = { 48 2628 37 2594 47 } #Entreau Nord
 
 CAN_46 = { 46 57 55 56 52 53 54 } #Southern Ontario(V)/Osutsyate
 
-CAN_50 = { 50 51 49 47 48 2594 2628 } #Northern Ontario(v)/Entreau
+CAN_50 = { 50 51 49 2636 } #Northern Ontario(v)/Entreau Sud
 
 CAN_58 = { 58 65 61 63 64 } #Southern Quebec(V)/Karelsland
 
@@ -60,13 +62,13 @@ USA_129 = { 123 127 126 } #Oklahoma/Oai
 
 MRG_130 = { 130 131 145 147 } #Oltland (Kind of Missouri area)
 
-TEX_132 = { 137 138 133 134 } #Texas/Berdon
+TEX_132 = { 137 138 133 134 43 } #Texas/Berdon
 
 GNC_135 = { 135 105 136 103 } #Osebygmark (W. TX and OK)
 
 USA_138 = { 2149 2148 2147 2152 } #Wyoming (S. Ginnaecer)/Odrahef
 
-USA_139 = { 132 141 142 144 } #Louisiana/Bartemark
+USA_139 = { 132 141 142 144 9 12 } #Louisiana/Bartemark
 
 USA_148 = { 146 149 150 151 152 } #Missouri/Wimisu
 
@@ -88,7 +90,7 @@ USA_188 = { 191 190 201 2556 216 } #Tennessee/Setekwi
 
 USA_189 = { 189 148 143 193 } #Arkansas/Elmoten
 
-USA_194 = { 140 139 192 194 } #Mississippi/Hemhavet
+USA_194 = { 194 140 139 192 } #Mississippi/Hemhavet
 
 USA_196 = { 195 196 197 198 } #Alabama/Fremadland
 
@@ -520,11 +522,11 @@ PER_1127 = { 1127 1129 1130 } #Isfahan
 
 PER_1128 = { 1128 1122 1120 } #Lorestan
 
-PER_1132 = { 1132 1131 1133 1136 } #Khuzestan
+PER_1132 = { 1132 44 1131 1133 1136 } #Khuzestan
 
 PER_1136 = { 1135 1134 1137 1138 1141 } #Fars
 
-PER_1140 = { 1142 1139 1140 1143 1145 } #Kerman
+PER_1140 = { 1142 8 10 1139 1140 1143 1145 } #Kerman
 
 PER_1148 = { 1148 1147 1150 1149 } #Khorasan
 
@@ -722,7 +724,7 @@ BUR_1339 = { 1339 1341 1342 2674 } #Kachin
 
 ENG_1343 = { 1343 1344 1320 } #Tenasserim
 
-ENG_2125 = { 2125 2123 2127 2126 2124 } #Indian Ocean Territory
+ENG_2125 = { 2125 2123 2127 2126 2124 3253 } #Indian Ocean Territory
 
 
 ### Indochina

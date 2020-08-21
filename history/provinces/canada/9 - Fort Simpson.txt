@@ -1,6 +1,7 @@
-trade_goods = timber
-life_rating = 15
-
-
-
+#Now in Margaria, next to the border with Ginnaecer, named Hovden
+owner = MRG
+controller = MRG
+add_core = MRG
+trade_goods = cotton
+life_rating = 35
 

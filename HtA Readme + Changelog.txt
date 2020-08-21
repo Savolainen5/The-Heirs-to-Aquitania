@@ -5,8 +5,11 @@ Based on the HtA megacampaign
 Features a new world with nearly 800 years of different history (mostly as determined by the computer in CK2 and EU3)
 Development has been in fits and spurts since June 2014. The mod is based on /gsg/Vickymod v1.06, which was popular at that time. It is not based on PDM, nor on HPM/HFM.
 If you want to contact me, find me on reddit as /u/Savolainen5 or on the Paradox forums as Savolainen5
-Also check out reddit.com/r/savs, where history and other stuff are posted. However, please direct discussion about the mod to the thread as much as possible, in keeping with Paradox rules.
+
+Also check out http://www.reddit.com/r/savs, where history and other stuff are posted. However, please direct discussion about the mod to the thread as much as possible, in keeping with Paradox rules.
 Forum thread for the mod: https://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/
+HtA Discord server: https://discord.gg/beteEPF
+
 There's an event numbers list at the bottom of this file
 
 Feel free to use anything from this mod without asking me. Please do attribute it, though.
@@ -31,6 +34,7 @@ Thanks to:
 - Attalus and other developers of Divergences of Darkness for ideas, code, flags
 - Naselus and other PDM folks, from whose mod I took some decisions, events, ideas, and inspiration
 - arkhometha for his Historical Project Mod, from which I have taken many pictures, ideas, a good bit of country information, and some events and decisions
+- Whoever made the HFM modded map
 - EGaffney for his Rectangular Flag Frames Mod
 - RenatoDS for his RDS mapping project, which creates a more detailed world map (for terrain and rivers)
 - simsulla for his help in sorting out adding canals and for (passively) showing me the crucial last step for adding new provinces - making the default.map file point to your mod's directory. See my copy for more details
@@ -65,6 +69,8 @@ Version 0.36 X/Y/20 - The Russias & China Update
 - Added lots more soldier and craftsman POPs to normal GPs, did some industrial boosting
 - Story chain for Outremer POPs in Persia to revolt and a strong France to intervene on their behalf (Thanks to capitanloco6)
 - Story chain for Arab/Mashriqi revolts in Persia (Thanks to ChortlingGnome, still a WIP)
+- Adapted the HPMmm (map modded) fancy map to HtA, made some important province movements (see Map Changes below)
+	- Note: I don't think there are, but there might still be some provinces which lost their port/naval base because of this. Let me know if you find one.
 
 *Minor*
 
@@ -167,6 +173,12 @@ Version 0.36 X/Y/20 - The Russias & China Update
 - Localisation for Middag parties switched to generic
 - added Hakka as accepted culture to GXI to increase stability in early game 
 
+*Map changes*
+- Mostly copied en masse the coasts and islands of all the world from HFMmm
+- Three provinces (9, 12, 43) from the far north of Canada moved down to the Ginnaecer-Margaria border area
+- Three provinces (8, 10, 44) from the far north of Canada moved to Persia for treaty ports for the event chain to dismantle Persia
+- One province from Greenland (2636) to Dabimon (Ontario) for organization and gameplay reasons, renamed Abitibi
+- Jan Mayen (3246) moved down into the Caribbean, renamed Sainte Anne, its own landmass taken over by a Norwegian province
 
 
 ----------------------------------------------------------------------------------------------------------

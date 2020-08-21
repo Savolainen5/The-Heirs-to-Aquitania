@@ -2242,36 +2242,6 @@ neo_european_cultures = {
 		Thein Tomsete Totibarn Urso Vilgrip Vitalis Waler Weld Wulfno
 		}
 	}
-	berrian = {
-		color = {181  203  87}
-		first_names = { AgustÌn Aitor Alberto Ander Andoni AndrÈs ¡ngel Antonio Arturo Carlos
-		Ceferino Cosme Cristobal Dami·n Endika "Francisco Javier" Ignacio Imanol IÒaki Jes˙s
-		Jon "JosÈ Antonio" "JosÈ MarÌa" Joseba Josu Juan Julen Koldobika Luis Manuel
-		Marino Miguel Paulino Pedro Rafael Ramiro RamÛn Sabino Tom·s Vicente }
-		
-		last_names = { Aguirre Ajuriaguerra Aldecoa Arana Aranzadi Arizmendiarrieta Armend·riz Aznar Balenciaga Berasategui 
-		Bilbao CampiÛn Churruca "de AmÈsquita" "de Azpilicueta" "de Erauso" "de RenterÌa" "de Ubisztongo" Echag¸e Echave
-	 	Echegaray EchevarrÌa Elorza GaztaÒeta Ibarrola Ib·rruri Irujo Lazcano Mendizabal Moneo 
-		N·rdiz Olano Olave Oyarz·bal Rotaeche Uzcudun Zam·rraga Z·rate Zavala Zumalac·rregui }
-	}
-	largano = {
-		color = { 100 180 30 }
-		first_names = { Abel Adriano Afonso Alberto Alexandre Alfredo ¡lvaro AndrÅe AntÛnio Aquilino 
-		Artur Augusto Bartolomeu Bernardo Bruno Caetano C‚ndido Carlos Christov„o Cl·udio
-		Dami„o Daniel David Dinis Diogo Duarte Ernesto EstÍv„o EugÈnio Fernando 
-		Filipe Francisco "Francisco Xavier" Gast„o Hermenegildo Ign·cio JerÛnimo Jo„o Joaquim Jorge
-		JosÅe J˙lio Leopoldo Lu˙ê Manuel M·rio Miguel Nicolau Nuno Orlando 
-		”scar Pascoal Paulo Pedro Rafael Raul Roberto Rodrigo Rui Santiago 
-		Sebasti„o Teodoro TeÛfilo Tiago TomÅe Urbano Vasco Vicente Vitorino VitÛrio }
-		
-		last_names = { Amaral Barreto Bleck Braga Cabral Capelo Carmona Coelho Correia Coutinho
-		"da Costa" "da Cunha" "da Silva" "de Albuquerque" "de Almeida" "de Arriaga" "de BraganÁa" "de BraganÁa-Coburgo" "de Carvalho" 
-		"de Castro" "de Gusm„o" "de Lacerda" "de Mesquita" "de Moura" "de Noronha" "de Oliveira" "de Paiva" "de Sousa" "de Vasconcelos"
-		Dias "dos Reis" "dos Santos" Fernandes Ferreira Figueira "Freire de Andrade" Gago Gil Gomes
-		Herculano Ivens Keil Lopes Machado Magalh„es Mendes Moniz Mouzinho Nogueira 
-		Nunes Ortig„o Pereira Pinheiro Pinto Pires Pomar Pulido Queiroz Quintanilha
-		Ribeiro Rodrigues Salazar Sampaio SÈrgio Silveira Tavares Teixeira Vidigal Vieira }	
-	}
 	skamisc = {
 		color = { 81 181 153 }
 		first_names = {
@@ -2302,21 +2272,52 @@ neo_european_cultures = {
 		Thein Tomsete Totibarn Urso Vilgrip Vitalis Waler Weld Wulfno
 		}
 	}
-	califiano = {
-		color = { 166  72  57 }
-		first_names = { Adri·n AgustÌn ¡lvaro Anastasio AndrÈs ¡ngel Antonio Bernardo Emiliano Emilio
-		Enrique Ernesto Felipe FÈlix Francisco "Francisco Javier" Gabriel Gaspar Gregorio Ignacio
-		JerÛnimo JoaquÌn JosÈ "JosÈ Manuel" "JosÈ MarÌa" Juan "Juan Bautista" Justo L·zaro Manuel
-		Mariano MartÌn Melchor Miguel Nicol·s Pablo Pascual Pedro Porfirio RamÛn
-		Ricardo RÛmulo Salvador Sebasti·n Tom·s ValentÌn Valeriano Venustiano Vicente Victoriano
+	uilsc = {
+		color = { 255 186 222 }
+		first_names = {
+		Aelfgar Aelric Aelwold Aethelber Aethelwine Arnolf Azur
+		Bordelm Borthric Bortsige Borwin Boren Bricmer Burghard Byrnod 
+		Cenwulf Cerdic Cnut Cola Copsige Cuthbert Cypping Doda
+		Edmer Edric Edulf Edwig Edwine Eldred Ealdwulf Enfrid Estan
+		Fulcred Fulcwin Gamal Godwine Grim Gudmund Gyrd 
+		Hacon Haimo Harold Herlewin Inwer Ivo Ledmer Lofget Lofric Lofweld Lofwin 
+		Maccus Manno Merlwen Morcar Odo Ordgar Orm Osborn Osmund Osric Oswin
+		Petre Radwulf Rafwin Renweld Roberth
+		Sarwin Sigeric Siward Stigand Swegn Swithelm Swithring
+		Thedric Thored Thurfrid Tosti Turstin Ulf 
+		Waldof Wiglaf Wigot Wulf Wulfhelm
 		}
+		last_names = {
+		Aelfstan Aethelwerd Alby Algot Alston Altone Autibern
+		Bennag Birkenfod Blec Bodwin Brictric Bruning
+		Carlyle Chatham Colling Conded Corelmann Daging Danmann Denholm Dirling
+		Edwys Elton Erle Estone Etwell Felcener Fingast
+		Gren Grencin Grimbald Hallewell Hayden Hayhurst Hering Holcastre
+		Kemp Ketilbern Kollung Langfer "Latton Parhome" Lester Lincley Lyter
+		Marculf Mertuna Mundred Nawen Normann Nortuna
+		Oforbert Ogercin Othenkar "of Alwold" "of Cottesbec" "of Crawa" "of Grensted" "of Hesdin" "of Hopa"
+		"of Marck" "of Niwetun" "of Torcy" "of Tosny" "of Tregole" "of Waddsdone"
+		Paddan Peasmor Prest Ramsey Reeve Rid Roscow Rowleg
+		Saswalo Scottow Serlo Shelswell Somes Smid Still Swening
+		Thein Tomsete Totibarn Urso Vilgrip Vitalis Waler Weld Wulfno
+		}
+	}
+	mellomsk = {
+		color = { 142 226 232 }
+		first_names = { Alfred Adrian Arne Bernt Bjorn Carl Caspar Christian Christopher Cort
+		Einar Elias Fredrik Georg Gerhard Gustav Haakon Hans Harald Herman
+		Johan Jorgen Ludvig Nils Ogmund Olav Osvald Otto Peter Sigurd }
+		
+		last_names = { Adeler Balchen Berg Bloch Borresen Bratzland Brentzon Dahl Egge Fleicher
+		Frisvold H·konarson Hansen Hund Kaldager Konow Lambrechts Morgenstierne Munthe Petersen
+		Rye Sissener Skjalgsson Tambarskjelve Tordenskjold Wedel-Jarlsberg Wiborg With Zeiner-Gundersen }
+	}
+	lutzan = {
+		color = { 194  168  132 }
+		first_names = { Jean Franc Pier Lucc Narcisse RenÈ »douard ThÈodore Luis Francois August Joseph Luis-Phillippe Gaspard EugÈne »ssioff Huguel Jean-Pier Gilles}
 
-		last_names = { Almonte ¡lvarez Arista Barrag·n Bocanegra Bravo Bustamante Canalizo Carranza Caserta
-		Cervantes Corona Corra "de Ampudia" "de Cos" "de It˙rbide" DÌaz EcheverrÌa EscandÛn Escobedo
-		Fagoaga "Fern·ndez del Valle" Flores GÛmez Gonz·lez Guerrero Huerta Kosterlitzky "LÛpez de Santa Ana" Lozada
-		"MartÌnez del RÌo" MejÌa MiramÛn M˙zquiz ObregÛn Pedraza Pimentel Reyes "RincÛn Gallardo" Robles
-		RuÌz Salas S·nchez "Sarmaniego del Castillo" "V·zquez de la Cadena" Villa Woll Zapata Zaragoza Zuloaga
-		}
+		last_names = { Lalcet Chauseu Trombley Letellier Belleau Caron "de St.-Just" Robitaille Masson Angers Chapleau Jotte PantalÈon Langelier Damasne LeBlanc Brodeur Perodeau }
+		radicalism = 15
 	}
 }
 
@@ -2388,46 +2389,6 @@ latin_american_cultures = {
 		Santos Sarmineto Solano Tajes Uriburu Viamonte Vidal Williman Wisner Yrigoyen
 		}
 	}
-	mellomsk = {
-		color = { 142 226 232 }
-		first_names = { Alfred Adrian Arne Bernt Bjorn Carl Caspar Christian Christopher Cort
-		Einar Elias Fredrik Georg Gerhard Gustav Haakon Hans Harald Herman
-		Johan Jorgen Ludvig Nils Ogmund Olav Osvald Otto Peter Sigurd }
-		
-		last_names = { Adeler Balchen Berg Bloch Borresen Bratzland Brentzon Dahl Egge Fleicher
-		Frisvold H·konarson Hansen Hund Kaldager Konow Lambrechts Morgenstierne Munthe Petersen
-		Rye Sissener Skjalgsson Tambarskjelve Tordenskjold Wedel-Jarlsberg Wiborg With Zeiner-Gundersen }
-	}
-	uilsc = {
-		color = { 255 186 222 }
-		first_names = {
-		Aelfgar Aelric Aelwold Aethelber Aethelwine Arnolf Azur
-		Bordelm Borthric Bortsige Borwin Boren Bricmer Burghard Byrnod 
-		Cenwulf Cerdic Cnut Cola Copsige Cuthbert Cypping Doda
-		Edmer Edric Edulf Edwig Edwine Eldred Ealdwulf Enfrid Estan
-		Fulcred Fulcwin Gamal Godwine Grim Gudmund Gyrd 
-		Hacon Haimo Harold Herlewin Inwer Ivo Ledmer Lofget Lofric Lofweld Lofwin 
-		Maccus Manno Merlwen Morcar Odo Ordgar Orm Osborn Osmund Osric Oswin
-		Petre Radwulf Rafwin Renweld Roberth
-		Sarwin Sigeric Siward Stigand Swegn Swithelm Swithring
-		Thedric Thored Thurfrid Tosti Turstin Ulf 
-		Waldof Wiglaf Wigot Wulf Wulfhelm
-		}
-		last_names = {
-		Aelfstan Aethelwerd Alby Algot Alston Altone Autibern
-		Bennag Birkenfod Blec Bodwin Brictric Bruning
-		Carlyle Chatham Colling Conded Corelmann Daging Danmann Denholm Dirling
-		Edwys Elton Erle Estone Etwell Felcener Fingast
-		Gren Grencin Grimbald Hallewell Hayden Hayhurst Hering Holcastre
-		Kemp Ketilbern Kollung Langfer "Latton Parhome" Lester Lincley Lyter
-		Marculf Mertuna Mundred Nawen Normann Nortuna
-		Oforbert Ogercin Othenkar "of Alwold" "of Cottesbec" "of Crawa" "of Grensted" "of Hesdin" "of Hopa"
-		"of Marck" "of Niwetun" "of Torcy" "of Tosny" "of Tregole" "of Waddsdone"
-		Paddan Peasmor Prest Ramsey Reeve Rid Roscow Rowleg
-		Saswalo Scottow Serlo Shelswell Somes Smid Still Swening
-		Thein Tomsete Totibarn Urso Vilgrip Vitalis Waler Weld Wulfno
-		}
-	}
 	tareconano = {
 		color = { 210  250  130 }
 		first_names = { Antonio Camilo Carlos Cipriano Demetrio Diego Domingo Eloy Eusebio Eustorgio
@@ -2445,13 +2406,6 @@ latin_american_cultures = {
 		}
 		radicalism = 15
 	}
-	lutzan = {
-		color = { 194  168  132 }
-		first_names = { Jean Franc Pier Lucc Narcisse RenÈ »douard ThÈodore Luis Francois August Joseph Luis-Phillippe Gaspard EugÈne »ssioff Huguel Jean-Pier Gilles}
-
-		last_names = { Lalcet Chauseu Trombley Letellier Belleau Caron "de St.-Just" Robitaille Masson Angers Chapleau Jotte PantalÈon Langelier Damasne LeBlanc Brodeur Perodeau }
-		radicalism = 15
-	}
 	meikan = {
 		color = { 122  232  118 }
 		first_names = { Alban Andieu AlÚi Archambaut Aymar BerÚt BÈrard Bernat Berengar Carles EstËve FidËl PËire
@@ -2460,6 +2414,52 @@ latin_american_cultures = {
 		last_names = { Okkita Ahuactzin Altamiran Badian Bernardin Coaguila Coyotl Cuautlaxahue 
 		Huanitzin Itzel Ixtlilxochitl Matlacuahuac Mayahuel Moxo Nahui Ocelotl
 		Panecatl Tlaxca Tletla Tzehe Valerian Xaxalpa ZicotÈncatl Xochitl Zapata Zapotitla }
+	}
+	califiano = {
+		color = { 166  72  57 }
+		first_names = { Adri·n AgustÌn ¡lvaro Anastasio AndrÈs ¡ngel Antonio Bernardo Emiliano Emilio
+		Enrique Ernesto Felipe FÈlix Francisco "Francisco Javier" Gabriel Gaspar Gregorio Ignacio
+		JerÛnimo JoaquÌn JosÈ "JosÈ Manuel" "JosÈ MarÌa" Juan "Juan Bautista" Justo L·zaro Manuel
+		Mariano MartÌn Melchor Miguel Nicol·s Pablo Pascual Pedro Porfirio RamÛn
+		Ricardo RÛmulo Salvador Sebasti·n Tom·s ValentÌn Valeriano Venustiano Vicente Victoriano
+		}
+
+		last_names = { Almonte ¡lvarez Arista Barrag·n Bocanegra Bravo Bustamante Canalizo Carranza Caserta
+		Cervantes Corona Corra "de Ampudia" "de Cos" "de It˙rbide" DÌaz EcheverrÌa EscandÛn Escobedo
+		Fagoaga "Fern·ndez del Valle" Flores GÛmez Gonz·lez Guerrero Huerta Kosterlitzky "LÛpez de Santa Ana" Lozada
+		"MartÌnez del RÌo" MejÌa MiramÛn M˙zquiz ObregÛn Pedraza Pimentel Reyes "RincÛn Gallardo" Robles
+		RuÌz Salas S·nchez "Sarmaniego del Castillo" "V·zquez de la Cadena" Villa Woll Zapata Zaragoza Zuloaga
+		}
+	}
+	berrian = {
+		color = {181  203  87}
+		first_names = { AgustÌn Aitor Alberto Ander Andoni AndrÈs ¡ngel Antonio Arturo Carlos
+		Ceferino Cosme Cristobal Dami·n Endika "Francisco Javier" Ignacio Imanol IÒaki Jes˙s
+		Jon "JosÈ Antonio" "JosÈ MarÌa" Joseba Josu Juan Julen Koldobika Luis Manuel
+		Marino Miguel Paulino Pedro Rafael Ramiro RamÛn Sabino Tom·s Vicente }
+		
+		last_names = { Aguirre Ajuriaguerra Aldecoa Arana Aranzadi Arizmendiarrieta Armend·riz Aznar Balenciaga Berasategui 
+		Bilbao CampiÛn Churruca "de AmÈsquita" "de Azpilicueta" "de Erauso" "de RenterÌa" "de Ubisztongo" Echag¸e Echave
+	 	Echegaray EchevarrÌa Elorza GaztaÒeta Ibarrola Ib·rruri Irujo Lazcano Mendizabal Moneo 
+		N·rdiz Olano Olave Oyarz·bal Rotaeche Uzcudun Zam·rraga Z·rate Zavala Zumalac·rregui }
+	}
+	largano = {
+		color = { 100 180 30 }
+		first_names = { Abel Adriano Afonso Alberto Alexandre Alfredo ¡lvaro AndrÅe AntÛnio Aquilino 
+		Artur Augusto Bartolomeu Bernardo Bruno Caetano C‚ndido Carlos Christov„o Cl·udio
+		Dami„o Daniel David Dinis Diogo Duarte Ernesto EstÍv„o EugÈnio Fernando 
+		Filipe Francisco "Francisco Xavier" Gast„o Hermenegildo Ign·cio JerÛnimo Jo„o Joaquim Jorge
+		JosÅe J˙lio Leopoldo Lu˙ê Manuel M·rio Miguel Nicolau Nuno Orlando 
+		”scar Pascoal Paulo Pedro Rafael Raul Roberto Rodrigo Rui Santiago 
+		Sebasti„o Teodoro TeÛfilo Tiago TomÅe Urbano Vasco Vicente Vitorino VitÛrio }
+		
+		last_names = { Amaral Barreto Bleck Braga Cabral Capelo Carmona Coelho Correia Coutinho
+		"da Costa" "da Cunha" "da Silva" "de Albuquerque" "de Almeida" "de Arriaga" "de BraganÁa" "de BraganÁa-Coburgo" "de Carvalho" 
+		"de Castro" "de Gusm„o" "de Lacerda" "de Mesquita" "de Moura" "de Noronha" "de Oliveira" "de Paiva" "de Sousa" "de Vasconcelos"
+		Dias "dos Reis" "dos Santos" Fernandes Ferreira Figueira "Freire de Andrade" Gago Gil Gomes
+		Herculano Ivens Keil Lopes Machado Magalh„es Mendes Moniz Mouzinho Nogueira 
+		Nunes Ortig„o Pereira Pinheiro Pinto Pires Pomar Pulido Queiroz Quintanilha
+		Ribeiro Rodrigues Salazar Sampaio SÈrgio Silveira Tavares Teixeira Vidigal Vieira }	
 	}
 }
 

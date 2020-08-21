@@ -66,108 +66,14 @@
 		size = 900
 	}
 }
-#Ross River (4000/1000 POPS)
-8 = {
-	aristocrats = {
-		culture = native_american_minor
-		religion = animist
-		size = 10
-	}
 
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 25
-	}
+#8 = Ross River moved to Iran.txt
+#10 = Inuvik moved to Iran.txt
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 50
-	}
-
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size= 15
-
-	}
-
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 900
-	}
-
-}
 #Northwest Territories & Keewatin Regions - 28000
 #uncolonized in 1836
-#Fort Simpson (2400/600 POPS)
-9 = {
-	aristocrats = {
-		culture = native_american_minor
-		religion = animist
-		size = 15
-	}
 
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 25
-	}
 
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 30
-	}
-
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size= 10
-
-	}
-
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 520
-	}
-}
-#Inuvik (4000/1000 POPS)
-10 = {
-	aristocrats = {
-		culture = native_american_minor
-		religion = animist
-		size = 10
-	}
-
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 25
-	}
-
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 50
-	}
-
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size= 15
-
-	}
-
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 900
-	}
-}
 #Echo Bay (4000/1000 POPS)
 11 = {
 	aristocrats = {
@@ -201,39 +107,7 @@
 		size = 900
 	}
 }
-#Reliance (2000/500 POPS)
-12 = {
-	aristocrats = {
-		culture = native_american_minor
-		religion = animist
-		size = 5
-	}
 
-	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 15
-	}
-
-	artisans = {
-		culture = native_american_minor
-		religion = animist
-		size = 25
-	}
-
-	soldiers = {
-		culture = native_american_minor
-		religion = animist
-		size= 5
-
-	}
-
-	farmers = {
-		culture = native_american_minor
-		religion = animist
-		size = 450
-	}
-}
 #Fort Resolution (2000/500 POPS)
 2596 = {
 	aristocrats = {
@@ -300,72 +174,9 @@
 		size = 360
 	}
 }
-#Arviat (3200/800 POPS)
-43 = {
-	aristocrats = {
-		culture = inuit
-		religion = animist
-		size = 10
-	}
 
-	clergymen = {
-		culture = inuit
-		religion = animist
-		size = 15
-	}
+#44 = Baker Lake moved to Iran.txt
 
-	artisans = {
-		culture = inuit
-		religion = animist
-		size = 40
-	}
-
-	soldiers = {
-		culture = inuit
-		religion = animist
-		size= 10
-
-	}
-
-	farmers = {
-		culture = inuit
-		religion = animist
-		size = 725
-	}
-}
-#Baker Lake (2000/500 POPS)
-44 = {
-	aristocrats = {
-		culture = inuit
-		religion = animist
-		size = 5
-	}
-
-	clergymen = {
-		culture = inuit
-		religion = animist
-		size = 10
-	}
-
-	artisans = {
-		culture = inuit
-		religion = animist
-		size = 25
-	}
-
-	soldiers = {
-		culture = inuit
-		religion = animist
-		size= 5
-
-	}
-
-	farmers = {
-		culture = inuit
-		religion = animist
-		size = 450
-	}
-}
 #Baffin Island (4000/1000 POPS)
 45 = {
 	aristocrats = {
@@ -2212,6 +2023,70 @@
 	}
 
 }
+
+#Egedesminde (816/204 POPS) now Abitibi in Dabimon
+2636 = {
+	aristocrats = {
+		culture = french_canadian
+		religion = catholic
+		size = 115
+	}
+
+	clergymen = {
+		culture = french_canadian
+		religion = catholic
+		size = 250
+	}
+
+	artisans = {
+		culture = french_canadian
+		religion = catholic
+		size = 700
+	}
+
+	soldiers = {
+		culture = french_canadian
+		religion = catholic
+		size = 1370
+	}
+
+	farmers = {
+		culture = french_canadian
+		religion = catholic
+		size = 12750
+	}
+	
+	aristocrats = {
+		culture = cree
+		religion = animist
+		size = 55
+	}
+
+	clergymen = {
+		culture = cree
+		religion = animist
+		size = 75
+	}
+
+	artisans = {
+		culture = cree
+		religion = animist
+		size = 180
+	}
+
+	soldiers = {
+		culture = cree
+		religion = animist
+		size = 50
+	}
+
+	farmers = {
+		culture = cree
+		religion = animist
+		size = 3040
+	}
+}
+
 #Thunder Bay (8000/2000 POPS)
 50 = {
 	aristocrats = {

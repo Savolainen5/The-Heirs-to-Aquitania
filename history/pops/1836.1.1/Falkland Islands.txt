@@ -1,16 +1,16 @@
 #Falkland Islands (360)
-#Ruled by Britain 1836
+#Ruled by Hispania 1836
 #Falkland Islands (300/75 POPS)
 2131 = {
 	soldiers = {
 		culture = spanish
-		religion = protestant
+		religion = catholic
 		size = 25
 	}
 
 	farmers = {
 		culture = spanish
-		religion = protestant
+		religion = catholic
 		size = 50
 	}
 }
@@ -18,7 +18,7 @@
 2133 = {
 	farmers = {
 		culture = spanish
-		religion = protestant
+		religion = catholic
 		size = 15
 	}
 

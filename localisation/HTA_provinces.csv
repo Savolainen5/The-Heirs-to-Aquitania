@@ -6,11 +6,11 @@ PROV4;Porto Blanco;;;;;;;;;;;;x
 PROV5;San Lupe;;;;;;;;;;;;;x  
 PROV6;Albryn;;;;;;;;;;;;;x    
 PROV7;Tscondok;;;;;;;;;;;;;x  
-PROV8;Nerafen;;;;;;;;;;;;;x   
-PROV9;Liidli Kue;;;;;;;;;;;;;x
-PROV10;Inuvik;;;;;;;;;;;x
+PROV8;Qeshm;x   
+PROV9;Hovden;x
+PROV10;Bandar Gumruk;x
 PROV11;Lupin;;;;;;;;;;;;;x    
-PROV12;Lutselque;;;;;;;;;;;;;x
+PROV12;Vadheim;x
 PROV13;Kwakiut;;;;;;;;;;;;;x  
 PROV14;Nutka;;;;;;;;;;;;;x    
 PROV15;Simscian;;;;;;;;;;;;;x 
@@ -40,9 +40,10 @@ PROV38;Nibelle;;;;;;;;;;;x
 PROV39;Darvoy;;;;;;;;;;;;x    
 PROV40;Crouy-sur-Lac;;;;;;;;x
 PROV41;Ennordres;;;;;;;;;x    
-PROV42;Val-Pembine;;;;;;;;;x  
-PROV44;Barthelemeia;;;;;;;;;;;x 
-PROV45;Verlaten Eylandt;;;;;;;;;;x
+PROV42;Val-Pembine;;;;;;;;;x
+PROV43;Welric;x
+PROV44;Reyshahr;x 
+PROV45;Verlaten Island;;;;;;;;;;x
 PROV46;Karonta;;;;;;;;;;x     
 PROV47;Groseilliers;;;;;;;;;x 
 PROV48;Fortin de la Baie;;;;;;;;;x
@@ -520,6 +521,7 @@ PROV1089;Etuworop;;;;;;;;;;;;x
 PROV1096;Batumi;;;;;;;;;;x
 PROV1097;Tierlinck Island;;;;;;;;;x
 PROV1099;Kumayri;;;;;;;;;;x
+PROV1142;Minab;x
 PROV1187;Irtyshi Mazar;;;;;;;;;;;x
 PROV1193;Aq Mechet;;;;;;;;;;;x
 PROV1243;Prayaga;;;;;;;;;;x
@@ -595,8 +597,8 @@ PROV2130;Hemelvaart;;;;;;;;;x
 PROV2131;Malvinas;;;;;;;;;;x
 PROV2133;Santa Maria;;;;;;;;;x
 PROV2134;Glasenezenn;;;;;;;;;;;;x
-PROV2135;Træ Ø;;;;;;;;;;;;x
-PROV2136;Hondt Eylandet;;;;;;;;;;;;x
+PROV2135;Træ Island;;;;;;;;;;;;x
+PROV2136;Hondt Islands;;;;;;;;;;;;x
 PROV2142;Cicimecas;;;;;;;;;;;;x
 PROV2143;Norgat;;;;;;;;;;;;x
 PROV2144;Elfredsrics;;;;;;;;;;;;x
@@ -812,7 +814,7 @@ PROV2465;Pasondo;;;;;;;;;;;;x
 PROV2467;Ferreruela;;;;;;;;;;;;x
 PROV2468;Padrón;;;;;;;;;x
 PROV2469;Monela;;;;;;;;;x
-PROV2470;Novo Lugo;;;;;;;;;x
+PROV2470;Lugo Novo;;;;;;;;;x
 PROV2471;Cela;;;;;;;;;x
 PROV2472;Santo Estêvão;;;;;;;;;x
 PROV2473;Río de Lama;;;;;;;;;x
@@ -836,7 +838,7 @@ PROV2490;Culadi;;;;;;;;;x
 PROV2491;Luintra;;;;;;;;;x
 PROV2492;Bahia Vazquez;;;;;;;;;x
 PROV2493;O Monte;;;;;;;;;x
-PROV2494;Lago Llalta;;;;;;;;;x
+PROV2494;San Xurxo;;;;;;;;;x
 PROV2495;Udnadata;;;;;;;;;x
 PROV2496;Tarcula;;;;;;;;;x
 PROV2497;Fiestras;;;;;;;;;x
@@ -865,8 +867,8 @@ PROV2571;Txauraga;x
 PROV2580;Salo;;;;;;;;;;;;x
 PROV2587;Kuolla;;;;;;;;;;;;x
 PROV2588;Airoranta;;;;;;;;;;;;x
-PROV2592;Jan Dekkers Land;;;;;;;;;;x
-PROV2593;Chisasibij;;;;;;;;;;x
+PROV2592;Dekkerskust;;;;;;;;;;x
+PROV2593;Tisasibi;;;;;;;;;;x
 PROV2594;Combre;;;;;;;;;;;;x  
 PROV2595;Kivallique;;;;;;;;;;;
 PROV2596;Deninouque;;;;;;;;;;;x
@@ -876,14 +878,15 @@ PROV2599;Santa Ana;;;;;;;;;;;;x
 PROV2600;Scingubur;;;;;;;;;;x
 PROV2606;Orma Zhuz;;;;;;;;x
 PROV2625;Beekdal;;;;;;;;;;;;x 
-PROV2626;Fort Ijssel;;;;;;;;;;x
+PROV2626;Fort Dekker;;;;;;;;;;x
 PROV2627;Saaimoehaven;;;;;;;;;x
 PROV2628;Atoapisquoac;;;;;;;;;x
 PROV2629;Kaskaneard;;;;;;;;;;;x
 PROV2630;Refugio;;;;;;;;;;x
 PROV2631;Unalakite;;;;;;;;;;x
+PROV2636;Abitibi;x
 PROV2653;Akureyri;;;;;;;;;;;x
-PROV2673;Ternate;;;;;;;;;;x
+PROV2673;Ternate & Tidore;;;;;;;;;;x
 PROV2674;Kamthi;;;;;;;;;;;x
 PROV2709;Gulf of Rika;;;;;;;;;x
 PROV2714;Laatokka;;;;;;;;;;;;x
@@ -912,13 +915,14 @@ PROV2941;Eastern Teylingen Bay;x
 PROV2942;Lumey Basin;x
 PROV2943;Karel Gulf;;;;;;;;;;;;x
 PROV2945;Bay of Vandij;x
-PROV2946;Strait of Mooi Eylandt;x
+PROV2946;Strait of Mooi Island;x
 PROV2948;Onze Dame Bay;x
 PROV2949;Niuewland Sea;x
 PROV2952;Krofylk Bay;x
 PROV2953;Rena Bight;;;;;;;;;;x
 PROV2966;Mopan Bay;;;;;;;;;;;;x
 PROV2968;Mellom Gulf;;;;;;;;;;;x
+PROV2969;Heymak Channel;x
 PROV2972;Sturlihaf Gulf;;;;;;;;;x
 PROV2973;Halgen Bay;;;;;;;;;x
 PROV2980;Kilenkes Coast;;;;;;;;;;x
@@ -960,7 +964,9 @@ PROV3225;Lago Salado;;;;;;;;;;;;x
 PROV3227;Lac des Ésclaves;;;;;;;;;;;;x
 PROV3228;Dene Lake;;;;;;;;;;;;x
 PROV3229;Lac des Wapitis;;;;;;;;;;;;x
+PROV3246;Sainte Anne;x
 PROV3249;Hjeltland;;;;;;;;;;;x
 PROV3250;Nykøbing;;;;;;;;;;;x
 PROV3251;Menorca;;;;;;;;;;x
 PROV3252;Eivissa;;;;;;;;;x
+PROV3253;Kerguelen;x

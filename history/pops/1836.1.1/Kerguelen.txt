@@ -1,0 +1,11 @@
+#Kerguelen
+#Part of the Indian Ocean Islands whateverit'scalled region
+#Ruled by Hispania in 1836, because no one else will take it
+3253 = {
+	farmers = {
+		culture = spanish
+		religion = catholic
+		size = 5
+	}
+
+}

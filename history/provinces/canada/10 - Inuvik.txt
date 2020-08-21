@@ -1,5 +1,7 @@
-trade_goods = grain
-life_rating = 15
-
-
+#Now the port of Bandar Gurmuk in Persia
+owner = PER
+controller = PER
+add_core = PER
+trade_goods = fruit
+life_rating = 35
 

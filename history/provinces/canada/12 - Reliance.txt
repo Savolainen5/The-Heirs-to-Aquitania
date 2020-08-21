@@ -1,5 +1,7 @@
-trade_goods = fish
-life_rating = 15
-
-
+#Now in Margaria on the Ginnaecer border. Named Vadheim
+owner = MRG
+controller = MRG
+add_core = MRG
+trade_goods = cotton
+life_rating = 35
 

@@ -7161,38 +7161,7 @@
 		size = 21575
 	}
 }
-#Saskylah (1000/250 POPS) #Ruled in fact by Iceland, as it now takes up the western part of it, named Akureyri
-2653 = {
-	bureaucrats = {
-		culture = icelandic
-		religion = protestant
-		size = 80
-	}
 
-	clergymen = {
-		culture = icelandic
-		religion = protestant
-		size = 175
-	}
-
-	artisans = {
-		culture = icelandic
-		religion = protestant
-		size = 1525
-	}
-
-	soldiers = {
-		culture = icelandic
-		religion = protestant
-		size = 375
-	}
-
-	farmers = {
-		culture = icelandic
-		religion = protestant
-		size = 22550
-	}
-}
 #Udachniy (2000/500 POPS)
 2651 = {
 	clergymen = {

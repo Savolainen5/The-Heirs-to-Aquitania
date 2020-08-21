@@ -1,6 +1,6 @@
 owner = QUE
 controller = QUE
 add_core = QUE
-trade_goods = fish
+trade_goods = timber
 life_rating = 35
 
