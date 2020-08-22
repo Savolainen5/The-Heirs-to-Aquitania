@@ -39,7 +39,6 @@ province_flag_sprite = "province_flag_sprites"
 border_heights = {
 	500
 	800
-	1100
 }
 
 terrain_sheet_heights = {
