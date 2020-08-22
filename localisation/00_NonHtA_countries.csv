@@ -714,15 +714,6 @@ GEN_hms_government;Genoa;;;;;;;;;;;;;x
 GEN_presidential_dictatorship;Ligurian Republic;;;;;;;;;;;;;x
 GEN_proletarian_dictatorship;Genoa;;;;;;;;;;;;x
 GEN_prussian_constitutionalism;Genoa;;;;;;;;;;;;;x
-GLC;Galicia;;;;;;;;;;;;;x
-GLC_ADJ;Galician;;;;;;;;;;;;;x
-GLC_anarcho_liberal;Partido Radical;Partido Radical;Partido Radical;;;;;;;;;;;;x;;;;;;;;;;;;;;
-GLC_communist;Federación Regional;Federación Regional;Federación Regional;;;;;;;;;;;;x;;;;;;;;;;;;;;
-GLC_conservative;Partido Moderado;Partido Moderado;Partido Moderado;;;;;;;;;;;;x;;;;;;;;;;;;;;
-GLC_fascist;Partido Fascist;Falange;Falange;;;;;;;;;;;;x;;;;;;;;;;;;;;
-GLC_liberal;Partido Progresista;Partido Progresista;Partido Progresista;;;;;;;;;;;;x;;;;;;;;;;;;;;
-GLC_reactionary;Partido Nationalist;Comunión Carlista;Comunión Carlista;;;;;;;;;;;;x;;;;;;;;;;;;;;
-GLC_socialist;Partido Socialista;Partido Socialista;Partido Socialista;;;;;;;;;;;;x;;;;;;;;;;;;;;
 GLM;Galicia-Lodomeria;Galicie-Lodomerie;Galizien-Lodomerien;;Galitzia-Lodomeria;;;;;;;;;;x;;;;;;;;;;;;;;
 GLM_ADJ;Galician;Galicien;Galiziener;;Galiciano;;;;;;;;;;x;;;;;;;;;;;;;;
 GMB;Gambia;;;;;;;;;;;;x
@@ -1330,13 +1321,6 @@ NYE_hms_government;Kingdom of Yemen;;;;;;;;;;;x
 NYE_prussian_constitutionalism;Kingdom of Yemen;;;;;;;;;;;x
 OAX;Oaxaca;;;;;;;;;;;;x
 OAX_ADJ;Oaxacan;;;;;;;;;;;;x
-OAX_anarcho_liberal;Radical Party;;;;;;;;;;;;x
-OAX_communist;Communist Party;;;;;;;;;;;;x
-OAX_conservative;Conservative Party;;;;;;;;;;;;x
-OAX_fascist;Fascist Party;;;;;;;;;;;;x
-OAX_liberal;Liberal Party;;;;;;;;;;;;x
-OAX_reactionary;Nationalist Party;;;;;;;;;;;;x
-OAX_socialist;Socialist Party;;;;;;;;;;;;x
 OYO;Oyo;Oyo;Oyo;;Oyo;;;;;;;;;;x;;;;;;;;;;;;;;
 OYO_ADJ;Oyo;Oyo;Oyo;;;;;;;;;;;;x;;;;;;;;;;;;;;
 OYO_anarcho_liberal;Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
@@ -1427,13 +1411,6 @@ PRI_reactionary;Unión Republicana;Unión Republicana;Unión Republicana;;;;;;;;;;;
 PRI_socialist;Partido Socialista;Partido Socialista;Partido Socialista;;;;;;;;;;;x
 PTG;Patagonia;;;;;;;;;;;;x
 PTG_ADJ;Patagonian;;;;;;;;;;;;x
-PTG_anarcho_liberal;The Radical Faction;;;;;;;;;;;;x
-PTG_communist;The Communist Faction;;;;;;;;;;;;x
-PTG_conservative;Royal Faction;;;;;;;;;;;;x
-PTG_fascist;The Fascist Faction;;;;;;;;;;;;x
-PTG_liberal;The Liberal Faction;;;;;;;;;;;;x
-PTG_reactionary;The Nationalist Faction;;;;;;;;;;;;x
-PTG_socialist;The Socialist Faction;;;;;;;;;;;;x
 RAJ;Rajputana;;;;;;;;;;;;x
 RAJ_ADJ;Rajput;;;;;;;;;;;;x
 RAJ_bourgeois_dictatorship;Rajasthan;;;;;;;;;;;;x
@@ -1459,14 +1436,6 @@ RGR_liberal_3;Partido Progresista;Partido Progresista;Partido Progresista;;;;;;;
 RGR_liberal_4;Partido Antireelecionista;Partido Antireelecionista;Partido Antireelecionista;;;;;;;;;;;;x;;;;;;;;;;;;;;
 RGR_reactionary;Partido Imperialista;Partido Imperialista;Partido Imperialista;;;;;;;;;;;;x;;;;;;;;;;;;;;
 RGR_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;;;;;;;;;;x;;;;;;;;;;;;;;
-RGS_anarcho_liberal;Partido Libertador;;;;;;;;;;;;;x
-RGS_communist;Partido Popular;;;;;;;;;;;;;x
-RGS_conservative;Partido Republicano;;;;;;;;;;;;;x
-RGS_fascist;Partido de las Pampas;;;;;;;;;;;;;x
-RGS_fascist_dictatorship;Pampas;;;;;;;;;;;;;x
-RGS_liberal;Partido Federalista;;;;;;;;;;;;;x
-RGS_reactionary;Partido Gaucho;;;;;;;;;;;;;x
-RGS_socialist;Colorados;;;;;;;;;;;;;x
 RHI;Rhineland;Rhénanie;Rheinland;;Rhineland;;;;;;;;;x
 RHI_ADJ;Rhinelander;Rhénan;Rheinlander;;Rhinelander;;;;;;;;;x
 RHI_anarcho_liberal;Radical Arbeiterpartei;Arbeiterpartei radical;Radikale Arbeiterpartei;;;;;;;;;;;;x;;;;;;;;;;;;;;
@@ -1623,7 +1592,6 @@ SNG;Senegal;;;;;;;;;;;;x
 SNG_ADJ;Senegalese;;;;;;;;;;;;x
 SOM;Somaliland;Somalia;Somalia;;Somalia;;;;;;;;;;x;;;;;;;;;;;;;;
 SOM_ADJ;Somali;Somali;Somalisch;;;;;;;;;;;;x;;;;;;;;;;;;;;
-SPA_proletarian_dictatorship;Anarchist Spain;;;;;;;;;;;;;x
 SRD;Sardinia;;;;;;;;;;;;;
 SRD_ADJ;Sardinian;;;;;;;;;;;;;
 SRI_anarcho_liberal;The Radical Faction;;;;;;;;;;;;x
@@ -1896,9 +1864,6 @@ URA_proletarian_dictatorship;Ural People's Republic;;;;;;;;;;;;;x
 URA_prussian_constitutionalism;Ural State;;;;;;;;;;;;;x
 URA_reactionary;Panslavic;Panslavic;Panslawisten;;;;;;;;;;;;x;;;;;;;;;;;;;;
 URA_socialist;Menshevik;Menshevik;Menschewiki;;;;;;;;;;;;x;;;;;;;;;;;;;;
-URU_absolute_monarchy;Cisplatina;;;;;;;;;;;;;x
-URU_hms_government;Cisplatina;;;;;;;;;;;;;x
-URU_prussian_constitutionalism;Cisplatina;;;;;;;;;;;;;x
 UYG;Uyghurstan;;;;;;;;;;;;;x
 UYG_absolute_monarchy;Kashgaria;;;;;;;;;;;;;x
 UYG_absolute_monarchy_ADJ;Kashgarian;;;;;;;;;;;;;x
@@ -2008,14 +1973,5 @@ YAK_socialist;The Socialists;Faction socialiste;Die sozialistische Fraktion;;;;;
 YAP;Yap;Yap;Yap;;;;;;;;;;;;x
 YAP_ADJ;Yapese;Yapese;Yapese;;;;;;;;;;;;x
 YNN_presidential_dictatorship;Yunnan Clique;Clique de Yunnan;Yunnan-Clique;;;;;;;;;;;x
-YUC;Yucatan;;;;;;;;;;;;;x
-YUC_ADJ;Yucatec;;;;;;;;;;;;;x
-YUC_anarcho_liberal;Partido Radical;Partido Radical;Partido Radical;;;;;;;;;;;;x;;;;;;;;;;;;;;
-YUC_communist;Partido Communist;Partido communiste;Partido Communist;;;;;;;;;;;;x;;;;;;;;;;;;;;
-YUC_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;;;;;;;;;;;x;;;;;;;;;;;;;;
-YUC_fascist;Partido Fascist;Partido fasciste;Partido Fascist;;;;;;;;;;;;x;;;;;;;;;;;;;;
-YUC_liberal;Partido Liberal;Partido Liberal;Partido Liberal;;;;;;;;;;;;x;;;;;;;;;;;;;;
-YUC_reactionary;Partido Nationalist;Partido nationaliste;Partido Nationalist;;;;;;;;;;;;x;;;;;;;;;;;;;;
-YUC_socialist;Partido Socialist;Partido socialiste;Partido Socialist;;;;;;;;;;;;x;;;;;;;;;;;;;;
 ZAM;Zambia;;;;;;;;;;;;x
 ZAM_ADJ;Zambian;;;;;;;;;;;;x

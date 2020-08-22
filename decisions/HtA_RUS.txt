@@ -161,32 +161,23 @@ political_decisions = {
 
 		allow = {
 			war = no
-			prestige = 45
-			CHI_1082 = { owned_by = THIS }
+			prestige = 15
+			RUS_1084 = { owned_by = THIS }
 			SIB = {
 				all_core = {
 					owned_by = THIS
 				}
 			}
-			YAK = {
-				all_core = {
-					owned_by = THIS
-				}
-			}
-			URA = {
-				all_core = {
-					owned_by = THIS
-				}
-			}
+			2641 = { owned_by = THIS }
 		}
 
 		effect = {
 			set_global_flag = organise_kamchatka
 			prestige = 2
-			CHI_1082 = { add_core = KAM }
-			2622 = { add_core = KAM }
-			2666 = { add_core = KAM }
-			2661 = { add_core = KAM }
+			#CHI_1082 = { add_core = KAM }
+			2622 = { add_core = KAM } #Markovo
+			2666 = { add_core = KAM } #Pevek
+			2661 = { add_core = KAM } #Nizhnekolynsk
 			KAM = {
 				all_core = {
 					any_pop = { militancy = -3 }

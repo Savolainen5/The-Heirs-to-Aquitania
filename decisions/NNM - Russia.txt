@@ -68,7 +68,7 @@ political_decisions = {
 			1073 = { add_core = KAM }
 			1080 = { add_core = KAM }
 			1084 = { add_core = KAM }
-			1086 = { add_core = KAM }
+			#1086 = { add_core = KAM } #Northern half of Sakhalin
 			2590 = { add_core = KAM }
 			2618 = { add_core = KAM }
 			2634 = { add_core = KAM }

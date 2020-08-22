@@ -142,7 +142,7 @@ CLF;Califiana;;;;;;;;;;;;;x
 CLF_ADJ;Califiano;;;;;;;;;;;;;x
 CLF_conservative;Partido Nasional;;;;;;;;;;;;;;;x
 CLF_liberal;Partido para la Libertad;;;;;;;;;;;;;;;x
-CLF_reactionary;Guardia Antika;;;;;;;;;;;;;;;x
+CLF_reactionary;Guardia Antica;;;;;;;;;;;;;;;x
 CLF_anarcho_liberal;Jeneroismos;;;;;;;;;;;;;;;x
 CLF_socialist;Partido Laboriozos;;;;;;;;;;;;;;;x
 CLF_communist;Peshkadores para la Pas;;;;;;;;;;;;;;;x
@@ -518,7 +518,7 @@ PRE_fascist;Partit Faissisto;;;;;;;;;;;;x
 PRH;Prague;;;;;;;;;;x
 PRH_ADJ;Praguer;;;;;;;;;x
 PTG_conservative;Partido Patagonico;;;;;;;;;;;;;;;x
-PTG_liberal;Los Albesanos Patagonicos;;;;;;;;;;;;;;;x
+PTG_liberal;Albesanos Patagonicos;;;;;;;;;;;;;;;x
 PTG_reactionary;Partido para la Restauracion de Argentina ;;;;;;;;;;;;;;;x
 PTG_anarcho_liberal;Frente Albesano;;;;;;;;;;;;;;;x
 PTG_socialist;Partido de los Trabajadores;;;;;;;;;;;;;;;x
