@@ -223,15 +223,19 @@ political_decisions = {
 		}
 	}
 
-    PER_abadan_treaty_port = {
+    PER_reyshahr_treaty_port = {
         picture = abadan
         potential = {
             has_country_flag = persian_gulf_negotiations
             PER = {
-				owns = 1132
+				owns = 44
 			}
 			NOT = {
 				has_global_flag = all_persian_ports_taken
+				AND = {
+					ai = yes
+					has_global_flag = player_must_choose_persian_gulf
+				}
 			}
         }
 
@@ -240,22 +244,35 @@ political_decisions = {
 
         effect = {
             clr_country_flag = persian_gulf_negotiations
+			clr_global_flag = player_must_choose_persian_gulf
 			set_country_flag = took_persian_port
-            1132 = { secede_province = THIS change_controller = THIS }
+            44 = { secede_province = THIS change_controller = THIS }
         }
 
-        ai_will_do = { factor = 1 }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_global_flag = player_must_choose_persian_gulf
+				}
+			}
+		}
     }
 
-    PER_bandar_abbas_treaty_port = {
+    PER_bandar_gumruk_treaty_port = {
         picture = bandar_abbas
         potential = {
             has_country_flag = persian_gulf_negotiations
             PER = {
-				owns = 1142
+				owns = 10
 			}
 			NOT = {
 				has_global_flag = all_persian_ports_taken
+				AND = {
+					ai = yes
+					has_global_flag = player_must_choose_persian_gulf
+				}
 			}
         }
 
@@ -264,8 +281,9 @@ political_decisions = {
 
         effect = {
             clr_country_flag = persian_gulf_negotiations
+			clr_global_flag = player_must_choose_persian_gulf			
 			set_country_flag = took_persian_port
-            1142 = { secede_province = THIS change_controller = THIS }
+            10 = { secede_province = THIS change_controller = THIS }
         }
 
         ai_will_do = { factor = 1 }
@@ -280,6 +298,10 @@ political_decisions = {
 			}
 			NOT = {
 				has_global_flag = all_persian_ports_taken
+				AND = {
+					ai = yes
+					has_global_flag = player_must_choose_persian_gulf
+				}
 			}
         }
 
@@ -288,6 +310,7 @@ political_decisions = {
 
         effect = {
             clr_country_flag = persian_gulf_negotiations
+			clr_global_flag = player_must_choose_persian_gulf			
 			set_country_flag = took_persian_port
             1136 = { secede_province = THIS change_controller = THIS }
         }
@@ -295,15 +318,19 @@ political_decisions = {
         ai_will_do = { factor = 1 }
     }
 
-    PER_chabahar_treaty_port = {
+    PER_qeshm_treaty_port = {
         picture = chabahar
         potential = {
             has_country_flag = persian_gulf_negotiations
             PER = {
-				owns = 1146
+				owns = 8
 			}
 			NOT = {
 				has_global_flag = all_persian_ports_taken
+				AND = {
+					ai = yes
+					has_global_flag = player_must_choose_persian_gulf
+				}
 			}
         }
 
@@ -312,8 +339,9 @@ political_decisions = {
 
         effect = {
             clr_country_flag = persian_gulf_negotiations
+			clr_global_flag = player_must_choose_persian_gulf			
 			set_country_flag = took_persian_port
-            1146 = { secede_province = THIS change_controller = THIS }
+            8 = { secede_province = THIS change_controller = THIS }
         }
 
         ai_will_do = { factor = 1 }

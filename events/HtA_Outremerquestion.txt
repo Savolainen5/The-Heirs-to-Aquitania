@@ -1,7 +1,7 @@
 #################################################################################################################
 #																												#
 #                       						Outremer War Events												#
-#											Written by /u/capitanloco6											#
+#										Written by /u/capitanloco6 aka MajorMajor								#
 #																												#
 #################################################################################################################
 
@@ -361,10 +361,10 @@ country_event = {
         PER = {
 			has_country_flag = lost_levantine_war
 			OR = {
-				owns = 1146
+				owns = 8
 				owns = 1136
-				owns = 1142
-				owns = 1132
+				owns = 10
+				owns = 44
 			}
 		}
 		OR = {
@@ -409,5 +409,26 @@ country_event = {
         name = "EVT97104OPTA" #Grant home rule to Outremer
         set_global_flag = outremer_self_rule_granted
         THIS = { relation = { who = PER value = 50 } }
+    }
+}
+
+country_event = {
+    id = 97105
+    title = "EVTNAME97105" # Player hasn't chosen yet which Persian port to take
+    desc = "EVTDESC97105"
+	fire_only_once = yes
+    picture = "confederation"
+	
+    trigger = {
+        ai = no
+        has_country_flag = persian_gulf_negotiations		
+		NOT = {
+			has_global_flag = all_persian_ports_taken
+		}
+    }	
+
+    option = {
+        name = "EVT97105OPTA" #Sets a global flag indicating that a player has participated in the Persian partitioning
+        set_global_flag = player_must_choose_persian_gulf
     }
 }

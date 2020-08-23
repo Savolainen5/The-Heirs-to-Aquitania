@@ -12,7 +12,7 @@ HtA Discord server: https://discord.gg/beteEPF
 
 There's an event numbers list at the bottom of this file
 
-Feel free to use anything from this mod without asking me. Please do attribute it, though.
+Feel free to use anything from this mod without asking me. Please do attribute it/credit me, though.
 
 **INSTALLATION INSTRUCTIONS**
 - If you downloaded a .rar (from the official forum, for example): Extract the .mod and the folder to Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod
@@ -20,10 +20,12 @@ Feel free to use anything from this mod without asking me. Please do attribute i
 If you're using Steam, the target directory is gonna be Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod. So, to be clear, in the end you'll have an Heirs to Aquitania folder and an Heirs to Aquitania .mod
 file both in your Vic2 mod folder with the aforementioned path. If the main HtA folder is called The-Heirs-to-Aquitania-Master, rename it to The Heirs to Aquitania.
 
+Map modding option: If you want a slightly darker political colormap, go to map/terrain and rename political_colormap_HFMmm to just political_colormap and get rid of (or change the name of) the current political_colormap. The default one looks a bit better in my opinion.
+
 Thanks to:
 
 - /u/ChortlingGnome, who contributed A LOT for Hispania, China, and other things
-- /u/capitanloco6, who wrote events and decisions regarding French ambitions in the Holy Land and the dismantling of Persia, as well as giving some flags and fixing Catalan military/party names
+- /u/capitanloco6 / MajorMajor, who wrote events and decisions regarding French ambitions in the Holy Land and the dismantling of Persia, as well as giving some flags and fixing Catalan military/party names
 - /u/firenine09, /u/1tobedoneX, and /u/Sommern, for being a sounding board and giving many good ideas and flags
 - /u/_Rosseau_, for the new Norway flags. Incorporated with permission
 - /u/Rangerage, who did a lot of POP rebalancing in BYZ/ARM based off of my EU3 save
@@ -34,11 +36,12 @@ Thanks to:
 - Attalus and other developers of Divergences of Darkness for ideas, code, flags
 - Naselus and other PDM folks, from whose mod I took some decisions, events, ideas, and inspiration
 - arkhometha for his Historical Project Mod, from which I have taken many pictures, ideas, a good bit of country information, and some events and decisions
-- Whoever made the HFM modded map
 - EGaffney for his Rectangular Flag Frames Mod
 - RenatoDS for his RDS mapping project, which creates a more detailed world map (for terrain and rivers)
 - simsulla for his help in sorting out adding canals and for (passively) showing me the crucial last step for adding new provinces - making the default.map file point to your mod's directory. See my copy for more details
 	- Also for passively showing me how to make music in a mod work
+- Hammonia for his work on the beautiful HFMmm map, which I used in 0.36 to update the map
+- /u/rascalnag / Squidward Tortellini for significant support in making the map look more like what I want
 - Shatterfury, Lukesky, Skyhascheese, Necro991, Rioting Soul, Spudgun, and Athemos for their ideas, flags, sounding board-ness, testing, and feedback 
 - BobSagini for MANY flags, ideas, and hooking me up with Vic1 music
 - dreamonceh for pointing out that you can set some AI behaviour in OOBs
