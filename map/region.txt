@@ -154,7 +154,7 @@ ENG_300 = { 300 294 301 302 303 } #South East England/Sudsaxe
 
 DEN_251 = { 251 2591 } #Greenland
 
-ICL_252 = { 252 2653 3246 } #Iceland
+ICL_252 = { 252 2653 } #Iceland
 
 NOR_253 = { 253 419 3249 } #North Sea Islands
 
@@ -1180,7 +1180,7 @@ HAI_2213 = { 2213 2214 2215 2216 } #Hispanola/Firgene
 
 ENG_203 = { 203 2219 2217 2218 2220 } #Caribbean Islands
 
-ENG_2224 = { 2224 2225 2226 2227 2230 2236 2223 2222 } #West Indies
+ENG_2224 = { 2224 2225 2226 2227 2230 2236 2223 2222 3246 } #West Indies
 
 ENG_2228 = { 2228 2229 2231 2232 2233 2237 2238 2409 } #Lesser Antilles
 
