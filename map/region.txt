@@ -104,7 +104,7 @@ USA_211 = { 207 211 214 } #Virginia/Eganulti
 
 USA_218 = { 212 213 215 218 217 } #West Virginia/Skotamewi
 
-USA_219 = { 224 225 235 237 238} #Maryland/H¯ylandet
+USA_219 = { 224 225 235 237 238} #Maryland/H√∏ylandet
 
 USA_223 = { 223 219 222 220 226 } #Pennsylvania/Tesepikhav
 
@@ -152,7 +152,7 @@ ENG_300 = { 300 294 301 302 303 } #South East England/Sudsaxe
 
 ### Scandinavia
 
-DEN_251 = { 251 2591 2632 2636 } #Greenland
+DEN_251 = { 251 2591 } #Greenland
 
 ICL_252 = { 252 2653 3246 } #Iceland
 
@@ -170,9 +170,9 @@ SWE_322 = { 322 324 326 325 348 } #Stockholm
 
 SWE_329 = { 329 328 327 330 } #Goteburg
 
-SWE_332 = { 332 331 333 } #SmÂland
+SWE_332 = { 332 331 333 } #Sm√•land
 
-SWE_334 = { 334 335 } #Malmo/SkÂne
+SWE_334 = { 334 335 } #Malmo/Sk√•ne
 
 DEN_367 = { 367 366 368 2557 } #Jylland
 
@@ -191,7 +191,7 @@ RUS_336 = { 336 337 342 984 } #Northern Finland/Savo
 
 RUS_345 = { 345 343 346 347 } #Turku/Suomi
 
-FIN_988 = { 995 988 992 993 2588 } #New Mexico(V)/ ƒ‰ninen
+FIN_988 = { 995 988 992 993 2588 } #New Mexico(V)/ √Ñ√§ninen
 
 RUS_349 = { 349 350 351 352 353 997 } #Estonia
 
@@ -220,14 +220,14 @@ BEL_394 = { 392 393 394 395 396 398 } #Wallonia
 
 FRA_399 = { 399 400 401 402 2570 } #Picardie
 
-FRA_445 = { 403 404 405 } #Limousin/≈rdene
+FRA_445 = { 403 404 405 } #Limousin/√Ördene
 
 
 ### France
 
 FRA_404 = { 406 408 429 } #Champagne
 
-FRA_411 = { 411 412 413 414 407 } #Franche-ComtÅE/Bar-Lorraine
+FRA_411 = { 411 412 413 414 407 } #Franche-Comt√©/Bar-Lorraine
 
 FRA_412 = { 409 410 } #Alsace-Lorraine/Elsass
 
@@ -239,32 +239,32 @@ FRA_425 = { 425 426 427 } #Ile de France
 
 FRA_428 = { 428 430 431 432 433 } #Bourgogne
 
-FRA_435 = { 434 435 436 437 } #Loire/LËger
+FRA_435 = { 434 435 436 437 } #Loire/L√≠ger
 
-FRA_438 = { 438 439 440 441 446 } #Region Centre/OrlÈans
+FRA_438 = { 438 439 440 441 446 } #Region Centre/Orl√©ans
 
 FRA_442 = { 442 443 444 445 } #Poitou/Peitau
 
 FRA_448 = { 448 447 449 450 } #Auvergne/Auvernha
 
-FRA_451 = { 454 451 452 453 } #Rhone/RÚse
+FRA_451 = { 454 451 452 453 } #Rhone/R√≥se
 
-FRA_455 = { 455 457 608 } #Le Midi/MiËgjorn
+FRA_455 = { 455 457 608 } #Le Midi/Mi√©gjorn
 
 FRA_458 = { 458 456 459 } #Aquitaine/Garona
 
-FRA_461 = { 461 462 463 467 468 } #Languedoc/LengadÚc
+FRA_461 = { 461 462 463 467 468 } #Languedoc/Lengad√≥c
 
-SAR_466 = { 607 465 466 609} #Savoie/SavouË
+SAR_466 = { 607 465 466 609} #Savoie/Savou√©
 
-FRA_467 = { 470 469 471 472 } #Provence/ProuvenÁa
+FRA_467 = { 470 469 471 472 } #Provence/Prouven√ßa
 
 
 ### Spain & Portugal
 
 SPA_474 = { 474 476 518 519 } #Galicia
 
-SPA_477 = { 477 486 475 482 } #LeÛn
+SPA_477 = { 477 486 475 482 } #Le√≥n
 
 SPA_481 = { 481 483 480 478 479 } #Castilla
 
@@ -337,9 +337,9 @@ PRU_682 = { 682 683 687 } #Lower Silesia
 
 PRU_684 = { 684 685 689 2584 688 } #Upper Silesia
 
-PRU_690 = { 690 691 693 694 } #Westpreuﬂen/Pomorze
+PRU_690 = { 690 691 693 694 } #Westpreu?en/Pomorze
 
-PRU_695 = { 695 696 697 } #Ostpreuﬂen/Prusy
+PRU_695 = { 695 696 697 } #Ostpreu?en/Prusy
 
 PRU_701 = { 699 700 701 } #Posen
 
@@ -348,9 +348,9 @@ PRU_701 = { 699 700 701 } #Posen
 
 AUS_612 = { 612 611 614 615 735 } #Tirol
 
-AUS_613 = { 616 613 618 617 } #K‰rnten-Steiermark
+AUS_613 = { 616 613 618 617 } #K√§rnten-Steiermark
 
-AUS_619 = { 619 620 621 622 624 } #÷sterreich
+AUS_619 = { 619 620 621 622 624 } #√ñsterreich
 
 AUS_623 = { 643 623 639 640 642 644 } #Transdanubia
 
@@ -522,7 +522,7 @@ PER_1127 = { 1127 1129 1130 } #Isfahan
 
 PER_1128 = { 1128 1122 1120 } #Lorestan
 
-PER_1132 = { 1132 44 1131 1133 1136 } #Khuzestan
+PER_1132 = { 1132 44 1131 1133 2632 1136 } #Khuzestan
 
 PER_1136 = { 1135 1134 1137 1138 1141 } #Fars
 
@@ -559,7 +559,7 @@ AFG_1214 = { 1214 1215 1213 1212 1211 } #Kandahar
 
 RUS_706 = { 706 708 709 710 717 712 } #Masovia
 
-RUS_707 = { 707 719 936 937 } #BrÍst
+RUS_707 = { 707 719 936 937 } #Br√©st
 
 RUS_718 = { 718 938 946 947 948 } #Minsk
 
@@ -784,7 +784,7 @@ NET_1449 = { 1430 1431 1432 1435 1434 1433 1436 1437 } #Celebes
 
 NET_1451 = { 1452 1453 1454 1560 } #Western New Guinea
 
-SPA_1455 = { 1455 1456 1457 1458 } #LuzÛn
+SPA_1455 = { 1455 1456 1457 1458 } #Luz√≥n
 
 SPA_1459 = { 1459 1460 1461 2565 } #Visayas
 
@@ -1093,7 +1093,7 @@ POR_2003 = { 2003 2004 2005 2008 } #South Angola/Ombunduland
 
 POR_2006 = { 2006 2007 2010 2011 } #East Angola/Undaland
 
-POR_2049 = { 2049 2050 2051 } #LourenÁo Marques/Maputo
+POR_2049 = { 2049 2050 2051 } #Louren√ßo Marques/Maputo
 
 POR_2053 = { 2053 2052 2059 2057 2065 } #Zambezia
 
@@ -1140,7 +1140,7 @@ MEX_2145 = { 2145 2154 2155 } #Nazan
 
 MEX_2142 = { 2142 2143 2144 } #Chihuahua/ Rodora
 
-MEX_2146 = { 2146 2150 2151 2163 } #Nuevo LeÛn/Tamaulipan
+MEX_2146 = { 2146 2150 2151 2163 } #Nuevo Le√≥n/Tamaulipan
 
 MEX_2151 = { 2141 2153 2156 2157 } #Durango/Cahitala
 
@@ -1148,7 +1148,7 @@ MEX_2181 = { 2181 2182 2187 } #Chiapas/Coyatoc
 
 MEX_2183 = { 2183 2185 2184 2165 } #Yucatan/Yucatla
 
-MEX_2162 = { 2172 2162 2164 2175 2176 2177 } #MÈxico/Mexika
+MEX_2162 = { 2172 2162 2164 2175 2176 2177 } #M√©xico/Mexika
 
 MEX_2170 = { 2170 2171 2174 2178 2179 2180 } #Morelia/Purepecia
 
@@ -1199,11 +1199,11 @@ VNZ_2265 = { 2264 2265 2266 2267 2274 } #Miranda/Norillan
 
 VNZ_2278 = { 2276 2239 2243 2269 } #Bolivar/Kilenkes
 
-CLM_2251 = { 2254 2251 2252 2255 } #Antioquia / H¯yekyst
+CLM_2251 = { 2254 2251 2252 2255 } #Antioquia / H√∏yekyst
 
 CLM_2262 = { 2261 2260 2262 2263 2401 } #Guaviare/ Inskog
 
-CLM_2247 = { 2247 2250 2249 2248 } #Cundinamarca/Fl¯elmark
+CLM_2247 = { 2247 2250 2249 2248 } #Cundinamarca/Fl√∏elmark
 
 CLM_2259 = { 2258 2253 2256 2257 2259 } #Cauca/Baskalstrip
 
@@ -1231,22 +1231,22 @@ PRG_2338 = { 2316 2318 2338 2337 } #Alto Paraguay/Cempstrel;;;;;;;;;;x
 
 PRG_2343 = { 2339 2343 2341 2342 2340 } #Bajo Parguay/Paragua
 
-URU_2344 = { 2344 2345 2346 2347 } #Uruguay/Ys˘n
+URU_2344 = { 2344 2345 2346 2347 } #Uruguay/Ys√∫n
 
 
 ### Brazil
 
-BRZ_2306 = { 2306 2455 2450 2452 2456 2453 } #S„o Paulo/Selwang
+BRZ_2306 = { 2306 2455 2450 2452 2456 2453 } #S√£o Paulo/Selwang
 
 BRZ_2401 = { 2403 2404 2405 2407 2549 } #Amazonas/Upper Jordracan
 
-BRZ_2408 = { 2410 2408 2402 2412 2413 2411 2600 } #ParÅE/Lower Jordracan
+BRZ_2408 = { 2410 2408 2402 2412 2413 2411 2600 } #Par√©/Lower Jordracan
 
-BRZ_2410 = { 2424 2425 2427 2426 2429 2430 } #Maranh„o/Hurupa
+BRZ_2410 = { 2424 2425 2427 2426 2429 2430 } #Maranh√£o/Hurupa
 
 BRZ_2416 = { 2416 2419 2420 } #Mato Grosso/Gyrefena
 
-BRZ_2421 = { 2421 2418 2422 2423 } #Goi·s/Cuafeld
+BRZ_2421 = { 2421 2418 2422 2423 } #Goi√£s/Cuafeld
 
 BRZ_2428 = { 2428 2431 2432 2435 2434 2433 } #Pernambuco/Tareconia
 
@@ -1256,7 +1256,7 @@ BRZ_2446 = { 2445 2442 2444 2443 } #Minas Gerais/Helutsa
 
 BRZ_2447 = { 2447 2441 2446 2448 2449 2451 } #Rio de Janeiro/Nilutsa
 
-BRZ_2462 = { 2457 2458 2460 } #ParanÅE/Iguazu
+BRZ_2462 = { 2457 2458 2460 } #Paran√°/Iguazu
 
 BRZ_2461 = { 2464 2466 2467 } #Santa Catarina/Tupinambia
 
@@ -1287,7 +1287,7 @@ ARG_2377 = { 2364 2365 2366 2367 } #Chaco
 
 ARG_2384 = { 2384 2383 2382 2379 2381 2380 } #La Pampa
 
-ARG_2387 = { 2373 2376 2377 2378 } #Tucum·n
+ARG_2387 = { 2373 2376 2377 2378 } #Tucum√°n
 
 ARG_2391 = { 2391 2392 2394 2396 2397 } #Patagonia Septentrional
 

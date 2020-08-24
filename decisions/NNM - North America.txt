@@ -25,9 +25,7 @@ political_decisions = {
 			2631 = { add_core = LSK }
 
 			#Greenland
-			2636 = { add_core = GRN	}
 			2591 = { add_core = GRN }
-			2632 = { add_core = GRN }
 			251 = { add_core = GRN 	}
 			
 			#Jamaica

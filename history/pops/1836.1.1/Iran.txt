@@ -2014,43 +2014,83 @@
     }	
 	
 }
-#Bushehr (100000/25000 POPS)
-1136 = {
+
+#Augmagsalik (1232/308 POPS) now called Borazjan (province stolen from Greenland)
+2632 = {
 	aristocrats = {
 		culture = persian
 		religion = sunni
-		size = 450
+		size = 280
 	}
 
 	clergymen = {
 		culture = persian
 		religion = sunni
-		size = 250
+		size = 190
 	}
 
 	artisans = {
 		culture = persian
 		religion = sunni
-		size = 1250
+		size = 890
 	}
 
 	soldiers = {
 		culture = persian
 		religion = sunni
-		size= 250
-
+		size = 150
 	}
 
 	farmers = {
 		culture = persian
 		religion = sunni
-		size = 22800
+		size = 15600
+	}
+
+    slaves = {
+        culture = african_minor
+        religion = sunni
+        size = 1000
+    }	
+	
+}
+
+#Bushehr (100000/25000 POPS)
+1136 = {
+	aristocrats = {
+		culture = persian
+		religion = sunni
+		size = 150
+	}
+
+	clergymen = {
+		culture = persian
+		religion = sunni
+		size = 85
+	}
+
+	artisans = {
+		culture = persian
+		religion = sunni
+		size = 450
+	}
+
+	soldiers = {
+		culture = persian
+		religion = sunni
+		size = 90
+	}
+
+	farmers = {
+		culture = persian
+		religion = sunni
+		size = 8800
 	}
 
     slaves = {
         culture = shona
         religion = sunni
-        size = 1500
+        size = 550
     }	
 	
 }

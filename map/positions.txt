@@ -2750,7 +2750,7 @@
 
 }
 
-# Sept-Îles
+# Sept-?les
 62 = {
     unit = {
         x = 1843.000000
@@ -2840,7 +2840,7 @@
 
 }
 
-# Trois-Rivières
+# Trois-Rivi?res
 64 = {
     text_position = {
         x = 1659.725000
@@ -14871,7 +14871,7 @@
 
 }
 
-# Gävle
+# G?vle
 317 = {
     text_position = {
         x = 3057.000000
@@ -14971,7 +14971,7 @@
 
 }
 
-# Östersund
+# ?stersund
 319 = {
     unit = {
         x = 3027.000000
@@ -15032,7 +15032,7 @@
 
 }
 
-# Umeå
+# Ume?
 320 = {
     text_position = {
         x = 3102.699951
@@ -15085,7 +15085,7 @@
 
 }
 
-# Luleå
+# Lule?
 321 = {
     text_position = {
         x = 3128.020000
@@ -15288,7 +15288,7 @@
 
 }
 
-# Norrköping
+# Norrk?ping
 325 = {
     unit = {
         x = 3052.000000
@@ -15330,7 +15330,7 @@
 
 }
 
-# Västerås
+# V?ster?s
 326 = {
     text_position = {
         x = 3065.440000
@@ -15383,7 +15383,7 @@
 
 }
 
-# Örebro
+# ?rebro
 327 = {
     unit = {
         x = 3040.000000
@@ -15502,7 +15502,7 @@
 
 }
 
-# Göteborg
+# G?teborg
 329 = {
     unit = {
         x = 2988.000000
@@ -15559,7 +15559,7 @@
 
 }
 
-# Borås
+# Bor?s
 330 = {
     unit = {
         x = 3011.000000
@@ -15706,7 +15706,7 @@
 
 }
 
-# Växjö
+# V?xj?
 333 = {
     unit = {
         x = 3031.000000
@@ -15744,7 +15744,7 @@
 
 }
 
-# Malmö
+# Malm?
 334 = {
     unit = {
         x = 3013.000000
@@ -16251,7 +16251,7 @@
 
 }
 
-# Hämeenlinna
+# H?meenlinna
 344 = {
     text_position = {
         x = 3293.415000
@@ -16444,7 +16444,7 @@
 
 }
 
-# Åland Islands
+# ?land Islands
 348 = {
     text_position = {
         x = 3116.000000
@@ -16581,7 +16581,7 @@
 
 }
 
-# Pärnu
+# P?rnu
 351 = {
     unit = {
         x = 3200.000000
@@ -16666,7 +16666,7 @@
 
 }
 
-# Ösel
+# ?sel
 353 = {
     unit = {
         x = 3159.000000
@@ -18476,7 +18476,7 @@
 
 }
 
-# Liège
+# Li?ge
 395 = {
     unit = {
         x = 2890.000000
@@ -19165,7 +19165,7 @@
 
 }
 
-# Épinal
+# ?pinal
 414 = {
     unit = {
         x = 2910.000000
@@ -19256,7 +19256,7 @@
 
 }
 
-# Évreux
+# ?vreux
 416 = {
     text_position = {
         x = 2821.300049
@@ -19304,7 +19304,7 @@
 
 }
 
-# Alençon
+# Alen?on
 417 = {
     text_position = {
         x = 2800.399902
@@ -20055,7 +20055,7 @@
 
 }
 
-# Besançon
+# Besan?on
 432 = {
     text_position = {
         x = 2905.000000
@@ -20266,7 +20266,7 @@
 
 }
 
-# Orléans
+# Orl?ans
 438 = {
     text_position = {
         x = 2843.000000
@@ -20512,7 +20512,7 @@
 
 }
 
-# Angoulême
+# Angoul?me
 444 = {
     unit = {
         x = 2810.000000
@@ -20593,7 +20593,7 @@
 
 }
 
-# Châteauroux
+# Ch?teauroux
 446 = {
     text_position = {
         x = 2834.300049
@@ -20848,7 +20848,7 @@
 
 }
 
-# St Étienne
+# St ?tienne
 452 = {
     text_position = {
         x = 2870.800049
@@ -21481,7 +21481,7 @@
 
 }
 
-# Chambéry
+# Chamb?ry
 466 = {
     unit = {
         x = 2902.000000
@@ -21854,7 +21854,7 @@
 
 }
 
-# La Coruña
+# La Coru?a
 474 = {
     unit = {
         x = 2683.000000
@@ -22006,7 +22006,7 @@
 
 }
 
-# León
+# Le?n
 477 = {
     unit = {
         x = 2713.000000
@@ -22245,7 +22245,7 @@
 
 }
 
-# Ávila
+# ?vila
 483 = {
     unit = {
         x = 2733.000000
@@ -22355,7 +22355,7 @@
 
 }
 
-# Cáceres
+# C?ceres
 486 = {
     unit = {
         x = 2706.000000
@@ -22442,7 +22442,7 @@
 
 }
 
-# Sigüenza
+# Sig?enza
 488 = {
     unit = {
         x = 2766.000000
@@ -22676,7 +22676,7 @@
 
 }
 
-# Logroño
+# Logro?o
 494 = {
     unit = {
         x = 2769.000000
@@ -22930,7 +22930,7 @@
 
 }
 
-# Lérida
+# L?rida
 500 = {
     text_position = {
         x = 2823.800049
@@ -23106,7 +23106,7 @@
 
 }
 
-# Castellón
+# Castell?n
 504 = {
     unit = {
         x = 2805.000000
@@ -23361,7 +23361,7 @@
 
 }
 
-# Córdoba
+# C?rdoba
 510 = {
     unit = {
         x = 2732.000000
@@ -23448,7 +23448,7 @@
 
 }
 
-# Cádiz
+# C?diz
 512 = {
     unit = {
         x = 2714.000000
@@ -23548,7 +23548,7 @@
 
 }
 
-# Málaga
+# M?laga
 514 = {
     unit = {
         x = 2734.000000
@@ -23595,7 +23595,7 @@
 
 }
 
-# Almería
+# Almer?a
 515 = {
     unit = {
         x = 2768.000000
@@ -23647,7 +23647,7 @@
 
 }
 
-# Jaén
+# Ja?n
 516 = {
     unit = {
         x = 2756.000000
@@ -23857,7 +23857,7 @@
 
 }
 
-# Covilhã
+# Covilh?
 520 = {
     unit = {
         x = 2689.000000
@@ -24090,7 +24090,7 @@
 
 }
 
-# Évora
+# ?vora
 525 = {
     unit = {
         x = 2685.000000
@@ -24355,7 +24355,7 @@
 
 }
 
-# Lübeck
+# L?beck
 530 = {
     unit = {
         x = 2972.000000
@@ -24455,7 +24455,7 @@
 
 }
 
-# Lüneburg
+# L?neburg
 532 = {
     unit = {
         x = 2968.000000
@@ -24652,7 +24652,7 @@
 
 }
 
-# Göttingen
+# G?ttingen
 537 = {
     unit = {
         x = 2967.000000
@@ -24691,7 +24691,7 @@
 
 }
 
-# Osnabrück
+# Osnabr?ck
 538 = {
     text_position = {
         x = 2930.600098
@@ -25082,7 +25082,7 @@
 
 }
 
-# Swinemünde
+# Swinem?nde
 547 = {
     text_position = {
         x = 3018.699951
@@ -26128,7 +26128,7 @@
 
 }
 
-# Saarbrücken
+# Saarbr?cken
 573 = {
     unit = {
         x = 2914.000000
@@ -26302,7 +26302,7 @@
 
 }
 
-# Düsseldorf
+# D?sseldorf
 578 = {
     unit = {
         x = 2919.000000
@@ -26403,7 +26403,7 @@
 
 }
 
-# Münster
+# M?nster
 581 = {
     text_position = {
         x = 2917.899902
@@ -26778,7 +26778,7 @@
 
 }
 
-# Tübingen
+# T?bingen
 591 = {
     text_position = {
         x = 2942.399902
@@ -27008,7 +27008,7 @@
 
 }
 
-# Würzburg
+# W?rzburg
 597 = {
     text_position = {
         x = 2966.100098
@@ -27489,7 +27489,7 @@
 
 }
 
-# Neuchâtel
+# Neuch?tel
 608 = {
     text_position = {
         x = 2839.100000
@@ -27893,7 +27893,7 @@
 
 }
 
-# Sankt Pölten
+# Sankt P?lten
 620 = {
     unit = {
         x = 3047.000000
@@ -28127,7 +28127,7 @@
 
 }
 
-# Hradec Králové
+# Hradec Kr?lov?
 626 = {
     text_position = {
         x = 3054.399902
@@ -28416,7 +28416,7 @@
 
 }
 
-# Trencín
+# Trenc?n
 634 = {
     text_position = {
         x = 3092.300049
@@ -28479,7 +28479,7 @@
 
 }
 
-# Banská Bystrica
+# Bansk? Bystrica
 636 = {
     text_position = {
         x = 3112.300049
@@ -28512,7 +28512,7 @@
 
 }
 
-# Košice
+# Ko?ice
 637 = {
     text_position = {
         x = 3141.699951
@@ -28546,7 +28546,7 @@
 
 }
 
-# Rožnava
+# Ro?nava
 638 = {
     text_position = {
         x = 3121.800049
@@ -28631,7 +28631,7 @@
 
 }
 
-# Pécs
+# P?cs
 640 = {
     text_position = {
         x = 3087.500000
@@ -28745,7 +28745,7 @@
 
 }
 
-# Székesfehérvár
+# Sz?kesfeh?rv?r
 643 = {
     text_position = {
         x = 3087.600098
@@ -28794,7 +28794,7 @@
 
 }
 
-# Kaposvár
+# Kaposv?r
 644 = {
     text_position = {
         x = 3085.699951
@@ -28837,7 +28837,7 @@
 
 }
 
-# Kecskemét
+# Kecskem?t
 645 = {
     text_position = {
         x = 3110.300049
@@ -29020,7 +29020,7 @@
 
 }
 
-# Békéscsaba
+# B?k?scsaba
 650 = {
     unit = {
         x = 3132.000000
@@ -29059,7 +29059,7 @@
 
 }
 
-# Szatmár
+# Szatm?r
 651 = {
     unit = {
         x = 3164.000000
@@ -29132,7 +29132,7 @@
 
 }
 
-# Resicabánya
+# Resicab?nya
 653 = {
     unit = {
         x = 3150.000000
@@ -30094,7 +30094,7 @@
 
 }
 
-# Köslin
+# K?slin
 680 = {
     unit = {
         x = 3073.000000
@@ -30141,7 +30141,7 @@
 
 }
 
-# Küstrin
+# K?strin
 681 = {
     text_position = {
         x = 3043.902083
@@ -30402,7 +30402,7 @@
 
 }
 
-# Görlitz
+# G?rlitz
 687 = {
     unit = {
         x = 3028.000000
@@ -30756,7 +30756,7 @@
 
 }
 
-# Königsberg
+# K?nigsberg
 695 = {
     unit = {
         x = 3133.000000
@@ -34164,7 +34164,7 @@
 
 }
 
-# Varaždin
+# Vara?din
 775 = {
     text_position = {
         x = 3064.100098
@@ -34236,7 +34236,7 @@
 
 }
 
-# Požega
+# Po?ega
 777 = {
     unit = {
         x = 3083.000000
@@ -34996,7 +34996,7 @@
 
 }
 
-# Užice
+# U?ice
 797 = {
     text_position = {
         x = 3117.600098
@@ -35029,7 +35029,7 @@
 
 }
 
-# Niš
+# Ni?
 798 = {
     unit = {
         x = 3144.000000
@@ -37630,7 +37630,7 @@
 
 }
 
-# Üsküdar
+# ?sk?dar
 861 = {
     text_position = {
         x = 3265.399902
@@ -37861,7 +37861,7 @@
 
 }
 
-# Kütahya
+# K?tahya
 867 = {
     unit = {
         x = 3267.000000
@@ -47854,32 +47854,37 @@
 
 # Bushire
 1136 = {
-    unit = {
-        x = 3599.000000
-        y = 1243.000000
-    }
-
     text_position = {
-        x = 3601.300049
-        y = 1236.300049
+        x = 3600.100000
+        y = 1237.650000
     }
 
     text_rotation = 5.148721
-    text_scale = 2.600000
-    building_construction = {
-        x = 3597.100098
-        y = 1247.000000
+    text_scale = 2
+    unit = {
+        x = 3602.950000
+        y = 1237.900000
     }
 
     factory = {
-        x = 3597.399902
-        y = 1247.000000
+        x = 3598.050000
+        y = 1242.800000
+    }
+
+    building_construction = {
+        x = 3601.800000
+        y = 1239.800000
+    }
+
+    military_construction = {
+        x = 3603.450000
+        y = 1235.700000
     }
 
     building_position = {
         fort = {
-            x = 3605.199951
-            y = 1228.000000
+            x = 3597.950000
+            y = 1241.000000
         }
 
         naval_base = {
@@ -68299,7 +68304,7 @@
 
 }
 
-# Díhuà
+# D?hu?
 1600 = {
     text_position = {
         x = 4176.000000
@@ -83393,7 +83398,7 @@
 
 }
 
-# São Tomé
+# S?o Tom?
 1954 = {
     unit = {
         x = 2909.000000
@@ -83426,7 +83431,7 @@
 
 }
 
-# Fernando Pó
+# Fernando P?
 1955 = {
     text_position = {
         x = 2940.500000
@@ -85436,7 +85441,7 @@
 
 }
 
-# Moçâmedes
+# Mo??medes
 2004 = {
     unit = {
         x = 3004.000000
@@ -87783,7 +87788,7 @@
 
 }
 
-# Moçambique
+# Mo?ambique
 2060 = {
     text_position = {
         x = 3435.399902
@@ -91923,7 +91928,7 @@
 
 }
 
-# Santa María del Oro
+# Santa Mar?a del Oro
 2154 = {
     unit = {
         x = 1170.000000
@@ -91966,7 +91971,7 @@
 
 }
 
-# Torreón
+# Torre?n
 2155 = {
     unit = {
         x = 1211.000000
@@ -92004,7 +92009,7 @@
 
 }
 
-# Mazatlán
+# Mazatl?n
 2156 = {
     text_position = {
         x = 1144.699951
@@ -92047,7 +92052,7 @@
 
 }
 
-# Culiacán
+# Culiac?n
 2157 = {
     unit = {
         x = 1121.000000
@@ -92155,7 +92160,7 @@
 
 }
 
-# San Luis Potosí
+# San Luis Potos?
 2159 = {
     unit = {
         x = 1235.000000
@@ -92369,7 +92374,7 @@
 
 }
 
-# Minatitlán
+# Minatitl?n
 2164 = {
     unit = {
         x = 1325.000000
@@ -92696,7 +92701,7 @@
 
 }
 
-# Los Albañiles
+# Los Alba?iles
 2171 = {
     unit = {
         x = 1210.000000
@@ -92790,7 +92795,7 @@
 
 }
 
-# Querétaro
+# Quer?taro
 2173 = {
     unit = {
         x = 1248.000000
@@ -93262,7 +93267,7 @@
 
 }
 
-# Mérida
+# M?rida
 2183 = {
     unit = {
         x = 1417.000000
@@ -93562,7 +93567,7 @@
 
 }
 
-# Sayaxché
+# Sayaxch?
 2189 = {
     text_position = {
         x = 1401.300049
@@ -94031,7 +94036,7 @@
 
 }
 
-# León
+# Le?n
 2199 = {
     text_position = {
         x = 1459.833333
@@ -94131,7 +94136,7 @@
 
 }
 
-# San José
+# San Jos?
 2201 = {
     unit = {
         x = 1501.000000
@@ -94222,7 +94227,7 @@
 
 }
 
-# Limón
+# Lim?n
 2203 = {
     unit = {
         x = 1504.000000
@@ -94395,7 +94400,7 @@
 
 }
 
-# Penonomé
+# Penonom?
 2206 = {
     unit = {
         x = 1551.000000
@@ -94648,7 +94653,7 @@
 
 }
 
-# Camagüey
+# Camag?ey
 2211 = {
     unit = {
         x = 1593.000000
@@ -96051,7 +96056,7 @@
 
 }
 
-# Bogotá
+# Bogot?
 2247 = {
     text_position = {
         x = 1653.760000
@@ -96089,7 +96094,7 @@
 
 }
 
-# Ibagué
+# Ibagu?
 2248 = {
     text_position = {
         x = 1631.100000
@@ -96192,7 +96197,7 @@
 
 }
 
-# Cúcuta
+# C?cuta
 2251 = {
     unit = {
         x = 1664.000000
@@ -96230,7 +96235,7 @@
 
 }
 
-# Medellín
+# Medell?n
 2252 = {
     unit = {
         x = 1630.000000
@@ -96268,7 +96273,7 @@
 
 }
 
-# Quibdó
+# Quibd?
 2253 = {
     unit = {
         x = 1608.000000
@@ -96470,7 +96475,7 @@
 
 }
 
-# Popayán
+# Popay?n
 2257 = {
     unit = {
         x = 1615.000000
@@ -96599,7 +96604,7 @@
 
 }
 
-# San José del Guaviare
+# San Jos? del Guaviare
 2260 = {
     text_position = {
         x = 1665.000000
@@ -96854,7 +96859,7 @@
 
 }
 
-# Cumaná
+# Cuman?
 2267 = {
     text_position = {
         x = 1796.000000
@@ -96938,7 +96943,7 @@
 
 }
 
-# Güiria
+# G?iria
 2269 = {
     unit = {
         x = 1816.000000
@@ -97654,7 +97659,7 @@
 
 }
 
-# Galápagos
+# Gal?pagos
 2285 = {
     text_position = {
         x = 1405.123333
@@ -97941,7 +97946,7 @@
 
 }
 
-# Huánuco
+# Hu?nuco
 2293 = {
     unit = {
         x = 1625.000000
@@ -98732,7 +98737,7 @@
 
 }
 
-# Potosí
+# Potos?
 2314 = {
     unit = {
         x = 1763.000000
@@ -98866,7 +98871,7 @@
 
 }
 
-# Roboré
+# Robor?
 2318 = {
     text_position = {
         x = 1859.000000
@@ -98974,7 +98979,7 @@
 
 }
 
-# Copiapó
+# Copiap?
 2322 = {
     unit = {
         x = 1716.000000
@@ -99093,7 +99098,7 @@
 
 }
 
-# Valparaíso
+# Valpara?so
 2325 = {
     text_position = {
         x = 1689.699951
@@ -99132,7 +99137,7 @@
 
 }
 
-# Viña del Mar
+# Vi?a del Mar
 2326 = {
     unit = {
         x = 1698.000000
@@ -99383,7 +99388,7 @@
 
 }
 
-# Chillán
+# Chill?n
 2331 = {
     unit = {
         x = 1684.000000
@@ -99460,7 +99465,7 @@
 
 }
 
-# Puerto Aisén
+# Puerto Ais?n
 2333 = {
     text_position = {
         x = 1668.000000
@@ -99672,7 +99677,7 @@
 
 }
 
-# Puerto Guaraní
+# Puerto Guaran?
 2338 = {
     text_position = {
         x = 1867.000000
@@ -99786,7 +99791,7 @@
 
 }
 
-# Encarnación
+# Encarnaci?n
 2341 = {
     text_position = {
         x = 1938.099976
@@ -99844,7 +99849,7 @@
 
 }
 
-# Concepción
+# Concepci?n
 2343 = {
     unit = {
         x = 1921.000000
@@ -99944,7 +99949,7 @@
 
 }
 
-# Paysandú
+# Paysand?
 2345 = {
     unit = {
         x = 1922.000000
@@ -99999,7 +100004,7 @@
 
 }
 
-# Tacuarembó
+# Tacuaremb?
 2346 = {
     unit = {
         x = 1918.000000
@@ -100142,7 +100147,7 @@
 
 }
 
-# Junín
+# Jun?n
 2349 = {
     text_position = {
         x = 1866.000000
@@ -100348,7 +100353,7 @@
 
 }
 
-# Bahía Blanca
+# Bah?a Blanca
 2354 = {
     unit = {
         x = 1842.000000
@@ -100502,7 +100507,7 @@
 
 }
 
-# Curuzú Cuatiá
+# Curuz? Cuati?
 2357 = {
     unit = {
         x = 1892.000000
@@ -100540,7 +100545,7 @@
 
 }
 
-# Santo Tomás
+# Santo Tom?s
 2358 = {
     unit = {
         x = 1919.000000
@@ -100578,7 +100583,7 @@
 
 }
 
-# Colón
+# Col?n
 2359 = {
     text_position = {
         x = 1888.199951
@@ -100611,7 +100616,7 @@
 
 }
 
-# Paraná
+# Paran?
 2360 = {
     unit = {
         x = 1870.000000
@@ -100800,7 +100805,7 @@
 
 }
 
-# Villa Ángela
+# Villa ?ngela
 2365 = {
     unit = {
         x = 1849.000000
@@ -101019,7 +101024,7 @@
 
 }
 
-# Tucumán
+# Tucum?n
 2373 = {
     text_position = {
         x = 1789.599976
@@ -101117,7 +101122,7 @@
 
 }
 
-# Añatuya
+# A?atuya
 2377 = {
     unit = {
         x = 1829.000000
@@ -101155,7 +101160,7 @@
 
 }
 
-# Mailín
+# Mail?n
 2378 = {
     unit = {
         x = 1814.000000
@@ -101193,7 +101198,7 @@
 
 }
 
-# Córdoba de Argentina
+# C?rdoba de Argentina
 2379 = {
     unit = {
         x = 1797.000000
@@ -101265,7 +101270,7 @@
 
 }
 
-# Río Cuarto
+# R?o Cuarto
 2381 = {
     unit = {
         x = 1811.000000
@@ -101303,7 +101308,7 @@
 
 }
 
-# Renancó
+# Renanc?
 2382 = {
     unit = {
         x = 1809.000000
@@ -101619,7 +101624,7 @@
 
 }
 
-# Neuquén
+# Neuqu?n
 2391 = {
     unit = {
         x = 1716.000000
@@ -101722,7 +101727,7 @@
 
 }
 
-# Telén
+# Tel?n
 2393 = {
     unit = {
         x = 1797.000000
@@ -101849,7 +101854,7 @@
 
 }
 
-# Curacó
+# Curac?
 2395 = {
     unit = {
         x = 1763.000000
@@ -102029,7 +102034,7 @@
 
 }
 
-# Río Gallegos
+# R?o Gallegos
 2399 = {
     unit = {
         x = 1699.000000
@@ -102076,7 +102081,7 @@
 
 }
 
-# Río Grande
+# R?o Grande
 2400 = {
     text_position = {
         x = 1754.130000
@@ -102447,7 +102452,7 @@
 
 }
 
-# Belém
+# Bel?m
 2410 = {
     unit = {
         x = 2054.000000
@@ -102494,7 +102499,7 @@
 
 }
 
-# Santarém
+# Santar?m
 2411 = {
     unit = {
         x = 1956.000000
@@ -102537,7 +102542,7 @@
 
 }
 
-# Óbidos
+# ?bidos
 2412 = {
     text_position = {
         x = 1946.000000
@@ -102570,7 +102575,7 @@
 
 }
 
-# Marabá
+# Marab?
 2413 = {
     unit = {
         x = 2003.000000
@@ -102608,7 +102613,7 @@
 
 }
 
-# Amapá
+# Amap?
 2414 = {
     unit = {
         x = 1994.000000
@@ -102655,7 +102660,7 @@
 
 }
 
-# Macapá
+# Macap?
 2415 = {
     text_position = {
         x = 1992.300049
@@ -102773,7 +102778,7 @@
 
 }
 
-# Cuiabá
+# Cuiab?
 2418 = {
     text_position = {
         x = 1974.000000
@@ -102793,7 +102798,7 @@
 
 }
 
-# Corumbá
+# Corumb?
 2419 = {
     text_position = {
         x = 1955.000000
@@ -102960,7 +102965,7 @@
 
 }
 
-# São Luís
+# S?o Lu?s
 2424 = {
     unit = {
         x = 2112.000000
@@ -103117,7 +103122,7 @@
 
 }
 
-# Paraíba
+# Para?ba
 2428 = {
     unit = {
         x = 2240.000000
@@ -103419,7 +103424,7 @@
 
 }
 
-# Maceió
+# Macei?
 2434 = {
     unit = {
         x = 2235.000000
@@ -103728,7 +103733,7 @@
 
 }
 
-# Vitória da Conquista
+# Vit?ria da Conquista
 2440 = {
     unit = {
         x = 2161.000000
@@ -103822,7 +103827,7 @@
 
 }
 
-# Sabará
+# Sabar?
 2442 = {
     text_position = {
         x = 2115.000000
@@ -103855,7 +103860,7 @@
 
 }
 
-# Januária
+# Janu?ria
 2443 = {
     text_position = {
         x = 2143.000000
@@ -103969,7 +103974,7 @@
 
 }
 
-# São João del Rey
+# S?o Jo?o del Rey
 2446 = {
     unit = {
         x = 2093.000000
@@ -104114,7 +104119,7 @@
 
 }
 
-# Vitória
+# Vit?ria
 2449 = {
     unit = {
         x = 2174.000000
@@ -104174,7 +104179,7 @@
 
 }
 
-# São Paulo
+# S?o Paulo
 2450 = {
     unit = {
         x = 2072.000000
@@ -104685,7 +104690,7 @@
 
 }
 
-# São Miguel
+# S?o Miguel
 2462 = {
     unit = {
         x = 1983.000000
@@ -108017,7 +108022,7 @@
 
 }
 
-# Forte São Joaquim
+# Forte S?o Joaquim
 2532 = {
     unit = {
         x = 1843.000000
@@ -108717,7 +108722,7 @@
 
 }
 
-# Tarauacá
+# Tarauac?
 2549 = {
     unit = {
         x = 1719.000000
@@ -108775,7 +108780,7 @@
 
 }
 
-# Forte do Príncipe
+# Forte do Pr?ncipe
 2550 = {
     unit = {
         x = 1825.000000
@@ -112433,65 +112438,53 @@
 
 # Ammassalik
 2632 = {
-    unit = {
-        x = 2159.000000
-        y = 2086.000000
-    }
-
     text_position = {
-        x = 2169.000000
-        y = 2098.000000
+        x = 3603.400000
+        y = 1241.640000
     }
 
-    text_scale = 6.299996
-    building_construction = {
-        x = 2143.000000
-        y = 2077.000000
-    }
-
-    military_construction = {
-        x = 2175.000000
-        y = 2086.000000
+    text_rotation = 5.497787
+    text_scale = 2
+    unit = {
+        x = 3609.640000
+        y = 1237.380000
     }
 
     factory = {
-        x = 2142.000000
-        y = 2103.000000
+        x = 3599.380000
+        y = 1248.360000
+    }
+
+    building_construction = {
+        x = 3605.440000
+        y = 1245.420000
+    }
+
+    military_construction = {
+        x = 3608.860000
+        y = 1232.520000
     }
 
     building_position = {
         fort = {
-            x = 2167.000000
-            y = 2066.000000
-        }
-
-        naval_base = {
-            x = 2181.899902
-            y = 2079.399902
+            x = 3607.060000
+            y = 1230.120000
         }
 
         railroad = {
-            x = 2166.000000
-            y = 2099.000000
+            x = 3607.420000
+            y = 1241.280000
         }
 
-    }
-
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 2119.302246
-            y = 2087.599609
+        naval_base = {
+            x = 3602.440000
+            y = 1228.140000
         }
 
     }
 
     building_rotation = {
-        naval_base = 3.926991
+        naval_base = 0.650508
     }
 
 }
@@ -115048,7 +115041,7 @@
 
 }
 
-# Vänern
+# V?nern
 2703 = {
     unit = {
         x = 3016.000000
@@ -115064,7 +115057,7 @@
     text_scale = 2.200000
 }
 
-# Vättern
+# V?ttern
 2704 = {
     text_position = {
         x = 3031.899902
@@ -115091,7 +115084,7 @@
     text_scale = 3.099999
 }
 
-# Ålands Hav
+# ?lands Hav
 2706 = {
     unit = {
         x = 3115.000000
@@ -115168,7 +115161,7 @@
     text_scale = 3.099999
 }
 
-# Öresund
+# ?resund
 2711 = {
     unit = {
         x = 2987.000000
@@ -115200,7 +115193,7 @@
     text_scale = 3.099999
 }
 
-# Peipsi Järv
+# Peipsi J?rv
 2713 = {
     unit = {
         x = 3233.000000
@@ -115689,7 +115682,7 @@
     text_scale = 2.400000
 }
 
-# Gulf of Almería
+# Gulf of Almer?a
 2747 = {
     unit = {
         x = 2778.000000
@@ -118948,7 +118941,7 @@
     text_scale = 4.799998
 }
 
-# Coast of Amapá
+# Coast of Amap?
 2981 = {
     unit = {
         x = 2021.000000
@@ -119043,7 +119036,7 @@
     text_scale = 7.199996
 }
 
-# Baia Paranaguá
+# Baia Paranagu?
 2988 = {
     unit = {
         x = 2040.000000

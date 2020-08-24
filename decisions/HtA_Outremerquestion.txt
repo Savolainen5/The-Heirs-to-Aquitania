@@ -91,6 +91,7 @@ political_decisions = {
 		}
 	}	
 
+	#If Persia wins
 	PER_levant_victory = {
 		picture = "levant_crisis"
 		potential = { 
@@ -234,11 +235,15 @@ political_decisions = {
             PER = {
 				owns = 44
 			}
-			NOT = {
-				has_global_flag = all_persian_ports_taken
+			NOT = { has_global_flag = all_persian_ports_taken }
+			OR = {
+				AND = {
+					ai =  no
+					has_global_flag = player_must_choose_persian_gulf
+				}
 				AND = {
 					ai = yes
-					has_global_flag = player_must_choose_persian_gulf
+					NOT = { has_global_flag = player_must_choose_persian_gulf }
 				}
 			}
         }
@@ -265,11 +270,15 @@ political_decisions = {
             PER = {
 				owns = 10
 			}
-			NOT = {
-				has_global_flag = all_persian_ports_taken
+			NOT = { has_global_flag = all_persian_ports_taken }
+			OR = {
+				AND = {
+					ai =  no
+					has_global_flag = player_must_choose_persian_gulf
+				}
 				AND = {
 					ai = yes
-					has_global_flag = player_must_choose_persian_gulf
+					NOT = { has_global_flag = player_must_choose_persian_gulf }
 				}
 			}
         }
@@ -296,11 +305,15 @@ political_decisions = {
             PER = {
 				owns = 1136
 			}
-			NOT = {
-				has_global_flag = all_persian_ports_taken
+			NOT = { has_global_flag = all_persian_ports_taken }
+			OR = {
+				AND = {
+					ai =  no
+					has_global_flag = player_must_choose_persian_gulf
+				}
 				AND = {
 					ai = yes
-					has_global_flag = player_must_choose_persian_gulf
+					NOT = { has_global_flag = player_must_choose_persian_gulf }
 				}
 			}
         }
@@ -327,11 +340,15 @@ political_decisions = {
             PER = {
 				owns = 8
 			}
-			NOT = {
-				has_global_flag = all_persian_ports_taken
+			NOT = { has_global_flag = all_persian_ports_taken }
+			OR = {
+				AND = {
+					ai =  no
+					has_global_flag = player_must_choose_persian_gulf
+				}
 				AND = {
 					ai = yes
-					has_global_flag = player_must_choose_persian_gulf
+					NOT = { has_global_flag = player_must_choose_persian_gulf }
 				}
 			}
         }
@@ -382,8 +399,6 @@ political_decisions = {
 			919 = { change_province_name = "Yaffa" }
 			920 = { change_province_name = "Ghazze"	}		
         }
-
-        ai_will_do = { factor = 1 }
     }	
 	
 }

@@ -783,7 +783,7 @@ EVTDESC97101_NEWS_LONG;With the military situation becoming increasingly hopeles
 EVTDESC97101_NEWS_MEDIUM;After successive military setbacks, the Shah has had no choice but to accept the demands of France or face internal revolution. The expedition to the Levant has been a resounding success, leaving Great Powers of Europe hungry for their own piece of the Persian Empire.;x
 EVTDESC97101_NEWS_SHORT;With the military situation becoming increasingly hopeless Persia, the Shah has had no choice but to accept the demands of France or face internal revolution. The war is over.;x
 EVTNAME97102;The Treaty of $CAPITAL$;x
-EVTDESC97102;Our defeat in the Levantine War has left us helpless against the imperial ambitions of France. We have no choice but to accept their demands, and hope that the precarious situation in our remaining lands does not spiral into anarchy;x
+EVTDESC97102;Our defeat in the Levantine War has left us helpless against the imperial ambitions of France. We have no choice but to accept their demands, and hope that the precarious situation in our remaining lands does not spiral into anarchy.;x
 EVTDESC97102_NEWS_LONG;The Treaty of $CAPITAL$ - Persia has been decisively defeated by an expedition led by the resurgent France. Now it is up to a conference between the Great European powers to decide the fate of the agonizing Persian Empire, and begin negotations that will decide the future of the Middle East;x
 EVTDESC97102_NEWS_MEDIUM;The Treaty of $CAPITAL$ - Persia has been decisively defeated by an expedition led by the resurgent France.;x
 EVTDESC97102_NEWS_SHORT;The Treaty of $CAPITAL$ - With Persia defeated, the Western Powers now divide the corpse of a once-mighty Empire;x

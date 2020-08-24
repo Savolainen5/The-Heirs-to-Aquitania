@@ -408,12 +408,17 @@ country_event = {
 		add_casus_belli = {
 			target = PER
 			type = liberate_country
-			months = 24
+			months = 2
 		}
 		war = {
 			target = PER
-			attacker_goal = { casus_belli = liberate_country country = SYR }
-			defender_goal = { casus_belli = status_quo }
+			attacker_goal = {
+				casus_belli = liberate_country
+				country = SYR
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
 			call_ally = yes
 		}
 		ai_chance = {

@@ -327,8 +327,8 @@ country_event = {
     }
 }
 
-country_event = {
 #Event to stop separate event wars with PER after FRA has peaced out
+country_event = {
     id = 97101
 
     title = "EVTNAME97101" #The Persian Surrender
@@ -355,10 +355,9 @@ country_event = {
     }
 }
 
-country_event = {
 #Event to unlock decisions to take Persian ports
+country_event = {
     id = 97103
-
     title = "EVTNAME97103"
     desc = "EVTDESC97103"
     picture = "bushire"
@@ -371,7 +370,8 @@ country_event = {
 			tag = FIN
 			has_country_flag = took_persian_port
 		}	
-		war = no
+		#war = no
+		NOT = { war_with = PER }
 		has_global_flag = levant_crisis_over
         PER = {
 			has_country_flag = lost_levantine_war
@@ -389,18 +389,19 @@ country_event = {
 			tag = FRA
 		}
     }
-
-    mean_time_to_happen = {
-        months = 1
-    }
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			year = 1850
+		}
+	}
 
     option = {
         name = "EVT97103OPTA"
         prestige = 5
 		set_country_flag = persian_gulf_negotiations
-        ai_chance = {
-            factor = 100
-        }
     }
 }
 
@@ -450,7 +451,7 @@ country_event = {
 
 country_event = {
 	id = 97106
-	title = "EVTNAME97016" #Persia Caves (for notifying FRA that PER accepted)
+	title = "EVTNAME97106" #Persia Caves (for notifying FRA that PER accepted)
 	desc = "EVTDESC97106"
 	picture = "jer_released"
 	
