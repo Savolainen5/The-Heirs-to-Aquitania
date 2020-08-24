@@ -30,6 +30,15 @@ country_event = {
 				controlled_by = THIS
 			}
 		}
+		OR = {
+			NOT = { has_global_flag = persian_intervention }
+			AND = {
+				has_global_flag = persian_intervention
+				exists = SYR
+				exists = IRQ
+				NOT = { has_global_flag = persian_intervention_FRA }
+			}
+		}
     }
 
     mean_time_to_happen = {
@@ -180,6 +189,12 @@ country_event = {
 				militancy = 5
 			}			
         }
+		FROM = {
+			country_event = {
+				id = 97106
+				days = 1
+			}
+		}
     }
     option = {
         name = "EVT97099OPTB" #Refuse FRA ultimatum
@@ -431,4 +446,18 @@ country_event = {
         name = "EVT97105OPTA" #Sets a global flag indicating that a player has participated in the Persian partitioning
         set_global_flag = player_must_choose_persian_gulf
     }
+}
+
+country_event = {
+	id = 97106
+	title = "EVTNAME97016" #Persia Caves (for notifying FRA that PER accepted)
+	desc = "EVTDESC97106"
+	picture = "jer_released"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Vive la France!"
+		set_global_flag = PER_gave_JER_to_FRA
+	}
 }

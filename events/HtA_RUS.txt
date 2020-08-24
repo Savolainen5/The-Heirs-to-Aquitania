@@ -1049,8 +1049,10 @@ country_event = {
 		}
 		any_pop = {
 			limit = {
-				is_accepted_culture = yes
-				is_primary_culture = yes
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
 			}
 			militancy = 3
 			consciousness = 5

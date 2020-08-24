@@ -317,6 +317,8 @@ country_event = {
 		name = "We have no choice..."
 		prestige = -5
 		FROM = { country_event = 97175 }
+		release = SYR
+		release = IRQ
 		ai_chance = {
 			factor = 30
 		}
@@ -364,10 +366,6 @@ country_event = {
 	option = {
 		name = "Excellent."
 		prestige = 15
-		PER = {
-			release = SYR
-			release = IRQ
-		}
 		create_vassal = SYR
 		diplomatic_influence = {
 			who = SYR
@@ -420,6 +418,10 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 90
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
 		}
 	}
 	
@@ -450,12 +452,12 @@ country_event = {
 	
 	option = {
 		name = "A victory for Christian civilization!"
-		917 = { secede_province = THIS }
-		917 = { secede_province = THIS }
-		918 = { secede_province = THIS }
-		919 = { secede_province = THIS }
-		920 = { secede_province = THIS }
-		921 = { secede_province = THIS }
+		916 = { secede_province = THIS } #Acre
+		917 = { secede_province = THIS } #Jerusalem
+		918 = { secede_province = THIS } #Nablus
+		919 = { secede_province = THIS } #Jaffa
+		920 = { secede_province = THIS } #Gaza
+		#921 = { secede_province = THIS } #Beersheba (owned by Egypt in 1836)
 		prestige = 15
 		scaled_militancy = {
 			factor = -3
@@ -504,6 +506,10 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 90
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
 		}
 	}
 	

@@ -442,7 +442,7 @@ EVTDESC50461;Local Czechs in land we acquired in the Treaty of Szekesfehervar ha
 EVTNAME50462;Prague Supports Partisans;;;;;;;;;x
 EVTDESC50462;Our spies have done some digging after a raid on a partisan hideout turned up some interesting documents. It seems that certain higher-ups in the military and government of the city-state of Prague have been funding these bandits. This is an act of war and must be dealt with.;;;;;;;;;x
 EVTNAME50463;The End of the Hungarian Rebellion;;;;;;;;;;;x
-EVTDESC50463;A jubilant military parade in Budapest./n/n We have defeated the Hungarian rebels. The provisional government they set up in Budapest has been captured and its leaders, among whom was counted Count Orczy, have been executed. The situation has been defused, and there is peace once more in Bohemia.;;;;;;;;;;x
+EVTDESC50463;A jubilant military parade in Budapest.\n\n We have defeated the Hungarian rebels. The provisional government they set up in Budapest has been captured and its leaders, among whom was counted Count Orczy, have been executed. The situation has been defused, and there is peace once more in Bohemia.;;;;;;;;;;x
 EVTNAME50494;Time to Make a Payment;;;;;;;;;;x
 EVTDESC50494;Another year has passed, and Bohemia must now make its annual payment of 5000 to Croatia for the Zadar lease. Only four payments remain.;;;;;;;;;;;x
 EVTDESC50495;Another year has passed, and Bohemia must now make its annual payment of 5000 to Croatia for the Zadar lease. Only three payments remain.;;;;;;;;;;;x
@@ -768,7 +768,7 @@ EVTNAME97097;Enable Story Railroading?;;;;;;;;;;;x
 EVTDESC97097;The story in the Heirs to Aquitània mod has been crafted in such a way that some events simply must happen the way the mod's maker, Savs, intends them to. This is meant to make the sequence of events in the game more challenging (maybe), interesting, and most of all, predictable. He's included this because this mod will be the basis of his megacampaign AAR, and this is part of the story. Anyways, don't select this option if you don't want a game where the outcomes of many major events are already essentially decided.;;;;;;;;;;;;;;x
 EVTNAME97098;Staking our claim;;;;;;;;;x
 EVTDESC97098;There yet remain unclaimed areas of the interior of the Amerigan continent. Our burgeoning population is searching for new opportunities, and have begun to make their way to the uncolonised lands of their own accord, pledging to remain loyal to our government.;;;;;;;;;;;;;x
-EVTNAME97099;Ultimatum from France;;;;;;;;;;;;;;;
+EVTNAME97099;Ultimatum from France;x
 EVTDESC97099;After our refusal to hand over administration of the Levantine provinces of our empire to the Outremer, France has stepped up its aggression and sent us a sternly-worded memorandum. There is no question about it - if we wish to keep control of our Mediterranean coast, we will have to fight for it.;x
 EVT97099OPTA;We cannot afford war with a Western power.;x
 EVT97099OPTB;We shall defend the Holy Land agains the infidels, as did our ancestors!;x
@@ -784,9 +784,9 @@ EVTDESC97101_NEWS_MEDIUM;After successive military setbacks, the Shah has had no
 EVTDESC97101_NEWS_SHORT;With the military situation becoming increasingly hopeless Persia, the Shah has had no choice but to accept the demands of France or face internal revolution. The war is over.;x
 EVTNAME97102;The Treaty of $CAPITAL$;x
 EVTDESC97102;Our defeat in the Levantine War has left us helpless against the imperial ambitions of France. We have no choice but to accept their demands, and hope that the precarious situation in our remaining lands does not spiral into anarchy;x
-EVTDESC97102_NEWS_LONG;The Treaty of $CAPITAL$ - Persia has been decisively defeated by an expedition led by the resurgent France. Now it is up to a conference between the Great European powers to decide the fate of the agonizing Persian Empire, and begin negotations that will decide the future of the Middle East;;;;;;;;;;;;;;;
-EVTDESC97102_NEWS_MEDIUM;The Treaty of $CAPITAL$ - Persia has been decisively defeated by an expedition led by the resurgent France.;;;;;;;;;;;;;;;
-EVTDESC97102_NEWS_SHORT;The Treaty of $CAPITAL$ - With Persia defeated, the Western Powers now divide the corpse of a once-mighty Empire;;;;;;;;;;;;;;;
+EVTDESC97102_NEWS_LONG;The Treaty of $CAPITAL$ - Persia has been decisively defeated by an expedition led by the resurgent France. Now it is up to a conference between the Great European powers to decide the fate of the agonizing Persian Empire, and begin negotations that will decide the future of the Middle East;x
+EVTDESC97102_NEWS_MEDIUM;The Treaty of $CAPITAL$ - Persia has been decisively defeated by an expedition led by the resurgent France.;x
+EVTDESC97102_NEWS_SHORT;The Treaty of $CAPITAL$ - With Persia defeated, the Western Powers now divide the corpse of a once-mighty Empire;x
 EVT97102OPTA;The dismantling of the Persian Empire;x
 EVTNAME97103;The Persian Gulf Ports;x
 EVTDESC97103;The Persian Gulf has traditionally been part of major trade routes connecting Africa, the Near East and the Orient. With the Great Powers of Europe now at the conference table discussing the territorial acquisitions in Persia as part of terms of the treaty, we can decide to make a case for taking a port on the Persian Gulf.;x
@@ -798,8 +798,10 @@ EVTDESC97104_NEWS_LONG; Persia has caved to the demands of the Outremer communit
 EVTDESC97104_NEWS_MEDIUM; Persia has given in to the demands of the Outremer elites, making evident what many already suspected - the great but ossified Persian Empire is slowly but surely crumbling.;x
 EVTDESC97104_NEWS_SHORT; Persia gives in to the colonists - an Outremer state is created in the Levant;;;;;;;;;;;;;;;
 EVTNAME97105;Persian Gulf Negotiations;x
-EVTDESC97105;Diplomats from the European powers that participated in the Persian Expedition now sit down to negotiate the thorny question of the Persian Gulf. All want a piece of the strategic pie, and it appears negotiations will draw out in a quaint villa of newly-reconqured Jerusalem.;x
+EVTDESC97105;Diplomats from the European powers that participated in the Persian Expedition now sit down to negotiate the thorny question of the Persian Gulf. All want a piece of the strategic pie, and it appears negotiations will draw out in a quaint villa of newly-reconqured Jerusalem.\n\nIf you haven't already, choose a port to take, and only then hit OK.;x
 EVT97105OPTA;Vultures circle over Persia;x
+EVTNAME97106;Persia Caves to our Demands;x
+EVTDESC97106;The Shah has accepted our ultimatum and turned the Outremer lands to our control. A most wise decision!;x
 EVTNAME97107;Legacy of the Crusades;x
 EVTDESC97107;In our Levantine possessions live the Outremer people, descendants of the Frankish pilgrims who settled the Holy Land with the establishment of the Crusader states several centuries ago. Having persisted as an affluent community for centuries under Muslim rule, the recent unification of the French motherland has sparked newfound ambitions in the Outremer elite, who are now demanding that they be granted rule over large tracts of the Levantine coast where they hold sway. We could bow down to their demands, risking widespread riots throughout our empire - for this would represent a great loss of face -, or crack down on the Outremer, risking the French reaction.;x
 EVT97107OPTA;Grant self-rule to the Outremer;x

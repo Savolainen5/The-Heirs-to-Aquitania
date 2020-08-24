@@ -162,7 +162,7 @@ political_decisions = {
 		allow = {
 			war = no
 			prestige = 15
-			RUS_1084 = { owned_by = THIS }
+			RUS_1074 = { owned_by = THIS }
 			SIB = {
 				all_core = {
 					owned_by = THIS

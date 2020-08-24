@@ -1,6 +1,11 @@
-political_decisions = {
+#############################################################################
+#																			#
+#       European Establishment of Arab States by ChortlingGnome				#
+#		  Mutually exclusive with the Outremer Question chain				#
+#																			#
+#############################################################################
 
-## European Establishment of Arab States by ChortlingGnome
+political_decisions = {
 	me_intervention = {
 		picture = claim_greater_armenia
 		potential = {
@@ -17,6 +22,13 @@ political_decisions = {
 			is_greater_power = yes
 			capital_scope = { continent = europe }
 			NOT = { has_global_flag = persian_intervention }
+			OR = {
+				NOT = { has_global_flag = outremer_chain_start }
+				AND = {
+					has_global_flag = outremer_chain_start
+					has_global_flag = PER_gave_JER_to_FRA
+				}
+			}
 			PER = {
 				civilized = no
 				any_owned_province = {
@@ -25,12 +37,17 @@ political_decisions = {
 						is_core = IRQ
 					}
 				}
+				OR = {
+					average_militancy = 5
+					num_of_revolts = 1
+					has_recently_lost_war = yes
+				}
 			}
 		}
 		
 		allow = {
 			nationalism_n_imperialism = 1
-			war = no 
+			war = no
 		}
 		
 		effect = {
@@ -76,7 +93,7 @@ political_decisions = {
 		
 		effect = {
 			set_global_flag = persian_intervention_FRA
-			PER = { country_event = 97174 }
+			PER = { country_event = 97174 } #In events/Arabia.txt due to the event numbers it uses
 			prestige = 5
 			badboy = 2
 		}

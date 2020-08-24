@@ -558,7 +558,7 @@ countrywide_famine = {
 
 countrywide_famine_immigrant_push = {
 	immigrant_push = 0.5
-	population_growth = -0.0015
+	population_growth = -0.002
 	pop_consciousness_modifier = 0.075
 	pop_militancy_modifier = 0.05
 	local_RGO_output = -0.05
