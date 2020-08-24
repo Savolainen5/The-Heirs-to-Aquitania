@@ -796,16 +796,16 @@ EVTDESC97104;The wave of nationalism that sweeps Europe with irresistible streng
 EVT97104OPTA;The Persian lion roars its last;x
 EVTDESC97104_NEWS_LONG; Persia has caved to the demands of the Outremer community in the Mediterranean provinces of the Empire, creating a semi-independent Outremer state under only nominal suzerainty of the Persian Shah. The European powers now look at Persia with growing ambition as it becomes apparent that the Shah can no longer control the vast holdings in his possession.;x
 EVTDESC97104_NEWS_MEDIUM; Persia has given in to the demands of the Outremer elites, making evident what many already suspected - the great but ossified Persian Empire is slowly but surely crumbling.;x
-EVTDESC97104_NEWS_SHORT; Persia gives in to the colonists - an Outremer state is created in the Levant;;;;;;;;;;;;;;;
-EVTNAME97105;Persian Gulf Negotiations;x
-EVTDESC97105;Diplomats from the European powers that participated in the Persian Expedition now sit down to negotiate the thorny question of the Persian Gulf. All want a piece of the strategic pie, and it appears negotiations will draw out in a quaint villa of newly-reconqured Jerusalem.\n\nIf you haven't already, choose a port to take, and only then hit OK.;x
-EVT97105OPTA;Vultures circle over Persia;x
+EVTDESC97104_NEWS_SHORT; Persia gives in to the Outremer - a Catholic state is created in the Levant;x
 EVTNAME97106;Persia Caves to our Demands;x
 EVTDESC97106;The Shah has accepted our ultimatum and turned the Outremer lands to our control. A most wise decision!;x
 EVTNAME97107;Legacy of the Crusades;x
 EVTDESC97107;In our Levantine possessions live the Outremer people, descendants of the Frankish pilgrims who settled the Holy Land with the establishment of the Crusader states several centuries ago. Having persisted as an affluent community for centuries under Muslim rule, the recent unification of the French motherland has sparked newfound ambitions in the Outremer elite, who are now demanding that they be granted rule over large tracts of the Levantine coast where they hold sway. We could bow down to their demands, risking widespread riots throughout our empire - for this would represent a great loss of face -, or crack down on the Outremer, risking the French reaction.;x
 EVT97107OPTA;Grant self-rule to the Outremer;x
 EVT97107OPTB;We shall not bend to the demands of these kafirs.;x
+EVTNAME97109;Persian Gulf Negotiations;x
+EVTDESC97109;Diplomats from the European powers that participated in the Persian Expedition now sit down to negotiate the thorny question of the Persian Gulf. All want a piece of the strategic pie, and it appears negotiations will draw out in a quaint villa of newly-reconqured Jerusalem.\n\nIf you haven't already, choose a port to take, and only then hit OK.;x
+EVT97109OPTA;Vultures circle over Persia;x
 EVTNAME97172;Revolt in the Holy Land;x
 EVTDESC97172;The decline of Persia has become increasingly obvious in the last few decades, as the Shah's failure to implement reform has prevented the empire from catching up to its western rivals. Now, frustrated by continued repression and influenced by liberal philosophies emanating from the West, the Arabic-speaking people in the Holy Land and Mesopotamia have begun to agitate against Persian rule. Arabs are now speaking of throwing off the rule of the Shah in favor of establishing their own caliphates, and in many cases have openly attacked regional governors. Ethnic conflict and sectarian conflict in the Middle East is brewing, and it seems that the Persian Empire's days are numbered.;x
 EVTNAME97173;$FROMCOUNTRY$ Supports Arab Rebels;x

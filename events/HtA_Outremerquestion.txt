@@ -369,8 +369,7 @@ country_event = {
 		NOT = {
 			tag = FIN
 			has_country_flag = took_persian_port
-		}	
-		#war = no
+		}
 		NOT = { war_with = PER }
 		has_global_flag = levant_crisis_over
         PER = {
@@ -388,6 +387,7 @@ country_event = {
 			truce_with = PER
 			tag = FRA
 		}
+		NOT = { has_country_flag = persian_gulf_negotiations }
     }
 	
 	mean_time_to_happen = {
@@ -413,7 +413,6 @@ country_event = {
     news_desc_long = "EVTDESC97104_NEWS_LONG"
     news_desc_medium = "EVTDESC97104_NEWS_MEDIUM"
     news_desc_short = "EVTDESC97104_NEWS_SHORT"
-    #picture = "jer_released"
 	major = yes		
     is_triggered_only = yes
 
@@ -429,27 +428,6 @@ country_event = {
 }
 
 country_event = {
-    id = 97105
-    title = "EVTNAME97105" # Player hasn't chosen yet which Persian port to take
-    desc = "EVTDESC97105"
-	fire_only_once = yes
-    picture = "confederation"
-	
-    trigger = {
-        ai = no
-        has_country_flag = persian_gulf_negotiations		
-		NOT = {
-			has_global_flag = all_persian_ports_taken
-		}
-    }	
-
-    option = {
-        name = "EVT97105OPTA" #Sets a global flag indicating that a player has participated in the Persian partitioning
-        set_global_flag = player_must_choose_persian_gulf
-    }
-}
-
-country_event = {
 	id = 97106
 	title = "EVTNAME97106" #Persia Caves (for notifying FRA that PER accepted)
 	desc = "EVTDESC97106"
@@ -461,4 +439,27 @@ country_event = {
 		name = "Vive la France!"
 		set_global_flag = PER_gave_JER_to_FRA
 	}
+}
+
+country_event = {
+    id = 97109
+    title = "EVTNAME97109" # Player hasn't chosen yet which Persian port to take
+    desc = "EVTDESC97109"
+	fire_only_once = yes
+    picture = "confederation"
+	
+    trigger = {
+        ai = no
+        truce_with = PER
+		PER = { has_country_flag = lost_levantine_war }
+		NOT = {
+			has_global_flag = all_persian_ports_taken
+			has_global_flag = player_must_choose_persian_gulf
+		}
+    }	
+
+    option = {
+        name = "EVT97109OPTA" #Sets a global flag indicating that a player has participated in the Persian partitioning
+        set_global_flag = player_must_choose_persian_gulf
+    }
 }

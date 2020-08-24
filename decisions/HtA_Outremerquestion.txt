@@ -228,6 +228,9 @@ political_decisions = {
 		}
 	}
 
+
+	###############          PORTS            ###############
+
     PER_reyshahr_treaty_port = {
         picture = abadan
         potential = {
