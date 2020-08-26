@@ -106,4 +106,71 @@ political_decisions = {
 		}
 	}
 	
+	#ZAC inherits Luzica
+	ZAC_inherits_LUZ = {
+		picture = become_poland
+		potential = {
+			tag = ZAC
+			is_greater_power = yes
+			NOT = { accepted_culture = western_slavic }
+		}
+		allow = {
+			invention = national_fraternity
+			LUZ = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 2
+			inherit = LUZ
+			LUZ = {
+				all_core = {
+					add_core = ZAC
+					secede_province = ZAC
+				}
+			}
+			add_accepted_culture = western_slavic
+		}
+	}
+					
+	#ZAC inherits Ruthenia
+	ZAC_inherits_RUT = {
+		picture = old_vilnius
+		potential = {
+			tag = ZAC
+			is_greater_power = yes
+			NOT = { accepted_culture = ruthenian }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			RUT = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 4
+			inherit = RUT
+			RUT = {
+				all_core = {
+					add_core = ZAC
+					secede_province = ZAC
+				}
+			}
+			add_accepted_culture = ruthenian
+		}
+	}
 }

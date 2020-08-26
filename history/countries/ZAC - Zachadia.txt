@@ -3,7 +3,6 @@ primary_culture = polish
 culture = silesian
 culture = czech
 culture = slovak
-culture = western_slavic
 religion = catholic
 government = hms_government
 plurality = 0.5

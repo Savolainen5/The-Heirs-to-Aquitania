@@ -3,7 +3,6 @@ To Do, v0.36
 Events:
 
 - Springtime of Nations should hit Roman Empire harder?
-- French popular radicalism in Paris that begins uniting. Not really necessary now that France is buffed. Pan-Nationalists are strong, too
 - Event/Decision to try to mediate Germany?
 - Revisit that ability of German states to not attend the Brunswick congress - AI will currently always attend
 - Tweak Bavarian choices for Brunswick Congress so they're better
@@ -15,7 +14,6 @@ Events:
 - What happens with the Hungarian event chain if Bohemia becomes a democracy?
 - Make CBs for war events work so that there's a more elegant solution than reducing infamy
 - Teralarga ideas: see Suggestions
-- French-speaking POPs appeal to united France to help them with Persia, end up partitioning Persia
 - Unequal Treaty events for Nanyue, tweak it for Qin
 - Some kind of country/nationalism for Solelha in Florida
 - Qin civil war of some kind?
@@ -26,7 +24,6 @@ Events:
 Decisions:
 
 - Take a second look at forming Italy and how to do it so that the now-split-off Italian cultures
-- Add decision for ZAC to claim Lusatia and Ruthenia
 - France takes back Challans (La Roche, 437) from AQT
 - Japan claims Ainu Mosir and the northern islands (the latter decision exists already and has merely been disabled)
 - AQT decision reclaim SA colonies if they're lost
@@ -59,6 +56,7 @@ POPs:
 - Remove Andean POPs from the southern part of Inca?
 - Boost POPs of Uganda and Rwanda regions which have had their province size increased?
 - Add some Turkmen folks (maybe minorities) in Syria
+- Similarly to the above, add some sort of Turkic POPs in the Armenia-Persia area to represent remnants of Seljuks
 - Change the French in the Holy Land to Outremer or Levantine or whatever
 - Add more Jews throughout Europe! (Partly done, needs more)
 - Add more minorities in Europe on the other side of borders
@@ -115,11 +113,12 @@ Other:
 - If necessary, add a Cancel Zadar Lease decision for Hungary with the same effects as that for Bohemia
 - Add POP Migration Mod? https://www.reddit.com/r/victoria2/comments/2mtl11/pop_migration_mod_hod
 - Add Better AI Mod?https://forum.paradoxplaza.com/forum/index.php?threads/better-ai-mod.925608/#post-21373359
-- KoJ revived with a reverse oriental crisis over protection of holy sites/lands? (Partially done in 0.36)
+- KoJ revived with a reverse oriental crisis over protection of holy sites/lands? (Partially done in 0.36 - does it need revisiting/refinement?)
 - Fascism happen sooner?
 - More to be done with rebels wanting to break free of Italy in the north?
 - Look into tweaking migration so that it's more likely to happen toward neighbouring countries Dictatorship > Democracy
 - Give Brabant more land/outposts to explain how they got New Caledonia
 - Nerf colonial migration? (There was the case of Blackhog's insane Suez colonial migration)
 - Buff population growth, especially in the new world
+
 Savs, remember that Birth of a Nation is in CleanUp and has the ID 60160
