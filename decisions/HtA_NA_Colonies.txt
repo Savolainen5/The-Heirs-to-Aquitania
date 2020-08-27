@@ -47,7 +47,6 @@ political_decisions = {
 			money = -5000
 			2596 = { secede_province = THIS add_core = THIS }
 			11 = { secede_province = THIS add_core = THIS }
-			12 = { secede_province = THIS add_core = THIS }
 			set_country_flag = colonise_ters_dauror
 		}
 		
@@ -113,9 +112,6 @@ political_decisions = {
 			money = -4500
 			6 = { secede_province = THIS add_core = THIS }
 			7 = { secede_province = THIS add_core = THIS }
-			8 = { secede_province = THIS add_core = THIS }
-			9 = { secede_province = THIS add_core = THIS }
-			10 = { secede_province = THIS add_core = THIS }
 			2598 = { secede_province = THIS add_core = THIS }
 			set_country_flag = colonise_jukuna
 		}
@@ -250,8 +246,8 @@ political_decisions = {
 		effect = {
 			#110 = { secede_province = THIS add_core = THIS }
 			#112 = { secede_province = THIS add_core = THIS }
-			#122 = { secede_province = THIS	add_core = THIS	}
-			#124 = {	secede_province = THIS add_core = THIS }
+			#122 = { secede_province = THIS add_core = THIS }
+			#124 = { secede_province = THIS add_core = THIS }
 			prestige = 1
 			money = -5000
 			SKM_110 = { secede_province = THIS add_core = THIS }

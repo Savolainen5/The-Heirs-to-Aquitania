@@ -411,7 +411,7 @@ political_decisions = {
 		}
 		allow = {
 			RUS = { war_with = SML }
-			SML = { is_our_vassal = THIS }
+			vassal_of = SML
 		}
 		effect = {
 			prestige = 5

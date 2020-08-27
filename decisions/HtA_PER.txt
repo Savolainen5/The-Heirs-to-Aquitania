@@ -11,10 +11,26 @@ political_decisions = {
 		potential = {
 			OR = {
 				SYR = {
-					any_core = { owner = { in_sphere = THIS } }
+					any_core = {
+						owner = {
+							in_sphere = THIS
+							NOT = {
+								tag = ARM
+								tag = PER
+							}
+						}
+					}
 				}
 				IRQ = {
-					any_core = { owner = { in_sphere = THIS } }
+					any_core = {
+						owner = {
+							in_sphere = THIS
+							NOT = {
+								tag = ARM
+								tag = PER
+							}
+						}
+					}
 				}
 				owns = 1755 #Suez
 				neighbour = PER
@@ -42,6 +58,7 @@ political_decisions = {
 					num_of_revolts = 1
 					has_recently_lost_war = yes
 				}
+				NOT = { in_sphere = THIS }
 			}
 		}
 		

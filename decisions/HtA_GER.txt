@@ -494,6 +494,7 @@ political_decisions = {
 			}
 			exists = SAX
 			has_country_flag = claim_empire
+			NOT = { has_country_flag = SAX_annexed_postCongress }
 		}
 		allow = {
 			is_greater_power = yes
@@ -502,10 +503,12 @@ political_decisions = {
 				SAX = { is_vassal = no }
 				SAX = { is_our_vassal = THIS }
 			}
+			neighbour = SAX
 		}
 		effect = {
 			prestige = 2
 			inherit = SAX
+			set_country_flag = SAX_annexed_postCongress
 		}
 	}
 }
