@@ -1026,9 +1026,9 @@ province_event = {				#NB - 97097 is the railroading event that pops at the begi
 				province_id = 119 #Nakota
 				province_id = 121 #Sihasipi
 				province_id = 112 #Pahasasa
-				province_id = 122 #chunkase
+				province_id = 122 #Chunkase
 				province_id = 110 #Quesada
-				province_id = 124 #chasmu Okahmi
+				province_id = 124 #Chasmu Okahmi
 			}
 			NOT = {
 				is_core = SKM
@@ -1075,6 +1075,32 @@ province_event = {				#NB - 97097 is the railroading event that pops at the begi
 			secede_province = THIS
 			add_core = THIS
 		}
+	}
+}
+
+
+#debug event to see if 122 and 124 will change owner via event
+country_event = {
+	id = 9997099
+	title = "The rest of Necen"
+	desc = "For some reason, the game hates Chunkase and Chasmu Okahmi and crashes if it tries to give you those provinces in the decision to colonize Necen. This is the workaround for that. Sorry to ruin your immersion."
+	picture = "pioneer_wagons"
+	
+	trigger = {
+		122 = {
+			empty = yes
+			is_core = THIS
+		}
+		124 = {
+			empty = yes
+			is_core = THIS
+		}
+	}
+	
+	option = {
+		name = "Now back to your regularly scheduled HtA."
+		122 = { secede_province = THIS }
+		124 = { secede_province = THIS }
 	}
 }
 
