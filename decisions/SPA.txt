@@ -185,7 +185,7 @@ political_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				badboy = 0.2
+				badboy = 0.6
 			}
 		}
 	}
@@ -233,8 +233,8 @@ political_decisions = {
 	integrate_navarra = {
 		picture = claim_greater_navarra
 		potential = {
-			tag = HIS 
-			has_country_flag = hispania_by_sword
+			tag = HIS
+			has_global_flag = hispania_by_sword
 			is_our_vassal = NAV 
 			NOT = { has_country_flag = integrated_navarra }
 		}
@@ -261,7 +261,7 @@ political_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				badboy = 0.2
+				badboy = 0.8
 			}
 		}
 	}
@@ -332,7 +332,7 @@ political_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				badboy = 0.5
+				badboy = 0.8
 			}
 		}
 	}
