@@ -63,7 +63,7 @@ Version 0.36 X/Y/20 - The Russias & China Update
 - Added a de-escalation event after the Eyjafjallajokul eruption and subsequent famine which SHOULD cut down on the number of rebels. But expect to see many countries of Europe fall to them still. That's more or less what I want
 - Added lots more soldier and craftsman POPs to normal GPs, did some industrial boosting
 - Story chain for Outremer POPs in Persia to revolt and a strong France to intervene on their behalf (Thanks to capitanloco6)
-- Story chain for Arab/Mashriqi revolts in Persia (Thanks to ChortlingGnome, still a WIP)
+- Story chain for Arab/Mashriqi revolts in Persia (Thanks to ChortlingGnome)
 - Adapted the HPMmm (map modded) fancy map to HtA, made some important province movements (see Map Changes below)
 	- Note: I don't think there are, but there might still be some provinces which lost their port/naval base because of this. Let me know if you find one.
 
@@ -81,6 +81,7 @@ Version 0.36 X/Y/20 - The Russias & China Update
 - The Oheskewen canal now has stricter requirements for construction - you must either own the province yourself, or your vassal must
 - Forming Bohemia-Hungary now removes Bohemia cores
 - Armenia will move its capital to Erivan when it loses Yerzenka
+- Small chain of decisions/events for GNC and SKM to eat CLF
 
 **Events**
 - Expanded Margaria's expansion events to include more commonly-empty provinces
@@ -144,6 +145,7 @@ Version 0.36 X/Y/20 - The Russias & China Update
 - Russian steppe event no longer spams when annexing Smolensk
 - Hispania's OOB works
 - Fixed and greatly improved the German Hegemony CB
+- Fixed the Colonize Necen decision crash
 
 *China/Japan content changelog by /u/chortlinggnome:*
 - added event chain for civil war between Qin and Nanyue, pulling in Qin vassals, Mongolia and Manchuria
