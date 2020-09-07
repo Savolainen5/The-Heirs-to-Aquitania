@@ -165,7 +165,13 @@ political_decisions = {
 		allow = {
 			war = no
 			is_greater_power = yes 
-			is_our_vassal = POR 
+			OR = {	
+				is_our_vassal = POR
+				POR = {
+					in_sphere = THIS
+					is_vassal = no
+				}
+			}
 			NOT = { truce_with = POR }
 			relation = { who = POR value = 150 }
 			revolution_n_counterrevolution = 1

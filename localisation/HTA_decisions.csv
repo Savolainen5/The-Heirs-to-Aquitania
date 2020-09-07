@@ -9,6 +9,8 @@ ANA_claim_victory_title;Claim Victory;;;;;;;;;;x
 ANA_claim_victory_desc;By capturing Constantinople, the seat of the Empire and Georgios, we can end this war and claim the throne. Let Georgios flee if he likes. He who controls the city controls the Empire.;;;;;;;;;x
 annexation_of_saxony_title;The Annexation of Saxony;x
 annexation_of_saxony_desc;Saxony failed to take part in the Brunswick Congress, but they must not be allowed to remain outside the German question. They will join us peacefully, as much for their protection against our neighbors as for the protection of all Germans. If they do not, war is no doubt near for them.;x
+annex_califiana_title;The Problem of Califiana;;;;;;;;;;x
+annex_califiana_desc;All that stands between us and the Pacific is the poor, sparsely settled land of Califiana to our west. Our brothers in Skamisc might join us in taking their lands, if the price is right. Let us approach them and enlist their aid.;;;;;;;;;;x
 annex_provence_title;Annex Prouvença;x
 annex_provence_desc;Amid the background of the continued political and economic dependence of Prouvença upon our country, certain recent events have made it expedient now to formalize its incorporation into the greater Aquitànian political structure. May all of its citizens benefit from this step.;x
 approach_aqt_title;Approach Aquitània;;;;;;;;;x
@@ -33,6 +35,8 @@ buy_aqt_s_ameriga_title;Offer to buy Aquitània's South Amerigan Colonies;;;;;;;;
 buy_aqt_s_ameriga_desc;Aquitània has recently informed us that they are searching for a buyer for their colony of Araguari, comprised of the two intendencies of Porterei and Nova Bordeu.;;;;;;;;;;;;x
 buy_dutch_natal_title;Buy Dutch Natal;;;;;;;;;;;x
 buy_dutch_natal_desc;After the conclusion of the Emden Accords, the cession of Oostkaap to $COUNTRY$ isolated the former territory of the Steenkooler republic of Natal. The Dutch had difficulty administering this territory as resident Zulus began to make trouble. By offering to buy the land and incorporate it into our colonies in South Africa, we can take this problem off of their hands.;;;;;;;;;;x
+califiana_cores_title;Our Claims in the Desert;;;;;;;;;;x
+califiana_cores_desc;The land of Califiana is lightly populated, but full of valuable resources that could propel our country to greatness. Let us stake our claim.;;;;;;;;;;x
 call_brunswick_congress_title;Call the Brunswick Congress of Germans;;;;;;;;x
 call_brunswick_congress_desc;Given the recent Bavarian violation of Mainzer sovereignty, it is clear that the king in Münich does not intend to abide by the terms of the Peace of Augsburg. Therefore, it is time to summon the old allies to a congress to propose a more permanent response to the Bavarian threat - to join forces under one banner and one ruler for the good of all!;;;;;;;;;;x
 call_brunswick_congress2_title;Call the Brunswick Congress of Germans;;;;;;;;x
@@ -177,8 +181,12 @@ form_greater_netherlands_title;Form the Greater Netherlands;;;;;;;;;x
 form_greater_netherlands_desc;Our superiority over Brabant and Wallonia and our elevated position in the world are undisputed. We can use our power to gain political and domestic control over Brabant and Wallonia, and thus form a greater Empire than has been seen in our region for almost a millennium!;;;;;;;;x
 form_mellomamerika_title;Form Mellomamerika;;;;;;;;;;x,,,,
 form_mellomamerika_desc;Our superiority over our other Mellomsk neighbors puts us in a position to form a powerful union of Mellomamerika. Let us embrace our destiny!;;;;;;;;;x,,,,
+form_mellomamerika_without_title;Unify Mellomamerika;;;;;;;;;;x
+form_mellomamerika_without_desc;The small Norwegian settler states of Mellomamerika would be a far more useful ally if united - under our guidance, of course.;;;;;;;;;;x
 form_irakleio_title;Declare the Republic of Irakleio;;;;;;;;x
 form_irakleio_desc;The fortunes of our island trade republic continue to rise, and it is necessary that we no longer be confined to an old name and an old way of thinking. We must restructure our country to better ensure our continued survival and prosperity. Let us rebrand ourselves as the Republic of Irakleio, a truly cosmopolitan country where prosperity, not ethnicity or language, is the deciding factor in a man's worth.;;;;;;;;x
+form_scylfiga_woning_title;An Amerigan Woning;;;;;;;;;;x
+form_scylfiga_woning_desc; Against all odds, Aenglish settlers once carved out homes in the wilderness of western Ameriga. Now we must bring their descendants together under one flag.;;;;;;;;;;x
 form_stellaland_title;Form Stellaland;;;;;;;;;;x
 form_stellaland_desc;With the lands of the Steenkoolers united under our banner, we can seek a greater destiny for everyone under the four stars of our people. Let us never bow to Europeans or Africans.;;;;;;;;;;;;x
 form_zachadia_title;Form Zachadia;;;;;;;;;;;x

@@ -284,7 +284,7 @@ SPA_512 = { 509 510 511 484 485 } #Andalucia
 
 SPA_513 = { 513 514 515 516 517 512 } #Granada
 
-POR_521 = { 521 522 523 520 } #Estremadura
+POR_521 = { 521 522 523 520 } #Estremadura/Now called Beira
 
 POR_525 = { 525 526 527 524 } #Alentejo
 

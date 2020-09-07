@@ -6084,8 +6084,8 @@
     }
 
     factory = {
-        x = 1287.978333
-        y = 1437.568333
+        x = 1280.216667
+        y = 1437.365000
     }
 
     building_construction = {
@@ -6136,8 +6136,8 @@
     }
 
     factory = {
-        x = 1263.000000
-        y = 1424.520000
+        x = 1254.775000
+        y = 1424.138333
     }
 
     building_construction = {
@@ -91667,8 +91667,8 @@
     }
 
     building_construction = {
-        x = 1248.035000
-        y = 1415.271667
+        x = 1233.015000
+        y = 1427.905000
     }
 
     military_construction = {
@@ -91694,6 +91694,16 @@
     }
 
     text_scale = 3.099999
+    unit = {
+        x = 1257.425000
+        y = 1383.995000
+    }
+
+    factory = {
+        x = 1245.199951
+        y = 1389.900024
+    }
+
     building_construction = {
         x = 1263.000000
         y = 1373.000000
@@ -91702,11 +91712,6 @@
     military_construction = {
         x = 1250.900024
         y = 1386.699951
-    }
-
-    factory = {
-        x = 1245.199951
-        y = 1389.900024
     }
 
     building_position = {
@@ -91722,8 +91727,8 @@
 # Matamoros
 2149 = {
     text_position = {
-        x = 1278.199951
-        y = 1365.199951
+        x = 1276.518333
+        y = 1364.928333
     }
 
     text_rotation = 1.221731

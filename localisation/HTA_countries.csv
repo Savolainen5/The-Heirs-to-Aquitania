@@ -559,7 +559,18 @@ SAF_ADJ;Kaapisch;;;;;;;;;x
 SAM;Sapmi;;;;;;;;;;;;;x
 SAM_ADJ;Sapmi;;;;;;;;;;;;;;x
 SCO;Alba;;;;;;;;;;;;;x                                                     
-SCO_ADJ;Albannach;;;;;;;;;;;;;x                                            
+SCO_ADJ;Albannach;;;;;;;;;;;;;x
+SCW;Scylfiga Woning;;;;;;;;;;;;;x 
+SCW_ADJ;Scylfig;;;;;;;;;;;;;x 
+SCW_fascist_dictatorship;The Amerigan Free State;;;;;;;;;;;;;x 
+SCW_proletarian_dictatorship;Scylfig People's Republic;;;;;;;;;;;;;x 
+SCW_conservative;Gesamnungs Meg;;;;;;;;;;;;;x 
+SCW_liberal;Cyreceaps Gemaene;;;;;;;;;;;;;x
+SCW_socialist;Freogans Meg;;;;;;;;;;;;;x 
+SCW_reactionary;Niwe Steorra;;;;;;;;;;;;;x 
+SCW_anarcho_liberal;Freogrund Meg;;;;;;;;;;;;;x 
+SCW_communist;Folcisce Cynewise Meg;;;;;;;;;;;;;x 
+SCW_fascist;Gilmraed Meg;;;;;;;;;;;;;x 
 SHC;Shawnee Confederation;;;;;;;;;;;;;x                                    
 SHC_ADJ;Shawnee;;;;;;;;;;;;;x
 SHC_proletarian_dictatorship;IPRA;;;;;;;;;;;x

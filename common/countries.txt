@@ -50,6 +50,7 @@ MEX		= "countries/Mexico.txt"
 MRG		= "countries/Margaria.txt"
 NHL		= "countries/New Holland.txt"
 QUE		= "countries/Quebec.txt"	#Dabimon
+SCW		= "countries/Scylfiga Woning.txt" #Union of GNC and SKM
 SHC		= "countries/Shawnee Confederation.txt"
 SKM		= "countries/Skamisc.txt"
 SOL		= "countries/Solelha.txt"

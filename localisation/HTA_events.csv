@@ -619,6 +619,10 @@ EVTNAME51002;Margaria Agrees to Buy Solelha;;;;;;;;;x
 EVTDESC51002;They have assented to the price of 25000 and will transfer it to us forthwith.;;;;;;;;;x
 EVTNAME51003;Margaria Declines to Buy Solelha;;;;;;;;;;;x
 EVTDESC51003;Citing financial and political concerns, the Margarian government decided not to buy our colony.;;;;;;;;;;;x
+EVTNAME51004;Pioneers in the Sierra Madre;;;;;;;;;;x
+EVTDESC51004;As our nation expands northward and westward, our brave pioneers have come into conflict several times with Califianan settlers pushing east. In this harsh land, disagreements over the limited water and natural resources available is inevitable. Some in our government have suggested that we should use our military not only to enforce our claims in the Sierra Madre, but to take the sparsely populated land of Califiana for ourselves.;;;;;;;;;;x
+EVTNAME51005;The Ginnaecerisc Proposal;;;;;;;;;;x
+EVTDESC51005;An interesting proposal has come to us from our cousins to the south in Ginnaecer. They report that war with Califiana is looking increasingly likely, and the victor will likely take all of the Amerigan southwest for themselves. If we join Ginnaecer in the coming war, we will likely win - and be entitled to the northern Califianan lands for our troubles!;;;;;;;;;;x
 EVTNAME51200;$FROMCOUNTRY$ Offers to Buy Our Colonies;;;;;;;;;;x
 EVTDESC51200;A delegation from $FROMCOUNTRY$ has proposed to buy our colonies of Porterei and Nova Bordeu. Will we accept their offer?;;;;;;;;;;x
 EVTNAME51201;Aquitània Agrees to the Sale;;;;;;;;;;x

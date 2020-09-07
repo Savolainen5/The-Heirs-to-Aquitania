@@ -1346,6 +1346,7 @@ country_event = {
 			exists = yes
 			is_vassal = no
 		}
+		has_global_flag = railroading_on
 	}
 	mean_time_to_happen = {
 		months = 1

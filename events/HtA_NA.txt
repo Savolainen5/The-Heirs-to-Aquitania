@@ -112,3 +112,266 @@ country_event = {
 		set_global_flag = no_solelha_sale
 	}
 }
+
+
+######### Ginnaecer and Skamisc vs. Califiana ################
+
+#Pioneers in the Sierra Madre
+country_event = {
+	id = 51004
+	title = "EVTNAME51004"
+	desc = "EVTDESC51004" 
+	
+	trigger = {
+		tag = GNC
+		CLF = {
+			has_country_flag = colonisation_finished
+			exists = yes
+		}
+		NOT = { has_global_flag = sierra_troubles }
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+		modifier = {
+			factor = 0.8
+			year = 1845
+		}
+		modifier = {
+			factor = 0.5
+			year = 1855
+		}
+		modifier = {
+			factor = 0.3
+			year = 1865
+		}
+		modifier = {
+			factor = 0.5
+			state_n_government = 1
+		}
+		modifier = {
+			factor = 0.5
+			medicine = 1
+		}
+	}
+	
+	option = {
+		name = "We'll keep an eye on this"
+		relation = {
+			who = CLF
+			value = -50
+		}
+		set_global_flag = sierra_troubles
+	}
+}
+
+#The Ginnaecer proposal
+country_event = {
+	id = 51005
+	title = "EVTNAME51005" 
+	desc = "EVTDESC51005" 
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Accept their offer!"
+		badboy = 10
+		relation = {
+			who = GNC
+			value = 100
+		}
+		create_alliance = GNC
+		GNC = { country_event = 51006 }
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+	
+	option = {
+		name = "We are not warmongers, never!"
+		relation = {
+			who = GNC
+			value = -25
+		}
+		GNC = { country_event = 51007 }
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 100
+				badboy = 0.6
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 51006
+	title = "Skamisc Accepts"
+	desc = "Skamisc has accepted our offer to partition Califiana. Now it is time to fight for new land!"
+	picture = "deliberation"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Let us begin at once!"
+		relation = {
+			who = CLF
+			value = -100
+		}
+		casus_belli = {
+			target = CLF
+			type = conquest
+			months = 24
+		}
+		war = {
+			target = CLF
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = yes
+		}
+		set_country_flag = war_with_clf
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "Let us wait a moment."
+		relation = {
+			who = CLF
+			value = -100
+		}
+		casus_belli = {
+			target = CLF
+			type = conquest
+			months = 24
+		}
+		set_country_flag = war_with_clf
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 51007
+	title = "Skamisc Declines"
+	desc = "The northern cowards declined to take up the sword against Califiana. It seems we are on our own."
+	picture = "deliberation"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "More land for us!"
+		relation = {
+			who = CLF
+			value = -100
+		}
+		casus_belli = {
+			target = CLF
+			type = conquest
+			months = 24
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				brigades_compare = 2
+			}
+		}
+	}
+	
+	option = {
+		name = "Let's give it up."
+		prestige = -10
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = {
+	id = 51008
+	title = "Dividing Up the Land"
+	desc = "After the war, we promised to apportion the former north of Califiana to Skamisc."
+	picture = "Celebration"
+
+	trigger = {
+		tag = GNC
+		has_country_flag = war_with_clf
+		NOT = { exists = CLF }
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "Do it."
+		ai_chance = {
+			factor = 99
+		}
+		MEX_85 = {
+			add_core = SKM
+			secede_province = SKM 
+		}
+		MEX_94 = {
+			add_core = SKM 
+			secede_province = SKM 
+		}
+		country_event = {
+			id = 51009
+			days = 5
+		}
+	}
+	
+	option = {
+		name = "On second thought, how about no."
+		relation = {
+			who = SKM
+			value = -100
+		}
+		leave_alliance = SKM
+		MEX_85 = { 
+			add_core = SKM
+		}
+		MEX_94 = {
+			add_core = SKM 
+		}
+		CLF = {
+			all_core = { add_core = THIS }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+## Should ensure GNC gets cores on all the rest of the land it owns but not SKM's
+country_event = {
+	id = 51009 
+	title = "Our New Land"
+	desc = "We have established our administration in the new territories!"
+	picture = "Celebration"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Wonderful"
+		any_owned = {
+			limit = {
+				is_core = CLF
+			}
+			add_core = THIS 
+		}
+	}
+}
