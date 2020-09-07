@@ -1,0 +1,39 @@
+The Aenglisc language is spoken, obviously, in Aengland as well as its former colonies of Ginnaecer, Skamisc
+and Uilscyr, and to a lesser extent in Gidan and Firgene.
+It is a descendent of OTL Old English / Anglo-Saxon, with much less French influence since William the
+Conqueror never was "the Conqueror" - he lost the Battle of Hastings and retreated to Normandy.
+
+This file is intended to give a guide to meanings and pronunciations. For any people knowledgeable about
+Old English and/or linguistics, this is not meant to be a 100% realistic construction with accurate or
+consistent sound changes, so don't jump down my throat! Many of these are actually unchanged from OTL
+OE anyways.
+
+Letter-sound correspondences which differ from our general English today:
+(Use this website to hear any of these IPA sounds: https://www.ipachart.com/)
+
+a = /ɑ/ almost invariably
+ae = /æ/, roughly like the "a" in our word "cat"
+ea (when a diphthong) = /e/, similar to the final vowel in "play", but without the /ɪ/ at the end
+i = /ɪ/, like the "i" in "hit, bit"
+y = /i/, like the "ee" in "meek"
+u = /u/ or /ʊ/ like in "boot" or "put" respectively
+sc = /ʃ/, our letters "sh"
+h (when not following to a "t") = /x/ or /ç/, similar to how a generic Scotsman might say "Ach!"
+th = /ð/ intervocalically, otherwise /θ/ - the second is the normal English "th" and the first is voiced
+c = /k/ except before /i/ or /ɪ/, in which case it's /tʃ/, like our letters "ch"
+
+Countries, their pronunciations (in IPA then approximated in the ugly American phonetic system) and meanings:
+
+- Aengland - ['æŋlɑnd]
+- Ginnaecer - [dʒɪ'nækɚ] or if you prefer [dʒɪ'neɪkɚ], "Jin-ACK-er"
+		(ɚ is your average American word ending in -er)
+	Ginn - wide/spacious, aecer - field
+- Skamisc - ['skɑmɪʃ] "Skah-mish"
+	Borrowed from local Native Amerigans
+- Gidan - ['gɪdɑn] "Gid-on"
+	- Origin and meaning unknown
+- Firgene - ['fɪɹgɛnə] - roughly "Fearg-en-uh"
+	Likely a conflation of some native word with an Aenglisc word for "mountains"
+- Uilscyr - ['wɪlʃiɹ] - "Will-shear"
+	Uilsc - foreigner (akin to our word "Welsh"), scyr - shire/land -- This because of the significant
+		Francophone and Hispanophone populations in the country

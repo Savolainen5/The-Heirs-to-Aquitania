@@ -226,7 +226,7 @@
 }
 
 #Jan Mayen (60/15 POPS) but actually now Sainte Anne, still owned by NOR
-2135 = {
+3246 = {
 	aristocrats = {
 		culture = norwegian
 		religion = protestant
