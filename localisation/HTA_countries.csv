@@ -276,8 +276,19 @@ HAW_communist;Na'ao'ao Hope Loa;;;;;;;;;;;;;;;x
 HAW_fascist;'O ke Aupuni Hou;;;;;;;;;;;;;;;x
 HAW_liberal_2;Na Kipi Kipi;;;;;;;;;;;;;;;x                                           
 HIS;Hispania;;;;;;;;;;;;;x                                                 
-HIS_ADJ;Hispanian;;;;;;;;;;;;;x                                            
-HNG;Hongsawatoi;;;;;;;;;;;;;;;x;
+HIS_ADJ;Hispanian;;;;;;;;;;;;;x
+HIS_anarcho_liberal;Partido Radical;x
+HIS_communist;Federación Regional;x
+HIS_conservative;Partido Moderado;x
+HIS_conservative_2;Unidad Hispañola;x
+HIS_conservative_3;Unión Nacional;x
+HIS_liberal;Partido Progresista;x
+HIS_liberal_2;Los Unitarios;x
+HIS_liberal_3;Unión Democratica;x
+HIS_reactionary;Alianza Prosperidad;x
+HIS_socialist;Partido Socialista;x
+HIS_fascist;Legión Ibérica;x
+HNG;Hongsawatoi;x
 HNG_ADJ;Mon;;;;;;;;;;;;;;x;
 HNG_proletarian_dictatorship;Mon People's Republic;;;;;;;;;;;;;;;x;
 HNG_bourgeois_dictatorship;Heke;;;;;;;;;;;;;x;

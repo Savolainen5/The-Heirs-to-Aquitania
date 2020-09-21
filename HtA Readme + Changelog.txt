@@ -82,6 +82,7 @@ Version 0.36 X/Y/20 - The Russias & China Update
 - Forming Bohemia-Hungary now removes Bohemia cores
 - Armenia will move its capital to Erivan when it loses Yerzenka
 - Small chain of decisions/events for GNC and SKM to eat CLF
+- Improvements to some NET decisions re: their expansion
 
 **Events**
 - Expanded Margaria's expansion events to include more commonly-empty provinces
@@ -93,13 +94,14 @@ Version 0.36 X/Y/20 - The Russias & China Update
 - PDN can get cores on VEN even if someone snipes Venice first, like Crushric likes to do when playing as BAV
 
 **The world**
-- To get an alliance, you need a minimum 50 relationship with the target country
+- To get an alliance, you need a minimum 50 relationship with the target country ############################################ Maybe actually not working?
 - Added some relationships from the EU3 save
 - Updated some diplomacy
 - Gave some Persian provinces to Azerbaijan to better reflect the state of the world
 - Forum user Discux made tons of new party names for the Amerigas, added them. Thanks!
 - Improved Scandinavian parties per over421's recommendations/suggestions
 - Small party policy changes for Naples/Italy
+- Changed a lot of party names in other parts of the world
 - UBD no longer has Estonian as a primary
 - Updated a bunch of flags, with special thanks to Athemos
 - Italian (that is, south_italian) added as an accepted culture to Sicily

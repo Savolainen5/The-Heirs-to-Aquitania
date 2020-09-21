@@ -188,6 +188,7 @@ political_decisions = {
 			owns = 387
 			NOT = { exists = BRB }
 			NOT = { has_country_flag = flemish_embraced }
+			NOT = { accepted_culture = flemish }
 		}
 		
 		allow = {

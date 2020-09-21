@@ -6,6 +6,7 @@ political_decisions = {
 		potential = {
 			tag = NET
 			NOT = { has_country_flag = zeeland_claimed }
+			379 = { NOT = { is_core = THIS } }
 		}
 		
 		allow = {
@@ -111,6 +112,7 @@ political_decisions = {
 			tag = NET
 			exists = WLL
 			has_country_flag = form_greater_netherlands
+			NOT = { has_country_flag = wallonia_integrated }
 		}
 		
 		allow = {

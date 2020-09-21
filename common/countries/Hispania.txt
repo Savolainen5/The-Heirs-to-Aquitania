@@ -1,9 +1,9 @@
 color = { 231  181  12 }
-proletarian_dictatorship = { 230 5 5}
+proletarian_dictatorship = { 230 5 5 }
 graphical_culture = SpanishGC
 
 party = {
-	name = "SPA_conservative"
+	name = "HIS_conservative"
 	start_date = 1830.1.1
 	end_date = 1854.1.1
 
@@ -17,7 +17,7 @@ party = {
 }
 
 party = {
-	name = "SPA_conservative_2"
+	name = "HIS_conservative_2"
 	start_date = 1854.1.1
 	end_date = 1898.1.1
 
@@ -31,7 +31,7 @@ party = {
 }
 
 party = {
-	name = "SPA_conservative_5"
+	name = "HIS_conservative_3"
 	start_date = 1898.1.1
 	end_date = 2000.1.1
 
@@ -45,7 +45,7 @@ party = {
 }
 
 party = {
-	name = "SPA_reactionary"
+	name = "HIS_reactionary"
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
@@ -59,7 +59,7 @@ party = {
 }
 
 party = {
-	name = "SPA_liberal"
+	name = "HIS_liberal"
 	start_date = 1830.1.1
 	end_date = 1868.1.1
 
@@ -73,7 +73,7 @@ party = {
 }
 
 party = {
-	name = "SPA_liberal_3"
+	name = "HIS_liberal_2"
 	start_date = 1868.1.1
 	end_date = 1903.1.1
 
@@ -87,7 +87,7 @@ party = {
 }
 
 party = {
-	name = "SPA_liberal_5"
+	name = "HIS_liberal_3"
 	start_date = 1903.1.1
 	end_date = 2000.1.1
 
@@ -101,7 +101,7 @@ party = {
 }
 
 party = {
-	name = "SPA_socialist"
+	name = "HIS_socialist"
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
@@ -115,7 +115,7 @@ party = {
 }
 
 party = {
-	name = "SPA_communist"
+	name = "HIS_communist"
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
@@ -129,7 +129,7 @@ party = {
 }
 
 party = {
-	name = "SPA_anarcho_liberal"
+	name = "HIS_anarcho_liberal"
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
@@ -143,7 +143,7 @@ party = {
 }
 
 party = {
-	name = "SPA_fascist"
+	name = "HIS_fascist"
 	start_date = 1905.1.1
 	end_date = 2000.1.1
 

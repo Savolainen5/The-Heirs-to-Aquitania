@@ -24,16 +24,16 @@ c = /k/ except before /i/ or /ɪ/, in which case it's /tʃ/, like our letters "c
 
 Countries, their pronunciations (in IPA then approximated in the ugly American phonetic system) and meanings:
 
-- Aengland - ['æŋlɑnd]
+- Aengland - ['æŋlɑnd]. Demonym Aenglisc is thus /'æŋlɪʃ/ (similar to the pronunciation of "anguish", but, ya know, with an L)
 - Ginnaecer - [dʒɪ'nækɚ] or if you prefer [dʒɪ'neɪkɚ], "Jin-ACK-er"
 		(ɚ is your average American word ending in -er)
 	Ginn - wide/spacious, aecer - field
-- Skamisc - ['skɑmɪʃ] "Skah-mish"
+- Skamisc - ['skɑmɪʃ] "SKAH-mish"
 	Borrowed from local Native Amerigans
-- Gidan - ['gɪdɑn] "Gid-on"
-	- Origin and meaning unknown
-- Firgene - ['fɪɹgɛnə] - roughly "Fearg-en-uh"
+- Gidan - ['gɪdɑn] "GID-on"
+	- Origin and meaning unclear
+- Firgene - ['fɪɹgɛnə] - roughly "FEARG-en-uh"
 	Likely a conflation of some native word with an Aenglisc word for "mountains"
-- Uilscyr - ['wɪlʃiɹ] - "Will-shear"
+- Uilscyr - ['wɪlʃiɹ] - "WILL-shear"
 	Uilsc - foreigner (akin to our word "Welsh"), scyr - shire/land -- This because of the significant
 		Francophone and Hispanophone populations in the country

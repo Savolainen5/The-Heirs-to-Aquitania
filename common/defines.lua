@@ -691,8 +691,9 @@ pops = {
 	LARGE_POPULATION_INFLUENCE_PENALTY_CHUNK = 250000,
 },
 
-ai = {
-	COLONY_WEIGHT = 5.0, -- ai weight for colonising
+ai =
+{
+	COLONY_WEIGHT = 5, -- ai weight for colonising
 	ADMINISTRATOR_WEIGHT = 10.0, -- ai weight for new bureaucrat
 	INDUSTRYWORKER_WEIGHT = 10.0, -- ai weight for new industry workers
 	EDUCATOR_WEIGHT = 10.0, -- ai weigth for new clergy
