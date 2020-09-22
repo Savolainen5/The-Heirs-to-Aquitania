@@ -66,9 +66,9 @@ province_event = {
 	trigger = {
 		year = 1848
 		or = {
-			province_id = 88			# Mariposa
-			province_id = 2142			# Chihuahua
-			province_id = 2599			# Fairbanks
+			province_id = 88			# Mariposa/Fortaleza Alta
+			province_id = 2142			# Chihuahua/Cicimecas
+			province_id = 2599			# Fairbanks/Santa Ana
 		}
 		not = { trade_goods = precious_metal }
 	}

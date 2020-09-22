@@ -120,5 +120,6 @@ Other:
 - Give Brabant more land/outposts to explain how they got New Caledonia
 - Nerf colonial migration? (There was the case of Blackhog's insane Suez colonial migration)
 - Buff population growth, especially in the new world
+- If more iron is needed, add the Alegria iron mine to prov2442 (Monduroi) in USR
 
 Savs, remember that Birth of a Nation is in CleanUp and has the ID 60160

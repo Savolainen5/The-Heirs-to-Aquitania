@@ -9,11 +9,13 @@ consistent sound changes, so don't jump down my throat! Many of these are actual
 OE anyways.
 
 Letter-sound correspondences which differ from our general English today:
-(Use this website to hear any of these IPA sounds: https://www.ipachart.com/)
+	Symbols within /slashes/ are in the International Phonetic Alphabet (IPA) (with broad transcription, loosely used).
+	Use this website to hear any of these IPA sounds: https://www.ipachart.com/
 
 a = /ɑ/ almost invariably
 ae = /æ/, roughly like the "a" in our word "cat"
 ea (when a diphthong) = /e/, similar to the final vowel in "play", but without the /ɪ/ at the end
+o = /o/ or /ɔ/, but not /oʊ/ as some will be tempted to say
 i = /ɪ/, like the "i" in "hit, bit"
 y = /i/, like the "ee" in "meek"
 u = /u/ or /ʊ/ like in "boot" or "put" respectively
@@ -22,12 +24,16 @@ h (when not following to a "t") = /x/ or /ç/, similar to how a generic Scotsman
 th = /ð/ intervocalically, otherwise /θ/ - the second is the normal English "th" and the first is voiced
 c = /k/ except before /i/ or /ɪ/, in which case it's /tʃ/, like our letters "ch"
 
-Countries, their pronunciations (in IPA then approximated in the ugly American phonetic system) and meanings:
+Countries, their pronunciations (in narrow transcription IPA, then approximated in the ugly American phonetic system) and meanings:
 
 - Aengland - ['æŋlɑnd]. Demonym Aenglisc is thus /'æŋlɪʃ/ (similar to the pronunciation of "anguish", but, ya know, with an L)
 - Ginnaecer - [dʒɪ'nækɚ] or if you prefer [dʒɪ'neɪkɚ], "Jin-ACK-er"
 		(ɚ is your average American word ending in -er)
 	Ginn - wide/spacious, aecer - field
+- Scylfiga Woning - ['ʃilfɪgɑ wonɪŋ] - "SHE'LL-fig-ah wo-ning" (NB - "woning" does not rhyme with "moaning". The o is either
+										a proper /o/ or an /ɔ/ like in the standard British pronunciation of "cot")
+	Scylfiga - rocky (plural, genitive), Woning - union
+		Thus this is to be interpreted as "Union of the Rockies" - this is the formable union of Skamisc and Ginnaecer
 - Skamisc - ['skɑmɪʃ] "SKAH-mish"
 	Borrowed from local Native Amerigans
 - Gidan - ['gɪdɑn] "GID-on"
