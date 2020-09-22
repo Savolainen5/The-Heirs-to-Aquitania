@@ -267,20 +267,41 @@ migration_target =
 	}
 	
 	modifier = {
-		factor = 0.6
-		terrain = mountain
-	}
-	modifier = {
 		factor = 0.1
-		terrain = desert
+		OR = {
+			terrain = desert
+			terrain = arctic
+		}
+	}
+	modifier = {
+		factor = 0.3
+		OR = {
+			terrain = coastal_desert
+			terrain = coral_island
+		}
 	}
 	modifier = {
 		factor = 0.6
-		terrain = marsh
+		OR = {
+			terrain = marsh
+			terrain = mountain
+			terrain = semidesert
+			terrain = boreal
+		}
 	}
 	modifier = {
-		factor = 0.1
-		terrain = arctic
+		factor = 0.7
+		OR = {
+			terrain = dryhills
+			terrain = forest
+		}
+	}
+	modifier = {
+		factor = 0.8
+		OR = {
+			terrain = small_island
+			terrain = new_world_small_island
+		}
 	}
 	modifier = {
 		factor = 2

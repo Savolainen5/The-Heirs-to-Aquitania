@@ -82,6 +82,7 @@ Map:
 - Mess with overall region/province shapes in Africa so they're less OTL-y
 - Do some province reshaping and add another province in the border region between AQT and NAV
 - Make provinces conform better to new RDS rivers. Especially Khiva-Persia
+- Fix the hill terrain - Why doesn't it WAD? Why doesn't it even exist? How the heck does the terrain sheet work, anyways? Should some other terrain map be brought in and adapted to the HtA map?
 
 Flags: More about this can be found in the "List of small things to be done" on the forum (https://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-5#post-20555393)
 
@@ -98,8 +99,7 @@ Other:
 - FIX THE BLOODY ECONOMY - remember the guy who was a GP Dabimon and had a REALLY hard time gathering goods for military?
 	- Incorporate this patch for the interest bug: https://forum.paradoxplaza.com/forum/threads/global-event-to-force-rax-refunds.1377441/ and/or https://forum.paradoxplaza.com/forum/threads/does-the-national-bank-still-have-the-interest-bug.1393731/
 - Add silk/wine-related industry to PRE
-- One day in the future: Incorporate (some of?) PDM. I want spices right now, but maybe in the future when I have a better computer that can handle it, I'll maybe incorporate it for a bit more variety and closer realism
-	- Spices for Indonesia would be nice anyways
+- One day in the future: Incorporate (some of?) PDM MAYBE - Spices for Indonesia would be nice anyways
 - Nerf nationalist/pan-nationalist rebels somehow - Especially German pan-nationalists 
 - French general staff - special political leader as a buff for them (already added a strong attack general)
 - Factionalism in the Philippines (Panaja) with several different states on different islands fighting each other, either during or after Dutch rule
@@ -121,5 +121,6 @@ Other:
 - Nerf colonial migration? (There was the case of Blackhog's insane Suez colonial migration)
 - Buff population growth, especially in the new world
 - If more iron is needed, add the Alegria iron mine to prov2442 (Monduroi) in USR
+- Nerf migration to CLF and SKM due to their remoteness? Necessary? Too realistic?
 
 Savs, remember that Birth of a Nation is in CleanUp and has the ID 60160
