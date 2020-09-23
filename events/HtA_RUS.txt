@@ -319,6 +319,7 @@ country_event = {
 			}
 			militancy = 3
 			consciousness = 4
+			reduce_pop = 0.95
 		}
 		leadership = -5
 		
@@ -332,7 +333,7 @@ country_event = {
 	}
 }
 
-#Backlash over regent choice
+#The coup is averted
 country_event = {
 	id = 50357
 	title = "EVTNAME50357"
@@ -365,6 +366,7 @@ country_event = {
 			}
 			militancy = -3
 			consciousness = -4
+			reduce_pop = 0.95
 		}		
 		leadership = -10
 	}

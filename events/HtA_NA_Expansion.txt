@@ -39,7 +39,7 @@ country_event = {
 			year = 1845
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.6
 			year = 1860
 		}
 		modifier = {
@@ -48,7 +48,22 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.75
+			nationalism_n_imperialism = 1
+		}
+		modifier = {
+			factor = 0.75
 			medicine = 1
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				SKM = { has_country_flag = colonisation_finished }
+				CLF = { has_country_flag = colonisation_finished }
+				GNC = { has_country_flag = colonisation_finished }
+				MRG = { has_country_flag = colonisation_finished }
+				SHC = { has_country_flag = colonisation_finished }
+				QUE = { has_country_flag = colonisation_finished }
+			}
 		}
 	}
 	
@@ -274,16 +289,12 @@ country_event = {
 	mean_time_to_happen = {
 		months = 18
 		modifier = {
-			factor = 0.8
+			factor = 0.75
 			year = 1845
 		}
 		modifier = {
-			factor = 0.75
-			year = 1855
-		}
-		modifier = {
-			factor = 0.75
-			year = 1865
+			factor = 0.6
+			year = 1860
 		}
 		modifier = {
 			factor = 0.75
@@ -291,7 +302,22 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.75
+			nationalism_n_imperialism = 1
+		}
+		modifier = {
+			factor = 0.75
 			medicine = 1
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				SKM = { has_country_flag = colonisation_finished }
+				CLF = { has_country_flag = colonisation_finished }
+				GNC = { has_country_flag = colonisation_finished }
+				MRG = { has_country_flag = colonisation_finished }
+				SHC = { has_country_flag = colonisation_finished }
+				QUE = { has_country_flag = colonisation_finished }
+			}
 		}
 	}
 	
@@ -457,16 +483,35 @@ country_event = {
 	mean_time_to_happen = {
 		months = 18
 		modifier = {
-			factor = 0.8
+			factor = 0.75
 			year = 1845
 		}
 		modifier = {
+			factor = 0.6
+			year = 1860
+		}
+		modifier = {
 			factor = 0.75
-			year = 1855
+			state_n_government = 1
+		}
+		modifier = {
+			factor = 0.75
+			nationalism_n_imperialism = 1
+		}
+		modifier = {
+			factor = 0.75
+			medicine = 1
 		}
 		modifier = {
 			factor = 0.5
-			state_n_government = 1
+			OR = {
+				SKM = { has_country_flag = colonisation_finished }
+				CLF = { has_country_flag = colonisation_finished }
+				GNC = { has_country_flag = colonisation_finished }
+				MRG = { has_country_flag = colonisation_finished }
+				SHC = { has_country_flag = colonisation_finished }
+				QUE = { has_country_flag = colonisation_finished }
+			}
 		}
 	}
 	
@@ -568,18 +613,37 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 24
+		months = 18
 		modifier = {
 			factor = 0.75
 			year = 1845
 		}
 		modifier = {
+			factor = 0.6
+			year = 1860
+		}
+		modifier = {
 			factor = 0.75
-			year = 1855
+			state_n_government = 1
+		}
+		modifier = {
+			factor = 0.75
+			nationalism_n_imperialism = 1
+		}
+		modifier = {
+			factor = 0.75
+			medicine = 1
 		}
 		modifier = {
 			factor = 0.5
-			state_n_government = 1
+			OR = {
+				SKM = { has_country_flag = colonisation_finished }
+				CLF = { has_country_flag = colonisation_finished }
+				GNC = { has_country_flag = colonisation_finished }
+				MRG = { has_country_flag = colonisation_finished }
+				SHC = { has_country_flag = colonisation_finished }
+				QUE = { has_country_flag = colonisation_finished }
+			}
 		}
 	}
 	
@@ -689,16 +753,35 @@ country_event = {
 	mean_time_to_happen = {
 		months = 18
 		modifier = {
-			factor = 0.8
+			factor = 0.75
 			year = 1845
 		}
 		modifier = {
-			factor = 0.5
-			year = 1855
+			factor = 0.6
+			year = 1860
+		}
+		modifier = {
+			factor = 0.75
+			state_n_government = 1
+		}
+		modifier = {
+			factor = 0.75
+			nationalism_n_imperialism = 1
+		}
+		modifier = {
+			factor = 0.75
+			medicine = 1
 		}
 		modifier = {
 			factor = 0.5
-			state_n_government = 1
+			OR = {
+				SKM = { has_country_flag = colonisation_finished }
+				CLF = { has_country_flag = colonisation_finished }
+				GNC = { has_country_flag = colonisation_finished }
+				MRG = { has_country_flag = colonisation_finished }
+				SHC = { has_country_flag = colonisation_finished }
+				QUE = { has_country_flag = colonisation_finished }
+			}
 		}
 	}
 	
@@ -821,16 +904,35 @@ country_event = {
 	mean_time_to_happen = {
 		months = 18
 		modifier = {
-			factor = 0.8
+			factor = 0.75
 			year = 1845
 		}
 		modifier = {
-			factor = 0.5
-			year = 1855
+			factor = 0.6
+			year = 1860
+		}
+		modifier = {
+			factor = 0.75
+			state_n_government = 1
+		}
+		modifier = {
+			factor = 0.75
+			nationalism_n_imperialism = 1
+		}
+		modifier = {
+			factor = 0.75
+			medicine = 1
 		}
 		modifier = {
 			factor = 0.5
-			state_n_government = 1
+			OR = {
+				SKM = { has_country_flag = colonisation_finished }
+				CLF = { has_country_flag = colonisation_finished }
+				GNC = { has_country_flag = colonisation_finished }
+				MRG = { has_country_flag = colonisation_finished }
+				SHC = { has_country_flag = colonisation_finished }
+				QUE = { has_country_flag = colonisation_finished }
+			}
 		}
 	}
 	
@@ -1075,6 +1177,59 @@ province_event = {				#NB - 97097 is the railroading event that pops at the begi
 			secede_province = THIS
 			add_core = THIS
 		}
+	}
+}
+
+#debug event to assign the colonisation_finished flag if it somehow didn't get assigned
+country_event = {
+	id = 9997098
+	title = "Colonization Complete"
+	desc = "There is no longer any unclaimed land near our borders that our people will happily settle. Let us focus now on populating such lands as we hold, and civilizing them for future generations."
+	picture = "pioneer_wagons"
+	
+	trigger = {
+		OR = {
+			AND = {
+				tag = SKM
+				owns = 29
+				NOT = { has_country_flag = colonisation_finished }
+			}
+			AND = {
+				tag = CLF
+				owns = 107
+				NOT = { has_country_flag = colonisation_finished }
+			}
+			AND = {
+				tag = GNC
+				owns = 125
+				NOT = { has_country_flag = colonisation_finished }
+			}
+			AND = {
+				tag = MRG
+				owns = 151
+				NOT = { has_country_flag = colonisation_finished }
+			}
+			AND = {
+				tag = SHC
+				owns = 162
+				NOT = { has_country_flag = colonisation_finished }
+			}
+			AND = {
+				tag = QUE
+				owns = 154
+				NOT = { has_country_flag = colonisation_finished }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Very well."
+		prestige = 1
+		set_country_flag = colonisation_finished
 	}
 }
 

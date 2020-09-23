@@ -84,7 +84,7 @@ country_event = {
 		LIT = {
 			country_event = {
 				id = 51453
-				days = 3
+				days = 10
 			}
 		}
 	}
@@ -277,6 +277,7 @@ country_event = {
 		name = "At long last!"
 		inherit = LIT
 		prestige = 5
+		add_accepted_culture = lithuanian
 		clr_country_flag = window_to_the_west_LIT
 		set_country_flag = wttwLIT_concluded
 	}
@@ -290,8 +291,8 @@ country_event = {
 #$FROM_COUNTRY$ and the Window to the West
 country_event = {
 	id = 51457
-	title = "EVTNAME51457"
-	desc = "EVTDESC51457"
+	title = "EVTNAME51450"
+	desc = "EVTDESC51450"
 	picture = "riga"
 	
 	is_triggered_only = yes
@@ -333,8 +334,8 @@ country_event = {
 
 country_event = {
 	id = 51458
-	title = "EVTNAME51458"
-	desc = "EVTDESC51458"
+	title = "EVTNAME51451"
+	desc = "EVTDESC51451"
 	picture = "riga"
 	
 	trigger = {
@@ -364,7 +365,7 @@ country_event = {
 		LAT = {
 			country_event = {
 				id = 51460
-				days = 1
+				days = 10
 			}
 		}
 		
@@ -438,8 +439,8 @@ country_event = {
 #Imposition of puppet status
 country_event = {
 	id = 51460
-	title = "EVTNAME51461"
-	desc = "EVTDESC51461"
+	title = "EVTNAME51453"
+	desc = "EVTDESC51453"
 	picture = "deliberation"
 	
 	is_triggered_only = yes
@@ -468,8 +469,8 @@ country_event = {
 #Notification of success in the above
 country_event = {
 	id = 51462
-	title = "EVTNAME51462"
-	desc = "EVTDESC51462"
+	title = "EVTNAME51454"
+	desc = "EVTDESC51454"
 	picture = "deliberation"
 	
 	is_triggered_only = yes
@@ -483,8 +484,8 @@ country_event = {
 #Notification of rebellion in the above
 country_event = {
 	id = 51463
-	title = "EVTNAME51463"
-	desc = "EVTDESC51463"
+	title = "EVTNAME51455"
+	desc = "EVTDESC51455"
 	picture = "crisis_revolution_enabled"
 	
 	is_triggered_only = yes
@@ -564,6 +565,7 @@ country_event = {
 		name = "At long last!"
 		inherit = LAT
 		prestige = 5
+		add_accepted_culture = latvian
 		clr_country_flag = window_to_the_west_LAT
 		set_country_flag = wttwLAT_concluded
 	}

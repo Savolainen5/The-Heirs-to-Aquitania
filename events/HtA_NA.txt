@@ -130,7 +130,13 @@ country_event = {
 		}
 		NOT = { has_global_flag = sierra_troubles }
 		year = 1860
-		iron_railroad = 1
+		OR = {
+			iron_railroad = 1
+			AND = {
+				ai = yes
+				year = 1868
+			}
+		}
 	}
 	
 	mean_time_to_happen = {

@@ -1,20 +1,20 @@
 army = {
-	name = "Armée d'Haiti"
+	name = "Firgens Here"
 	location = 2215
 	regiment = {
-		name= "1. Infanterie"
+		name= "1. Futshere"
 		type = irregular
 		home = 2213
 	}
 
 	regiment = {
-		name= "2. Infanterie"
+		name= "2. Futshere"
 		type = irregular
 		home = 2213
 	}
 
 	regiment = {
-		name= "3. Infanterie"
+		name= "3. Futshere"
 		type = irregular
 		home = 2215
 	}
