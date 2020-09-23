@@ -215,12 +215,14 @@ form_scylfiga_woning = {
 				neighbour = GNC
 			}
 		}
+		GNC = { has_country_flag = colonisation_finished has_country_flag = war_with_clf }
+		SKM = { has_country_flag = colonisation_finished }
+		#CLF = { exists = no } #There's a decision to take it later
 	}
 	
 	allow = {
 		war = no
-		romanticism = 1
-		nationalism_n_imperialism = 1
+		steel_railroad = 1
 		SKM = {
 			OR = {
 				in_sphere = THIS
