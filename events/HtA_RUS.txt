@@ -700,25 +700,15 @@ country_event = {
 	
 	option = {
 		name = "Sign the treaty and return the territory to Poland."
-		any_owned = {
-			limit = {
-				OR = {
-					province_id = 707
-					province_id = 719
-					province_id = 936
-					province_id = 937
-				}
-			}
-			secede_province = POL
-			remove_core = THIS
-			add_core = POL
-		}
 		prestige = -20
 		any_pop = {
 			militancy = 1
 		}
 		POL = {
-			country_event = 50381
+			country_event = {
+				id = 50381
+				days = 2
+			}
 		}
 		
 		ai_chance = {
@@ -735,10 +725,10 @@ country_event = {
 		POL = {
 			country_event = {
 				id = 50382
-				days = 1
+				days = 2
 			}
 		}
-		prestige = 1
+		prestige = 2
 		
 		ai_chance = {
 			factor = 50
@@ -759,7 +749,22 @@ country_event = {
 		name = "Excellent!"
 		prestige = 10
 		money = -10000
-		SML = { money = 10000 }
+		SML = {
+			money = 10000
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 707
+						province_id = 719
+						province_id = 936
+						province_id = 937
+					}
+				}
+				secede_province = POL
+				remove_core = THIS
+				add_core = POL
+			}
+		}
 		any_pop = {
 			limit = {
 				OR = {
@@ -1041,6 +1046,7 @@ country_event = {
 		name = "This bodes ill."
 		prestige = -10
 		set_country_flag = lost_RUS_war
+		war_exhaustion = 10
 		FROM = {
 			country_event = {
 				id = 50387 #$FROMCOUNTRY$ chastened
@@ -1062,8 +1068,12 @@ country_event = {
 					is_primary_culture = yes
 				}
 			}
-			militancy = 3
-			consciousness = 5
+			militancy = 5
+			consciousness = 8
+		}
+		add_country_modifier = {
+			name = military_strife
+			duration = 730
 		}
 	}
 }
@@ -1338,6 +1348,39 @@ country_event = {
 		set_country_flag = no_central_asian_annexation
 		ai_chance = {
 			factor = 0
+		}
+	}
+}
+
+#To add more negative modifiers to SML when they fight RUS
+country_event = {
+	id = 50395
+	title = "EVTNAME50395"
+	desc = "EVTDESC50395"
+	picture = "january_uprising"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = lost_RUS_war
+		OR = {
+			war_with = RUS
+			war_with = SML
+		}
+		NOT = {
+			has_country_modifier = military_strife
+		}
+	}
+	
+	#mean_time_to_happen = {
+	#	months = 1
+	#}
+	
+	option = {
+		name = "Courage, lads!"
+		add_country_modifier = {
+			name = military_strife
+			duration = 365
 		}
 	}
 }

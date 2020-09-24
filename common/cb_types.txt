@@ -4860,7 +4860,7 @@ russia_hegemony = {
 	break_truce_militancy_factor = 1
 	truce_months = 0
 	
-	always = no
+	always = yes
 	
 	good_relation_prestige_factor = 1
 	good_relation_infamy_factor = 1
@@ -4939,7 +4939,8 @@ russia_annex = {
 	prestige_factor = 5
 	peace_cost_factor = 0.7
 	penalty_factor = 1
-	always = no
+	
+	always = yes
 
 	break_truce_prestige_factor = 5
 	break_truce_infamy_factor = 2
@@ -4958,8 +4959,8 @@ russia_annex = {
 			THIS = { tag = SML has_country_flag = won_RUS_war }
 		}
 		OR = {
-			tag = RUS
-			tag = SML
+			AND = { tag = RUS has_country_flag = lost_RUS_war }
+			AND = { tag = SML has_country_flag = lost_RUS_war }
 		}
 		THIS = {
 			NOT = { has_country_modifier = punitive_effects }

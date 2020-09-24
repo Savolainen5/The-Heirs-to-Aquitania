@@ -45,7 +45,7 @@ political_decisions = {
 			SML = {
 				country_event = {
 					id = 50380 #in HtA_RUS
-					days = 1
+					days = 4
 				}
 			}
 			set_country_flag = demanded_brest

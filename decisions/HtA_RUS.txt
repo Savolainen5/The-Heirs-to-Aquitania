@@ -457,6 +457,24 @@ political_decisions = {
 		}
 	}
 	
+	#Debug-type decision to make sure that a puppet Hetmanate is allied to RUS
+	hta_DON_ally_RUS = {
+		potential = {
+			tag = DON
+			exists = yes
+			ai = yes
+			vassal_of = RUS
+			NOT = { alliance_with = RUS }
+			exists = SML
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			create_alliance = RUS
+		}
+	}
+	
 	#Annex the Hetmanate
 	yoke_the_tatars = {
 		picture = enslave_the_undesireables

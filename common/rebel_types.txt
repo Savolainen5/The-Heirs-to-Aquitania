@@ -2268,7 +2268,7 @@ russian_rebels = {
 
 		
 		modifier = {
-			factor = 30
+			factor = 100
 			country = {
 				has_country_flag = lost_RUS_war
 			}
@@ -2356,7 +2356,7 @@ russian_rebels = {
 	}
 	
 	demands_enforced_effect = {
-		any_pop = { militancy = -6 }
+		any_pop = { militancy = -7 }
 		random_country = {
 			limit = {
 				culture = russian
@@ -2575,7 +2575,7 @@ indian_nationalists = {
 }
 
 ###################################
-# Liberal ("Jacobins")
+# Liberal ("Jacobins"/"Albesans") #
 ###################################
 liberal_rebels = {
 	icon = 4
@@ -2652,6 +2652,10 @@ liberal_rebels = {
 		modifier = {
 			factor = 1.5
 			has_country_modifier = global_liberal_agitation
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = lost_RUS_war
 		}
 	}
 	

@@ -7,38 +7,37 @@ country_event = {
 	id = 50001
 	title = "EVTNAME50001"
 	desc = "EVTDESC50001"
-	picture = "famine"
+	major = yes
+	fire_only_once = yes
 
 	trigger = {
+		tag = ICL
 		year = 1837
 		has_country_flag = volcano_path
-		NOT = { has_country_flag = european_famine }
-		NOT = { has_country_flag = european_famine_weathered }
-		NOT = { year = 1839 }
 	}
 
 	mean_time_to_happen = {
-		months = 3
+		months = 9
 	}
 
 	option = {
-		name = "The wine will be poor this year, too."
-		add_country_modifier = {
-				name = countrywide_famine
-				duration = 480
-			}
-		any_owned = {
+		name = "Hopefully."
+		any_country = {
 			limit = {
-				continent = europe
+				has_country_flag = volcano_path
 			}
-			add_province_modifier = {
-				name = countrywide_famine_immigrant_push
-				duration = 450
+			country_event = {
+				id = 50817
+				days = 2
 			}
 		}
-		set_country_flag = european_famine
+		add_country_modifier = {
+				name = countrywide_famine
+				duration = 120
+		}
 	}
 }
+
 
 #1500 years of Venice
 #Credit to vyshan for the idea
@@ -337,7 +336,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 7
+		months = 2
 	}
 	
 	option = {
@@ -492,7 +491,7 @@ country_event = {
 	}
 }
 
-#MEc wins the bet
+#MEC wins the bet
 country_event = {
 	id = 50815
 	title = "EVTNAME50815"
@@ -541,3 +540,31 @@ country_event = {
 		name = "He always was a gambler."
 	}
 }
+
+#Ejyafjalljokul event for individual countries
+country_event = {
+	id = 50817
+	title = "EVTNAME50817"
+	desc = "EVTDESC50817"
+	picture = "famine"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The wine will be poor this year, too."
+		add_country_modifier = {
+				name = countrywide_famine
+				duration = 480
+			}
+		any_owned = {
+			limit = {
+				continent = europe
+			}
+			add_province_modifier = {
+				name = countrywide_famine_immigrant_push
+				duration = 450
+			}
+		}
+	}
+}
+	

@@ -3,8 +3,8 @@ EVTNAME31312;Aspiring New Military Leader;;;;;;;;;;;x
 EVTDESC31312;A recent graduate from the Helvetian War College in Zurich has caught the eye of our top military brass. This young man, Johan von Habsburg, comes from a minor noble family from the vicinty of Aargau. It is believed that he will make a fine addition to our military staff.;;;;;;;;;;x
 EVTNAME50000;Death of King Raimond;;;;;;;;;;;;;x,,,,,,,
 EVTDESC50000;King Raimond VIII died today of pneumonia at the age of 71. Coming to the throne in 1803, he guided the kingdom through a number of difficult wars, most notably the war against liberal revolutionaries in Hispania (1826-29). Thus, he saw stirrings of liberalism in the heart of the greatest power in the world. On his deathbed, he warned his son of the coming storm. Raimond IX now is king in Mauguio.;;;;;;;;;;;;;;;;;;;;x",,,,
-EVTNAME50001;Eyjafjallajokul erupts!;;;;;;;;;;x,,,,,,,
-EVTDESC50001;Eyjafjallajokul erupted a few days ago, and it's only a matter of time until the ash drifts over Europe. We are in for a bad year or two of harvests because of the ash. This will make life even more difficult for the peasantry.;;;;;;;;;;;;;x;,
+EVTNAME50001;Eyjafjallajokul Erupts!;x
+EVTDESC50001;The volcano has once again erupted, and this time, the ash plume as enormous! Much of Europe will soon be engulfed. Hopefully they will not suffer too badly.;x
 EVTNAME50002;The peasantry demands their food!;;;;;;;;;;;;;x,,,,,,,
 EVTDESC50002;A large crowd appeared today at the gates of the royal palace in Mauguio. Disgruntled, emaciated peasants from both the city and surrounding farms demanded to be heard. The poor harvests of the past two years took their toll on the people of Aquitània as much as in other parts of Europe, yet Raimond IX continued to host lavish feasts. Incensed, the people demanded that the royal granaries be opened so that the people of Aquitània could eat the food they themselves grew. Upon hearing of the crowd and its demands, Raimond IX decided to…;;;;;;;;;;;;;;;;;;;x",,
 EVTOPTA50002;… dismiss the rabble.;;;;;;;;;;;;;x,,,,,,,
@@ -324,7 +324,7 @@ EVTDESC50371;The people of Ukraine, with whom we have frequently had troubles in
 EVTNAME50372;Ruthenian Unrest;x
 EVTDESC50372;The Ruthenian people in the southwest of our country have long been a thorn in our sides. Divided between Smolensk and Poland, they are staunch Catholics who speak a language closely related to that of the White Russians and Ukranians. Of late, there have been stirrings of nationalism in their towns and villages. Many have seen our treatment of their Ukranian cousins and have begun to rebel, hoping for their own chance at freedom. We could grant them concessions or suppress them violently. Each may have further repercussions.;x
 EVTNAME50380;Polish Territorial Claims in Brest;;;;;;;;;;x
-EVTDESC50380;The Poles, although soundly defeated in the Belarussian War in 1748, continue to claim the region of Brest, which happens to be home to significant numbers of Poles. Now that we have gone to war with Russia, the cowards, sensing weakenss, have seen fit to demand that we return the territory, despite our own good claims on it. We must ask ourselves if we can risk war with Poland and the so-called Russia at the same time.;;;;;;;;;;;x
+EVTDESC50380;The Poles, although soundly defeated in the Belarussian War in 1748, continue to claim the region of Brest, which happens to be home to significant numbers of Poles. Now that we have gone to war with Russia, the cowards, sensing weakenss, have seen fit to demand that we return the territory, despite our own good claims on it. We must ask ourselves if we can risk war with Poland and the so-called Russia at the same time.\n\n(Note: The territory will transfer when Poland gets your response.);;;;;;;;;;;x
 EVTNAME50381;The Treaty of Brest;;;;;;;;;x
 EVTDESC50381;Polish and Smolenskii officials met in the city of Brest, centre of Polish claims since the 1748 Belarussian War, to discuss terms of the return of the region to Poland. It was decided that the territory would be bought for a fee, which many in Smolensk would decry as a pittance compared to the value of the land, but it bought peace on the beleaguered kingdom's western borders, which Smolenskii officials considered good value for money.;;;;;;;;;;;x
 EVTNAME50382;No Agreement Over Brest;;;;;;;;;;;;;x
@@ -349,6 +349,8 @@ EVTNAME50392;Dead Souls;;;;;;;;;;;;x
 EVTDESC50392;In $YEAR$, prominent author Nikolai Gogol published a novel entitled "Dead Souls," in which the main character buys dead serfs from countryside nobility in order to gather enough "property" or "wealth" to appear to be an important nobleman so that the governor will wed him his daughter. This was possible because of the quite infrequent censuses and corruption at local levels of government. Gogol's novel presents the government with an opportunity for reform, or it could easily be ignored.;;;;;;;;;x
 EVTNAME50394;The Great Drive South;x
 EVTDESC50394;The vast steppes and deserts of Central Asia will not for long present the buffer they once did. Indeed, they present an opportunity for $COUNTRY$. By controlling this land, we may derive (in time) economic gain, but more importantly, it could represent a stepping stone to further imperial ambitions to the south. Imagine $COUNTRY_ADJ$ ports on the Indian Ocean. We must have this land. Let us establish more direct control over the tribes, and organize them into a proper government, directed by us, of course.;x
+EVTNAME50395;Military Morale Low!;x
+EVTDESC50395;Many in the military see the current war - a monumental struggle for the soul of Russia and our country's very existence - as a lost cause. Desertion is common, and the men are not fighting to their potential. This despite our best efforts to assuage their fears about the future. Let us hope that this situation does not lead to the end of $COUNTRY$.;x
 EVTNAME50399;Financial Support from the Church;x
 EVTDESC50399;The Church pays its share to the state to help unify Great Russians.\n\nNB: This event will only fire as long as SML is independent and railroading is on.;x
 EVTNAME50400;West Slavic Unification;;;;;;;;;;;;x
@@ -617,6 +619,8 @@ EVTNAME50815;Smolensk victory;x
 EVTDESC50815;The Smolenskii Knyaz has won - and so have we! It was an easy bet, and it took some time for the Duke to pay out, but we have now received our winnings and some bragging rights.;x
 EVTNAME50816;The Duke of Pomerania's Bet;x
 EVTDESC50816;With the recent conclusion of the war between Smolensk and Russia, it has been made known in the circles of the nobility that the Duke of Pomerania wagered on the outcome with the Duke of Mecklenburg. The result surprised everyone.;x
+EVTNAME50817;Eyjafjallajokul erupts!;x
+EVTDESC50817;With the eruption of the volcano in Iceland, it's only a matter of time until the great ash clouds reach us. We are should expect for a bad year or two of harvests because of it. This will make life even more difficult for the peasantry.;x
 EVTNAME51000;The Iroquois and Cherokee Break Away!;;;;;;;;;;x
 EVTDESC51000;Our long-time friends and brothers to our north and south have seen fit to take advantage of our momentary weakness after fighting against the whiteskins to seek their fortunes without our aid or protection. It is truly a misfortune that they should forsake the friendship our great tribes have had for generations.;;;;;;;;;;;x
 EVTNAME51001;The Solelha Purchase;;;;;;;;;;x

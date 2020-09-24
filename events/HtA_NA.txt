@@ -129,6 +129,7 @@ country_event = {
 			exists = yes
 		}
 		NOT = { has_global_flag = sierra_troubles }
+		NOT = { truce_with = CLF }
 		year = 1860
 		OR = {
 			iron_railroad = 1
