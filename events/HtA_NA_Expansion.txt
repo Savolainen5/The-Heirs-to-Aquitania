@@ -1191,32 +1191,32 @@ country_event = {
 		OR = {
 			AND = {
 				tag = SKM
-				owns = 29
+				29 = { empty = no }
 				NOT = { has_country_flag = colonisation_finished }
 			}
 			AND = {
 				tag = CLF
-				owns = 107
+				107 = { empty = no }
 				NOT = { has_country_flag = colonisation_finished }
 			}
 			AND = {
 				tag = GNC
-				owns = 125
+				125 = { empty = no }
 				NOT = { has_country_flag = colonisation_finished }
 			}
 			AND = {
 				tag = MRG
-				owns = 151
+				151 = { empty = no }
 				NOT = { has_country_flag = colonisation_finished }
 			}
 			AND = {
 				tag = SHC
-				owns = 162
+				162 = { empty = no }
 				NOT = { has_country_flag = colonisation_finished }
 			}
 			AND = {
 				tag = QUE
-				owns = 154
+				154 = { empty = no }
 				NOT = { has_country_flag = colonisation_finished }
 			}
 		}

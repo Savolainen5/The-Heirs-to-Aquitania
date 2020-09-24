@@ -652,13 +652,13 @@ country_event = {
 					tag = WES
 					tag = MNR
 					tag = BRE
+					tag = RHI
 				}
 			}
 			modifier = {
-				factor = 5
+				factor = 10
 				has_global_flag = railroading_on
 				OR = {
-					tag = RHI
 					tag = TRR
 					tag = MNZ
 				}

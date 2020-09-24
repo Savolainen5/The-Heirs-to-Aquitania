@@ -212,6 +212,7 @@ political_decisions = {
 			is_greater_power = yes
 			owns = 2648
 			owns = 1072
+			year = 1845
 		}
 
 		effect = {
@@ -259,10 +260,8 @@ political_decisions = {
 		potential = {
 			owns = 2669
 			primary_culture = russian
-			NOT = {
-				owns = 1072
-				owns = 2641
-			}
+			1072 = { empty = yes }
+			2641 = { empty = yes }
 			has_global_flag = yakuts_subjugated
 		}
 		
@@ -580,6 +579,8 @@ political_decisions = {
 			ai = yes
 			has_global_flag = railroading_on
 			NOT = { has_country_flag = hta_fiscal_support }
+			NOT = { has_global_flag = RUS_wars_complete }
+			exists = SML
 		}
 		allow = {}
 		effect = {

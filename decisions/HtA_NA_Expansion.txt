@@ -33,11 +33,12 @@ political_decisions = {
 		potential = {
 			tag = QUE
 			2596 = { empty = yes }
+			year = 1861
 		}
 		
 		allow = {
 			money = 5000
-			owns = 43
+			owns = 120
 			owns = 31
 			medicine = 1
 		}
@@ -96,7 +97,8 @@ political_decisions = {
 		picture = "settle_north"
 		potential = {
 			tag = SKM
-			7 = { empty = yes }			
+			7 = { empty = yes }
+			year = 1862
 		}
 		
 		allow = {
@@ -154,8 +156,14 @@ political_decisions = {
 				tag = SHC
 				tag = GNC
 				tag = QUE
-				tag = SKM
-				tag = CLF
+				AND = {
+					tag = SKM
+					has_country_flag = colonisation_finished
+				}
+				AND = {
+					tag = CLF
+					has_country_flag = colonisation_finished
+				}
 			}
 		}
 		

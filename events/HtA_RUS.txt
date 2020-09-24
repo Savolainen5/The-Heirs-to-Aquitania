@@ -438,7 +438,7 @@ country_event = {
 	}
 }
 
-####Tsar Batyushka Feodor II
+#Tsar Batyushka Feodor II
 country_event = {
 	id = 50366
 	title = "EVTNAME50366"
@@ -467,7 +467,226 @@ country_event = {
 
 
 
-#Unused at the moment -- 67-70. Some of 71-79 are below with the war between Smolensk and Russia
+
+#Unused at the moment -- 67-70, 73-79
+
+
+
+
+
+
+#Ukrainian Agitation
+country_event = {
+	id = 50371
+	title = "EVTNAME50371"
+	desc = "EVTDESC50371"
+	picture = "rebellious_minorities"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Grant them some concessions."
+		set_country_flag = ukrainian_concessions
+		any_owned = {
+			limit = {
+				is_core = UKR
+			}
+			add_province_modifier = {
+				name = rebellious_minorities
+				duration = 1000
+			}
+		}
+		any_pop = {
+			limit = {
+				NOT = { has_pop_culture = ukrainian }
+				NOT = { has_pop_culture = russian }
+			}
+			consciousness = 5
+			militancy = 3
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = ukrainian
+				location = { is_core = UKR }
+			}
+			consciousness = 6
+			militancy = 3
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = ukrainian
+				location = { NOT = { is_core = UKR } }
+			}
+			consciousness = 3
+			militancy = 1
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = russian
+			}
+			scaled_militancy = {
+				factor = 4
+				ideology = reactionary
+			}
+			scaled_militancy = {
+				factor = 2
+				ideology = conservative
+			}
+			scaled_militancy = {
+				factor = -1
+				ideology = liberal
+			}
+			scaled_consciousness = {
+				factor = 3
+				ideology = reactionary
+			}
+			scaled_consciousness = {
+				factor = 1
+				ideology = conservative
+			}
+			scaled_consciousness = {
+				factor = 1
+				ideology = liberal
+			}
+		}
+	}
+	
+	option = {
+		name = "Put them down!"
+		set_country_flag = ukrainians_suppressed
+		any_owned = {
+			limit = {
+				is_core = UKR
+			}
+			add_province_modifier = {
+				name = very_rebellious_minorities
+				duration = 3650
+			}
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = ukrainian
+				location = { is_core = UKR }
+			}
+			militancy = 8
+			consciousness = 6
+			reduce_pop = 0.96
+		}
+	}
+}
+
+#Ruthenian Agitation
+country_event = {
+	id = 50372
+	title = "EVTNAME50372"
+	desc = "EVTDESC50372"
+	picture = "rebellious_minorities"
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SML
+		has_country_flag = tatar_revolt
+		OR = {
+			any_owned_province = {
+				has_province_modifier = rebellious_minorities
+			}
+			any_owned_province = {
+				has_province_modifier = very_rebellious_minorities
+			}
+		}
+		OR = {
+			war_with = RUS
+			year = 1840
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Grant them concessions."
+		set_country_flag = ruthenian_concessions
+		any_owned = {
+			limit = {
+				is_core = RUT
+				NOT = { is_core = UKR }
+			}
+			add_province_modifier = {
+				name = rebellious_minorities
+				duration = 1000
+			}
+		}
+		any_pop = {
+			limit = {
+				NOT = { has_pop_culture = ruthenian }
+				NOT = { has_pop_culture = russian }
+			}
+			consciousness = 5
+			militancy = 4
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = ruthenian
+			}
+			consciousness = 6
+			militancy = 2
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = russian
+			}
+			scaled_militancy = {
+				factor = 4
+				ideology = reactionary
+			}
+			scaled_militancy = {
+				factor = 2
+				ideology = conservative
+			}
+			scaled_militancy = {
+				factor = -1
+				ideology = liberal
+			}
+			scaled_consciousness = {
+				factor = 3
+				ideology = reactionary
+			}
+			scaled_consciousness = {
+				factor = 1
+				ideology = conservative
+			}
+			scaled_consciousness = {
+				factor = 1
+				ideology = liberal
+			}
+		}
+	}
+	
+	option = {
+		name = "We will brook no defiance!"
+		set_country_flag = ruthenians_suppressed
+		any_owned = {
+			limit = {
+				is_core = RUT
+				NOT = { is_core = UKR }
+			}
+			add_province_modifier = {
+				name = very_rebellious_minorities
+				duration = 3650
+			}
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = ruthenian
+			}
+			militancy = 7
+			consciousness = 4
+			reduce_pop = 0.95
+		}
+	}
+}
 
 
 #Treaty of Brest between POL and SML - for SML
@@ -788,219 +1007,6 @@ country_event = {
 #			call_ally = yes									#This will be dodgy because other countries will be dragged into the war besides just the Tatars
 #		}
 		set_country_flag = tatars_revolted
-	}
-}
-
-#Ukrainian Agitation
-country_event = {
-	id = 50371
-	title = "EVTNAME50371"
-	desc = "EVTDESC50371"
-	picture = "rebellious_minorities"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "Grant them some concessions."
-		set_country_flag = ukrainian_concessions
-		any_owned = {
-			limit = {
-				is_core = UKR
-			}
-			add_province_modifier = {
-				name = rebellious_minorities
-				duration = 1000
-			}
-		}
-		any_pop = {
-			limit = {
-				NOT = { has_pop_culture = ukrainian }
-				NOT = { has_pop_culture = russian }
-			}
-			consciousness = 5
-			militancy = 3
-		}
-		any_pop = {
-			limit = {
-				has_pop_culture = ukrainian
-				location = { is_core = UKR }
-			}
-			consciousness = 6
-			militancy = 3
-		}
-		any_pop = {
-			limit = {
-				has_pop_culture = ukrainian
-				location = { NOT = { is_core = UKR } }
-			}
-			consciousness = 3
-			militancy = 1
-		}
-		any_pop = {
-			limit = {
-				has_pop_culture = russian
-			}
-			scaled_militancy = {
-				factor = 4
-				ideology = reactionary
-			}
-			scaled_militancy = {
-				factor = 2
-				ideology = conservative
-			}
-			scaled_militancy = {
-				factor = -1
-				ideology = liberal
-			}
-			scaled_consciousness = {
-				factor = 3
-				ideology = reactionary
-			}
-			scaled_consciousness = {
-				factor = 1
-				ideology = conservative
-			}
-			scaled_consciousness = {
-				factor = 1
-				ideology = liberal
-			}
-		}
-	}
-	
-	option = {
-		name = "Put them down!"
-		set_country_flag = ukrainians_suppressed
-		any_owned = {
-			limit = {
-				is_core = UKR
-			}
-			add_province_modifier = {
-				name = very_rebellious_minorities
-				duration = 3650
-			}
-		}
-		any_pop = {
-			limit = {
-				has_pop_culture = ukrainian
-				location = { is_core = UKR }
-			}
-			militancy = 8
-			consciousness = 6
-			reduce_pop = 0.96
-		}
-	}
-}
-
-#Ruthenian Agitation
-country_event = {
-	id = 50372
-	title = "EVTNAME50372"
-	desc = "EVTDESC50372"
-	picture = "rebellious_minorities"
-
-	fire_only_once = yes
-	
-	trigger = {
-		tag = SML
-		has_country_flag = tatar_revolt
-		OR = {
-			any_owned_province = {
-				has_province_modifier = rebellious_minorities
-			}
-			any_owned_province = {
-				has_province_modifier = very_rebellious_minorities
-			}
-		}
-		OR = {
-			war_with = RUS
-			year = 1840
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 3
-	}
-	
-	option = {
-		name = "Grant them concessions."
-		set_country_flag = ruthenian_concessions
-		any_owned = {
-			limit = {
-				is_core = RUT
-				NOT = { is_core = UKR }
-			}
-			add_province_modifier = {
-				name = rebellious_minorities
-				duration = 1000
-			}
-		}
-		any_pop = {
-			limit = {
-				NOT = { has_pop_culture = ruthenian }
-				NOT = { has_pop_culture = russian }
-			}
-			consciousness = 5
-			militancy = 4
-		}
-		any_pop = {
-			limit = {
-				has_pop_culture = ruthenian
-			}
-			consciousness = 6
-			militancy = 2
-		}
-		any_pop = {
-			limit = {
-				has_pop_culture = russian
-			}
-			scaled_militancy = {
-				factor = 4
-				ideology = reactionary
-			}
-			scaled_militancy = {
-				factor = 2
-				ideology = conservative
-			}
-			scaled_militancy = {
-				factor = -1
-				ideology = liberal
-			}
-			scaled_consciousness = {
-				factor = 3
-				ideology = reactionary
-			}
-			scaled_consciousness = {
-				factor = 1
-				ideology = conservative
-			}
-			scaled_consciousness = {
-				factor = 1
-				ideology = liberal
-			}
-		}
-	}
-	
-	option = {
-		name = "We will brook no defiance!"
-		set_country_flag = ruthenians_suppressed
-		any_owned = {
-			limit = {
-				is_core = RUT
-				NOT = { is_core = UKR }
-			}
-			add_province_modifier = {
-				name = very_rebellious_minorities
-				duration = 3650
-			}
-		}
-		any_pop = {
-			limit = {
-				has_pop_culture = ruthenian
-			}
-			militancy = 7
-			consciousness = 4
-			reduce_pop = 0.95
-		}
 	}
 }
 	
