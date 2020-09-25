@@ -286,8 +286,8 @@ political_decisions = {
 		}
 		
 		allow = {
-			SML = { exists = no }
 			SML = {
+				exists = no
 				all_core = {
 					OR = {
 						owned_by = THIS
@@ -301,6 +301,7 @@ political_decisions = {
 							}
 						}
 						owned_by = POL
+						owned_by = UKR
 					}
 				}
 			}
@@ -322,7 +323,7 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			NOT = { has_country_flag = tatars_accepted }
-			year = 1837
+			year = 1839
 			1023 = { owned_by = THIS }
 		}
 		
@@ -354,7 +355,7 @@ political_decisions = {
 			has_country_flag = tatars_accepted
 			NOT = { has_country_flag = tatar_revolts_encouraged }
 			SML = { any_owned_province = { any_pop = { has_pop_culture = tatar } } }
-			year = 1840
+			year = 1841
 		}
 		
 		allow = {
@@ -378,7 +379,7 @@ political_decisions = {
 			NOT = { has_country_flag = ukrainians_incited }
 			has_country_flag = tatar_revolts_encouraged
 			SML = { any_owned_province = { is_core = UKR } }
-			year = 1842
+			year = 1844
 		}
 		
 		allow = {
@@ -393,13 +394,13 @@ political_decisions = {
 			SML = {
 				country_event = {
 					id = 50371
-					days = 1
+					days = 12
 				}
 			}
 		}
 	}
 	
-	#Cossack Hetmanate Rebels
+	#Cossack Hetmanate Rebels (no railroading)
 	revolt_against_smolensk = {
 		picture = enslave_the_undesireables
 		potential = {
@@ -408,6 +409,7 @@ political_decisions = {
 			NOT = { has_country_flag = tatar_revolt }
 			RUS = { has_country_flag = ukrainians_incited }
 			RUS = { casus_belli = SML }
+			NOT = { has_global_flag = railroading_on }
 		}
 		allow = {
 			RUS = { war_with = SML }
@@ -420,6 +422,52 @@ political_decisions = {
 					id = 50385
 					days = 2
 				}
+			}
+			set_country_flag = tatar_revolt
+		}
+	}
+	
+	#Cossack Hetmanate Rebels (railroading)
+	revolt_against_smolensk_rr = {
+		picture = enslave_the_undesireables
+		potential = {
+			tag = DON
+			has_country_flag = russian_support
+			NOT = { has_country_flag = tatar_revolt }
+			RUS = {
+				has_country_flag = ukrainians_incited
+				casus_belli = SML
+				ai = yes
+			}
+			has_global_flag = railroading_on
+		}
+		allow = {
+			year = 1846
+			vassal_of = SML
+		}
+		effect = {
+			prestige = 5
+			SML = {
+				release_vassal = THIS
+				leave_alliance = THIS
+				relation = {
+					who = DON
+					value = -400
+				}
+				relation = {
+					who = RUS
+					value = -150
+				}
+			}
+			RUS = {
+				country_event = {
+					id = 50369
+					days = 2
+				}
+			}
+			relation = {
+				who = RUS
+				value = 400
 			}
 			set_country_flag = tatar_revolt
 		}

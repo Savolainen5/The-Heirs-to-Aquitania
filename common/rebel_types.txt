@@ -2232,7 +2232,7 @@ russian_rebels = {
 			average_militancy = 8
 		}		
 		modifier = {
-			factor = 0.1
+			factor = 100
 			has_country_flag = lost_RUS_war
 		}
 		modifier = {
@@ -2245,16 +2245,9 @@ russian_rebels = {
 	spawn_chance = {
 		factor = 10
 		
-		modifier = {
-			factor = 0
-			NOT = { has_country_flag = lost_RUS_war }
-		}
-		
 #		modifier = {
 #			factor = 0
-#			NOT = {
-#				culture = russian
-#			}
+#			NOT = { has_country_flag = lost_RUS_war }
 #		}
 		
 		modifier = {
@@ -2265,42 +2258,60 @@ russian_rebels = {
 				}
 			}
 		}
-
 		
 		modifier = {
-			factor = 100
+			factor = 30
+			has_global_flag = railroading_on
+			country = {
+				tag = SML
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			OR = {
+				country = {
+					tag = SML
+					war_with = RUS
+				}
+				country = {
+					tag = RUS
+					war_with = SML
+				}
+			}
+		}
+
+		modifier = {
+			factor = 30
 			country = {
 				has_country_flag = lost_RUS_war
 			}
 		}
-		
-#		modifier = {
-#			factor = 20
-#			pop_majority_ideology = liberal
-#		}
-		
-#		modifier = {
-#			factor = 10
-#			pop_majority_ideology = anarcho_liberal
-#		}
-		
-#		modifier = {
-#			factor = 10
-#			pop_majority_ideology = conservative
-#		}
+		modifier = {
+			factor = 10
+			pop_majority_ideology = liberal
+		}
+		modifier = {
+			factor = 5
+			pop_majority_ideology = anarcho_liberal
+		}
+		modifier = {
+			factor = 8
+			pop_majority_ideology = conservative
+		}
 
-#		modifier = {
-#			factor = 1.5
-#			political_reform_want = 0.05
-#		}
-#		modifier = {
-#			factor = 1.5
-#			political_reform_want = 0.1
-#		}
-#		modifier = {
-#			factor = 1.5
-#			political_reform_want = 0.15
-#		}
+		modifier = {
+			factor = 1.5
+			political_reform_want = 0.05
+		}
+		modifier = {
+			factor = 1.5
+			political_reform_want = 0.1
+		}
+		modifier = {
+			factor = 1.5
+			political_reform_want = 0.15
+		}
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -2359,7 +2370,7 @@ russian_rebels = {
 		any_pop = { militancy = -7 }
 		random_country = {
 			limit = {
-				culture = russian
+				primary_culture = russian
 				NOT = { has_country_flag = lost_RUS_war }
 			}
 			country_event = 50389
@@ -2654,7 +2665,7 @@ liberal_rebels = {
 			has_country_modifier = global_liberal_agitation
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0
 			has_country_flag = lost_RUS_war
 		}
 	}

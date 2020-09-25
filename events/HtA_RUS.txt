@@ -103,6 +103,8 @@ country_event = {
 			tag = SML
 			tag = RUS
 		}
+		exists = SML
+		exists = RUS
 		owns = 1194
 		owns = 2702
 	}
@@ -465,15 +467,191 @@ country_event = {
 	}
 }
 
+#This actually happens AFTER 50371 Ukrainian Agitation
+#Ukrainians demand more concessions
+country_event = {
+	id = 50367
+	title = "EVTNAME50367"
+	desc = "EVTDESC50367"
+	picture = "rebellious_minorities"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SML
+		has_country_flag = ukrainian_concessions
+		war_with = RUS
+		NOT = { exists = UKR }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Give in to their demands."
+		release_vassal = UKR
+		prestige = -15
+		any_pop = {
+			limit = {
+				NOT = {
+					has_pop_culture = russian
+				}
+			}
+			militancy = 2
+			consciousness = 3
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Unthinkable! How dare they?"
+		release = UKR
+		prestige = -5
+		war = {
+			call_ally = no
+			target = UKR
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		any_pop = {
+			limit = {
+				NOT = {
+					has_pop_culture = russian
+				}
+			}
+			militancy = 0.5
+			consciousness = 1
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+#Ukrainians rebel
+country_event = {
+	id = 50368
+	title = "EVTNAME50368"
+	desc = "EVTDESC50368"
+	picture = "rebellious_minorities"
+	
+	trigger = {
+		tag = SML
+		has_country_flag = ukrainians_suppressed
+		war_with = RUS
+		NOT = { exists = UKR }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Curse them!"
+		release = UKR
+		prestige = -5
+		war = {
+			call_ally = no
+			target = UKR
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		any_pop = {
+			limit = {
+				NOT = {
+					has_pop_culture = russian
+				}
+			}
+			militancy = 2
+			consciousness = 3
+		}
+	}
+}
 
 
+#Unused at the moment -- 73-79 ################################################################################################## (for better visibility, you know)
 
-#Unused at the moment -- 67-70, 73-79
+#Railroaded Cossacks become an AI Russian vassal
+country_event = {
+	id = 50369
+	title = "EVTNAME50369"
+	desc = "EVTDESC50369"
+	
+	is_triggered_only = yes
 
+	option = {
+		name = "Another piece falls into place."
+		prestige = 1
+		create_vassal = DON
+		create_alliance = THIS
+		relation = {
+			who = THIS
+			value = 400
+		}
+		diplomatic_influence = {
+			who = THIS
+			value = 500
+		}
+		set_country_flag = AI_RUS_DON
+	}
+}
 
-
-
-
+#Railroaded Cossacks join the war. This will happen only when AI RUS declares war on SML
+country_event = {
+	id = 50370
+	title = "EVTNAME50370"
+	desc = "EVTDESC50370"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SML
+		war_with = RUS
+		RUS = {
+			ai = yes
+			has_country_flag = AI_RUS_DON
+		}
+		has_global_flag = railroading_on
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Damn those traitors!"
+		prestige = -5
+		any_pop = {
+			limit = {
+				has_pop_culture = tatar
+			}
+			militancy = 6
+			consciousness = 6
+		}
+	}
+}
+		
 
 #Ukrainian Agitation
 country_event = {
@@ -1005,13 +1183,30 @@ country_event = {
 			}
 			remove_core = THIS
 		}
-		create_vassal = DON				#This removes the need to use the call_allies cb because Russia should just automatically call in DON. I hope.
-		prestige = 5
-#		war = {
-#			attacker_goal = { casus_belli = call_allies_cb }
-#			call_ally = yes									#This will be dodgy because other countries will be dragged into the war besides just the Tatars
+		create_vassal = DON				#This removes the need to use the call_allies cb because Russia should just automatically call in DON. I hope. / Except that it doesn't.
+#		any_country = {
+#			limit = {
+#				alliance_with = THIS
+#				NOT = {
+#					tag = DON
+#				}
+#			}
+#			set_country_flag = allied_to_RUS
+#			leave_alliance = THIS
 #		}
+		prestige = 5
+		war = {
+			attacker_goal = { casus_belli = call_allies_cb }
+			call_ally = yes									#This will be dodgy because other countries will be dragged into the war besides just the Tatars
+		}
 		set_country_flag = tatars_revolted
+#		any_country = {
+#			limit = {
+#				has_country_flag = allied_to_RUS
+#			}
+#			create_alliance = THIS
+#			clr_country_flag = allied_to_RUS
+#		}
 	}
 }
 	
@@ -1154,11 +1349,11 @@ province_event = {
 			NOT = { has_building = naval_base }
 			NOT = { has_building = fort }
 		}
-		year = 1838
+		year = 1842
 	}
 	
 	mean_time_to_happen = {
-		months = 6
+		months = 9
 	}
 	
 	option = {

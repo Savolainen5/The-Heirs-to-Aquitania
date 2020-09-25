@@ -4841,7 +4841,7 @@ annex_africa_full = {
 	}
 }
 
-# Russia Humiliate/Hegemony. Maybe also take a big state?
+# Russia Hegemony - Functionally similar to an acquire core state cb
 russia_hegemony = {
 	sprite_index = 5
 	is_triggered_only = yes
@@ -4874,7 +4874,7 @@ russia_hegemony = {
 		}
 		OR = {
 			THIS = { tag = RUS }
-			THIS = { tag = SML }
+			THIS = { tag = SML NOT = { has_global_flag = railroading_on } } #In a railroaded game, SML should not be able to use this CB
 		}
 		any_owned_province = {
 			OR = {

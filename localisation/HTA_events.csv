@@ -4,7 +4,7 @@ EVTDESC31312;A recent graduate from the Helvetian War College in Zurich has caug
 EVTNAME50000;Death of King Raimond;;;;;;;;;;;;;x,,,,,,,
 EVTDESC50000;King Raimond VIII died today of pneumonia at the age of 71. Coming to the throne in 1803, he guided the kingdom through a number of difficult wars, most notably the war against liberal revolutionaries in Hispania (1826-29). Thus, he saw stirrings of liberalism in the heart of the greatest power in the world. On his deathbed, he warned his son of the coming storm. Raimond IX now is king in Mauguio.;;;;;;;;;;;;;;;;;;;;x",,,,
 EVTNAME50001;Eyjafjallajokul Erupts!;x
-EVTDESC50001;The volcano has once again erupted, and this time, the ash plume as enormous! Much of Europe will soon be engulfed. Hopefully they will not suffer too badly.;x
+EVTDESC50001;The volcano has once again erupted, and this time, the ash plume is enormous! Much of Europe will soon be engulfed. Hopefully they will not suffer too badly.;x
 EVTNAME50002;The peasantry demands their food!;;;;;;;;;;;;;x,,,,,,,
 EVTDESC50002;A large crowd appeared today at the gates of the royal palace in Mauguio. Disgruntled, emaciated peasants from both the city and surrounding farms demanded to be heard. The poor harvests of the past two years took their toll on the people of Aquitània as much as in other parts of Europe, yet Raimond IX continued to host lavish feasts. Incensed, the people demanded that the royal granaries be opened so that the people of Aquitània could eat the food they themselves grew. Upon hearing of the crowd and its demands, Raimond IX decided to…;;;;;;;;;;;;;;;;;;;x",,
 EVTOPTA50002;… dismiss the rabble.;;;;;;;;;;;;;x,,,,,,,
@@ -319,6 +319,14 @@ EVTNAME50365;Michael Comes of Age;;;;;;;;;;x
 EVTDESC50365;On this day, Tsar Michael II has come of age, acceeding to the throne and being coronated. There have been massive celebrations in the streets at the return of a Tsar Batiushka to the throne, although time will tell if Michael will fill his grandfather's shoes in that respect. With his accession, the services of the regent are no longer required.;;;;;;;;;;;x
 EVTNAME50366;Tsar Batyushka Feodor;;;;;;;;;;;x
 EVTDESC50366;Our beloved Tsar has been cultivating his image as a father figure to his entire country. Most of the peasantry now see him as a loving man who looks out for them and wants the best for them.;;;;;;;;;;;x
+EVTNAME50367;Ukrainians Demand More Concessions;x
+EVTDESC50367;Yet more agitation among the Ukrainians, and worse news. It seems that they have secretly been organizing a government and have presented demands: Grant the whole of Ukraine autonomy within the kingdom, or face rebellion. Can we face such a challenge to our power now, when we are at war with our northern neighbours?:x
+EVTNAME50368;Ukrainians Rebel;x
+EVTDESC50368;Despite the repression we have undertaken over the last several years, Ukrainians have continued to pose a significant problem. Now with few troops in the area due to the war with our northern neighbour, the peasantry are arming themselves, and a formerly underground government has established control over all of their lands! Now we must put them down, too!;x
+EVTNAME50369;Cossacks Commit;x
+EVTDESC50369;We have received word that the Cossacks will fight for us against Smolensk.;x
+EVTNAME50370;Cossacks Turn Against Us;x
+EVTDESC50370;It seems that the Tatars have joined our enemies, the vile schemers!;x
 EVTNAME50371;Rebellious Ukrainians;x
 EVTDESC50371;The people of Ukraine, with whom we have frequently had troubles in the many years they have lived under our rule, have once again begun to agitate against our rule. What began as a local protest against high taxation has spread and been taken up by Ukrainian nobility. We have two options. If we decide to grant them concessions to placate them in the short term, it will certainly cause us to lose face with the many other peoples in our empire, particularly our own. If, instead, we decide to send troops and suppress them, we may face yet further troubles down the road.;x
 EVTNAME50372;Ruthenian Unrest;x
