@@ -41,6 +41,7 @@ Thanks to:
 - Crushric for Roman POP rework and other contributions and ideas
 - Over421 for Greek-language parties and flags
 - Discux for parties for lots of New World countries
+- Rennes for showing me how $ORDER$ works in war localization
 
 NB for the changelog - Anything with lots of # or * after it is something Savs is still working on or hasn't gotten fully/correctly implemented yet
 

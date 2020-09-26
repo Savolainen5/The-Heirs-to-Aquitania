@@ -5,5 +5,7 @@ This is mostly a document for Savs to help remember some less-known things
 - GIMP CAN be used on provinces.bmp, just make sure you export it as a 24-bit .bmp, eh?
 - The game doesn't like it when a province exists in definitions and has province history and stuff, but doesn't exist on the map
 - It also doesn't like it when a naval base's position is on the land of another province, apparently - it will crash when you hit the play button after choosing a country.
-	-On further investigation, I would guess that the game just doesn't like having bases/ports on land. They must be in a sea province. If you're crashing after choosing a country and hitting play, check your naval base positions
+	- On further investigation, I would guess that the game just doesn't like having bases/ports on land. They must be in a sea province. If you're crashing after choosing a country and hitting play, check your naval base positions
 - The game also doesn't like having province be super far apart, on opposite side of the map. It makes these weird black horizontal lines that follow the contour of the province. Keep provinces compactish
+	- In a similar vein, provinces have a max physical size, after which they start to bug out visually. If you see the sea creeping in the top of your provinces, they're too big.
+- For war localization, $ORDER$ means, for example "2nd " - it contains a space already. Thus, your war localization should be blahblahblah;$ORDER$War name;x, which will give the result "2nd War name"

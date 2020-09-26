@@ -592,7 +592,7 @@ country_event = {
 
 #Unused at the moment -- 73-79 ################################################################################################## (for better visibility, you know)
 
-#Railroaded Cossacks become an AI Russian vassal
+#Railroaded Cossacks become an AI Russian vassal - "Cossacks Commit"
 country_event = {
 	id = 50369
 	title = "EVTNAME50369"
@@ -603,15 +603,25 @@ country_event = {
 	option = {
 		name = "Another piece falls into place."
 		prestige = 1
+		DON = {
+			all_core = {
+				remove_core = RUS
+			}
+		}
+		create_alliance = DON
 		create_vassal = DON
-		create_alliance = THIS
 		relation = {
-			who = THIS
+			who = DON
 			value = 400
 		}
 		diplomatic_influence = {
-			who = THIS
+			who = DON
 			value = 500
+		}
+		DON = {
+			all_core = {
+				add_core = RUS
+			}
 		}
 		set_country_flag = AI_RUS_DON
 	}
