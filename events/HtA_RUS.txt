@@ -1263,8 +1263,8 @@ country_event = {
 				is_accepted_culture = no
 				is_primary_culture = no
 			}
-			militancy = 7
-			consciousness = 5
+			militancy = 5
+			consciousness = 3
 		}
 		any_pop = {
 			limit = {
@@ -1273,12 +1273,16 @@ country_event = {
 					is_primary_culture = yes
 				}
 			}
-			militancy = 5
-			consciousness = 8
+			militancy = 7
+			consciousness = 3
 		}
 		add_country_modifier = {
 			name = military_strife
-			duration = 730
+			duration = 365
+		}
+		add_country_modifier = {
+			name = russian_unrest
+			duration = 1430
 		}
 	}
 }
@@ -1393,7 +1397,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 9
 	}
 	
 	option = {

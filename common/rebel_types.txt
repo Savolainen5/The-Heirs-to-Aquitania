@@ -2184,7 +2184,7 @@ russian_rebels = {
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
 	independence = none
-	defect_delay = 12			# Can spontaneously declare independence after 12 months (earliest)
+	defect_delay = 6			# Can spontaneously declare independence after 6 months (earliest)
 	
 	ideology = liberal
 	allow_all_cultures = yes
@@ -2230,13 +2230,20 @@ russian_rebels = {
 		modifier = {
 			factor = 0.5
 			average_militancy = 8
-		}		
+		}
 		modifier = {
-			factor = 100
+			factor = 0.4
 			has_country_flag = lost_RUS_war
 		}
 		modifier = {
-			factor = 0
+			factor = 0.4
+			has_global_flag = railroading_on
+			tag = SML
+			year = 1847
+			NOT = { war_with = RUS }
+		}
+		modifier = {
+			factor = 10
 			NOT = { has_country_flag = lost_RUS_war }
 		}
 	}
@@ -2244,11 +2251,6 @@ russian_rebels = {
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
 		factor = 10
-		
-#		modifier = {
-#			factor = 0
-#			NOT = { has_country_flag = lost_RUS_war }
-#		}
 		
 		modifier = {
 			factor = 0
@@ -2258,12 +2260,21 @@ russian_rebels = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0
+			NOT = { culture = russian }
+		}
 		
 		modifier = {
-			factor = 30
+			factor = 40
 			has_global_flag = railroading_on
 			country = {
 				tag = SML
+			}
+			OR = {
+				country = {	war_with = RUS }
+				country = {	has_country_flag = lost_RUS_war }
+				year = 1847
 			}
 		}
 		
@@ -2282,7 +2293,8 @@ russian_rebels = {
 		}
 
 		modifier = {
-			factor = 30
+			factor = 20
+			NOT = { has_global_flag = railroading_on }
 			country = {
 				has_country_flag = lost_RUS_war
 			}
@@ -2296,21 +2308,12 @@ russian_rebels = {
 			pop_majority_ideology = anarcho_liberal
 		}
 		modifier = {
-			factor = 8
+			factor = 2
+			pop_majority_ideology = reactionary
+		}
+		modifier = {
+			factor = 10
 			pop_majority_ideology = conservative
-		}
-
-		modifier = {
-			factor = 1.5
-			political_reform_want = 0.05
-		}
-		modifier = {
-			factor = 1.5
-			political_reform_want = 0.1
-		}
-		modifier = {
-			factor = 1.5
-			political_reform_want = 0.15
 		}
 	}
  
@@ -2665,8 +2668,15 @@ liberal_rebels = {
 			has_country_modifier = global_liberal_agitation
 		}
 		modifier = {
-			factor = 0
+			factor = 30
 			has_country_flag = lost_RUS_war
+		}
+		modifier = {
+			factor = 30
+			has_global_flag = railroading_on
+			tag = SML
+			ai = yes
+			year = 1845
 		}
 	}
 	
@@ -2680,6 +2690,28 @@ liberal_rebels = {
 		modifier = {
 			factor = 0
 			social_movement = yes
+		}
+		modifier = {
+			factor = 0
+			country = {
+				OR = {
+					has_country_flag = lost_RUS_war
+					AND = {
+						tag = SML
+						war_with = RUS
+					}
+					AND = {
+						tag = RUS
+						war_with = SML
+					}
+					AND = {
+						tag = SML
+						has_global_flag = railroading_on
+						year = 1847
+					}
+				}
+			}
+			NOT = { year = 1865 }
 		}
 		modifier = {
 			factor = 0.1

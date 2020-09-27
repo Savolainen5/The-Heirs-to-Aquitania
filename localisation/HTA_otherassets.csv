@@ -63,6 +63,8 @@ russian_rebels_desc;With the defeat of their leaders in war and rising public di
 russian_rebels_army;Russian Unification Rebels;x
 russian_regency;Regency;;;;;;;;;;x
 russian_regency_desc;Until Michael comes of age, he will be assisted in his rule by a regent.;;;;;;;;;;;;;x
+russian_unrest;Unrest;x
+russian_unrest_desc;The people are angry for various reasons. It is only a matter of time until they take up arms.;x
 sejm;Sejm;;;;;;;;;;;x
 sejm_desc;The power of the king of Poland is checked by the Sejm, a sort of legislature of the nobility, who continue to be the majority landholders in the country. Their willingness to accept royal decrees and rule depends on a number of factors, such as the attitude of the king toward the body and his relationship with them. It is a staunchly conservative body, against liberalism and anything else that threatens the power of the nobility.;;;;;;;;;;;x
 small_immigration_boom;Small Immigration Boom;;;;;;;;;x
@@ -127,7 +129,8 @@ free_latvia_desc;Release Latvia from the clutches of the Finns, granting you an 
 russia_annex;Russian Unification;x
 russia_annex_short;Conquer $RECIPIENT$;x
 russia_annex_setup;Conquer $RECIPIENT$ to unite Russia once and for all.;x
-russia_annex_desc;It is time to unite the Great Russian people and put an end to the centuries-long stalemate between our two countries.;xrussia_annex;Russian Unification;x
+russia_annex_desc;It is time to unite the Great Russian people and put an end to the centuries-long stalemate between our two countries.;x
+russia_annex;Russian Unification;x
 russia_hegemony;Russian Hegemony;x
 russia_hegemony_short;Russian Hegemony - Conquest of $STATE$;x
 russia_hegemony_setup;Acquire a part of our neighbour and make strides towards their ultimate defeat.;x

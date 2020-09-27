@@ -2096,6 +2096,12 @@ unsuccessful_ds_reform = {
 	icon = 6
 }
 
+russian_unrest = {
+	pop_consciousness_modifier = 0.2
+	pop_militancy_modifier = 0.3
+	icon = 4
+}
+
 hta_fiscal_support = {
 	icon = 9
 }
