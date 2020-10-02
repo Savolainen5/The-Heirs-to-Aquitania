@@ -2232,11 +2232,11 @@ russian_rebels = {
 			average_militancy = 8
 		}
 		modifier = {
-			factor = 0.4
+			factor = 0.1
 			has_country_flag = lost_RUS_war
 		}
 		modifier = {
-			factor = 0.4
+			factor = 0.25
 			has_global_flag = railroading_on
 			tag = SML
 			year = 1847
@@ -2266,7 +2266,7 @@ russian_rebels = {
 		}
 		
 		modifier = {
-			factor = 40
+			factor = 70
 			has_global_flag = railroading_on
 			country = {
 				tag = SML
@@ -2707,7 +2707,6 @@ liberal_rebels = {
 					AND = {
 						tag = SML
 						has_global_flag = railroading_on
-						year = 1847
 					}
 				}
 			}

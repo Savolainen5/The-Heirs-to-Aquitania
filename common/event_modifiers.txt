@@ -2106,6 +2106,10 @@ hta_fiscal_support = {
 	icon = 9
 }
 
+hta_dont_sphere_sml = {
+	icon = 6
+}
+
 #Poland
 
 sejm = {

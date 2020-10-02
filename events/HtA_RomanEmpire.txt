@@ -1869,6 +1869,10 @@ country_event = {
 		
 		ai_chance = {
 			factor = 80
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
 		}
 	}
 	

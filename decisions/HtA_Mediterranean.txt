@@ -5,16 +5,29 @@ political_decisions = {
 		picture = megali_idea
 		potential = {
 			OR = {
-				tag = CYP
-				tag = CRE
+				AND = {
+					tag = CYP
+					ai = no
+				}
+				AND = {
+					tag = CRE
+					ai = yes
+					CYP = {
+						ai = yes
+					}
+					has_global_flag = railroading_on
+				}
+				AND = {
+					tag = CRE
+					ai = no
+				}
 			}
-			ai = no
 			NOT = { has_country_flag = mediterranean_trade_republic }
 		}
 		
 		allow = {
-			military_score = 1
-			total_amount_of_ships = 2
+			military_score = 5
+			total_amount_of_ships = 3
 		}
 		
 		effect = {
@@ -80,6 +93,31 @@ political_decisions = {
 		
 		effect = {
 			CYP = { country_event = 50690 }
+		}
+	}
+	
+	#AI island joins AI island
+	med_islands_join_forces_ai = {
+		potential = {
+			tag = CYP
+			ai = yes
+			CRE = {
+				ai = yes
+				has_country_flag = mediterranean_trade_republic
+			}
+		}
+		
+		allow = {
+			CRE = {
+				prestige = 5
+				military_score = 1
+				total_amount_of_ships = 3
+				government = democracy
+			}
+		}
+		
+		effect = {
+			CRE = { country_event = 50690 }
 		}
 	}
 	
@@ -592,6 +630,7 @@ political_decisions = {
 		}
 	}
 	
+	######################Self-explanatory decision title, really
 	unify_western_med = {
 		picture = WesternMed
 		potential = {

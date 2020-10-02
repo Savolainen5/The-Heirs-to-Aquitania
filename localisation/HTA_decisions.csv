@@ -309,6 +309,8 @@ me_intervention_title;Intervene in Persia;x
 me_intervention_desc;The Shah's rule in the Middle East is collapsing. We should take the opportunity to stabilize the region under our rule.;x
 me_intervention_FRA_title;Protect the Outremers;x
 me_intervention_FRA_desc;The Frankish-speaking Outremers, a legacy of the Crusades, are threatened by the recent ethnic strife in the Holy Land. We should intervene to protect them.;x
+med_islands_join_forces_ai_title;Join forces with Cyprus!;x
+med_islands_join_forces_ai_desc;Cyprus is a rising star, and if we offer to join them, we can contribute to their fledgling republic and forge for ourselves a bright future!;x
 med_islands_join_forces_crete_title;Join forces with Cyprus!;;;;;;;;x
 med_islands_join_forces_crete_desc;Cyprus is a rising star, and if we offer to join them, we can contribute to their fledgling republic and forge for ourselves a bright future!;;;;;;;;x
 med_islands_join_forces_cyprus_title;Join forces with Crete!;;;;;;;;x
@@ -470,7 +472,7 @@ unequal_treaty_nanyue_desc;Nanyue is at a disadvantage. We are in a position to 
 unification_with_catalonia_title;Unify with the Catalans;;;;;;;;;;;;;;x,,,,
 unification_with_catalonia_desc;Our oppressed and beleaguered brothers to our south are oppressed by their Hispanian overlords! Let us bring them into the fold to secure their freedom!;;;;;;;;;;;;;;x,,,,
 unify_western_med_title;Mare Occidentis Nostrum;;;;;;;;;x
-unify_western_med_desc;We are truly ascendant in the west of the Mediterranean. Its peoples are all our brothers, our cousins, and other long-lost relatives, as evidenced by our similar languages, cultures, customs, and histories. Let the $COUNTRY_ADJ$ eagle spread its wings and bring our far-flung family under its protection, for the benefit of all! \n\n $Y NB: You need to own/puppet Barcelona, Mauguio, Milan, Rome, and Naples.;;;;;;;;;;x
+unify_western_med_desc;We are truly ascendant in the west of the Mediterranean. Its peoples are all our brothers, our cousins, and other long-lost relatives, as evidenced by our similar languages, cultures, customs, and histories. Let the $COUNTRY_ADJ$ eagle spread its wings and bring our far-flung family under its protection, for the benefit of all! \n\n $Y NB: You need to own/puppet Barcelona, Mauguio, Milan, Rome, and Naples. If you want to inherit the countries listed, you must puppet and sphere them.;;;;;;;;;;x
 unite_crowns_BHN_title;Unite the Crowns of Bohemia and Hungary;;;;;;;;;x
 unite_crowns_BHN_desc;In the aftermath of the Hungarian Revolution, the question of the place of Hungary in Bohemia became widely discussed. After deliberation, it was decided that the two crowns should be united in one kingdom proper, thus granting Hungarians recognition as full citizens and full representation in the kingdom. The Crowns of St. Wenceslaus and St. Stephen were joined.;;;;;;;;;;x
 unite_the_celts_title;Unite the Ceilts;;;;;;;;;;;x

@@ -501,6 +501,15 @@ country_event = {
 			militancy = 2
 			consciousness = 3
 		}
+		UKR = {
+			any_owned = {
+				any_pop = {
+					militancy = -7
+					consciousness = -5
+				}
+			}
+			country_event = 60160
+		}
 		
 		ai_chance = {
 			factor = 50
@@ -533,6 +542,15 @@ country_event = {
 			}
 			militancy = 0.5
 			consciousness = 1
+		}
+		UKR = {
+			any_owned = {
+				any_pop = {
+					militancy = -7
+					consciousness = -5
+				}
+			}
+			country_event = 60160
 		}
 		
 		ai_chance = {
@@ -585,6 +603,15 @@ country_event = {
 			}
 			militancy = 2
 			consciousness = 3
+		}
+		UKR = {
+			any_owned = {
+				any_pop = {
+					militancy = -7
+					consciousness = -5
+				}
+			}
+			country_event = 60160
 		}
 	}
 }

@@ -479,6 +479,7 @@ political_decisions = {
 			ai = yes
 			has_global_flag = railroading_on
 			is_greater_power = yes
+			NOT = { has_country_modifier = hta_dont_sphere_sml }
 		}
 		allow = {
 			OR = {
@@ -501,6 +502,10 @@ political_decisions = {
 			diplomatic_influence = {
 				who = SML
 				value = -200
+			}
+			add_country_modifier = {
+				name = hta_dont_sphere_sml
+				duration = 14
 			}
 		}
 	}
