@@ -1,0 +1,23 @@
+name = "1st Skåne War"
+
+1612.3.5 = {
+	add_attacker = SWE
+	add_defender = DEN
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = acquire_state
+		state_province_id = 334
+		actor = SWE
+		receiver = DEN
+	}
+}
+
+1613.10.18 = {
+	rem_attacker = SWE
+	rem_defender = DEN
+}

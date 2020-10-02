@@ -36,12 +36,27 @@ political_decisions = {
 		}
 		
 		allow = {
-			SML = { war_with = RUS }
+			OR = {
+				AND = {
+					ai = no
+					state_n_government = 1
+				}
+				SML = { war_with = RUS }
+				SML = { has_country_flag = lost_RUS_war }
+			}
 			719 = { owned_by = SML }
+			NOT = { truce_with = SML }
 			war = no
+			military_score = 15
 		}
 		
 		effect = {
+			any_pop = {
+				limit = {
+					is_primary_culture = yes
+				}
+				militancy = -1
+			}
 			SML = {
 				country_event = {
 					id = 50380 #in HtA_RUS

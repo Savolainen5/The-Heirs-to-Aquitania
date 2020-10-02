@@ -1,0 +1,23 @@
+name = "Anatolian War"
+
+1747.9.8 = {
+	add_attacker = ARM
+	add_defender = BYZ
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = acquire_core_state
+		actor = ARM
+		receiver = BYZ
+	}
+
+}
+
+1749.6.18 = {
+	rem_attacker = ARM
+	rem_defender = BYZ
+}
