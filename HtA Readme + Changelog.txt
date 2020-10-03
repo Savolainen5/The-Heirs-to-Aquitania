@@ -8,7 +8,8 @@ If you want to contact me, find me on reddit as /u/Savolainen5 or on the Paradox
 
 Also check out http://www.reddit.com/r/savs, where history and other stuff are posted. However, please direct discussion about the mod to the thread as much as possible, in keeping with Paradox rules.
 Forum thread for the mod: https://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/
-HtA Discord server: https://discord.gg/beteEPF
+Vic 2 Modding Discord Server: https://discord.gg/EbY7qaA (Hosts discussion and updates for a lot of mods)
+HtA Discord server: https://discord.gg/beteEPF (not in active use, use the above Vic 2 Modding server instead)
 
 There's an event numbers list at the bottom of this file
 
@@ -47,7 +48,7 @@ NB for the changelog - Anything with lots of # or * after it is something Savs i
 
 **CHANGELOG**
 
-Version 0.36 X/Y/20 - The Russias & China Update
+Version 0.36 X/10/20 - The Russias & China Update
 
 *Major*
 
@@ -57,14 +58,12 @@ Version 0.36 X/Y/20 - The Russias & China Update
 	-Expansion into central Asia
 	-Expansion against the Baltics
 - Events and decisions for China by /u/chortlinggnome, see changelog below.
-- Events and decisions for the Outremer Question by /u/capitanloco6 - A united France can take on Persia to gain control over land at the eastern end of the Mediterranean.
+- Events and decisions for the Outremer Question by /u/capitanloco6 - A united France can take on Persia to gain control over land at the eastern end of the Mediterranean
+- A competing story chain for Arab/Mashriqi revolts in Persia (Thanks to ChortlingGnome)
 - Incorporated HPM's crisis locking system and election event spam reduction system
-- HtA story chain regarding Corsica involving Aquitania, PDN, and Naples/Italy
+- HtA megacampaign story chain regarding Corsica involving Aquitania, PDN, and Naples/Italy
 - Blobby decision added to get cores on most of the European Western Mediterranean as a Romance country
-- Added a de-escalation event after the Eyjafjallajokul eruption and subsequent famine which SHOULD cut down on the number of rebels. But expect to see many countries of Europe fall to them still. That's more or less what I want
 - Added lots more soldier and craftsman POPs to normal GPs, did some industrial boosting
-- Story chain for Outremer POPs in Persia to revolt and a strong France to intervene on their behalf (Thanks to capitanloco6)
-- Story chain for Arab/Mashriqi revolts in Persia (Thanks to ChortlingGnome)
 - Adapted the HPMmm (map modded) fancy map to HtA, made some important province movements (see Map Changes below)
 	- Note: I don't think there are, but there might still be some provinces which lost their port/naval base because of this. Let me know if you find one.
 
@@ -87,12 +86,13 @@ Version 0.36 X/Y/20 - The Russias & China Update
 
 **Events**
 - Expanded Margaria's expansion events to include more commonly-empty provinces
-- Added an event for any NA country which has borders on a coreless empty province to get a random event to own that province. SAVS THINKS THIS SHOULD BE MADE TO BE A REAL cOLONY PROVINcE, NOT A STATE
+- Added an event for any NA country which has borders on a coreless empty province to get a random event to own that province. SAVS THINKS THIS SHOULD BE MADE TO BE A REAL COLONY PROVINcE, NOT A STATE
 - Added an event for France to get cores on Brittany if it doesn't have them and to change the province names to the French ones
 - Added an event for the Celtic Federation (CLT) owning Brittany to revert names from possible French names to Breton ones
 - Added a number of flavour events
 - The Treaty of Szekes gives signatories cores on the provices they get from Bohemia, Bohemia keeps its cores in Moravia and isn't releasable
 - PDN can get cores on VEN even if someone snipes Venice first, like Crushric likes to do when playing as BAV
+- Eyjafjallajokul eruption near the beginning of the game now is less spammy and starts and ends at the same time for everyone
 
 **The world**
 - To get an alliance, you need a minimum 50 relationship with the target country ############################################ Maybe actually not working?
@@ -116,12 +116,11 @@ Version 0.36 X/Y/20 - The Russias & China Update
 - Gave a number of countries different ideals
 - Made lots of vassals at game start into substates so that the Acquire Substate State cb can be used against their overlords
 - Gave Hispania the port of Penang on the Malay Peninsula
-- Renamed and adjusted some provinces in Russia, central Asia
+- Renamed and adjusted lots of provinces in Russia, central Asia
 - Renamed some provinces in New Holland and the surrounding seas
 - Renamed a couple of provinces in Aengland and replaced lots of wheat with sheep in the southeast
 - Added island terrain types from HPM and so changed a bunch of terrain to small islands
 - Added the colormaps from HPM Map Modded, which makes it way fancier looking, and made SOME adjustments. Still lots of work to be done (see the To-Do list)
-- Started incorporating the physical map from the above
 
 **Other**
 - Tweaked POP migration targets to improve migration to low-population provinces and MajorMajor added culture-based migration targets (Iberians are more likely to go to former Iberian colonies etc.)

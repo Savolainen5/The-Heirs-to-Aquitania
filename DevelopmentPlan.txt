@@ -16,7 +16,7 @@ Europe
 0.34 - Northern Isles part 2
 0.35 - Nordic countries and some of the Baltics
 0.36 - Smolensk vs. Russia
-0.37 - Italy
+0.37 - Italy and Poland
 0.38 - The Balkans: Sort out Hungarians and other cultures
 0.39 - Iberia
 0.40 - Miscellaneous, flavour events

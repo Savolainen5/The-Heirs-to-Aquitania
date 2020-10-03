@@ -122,5 +122,12 @@ Other:
 - Buff population growth, especially in the new world
 - If more iron is needed, add the Alegria iron mine to prov2442 (Monduroi) in USR
 - Nerf migration to CLF and SKM due to their remoteness? Necessary? Too realistic?
-
+- ANA stuff:
+	- Move capital to Constantinople
+	- Greek accepted OR better assimilation (what would be the policy vis-a-vis Armenians?)
+	- Focus more on Anatolian expansion
+	- Absorb Georgia?
+- RCW runs a different course if the Empire is already democratic via Albesans
+	- Romans struggle to keep Greeks and Anatolians in check - regionalism
+	
 Savs, remember that Birth of a Nation is in CleanUp and has the ID 60160

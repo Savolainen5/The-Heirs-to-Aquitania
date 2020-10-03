@@ -437,12 +437,17 @@ political_decisions = {
 			RUS = {
 				has_country_flag = ukrainians_incited
 				casus_belli = SML
-				ai = yes
+			}
+			OR = {
+				year = 1846
+				AND = {
+					RUS = { ai = no }
+					year = 1844
+				}
 			}
 			has_global_flag = railroading_on
 		}
 		allow = {
-			year = 1846
 			vassal_of = SML
 		}
 		effect = {

@@ -917,7 +917,7 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 125
+		size = 135
 	}
 
 	artisans = {
@@ -929,14 +929,13 @@
 	soldiers = {
 		culture = russian
 		religion = orthodox
-		size= 325
-
+		size = 425
 	}
 
 	farmers = {
 		culture = russian
 		religion = orthodox
-		size = 28450
+		size = 29450
 	}
 
 	clergymen = {
@@ -1623,6 +1622,12 @@
 		size = 450
 	}
 
+	clergymen = {
+		culture = russian
+		religion = orthodox
+		size = 1140
+	}
+
 	artisans = {
 		culture = russian
 		religion = orthodox
@@ -1734,7 +1739,7 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 325
+		size = 1175
 	}
 
 	artisans = {
@@ -1758,7 +1763,7 @@
 	clergymen = {
 		culture = ugrian
 		religion = orthodox
-		size = 78
+		size = 98
 	}
 
 	soldiers = {
@@ -2453,7 +2458,7 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 550
+		size = 1250
 	}
 
 	artisans = {
@@ -2509,7 +2514,7 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 350
+		size = 1050
 	}
 
 	artisans = {
@@ -2565,7 +2570,7 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 300
+		size = 530
 	}
 
 	artisans = {
@@ -2592,6 +2597,12 @@
 		size = 500
 	}
 
+	clergymen = {
+		culture = ugrian
+		religion = orthodox
+		size = 90
+	}
+
 	soldiers = {
 		culture = ugrian
 		religion = orthodox
@@ -2615,7 +2626,7 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 400
+		size = 1350
 	}
 
 	artisans = {
@@ -2799,7 +2810,7 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 350
+		size = 635
 	}
 
 	artisans = {
@@ -2823,7 +2834,7 @@
 	clergymen = {
 		culture = ugrian
 		religion = orthodox
-		size = 140
+		size = 210
 	}
 	
 	farmers = {
@@ -2843,7 +2854,7 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 350
+		size = 510
 	}
 
 	artisans = {
@@ -2861,7 +2872,7 @@
 	farmers = {
 		culture = russian
 		religion = orthodox
-		size = 44500
+		size = 48500
 	}
 
 	clergymen = {
@@ -2947,7 +2958,7 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 500
+		size = 700
 	}
 
 	artisans = {
@@ -3043,7 +3054,7 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 800
+		size = 1290
 	}
 
 	artisans = {
@@ -3244,7 +3255,7 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 1650
+		size = 2650
 	}
 
 	artisans = {
@@ -3758,7 +3769,7 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 250
+		size = 470
 	}
 
 	artisans = {
@@ -3830,8 +3841,13 @@
 	soldiers = {
 		culture = tatar
 		religion = orthodox
-		size= 1150
+		size = 1150
+	}
 
+	clergymen = {
+		culture = tatar
+		religion = orthodox
+		size = 1550
 	}
 
 	farmers = {
@@ -3844,6 +3860,12 @@
 		culture = ugrian
 		religion = orthodox
 		size = 1200
+	}
+
+	clergymen = {
+		culture = ugrian
+		religion = orthodox
+		size = 250
 	}
 
 	soldiers = {
@@ -4015,6 +4037,12 @@
 	artisans = {
 		culture = tatar
 		religion = orthodox
+		size = 850
+	}
+
+	clergymen = {
+		culture = tatar
+		religion = orthodox
 		size = 750
 	}
 
@@ -4095,7 +4123,7 @@
 	clergymen = {
 		culture = tatar
 		religion = orthodox
-		size = 75
+		size = 135
 	}
 
 	artisans = {
@@ -5531,7 +5559,7 @@
 }
 #Urals Region (832000)
 #under the rule of Russia in 1836
-#Ekaterinburg (396000/99000 POPS)
+#Ekaterinburg/Provedenie (396000/99000 POPS)
 1058 = {
 	aristocrats = {
 		culture = russian
@@ -5554,7 +5582,7 @@
 	clergymen = {
 		culture = russian
 		religion = orthodox
-		size = 500
+		size = 730
 	}
 
 	artisans = {
