@@ -36,11 +36,13 @@ the other French nobles may find a way to claim the French crown for themselves,
 	King: Louis XV de Tournus, b. 29 October, 1811. Age: 24. Took the throne on 7 June, 1828. Married to the daughter of the Count of Burgundy.
 	Heir: Jean de Tournus, b. 14 January, 1817. Age: 18. Younger brother of the king.
 
+
 Aquitania:
 
 While it has had its share of war and turmoil, the House De Melgueil has become used to luxury and plenty. Two centuries of near-domestic peace will soon
 come to an end, as a revolution of political thinking is coming. Already, philosphers and natural scientists across Western Europe are turning toward a
 new line of thought: liberalism. The ossified political structures of Aquitania will come under attack. Will the monarchy survive the storm?
+
 
 Helvetia:
 
@@ -52,11 +54,13 @@ and became a center for liberal thought, and the Eltesters of the Republic maneu
 the Hispanian Revolution and the reaction to the ideals of liberalism, monarchs of Europe have begun to look on Helvetia with suspicion, seeing it as a source
 of the liberal plague.
 
+
 Iberia:
 
 Hispania has only recently lost its colonies, its prestige, and its absolute hegemony over Iberia, and is eager to get them back. Navarra and Galicia have had a 
 tenuous independence from their large neighbour, and who knows how long that state of affairs will continue. Portugal, as with the other Iberian 
 countries, was under the rule of Hispania for centuries, but has fared somewhat better.
+
 
 Italy:
 
@@ -64,6 +68,7 @@ The Kingdom of Naples is the main power on the Peninsula, and has recently been 
 power on the Peninsula, and has recently been expanding north into the minour Italian states. In mid-December of 1835, after negotiations with the Grand Duke of Tuscany, 
 Giancarlo II Miravelli, broke down, the King of Naples, Giuseppe I Salenino, declared war citing "insults against the crown of Naples and against all Italians." Naples now
 seeks to conquer Tuscany and solidify its position as hegemon of the peninsula.
+
 
 Germany: 
 
@@ -80,10 +85,12 @@ Brunswick: Karl Ludwig von Edemissen (b. 1800, age 36), also heir apparent to th
 Brandenburg: Ernst II von Sperenberg-Kallinchen (b. 1779, age 56)
 Bavaria: Georg Friedrich von Satzenhofen (b. 1785, age 51)
 
+
 Low countries:
 
 The Duchies of Wallonia and Brabant survived French domination and expanded in the vacuum it left when it receded. Both are well-industrialised, as is the
 Kingdom of the Netherlands, which was only recently united by the Duke of Holland.
+
 
 Bohemia:
 
@@ -93,14 +100,12 @@ fairly industrialised country, it became the head of a personal union with Hunga
 tight control over that country and over Saxony on its northwestern border, both of which serve to separate the Czech heartland from the Duchy of Brandenburg. More can be found
 on the forum thread or in the wiki at https://www.reddit.com/r/savs/wiki/bohemia
 
+
 Nordic countries:
 
 Norwegian King: Håkon IV Erling (House of Erling claims to descend from the legendary Yngling dynasty. b.1817, 1836 age 19), heir Olav (brother, b. 1825)
-
 Swedish King: Karl XIII von Hannover-Stenkiling (b.1818, 1836 age 18), heir Frederick August (brother, b.1820)
-
 Danish King: Christian VII Brockenhuus-Wettin (b.1795, 1836 age 41), heir Margaret (only child, b.1817)
-
 Finnish King: Eerikki VI Haataja (b.1775, 1836 age 51), heir Voitto (b.1801)
 
 Skåne control history:
@@ -109,10 +114,12 @@ Skåne control history:
 * 1613 to 1828: Sweden
 * 1828 to present: Denmark
 
+
 Poland: (To be expanded upon)
 
 The szlachta (Polish nobility) and the Sejm still rule. The monarchy is hereditary, but the Sejm is quite powerful. King of
 Poland: Kasimir Francizek Widzowski (b. 1792, age 44, r. 1813-). Heir apparent: Jan Tomaz (b. 1817, age 18)
+
 
 Austria:
 
@@ -122,11 +129,13 @@ borders to the northwest. Bohemia and Bavaria constantly bicker over who should 
 advantage. Austria is a multiethnic country, although the Principality only acquired the lands of the Slovenes and Croats under the rule of Friedrich's father, Hermann V, in the 1770s
 and 1780s. The von Rassos will no doubt look to expand as their prestige grows.
 
+
 Croatia, Serbia, and Montenegro:
 
 Ardeal:
 
 Moldavia and Wallachia:
+
 
 The Roman Empire:
 
@@ -150,12 +159,25 @@ into the majority once again in the east, while there was less penetration in th
 The Roman Empire lost the Anatole War with the Peace of Amasea in 1813 due to a number of key battles that saw Armenian commanders make successful and devastating use of
 newly-developed European military technology and tactics against the Romans, who continue to be behind the curve in terms of military advancement.
 
+
+
 Smolensk and the Russian Empire: 
 
 Out of the morass of petty princes and constant war among the Great Russians rose just two families: the Muscovite Konstantinovs and the Smolenskii Sitnikovs, who through
 military and diplomatic strength and success subdued the other nobles. However, despite numerous attempts on both sides, neither was ever able to subdue the other. While
 Smolensk has the advantage in terms of population and military size, Russia is the seat of the Patriarch of the Orthodox faith of the Great Russian people, and as such, the
 powerful religious establishment in Smolensk acts as a significant check on Smolenskii ambitions to expand at the expense of Russia.
+
+The Cossacks maintain nominal control over the lower Don but pay tribute to the Smolenskiis, a reversal of fortunes compared to two or three centuries ago which they much
+distaste. The Principality of Vitebsk, on the other hand, is a close ally of Russia - so close as to be an autonomous vassal of the latter -, being intermarried with the
+Konstantinov line. Indeed, the Tsar is next in line to succeed the Knyaz of Vitebsk.
+
+Rulers
+
+Russia: Tsar Feodor II Konstantinov (b. 1794, age 41), heir Vsevolod (b. 1828, age 8)
+Smolensk: Korol Aleksandr I Sitnikov (b. 1782, age 53), heir Aleksandr (b. 1803, age 32)
+Cossack Hetmanate: Hetman Pavlo Vyhovsky (b. 1799, age 36)
+Vitebsk: Kynaz Pyotr IV Konstantinov (b. 1826, age 9), without issue - heir with best claim is Tsar Feodor
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 North Ameriga:

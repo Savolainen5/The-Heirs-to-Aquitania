@@ -105,10 +105,18 @@ vassal = {
 }
 
 # Hispania-Bengal
-substate = {
+vassal = {
 	first = HIS
 	second = BNG
 	start_date = 1782.1.1
+	end_date = 1949.1.1
+}
+
+# Russia-Vitebsk
+vassal = {
+	first = RUS
+	second = VIT
+	start_date = 1793.1.1
 	end_date = 1949.1.1
 }
 

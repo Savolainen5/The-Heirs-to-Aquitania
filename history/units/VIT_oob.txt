@@ -1,0 +1,35 @@
+RUS = {
+	value = 175
+}
+
+SML = {
+	value = -100
+}
+
+army = {
+	name = "Army of the Knyaz"
+	location = 945
+	regiment = {
+		name= "1.-ya Pechotnaya"
+		type = infantry
+		home = 718
+	}
+
+	regiment = {
+		name= "2.-ya Pechotnaya"
+		type = infantry
+		home = 946
+	}
+
+	regiment = {
+		name= "Knyazeskaya Kavaleriya"
+		type = cuirassier
+		home = 945
+	}
+
+	regiment = {
+		name= "Knyazeskaya Artilleriya"
+		type = artillery
+		home = 948
+	}
+}

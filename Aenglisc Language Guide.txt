@@ -12,8 +12,8 @@ Letter-sound correspondences which differ from our general English today:
 	Symbols within /slashes/ are in the International Phonetic Alphabet (IPA) (with broad transcription, loosely used).
 	Use this website to hear any of these IPA sounds: https://www.ipachart.com/
 
-a = /ɑ/ almost invariably
-ae = /æ/, roughly like the "a" in our word "cat"
+a = /ɑ/ almost invariably, pronounced like in "father"
+ae = /æ/, pronounced roughly like the "a" in our word "cat"
 ea (when a diphthong) = /e/, similar to the final vowel in "play", but without the /ɪ/ at the end
 o = /o/ or /ɔ/, but not /oʊ/ as some will be tempted to say
 i = /ɪ/, like the "i" in "hit, bit"

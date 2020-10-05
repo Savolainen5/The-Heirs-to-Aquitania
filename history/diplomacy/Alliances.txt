@@ -157,3 +157,11 @@ alliance = {
 	start_date = 1836.1.1
 	end_date = 1949.1.1
 }
+
+# Russia-Vitebsk
+alliance = {
+	first = RUS
+	second = VIT
+	start_date = 1836.1.1
+	end_date = 1949.1.1
+}

@@ -204,6 +204,7 @@ SML		= "countries/Smolensk.txt"
 TAR 	= "countries/Tatarstan.txt"
 TNT		= "countries/Tannu Tuva.txt"
 URA 	= "countries/Ural Republic.txt"
+VIT		= "countries/Vitebsk.txt"
 YAK 	= "countries/Yakutia.txt"
 YKT		= "countries/Yakuts.txt"
 

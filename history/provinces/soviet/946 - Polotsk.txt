@@ -1,6 +1,6 @@
-owner = SML
-controller = SML
-add_core = SML
+owner = VIT
+controller = VIT
+add_core = VIT
 add_core = RUS
 add_core = BYE
 trade_goods = wool

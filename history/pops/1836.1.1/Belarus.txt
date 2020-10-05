@@ -391,7 +391,13 @@
 	soldiers = {
 		culture = byelorussian
 		religion = orthodox
-		size = 1000
+		size = 1890
+	}
+
+	craftsmen = {
+		culture = byelorussian
+		religion = orthodox
+		size = 350
 	}
 
 	farmers = {
@@ -970,10 +976,29 @@
 		size = 15625
 	}
 }
-#Vitebsk Region (2028000)
-#under the rule of Russia in 1836
+#Minsk Region (2028000) changed around a bit, these region labels aren't really useful
+#under the rule of Vitebsk in 1836
 #Vitebsk (272000/68000 POPS)
 945 = {
+
+	aristocrats = {
+		culture = byelorussian
+		religion = orthodox
+		size = 500
+	}
+
+	bureaucrats = {
+		culture = byelorussian
+		religion = orthodox
+		size = 150
+	}
+
+	officers = {
+		culture = byelorussian
+		religion = orthodox
+		size = 200
+	}
+	
 	clergymen = {
 		culture = byelorussian
 		religion = orthodox
@@ -989,7 +1014,7 @@
 	soldiers = {
 		culture = byelorussian
 		religion = orthodox
-		size = 1000
+		size = 1950
 	}
 
 	farmers = {
@@ -1040,36 +1065,6 @@
 		size = 3200
 	}
 
-	aristocrats = {
-		culture = polish
-		religion = catholic
-		size = 500
-	}
-
-	bureaucrats = {
-		culture = polish
-		religion = catholic
-		size = 150
-	}
-
-	officers = {
-		culture = polish
-		religion = catholic
-		size = 200
-	}
-
-	clergymen = {
-		culture = polish
-		religion = catholic
-		size = 50
-	}
-
-	soldiers = {
-		culture = polish
-		religion = catholic
-		size = 25
-	}
-
 	clergymen = {
 		culture = ashkenazi
 		religion = jewish
@@ -1096,10 +1091,17 @@
 }
 #Polotsk (628000/157000 POPS)
 946 = {
+
+	aristocrats = {
+		culture = byelorussian
+		religion = orthodox
+		size = 1500
+	}
+	
 	clergymen = {
 		culture = byelorussian
 		religion = orthodox
-		size = 1225
+		size = 1275
 	}
 
 	artisans = {
@@ -1111,31 +1113,13 @@
 	soldiers = {
 		culture = byelorussian
 		religion = orthodox
-		size = 1225
+		size = 2400
 	}
 
 	farmers = {
 		culture = byelorussian
 		religion = orthodox
 		size = 119075
-	}
-
-	aristocrats = {
-		culture = polish
-		religion = catholic
-		size = 1500
-	}
-
-	clergymen = {
-		culture = polish
-		religion = catholic
-		size = 50
-	}
-
-	soldiers = {
-		culture = polish
-		religion = catholic
-		size = 75
 	}
 
 	clergymen = {
@@ -1233,7 +1217,7 @@
 	soldiers = {
 		culture = lithuanian
 		religion = catholic
-		size = 600
+		size = 800
 	}
 
 	farmers = {
@@ -1257,7 +1241,7 @@
 	soldiers = {
 		culture = byelorussian
 		religion = orthodox
-		size = 150
+		size = 550
 	}
 
 	farmers = {
@@ -1322,6 +1306,13 @@
 }
 #Mogilev (392000/98000 POPS)
 948 = {
+
+	aristocrats = {
+		culture = byelorussian
+		religion = orthodox
+		size = 600
+	}
+	
 	clergymen = {
 		culture = byelorussian
 		religion = orthodox
@@ -1337,19 +1328,13 @@
 	soldiers = {
 		culture = byelorussian
 		religion = orthodox
-		size = 1000
+		size = 1925
 	}
 
 	farmers = {
 		culture = byelorussian
 		religion = orthodox
 		size = 79250
-	}
-
-	aristocrats = {
-		culture = polish
-		religion = catholic
-		size = 600
 	}
 
 	clergymen = {

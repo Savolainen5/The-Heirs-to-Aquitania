@@ -95,3 +95,8 @@ Maghreb
 -It should start with more reforms unlocked or have some decisions to gain research points or modifiers, maybe It could sell a port to Hispania in exchange for bonuses.
 -Doing so could start an event chain that ends with Tunisia and Tripoli revolting and Cyrenaica becoming independent, or something along those lines. It could add some conflict and give us the option of annexing Cyrenaica.
 -One final thing could be giving the option for fascist Maghreb to annex some of the islands of the western Mediterranean. After all, they have a strong tradition of resisting Barbary raids, and conquering them could make for some great symbolic victories for a fascist regime. 
+
+-----------------------------------------------------------------------------------------------------------------------
+- Teralarga-Naffaroako Berria Union
+- Jingoist Brabant conquers NET to form some sort of Brabant-led UP
+- AQT gives FRA La Rochèla in exchange for a mutual defence pact (difficult to maintain in-game because the AI is dumb?)

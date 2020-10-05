@@ -7,6 +7,12 @@ POL = {
 	value = 85
 }
 
+VIT = {
+	value = 160
+	level = 5
+	influence_value = 35
+}	
+
 army = {
 	name = "Army Corps of the Guard"
 	location = 1008

@@ -1,0 +1,45 @@
+political_decisions = {
+	annex_hawaii = {
+        potential = {
+            exists = HAW
+            is_greater_power = yes
+            HAW = { ai = yes }
+            NOT = { has_country_flag = annexed_hawaii }
+            any_owned_province = { has_building = naval_base }
+            OR = {
+                capital_scope = { continent = north_america }
+                capital_scope = { continent = south_america }
+                capital_scope = { continent = asia }
+                capital_scope = { continent = oceania }
+            }
+        }
+        
+        allow = {
+            revolution_n_counterrevolution = 1
+            is_sphere_leader_of = HAW
+        }
+        
+        effect = {
+            set_country_flag = annexed_hawaii
+            658 = { 
+                trade_goods = coffee 
+                any_pop = {
+					limit = {
+						type = aristocrats
+					}
+                    militancy = 2
+                }
+            }
+            badboy = 2
+            HAW = { civilized = yes }
+            inherit = HAW
+        }
+        ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.96
+			}
+		}
+    }
+}

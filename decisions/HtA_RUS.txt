@@ -302,6 +302,9 @@ political_decisions = {
 						}
 						owned_by = POL
 						owned_by = UKR
+						owned_by = DON
+						owned_by = VIT
+						owned_by = LIT
 					}
 				}
 			}
@@ -478,6 +481,7 @@ political_decisions = {
 		}
 	}
 	
+	
 	#Debug-type decision to make people not sphere SML
 	hta_no_sml_sphere = {
 		potential = {
@@ -583,10 +587,16 @@ political_decisions = {
 					NOT = { exists = RUS }
 				}
 			}
-			NOT = { accepted_culture = ukrainian }
+			OR = {
+				NOT = { accepted_culture = ukrainian }
+				NOT = { accepted_culture = byelorussian }
+			}
 		}
 		allow = {
 			nationalism_n_imperialism = 1
+			BYE = { exists = no }
+			VIT = { exists = no }
+			UKR = { exists = no }
 		}
 		effect = {
 			prestige = 5
@@ -599,7 +609,7 @@ political_decisions = {
 						has_pop_culture = byelorussian
 					}
 				}
-				consciousness = 4
+				consciousness = 3
 			}
 		}
 	}
@@ -648,7 +658,7 @@ political_decisions = {
 		}
 	}
 	
-	#Railroaded-only decision to give money to RUS
+	#Railroaded-only decision to give money to RUS    
 	RUS_fiscal_support = {
 		potential = {
 			tag = RUS

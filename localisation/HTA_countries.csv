@@ -623,16 +623,17 @@ SLS_conservative;Catholic Front;;;;;;;;;;x
 SLS_socialist;Common Party of Silesia;;;;;;;;x
 SLS_communist;Silesian Radas;;;;;;;;x
 SLS_fascist;Black Cross Party;;;;;;;;;;x                                           
-SML;Smolensk;;;;;;;;;;;;;x                                                 
-SML_ADJ;Smolenskii;;;;;;;;;;;;;x
-SML_conservative;Orthodox Party;;;;;;;;x
-SML_conservative_2;Tsarists;;;;;;;;x
-SML_reactionary;Manorial Party;;;;;;;;x
-SML_liberal;Republican Constitutionalists;;;;;;;;;x
-SML_liberal_2;People's Accord Party;;;;;;;;;;x
-SML_anarcho_liberal;Freedom Faction;;;;;;;;x
-SML_socialist;Socialist People's Party;;;;;;;;;x
-SML_socialist_2;Farm and Labour Union;;;;;;;;;;x
+SML;Smolensk;x                                                 
+SML_ADJ;Smolenskii;x
+SML_conservative;Orthodox Party;x
+SML_conservative_2;Korolists;x
+SML_reactionary;Manorial Party;x
+SML_liberal;Republican Constitutionalists;x
+SML_liberal_2;People's Accord Party;x
+SML_anarcho_liberal;Freedom Faction;x
+SML_socialist;Socialist People's Party;x
+SML_socialist_2;Farm and Labour Union;x
+SML_socialist_3;Prosperity Party;x
 SML_communist;Promethean Society;;;;;;;;;;;x
 SML_communist_2;Smolensk Communist Party;;;;;;;;;;;;x
 SML_fascist;Fatherland Patriot's Party;;;;;;;;;x
@@ -696,7 +697,16 @@ USR_conservative;Redbers Meg;;;;;;;;;x
 USR_fascist;Beulims Meg;;;;;;;;;x
 USR_liberal;Doeres Meg;;;;;;;;;x
 USR_reactionary;Sundoranwals Meg;;;;;;;;x    
-USR_socialist;Bigeneres Gade;;;;;;;;x    
+USR_socialist;Bigeneres Gade;;;;;;;;x
+VIT;Vitebsk;x
+VIT_ADJ;Vitebskii;x
+VIT_conservative;Committee for Order;;;;;;;;x
+VIT_reactionary;Boyar Faction;;;;;;;;x
+VIT_liberal;Republicans;;;;;;;;;x
+VIT_anarcho_liberal;Blue Band;;;;;;;;x
+VIT_socialist;Farm and Worker Party;;;;;;;;;x
+VIT_communist;People's Council;;;;;;;;;;;x
+VIT_fascist;White Cross Party;;;;;;;;;x
 VOL;Volasea;;;;;;;;x
 VOL_ADJ;Volasean;;;;;;;;;x                                             
 VST;Vestland;;;;;;;;;;;;;x                                                 
