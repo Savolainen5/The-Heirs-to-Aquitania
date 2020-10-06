@@ -1070,6 +1070,17 @@ anarcho_liberal_rebels = {
 			factor = 0.5
 			average_militancy = 8
 		}
+		modifier = {
+			factor = 30
+			has_country_flag = lost_RUS_war
+		}
+		modifier = {
+			factor = 30
+			has_global_flag = railroading_on
+			tag = SML
+			ai = yes
+			year = 1845
+		}
 	}
 	
 	# The rebel type with the highest modifier for this pop gets picked
@@ -1188,6 +1199,27 @@ anarcho_liberal_rebels = {
 		modifier = {
 			factor = 0.5
 			NOT = { is_culture_group = THIS }
+		}
+		modifier = {
+			factor = 0
+			country = {
+				OR = {
+					has_country_flag = lost_RUS_war
+					AND = {
+						tag = SML
+						war_with = RUS
+					}
+					AND = {
+						tag = RUS
+						war_with = SML
+					}
+					AND = {
+						tag = SML
+						has_global_flag = railroading_on
+					}
+				}
+			}
+			NOT = { year = 1865 }
 		}
 	}
  

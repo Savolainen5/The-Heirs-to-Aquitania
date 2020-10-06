@@ -59,6 +59,7 @@ country_event = {
 		owns = 2618
 		owns = 1074
 		owns = 2590
+		owns = 2660
 		NOT = { has_country_flag = western_coast_explored }
 	}
 	
@@ -624,6 +625,7 @@ country_event = {
 	id = 50369
 	title = "EVTNAME50369"
 	desc = "EVTDESC50369"
+	picture = "cossack_baron"
 	
 	is_triggered_only = yes
 
@@ -908,7 +910,7 @@ country_event = {
 	id = 50373
 	title = "EVTNAME50373"
 	desc = "EVTDESC50373"
-	picture = "rebellious_minorities"
+	picture = "vitebsk"
 
 	fire_only_once = yes
 	
@@ -1451,7 +1453,7 @@ province_event = {
 	id = 50391
 	title = "EVTNAME50391"
 	desc = "EVTDESC50391"
-	#picture = ""#Actual Sebastopol
+	picture = "sevastopol"
 	
 	fire_only_once = yes
 	
@@ -1484,6 +1486,7 @@ country_event = {
 	id = 50392
 	title = "EVTNAME50392"
 	desc = "EVTDESC50392"
+	picture = "Gogol"
 	
 	fire_only_once = yes
 	
