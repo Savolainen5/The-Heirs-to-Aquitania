@@ -871,9 +871,6 @@ country_event = {
 #	End chains with Brittany #
 ##############################
 
-# The Picards and Walloons are French!
-#51401, 51402 reserved for this
-
 #Event which removes cores for Bar and Lorraine
 country_event = {
 	id = 51400
@@ -909,4 +906,7 @@ country_event = {
 		set_country_flag = bar_lorraine_cores_removed
 	}
 }
+
+# The Picards and Walloons are French!
+#51401, 51402 reserved for this
 			

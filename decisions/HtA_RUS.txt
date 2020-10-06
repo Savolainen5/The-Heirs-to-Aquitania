@@ -202,6 +202,7 @@ political_decisions = {
 	}
 
 	claim_far_east = {
+		picture = russian_far_east
 		potential = {
 			primary_culture = russian
 			NOT = { has_global_flag = far_east_claimed }
@@ -256,7 +257,9 @@ political_decisions = {
 #		}
 #	}
 	
+	#Svetaev Expedition
 	expedition_to_okhotsk = {
+		picture = menshikov
 		potential = {
 			owns = 2669
 			primary_culture = russian

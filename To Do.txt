@@ -83,6 +83,7 @@ Map:
 - Do some province reshaping and add another province in the border region between AQT and NAV
 - Make provinces conform better to new RDS rivers. Especially Khiva-Persia
 - Fix the hill terrain - Why doesn't it WAD? Why doesn't it even exist? How the heck does the terrain sheet work, anyways? Should some other terrain map be brought in and adapted to the HtA map?
+- Some provinces are alone in their state, which makes them NOT tempting targets (like Cherkoee's northern provinces) - Do something about this
 
 Flags: More about this can be found in the "List of small things to be done" on the forum (https://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-5#post-20555393)
 
@@ -129,5 +130,6 @@ Other:
 	- Absorb Georgia?
 - RCW runs a different course if the Empire is already democratic via Albesans
 	- Romans struggle to keep Greeks and Anatolians in check - regionalism
+- Indian accepted cultures: should include Gujarati, should have a way to accept Dravidians
 	
 Savs, remember that Birth of a Nation is in CleanUp and has the ID 60160

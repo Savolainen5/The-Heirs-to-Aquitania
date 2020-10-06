@@ -494,7 +494,7 @@ EGY_910 = { 908 910 911 922 909 } #Transjordan
 
 EGY_915 = { 913 915 912 914 } #Lebanon
 
-EGY_921 = { 917 921 920 919 918 916 } #Palestine
+EGY_921 = { 917 920 919 918 916 } #Palestine
 
 TUR_923 = { 923 924 925 928 } #Mosul
 
@@ -941,7 +941,7 @@ EGY_1751 = { 1751 1746 1747 } #Alexandria
 
 EGY_1753 = { 1753 1754 1752 } #Qattara
 
-EGY_1755 = { 1755 1756 1757 } #Sinai
+EGY_1755 = { 1755 1756 1757 921} #Sinai
 
 EGY_1758 = { 1758 1761 1760 1759 } #Egyptian Desert
 

@@ -661,6 +661,7 @@ country_event = {
 	id = 50370
 	title = "EVTNAME50370"
 	desc = "EVTDESC50370"
+	picture = "Rebellion"
 	
 	fire_only_once = yes
 	
