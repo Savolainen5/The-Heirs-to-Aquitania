@@ -917,7 +917,7 @@ country_event = {
 		VIT = {
 			vassal_of = THIS
 		}
-		primary_culture = russian
+		tag = RUS
 		is_greater_power = yes
 		OR = {
 			NOT = { exists = RUS }

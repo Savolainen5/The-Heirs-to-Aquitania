@@ -126,7 +126,7 @@ army = {
 }
 
 army = {
-	name = "Armata z Lodomerie"
+	name = "Armia z Lodomerii"
 	location = 702
 	regiment = {
 		name = "1. Dywizja Lodomerie"

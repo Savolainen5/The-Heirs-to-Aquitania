@@ -1,8 +1,3 @@
-POL - will do in the next version
--Black sea stuff
--Oppose GER formation
--Pressure BYZ to form Romania/Volasea, either as an independent or by attacking Ardeal to make a vassal Romania
-
 SML
 - War with BYZ for some reason, if they win they can free the S. Slavs
 - Intervene on behalf of Anatole in civil war?
@@ -11,7 +6,7 @@ SML
 RUS
 - Continue south into C. Asia - conflict with Persia
 
-Make Albesan rebels rebel less
+Doublecheck that VIT will get SML cores should SML win
 
 Stuff from this post: http://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-34#post-22477778 --- Mostly done, need to double check that the fix for the NET-NAL war WAD
 	Should there be a better justification for Wallonia and its being integrated into the Greater Netherlands
