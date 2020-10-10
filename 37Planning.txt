@@ -1,6 +1,6 @@
 Planning and ideas for 0.37
 
-Poland
+Poland:
 - Something with the Sejm
 	- Liberum veto never crippled Poland like it did OTL (think of some history, do some research)
 	- If there's an elective monarchy, foreign king possible?
@@ -12,8 +12,10 @@ Poland
 - Make sure that claims are not wonky
 
 - Homeland for the Jews in the region?
+	- Some country declares itself protector?
+	- Balfour declaration type which presents options?
 
-Italy
+Italy:
 - Rework PDN formation?
 	Some sort of conference thing
 - Rework NPL->ITA. Perhaps some sort of Mezzogiorno-like country
@@ -23,3 +25,7 @@ Italy
 - PDN-NPL war with each seeking allies
 	- GP on PDN's side declares war on NPL with some wargoal and peaces out by decision when PDN's war ends.
 		- Problem: NPL allies might agree to fight PDN, but not the GP
+		
+		
+Other:
+- France eats Wallonia?

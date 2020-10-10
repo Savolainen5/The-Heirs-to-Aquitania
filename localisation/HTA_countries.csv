@@ -464,10 +464,10 @@ MRG;Margaria;;;;;;;;;;;;;x
 MRG_ADJ;Margarian;;;;;;;;;;;;;x                                            
 NAV;Navarra;;;;;;;;;;;;;x                                                  
 NAV_ADJ;Navarrese;;;;;;;;;;;;;x
-NAL_conservative;Vorauser Parti;;;;;;;;;;x;;;;
-NAL_conservative_2;Hosmans Parti;;;;;;;;;x;;;;
-NAL_liberal;Freden Parti;;;;;;;;;;;;;x;;;;
-NAL_reactionary;Rektig Parti;;;;;;;;;;;x;;;;                                    
+NAL_conservative;Vorauser Parti;;;;;;;;;;x
+NAL_conservative_2;Hosmans Parti;;;;;;;;;x
+NAL_liberal;Freden Parti;;;;;;;;;;;;;x
+NAL_reactionary;Rektig Parti;;;;;;;;;;;x                              
 NFB;Naffaroako Berria;;;;;;;;;;;;;x                                        
 NFB_ADJ; Berrian;;;;;;;;;;;;;x                                             
 NHL;New Holland;;;;;;;;;;;;;x                                              
