@@ -211,6 +211,7 @@ To do:
 51600-51649 - Misc European, spread across different files
 51650-51699 - Mediterranean
 51700-51750 - Caribbean
+51751-51850 - The Near East (first half), Persia (second half)
 
 51900-51999 - Rest of Africa
 52000-52100 - South Africa

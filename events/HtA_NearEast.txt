@@ -1,0 +1,473 @@
+#Blocked out 51751-51800
+
+###########EVENTS ADDED BY CHORTLINGGNOME IN 0.36 FOR THE ZACHADIA AAR########################################
+#EVT numbers 51751-51759
+
+## Arab Nationalism in Persia
+
+country_event = {
+	id = 51751
+	title = "EVTNAME51751"
+	desc = "EVTDESC51751"
+	picture = "arab_revolt"
+	major = yes
+	
+	trigger = {
+		NOT = { has_global_flag = persian_decline }
+		tag = PER
+		year = 1860
+		civilized = no
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 0.8
+			NOT = { civilization_progress = 0.4 }
+		}
+		modifier = {
+			factor = 0.5
+			has_recently_lost_war = yes
+		}
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				OR = {
+					is_core = SYR
+					is_core = IRQ
+				}
+				average_militancy = 3
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				OR = {
+					is_core = SYR
+					is_core = IRQ
+				}
+				average_militancy = 4
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				OR = {
+					is_core = SYR
+					is_core = IRQ
+				}
+				average_militancy = 5
+			}
+		}
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				OR = {
+					is_core = SYR
+					is_core = IRQ
+				}
+				average_militancy = 6
+			}
+		}
+	}
+	
+	option = {
+		name = "Dark times lie ahead for Persia."
+		set_global_flag = persian_decline
+		SYR = {
+			all_core = {
+				remove_core = PER
+			}
+		}
+		IRQ = {
+			all_core = {
+				remove_core = PER
+			}
+		}
+		any_owned = {
+			limit = { 
+				OR = {
+					is_core = SYR
+					is_core = IRQ
+				}
+			}
+			random_list = {
+				50 = {
+					poor_strata = {
+						limit = { 
+							OR = {	
+								has_pop_culture = mashriqi
+								has_pop_culture = bedouin 
+							}
+						}
+						militancy = 6
+					}
+					add_province_modifier = {
+						name = nationalist_agitation
+						duration = 1095
+					}
+				}
+				50 = {
+					poor_strata = {
+						limit = {
+							OR = {	
+								has_pop_culture = mashriqi
+								has_pop_culture = bedouin 
+							}
+						}
+						militancy = 3
+					}
+					add_province_modifier = {
+						name = nationalist_agitation
+						duration = 730
+					}
+				}
+			}
+		}
+	}
+}
+
+## European Nations Intervene
+
+country_event = {
+	id = 51752
+	title = "EVTNAME51752"
+	desc = "EVTDESC51752"
+	picture = "colonial_uprising"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Outrageous!"
+		FROM = { country_event = 51755 }
+		ai_chance = {
+			factor = 70
+		}
+	}
+	
+	option = {
+		name = "We have no choice..."
+		prestige = -5
+		FROM = { country_event = 51754 }
+		release = SYR
+		release = IRQ
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+## French Palestine
+
+country_event = {
+	id = 51753
+	title = "EVTNAME51753"
+	desc = "EVTDESC51753"
+	picture = "colonial_uprising"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Let them have it."
+		prestige = -5
+		FROM = { country_event = 51756 }
+		ai_chance = {
+			factor = 70
+		}
+	}
+	
+	option = {
+		name = "Absolutely not!"
+		FROM = { country_event = 51757 }
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+## Persia Accepts European Intervention
+
+country_event = {
+	id = 51754
+	title = "EVTNAME51754"
+	desc = "EVTDESC51754"
+	picture = "Ottoman"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent."
+		prestige = 15
+		create_vassal = SYR
+		diplomatic_influence = {
+			who = SYR
+			value = 300
+		}
+		relation = {
+			who = SYR
+			value = 200
+		}
+		create_vassal = IRQ
+		diplomatic_influence = {
+			who = IRQ
+			value = 300
+		}
+		relation = {
+			who = IRQ
+			value = 200
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 1
+			}
+		}
+	}
+}
+
+## Persia Rejects European Intervention
+
+country_event = {
+	id = 51755
+	title = "EVTNAME51755" # Persia Rejects Us
+	desc = "EVTDESC51755"
+	picture = "arab_revolt"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "He has made a grave mistake."
+		add_casus_belli = {
+			target = PER
+			type = liberate_country
+			months = 2
+		}
+		war = {
+			target = PER
+			attacker_goal = {
+				casus_belli = liberate_country
+				country = SYR
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = yes
+		}
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Abandon the proposal."
+		prestige = -10
+		any_pop = {
+			scaled_militancy = {
+				factor = 2
+				issue = jingoism
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+## Persia Accepts French Palestine
+
+country_event = {
+	id = 51756
+	title = "EVTNAME51756"
+	desc = "EVTDESC51756"
+	picture = "Ottoman"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "A victory for Christian civilization!"
+		916 = { secede_province = THIS } #Acre
+		917 = { secede_province = THIS } #Jerusalem
+		918 = { secede_province = THIS } #Nablus
+		919 = { secede_province = THIS } #Jaffa
+		920 = { secede_province = THIS } #Gaza
+		#921 = { secede_province = THIS } #Beersheba (owned by Egypt in 1836)
+		prestige = 15
+		scaled_militancy = {
+			factor = -3
+			ideology = conservative
+		}
+		EGY_921 = {   #Palestine
+			any_pop = {
+				limit = { religion = catholic }
+				militancy = -3
+			}
+		}
+		EGY_915 = {   #Lebanon
+			any_pop = {
+				limit = { religion = catholic }
+				militancy = -3
+			}
+		}
+	}
+}
+
+## Persia Rejects French Palestine
+
+country_event = {
+	id = 51757
+	title = "EVTNAME51755" # Persia Rejects Us
+	desc = "EVTDESC51757"
+	picture = "arab_revolt"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "They'll regret this"
+		add_casus_belli = {
+			target = PER
+			type = demand_concession_casus_belli
+			months = 24
+		}
+		war = {
+			target = PER
+			attacker_goal = { 
+				casus_belli = demand_concession_casus_belli 
+				state_province_id = 916
+			}
+			defender_goal = { casus_belli = status_quo }
+			call_ally = yes
+		}
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Forget it"
+		prestige = -10
+		any_pop = {
+			scaled_militancy = {
+			factor = 2
+			issue = jingoism
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+## Clean-up Post War 
+
+country_event = {
+	id = 51758
+	title = "Assuming Direct Control"
+	desc = "According to the terms of our treaty with Persia, we will guide the development of the new Arab caliphates."
+	picture = "Ottoman"	
+	
+	fire_only_once = yes
+
+	trigger = {
+		is_greater_power = yes
+		has_global_flag = persian_intervention
+		truce_with = PER
+		OR = {
+			exists = SYR
+			exists = IRQ
+		}
+		has_country_flag = ME_interest
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "You cannot escape us"
+		create_vassal = SYR
+		create_vassal = IRQ
+	}
+}	
+
+## Strife in the Middle East
+
+province_event = {
+	id = 51759
+	title = "Arab Uprising in $PROVINCENAME$"
+	desc = "Arabs are burning the Persian flag and demanding independence. There are rumors that militants are organizing for a full-scale rebellion."
+	
+	trigger = {
+		OR = {
+			is_core = SYR
+			is_core = IRQ
+		}
+		NOT = { controlled_by = REB }
+		NOT = {
+			owned_by = SYR
+			owned_by = IRQ
+			owned_by = EGY
+			owned_by = KWT
+			has_province_modifier = nationalist_agitation
+			is_colonial = yes
+		}
+		owner = {
+			tag = PER
+			has_global_flag = persian_decline
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = { has_province_modifier = nationalist_agitation }
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 3
+			units_in_province = 1
+		}
+	}
+	
+	option = {
+		name = "Put down the uprising at once!"
+		state_scope = {
+			any_pop = {
+				limit = { 
+					OR = {
+						has_pop_culture = mashriqi 
+						has_pop_culture = bedouin
+					}
+				}
+				militancy = 6
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = nationalist_agitation
+					duration = 730
+				}
+			}
+		}
+	}
+}
+
+###################END CHORTLINGGNOME AAR EVENTS#################
