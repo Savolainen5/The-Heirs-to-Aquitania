@@ -1,5 +1,9 @@
 political_decisions = {
-	
+
+#############################################
+# Decisions for the blobby player Irakelio  #
+#############################################
+
 	#Declare a trade republic
 	med_islands_trade_republic = {
 		picture = megali_idea

@@ -918,14 +918,11 @@ country_event = {
 	trigger = {
 		exists = VIT
 		VIT = {
-			vassal_of = THIS
+			vassal_of = RUS 
 		}
 		tag = RUS
 		is_greater_power = yes
-		OR = {
-			NOT = { exists = RUS }
-			NOT = { exists = SML }
-		}
+		NOT = { exists = SML }
 		year = 1869
 	}
 	
@@ -970,6 +967,52 @@ country_event = {
 			modifier = {
 				factor = 0
 				has_global_flag = railroading_on
+			}
+		}
+	}
+}
+
+#The Fate of Vitebsk (When SML wins)
+country_event = {
+	id = 50374
+	title = "EVTNAME50374"
+	desc = "EVTDESC50374"
+	picture = "vitebsk"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SML
+		NOT = { exists = RUS }
+		exists = VIT
+	}
+	
+	#mean_time_to_happen = { }
+	
+	option = {
+		name = "Install him as Knyaz."
+		prestige = 5
+		create_vassal = VIT
+		create_alliance = VIT
+		relation = {
+			who = VIT
+			value = 500
+		}
+		diplomatic_influence = {
+			who = VIT
+			value = 500
+		}
+	}
+	
+	option = {
+		name = "Assume direct control."
+		badboy = 1
+		prestige = 5
+		inherit = VIT
+		VIT = {
+			all_core = {
+				add_core = SML
+				#remove_core = VIT  #They will remain, but if you want to mod the files to remove the cores, that's fine
 			}
 		}
 	}

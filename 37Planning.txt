@@ -25,6 +25,10 @@ Italy:
 - PDN-NPL war with each seeking allies
 	- GP on PDN's side declares war on NPL with some wargoal and peaces out by decision when PDN's war ends.
 		- Problem: NPL allies might agree to fight PDN, but not the GP
+- When NPL's European holdings are taken by BYZ, make some event to make their holdings revert to someone (roman_italians decision)
+	- Also see what changes need to be made to the relevant decisions in Hta_RomanEmpire in general
+	- Check the form_italy_without decision in NationalUnification
+	- Make sure there aren't pan-nationalist rebels or something
 		
 		
 Other:

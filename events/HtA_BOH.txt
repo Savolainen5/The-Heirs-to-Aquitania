@@ -70,7 +70,7 @@ province_event = {
 	id = 50404
 	title = "EVTNAME50404"
 	desc = "EVTDESC50404"
-	picture = "Strike"
+	#picture = "Strike" #This is a province event. It doesn't use pictures
 	
 	trigger = {
 		is_core = HUN
