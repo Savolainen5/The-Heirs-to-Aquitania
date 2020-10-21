@@ -33,3 +33,6 @@ Italy:
 		
 Other:
 - France eats Wallonia?
+- Keep refining the Outremer and Near East files (like there was that one player who had a truce with Persia but wasn't involved in the war, but still got stuff)
+- Double check that the crisis stopping event is firing enough. Was it a good idea to comment out the allow_multiple_instances ? Event 60168 in crises.txt
+- See if rebelspam can be reduced by stealing rebel code from HPM/HFM?

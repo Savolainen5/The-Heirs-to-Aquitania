@@ -1855,6 +1855,10 @@ hate_ITA = {
 	icon = 6
 }
 
+timer = {
+	icon = 13
+}
+
 #Provencal stuff
 
 pier_moncani_influence1 = {

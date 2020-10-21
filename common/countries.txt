@@ -201,6 +201,7 @@ KMK		= "countries/Kalmykia.txt"
 KRL		= "countries/Karelia.txt"
 SIB		= "countries/Siberian Republic.txt"
 SML		= "countries/Smolensk.txt"
+SRU		= "countries/Smolensk-Russia.txt" #Russian Empire (formed by Smolensk)
 TAR 	= "countries/Tatarstan.txt"
 TNT		= "countries/Tannu Tuva.txt"
 URA 	= "countries/Ural Republic.txt"

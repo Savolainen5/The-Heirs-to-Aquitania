@@ -7,10 +7,7 @@ country_event = {
 	picture = "ambush_army"
 	
 	trigger = {
-		OR = {
-			tag = SML
-			tag = RUS
-		}
+		primary_culture = russian
 		has_country_flag = yakut_war
 		2648 = { owned_by = THIS }
 		YKT = { exists = no }
@@ -33,7 +30,7 @@ country_event = {
 				is_core = YKT
 				}
 			add_core = YAK
-			add_core = RUS
+			add_core = THIS
 			remove_core = YKT
 		}
 		2621 = { remove_core = YAK }
@@ -49,10 +46,7 @@ country_event = {
 	picture = "expansion"
 	
 	trigger = {
-		OR = {
-			tag = SML
-			tag = RUS
-		}
+		primary_culture = russian
 		has_country_flag = yakut_war
 		YKT = { exists = no }
 		owns = 1072
@@ -100,10 +94,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			tag = SML
-			tag = RUS
-		}
+		primary_culture = russian
 		exists = SML
 		exists = RUS
 		owns = 1194
@@ -156,7 +147,7 @@ country_event = {
 #	}
 #}
 
-#########Added in 0.37 - The Russia Update
+#########Added in 0.36 - The Russia Update
 
 #New Tsar/Knyaz, choose a regent
 country_event = {
@@ -423,13 +414,7 @@ country_event = {
 		NOT = { has_country_modifier = russian_regency }
 	}
 	
-	mean_time_to_happen = {								#Will make the event fire instantly if no MTTH is assigned
-		months = 1
-#		modifier = {
-#			factor = 0.01
-#			year = 1880
-		}
-	}
+	#mean_time_to_happen = {	}							#Will make the event fire instantly if no MTTH is assigned
 
 	option = {
 		name = "May God protect the Tsar!"
@@ -476,7 +461,7 @@ country_event = {
 	id = 50367
 	title = "EVTNAME50367"
 	desc = "EVTDESC50367"
-	picture = "rebellious_minorities"
+	picture = "storming_palace"
 	
 	fire_only_once = yes
 	
@@ -982,9 +967,15 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = SML
-		NOT = { exists = RUS }
+		primary_culture = russian
+		NOT = {
+			tag = RUS
+			exists = RUS
+		}
 		exists = VIT
+		war = no
+		is_greater_power = yes
+		VIT = { in_sphere = SML }
 	}
 	
 	#mean_time_to_happen = { }
@@ -1002,6 +993,13 @@ country_event = {
 			who = VIT
 			value = 500
 		}
+		VIT = {
+			add_country_modifier = {
+				name = timer
+				duration = 3900
+			}
+		}
+		set_country_flag = VIT_puppeted
 	}
 	
 	option = {
@@ -1011,14 +1009,66 @@ country_event = {
 		inherit = VIT
 		VIT = {
 			all_core = {
-				add_core = SML
+				add_core = THIS
 				#remove_core = VIT  #They will remain, but if you want to mod the files to remove the cores, that's fine
+			}
+		}
+		set_country_flag = SML_VIT_annexed
+	}
+}
+
+#Vitebsk revisited (when SML/SRU decides to vassalize VIT in the previous event)
+country_event = {
+	id = 50375
+	title = "EVTNAME50375"
+	desc = "EVTDESC50375"
+	picture = "vitebsk"
+	
+	trigger = {
+		primary_culture = russian
+		NOT = { tag = RUS }
+		has_country_flag = VIT_puppeted
+		exists = VIT
+		VIT = {
+			vassal_of = THIS
+			in_sphere = THIS
+			NOT = {
+				has_country_modifier = timer
+			}
+		}
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "Dispatch a governor to assume control."
+		VIT = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+		inherit = VIT
+		badboy = 1
+		prestige = 5
+		set_country_flag = SML_VIT_annexed_2
+	}
+	
+	option = {
+		name = "Install a new Knyaz."
+		VIT = {
+			add_country_modifier = {
+				name = timer
+				duration = 6250
 			}
 		}
 	}
 }
+		
 
-#Unused at the moment -- 74-79 ################################################################################################## (all this stuff for better visibility, you know)
+#Unused at the moment -- 76-79 ################################################################################################## (all this stuff for better visibility, you know)
 		
 
 #Treaty of Brest between POL and SML - for SML
@@ -1503,6 +1553,7 @@ province_event = {
 	
 	trigger = {
 		province_id = 967
+		country = { primary_culture = russian }
 		OR = {
 			NOT = { has_building = naval_base }
 			NOT = { has_building = fort }

@@ -17,6 +17,13 @@ country_event = {
 		tag = PER
 		year = 1860
 		civilized = no
+		OR = {														#Either the Outremer Question event chain hasn't started, or it has started and concluded early with Persia giving up
+			NOT = { has_global_flag = outremer_chain_start }
+			AND = {
+				has_global_flag = outremer_chain_start
+				has_global_flag = PER_gave_JER_to_FRA
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -67,6 +74,12 @@ country_event = {
 					is_core = IRQ
 				}
 				average_militancy = 6
+			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = {
+				owns = 917 #Jerusalem (because presumably France might have it)
 			}
 		}
 	}

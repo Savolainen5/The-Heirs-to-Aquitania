@@ -151,6 +151,7 @@ country_event = {
     title = "EVTNAME97099" # France demands the Levant
     desc = "EVTDESC97099"
     picture = "crisis_levant_2"
+	
 	is_triggered_only = yes
 
 #    trigger = {
@@ -172,7 +173,12 @@ country_event = {
         set_global_flag = PER_accept_ultimatum
 		clr_global_flag = FRA_demands_levant
         PER = {
-            any_owned = { limit = { is_core = JER } secede_province = FRA }
+            any_owned = {
+				limit = {
+					is_core = JER
+				}
+			secede_province = FRA
+			}
 			prestige = -50
             any_pop = {
 				limit = {
@@ -223,8 +229,13 @@ country_event = {
         rank = 16
         capital_scope = { continent = europe }
 		num_of_ports = 1
+		num_of_states = 2 #One-state countries can't, in case that's a danger
 		NOT = {
 			tag = BYZ
+			tag = FIN
+			tag = SWE
+			tag = NOR
+			tag = DEN
 		}
 		war = no
         has_global_flag = levantine_war
@@ -280,6 +291,9 @@ country_event = {
             attacker_goal = {
                 casus_belli = cut_down_to_size
             }
+			defender_goal = {
+				casus_belli = status_quo
+			}
         }
         ai_chance = {
             factor = 75
@@ -437,6 +451,7 @@ country_event = {
 	
 	option = {
 		name = "Vive la France!"
+		prestige = 5
 		set_global_flag = PER_gave_JER_to_FRA
 	}
 }

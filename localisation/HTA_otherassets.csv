@@ -81,6 +81,7 @@ suppressed_desc;Pretend this doesn't exist, it's a workaround for code limitatio
 suppress_revolt;Active Revolt Suppression;;;;;;;;;x
 technological_assistance;Technological Assistance;;;;;;;;;x
 technological_assistance_desc;We are being provided with European experts in various field of technology to aid our progress in adopting their technology and systems.;;;;;;;;x
+timer;Event Timer;x
 tsar_batyushka;Tsar Batyushka;;;;;;;;;;x
 tsar_batyushka_desc;Dear Father Tsar - The Tsar looks over us and protects us, a father to the whole Empire!;;;;;;;;;;x
 unsuccessful_ds_reform;Unsuccessful Reform;;;;;;;;;x

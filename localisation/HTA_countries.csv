@@ -554,6 +554,10 @@ RGS_anarcho_liberal;Frente Albesano;;;;;;;;;;;;;;;x
 RGS_socialist;Partido de los Trabajadores;;;;;;;;;;;;;;;x
 RGS_communist;Frente Radical;;;;;;;;;;;;;;;x
 RGS_fascist;Altallia Sobre Todo;;;;;;;;;;;;;;;x
+RUS;The Russian Tsardom;x
+RUS_proletarian_dictatorship;People's Republic of Russia;x
+RUS_democracy;Russian Republic;x
+RUS_fascist_dictatorship;Great Russia;x
 RUS_conservative;Great Russia Assembly;;;;;;;;;;x
 RUS_conservative_2;Russian People's Union;;;;;;;;;x
 RUS_reactionary;Tsarists;;;;;;;;;;;;x
@@ -643,6 +647,11 @@ SOL;Solelha;;;;;;;;;;x
 SOL_ADJ;Solelhes;;;;;;;;;x  
 SRI;Sri Lanka;;;;;;;;;;;x
 SRI_ADJ;Lankan;;;;;;;;;;;x
+SRU;The Russian Empire;x
+SRU_ADJ;Russian;x
+SRU_democracy;The Russian Republic;x
+SRU_proletarian_dictatorship;Russian Workers' Commonwealth;x
+SRU_fascist_dictatorship;Nationalist Russia;x
 SRM;Syrmia;;;;;;;;;;;x
 SRM_ADJ;Syrmian;;;;;;;;;;;x
 STE;Stellaland;;;;;;;;;;;x

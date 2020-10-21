@@ -711,11 +711,10 @@ province_event = {
 	title = "EVTNAME60168"
 	desc = "EVTDESC60168"
 	
-	allow_multiple_instances = no
+	#allow_multiple_instances = no
 	
 	trigger = {
 		NOT = { has_global_flag = revolution_n_counter_researched }
-		NOT = { province_id = 608 }
 		is_colonial = no
 		OR = {
 			state_scope = {
@@ -724,32 +723,40 @@ province_event = {
 			}
 			AND = {
 				country = { ai = yes }
-				any_neighbor_province = { owner = { ai = no } state_scope = { flashpoint_tension = 25 has_flashpoint = yes } }
-				}
-			}
-		}
-	
-	mean_time_to_happen = { 
-		days = 10 
-		modifier = {
-			factor = 0.01
-			country = { ai = yes  }
-			} 
-		}
-	
-	option = {
-		name = "EVT60168OPTA"
-		any_country = {
-			any_state  = {
-				limit = {
-					has_flashpoint = yes
-					is_colonial = no
+				any_neighbor_province = {
+					owner = {
+						ai = no
 					}
-				flashpoint_tension = -90
+					state_scope = {
+						flashpoint_tension = 25
+						has_flashpoint = yes
+					}
 				}
 			}
 		}
 	}
+	
+	mean_time_to_happen = { 
+		days = 4 
+		modifier = {
+			factor = 0.1
+			country = { ai = yes }
+		} 
+	}
+	
+	option = {
+		name = "EVT60168OPTA"
+		any_country = {
+			any_state = {
+				limit = {
+					has_flashpoint = yes
+					is_colonial = no
+				}
+				flashpoint_tension = -90
+			}
+		}
+	}
+}
 	
 country_event = {
 	id = 60169

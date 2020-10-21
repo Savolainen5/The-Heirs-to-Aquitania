@@ -3163,44 +3163,49 @@
 	aristocrats = {
 		culture = aquitanian
 		religion = catholic
-		size = 100
+		size = 500
 	}
 
 	clergymen = {
 		culture = aquitanian
 		religion = catholic
-		size = 175
+		size = 975
 	}
 
 	clergymen = {
 		culture = sephardic
 		religion = jewish
-		size = 12
+		size = 155
 	}
 
 	artisans = {
 		culture = sephardic
 		religion = jewish
-		size = 3900
+		size = 8850
+	}
+
+	farmers = {
+		culture = sephardic
+		religion = jewish
+		size = 5150
 	}
 	
 	artisans = {
 		culture = aquitanian
 		religion = catholic
-		size = 1000
+		size = 4000
 	}	
 
 	soldiers = {
 		culture = aquitanian
 		religion = catholic
-		size= 150
-
+		size = 950
 	}
 
 	farmers = {
 		culture = aquitanian
 		religion = catholic
-		size = 10625
+		size = 55025
 	}
 }
 #Montauban/Montalban (584000/146000 POPS)
