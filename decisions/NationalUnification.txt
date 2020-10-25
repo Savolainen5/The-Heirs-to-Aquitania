@@ -899,10 +899,7 @@ political_decisions = {
 					}
 				}
 				country_event = 11101
-			}		
-		}
-		ai_will_do = {
-			factor = 1
+			}
 		}
 	}
 

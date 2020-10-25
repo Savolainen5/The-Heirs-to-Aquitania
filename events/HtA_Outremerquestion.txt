@@ -229,7 +229,7 @@ country_event = {
         rank = 16
         capital_scope = { continent = europe }
 		num_of_ports = 1
-		num_of_states = 2 #One-state countries can't, in case that's a danger
+		number_of_states = 2 #One-state countries can't, in case that's a danger
 		NOT = {
 			tag = BYZ
 			tag = FIN

@@ -554,7 +554,7 @@ RGS_anarcho_liberal;Frente Albesano;;;;;;;;;;;;;;;x
 RGS_socialist;Partido de los Trabajadores;;;;;;;;;;;;;;;x
 RGS_communist;Frente Radical;;;;;;;;;;;;;;;x
 RGS_fascist;Altallia Sobre Todo;;;;;;;;;;;;;;;x
-RUS;The Russian Tsardom;x
+RUS;Russian Tsardom;x
 RUS_proletarian_dictatorship;People's Republic of Russia;x
 RUS_democracy;Russian Republic;x
 RUS_fascist_dictatorship;Great Russia;x
@@ -577,7 +577,7 @@ SCO;Alba;;;;;;;;;;;;;x
 SCO_ADJ;Albannach;;;;;;;;;;;;;x
 SCW;Scylfiga Woning;;;;;;;;;;;;;x 
 SCW_ADJ;Scylfig;;;;;;;;;;;;;x 
-SCW_fascist_dictatorship;The Amerigan Free State;;;;;;;;;;;;;x 
+SCW_fascist_dictatorship;Amerigan Free State;;;;;;;;;;;;;x 
 SCW_proletarian_dictatorship;Scylfig People's Republic;;;;;;;;;;;;;x 
 SCW_conservative;Gesamnungs Meg;;;;;;;;;;;;;x 
 SCW_liberal;Cyreceaps Gemaene;;;;;;;;;;;;;x
@@ -649,7 +649,7 @@ SRI;Sri Lanka;;;;;;;;;;;x
 SRI_ADJ;Lankan;;;;;;;;;;;x
 SRU;The Russian Empire;x
 SRU_ADJ;Russian;x
-SRU_democracy;The Russian Republic;x
+SRU_democracy;Russian Republic;x
 SRU_proletarian_dictatorship;Russian Workers' Commonwealth;x
 SRU_fascist_dictatorship;Nationalist Russia;x
 SRM;Syrmia;;;;;;;;;;;x

@@ -22,14 +22,14 @@ Europe
 0.40 - Miscellaneous, flavour events
 
 Asia (Ideas for things to do follow the colon)
-0.41 - Japan and Korea: Pacific Port chain for Russia (Korea/Manchuria)
-0.42 - China (partly done in 0.36)
-0.43 - SEA and Indonesia
-0.44 - India
-0.45 - Persia, Mesopotamia, and the Levant: Russian-Persian conflict (partly done in 0.36)
-0.46 - Central Asia
-0.47 - Caucasus and Armenia
-0.48 - Arabia
+0.41 - Central Asia: More flavour and Russian interaction
+0.42 - Caucasus and Armenia: Russian vs Roman ambitions
+0.43 - Persia, Mesopotamia, and the Levant: Russian-Persian conflict (partly done in 0.36)
+0.44 - Japan and Korea: Pacific Port chain for Russia (Korea/Manchuria)
+0.45 - China (partly done in 0.36)
+0.46 - SEA and Indonesia
+0.47 - Arabia
+0.48 - India
 0.50 - Miscellaneous
 
 North Ameriga

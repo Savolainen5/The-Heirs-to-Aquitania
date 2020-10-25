@@ -1689,21 +1689,28 @@ country_event = {
 	picture = "central_asian_tribes"
 	
 	trigger = {
+		primary_culture = russian
 		OR = {
-			AND = {
-				tag = RUS
-				NOT = { exists = SML }
-			}
-			AND = {
-				tag = SML
-				NOT = { exists = RUS }
-			}
+			RUS = { exists = no }
+			SML = { exists = no }
 		}
 		OR = {
-			KZH = { in_sphere = THIS }
-			KHI = { in_sphere = THIS }
-			BUK = { in_sphere = THIS }
-			KOK = { in_sphere = THIS }
+			AND = {
+				KZH = { in_sphere = THIS }
+				NOT = { has_country_flag = great_KZH }
+			}
+			AND = {
+				KHI = { in_sphere = THIS }
+				NOT = { has_country_flag = great_KHI }
+			}
+			AND = {
+				BUK = { in_sphere = THIS }
+				NOT = { has_country_flag = great_BUK }
+			}
+			AND = {
+				KOK = { in_sphere = THIS }
+				NOT = { has_country_flag = great_KOK }
+			}
 		}
 		nationalism_n_imperialism = 1
 		NOT = {
@@ -1720,10 +1727,22 @@ country_event = {
 		random_country = {
 			limit = {
 				OR = {
-					tag = KZH
-					tag = KHI
-					tag = BUK
-					tag = KOK
+					AND = {
+						tag = KZH
+						THIS = { NOT = { has_country_flag = great_KZH } }
+					}
+					AND = {
+						tag = KHI
+						THIS = { NOT = { has_country_flag = great_KHI } }
+					}
+					AND = {
+						tag = BUK
+						THIS = { NOT = { has_country_flag = great_BUK } }
+					}
+					AND = {
+						tag = KOK
+						THIS = { NOT = { has_country_flag = great_KOK } }
+					}
 				}
 				in_sphere = THIS
 			}

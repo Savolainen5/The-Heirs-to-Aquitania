@@ -348,7 +348,8 @@ political_decisions = {
 			}
 		}
 	}
-
+	
+	-
 	the_great_game_bukhara = {
 		picture = gtfo
 		potential = {
@@ -359,6 +360,7 @@ political_decisions = {
 			}
 			is_greater_power = yes
 			tag = RUS
+			ai = yes
 			SML = { exists = no }
 			year = 1865
 			exists = BUK
@@ -366,6 +368,7 @@ political_decisions = {
 				civilized = no
 				ai = yes
 			}
+			NOT = { has_country_flag = great_BUK }
 		}
 		
 		allow = {
@@ -379,6 +382,7 @@ political_decisions = {
 		
 		effect = {
 			BUK = { annex_to = THIS }
+			set_country_flag = great_BUK
 		}
 	}
 
@@ -392,6 +396,7 @@ political_decisions = {
 			}
 			is_greater_power = yes
 			tag = RUS
+			ai = yes
 			SML = { exists = no }
 			year = 1865
 			exists = KOK
@@ -399,6 +404,7 @@ political_decisions = {
 				civilized = no
 				ai = yes
 			}
+			NOT = { has_country_flag = great_KOK }
 		}
 		
 		allow = {
@@ -412,6 +418,7 @@ political_decisions = {
 		
 		effect = {
 			KOK = { annex_to = THIS }
+			set_country_flag = great_KOK
 		}
 	}
 
@@ -425,6 +432,7 @@ political_decisions = {
 			}
 			is_greater_power = yes
 			tag = RUS
+			ai = yes
 			SML = { exists = no }
 			year = 1865
 			exists = KHI
@@ -432,6 +440,7 @@ political_decisions = {
 				civilized = no
 				ai = yes
 			}
+			NOT = { has_country_flag = great_KHI }
 		}
 		
 		allow = {
@@ -445,6 +454,7 @@ political_decisions = {
 		
 		effect = {
 			KHI = { annex_to = THIS }
+			set_country_flag = great_KHI
 		}
 	}
 
@@ -458,6 +468,7 @@ political_decisions = {
 			}
 			is_greater_power = yes
 			tag = RUS
+			ai = yes
 			SML = { exists = no }
 			year = 1865
 			exists = KZH
@@ -465,6 +476,7 @@ political_decisions = {
 				civilized = no
 				ai = yes
 			}
+			NOT = { has_country_flag = great_KZH }
 		}
 		
 		allow = {
@@ -478,9 +490,7 @@ political_decisions = {
 		
 		effect = {
 			KZH = { annex_to = THIS }
+			set_country_flag = great_KZH
 		}
 	}
-	
-
-
 }

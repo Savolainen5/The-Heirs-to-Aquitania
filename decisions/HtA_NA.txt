@@ -378,15 +378,33 @@ califiana_cores = {
 				all_core = {
 					add_core = MEL
 				}
+				any_owned = {
+					limit = {
+						NOT = { is_core = MNK }
+					}
+					add_core = BRR						#just a utility tag
+				}
 			}
 			MDT = {
 				all_core = {
 					add_core = MEL
 				}
+				any_owned = {
+					limit = {
+						NOT = { is_core = MDT }
+					}
+					add_core = BRR
+				}
 			}
 			HOY = {
 				all_core = {
 					add_core = MEL
+				}
+				any_owned = {
+					limit = {
+						NOT = { is_core = HOY }
+					}
+					add_core = BRR
 				}
 			}
 
@@ -406,6 +424,13 @@ califiana_cores = {
 			diplomatic_influence = {
 				who = MEL
 				value = 400
+			}
+			any_owned = {
+				limit = {
+					is_core = BRR
+				}
+				secede_province = MEL
+				remove_core = BRR
 			}
 		}
 		ai_will_do = {

@@ -1,6 +1,7 @@
 #Decisions for South America
 #What if there were a short event chain with Uilsc explorers getting killed by natives and not returning?
 #Perhaps this should be changed into a more equitable and random colonisation event thing like happens with NA?
+
 political_decisions = {
 	jordracisc_destiny = {
 		picture = our_brothers_the_gauchos

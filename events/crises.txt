@@ -718,7 +718,7 @@ province_event = {
 		is_colonial = no
 		OR = {
 			state_scope = {
-				flashpoint_tension = 30
+				flashpoint_tension = 20
 				has_flashpoint = yes
 			}
 			AND = {
@@ -728,7 +728,7 @@ province_event = {
 						ai = no
 					}
 					state_scope = {
-						flashpoint_tension = 25
+						flashpoint_tension = 15
 						has_flashpoint = yes
 					}
 				}
@@ -737,11 +737,11 @@ province_event = {
 	}
 	
 	mean_time_to_happen = { 
-		days = 4 
+		days = 1 
 		modifier = {
 			factor = 0.1
 			country = { ai = yes }
-		} 
+		}
 	}
 	
 	option = {

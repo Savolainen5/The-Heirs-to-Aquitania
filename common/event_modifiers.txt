@@ -558,9 +558,9 @@ countrywide_famine = {
 
 countrywide_famine_immigrant_push = {
 	immigrant_push = 0.5
-	population_growth = -0.002
-	pop_consciousness_modifier = 0.075
-	pop_militancy_modifier = 0.05
+	population_growth = -0.001 #last at 0.002		#These reductions made to hopefully have less rebel spam?
+	pop_consciousness_modifier = 0.04 #last at 0.075
+	pop_militancy_modifier = 0.02 #last at 0.05
 	local_RGO_output = -0.05
 	icon = 8
 }
