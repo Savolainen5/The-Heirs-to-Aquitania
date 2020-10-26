@@ -193,7 +193,9 @@ political_decisions = {
 	
 	
 	
-	
+#####################################
+#### Decisions for CLT expansion ####
+#####################################
 	
 #Claim Cymru and Kerno
 	claim_wales_cornwall = {
@@ -209,8 +211,9 @@ political_decisions = {
 		
 		effect = {
 			prestige = 5
-			WHA = { all_core = { add_core = CLT } }
-			KER = { all_core = { add_core = CLT } }
+			ENG_273 = { add_core = CLT }
+			298 = { add_core = CLT } #Acmansbet
+			299 = { add_core = CLT } #Essa
 			add_accepted_culture = cymry
 			add_accepted_culture = cornish
 			set_country_flag = wales_cornwall_claimed

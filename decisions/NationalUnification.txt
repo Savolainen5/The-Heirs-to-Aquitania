@@ -1088,6 +1088,16 @@ political_decisions = {
 			add_accepted_culture = czech
 			add_accepted_culture = slovak
 			change_tag = ZAC
+			any_country = {			#Annex all countries with the two culture groups, so POL, LUZ, SLS, BOH/PRH and SLV
+				limit = {
+					OR = {
+						is_culture_group = polish_culture_group
+						is_culture_group = czecho_slovak_culture_group
+					}
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
 			any_country = {
 				limit = {
 					OR = {
@@ -1103,7 +1113,7 @@ political_decisions = {
 							is_core = SLS
 							is_core = SLV
 							is_core = PRH
-							province_id = 625
+							province_id = 625 #Prague #So these are basically all BOH cores
 							province_id = 626
 							province_id = 627
 							province_id = 628
@@ -1111,7 +1121,7 @@ political_decisions = {
 							province_id = 630
 							province_id = 631
 							province_id = 632
-							province_id = 633
+							province_id = 633 #Bratislava
 							province_id = 634
 							province_id = 635
 							province_id = 636
@@ -1231,9 +1241,11 @@ political_decisions = {
 					NOT = { is_greater_power = yes }
 					NOT = { has_country_flag = post_colonial_country }
 					is_culture_group = THIS
-					in_sphere = THIS
 					OR = {
-						is_vassal = no
+						AND = {
+							is_vassal = no
+							in_sphere = THIS
+						}
 						vassal_of = THIS
 					}
 				}
@@ -1241,8 +1253,8 @@ political_decisions = {
 			}
 			add_accepted_culture = scots
 			add_accepted_culture = irish
-			SCO = { all_core = { add_core = CLT } }
-			IRE = { all_core = { add_core = CLT } }
+			SCO = { all_core = { add_core = CLT } remove_core = SCO }
+			IRE = { all_core = { add_core = CLT } remove_core = IRE }
 		}
 		ai_will_do = {
 			factor = 1

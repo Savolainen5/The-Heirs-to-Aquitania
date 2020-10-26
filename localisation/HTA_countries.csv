@@ -554,7 +554,9 @@ RGS_anarcho_liberal;Frente Albesano;;;;;;;;;;;;;;;x
 RGS_socialist;Partido de los Trabajadores;;;;;;;;;;;;;;;x
 RGS_communist;Frente Radical;;;;;;;;;;;;;;;x
 RGS_fascist;Altallia Sobre Todo;;;;;;;;;;;;;;;x
-RUS;Russian Tsardom;x
+RUS;Russia;x
+RUS_absolute_monarchy;The Russian Tsardom;x
+RUS_prussian_constitutionalism;The Russian Tsardom;x
 RUS_proletarian_dictatorship;People's Republic of Russia;x
 RUS_democracy;Russian Republic;x
 RUS_fascist_dictatorship;Great Russia;x
