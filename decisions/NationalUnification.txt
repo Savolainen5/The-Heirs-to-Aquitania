@@ -1253,8 +1253,18 @@ political_decisions = {
 			}
 			add_accepted_culture = scots
 			add_accepted_culture = irish
-			SCO = { all_core = { add_core = CLT } remove_core = SCO }
-			IRE = { all_core = { add_core = CLT } remove_core = IRE }
+			SCO = {
+				all_core = {
+					add_core = CLT
+					remove_core = SCO
+				}
+			}
+			IRE = {
+				all_core = {
+					add_core = CLT
+					remove_core = IRE
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1

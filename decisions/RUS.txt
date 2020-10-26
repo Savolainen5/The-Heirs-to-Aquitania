@@ -349,7 +349,6 @@ political_decisions = {
 		}
 	}
 	
-	-
 	the_great_game_bukhara = {
 		picture = gtfo
 		potential = {
@@ -491,6 +490,198 @@ political_decisions = {
 		effect = {
 			KZH = { annex_to = THIS }
 			set_country_flag = great_KZH
+		}
+	}
+	
+	great_BUK_flag = {
+		potential = {
+			ai = yes
+			exists = yes
+			OR = {
+				RUS = {
+					exists = yes
+					any_owned_province = {
+						is_core = BUK
+					}
+					NOT = { has_country_flag = great_BUK }
+				}
+				SML = {
+					exists = yes
+					any_owned_province = {
+						is_core = BUK
+					}
+					NOT = { has_country_flag = great_BUK }
+				}
+				SRU = {
+					exists = yes
+					any_owned_province = {
+						is_core = BUK
+					}
+					NOT = { has_country_flag = great_BUK }
+				}
+			}
+			BUK = {
+				exists = no
+			}
+		}
+		allow = {
+		}
+		effect = {
+			random_country = {
+				limit = {
+					exists = yes
+					OR = {
+						tag = RUS
+						tag = SML
+						tag = SRU
+					}
+				}
+				set_country_flag = great_BUK
+			}
+		}
+	}
+	
+	great_KHI_flag = {
+		potential = {
+			ai = yes
+			exists = yes
+			OR = {
+				RUS = {
+					exists = yes
+					any_owned_province = {
+						is_core = KHI
+					}
+					NOT = { has_country_flag = great_KHI }
+				}
+				SML = {
+					exists = yes
+					any_owned_province = {
+						is_core = KHI
+					}
+					NOT = { has_country_flag = great_KHI }
+				}
+				SRU = {
+					exists = yes
+					any_owned_province = {
+						is_core = KHI
+					}
+					NOT = { has_country_flag = great_KHI }
+				}
+			}
+			KHI = {
+				exists = no
+			}
+		}
+		allow = {
+		}
+		effect = {
+			random_country = {
+				limit = {
+					exists = yes
+					OR = {
+						tag = RUS
+						tag = SML
+						tag = SRU
+					}
+				}
+				set_country_flag = great_KHI
+			}
+		}
+	}
+	
+	great_KOK_flag = {
+		potential = {
+			ai = yes
+			exists = yes
+			OR = {
+				RUS = {
+					exists = yes
+					any_owned_province = {
+						is_core = KOK
+					}
+					NOT = { has_country_flag = great_KOK }
+				}
+				SML = {
+					exists = yes
+					any_owned_province = {
+						is_core = KOK
+					}
+					NOT = { has_country_flag = great_KOK }
+				}
+				SRU = {
+					exists = yes
+					any_owned_province = {
+						is_core = KOK
+					}
+					NOT = { has_country_flag = great_KOK }
+				}
+			}
+			KOK = {
+				exists = no
+			}
+		}
+		allow = {
+		}
+		effect = {
+			random_country = {
+				limit = {
+					exists = yes
+					OR = {
+						tag = RUS
+						tag = SML
+						tag = SRU
+					}
+				}
+				set_country_flag = great_KOK
+			}
+		}
+	}
+	
+	great_KZH_flag = {
+		potential = {
+			ai = yes
+			exists = yes
+			OR = {
+				RUS = {
+					exists = yes
+					any_owned_province = {
+						is_core = KZH
+					}
+					NOT = { has_country_flag = great_KZH }
+				}
+				SML = {
+					exists = yes
+					any_owned_province = {
+						is_core = KZH
+					}
+					NOT = { has_country_flag = great_KZH }
+				}
+				SRU = {
+					exists = yes
+					any_owned_province = {
+						is_core = KZH
+					}
+					NOT = { has_country_flag = great_KZH }
+				}
+			}
+			KZH = {
+				exists = no
+			}
+		}
+		allow = {
+		}
+		effect = {
+			random_country = {
+				limit = {
+					exists = yes
+					OR = {
+						tag = RUS
+						tag = SML
+						tag = SRU
+					}
+				}
+				set_country_flag = great_KZH
+			}
 		}
 	}
 }

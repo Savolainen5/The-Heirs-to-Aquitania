@@ -206,7 +206,9 @@ political_decisions = {
 		}
 		
 		allow = {
-			prestige = 50
+			prestige = 70
+			is_greater_power = yes
+			military_score = 80
 		}
 		
 		effect = {
@@ -234,7 +236,22 @@ political_decisions = {
 		}
 		
 		allow = {
-			prestige = 70
+			prestige = 120
+			is_greater_power = yes
+			military_score = 90
+			OR = {
+				total_amount_of_ships = 30
+				BRT = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
 		}
 		
 		effect = {

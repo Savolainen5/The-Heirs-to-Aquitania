@@ -133,7 +133,7 @@ political_decisions = {
 	}
 	
 	gxi_destiny = {
-		picture = tibetan_empire
+		picture = heavenly_seal
 		potential = {
 			tag = GXI 
 			war = no 

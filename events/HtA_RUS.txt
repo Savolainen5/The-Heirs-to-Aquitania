@@ -556,7 +556,7 @@ country_event = {
 	id = 50368
 	title = "EVTNAME50368"
 	desc = "EVTDESC50368"
-	picture = "rebellious_minorities"
+	picture = "storming_palace"
 	
 	trigger = {
 		tag = SML
@@ -683,7 +683,7 @@ country_event = {
 	id = 50371
 	title = "EVTNAME50371"
 	desc = "EVTDESC50371"
-	picture = "rebellious_minorities"
+	picture = "storming_palace"
 	
 	is_triggered_only = yes
 	

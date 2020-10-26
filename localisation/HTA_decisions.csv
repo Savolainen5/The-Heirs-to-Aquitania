@@ -165,6 +165,8 @@ end_the_nobility_title;End the Nobility;;;;;;;;;;;x,,,,
 end_the_nobility_desc;Now that the rebellious dukes of Champagne, Orléans, and Normandy have been put down, we should remove their power and any chance that they could threaten France again! They shall be nobility in their memories only!;;;;;;;;;;;;;;;x;,
 enlist_tatars_title;The Kazan Pact - Kazanskii Dogovor;;;;;;;;;;;;x
 enlist_tatars_desc;The more populous crown of Smolensk, which falsely claims to be heir to Russia, has many more soldiers than do we. There is, however, opportunity. The Tatars, the once-feared horselords of the steppe, are divided subjects of both countries. If we curry favour with them, we may be able to destabilize Smolensk, allowing us to defeat them. By accepting the Kazani Tatars as equals, we may gain an important advantage with all of the inhabitants of the steppe. However, stories of their cruelty remain and the other peoples of our empire may not be so happy.;;;;;;;;;;x
+establish_la_guardia_civil_title;El Cuerpo Nacional de Carabineros;x
+establish_la_guardia_civil_desc;’El Cuerpo Nacional de Carabineros', Spanish for 'The National Carabiniers', is the Hispanian gendarmerie corps, established during the reign of Lope II in the aftermath of the bloody Años Rojos. Although foreign intervention crushed the Revolution and restored the Monarchy, Albesan sympathies lingered in the countryside and some cities, with some areas never fully pacified. It is in this context that the Carabiniers were born, a mixed police-military force with far-reaching powers to pacify the restive populace and maintain the monarchical order.;x
 expand_BHN_title;Claim Hungary's Historical Borders;;;;;;;;;x
 expand_BHN_desc;The crown of Hungary once encompassed a much wider area than it does today. We can expand our territory and further earn the loyalty of the Hungarians by helping them reclaim their historical greatness.;;;;;;;;;;x
 expand_halesca_title;Expand Halesca;;;;;;;;;;x
@@ -215,6 +217,14 @@ GDN_ai_selvenkes_purchase_title;Innocuous Story decision;;;;;;;;;x
 GDN_ai_selvenkes_purchase_desc;Please ignore. Thanks.;;;;;;;;;;;;x
 glaschu_ultimatum_title;Issue the Glaschu Ultimatum to Éire;;;;;;;;;;x
 glaschu_ultimatum_desc;For too long has Éire held the crown jewel of Alba: Glaschu. We are now in a position to demand its return. In issuing the ultimatum, we will send Éire a strong message: Give us Glaschu or face war.;;;;;;;;;;x
+great_BUK_flag_title;The End of Bukkhara;x
+great_BUK_flag_desc;This is a utility decision to set a flag for whatever Russian country is alive.;x
+great_KHI_flag_title;The End of Khiva;x
+great_KHI_flag_desc;This is a utility decision to set a flag for whatever Russian country is alive.;x
+great_KOK_flag_title;The End of Kokand;x
+great_KOK_flag_desc;This is a utility decision to set a flag for whatever Russian country is alive.;x
+great_KZH_flag_title;The End of the Kazakh Khanate;x
+great_KZH_flag_desc;This is a utility decision to set a flag for whatever Russian country is alive.;x
 greek_macedonia_arbenon_title;Claim Macedonia and Arbenon;;;;;;;;;;x
 greek_macedonia_arbenon_desc;Now that we have proven our strength to the failing Empire and to the world, it is time to expand our democracy to the north, to the ancient Greek lands before the Empire established its rule over us all those long centuries ago. The myriad peoples in these lands have much in common historically and culturally with ours, even if their languages may now be different. Let us incorporate them into our revolutionary democracy!;;;;;;;;x
 greek_sevastopol_title;Restoration of Cherson;;;;;;;;;x
