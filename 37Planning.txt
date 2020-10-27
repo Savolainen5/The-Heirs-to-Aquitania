@@ -34,7 +34,7 @@ Italy:
 Other:
 - France eats Wallonia?
 - Keep refining the Outremer and Near East files (like there was that one player who had a truce with Persia but wasn't involved in the war, but still got stuff)
-- Double check that the crisis stopping event is firing enough. Was it a good idea to comment out the allow_multiple_instances ? Event 60168 in crises.txt
+- Make the crisis stopping event work even more. Event 60168 in crises.txt
 - See if rebelspam can be reduced by stealing rebel code from HPM/HFM?
 - Remove/rework SGF formation (esp. localization)
 - Add some decisions for Qin/Nanyue as detailed here https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-54#post-27043143
@@ -42,4 +42,4 @@ Other:
 	Should there be a better justification for Wallonia and its being integrated into the Greater Netherlands
 - Hispania and Navarra from this post: http://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-34#post-22485910
 - Doublecheck that Alba colonies in Indonesia go to all countries correctly
-- Take another look at rebels to see what other sorts of tweaks need to be made there
+- Make hills work
