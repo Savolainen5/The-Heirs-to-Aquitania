@@ -2,7 +2,7 @@ This is mostly a document for Savs to help remember some less-known things
 
 - If OOBs are messed up, consolidate multiple instances of identical soldier POPs
 - Events without an MTTH fire immediately
-- GIMP CAN be used on provinces.bmp, just make sure you export it as a 24-bit .bmp, eh?
+- GIMP CAN be used on provinces.bmp, just make sure you export it as a 24-bit .bmp, eh? And tick the "Do not write color space information" bit as well, obviously.
 - The game doesn't like it when a province exists in definitions and has province history and stuff, but doesn't exist on the map
 - It also doesn't like it when a naval base's position is on the land of another province, apparently - it will crash when you hit the play button after choosing a country.
 	- On further investigation, I would guess that the game just doesn't like having bases/ports on land. They must be in a sea province. If you're crashing after choosing a country and hitting play, check your naval base positions

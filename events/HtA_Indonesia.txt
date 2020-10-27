@@ -101,6 +101,9 @@ country_event = {
 				attacker_goal = {
 					casus_belli = establish_protectorate_casus_belli
 				}
+				defender_goal = {
+					casus_belli = status_quo
+				}
 			}
 			badboy = 4
 		}
@@ -199,7 +202,11 @@ country_event = {
 	trigger = {
 		civilized = yes
 		capital_scope = { continent = europe }
-		NOT = { tag = SCO tag = CLT tag = AEN }
+		NOT = {
+			tag = SCO
+			tag = CLT
+			tag = AEN
+		}
 		AEN = { has_country_flag = alba_reclaimed }
 		any_owned_province = {
 			OR = {
@@ -338,19 +345,21 @@ country_event = {
 		name = "Make our move."
 		clr_country_flag = albannach_indonesia_interest
 		set_country_flag = albannach_indonesia_claimed
-		SCO = { any_owned = {
-			limit = {
-				OR = {
-					region = ATJ_1405 #Aceh
-					region = NET_1398 #Sumatra
-					region = NET_1401 #Siak
-					region = NET_1413 #W Java(NET or AEN will get it)
-					region = NET_1417 #C Java(NET or AEN will get it)
-					region = NET_1418 #E Java(NET or AEN will get it)
+		SCO = {
+			any_owned = {
+				limit = {
+					OR = {
+						region = ATJ_1405 #Aceh
+						region = NET_1398 #Sumatra
+						region = NET_1401 #Siak
+						region = NET_1413 #W Java(NET or AEN will get it)
+						region = NET_1417 #C Java(NET or AEN will get it)
+						region = NET_1418 #E Java(NET or AEN will get it)
+					}
 				}
+				secede_province = THIS
 			}
-			secede_province = THIS
-		} }
+		}
 	}
 }
 
@@ -385,17 +394,19 @@ country_event = {
 		name = "Make our move."
 		clr_country_flag = albannach_indonesia_interest
 		set_country_flag = albannach_indonesia_claimed
-		SCO = { any_owned = {
-			limit = {
-				OR = {
-					region = BRU_1394 #W. Borneo
-					region = ENG_1384 #S. Malaya (Just in case)
-					region = ENG_1391 #N. Malaya (Just in case)
-					region = SIA_1352 #Pattani (Just in case)
+		SCO = {
+			any_owned = {
+				limit = {
+					OR = {
+						region = BRU_1394 #W. Borneo
+						region = ENG_1384 #S. Malaya (Just in case)
+						region = ENG_1391 #N. Malaya (Just in case)
+						region = SIA_1352 #Pattani (Just in case)
+					}
 				}
+				secede_province = THIS
 			}
-			secede_province = THIS
-		} }
+		}
 	}
 }
 
@@ -430,19 +441,21 @@ country_event = {
 		name = "Make our move."
 		clr_country_flag = albannach_indonesia_interest
 		set_country_flag = albannach_indonesia_claimed
-		SCO = { any_owned = {
-			limit = {
-				OR = {
-					region = BRU_1396 #Sabah
-					region = CHI_1485 #Formosa/Taiwan (Just in case)
-					region = BAL_1438 #Sunda Islands (Just in case)
-					region = NET_1413 #W Java (NET or AEN will get it)
-					region = NET_1417 #C Java (NET or AEN will get it)
-					region = NET_1418 #E Java (NET or AEN will get it)
+		SCO = {
+			any_owned = {
+				limit = {
+					OR = {
+						region = BRU_1396 #Sabah
+						region = CHI_1485 #Formosa/Taiwan (Just in case)
+						region = BAL_1438 #Sunda Islands (Just in case)
+						region = NET_1413 #W Java (NET or AEN will get it)
+						region = NET_1417 #C Java (NET or AEN will get it)
+						region = NET_1418 #E Java (NET or AEN will get it)
+					}
 				}
+				secede_province = THIS
 			}
-			secede_province = THIS
-		} }
+		}
 	}
 }
 
@@ -477,16 +490,18 @@ country_event = {
 		name = "Make our move."
 		clr_country_flag = albannach_indonesia_interest
 		set_country_flag = albannach_indonesia_claimed
-		SCO = { any_owned = {
-			limit = {
-				OR = {
-					region = NET_1423 #E. Borneo
-					region = NET_1426 #S. Borneo
-					region = NET_1447 #Moluccas (Just in case)
+		SCO = {
+			any_owned = {
+				limit = {
+					OR = {
+						region = NET_1423 #E. Borneo
+						region = NET_1426 #S. Borneo
+						region = NET_1447 #Moluccas (Just in case)
+					}
 				}
+				secede_province = THIS
 			}
-			secede_province = THIS
-		} }
+		}
 	}
 }
 

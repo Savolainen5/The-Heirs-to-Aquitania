@@ -349,6 +349,7 @@ political_decisions = {
 		}
 	}
 	
+	#These decisions are mostly deprecated because I made a different one for HtA, but I decided to keep them in anyways.
 	the_great_game_bukhara = {
 		picture = gtfo
 		potential = {
@@ -358,9 +359,16 @@ political_decisions = {
 				government = hms_government
 			}
 			is_greater_power = yes
-			tag = RUS
+			primary_culture = russian
+			OR = {
+				NOT = {
+					exists = RUS
+				}
+				NOT = {
+					exists = SML
+				}
+			}
 			ai = yes
-			SML = { exists = no }
 			year = 1865
 			exists = BUK
 			BUK = {
@@ -394,9 +402,16 @@ political_decisions = {
 				government = hms_government
 			}
 			is_greater_power = yes
-			tag = RUS
+			primary_culture = russian
+			OR = {
+				NOT = {
+					exists = RUS
+				}
+				NOT = {
+					exists = SML
+				}
+			}
 			ai = yes
-			SML = { exists = no }
 			year = 1865
 			exists = KOK
 			KOK = {
@@ -430,9 +445,16 @@ political_decisions = {
 				government = hms_government
 			}
 			is_greater_power = yes
-			tag = RUS
+			primary_culture = russian
+			OR = {
+				NOT = {
+					exists = RUS
+				}
+				NOT = {
+					exists = SML
+				}
+			}
 			ai = yes
-			SML = { exists = no }
 			year = 1865
 			exists = KHI
 			KHI = {
@@ -466,9 +488,16 @@ political_decisions = {
 				government = hms_government
 			}
 			is_greater_power = yes
-			tag = RUS
+			primary_culture = russian
+			OR = {
+				NOT = {
+					exists = RUS
+				}
+				NOT = {
+					exists = SML
+				}
+			}
 			ai = yes
-			SML = { exists = no }
 			year = 1865
 			exists = KZH
 			KZH = {

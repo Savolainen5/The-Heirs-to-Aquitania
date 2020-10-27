@@ -18,7 +18,7 @@ reactionary_rebels = {
 	area = nation 					# Stays within the nation
 	break_alliance_on_win = no
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = presidential_dictatorship
 		presidential_dictatorship = absolute_monarchy
@@ -235,7 +235,11 @@ reactionary_rebels = {
 				reactionary = 10
 				pop_majority_ideology = conservative
 			}
-		}	
+		}
+        modifier = {
+            factor = 0
+            type = slaves
+        }
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -285,6 +289,7 @@ reactionary_rebels = {
 				factor = 0.05
 			}
 		}
+        owner = { war_exhaustion = 2.5 }
 	}
 
 	# Country scope
@@ -360,7 +365,7 @@ fascist_rebels = {
 	area = nation 					# Stays within the nation
 	break_alliance_on_win = no
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = fascist_dictatorship
 		presidential_dictatorship = fascist_dictatorship
@@ -539,6 +544,11 @@ fascist_rebels = {
 				}
 			}
 		}
+        modifier = {
+            factor = 0
+            type = slaves
+        }
+
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -664,7 +674,7 @@ communist_rebels = {
 	area = nation 					# Stays within the nation
 	break_alliance_on_win = no
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = proletarian_dictatorship
@@ -876,6 +886,11 @@ communist_rebels = {
 				}
 			}
 		}
+        modifier = {
+            factor = 0
+            type = slaves
+        }
+
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -1007,7 +1022,7 @@ anarcho_liberal_rebels = {
 	area = nation 					# Stays within the nation
 	break_alliance_on_win = no
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = democracy
 		presidential_dictatorship = democracy
@@ -1221,6 +1236,11 @@ anarcho_liberal_rebels = {
 			}
 			NOT = { year = 1865 }
 		}
+        modifier = {
+            factor = 0
+            type = slaves
+        }
+
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -1351,7 +1371,7 @@ nationalist_rebels = {
 	area = nation_culture 				# Stays within provinces of their culture
 	break_alliance_on_win = no
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
@@ -1444,6 +1464,11 @@ nationalist_rebels = {
 					has_country_flag = latvian_rebellion
 				}
 		}
+        modifier = {
+            factor = 0
+            type = slaves
+        }
+
 	}
 	
 	# The rebel type with the highest modifier for this pop gets picked
@@ -1647,7 +1672,7 @@ pan_nationalist_rebels = {
 	break_alliance_on_win = no
 	area = nation
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
@@ -1723,6 +1748,11 @@ pan_nationalist_rebels = {
 			factor = 0.5
 			has_country_modifier = global_liberal_agitation
 		}
+        modifier = {
+            factor = 0
+            type = slaves
+        }
+
 	}
 	
 	# The rebel type with the highest modifier for this pop gets picked
@@ -1893,6 +1923,11 @@ pan_nationalist_rebels = {
 				}
 			}
 		}
+        modifier = {
+            factor = 0
+            type = slaves
+        }
+
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -2023,7 +2058,7 @@ boxer_rebels = {
 	area = all
 	break_alliance_on_win = no
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = absolute_monarchy
 		presidential_dictatorship = absolute_monarchy
@@ -2202,7 +2237,7 @@ russian_rebels = {
 	
 	area = nation
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
@@ -2347,6 +2382,11 @@ russian_rebels = {
 			factor = 10
 			pop_majority_ideology = conservative
 		}
+        modifier = {
+            factor = 0
+            type = slaves
+        }
+
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -2422,7 +2462,7 @@ indian_nationalists = {
 	
 	area = nation
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
@@ -2546,6 +2586,11 @@ indian_nationalists = {
 			factor = 1.5
 			political_reform_want = 0.15
 		}
+        modifier = {
+            factor = 0
+            type = slaves
+        }
+
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -2628,7 +2673,7 @@ liberal_rebels = {
 	
 	area = nation 					# Stays within the nation
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = democracy
 		presidential_dictatorship = democracy
@@ -2667,15 +2712,15 @@ liberal_rebels = {
 			factor = 0.8
 		}
 		modifier = {
-			war_exhaustion = 4
+			war_exhaustion = 40
 			factor = 0.95
 		}
 		modifier = {
-			war_exhaustion = 6
+			war_exhaustion = 60
 			factor = 0.95
 		}
 		modifier = {
-			war_exhaustion = 8
+			war_exhaustion = 80
 			factor = 0.95
 		}
 		modifier = {
@@ -2913,19 +2958,23 @@ liberal_rebels = {
 				NOT = { has_country_flag = wants_to_unify }
 			}
 		}
-		modifier = {
-			factor = 0.25
-			is_culture_group = italian
-			country = {
-				is_greater_power = no
-				is_culture_group = italian
-				OR = {
-					has_global_flag = italian_call_to_union
-					has_global_flag = garibaldi_redshirts
-				}
-				NOT = { has_country_flag = wants_to_unify }
-			}
-		}		
+#		modifier = {
+#			factor = 0.25
+#			is_culture_group = italian
+#			country = {
+#				is_greater_power = no
+#				is_culture_group = italian
+#				OR = {
+#					has_global_flag = italian_call_to_union
+#					has_global_flag = garibaldi_redshirts
+#				}
+#				NOT = { has_country_flag = wants_to_unify }
+#			}
+#		}
+        modifier = {
+            factor = 0
+            type = slaves
+        }		
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -3081,7 +3130,7 @@ unciv_reactionary_rebels = {
 	
 	area = nation 					# Stays within the nation
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = absolute_monarchy
 		presidential_dictatorship = absolute_monarchy
@@ -3200,6 +3249,11 @@ unciv_reactionary_rebels = {
 				part_of_sphere = yes
 			}
 		}
+        modifier = {
+            factor = 0
+            type = slaves
+        }
+
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -3304,7 +3358,7 @@ separatist_rebels = {
 	
 	area = nation_culture 				# Stays within provinces of their culture
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
@@ -3520,7 +3574,7 @@ socialist_rebels = {
 	
 	area = nation 					# Stays within the nation
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = democracy
 		presidential_dictatorship = democracy
@@ -3739,19 +3793,24 @@ socialist_rebels = {
 				NOT = { has_country_flag = wants_to_unify }
 			}
 		}
-		modifier = {
-			factor = 0.5
-			is_culture_group = italian
-			country = {
-				is_greater_power = no
-				is_culture_group = italian
-				OR = {
-					has_global_flag = italian_call_to_union
-					has_global_flag = garibaldi_redshirts
-				}
-				NOT = { has_country_flag = wants_to_unify }
-			}
-		}		
+#		modifier = {
+#			factor = 0.5
+#			is_culture_group = italian
+#			country = {
+#				is_greater_power = no
+#				is_culture_group = italian
+#				OR = {
+#					has_global_flag = italian_call_to_union
+#					has_global_flag = garibaldi_redshirts
+#				}
+#				NOT = { has_country_flag = wants_to_unify }
+#			}
+#		}	
+        modifier = {
+            factor = 0
+            type = slaves
+        }
+	
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -3885,7 +3944,7 @@ independence_rebels = {
 	
 	area = nation 					# Stays within the nation
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
@@ -4042,7 +4101,7 @@ native_rebels = {
 	
 	area = nation 					# Stays within the nation
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = democracy
 		presidential_dictatorship = democracy
@@ -4216,7 +4275,7 @@ sioux_nation = {
 	
 	area = culture_group
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship
@@ -4336,7 +4395,7 @@ apache = {
 	
 	area = culture_group
 	
-	# <this is the governement in the country> = <this is what the rebels want>
+	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = proletarian_dictatorship
 		presidential_dictatorship = presidential_dictatorship

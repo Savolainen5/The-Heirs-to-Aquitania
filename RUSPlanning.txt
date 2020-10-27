@@ -9,7 +9,6 @@ RUS
 
 TO DO BEFORE RELEASE:
 
--Doublecheck that Alba colonies in Indonesia go to all countries correctly
 -See if rebelspam can be reduced by stealing rebel code from HPM/HFM?
 
 
