@@ -48,7 +48,7 @@ NB for the changelog - Anything with lots of # or * after it is something Savs i
 
 **CHANGELOG**
 
-Version 0.36 X/10/20 - The Russias & China Update
+Version 0.36 28/10/20 - The Russias & China Update
 
 *Major*
 
@@ -95,7 +95,6 @@ Version 0.36 X/10/20 - The Russias & China Update
 - Eyjafjallajokul eruption near the beginning of the game now is less spammy and starts and ends at the same time for everyone
 
 **The world**
-- To get an alliance, you need a minimum 50 relationship with the target country ############################################ Maybe actually not working?
 - Added some relationships from the EU3 save
 - Updated some diplomacy
 - Gave some Persian provinces to Azerbaijan to better reflect the state of the world
