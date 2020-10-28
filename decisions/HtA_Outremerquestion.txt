@@ -402,6 +402,21 @@ political_decisions = {
 			919 = { change_province_name = "Yaffa" }
 			920 = { change_province_name = "Ghazze"	}		
         }
-    }	
+    }
+	
+	#Utility decision to civilize JER if it's released in some other way
+	civilize_JER = {
+		potential = {
+			tag = JER
+			civilized = no
+			exists = yes
+		}
+		allow = {
+			civilized = no
+		}
+		effect = {
+			civilized = yes
+		}
+	}
 	
 }

@@ -457,10 +457,7 @@ political_decisions = {
 	window_to_the_west_LIT = {
 		picture = dreams_of_empire
 		potential = {
-			OR = {
-				tag = RUS
-				tag = SML
-			}
+			primary_culture = russian
 			exists = LIT
 			NOT = { has_country_flag = window_to_the_west_LIT }
 			NOT = { has_country_flag = wttwLIT_concluded }
@@ -484,6 +481,10 @@ political_decisions = {
 				}
 				AND = {
 					tag = SML
+					neighbour = LIT
+				}
+				AND = {
+					tag = SRU
 					neighbour = LIT
 				}
 			}
@@ -518,10 +519,7 @@ political_decisions = {
 	window_to_the_west_LAT = {
 		picture = dreams_of_empire
 		potential = {
-			OR = {
-				tag = RUS
-				tag = SML
-			}
+			primary_culture = russian
 			exists = LAT
 			NOT = { has_country_flag = window_to_the_west_LAT }
 			NOT = { has_country_flag = wttwLAT_concluded }

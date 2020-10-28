@@ -51,6 +51,8 @@ cisalpines_are_italian_title;The Padanians are Italian!;;;;;;;;;x
 cisalpines_are_italian_desc;The Cisalpine people of Padania speak a language quite similar to ours, and have long shared in the cultural and economic life of the Italian peninsula. Given our power, especially compared to theirs, surely none will dare oppose us for claiming what is rightfully ours. Gloria a la patria!;;;;;;;;x
 cisalpines_are_aquitanian_title;The Padanians are Aquitanian!;x
 cisalpines_are_aquitanian_desc;The Cisalpine people of Padania speak a language none too far removed from our own, and have long been part of our cultural and economic history. It is only natural that we embrace them as fellow Aquitanians, and treat them the same as our conationalists in Mauguio. Glòria a la patria!;x
+civilize_JER_title;Civilize Jerusalem;x
+civilize_JER_desc;We are a civilized, country which has long had contact with and interaction with Western civilization. Let's act like it!;x
 claim_aegean_title;Claim the Aegean Islands;;;;;;;;;x
 claim_aegean_desc;The Empire is in no position to maintain control over these islands, which have much more in common with our ideas of trade and prosperity than the dusty old notions of empire and blind loyalty to the royalty in Constantinople. We will lay claim to these islands and take them for ourselves, for the good of their inhabitants and ours;;;;;;;;;;x
 claim_balearics_title;Claim the Balearic Islands;;;;;;;x
@@ -160,7 +162,7 @@ emden_accords_desc;With the further unifications of the Germans of the north, th
 encourage_tatar_revolts_title;Sow Dissent Among the Smolenskii Tatars;;;;;;;;;;;;x
 encourage_tatar_revolts_desc;Spread rumours and support dissident Tatars, and we may manage to destabilize our enemy's realm and make it easier to destroy them.;;;;;;;;;;;x
 end_smolensk_title;Put an End to Smolensk;;;;;;;;;;x
-end_smolensk_desc;Now that all the lands of Smolensk are lost to them, it is time to "convince" the Korol of Smolensk and his family to abandon all claims to the former kingdom and thus allow the Tsar to have uncontested control of their lands.;;;;;;;;;;x
+end_smolensk_desc;Now that all the lands of Smolensk are lost to them, it is time to "convince" the Korol of Smolensk and his family to abandon all claims to the former kingdom and thus allow the Tsar to have uncontested control of their lands. Note to the player: Don't go abusing this now, just take it immediately. The MIL and CON reduction exists to try to make any lingering Russian Unification rebels go away.;;;;;;;;;;x
 end_the_nobility_title;End the Nobility;;;;;;;;;;;x,,,,
 end_the_nobility_desc;Now that the rebellious dukes of Champagne, Orléans, and Normandy have been put down, we should remove their power and any chance that they could threaten France again! They shall be nobility in their memories only!;;;;;;;;;;;;;;;x;,
 enlist_tatars_title;The Kazan Pact - Kazanskii Dogovor;;;;;;;;;;;;x

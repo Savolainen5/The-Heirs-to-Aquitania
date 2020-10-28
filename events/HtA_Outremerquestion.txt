@@ -95,6 +95,7 @@ country_event = {
         name = "EVT97107OPTA" #Grant home rule to Outremer
         set_global_flag = outremer_self_rule_granted
 		release_vassal = JER
+		JER = { civilized = yes }
 		prestige = -30
         any_pop = {
 			limit = {

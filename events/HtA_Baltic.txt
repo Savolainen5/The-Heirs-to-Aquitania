@@ -58,10 +58,7 @@ country_event = {
 	picture = "riga"
 	
 	trigger = {
-		OR = {
-			tag = SML
-			tag = RUS
-		}
+		primary_culture = russian
 		has_country_flag = window_to_the_west_LIT
 		is_greater_power = yes
 		neighbour = LIT
@@ -255,10 +252,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			tag = RUS
-			tag = SML
-		}
+		primary_culture = russian
 		has_country_flag = window_to_the_west_LIT
 		LIT = { is_our_vassal = THIS }
 		relation = {
@@ -339,10 +333,7 @@ country_event = {
 	picture = "riga"
 	
 	trigger = {
-		OR = {
-			tag = SML
-			tag = RUS
-		}
+		primary_culture = russian
 		has_country_flag = window_to_the_west_LAT
 		is_greater_power = yes
 		neighbour = LAT
@@ -543,10 +534,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			tag = RUS
-			tag = SML
-		}
+		primary_culture = russian
 		has_country_flag = window_to_the_west_LAT
 		LAT = { is_our_vassal = THIS }
 		relation = {

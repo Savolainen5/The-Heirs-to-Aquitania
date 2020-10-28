@@ -312,6 +312,14 @@ political_decisions = {
 
 		effect = {
 			prestige = 5
+			any_pop = {
+				limit = {
+					location = { is_core = SML }
+					has_pop_culture = russian
+				}
+				militancy = -10
+				consciousness = -10
+			}
 			SML = {
 				all_core = {
 					remove_core = SML

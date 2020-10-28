@@ -43,3 +43,8 @@ Other:
 - Hispania and Navarra from this post: http://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-34#post-22485910
 - Doublecheck that Alba colonies in Indonesia go to all countries correctly
 - Make hills work
+- Perhaps have some European response to the end of the RUS-SML conflict - big threat in the east!
+- Solve BRU attacking NET to get Emden
+- Make some stuff for PER to give up its treaty ports even when it peacefully gives up JER
+- Change some colours in the EGY-PER-JER-CYR-MGH continuum
+- Possibly add a decision or something to reduce RUS core POPS' MIL and CON when SML annexes them, so there aren't the rebels.

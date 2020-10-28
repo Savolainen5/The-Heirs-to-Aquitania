@@ -2313,6 +2313,23 @@ russian_rebels = {
 			factor = 10
 			NOT = { has_country_flag = lost_RUS_war }
 		}
+		modifier = {
+			factor = 10
+			OR = {
+				AND = {
+					tag = SML
+					RUS = { exists = no }
+				}
+				AND = {
+					tag = RUS
+					SML = { exists = no }
+				}
+				AND = {
+					tag = SRU
+					RUS = { exists = no }
+				}
+			}
+		}
 	}
 	
 	# The rebel type with the highest modifier for this pop gets picked
@@ -2355,6 +2372,24 @@ russian_rebels = {
 				country = {
 					tag = RUS
 					war_with = SML
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					country = { tag = SML }
+					RUS = { exists = no }
+				}
+				AND = {
+					country = { tag = RUS }
+					SML = { exists = no }
+				}
+				AND = {
+					country = { tag = SRU }
+					RUS = { exists = no }
 				}
 			}
 		}
@@ -2417,6 +2452,23 @@ russian_rebels = {
 		modifier = {
 			factor = 5.0
 			is_capital = yes
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					owner = { tag = SML }
+					RUS = { exists = no }
+				}
+				AND = {
+					owner = { tag = RUS }
+					SML = { exists = no }
+				}
+				AND = {
+					owner = { tag = SRU }
+					RUS = { exists = no }
+				}
+			}
 		}
 	}
 	
