@@ -4874,7 +4874,15 @@ russia_hegemony = {
 		}
 		OR = {
 			THIS = { tag = RUS }
-			THIS = { tag = SML NOT = { has_global_flag = railroading_on } } #In a railroaded game, SML should not be able to use this CB
+			THIS = {
+				tag = SML
+				OR = {
+					NOT = {
+						has_global_flag = railroading_on #In a railroaded game, SML should not be able to use this CB
+					}
+					ai = no
+				}
+			} 
 		}
 		any_owned_province = {
 			OR = {
