@@ -44,8 +44,10 @@ Other:
 - Doublecheck that Alba colonies in Indonesia go to all countries correctly
 - Make hills work
 - Perhaps have some European response to the end of the RUS-SML conflict - big threat in the east!
+	- Finnish intervention during the Russia war? Roman?
 - Solve BRU attacking NET to get Emden
 - Make some stuff for PER to give up its treaty ports even when it peacefully gives up JER
 - Change some colours in the EGY-PER-JER-CYR-MGH continuum
 - Possibly add a decision or something to reduce RUS core POPS' MIL and CON when SML annexes them, so there aren't the rebels.
 - To get an alliance, you need a minimum 50 relationship with the target country - Why isn't this working?
+- A way for Roman Empire to get Trebizond, perhaps something eventy in tandem with ARM moving its capital to the east
