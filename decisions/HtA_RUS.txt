@@ -554,6 +554,7 @@ political_decisions = {
 				has_country_flag = won_RUS_war
 				AND = { tag = SML NOT = { exists = RUS } }
 				AND = { tag = RUS NOT = { exists = SML } }
+				AND = { tag = SRU NOT = { exists = RUS } }
 			}
 			exists = DON
 		}
@@ -562,6 +563,7 @@ political_decisions = {
 			OR = {
 				AND = { tag = SML NOT = { exists = RUS } }
 				AND = { tag = RUS NOT = { exists = SML } }
+				AND = { tag = SRU NOT = { exists = RUS } }
 			}
 			nationalism_n_imperialism = 1
 		}
