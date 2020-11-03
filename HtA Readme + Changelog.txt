@@ -61,7 +61,7 @@ To do:
 50000&50002 - AQT
 50003-50023 - FRA
 50024-50049 - ITA and DAU (This is about the time I started actually being smart and allocating numbers beforehand. All are used up, must allocate more IDs. Added 50099 here)
-50050-50099 - Germany and surroundings
+50050-50098 - Germany and surroundings
 50100-50149 - British Isles
 50150-50199 - Africa
 50200-50249 - AQT and PRE
@@ -83,11 +83,12 @@ To do:
 51650-51699 - Mediterranean
 51700-51750 - Caribbean
 51751-51850 - The Near East (first half), Persia (second half)
-
+51851-51899 - More Italy
 51900-51999 - Rest of Africa
 52000-52100 - South Africa
 52200-52300 - Southeast Asia (not including Indonesia, obviously)
 53000-53200 - China, Korea, etc.
+
 59950-59999 - Debugging events
 97091-97098 - North American settlement events
 97097 - Event/decision to enable railroading

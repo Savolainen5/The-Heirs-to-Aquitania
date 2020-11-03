@@ -98,7 +98,9 @@ country_event = {
 		exists = SML
 		exists = RUS
 		owns = 1194
+		1194 = { NOT = { is_core = THIS } }
 		owns = 2702
+		2702 = { NOT = { is_core = THIS } }
 	}
 	
 	mean_time_to_happen = {
@@ -107,6 +109,7 @@ country_event = {
 	
 	option = {
 		name = "$COUNTRY$ expands ever outwards!"
+		prestige = 1
 		1194 = {
 			add_core = SML
 			add_core = RUS
@@ -118,34 +121,50 @@ country_event = {
 	}
 }
 
-#End the Yakut War																					#This event no longer necessary. The ID could be reused if you wanted.
-#country_event = {
-#	id = 50353
-#	title = "Yakuts Defeated"
-#	desc = "We have captured the Yakut leadership and subjugated much of their lands already. It is time for peace."
-#	picture = "ambush_army"
-#	
-#	trigger = {
-#		has_country_flag = yakut_war
-#		NOT = { has_global_flag = yakuts_subjugated }
-#		war_with = YKT
-#		YKT = { NOT = { military_score = 1 } }
-#		OR = {
-#			2648 = { controlled_by = THIS }
-#			YKT = { national_provinces_occupied = 0.10 }
-#		}
-#	}
-#	
-#	mean_time_to_happen = {
-#		days = 1
-#	}
-#	
-#	option = {
-#		name = "They never stood a chance."
-#		end_war = YKT
-#		inherit = YKT
-#	}
-#}
+#$COUNTRY_ADJ$ Steppe (when only one of the countries exists)
+country_event = {
+	id = 50353
+	title = "The $COUNTRY_ADJ$ Steppe"
+	desc = "Our peoples have claimed the lands to the northeast of the Caspian Sea, lands which were hitherto sparsely populated at best. None can claim to own them, so now we do!"
+	picture = "expansion"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		primary_culture = russian
+		OR = {
+			tag = RUS
+			NOT = { exists = SML }
+		}
+		OR = {
+			tag = SML
+			NOT = { exists = RUS }
+		}
+		OR = {
+			tag = SRU
+			NOT = { exists = RUS }
+		}
+		owns = 1194
+		1194 = { NOT = { is_core = THIS } }
+		owns = 2702
+		2702 = { NOT = { is_core = THIS } }
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "The land between the sea is ours!"
+		prestige = 1
+		1194 = {
+			add_core = THIS
+		}
+		2702 = {
+			add_core = THIS
+		}
+	}
+}
 
 #########Added in 0.36 - The Russia Update
 

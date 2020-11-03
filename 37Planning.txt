@@ -51,3 +51,4 @@ Other:
 - Possibly add a decision or something to reduce RUS core POPS' MIL and CON when SML annexes them, so there aren't the rebels.
 - To get an alliance, you need a minimum 50 relationship with the target country - Why isn't this working?
 - A way for Roman Empire to get Trebizond, perhaps something eventy in tandem with ARM moving its capital to the east
+- Make indigenous Amerigan countries unable to take New Life in the New World decision

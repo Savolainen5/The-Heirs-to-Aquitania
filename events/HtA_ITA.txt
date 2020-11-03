@@ -1,4 +1,4 @@
-#Events 50024-50050 reserved for Italy and Daufinat (which are located in HtA_DAU)
+#Events 50024-50050 reserved for Italy and Daufinat (which are located in HtA_DAU). Lower down in the file we've got IDs 51851-51899
 #Fall of Tuscany
 country_event = {
 	id = 50024
@@ -228,6 +228,46 @@ country_event = {
 		prestige = 5
 		TUS_744 = {
 			add_core = THIS
+		}
+	}
+}
+
+#####################Start events from 0.37#####################################
+# 51851-51899
+
+
+
+
+
+#Premiere of La Traviata
+country_event = {
+	id = 51895
+	title = "EVTNAME51895"
+	desc = "EVTDESC51895"
+	picture = "la_traviata"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		729 = { owned_by = THIS }
+		year = 1853
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "A spectacular performance!"
+		prestige = 3
+		729 = {
+			any_pop = {
+				limit = {
+					strata = rich
+				}
+				consciousness = 0.1
+				militancy = -0.1
+			}
 		}
 	}
 }
