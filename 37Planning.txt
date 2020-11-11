@@ -52,3 +52,5 @@ Other:
 - To get an alliance, you need a minimum 50 relationship with the target country - Why isn't this working?
 - A way for Roman Empire to get Trebizond, perhaps something eventy in tandem with ARM moving its capital to the east
 - Make indigenous Amerigan countries unable to take New Life in the New World decision
+- Integrate LUX blobbing with Brunswick congress - one player had just had LUX and BRA switch positions, essentially. See Burnbird's post on discord
+- Consider revamping some AEN decisions, esp. wrt IRE

@@ -162,18 +162,26 @@ political_decisions = {
 			SCO = { exists = no }
 			war = no
 			OR = {
-				NOT = { relation = {
-					who = IRE
-					value = -150
+				NOT = {
+					relation = {
+						who = IRE
+						value = -150
 					}
+					is_our_vassal = IRE
 				}
 				is_our_vassal = IRE
 			}
 			IRE = {
-				is_greater_power = no
-				is_secondary_power = no
+				OR = {
+					vassal_of = THIS
+					in_sphere = THIS
+					AND = {
+						is_greater_power = no
+						is_secondary_power = no
+						is_vassal = no
+					}
+				}
 			}
-		#ADD MORE?##################################################################################
 		}
 		
 		effect = {

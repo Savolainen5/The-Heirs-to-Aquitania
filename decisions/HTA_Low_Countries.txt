@@ -123,6 +123,7 @@ political_decisions = {
 		
 		effect = {
 			inherit = WLL
+			WLL = { all_core = { add_core = THIS } }
 			prestige = 10
 			badboy = 5
 			set_country_flag = wallonia_integrated

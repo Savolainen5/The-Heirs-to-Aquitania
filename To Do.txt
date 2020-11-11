@@ -1,4 +1,4 @@
-To Do, v0.36
+To Do, v0.37
 
 Events:
 
@@ -24,7 +24,6 @@ Events:
 
 Decisions:
 
-- Take a second look at forming Italy and how to do it so that the now-split-off Italian cultures
 - France takes back Challans (La Roche, 437) from AQT
 - Japan claims Ainu Mosir and the northern islands (the latter decision exists already and has merely been disabled)
 - AQT decision reclaim SA colonies if they're lost
@@ -40,7 +39,6 @@ Decisions:
 - Being puppetmaster of Livonia gives you the possibiltiy to incorporate Estonia into it?
 - Greece rejoins a democratic Roman Empire?
 - Portugal claims Atlantic islands
-- Update gtfo_HtA with new tags
 - check NationalUnification to see if the Arab Union needs to have the relevant culture group excluded in order to be able to form
 - A union of Margaria and Vestland
 - A GP with power in the area can get Hong Kong somehow if they aren't the one that got Macao
