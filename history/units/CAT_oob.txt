@@ -5,6 +5,22 @@ HIS = {
 
 AQT = { value = 160 }
 
+leader = {
+	name = "Ramón Margall"
+	type = land
+	date = 1836.1.1
+	personality = gutsy
+	background = adventurer
+}
+
+leader = {
+	name = "Valentí Cadafall"
+	type = sea
+	date = 1836.1.1
+	personality = skilled
+	background = cartographer
+}
+
 army = {
 	name = "Exèrcit Català"
 	location = 498

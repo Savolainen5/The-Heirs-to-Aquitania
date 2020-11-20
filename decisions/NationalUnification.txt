@@ -1088,12 +1088,11 @@ political_decisions = {
 				PRH = {
 					in_sphere = THIS
 					is_our_vassal = THIS
-					relation = { who = THIS value = 100 }
 				}
 				BOH = {
 					in_sphere = THIS
 					is_our_vassal = THIS
-					relation = { who = THIS value = 100 }
+					#relation = { who = THIS value = 100 } #removed because maybe it's causing problems
 				}
 				owns = 625						#It's possible both have been annexed already
 			}

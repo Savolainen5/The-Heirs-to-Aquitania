@@ -20,6 +20,22 @@ HIS = {
 	truce_until = 1839.9.25
 }
 
+leader = {
+	name = "Christovão de Moura"
+	type = land
+	date = 1836.1.1
+	personality = gallant
+	background = natural_born_leader
+}
+
+leader = {
+	name = "Cândido dos Santos"
+	type = sea
+	date = 1836.1.1
+	personality = balanced_p
+	background = generals_aide
+}
+
 army = {
 
 	name = "Exército Português"

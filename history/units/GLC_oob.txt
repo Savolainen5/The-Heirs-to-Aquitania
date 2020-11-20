@@ -2,6 +2,22 @@ HIS = {
 	truce_until = 1839.9.25
 }
 
+leader = {
+	name = "Alexandre Nogueira"
+	type = land
+	date = 1836.1.1
+	personality = spirited
+	background = engineer
+}
+
+leader = {
+	name = "Vasco de Almeida"
+	type = sea
+	date = 1836.1.1
+	personality = diplomatic
+	background = aristocrat
+}
+
 army = {
 	name = "Armada de Galicia"
 	location = 474

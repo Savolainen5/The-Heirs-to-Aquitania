@@ -1,3 +1,19 @@
+leader = {
+	name = "Raimond de Cavalhon"
+	type = land
+	date = 1836.1.1
+	personality = clever
+	background = old_school
+}
+
+leader = {
+	name = "Beròt d'Usès"
+	type = land
+	date = 1836.1.1
+	personality = confident
+	background = natural_born_leader
+}
+
 army = {
 	name = "Armeta del Ovesto"
 	location = 454

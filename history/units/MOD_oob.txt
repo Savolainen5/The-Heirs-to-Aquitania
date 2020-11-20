@@ -2,6 +2,14 @@ NPL = {
 	value = -75
 }
 
+leader = {
+	name = "Simone di Sarzana"
+	type = land
+	date = 1836.1.1
+	personality = calm
+	background = school_of_firepower
+}
+
 army = {
 	name = "Esercito di Modena"
 	location = 739

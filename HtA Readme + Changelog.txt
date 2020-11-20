@@ -48,6 +48,15 @@ NB for the changelog - Anything with lots of # or * after it is something Savs i
 
 **CHANGELOG**
 
+Major
+
+Minor
+- Some more starting generals - thanks to MajorMajor
+- Some new flags (both default and alternate) - thanks to Athemos
+- Netherlands' Integrate Wallonia decision now gives a core, too
+
+Bugfixes
+- Navarra has a liberal party for the entire game
 
 
 

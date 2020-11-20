@@ -24,6 +24,110 @@ BNG = {
 	influence_value = 10
 }
 
+leader = {
+	name = "José María de Carvajal"
+	type = land
+	date = 1836.1.1
+	personality = bold
+	background = adventurer
+}
+
+leader = {
+	name = "Joaquín Martínez-Campos"
+	type = land
+	date = 1836.1.1
+	personality = heroic
+	background = drillmaster
+}
+
+leader = {
+	name = "Ramón Rojo"
+	type = land
+	date = 1836.1.1
+	personality = ballsy
+	background = madman
+}
+
+leader = {
+	name = "Nicolás Silvestre"
+	type = land
+	date = 1836.1.1
+	personality = manful
+	background = cartographer
+}
+
+leader = {
+	name = "Mariano Cagigal de la Vega"
+	type = land
+	date = 1836.1.1
+	personality = doughty
+	background = colonial_b
+}
+
+leader = {
+	name = "Arsenio Uribe"
+	type = land
+	date = 1836.1.1
+	personality = competent
+	background = armchair_general
+}
+
+leader = {
+	name = "Ricardo García de la Noceda"
+	type = land
+	date = 1836.1.1
+	personality = brilliant
+	background = rising_star
+}
+
+leader = {
+	name = "Melchor Heredia"
+	type = land
+	date = 1836.1.1
+	personality = skilled
+	background = cartographer
+}
+
+leader = {
+	name = "Gabriel Maura"
+	type = sea
+	date = 1836.1.1
+	personality = aggressive
+	background = madman
+}
+
+leader = {
+	name = "Francisco de la Fuente"
+	type = sea
+	date = 1836.1.1
+	personality = gallant
+	background = aristocrat
+}
+
+leader = {
+	name = "Emilio Hidalgo de Cisneros"
+	type = sea
+	date = 1836.1.1
+	personality = brutish
+	background = exranker
+}
+
+leader = {
+	name = "Segismundo Narváez"
+	type = sea
+	date = 1836.1.1
+	personality = impetuous
+	background = adventurer
+}
+
+leader = {
+	name = "Calixto Fernández de Córdoba"
+	type = sea
+	date = 1836.1.1
+	personality = hellbent
+	background = colonial_b
+}
+
 army = {
 	name = "Armada del Rey"
 	location = 489

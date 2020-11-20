@@ -2,6 +2,22 @@ NPL = {
 	value = -75
 }
 
+leader = {
+	name = "Emanuele Baldissera"
+	type = land
+	date = 1836.1.1
+	personality = irate
+	background = artillerist
+}
+
+leader = {
+	name = "Gennaro Nicola"
+	type = sea
+	date = 1836.1.1
+	personality = imperious
+	background = warmonger
+}
+
 army = {
 	name = "Esercito di Genova"
 	location = 724

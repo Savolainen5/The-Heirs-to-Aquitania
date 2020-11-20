@@ -2,6 +2,14 @@ NPL = {
 	value = -95
 }
 
+leader = {
+	name = "Vincenzo di Moncalieri"
+	type = land
+	date = 1836.1.1
+	personality = fanatic
+	background = hated
+}
+
 army = {
 	name = "Esercito di Lombardia"
 	location = 726
