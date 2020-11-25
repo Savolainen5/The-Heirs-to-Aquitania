@@ -440,9 +440,9 @@ political_decisions = {
 		}
 	}
 
-	###################################
-	### Decisions regarding Corsica ###
-	###################################
+###########################################
+####### Decisions regarding Corsica #######
+###########################################
 	
 	approach_aqt = {
 		picture = Corsica
@@ -722,6 +722,7 @@ political_decisions = {
 			PRE = { all_core = { add_core = THIS } }
 			any_country = {
 				limit = {
+					exists = yes
 					vassal_of = THIS
 					OR = {
 						tag = CAT

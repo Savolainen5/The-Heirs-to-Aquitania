@@ -1,0 +1,376 @@
+political_decisions = {
+#Mostly HtA stuff here
+	
+# reunification of Hispania
+		
+	hispania_by_sword = {
+		picture = military_parade
+		potential = {
+			tag = HIS
+			NOT = { has_global_flag = hispania_by_sword }
+		}
+		
+		allow = {
+			war = no
+			OR = {
+				is_greater_power = yes 
+				is_secondary_power = yes
+			}
+			state_n_government = 1 
+			military_score = 50
+			jingoism = 5
+			pro_military = 5 
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = reactionary
+				ruling_party_ideology = fascist
+			}
+		}
+		
+		effect = {
+			prestige = 10 
+			badboy = 5
+			set_global_flag = hispania_by_sword
+			relation = {
+				who = POR value = -100
+			}
+			relation = {
+				who = NAV value = -100
+			}
+			relation = {
+				who = GLC value = -100
+			}
+			relation = {
+				who = CAT value = -100
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	integrate_portugal = {
+		picture = treaty_signing
+		potential = {
+			tag = HIS 
+			has_global_flag = hispania_by_sword
+			NOT = { has_country_flag = integrated_por }
+		}
+		
+		allow = {
+			war = no
+			is_greater_power = yes 
+			OR = {	
+				is_our_vassal = POR
+				POR = {
+					in_sphere = THIS
+					is_vassal = no
+				}
+			}
+			NOT = { truce_with = POR }
+			relation = { who = POR value = 150 }
+			revolution_n_counterrevolution = 1
+		}
+		
+		effect = {
+			set_country_flag = integrated_por
+			badboy = 10 
+			prestige = 15 
+			POR = {
+				all_core = { add_core = THIS }
+			}
+			inherit = POR		
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+	
+	embrace_portuguese = {
+		picture = embrace_minority
+		potential = {
+			tag = HIS
+			any_owned_province = { culture = portuguese }
+			NOT = { accepted_culture = portuguese }
+		}
+		
+		allow = {
+			prestige = 75
+			mass_politics = 1
+			social_science = 1
+			behaviorism = 1
+			NOT = {
+				any_owned_province = {
+					culture = portuguese
+					average_militancy = 2
+				}
+			}
+		}
+		
+		effect = {
+			add_accepted_culture = portuguese
+			prestige = -15
+			any_pop = {
+				limit = { has_pop_culture = portuguese }
+				consciousness = -4
+				militancy = -4
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+				}
+				consciousness = 4
+				militancy = 4
+			}
+		}
+	}
+	
+	integrate_navarra = {
+		picture = claim_greater_navarra
+		potential = {
+			tag = HIS
+			has_global_flag = hispania_by_sword
+			is_our_vassal = NAV 
+			NOT = { has_country_flag = integrated_navarra }
+		}
+		
+		allow = {
+			war = no
+			is_greater_power = yes 
+			NOT = { truce_with = NAV }
+			relation = { who = NAV value = 150 }
+			mass_politics = 1
+		}
+		
+		effect = {
+			set_country_flag = integrated_navarra
+			badboy = 5 
+			prestige = 15 
+			NAV = {
+				all_core = { add_core = THIS }
+			}
+			inherit = NAV 			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	embrace_galicians = {
+		picture = embrace_minority
+		potential = {
+			tag = HIS
+			any_owned_province = { culture = galician }
+			NOT = { accepted_culture = galician	}
+		}
+		
+		allow = {
+			prestige = 50
+			revolution_n_counterrevolution = 1
+			experimental_psychology = 1
+			NOT = {
+				any_owned_province = {
+					culture = galician
+					average_militancy = 2
+				}
+			}
+		}
+		
+		effect = {
+			add_accepted_culture = galician
+			prestige = -10
+			any_pop = {
+				limit = { has_pop_culture = galician }
+				consciousness = -4
+				militancy = -4
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+				}
+				consciousness = 4
+				militancy = 4
+			}
+		}
+	}
+	
+	reclaim_catalonia = {
+		picture = claim_kingdom_of_aragon
+		potential = {
+			tag = HIS 
+			has_global_flag = hispania_by_sword
+			NOT = { has_country_flag = reclaim_cat }
+		}
+		
+		allow = {
+			war = no
+			is_greater_power = yes
+			state_n_government = 1
+		}
+		
+		effect = {
+			set_country_flag = reclaim_cat
+			badboy = 5 
+			prestige = 5 
+			CAT = {
+				all_core = { add_core = THIS }
+			}		
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	embrace_catalans = {
+		picture = claim_kingdom_of_aragon
+		potential = {
+			tag = HIS
+			any_owned_province = { culture = catalan }
+			NOT = { accepted_culture = catalan }
+		}
+		
+		allow = {
+			prestige = 40
+			nationalism_n_imperialism = 1
+			biologism = 1
+			owns = 498
+			any_owned_province = {
+				culture = catalan
+				NOT = {
+					average_militancy = 2
+				}
+			}
+		}
+		
+		effect = {
+			add_accepted_culture = catalan
+			prestige = -10
+			any_pop = {
+				limit = { has_pop_culture = catalan }
+				consciousness = -4
+				militancy = -4
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+				}
+				consciousness = 4
+				militancy = 4
+			}
+		}
+	}
+	
+	invite_navarra = {
+		picture = claim_greater_navarra
+		potential = {
+			tag = HIS
+			exists = NAV 
+			NOT = { has_country_flag = invited_navarra } 
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1 
+			is_greater_power = yes 
+			NAV = { in_sphere = THIS }
+			NOT = { truce_with = NAV }
+		}
+		
+		effect = {
+			set_country_flag = invited_navarra
+			NAV = { country_event = 50304 }
+		}
+	}
+	
+	########End Iberian story events#############
+	
+	
+	expand_halesca = {
+		picture = map_alaska
+		potential = {
+			tag = HIS
+			owns = 3
+			NOT = { owns = 2630 }
+			NOT = { has_country_flag = halesca_expanded }
+		}
+		
+		allow = {
+			money = 5000
+			medicine = 1
+		}
+		
+		effect = {
+			prestige = 2
+			set_country_flag = halesca_expanded
+			money = -5000
+			2630 = { secede_province = HIS }
+			2599 = { secede_province = HIS }
+		}
+	}
+	
+	sell_alaska = {
+		picture = map_alaska
+		potential = {
+			NOT = { has_country_flag = alaska_purchase_started }
+			NOT = { has_global_flag = alaska_purchase_completed }
+			tag = HIS
+			year = 1859
+			has_country_flag = halesca_expanded
+		}
+		
+		allow = {
+			war = no
+			any_owned_province = {
+				region = USA_1
+			}
+		}
+		
+		effect = {
+			set_country_flag = alaska_purchase_started
+			prestige = 5
+			any_country = {
+				limit = {
+					NOT = { tag = HIS }
+					OR = {
+						is_greater_power = yes
+						is_secondary_power = yes
+						tag = SKM
+					}
+					any_owned_province = {
+						OR = {
+							region = USA_78
+							region = RUS_2590
+							region = JAP_1088
+						}
+					}					
+				}
+				set_country_flag = alaska_purchase_interest
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

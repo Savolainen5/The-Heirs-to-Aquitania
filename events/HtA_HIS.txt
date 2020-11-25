@@ -217,7 +217,7 @@ country_event = {
 					}
 			}
 			modifier = { 
-				factor = .5 
+				factor = 0.5 
 				is_secondary_power = yes 
 			}
 		}
@@ -328,8 +328,7 @@ country_event = {
 	}
 }
 
-# Portuguese separatists event chain. This causes confrontation between Portugal
-# and Hispania, which could lead to Aquitanian intervention.
+# Portuguese separatists event chain. This causes confrontation between Portugal and Hispania, which could lead to Aquitanian intervention.
 
 country_event = {
 	id = 50307

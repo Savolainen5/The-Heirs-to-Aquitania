@@ -56,3 +56,7 @@ Other:
 - Make indigenous Amerigan countries unable to take New Life in the New World decision
 - Integrate LUX blobbing with Brunswick congress - one player had just had LUX and BRA switch positions, essentially. See Burnbird's post on discord
 - Consider revamping some AEN decisions, esp. wrt IRE
+- Mali gets at least one military reform
+	- RP for conquering
+- BRB shouldn't sell New BRB if it colonizes any other land in the area
+- Add some negative modifier for feudal (European) countries?
