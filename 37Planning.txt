@@ -18,6 +18,7 @@ Poland:
 Italy:
 - Rework PDN formation?
 	Some sort of conference thing
+	In such a way that it can't be cheesed so a country declares a conquest CB on Milan and then gets to keep it on PDN?
 - Rework NPL->ITA. Perhaps some sort of Mezzogiorno-like country
 - Italy as a formable for the whole peninsula but only under specific circumstances and before a certain time:
 	- NPL falling to Albesan rebels gives a temporary CB to conquer Italy and then form it? (MajorMajor)
@@ -60,3 +61,5 @@ Other:
 	- RP for conquering
 - BRB shouldn't sell New BRB if it colonizes any other land in the area
 - Add some negative modifier for feudal (European) countries?
+- BHN regains Zadar after the Hungarian revolt
+- MAKE SURE THAT NPL COLONIAL HOLDINGS MATCH LORE

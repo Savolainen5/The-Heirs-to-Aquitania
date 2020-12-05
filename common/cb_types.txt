@@ -4937,6 +4937,7 @@ russia_hegemony = {
 	}
 }
 
+#Russia Hegemony part II, Electric Boogaloo
 russia_annex = {
 	sprite_index = 5
 	is_triggered_only = yes

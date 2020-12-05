@@ -119,7 +119,6 @@ Other:
 - Factionalism in the Philippines (Panaja) with several different states on different islands fighting each other, either during or after Dutch rule
 - Hispania loses cores on countries in time?
 - Union in Iberia?
-- Italy tag replaced with something like Mezzogiorno, reserve Italy for a unification of PDN and Naples-Rome?
 - Trans-Hungary for Hungarian-Romanian interaction, particularly in Transylvania
 - Figure out what to do with Ardeal having cores in funny places and then getting annexed to Volasea
 - When Austria is released after dismantlement, it got OTL cores. Why? Fix!
@@ -128,6 +127,7 @@ Other:
 - Add POP Migration Mod? https://www.reddit.com/r/victoria2/comments/2mtl11/pop_migration_mod_hod
 - Add Better AI Mod?https://forum.paradoxplaza.com/forum/index.php?threads/better-ai-mod.925608/#post-21373359
 - KoJ revived with a reverse oriental crisis over protection of holy sites/lands? (Partially done in 0.36 - does it need revisiting/refinement?)
+- KoJ/OUT stuff as suggested here https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-55#post-27126827
 - Fascism happen sooner?
 - More to be done with rebels wanting to break free of Italy in the north?
 - Look into tweaking migration so that it's more likely to happen toward neighbouring countries Dictatorship > Democracy
