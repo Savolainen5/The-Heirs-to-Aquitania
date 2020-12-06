@@ -939,6 +939,7 @@ baltic = {
 
 		last_names = { Pameddis Varmis Paguddis Notangis Sembas Nadrauvas Bartas Skallava Sudavas Galindas Kulmus #Reconstructed Old Pruthenian Tribe names with an extra s for more Lithuanian-looking influence
 		}
+	}
 }
 
 byzantine = {

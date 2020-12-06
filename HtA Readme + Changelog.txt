@@ -50,10 +50,12 @@ NB for the changelog - Anything with lots of # or * after it is something Savs i
 
 Major
 
+
 Minor
 - Some more starting generals - thanks to MajorMajor
 - Some new flags (both default and alternate) - thanks to Athemos
 - Netherlands' Integrate Wallonia decision now gives a core, too
+- Added the Prusai culture, Baltic-speaking remnants of the Old Prussians, to the Polish-Lithuanian border region
 
 Bugfixes
 - Navarra has a liberal party for the entire game
