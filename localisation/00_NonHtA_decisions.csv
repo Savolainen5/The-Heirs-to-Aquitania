@@ -240,8 +240,9 @@ claim_transvaal_desc;The Obervahl is Steenkooler territory and rightfully belong
 claim_transvaal_title;Claim the Obervahl;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 claim_xhosa_lands_desc;The Xhosa lands rightfully belong to the Kaap Colony, and the colonial governor has made a formal request to the Dutch government to adminster the lands to protect colonist safety along the border.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,
 claim_xhosa_lands_title;Claim Xhosa Lands;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-colonial_destiny_desc;It is the destiny of the Belgian people to civilize the last remaining wilds of the world. To Africa!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-colonial_destiny_title;Colonial Destiny;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+organize_colonial_armies_title;Reform the $COUNTRY_ADJ$ Colonial Army;x
+organize_colonial_armies_desc;In the past, the amount of overseas colonial troops we had available was limited by logistic factors. Ships, orders, troops and officers took a long time to arrive and the control over the land coupled with the unwillingness of the natives inhabitants to cooperate meant that we didn't realize the full potential of our colonies. We now posses the technology to change that.\n\n§RNOTE: This decision increases the maximum allowed percentage of non-animist soldier pops in colonies from 1% to 2%. Animist pops still need to convert before they can go over 1%.§W;x
+colonial_armies;Colonial Army Reformed;x
 commodore_perry_expedition_desc;The Far East remains an enigma, and one which is beyond the reach of most western powers due to the enforced seclusion of China and Japan. While China is largely spoken for, Japan remains a potential target for American influence to expand. If we are to be taken seriously as a world power, we must consider sending a force to negotiate for trade rights with the Japanese-- under the threat of military force, if necessary.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,
 commodore_perry_expedition_title;Commodore Perry's Expedition;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 communist_faction;Communist Faction;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,

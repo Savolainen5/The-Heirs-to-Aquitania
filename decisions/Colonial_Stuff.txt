@@ -1,0 +1,26 @@
+political_decisions = {
+	
+	#Borrowed from HPM
+    organize_colonial_armies = {
+        picture = begin_line_of_advantage
+        potential = {
+			civilized = yes
+            colonial_nation = yes
+            any_owned_province = { is_colonial = yes is_overseas = yes }
+            NOT = { has_country_flag = colonial_armies }
+        }
+
+        allow = {
+            naval_logistics = 1
+            invention = bell_n_greys_telephones
+            money = 11000
+        }
+
+        effect = {
+            set_country_flag = colonial_armies
+            treasury = -10000
+        }
+        ai_will_do = {  factor = 1 }
+    }
+	
+}

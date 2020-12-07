@@ -782,6 +782,29 @@ promote_to =
 				soldiers = 0.05
 			}
 		}
+		
+		
+        modifier = {
+            factor = -100
+            soldiers = 0.01
+            location = { is_colonial = yes is_overseas = yes }
+            is_primary_culture = no
+            is_accepted_culture = no
+            OR = {
+                has_pop_religion = animist
+                NOT = { country = { has_country_flag = colonial_armies } }
+            }
+        }
+
+        modifier = {
+            factor = -100
+            soldiers = 0.02
+            location = { is_colonial = yes is_overseas = yes }
+            is_primary_culture = no
+            is_accepted_culture = no
+            NOT = { has_pop_religion = animist }
+            country = { has_country_flag = colonial_armies }
+        }
 	}
 
 	craftsmen = {
