@@ -21255,18 +21255,18 @@
 # Pau
 460 = {
     text_position = {
-        x = 2804.000000
-        y = 1494.000000
+        x = 2805.100000
+        y = 1494.100000
     }
 
-    text_scale = 2.500000
+    text_scale = 3.5
     unit = {
-        x = 2794.250000
-        y = 1498.550000
+        x = 2810.050000
+        y = 1495.150000
     }
 
     city = {
-        x = 2805.050000
+        x = 2802.150000
         y = 1497.700000
     }
 
@@ -21276,19 +21276,19 @@
     }
 
     building_construction = {
-        x = 2794.850000
-        y = 1494.950000
+        x = 2807.700000
+        y = 1490.300000
     }
 
     military_construction = {
-        x = 2790.650000
-        y = 1500.400000
+        x = 2800.550000
+        y = 1499.700000
     }
 
     building_position = {
         fort = {
-            x = 2787.000000
-            y = 1498.000000
+            x = 2800.950000
+            y = 1492.150000
         }
 
         railroad = {
@@ -21296,15 +21296,6 @@
             y = 1499.150000
         }
 
-        naval_base = {
-            x = 2779.899902
-            y = 1500.699951
-        }
-
-    }
-
-    building_rotation = {
-        naval_base = 0.698132
     }
 
 }
@@ -122631,6 +122622,59 @@
 
     building_rotation = {
         naval_base = 0.040179
+    }
+
+}
+
+# Biarritz
+3254 = {
+    text_position = {
+        x = 2788.350000
+        y = 1496.950000
+    }
+
+    text_rotation = 5.745350
+    text_scale = 2.5
+    unit = {
+        x = 2792.100000
+        y = 1501.300000
+    }
+
+    city = {
+        x = 2783.450000
+        y = 1502.000000
+    }
+
+    building_construction = {
+        x = 2788.150000
+        y = 1495.600000
+    }
+
+    military_construction = {
+        x = 2793.650000
+        y = 1499.100000
+    }
+
+    building_position = {
+        fort = {
+            x = 2780.250000
+            y = 1499.200000
+        }
+
+        railroad = {
+            x = 2781.950000
+            y = 1500.500000
+        }
+
+        naval_base = {
+            x = 2779.899902
+            y = 1500.699951
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 0.698132
     }
 
 }

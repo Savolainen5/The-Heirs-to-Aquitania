@@ -220,8 +220,6 @@ From;To;Type;Through;Data;Comment
 #Pyrenees
 500;460;impassable;0;0;
 499;457;impassable;0;0;
-496;460;impassable;0;0;
-500;457;impassable;0;0;
 
 #                                                         
 # The canals                                              

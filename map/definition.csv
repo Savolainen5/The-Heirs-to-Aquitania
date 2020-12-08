@@ -458,7 +458,7 @@ province;red;green;blue;x;x
 457;16;96;64;Foix;x
 458;240;160;128;Bordeaux;x
 459;112;160;128;Mont de Marsan;x
-460;240;32;128;Pau;x
+460;240;32;128;Biarritz;x
 461;144;96;128;Montpellier;x
 462;16;96;128;Rodez;x
 463;207;159;191;Carcassone;x
@@ -3252,7 +3252,7 @@ province;red;green;blue;x;x
 3251;56;14;232;Menorca;x
 3252;57;14;236;Eivissa;x
 3253;58;14;240;Kerguelen;x
-;59;14;244;x
+3254;59;14;244;Pau;x
 ;60;14;248;x
 ;61;14;232;x
 ;62;14;236;x

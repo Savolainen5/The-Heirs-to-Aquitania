@@ -9,6 +9,8 @@ bohemian_partisans_desc;Some local Czech-speaking people have taken up arms agai
 buffer_state_spam_reduction;BSSR;x
 buffer_state_spam_reduction_desc;Don't mind me, I'm just reducing spam from the Buffer State event in CBandCores.txt;x
 building_oheskewen_canal;Building the Oheskewen Canal;;;;;;;;;;;x                                                                                                                                                                                                                ,,,
+claimed_by_sweden;Claimed by Sweden;x
+claimed_by_sweden_desc;This province has been claimed by the Swedes, and they will try to take it one way or another.
 countrywide_famine;Countrywide Famine;;;;;;;;;;;x,,,
 countrywide_famine_desc;Because of recent events, natural or otherwise, our country is currently experiencing a famine. Many will die or leave for a new home. Many will demand action.;;;;;;;;;;;;;x
 countrywide_famine_immigrant_push;Countrywide Famine;;;;;;;;;;x,,,
@@ -29,7 +31,9 @@ great_fire_happened;Recent Great Fire;;;;;;;;;;x
 great_fire_recovery;Great Fire Recovery;;;;;;;;;;x
 great_fire_recovery_desc;This province is still recovering from the recent devastating great fire which swept through one of its cities.;;;;;;;;;;x
 hate_NPL;Naples: We remember;;;;;;;;;x
+hate_NPL_desc;We will not befriend them, for they are a threat to our existence.;x
 hate_ITA;Italy: We remember;;;;;;;;;x
+hate_ITA_desc;We will not befriend them, for they are a threat to our existence.;x
 hta_dont_sphere_sml;Smolensk is off-limits;x
 hta_dont_sphere_sml_desc;We aren't allowed to sphere Smolensk, lest we incur the wrath of Russia;x
 hungarian_pamphlets;Hungarian Liberal Pamphlets;;;;;;;;;x

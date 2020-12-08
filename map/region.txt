@@ -272,7 +272,7 @@ SPA_487 = { 489 488 487 490 491 508 } #Castilla la Nueva
 
 SPA_496 = { 495 496 497 } #Aragon
 
-SPA_492 = { 460 492 493 494 } #Vasconia
+SPA_492 = { 460 492 493 494 3254 } #Vasconia
 
 SPA_498 = { 498 499 464 500 501 } #Catalonia
 

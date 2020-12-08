@@ -99,8 +99,7 @@ CB:
 - Restrict Europeans' CB potentials on NA uncivs
 - Punitive expedition mechanic to get trade ports in Qin
 
-QIN reports from https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-54#post-27034539:
-
+QIN reports from https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-54#post-27034539 :
 - growth of liberal population was too high. About time when i westernized i had like 40-50% of my population being liberals. It meant that when i passed reform, it Decreased my militancy.
 - There is no way or at least i didn't find any to annex my sub-states.
 - There is no decision to core most/all of China or became China as Qin. Decision to reform Qin Empire could do that job with harder prerequisites.

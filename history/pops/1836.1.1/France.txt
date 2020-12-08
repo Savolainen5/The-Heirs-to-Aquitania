@@ -3416,72 +3416,60 @@
 		size = 4840
 	}
 }
-#Pau/Miarritze (676000/169000 POPS)
+#Pau (676000/169000 POPS)
 460 = {
 	aristocrats = {
-		culture = basque
+		culture = aquitanian
 		religion = catholic
-		size = 1700
+		size = 850
 	}
 
 	clergymen = {
-		culture = basque
+		culture = aquitanian
 		religion = catholic
-		size = 1750
+		size = 850
 	}
-
+	
 	artisans = {
 		culture = aquitanian
 		religion = catholic
-		size = 2800
-	}
-
-	artisans = {
-		culture = basque
-		religion = catholic
-		size = 5000
+		size = 2000
 	}
 
 	soldiers = {
-		culture = basque
+		culture = aquitanian
 		religion = catholic
-		size= 3000
-	}
-
-	farmers = {
-		culture = basque
-		religion = catholic
-		size = 104300
+		size = 800
 	}
 
 	farmers = {
 		culture = aquitanian
 		religion = catholic
-		size = 20000
+		size = 44300
+	}
+
+	farmers = {
+		culture = basque
+		religion = catholic
+		size = 10000
 	}
 
 	aristocrats = {
-		culture = aquitanian
+		culture = basque
 		religion = catholic
-		size = 400
+		size = 200
 	}
 
 	clergymen = {
-		culture = aquitanian
+		culture = basque
 		religion = catholic
-		size = 450
+		size = 220
 	}
 
 	artisans = {
-		culture = aquitanian
+		culture = basque
 		religion = catholic
 		size = 2500
-	}
-
-	soldiers = {
-		culture = aquitanian
-		religion = catholic
-		size= 450
 	}
         
 	clergymen = {
@@ -3493,7 +3481,13 @@
 	artisans = {
 		culture = sephardic
 		religion = jewish
-		size = 2900
+		size = 2100
+	}
+
+	farmers = {
+		culture = sephardic
+		religion = jewish
+		size = 900
 	}
 }
 #Languedoc/Lengadoc Region (1668000)
@@ -4140,4 +4134,79 @@
 		size = 2900
 	}
 
+}
+
+#Biarritz/Miarritze
+3254 = {
+	aristocrats = {
+		culture = basque
+		religion = catholic
+		size = 800
+	}
+
+	clergymen = {
+		culture = basque
+		religion = catholic
+		size = 850
+	}
+
+	artisans = {
+		culture = basque
+		religion = catholic
+		size = 2400
+	}
+
+	soldiers = {
+		culture = basque
+		religion = catholic
+		size = 1800
+	}
+
+	farmers = {
+		culture = basque
+		religion = catholic
+		size = 47300
+	}
+
+	farmers = {
+		culture = aquitanian
+		religion = catholic
+		size = 9000
+	}
+
+	aristocrats = {
+		culture = aquitanian
+		religion = catholic
+		size = 70
+	}
+
+	clergymen = {
+		culture = aquitanian
+		religion = catholic
+		size = 190
+	}
+
+	artisans = {
+		culture = aquitanian
+		religion = catholic
+		size = 1900
+	}
+
+	soldiers = {
+		culture = aquitanian
+		religion = catholic
+		size = 150
+	}
+        
+	clergymen = {
+		culture = sephardic
+		religion = jewish
+		size = 45
+	}
+
+	artisans = {
+		culture = sephardic
+		religion = jewish
+		size = 2900
+	}
 }

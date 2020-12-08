@@ -663,8 +663,8 @@ political_decisions = {
 				OR = {
 					owned_by = THIS
 					owner = {
-						in_sphere = THIS
 						vassal_of = THIS
+						in_sphere = THIS
 					}
 				}
 			}
@@ -681,8 +681,8 @@ political_decisions = {
 				OR = {
 					owned_by = THIS
 					owner = {
-						in_sphere = THIS
 						vassal_of = THIS
+						in_sphere = THIS
 					}
 				}
 			}
@@ -690,8 +690,8 @@ political_decisions = {
 				OR = {
 					owned_by = THIS
 					owner = {
-						in_sphere = THIS
 						vassal_of = THIS
+						in_sphere = THIS
 					}
 				}
 			}
@@ -699,8 +699,8 @@ political_decisions = {
 				OR = {
 					owned_by = THIS
 					owner = {
-						in_sphere = THIS
 						vassal_of = THIS
+						in_sphere = THIS
 					}
 				}
 			}
