@@ -1,24 +1,24 @@
 army = {
-	name = "Army of Navarra"
+	name = "Naffaroako Armada"
 	location = 493
 	regiment = {
-		name = "1st Regiment"
+		name = "1. Infanteriako Erregimentua"
 		type = infantry
 		home = 460
 	}
 	regiment = {
-		name = "2nd Regiment"
+		name = "2. Infanteriako Erregimentua"
 		type = infantry
 		home = 492
 	}
 	regiment = {
-		name = "Navarrese Hussars"
+		name = "Zaindari Husarak"
 		type = hussar
-		home = 492
+		home = 3254
 	}
 	regiment = {
-		name = "Basque Artillery"
+		name = "Artilleriako Erregimentua"
 		type = artillery
-		home = 493
+		home = 494
 	}
 }

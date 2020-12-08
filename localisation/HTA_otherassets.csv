@@ -10,7 +10,7 @@ buffer_state_spam_reduction;BSSR;x
 buffer_state_spam_reduction_desc;Don't mind me, I'm just reducing spam from the Buffer State event in CBandCores.txt;x
 building_oheskewen_canal;Building the Oheskewen Canal;;;;;;;;;;;x                                                                                                                                                                                                                ,,,
 claimed_by_sweden;Claimed by Sweden;x
-claimed_by_sweden_desc;This province has been claimed by the Swedes, and they will try to take it one way or another.
+claimed_by_sweden_desc;This province has been claimed by the Swedes, and they will try to take it one way or another.;x
 countrywide_famine;Countrywide Famine;;;;;;;;;;;x,,,
 countrywide_famine_desc;Because of recent events, natural or otherwise, our country is currently experiencing a famine. Many will die or leave for a new home. Many will demand action.;;;;;;;;;;;;;x
 countrywide_famine_immigrant_push;Countrywide Famine;;;;;;;;;;x,,,
