@@ -48,14 +48,26 @@ NB for the changelog - Anything with lots of # or * after it is something Savs i
 
 **CHANGELOG**
 
+Verison 0.37 - Poland and Italy
+
 Major
 
 
 Minor
 - Some more starting generals - thanks to MajorMajor
-- Some new flags (both default and alternate) - thanks to Athemos
+- Many new flags (both default and alternate) - thanks to Athemos
 - Netherlands' Integrate Wallonia decision now gives a core, too
-- Added the Prusai culture, Baltic-speaking remnants of the Old Prussians, to the Polish-Lithuanian border region
+- Added the Prusai culture, Baltic-speaking remnants of the Old Prussians, to the Polish-Lithuanian border region, along with a country for it - Prusova (tag PRS)
+- Added a decision for a resurgent Bohemia to lease Zadar again
+- Added unit files from HFM
+- Changed some country colours: CYR, EGY, LUZ, MGH
+- Made it so Brunswick doesn't have a core on Emden, meaning that they should be able to do the decision chain before Germany forms
+- Brabant should no longer sell its islands in Oceania/Volturnia if it has colonized beyond them in the region (continent)
+- Native nations in the New World can no longer take the decision called New Life in the New World
+- Split Pau off from the Basque province of Miarritze, added two flavour events about Our Lady of Lourdes to the owner
+- When Smolensk annexes Russia, they now have a decision to reduce POP MIL and CON by 4 to reduce rebels
+- Gave Mali one military reform (two seemed a bit OP, but it's there still if you want to readd it yourself!)
+- Many localizations tweaks and fixes
 
 Bugfixes
 - Navarra has a liberal party for the entire game

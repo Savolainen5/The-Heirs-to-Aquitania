@@ -5,13 +5,7 @@
 	aristocrats = {
 		culture = melanesian
 		religion = animist
-		size = 100
-	}
-
-	clergymen = {
-		culture = melanesian
-		religion = animist
-		size = 50
+		size = 60
 	}
 
 	artisans = {
@@ -23,13 +17,42 @@
 	soldiers = {
 		culture = melanesian
 		religion = animist
-		size= 75
-
+		size = 75
 	}
 
 	farmers = {
 		culture = melanesian
 		religion = animist
-		size = 5475
+		size = 4475
+	}
+	
+	aristocrats = {
+		culture = flemish
+		religion = catholic
+		size = 10
+	}
+	
+	bureaucrats = {
+		culture = flemish
+		religion = catholic
+		size = 10
+	}
+
+	clergymen = {
+		culture = flemish
+		religion = catholic
+		size = 20
+	}
+
+	soldiers = {
+		culture = flemish
+		religion = catholic
+		size = 50
+	}
+
+	farmers = {
+		culture = flemish
+		religion = catholic
+		size = 450
 	}
 }

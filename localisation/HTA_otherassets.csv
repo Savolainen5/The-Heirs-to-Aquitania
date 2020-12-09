@@ -1,6 +1,7 @@
 ;;;;;;;;;;;;;x  
 active_serial_killer;Active Serial Killer;;;;;;;;;x
 active_serial_killer_desc;Some beast of a man (or woman) is murdering citizens in this province. Police have so far failed to apprehend him.;;;;;;;;;x
+agreed_to_aid_hungary;Agreed to aid Hungary;x
 anatole_boom;Anatolian Population Boom;;;;;;;;;x
 anti_jacobin_tract;Anti-Albesan Tract;;;;x
 desc_anti_jacobin_tract;A tract arguing the causes of counter-revolution, order, religion and monarchy has received widespread circulation in our country.;x
@@ -78,6 +79,8 @@ russian_unrest_desc;The people are angry for various reasons. It is only a matte
 sejm;Sejm;;;;;;;;;;;x
 sejm_desc;The power of the king of Poland is checked by the Sejm, a sort of legislature of the nobility, who continue to be the majority landholders in the country. Their willingness to accept royal decrees and rule depends on a number of factors, such as the attitude of the king toward the body and his relationship with them. It is a staunchly conservative body, against liberalism and anything else that threatens the power of the nobility.;;;;;;;;;;;x
 small_immigration_boom;Small Immigration Boom;;;;;;;;;x
+stopped_meetings;Stopped Meetings;x
+stopped_meetings_desc;Hungarian nobility have been forbidden from meeting for their so-called intellectual debates.;x
 study_room_meetings;Study Room Meetings;;;;;;;;;x
 study_room_meetings_desc;Hungarian nobility are holding meetings at their estates to discuss and debate liberal theories. Word about these is spreading and contributing to a rising sense of nationalism among the upper classes. This will surely filter down to the lower classes, too.;;;;;;;;;;x
 successful_ds_reform;Successful Reform;;;;;;;;;x
@@ -92,6 +95,8 @@ tsar_batyushka;Tsar Batyushka;;;;;;;;;;x
 tsar_batyushka_desc;Dear Father Tsar - The Tsar looks over us and protects us, a father to the whole Empire!;;;;;;;;;;x
 unsuccessful_ds_reform;Unsuccessful Reform;;;;;;;;;x
 unsuccessful_ds_reform_desc;In the wake of the publishing of Gogol's "Dead Souls," the government has attempted to make some reforms to improve productivity and reduce corruption. It has largely been unsuccessful.;;;;;;;;;;x
+utility_modifier;HtA Utility Modifier;x
+utility_modifier_desc;This is here for some technical reason. If it isn't gone after about a decade, tell Savs.;x
 very_rebellious_minorities;Very Rebellious Minorities;x
 very_rebellious_minorities_desc;For some reason, the minorities in this province are extremely rebellious at the moment!;x
 vorontsov;Vorontsov Regency;x

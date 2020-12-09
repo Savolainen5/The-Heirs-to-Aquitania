@@ -31,6 +31,7 @@ political_decisions = {
 				year = 1870
 			}
 			NOT = { has_country_flag = new_brabant_purchase_started }
+			
 		}
 		
 		allow = {
@@ -63,6 +64,24 @@ political_decisions = {
 					}					
 				}
 				set_country_flag = new_brabant_purchase_interest
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_greater_power = yes
+			}
+			modifier = {
+				factor = 0
+				any_owned_province = {
+					NOT = {
+						province_id = 2535 #Zonsop Islands/Vanuatu
+						province_id = 1097 #Tierlinck Island/New Caledonia
+						province_id = 2508 #Haring Island/Christmas Island I think
+					}
+					continent = oceania
+				}
 			}
 		}
 	}

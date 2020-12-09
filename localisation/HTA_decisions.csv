@@ -41,6 +41,8 @@ call_brunswick_congress_title;Call the Brunswick Congress of Germans;;;;;;;;x
 call_brunswick_congress_desc;Given the recent Bavarian violation of Mainzer sovereignty, it is clear that the king in Münich does not intend to abide by the terms of the Peace of Augsburg. Therefore, it is time to summon the old allies to a congress to propose a more permanent response to the Bavarian threat - to join forces under one banner and one ruler for the good of all!;;;;;;;;;;x
 call_brunswick_congress2_title;Call the Brunswick Congress of Germans;;;;;;;;x
 call_brunswick_congress2_desc;Agitation among the inhabitants of the various states of the old Holy Roman Empire has been increasing recently. Calls for German unification and a rising sense of kinship that transcends political borders has caused some unrest among the people because of the rivalries of the princes. We should call delegates from around the north to discuss the situation. External threats are another concern that will weigh heavily on delegates' minds and we will likely see many states banding together politically.;;;;;;;;;;x
+calm_russians_title;Calm the Russians;x
+calm_russians_desc;The former subjects of the Tsar are still highly agitated and mistrustful of our rule. Let us attempt to calm them by showing our benevolence.n\n§RNB: This can only be taken once and it's intentional that it only partially calms them.§B;x
 cancel_zadar_lease_title;Cancel the Zadar Lease;;;;;;;;;;;;x
 cancel_zadar_lease_desc;With the fall from grace of Bohemia, they are no longer able to make use of their port. Indeed, they don't even have the means to access it at the time. Let us unilaterally end the lease and retake Zadar.;;;;;;;;;;;x
 cancel_zadar_lease_HUN_title;Cancel the Zadar Lease;;;;;;;;;;;;x
@@ -401,6 +403,8 @@ reform_albina_title;Reform Albina;;;;;;;;;;x
 reform_albina_desc;Although we have lost the title before, we can once again claim it. With the island of Bryten once more united under our rule, we should take up the mantle of Albina for the good of all its inhabitants!;;;;;;;;;;x
 reform_qin_empire_title;Reform the Qin Empire;;;;;;;;;x
 reform_qin_empire_desc;Liberal ideas have penetrated China and threaten to disturb the sanctity of the Empire. By drafting a constitution, we can guarantee our position in power while acknowledging the rights of the Chinese people. Qin Diguo, Wan Sui!;;;;;;;;;x
+renew_zadar_lease_title;Renew the Lease on Zadar;x
+renew_zadar_lease_desc;It has been some time since our troubles with the Hungarians and consequent loss of Zadar. But now, a new $COUNTRY$ has risen, and we seek salt and sun of the Mediterranean once more! Let us ask our neighbour to the south about the possibility of leasing it again.;x
 renovate_constantinople_title;Renovate Constantinople;;;;;;;;;;;;x
 renovate_constantinople_desc;Constantinople has stood relatively unchanged for centuries, and is a hodgepodge of different building styles and qualities. The city is constantly growing, and there have been housing and social problems. By renovating the city and building taller buildings, we can truly make Constantinople the City of World's Desire once again.;;;;;;;;;;;;;;x
 request_return_of_lubeck_title;Request the Return of Lübeck;;;;;;;;;;x

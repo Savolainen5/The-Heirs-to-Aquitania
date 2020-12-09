@@ -1859,6 +1859,10 @@ timer = {
 	icon = 13
 }
 
+utility_modifier = {
+	icon = 3
+}
+
 #Provencal stuff
 
 pier_moncani_influence1 = {

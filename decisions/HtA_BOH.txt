@@ -164,6 +164,7 @@ political_decisions = {
 		allow = {
 			640 = { NOT = { owned_by = BOH } }
 			779 = { NOT = { owned_by = BOH } }
+			BOH = { NOT = { war_with = HUN } }
 		}
 		
 		effect = {
@@ -212,6 +213,48 @@ political_decisions = {
 			}
 			HUN = { country_event = 50499 }
 			set_global_flag = zadar_lease_canceled
+		}
+	}
+	
+	renew_zadar_lease = {
+		picture = conference1
+		potential = {
+			primary_culture = czech
+			owns = 641 #Budapest
+			has_global_flag = zadar_lease_canceled
+			781 = {
+				OR = {
+					owned_by = CRO
+					owned_by = YUG
+				}
+			}
+			OR = {
+				year = 1860
+				has_global_flag = hungarian_revolution_defeated
+			}
+			NOT = { has_global_flag = zadar_lease_2_electric_boogaloo }
+		}
+		allow = {
+			war = no
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
+			money = 25000
+			781 = {
+				owner = {
+					neighbour = THIS
+				}
+			}
+		}
+		effect = {
+			781 = { owner = {
+				country_event = {
+					id = 50464
+					days = 2
+				}
+			} }
+			money = -25000
 		}
 	}
 	
@@ -503,7 +546,10 @@ political_decisions = {
 		picture = enact_dual_monarchy
 		potential = {
 			tag = BOH
-			has_global_flag = hungarian_revolution_occurred
+			OR = {
+				has_global_flag = hungarian_revolution_occurred
+				year = 1870
+			}
 			HUN = { exists = no }
 			NOT = { has_global_flag = BHN }
 			NOT = { has_country_flag = bohemia_let_hungary_go }

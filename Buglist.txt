@@ -5,3 +5,7 @@
 - Something crashes the game when Gidan offers to buy provinces from AQT. Dunno what. Probably something in HtA_SA event or decision files
 - There are probably lots of ports that are facing the wrong way, or weird directions. I'll (try to) fix them as I find them.
 - The factories which should be in Toledo are actually in Madrid for some reason, though there's no good reason for this as far as I can tell
+
+
+Unknown crashes log:
+- Crashed playing as PRH in late 1853

@@ -465,6 +465,10 @@ EVTNAME50462;Prague Supports Partisans;;;;;;;;;x
 EVTDESC50462;Our spies have done some digging after a raid on a partisan hideout turned up some interesting documents. It seems that certain higher-ups in the military and government of the city-state of Prague have been funding these bandits. This is an act of war and must be dealt with.;;;;;;;;;x
 EVTNAME50463;The End of the Hungarian Rebellion;;;;;;;;;;;x
 EVTDESC50463;A jubilant military parade in Budapest.\n\n We have defeated the Hungarian rebels. The provisional government they set up in Budapest has been captured and its leaders, among whom was counted Count Orczy, have been executed. The situation has been defused, and there is peace once more in Bohemia.;;;;;;;;;;x
+EVTNAME50464;Lease Zadar Again?;x
+EVTDESC50464;The government of $FROMCOUNTRY$ has approached us, requesting a renewal of the lease of the port of Zadar, which we originally leased them all those years ago. Will we accept?;x
+EVTNAME50465;$FROMCOUNTRY$ Turns Down the Offer;x
+EVTDESC50465;Alas, they have decided that Zadar is too valuable to them, and have refused to lease the port to us. Unfortunately, it seems that, if we wish to have access to Mediterranean port facilities, it will only be by acquiring land by force.;x
 EVTNAME50494;Time to Make a Payment;;;;;;;;;;x
 EVTDESC50494;Another year has passed, and Bohemia must now make its annual payment of 5000 to Croatia for the Zadar lease. Only four payments remain.;;;;;;;;;;;x
 EVTDESC50495;Another year has passed, and Bohemia must now make its annual payment of 5000 to Croatia for the Zadar lease. Only three payments remain.;;;;;;;;;;;x

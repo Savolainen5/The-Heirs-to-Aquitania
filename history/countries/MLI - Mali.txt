@@ -31,6 +31,10 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions
 school_reforms = no_schools
 
+#Unciv reforms
+#foreign_training = yes_foreign_training
+foreign_weapons = yes_foreign_weapons
+
 ruling_party = SEG_reactionary
 upper_house = {
 	fascist = 0

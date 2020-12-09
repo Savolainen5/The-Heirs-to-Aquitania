@@ -169,6 +169,9 @@ province_event = {
 		NOT = { has_province_modifier = great_fire_recovery }
 		NOT = { has_province_modifier = great_fire_happened }
 		is_colonial = no
+		owner = {
+			civilized = yes
+		}
 	}
 	
 	mean_time_to_happen = {

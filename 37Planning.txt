@@ -36,14 +36,15 @@ Italy:
 		
 		
 Other:
-- France eats Wallonia?
 - Keep refining the Outremer and Near East files (like there was that one player who had a truce with Persia but wasn't involved in the war, but still got stuff)
 - Make the crisis stopping event work even more. Event 60168 in crises.txt
 - See if rebelspam can be reduced by stealing rebel code from HPM/HFM?
 - Remove/rework SGF formation (esp. localization)
 	- Also fix GER formation and dismantlement. Weird stuff like Old Croatia sticking with Germany, cores remaining on BOH land even after it regains the provinces
-		- GER gets vanilla-type cores, EW
+		- GER gets vanilla-type cores, EWWW
 - Add some decisions for Qin/Nanyue as detailed here https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-54#post-27043143
+	- QIN/GXI suffers from the situation where GXI must be ahead of you in westernisation as QIN, but that doesn't happen because reactionary rebels. See what GeneralTownes wrote on Discord
+- France eats Wallonia?
 - Stuff from this post: http://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-34#post-22477778 --- Mostly done, need to double check that the fix for the NET-NAL war WAD
 	Should there be a better justification for Wallonia and its being integrated into the Greater Netherlands
 - Hispania and Navarra from this post: http://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-34#post-22485910
@@ -51,20 +52,12 @@ Other:
 - Make hills work
 - Perhaps have some European response to the end of the RUS-SML conflict - big threat in the east!
 	- Finnish intervention during the Russia war? Roman?
-- Solve BRU attacking NET to get Emden
 - Make some stuff for PER to give up its treaty ports even when it peacefully gives up JER
-- Change some colours in the EGY-PER-JER-CYR-MGH continuum
-- Possibly add a decision or something to reduce RUS core POPS' MIL and CON when SML annexes them, so there aren't the rebels.
-- To get an alliance, you need a minimum 50 relationship with the target country - Why isn't this working?
+- To get an alliance, you should need a minimum 50 relationship with the target country - Why isn't this working?
 - A way for Roman Empire to get Trebizond, perhaps something eventy in tandem with ARM moving its capital to the east
-- Make indigenous Amerigan countries unable to take New Life in the New World decision
 - Integrate LUX blobbing with Brunswick congress - one player had just had LUX and BRA switch positions, essentially. See Burnbird's post on discord
 - Consider revamping some AEN decisions, esp. wrt IRE
-- Mali gets at least one military reform
-	- RP for conquering
-- BRB shouldn't sell New BRB if it colonizes any other land in the area
 - Add some negative modifier for feudal (European) countries?
-- BHN regains Zadar after the Hungarian revolt
 - MAKE SURE THAT NPL COLONIAL HOLDINGS MATCH LORE
-- Make irregulars cost grain
 - Look into the Free Latvia CB and who can use it
+- Uncivs should not get the First Minister event stuff

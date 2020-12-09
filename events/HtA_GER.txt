@@ -860,7 +860,12 @@ country_event = {
 				has_country_flag = join_BRA
 			}
 			annex_to = BRA
-			all_core = { add_core = BRA }
+			all_core = {
+				limit = {
+					NOT = { province_id = 543 }
+				}
+				add_core = BRA
+			}
 		}
 		country_event = {
 			id = 50069
@@ -910,7 +915,12 @@ country_event = {
 				has_country_flag = join_BRN
 			}
 			annex_to = BRN
-			all_core = { add_core = BRN }
+			all_core = {
+				limit = {
+					NOT = { province_id = 543 }
+				}
+				add_core = BRN
+			}
 		}
 	}
 }

@@ -134,9 +134,11 @@ political_decisions = {
 			}
 			is_greater_power = no
 			NOT = { has_country_flag = come_to_the_new_world }
+			NOT = { has_country_flag = has_native_societies }
 			number_of_states = 2
 			num_of_ports = 1
 			is_vassal = no
+			civilized = yes
 		}
 		
 		allow = {

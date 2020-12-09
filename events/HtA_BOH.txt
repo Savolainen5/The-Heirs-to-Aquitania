@@ -191,12 +191,12 @@ province_event = {
 	}
 }
 
-##################################################################################
-###########################Zadar Port Lease Event Chain###########################
-#########################Triggered by decision in HtA_BOH#########################
-###########################Event numbers 50406 to 50425###########################
-#############################And also 50494 to 50498##############################
-##################################################################################
+#################################################################################
+##							Zadar Port Lease Event Chain						#
+##							Triggered by decision in HtA_BOH					#
+##							Event numbers 50406 to 50425						#
+##							And also 50494 to 50498								#
+#################################################################################
 
 #Bohemia has a proposition######################################Change event number?
 country_event = {
@@ -1521,7 +1521,7 @@ country_event = {
 		OR = {
 			owns = 619 #Vienna - Austria
 			owns = 684 #Oppeln/Opava - Silesia
-			owns = 560 #Chemnitz - Saxony
+			owns = 560 #Chemnitz - Saxony/Brandenburg
 			owns = 600 #Landshut - Bavaria
 		}
 		NOT = { tag = BOH }
@@ -2330,7 +2330,15 @@ country_event = {
 	option = {
 		name = "It certainly has."
 		prestige = 5
-		consciousness = 1
+		any_pop = {
+			limit = {
+				OR = {
+					is_culture_group = czecho_slovak_culture_group
+					is_culture_group = polish_culture_group
+				}
+			}
+			consciousness = 0.5
+		}
 		relation = {
 			who = POL
 			value = -5
@@ -2633,6 +2641,71 @@ country_event = {
 				has_pop_culture = hungarian
 			}
 			militancy = -9
+		}
+	}
+}
+
+#Zadar Lease 2: Electric Boogaloo
+country_event = {
+	id = 50464
+	title = "EVTNAME50464"
+	desc = "EVTDESC50464"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Very well, we can only gain from this."
+		money = 25000
+		781 = {
+			secede_province = FROM
+			add_core = FROM
+			naval_base = 1
+			remove_core = THIS
+		}
+		set_global_flag = zadar_lease_2_approved
+		relation = {
+			who = FROM
+			value = 100
+		}
+		FROM = {
+			relation = {
+				who = THIS
+				value = 100
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = 100
+			}
+		}
+	}
+	option = {
+		name = "No, this is no longer in our favour."
+		set_global_flag = zadar_lease_2_rejected
+		FROM = {
+			country_event = {
+				id = 50465
+				days = 2
+			}
+		}
+	}
+}
+
+#Zadar Lease 2: Electric Boogaloo - They say no!
+country_event = {
+	id = 50465
+	title = "EVTNAME50465"
+	desc = "EVTDESC50465"
+	picture = "zadar"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "What a pity!"
+		money = 25000
+		relation = {
+			who = FROM
+			value = -100
 		}
 	}
 }

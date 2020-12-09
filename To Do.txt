@@ -82,7 +82,6 @@ Map:
 - Trade ports in Japan for Naples, Alba and/or others? Added a small port in v0.31 for Netherlands - do something with that in the Japan update
 - Mess with the Argentinian Andes. Maybe give Lonca more control over them. That way, Argentina doesn't so easily get a crazy snaky shape up into Inca
 - Mess with overall region/province shapes in Africa so they're less OTL-y
-- Do some province reshaping and add another province in the border region between AQT and NAV
 - Make provinces conform better to new RDS rivers. Especially Khiva-Persia
 - Fix the hill terrain - Why doesn't it WAD? Why doesn't it even exist? How the heck does the terrain sheet work, anyways? Should some other terrain map be brought in and adapted to the HtA map?
 - Some provinces are alone in their state, which makes them NOT tempting targets (like Cherkoee's northern provinces) - Do something about this
@@ -122,7 +121,6 @@ Other:
 - Trans-Hungary for Hungarian-Romanian interaction, particularly in Transylvania
 - Figure out what to do with Ardeal having cores in funny places and then getting annexed to Volasea
 - When Austria is released after dismantlement, it got OTL cores. Why? Fix!
-- Jewish state somewhere different, like Poland-Belarus?
 - If necessary, add a Cancel Zadar Lease decision for Hungary with the same effects as that for Bohemia
 - Add POP Migration Mod? https://www.reddit.com/r/victoria2/comments/2mtl11/pop_migration_mod_hod
 - Add Better AI Mod?https://forum.paradoxplaza.com/forum/index.php?threads/better-ai-mod.925608/#post-21373359
@@ -134,7 +132,7 @@ Other:
 - Give Brabant more land/outposts to explain how they got New Caledonia
 - Nerf colonial migration? (There was the case of Blackhog's insane Suez colonial migration)
 - Buff population growth, especially in the new world
-- If more iron is needed, add the Alegria iron mine to prov2442 (Monduroi) in USR
+- If more iron is needed, add the Alegria iron mine to prov2442 (Monduroi) in USR? The problem is that it opened in 1992
 - Nerf migration to CLF and SKM due to their remoteness? Necessary? Too realistic?
 - ANA stuff:
 	- Move capital to Constantinople

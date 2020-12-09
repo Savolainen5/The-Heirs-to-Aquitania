@@ -325,6 +325,9 @@ political_decisions = {
 					remove_core = SML
 				}
 			}
+			any_owned = {
+				remove_province_modifier = utility_modifier
+			}
 		}
 	}
 	
@@ -662,6 +665,37 @@ political_decisions = {
 			set_country_flag = dominate_kzh
 		}
 	}
+	
+	#For when a (presumably human) SML defeats RUS and annexes them
+	calm_russians = {
+		picture = of_state_n_government
+		potential = {
+			tag = SML
+			NOT = { exists = RUS }
+			1008 = { owned_by = THIS }#Moscow
+			NOT = { has_country_flag = russians_calmed }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+		}
+		effect = {
+			prestige = -5
+			any_pop = {
+				limit = {
+					location = {
+						has_province_modifier = utility_modifier
+					}
+				}
+				militancy = -4
+				consciousness = -4
+			}
+			any_owned = {
+				remove_province_modifier = utility_modifier
+			}
+		}
+	}
+					
 	
 	#SML forms SRU after winning war
 	form_russian_empire = {
