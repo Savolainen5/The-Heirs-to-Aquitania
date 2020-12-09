@@ -136,11 +136,11 @@ political_decisions = {
 			NOT = { has_country_flag = come_to_the_new_world }
 			number_of_states = 2
 			num_of_ports = 1
+			is_vassal = no
 		}
 		
 		allow = {
 			war = no
-			is_vassal = no
 			is_greater_power = no
 			state_n_government = 1
 			slavery = no_slavery

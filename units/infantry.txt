@@ -1,19 +1,20 @@
-guard = {
-	icon = 18
+infantry = {
+	icon = 1
 	
 	type = land
-	sprite = Guard
+	sprite = Infantry
 	active = no
 	unit_type = infantry
-	primary_culture = yes
 	floating_flag = no
-
+	move_sound = army_move
+	select_sound = army_selected
+	
 	#Core Abilities
-	priority = 18
+	priority = 9
 	max_strength = 3
 	default_organisation = 30
 	maximum_speed = 4.00
-	weighted_value = 9.0
+	weighted_value = 4.0
 
 
 	#Building Costs
@@ -21,23 +22,23 @@ guard = {
 	build_cost = {
 		small_arms = 10
 		canned_food = 10
-		liquor = 10
-		luxury_clothes = 5
+		regular_clothes = 10
 	}
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		small_arms = 0.02 #0.015
-		canned_food = 0.07 # 0.08
-		ammunition = 0.1 #0
+		small_arms = 0.012 #0.012
+		ammunition = 0.075 #0
+		canned_food = 0.07 #0.08
+		regular_clothes = 0.01 #0
 	}
 	
 
-	#Land Abilties
+	#Land Abilities
 	reconnaissance = 0
-	attack = 8
-	defence = 6
+	attack = 4
+	defence = 4
 	discipline = 1.0
 	support = 0.0
-	maneuver = 2
+	maneuver = 1
 }
