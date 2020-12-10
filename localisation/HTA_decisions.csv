@@ -261,6 +261,8 @@ incite_ukrainians_title;Incite Ukrainians;x
 incite_ukrainians_desc;The Ukrainians have long had a separate identity from the Great Russians, even those of Smolensk. Their culture and language are similar, but their history of fraternization with the Cossacks has institutionalized distrust against them by the ruling elites of the country. We can inflame old tensions to strengthen the Ukrainians and to cause further headaches for Smolensk.;x
 incorporate_brabant_title;Incorporate Brabant into the Netherlands;;;;;;;;;x
 incorporate_brabant_desc;Now that we've claimed Zeeland, why not just get the rest of the Duchy of Brabant, too? After all, its inhabitants are all Dutch speakers, even if they have a strange dialect. Incorporating the Flemish of Brabant is a natural step in continuing to ensure our greatness.;;;;;;;;;;x
+info_PDN_title;HtA Padan Union Info;x
+info_PDN_desc;If you didn't already know, within a couple of years of game start, these four countries under the Alps will unite. It will work as any of them, but don't have an MP with more than one person playing among the four countries.;x
 info_POL_title;HtA Poland Info;x
 info_POL_desc;There is still work to be done on Poland with regard to the Sejm, coming up on 0.37. Don't sphere Smolensk because you'll mess up the story that's going on there. You'll get a chance to get some land from them with the Treaty of Brest decision.;x
 info_RUS_title;HtA Russia Info;x
@@ -375,6 +377,8 @@ PDN_create_title;Create the Padan Union;;;;;;;;;;;;x
 PDN_create_desc;Now that the treaty has been signed and the groundwork has been laid, for the good of our people and our houses, let us unite against the threat of the south!;;;;;;;;;;;x
 PDN_join_title;Join the Padan Union;;;;;;;;;;;;x
 PDN_join_desc;As agreed by the terms of the treaty in Milan, we will now join our fellow northerners in staving off the southern menace. For the good of our people and our houses, we must stop the Neapolitans at all costs!;;;;;;;;;;x 
+PDN_setup_title;Install the Padanese Government in Milan;x
+PDN_setup_desc;Now that we have formally united, it is time to set up the working mechanics of our joint government in Milan, as imperfect as they will be.;x
 PER_bandar_gumruk_treaty_port_title;The Port of Bandar Gumruk;x
 PER_bandar_gumruk_treaty_port_desc;Bandar Gumruk occupies a strategic position controlling the Strait of Hormuz. Controlling it would give us an ideal position to monitor and influence sea trade between the Near East and India as well as to project power in the region.;x
 PER_bushire_treaty_port_title;The Port of Bushire;x

@@ -1,4 +1,5 @@
-#Events 50024-50050 reserved for Italy and Daufinat (which are located in HtA_DAU). Lower down in the file we've got IDs 51851-51899
+#Events 50024-50050 reserved for Italy and Daufinat (which are located in HtA_DAU). Lower down in the file we've got IDs 51851-51899 which were introduced in 0.37
+
 #Fall of Tuscany
 country_event = {
 	id = 50024
@@ -6,12 +7,19 @@ country_event = {
 	desc = "EVTDESC50024"
 	picture = "cityfire"
 	
+	fire_only_once = yes
+	
 	trigger = {
 		OR = {
-			tag = GEN
 			tag = LOM
-			tag = MOD
-			tag = VEN
+			AND = {
+				ai = no
+				OR = {
+					tag = VEN
+					tag = MOD
+					tag = GEN
+				}
+			}
 		}
 		744 = {
 			owned_by = NPL
@@ -19,20 +27,31 @@ country_event = {
 		TUS = {
 			exists = no
 		}
-		NOT = {
-			has_country_flag = padan_conference
-		}
 	}
 	
 	mean_time_to_happen = {
-		months = 2
+		months = 1
 	}
 	
 	option = {
-		name = "We will attend!"
-		set_country_flag = padan_conference
+		name = "Most concerning."
+		any_country = {
+			limit = {
+				OR = {
+					tag = MOD
+					tag = VEN
+					tag = GEN
+					tag = LOM
+				}
+				NOT = { tag = THIS }
+			}
+			country_event = {
+				id = 51851
+				days = 3
+			}
+		}
 		set_global_flag = TUS_fell
-		prestige = 1
+		set_country_flag = padan_conference
 		relation = {
 			who = NPL
 			value = -100
@@ -48,18 +67,7 @@ country_event = {
 
 	fire_only_once = yes
 	major = yes
-	
-	trigger = {
-		tag = PDN
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-		modifier = {
-			factor = 0.01
-			NOT = { exists = LOM }
-		}
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = "A resounding success!"
@@ -75,18 +83,10 @@ country_event = {
 	desc = "EVTDESC50026"
 	picture = "administration"
 	
-	trigger = {
-		tag = PDN
-		NOT = { has_country_flag = member_contributions }
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = "Excellent!"
-		set_country_flag = member_contributions
 		money = 50000
 	}
 }
@@ -235,7 +235,24 @@ country_event = {
 #####################Start events from 0.37#####################################
 # 51851-51899
 
-
+#Milan Conference
+country_event = {
+	id = 51851
+	title = "EVTNAME51851"
+	desc = "EVTDESC51851"
+	picture = "cityfire"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Of course we will attend!"
+		set_country_flag = padan_conference
+		relation = {
+			who = NPL
+			value = -100
+		}
+	}
+}
 
 
 

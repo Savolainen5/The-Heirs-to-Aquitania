@@ -1,1 +1,0 @@
-If you prefer flags in this folder to the ones that are there by default, just move your preferred ones out into the main flags folder and replace the old ones with your preferred ones. Make sure the names are correct for the main file.

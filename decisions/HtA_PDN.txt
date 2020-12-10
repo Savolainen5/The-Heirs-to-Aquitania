@@ -1,11 +1,48 @@
 political_decisions = {
 
+#Info about mechanics for PDN
+	info_PDN = {
+		picture = HtALion1
+		potential = {
+			ai = no
+			OR = {
+				tag = LOM
+				tag = GEN
+				tag = MOD
+				tag = VEN
+			}
+		}
+		allow = { }
+		effect = { }
+	}
+
 #Formally create the Padan Union
 	PDN_create = {
-		picture = court_yard_speech
+		picture = conference1
 		potential = {
-			tag = LOM
-			has_country_flag = padan_conference
+			OR = {
+				AND = {
+					tag = LOM
+					ai = no
+				}
+				AND = {
+					tag = LOM
+					LOM = { ai = yes }
+					GEN = { ai = yes }
+					MOD = { ai = yes }
+					VEN = { ai = yes }
+				}
+				AND = {
+					LOM = { ai = yes }
+					ai = no
+					OR = {
+						tag = GEN
+						tag = MOD
+						tag = VEN
+					}
+				}
+			}
+			LOM = { has_country_flag = padan_conference }
 			GEN = { has_country_flag = padan_conference }
 			MOD = { has_country_flag = padan_conference }
 			VEN = { has_country_flag = padan_conference }
@@ -17,6 +54,7 @@ political_decisions = {
 		}
 		
 		effect = {
+			prestige = 5
 			change_tag = PDN
 			set_global_flag = PDN_created
 			any_owned = {
@@ -34,7 +72,7 @@ political_decisions = {
 				remove_core = MOD
 				remove_core = VEN
 			}
-			prestige = 5
+			country_event = 50025
 		}
 	}
 
@@ -46,6 +84,7 @@ political_decisions = {
 				tag = VEN
 				tag = GEN
 				tag = MOD
+				tag = LOM
 			}
 			has_global_flag = padan_conference_concluded
 			has_global_flag = PDN_created
@@ -53,7 +92,6 @@ political_decisions = {
 		}
 
 		allow = {
-			prestige = 1
 		}
 
 		effect = {
@@ -80,7 +118,7 @@ political_decisions = {
 				any_owned = { secede_province = THIS }
 				THIS = {
 					random_owned = {
-						limit = { province_id = 726 }
+						limit = { province_id = 726 } #Milan
 						owner = { capital = 726 }
 					}
 					change_tag = PDN
@@ -96,6 +134,44 @@ political_decisions = {
 			}	
 		}
 	}
+	
+	PDN_setup = {
+		picture = of_state_n_government
+		potential = {
+			tag = PDN
+			NOT = {
+				exists = LOM
+				exists = VEN
+				exists = MOD
+				exists = GEN
+			}
+			NOT = {
+				has_country_flag = PDN_has_been_set_up
+			}
+			OR = {
+				NOT = { capital = 726 }
+				NOT = { government = provisional_government }
+			}
+		}
+		allow = {
+			OR = {
+				NOT = { capital = 726 }
+				NOT = { government = provisional_government }
+			}
+		}
+		effect = {
+			prestige = 2
+			capital = 726
+			government = provisional_government
+			country_event = 50026
+			country_event = {
+				id = 60160
+				days = 1
+			}
+			set_country_flag = PDN_has_been_set_up
+		}
+	}
+			
 
 	#The Matter of Venice, in case Bavaria takes Venice, as Crushric so often seems to do
 	claim_venice_PDN = {
@@ -109,6 +185,7 @@ political_decisions = {
 			733 = { NOT = { is_core = THIS } }
 			734 = { NOT = { is_core = THIS } }
 			NOT = { has_country_flag = claim_venice_PDN }
+			NOT = { exists = VEN }
 		}
 
 		allow = {

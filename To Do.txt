@@ -65,6 +65,7 @@ POPs:
 - Too many German POPs?
 - Add a few more aristocrats to Holland and Friesland
 - Sort out Transylvania
+- Armenia: Split into Arabized (more urban?) Armini and non-Arabized (more rural?) Hayastani/Hay
 
 Militaries:
 - Navies for much of the world

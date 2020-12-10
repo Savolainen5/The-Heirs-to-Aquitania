@@ -111,6 +111,8 @@ sprawling_empire;Sprawling Empire;;;;;;;;;;;;x
 sprawling_empire_desc;Ours is one of the largest nations in the world, a power to be reckoned with.;;;;;;;;;;;;x
 CANAL_4;Oheskewen Canal;;;;;;;;;;;;;x,,,
 confucian;Confucian;;;;;;;;;;x
+provisional_government;Provisional Government;x
+provisional_government_ruler;Councilmen;x
 UNIT_BUILD_TIME_IW;$VAL$ days.;;;;;;;;;;x;
 DIPLOMACY_FILTER_NORTH_AMERICA;North Ameriga;;;;;;;;;;x;;;;
 DIPLOMACY_FILTER_SOUTH_AMERICA;South Ameriga;;;;;;;;;;x;;;;
