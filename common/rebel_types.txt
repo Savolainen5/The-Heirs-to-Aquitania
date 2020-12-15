@@ -28,6 +28,7 @@ reactionary_rebels = {
 		prussian_constitutionalism = absolute_monarchy
 		hms_government = absolute_monarchy
 		democracy = presidential_dictatorship
+		provisional_government = absolute_monarchy
 	}
 	
 	
@@ -375,6 +376,7 @@ fascist_rebels = {
 		prussian_constitutionalism = fascist_dictatorship
 		hms_government = fascist_dictatorship
 		democracy = fascist_dictatorship
+		provisional_government = fascist_dictatorship
 	}
 	
 	
@@ -684,6 +686,7 @@ communist_rebels = {
 		prussian_constitutionalism = proletarian_dictatorship
 		hms_government = proletarian_dictatorship
 		democracy = proletarian_dictatorship
+		provisional_government = proletarian_dictatorship
 	}
 	
 	
@@ -1032,6 +1035,7 @@ anarcho_liberal_rebels = {
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		democracy = democracy
+		provisional_government = democracy
 	}
 	
 	
@@ -1381,6 +1385,7 @@ nationalist_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		provisional_government = provisional_government
 	}
 	
 	
@@ -1682,6 +1687,7 @@ pan_nationalist_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		provisional_government = provisional_government
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -2068,6 +2074,7 @@ boxer_rebels = {
 		prussian_constitutionalism = absolute_monarchy
 		hms_government = absolute_monarchy
 		democracy = absolute_monarchy
+		provisional_government = absolute_monarchy
 	}
 	
 	defection = none				
@@ -2247,6 +2254,7 @@ russian_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		provisional_government = provisional_government
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -2524,6 +2532,7 @@ indian_nationalists = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		provisional_government = provisional_government
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -2735,6 +2744,7 @@ liberal_rebels = {
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		democracy = democracy
+		provisional_government = democracy
 	}
 	
 	
@@ -3192,6 +3202,7 @@ unciv_reactionary_rebels = {
 		prussian_constitutionalism = absolute_monarchy
 		hms_government = absolute_monarchy
 		democracy = absolute_monarchy
+		provisional_government = absolute_monarchy
 	}
 	
 	defection = none					# Will defect to the "best" alternative.
@@ -3420,6 +3431,7 @@ separatist_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		provisional_government = provisional_government
 	}
 	
 	
@@ -3636,6 +3648,7 @@ socialist_rebels = {
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		democracy = democracy
+		provisional_government = democracy
 	}
 	
 	
@@ -4006,6 +4019,7 @@ independence_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		provisional_government = provisional_government
 	}
 	
 	
@@ -4163,6 +4177,7 @@ native_rebels = {
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		democracy = democracy
+		provisional_government = democracy
 	}
 	
 	defection = none					# Will defect to the "best" alternative.
@@ -4337,6 +4352,7 @@ sioux_nation = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		provisional_government = provisional_government
 	}
 
 	defection = none					# Will defect to the "best" alternative.
@@ -4457,6 +4473,7 @@ apache = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		provisional_government = provisional_government
 	}
 
 	defection = none					# Will defect to the "best" alternative.

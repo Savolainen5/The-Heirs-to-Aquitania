@@ -511,8 +511,8 @@ country_event = {
 		UKR = {
 			any_owned = {
 				any_pop = {
-					militancy = -7
-					consciousness = -5
+					militancy = -8
+					consciousness = -6
 				}
 			}
 			country_event = 60160

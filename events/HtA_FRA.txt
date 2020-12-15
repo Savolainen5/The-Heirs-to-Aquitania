@@ -451,11 +451,10 @@ country_event = {
 		BRT = {
 			war = {
 				attacker_goal = {
-					casus_belli = humiliate
+					casus_belli = call_allies_cb
 				}
 				call_ally = yes
 			}
-			badboy = -6
 		}
 		
 		ai_chance = {
@@ -771,11 +770,10 @@ country_event = {
 		BRT = {
 			war = {
 				attacker_goal = {
-					casus_belli = humiliate
+					casus_belli = call_allies_cb
 				}
 				call_ally = yes
 			}
-			badboy = -6
 		}
 		
 		ai_chance = {

@@ -16,9 +16,7 @@ Poland:
 	- Balfour declaration type which presents options?
 
 Italy:
-- Rework PDN formation?
-	Some sort of conference thing
-	In such a way that it can't be cheesed so a country declares a conquest CB on Milan and then gets to keep it on PDN?
+
 - Rework NPL->ITA. Perhaps some sort of Mezzogiorno-like country
 - Italy as a formable for the whole peninsula but only under specific circumstances and before a certain time:
 	- NPL falling to Albesan rebels gives a temporary CB to conquer Italy and then form it? (MajorMajor)
@@ -61,3 +59,4 @@ Other:
 - MAKE SURE THAT NPL COLONIAL HOLDINGS MATCH LORE
 - Look into the Free Latvia CB and who can use it
 - Uncivs should not get the First Minister event stuff
+- Modify gsgVM Greater Ukraine event to add Ruthenian as accepted
