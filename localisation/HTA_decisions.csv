@@ -348,9 +348,11 @@ mediterranean_maretans_desc;The Sirocco blows on us all the same, no matter whos
 mediterranean_sicilians_title;Our Brothers, the Sicilians;x
 mediterranean_sicilians_desc;The Sirocco blows on us all the same, no matter whose face it touches. We, too, should look past language and culture in our government, and accept the Sicilians as our brothers.;x
 megalux_title;Form Megalux;;;;;;;;;x
-megalux_desc;The tiny Grand Duchy of $COUNTRYNAME$ has been ignored, for good or for ill, for centuries. But it has always dreamed of greatness. The only thing it has ever been known for was its cosmopolitanism, and that will be the source of its greatest strength now. The whole world will come to bow before Megalux, master of France, Germany, and Wallonia!;;;;;;;;;;x
+megalux_desc;The tiny Grand Duchy of $COUNTRYNAME$ has been ignored, for good or for ill, for centuries. But it has always dreamed of greatness. The only thing it has ever been known for was its cosmopolitanism, and that will be the source of its greatest strength now. The whole world will come to bow before Megalux, master of France, Germany, and Wallonia!\n\nNote that if you choose to join Brunswick or Brandenburg during the Brunswick Congress, you'll get a slightly different decision which doesn't give Central German as an accepted culture (because there are other ways to that). Also, there's no point in trying to do both this one and the one when you join with one of the Germans.;;;;;;;;;;x
 megalux_dutch_title;The Lands of the Dutch;;;;;;;;;;x
 megalux_dutch_desc;With our star rising so quickly, we must turn to the Lowlands to our north. Long have the Dutch been our allies and protectors. We should repay them by "protecting" them. Let the $COUNTRY_ADJ$ eagle spread its wings!;;;;;;;;;;;x
+megalux_when_german_title;Form the German-Dominated Megalux;x
+megalux_when_german_desc;With the power of the German people behind us, we shall form the greatest power Europe has seen since the Roman Empire! We may no longer have the Luxembourgish griffon on our flag, but we are still Luxembourgers at heart! As our motto says, we want to remain what we are, but we will help others to become what we are, too!;x
 money_for_jord_dest_title;Innocuous AI decision;;;;;;;;;;;;x
 money_for_jord_dest_desc;Nothing to see here, folks, move along.;;;;;;;;;;;;;;;x
 move_capital_to_paris_title;Move the capital back to Paris;;;;;;;;;;;;;x,,,,

@@ -3,6 +3,7 @@ political_decisions = {
 		potential = {
 			tag = LUX
 			NOT = { accepted_culture = central_german }
+			NOT = { has_country_flag = megalux }
 		}
 		allow = {
 			is_greater_power = yes
@@ -13,14 +14,42 @@ political_decisions = {
 			GER = { all_core = { add_core = THIS } }
 			FRA = { all_core = { add_core = THIS } } #Gotta help France get back their land first!
 			add_accepted_culture = central_german
+			set_country_flag = megalux
+		}
+	}
+	
+	megalux_when_german = {
+		potential = {
+			OR = {
+				AND = {
+					tag = BRN
+					accepted_culture = french
+				}
+				AND = {
+					tag = BRA
+					accepted_culture = french
+				}
+			}
+			NOT = { has_country_flag = megalux }
+		}
+		allow = {
+			is_greater_power = yes
+			prestige = 100
+			military_score = 70
+		}
+		effect = {
+			prestige = 25
+			WLL = { all_core = { add_core = THIS } }
+			FRA = { all_core = { add_core = THIS } }
+			set_country_flag = megalux
 		}
 	}
 
 	megalux_dutch = {
 		potential = {
-			tag = LUX
 			has_country_flag = megalux
 			NOT = { accepted_culture = dutch }
+			NOT = {	has_country_flag = dutch_megalux }
 		}
 		allow = {
 			is_greater_power = yes
@@ -31,6 +60,7 @@ political_decisions = {
 			NET = { all_core = { add_core = THIS } }
 			BRB = { all_core = { add_core = THIS } }
 			add_accepted_culture = dutch
+			set_country_flag = megalux_dutch
 		}
 	}
 }

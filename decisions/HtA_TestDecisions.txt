@@ -58,4 +58,17 @@ political_decisions = {
 #		}
 #	}
 
+#	all_core_test = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			all_core = { owned_by = THIS }
+#		}
+#		effect = {
+#			prestige = 1
+#		}
+#	}
+
+
 }

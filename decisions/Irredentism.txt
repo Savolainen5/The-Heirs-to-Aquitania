@@ -302,6 +302,7 @@ political_decisions = {
 		}
 	}
 	
+	#Updated in 0.36.16
 	greater_ukraine = {
 		potential = {
 			tag = UKR
@@ -323,21 +324,18 @@ political_decisions = {
 			badboy = 6
 			set_country_flag = claimed_greater_ukraine
 			prestige = 10
-			DON = {
-				all_core = { add_core = UKR }
-			}
-			RUT = {
-				all_core = { add_core = UKR }
-			}
-			663 = {
-				 add_core = UKR 
-			}
-			1019 = {
-				 add_core = UKR 
-			}
-			977 = {
-				 add_core = UKR 
-			}
+			DON = {	all_core = { add_core = UKR } }
+			RUT = {	all_core = { add_core = UKR } }
+			662 = { add_core = UKR } #Cernauti
+			#663 = { add_core = UKR } #Suceava
+			675 = { add_core = UKR } #Igyssos
+			678 = { add_core = UKR } #Smil
+			#704 = { add_core = UKR } #Nowy Sacz
+			#705 = { add_core = UKR } #Przemysl
+			942 = { add_core = UKR } #Mozyr
+			977 = { add_core = UKR } #Kursk
+			1019 = { add_core = UKR } #Voronnezh
+			1039 = { add_core = UKR } #Tsaritsyn
 			any_pop = {
 				dominant_issue = {
 					factor = 0.10
@@ -345,12 +343,6 @@ political_decisions = {
 				}
 				consciousness = 1
 			}
-			675 = { add_core = UKR }
-			663 = { add_core = UKR }
-			704 = { add_core = UKR }
-			705 = { add_core = UKR }
-			977 = { add_core = UKR }
-			1019 = { add_core = UKR }
 			any_country = {
 				limit = {
 					NOT = { tag = THIS }

@@ -500,6 +500,7 @@ country_event = {
 	id = 50063
 	title = "EVTNAME50063"
 	desc = "EVTDESC50063"
+	picture = "brunswick_palace"
 	
 	trigger = {
 		NOT = { tag = BRA }
@@ -572,7 +573,6 @@ country_event = {
 	id = 50065
 	title = "EVTNAME50065"
 	desc = "EVTDESC50065"
-	picture = "danishgovernment"
 	
 	trigger = {
 		has_country_flag = attending_brunswick_congress
@@ -770,7 +770,7 @@ country_event = {
 	id = 50066
 	title = "EVTNAME50065"
 	desc = "EVTDESC50065"
-	picture = "danishgovernment"
+	picture = "brunswick_palace"
 	
 	trigger = {
 		has_country_flag = attending_brunswick_congress
@@ -794,21 +794,33 @@ country_event = {
 	option = {
 		name = "We will join forces with Brunswick!"
 		set_country_flag = made_a_decision
-		change_tag = BRA
-		inherit = THIS
 		THIS = {
 			all_core = { add_core = BRA }
 		}
+		inherit = BRA
+		change_tag = BRA
+		capital = 536
+		country_event = {
+			id = 60160
+			days = 1
+		}
+		set_country_flag = brunswick_congress_in_progress
 	}
 	
 	option = {
 		name = "We will throw our lot in with Brandenburg!"
 		set_country_flag = made_a_decision
-		change_tag = BRN
-		inherit = THIS
 		THIS = {
 			all_core = { add_core = BRN }
 		}
+		inherit = BRN
+		change_tag = BRN
+		capital = 549
+		country_event = {
+			id = 60160
+			days = 1
+		}
+		set_country_flag = brunswick_congress_in_progress
 	}
 
 	option = {
@@ -824,7 +836,7 @@ country_event = {
 	id = 50067
 	title = "EVTNAME50067"
 	desc = "EVTDESC50067" 
-	picture = "administration"
+	picture = "brunswick_palace"
 	
 	trigger = {
 		tag = BRA
@@ -859,12 +871,12 @@ country_event = {
 			limit = {
 				has_country_flag = join_BRA
 			}
-			annex_to = BRA
+			annex_to = THIS
 			all_core = {
 				limit = {
 					NOT = { province_id = 543 }
 				}
-				add_core = BRA
+				add_core = THIS
 			}
 		}
 		country_event = {
@@ -879,7 +891,7 @@ country_event = {
 	id = 50068
 	title = "EVTNAME50067"
 	desc = "EVTDESC50067" 
-	picture = "administration"
+	picture = "brunswick_palace"
 	
 	trigger = {
 		tag = BRN
@@ -950,7 +962,6 @@ country_event = {
 	id = 50070
 	title = "EVTNAME50070"
 	desc = "EVTDESC50070"
-	picture = "threehurrahs"
 	
 	fire_only_once = yes
 	major = yes
@@ -961,6 +972,10 @@ country_event = {
 			tag = SWI
 			tag = LUX
 			tag = NOR
+			tag = NET
+			tag = WLL
+			tag = SLS
+			tag = AUS
 		}
 		has_global_flag = brunswick_congress_concluded
 		BAV = { has_country_flag = claim_empire }
