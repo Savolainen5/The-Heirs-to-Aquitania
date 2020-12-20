@@ -124,6 +124,10 @@ north_america;North Ameriga;;;;;;;;x;;;;
 south_america;South Ameriga;;;;;;;x;;;;
 oceania;Volturnia;;;;;;;;x;;;;
 GC_DESC;This is an era of change. The past two decades of wars and failed revolutions were just the beginning. The Hispanian Revolution of the 1820s hardened the hearts of Europe's royalty against the liberal cause. The Imperial War (1829-1835) saw the dissolution of the Holy Roman Empire, leaving a gaping hole in Europe. The ossified political and social structures of Old Europe will no doubt be swept away as well. No matter who you are, there are riches and glory to be had in this age of upheaval, if only you have the vision to claim them. Choose your nation and guide it to its destiny!;;;;;;;;;;;x
+acquire_core_substate_region;Acquire core substate region;x
+acquire_core_substate_region_desc;Acquire one of your core regions from enemy §Ysubstate§W;x
+acquire_core_substate_region_short;Acquire $STATE$;x
+acquire_core_substate_region_setup;Acquire your core, $STATE$, from $RECIPIENT$;x
 dismantle_PER;Claim the Holy Land;x
 dismantle_PER_desc;Liberate the Outremer people living in the Persian Empire;x
 dismantle_PER_short;Liberate the Outremer people;x

@@ -68,7 +68,7 @@ Various
 
 -----Should Norway be a Great Power or secondary powe, and the year is past 1845, Norway gets an event to reclaim Vestland for infamy, or to settle an alliance (the Vestland question)
 
------If Alban falls, they can flee to South East Asia.
+-----If Alba falls, they can flee to South East Asia.
 
 -----If Armenia border the Magreb states, they get an event similar to the French one in vanilla 1840's, where they can try to overthrow the state.
 
@@ -100,3 +100,4 @@ Maghreb
 - Teralarga-Naffaroako Berria Union
 - Jingoist Brabant conquers NET to form some sort of Brabant-led UP
 - AQT gives FRA La Rochèla in exchange for a mutual defence pact (difficult to maintain in-game because the AI is dumb?)
+- CLT can dismantle AEN into some tiny countries to ensure the Aenglisc don't pose them a threat anymore.

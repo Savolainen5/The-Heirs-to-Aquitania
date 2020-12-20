@@ -88,6 +88,7 @@ Map:
 - Fix the hill terrain - Why doesn't it WAD? Why doesn't it even exist? How the heck does the terrain sheet work, anyways? Should some other terrain map be brought in and adapted to the HtA map?
 - Some provinces are alone in their state, which makes them NOT tempting targets (like Cherkoee's northern provinces) - Do something about this
 - Tunis has some cores on uncolonized land?
+- Make some desert provinces in the Middle East have not 35 LR because that's ridiculous. Or just think about it some more - is there any reason a 3k POP province shouldn't have 35LR? It's not like their POP is gonna boom, it's a desert province!
 
 Flags: More about this can be found in the "List of small things to be done" on the forum (https://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-5#post-20555393)
 - In general, any flag suggestions are welcome, particulary for vanilla countries
