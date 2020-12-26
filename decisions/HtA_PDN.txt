@@ -72,7 +72,10 @@ political_decisions = {
 				remove_core = MOD
 				remove_core = VEN
 			}
-			country_event = 50025
+			country_event = {
+				id = 50025
+				days = 10
+			}
 		}
 	}
 
@@ -265,7 +268,7 @@ political_decisions = {
 		allow = {
 			OR = {
 				THIS = { military_score = NPL }
-				military_score = 20
+				military_score = 30
 			}
 			year = 1849
 		}
@@ -323,7 +326,7 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = declaration_of_mantua
-			prestige = 5
+			prestige = 10
 			badboy = 4
 			PAP_741 = {
 				add_core = THIS
@@ -341,6 +344,14 @@ political_decisions = {
 				}
 			}
 		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { military_score = 40 }
+			}
+		}
 	}
 	
 #Liberation of Tuscany
@@ -350,6 +361,7 @@ political_decisions = {
 			tag = PDN
 			NOT = { exists = TUS }
 			744 = { owned_by = NPL }
+			741 = { owned_by = THIS }
 			NOT = { has_country_flag = liberate_tuscany }
 			has_country_flag = declaration_of_mantua
 		}

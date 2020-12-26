@@ -59,6 +59,7 @@ political_decisions = {
 			AUS_625 = { add_core = BOH }
 			AUS_626 = { add_core = BOH }
 			AUS_633 = { add_core = BOH }
+			set_country_flag = new_bohemia
 		}
 	}
 	

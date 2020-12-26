@@ -510,13 +510,13 @@ PAT_ADJ;Pattani;x
 PDN;Padan Union;;;;;;;;;;x
 PDN_ADJ;Padanese;;;;;;;;;;x
 PDN_anarcho_liberal;Bande Azure;;;;;;;;;x
-PDN_communist;Laboratori;;;;;;;;;x
-PDN_conservative;Fazione Nobile;;;;;;;;;x
+PDN_communist;Lavoradori;;;;;;;;;x
+PDN_conservative;Fazziun Nobila;;;;;;;;;x
 PDN_fascist;Supremecisti;;;;;;;;;;;x
-PDN_liberal;Fazione Reppublicana;;;;;;;;;;x
-PDN_reactionary;Fazione Monarchista;;;;;;;;;;x
-PDN_reactionary_2;Partito della Terra;;;;;;;;;x
-PDN_socialist;Partito Popolario;;;;;;;;;;x
+PDN_liberal;Fazziun Republicana;;;;;;;;;;x
+PDN_reactionary;Fazziun Monarchista;;;;;;;;;;x
+PDN_reactionary_2;Partii della Terra;;;;;;;;;x
+PDN_socialist;Partii del Popel;;;;;;;;;;x
 PHL;Panaja;;;;;;;;;;;x
 PHL_ADJ;Panajan;;;;;;;;;;x
 POM;Pomerania;;;;;;;;;x
@@ -605,7 +605,16 @@ SHC_communist;Pellewomhsoomi;;;;;;;;;;;;;;;x
 SHC_fascist;Thepatiiwomhsoomi;;;;;;;;;;;;;;;x
 SHC_conservative_2;Petakineethiiwomhsoomi;;;;;;;;;;;;;;;x
 SIC;Sicily;;;;;;;;;;x
-SIC_ADJ;Sicilian;;;;;;;;;;x       
+SIC_ADJ;Sicilian;;;;;;;;;;x
+SIC_anarcho_liberal;Liga Indipendente;x
+SIC_communist;Partito dei lavoratori;x
+SIC_conservative;Partito Cristiano;x
+SIC_conservative_2;Reppublicani Cristiani;x
+SIC_fascist;Movemento fascista;x
+SIC_liberal;Coalizione Albesana;x
+SIC_liberal_2;Democrazia Siciliana;x
+SIC_reactionary;Unione Blu;x
+SIC_socialist;PSS;x
 SKA;Scania;;;;;;;;;;;x
 SKA_ADJ;Scanian;;;;;;;;;x
 SKA_conservative;Höjer Partiet;;;;;;;;;;x

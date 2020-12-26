@@ -16,15 +16,17 @@ political_decisions = {
 			NOT = { has_country_flag = invite_DAU }
 		}
 		allow = {
-			prestige = 30
+			prestige = 50
 			military_score = 30
 			DAU = {
 				OR = {
 					is_vassal = no
 					vassal_of = THIS
 				}
+				war = no
 			}
-			NOT = { war_with = DAU }
+			war = no
+			NOT = { casus_belli = DAU }
 		}
 		effect = {
 			prestige = 2

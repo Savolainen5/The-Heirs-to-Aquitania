@@ -265,7 +265,7 @@ country_event = {
 					SCO = { has_country_flag = glaschu_ultimatum }
 				}
 			}
-		}				
+		}
 	}
 	
 	mean_time_to_happen = {

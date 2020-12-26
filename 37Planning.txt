@@ -31,14 +31,15 @@ Italy:
 	- Also see what changes need to be made to the relevant decisions in Hta_RomanEmpire in general
 	- Check the form_italy_without decision in NationalUnification
 	- Make sure there aren't pan-nationalist rebels or something
-		
+
+-Sicilian party names		
 		
 Other:
 - Keep refining the Outremer and Near East files (like there was that one player who had a truce with Persia but wasn't involved in the war, but still got stuff)
 - Make the crisis stopping event work even more. Event 60168 in crises.txt
 - See if rebelspam can be reduced by stealing rebel code from HPM/HFM?
 - Remove/rework SGF formation (esp. localization)
-	- Also fix GER formation and dismantlement. Weird stuff like Old Croatia sticking with Germany, cores remaining on BOH land even after it regains the provinces
+	- Also fix GER formation and dismantlement. Weird stuff like Old Croatia sticking with Germany, cores remaining on BOH land even after it regains the provinces -- BOH given a new_bohemia flag when it reforms, use that to trigger the loss of non-BOH cores
 		- GER gets vanilla-type cores, EWWW
 - Add some decisions for Qin/Nanyue as detailed here https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-54#post-27043143
 	- QIN/GXI suffers from the situation where GXI must be ahead of you in westernisation as QIN, but that doesn't happen because reactionary rebels. See what GeneralTownes wrote on Discord
@@ -58,3 +59,6 @@ Other:
 - MAKE SURE THAT NPL COLONIAL HOLDINGS MATCH LORE
 - Look into the Free Latvia CB and who can use it
 - Uncivs should not get the First Minister event stuff
+- GNC stays at war forever with CLF for some reason? One reddit user reported that, and because of it they couldn't complete the event chain as SKM with GNC
+- Make some way for BOH to avoid the Partition War
+- Are disease events stronger/more frequent than in vanilla? TBG and Jorde think so
