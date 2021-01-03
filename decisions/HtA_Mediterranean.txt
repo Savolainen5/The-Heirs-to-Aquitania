@@ -634,7 +634,7 @@ political_decisions = {
 		}
 	}
 	
-	######################Self-explanatory decision title, really
+###############################Self-explanatory decision title, really#####################################
 	unify_western_med = {
 		picture = WesternMed
 		potential = {
@@ -710,7 +710,7 @@ political_decisions = {
 			set_global_flag = mare_occidentis_nostrum
 			set_country_flag = our_western_sea
 			prestige = 50
-			badboy = 25
+			badboy = 25													
 			CAT = { all_core = { add_core = THIS } }
 			AQT = { all_core = { add_core = THIS } }
 			CRS = { all_core = { add_core = THIS } }
@@ -720,10 +720,10 @@ political_decisions = {
 			PAP = { all_core = { add_core = THIS } }
 			SIC = { all_core = { add_core = THIS } }
 			PRE = { all_core = { add_core = THIS } }
+			MLT = { all_core = { add_core = THIS } }
 			any_country = {
 				limit = {
 					exists = yes
-					vassal_of = THIS
 					OR = {
 						tag = CAT
 						tag = AQT
@@ -734,12 +734,40 @@ political_decisions = {
 						tag = PAP
 						tag = SIC
 						tag = PRE
+						tag = MLT
 					}
+					vassal_of = THIS
 				}
-				country_event = {
-					id = 51698
-					days = 1
+				set_country_flag = sirocco_should_fire
+				country_event = 51698
+				add_country_modifier = {
+					name = timer
+					duration = 1
 				}
+			}
+		}
+	}
+	
+	sirocco_replacement = {
+		picture = WesternMed
+		potential = {
+			has_country_flag = sirocco_should_fire
+			ai = yes
+			NOT = { has_country_modifier = timer }
+		}
+		allow = {
+			is_vassal = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = timer
+				days = 4
+			}
+			any_country = {
+				limit = {
+					has_country_flag = our_western_sea
+				}
+				country_event = 51699
 			}
 		}
 	}
@@ -751,6 +779,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = our_western_sea
 			NOT = { accepted_culture = aquitanian }
+			NOT = { primary_culture = aquitanian }
 		}
 		
 		allow = {
@@ -764,6 +793,15 @@ political_decisions = {
 		effect = {
 			prestige = -2
 			add_accepted_culture = aquitanian
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				consciousness = 1
+			}
 		}
 	}
 	
@@ -773,6 +811,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = our_western_sea
 			NOT = { accepted_culture = catalan }
+			NOT = { primary_culture = catalan }
 		}
 		
 		allow = {
@@ -786,6 +825,15 @@ political_decisions = {
 		effect = {
 			prestige = -2
 			add_accepted_culture = catalan
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				consciousness = 1
+			}
 		}
 	}
 	
@@ -795,6 +843,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = our_western_sea
 			NOT = { accepted_culture = north_italian }
+			NOT = { primary_culture = north_italian }
 		}
 		
 		allow = {
@@ -808,6 +857,15 @@ political_decisions = {
 		effect = {
 			prestige = -2
 			add_accepted_culture = north_italian
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				consciousness = 1
+			}
 		}
 	}
 	
@@ -817,6 +875,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = our_western_sea
 			NOT = { accepted_culture = south_italian }
+			NOT = { primary_culture = south_italian }
 		}
 		
 		allow = {
@@ -830,6 +889,15 @@ political_decisions = {
 		effect = {
 			prestige = -2
 			add_accepted_culture = south_italian
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				consciousness = 1
+			}
 		}
 	}
 	
@@ -839,6 +907,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = our_western_sea
 			NOT = { accepted_culture = maretan }
+			NOT = { primary_culture = maretan }
 		}
 		
 		allow = {
@@ -852,6 +921,15 @@ political_decisions = {
 		effect = {
 			prestige = -2
 			add_accepted_culture = maretan
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				consciousness = 0.5
+			}
 		}
 	}
 	
@@ -861,6 +939,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = our_western_sea
 			NOT = { accepted_culture = sicilian }
+			NOT = { primary_culture = sicilian }
 		}
 		
 		allow = {
@@ -874,6 +953,47 @@ political_decisions = {
 		effect = {
 			prestige = -2
 			add_accepted_culture = sicilian
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				consciousness = 0.5
+			}
+		}
+	}
+	
+	mediterranean_maltese = {
+		picture = WesternMed
+		
+		potential = {
+			has_country_flag = our_western_sea
+			NOT = { accepted_culture = maltese }
+			NOT = { primary_culture = maltese }
+		}
+		
+		allow = {
+			MLT = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -2
+			add_accepted_culture = maltese
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				consciousness = 0.5
+			}
 		}
 	}
 }

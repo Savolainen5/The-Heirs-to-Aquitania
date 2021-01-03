@@ -51,7 +51,9 @@ NB for the changelog - Anything with lots of # or * after it is something Savs i
 Verison 0.37 - Poland and Italy
 
 Major
-
+- Added a new government type, the Provisional Government (which comes in yes_election and no_election forms according to whether elections are allowed, obviously) which is used for PDN initially and can be used for other countries in the future
+- Also added events to switch between them based on the vote franchise
+- Pan-nationalist rebels will not rise if their cultural union doesn't exist - THIS MAY NEED TO BE ADJUSTED SO THAT ONLY GERMAN ONES WON'T RISE
 
 Minor
 - Some more starting generals - thanks to MajorMajor
@@ -67,10 +69,12 @@ Minor
 - Split Pau off from the Basque province of Miarritze, added two flavour events about Our Lady of Lourdes to the owner
 - When Smolensk annexes Russia, they now have a decision to reduce POP MIL and CON by 4 to reduce rebels
 - Gave Mali one military reform (two seemed a bit OP, but it's there still if you want to readd it yourself!)
+- Fixed 99% of remaining mismatches between various map files. The Paracel Islands will continue not to exist as land for gameplay purposes (though if you look closely you can see their shadow)
 - Many localizations tweaks and fixes
 
 Bugfixes
 - Navarra has a liberal party for the entire game
+- The Mare Occidentis Nostrum decision now works properly
 
 
 
@@ -112,6 +116,7 @@ To do:
 52200-52300 - Southeast Asia (not including Indonesia, obviously)
 53000-53200 - China, Korea, etc.
 
+59800-59949 - Misc. events
 59950-59999 - Debugging events
 97091-97098 - North American settlement events
 97097 - Event/decision to enable railroading

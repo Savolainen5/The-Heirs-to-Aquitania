@@ -1,0 +1,55 @@
+#For miscellaneous events that don't necessarily fit anywhere else
+#IDs 59800-59949
+
+#Event to change provisional_government_no_election to provisional_government_yes_election
+country_event = {
+	id = 59800
+	title = "EVTNAME59800"
+	desc = "EVTDESC59800"
+	picture = "election"
+	
+	trigger = {
+		government = provisional_government_no_election
+		NOT = { vote_franschise = no_voting }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Now the people will have more say."
+		government = provisional_government_yes_election
+		election = yes
+		any_pop = {
+			militancy = -1
+			consciousness = 1
+		}
+	}
+}
+
+#Event to change provisional_government_yes_election to provisional_government_no_election
+country_event = {
+	id = 59801
+	title = "EVTNAME59801"
+	desc = "EVTDESC59801"
+	picture = "election"
+	
+	trigger = {
+		government = provisional_government_yes_election
+		vote_franschise = no_voting
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Now the people will have more say."
+		government = provisional_government_no_election
+		any_pop = {
+			militancy = 1
+			consciousness = 1
+		}
+	}
+}

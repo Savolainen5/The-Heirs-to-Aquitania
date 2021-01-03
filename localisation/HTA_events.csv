@@ -813,6 +813,10 @@ EVTNAME53018;$FROMCOUNTRY$ Accepts!;;;;;;;;;;;;;;x
 EVTDESC53018;The conference has concluded, and $FROMCOUNTRY$ has quietly agreed to surrender control of Korea. Naturally, this allows us the opportunity for significant influence within the new Korean government.;;;;;;;;;;;;;;x
 EVTNAME53019;$FROMCOUNTRY_ADJ$ Ships in Zhengzhou;;;;;;;;;;;;;;x
 EVTDESC53019;Foreign, black ships have sailed up the Yellow River and moored themselves in front of the gates to the Imperial Palace. The foreigners claim to represent $FROMCOUNTRY$ and demand that we open the Empire up to trade with other nations. In addition, they request that we open up a legation quarter here in Zhengzhou, as well as cede a port city to them for trading purposes. A greater insult can hardly be imagined, and our ministers were speechless when the list of demands was made. Of course, the foreigners know not who they deal with.;;;;;;;;;;;;;;x
+EVTNAME59800;Election Reforms;x
+EVTDESC59800;This provisional government is taking a more permanent shape. It was recently decided in $CAPITAL$ that elections should be held, so that our government might have a more popular mandate.;x
+EVTNAME59801;No More Elections;x
+EVTDESC59801;The Councilmen in $CAPITAL$ have decided that the provisional government will be able to function more effectively without the needless arguing that comes naturally among elected officials. Starting today there shall be no elections until further notice.;x
 EVTNAME96052;Control over Solelha?;;;;;;;;;x
 EVTDESC96052;Aquitània has lost the Great War and the powers that be have decided to offer us their North American colony of Solelha. While accepting the colony could increase our burden as a large number of independent-minded people who would have a difficult time assimilating would be introduced into our society, it is a strategically valuable piece of territory which would give us the possibility of controlling one of the entrances to the Mississippi Gulf.;;;;;;;;;;;x
 EVTNAME96053;Control over Challans?;;;;;;;;;;;;x

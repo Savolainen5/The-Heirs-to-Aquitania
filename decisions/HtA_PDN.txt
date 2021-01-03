@@ -153,19 +153,19 @@ political_decisions = {
 			}
 			OR = {
 				NOT = { capital = 726 }
-				NOT = { government = provisional_government }
+				NOT = { government = provisional_government_no_election }
 			}
 		}
 		allow = {
 			OR = {
 				NOT = { capital = 726 }
-				NOT = { government = provisional_government }
+				NOT = { government = provisional_government_no_election }
 			}
 		}
 		effect = {
 			prestige = 2
 			capital = 726
-			government = provisional_government
+			government = provisional_government_no_election
 			country_event = 50026
 			country_event = {
 				id = 60160

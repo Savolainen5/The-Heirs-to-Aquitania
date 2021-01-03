@@ -28,7 +28,8 @@ reactionary_rebels = {
 		prussian_constitutionalism = absolute_monarchy
 		hms_government = absolute_monarchy
 		democracy = presidential_dictatorship
-		provisional_government = absolute_monarchy
+		provisional_government_no_election = absolute_monarchy
+		provisional_government_yes_election = absolute_monarchy
 	}
 	
 	
@@ -376,7 +377,8 @@ fascist_rebels = {
 		prussian_constitutionalism = fascist_dictatorship
 		hms_government = fascist_dictatorship
 		democracy = fascist_dictatorship
-		provisional_government = fascist_dictatorship
+		provisional_government_no_election = fascist_dictatorship
+		provisional_government_yes_election = fascist_dictatorship
 	}
 	
 	
@@ -686,7 +688,8 @@ communist_rebels = {
 		prussian_constitutionalism = proletarian_dictatorship
 		hms_government = proletarian_dictatorship
 		democracy = proletarian_dictatorship
-		provisional_government = proletarian_dictatorship
+		provisional_government_no_election = proletarian_dictatorship
+		provisional_government_yes_election = proletarian_dictatorship
 	}
 	
 	
@@ -1035,7 +1038,8 @@ anarcho_liberal_rebels = {
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		democracy = democracy
-		provisional_government = democracy
+		provisional_government_no_election = democracy
+		provisional_government_yes_election = democracy
 	}
 	
 	
@@ -1385,7 +1389,8 @@ nationalist_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
-		provisional_government = provisional_government
+		provisional_government_no_election = provisional_government_no_election
+		provisional_government_yes_election = provisional_government_yes_election
 	}
 	
 	
@@ -1660,9 +1665,9 @@ nationalist_rebels = {
 	}
 	demands_enforced_effect = {
 		release_vassal = REB
-		modify_relation = {
-			tag = REB
-			relation = -150
+		relation = {
+			who = REB
+			value = -150
 		}
 		prestige_factor = -0.1
 	}
@@ -1687,7 +1692,8 @@ pan_nationalist_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
-		provisional_government = provisional_government
+		provisional_government_no_election = provisional_government_no_election
+		provisional_government_yes_election = provisional_government_yes_election
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -1789,6 +1795,10 @@ pan_nationalist_rebels = {
 					}
 				}
 			}
+		}
+		modifier = {
+			factor = 0
+			cultural_union = { exists = no }
 		}
 		modifier = {
 			factor = 0
@@ -2074,7 +2084,8 @@ boxer_rebels = {
 		prussian_constitutionalism = absolute_monarchy
 		hms_government = absolute_monarchy
 		democracy = absolute_monarchy
-		provisional_government = absolute_monarchy
+		provisional_government_no_election = absolute_monarchy
+		provisional_government_yes_election = absolute_monarchy
 	}
 	
 	defection = none				
@@ -2254,7 +2265,8 @@ russian_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
-		provisional_government = provisional_government
+		provisional_government_no_election = provisional_government_no_election
+		provisional_government_yes_election = provisional_government_yes_election
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -2532,7 +2544,8 @@ indian_nationalists = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
-		provisional_government = provisional_government
+		provisional_government_no_election = provisional_government_no_election
+		provisional_government_yes_election = provisional_government_yes_election
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -2744,7 +2757,8 @@ liberal_rebels = {
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		democracy = democracy
-		provisional_government = democracy
+		provisional_government_no_election = democracy
+		provisional_government_yes_election = democracy
 	}
 	
 	
@@ -2931,9 +2945,7 @@ liberal_rebels = {
 					government = democracy
 					government = hms_government
 				}
-				OR = {
-					vote_franschise = universal_voting
-				}
+				vote_franschise = universal_voting
 			}
 		}
 		modifier = {
@@ -3202,7 +3214,8 @@ unciv_reactionary_rebels = {
 		prussian_constitutionalism = absolute_monarchy
 		hms_government = absolute_monarchy
 		democracy = absolute_monarchy
-		provisional_government = absolute_monarchy
+		provisional_government_no_election = absolute_monarchy
+		provisional_government_yes_election = absolute_monarchy
 	}
 	
 	defection = none					# Will defect to the "best" alternative.
@@ -3431,10 +3444,11 @@ separatist_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
-		provisional_government = provisional_government
+		provisional_government_no_election = provisional_government_no_election
+		provisional_government_yes_election = provisional_government_yes_election
 	}
 	
-	
+	independence = none
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
 	defect_delay = 3		# Can spontaneously declare independence after X months (earliest)
 	
@@ -3648,7 +3662,8 @@ socialist_rebels = {
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		democracy = democracy
-		provisional_government = democracy
+		provisional_government_no_election = democracy
+		provisional_government_yes_election = democracy
 	}
 	
 	
@@ -4019,7 +4034,8 @@ independence_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
-		provisional_government = provisional_government
+		provisional_government_no_election = provisional_government_no_election
+		provisional_government_yes_election = provisional_government_yes_election
 	}
 	
 	
@@ -4177,7 +4193,8 @@ native_rebels = {
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		democracy = democracy
-		provisional_government = democracy
+		provisional_government_no_election = democracy
+		provisional_government_yes_election = democracy
 	}
 	
 	defection = none					# Will defect to the "best" alternative.
@@ -4352,7 +4369,8 @@ sioux_nation = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
-		provisional_government = provisional_government
+		provisional_government_no_election = provisional_government_no_election
+		provisional_government_yes_election = provisional_government_yes_election
 	}
 
 	defection = none					# Will defect to the "best" alternative.
@@ -4473,7 +4491,8 @@ apache = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
-		provisional_government = provisional_government
+		provisional_government_no_election = provisional_government_no_election
+		provisional_government_yes_election = provisional_government_yes_election
 	}
 
 	defection = none					# Will defect to the "best" alternative.

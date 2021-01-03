@@ -725,13 +725,13 @@ country_event = {
 }
 
 #Sirocco (related to the Mare Occidentis Nostrum / Unify Western Mediterranean decision)
-country_event = {
+country_event = {				
 	id = 51698
 	title = "EVTNAME51698"
 	desc = "EVTDESC51698"
 	picture = "WesternMed"
 	
-	is_triggered_only = yes
+	is_triggered_only = yes						#NB - this event deprecated by the decision sirocco_replacement, which should work better
 	
 	option = {
 		name = "We will embrace the wind."

@@ -27,6 +27,7 @@ Italy:
 - PDN-NPL war with each seeking allies
 	- GP on PDN's side declares war on NPL with some wargoal and peaces out by decision when PDN's war ends.
 		- Problem: NPL allies might agree to fight PDN, but not the GP
+		- Problem: the occupations of the two separate wars would not count together
 - When NPL's European holdings are taken by BYZ, make some event to make their holdings revert to someone (roman_italians decision)
 	- Also see what changes need to be made to the relevant decisions in Hta_RomanEmpire in general
 	- Check the form_italy_without decision in NationalUnification
@@ -52,6 +53,7 @@ Other:
 - Perhaps have some European response to the end of the RUS-SML conflict - big threat in the east!
 	- Finnish intervention during the Russia war? Roman?
 - Make some stuff for PER to give up its treaty ports even when it peacefully gives up JER
+	- Crash when winning the war with PER as BYZ and releasing Syria via the Intervene in the Middle East decision
 - To get an alliance, you should need a minimum 50 relationship with the target country - Why isn't this working?
 - A way for Roman Empire to get Trebizond, perhaps something eventy in tandem with ARM moving its capital to the east
 - Consider revamping some AEN decisions, esp. wrt IRE
@@ -62,3 +64,7 @@ Other:
 - GNC stays at war forever with CLF for some reason? One reddit user reported that, and because of it they couldn't complete the event chain as SKM with GNC
 - Make some way for BOH to avoid the Partition War
 - Are disease events stronger/more frequent than in vanilla? TBG and Jorde think so
+- Give some more checks to GNC-CLF-SKM interactions so one of the Aenglisc countries being a GP and sphereing/friendlying CLF will make it not happen at all
+- Go through the modifiers and clean them up, esp. the HtA ones that are apparently never used
+- Mediterranean blob events for absorbing cores from spherelings
+	- Infamy, event chains, possible war, coalitions

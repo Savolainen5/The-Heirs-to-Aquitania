@@ -102,7 +102,7 @@ democracy = {
 	flagType = republic
 }
  
-provisional_government = {
+provisional_government_no_election = {
 	liberal = yes
 	socialist = yes
 	conservative = yes
@@ -112,5 +112,20 @@ provisional_government = {
 	fascist = yes
 	
 	election = no
+	appoint_ruling_party = yes
+}
+
+ 
+provisional_government_yes_election = {
+	liberal = yes
+	socialist = yes
+	conservative = yes
+	reactionary = yes
+	communist = yes
+	anarcho_liberal = yes
+	fascist = yes
+	
+	election = yes
+	duration = 48
 	appoint_ruling_party = yes
 }
