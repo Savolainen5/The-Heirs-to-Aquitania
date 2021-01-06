@@ -70,11 +70,13 @@ Minor
 - When Smolensk annexes Russia, they now have a decision to reduce POP MIL and CON by 4 to reduce rebels
 - Gave Mali one military reform (two seemed a bit OP, but it's there still if you want to readd it yourself!)
 - Fixed 99% of remaining mismatches between various map files. The Paracel Islands will continue not to exist as land for gameplay purposes (though if you look closely you can see their shadow)
+- Made requirements for taking the Intervene in Persia decision more clear to the player
 - Many localizations tweaks and fixes
 
 Bugfixes
 - Navarra has a liberal party for the entire game
 - The Mare Occidentis Nostrum decision now works properly
+- Intervening in Persia now no longer gives more infamy than expected
 
 
 

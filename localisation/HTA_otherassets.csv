@@ -66,6 +66,28 @@ pier_moncani;Pier Moncani as First Minister;;;;;;;;;;;x
 pier_moncani_influence1;Pier Moncani's Influence;;;;;;;;;;x
 pier_moncani_influence2;Pier Moncani's Influence;;;;;;;;;;x
 pier_moncani_outrage;Public Outrage over Moncali's Death;;;;;;;;;;;x
+POL_expensive_factories;Poland: Agrarian Economy;x
+POL_expensive_factories_desc;The power of the nobility means that they prefer to keep peasants working on the land. It is harder to build successful factories.;x
+POL_less_army_spending;Poland: Military Spending Limitations;x
+POL_less_army_spending_desc;The amount of money we are able to collect from the nobility means that we are simply unable to spend as much as we would like on our military.;x
+POL_less_diplo;Poland: Fewer Diplomats;x
+POL_less_diplo_desc;As the nobility comprises the majority of those who could serve as diplomats, and they tend to see less value in doing so, we naturally have fewer available than other countries.;x
+POL_less_land_org;Poland: Weaker Military;x
+POL_less_land_org_desc;It is more difficult for us to procure men, equipment and supplies, which means that our troops are not as effective.;x
+POL_less_leadership;Poland: Less Military Leadership;x
+POL_less_leadership_desc;As the nobility prefer to keep to their own lands and personal affairs, they are less willing to join our military as officers, at least as compared to other countries.;x
+POL_less_mobilisation;Poland: Mobilization Difficulties;x
+POL_less_mobilisation_desc;The peasants are tied to the land in a way such that fewer of them can be released from work for military service in times of crisis.;x
+POL_less_output;Poland: Less RGO Output;x
+POL_less_output_desc;The nobility are obliged to give the royal government less of the the fruits of their peasants' labour.;x
+POL_less_prestige;Poland: Less Prestige;x
+POL_less_prestige_desc;Our inability to control our nobility and the consequent weakness of our king and country in comparison to others hurts our international standing.;x
+POL_less_reform_desire;Poland: Maintain the Status Quo;x
+POL_less_reform_desire_desc;The nobility is invested in maintaining their own power and wealth, and the peasantry does not know much better and agitates less for change.;x
+POL_less_tax_efficiency;Poland: Ineffective Taxation;x
+POL_less_tax_efficiency_desc;The nobility are less willing to pay their taxes and consequently less tax revenues enter our coffers.;x
+POL_slower_cbs;Poland: Slower War Justification;x
+POL_slower_cbs_desc;The unwillingness of our nobility to take part in our national diplomatic endeavours has the side effect of making it more difficult for us to quickly formulate plans for justifying wars.;x
 rebellious_minorities;Rebellious Minorities;;;;;;;;;;;;;;x
 rebellious_minorities_desc;For some reason, the minorities in this province are particularly rebellious at the moment.;;;;;;;;;;;;;x
 russian_rebels_title;Russian Unification Rebels;x

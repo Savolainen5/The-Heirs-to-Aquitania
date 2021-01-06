@@ -4,6 +4,8 @@ Poland:
 - Something with the Sejm
 	- Liberum veto never crippled Poland like it did OTL (think of some history, do some research)
 	- If there's an elective monarchy, foreign king possible?
+	- Consider adding a reform group: Power of the Nobility
+	- https://en.wikipedia.org/wiki/Executionist_movement
 - Flavour events
 - Black sea stuff?
 - Oppose GER formation?
@@ -68,3 +70,4 @@ Other:
 - Go through the modifiers and clean them up, esp. the HtA ones that are apparently never used
 - Mediterranean blob events for absorbing cores from spherelings
 	- Infamy, event chains, possible war, coalitions
+- Make uncivs able to mobilize

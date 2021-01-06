@@ -250,7 +250,7 @@ country_event = {
 	
 	option = {
 		name = "He has made a grave mistake."
-		add_casus_belli = {
+		casus_belli = {
 			target = PER
 			type = liberate_country
 			months = 2
@@ -397,8 +397,14 @@ country_event = {
 		has_country_flag = ME_interest
 		truce_with = PER
 		OR = {
-			exists = SYR
-			exists = IRQ
+			AND = {
+				exists = SYR
+				SYR = { is_vassal = no }
+			}
+			AND = {
+				exists = IRQ
+				IRQ = { is_vassal = no }
+			}
 		}
 	}
 	
@@ -413,14 +419,14 @@ country_event = {
 				tag = SYR
 				is_vassal = no
 			}
-			create_vassal = SYR
+			THIS = { create_vassal = SYR }
 		}
 		random_country = {
 			limit = {
 				tag = IRQ
 				is_vassal = no
 			}
-			create_vassal = IRQ
+			THIS = { create_vassal = IRQ }
 		}
 	}
 }	

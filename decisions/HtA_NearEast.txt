@@ -53,11 +53,6 @@ political_decisions = {
 						is_core = IRQ
 					}
 				}
-				OR = {
-					average_militancy = 5
-					num_of_revolts = 1
-					has_recently_lost_war = yes
-				}
 				NOT = { in_sphere = THIS }
 			}
 		}
@@ -65,6 +60,14 @@ political_decisions = {
 		allow = {
 			nationalism_n_imperialism = 1
 			war = no
+			PER = {
+				OR = {
+					average_militancy = 5
+					num_of_revolts = 1
+					has_recently_lost_war = yes
+				}
+				NOT = { in_sphere = THIS }
+			}
 		}
 		
 		effect = {

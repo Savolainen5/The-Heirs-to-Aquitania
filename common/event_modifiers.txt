@@ -556,7 +556,7 @@ countrywide_famine = {
 	icon = 18
 }
 
-countrywide_famine_immigrant_push = {
+countrywide_famine_immigrant_push = {		#HtA - caused by 1837 eruption of Eyjafjallajokul
 	immigrant_push = 0.5
 	population_growth = -0.001 #last at 0.002		#These reductions made to hopefully have less rebel spam?
 	pop_consciousness_modifier = 0.04 #last at 0.075
@@ -2122,8 +2122,66 @@ hta_dont_sphere_sml = {
 
 sejm = {
 	pop_militancy_modifier = -0.01
-	RGO_throughput = 0.05
+	RGO_throughput = -0.05
 	icon = 5
+}
+
+POL_less_output = {
+	RGO_output = -0.1
+	icon = 12
+}
+
+POL_less_reform_desire = {
+	political_reform_desire = -0.2
+	social_reform_desire = -0.3
+	icon = 4
+}
+
+POL_less_prestige = {
+	prestige = -0.1
+	icon = 8
+}
+
+POL_less_mobilisation = {
+	mobilisation_size = -0.25
+	mobilisation_economy_impact = 0.1
+	icon = 16
+}
+
+POL_less_army_spending = {
+	max_military_spending = 0.5
+	icon = 16
+}
+
+POL_less_leadership = {
+	leadership_modifier = -0.5
+	icon = 16
+}
+
+POL_less_land_org = {
+	land_organisation = -0.25
+	icon = 16
+}
+
+POL_expensive_factories = {
+	factory_owner_cost = 0.5
+	factory_cost = 0.5
+	icon = 12
+}
+
+POL_less_diplo = {
+	diplomatic_points_modifier = -0.25
+	icon = 6
+}
+
+POL_slower_cbs = {
+	cb_generation_speed_modifier = -0.5
+	icon = 6
+}
+
+POL_less_tax_efficiency = {
+	tax_efficiency = -0.2
+	icon = 10
 }
 
 ## Oheskewen Canal ##

@@ -519,6 +519,17 @@ PDN_reactionary_2;Partii della Terra;;;;;;;;;x
 PDN_socialist;Partii del Popel;;;;;;;;;;x
 PHL;Panaja;;;;;;;;;;;x
 PHL_ADJ;Panajan;;;;;;;;;;x
+POL_anarcho_liberal_1;Zasciankowcy;x
+POL_anarcho_liberal_2;Ruch Albesanów;x
+POL_communist;KPRP;x
+POL_conservative_1;Popularysci;x
+POL_conservative_2;Obóz Patriotyczny;x
+POL_fascist;Obóz Obrony Narodowej;x
+POL_liberal_1;Stronnictwo Reform;x
+POL_liberal_2;Ruch Wolnosciowy;x
+POL_reactionary_1;Karmazyni;x
+POL_reactionary_2;Partia Tradycjonalistyczna;x
+POL_socialist;Socjaldemokracja polska;x
 POM;Pomerania;;;;;;;;;x
 POM_ADJ;Pomeranian;;;;;;;;;;x
 PRE;Prouvença;;;;;;;;;;;;;x                                                 
