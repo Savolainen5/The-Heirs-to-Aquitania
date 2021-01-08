@@ -12,6 +12,7 @@ Events:
 - Massive problem for the Roman Empire if they fail to take Rome, or if they lose it.
 - Small event chain to change Wallonia into some other country which accepts Picard (or to separate Wallonia and Picardy)
 - What happens with the Hungarian event chain if Bohemia becomes a democracy?
+- Make Pamphlets event state-level so it's less spammy?
 - Make CBs for war events work so that there's a more elegant solution than reducing infamy
 - Teralarga ideas: see Suggestions
 - Unequal Treaty events for Nanyue, tweak it for Qin

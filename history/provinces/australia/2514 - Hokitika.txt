@@ -3,6 +3,6 @@ controller = NFB
 add_core = NFB
 add_core = AOT
 trade_goods = wool
-life_rating = 30
+life_rating = 35
 
 

@@ -174,7 +174,7 @@ political_decisions = {
 			set_country_flag = PDN_has_been_set_up
 		}
 	}
-			
+
 
 	#The Matter of Venice, in case Bavaria takes Venice, as Crushric so often seems to do
 	claim_venice_PDN = {

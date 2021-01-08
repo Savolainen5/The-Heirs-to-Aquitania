@@ -5,7 +5,7 @@ culture = anatolian
 religion = orthodox
 government = absolute_monarchy
 plurality = 25.0
-nationalvalue = nv_loyalty
+nationalvalue = nv_might
 literacy = 0.45
 civilized = yes
 

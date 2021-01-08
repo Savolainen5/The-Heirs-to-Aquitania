@@ -367,7 +367,7 @@ libertine_culture = {
 	prestige = -0.01
 	RGO_throughput = -0.05
 	pop_militancy_modifier = -0.02
-	icon = 19
+	icon = 17
 }
 
 temperance_league = {

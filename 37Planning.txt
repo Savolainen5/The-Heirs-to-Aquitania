@@ -70,4 +70,4 @@ Other:
 - Go through the modifiers and clean them up, esp. the HtA ones that are apparently never used
 - Mediterranean blob events for absorbing cores from spherelings
 	- Infamy, event chains, possible war, coalitions
-- Make uncivs able to mobilize
+- Make uncivs able to mobilize?
