@@ -71,3 +71,4 @@ Other:
 - Mediterranean blob events for absorbing cores from spherelings
 	- Infamy, event chains, possible war, coalitions
 - Make uncivs able to mobilize?
+- Add some CZ-culture cores to Moravia so there's no assimilation of the local POP?

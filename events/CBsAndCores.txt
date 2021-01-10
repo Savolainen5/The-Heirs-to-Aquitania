@@ -1286,7 +1286,7 @@ province_event = {
 		any_core = {
 			exists = yes
 			NOT = { tag = THIS }
-			NOT = { is_cultural_union = THIS }			
+			NOT = { is_cultural_union = THIS }
 		}
 		any_neighbor_province = {
 			owned_by = THIS
@@ -1295,7 +1295,7 @@ province_event = {
 				any_core = {
 					exists = yes
 					NOT = { tag = THIS }
-					NOT = { is_cultural_union = THIS }		
+					NOT = { is_cultural_union = THIS }
 				}
 			}
 		}
@@ -1317,6 +1317,7 @@ province_event = {
 			is_vassal = no
 			NOT = { citizenship_policy = full_citizenship }
 		}
+		year = 1870
 	}
 	
 	mean_time_to_happen = {

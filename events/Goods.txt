@@ -6,7 +6,18 @@ province_event = {
 	id = 1100
 
 	trigger = {
-		year = 1836
+		OR = {
+			AND = {
+				year = 1836
+				owner = { civilized = yes }
+			}
+			AND = {
+				year = 1870
+				owner = {
+					civilized = no
+				}
+			}
+		}
 		or = {
 			province_id = 1				# Sitka
 			province_id = 2				# Yakutat
@@ -38,7 +49,6 @@ province_event = {
 
 	mean_time_to_happen =  {
 		months = 12
-
 	}
 
 	title = "EVTNAME1100"

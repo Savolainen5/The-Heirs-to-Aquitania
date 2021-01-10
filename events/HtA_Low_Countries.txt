@@ -1269,6 +1269,11 @@ country_event = {
 	
 	trigger = {
 		tag = NET
+		OR = {
+			is_greater_power = yes
+			is_secondary_power = yes
+		}
+		378 = { owned_by = THIS } #Middelburg, in Zeeland
 		BRB = {
 			exists = no
 		}
@@ -1282,12 +1287,53 @@ country_event = {
 
 	option = {
 		name = "Good."
-		prestige = 3
-		BEL_394 = {
-			remove_core = BRB
+		prestige = 5
+		BRB = {
+			all_core = {
+				add_core = NET
+				remove_core = BRB
+			}
 		}
-		NET_379 = {
-			remove_core = BRB
+	}
+}
+
+#Event to remove cores for BRB. Taken from /gsg/Vickymod and modified
+country_event = {
+	
+	id = 993517
+	title = "The Duchy of Brabant"
+	desc = "Brabant as a real political entity has not existed in years and whatever legitimacy it once held is long gone."
+	picture = "treaty"
+	
+	trigger = {
+		tag = WLL
+		OR = {
+			is_greater_power = yes
+			is_secondary_power = yes
+		}
+		386 = { owned_by = THIS } #Brussels, in Flanders
+		BRB = {
+			exists = no
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	option = {
+		name = "Good."
+		prestige = 5
+		BRB = {
+			all_core = {
+				limit = {
+					NOT = { owned_by = NET }
+				}
+				add_core = WLL
+				remove_core = BRB
+			}
 		}
 	}
 }

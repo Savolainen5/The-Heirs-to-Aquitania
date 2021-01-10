@@ -70,7 +70,15 @@ Minor
 - When Smolensk annexes Russia, they now have a decision to reduce POP MIL and CON by 4 to reduce rebels
 - Gave Mali one military reform (two seemed a bit OP, but it's there still if you want to readd it yourself!)
 - Fixed 99% of remaining mismatches between various map files. The Paracel Islands will continue not to exist as land for gameplay purposes (though if you look closely you can see their shadow)
+- Also made rivers fit province borders better
 - Made requirements for taking the Intervene in Persia decision more clear to the player
+- Increased Make Puppet CB to 10 max badboy
+- Increased starting experience in national values
+- Made the National Assimilation event impossible to fire until 1870
+- Made gold rush events not fire until 1870 for uncives
+- Study Room Meetings should disappear from all BOH-owned provinces after they defeat the revolution
+- Improved the event which signals the end of BRB cores, made it specifically for NET (more, kind of), and added one for BRB
+- Tweaked a few LRs
 - Many localizations tweaks and fixes
 
 Bugfixes

@@ -5283,7 +5283,7 @@ make_puppet = {
 	
 	construction_speed = 0.5
 
-	badboy_factor = 1.4
+	badboy_factor = 2
 	prestige_factor = 1
 	peace_cost_factor = 1
 	penalty_factor = 1

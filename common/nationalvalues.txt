@@ -29,7 +29,7 @@ nv_loyalty = {
 nv_independence = {
 	research_points_modifier = -0.2
 	core_pop_militancy_modifier = -0.01
-	land_unit_start_experience = 0.5
+	land_unit_start_experience = 10
 	leadership_modifier = 0.2
 	war_exhaustion = -0.01
 }
@@ -55,7 +55,8 @@ nv_might = {
 	mobilisation_size = 0.06
 	war_exhaustion = -0.02
 	leadership_modifier = 0.2
-	land_unit_start_experience = 0.2
+	land_unit_start_experience = 5
+	naval_unit_start_experience = 5
 	assimilation_rate = -0.1
 }
 
@@ -106,7 +107,8 @@ nv_supremacy = {
 	global_pop_militancy_modifier = -0.02
 	war_exhaustion = -0.1
 	leadership_modifier = 0.15
-	land_unit_start_experience = 0.25
+	land_unit_start_experience = 10
+	naval_unit_start_experience = 10
 	supply_consumption = -0.1
 	assimilation_rate = -0.1
 	global_immigrant_attract = -1
@@ -153,7 +155,8 @@ nv_glory = {
 	rich_everyday_needs = 0.2
 	war_exhaustion = -0.01
 	leadership_modifier = 0.1
-	land_unit_start_experience = 0.2
+	land_unit_start_experience = 5
+	naval_unit_start_experience = 5
 	assimilation_rate = -0.1
 }
 
@@ -161,7 +164,8 @@ nv_dominion = {
 	mobilisation_size = 0.06
 	war_exhaustion = -0.02
 	leadership_modifier = 0.2
-	land_unit_start_experience = 0.2
+	land_unit_start_experience = 5
+	naval_unit_start_experience = 5
 	assimilation_rate = -0.1
 	factory_owner_cost = -0.1
 	supply_consumption = -0.05

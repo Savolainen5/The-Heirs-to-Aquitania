@@ -17,6 +17,7 @@ country_event = {
 		NOT = { has_country_flag = allowed_study_room_meetings }
 		NOT = { has_country_flag = suppressed_study_room_meetings }
 		NOT = { has_global_flag = hungarian_revolution_occurred }
+		NOT = { has_global_flag = hungarian_revolution_defeated }
 	}
 
 	mean_time_to_happen = {
@@ -2641,6 +2642,9 @@ country_event = {
 				has_pop_culture = hungarian
 			}
 			militancy = -9
+		}
+		any_owned = {
+			remove_province_modifier = study_room_meetings
 		}
 	}
 }
