@@ -747,5 +747,91 @@ political_decisions = {
 			capital = 625
 		}
 	}
-			
+	
+	#Return Zadar, usually to be done to avoid bordergore or as some preparatory stuff for forming YUG if you want to do it like that.
+	return_zadar = {
+		picture = conference1
+		alert = no
+		
+		potential = {
+			owns = 781 #Zadar
+			781 = {
+				OR = {
+					has_province_modifier = leased
+					is_core = THIS
+				}
+			}
+			OR = {
+				owns = 625 #Prague
+				owns = 641 #Budapest
+				owns = 706 #Warsaw
+				owns = 703 #Krakow
+			}
+			OR = {
+				has_global_flag = zadar_lease
+				has_global_flag = zadar_lease_2_electric_boogaloo
+			}
+			NOT = { exists = YUG }
+			exists = CRO
+		}
+		allow = {
+			war = no
+			owns = 781
+			exists = CRO
+		}
+		effect = {
+			781 = {
+				remove_core = THIS
+				add_core = CRO
+				remove_province_modifier = leased
+				secede_province = CRO
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	#Return Zadar, usually to be done to avoid bordergore or as some preparatory stuff for forming YUG if you want to do it like that.
+	return_zadar_YUG = {
+		picture = conference1
+		alert = no
+		
+		potential = {
+			owns = 781 #Zadar
+			781 = {
+				OR = {
+					has_province_modifier = leased
+					is_core = THIS
+				}
+			}
+			OR = {
+				owns = 625 #Prague
+				owns = 641 #Budapest
+				owns = 706 #Warsaw
+				owns = 703 #Krakow
+			}
+			OR = {
+				has_global_flag = zadar_lease
+				has_global_flag = zadar_lease_2_electric_boogaloo
+			}
+			exists = YUG
+		}
+		allow = {
+			war = no
+			owns = 781
+			exists = YUG
+		}
+		effect = {
+			781 = {
+				remove_core = THIS
+				add_core = YUG
+				remove_province_modifier = leased
+				secede_province = YUG
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

@@ -1087,8 +1087,117 @@ country_event = {
 }
 		
 
-#Unused at the moment -- 76-79 ################################################################################################## (all this stuff for better visibility, you know)
-		
+#Unused at the moment -- 78-79 ################################################################################################## (all this stuff for better visibility, you know)
+
+#SML loses control of Black Sea coast when UKR is free and DON is not its vassal
+country_event = {
+	id = 50376
+	title = "EVTNAME50376"
+	desc = "EVTDESC50376"
+	picture = "slaughter"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SML
+		965 = { #Kakhovka, probably UKR land - this is assumed for the effect
+			owner = {
+				NOT = {
+					tag = THIS
+					vassal_of = THIS
+				}
+			}
+		}
+		968 = { #Olvia, probably UKR land
+			owner = {
+				NOT = {
+					tag = THIS
+					vassal_of = THIS
+				}
+			}
+		}
+		1047 = { #Azov, probably DON land - this is assumed for the effect
+			owner = {
+				NOT = {
+					tag = THIS
+					vassal_of = THIS
+				}
+			}
+		}
+		1051 = { #Adygei, probably DON land
+			owner = {
+				NOT = {
+					tag = THIS
+					vassal_of = THIS
+				}
+			}
+		}
+		OR = {
+			964 = { owned_by = THIS } #Simferopol
+			967 = { owned_by = THIS } #Sevastopol
+			966 = { owned_by = THIS } #Kerch
+			1049 = { owned_by = THIS } #Velikiy Bata
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Curses!"
+		prestige = -5
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 964
+					province_id = 967
+					province_id = 966
+				}
+			}
+			#remove_core = SML
+			add_core = UKR
+			secede_province = UKR
+		}
+		any_owned = {
+			limit = {
+				province_id = 1049
+			}
+			#remove_core = SML
+			add_core = DON
+			secede_province = DON
+		}
+	}
+}
+
+#For when RUS ends the wars by taking the Vyazma March decision
+country_event = {
+	id = 50377
+	title = "EVTNAME50377"
+	desc = "EVTDESC50377"
+	picture = "battle_pavon"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "And all are now subjects of the Tsar!"
+		inherit = SML
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = SML
+					is_core = RUS
+				}
+			}
+			remove_core = RUS
+			remove_core = SML
+			add_core = THIS						#This should clear the cores of both and make it so just THIS has cores on all the owned land. The question is what  to do with its cores that may  exist in other countries
+		}
+		set_global_flag = RUS_wars_complete
+	}
+	
+}	
+	
 
 #Treaty of Brest between POL and SML - for SML
 country_event = {
@@ -1567,6 +1676,9 @@ country_event = {
 #		}
 #	}
 #}
+
+
+		
 
 ###Flavour events###
 

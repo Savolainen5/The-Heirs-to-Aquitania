@@ -277,6 +277,43 @@ political_decisions = {
 		}
 	}
 	
+	#The Vyazma March - If SML is just totally defeated after the first war with no army, no control over UKR, this decision will annex end the Russian Wars in one fell swoop
+	vyazma_march = {
+		picture = marching_soldiers
+		potential = {
+			tag = RUS
+			has_country_flag = won_RUS_war
+			exists = SML
+			NOT = { has_global_flag = RUS_wars_complete }
+		}
+		allow = {
+			NOT = { war_with = SML }
+			SML = {
+				OR = {
+					is_disarmed = yes
+					NOT = { military_score = 3 }
+					NOT = { total_amount_of_divisions = 3 }
+				}
+			}
+		}
+		effect = {
+			prestige = 13
+			badboy = 8
+			country_event = {
+				id = 50377	#Event that simulates the end of the war like event 50389
+				days = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+				
+	
 	#remove Smolensk cores
 	end_smolensk = {
 		picture = new_capital_in_the_east
@@ -305,6 +342,7 @@ political_decisions = {
 						owned_by = DON
 						owned_by = VIT
 						owned_by = LIT
+						owned_by = BYE
 					}
 				}
 			}

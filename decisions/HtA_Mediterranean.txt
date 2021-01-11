@@ -761,7 +761,7 @@ political_decisions = {
 		effect = {
 			add_country_modifier = {
 				name = timer
-				days = 4
+				duration = 4
 			}
 			any_country = {
 				limit = {

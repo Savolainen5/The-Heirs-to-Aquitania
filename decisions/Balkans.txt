@@ -298,7 +298,6 @@ political_decisions = {
 						tag = SER
 						tag = MNT
 						tag = CRO
-						#tag = BOS
 						tag = SLO
 						tag = ALB
 					}
@@ -315,7 +314,6 @@ political_decisions = {
 					any_owned_province = {
 						OR = {
 							is_core = SER
-							#is_core = BOS
 							is_core = CRO
 							is_core = MNT
 						}
@@ -325,7 +323,6 @@ political_decisions = {
 					limit = {
 						OR = {
 							is_core = SER
-							#is_core = BOS
 							is_core = CRO
 							is_core = MNT
 						}
@@ -336,8 +333,8 @@ political_decisions = {
 			SER = { all_core = { add_core = YUG } }
 			MNT = { all_core = { add_core = YUG } }
 			CRO = { all_core = { add_core = YUG } }
-			#BOS = { all_core = { add_core = YUG } }
 			SLO = { all_core = { add_core = YUG } }
+			781 = { add_core = YUG remove_core = BHN remove_core = BOH remove_core = HUN remove_core = ZAC}
 			random_owned = {
 				limit = { is_core = ALB }
 				ALB = { all_core = { add_core = YUG } }
@@ -350,6 +347,7 @@ political_decisions = {
 				limit = {
 					is_core = THIS
 					is_core = YUG
+					NOT = { has_province_modifier = leased }
 				}
 				remove_core = YUG
 			}

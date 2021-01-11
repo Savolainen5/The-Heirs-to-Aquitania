@@ -54,6 +54,8 @@ Major
 - Added a new government type, the Provisional Government (which comes in yes_election and no_election forms according to whether elections are allowed, obviously) which is used for PDN initially and can be used for other countries in the future
 - Also added events to switch between them based on the vote franchise
 - Pan-nationalist rebels will not rise if their cultural union doesn't exist - THIS MAY NEED TO BE ADJUSTED SO THAT ONLY GERMAN ONES WON'T RISE
+- Added an event for SML to lose control of its Black Sea provinces if it's at peace and neither UKR nor DON are its vassals/owned by it (the check is based on four major provinces in different states close to the land)
+- Added a decision for RUS to break the truce and just go capture the city of Smolensk if they have basically no military. It costs more infamy, but has the same end result as the other two ways to end the conflict
 
 Minor
 - Some more starting generals - thanks to MajorMajor
@@ -66,6 +68,7 @@ Minor
 - Made it so Brunswick doesn't have a core on Emden, meaning that they should be able to do the decision chain before Germany forms
 - Brabant should no longer sell its islands in Oceania/Volturnia if it has colonized beyond them in the region (continent)
 - Native nations in the New World can no longer take the decision called New Life in the New World
+- Made gold rush events not fire until 1870 for uncives
 - Split Pau off from the Basque province of Miarritze, added two flavour events about Our Lady of Lourdes to the owner
 - When Smolensk annexes Russia, they now have a decision to reduce POP MIL and CON by 4 to reduce rebels
 - Gave Mali one military reform (two seemed a bit OP, but it's there still if you want to readd it yourself!)
@@ -75,9 +78,10 @@ Minor
 - Increased Make Puppet CB to 10 max badboy
 - Increased starting experience in national values
 - Made the National Assimilation event impossible to fire until 1870
-- Made gold rush events not fire until 1870 for uncives
 - Study Room Meetings should disappear from all BOH-owned provinces after they defeat the revolution
 - Improved the event which signals the end of BRB cores, made it specifically for NET (more, kind of), and added one for BRB
+- Added a decision (which the AI will never take) to return a leased Zadar to Croatia or Yugoslavia (the latter should only be seen if some other country creates YUG, not the Zadar owner, please report to Savs if this is not the case)
+- Tweaked the Yugoslavia creation decision to take into account a leased Zadar - if you still have the province, you will give it to Zadar automatically.
 - Tweaked a few LRs
 - Many localizations tweaks and fixes
 
@@ -85,6 +89,7 @@ Bugfixes
 - Navarra has a liberal party for the entire game
 - The Mare Occidentis Nostrum decision now works properly
 - Intervening in Persia now no longer gives more infamy than expected
+- BRB armies now all start WITHIN the duchy
 
 
 

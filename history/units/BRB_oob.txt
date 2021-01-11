@@ -29,7 +29,7 @@ army = {
 
 army = {
 	name = "2. Infanterie Division"
-	location = 396 #Spa
+	location = 379 #Eindhoven
 	regiment = {
 		name= "4. Infanterie Brigade"
 		type = infantry
@@ -45,14 +45,14 @@ army = {
 	regiment = {
 		name= "6. Infanterie Brigade"
 		type = infantry
-		home = 378 #Middelberg
+		home = 380 #Breda
 	}
 
 }
 
 army = {
 	name = "1. Cavalerie Divisie"
-	location = 395 #Namur
+	location = 390 #Antwerp
 	regiment = {
 		name= "1er Cavalerie Brigade"
 		type = dragoon

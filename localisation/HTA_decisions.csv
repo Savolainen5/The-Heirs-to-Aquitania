@@ -427,6 +427,10 @@ return_croatia_to_croatia_title;Return Croatia its Land;;;;;;;;;;;x
 return_croatia_to_croatia_desc;Having acquired the historical region of Old Croatia, we can now return it to the Duchy. Once we turn it over to them, they should inform us shortly that the deal to lease Zadar is finalised.;;;;;;;;;;;;x
 return_to_the_sea_title;Return to the sea!;;;;;;;;;;;;;x,,,,
 return_to_the_sea_desc;Now that we have reclaimed the French heartland that was cruelly taken from us years ago we should once again lay claim to the Normand coast. Then we can truly reclaim our place in the world as a great power!;;;;;;;;;;;;;x
+return_zadar_title;Return Zadar;x
+return_zadar_desc;It is no longer necessary for us to lease Zadar from Croatia. It is time that the port be returned to them, with our thanks.\n\nNOTE: This is intended to be done to reduce bordergore or something. You should be able to create Yugoslavia without taking this decision.;x
+return_zadar_YUG_title;Return Zadar;x
+return_zadar_YUG_desc;It is no longer necessary for us to lease Zadar from Yugoslavia. It is time that the port be returned to them, with our thanks.\n\nNOTE: If you have the opportunity to take this decision, and you formed Yugoslavia, please let Savs know!;x
 revive_armenian_anatolia_title;Revive Armenian Anatolia;;;;;;;;x
 revive_armenian_anatolia_desc;The dream of Armenian Anatolia, achieved once and then cruelly taken away from us, is once again in our grasp. Rich lands for our people to spread into, guaranteeing a prosperous life for all. We can reclaim our lost territory from the cursed Romans, and ensure that it will never be lost again!;;;;;;;;;;x
 revolt_against_smolensk_title;Revolt Against Smolensk;;;;;;;;;x
@@ -499,6 +503,8 @@ unite_the_celts_title;Unite the Ceilts;;;;;;;;;;;x
 unite_the_celts_desc;Given our ascendancy over our fellow Ceilts and our strength relative to Aengland, we are in a position to unite all Ceilts under one banner so we can create a country without oppression or worry of war.;;;;;;;;;;x
 usurp_french_crown_title;Usurp the Crown of France;;;;;;;;;x
 usurp_french_crown_desc;Now that we have occupied the lands of the King and ended the main branch of the House of Sangois, we can usurp the French crown with no one to stop us! Glory to $COUNTRY$!;;;;;;;;;x
+vyazma_march_title;The Vyazma March;x
+vyazma_march_desc;After our recent victory, Smolensk is weak: its government is collapsing, what few troops it has are barely paid, and its people are rebelling. They are in no position to repel our troops, truce be damned. Let us dispatch an army immediately down the road across the border to Vyazma, and thence to Smolensk! We can end this in one bold, fell swoop!\n\nNOTE: This will end the chain just the same as winning another war or them falling to rebels, but is probably pretty unlikely to happen. If you don't get the opportunity to take this decision, oh well!;x
 we_are_hungarian_ai_title;We are Hungarian;;;;;;;;;x
 we_are_hungarian_ai_desc;The independence of Hungary from Bohemia is confirmed. We should join them and prosper together.;;;;;;;;;;x
 we_are_hungarian_human_title;We are Hungarian;;;;;;;;;x
