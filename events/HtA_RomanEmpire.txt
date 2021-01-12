@@ -183,7 +183,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 4
 		modifier = {
 			factor = 0.2
 			has_country_flag = Roman_ALB_insurrection
@@ -208,6 +208,8 @@ country_event = {
 				duration = 3650
 			}
 		}
+		817 = { add_core = BUL }
+		814 = { add_core = BUL }
 		
 		ai_chance = {
 			factor = 50
@@ -222,6 +224,8 @@ country_event = {
 		name = "Grant them autonomy. We will deal with them later."
 		prestige = -3
 		release_vassal = BUL
+		817 = { add_core = BUL }
+		814 = { add_core = BUL }
 		
 		ai_chance = {
 			factor = 50
@@ -240,6 +244,8 @@ country_event = {
 				remove_core = BYZ
 			}
 		}
+		817 = { add_core = BUL }
+		814 = { add_core = BUL }
 		
 		ai_chance = {
 			factor = 0
@@ -255,6 +261,8 @@ country_event = {
 			}
 		}
 		change_tag_no_core_switch = BUL
+		817 = { add_core = BUL }
+		814 = { add_core = BUL }
 		
 		ai_chance = {
 			factor = 0

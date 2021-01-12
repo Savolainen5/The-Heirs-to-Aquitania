@@ -4853,7 +4853,7 @@ russia_hegemony = {
 
 	badboy_factor = 1
 	prestige_factor = 5
-	peace_cost_factor = 2
+	peace_cost_factor = 1.5
 	penalty_factor = 3
 	
 	break_truce_prestige_factor = 1

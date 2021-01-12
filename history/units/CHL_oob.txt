@@ -1,5 +1,5 @@
 army = {
-	name = "Ejército de Chile"
+	name = "Ejército de Lonca"
 	location = 2324
 	regiment = {
 		name= "1. Brigada de Infantería"

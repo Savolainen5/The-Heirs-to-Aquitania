@@ -2684,7 +2684,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "No, this is no longer in our favour."
+		name = "No, this is no longer in our favour. Do not ask again."
 		set_global_flag = zadar_lease_2_rejected
 		FROM = {
 			country_event = {
@@ -2709,7 +2709,7 @@ country_event = {
 		money = 25000
 		relation = {
 			who = FROM
-			value = -100
+			value = -50
 		}
 	}
 }

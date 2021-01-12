@@ -82,6 +82,8 @@ Minor
 - Improved the event which signals the end of BRB cores, made it specifically for NET (more, kind of), and added one for BRB
 - Added a decision (which the AI will never take) to return a leased Zadar to Croatia or Yugoslavia (the latter should only be seen if some other country creates YUG, not the Zadar owner, please report to Savs if this is not the case)
 - Tweaked the Yugoslavia creation decision to take into account a leased Zadar - if you still have the province, you will give it to Zadar automatically.
+- Bulgaria gets cores on the Black Sea coastal provinces it should have cores on when the Bulgarian Insurrection event fires
+
 - Tweaked a few LRs
 - Many localizations tweaks and fixes
 
@@ -90,7 +92,9 @@ Bugfixes
 - The Mare Occidentis Nostrum decision now works properly
 - Intervening in Persia now no longer gives more infamy than expected
 - BRB armies now all start WITHIN the duchy
-
+- The New Zadar Lease-related decision can no longer be repeated if the owner of Zadar rejects it
+- Bugfixes to the Califiana annexation chain and associated events
+- Yugoslavia can no longer invite itself to join itself
 
 
 ----------------------------------------------------------------------------------------------------------

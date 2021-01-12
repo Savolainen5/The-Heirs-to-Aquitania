@@ -234,6 +234,7 @@ political_decisions = {
 				has_global_flag = hungarian_revolution_defeated
 			}
 			NOT = { has_global_flag = zadar_lease_2_electric_boogaloo }
+			NOT = { has_global_flag = zadar_lease_2_rejected }
 		}
 		allow = {
 			war = no

@@ -178,6 +178,7 @@ political_decisions = {
 			is_disarmed = no
 			war = no
 			NOT = { alliance_with = CLF }
+			NOT = { has_country_flag = annex_califiana }
 		}
 		
 		allow = {
@@ -195,6 +196,7 @@ political_decisions = {
 		effect = {
 			badboy = 10
 			SKM = { country_event = 51005 }
+			set_country_flag = annex_califiana
 		}
 		
 		ai_will_do = {
@@ -219,8 +221,10 @@ political_decisions = {
 					neighbour = GNC
 				}
 			}
-			GNC = { has_country_flag = colonisation_finished has_country_flag = war_with_clf }
+			GNC = { has_country_flag = colonisation_finished }
 			SKM = { has_country_flag = colonisation_finished }
+			has_global_flag = sierra_troubles
+			SCW = { exists = no }
 			#CLF = { exists = no } #There's a decision to take it later
 		}
 		

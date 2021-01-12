@@ -72,3 +72,4 @@ Other:
 	- Infamy, event chains, possible war, coalitions
 - Make uncivs able to mobilize?
 - Add some CZ-culture cores to Moravia so there's no assimilation of the local POP?
+- Model colony should only fire after a certain date
