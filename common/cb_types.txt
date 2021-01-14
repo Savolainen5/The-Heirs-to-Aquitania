@@ -6018,7 +6018,9 @@ acquire_substate_region = {
 			value = 0.25
 		}
 	}
-}# Gain control of core Substate region
+}
+
+# Gain control of core Substate region
 acquire_core_substate_region = {
 	sprite_index = 6
 	is_triggered_only = yes

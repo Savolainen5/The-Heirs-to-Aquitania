@@ -47,6 +47,7 @@ Other:
 - Add some decisions for Qin/Nanyue as detailed here https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-54#post-27043143
 	- QIN/GXI suffers from the situation where GXI must be ahead of you in westernisation as QIN, but that doesn't happen because reactionary rebels. See what GeneralTownes wrote on Discord
 - France eats Wallonia?
+- Wallonian pre-emptive action against France?
 - Stuff from this post: http://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-34#post-22477778 --- Mostly done, need to double check that the fix for the NET-NAL war WAD
 	Should there be a better justification for Wallonia and its being integrated into the Greater Netherlands
 - Hispania and Navarra from this post: http://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-34#post-22485910
@@ -73,3 +74,4 @@ Other:
 - Make uncivs able to mobilize?
 - Add some CZ-culture cores to Moravia so there's no assimilation of the local POP?
 - Model colony should only fire after a certain date
+- A POP migration modifier that brings primary POP farmers/labourers to new world provinces where there are none - to help with assimilation

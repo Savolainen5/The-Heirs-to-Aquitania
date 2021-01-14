@@ -270,7 +270,6 @@ production_focus =
             #civilized = yes
             NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
             NOT = { owner = { economic_policy = planned_economy } }
-            NOT = { has_province_modifier = irish_oppression }
             is_colonial = no
         }
 	}

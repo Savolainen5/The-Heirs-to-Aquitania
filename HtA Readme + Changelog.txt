@@ -43,6 +43,7 @@ Thanks to:
 - Over421 for Greek-language parties and flags
 - Discux for parties for lots of New World countries
 - Rennes for showing me how $ORDER$ works in war localization
+- Jorde for testing help
 
 NB for the changelog - Anything with lots of # or * after it is something Savs is still working on or hasn't gotten fully/correctly implemented yet
 
@@ -53,7 +54,7 @@ Verison 0.37 - Poland and Italy
 Major
 - Added a new government type, the Provisional Government (which comes in yes_election and no_election forms according to whether elections are allowed, obviously) which is used for PDN initially and can be used for other countries in the future
 - Also added events to switch between them based on the vote franchise
-- Pan-nationalist rebels will not rise if their cultural union doesn't exist - THIS MAY NEED TO BE ADJUSTED SO THAT ONLY GERMAN ONES WON'T RISE
+- Pan-nationalist rebels will not rise if their cultural union doesn't exist - THIS MAY NEED TO BE ADJUSTED SO THAT ONLY GERMAN ONES WON'T RISE (because I'm OK with French ones, for example)
 - Added an event for SML to lose control of its Black Sea provinces if it's at peace and neither UKR nor DON are its vassals/owned by it (the check is based on four major provinces in different states close to the land)
 - Added a decision for RUS to break the truce and just go capture the city of Smolensk if they have basically no military. It costs more infamy, but has the same end result as the other two ways to end the conflict
 
@@ -62,30 +63,33 @@ Minor
 - Many new flags (both default and alternate) - thanks to Athemos
 - Netherlands' Integrate Wallonia decision now gives a core, too
 - Added the Prusai culture, Baltic-speaking remnants of the Old Prussians, to the Polish-Lithuanian border region, along with a country for it - Prusova (tag PRS)
-- Added a decision for a resurgent Bohemia to lease Zadar again
-- Added unit files from HFM
-- Changed some country colours: CYR, EGY, LUZ, MGH
+- Added (army) unit files from HFM
+- Changed some country colours: CYR, EGY, MGH, LUZ 
 - Made it so Brunswick doesn't have a core on Emden, meaning that they should be able to do the decision chain before Germany forms
 - Brabant should no longer sell its islands in Oceania/Volturnia if it has colonized beyond them in the region (continent)
 - Native nations in the New World can no longer take the decision called New Life in the New World
 - Made gold rush events not fire until 1870 for uncives
-- Split Pau off from the Basque province of Miarritze, added two flavour events about Our Lady of Lourdes to the owner
 - When Smolensk annexes Russia, they now have a decision to reduce POP MIL and CON by 4 to reduce rebels
 - Gave Mali one military reform (two seemed a bit OP, but it's there still if you want to readd it yourself!)
 - Fixed 99% of remaining mismatches between various map files. The Paracel Islands will continue not to exist as land for gameplay purposes (though if you look closely you can see their shadow)
-- Also made rivers fit province borders better
+- Also made a lot rivers fit province borders better - lots more to do still
+- Split Pau off from the Basque province of Miarritze, added two flavour events about Our Lady of Lourdes to the owner
 - Made requirements for taking the Intervene in Persia decision more clear to the player
-- Increased Make Puppet CB to 10 max badboy
-- Increased starting experience in national values
+- Increased Make Puppet CB to 10 max badboy (previously 7)
+- Increased starting experience in national values, so now they are actually kind of useful. This change is also reflected in the demonstration modifiers which you can see i nthe decision
 - Made the National Assimilation event impossible to fire until 1870
-- Study Room Meetings should disappear from all BOH-owned provinces after they defeat the revolution
 - Improved the event which signals the end of BRB cores, made it specifically for NET (more, kind of), and added one for BRB
+- Added decisions for an independent Greece to claim the rest of the state of Thessalonikos and (if jingoist) to claim Crete
+- Greek party tweaks
+- Study Room Meetings should disappear from all BOH-owned provinces after they defeat the revolution
+- Added a decision for a resurgent Bohemia to lease Zadar again
 - Added a decision (which the AI will never take) to return a leased Zadar to Croatia or Yugoslavia (the latter should only be seen if some other country creates YUG, not the Zadar owner, please report to Savs if this is not the case)
 - Tweaked the Yugoslavia creation decision to take into account a leased Zadar - if you still have the province, you will give it to Zadar automatically.
+- Arbenon (Albania) must now no longer be a vassal or must be vassal of the country in question in order to be absorbed into Yugoslavia (whether that country is a vassal or no)
 - Bulgaria gets cores on the Black Sea coastal provinces it should have cores on when the Bulgarian Insurrection event fires
-
 - Tweaked a few LRs
 - Many localizations tweaks and fixes
+- Lots of other small stuff not worth mentioning
 
 Bugfixes
 - Navarra has a liberal party for the entire game
@@ -95,7 +99,7 @@ Bugfixes
 - The New Zadar Lease-related decision can no longer be repeated if the owner of Zadar rejects it
 - Bugfixes to the Califiana annexation chain and associated events
 - Yugoslavia can no longer invite itself to join itself
-
+- The Encourage Textile Industry NF no longer crashes the game when hovered over
 
 ----------------------------------------------------------------------------------------------------------
 See the OldChangelogs file for previous version changelogs. You can also see them on the subreddit's wiki.

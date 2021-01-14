@@ -1168,19 +1168,20 @@ national_confusion = {
 }
 
 nv_tradition_modifier = {
-	research_points_modifier = -0.05
+	research_points_modifier = -0.2
+	research_points = -0.1
 	core_pop_militancy_modifier = -0.01
 	icon = 3
 }
 
 nv_enlightenment_modifier = {
-	research_points_modifier = 0.05
+	research_points_modifier = 0.2
 	core_pop_consciousness_modifier = 0.01
 	icon = 3
 }
 
 nv_progress_modifier = {
-	research_points_modifier = 0.2
+	research_points_modifier = 0.1
 	core_pop_consciousness_modifier = 0.02
 	poor_everyday_needs = 0.1
 	middle_everyday_needs = 0.1
@@ -1189,6 +1190,7 @@ nv_progress_modifier = {
 }
 
 nv_loyalty_modifier = {
+	research_points_modifier = -0.1
 	core_pop_militancy_modifier = -0.02
 	core_pop_consciousness_modifier = 0.01
 	rgo_output = 0.05
@@ -1196,9 +1198,9 @@ nv_loyalty_modifier = {
 }
 
 nv_independence_modifier = {
-	research_points_modifier = -0.1
+	research_points_modifier = -0.2
 	core_pop_militancy_modifier = -0.01
-	unit_start_experience = 0.5
+	land_unit_start_experience = 10
 	leadership_modifier = 0.2
 	war_exhaustion = -0.01
 	icon = 3
@@ -1226,7 +1228,8 @@ nv_might_modifier = {
 	mobilisation_size = 0.06
 	war_exhaustion = -0.02
 	leadership_modifier = 0.2
-	land_unit_start_experience = 0.2
+	land_unit_start_experience = 5
+	naval_unit_start_experience = 5
 	assimilation_rate = -0.1
 	icon = 3
 }
@@ -1235,6 +1238,7 @@ nv_order_modifier = {
 	mobilisation_size = 0.04
 	core_pop_consciousness_modifier = -0.01
 	rgo_output = 0.05
+	factory_owner_cost = -0.1
 	icon = 3
 }
 
@@ -1280,7 +1284,8 @@ nv_supremacy_modifier = {
 	global_pop_militancy_modifier = -0.02
 	war_exhaustion = -0.1
 	leadership_modifier = 0.15
-	land_unit_start_experience = 0.25
+	land_unit_start_experience = 10
+	naval_unit_start_experience = 10
 	supply_consumption = -0.1
 	assimilation_rate = -0.1
 	global_immigrant_attract = -1
@@ -1330,7 +1335,8 @@ nv_glory_modifier = {
 	rich_everyday_needs = 0.2
 	war_exhaustion = -0.01
 	leadership_modifier = 0.1
-	land_unit_start_experience = 0.2
+	land_unit_start_experience = 5
+	naval_unit_start_experience = 5
 	assimilation_rate = -0.1
 	icon = 3
 }
@@ -1339,7 +1345,8 @@ nv_dominion_modifier = {
 	mobilisation_size = 0.06
 	war_exhaustion = -0.02
 	leadership_modifier = 0.2
-	land_unit_start_experience = 0.2
+	land_unit_start_experience = 5
+	naval_unit_start_experience = 5
 	assimilation_rate = -0.1
 	factory_owner_cost = -0.1
 	supply_consumption = -0.05

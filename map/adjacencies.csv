@@ -222,6 +222,8 @@ From;To;Type;Through;Data;Comment
 500;460;impassable;0;0;Lleida-Pau
 499;457;impassable;0;0;Girona-Fois
 460;493;impassable;0;0;Pau-Irunea
+499;500;impassable;0;0;Girona-Lleida
+464;457;impassable;0;0;Fois-Perpinya
 
 #                                                         
 # The canals                                              

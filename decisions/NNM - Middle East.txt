@@ -39,7 +39,7 @@ political_decisions = {
 			890 = { add_core = KDS }
 			892 = { add_core = KDS }
 			893 = { add_core = KDS }
-			898 = { add_core = KDS }
+			#898 = { add_core = KDS }
 			899 = { add_core = KDS }
 			901 = { add_core = KDS }
 			1109 = { add_core = KDS }

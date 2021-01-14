@@ -1,6 +1,6 @@
 #Basic, most unciv ones
 nv_tradition = {
-	research_points_modifier = -0.20
+	research_points_modifier = -0.2
 	research_points = -0.1
 	core_pop_militancy_modifier = -0.01
 }
