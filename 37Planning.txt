@@ -19,13 +19,14 @@ Poland:
 
 Italy:
 
-- Rework NPL->ITA. Perhaps some sort of Mezzogiorno-like country
+- Rework NPL->ITA. Perhaps some sort of Mezzogiorno-like country ---- Meridional Kingdom
 - Italy as a formable for the whole peninsula but only under specific circumstances and before a certain time:
 	- NPL falling to Albesan rebels gives a temporary CB to conquer Italy and then form it? (MajorMajor)
 	- PDN breakup gives NPL an opportunity to unite the peninsula
 	- Consider also the ability of ITA to accept Cisalpine
 	- ITA reverts to NPL if they hold neither Rome nor Reggio?
 		- Same for dismantlement - it's one or the other
+	- (Alternatively?): Sicilian nationalism grows and a joint kingdom is reformed a la BHN
 - PDN-NPL war with each seeking allies
 	- GP on PDN's side declares war on NPL with some wargoal and peaces out by decision when PDN's war ends.
 		- Problem: NPL allies might agree to fight PDN, but not the GP

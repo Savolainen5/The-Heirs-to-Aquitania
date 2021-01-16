@@ -1,11 +1,11 @@
-#Events for SEA - 52200-52300
+#Events for SEA - 52500-52799
 
 #Pattani Rebels
 country_event = {
+	id = 52500
+	title = "EVTNAME52500"
+	desc = "EVTDESC52500"
 	picture = "aceh_jihad"
-	id = 52200
-	title = "EVTNAME52200"
-	desc = "EVTDESC52200"
 	
 	trigger = {
 		tag = JOH

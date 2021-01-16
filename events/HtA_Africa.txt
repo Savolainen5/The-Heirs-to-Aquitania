@@ -1,5 +1,5 @@
 # Events for all of Africa except the southern part. For now
-#51900-51999
+#52200-52499
 
 ##################################################
 ##	Wolof Raider Woes are Finnish Opportunities	##
@@ -7,9 +7,9 @@
 
 #Wolof struck by raiders
 country_event = {
-	id = 51900
-	title = "EVTNAME51900"
-	desc = "EVTDESC51900"
+	id = 52200#51900
+	title = "EVTNAME52200"
+	desc = "EVTDESC52200"
 	#picture = "?"
 	
 	fire_only_once = yes
@@ -57,9 +57,9 @@ country_event = {
 
 #Väyrynen's Expedition for Wolof
 country_event = {
-	id = 51901
-	title = "EVTNAME51901"
-	desc = "EVTDESC51901"
+	id = 52201
+	title = "EVTNAME52201"
+	desc = "EVTDESC52201"
 	#picture = "??"
 	
 	is_triggered_only = yes
@@ -94,9 +94,9 @@ country_event = {
 
 #Raiders strike
 country_event = {
-	id = 51902
-	title = "EVTNAME51902"
-	desc = "EVTDESC51902"
+	id = 52202
+	title = "EVTNAME52202"
+	desc = "EVTDESC52202"
 	#picture = "??"
 	
 	trigger = {
@@ -139,9 +139,9 @@ country_event = {
 
 #Big raid leaves government in ruins
 country_event = {
-	id = 51903
-	title = "EVTNAME51903"
-	desc = "EVTDESC51903"
+	id = 52203
+	title = "EVTNAME52203"
+	desc = "EVTDESC52203"
 	#picture = "??"
 	
 	fire_only_once = yes
@@ -181,9 +181,9 @@ country_event = {
 
 #Option to annex Wolof
 country_event = {
-	id = 51904
-	title = "EVTNAME51904"
-	desc = "EVTDESC51904"
+	id = 52204
+	title = "EVTNAME52204"
+	desc = "EVTDESC52204"
 	#picture = "??"
 	
 	is_triggered_only = yes
@@ -198,9 +198,9 @@ country_event = {
 
 #Annex vassal Wolof
 country_event = {
-	id = 51905
-	title = "EVTNAME51905"
-	desc = "EVTDESC51905"
+	id = 52205
+	title = "EVTNAME52205"
+	desc = "EVTDESC52205"
 	#picture = "??"
 
 	trigger = {

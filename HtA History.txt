@@ -24,7 +24,7 @@ Eire: House Dalcais
 Monarch - Constaintín II. Born 3 September, 1781. Age: 51. Took the throne on 17 September, 1820
 Heir - Cathaoir (regnal name Cathaoir I). Born 23 November, 1803. Age: 33.
 
------------------------------------------------------------------------------------------
+
 
 France: 
 
@@ -37,11 +37,13 @@ the other French nobles may find a way to claim the French crown for themselves,
 	Heir: Jean de Tournus, b. 14 January, 1817. Age: 18. Younger brother of the king.
 
 
+
 Aquitania:
 
 While it has had its share of war and turmoil, the House De Melgueil has become used to luxury and plenty. Two centuries of near-domestic peace will soon
 come to an end, as a revolution of political thinking is coming. Already, philosphers and natural scientists across Western Europe are turning toward a
 new line of thought: liberalism. The ossified political structures of Aquitania will come under attack. Will the monarchy survive the storm?
+
 
 
 Helvetia:
@@ -55,11 +57,13 @@ the Hispanian Revolution and the reaction to the ideals of liberalism, monarchs 
 of the liberal plague.
 
 
+
 Iberia:
 
 Hispania has only recently lost its colonies, its prestige, and its absolute hegemony over Iberia, and is eager to get them back. Navarra and Galicia have had a 
 tenuous independence from their large neighbour, and who knows how long that state of affairs will continue. Portugal, as with the other Iberian 
 countries, was under the rule of Hispania for centuries, but has fared somewhat better.
+
 
 
 Italy:
@@ -74,13 +78,19 @@ nobility and trade republics, the Pope, the Roman Emperors, the Republic of Pisa
 cadet branch of the House of Melgueil). Naples itself remained under Pisan control until 1406, when the latter's failing fortunes made it possible for local nobility
 to take control with the support of Sicily. Initially invested as a Duke, Roger Loffredo and his house quickly asserted control over the whole of the peninsula south
 of the Papal holdings, and vied frequently with them for control over Benevento (which at last passed into Neapolitan hands in the late 16th century). The Loffredo
-line ended with the death of Leopoldo III in 1611, and a cadet branch, the Miravelli assumed the throne. Sicily was absorbed into Neapolitan holdings by personal
-union in the early 18th century, at which time friendship between Pope Clement V and Alberto II paved the way for coronation prior to the marriage, so as to ensure
+line ended with the death of Leopoldo III in 1611, and a cadet branch, the Salenini, assumed the throne. Sicily was absorbed into Neapolitan holdings by personal
+union in 1731, at which time friendship between Pope Clement V and Alberto II paved the way for coronation prior to the marriage, so as to ensure
 that the bride was not of a higher rank than the groom. Naples feuded with most nearby countries - abortive wars of expansion into North Africa in the 18th century,
 failed attempts to take Venetian Mediterranean holdings (prior to the latter's fall from greatness) and territories across the Straits of Otranto in the Roman Empire,
 among others. Only on the Peninsula did Naples meet with success, conquering Umbria during the course of the late 17th century and Romagna in the early 19th century
-(finalized by the Treaty of Bagnacavallo in 1827, whose circumstances and legitimacy are the subject of much debate). The Kingdom embarked on colonial adventures
-to follow its successes in exploration in the 15th and 16th centuries, and as such holds some lands associated with the slave trade in western Africa.
+(finalized by the Treaty of Bagnacavallo in 1827, whose circumstances and legitimacy are the subject of much debate). The Sicilian nobility have generally been given
+rather free rein to rule as they see fit, partly because previous Salenini had other things to focus on, but Giuseppe believed that the island had more to contribute.
+As such, since acceding to the throne in 1817 upon the death of his father, Orazio, he has been working to reduce the autonomy of the island, though much is still in
+progress. The Kingdom embarked on colonial adventures to follow its successes in exploration in the 15th and 16th centuries, and as such holds some lands associated
+with the slave trade in western Africa.
+
+King of Naples: Giuseppe I Salenino, b. 27 May, 1782. Age: 53. Assumed the throne in 1817 at age 35.
+Heir: Franciscu, b. 1 December, 1819. Age: 16
 
 
 Germany: 

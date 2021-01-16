@@ -33,7 +33,7 @@ PAP = {
 }
 
 leader = {
-	name = "Jacopo Brandozzi di Lucero"
+	name = "Jacopo Brandozzi de Lucero"
 	picture = european_general_2
 	date = 1835.1.1
 	type = land
@@ -51,7 +51,7 @@ leader = {
 }
 
 leader = {
-	name = "Angelo di Librari"
+	name = "Angelo de Librari"
 	picture = european_admiral_8
 	date = 1827.9.10
 	type = sea
@@ -60,25 +60,25 @@ leader = {
 }
 
 army = {
-	name = "Esercito Realo"
+	name = "Esercitu Riale"
 	location = 754
 	regiment = {
-		name = "1a Guardia Reale"
+		name = "1a Guardia Riale"
 		type = infantry
 		home = 754
 	}
 	regiment = {
-		name = "2a Guardia Reale"
+		name = "2a Guardia Riale"
 		type = infantry
 		home = 754
 	}
 	regiment = {
-		name = "1a Fanteria di Linea"
+		name = "1a Fantaria 'e Linia"
 		type = infantry
 		home = 2567
 	}
 	regiment = {
-		name = "2a Fanteria di Linea"
+		name = "2a Fantaria 'e Linia"
 		type = infantry
 		home = 755
 	}
@@ -100,45 +100,45 @@ army = {
 }
 
 army = {
-	name = "Divisione a Cavallo"
+	name = "Divisione a Cavallu"
 	location = 748
 	regiment = {
-		name = "1a Cavalleria"
+		name = "1a Cavallaria"
 		type = cuirassier
 		home = 753
 	}
 	regiment = {
-		name = "2a Cavalleria"
+		name = "2a Cavallaria"
 		type = cuirassier
 		home = 758
 	}
 	regiment = {
-		name = "3a Cavalleria"
+		name = "3a Cavallaria"
 		type = hussar
 		home = 757
 	}
 }
 
 army = {
-	name = "Esercito del Nord"
+	name = "Esercitu d'o Nord"
 	location = 743
 	regiment = {
-		name = "3a Fanteria di Linea"
+		name = "3a Fantaria 'e Linia"
 		type = infantry
 		home = 762
 	}
 	regiment = {
-		name = "4a Fanteria di Linea"
+		name = "4a Fantaria 'e Linia"
 		type = infantry
 		home = 763
 	}
 	regiment = {
-		name = "5a Fanteria di Linea"
+		name = "5a Fantaria 'e Linia"
 		type = infantry
 		home = 764
 	}
 	regiment = {
-		name = "6a Fanteria di Linea"
+		name = "6a Fantaria 'e Linia"
 		type = infantry
 		home = 741
 	}
@@ -154,14 +154,14 @@ army = {
 	}
 }
 navy = {
-	name = "Marina Reala di Napoli"
+	name = "Marina Riale 'e Napoli"
 	location = 754
 	ship = {
 		name= "Carlo I"
 		type = manowar
 	}
 	ship = {
-		name= "La Napoletana"
+		name= "'a Napuletana"
 		type = manowar
 	}
 
@@ -171,12 +171,12 @@ navy = {
 	}
 
 	ship = {
-		name= "Regina Vittoria"
+		name= "Riggina Vittoria"
 		type = frigate
 	}
 
 	ship = {
-		name= "Principe Umberto"
+		name= "Principe Franciscu"
 		type = frigate
 	}
 
@@ -186,33 +186,33 @@ navy = {
 	}
 
 	ship = {
-		name= "Cacciatore"
+		name= "Cacciature"
 		type = frigate
 	}
 
 	ship = {
-		name= "1a Squadrone Transporti"
+		name= "1a Squatrune Traspuorte"
 		type = clipper_transport
 	}
 
 	ship = {
-		name= "2a Squadrone Transporti"
+		name= "2a Squatrune Traspuorte"
 		type = clipper_transport
 	}
 
 	ship = {
-		name= "3a Squadrone Transporti"
+		name= "3a Squatrune Traspuorte"
 		type = clipper_transport
 	}
 
 }
 
 navy = {
-	name = "Squadra d'Africa"
+	name = "Squatra 'e Afreca"
 	location = 1784
 
 	ship = {
-		name= "Urgolio"
+		name= "Orguogliu"
 		type = frigate
 	}
 
@@ -223,11 +223,11 @@ navy = {
 }
 
 navy = {
-	name = "Squadra d'India"
+	name = "Squatra 'e Innia"
 	location = 1312
 
 	ship = {
-		name= "Regina dell'Oriente"
+		name= "Riggina 'e ll'Oriente"
 		type = manowar
 	}
 
@@ -248,7 +248,7 @@ navy = {
 }
 
 navy = {
-	name = "Squadra di Malacca"
+	name = "Squadra de Malacca"
 	location = 1384
 
 	ship = {

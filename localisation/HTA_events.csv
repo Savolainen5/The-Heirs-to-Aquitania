@@ -744,18 +744,6 @@ EVTNAME51851;A Conference in Milan?;x
 EVTDESC51851;In light of the violent annexation of Tuscany, the Duke of Milan has called a conference to discuss our mutual security concerns. It is clear that the Neapolitan threat will not disappear, nor will they stop at Florence. If we do not join forces, we, too, may suffer the same fate!;x
 EVTNAME51895;The Premiere of La Traviata;x
 EVTDESC51895;Verdi's opera premiered on March 6th, 1853, after apparently a mere 6 weeks of work. The work was an instant hit and has since become one of the most popular operas in the world. The performance at the theatre La Fenice in Venice drew massive crowds of the most important people in Venice and $COUNTRY$ as a whole.;x
-EVTNAME51900;Tribes Struck by Raiders;;;;;;;;;;x
-EVTDESC51900;Toro and Maures raiders have recently struck many communities in the north of the country, causing general instability. It seems we are powerless to stop them! Perhaps we can request aid from the Finnish in Ndakaaru, which they call Entakar.;;;;;;;;;;x
-EVTNAME51901;The Väyrynen Expedition;;;;;;;;;;x
-EVTDESC51901;Vapaaherra Antti Väyrynen, governor of the colony at Entakar has recently been approached by a representative from the Wolof Empire, whose ruler has requested an audience. It appears that Toro and Maures peoples have been raiding his territory recently and have caused much destruction and chaos. Väyrynen may be able to negotiate an agreement which would be beneficial for both our countries. Shall we order him to proceed?;;;;;;;;;x
-EVTNAME51902;Raided!;;;;;;;;;;;;;;x
-EVTDESC51092;Our lands have been attacked by raiders again! The people are suffering and it seems that the savages can't be stopped!;;;;;;;;;;;x
-EVTNAME51903;King Killed by Raiders!;;;;;;;;x
-EVTDESC51903;A massive raid by Maures tribesmen managed to enter the capital and kill the king. Truly these are dark days!;;;;;;;;;;;x
-EVTNAME51904;Chaos in Wolof;;;;;;;;;;x
-EVTDESC51904;The King of Wolof is dead and his villages burn. With Maures raiders wreaking havoc in the countryside, we should move in and ease their suffering.;;;;;;;;;;x
-EVTNAME51905;Chaos in Wolof;;;;;;;;;;;;x
-EVTDESC51905;Raiders continue to plague Wolof, despite our support. In order to more effectively protect his people, we need to get him to give us more control and privileges in his lands. This is for the good of the people.;;;;;;;;;;;;x
 EVTNAME52000;The Expansion of Westkaap;;;;;;;;;;;x
 EVTDESC52000;Under the direction of colonial governor Cornelis van der Linden, the Westkaap colony has expanded north, with the ultimate goal of reaching the mighty Heeckeren River.;;;;;;;;;;x
 EVTNAME52001;The Expansion of Middenkaap;;;;;;;;;;;;x
@@ -772,8 +760,20 @@ EVTNAME52006;The Dutch Agree to Sell Natalia;;;;;;;;;x
 EVTDESC52006;They have agreed to our proposed price of 15000 and will now cede the territory to us. We can now incorporate it into our South African colonies.;;;;;;;;;;x
 EVTNAME52007;The Dutch Refuse!;;;;;;;;;;;;;;;x
 EVTDESC52007;They have turned down our offer to sell Natalia...;;;;;;;;;;;;;x
-EVTNAME52200;Pattani Rebels;x
-EVTDESC52200;Despite the loss of the upper part of the peninsula in the recent war, we were able to maintain the loyalty of the local power structure in Pattani, hoping to use the province as a stepping stone to reacquiring our rightful land. However, of late, Pattani chiefs have begun to sense our weakness and inability to keep a hold on their territory and now they have outright declared independence, and have established a Sultante of their own!;x
+EVTNAME52200;Tribes Struck by Raiders;x
+EVTDESC52200;Toro and Maures raiders have recently struck many communities in the north of the country, causing general instability. It seems we are powerless to stop them! Perhaps we can request aid from the Finnish in Ndakaaru, which they call Entakar.;x
+EVTNAME52201;The Väyrynen Expedition;x
+EVTDESC52201;Vapaaherra Antti Väyrynen, governor of the colony at Entakar has recently been approached by a representative from the Wolof Empire, whose ruler has requested an audience. It appears that Toro and Maures peoples have been raiding his territory recently and have caused much destruction and chaos. Väyrynen may be able to negotiate an agreement which would be beneficial for both our countries. Shall we order him to proceed?;;;;;;;;;x
+EVTNAME52202;Raided!;x
+EVTDESC52202;Our lands have been attacked by raiders again! The people are suffering and it seems that the savages can't be stopped!;x
+EVTNAME52203;King Killed by Raiders!;x
+EVTDESC52203;A massive raid by Maures tribesmen managed to enter the capital and kill the king. Truly these are dark days!;x
+EVTNAME52204;Chaos in Wolof;x
+EVTDESC52204;The King of Wolof is dead and his villages burn. With Maures raiders wreaking havoc in the countryside, we should move in and ease their suffering.;x
+EVTNAME52205;Chaos in Wolof;x
+EVTDESC52205;Raiders continue to plague Wolof, despite our support. In order to more effectively protect his people, we need to get him to give us more control and privileges in his lands. This is for the good of the people.;x
+EVTNAME52500;Pattani Rebels;x
+EVTDESC52500;Despite the loss of the upper part of the peninsula in the recent war, we were able to maintain the loyalty of the local power structure in Pattani, hoping to use the province as a stepping stone to reacquiring our rightful land. However, of late, Pattani chiefs have begun to sense our weakness and inability to keep a hold on their territory and now they have outright declared independence, and have established a Sultante of their own!;x
 EVTNAME53000;King Shi Jiahao;;;;;;;;;;;;;;x
 EVTDESC53000;During the collapse of the Ming Dynasty in the mid-1600s, the Ming loyalist general Shi Chenggong fled to the Kingdom of Dai Nam and raised an army which successfully captured much of southern China in the period 1668 to 1682, when the Qin Empire was preoccupied with conflicts against the Mongolians, Uighurs, and Manchus. This new kingdom, which came to be called 'Nanyue' after its origins in southern Vietnam, prospered due to strong trade links with southeast Asia as well as Qin internecine troubles. In 1838, King Shi Jiahao ascended to the throne. His early reign was notable for the expansion of relations with European powers, which required leasing a treaty port on the Pearl River Delta.;;;;;;;;;;;;;;x
 EVTNAME53001;A Port in the Orient;;;;;;;;;;;;;;x

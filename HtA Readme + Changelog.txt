@@ -134,10 +134,11 @@ To do:
 51700-51750 - Caribbean
 51751-51850 - The Near East (first half), Persia (second half)
 51851-51899 - More Italy
-51900-51999 - Rest of Africa
+51900-51999 - More European flex files
 52000-52100 - South Africa
-52200-52300 - Southeast Asia (not including Indonesia, obviously)
-53000-53200 - China, Korea, etc.
+52200-52499 - Rest of Africa.
+52500-52799 - Southeast Asia (not including Indonesia, obviously)
+53000-53200 - China, Korea, etc
 
 59800-59949 - Misc. events
 59950-59999 - Debugging events
