@@ -152,6 +152,31 @@ migration_target =
 		factor = 5.0
 		NOT = { total_pops = 500 }
 	}
+	modifier = {
+		factor = 500
+		NOT = {
+			AND = {
+				has_pop_culture = THIS
+				OR = {
+					type = farmers
+					type = labourers
+				}
+			}
+		}
+		any_core = { is_primary_culture = THIS }
+		OR = { 
+			continent = north_america
+			continent = south_america
+			continent = oceania
+		}
+		capital_scope = {
+			OR = { 
+				continent = north_america
+				continent = south_america
+				continent = oceania
+			}
+		}
+	}
 	
 	modifier = {
 		factor = 1.2

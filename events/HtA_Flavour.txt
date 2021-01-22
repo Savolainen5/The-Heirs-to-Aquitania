@@ -83,6 +83,10 @@ province_event = {
 			civilized = yes
 			NOT = { has_country_flag = famous_serial_killer }
 		}
+		OR = {
+			is_capital = yes
+			is_state_capital = yes
+		}
 		NOT = { average_militancy = 5 }
 		total_pops = 100000
 		is_colonial = no
@@ -100,8 +104,8 @@ province_event = {
 			duration = -1
 		}
 		any_pop = {
-			consciousness = 0.5
-			militancy = 0.5
+			consciousness = 0.25
+			militancy = 0.25
 		}
 	}
 }
