@@ -811,7 +811,10 @@ country_event = {
 		name = "EVTOPTA19040"
 		set_global_flag = egyptian_excavation_rights
 		FROM = {
-			country_event = 19041
+			country_event =	{
+				id = 19041
+				days = 1
+			}
 		}
 		ai_chance = {
 			factor = 20
@@ -830,6 +833,10 @@ country_event = {
 				FROM = {
 					is_greater_power = yes
 				}
+			}
+			modifier = {
+				factor = 10
+				in_sphere = FROM
 			}
 		}
 	}

@@ -721,6 +721,7 @@ political_decisions = {
 			SIC = { all_core = { add_core = THIS } }
 			PRE = { all_core = { add_core = THIS } }
 			MLT = { all_core = { add_core = THIS } }
+			TUS = { all_core = { add_core = THIS } }
 			any_country = {
 				limit = {
 					exists = yes
@@ -729,6 +730,7 @@ political_decisions = {
 						tag = AQT
 						tag = CRS
 						tag = PDN
+						tag = TUS
 						tag = ITA
 						tag = NPL
 						tag = PAP

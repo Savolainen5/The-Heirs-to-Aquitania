@@ -90,6 +90,7 @@ Minor
 - Tweaked a few LRs
 - Many localizations tweaks and fixes
 - Lots of other small stuff not worth mentioning
+- Added a blank province map (current to 0.36.27) for whatever you might want to use it for
 
 Bugfixes
 - Navarra has a liberal party for the entire game

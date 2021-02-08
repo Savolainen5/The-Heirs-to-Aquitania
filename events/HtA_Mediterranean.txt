@@ -663,7 +663,7 @@ country_event = {
 			target = AQT
 			attacker_goal = {
 				casus_belli = release_puppet
-				tag = CRS
+				country = CRS
 			}
 			call_ally = yes
 		}

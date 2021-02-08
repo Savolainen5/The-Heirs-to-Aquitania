@@ -22,7 +22,10 @@ political_decisions = {
 
 		effect = {
 			EGY = {
-				country_event = { id=19040 days=0 }
+				country_event = {
+					id = 19040
+					days = 1
+				}
 			}
 			add_country_modifier = {
 				name = international_negotiations
@@ -43,6 +46,10 @@ political_decisions = {
 					}
 				}
 			}
+			OR = {
+				has_country_flag = egypt_refused
+				1767 = { owner = { NOT = { tag = EGY tag = THIS } } }
+			}
 			NOT = {
 				has_global_flag = tutankhamun_found
 				has_country_modifier = egyptian_excavations
@@ -51,7 +58,14 @@ political_decisions = {
 
 		allow = {
 			civilized = yes
-			owns = 1767
+			OR = {
+				owns = 1767
+				1767 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
 		}
 
 		effect = {

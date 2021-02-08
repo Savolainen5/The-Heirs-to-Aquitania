@@ -269,7 +269,7 @@ migration_target =
 				THIS = { is_culture_group = british }
 				OR = {
 					primary_culture = skamisc
-					primary_culture = uilsc					
+					primary_culture = uilsc
 					primary_culture = ginnaecerisc
 				}
 			}
@@ -278,11 +278,11 @@ migration_target =
 				OR = {
 					primary_culture = margarian
 					primary_culture = vestlandic
-					primary_culture = mellomsk					
+					primary_culture = mellomsk
 				}
-			}			
+			}
 		}
-	}	
+	}
 	
 	modifier = {
 		factor = 1.05

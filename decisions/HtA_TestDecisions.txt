@@ -1,3 +1,4 @@
+#Theoretically I'm only collecting working things in here
 political_decisions = {
 #	sub_unit_test = {		#This works, and is used for building ships. 'current' can be any province ID.
 #		potential = {
@@ -70,5 +71,22 @@ political_decisions = {
 #		}
 #	}
 
+#	puppet_cb_test = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#		}
+#		effect = {
+#			war = {
+#				target = AQT
+#				attacker_goal = {
+#					casus_belli = release_puppet
+#					country = PRE
+#				}
+#				call_ally = yes
+#			}
+#		}
+#	}
 
 }
