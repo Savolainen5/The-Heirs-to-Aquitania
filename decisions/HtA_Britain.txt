@@ -2,7 +2,7 @@ political_decisions = {
 
 #Negotiate with Aengland
 	negotiate_with_aengland = {
-		#picture = ?
+		picture = map_northern_isles
 		potential = {
 			tag = SCO
 			280 = { owned_by = SCO }
@@ -17,20 +17,19 @@ political_decisions = {
 		}
 		
 		effect = {
-			AEN = { country_event = {
-				id = 50100 
-				days = 2 }
+			AEN = {
+				country_event = {
+					id = 50100 
+					days = 2
+				}
 			}
 			set_country_flag = negotiate_with_aen
-		}
-		ai_will_do = {
-			factor = 1
 		}
 	}
 
 #Issue the Glaschu Ultimatum to Eire
 	glaschu_ultimatum = {
-		#picture = ?
+		picture = Glaschu
 		potential = {
 			tag = SCO
 			271 = { owned_by = IRE }
@@ -42,12 +41,17 @@ political_decisions = {
 		}
 		
 		allow = {
-			prestige = 15
+			prestige = 20
 			NOT = { truce_with = IRE }
 		}
 		
 		effect = {
-			IRE = { country_event = 50103 }
+			IRE = {
+				country_event = {
+					id = 50103
+					days = 1
+				}
+			}
 			prestige = 3
 			relation = {
 				who = IRE
@@ -55,53 +59,62 @@ political_decisions = {
 			}
 			set_country_flag = glaschu_ultimatum
 		}
-		ai_will_do = {
-			factor = 1
-		}
 	}
 
 #Integrate Cyrmu
 	integrate_cymru = {
-		picture = marching_soldiers
+		picture = map_cymru
 		potential = {
 			OR = {
 				tag = AEN
 				tag = ABN
 			}
 			NOT = { has_country_flag = cymru_claimed }
+			is_our_vassal = WHA
 		}
 		
 		allow = {
 			is_greater_power = yes
-			WHA = { vassal_of = THIS }
 			war = no
+			WHA = { vassal_of = THIS }
 			OR = {
 				relation = {
 					who = WHA
 					value = 200
 				}
-				NOT = { relation = {
-					who = WHA
-					value = 0
-				} }
+				NOT = {
+					relation = {
+						who = WHA
+						value = 0
+					}
+				}
+				state_n_government = 1
 			}
 		}
 		
 		effect = {
 			prestige = 5
 			badboy = 3
-			WHA = { country_event = {
-				id = 50106
-				days = 1
+			set_country_flag = cymru_claimed
+			WHA = {
+				country_event = {
+					id = 50106
+					days = 1
 				}
 			}
-			set_country_flag = cymru_claimed
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.88
+			}
 		}
 	}
 
 #Reclaim the Highlands
 	reclaim_alba_highlands = {
-		picture = marching_soldiers
+		picture = map_alba
 		potential = {
 			tag = AEN
 			NOT = { has_country_flag = alba_reclaimed }
@@ -110,19 +123,19 @@ political_decisions = {
 		
 		allow = {
 			is_greater_power = yes
-			SCO = { is_greater_power = no }
-			war = no
 			nationalism_n_imperialism = 1
+			war = no
+			SCO = { is_greater_power = no }
 			OR = {
 				is_our_vassal = SCO
 				AND = {
 					NOT = {
 						relation = {
 							who = SCO
-							value = -150
+							value = -50
 						}
 					}
-					is_vassal = no
+					SCO = { is_vassal = no }
 				}
 			}
 		}
@@ -143,11 +156,23 @@ political_decisions = {
 			leave_alliance = SCO
 			SCO = { all_core = { add_core = AEN } }
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+			modifier = {
+				factor = 0.1
+				alliance_with = SCO
+				NOT = { is_our_vassal = SCO }
+			}
+		}
 	}
 	
 #Become Overlord of Eire
 	overlord_eire = {
-		picture = shermans_march_to_the_sea
+		picture = map_eire
 		potential = {
 			OR = {
 				tag = AEN
@@ -165,7 +190,7 @@ political_decisions = {
 				NOT = {
 					relation = {
 						who = IRE
-						value = -150
+						value = -100
 					}
 					is_our_vassal = IRE
 				}
@@ -207,7 +232,7 @@ political_decisions = {
 	
 #Claim Cymru and Kerno
 	claim_wales_cornwall = {
-		picture = the_vega_expedition
+		picture = map_cymru
 		potential = {
 			tag = CLT
 			NOT = { has_country_flag = wales_cornwall_claimed }
@@ -260,8 +285,7 @@ political_decisions = {
 					}
 				}
 			}
-		}
-		
+		} 
 		effect = {
 			prestige = 5
 			FRA_420 = { add_core = CLT }
@@ -273,7 +297,7 @@ political_decisions = {
 
 	#Become Albina
 	become_albina = {
-		picture = dreams_of_empire
+		picture = map_northern_isles
 		potential = {
 			tag = AEN
 			is_greater_power = yes
@@ -310,6 +334,7 @@ political_decisions = {
 	}
 	
 	reform_albina = {
+		picture = map_northern_isles
 		potential = {
 			tag = AEN
 			NOT = { exists = ABN }
@@ -336,7 +361,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			prestige = 10
+			prestige = 20
 			change_tag = ABN
 			SCO = { all_core = { add_core = ABN } }
 			AEN = { all_core = { add_core = ABN remove_core = AEN } }
@@ -344,7 +369,7 @@ political_decisions = {
 	}
 	
 	embrace_irish = {
-		picture = "embrace_minority"
+		picture = map_eire
 		potential = {
 			OR = {
 				tag = AEN

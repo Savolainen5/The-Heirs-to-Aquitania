@@ -64,6 +64,9 @@ Other:
 - Add some negative modifier for feudal (European) countries?
 - MAKE SURE THAT NPL COLONIAL HOLDINGS MATCH LORE
 - Look into the Free Latvia CB and who can use it
+- Add the Demand Reparation CB from HPM
+- Make a special CB for the Hungary-BOH war so that there can be a kind of white peace-type outcome for BOH
+	- Also find a way for Saxony to not be annoying 
 - Uncivs should not get the First Minister event stuff
 - GNC stays at war forever with CLF for some reason? One reddit user reported that, and because of it they couldn't complete the event chain as SKM with GNC
 - Make some way for BOH to avoid the Partition War
@@ -76,3 +79,4 @@ Other:
 - Add some CZ-culture cores to Moravia so there's no assimilation of the local POP?
 - Model colony should only fire after a certain date
 - A POP migration modifier that brings primary POP farmers/labourers to new world provinces where there are none - to help with assimilation
+- Give important countries more prestige so they're more firmly in the top spot

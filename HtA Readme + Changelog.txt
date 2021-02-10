@@ -60,7 +60,7 @@ Major
 
 Minor
 - Some more starting generals - thanks to MajorMajor
-- Many new flags (both default and alternate) - thanks to Athemos
+- Many new flags (both default and alternate) - thanks to Athemos for most of them
 - Netherlands' Integrate Wallonia decision now gives a core, too
 - Added the Prusai culture, Baltic-speaking remnants of the Old Prussians, to the Polish-Lithuanian border region, along with a country for it - Prusova (tag PRS)
 - Added (army) unit files from HFM
