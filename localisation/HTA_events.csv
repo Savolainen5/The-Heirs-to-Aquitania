@@ -818,7 +818,7 @@ EVTDESC53018;The conference has concluded, and $FROMCOUNTRY$ has quietly agreed 
 EVTNAME53019;$FROMCOUNTRY_ADJ$ Ships in Zhengzhou;;;;;;;;;;;;;;x
 EVTDESC53019;Foreign, black ships have sailed up the Yellow River and moored themselves in front of the gates to the Imperial Palace. The foreigners claim to represent $FROMCOUNTRY$ and demand that we open the Empire up to trade with other nations. In addition, they request that we open up a legation quarter here in Zhengzhou, as well as cede a port city to them for trading purposes. A greater insult can hardly be imagined, and our ministers were speechless when the list of demands was made. Of course, the foreigners know not who they deal with.;;;;;;;;;;;;;;x
 EVTNAME53200;Loss of Control in the West;x
-EVTDESC53200;
+EVTDESC53200;As we do not have easy means of reaching their lands to maintain our government's control, the nobility of Syrmia and of Banat have taken it upon themselves to organize local governments.;x
 EVTNAME59800;Election Reforms;x
 EVTDESC59800;This provisional government is taking a more permanent shape. It was recently decided in $CAPITAL$ that elections should be held, so that our government might have a more popular mandate.;x
 EVTNAME59801;No More Elections;x
