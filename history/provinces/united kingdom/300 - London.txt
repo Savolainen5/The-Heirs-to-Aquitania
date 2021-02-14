@@ -14,4 +14,14 @@ state_building = {
 	building = small_arms_factory
 	upgrade = yes
 }
+#state_building = {
+#	level = 2 
+#	building = clipper_shipyard
+#	upgrade = yes
+#}
+state_building = {
+	level = 2 
+	building = cement_factory
+	upgrade = yes
+}
 

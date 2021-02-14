@@ -1,6 +1,6 @@
 owner = WHA
 controller = WHA
 add_core = WHA
-trade_goods = fish
+trade_goods = iron
 life_rating = 35
 

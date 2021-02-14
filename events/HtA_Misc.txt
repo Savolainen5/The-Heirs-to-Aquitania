@@ -10,7 +10,7 @@ country_event = {
 	
 	trigger = {
 		government = provisional_government_no_election
-		NOT = { vote_franschise = no_voting }
+		NOT = { vote_franschise = none_voting }
 	}
 	
 	mean_time_to_happen = {
@@ -37,7 +37,7 @@ country_event = {
 	
 	trigger = {
 		government = provisional_government_yes_election
-		vote_franschise = no_voting
+		vote_franschise = none_voting
 	}
 	
 	mean_time_to_happen = {

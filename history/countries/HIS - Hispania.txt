@@ -10,7 +10,7 @@ non_state_culture_literacy = 0.15
 civilized = yes
 
 #GP6
-prestige = 65
+prestige = 80
 
 oob = "HIS_oob.txt"
 

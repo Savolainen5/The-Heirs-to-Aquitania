@@ -1,3 +1,4 @@
+#Non-HtA stuff
 political_decisions = {
 	unite_with_croatia = {
 		picture = gtfo

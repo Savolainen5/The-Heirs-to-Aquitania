@@ -564,7 +564,12 @@ country_event = {
 	trigger = {
 		tag = AEN
 		has_country_flag = alba_reclaimed
-		war_with = SCO
+		OR = {
+			war_with = SCO
+			any_owned_province = {
+					is_core = SCO
+			}
+		}
 	}
 	
 	mean_time_to_happen = {

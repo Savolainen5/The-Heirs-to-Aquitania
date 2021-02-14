@@ -1,0 +1,29 @@
+#HtA-native decisions for Balkan countries and also misc ones that are kind of between BYZ and BOH
+
+political_decisions = {
+
+	#Ardeal regains cores on Banat and Syrmia (if it lost them)
+	assert_western_claims_SIE = {
+		picture = Timisoara
+		potential = {
+			tag = SIE
+			owns = 657 #Nagyszeben, probably the capital
+			OR = {
+				2538 = { NOT = { is_core = THIS } } #Novi Sad
+				652 = { NOT = { is_core = THIS } } #Temesvar/Timisoara/whatever other name it might ave
+			}
+		}
+		allow = {
+			OR = {
+				owns = 656 #Deva
+				owns = 665 #Tirgu Jiu
+			}
+		}
+		effect = {
+			prestige = 3
+			AUS_2538 = { add_core = THIS }
+			AUS_652 = { add_core = THIS }
+		}
+	}
+
+}

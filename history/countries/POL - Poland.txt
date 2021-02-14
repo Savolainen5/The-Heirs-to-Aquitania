@@ -9,7 +9,7 @@ non_state_culture_literacy = 0.18
 civilized = yes
 
 #GP7 in theory
-prestige = 72
+prestige = 84
 
 # Political reforms
 slavery = no_slavery

@@ -7,7 +7,7 @@ nationalvalue = nv_might
 literacy = 0.70
 civilized = yes
 
-prestige = 5
+prestige = 10
 
 # Political reforms
 slavery = no_slavery

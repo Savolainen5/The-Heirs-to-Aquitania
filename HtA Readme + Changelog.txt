@@ -87,7 +87,11 @@ Minor
 - Tweaked the Yugoslavia creation decision to take into account a leased Zadar - if you still have the province, you will give it to Zadar automatically.
 - Arbenon (Albania) must now no longer be a vassal or must be vassal of the country in question in order to be absorbed into Yugoslavia (whether that country is a vassal or no)
 - Bulgaria gets cores on the Black Sea coastal provinces it should have cores on when the Bulgarian Insurrection event fires
+- Added an event to make Ardeal release Banat and Syrmia and lose cores on them if it does not own land connected to that area (as often happens)
+- Added a decision to regain the abovementioned lands as cores of Ardeal
 - Tweaked a few LRs
+- Tweaked a few RGOs in Aengland
+- Pumped up some starting prestige for important European countries
 - Many localizations tweaks and fixes
 - Lots of other small stuff not worth mentioning
 - Added a blank province map (current to 0.36.27) for whatever you might want to use it for
@@ -101,6 +105,7 @@ Bugfixes
 - Bugfixes to the Califiana annexation chain and associated events
 - Yugoslavia can no longer invite itself to join itself
 - The Encourage Textile Industry NF no longer crashes the game when hovered over
+- Fixed some broken event numbers in HtA_Africa
 
 ----------------------------------------------------------------------------------------------------------
 See the OldChangelogs file for previous version changelogs. You can also see them on the subreddit's wiki.
@@ -139,7 +144,8 @@ To do:
 52000-52100 - South Africa
 52200-52499 - Rest of Africa.
 52500-52799 - Southeast Asia (not including Indonesia, obviously)
-53000-53200 - China, Korea, etc
+53000-53199 - China, Korea, etc
+53200-53299 - Balkans
 
 59800-59949 - Misc. events
 59950-59999 - Debugging events

@@ -8,7 +8,7 @@ literacy = 0.55
 civilized = yes
 
 #GP8
-prestige = 105
+prestige = 155
 
 # Political reforms
 slavery = no_slavery

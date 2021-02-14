@@ -1,0 +1,44 @@
+#Events for the Balkans
+#IDs 53200-53299
+
+#Ardeal loses control over Syrmia and Banat if it doesn't have direct access to them
+country_event = {
+	id = 53200
+	title = "EVTNAME53200"
+	desc = "EVTDESC53200"
+	picture = "HungarianNobility"
+	
+	trigger = {
+		tag = SIE
+		OR = {
+			owns = 2538 #Novi Sad
+			owns = 652 #Temesvar
+		}
+		NOT = {
+			owns = 656 #Deva, a province they often lose to Hungary/Bohemia
+			owns = 665 #Tirgu Jiu, a province they probably will never have, but still
+		}
+		capital = 657 #Nagyszeben, the normal one
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "Confound them all!"
+		any_owned = {
+			limit = {
+				is_core = THIS
+				OR = {
+					is_core = BAN
+					is_core = SRM
+				}
+			}
+			remove_core = THIS
+		}
+		release = BAN
+		release = SRM
+		prestige = -5
+	}
+}

@@ -47,3 +47,5 @@ Not noted are the many pictures I've taken from HPM and other Vic2 mods. My than
 - https://c8.alamy.com/comp/EE0F4W/a-topographical-dictionary-of-the-united-kingdom-wales-map-19th-century-EE0F4W.jpg - Decision picture entitled "map_cymru"
 - https://maps.nls.uk/joins/6746.html - Decision picture entitle "map_alba"
 - https://upload.wikimedia.org/wikipedia/commons/d/dc/A_New_Map_of_Ireland_%28Civil_and_Ecclesiastical%29.jpg - Decision picture entitled "map_eire"
+- https://c8.alamy.com/comp/P7T6AK/romania-timisoara-the-huniade-castle-built-between-1443-and-1447-by-john-hunyadi-over-the-old-royal-castle-dating-from-the-14th-century-engraving-P7T6AK.jpg - Decision picture entitled "Timisoara"
+- https://transylvanianow.com/from-ballroom-to-basement-part-i/ - Event picture entitled "HungarianNobility" (though it's really Szeklers/Transylvanian Hungarians)

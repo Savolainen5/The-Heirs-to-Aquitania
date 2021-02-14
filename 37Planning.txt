@@ -53,12 +53,12 @@ Other:
 	Should there be a better justification for Wallonia and its being integrated into the Greater Netherlands
 - Hispania and Navarra from this post: http://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-34#post-22485910
 - Doublecheck that Alba colonies in Indonesia go to all countries correctly
+- To get an alliance, you should need a minimum 50 relationship with the target country - Why isn't this working?
 - Make hills work
 - Perhaps have some European response to the end of the RUS-SML conflict - big threat in the east!
 	- Finnish intervention during the Russia war? Roman?
 - Make some stuff for PER to give up its treaty ports even when it peacefully gives up JER
 	- Crash when winning the war with PER as BYZ and releasing Syria via the Intervene in the Middle East decision
-- To get an alliance, you should need a minimum 50 relationship with the target country - Why isn't this working?
 - A way for Roman Empire to get Trebizond, perhaps something eventy in tandem with ARM moving its capital to the east
 - Consider revamping some AEN decisions, esp. wrt IRE
 - Add some negative modifier for feudal (European) countries?
@@ -79,4 +79,4 @@ Other:
 - Add some CZ-culture cores to Moravia so there's no assimilation of the local POP?
 - Model colony should only fire after a certain date
 - A POP migration modifier that brings primary POP farmers/labourers to new world provinces where there are none - to help with assimilation
-- Give important countries more prestige so they're more firmly in the top spot
+- Go back and check the religious map at the end of EU3 to inform religious things in Vic2

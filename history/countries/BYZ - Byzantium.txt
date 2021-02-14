@@ -10,7 +10,7 @@ literacy = 0.45
 civilized = yes
 
 #GP1 (but less prestige, anyways, because of its recent troubles with Armenia)
-prestige = 95
+prestige = 105
 
 # Political reforms
 slavery = no_slavery

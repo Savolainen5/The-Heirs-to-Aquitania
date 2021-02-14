@@ -2,8 +2,7 @@ owner = AEN
 controller = AEN
 add_core = AEN
 add_core = KER
-trade_goods = fish
+trade_goods = iron
 life_rating = 35
 naval_base = 2
-
 

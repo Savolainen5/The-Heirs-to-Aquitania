@@ -7,7 +7,7 @@
 
 #Wolof struck by raiders
 country_event = {
-	id = 52200#51900
+	id = 52200 #used to be 51900, but all that numbering should be fixed by now
 	title = "EVTNAME52200"
 	desc = "EVTDESC52200"
 	#picture = "?"
@@ -35,7 +35,7 @@ country_event = {
 		}
 		FIN = {
 			country_event = {
-				id = 51901
+				id = 52201
 				days = 1
 			}
 		}
@@ -172,7 +172,7 @@ country_event = {
 				}
 			}
 			country_event = {
-				id = 51904
+				id = 52204
 				days = 1
 			}
 		}

@@ -4,7 +4,6 @@
 #EVT numbers 51751-51759
 
 ## Arab Nationalism in Persia
-
 country_event = {
 	id = 51751
 	title = "EVTNAME51751"
@@ -13,7 +12,6 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		NOT = { has_global_flag = persian_decline }
 		tag = PER
 		year = 1860
 		civilized = no
@@ -24,6 +22,7 @@ country_event = {
 				has_global_flag = PER_gave_JER_to_FRA
 			}
 		}
+		NOT = { has_global_flag = persian_decline }
 	}
 	
 	mean_time_to_happen = {
@@ -98,7 +97,7 @@ country_event = {
 			}
 		}
 		any_owned = {
-			limit = { 
+			limit = {
 				OR = {
 					is_core = SYR
 					is_core = IRQ

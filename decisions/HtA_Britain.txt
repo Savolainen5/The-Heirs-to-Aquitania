@@ -137,6 +137,9 @@ political_decisions = {
 					}
 					SCO = { is_vassal = no }
 				}
+				any_owned_province = {
+					is_core = SCO
+				}
 			}
 		}
 		
