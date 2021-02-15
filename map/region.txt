@@ -378,7 +378,7 @@ AUS_736 = { 736 737 770 778 } #Istria
 
 ### Italy
 
-SAR_720 = { 720 721 722 533 } #Piemonte/Piemont (That five hundred thirty-three is Heligoland/Coni AKA Cuneo - Heligoland is not important in this world)
+SAR_720 = { 720 721 722 533 } #Piemonte/Piemont (That five thirty-three is Heligoland/Coni AKA Cuneo - Heligoland is not important in this world)
  
 SWI_605 = { 723 724 725 } #West Switzerland/Liguria
 
