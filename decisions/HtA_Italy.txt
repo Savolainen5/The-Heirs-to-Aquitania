@@ -19,4 +19,26 @@ political_decisions = {
 			TUS_744 = { add_core = THIS }
 		}
 	}
+	
+	caserta_education_decree = {
+		picture = FrancisVofModena
+		potential = {
+			tag = NPL
+			year = 1836
+			OR = {
+				year = 1837
+				month = 11
+			}
+			NOT = { has_country_flag = caserta_education_decree_made }
+		}
+		allow = {
+			763 = { owned_by = THIS }
+			prestige = 5
+		}
+		effect = {
+			prestige = 2
+			country_event = 51852 #In HtA_ITA
+			set_country_flag = caserta_education_decree_made
+		}
+	}
 }

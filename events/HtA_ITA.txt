@@ -233,7 +233,7 @@ country_event = {
 }
 
 #####################Start events from 0.37#####################################
-# 51851-51899
+# 51851-51899 - Mostly for NPL, but some for PDN
 
 #Milan Conference
 country_event = {
@@ -254,7 +254,36 @@ country_event = {
 	}
 }
 
-
+#Caserta Education Decree choice
+country_event = {
+	id = 51852
+	title = "EVTNAME51852"
+	desc = "EVTDESC51852"
+	picture = "italian_decree"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NPL
+		763 = { owned_by = THIS }
+		OR = {
+			has_country_flag = caserta_education_decree_made
+			year = 1837
+		}
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		name = "Neapolitan, naturally."
+		set_country_flag = ed_decree_neapolitan
+	}
+	option = {
+		name = "Local speech makes the most sense."
+		set_country_flag = ed_decree_local
+	}
+}
+		
 
 #Premiere of La Traviata
 country_event = {
