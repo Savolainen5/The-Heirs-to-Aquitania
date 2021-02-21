@@ -1900,6 +1900,11 @@ pier_moncani = {
 	icon = 17
 }
 
+#PDN/NPL/ITA stuff
+tax_exemptions = {
+	icon = 12
+}
+
 #Roman stuff
 
 anatole_boom = {

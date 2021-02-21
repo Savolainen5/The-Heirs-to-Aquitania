@@ -1,6 +1,10 @@
 ;;;;;;;;;;;;;x,,,,
 accepting_flemish_people_title;Embracing the Flemish;;;;;;;;;;x
 accepting_flemish_people_desc;The Flemish of the late Duchy of Brabant are very similar to our own people linguistically and culturally. Really, we are the same people separated for too long by political borders. Let us rectify this by embracing the Flemish as our brothers!;;;;;;;;;x
+AEN_occupies_SCO_1_title;Enforce Our Demands on Alba;x
+AEN_occupies_SCO_1_desc;We have occupied the Albannach lowlands for so long that their war effort has crumbled entirely, despite the support of their allies. It is time to force an end, even if they refuse to accept it.;x
+AEN_occupies_SCO_2_title;The End of Alba;x
+AEN_occupies_SCO_2_desc;We have occupied the Albannach highlands for so long that their war effort has crumbled entirely, despite the support of their allies. It is time to force an end, even if they refuse to accept it. This is the end of Alba.;x
 aid_BYZ_ALB_title;Propose Military Aid to the Empire;;;;;;;;;x
 aid_BYZ_ALB_desc;The Empire is facing a difficult time right now, and we have managed to secure autonomy. If we play our cards right, we can attain independence! By offering military aid in exchange for the promise of full sovereignty after the rebellions are over, we can offer a peaceful, respectable solution to Autokrator Georgios' problems.;;;;;;;;;;x
 aid_BYZ_BUL_title;Propose Military Aid to the Empire;;;;;;;;;x
@@ -381,10 +385,14 @@ norwegian_caribbean_title;Issue the Declaration of Kajahikos;;;;;;;;;;;;;x
 norwegian_caribbean_desc;For a great many years the king in Anslo had been forced to accept the sovereignty of various elected legislative bodies due to the strictures of the Constitution of 1822, which was ultimately accepted by the royal family under duress. However, the alignment of many of those legislative bodies with the destabilizing forces of Albesanism and the subsequent royal coup, which saw members of the royal family and the solidly absolutist army and navy dissolve the liberal constitution, have rendered the king a free hand in Norway. With support for the royals and Nordic nationalism both at an all-time high, and the Norwegian Navy quite large and abundantly capable of projecting force in the region, Olav Erling, the Duke of Faroe, has traveled to the Norwegian-held island of Kajahikos and, acting on orders from his elder brother King Håkon IV, proclaimed the intent of the Norwegian Crown to annex the islands of Firgene, Heymak, Curasu, and Welighefen by right of conquest. We will forge a great Atlantic empire just as the Vikings before us!;;;;;;;;;;;;;x 
 norwegian_highlands_title;Claim the Albannach North;;;;;;;;;;;;;x
 norwegian_highlands_desc;The north of Alba, today called Gaideldach, was a place that was settled by our peoples throughout the 11th and early 12th centuries. Although many of them speak the language of the Albans, they still carry on our traditions. What's more, our burgeoning population would find much to love in this land. Let us lay claim to it for Norge!;;;;;;;;;;x
+no_interference_RUS_title;Do Not Interfere in Russia;x
+no_interference_RUS_desc;It is not our place to interfere there.;x
 open_qin_title;Mission to the Qin Empire;;;;;;;;;x
 open_qin_desc;The Qin - and their resources - are still closed off from civilization. With a strong enough show of force, however, we should be able to force the Emperor to sign an extraterritoriality agreement with our nation.;;;;;;;;;x
 overlord_eire_title;Become Overlord of Eire;;;;;;;;;;x
 overlord_eire_desc;Now that our neighbours in Alba to the north have been fully subjugated, we should turn to Eire. The little brother of the Northern Isles will be ours, too!;;;;;;;;;;;;x
+overlord_eire_ai_title;Become Overlord of Eire;;;;;;;;;;x
+overlord_eire_ai_desc;Now that our neighbours in Alba to the north have been fully subjugated, we should turn to Eire. The little brother of the Northern Isles will be ours, too!;;;;;;;;;;;;x
 partition_daufinat_title;Negotiate the Partition of Daufinat;;;;;;;;;;x
 partition_daufinat_desc;Daufinat has been a threat to Aquitània for centuries. There was indeed a time not much more than one century ago when they were more powerful than us. Times are different now, and with the new Duke having inherited Aymon de Buonavi's throne being a less than competent leader, we have an opportunity to expand our holdings to the Alps and improve relations with the Padan Union. We can negotiate a deal to partition Daufinat among ourselves, which will improve the strategic and international standing of both of our countries! \n§RNote: Immediate war is possible.;;;;;;;;;;;;x
 PDN_create_title;Create the Padan Union;;;;;;;;;;;;x

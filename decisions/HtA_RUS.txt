@@ -312,7 +312,6 @@ political_decisions = {
 			}
 		}
 	}
-				
 	
 	#remove Smolensk cores
 	end_smolensk = {
@@ -521,12 +520,48 @@ political_decisions = {
 					id = 50369
 					days = 2
 				}
+				set_country_flag = tatars_join #referenced in the CB so that AI will not declare war before this has been resolved
+				end_war = THIS
 			}
 			relation = {
 				who = RUS
 				value = 400
 			}
 			set_country_flag = tatar_revolt
+		}
+	}
+	
+	#Railroaded-only decision for AI allies of SML and RUS not to be part of the Russian War - This only affects all-AI situations. Players have it a bit more rough.
+	no_interference_RUS = {
+		potential = {
+			ai = yes
+			OR = {
+				alliance_with = RUS
+				alliance_with = SML
+			}
+			NOT = {
+				tag = SML
+				tag = RUS
+				tag = DON
+				tag = VIT
+				tag = POL
+			}
+			RUS = {
+				war_with = SML
+				ai = yes
+			}
+			SML = {
+				ai = yes
+			}
+			has_global_flag = railroading_on
+			NOT = { has_global_flag = RUS_wars_complete }
+		}
+		allow = {}
+		effect = {
+			leave_alliance = RUS
+			leave_alliance = SML
+			RUS = { end_war = THIS }
+			SML = { end_war = THIS }
 		}
 	}
 	

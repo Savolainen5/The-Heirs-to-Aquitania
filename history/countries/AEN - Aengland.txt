@@ -1,7 +1,7 @@
 capital = 300
 primary_culture = aenglisc
 religion = catholic
-government = hms_government
+government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_might
 literacy = 0.55

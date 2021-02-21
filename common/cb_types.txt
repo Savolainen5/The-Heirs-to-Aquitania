@@ -4001,7 +4001,8 @@ demand_concession_casus_belli = {
 	}
 	
 	allowed_states = {
-		any_owned_province = { is_colonial = no }
+		#any_owned_province = { is_colonial = no } #Removed, if only temporarily. Why would this be here anyways? Why would uncivs have colonial states anywayS?
+		
 		#Restrictions to Chinese State conquering, taken from HPM
 		OR = {
 			NOT = { owner = { OR = { is_culture_group = east_asian tag = GXI } } }
@@ -4144,7 +4145,8 @@ demand_concession_NI_casus_belli = {
 	}
 	
 	allowed_states = {
-		any_owned_province = { is_colonial = no }
+		#any_owned_province = { is_colonial = no } #Removed, if only temporarily. Why would this be here anyways? Why would uncivs have colonial states anywayS?
+		
 		#restriction to chinese state conquering, taken from HPM
 		OR = {
 			NOT = { owner = { OR = { is_culture_group = east_asian tag = GXI } } }
@@ -4283,7 +4285,8 @@ demand_concession_BC_casus_belli = {
 	}
 	
 	allowed_states = {
-		any_owned_province = { is_colonial = no }
+		#any_owned_province = { is_colonial = no } #Removed, if only temporarily. Why would this be here anyways? Why would uncivs have colonial states anywayS?
+		
 		#restriction to Chinese state conquering, taken from HPM
 		OR = {
 			NOT = { owner = { OR = { is_culture_group = east_asian tag = GXI } } }	
@@ -4874,7 +4877,10 @@ russia_hegemony = {
 			tag = SML
 		}
 		OR = {
-			THIS = { tag = RUS }
+			THIS = {
+				tag = RUS
+				has_country_flag = tatars_join #This essentially gates the war after 1844
+			}
 			THIS = {
 				tag = SML
 				OR = {

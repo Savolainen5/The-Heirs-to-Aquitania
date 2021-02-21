@@ -596,7 +596,7 @@ country_event = {
 	}
 }
 
-#Event to claim non-Indonesian colonies of Alba
+#Event to claim non-Indonesian colonies of Alba - "The First Seizures"
 country_event = {
 	id = 50115
 	title = "EVTNAME50115"

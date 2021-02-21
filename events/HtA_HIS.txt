@@ -341,6 +341,7 @@ country_event = {
 		year = 1870 
 		war = no 
 		is_vassal = no
+		exists = HIS
 		is_disarmed = no 
 		NOT = {
 			alliance_with = HIS 
@@ -361,7 +362,6 @@ country_event = {
 			factor = 0.8
 			invention = separatism
 		}
-		
 		modifier = {
 			factor = 1.5
 			NOT = { invention = national_fraternity }
@@ -456,6 +456,7 @@ country_event = {
 		war = no
 		has_global_flag = portuguese_separatists
 		NOT = { has_country_flag = rebels_discovered }
+		exists = POR
 	}
 	
 	mean_time_to_happen = {

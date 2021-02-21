@@ -264,13 +264,14 @@ country_event = {
 	trigger = {
 		owns = 761
 		year = 1857
+		month = 11
 	}
 	
 	mean_time_to_happen = {
-		months = 11
+		months = 1
 		modifier = {
-			factor = 0.05
-			NOT = { month = 11 }
+			factor = 0.01
+			year = 1857
 		}
 	}
 	

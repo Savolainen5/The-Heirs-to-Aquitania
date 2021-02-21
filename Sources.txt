@@ -52,3 +52,5 @@ Not noted are the many pictures I've taken from HPM and other Vic2 mods. My than
 - https://upload.wikimedia.org/wikipedia/it/8/8f/Real-polverificio-borbonico_decreto_1857.jpg - Event picture entitled "italian_decree"
 - https://i.pinimg.com/originals/83/e1/d9/83e1d9d62d19221a8a3654403d5ce086.jpg - Part of the event picture entitled "italian_school"
 - https://i0.wp.com/gabriellagiudici.it/wp-content/uploads/2018/07/scuola-800.jpg?w=320&ssl=1 - Part of the event picture entitled "italian_school"
+- https://www.mapsofthepast.com/mm5/graphics/00000001/magic/ITGA0003A.jpg - Decision picture entitled "map_galicia"
+- https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/1855_Colton_Map_of_the_East_Indies_%28Singapore%2C_Thailand%2C_Borneo%2C_Malaysia%29_-_Geographicus_-_EastIndies-colton-1855.jpg/1280px-1855_Colton_Map_of_the_East_Indies_%28Singapore%2C_Thailand%2C_Borneo%2C_Malaysia%29_-_Geographicus_-_EastIndies-colton-1855.jpg - Event picture entitled "map_indonesia"

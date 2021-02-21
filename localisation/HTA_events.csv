@@ -694,7 +694,7 @@ EVTDESC51503;Rebels have recently challenged Sultan Hasanuddin in Sulawesi, and 
 EVTNAME51504;Alba's Colonies up for Grabs;;;;;;;;;x
 EVTDESC51504;Aengland has all but defeated Alba and forced them into submission. With the loss of their home territories and naval support, Alba's colonies in Indonesia are vulnerable. This would be the perfect chance for $COUNTRY$ to gain some more territory and resources to exploit. While Aengland has claimed all of them, they don't have the means to stop us from taking what we want.;;;;;;;;;x
 EVTNAME51505;The Fate of Alba's Colonies;;;;;;;;;;x
-EVTDESC51505;With the final defeat of Alba, it's time to put our plans into action and claim their Indonesian colonies for $COUNTRY$.;;;;;;;;;;;;;;x
+EVTDESC51505;With the final defeat of Alba, it's time to put our plans into action and claim their Indonesian colonies for $COUNTRY$.\n\nNote to the Aenglisc player - There will soon be an event to clean up any remaining Albannach holdings anywhere in the world.;;;;;;;;;;;;;;x
 EVTNAME51509;Albannach Cleanup;;;;;;;;;;;x
 EVTDESC51509;If there are any Albannach colonies remaining in the world, we will hunt them down and claim them for $COUNTRY$. Let us leave no stone unturned!;;;;;;;;;;x
 EVTNAME51600;The Revolution Arrives at our Doorstep;;;;;;;;;x

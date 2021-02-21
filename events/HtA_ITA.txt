@@ -270,6 +270,10 @@ country_event = {
 			has_country_flag = caserta_education_decree_made
 			year = 1837
 		}
+		NOT = {
+			has_country_flag = ed_decree_neapolitan
+			has_country_flag = ed_decree_local
+		}
 	}
 	mean_time_to_happen = {
 		months = 2
@@ -277,10 +281,24 @@ country_event = {
 	option = {
 		name = "Neapolitan, naturally."
 		set_country_flag = ed_decree_neapolitan
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
 	}
 	option = {
 		name = "Local speech makes the most sense."
 		set_country_flag = ed_decree_local
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
 	}
 }
 		

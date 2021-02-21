@@ -71,25 +71,20 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = cymru_claimed }
 			is_our_vassal = WHA
+			OR = {
+				state_n_government = 1
+				year = 1839
+				AND = {
+					year = 1838
+					month = 9
+				}
+			}
 		}
 		
 		allow = {
 			is_greater_power = yes
 			war = no
 			WHA = { vassal_of = THIS }
-			OR = {
-				relation = {
-					who = WHA
-					value = 200
-				}
-				NOT = {
-					relation = {
-						who = WHA
-						value = 0
-					}
-				}
-				state_n_government = 1
-			}
 		}
 		
 		effect = {
@@ -173,7 +168,78 @@ political_decisions = {
 		}
 	}
 	
-#Become Overlord of Eire
+#Debug type event to end the (first) war between AI SCO and AI AEN
+	AEN_occupies_SCO_1 = {
+		potential = {
+			ai = yes
+			tag = AEN
+			exists = SCO
+			war_with = SCO
+			has_country_flag = alba_reclaimed
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		allow = {
+			269 = { #Dun Eideann
+				controlled_by = THIS
+				province_control_days = 365
+			}
+			266 = { #Obar Dheathain
+				controlled_by = THIS
+				province_control_days = 365
+			}
+		}
+		effect = {
+			end_war = SCO
+			any_country = {
+				limit = {
+					alliance_with = SCO
+				}
+				end_war = THIS
+			}
+			ENG_271 = { #Ghalldach, the lowlands
+				secede_province = THIS
+			}
+		}
+	}
+	
+#Debug type event to end the (second) war between AI SCO and AI AEN
+	AEN_occupies_SCO_2 = {
+		potential = {
+			ai = yes
+			tag = AEN
+			exists = SCO
+			war_with = SCO
+			has_country_flag = alba_reclaimed
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		allow = {
+			266 = { #Obar Dheathain
+				controlled_by = THIS
+				province_control_days = 365
+			}
+		}
+		effect = {
+			end_war = SCO
+			any_country = {
+				limit = {
+					alliance_with = SCO
+					war_with = THIS
+				}
+				end_war = THIS
+			}
+			ENG_266 = { #Ghaideldach, the highlands
+				secede_province = THIS
+			}
+		}
+	}
+	
+#Become Overlord of Eire - for humans
 	overlord_eire = {
 		picture = map_eire
 		potential = {
@@ -184,12 +250,14 @@ political_decisions = {
 			has_country_flag = alba_reclaimed
 			NOT = { has_country_flag = overlordship_eire }
 			is_greater_power = yes
+			ai = no
 		}
 		
 		allow = {
 			SCO = { exists = no }
 			war = no
 			OR = {
+				is_our_vassal = IRE
 				NOT = {
 					relation = {
 						who = IRE
@@ -197,7 +265,6 @@ political_decisions = {
 					}
 					is_our_vassal = IRE
 				}
-				is_our_vassal = IRE
 			}
 			IRE = {
 				OR = {
@@ -207,6 +274,7 @@ political_decisions = {
 						is_greater_power = no
 						is_secondary_power = no
 						is_vassal = no
+						NOT = { alliance_with = AEN }
 					}
 				}
 			}
@@ -226,7 +294,50 @@ political_decisions = {
 		}
 	}
 
-	
+	#Become Overlord of Eire - for AI
+	overlord_eire_ai = {
+		picture = map_eire
+		potential = {
+			OR = {
+				tag = AEN
+				tag = ABN
+			}
+			has_country_flag = alba_reclaimed
+			NOT = { has_country_flag = overlordship_eire }
+			is_greater_power = yes
+			ai = yes
+		}
+		
+		allow = {
+			SCO = { exists = no }
+			war = no
+			IRE = {
+				OR = {
+					vassal_of = THIS
+					in_sphere = THIS
+					AND = {
+						is_greater_power = no
+						is_secondary_power = no
+						is_vassal = no
+						NOT = { alliance_with = AEN }
+					}
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = overlordship_eire
+			prestige = 5
+			badboy = 5
+			release_vassal = IRE
+			relation = {
+				who = IRE
+				value = -200
+			}
+			leave_alliance = IRE
+			IRE = { all_core = { add_core = THIS } }
+		}
+	}
 	
 	
 #####################################

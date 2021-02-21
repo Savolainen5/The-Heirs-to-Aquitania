@@ -2,7 +2,7 @@ political_decisions = {
 
 	#Claim Galicia
 	claim_galicia = {
-		#picture = ?
+		picture = map_galicia
 	
 		potential = {
 			tag = POR
@@ -20,6 +20,10 @@ political_decisions = {
 			add_core = 476
 			relation = {
 				who = HIS
+				value = -50
+			}
+			relation = {
+				who = GLC
 				value = -50
 			}
 		}

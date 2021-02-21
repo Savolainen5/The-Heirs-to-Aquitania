@@ -57,6 +57,8 @@ Major
 - Pan-nationalist rebels will not rise if their cultural union doesn't exist - THIS MAY NEED TO BE ADJUSTED SO THAT ONLY GERMAN ONES WON'T RISE (because I'm OK with French ones, for example)
 - Added an event for SML to lose control of its Black Sea provinces if it's at peace and neither UKR nor DON are its vassals/owned by it (the check is based on four major provinces in different states close to the land)
 - Added a decision for RUS to break the truce and just go capture the city of Smolensk if they have basically no military. It costs more infamy, but has the same end result as the other two ways to end the conflict
+- Improvements to Aenglisc-Albannach (and also AEN-IRE) war interactions, how Alba's colonies are handed out (still work to be done here to make it more dynamic) and the AI's ability to conclude the wars
+- Decision for AI countries not to interfere in the Russian wars if both RUS and SML are AI. They will take the decision to leave the war if they are called in and accept it.
 
 Minor
 - Some more starting generals - thanks to MajorMajor
@@ -70,12 +72,14 @@ Minor
 - Native nations in the New World can no longer take the decision called New Life in the New World
 - Made gold rush events not fire until 1870 for uncives
 - When Smolensk annexes Russia, they now have a decision to reduce POP MIL and CON by 4 to reduce rebels
+- Improvements to how DON joins RUS against SML
 - Gave Mali one military reform (two seemed a bit OP, but it's there still if you want to readd it yourself!)
 - Fixed 99% of remaining mismatches between various map files. The Paracel Islands will continue not to exist as land for gameplay purposes (though if you look closely you can see their shadow)
 - Also made a lot rivers fit province borders better - lots more to do still
 - Split Pau off from the Basque province of Miarritze, added two flavour events about Our Lady of Lourdes to the owner
 - Made requirements for taking the Intervene in Persia decision more clear to the player
 - Increased Make Puppet CB to 10 max badboy (previously 7)
+- Demand concession CB can now target colonial states/provinces of uncivs
 - Increased starting experience in national values, so now they are actually kind of useful. This change is also reflected in the demonstration modifiers which you can see i nthe decision
 - Made the National Assimilation event impossible to fire until 1870
 - Improved the event which signals the end of BRB cores, made it specifically for NET (more, kind of), and added one for BRB
@@ -93,8 +97,10 @@ Minor
 - Tweaked a few RGOs in Aengland
 - Pumped up some starting prestige for important European countries
 - Many localizations tweaks and fixes
+- Lots of new event and decision pictures
 - Lots of other small stuff not worth mentioning
 - Added a blank province map (current to 0.36.27) for whatever you might want to use it for
+- Moved most unused event/decision pictures into separate folders (mostly for keeping better track of things)
 
 Bugfixes
 - Navarra has a liberal party for the entire game
@@ -106,6 +112,7 @@ Bugfixes
 - Yugoslavia can no longer invite itself to join itself
 - The Encourage Textile Industry NF no longer crashes the game when hovered over
 - Fixed some broken event numbers in HtA_Africa
+- Added some checks to HIS-POR interaction to make sure the countries still exist
 
 ----------------------------------------------------------------------------------------------------------
 See the OldChangelogs file for previous version changelogs. You can also see them on the subreddit's wiki.

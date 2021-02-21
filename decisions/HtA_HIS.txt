@@ -173,7 +173,7 @@ political_decisions = {
 	}
 	
 	embrace_galicians = {
-		picture = embrace_minority
+		picture = map_galicia
 		potential = {
 			tag = HIS
 			any_owned_province = { culture = galician }
@@ -368,9 +368,6 @@ political_decisions = {
 				}
 				set_country_flag = alaska_purchase_interest
 			}
-		}
-		ai_will_do = {
-			factor = 1
 		}
 	}
 }
