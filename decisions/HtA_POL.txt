@@ -240,143 +240,176 @@ political_decisions = {
 ###0.37 stuff for removing negative Sejm-related modifiers###
 
 	remove_expensive_factories = {
-		#picture = 
+		picture = poland
 		potential = {
 			tag = POL
 			has_country_modifier = POL_expensive_factories
 		}
 		allow = {
-			prestige = 10000
+			OR = {
+				prestige = 150
+				ai = no
+			}
 		}
 		effect = {
 			remove_country_modifier = POL_expensive_factories
 		}
 	}
 	remove_less_army_spending = {
-		#picture = 
+		picture = poland
 		potential = {
 			tag = POL
 			has_country_modifier = POL_less_army_spending
 		}
 		allow = {
-			prestige = 10000
+			OR = {
+				prestige = 150
+				ai = no
+			}
 		}
 		effect = {
 			remove_country_modifier = POL_less_army_spending
 		}
 	}
 	remove_less_diplo = {
-		#picture = 
+		picture = poland
 		potential = {
 			tag = POL
 			has_country_modifier = POL_less_diplo
 		}
 		allow = {
-			prestige = 10000
+			OR = {
+				prestige = 150
+				ai = no
+			}
 		}
 		effect = {
 			remove_country_modifier = POL_less_diplo
 		}
 	}
 	remove_less_land_org = {
-		#picture = 
+		picture = poland
 		potential = {
 			tag = POL
 			has_country_modifier = POL_less_land_org
 		}
 		allow = {
-			prestige = 10000
+			OR = {
+				prestige = 150
+				ai = no
+			}
 		}
 		effect = {
 			remove_country_modifier = POL_less_land_org
 		}
 	}
 	remove_less_leadership = {
-		#picture = 
+		picture = poland
 		potential = {
 			tag = POL
 			has_country_modifier = POL_less_leadership
 		}
 		allow = {
-			prestige = 10000
+			OR = {
+				prestige = 150
+				ai = no
+			}
 		}
 		effect = {
 			remove_country_modifier = POL_less_leadership
 		}
 	}
 	remove_less_mobilisation = {
-		#picture = 
+		picture = poland
 		potential = {
 			tag = POL
 			has_country_modifier = POL_less_mobilisation
 		}
 		allow = {
-			prestige = 10000
+			OR = {
+				prestige = 150
+				ai = no
+			}
 		}
 		effect = {
 			remove_country_modifier = POL_less_mobilisation
 		}
 	}
 	remove_less_output = {
-		#picture = 
+		picture = poland
 		potential = {
 			tag = POL
 			has_country_modifier = POL_less_output
 		}
 		allow = {
-			prestige = 10000
+			OR = {
+				prestige = 150
+				ai = no
+			}
 		}
 		effect = {
 			remove_country_modifier = POL_less_output
 		}
 	}
 	remove_less_prestige = {
-		#picture = 
+		picture = poland
 		potential = {
 			tag = POL
 			has_country_modifier = POL_less_prestige
 		}
 		allow = {
-			prestige = 10000
+			OR = {
+				prestige = 150
+				ai = no
+			}
 		}
 		effect = {
 			remove_country_modifier = POL_less_prestige
 		}
 	}
 	remove_less_reform_desire = {
-		#picture = 
+		picture = poland
 		potential = {
 			tag = POL
 			has_country_modifier = POL_less_reform_desire
 		}
 		allow = {
-			prestige = 10000
+			OR = {
+				prestige = 150
+				ai = no
+			}
 		}
 		effect = {
 			remove_country_modifier = POL_less_reform_desire
 		}
 	}
 	remove_less_tax_efficiency = {
-		#picture = 
+		picture = poland
 		potential = {
 			tag = POL
 			has_country_modifier = POL_less_tax_efficiency
 		}
 		allow = {
-			prestige = 10000
+			OR = {
+				prestige = 150
+				ai = no
+			}
 		}
 		effect = {
 			remove_country_modifier = POL_less_tax_efficiency
 		}
 	}
 	remove_slower_cbs = {
-		#picture = 
+		picture = poland
 		potential = {
 			tag = POL
 			has_country_modifier = POL_slower_cbs
 		}
 		allow = {
-			prestige = 10000
+			OR = {
+				prestige = 150
+				ai = no
+			}
 		}
 		effect = {
 			remove_country_modifier = POL_slower_cbs

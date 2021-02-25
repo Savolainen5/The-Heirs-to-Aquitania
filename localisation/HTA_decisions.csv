@@ -429,6 +429,28 @@ reform_albina_title;Reform Albina;;;;;;;;;;x
 reform_albina_desc;Although we have lost the title before, we can once again claim it. With the island of Bryten once more united under our rule, we should take up the mantle of Albina for the good of all its inhabitants!;;;;;;;;;;x
 reform_qin_empire_title;Reform the Qin Empire;;;;;;;;;x
 reform_qin_empire_desc;Liberal ideas have penetrated China and threaten to disturb the sanctity of the Empire. By drafting a constitution, we can guarantee our position in power while acknowledging the rights of the Chinese people. Qin Diguo, Wan Sui!;;;;;;;;;x
+remove_expensive_factories_title;Urbanization and Entrepreneurship;x
+remove_expensive_factories_desc;This removes the modifier making factories more expensive. Everything about this decision will still be changed - this is just a work in progress.;x
+remove_less_army_spending_title;Centralize the Army;x
+remove_less_army_spending_desc;This removes the modifier decreasing army spending. Everything about this decision will still be changed - this is just a work in progress.;x
+remove_less_diplo_title;Organize Diplomacy;x
+remove_less_diplo_desc;This removes the modifiergiving your slower diplo point gain. Everything about this decision will still be changed - this is just a work in progress.;x
+remove_less_land_org_title;Institute Modern Training;x
+remove_less_land_org_desc;This removes the modifier decreasing land organization. Everything about this decision will still be changed - this is just a work in progress.;x
+remove_less_leadership_title;Educate Officers;x
+remove_less_leadership_desc;This removes the modifier giving you slower leadership gain. Everything about this decision will still be changed - this is just a work in progress.;x
+remove_less_mobilisation_title;Create Mobilization Tables;x
+remove_less_mobilisation_desc;This removes the modifier reducing mobilization potential. Everything about this decision will still be changed - this is just a work in progress.;x
+remove_less_output_title;Remove Oppressive Factory Rules;x
+remove_less_output_desc;This removes the modifier making factories have less output. Everything about this decision will still be changed - this is just a work in progress.;x
+remove_less_prestige_title;Improve our International Image;x
+remove_less_prestige_desc;This removes the modifier reducing your prestige. Everything about this decision will still be changed - this is just a work in progress.;x
+remove_less_reform_desire_title;Allow People to Think;x
+remove_less_reform_desire_desc;This removes the modifier reducing reform desire. Honestly, this one should probably be done by event or something. Everything about this decision will still be changed - this is just a work in progress.;x
+remove_less_tax_efficiency_title;Centralize Tax Collection;x
+remove_less_tax_efficiency_desc;This removes the modifier decreasing tax efficiency. Everything about this decision will still be changed - this is just a work in progress.;x
+remove_slower_cbs_title;Foreign Affairs Minister;x
+remove_slower_cbs_desc;This removes the modifier making CBs generate more slowly. Everything about this decision will still be changed - this is just a work in progress.;x
 renew_zadar_lease_title;Renew the Lease on Zadar;x
 renew_zadar_lease_desc;It has been some time since our troubles with the Hungarians and consequent loss of Zadar. But now, a new $COUNTRY$ has risen, and we seek salt and sun of the Mediterranean once more! Let us ask our neighbour to the south about the possibility of leasing it again.;x
 renovate_constantinople_title;Renovate Constantinople;;;;;;;;;;;;x
