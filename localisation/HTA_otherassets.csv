@@ -39,6 +39,8 @@ hta_dont_sphere_sml;Smolensk is off-limits;x
 hta_dont_sphere_sml_desc;We aren't allowed to sphere Smolensk, lest we incur the wrath of Russia;x
 hungarian_pamphlets;Hungarian Liberal Pamphlets;;;;;;;;;x
 ignore_revolt;Latvian Revolt Ignored;;;;;;;;;;x
+in_recovery;In recovery;x
+in_recovery_desc;This province is recovering from a recent disaster.;x
 jacin_ilmunt;Jacin Ilmunt;;;;;;;;;;;;x
 jacin_ilmunt_desc;The first to serve as First Councilor of the Republic of Aquitània, Ilmunt was famous for his popular support, the reforms undertaken by the government under his leadership, and his ability to inspire the entire country.;;;;;;;;;;;;x
 latvian_fomenters;Latvian Fomenters of Rebellion;;;;;;;;;;x

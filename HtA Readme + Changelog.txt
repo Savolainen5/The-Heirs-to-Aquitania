@@ -52,6 +52,7 @@ NB for the changelog - Anything with lots of # or * after it is something Savs i
 Verison 0.37 - Poland and Italy
 
 Major
+- Added decisions and events for Poland, the Padan Union and Naples
 - Added a new government type, the Provisional Government (which comes in yes_election and no_election forms according to whether elections are allowed, obviously) which is used for PDN initially and can be used for other countries in the future
 - Also added events to switch between them based on the vote franchise
 - Pan-nationalist rebels will not rise if their cultural union doesn't exist - THIS MAY NEED TO BE ADJUSTED SO THAT ONLY GERMAN ONES WON'T RISE (because I'm OK with French ones, for example)
@@ -61,6 +62,7 @@ Major
 - Decision for AI countries not to interfere in the Russian wars if both RUS and SML are AI. They will take the decision to leave the war if they are called in and accept it.
 
 Minor
+- Reorganized African events files
 - Some more starting generals - thanks to MajorMajor
 - Many new flags (both default and alternate) - thanks to Athemos for most of them
 - Netherlands' Integrate Wallonia decision now gives a core, too
@@ -126,7 +128,7 @@ To do:
 50024-50049 - ITA and DAU (This is about the time I started actually being smart and allocating numbers beforehand. All are used up, must allocate more IDs. Added 50099 here)
 50050-50098 - Germany and surroundings
 50100-50149 - British Isles
-50150-50199 - Africa
+50150-50199 - West Africa (Mali and the like)
 50200-50249 - AQT and PRE
 50250-50299 - Low Countries
 50300-50349 - Iberia
@@ -136,6 +138,7 @@ To do:
 50600-50699 - Roman Empire and related
 50700-50799 - Armenia events
 50800-50849 - Miscellaneous events (some in HtA_famines, some in HtA_Flavor)
+50850-50999 -                      (unassigned)
 51000-51199 - North Amerigan events (separate file for each country?)
 51200-51399 - South Amerigan events
 51400-51449 - More FRA
@@ -148,9 +151,13 @@ To do:
 51751-51850 - The Near East (first half), Persia (second half)
 51851-51899 - More Italy
 51900-51999 - More European flex files
-52000-52100 - South Africa
-52200-52499 - Rest of Africa.
+52000-52099 - South Africa
+52100-52199 -                     (unassigned)
+52200-52299 - North Africa
+52300-52399 - Rest of Africa
+52400-52499 -                     (unassigned)
 52500-52799 - Southeast Asia (not including Indonesia, obviously)
+52800-52999 -                     (unassigned)
 53000-53199 - China, Korea, etc
 53200-53299 - Balkans
 

@@ -1,0 +1,60 @@
+#Self-explanatory, really
+#Decisions for/regarding countries in North Africa, mostly Maghreb/MGH
+political_decisions = {
+	
+	#Raid an independent Malta, likely to happen first
+	raid_ind_malta = {
+		picture = tangier_harbor
+		potential = {
+			tag = MGH
+			NOT = { has_country_flag = ind_malta_raid }
+			exists = MLT
+			MLT = {
+				is_vassal = no
+				NOT = { number_of_ports = 2 }
+				capital = 854
+			}
+		}
+		allow = {
+			civilized = no
+			total_amount_of_ships = 5
+		}
+		effect = {
+			set_country_flag = ind_malta_raid
+			money = 5000
+			research_points = 1000
+			MLT = {
+				country_event = 52200 #HtA_Africa_North
+			}
+		}
+	}
+	
+	#A second raid, later, after the first
+	raid_malta = {
+		picture = tangier_harbor
+		potential = {
+			tag = MGH
+			has_country_flag = ind_malta_raid
+			NOT = { has_country_flag = second_malta_raid }
+		}
+		allow = {
+			civilized = no
+			total_amount_of_ships = 5
+			854 = {
+				NOT = {
+					has_country_modifier = in_recovery
+				}
+			}
+		}
+		effect = {
+			set_country_flag = second_malta_raid
+			money = 5000
+			research_points = 1000
+			853 = {
+				owner = {
+					country_event = 52201
+				}
+			}
+		}
+	}	
+}

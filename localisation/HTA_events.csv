@@ -181,6 +181,18 @@ EVTNAME50151;Break the bonds of vassalage!;;;;;;;;;;x
 EVTDESC50151;With the death of the old, strong King and the help of Europeans, we have the opportunity to once again forge our own path. It will probably involve fighting and bloodshed, but it will be worth it!;;;;;;;;;;x
 EVTNAME50152;$FROMCOUNTRY$ revolts!;;;;;;;;;;;x
 EVTDESC50152;The traitors in $FROMCOUNTRY$ have repudiated our overlordship. No doubt the cursed Europeans are to blame for this, as well as their opportunism and not giving the new King a chance! We have been friends since your father's father's father, and they would throw it all away because a few pale-skinned men offer them some trinkets and empty promises!;;;;;;;;;;x
+EVTNAME50153;Tribes Struck by Raiders;x
+EVTDESC50153;Toro and Maures raiders have recently struck many communities in the north of the country, causing general instability. It seems we are powerless to stop them! Perhaps we can request aid from the Finnish in Ndakaaru, which they call Entakar.;x
+EVTNAME50154;The Rautaparta Expedition;x
+EVTDESC50154;Vapaaherra Antero Rautaparta, governor of the colony at Entakar has recently been approached by a representative from the Wolof Empire, whose ruler has requested an audience. It appears that Toro and Maures peoples have been raiding his territory recently and have caused much destruction and chaos. Rautaparta may be able to negotiate an agreement which would be beneficial for both our countries. Shall we order him to proceed?;;;;;;;;;x
+EVTNAME50155;Raided!;x
+EVTDESC50155;Our lands have been attacked by raiders again! The people are suffering and it seems that the savages can't be stopped!;x
+EVTNAME50156;King Killed by Raiders!;x
+EVTDESC50156;A massive raid by Maures tribesmen managed to enter the capital and kill the king. Truly these are dark days!;x
+EVTNAME50157;Chaos in Wolof;x
+EVTDESC50157;The King of Wolof is dead and his villages burn. With Maures raiders wreaking havoc in the countryside, we should move in and ease their suffering.;x
+EVTNAME50158;Chaos in Wolof;x
+EVTDESC50158;Raiders continue to plague Wolof, despite our support. In order to more effectively protect his people, we need to get him to give us more control and privileges in his lands. This is for the good of the people.;x
 EVTNAME51600;The Aquitànian Ultimatum;;;;;;;;;x
 EVTDESC51600;As if our current problems weren't enough. Our neighbour has fallen to Albesan rebel scum and we are dealing with misguided fools and traitors ourself. Now the new Republican government has sent us a demand: Concede to the rebels and establish democracy or face (another) war with Aquitània.;;;;;;;;;;x
 EVTNAME51601;Success in Daufinat;;;;;;;;;;;x
@@ -762,18 +774,6 @@ EVTNAME52006;The Dutch Agree to Sell Natalia;;;;;;;;;x
 EVTDESC52006;They have agreed to our proposed price of 15000 and will now cede the territory to us. We can now incorporate it into our South African colonies.;;;;;;;;;;x
 EVTNAME52007;The Dutch Refuse!;;;;;;;;;;;;;;;x
 EVTDESC52007;They have turned down our offer to sell Natalia...;;;;;;;;;;;;;x
-EVTNAME52200;Tribes Struck by Raiders;x
-EVTDESC52200;Toro and Maures raiders have recently struck many communities in the north of the country, causing general instability. It seems we are powerless to stop them! Perhaps we can request aid from the Finnish in Ndakaaru, which they call Entakar.;x
-EVTNAME52201;The Väyrynen Expedition;x
-EVTDESC52201;Vapaaherra Antti Väyrynen, governor of the colony at Entakar has recently been approached by a representative from the Wolof Empire, whose ruler has requested an audience. It appears that Toro and Maures peoples have been raiding his territory recently and have caused much destruction and chaos. Väyrynen may be able to negotiate an agreement which would be beneficial for both our countries. Shall we order him to proceed?;;;;;;;;;x
-EVTNAME52202;Raided!;x
-EVTDESC52202;Our lands have been attacked by raiders again! The people are suffering and it seems that the savages can't be stopped!;x
-EVTNAME52203;King Killed by Raiders!;x
-EVTDESC52203;A massive raid by Maures tribesmen managed to enter the capital and kill the king. Truly these are dark days!;x
-EVTNAME52204;Chaos in Wolof;x
-EVTDESC52204;The King of Wolof is dead and his villages burn. With Maures raiders wreaking havoc in the countryside, we should move in and ease their suffering.;x
-EVTNAME52205;Chaos in Wolof;x
-EVTDESC52205;Raiders continue to plague Wolof, despite our support. In order to more effectively protect his people, we need to get him to give us more control and privileges in his lands. This is for the good of the people.;x
 EVTNAME52500;Pattani Rebels;x
 EVTDESC52500;Despite the loss of the upper part of the peninsula in the recent war, we were able to maintain the loyalty of the local power structure in Pattani, hoping to use the province as a stepping stone to reacquiring our rightful land. However, of late, Pattani chiefs have begun to sense our weakness and inability to keep a hold on their territory and now they have outright declared independence, and have established a Sultante of their own!;x
 EVTNAME53000;King Shi Jiahao;;;;;;;;;;;;;;x

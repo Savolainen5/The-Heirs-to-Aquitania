@@ -1900,7 +1900,7 @@ pier_moncani = {
 	icon = 17
 }
 
-#PDN/NPL/ITA stuff
+#PDN/NPL/ITA stuff									¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 tax_exemptions = {
 	icon = 12
 }
@@ -2028,6 +2028,19 @@ very_rebellious_minorities = {
 	pop_consciousness_modifier = 0.5
 	icon = 18
 }
+
+in_recovery = { #A province modifier, like the others above here
+	poor_life_needs = 0.1
+	middle_life_needs = 0.1
+	poor_income_modifier = -0.05
+	middle_income_modifier = -0.06
+	rich_income_modifier = -0.08
+	population_growth = -0.0015
+	local_RGO_output = -0.05
+	immigrant_push = 0.2
+	icon = 12
+}
+	
 
 #Nordic stuff
 

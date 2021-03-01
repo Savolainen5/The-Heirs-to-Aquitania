@@ -1,0 +1,19 @@
+#IDs 52200-52299
+
+
+################################
+##	Maghreb-Malta raids chain ##
+##      Brings in Naples      ##
+################################
+
+#Maghreb raid on (independent) Malta 52200
+	#52200
+	#Needs to set the in_recovery modifier (see event_modifiers) on 854. When that times out, the second raid decision for MGH becomes available
+
+
+
+#Neapolitan response in HtA_Italy------------------------------
+
+#Second raid on (vassal) Malta
+
+#Neapolitan reaction to that raid

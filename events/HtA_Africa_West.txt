@@ -1,0 +1,324 @@
+#West African events, IDs 50150-50199
+
+#Death of King of Mali
+country_event = {
+	id = 50150
+	title = "EVTNAME50150"
+	desc = "EVTDESC50150"
+	#picture = ?
+
+	trigger = {
+		tag = MLI
+		year = 1843
+		NOT = { has_country_flag = RIP_King_of_Mali }
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "Long live the king!"
+		set_country_flag = RIP_King_of_Mali
+	}
+}
+
+#Event for Malian puppets to randomly break away - puppets
+country_event = {
+	id = 50151
+	title = "EVTNAME50151"
+	desc = "EVTDESC50151"
+	picture = "african_cavalry"
+	
+	trigger = {
+		substate_of = MLI
+		MLI = { has_country_flag = RIP_KING_of_Mali }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 10
+			part_of_sphere = no
+		}
+		modifier = {
+			factor = 2
+			part_of_sphere = yes
+		}
+	}
+	
+	option = {
+		name = "Do it!"
+		prestige = 3
+		release_vassal = THIS
+		relation = {
+			who = MLI
+			value = -100
+		}
+		MLI = { country_event = 50152 } #Our vassal revolts!
+	}
+}
+
+#Our vassal revolts! - Event Mali gets when its vassal stops being its vassal
+country_event = {
+	id = 50152
+	title = "EVTNAME50152"
+	desc = "EVTDESC50152"
+	picture = "african_cavalry"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "This cannot stand!"
+		prestige = -2
+		casus_belli = {
+			target = FROM
+			type = make_puppet
+			months = 120
+		}
+	}
+}
+
+##################################################
+##	Wolof Raider Woes are Finnish Opportunities	##
+##         Events 50153 to 50158                ##
+##################################################
+
+#Wolof struck by raiders
+country_event = {
+	id = 50153 #used to be 51900 and then 52200, but all that numbering should be fixed by now
+	title = "EVTNAME50153"
+	desc = "EVTDESC50153"
+	picture = "african_cavalry"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WOL
+		year = 1855
+		is_vassal = no
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	immediate = {
+		set_country_flag = raiders
+	}
+	
+	option = {
+		name = "Seek protection from the Finns."
+		money = -500
+		any_pop = {
+			reduce_pop = 0.995
+		}
+		FIN = {
+			country_event = {
+				id = 50154
+				days = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "We will stand on our own!"
+		money = -500
+		any_pop = {
+			reduce_pop = 0.995
+		}
+		prestige = 2
+		set_country_flag = alone_against_raiders
+		set_variable = {
+			which = raiders
+			value = 0
+		}
+		
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#Rautaparta's Expedition for Wolof
+country_event = {
+	id = 50154
+	title = "EVTNAME50154"
+	desc = "EVTDESC50154"
+	picture = "map_senegal"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Dispatch the expedition."
+		create_vassal = FROM
+		create_alliance = FROM
+		relation = {
+			who = FROM
+			value = 100
+		}
+		
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 1.1
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "They cannot be helped."
+		FROM = { set_country_flag = alone_against_raiders }
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#Raiders strike
+country_event = {
+	id = 50155
+	title = "EVTNAME50155"
+	desc = "EVTDESC50155"
+	picture = "african_cavalry"
+	
+	trigger = {
+		tag = WOL
+		has_country_flag = alone_against_raiders
+		is_vassal = no
+		OR = {
+			check_variable = {
+				which = raiders
+				value = 0
+			}
+			check_variable = {
+				which = raiders
+				value = 1
+			}
+			check_variable = {
+				which = raiders
+				value = 2
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	option = {
+		name = "Our warriors must do something!"
+		money = -500
+		random_owned = {
+			any_pop = {
+				reduce_pop = 0.98
+			}
+		}
+		change_variable = {
+			which = raiders
+			value = 1
+		}
+	}
+}
+
+#Big raid leaves government in ruins
+country_event = {
+	id = 50156
+	title = "EVTNAME50156"
+	desc = "EVTDESC50156"
+	picture = "african_cavalry"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WOL
+		has_country_flag = alone_against_raiders
+		is_vassal = no
+		check_variable = {
+			which = raiders
+			value = 3
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "This is not a good thing."
+		any_neighbor_country = {
+			limit = {
+				civilized = yes
+				NOT = { truce_with = THIS }
+				OR = {
+					tag = FIN
+					FIN = { NOT = { neighbour = THIS } }
+				}
+			}
+			country_event = {
+				id = 50157
+				days = 1
+			}
+		}
+	}
+}
+
+#Option to annex Wolof
+country_event = {
+	id = 50157
+	title = "EVTNAME50157"
+	desc = "EVTDESC50157"
+	picture = "map_senegal"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Restore order to the tribes."
+		inherit = FROM
+		prestige = 2
+		badboy = 1
+	}
+}
+
+#Annex vassal Wolof
+country_event = {
+	id = 50158
+	title = "EVTNAME50158"
+	desc = "EVTDESC50158"
+	picture = "map_senegal"
+
+	trigger = {
+		tag = FIN
+		is_our_vassal = WOL
+		WOL = {
+			has_country_flag = raiders
+			civilized = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.9
+			relation = {
+				who = WOL
+				value = 150
+			}
+		}
+	}
+	
+	option = {
+		name = "Establish direct control."
+		inherit = WOL
+		prestige = 2
+	}
+}
+	
+
+################################################
