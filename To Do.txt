@@ -2,11 +2,11 @@ To Do, v0.37
 
 Events:
 
-- Springtime of Nations should hit Roman Empire harder?
 - Event/Decision to try to mediate Germany?
 - Revisit that ability of German states to not attend the Brunswick congress - AI will currently always attend
 - Tweak Bavarian choices for Brunswick Congress so they're better
 - Saxony making problems for Brandenburg when it attends the Brunswick congress and is still a BOH ally.
+- Springtime of Nations should hit Roman Empire harder?
 - Danubian Federation-thing for Roman Empire
 - Some Autokrator grants a constitution?
 - Massive problem for the Roman Empire if they fail to take Rome, or if they lose it.
@@ -16,14 +16,14 @@ Events:
 - Make CBs for war events work so that there's a more elegant solution than reducing infamy
 - Teralarga ideas: see Suggestions
 - Unequal Treaty events for Nanyue, tweak it for Qin
-- Some kind of country/nationalism for Solelha in Florida
+- Unequal Treaty includes Nanyue VN land
 - Qin civil war of some kind?
+- Some kind of country/nationalism for Solelha in Florida
 - Dissolution of Maghreb (see suggestions)
 - Competition for colonies in SEA, especially between NAP and HIS in the Malay peninsula
 - Generic event to annex countries that you have full cores on, as happens with Rome sometimes
 - Give Puppet CBs to owners of territory in India in the mid-late 1800s?
 - Made event 2610 (National Assimilation) in CBsandCores happen only after 1870, but would it be better to find some way to make it so that it doesn't fire when primary culture POPs of the country whose core would be removed are present? I looked into that and did some quick theorycrafting but couldn't come up with a good way to do it
-- Unequal Treaty includes Nanyue VN land
 
 Decisions:
 
@@ -149,5 +149,6 @@ Other:
 - RCW runs a different course if the Empire is already democratic via Albesans
 	- Romans struggle to keep Greeks and Anatolians in check - regionalism
 - Indian accepted cultures: should include Gujarati, should have a way to accept Dravidians
+- 0.40 - Redo states in the low countries as per https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-56#post-27333977
 	
 Savs, remember that Birth of a Nation is in CleanUp and has the ID 60160

@@ -1,18 +1,161 @@
 #IDs 52200-52299
 
-
 ################################
 ##	Maghreb-Malta raids chain ##
 ##      Brings in Naples      ##
 ################################
 
 #Maghreb raid on (independent) Malta 52200
-	#52200
-	#Needs to set the in_recovery modifier (see event_modifiers) on 854. When that times out, the second raid decision for MGH becomes available
+	country_event = {
+		id = 52200
+		title = "EVTNAME52200"
+		desc = "EVTDESC52200"
+		
+		picture = "malta_grand_harbor"
+		
+		is_triggered_only = yes
+		
+		option = {
+			name = "Devastation!"
+			money = -50000
+			any_pop = {
+				limit = {
+					location = {
+						province_id = 854
+					}
+				}
+				reduce_pop = 0.97
+			}
+			854 = {
+				add_province_modifier = {
+					name = in_recovery
+					duration = 1864
+				}
+			}
+		}
+	}
+
+#Malta Raided! - Neapolitan response to the above
+	country_event = {
+		id = 52201
+		title = "EVTNAME52201"
+		desc = "EVTDESC52201"
+		
+		fire_only_once = yes
+		picture = "malta_grand_harbor"
+		
+		trigger = {
+			OR = {
+				tag = NPL
+				tag = ITA
+			}
+			854 = { has_province_modifier = in_recovery }
+		}
+		
+		mean_time_to_happen = {
+			months = 12
+		}
+		
+		option = {
+			name = "Let us extend our protection to Malta."
+			country_event = {
+				id = 52202
+				days = 1
+			}
+			
+			ai_chance = {
+				factor = 80
+				modifier = {
+					factor = 10
+					has_global_flag = railroading_on
+				}
+			}
+		}
+		option = {
+			name = "Why should we care about some rock in the sea?"
+			MLT = {
+				country_event = {
+					id = 52203
+					days = 5
+				}
+			}
+			
+			ai_chance = {
+				factor = 20
+				modifier = {
+					factor = 0
+					has_global_flag = railroading_on
+				}
+			}
+		}
+	}
 
 
+#Negotiations about Neapolitan involvement in Malta - event for NPL to decide what kind of aid - maybe just monetary, or the railroaded way will be puppeting them
+	country_event = {
+		id = 52202
+		title = "EVTNAME52202"
+		desc = "EVTDESC52202"
+		
+		is_triggered_only = yes
+		
+		option = {
+			name = "Some aid is all we can spare."
+			money = -2000
+			MLT = {
+				money = 2000
+				small_arms = 50
+				ammunition = 100
+				artillery = 10
+				canned_food = 50
+				grain = 100
+			}
+			set_country_flag = material_aid_to_MLT
+			
+			ai_chance = {
+				factor = 15
+			}
+		}
+		
+		option = {
+			name = "We shall rebuild their defences and contribute significantly to their recovery."
+			money = -5000
+			MLT = {
+				money = 5000
+			}
+			854 = {
+				remove_province_modifier = in_recovery
+				add_province_modifier = {
+					name = in_recovery
+					duration = 812
+				}
+				fort = 2
+				naval_base = 1
+			}
+			set_country_flag = defensive_aid_to_MLT
+			
+			ai_chance = {
+				factor = 15
+			}
+		}
+		
+		option = {
+			name = "Our navy shall establish control over the island. Temporarily, of course."
+			badboy = 5
+			create_vassal = MLT
+			set_country_flag = vassalize_MLT
+			
+			ai_chance = {
+				factor = 70
+				modifier = {
+					factor = 2
+					has_global_flag = railroading_on
+				}
+			}
+		}
+	}
 
-#Neapolitan response in HtA_Italy------------------------------
+#Neapolitans uninterested
 
 #Second raid on (vassal) Malta
 

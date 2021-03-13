@@ -1,20 +1,6 @@
 political_decisions = {
 
-#Info about mechanics for PDN
-	info_PDN = {
-		picture = HtALion1
-		potential = {
-			ai = no
-			OR = {
-				tag = LOM
-				tag = GEN
-				tag = MOD
-				tag = VEN
-			}
-		}
-		allow = { }
-		effect = { }
-	}
+#The decision for info about mechanics for PDN is naturally in HtA_Info
 
 #Formally create the Padan Union
 	PDN_create = {
