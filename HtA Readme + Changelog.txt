@@ -68,7 +68,8 @@ Minor
 - Netherlands' Integrate Wallonia decision now gives a core, too
 - Added the Prusai culture, Baltic-speaking remnants of the Old Prussians, to the Polish-Lithuanian border region, along with a country for it - Prusova (tag PRS)
 - Added (army) unit files from HFM
-- Changed some country colours: CYR, EGY, MGH, LUZ 
+- Changed some country colours: CYR, EGY, MGH, LUZ, LTS
+- Changed a few culture colours: Guaraní, Lutzan
 - Made it so Brunswick doesn't have a core on Emden, meaning that they should be able to do the decision chain before Germany forms
 - Brabant should no longer sell its islands in Oceania/Volturnia if it has colonized beyond them in the region (continent)
 - Native nations in the New World can no longer take the decision called New Life in the New World
@@ -100,6 +101,8 @@ Minor
 - Pumped up some starting prestige for important European countries
 - Many localizations tweaks and fixes
 - Lots of new event and decision pictures
+- Added some info decisions
+- Added some debug decisions/events
 - Lots of other small stuff not worth mentioning
 - Added a blank province map (current to 0.36.27) for whatever you might want to use it for
 - Moved most unused event/decision pictures into separate folders (mostly for keeping better track of things)

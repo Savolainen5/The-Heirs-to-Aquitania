@@ -2009,7 +2009,7 @@ native_american = {
 		Patiño Quispe Rodríguez Roncaglia "Santa Cruz" Sosa Sumac Toledo Vargas Zapata }
 	}
 	guarani = {
-		color = {89 80 175}
+		color = {191 73 146}
 		first_names = { Aniceto Antonio Bartolomé Camilo Carlos Claudio David Emiliano Eugenio Felipe
 		Félix Fernando Gregorio Jacinto Jesús José Juan Julio Luis Manuel
 		Marcos Máximo Narciso Pablo Pedro Rodrigo Roque Simón Teodoro Víctor }
@@ -2325,7 +2325,7 @@ neo_european_cultures = {
 		Rye Sissener Skjalgsson Tambarskjelve Tordenskjold Wedel-Jarlsberg Wiborg With Zeiner-Gundersen }
 	}
 	lutzan = {
-		color = { 194  168  132 }
+		color = { 145 145 255 }
 		first_names = { Jean Franc Pier Lucc Narcisse René Èdouard Théodore Luis Francois August Joseph Luis-Phillippe Gaspard Eugéne Èssioff Huguel Jean-Pier Gilles}
 
 		last_names = { Lalcet Chauseu Trombley Letellier Belleau Caron "de St.-Just" Robitaille Masson Angers Chapleau Jotte Pantaléon Langelier Damasne LeBlanc Brodeur Perodeau }

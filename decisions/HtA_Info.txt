@@ -1,6 +1,21 @@
 #These are decisions which just contain info for the human player about their countries. Perhaps will be expanded to include the backstory/history of the country in the future.
 political_decisions = {
 
+	info_german = {
+		picture = HtALion1
+		potential = {
+			ai = no
+			OR = {
+				primary_culture = north_german
+				primary_culture = central_german
+				primary_culture = south_german
+				NOT = { tag = AUS }
+			}
+		}
+		allow = { }
+		effect = { }
+	}
+
 	info_MLT = { #Basically just tells them not to play Malta lol
 		picture = HtALion1
 		potential = {

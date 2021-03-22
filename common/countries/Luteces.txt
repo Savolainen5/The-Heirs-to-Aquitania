@@ -1,4 +1,4 @@
-color = { 242  200  82 }
+color = { 145 145 255 } #Originally  242 200 82
 graphical_culture = SouthAmericanGC
 
 party = {
@@ -143,35 +143,29 @@ party = {
 
 unit_names = {
 	dreadnought = {
-		"Nan Shin" "Pao Nim" "Ying Ching" "Ton Chi" "Hai Yung" "Hai Shew" "Hai Shen" "Ying Swei" "Fei Hung" "Chao Ho" "Hai Chi" 
-		"Ying Swei" "Chao Ho" "Ning Hai" "Ping Hai" "Chung king" "Nan Shin" "Pao Nim" "Ying Ching" "Ton Chi" "Hai Yung" "Hai Shew" 
-		"Hai Shen" "Ying Swei" "Fei Hung" 
+		"Chevalier" "Le Lutzan" "Liberté" "Monduroi" "Beaulieu" "Regine" "Atlantique" "Indomitable" "Chassenard" "Lutecie" "Bellevue" "Bachoimont"
+		"Fermanville" "Saint Paul" "Saint Jean" "Saint Pierre"
 		
 	}
 	ironclad = {
-		"Nan Shin" "Pao Nim" "Ying Ching" "Ton Chi" "Hai Yung" "Hai Shew" "Hai Shen" "Ying Swei" "Fei Hung" "Chao Ho" "Hai Chi" 
-		"Ying Swei" "Chao Ho" "Ning Hai" "Ping Hai" "Chung king" "Nan Shin" "Pao Nim" "Ying Ching" "Ton Chi" "Hai Yung" "Hai Shew" 
-		"Hai Shen" "Ying Swei" "Fei Hung" 
+		"Chevalier" "Le Lutzan" "Liberté" "Monduroi" "Beaulieu" "Regine" "Atlantique" "Indomitable" "Chassenard" "Lutecie" "Bellevue" "Bachoimont"
+		"Fermanville" "Saint Paul" "Saint Jean" "Saint Pierre"
 	}
 	manowar = {
-		"Nan Shin" "Pao Nim" "Ying Ching" "Ton Chi" "Hai Yung" "Hai Shew" "Hai Shen" "Ying Swei" "Fei Hung" "Chao Ho" "Hai Chi" 
-		"Ying Swei" "Chao Ho" "Ning Hai" "Ping Hai" "Chung king" "Nan Shin" "Pao Nim" "Ying Ching" "Ton Chi" "Hai Yung" "Hai Shew" 
-		"Hai Shen" "Ying Swei" "Fei Hung" 
+		"Chevalier" "Le Lutzan" "Liberté" "Monduroi" "Beaulieu" "Regine" "Atlantique" "Indomitable" "Chassenard" "Lutecie" "Bellevue" "Bachoimont"
+		"Fermanville" "Saint Paul" "Saint Jean" "Saint Pierre"
 	}
 	cruiser = {
-		"Nan Shin" "Pao Nim" "Ying Ching" "Ton Chi" "Hai Yung" "Hai Shew" "Hai Shen" "Ying Swei" "Fei Hung" "Chao Ho" "Hai Chi" 
-		"Ying Swei" "Chao Ho" "Ning Hai" "Ping Hai" "Chung king" "Nan Shin" "Pao Nim" "Ying Ching" "Ton Chi" "Hai Yung" "Hai Shew" 
-		"Hai Shen" "Ying Swei" "Fei Hung" 
+		"Chevalier" "Le Lutzan" "Liberté" "Monduroi" "Beaulieu" "Regine" "Atlantique" "Indomitable" "Chassenard" "Lutecie" "Bellevue" "Bachoimont"
+		"Fermanville" "Saint Paul" "Saint Jean" "Saint Pierre"
 	}
 	frigate = {
-		"Nan Shin" "Pao Nim" "Ying Ching" "Ton Chi" "Hai Yung" "Hai Shew" "Hai Shen" "Ying Swei" "Fei Hung" "Chao Ho" "Hai Chi" 
-		"Ying Swei" "Chao Ho" "Ning Hai" "Ping Hai" "Chung king" "Nan Shin" "Pao Nim" "Ying Ching" "Ton Chi" "Hai Yung" "Hai Shew" 
-		"Hai Shen" "Ying Swei" "Fei Hung" 
+		"Chevalier" "Le Lutzan" "Liberté" "Monduroi" "Beaulieu" "Regine" "Atlantique" "Indomitable" "Chassenard" "Lutecie" "Bellevue" "Bachoimont"
+		"Fermanville" "Saint Paul" "Saint Jean" "Saint Pierre"
 	}
 	monitor = {
-		"Nan Shin" "Pao Nim" "Ying Ching" "Ton Chi" "Hai Yung" "Hai Shew" "Hai Shen" "Ying Swei" "Fei Hung" "Chao Ho" "Hai Chi" 
-		"Ying Swei" "Chao Ho" "Ning Hai" "Ping Hai" "Chung king" "Nan Shin" "Pao Nim" "Ying Ching" "Ton Chi" "Hai Yung" "Hai Shew" 
-		"Hai Shen" "Ying Swei" "Fei Hung" 
+		"Chevalier" "Le Lutzan" "Liberté" "Monduroi" "Beaulieu" "Regine" "Atlantique" "Indomitable" "Chassenard" "Lutecie" "Bellevue" "Bachoimont"
+		"Fermanville" "Saint Paul" "Saint Jean" "Saint Pierre"
 	}
 	clipper_transport = {
 		
@@ -180,8 +174,7 @@ unit_names = {
 		
 	}
 	commerce_raider = {
-		"Nan Shin" "Pao Nim" "Ying Ching" "Ton Chi" "Hai Yung" "Hai Shew" "Hai Shen" "Ying Swei" "Fei Hung" "Chao Ho" "Hai Chi" 
-		"Ying Swei" "Chao Ho" "Ning Hai" "Ping Hai" "Chung king" "Nan Shin" "Pao Nim" "Ying Ching" "Ton Chi" "Hai Yung" "Hai Shew" 
-		"Hai Shen" "Ying Swei" "Fei Hung" 
+		"Chevalier" "Le Lutzan" "Liberté" "Monduroi" "Beaulieu" "Regine" "Atlantique" "Indomitable" "Chassenard" "Lutecie" "Bellevue" "Bachoimont"
+		"Fermanville" "Saint Paul" "Saint Jean" "Saint Pierre" 
 	}
 }

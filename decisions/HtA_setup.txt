@@ -353,6 +353,32 @@ political_decisions = {
 			badboy = -3
 		}
 	}
-
+	end_dead_wars = {
+		potential = {
+			war = yes
+			war_with = DAU
+			DAU = { exists = no }
+			any_greater_power = {
+				NOT = {
+					war_with = THIS
+				}
+			}
+			any_neighbor_country = {
+				NOT = {
+					war_with = THIS
+				}
+			}
+		}
+		allow = { }
+		effect = {
+			end_war = DAU
+			random_country = {
+				limit = {
+					ai = no
+				}
+				country_event = 59952
+			}
+		}
+	}
 	
 }		

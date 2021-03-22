@@ -30,3 +30,17 @@ country_event = {
 		BRA = { country_event = 50064 }
 	}
 }
+
+#DAU doesn't exist, yet it's at war with someone
+country_event = {
+	id = 59952
+	title = "Daufinat Lays Down Arms"
+	desc = "The country no longer exists, let there be peace with $FROMCOUNTRY$. If you see this event, please inform Savs (see the readme document), and give him the savegame."
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "I promise that I read the description."
+	}
+}

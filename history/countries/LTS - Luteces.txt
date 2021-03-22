@@ -28,11 +28,11 @@ unemployment_subsidies = trinket_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
 
-ruling_party = AAA_conservative_1
+ruling_party = LTS_conservative_1
 upper_house = {
 	fascist = 0
-	liberal = 37
-	conservative = 53
+	liberal = 27
+	conservative = 63
 	reactionary = 10
 	anarcho_liberal = 0
 	socialist = 0

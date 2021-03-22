@@ -104,6 +104,7 @@ CB:
 - Restore monarchy CB?
 - Restrict Europeans' CB potentials on NA uncivs
 - Punitive expedition mechanic to get trade ports in Qin
+- Latvia CB to be unlocked after a certain event
 
 QIN reports from https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-54#post-27034539 :
 - growth of liberal population was too high. About time when i westernized i had like 40-50% of my population being liberals. It meant that when i passed reform, it Decreased my militancy.
@@ -128,6 +129,7 @@ Other:
 - Trans-Hungary for Hungarian-Romanian interaction, particularly in Transylvania
 - Figure out what to do with Ardeal having cores in funny places and then getting annexed to Volasea
 - When Austria is released after dismantlement, it got OTL cores. Why? Fix!
+- Dismantlement seems to hand out random provinces to individual countries when it should do like... States or something.
 - If necessary, add a Cancel Zadar Lease decision for Hungary with the same effects as that for Bohemia
 - Add POP Migration Mod? https://www.reddit.com/r/victoria2/comments/2mtl11/pop_migration_mod_hod
 - Add Better AI Mod?https://forum.paradoxplaza.com/forum/index.php?threads/better-ai-mod.925608/#post-21373359
@@ -150,5 +152,6 @@ Other:
 	- Romans struggle to keep Greeks and Anatolians in check - regionalism
 - Indian accepted cultures: should include Gujarati, should have a way to accept Dravidians
 - 0.40 - Redo states in the low countries as per https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-56#post-27333977
-	
+- Research can be finished well before the end of the game. One player finished in 1924.
+
 Savs, remember that Birth of a Nation is in CleanUp and has the ID 60160
