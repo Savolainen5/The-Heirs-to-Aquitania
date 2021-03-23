@@ -1279,6 +1279,7 @@ country_event = {
 	trigger = {
 		tag = GXI
 		1498 = { NOT = { owned_by = THIS } }
+		has_country_modifier = technological_assistance
 		OR = {
 			civilized = yes
 			1498 = {

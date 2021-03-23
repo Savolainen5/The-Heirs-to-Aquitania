@@ -705,6 +705,7 @@ political_decisions = {
 			primary_culture = russian
 			is_greater_power = yes
 			exists = KZH
+			NOT = { has_country_flag = dominate_kzh }
 			RUS = { NOT = { has_country_flag = dominate_kzh } }
 			SML = { NOT = { has_country_flag = dominate_kzh } }
 			year = 1854

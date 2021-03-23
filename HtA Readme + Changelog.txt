@@ -70,6 +70,7 @@ Minor
 - Added (army) unit files from HFM
 - Changed some country colours: CYR, EGY, MGH, LUZ, LTS
 - Changed a few culture colours: Guaraní, Lutzan
+- Used native names for the Nahua culture, thanks to Komodo
 - Made it so Brunswick doesn't have a core on Emden, meaning that they should be able to do the decision chain before Germany forms
 - Brabant should no longer sell its islands in Oceania/Volturnia if it has colonized beyond them in the region (continent)
 - Native nations in the New World can no longer take the decision called New Life in the New World
@@ -118,6 +119,8 @@ Bugfixes
 - The Encourage Textile Industry NF no longer crashes the game when hovered over
 - Fixed some broken event numbers in HtA_Africa
 - Added some checks to HIS-POR interaction to make sure the countries still exist
+- Fixed Macau event loop for GXI
+- A Great Russian-culture country which isn't RUS or SML cannot spam the Dominate Kazakhs decision anymore
 
 ----------------------------------------------------------------------------------------------------------
 See the OldChangelogs file for previous version changelogs. You can also see them on the subreddit's wiki.

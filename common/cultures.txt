@@ -1980,13 +1980,18 @@ native_american = {
 	}
 	nahua = {
 		color = {88 175 160}
-		first_names = { Antonio Carlos Diego Emiliano Emilio Felipe Fernando Francisco Gaspar Hernando
-		Hilario Ignacio Isaac Jacinto Jesús José Juan Julio Lorenzo Manuel
-		Marcial Mario Martín Natalio Oliverio Pedro Roberto Rodolfo Santiago Víctor }
+		first_names = { Aketzalli Acoatl Ahuiliztli Axochitl Ayotli Aztec Cacalotl Calatzin Cayo Cemelli Chapulin
+        Citlalli Coatl Cuate Coyotl Cuauhtemoc Huitzilin Huilotzin ItzCoyotl ItzPapalotl IzaXochitl Mapachin
+        Mazatl MetziliXochitl Miztli Papaplotl Paquini Patox Quetzalli Quiahuitl Tecolotl Tlacuilo Tlalli Tlazohtli
+        Tochtli Topilli Xipalli Xochitl Yollohtli }
 
-		last_names = { Ahuactzin Altamirano Atlanteco Badiano Bernardino Coaguila Coyotl Cuautlaxahue Gutiérrez Hernández
-		Huanitzin Itzel Ixtlilxochitl Jiménez Matlacuahuac Mayahuel Moxo Muñoz Nahui Ocelotl
-		Panecatl Tlaxca Tletla Tzehe Valeriano Xaxalpa Zicoténcatl Xochitl Zapata Zapotitla }
+        last_names = { Aca Acxotlan Amaxal Azcatl Chapul Chapula Chapulin Coatl Cocolo Cocolotl Colexcua Colomoxca
+        Coyopotl Cuahtzon Cuahuey Cuahuizo Cuahutenco Cuahutle Cuapa Cuatle Cuatlehua Cuatli Cuautli Cuaxiloa Ehecatl
+        Huepa Hueytletl Huitle Huitzil Huitztlacatl Itzcoatl Itzcua Itzmoyotl Maxil Memegua Mixca Moyotl Naxi Nocelotl
+        Ocotoxtle Pancoatl Panecatl Papaqui Patee Petlacalco Quia Quitl Tecaxco Tecualt Tecuatl Tecuampil Tecuanhuehue
+        Tentle Teotl Tepancatl Tepetl Tepeyahuitl Tepontla Tetzopa Teutle Tlachi Tlahuizo Tlalolin Tlapa Tlapaltotoli
+        Tlapanco Tlatehui Tlatoa Tocal Tochihuilt Tochimani Toloma Totozintle Cuacuas Toxqui Toxtle Xicale Xique Xochitecatl
+        Zacatzontetl Zempoaltecatl Zepahua Zitlal Cuachayo Ixehuatl Coyotecatl }
 	}
 	tarascan = {
 		color = {87 188 192}
