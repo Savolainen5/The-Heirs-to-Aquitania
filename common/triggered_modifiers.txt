@@ -65,87 +65,46 @@ grand_army = {
 
 
 city_state = {
-
 	trigger = {
-
 		NOT = {
-
 			num_of_cities = 2
-
 		}
-
 	}
-
 	icon = 10
-
 	prestige = -0.05
-
 }
-
-
 
 small_nation = {
-
 	trigger = {
-
 		civilized = yes
-
 		num_of_cities = 2
-
 		NOT = {
-
 			num_of_cities = 8
-
 		}
-
 	}
-
 	icon = 10
-
 	prestige = -0.025
-
 }
-
-
 
 large_nation = {
-
 	trigger = {
-
 		civilized = yes
-
 		num_of_cities = 50
-
 		NOT = {
-
 			num_of_cities = 100
-
 		}
-
 	}
-
 	icon = 9
-
 	prestige = 0.025
-
 }
 
-
-
 sprawling_empire = {
-
 	trigger = {
-
 		civilized = yes
-
 		num_of_cities = 100
-
 	}
-
 	icon = 9
-
 	prestige = 0.05
-
 }
 
 #New to HtA

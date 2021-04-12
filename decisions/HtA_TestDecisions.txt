@@ -89,5 +89,67 @@ political_decisions = {
 #		}
 #	}
 
+#	not_or_test = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			NOT = {
+#				OR = {
+#					tag = AQT
+#					tag = DAU
+#				}
+#			}
+#		}
+#		effect = {
+#			prestige = 1
+#		}
+#	}
+#
+#	or_not_test = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			OR = {
+#				NOT = { tag = AQT }
+#				NOT = { tag = DAU }
+#			}
+#		}
+#		effect = {
+#			prestige = 1
+#		}
+#	}
+#	
+#		not_and_test = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			NOT = {
+#				AND = {
+#					tag = AQT
+#					tag = DAU
+#				}
+#			}
+#		}
+#		effect = {
+#			prestige = 1
+#		}
+#	}
+#		not_only_test = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			NOT = {
+#				tag = AQT
+#				tag = DAU
+#			}
+#		}
+#		effect = {
+#			prestige = 1
+#		}
+#	}
 
 }

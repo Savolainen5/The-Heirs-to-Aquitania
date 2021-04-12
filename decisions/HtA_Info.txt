@@ -9,8 +9,8 @@ political_decisions = {
 				primary_culture = north_german
 				primary_culture = central_german
 				primary_culture = south_german
-				NOT = { tag = AUS }
 			}
+			NOT = { tag = AUS }
 		}
 		allow = { }
 		effect = { }

@@ -144,6 +144,14 @@ political_decisions = {
 			}
 			has_country_flag = ME_interest
 			exists = ARA
+			NOT = {
+				ARA = { 
+					vassal_of = THIS
+				}
+			}
+			NOT = {
+				has_country_flag = puppeted_arabia
+			}
 		}
 		
 		allow = {
@@ -164,6 +172,7 @@ political_decisions = {
 			}
 			prestige = 5
 			badboy = 2
+			set_country_flag = puppeted_arabia
 		}
 		
 		ai_will_do = {

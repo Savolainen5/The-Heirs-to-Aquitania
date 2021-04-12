@@ -84,6 +84,7 @@ Minor
 - Made requirements for taking the Intervene in Persia decision more clear to the player
 - Increased Make Puppet CB to 10 max badboy (previously 7)
 - Demand concession CB can now target colonial states/provinces of uncivs
+- Made CBs normally available between RUS and SML when railroading is off
 - Increased starting experience in national values, so now they are actually kind of useful. This change is also reflected in the demonstration modifiers which you can see i nthe decision
 - Made the National Assimilation event impossible to fire until 1870
 - Improved the event which signals the end of BRB cores, made it specifically for NET (more, kind of), and added one for BRB
@@ -104,6 +105,7 @@ Minor
 - Lots of new event and decision pictures
 - Added some info decisions
 - Added some debug decisions/events
+- Copied some code from HPM for some LiberalRevolutions events
 - Lots of other small stuff not worth mentioning
 - Added a blank province map (current to 0.36.27) for whatever you might want to use it for
 - Moved most unused event/decision pictures into separate folders (mostly for keeping better track of things)
@@ -121,6 +123,8 @@ Bugfixes
 - Added some checks to HIS-POR interaction to make sure the countries still exist
 - Fixed Macau event loop for GXI
 - A Great Russian-culture country which isn't RUS or SML cannot spam the Dominate Kazakhs decision anymore
+- Non-railroaded Russia can now use the Russian Hegemony CB on Smolensk
+- The Extend to Arabia decision is no longer spammable
 
 ----------------------------------------------------------------------------------------------------------
 See the OldChangelogs file for previous version changelogs. You can also see them on the subreddit's wiki.

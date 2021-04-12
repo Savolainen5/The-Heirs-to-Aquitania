@@ -408,6 +408,7 @@ acquire_core_state = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 	}
@@ -498,6 +499,7 @@ acquire_all_cores = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 	}
@@ -605,6 +607,7 @@ colonial_reconquest_cb = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 	}
@@ -798,6 +801,7 @@ unification_casus_belli = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 	}
@@ -932,6 +936,7 @@ unification_annex_casus_belli = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 	}
@@ -1006,6 +1011,7 @@ annex_core_country = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 #		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -1096,6 +1102,7 @@ add_to_sphere = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -1178,6 +1185,7 @@ unification_humiliate_cb = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -1272,6 +1280,7 @@ unification_GP_humiliate = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -1356,6 +1365,7 @@ unification_release_puppet_cb = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -1449,6 +1459,7 @@ unification_add_to_sphere = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -1525,6 +1536,7 @@ take_from_sphere = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -1627,6 +1639,7 @@ free_peoples = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -1948,6 +1961,7 @@ liberate_country = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -2169,6 +2183,7 @@ free_allied_cores = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -2311,6 +2326,7 @@ free_balkans = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -2456,6 +2472,7 @@ free_latvia = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -2646,6 +2663,7 @@ release_puppet = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -2744,6 +2762,7 @@ release_puppet_AI = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -2847,6 +2866,7 @@ gunboat = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -2935,6 +2955,7 @@ cut_down_to_size = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -3068,6 +3089,7 @@ humiliate = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -3150,6 +3172,7 @@ place_in_the_sun = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -3294,6 +3317,7 @@ acquire_state = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -4427,6 +4451,7 @@ rude_boy = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -4627,6 +4652,7 @@ conquest = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -4879,7 +4905,13 @@ russia_hegemony = {
 		OR = {
 			THIS = {
 				tag = RUS
-				has_country_flag = tatars_join #This essentially gates the war after 1844
+				OR = {
+					AND = {
+						has_global_flag = railroading_on
+						has_country_flag = tatars_join #This essentially gates the war after 1844
+					}
+					NOT = { has_global_flag = railroading_on }
+				}
 			}
 			THIS = {
 				tag = SML
@@ -5349,6 +5381,7 @@ make_puppet = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
@@ -6164,6 +6197,7 @@ dismantle_forts = {
 					THIS = { tag = SML }
 					THIS = { tag = RUS }
 				}
+				has_global_flag = railroading_on
 			}
 		}
 		#BYZ and ANA can't use fabricate it against each other (can't use either?)
