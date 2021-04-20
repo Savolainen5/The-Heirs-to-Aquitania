@@ -968,15 +968,7 @@ country_event = {
 	
 	trigger = {
 		ai = yes
-		OR = {
-			tag = SWI
-			tag = LUX
-			tag = NOR
-			tag = NET
-			tag = WLL
-			tag = SLS
-			tag = AUS
-		}
+		capital_scope = { continent = europe }
 		has_global_flag = brunswick_congress_concluded
 		BAV = { has_country_flag = claim_empire }
 		BRA = { has_country_flag = claim_empire }
@@ -984,7 +976,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 1
+		months = 1
 	}
 	
 	option = {

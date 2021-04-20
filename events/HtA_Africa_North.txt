@@ -53,7 +53,7 @@
 		}
 		
 		mean_time_to_happen = {
-			months = 12
+			months = 3
 		}
 		
 		option = {
@@ -97,7 +97,7 @@
 		title = "EVTNAME52202"
 		desc = "EVTDESC52202"
 		
-		is_triggered_only = yes
+		is_triggered_only = yes				#ADD A PICTURE
 		
 		option = {
 			name = "Some aid is all we can spare."
@@ -155,8 +155,11 @@
 		}
 	}
 
-#Neapolitans uninterested
+#Neapolitans uninterested 52203
 
-#Second raid on (vassal) Malta
+#Second raid on (vassal) Malta 52204
+
+
+
 
 #Neapolitan reaction to that raid

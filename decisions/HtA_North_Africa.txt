@@ -39,7 +39,7 @@ political_decisions = {
 		}
 		allow = {
 			civilized = no
-			total_amount_of_ships = 5
+			total_amount_of_ships = 8
 			854 = {
 				NOT = {
 					has_country_modifier = in_recovery
@@ -50,11 +50,14 @@ political_decisions = {
 			set_country_flag = second_malta_raid
 			money = 5000
 			research_points = 1000
-			853 = {
-				owner = {
-					country_event = 52201
-				}
-			}
+			#853 = {
+			#	owner = {
+			#		country_event = {	#52204, should target NPL because in railroaded mode they will puppet MLT
+			#			id = 52201
+			#			days = 1
+			#		}
+			#	}
+			#}
 		}
-	}	
+	}
 }

@@ -33,8 +33,7 @@ springtime_of_nations = {
 
 global_liberal_agitation = {
 	global_pop_consciousness_modifier = 0.2
-	global_pop_militancy_modifier = 0.05
-	prestige = -0.03
+	global_pop_militancy_modifier = 0.01
 	immigrant_push = 0.25
 	icon = 4
 }
@@ -1975,8 +1974,10 @@ jacin_ilmunt = {
 #Generic events
 
 active_serial_killer = {
-	pop_militancy_modifier = 0.01
-	pop_consciousness_modifier = 0.01
+	pop_militancy_modifier = 0.02
+    immigrant_push = 0.05
+    immigrant_attract = -0.05
+    local_ruling_party_support = -0.1
 	icon = 20
 }
 
@@ -1985,7 +1986,7 @@ great_fire_happened = {
 }
 
 great_fire_recovery = {
-	immigrant_push = 0.1
+	immigrant_push = 0.25
 	local_RGO_output = -0.05
 	population_growth = -0.001
 	poor_income_modifier = -0.05
@@ -2011,7 +2012,7 @@ poor_harvest = {
 	rich_income_modifier = -0.02
 	population_growth = -0.001
 	local_RGO_output = -0.05
-	immigrant_push = 0.2
+	immigrant_push = 0.25
 	icon = 14
 }
 

@@ -33,7 +33,7 @@ PAP = {
 }
 
 leader = {
-	name = "Jacopo Brandozzi de Lucero"
+	name = "Pacifico Somma 'e Lucero"
 	picture = european_general_2
 	date = 1835.1.1
 	type = land
@@ -42,7 +42,7 @@ leader = {
 }
 
 leader = {
-	name = "Gianluca Ambroglio"
+	name = "Ernesto Denzo"
 	picture = european_general_4
 	date = 1832.8.3
 	type = land
@@ -51,7 +51,7 @@ leader = {
 }
 
 leader = {
-	name = "Angelo de Librari"
+	name = "Augusto 'e Biase"
 	picture = european_admiral_8
 	date = 1827.9.10
 	type = sea
@@ -154,7 +154,7 @@ army = {
 	}
 }
 navy = {
-	name = "Marina Riale 'e Napoli"
+	name = "Marina Riale"
 	location = 754
 	ship = {
 		name= "Carlo I"
@@ -248,7 +248,7 @@ navy = {
 }
 
 navy = {
-	name = "Squadra de Malacca"
+	name = "Squatra 'e Malacca"
 	location = 1384
 
 	ship = {

@@ -71,6 +71,7 @@ Minor
 - Changed some country colours: CYR, EGY, MGH, LUZ, LTS
 - Changed a few culture colours: Guaraní, Lutzan
 - Used native names for the Nahua culture, thanks to Komodo
+- Copied over a lot of stuff about cultural tech from HPM, mostly so that the choice modifiers are more complex and so that there isn't so much colonial migration from tech (+0.5 per level before, now ´+0.05)
 - Made it so Brunswick doesn't have a core on Emden, meaning that they should be able to do the decision chain before Germany forms
 - Brabant should no longer sell its islands in Oceania/Volturnia if it has colonized beyond them in the region (continent)
 - Native nations in the New World can no longer take the decision called New Life in the New World
@@ -85,9 +86,11 @@ Minor
 - Increased Make Puppet CB to 10 max badboy (previously 7)
 - Demand concession CB can now target colonial states/provinces of uncivs
 - Made CBs normally available between RUS and SML when railroading is off
-- Increased starting experience in national values, so now they are actually kind of useful. This change is also reflected in the demonstration modifiers which you can see i nthe decision
+- Increased starting experience in national values, so now they are actually kind of useful. This change is also reflected in the demonstration modifiers which you can see in the decision
+- Changed some 1840s revolutions modifiers (global_liberal_agitation, among others) about liberalism to be more in line with HPM, not that I think it'll make much of a difference for the militancy problem
 - Made the National Assimilation event impossible to fire until 1870
 - Improved the event which signals the end of BRB cores, made it specifically for NET (more, kind of), and added one for BRB
+- Expanded the event which enables the German Hegemony wars so that more AI countries can take it, in the case of MP games or highly aggressive players where the previous countries may no longer exist
 - Added decisions for an independent Greece to claim the rest of the state of Thessalonikos and (if jingoist) to claim Crete
 - Greek party tweaks
 - Study Room Meetings should disappear from all BOH-owned provinces after they defeat the revolution
