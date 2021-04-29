@@ -206,7 +206,7 @@ province_event = {
 			name = switched_production
 			duration = 1825
 		}
-		change_province_name = "Johannesburg"
+		#change_province_name = "Johannesburg"
 		owner = {
 			add_country_modifier = {
 				name = witwatersrand_gold_rush
@@ -1694,7 +1694,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		change_province_name = "Calgary"
 		add_province_modifier = {
 			name = switched_production
 			duration = 1825

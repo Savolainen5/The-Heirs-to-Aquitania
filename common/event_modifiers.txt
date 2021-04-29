@@ -497,9 +497,9 @@ boer_exodus = {
 	icon = 20
 }
 
-gold_rush = {
-	global_immigrant_attract = 0.5
-	immigrant_attract = 10		#300%
+gold_rush = {									#This needs testing! Possibly need to buff the immigrant_attract, though before it was 1000, which is way too much
+	global_immigrant_attract = 0.5 #50%
+	immigrant_attract = 1		#100%
 	life_rating = 0.5
 	icon = 11
 }

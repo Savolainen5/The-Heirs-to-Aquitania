@@ -62,10 +62,13 @@ Major
 - Decision for AI countries not to interfere in the Russian wars if both RUS and SML are AI. They will take the decision to leave the war if they are called in and accept it.
 
 Minor
+- Severely nerfed the OP Gold Rush modifier - now gives an immigrant attract of only 100% instead of ten times that. This needs testing to see if it should be buffed up a bit. Maybe 300%
 - Reorganized African events files
 - Some more starting generals - thanks to MajorMajor
 - Many new flags (both default and alternate) - thanks to Athemos for most of them
 - Netherlands' Integrate Wallonia decision now gives a core, too
+- French decisions to accept Wallonians, Picards and Bretons will now cost 5% of their prestige instead of a piddly 1 or 2
+- Forming the Scylfiga Woning now gives 30 prestige instead of 120% of what you had.
 - Added the Prusai culture, Baltic-speaking remnants of the Old Prussians, to the Polish-Lithuanian border region, along with a country for it - Prusova (tag PRS)
 - Added (army) unit files from HFM
 - Changed some country colours: CYR, EGY, MGH, LUZ, LTS
@@ -90,7 +93,7 @@ Minor
 - Changed some 1840s revolutions modifiers (global_liberal_agitation, among others) about liberalism to be more in line with HPM, not that I think it'll make much of a difference for the militancy problem
 - Made the National Assimilation event impossible to fire until 1870
 - Improved the event which signals the end of BRB cores, made it specifically for NET (more, kind of), and added one for BRB
-- Expanded the event which enables the German Hegemony wars so that more AI countries can take it, in the case of MP games or highly aggressive players where the previous countries may no longer exist
+- Tweaked the event announcing the German Hegemony wars so that more countries can do it in case there are some really overzealous conquerors in MP
 - Added decisions for an independent Greece to claim the rest of the state of Thessalonikos and (if jingoist) to claim Crete
 - Greek party tweaks
 - Study Room Meetings should disappear from all BOH-owned provinces after they defeat the revolution
@@ -101,6 +104,8 @@ Minor
 - Bulgaria gets cores on the Black Sea coastal provinces it should have cores on when the Bulgarian Insurrection event fires
 - Added an event to make Ardeal release Banat and Syrmia and lose cores on them if it does not own land connected to that area (as often happens)
 - Added a decision to regain the abovementioned lands as cores of Ardeal
+- Tried to fix the Stilhav Naval Base decision for HOY, wasn't very successful.
+- Brought in the HND country file from HPM with some tweaks
 - Tweaked a few LRs
 - Tweaked a few RGOs in Aengland
 - Pumped up some starting prestige for important European countries
@@ -128,6 +133,7 @@ Bugfixes
 - A Great Russian-culture country which isn't RUS or SML cannot spam the Dominate Kazakhs decision anymore
 - Non-railroaded Russia can now use the Russian Hegemony CB on Smolensk
 - The Extend to Arabia decision is no longer spammable
+- The event which gives Calgary oil no longer renames the province to Calgary
 
 ----------------------------------------------------------------------------------------------------------
 See the OldChangelogs file for previous version changelogs. You can also see them on the subreddit's wiki.

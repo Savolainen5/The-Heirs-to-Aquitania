@@ -249,7 +249,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			prestige_factor = 1.2
+			prestige = 30
 			add_accepted_culture = skamisc
 			add_accepted_culture = ginnaecerisc
 			SKM = { all_core = { add_core = SCW } }

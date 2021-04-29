@@ -49,6 +49,7 @@ Decisions:
 - Ardeal forms some union of Hungarian and Volasean peoples
 - Caliphate claims and stuff like that: Egypt is the best claimant, but maybe Persia and maybe Maghreb? Mali?
 - SHC accepts some neighbouring cultures if they hold their territory?
+- Indian cultures: Accept Dravidians, Assamese, Kashmiri
 
 POPs:
 
@@ -93,6 +94,9 @@ Map:
 - Some provinces are alone in their state, which makes them NOT tempting targets (like Cherkoee's northern provinces) - Do something about this
 - Tunis has some cores on uncolonized land?
 - Make some desert provinces in the Middle East have not 35 LR because that's ridiculous. Or just think about it some more - is there any reason a 3k POP province shouldn't have 35LR? It's not like their POP is gonna boom, it's a desert province!
+- Central and South American LR - make more than 30
+- Make the Oheskewen Canal have its own province and also make the chain to build it more similar to modern canal event chains
+- Burma missing a core on Pegu
 
 Flags: More about this can be found in the "List of small things to be done" on the forum (https://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-5#post-20555393)
 - In general, any flag suggestions are welcome, particulary for vanilla countries
@@ -139,8 +143,7 @@ Other:
 - More to be done with rebels wanting to break free of Italy in the north?
 - Look into tweaking migration so that it's more likely to happen toward neighbouring countries Dictatorship > Democracy
 - Give Brabant more land/outposts to explain how they got New Caledonia
-- Nerf colonial migration? (There was the case of Blackhog's insane Suez colonial migration)
-- Buff population growth, especially in the new world
+- Buff population growth, especially in the new world (will partly be solved by increasing LR)
 - If more iron is needed, add the Alegria iron mine to prov2442 (Monduroi) in USR? The problem is that it opened in 1992
 - Nerf migration to CLF and SKM due to their remoteness? Necessary? Too realistic?
 - ANA stuff:
@@ -152,6 +155,7 @@ Other:
 	- Romans struggle to keep Greeks and Anatolians in check - regionalism
 - Indian accepted cultures: should include Gujarati, should have a way to accept Dravidians
 - 0.40 - Redo states in the low countries as per https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-56#post-27333977
-- Research can be finished well before the end of the game. One player finished in 1924.
+- Research can be finished well before the end of the game. One player finished in 1924
+- Revamp canals to be more along HPM lines, and get rid of the Dividends events because they're ugly (also need to rename the one that's still called the Panama Canal Dividends)
 
 Savs, remember that Birth of a Nation is in CleanUp and has the ID 60160
