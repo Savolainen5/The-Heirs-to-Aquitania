@@ -178,6 +178,75 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = 97608
+	title = "EVTNAME97608" #Japanese Surrender
+	desc = "EVTDESC97608"
+	picture = "treaty"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "It seems we have little choice."
+		set_country_flag = surrendered_to_perry_hta #Can't think of a better name now
+		prestige = -10
+		treasury = -100000
+		FROM = { country_event = 97609 }
+		remove_country_modifier = uncivilized_isolationism
+		add_country_modifier = {
+			name = "western_influences"
+			duration = -1
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "We will hold out!"
+		war_exhaustion = 20
+		FROM = { country_event = 97610 }
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = 97609
+	title = "EVTNAME97609" #The Japanese Have Surrendered
+	desc = "EVTDESC97609"
+	news = yes
+	news_title = "EVTNAME97609_NEWS_TITLE"
+	news_desc_long = "EVTDESC97609_NEWS_LONG"
+	news_desc_medium = "EVTDESC97609_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC97609_NEWS_SHORT"
+	picture = "commodore_perry"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		clr_country_flag = negotiate_unequal_treaty_TKG
+		FROM = { clr_country_flag = negotiate_unequal_treaty_TKG }
+		prestige = 10
+		end_war = FROM
+		treasury = 100000
+		relation = { who = FROM value = 300 }
+		diplomatic_influence = { who = FROM value = 200 }
+	}
+}
+
+country_event = {
+	id = 97610
+	title = "EVTNAME97610" #The Japanese Have Refused!
+	desc = "EVTDESC97610"
+	picture = "treaty"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "An unfortunate choice."
+		prestige = -5
+		FROM = { clr_country_flag = negotiate_unequal_treaty_TKG }
+	}
+}
 
 #####################################################################################
 #																					#

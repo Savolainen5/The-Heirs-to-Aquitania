@@ -96,8 +96,8 @@
 		id = 52202
 		title = "EVTNAME52202"
 		desc = "EVTDESC52202"
-		
-		is_triggered_only = yes				#ADD A PICTURE
+		picture = "palazzo_reale_napoli"
+		is_triggered_only = yes
 		
 		option = {
 			name = "Some aid is all we can spare."
@@ -156,7 +156,24 @@
 	}
 
 #Neapolitans uninterested 52203
-
+	country_event = {
+		id = 52203
+		title = "EVTNAME52203"
+		desc = "EVTDESC52203"
+		picture = "palazzo_reale_napoli"
+		is_triggered_only = yes
+		
+		option = {
+			name = "The Romans."
+		}
+		option = {
+			name = "Hispania."
+		}
+		option = {
+			name = "We will make do somehow."
+		}
+	}
+		
 #Second raid on (vassal) Malta 52204
 
 

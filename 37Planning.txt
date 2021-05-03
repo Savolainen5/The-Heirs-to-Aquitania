@@ -41,7 +41,6 @@ Italy:
 Other:
 - Keep refining the Outremer and Near East files (like there was that one player who had a truce with Persia but wasn't involved in the war, but still got stuff)
 - Make the crisis stopping event work even more. Event 60168 in crises.txt
-- See if rebelspam can be reduced by stealing rebel code from HPM/HFM?
 - Remove/rework SGF formation (esp. localization)
 	- Also fix GER formation and dismantlement. Weird stuff like Old Croatia sticking with Germany, cores remaining on BOH land even after it regains the provinces -- BOH given a new_bohemia flag when it reforms, use that to trigger the loss of non-BOH cores
 		- GER gets vanilla-type cores, EWWW

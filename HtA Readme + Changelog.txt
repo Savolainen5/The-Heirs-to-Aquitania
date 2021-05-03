@@ -17,12 +17,12 @@ Feel free to use anything from this mod without asking me. Please do attribute i
 
 Thanks to:
 
-- /u/ChortlingGnome, who contributed A LOT for Hispania, China, and other things
+- /u/ChortlingGnome, who contributed A LOT for Hispania, China, North Ameriga and other things
 - /u/capitanloco6 / MajorMajor, who wrote events and decisions regarding French ambitions in the Holy Land and the dismantling of Persia, as well as giving some flags and fixing Catalan military/party names
+- /u/Flapjack731 for ideas and content contribution
 - /u/firenine09, /u/1tobedoneX, and /u/Sommern, for being a sounding board and giving many good ideas and flags
 - /u/_Rosseau_, for the new Norway flags. Incorporated with permission
 - /u/Rangerage, who did a lot of POP rebalancing in BYZ/ARM based off of my EU3 save
-- /u/Flapjack731 for ideas and content contribution
 - Rylock and contributors to the excellent NNM, off of which so many mods are based
 - Developers of /gsg/Vickymod (Hisuibro, Finnbro), on which my mod is mostly based - v1.06 (itself based on NNM) - Its changelog is included among the files here
 - Developers of and contributors to the Improbable Nations Mod, Community Made Countries mod, ParadoxPlaza Mod, the Symbols Flagpack (Chandlerw1) for flags and code for decisions and events
@@ -44,6 +44,7 @@ Thanks to:
 - Discux for parties for lots of New World countries
 - Rennes for showing me how $ORDER$ works in war localization
 - Jorde for testing help
+- zake for pointing out many bugs and things to improve
 
 NB for the changelog - Anything with lots of # or * after it is something Savs is still working on or hasn't gotten fully/correctly implemented yet
 
@@ -76,6 +77,8 @@ Minor
 - Used native names for the Nahua culture, thanks to Komodo
 - Copied over a lot of stuff about cultural tech from HPM, mostly so that the choice modifiers are more complex and so that there isn't so much colonial migration from tech (+0.5 per level before, now ´+0.05)
 - Made it so Brunswick doesn't have a core on Emden, meaning that they should be able to do the decision chain before Germany forms
+- Added events to remove cores of minors for BRA, BRN, BAV and GER
+- GER gets a core on SWI when taking the Helvetian Patrimony decision
 - Brabant should no longer sell its islands in Oceania/Volturnia if it has colonized beyond them in the region (continent)
 - Native nations in the New World can no longer take the decision called New Life in the New World
 - Made gold rush events not fire until 1870 for uncives
@@ -95,6 +98,7 @@ Minor
 - Improved the event which signals the end of BRB cores, made it specifically for NET (more, kind of), and added one for BRB
 - Tweaked the event announcing the German Hegemony wars so that more countries can do it in case there are some really overzealous conquerors in MP
 - Added decisions for an independent Greece to claim the rest of the state of Thessalonikos and (if jingoist) to claim Crete
+- Added an info decision for the Roman Empire and made the implications of some events/decisions slightly clearer
 - Greek party tweaks
 - Study Room Meetings should disappear from all BOH-owned provinces after they defeat the revolution
 - Added a decision for a resurgent Bohemia to lease Zadar again
@@ -104,8 +108,10 @@ Minor
 - Bulgaria gets cores on the Black Sea coastal provinces it should have cores on when the Bulgarian Insurrection event fires
 - Added an event to make Ardeal release Banat and Syrmia and lose cores on them if it does not own land connected to that area (as often happens)
 - Added a decision to regain the abovementioned lands as cores of Ardeal
+- Added and modified some of the NaturalDisaster events from vanilla
 - Tried to fix the Stilhav Naval Base decision for HOY, wasn't very successful.
-- Brought in the HND country file from HPM with some tweaks
+- Brought in the HND country file from HPM with some tweaks and also changed its colour to a kind of bright pink
+- Removed GNG from files and all references to it
 - Tweaked a few LRs
 - Tweaked a few RGOs in Aengland
 - Pumped up some starting prestige for important European countries
@@ -134,6 +140,8 @@ Bugfixes
 - Non-railroaded Russia can now use the Russian Hegemony CB on Smolensk
 - The Extend to Arabia decision is no longer spammable
 - The event which gives Calgary oil no longer renames the province to Calgary
+- Middag no longer magically becomes Taiwan
+- Readded missing events for the Treaty of Kanagawa
 
 ----------------------------------------------------------------------------------------------------------
 See the OldChangelogs file for previous version changelogs. You can also see them on the subreddit's wiki.

@@ -335,7 +335,7 @@ army = {
 	regiment = {
 		name= "11. Brigada de Infantería"
 		type = infantry
-		home = 516
+		home = 477
 	}
 }
 
@@ -348,7 +348,7 @@ navy = {
 	}
 
 	ship = {
-		name= "Héroe"
+		name= "Hércules"
 		type = manowar
 	}
 

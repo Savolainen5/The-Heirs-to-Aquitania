@@ -1458,7 +1458,7 @@ province_event = {
 			}
 		}
 		NOT = {
-			is_core = GNG
+			is_core = GXI
 			is_core = HNN
 			is_core = HUI
 			is_core = KMT
@@ -1526,7 +1526,7 @@ province_event = {
 			}
 		}
 		NOT = {
-			is_core = GNG
+			is_core = GXI
 			is_core = HNN
 			is_core = HUI
 			is_core = KMT
@@ -1542,7 +1542,7 @@ province_event = {
 			region = CHI_1465
 		}
 		any_neighbor_province = {
-			is_core = GNG
+			is_core = GXI
 		}
 	}
 	
@@ -1573,7 +1573,7 @@ province_event = {
 	option = {
 		name = "This is becoming worrisome."
 		state_scope = { 
-			any_owned = { add_core = GNG }
+			any_owned = { add_core = GXI }
 		}
 	}
 }
@@ -1596,7 +1596,7 @@ province_event = {
 			}
 		}
 		NOT = {
-			is_core = GNG
+			is_core = GXI
 			is_core = HNN
 			is_core = HUI
 			is_core = KMT
@@ -1664,7 +1664,7 @@ province_event = {
 			}
 		}
 		NOT = {
-			is_core = GNG
+			is_core = GXI
 			is_core = HNN
 			is_core = HUI
 			is_core = KMT
@@ -1736,7 +1736,7 @@ province_event = {
 			}
 		}
 		NOT = {
-			is_core = GNG
+			is_core = GXI
 			is_core = HNN
 			is_core = HUI
 			is_core = KMT
@@ -1812,7 +1812,7 @@ province_event = {
 			}
 		}
 		NOT = {
-			is_core = GNG
+			is_core = GXI
 			is_core = HNN
 			is_core = HUI
 			is_core = KMT
@@ -1886,7 +1886,7 @@ province_event = {
 			}
 		}
 		NOT = {
-			is_core = GNG
+			is_core = GXI
 			is_core = HNN
 			is_core = HUI
 			is_core = KMT
@@ -1957,7 +1957,7 @@ province_event = {
 			}
 		}
 		NOT = {
-			is_core = GNG
+			is_core = GXI
 			is_core = HNN
 			is_core = HUI
 			is_core = KMT
@@ -2026,7 +2026,7 @@ province_event = {
 			}
 		}
 		NOT = {
-			is_core = GNG
+			is_core = GXI
 			is_core = HNN
 			is_core = HUI
 			is_core = KMT
@@ -2127,7 +2127,7 @@ country_event = {
 			revolt_percentage = 0.10
 			average_militancy = 4
 			exists = HUI
-			exists = GNG
+			exists = GXI
 			tag = KMT
 			AND = {
 				tag = CHI
@@ -2244,7 +2244,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.5
-			exists = GNG
+			exists = GXI
 		}
 		modifier = {
 			factor = 0.8
@@ -2314,7 +2314,7 @@ country_event = {
 				OR = {
 					tag = FJN
 					tag = GMJ
-					tag = GNG
+					tag = GXI
 					tag = HNN
 					tag = HUI
 					tag = MCK
@@ -2339,14 +2339,14 @@ country_event = {
 		}
 		random_country = {
 			limit = {
-				tag = GNG
+				tag = GXI
 				vassal_of = THIS
 			}
-			THIS = { release_vassal = GNG }
+			THIS = { release_vassal = GXI }
 		}
 		any_owned = {
-			limit = { is_core = GNG }
-			secede_province = GNG
+			limit = { is_core = GXI }
+			secede_province = GXI
 		}
 		random_country = {
 			limit = {
@@ -2447,28 +2447,28 @@ country_event = {
 			limit = { is_core = YNN }
 			secede_province = YNN
 		}
-		random_owned = {
-			limit = {
-				province_id = 1485
-				owner = {
-					NOT = { owns = 1482 }
-				}
-			}
-			1485 = {
-				remove_core = FJN
-				add_core = TAI
-			}
-			2562 = {
-				remove_core = FJN
-				add_core = TAI
-			}
-			owner = {
-				any_owned = {
-					limit = { is_core = TAI }
-					secede_province = TAI
-				}
-			}
-		}
+#		random_owned = {			#This isn't useful because Middag is far less involved in Chinese affairs and there has not been tons of Chinese immigration to the island. At least not as of 0.37.
+#			limit = {
+#				province_id = 1485
+#				owner = {
+#					NOT = { owns = 1482 }
+#				}
+#			}
+#			1485 = {
+#				remove_core = FJN
+#				add_core = TAI
+#			}
+#			2562 = {
+#				remove_core = FJN
+#				add_core = TAI
+#			}
+#			owner = {
+#				any_owned = {
+#					limit = { is_core = TAI }
+#					secede_province = TAI
+#				}
+#			}
+#		}
 		random_country = {
 			limit = {
 				tag = FJN
@@ -2516,7 +2516,7 @@ country_event = {
 		OR = {
 			tag = FJN
 			tag = GMJ
-			tag = GNG
+			tag = GXI
 			tag = HNN
 			tag = HUI
 			tag = MCK
@@ -2696,7 +2696,7 @@ country_event = {
 			factor = 40
 			modifier = {
 				factor = 0
-				tag = GNG
+				tag = GXI
 				NOT = { exists = KMT }
 			}
 			modifier = {
@@ -2777,7 +2777,7 @@ country_event = {
 			factor = 20
 			modifier = {
 				factor = 0
-				tag = GNG
+				tag = GXI
 				NOT = { exists = KMT }
 			}
 			modifier = {
@@ -2828,7 +2828,7 @@ country_event = {
 		OR = {
 			tag = FJN
 			tag = GMJ
-			tag = GNG
+			tag = GXI
 			tag = HNN
 			tag = HUI
 			tag = MCK
@@ -3019,7 +3019,7 @@ country_event = {
 			factor = 30
 			modifier = {
 				factor = 0
-				tag = GNG
+				tag = GXI
 				NOT = { exists = KMT }
 			}
 			modifier = {
@@ -3182,7 +3182,7 @@ country_event = {
 			factor = 20
 			modifier = {
 				factor = 0
-				tag = GNG
+				tag = GXI
 				NOT = { exists = KMT }
 			}
 			modifier = {
@@ -3233,7 +3233,7 @@ country_event = {
 		OR = {
 			tag = FJN
 			tag = GMJ
-			tag = GNG
+			tag = GXI
 			tag = HNN
 			tag = HUI
 			tag = MCK
@@ -3424,7 +3424,7 @@ country_event = {
 			factor = 25
 			modifier = {
 				factor = 0
-				tag = GNG
+				tag = GXI
 				NOT = { exists = KMT }
 			}
 			modifier = {
@@ -3736,7 +3736,7 @@ country_event = {
 			factor = 20
 			modifier = {
 				factor = 0
-				tag = GNG
+				tag = GXI
 				NOT = { exists = KMT }
 			}
 			modifier = {

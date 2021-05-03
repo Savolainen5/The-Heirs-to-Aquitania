@@ -551,7 +551,7 @@ country_event = {
 	}
 }
 
-# Germany/NGF attempts to annex Transvaal
+# Germany/NGF attempts to annex Obervahl
 country_event = {
 	id = 52008
 	title = "EVTNAME98245" #Annexation of the Transvaal
@@ -615,6 +615,14 @@ country_event = {
 				duration = 1095
 			}
 			all_core = {
+				limit = {
+					owner = {
+						NOT = {
+							capital_scope = europe
+							is_greater_power = yes
+						}
+					}
+				}
 				add_core = THIS
 				add_core = SAF
 			}
@@ -630,6 +638,14 @@ country_event = {
 				exists = yes
 			}
 			all_core = {
+				limit = {
+					owner = {
+						NOT = {
+							capital_scope = europe
+							is_greater_power = yes
+						}
+					}
+				}
 				add_core = THIS
 				add_core = SAF
 			}
@@ -647,6 +663,14 @@ country_event = {
 				exists = yes
 			}
 			all_core = {
+				limit = {
+					owner = {
+						NOT = {
+							capital_scope = europe
+							is_greater_power = yes
+						}
+					}
+				}
 				add_core = THIS
 				add_core = SAF
 			}
@@ -2234,7 +2258,7 @@ country_event = {
 			name = small_country_draft
 			duration = 1095
 		}
-		NET = {
+		FROM = {														#This might not work
 			war = {
 				target = THIS
 				attacker_goal = {

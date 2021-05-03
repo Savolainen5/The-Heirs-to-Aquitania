@@ -126,8 +126,36 @@ political_decisions = {
 					militancy = -1
 					move_pop = 967
 				}
-			}			
-		}	
+			}
+			UKR = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = roman
+							has_pop_culture = greek
+						}
+					}
+					reduce_pop = 0.95
+					consciousness = 2
+					militancy = -1
+					move_pop = 967
+				}
+			}
+			SRU = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = roman
+							has_pop_culture = greek
+						}
+					}
+					reduce_pop = 0.95
+					consciousness = 2
+					militancy = -1
+					move_pop = 967
+				}
+			}
+		}
 	}
 	
 	expand_to_kilikia = {

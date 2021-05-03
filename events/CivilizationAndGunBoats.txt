@@ -3803,7 +3803,6 @@ country_event = {
 					tag = SZC
 					tag = YNN
 					tag = GXI
-					tag = GNG
 					tag = FJN
 				}
 			}

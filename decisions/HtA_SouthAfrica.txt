@@ -384,7 +384,7 @@ political_decisions = {
 			}
 			war = yes
 			NOT = {
-				has_country_flag = appealed_to_the_british
+				has_country_flag = appealed_to_the_dutch
 				in_sphere = NET
 				war_with = NET
 				truce_with = NET
@@ -408,7 +408,7 @@ political_decisions = {
 		}
 
 		effect = {
-			set_country_flag = appealed_to_the_british
+			set_country_flag = appealed_to_the_dutch
 			NET = { country_event = 98241 }
 		}
 		

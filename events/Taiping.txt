@@ -97,7 +97,6 @@
 #				OR = {
 #					is_core = GXI
 #					is_core = XBI
-#					is_core = GNG
 #					region = CHI_1559
 #				}
 #			}
@@ -157,7 +156,6 @@
 #				OR = {
 #					is_core = GXI
 #					is_core = XBI
-#					is_core = GNG
 #					region = CHI_1559
 #				}
 #			}

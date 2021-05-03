@@ -107,6 +107,8 @@ country_event = {
 			PAP_741 = { owned_by = NPL } 
 			TUS_744 = { owned_by = NPL } 
 		}
+		NOT = { vassal_of = NPL }
+		NPL = { NOT = { vassal_of = THIS } }
 	}
 	
 	mean_time_to_happen = {
@@ -148,6 +150,8 @@ country_event = {
 			PAP_741 = { owned_by = ITA } 
 			TUS_744 = { owned_by = ITA } 
 		}
+		NOT = { vassal_of = ITA }
+		ITA = { NOT = { vassal_of = THIS } }
 	}
 	
 	mean_time_to_happen = {

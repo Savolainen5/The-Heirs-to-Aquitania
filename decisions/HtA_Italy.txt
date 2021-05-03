@@ -41,4 +41,27 @@ political_decisions = {
 			set_country_flag = caserta_education_decree_made
 		}
 	}
+	
+	install_miravelli_governor = {
+		picture = form_gran_colombia
+		potential = {
+			OR = {
+				tag = NPL
+				tag = ITA
+			}
+			accepted_culture = north_italian
+			744 = { is_core = TUS }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			prestige = 150
+		}
+		effect = {
+			prestige_factor = -0.2
+			TUS_744 = {
+				remove_core = THIS
+				add_core = THIS
+			}
+		}
+	}
 }

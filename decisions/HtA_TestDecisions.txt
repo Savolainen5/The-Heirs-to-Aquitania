@@ -59,17 +59,6 @@ political_decisions = {
 #		}
 #	}
 
-#	all_core_test = {
-#		potential = {
-#			ai = no
-#		}
-#		allow = {
-#			all_core = { owned_by = THIS }
-#		}
-#		effect = {
-#			prestige = 1
-#		}
-#	}
 
 #	puppet_cb_test = {
 #		potential = {
@@ -151,5 +140,28 @@ political_decisions = {
 #			prestige = 1
 #		}
 #	}
+#
+#	hanover_test = {		#You can fire events for countries which don't exist
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			NOT = { exists = HAN }
+#		}
+#		effect = {
+#			HAN = { country_event = 989898989 }
+#		}
+#	}
+
+#	pfactor_test = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {}
+#		effect = {
+#			prestige_factor = -0.1 #Rmeove 10% of your current prestige
+#		}
+#	}
+
 
 }

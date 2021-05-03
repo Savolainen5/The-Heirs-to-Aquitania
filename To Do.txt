@@ -77,6 +77,7 @@ Militaries:
 - Navies for much of the world
 - Central American countries
 - Uilscyr, after POP adjustment
+- Make sure BYZ revolter tags actually build militaries and shit
 
 Localisation:
 - In general, modify non-HtA events so they fit the world as is.
@@ -157,5 +158,6 @@ Other:
 - 0.40 - Redo states in the low countries as per https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-56#post-27333977
 - Research can be finished well before the end of the game. One player finished in 1924
 - Revamp canals to be more along HPM lines, and get rid of the Dividends events because they're ugly (also need to rename the one that's still called the Panama Canal Dividends)
+- Remove unused countries more systematically (0.40)
 
 Savs, remember that Birth of a Nation is in CleanUp and has the ID 60160

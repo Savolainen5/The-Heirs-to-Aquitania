@@ -1,6 +1,16 @@
 #These are decisions which just contain info for the human player about their countries. Perhaps will be expanded to include the backstory/history of the country in the future.
 political_decisions = {
 
+	info_BYZ = {
+		picture = HtALion1
+		potential = {
+			ai = no
+			tag = BYZ
+		}
+		allow =  { }
+		effect = { }
+	}
+		
 	info_german = {
 		picture = HtALion1
 		potential = {

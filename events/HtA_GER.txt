@@ -1037,4 +1037,196 @@ country_event = {
 	
 #Event for troubles in the south of the Austrian domain if SGF forms
 
+#Event to remove cores of German minors a while after the Congress - Brunswick
+country_event = {
+	id = 50095
+	title = "EVTNAME50095"
+	desc = "EVTDESC50095"
+	picture = "leopold_von_hohenzollern"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRA
+		has_global_flag = brunswick_congress_concluded
+		any_owned_province = {
+			is_core = HAN
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "Peak efficiency!"
+		prestige = 3
+		any_owned = {
+			limit = {
+				continent_scope = europe
+				is_core = GER
+				is_core = BRA
+			}
+			remove_core = BRE
+			remove_core = FRM
+			remove_core = HAN
+			remove_core = HEK
+			remove_core = LUB
+			remove_core = MEC
+			remove_core = MNR
+			remove_core = MNZ
+			remove_core = NAS
+			remove_core = OLD
+			remove_core = POM
+			remove_core = RHI
+			remove_core = SAX
+			remove_core = THU
+			remove_core = TRR
+			remove_core = WES
+		}
+	}
+}
+
+#Event to remove cores of German minors a while after the Congress - Brandenburg
+country_event = {
+	id = 50096
+	title = "EVTNAME50096"
+	desc = "EVTDESC50096"
+	picture = "leopold_von_hohenzollern"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRN
+		has_global_flag = brunswick_congress_concluded
+		any_owned_province = {
+			OR = {
+				is_core = THU
+				is_core = MEC
+				is_core = SAX
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "Peak efficiency!"
+		prestige = 3
+		any_owned = {
+			limit = {
+				continent_scope = europe
+				is_core = GER
+				is_core = BRN
+			}
+			remove_core = BRE
+			remove_core = FRM
+			remove_core = HAN
+			remove_core = HEK
+			remove_core = LUB
+			remove_core = MEC
+			remove_core = MNR
+			remove_core = MNZ
+			remove_core = NAS
+			remove_core = OLD
+			remove_core = POM
+			remove_core = RHI
+			remove_core = SAX
+			remove_core = THU
+			remove_core = TRR
+			remove_core = WES
+		}
+	}
+}
+
+#Event to remove cores of German minors a while after the (Munich) Congress - Bavaria
+country_event = {
+	id = 50097
+	title = "EVTNAME50097"
+	desc = "EVTDESC50097"
+	picture = "leopold_von_hohenzollern"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BAV
+		has_global_flag = brunswick_congress_concluded
+		has_country_flag = munich_conference
+		any_owned_province = {
+			OR = {
+				is_core = WUR
+				is_core = BAD
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "Peak efficiency!"
+		prestige = 3
+		any_owned = {
+			limit = {
+				continent_scope = europe
+				is_core = GER
+				is_core = BAV
+			}
+			remove_core = BAD
+			remove_core = ELS
+			remove_core = FRM
+			remove_core = WUR
+		}
+	}
+}
+
+#Event to remove cores of large German countries a while after GER formation
+country_event = {
+	id = 50098
+	title = "EVTNAME50098"
+	desc = "EVTDESC50098"
+	picture = "bayern"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		any_owned_province = {
+			OR = {
+				is_core = BRA
+				is_core = BRN
+				is_core = BAV
+			}
+		}
+		NOT = {
+			exists = BRA
+			exists = BRN
+			exists = BAV
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "Peak efficiency!"
+		prestige = 3
+		any_owned = {
+			limit = {
+				continent_scope = europe
+				is_core = GER
+			}
+			remove_core = BAV
+			remove_core = BRA
+			remove_core = BRN
+			remove_core = LUB
+		}
+	}
+}
+
+
 #Event ID 50099 is over in HtA_ITA. I wish I'd allocated more numbers.

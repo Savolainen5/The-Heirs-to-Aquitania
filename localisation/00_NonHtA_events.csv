@@ -545,7 +545,7 @@ EVTNAME97616;$PROVINCENAME$ Incident;;;;;;;;;;;;x,,,,,,,,,,
 EVTNAME97615;Sonno Joi;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME97610;The Japanese Have Refused!;;;;;;;;;;;;x,,,,,,,,,,
 EVTNAME97609;The Japanese Have Surrendered;;;;;;;;;;;;x,,,,,,,,,,
-EVTNAME97608;Japanese Surrender?;;;;;;;;;;;;x,,,,,,,,,,
+EVTNAME97608;Japanese Surrender?;x
 EVTNAME97607;The Japanese Are Defiant!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME97606;Commodore Perry Successful;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME97605;Kurofune;;;;;;;;;;;;x,,,,,,,,,,
@@ -949,6 +949,15 @@ EVTNAME31515;The Greater Germany Question;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME31515;The Greater Germany Question;;;;;;;;;;;;x,,,,,,,,,,
 EVTNAME31511;Limited Autonomy for $COUNTRY$;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME31510;A Greater Austrian Destiny?;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME21500;Meteor Strikes Tunguska!;;x;;;;
+EVTDESC21500;The Tunguska explosion of 1908, which produced a devastating fireball in Siberia that destroyed forests and caused worldwide tremors, was the result of an asteroid or meteor, scientists believe. ;;;x;;;;;
+EVTOPTA21500;Eeep!;;x;;;;;
+EVTNAME21510;Krakatoa Explodes!;x
+EVTDESC21510;The eruption of the Krakatau volcano and the resultant tsunami left over 36500 dead in the East Indies, and the sound of the eruption was heard 3000 miles away on the Dutch Mauritius island of Rodrigues in the Indian Ocean. The explosion had a tremendous global impact, with the sky darkening worldwide for years afterwards, producing intensely red sunsets and other optical effects, as well as global average temperature dropping by more than a degree Celsius.;;x
+EVTOPTA21510;Eeep!;;x
+EVTNAME21520;Gran Bahia Earthquake!;;x;
+EVTDESC21520;A major earthquake has struck Gran Bahia, Califiana, today, causing widespread devastation and the loss of thousands of lives. Tremors have been reported as far away inland as Jute, and the fire that erupted as a result of the earthquake has left the city more or less leveled. Army units are hard at work bringing in supplies to the survivors, and we can rest assured that the quake will leave its mark on public memory for generations to come.;;x
+EVTOPTA21520;Eeep!;x
 EVTNAME20115;Incident in $STATENAME$;;;;;;;;;;;;x,,,,,,,,,,
 EVTNAME20112;Long Memories;;;;;;;;;;;;x,,,,,,,,,,
 EVTNAME20111;Trouble in $STATENAME$;;;;;;;;;;;;x,,,,,,,,,,
@@ -963,14 +972,14 @@ EVTNAME19366;The Restoration of $FROMCOUNTRY$;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME19366;The Restoration of $FROMCOUNTRY$;;;;;;;;;;;;x,,,,,,,,,,
 EVTNAME19365;The Restoration of $COUNTRY$;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME19365;The Restoration of $COUNTRY$;;;;;;;;;;;;x,,,,,,,,,,
-EVTNAME19047;Mummy Found;Découverte d'une momie;Mumie gefunden;;Momia encontrada;;;;;;;;;x;;;;,,,,,,,,,,
-EVTNAME19046;Tutankhamun's Tomb;Le tombeau de Toutânkhamon;Tutanchamuns Grab;;La tumba de Tutankamón;;;;;;;;;x;;;;,,,,,,,,,,
-EVTNAME19045;Curse of The Pharaohs!;La malédiction des pharaons !;Der Fluch der Pharaonen!;;¡La maldición de los faraones!;;;;;;;;;x;;;;,,,,,,,,,,
-EVTNAME19044;Egyptian Tomb Discovered!;Découverte d'un tombeau égyptien !;Ägyptisches Grab entdeckt!;;¡Descubierta tumba egipcia!;;;;;;;;;x;;;;,,,,,,,,,,
-EVTNAME19043;Bribing Officials;Corruption de fonctionnaires;Bestechung von Offiziellen;;Soborno de funcionarios;;;;;;;;;x;;;;,,,,,,,,,,
-EVTNAME19042;Egypt Refuses Excavation Permit;L'Égypte refuse un permis de fouille;Ägypten verweigert Ausgrabungsrechte;;Egipto deniega el permiso de excavación;;;;;;;;;x;;;;,,,,,,,,,,
-EVTNAME19041;Egypt Grants Excavation Permit;L'Égypte accorde un permis de fouille;Ägypten gewährt Ausgrabungsrechte;;Egipto concede el permiso de excavación;;;;;;;;;x;;;;,,,,,,,,,,
-EVTNAME19040;Excavation Rights Requested;Droits de fouille requis;Ausgrabungsrechte beantragt;;Solicitud de derechos de excavación;;;;;;;;;x;;;;,,,,,,,,,,
+EVTNAME19047;Mummy Found;;;x;;;;,,,,,,,,,,
+EVTNAME19046;Tutankhamun's Tomb;;;x;;;;,,,,,,,,,,
+EVTNAME19045;Curse of The Pharaohs!;;x;;;;,,,,,,,,,,
+EVTNAME19044;Egyptian Tomb Discovered!;;x;;;;,,,,,,,,,,
+EVTNAME19043;Bribing Officials;x;;;;,,,,,,,,,,
+EVTNAME19042;Egypt Refuses Excavation Permit;x;;;;,,,,,,,,,,
+EVTNAME19041;Egypt Grants Excavation Permit;;x;;;;,,,,,,,,,,
+EVTNAME19040;Excavation Rights Requested;;;x;;;;,,,,,,,,,,
 EVTNAME18571;Rejecting the West?;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME18565;A Return to Western Influence?;;;;;;;;;;;;x,,,,,,,,,,
 EVTNAME18562;The Fight Against Progress;;;;;;;;;;;;x,,,,,,,,,,
@@ -1486,7 +1495,7 @@ EVTDESC97616;There has been an incident in $PROVINCENAME$ where samurai, acting 
 EVTDESC97615;'Revere the emperor and expel the barbarians!'\n\nThis is the slogan chanted by neo-confucian activists, reacting to the Tokugawa shogunate's opening of Japan to foreigners. There have been growing reports of violence all over the country, primarily against foreign visitors and statesmen but also against the shogunate itself. Each incident chips away at Tokugawa control over the daimyo and erodes relations with the western powers.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 EVTDESC97610;Despite the overwhelming odds against them, the Japanese have refused our generous offer of surrender.;;;;;;;;;;;;x,,,,,,,,,
 EVTDESC97609;We have formally concluded a treaty with the Japanese which will see our influence restored, and our demands for their ports to be opened to our ships to be met. Additionally, an indemnity will be placed upon their government to make up for the expense of the $COUNTRY_ADJ$ war effort.;;;;;;;;;;;;x,,,,,,,,
-EVTDESC97608;We are being overwhelmed by the superior might of western armaments. Despite the loss of face, we must consider offering the hated foreigners terms of our surrender.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,
+EVTDESC97608;We are being overwhelmed by the superior might of western armaments. Despite the loss of face, we must consider offering the hated foreigners terms of our surrender.;;;;;;;;;;;;x
 EVTDESC97607;Commodore Perry has returned from his mission to Japan with unfortunate news: they have chosen to defy his ultimatum and thumb their collective noses at our government. Should we back down now, it will be a great blow to our prestige and our influence in the Far East.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,
 EVTDESC97606;Commodore Perry has returned from his mission to Japan with a treaty in hand: we have gained numerous trade concessions, but more importantly we have cracked open the shield that is Japan's policy of isolation. This is a great coup for American diplomacy and influence in the Far East.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,
 EVTDESC97605;More 'black ships' have appeared off our shores, these ones commanded by an American named Commodore Matthew Perry. The ill-tempered westerner is demanding an end to the Japanese policy of Sokoku-- specifically trading rights in several ports, extraterritoriality for American sailors and protection for their shipwrecks. At first he demanded to negotiate with the Emperor, but that is impossible. Thus it falls to the Shogun to either agree to his demands, risking the appearance of weakness, or refuse and bring the wrath of the Americans upon us.;;;;;;;;;;;;x,,,,,
@@ -1761,7 +1770,7 @@ EVTDESC80110;A diplomat from Russia has arrived in $COUNTRY$ with an infuriating
 EVTDESC80103;The Amban, our Imperial representative from Peking and effectively the governor of $COUNTRY$, has informed our government that $FROMCOUNTRY$ has concluded a treaty with Russia, a treaty that includes portions of $COUNTRY_ADJ$ territory, with now must be handed over without comment. Should we refuse, we face war with $FROMCOUNTRY$ and Russia both.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,
 EVTDESC66689;Sometimes in this world, nations seem to be blessed by God in certain periods. Their leaders are brilliant, their people are hardy, they excel in warfare, produce amazing works of culture, and their economies boom. Do we live in such a world? If Lucky Nations are turned on, ten random civilized nations who are not Great Powers and five random uncivilized nations will be given special bonuses that will enable them to shake up the status quo of the world by giving them significant bonuses.;;;;;;x,,,,
 EVTDESC60169;In $YEAR$, $COUNTRY$ started to employ unusual tactics. They infiltrated soldiers, funded rebels and movements to raise tensions in the areas of their interest. They were doing this in more of an organised fashion. This kind of approach was pioneered by some small extremist political organisations and soon was copied by more mainstream groups even governments. \n Groups ask for funds and terrorist cells start to appear as nations begin applying this new kind of power projection. A new era of revolutions dawns.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-EVTDESC60168;Ethnic and religious tensions have long plagued the Old World. But the preeminent countries of the world are not ready to upset the balance of power in favor of the rights of the downtrodden at this time.\n\nNote for players: This is part of the system to (try to) keep crises from happening before 1870. It's a crude system that doesn't always work.;x
+EVTDESC60168;Ethnic and religious tensions have long plagued the Old World. But the preeminent countries of the world are not ready to upset the balance of power in favor of the rights of the downtrodden at this time.\n\n§RNote for players: This is part of the system to (try to) keep crises from happening before 1870. It's a crude system that doesn't always work, and nothing I do seems to fix it. I welcome suggestions.;x
 EVTDESC60160;Today crowds gathered in $CAPITAL$ to celebrate $COUNTRY$'s independence. In the modern world, independence can be a fleeting thing, so we must enjoy it while we can. Today, $COUNTRY_ADJ$ flags wave from every window and corner, and jubilant citizens sing the $COUNTRY_ADJ$ anthem. It is a heartfelt theme that speaks of better tomorrows.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,
 EVTDESC60140;With the new government firmly in control of our country, they feel that now is the time for a constitutional convention. Everyone's views, well at least everyone who truly matters, will be represented in this new gathering to shape the path of our nation.;Alors que les libéraux tiennent les rênes de notre pays, ils estiment le moment venu pour une convention constitutionnelle. Les vues de chacun, du moins de tous ceux qui importent vraiment, seront représentées dans cette nouvelle assemblée afin de forger la voie de nos nations.;Die Liberalen haben unser Land fest im Griff, und sie glauben, dass es jetzt an der Zeit für eine konstitutionelle Verfassung ist. In dieser neuen Verfassung, die den zukünftigen Weg unserer Nation eben wird, werden die Meinungen aller repräsentiert sein, zumindest jener, auf deren Meinung es wirklich ankommt.;;Los liberales, con un firme control sobre el país, creen que ha llegado el momento de organizar una convención constitucional. Todo el mundo (al menos todo el mundo que cuenta) estará representado en esta gran asamblea que dará forma al futuro de nuestro país.;;;;;;;;x  ;,,,,,,,,
 EVTDESC49510;Our subjects in Finland have become restless, and resistance against attempts of Russification have been growing. Many within the Russian government believe that a restoration of the Diet of Finland and limited self-government for their nation is the only answer.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,

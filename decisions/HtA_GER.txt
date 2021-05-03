@@ -405,7 +405,7 @@ political_decisions = {
 			badboy = 7
 			set_country_flag = helvetian_patrimony
 			inherit = SWI
-			SWI = { all_core = { any_pop = { militancy = 6 consciousness = 6 } } }
+			SWI = { all_core = { any_pop = { militancy = 6 consciousness = 6 } add_core = GER } }
 		}
 		ai_will_do = {
 			factor = 1

@@ -514,14 +514,6 @@ political_decisions = {
 					in_sphere = THIS
 				}
 			}
-			GNG = {
-				OR = {
-					exists = no
-					has_country_flag = kuomintang_faction
-					has_country_flag = neutral_faction
-					in_sphere = THIS
-				}
-			}
 			GXI = {
 				OR = {
 					exists = no
@@ -724,14 +716,6 @@ political_decisions = {
 					in_sphere = THIS
 				}
 			}
-			GNG = {
-				OR = {
-					exists = no
-					has_country_flag = neutral_faction
-					has_country_flag = communist_faction
-					in_sphere = THIS
-				}
-			}
 			GXI = {
 				OR = {
 					exists = no
@@ -926,14 +910,6 @@ political_decisions = {
 				}
 			}
 			GMJ = {
-				OR = {
-					exists = no
-					tag = THIS
-					has_country_flag = neutral_faction
-					in_sphere = THIS
-				}
-			}
-			GNG = {
 				OR = {
 					exists = no
 					tag = THIS

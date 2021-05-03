@@ -419,7 +419,6 @@ DAI		= "countries/Dai Viet.txt"
 DJA		= "countries/Jambi.txt"
 FJN		= "countries/Fujian.txt"
 GMJ		= "countries/Guominjun.txt"
-GNG		= "countries/Guangdong.txt"
 GXI		= "countries/Guangxi Clique.txt" #Rebranded as Nanyue
 HNG		= "countries/Hongsawatoi.txt" #EU3 Pegu, Mon primary culture
 HNN		= "countries/Hunan.txt"

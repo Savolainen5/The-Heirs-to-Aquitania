@@ -446,6 +446,11 @@ country_event = {
 				id = 100040006
 				days = 2
 			}
+			country_event = {
+				id = 60160
+				days = 1
+			}
+			money = 100000
 		}
 	}
 	
@@ -481,6 +486,11 @@ country_event = {
 				id = 100040006
 				days = 2
 			}
+			country_event = {
+				id = 60160
+				days = 1
+			}
+			money = 100000
 		}
 		change_tag_no_core_switch = ANA
 		
@@ -634,8 +644,13 @@ country_event = {
 		GRE = {
 			country_event = {
 				id = 100060004
-				days = 5
+				days = 2
 			}
+			country_event = {
+				id = 60160
+				days = 1
+			}
+			money = 100000
 			define_general = {
 				name = "Nikos Patoulidou"
 				personality = resourceful
@@ -666,8 +681,13 @@ country_event = {
 		GRE = {
 			country_event = {
 				id = 100040004
-				days = 5
+				days = 2
 			}
+			country_event = {
+				id = 60160
+				days = 1
+			}
+			money = 100000
 			define_general = {
 				name = "Nikos Patoulidou"
 				personality = resourceful
@@ -722,6 +742,8 @@ country_event = {
 		prestige = -10
 		release = CRE
 		release = CYP
+		CRE = { money = 100000 }
+		CYP = { money = 100000 }
 		relation = {
 			who = CRE
 			value = -150
@@ -741,6 +763,8 @@ country_event = {
 		prestige = -10
 		release = CRE
 		release = CYP
+		CRE = { money = 100000 }
+		CYP = { money = 100000 }
 		relation = {
 			who = CRE
 			value = -150
@@ -761,6 +785,8 @@ country_event = {
 		prestige = -10
 		release = CRE
 		release = CYP
+		CRE = { money = 100000 }
+		CYP = { money = 100000 }
 		relation = {
 			who = CRE
 			value = -150

@@ -1,0 +1,34 @@
+#country_event = {
+#	id = 989898989
+#	title = "Test"
+#	desc = "desc"
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = "OK"
+#		FROM = {
+#			country_event = 9898989891
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = 9898989891
+#	title = "Did it work"
+#	desc = "yes"
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = "Nice."
+#		FROM = {
+#			all_core = {
+#				limit = {
+#					owned_by = THIS
+#				}
+#				remove_core = FROM				#this is the only thing that doesn't work for a non-existent country. I guess it's just not possible to target them with effects using FROM and THIS
+#			}
+#		}
+#	}
+#}

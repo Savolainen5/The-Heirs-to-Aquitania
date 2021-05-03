@@ -71,7 +71,7 @@ political_decisions = {
 
 	#Embrace Romansh
 	embrace_romansh = {
-        	picture = negotiations
+        picture = negotiations
 		potential = {	
 			OR = {
 				tag = SGF
@@ -90,8 +90,7 @@ political_decisions = {
 		}
         
 		effect = {
-			prestige = -5
-			badboy = -1
+			prestige_factor = -0.05
 			add_accepted_culture = romansh
 			set_country_flag = romansh_embraced
 			SWI = { all_core = { any_pop = { militancy = -1 consciousness = -1 } } }

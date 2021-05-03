@@ -1,0 +1,112 @@
+#Tunguska Meteor Strike
+country_event = {
+	id = 21500
+	title = "EVTNAME21500"
+	desc = "EVTDESC21500"
+	news = yes
+	news_desc_long = "EVTDESC21500_NEWS_LONG"
+	news_desc_medium = "EVTDESC21500_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC21500_NEWS_SHORT"
+	picture = "destroyed_forest"
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		year = 1908
+		owns = 2694
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "EVTOPTA21500"
+		2694 = {
+			any_pop = {
+				reduce_pop = 0.90
+			}
+			life_rating = -10
+		}
+	}
+}
+
+#Krakatoa Explodes
+country_event = {
+	id = 21510
+	title = "EVTNAME21510"
+	desc = "EVTDESC21510"
+	news = yes
+	news_desc_long = "EVTDESC21510_NEWS_LONG"
+	news_desc_medium = "EVTDESC21510_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC21510_NEWS_SHORT"
+	picture = "pelee"
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		year = 1883
+		owns = 1414
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	option = {
+		name = "EVTOPTA21510"
+		1414 = {	#Bogor
+			any_pop = {
+				reduce_pop = 0.9
+			}
+			life_rating = -1
+		}
+		1413 = {	#Batavia
+			any_pop = {
+				reduce_pop = 0.9
+			}
+			life_rating = -1
+		}
+		1403 = {	#Lampung
+			any_pop = {
+				reduce_pop = 0.9
+			}
+			life_rating = -1
+		}
+	}
+}
+
+# San Francisco (Gran Bahia) Earthquake
+country_event = {
+	id = 21520
+	title = "EVTNAME21520"
+	desc = "EVTDESC21520"
+	news = yes
+	news_desc_long = "EVTDESC21520_NEWS_LONG"
+	news_desc_medium = "EVTDESC21520_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC21520_NEWS_SHORT"
+	picture = "earthquake"
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		year = 1906
+		owns = 84
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "EVTOPTA21520"
+		84 = {
+			any_pop = {
+				reduce_pop = 0.90
+			}
+		}
+	}
+}
