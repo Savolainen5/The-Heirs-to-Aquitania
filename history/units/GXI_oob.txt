@@ -50,16 +50,16 @@ army = {
 		type = irregular
 		home = 1500
 	}
+}
+
+army = {
+	name = "2nd Grey Banner Army"
+	location = 1482
 	regiment = {
 		name= "10th Grey Banners"
 		type = irregular
 		home = 1547
 	}
-}
-
-army = {
-	name = "2nd Grey Banner Army"
-	location = 1484
 	regiment = {
 		name= "11th Grey Banners"
 		type = irregular
@@ -95,6 +95,12 @@ army = {
 		type = irregular
 		home = 1551
 	}
+}
+
+army = {
+	name = "Army of the North"
+	location = 1545
+	
 	regiment = {
 		name= "18th Grey Banners"
 		type = irregular
@@ -109,6 +115,21 @@ army = {
 		name= "20th Grey Banners"
 		type = irregular
 		home = 1495
+	}
+	regiment = {
+		name= "21st Grey Banners"
+		type = irregular
+		home = 1484
+	}
+	regiment = {
+		name= "22nd Grey Banners"
+		type = irregular
+		home = 1486
+	}
+	regiment = {
+		name= "22nd Grey Banners"
+		type = irregular
+		home = 1546
 	}
 }
 
@@ -159,10 +180,5 @@ army = {
 		name= "9th Red Standards"
 		type = irregular
 		home = 1482
-	}
-	regiment = {
-		name= "10th Red Standards"
-		type = irregular
-		home = 1484
 	}
 }

@@ -463,7 +463,9 @@ MNT_ADJ;Montenegrin;;;;;;;;;;;;;x
 MNZ;Mainz;;;;;;;;;;;;;x
 MNZ_ADJ;Mainzer;;;;;;;;;;;;x
 MRG;Margaria;;;;;;;;;;;;;x                                                 
-MRG_ADJ;Margarian;;;;;;;;;;;;;x                                            
+MRG_ADJ;Margarian;;;;;;;;;;;;;x
+MRV;Moravia;x
+MRV_ADJ;Moravian;x                                         
 NAV;Navarra;;;;;;;;;;;;;x                                                  
 NAV_ADJ;Navarrese;;;;;;;;;;;;;x
 NAL_conservative;Vorauser Parti;;;;;;;;;;x

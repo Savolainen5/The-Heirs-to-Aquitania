@@ -85,6 +85,7 @@ BOH		= "countries/Bohemia.txt"
 BYE		= "countries/Belarus.txt"
 CRI		= "countries/Crimea.txt"
 HUN		= "countries/Hungary.txt"
+MRV		= "countries/Moravia.txt" #This country should never exist, hopefully. It's mostly there to prevent assimilation after the Treaty of Szekes.
 POL		= "countries/Poland.txt"
 PRH		= "countries/Prague.txt"
 PRS		= "countries/Prusova.txt"

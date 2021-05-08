@@ -17,7 +17,6 @@ Events:
 - Teralarga ideas: see Suggestions
 - Unequal Treaty events for Nanyue, tweak it for Qin
 - Unequal Treaty includes Nanyue VN land
-- Qin civil war of some kind?
 - Some kind of country/nationalism for Solelha in Florida
 - Dissolution of Maghreb (see suggestions)
 - Competition for colonies in SEA, especially between NAP and HIS in the Malay peninsula
@@ -44,17 +43,15 @@ Decisions:
 - Portugal claims Atlantic islands
 - check NationalUnification to see if the Arab Union needs to have the relevant culture group excluded in order to be able to form
 - A union of Margaria and Vestland
-- A GP with power in the area can get Hong Kong somehow if they aren't the one that got Macao
-- Korea goes after Manchuria
 - Ardeal forms some union of Hungarian and Volasean peoples
 - Caliphate claims and stuff like that: Egypt is the best claimant, but maybe Persia and maybe Maghreb? Mali?
 - SHC accepts some neighbouring cultures if they hold their territory?
 - Indian cultures: Accept Dravidians, Assamese, Kashmiri
+- Korea goes after Manchuria
 
 POPs:
 
 - Craftsmen in Europe (which is less industrialised than vanilla)
-- Readd Mahayana in China, since all Mahayana were changed to Confucian
 - Increase POPs in the super-low-POP countries like SKM, MDT, YKT, KZH, YUC
 - Reduce POPs in Vestland, Margaria, Hoyekysten because there aren't a lot of Scandinavians to migrate to these countries
 - Orthodox minorities in the Middle East, Armenian heartland, see http://i.imgur.com/7uVsYh4.png
@@ -77,7 +74,8 @@ Militaries:
 - Navies for much of the world
 - Central American countries
 - Uilscyr, after POP adjustment
-- Make sure BYZ revolter tags actually build militaries and shit
+- Make sure BYZ revolter tags actually build militaries
+- Ensure that all countries with a military start with something on their capital
 
 Localisation:
 - In general, modify non-HtA events so they fit the world as is.
@@ -97,28 +95,17 @@ Map:
 - Make some desert provinces in the Middle East have not 35 LR because that's ridiculous. Or just think about it some more - is there any reason a 3k POP province shouldn't have 35LR? It's not like their POP is gonna boom, it's a desert province!
 - Central and South American LR - make more than 30
 - Make the Oheskewen Canal have its own province and also make the chain to build it more similar to modern canal event chains
-- Burma missing a core on Pegu
+- Consider adding a naval base to one of the Balearic Islands
 
 Flags: More about this can be found in the "List of small things to be done" on the forum (https://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-5#post-20555393)
 - In general, any flag suggestions are welcome, particulary for vanilla countries
 
 CB:
 - Incorporate /u/sdrasmu4's split conquest CBs? The only trouble is that maybe the AI would be bad at using it and that would mess up balance
-- China: Demand Concession CB gives 0 infamy when there are no valid targets
 - Increase badboy decay since war is meant to be more widespread?
 - Restore monarchy CB?
 - Restrict Europeans' CB potentials on NA uncivs
-- Punitive expedition mechanic to get trade ports in Qin
 - Latvia CB to be unlocked after a certain event
-
-QIN reports from https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-54#post-27034539 :
-- growth of liberal population was too high. About time when i westernized i had like 40-50% of my population being liberals. It meant that when i passed reform, it Decreased my militancy.
-- There is no way or at least i didn't find any to annex my sub-states.
-- There is no decision to core most/all of China or became China as Qin. Decision to reform Qin Empire could do that job with harder prerequisites.
-- Decision for accepting Baifaren?/Southern Han culture is hard to get because of militancy requirement. Can we have another decision to accept Min/Yue/Zhuang/Hakka cultures?
-- Unity national value is bit OP with 50% of assimilation bonus which means it can assimilate core cultures if you know what i mean.
-- Event for serial killer is popping too many times.
-
 
 Other:
 - Go back through eventually and add newspaper entries
@@ -159,5 +146,28 @@ Other:
 - Research can be finished well before the end of the game. One player finished in 1924
 - Revamp canals to be more along HPM lines, and get rid of the Dividends events because they're ugly (also need to rename the one that's still called the Panama Canal Dividends)
 - Remove unused countries more systematically (0.40)
+
+SEA rework:
+- Sikkim's Indian status (probably shouldn't necessarily be a part of India since it's more Himalayan in character and doesn't have the same political forces as OTL)
+- Burma missing a core on Pegu
+- Regions in the Siam-LPBG-LXA-CAM area
+
+China (0.45):
+- HPM nerfs and other systems
+- China: Demand Concession CB gives 0 infamy when there are no valid targets
+- Punitive expedition mechanic to get trade ports in Qin
+- Readd Mahayana in China, since all Mahayana were changed to Confucian
+- A GP with power in the area can get Hong Kong somehow if they aren't the one that got Macao
+- Maybe the country that buys Macao shouldn't sphere such a huge country as Nanyue?
+QIN reports from https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-54#post-27034539 :
+- growth of liberal population was too high. About time when i westernized i had like 40-50% of my population being liberals. It meant that when i passed reform, it Decreased my militancy.
+- There is no way or at least i didn't find any to annex my sub-states.
+- There is no decision to core most/all of China or became China as Qin. Decision to reform Qin Empire could do that job with harder prerequisites.
+- Decision for accepting Baifaren?/Southern Han culture is hard to get because of militancy requirement. Can we have another decision to accept Min/Yue/Zhuang/Hakka cultures?
+- Unity national value is bit OP with 50% of assimilation bonus which means it can assimilate core cultures if you know what i mean.
+- Event for serial killer is popping too many times.
+
+Lonca/Argentina (0.66/0.67)
+- Rework/improve southerly expansion (Consider looking at code from HPM or whatever)
 
 Savs, remember that Birth of a Nation is in CleanUp and has the ID 60160

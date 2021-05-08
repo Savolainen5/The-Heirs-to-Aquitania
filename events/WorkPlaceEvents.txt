@@ -7,57 +7,56 @@ country_event = {
 	picture = "Mining"
 	
 	trigger = {
-		produces = coal
-		has_pop_type = capitalists
+        any_state = {
+            is_colonial = no
+            any_owned_province = {
+                has_pop_type = capitalists
+                produces = coal
+            }
+        }
 	}
-	
-	mean_time_to_happen = {
-		months = 240
-		
-		modifier = {
-			factor = 0.8
-			safety_regulations = trinket_safety
-		}
-		modifier = {
-			factor = 1.5
-			safety_regulations = low_safety
-		}
-		modifier = {
-			factor = 3
-			safety_regulations = acceptable_safety
-		}
-		modifier = {
-			factor = 4
-			safety_regulations = good_safety
-		}		
-	}
-	
-	option = {
-		name = "EVTOPTA12000"
-		random_owned = {
-			limit = {
-				produces = coal
-				has_pop_type = capitalists
-			}
-			state_scope = {
-				bureaucrats = {
-					consciousness = 1
-				}
-				capitalists = {
-					consciousness = 1
-				}
-				clerks = {
-					consciousness = 1
-				}
-			}
-		}
-	}
-	option = {
-		name = "EVTOPTB12000"
-		labourers = {
-			consciousness = 0.5
-		}
-	}
+
+    mean_time_to_happen = {
+        months = 500
+
+        modifier = {
+            factor = 0.9
+            safety_regulations = trinket_safety
+        }
+        modifier = {
+            factor = 2
+            safety_regulations = low_safety
+        }
+        modifier = {
+            factor = 6
+            safety_regulations = acceptable_safety
+        }
+        modifier = {
+            factor = 8
+            safety_regulations = good_safety
+        }
+    }
+
+    option = {
+        name = "EVTOPTA12000"
+        random_owned = {
+            limit = {
+                state_scope = {
+                    produces = coal
+                    has_pop_type = capitalists
+                }
+            }
+            state_scope = {
+                bureaucrats = { consciousness = 1 }
+                capitalists = { consciousness = 1 }
+                clerks = { consciousness = 1 }
+            }
+        }
+    }
+    option = {
+        name = "EVTOPTB12000"
+        labourers = { consciousness = 0.5 }
+    }
 }
 
 # Parlimentary Inquiry
@@ -68,32 +67,38 @@ country_event = {
 	picture = "Mining"
 	
 	trigger = {
-		produces = coal
-		plurality = 5
-		OR = {
-			government = hms_government
-			government = prussian_constitutionalism
-			government = democracy
-		}
-		
-	}
-	mean_time_to_happen = {
-		months = 400
-		modifier = {
-			factor = 0.8
-			plurality = 10
-		}
-		modifier = {
-			factor = 0.9
-			plurality = 15
-		}
-		modifier = {
-			factor = 1.5
-			NOT = {
-				plurality = 10
-			}
-		}
-	}
+        any_owned_province = {
+            produces = coal
+            is_colonial = no
+        }
+        plurality = 30
+        civilized = yes
+        OR = {
+            government = hms_government
+            government = prussian_constitutionalism
+            government = democracy
+        }
+        OR = {
+            safety_regulations = trinket_safety
+            safety_regulations = no_safety
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 600
+        modifier = {
+            factor = 0.8
+            plurality = 30
+        }
+        modifier = {
+            factor = 0.9
+            plurality = 35
+        }
+        modifier = {
+            factor = 1.5
+            NOT = { plurality = 30 }
+        }
+    }
 	
 	option = {
 		name = "EVTOPTA12010"
@@ -123,7 +128,11 @@ province_event = {
 		owner = {
 			press_rights = free_press
 		}
-		produces = coal
+        any_owned_province = {
+            trade_goods = coal
+            is_colonial = no
+        }
+        civilized = yes
 	}
 	
 	mean_time_to_happen = {
@@ -162,42 +171,19 @@ province_event = {
 	desc = "EVTDESC12030"
 	
 	trigger = {
-		produces = ammunition
-		owner = {
-			ammunition = 50
-		}
-		NOT = {
-			owner = {
-				economic_policy = laissez_faire
-			}
-		}
-	}
+        ammunition = 50
+        economic_policy = laissez_faire
+        any_state = { has_building = ammunition_factory }
+        NOT = { has_global_flag = workplace_events_disabled }
+    }
 	
-	mean_time_to_happen = {
-		months = 800
-		modifier = {
-			factor = 0.9
-			owner = {
-				economic_policy = interventionism
-			}
-		}
-		modifier = {
-			factor = 0.8
-			owner = {
-				economic_policy = state_capitalism
-			}
-		}
-		modifier = {
-			factor = 0.7
-			owner = {
-				economic_policy = planned_economy
-			}
-		}
-		modifier = {
-			factor = 1.5
-			poor_strata_life_needs = 0.9
-		}
-	}
+    mean_time_to_happen = {
+        months = 800
+        modifier = {
+            factor = 1.5
+            poor_strata_life_needs = 0.9
+        }
+    }
 	
 	option = {
 		name = "EVTOPTA12030"
@@ -219,14 +205,16 @@ province_event = {
 	id = 12040
 	title = "EVTNAME12040"
 	desc = "EVTDESC12040"
-	
-	trigger = {
-		produces = fertilizer
-		has_pop_type = capitalists
-	}
+
+    trigger = {
+        has_pop_type = capitalists
+        has_building = fertilizer_factory
+        NOT = { unemployment_by_type = { type = craftsmen value = 0.05 } }
+        owner = { NOT = { has_global_flag = workplace_events_disabled } }
+    }
 		
 	mean_time_to_happen = {
-		months = 800
+		months = 1800
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -244,22 +232,15 @@ province_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA12040"
-		any_pop = {
-			consciousness = 0.5
-		}
-		owner = {
-			fertilizer = 10
-		}
-	}
-	
-	option = {
-		name = "EVTOPTB12040"
-		capitalists = {
-			consciousness = 1
-			militancy = 1
-		}
-	}
+        name = "EVTOPTA12040"
+        state_scope = { any_pop = { consciousness = 0.5 } }
+        owner = { fertilizer = 10 }
+    }
+
+    option = {
+        name = "EVTOPTB12040"
+        state_scope = { capitalists = { consciousness = 1 militancy = 1 } }
+    }
 }
 
 # Tea Weighing Station Robbed
@@ -274,10 +255,11 @@ province_event = {
 		owner = {
 			tea = 40
 		}
+        NOT = { has_global_flag = workplace_events_disabled }
 	}
 		
 	mean_time_to_happen = {
-		months = 1000
+		months = 1200
 		modifier = {
 			factor = 0.9
 			average_militancy = 5
@@ -314,20 +296,22 @@ province_event = {
 			tea = -40
 		}
 	}
-	
-	option = {
-		name = "EVTOPTB12050"
-		farmers = {
-			militancy = 1.5
-		}
-	}
-	
-	option = {
-		name = "EVTOPTC12050"
-		bureaucrats = {
-			militancy = 3
-		}
-	}
+
+    option = {
+        name = "EVTOPTB12050"
+        random_province = {
+            limit = { trade_goods = tea }
+            state_scope = { farmers = { militancy = 1.5 } }
+        }
+    }
+
+    option = {
+        name = "EVTOPTC12050"
+        random_province = {
+            limit = { trade_goods = tea }
+            state_scope = { bureaucrats = { militancy = 3 } }
+        }
+    }
 }
 
 # Feed the Hungry Soldiers

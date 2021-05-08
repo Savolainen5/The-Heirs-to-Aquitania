@@ -735,7 +735,7 @@ country_event = {
 }	
 
 country_event = {
-	id = 53010 # Qin win - formation of Greater China concept
+	id = 53010 # Qin win - formation of Greater China concept. See 53022 for the GXI (Nanyue) version
 	title = EVTNAME53010
 	desc = EVTDESC53010
 	picture = "taiping"
@@ -756,6 +756,7 @@ country_event = {
 	option = {
 		name = "We are the heirs to China."
 		prestige = 10
+		change_tag = CHI
 		GXI = { 
 			all_core = { add_core = CHI }
 			all_core = { remove_core = GXI }
@@ -1319,5 +1320,50 @@ country_event = {
 		}
 		remove_country_modifier = technological_assistance
 		1498 = { add_core = THIS }
+	}
+}
+
+country_event = {
+	id = 53022 # Nanyue win - formation of Greater China concept - Pretty much the same as 53010, just for Nanyue instead of GXI
+	title = EVTNAME53022
+	desc = EVTDESC53022
+	picture = "taiping"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GXI 
+		NOT = { exists = QIN }
+		has_global_flag = qin_civil_war
+		war = no 
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "We are the heirs to China."
+		prestige = 10
+		change_tag = CHI
+		QIN = { 
+			all_core = { add_core = CHI }
+			all_core = { remove_core = QIN }
+		}
+		GXI = { 
+			all_core = { add_core = CHI }
+			all_core = { remove_core = GXI}
+		}
+		MCK = { 
+			all_core = { add_core = CHI }
+		}
+		XBI = { 
+			all_core = { add_core = CHI }
+		}
+		CHI_1082 = { add_core = CHI }
+		any_pop = {	
+			militancy = -3
+			consciousness = 2
+		}
 	}
 }

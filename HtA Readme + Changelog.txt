@@ -72,8 +72,10 @@ Minor
 - Forming the Scylfiga Woning now gives 30 prestige instead of 120% of what you had.
 - Added the Prusai culture, Baltic-speaking remnants of the Old Prussians, to the Polish-Lithuanian border region, along with a country for it - Prusova (tag PRS)
 - Added (army) unit files from HFM
-- Changed some country colours: CYR, EGY, MGH, LUZ, LTS
+- Changed some country colours: CYR, EGY, MGH, LUZ, LTS, CHI
 - Changed a few culture colours: Guaraní, Lutzan
+- Added Moravia as a country. It's mostly there to prevent Czechs from assimilating after the Treaty of Szekesfehervar
+- Also added related decisions and events for dealing with its cores and what happens if it becomes independent
 - Used native names for the Nahua culture, thanks to Komodo
 - Copied over a lot of stuff about cultural tech from HPM, mostly so that the choice modifiers are more complex and so that there isn't so much colonial migration from tech (+0.5 per level before, now ´+0.05)
 - Made it so Brunswick doesn't have a core on Emden, meaning that they should be able to do the decision chain before Germany forms
@@ -92,6 +94,7 @@ Minor
 - Increased Make Puppet CB to 10 max badboy (previously 7)
 - Demand concession CB can now target colonial states/provinces of uncivs
 - Made CBs normally available between RUS and SML when railroading is off
+- Both German Hegemony CBs should fire the Our Cores Returned event normally
 - Increased starting experience in national values, so now they are actually kind of useful. This change is also reflected in the demonstration modifiers which you can see in the decision
 - Changed some 1840s revolutions modifiers (global_liberal_agitation, among others) about liberalism to be more in line with HPM, not that I think it'll make much of a difference for the militancy problem
 - Made the National Assimilation event impossible to fire until 1870
@@ -113,6 +116,7 @@ Minor
 - Brought in the HND country file from HPM with some tweaks and also changed its colour to a kind of bright pink
 - Removed GNG from files and all references to it
 - Tweaked a few LRs
+- Made uncolonized South Amerigan provinces have colonial = 2 in their files so that they will be colonial when annexed by CHL and ARG
 - Tweaked a few RGOs in Aengland
 - Pumped up some starting prestige for important European countries
 - Many localizations tweaks and fixes
@@ -128,7 +132,7 @@ Bugfixes
 - Navarra has a liberal party for the entire game
 - The Mare Occidentis Nostrum decision now works properly
 - Intervening in Persia now no longer gives more infamy than expected
-- BRB armies now all start WITHIN the duchy
+- Fixes to a number of OOBs
 - The New Zadar Lease-related decision can no longer be repeated if the owner of Zadar rejects it
 - Bugfixes to the Califiana annexation chain and associated events
 - Yugoslavia can no longer invite itself to join itself
@@ -142,6 +146,7 @@ Bugfixes
 - The event which gives Calgary oil no longer renames the province to Calgary
 - Middag no longer magically becomes Taiwan
 - Readded missing events for the Treaty of Kanagawa
+- Fixed a bunch of errors with names in cultures
 
 ----------------------------------------------------------------------------------------------------------
 See the OldChangelogs file for previous version changelogs. You can also see them on the subreddit's wiki.

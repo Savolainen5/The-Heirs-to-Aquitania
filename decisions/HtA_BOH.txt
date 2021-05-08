@@ -56,10 +56,34 @@ political_decisions = {
 			prestige = 25
 			change_tag = BOH
 			PRH = { all_core = { remove_core = PRH } }
-			AUS_625 = { add_core = BOH }
+			AUS_625 = { add_core = BOH remove_core = MRV}
 			AUS_626 = { add_core = BOH }
 			AUS_633 = { add_core = BOH }
 			set_country_flag = new_bohemia
+		}
+	}
+	
+	moravia_reclaimed = {
+		picture = map_moravia
+		potential = {
+			OR = {
+				tag = PRH
+				tag = BOH
+			}
+			NOT = {
+				has_country_flag = new_bohemia
+			}
+		}
+		allow = {
+			any_owned_province = {
+				is_core = MRV
+			}
+		}
+		effect = {
+			prestige = 4
+			any_owned = {
+				remove_core = MRV
+			}
 		}
 	}
 	
@@ -835,4 +859,25 @@ political_decisions = {
 			factor = 0
 		}
 	}
+	
+	#If Moravia somehow becomes independent and Prague exists, MRV will join them
+	rejoin_BOH = {
+		picture = form_union_nation
+		potential = {
+			tag = MRV
+			exists = yes
+			is_vassal = no
+			exists = PRH
+		}
+		allow = {}
+		effect = {
+			PRH = {
+				country_event = {
+					id = 50466
+					days = 1
+				}
+			}
+		}
+	}
+			
 }

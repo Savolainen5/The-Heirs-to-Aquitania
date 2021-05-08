@@ -1774,13 +1774,13 @@ country_event = {
 		635 = { secede_province = HUN add_core = HUN } #Nitra
 		638 = { secede_province = HUN add_core = HUN } #Roznava
 		
-		626 = { secede_province = SLS add_core = SLS } #Hradec Kralove
-		632 = { secede_province = SLS add_core = SLS } #Olomouc
+		626 = { secede_province = SLS add_core = SLS  add_core = MRV} #Hradec Kralove
+		632 = { secede_province = SLS add_core = SLS  add_core = MRV} #Olomouc
 		634 = { secede_province = SLS add_core = SLS } #Trencin
 		636 = { secede_province = SLS add_core = SLS } #Banska Bystrica
 		
-		630 = { secede_province = AUS add_core = AUS } #Brno
-		631 = { secede_province = AUS add_core = AUS } #Budejovice
+		630 = { secede_province = AUS add_core = AUS } #Budejovice
+		631 = { secede_province = AUS add_core = AUS add_core = MRV } #Brno
 		
 		629 = { secede_province = BAV add_core = BAV } #Plzen
 		
@@ -2466,7 +2466,7 @@ province_event = {
 		name = "Hunt them down and destroy them."
 		any_pop = {
 			militancy = 1
-			reduce_pop = 0.98
+			reduce_pop = 0.995
 		}
 		add_province_modifier = {
 			name = bohemian_partisans
@@ -2713,3 +2713,25 @@ country_event = {
 		}
 	}
 }
+
+#Moravia petitions for annexation
+country_event = {
+	id = 50466
+	title = "EVTNAME50466"
+	desc = "EVTDESC50466"
+	picture = "Treaty"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We welcome them with open arms!"
+		FROM = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+		prestige = 3
+		inherit = FROM
+	}
+}
+	

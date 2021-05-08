@@ -32,16 +32,6 @@ army = {
 		home = 1239
 	}
 	regiment = {
-		name = "2nd Meerut Contingent"
-		type = irregular
-		home = 1239
-	}
-	regiment = {
-		name = "1st Dehra Dun Contingent"
-		type = irregular
-		home = 1238
-	}
-	regiment = {
 		name = "1st Cavalry Guards"
 		type = cavalry
 		home = 1242
@@ -85,6 +75,16 @@ army = {
 		name = "3rd Gorakhpur Contingent"
 		type = irregular
 		home = 1246
+	}
+	regiment = {
+		name = "2nd Meerut Contingent"
+		type = irregular
+		home = 1239
+	}
+	regiment = {
+		name = "1st Dehra Dun Contingent"
+		type = irregular
+		home = 1238
 	}
 	regiment = {
 		name = "1st Benares Cavalry"
@@ -186,10 +186,25 @@ army = {
 		type = cavalry
 		home = 1297
 	}
+}
+
+army = {
+	name = "Guard of the Coast"
+	location = 1297
 	regiment = {
-		name = "1st Nasik Marathis"
+		name = "1st Nasik Cavalry"
 		type = cavalry
 		home = 1298
+	}
+	regiment = {
+		name = "1st Bijapur Cavalry"
+		type = cavalry
+		home = 1300
+	}
+	regiment = {
+		name = "1st Baroda Contingent"
+		type = irregular
+		home = 1295
 	}
 }
 
@@ -203,16 +218,11 @@ army = {
 	}
 	regiment = {
 		name = "1st Bhagnagar Contingent"
-		type = irregular
+		type = cavalry
 		home = 1283
 	}
 	regiment = {
 		name = "2nd Bhagnagar Contingent"
-		type = irregular
-		home = 1283
-	}
-	regiment = {
-		name = "3rd Bhagnagar Contingent"
 		type = irregular
 		home = 1283
 	}
@@ -225,11 +235,6 @@ army = {
 		name = "1st Gulbarga Contingent"
 		type = irregular
 		home = 1286
-	}
-	regiment = {
-		name = "1st Bijapur Contingent"
-		type = cavalry
-		home = 1300
 	}
 	regiment = {
 		name = "1st Kolhapur Contingent"

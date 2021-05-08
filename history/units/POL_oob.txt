@@ -66,7 +66,7 @@ army = {
 	regiment = {
 		name = "4. Dywizja Artylerii"
 		type = artillery
-		home = 710
+		home = 693
 	}
 	regiment = {
 		name = "1. Dywizja Huzara"
@@ -156,7 +156,7 @@ army = {
 	regiment = {
 		name = "1. Dywizja Kirasjerzya"
 		type = cuirassier
-		home = 699
+		home = 710
 	}
 }
 

@@ -1318,9 +1318,9 @@ country_event = {
 				any_pop = {
 					ideology = {
 						value = liberal
-						factor = 0.05
+						factor = 0.01
 					}
-					militancy = 2
+					militancy = 1
 				}
 			}
 		}

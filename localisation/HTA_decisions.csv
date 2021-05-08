@@ -379,6 +379,8 @@ megalux_when_german_title;Form the German-Dominated Megalux;x
 megalux_when_german_desc;With the power of the German people behind us, we shall form the greatest power Europe has seen since the Roman Empire! We may no longer have the Luxembourgish griffon on our flag, but we are still Luxembourgers at heart! As our motto says, we want to remain what we are, but we will help others to become what we are, too!;x
 money_for_jord_dest_title;Innocuous AI decision;;;;;;;;;;;;x
 money_for_jord_dest_desc;Nothing to see here, folks, move along.;;;;;;;;;;;;;;;x
+moravia_reclaimed_title;Moravian Land Reclaimed;x
+moravia_reclaimed_desc;Land that was once ours has been brought into the fold again. This is a good sign for the recovery of our country after Szekesféhervar!;x
 move_capital_to_paris_title;Move the capital back to Paris;;;;;;;;;;;;;x,,,,
 move_capital_to_paris_desc;Now that the duke of Champagne has been subdued, Paris, the capital of France for centuries, is finally back in our hands! Let us reinstate it as our capital!;;;;;;;;x,
 move_capital_to_prague_title;Move the capital back to Prague;;;;;;;;;;;;x
@@ -441,6 +443,10 @@ reform_albina_title;Reform Albina;;;;;;;;;;x
 reform_albina_desc;Although we have lost the title before, we can once again claim it. With the island of Bryten once more united under our rule, we should take up the mantle of Albina for the good of all its inhabitants!;;;;;;;;;;x
 reform_qin_empire_title;Reform the Qin Empire;;;;;;;;;x
 reform_qin_empire_desc;Liberal ideas have penetrated China and threaten to disturb the sanctity of the Empire. By drafting a constitution, we can guarantee our position in power while acknowledging the rights of the Chinese people. Qin Diguo, Wan Sui!;;;;;;;;;x
+rejoin_BOH_title;Rejoin Bohemia;x
+rejoin_BOH_desc;The country to which we used to belong - and which we were PROUD to be a part of - was unjustly put down by its neighbours. We have gained our independence, and let us do our part to restore our great country by joining forces with the resurrected Bohemia!;x
+rejoin_PRH_title;Join ourselves to Prague;x
+rejoin_PRH_desc;The country to which we used to belong - and which we were PROUD to be a part of - was unjustly put down by its neighbours. We have gained our independence, and let us do our part to resurrect our great country by joining forces with Prague!
 remove_expensive_factories_title;Urbanization and Entrepreneurship;x
 remove_expensive_factories_desc;This removes the modifier making factories more expensive. Everything about this decision will still be changed - this is just a work in progress.;x
 remove_less_army_spending_title;Centralize the Army;x

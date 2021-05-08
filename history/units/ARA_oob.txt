@@ -17,11 +17,6 @@ army = {
 		home = 1153	
 	}
 	regiment = {
-		name= "4. 'Ateba"
-		type = cavalry
-		home = 1157	
-	}
-	regiment = {
 		name= "1. Division"
 		type = irregular
 		home = 1155	
@@ -30,11 +25,6 @@ army = {
 		name = "2. Division"
 		type = irregular
 		home = 1157
-	}
-	regiment = {
-		name = "3. Division"
-		type = irregular
-		home = 1160
 	}
 }
 
@@ -55,6 +45,21 @@ army = {
 		name= "3. Cavalry"
 		type = cavalry
 		home = 1168	
+	}
+}
+
+army = {
+	name = "Army of the Sheikh of Hail"
+	location = 1178
+	regiment = {
+		name= "4. 'Ateba"
+		type = cavalry
+		home = 1157	
+	}
+	regiment = {
+		name = "3. Division"
+		type = irregular
+		home = 1160
 	}
 }
 
