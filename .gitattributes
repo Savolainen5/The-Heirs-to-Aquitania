@@ -1,2 +1,2 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Always perform LF normalization or something. I dunno how this really works, I just do with the documentation tells me
+* text eol=lf
