@@ -558,6 +558,7 @@ country_event = {
 	id = 50114
 	title = "EVTNAME50114"
 	desc = "EVTDESC50114"
+	picture = "map_indonesia"
 	
 	fire_only_once = yes
 	
@@ -610,8 +611,14 @@ country_event = {
 			AND = {
 				war_with = SCO
 				OR = {
-					owns = 271
-					owns = 266
+					AND = {
+						owns = 271
+						controls = 266
+					}
+					AND = {
+						owns = 266
+						controls = 271
+					}
 				}
 			}
 			AND = {

@@ -161,11 +161,11 @@ dismantle_PER_setup;Triggers peace conference over Persian lands;x
 germany_acquire_state;German Hegemony;;;;;;;;;x
 germany_acquire_state_short;Acquire the German state of $STATE$;;;;;;;;;;;x
 germany_acquire_state_setup;Acquire the German state of $STATE$ from $RECIPIENT$;;;;;;;;;;;;x
-germany_acquire_state_desc;Claim a state belonging to another German ruler and incorporate it into your realm, bringing you one step closer to hegemony in Germany.;;;;;;;;;;x
-germany_conquer;German Hegemony;;;;;;;;;x
-germany_conquer_short;Acquire the German state of $STATE$;;;;;;;;;;;x
-germany_conquer_setup;Acquire the German state of $STATE$ from $RECIPIENT$;;;;;;;;;;;;x
-germany_conquer_desc;Claim the last state belonging to another German ruler and incorporate it into your realm, bringing you one step closer to hegemony in Germany.;;;;;;;;;;x
+germany_acquire_state_desc;Claim a state belonging to another German ruler and incorporate it into our realm, bringing us one step closer to hegemony in Germany.;;;;;;;;;;x
+germany_conquer;German Hegemony - Annex;;;;;;;;;x
+germany_conquer_short;Annex the German state of $RECIPIENT$;;;;;;;;;;;x
+germany_conquer_setup;Annex the German state of $RECIPIENT$;;;;;;;;;;;;x
+germany_conquer_desc;Claim the last state belonging to another German ruler and incorporate it into our realm, bringing us one step closer to hegemony in Germany.;;;;;;;;;;x
 skane_cb;Claim Skåne;;;;;;;;;;;x
 skane_cb_desc;Reclaim this §Ystate§W which rightfully belongs to us!;;;;;;;;;;x
 skane_cb_short;Take Skåne;;;;;;;;;;x

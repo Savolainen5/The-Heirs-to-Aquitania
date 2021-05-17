@@ -151,11 +151,15 @@
 					factor = 2
 					has_global_flag = railroading_on
 				}
+				modifier = {
+					factor = 0
+					badboy = 0.8
+				}
 			}
 		}
 	}
 
-#Neapolitans uninterested 52203
+#Neapolitans uninterested 52203															############################Still needs coding
 	country_event = {
 		id = 52203
 		title = "EVTNAME52203"
@@ -165,17 +169,24 @@
 		
 		option = {
 			name = "The Romans."
+			#52290
 		}
 		option = {
 			name = "Hispania."
+			#52291
 		}
 		option = {
 			name = "We will make do somehow."
+			any_pop = {
+				consciousness = 1
+				militancy = -2
+			}
 		}
 	}
 		
 #Second raid on (vassal) Malta 52204
 
+	#chile_peru_bolivia_treaty
 
 
 

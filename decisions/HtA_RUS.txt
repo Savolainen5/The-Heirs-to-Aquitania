@@ -428,7 +428,7 @@ political_decisions = {
 		potential =  {
 			tag = RUS
 			NOT = { has_country_flag = ukrainians_incited }
-			has_country_flag = tatar_revolts_encouraged
+			#has_country_flag = tatar_revolts_encouraged
 			SML = { any_owned_province = { is_core = UKR } }
 			year = 1844
 		}

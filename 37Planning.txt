@@ -13,7 +13,7 @@ Poland:
 - Ruthenians?
 - Make sure that claims are not wonky
 
-- Homeland for the Jews in the region?
+- Homeland for the Jews in the region? - Not sure how much this makes sense, though
 	- Some country declares itself protector?
 	- Balfour declaration type which presents options?
 
@@ -69,13 +69,11 @@ Other:
 - Uncivs should not get the First Minister event stuff
 - GNC stays at war forever with CLF for some reason? One reddit user reported that, and because of it they couldn't complete the event chain as SKM with GNC
 - Make some way for BOH to avoid the Partition War
-- Are disease events stronger/more frequent than in vanilla? TBG and Jorde think so
 - Give some more checks to GNC-CLF-SKM interactions so one of the Aenglisc countries being a GP and sphereing/friendlying CLF will make it not happen at all
 - Go through the modifiers and clean them up, esp. the HtA ones that are apparently never used
 - Mediterranean blob events for absorbing cores from spherelings
 	- Infamy, event chains, possible war, coalitions
 - Make uncivs able to mobilize?
-- Add some CZ-culture cores to Moravia so there's no assimilation of the local POP?
 - Model colony should only fire after a certain date
 - A POP migration modifier that brings primary POP farmers/labourers to new world provinces where there are none - to help with assimilation
 - Go back and check the religious map at the end of EU3 to inform religious things in Vic2

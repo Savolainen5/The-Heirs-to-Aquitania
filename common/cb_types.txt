@@ -3617,7 +3617,7 @@ china_acquire_state = {
 germany_acquire_state = {
 	sprite_index = 2
 	is_triggered_only = yes
-	months = 12
+	months = 0
 	crisis = no
 
 	badboy_factor = 0.25
@@ -3650,6 +3650,8 @@ germany_acquire_state = {
 			primary_culture = south_german
 		}
 		is_vassal = no
+		neighbour = THIS									#The target neighbours us
+		number_of_states = 2
 		THIS = {											#The one using the CB has these conditions
 			OR = {
 				#primary_culture = north_german
@@ -3756,7 +3758,7 @@ germany_acquire_state = {
 germany_conquer = {
 	sprite_index = 2
 	is_triggered_only = yes
-	months = 12
+	months = 0
 	crisis = no
 
 	badboy_factor = 0.25
@@ -3789,6 +3791,8 @@ germany_conquer = {
 			primary_culture = south_german
 		}
 		is_vassal = no
+		neighbour = THIS
+		NOT = { number_of_states = 2 }
 		THIS = {											#The one using the CB has these conditions
 			OR = {
 				#primary_culture = north_german
@@ -3819,59 +3823,6 @@ germany_conquer = {
 		}
 	}
 	
-	allowed_states = {
-		any_owned_province = { any_neighbor_province = { owned_by = THIS } }	#Must target neighbouring state
-		NOT =  { owner = { number_of_states = 2 } }					#Unless it has only one state, in which case you can demand the capital
-		OR = {
-			any_owned_province = {								#For German countries holding German territory
-				NOT = {	is_core = THIS }
-				OR = {
-					owner = { primary_culture = north_german }
-					owner = { primary_culture = central_german }
-					owner = { primary_culture = south_german }
-				}
-				is_core = GER
-			}
-			any_owned_province = {								#For German countries holding non-German territory
-				OR = {
-					owner = { primary_culture = north_german }
-					owner = { primary_culture = central_german }
-					owner = { primary_culture = south_german }
-				}
-				NOT = { is_core = GER }
-				NOT = { owner = { tag = LUX } }
-			}
-			any_owned_province = {								#For non-German countries holding German territory
-				NOT = {
-					OR = {
-						owner = { primary_culture = north_german }
-						owner = { primary_culture = central_german }
-						owner = { primary_culture = south_german }
-					}
-				}
-				is_core = GER
-				NOT = { is_core = THIS }
-			}
-		}
-		#AI will not grab cores of allies/spherelings
-		OR = {
-			THIS = { ai = no }
-			NOT = {
-				any_owned_province = {
-					any_core = {
-						exists = yes
-						OR = {
-							alliance_with = THIS
-							in_sphere = THIS
-							vassal_of = THIS
-						}
-					}
-				}
-			}
-		}
-		
-	}
-
 	po_annex = yes
 	
 	on_po_accepted = {

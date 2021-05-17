@@ -113,7 +113,6 @@ political_decisions = {
 		potential = {
 			tag = AEN
 			NOT = { has_country_flag = alba_reclaimed }
-			has_country_flag = cymru_claimed
 		}
 		
 		allow = {

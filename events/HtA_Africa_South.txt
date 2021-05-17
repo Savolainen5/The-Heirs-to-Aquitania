@@ -618,7 +618,7 @@ country_event = {
 				limit = {
 					owner = {
 						NOT = {
-							capital_scope = europe
+							capital_scope = { continent = europe }
 							is_greater_power = yes
 						}
 					}
@@ -641,7 +641,7 @@ country_event = {
 				limit = {
 					owner = {
 						NOT = {
-							capital_scope = europe
+							capital_scope = { continent = europe }
 							is_greater_power = yes
 						}
 					}
@@ -666,7 +666,7 @@ country_event = {
 				limit = {
 					owner = {
 						NOT = {
-							capital_scope = europe
+							capital_scope = { continent = europe }
 							is_greater_power = yes
 						}
 					}

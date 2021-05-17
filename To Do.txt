@@ -1,49 +1,23 @@
-To Do, v0.37
+To Do, as of v0.37
 
 Events:
 
-- Event/Decision to try to mediate Germany?
-- Revisit that ability of German states to not attend the Brunswick congress - AI will currently always attend
-- Tweak Bavarian choices for Brunswick Congress so they're better
-- Saxony making problems for Brandenburg when it attends the Brunswick congress and is still a BOH ally.
-- Springtime of Nations should hit Roman Empire harder?
-- Danubian Federation-thing for Roman Empire
-- Some Autokrator grants a constitution?
-- Massive problem for the Roman Empire if they fail to take Rome, or if they lose it.
-- Small event chain to change Wallonia into some other country which accepts Picard (or to separate Wallonia and Picardy)
-- What happens with the Hungarian event chain if Bohemia becomes a democracy?
-- Make Pamphlets event state-level so it's less spammy?
 - Make CBs for war events work so that there's a more elegant solution than reducing infamy
 - Teralarga ideas: see Suggestions
-- Unequal Treaty events for Nanyue, tweak it for Qin
-- Unequal Treaty includes Nanyue VN land
 - Some kind of country/nationalism for Solelha in Florida
 - Dissolution of Maghreb (see suggestions)
-- Competition for colonies in SEA, especially between NAP and HIS in the Malay peninsula
 - Generic event to annex countries that you have full cores on, as happens with Rome sometimes
 - Give Puppet CBs to owners of territory in India in the mid-late 1800s?
 - Made event 2610 (National Assimilation) in CBsandCores happen only after 1870, but would it be better to find some way to make it so that it doesn't fire when primary culture POPs of the country whose core would be removed are present? I looked into that and did some quick theorycrafting but couldn't come up with a good way to do it
 
 Decisions:
 
-- France takes back Challans (La Roche, 437) from AQT
 - Japan claims Ainu Mosir and the northern islands (the latter decision exists already and has merely been disabled)
-- AQT decision reclaim SA colonies if they're lost
-- Decisions for Roman Empire to conquer Levant, Italy, restore Imperial Borders
-	- Move capital back to Rome and assimilate/accept lots
-	- Roman Empire can reconquer Rome and get Italian and Sicilian added as accepted, and/or assimilation
-	- See the ideas from Crushric - Look in Suggestions.txt
-	- Event/decision for, when it has conquered all of Armenia (make this easier?), crack down on Armenians or risk wrath of military?
 - Imperial ambitions for Georgia
-- Post-revolution Bohemia gets a hold of Syrmia and the Banat
 - Owner of Saorvaile in Africa can get Bopolu by event
 - Owner of Liberia strongarms Mali into giving further inland parts or something. Currently Mali doesn't even hold them
-- Being puppetmaster of Livonia gives you the possibiltiy to incorporate Estonia into it?
-- Greece rejoins a democratic Roman Empire?
-- Portugal claims Atlantic islands
 - check NationalUnification to see if the Arab Union needs to have the relevant culture group excluded in order to be able to form
 - A union of Margaria and Vestland
-- Ardeal forms some union of Hungarian and Volasean peoples
 - Caliphate claims and stuff like that: Egypt is the best claimant, but maybe Persia and maybe Maghreb? Mali?
 - SHC accepts some neighbouring cultures if they hold their territory?
 - Indian cultures: Accept Dravidians, Assamese, Kashmiri
@@ -51,30 +25,23 @@ Decisions:
 
 POPs:
 
-- Craftsmen in Europe (which is less industrialised than vanilla)
 - Increase POPs in the super-low-POP countries like SKM, MDT, YKT, KZH, YUC
 - Reduce POPs in Vestland, Margaria, Hoyekysten because there aren't a lot of Scandinavians to migrate to these countries
 - Orthodox minorities in the Middle East, Armenian heartland, see http://i.imgur.com/7uVsYh4.png
 	-Esp. of Armenian culture. Perhaps split it into an Islamicized ruling class and a rural Christian peasant one? (Credit to TBG on Discord)
+	- Armenia: Split into Arabized (more urban?) Armini and non-Arabized (more rural?) Hayastani/Hay
 - POP rework in the former KOJ, per Glocky's suggestion on Discord and https://www.youtube.com/watch?v=I8pc0PkaZaQ
 - Adjust POPs in USR - Fewer in the south (as in Brazil today), more in the north around the capital, more Guarani in Paraguay/Brazil
 - Remove Andean POPs from the southern part of Inca?
 - Boost POPs of Uganda and Rwanda regions which have had their province size increased?
 - Add some Turkmen folks (maybe minorities) in Syria
 - Similarly to the above, add some sort of Turkic POPs in the Armenia-Persia area to represent remnants of Seljuks
-- Change the French in the Holy Land to Outremer or Levantine or whatever
-- Add more Jews throughout Europe! (Partly done, needs more)
-- Add more minorities in Europe on the other side of borders
-- Too many German POPs?
 - Add a few more aristocrats to Holland and Friesland
-- Sort out Transylvania - North German POPs: Were there Transylvanian Saxons?
-- Armenia: Split into Arabized (more urban?) Armini and non-Arabized (more rural?) Hayastani/Hay
 
 Militaries:
 - Navies for much of the world
 - Central American countries
 - Uilscyr, after POP adjustment
-- Make sure BYZ revolter tags actually build militaries
 - Ensure that all countries with a military start with something on their capital
 
 Localisation:
@@ -86,7 +53,6 @@ Localisation:
 
 Map:
 - Trade ports in Japan for Naples, Alba and/or others? Added a small port in v0.31 for Netherlands - do something with that in the Japan update
-- Mess with the Argentinian Andes. Maybe give Lonca more control over them. That way, Argentina doesn't so easily get a crazy snaky shape up into Inca
 - Mess with overall region/province shapes in Africa so they're less OTL-y
 - Make provinces conform better to new RDS rivers. Especially Khiva-Persia
 - Fix the hill terrain - Why doesn't it WAD? Why doesn't it even exist? How the heck does the terrain sheet work, anyways? Should some other terrain map be brought in and adapted to the HtA map?
@@ -95,7 +61,6 @@ Map:
 - Make some desert provinces in the Middle East have not 35 LR because that's ridiculous. Or just think about it some more - is there any reason a 3k POP province shouldn't have 35LR? It's not like their POP is gonna boom, it's a desert province!
 - Central and South American LR - make more than 30
 - Make the Oheskewen Canal have its own province and also make the chain to build it more similar to modern canal event chains
-- Consider adding a naval base to one of the Balearic Islands
 
 Flags: More about this can be found in the "List of small things to be done" on the forum (https://forum.paradoxplaza.com/forum/index.php?threads/the-heirs-to-aquit%C3%A0nia-altervicky-mod.895808/page-5#post-20555393)
 - In general, any flag suggestions are welcome, particulary for vanilla countries
@@ -103,26 +68,16 @@ Flags: More about this can be found in the "List of small things to be done" on 
 CB:
 - Incorporate /u/sdrasmu4's split conquest CBs? The only trouble is that maybe the AI would be bad at using it and that would mess up balance
 - Increase badboy decay since war is meant to be more widespread?
-- Restore monarchy CB?
 - Restrict Europeans' CB potentials on NA uncivs
-- Latvia CB to be unlocked after a certain event
 
 Other:
 - Go back through eventually and add newspaper entries
 - FIX THE BLOODY ECONOMY - remember the guy who was a GP Dabimon and had a REALLY hard time gathering goods for military?
 	- Incorporate this patch for the interest bug: https://forum.paradoxplaza.com/forum/threads/global-event-to-force-rax-refunds.1377441/ and/or https://forum.paradoxplaza.com/forum/threads/does-the-national-bank-still-have-the-interest-bug.1393731/
-- Add silk/wine-related industry to PRE
 - One day in the future: Incorporate (some of?) PDM MAYBE - Spices for Indonesia would be nice anyways
 - Nerf nationalist/pan-nationalist rebels somehow - Especially German pan-nationalists 
-- French general staff - special political leader as a buff for them (already added a strong attack general)
 - Factionalism in the Philippines (Panaja) with several different states on different islands fighting each other, either during or after Dutch rule
-- Hispania loses cores on countries in time?
-- Union in Iberia?
-- Trans-Hungary for Hungarian-Romanian interaction, particularly in Transylvania
-- Figure out what to do with Ardeal having cores in funny places and then getting annexed to Volasea
-- When Austria is released after dismantlement, it got OTL cores. Why? Fix!
 - Dismantlement seems to hand out random provinces to individual countries when it should do like... States or something.
-- If necessary, add a Cancel Zadar Lease decision for Hungary with the same effects as that for Bohemia
 - Add POP Migration Mod? https://www.reddit.com/r/victoria2/comments/2mtl11/pop_migration_mod_hod
 - Add Better AI Mod?https://forum.paradoxplaza.com/forum/index.php?threads/better-ai-mod.925608/#post-21373359
 - KoJ revived with a reverse oriental crisis over protection of holy sites/lands? (Partially done in 0.36 - does it need revisiting/refinement?)
@@ -130,29 +85,76 @@ Other:
 - Fascism happen sooner?
 - More to be done with rebels wanting to break free of Italy in the north?
 - Look into tweaking migration so that it's more likely to happen toward neighbouring countries Dictatorship > Democracy
-- Give Brabant more land/outposts to explain how they got New Caledonia
 - Buff population growth, especially in the new world (will partly be solved by increasing LR)
 - If more iron is needed, add the Alegria iron mine to prov2442 (Monduroi) in USR? The problem is that it opened in 1992
 - Nerf migration to CLF and SKM due to their remoteness? Necessary? Too realistic?
-- ANA stuff:
+- Indian accepted cultures: should include Gujarati, should have a way to accept Dravidians
+- Research can be finished well before the end of the game. One player finished in 1924
+- Revamp canals to be more along HPM lines, and get rid of the Dividends events because they're ugly (also need to rename the one that's still called the Panama Canal Dividends)
+
+	0.38 (Balkans and Hungary and Romania):
+
+- What happens with the Hungarian event chain if Bohemia becomes a democracy?
+- Make Hungarian Pamphlets event state-level so it's less spammy?
+- Ardeal forms some union of Hungarian and Volasean peoples
+- Sort out Transylvania - North German POPs: Were there Transylvanian Saxons?
+- Trans-Hungary for Hungarian-Romanian interaction, particularly in Transylvania
+- Figure out what to do with Ardeal having cores in funny places and then getting annexed to Volasea
+- If necessary, add a Cancel Zadar Lease decision for Hungary with the same effects as that for Bohemia
+
+	0.39 (Iberia):
+	
+- Consider adding a naval base to one of the Balearic Islands
+- Portugal claims Atlantic islands
+- Decision/event for HIS to accept Basques
+- Hispania loses cores on countries in time?
+- Union in Iberia?
+
+	0.40 (Euro misc):
+	
+- Redo states in the low countries as per https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-56#post-27333977
+- Remove unused countries more systematically
+- Event/Decision to try to mediate Germany?
+- Revisit that ability of German states to not attend the Brunswick congress - AI will currently always attend
+- Tweak Bavarian choices for Brunswick Congress so they're better
+- Saxony making problems for Brandenburg when it attends the Brunswick congress and is still a BOH ally.
+- Small event chain to change Wallonia into some other country which accepts Picard (or to separate Wallonia and Picardy)
+- France takes back Challans (La Roche, 437) from AQT
+- AQT decision reclaim SA colonies if they're lost
+- Being puppetmaster of Livonia gives you the possibiltiy to incorporate Estonia into it?
+- Post-revolution Bohemia gets a hold of Syrmia and the Banat
+- Craftsmen in Europe (which is less industrialised than vanilla)
+- Add more Jews throughout Europe! (Partly done, needs more)
+- Add more minorities in Europe on the other side of borders
+- Too many German POPs?
+- Restore monarchy CB?
+- Latvia CB to be unlocked after a certain event
+- Add silk/wine-related industry to PRE
+- French general staff?? - special political leader as a buff for them (already added a strong attack general)
+- Give Brabant more land/outposts to explain how they got New Caledonia
+- When Austria is released after dismantlement, it got OTL cores. Why? Fix!
+
+- Springtime of Nations should hit Roman Empire harder?
+- Danubian Federation-thing for Roman Empire
+- Some Autokrator grants a constitution?
+- Massive problem for the Roman Empire if they fail to take Rome, or if they lose it.
+- Decisions for Roman Empire to conquer Levant, Italy, restore Imperial Borders
+	- Move capital back to Rome and assimilate/accept lots
+	- Roman Empire can reconquer Rome and get Italian and Sicilian added as accepted, and/or assimilation
+	- See the ideas from Crushric - Look in Suggestions.txt
+	- Event/decision for, when it has conquered all of Armenia (make this easier?), crack down on Armenians or risk wrath of military?
+- Greece rejoins a democratic Roman Empire? Buff ANA in that case
+- Or, RCW runs a different course if the Empire is already democratic via Albesans
+	- Romans struggle to keep Greeks and Anatolians in check - regionalism
+- Make sure BYZ revolter tags actually build militaries- ANA stuff:
 	- Move capital to Constantinople
 	- Greek accepted OR better assimilation (what would be the policy vis-a-vis Armenians?)
 	- Focus more on Anatolian expansion
 	- Absorb Georgia?
-- RCW runs a different course if the Empire is already democratic via Albesans
-	- Romans struggle to keep Greeks and Anatolians in check - regionalism
-- Indian accepted cultures: should include Gujarati, should have a way to accept Dravidians
-- 0.40 - Redo states in the low countries as per https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-56#post-27333977
-- Research can be finished well before the end of the game. One player finished in 1924
-- Revamp canals to be more along HPM lines, and get rid of the Dividends events because they're ugly (also need to rename the one that's still called the Panama Canal Dividends)
-- Remove unused countries more systematically (0.40)
 
-SEA rework:
-- Sikkim's Indian status (probably shouldn't necessarily be a part of India since it's more Himalayan in character and doesn't have the same political forces as OTL)
-- Burma missing a core on Pegu
-- Regions in the Siam-LPBG-LXA-CAM area
 
-China (0.45):
+	0.45 (China):
+
 - HPM nerfs and other systems
 - China: Demand Concession CB gives 0 infamy when there are no valid targets
 - Punitive expedition mechanic to get trade ports in Qin
@@ -166,8 +168,19 @@ QIN reports from https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquit
 - Decision for accepting Baifaren?/Southern Han culture is hard to get because of militancy requirement. Can we have another decision to accept Min/Yue/Zhuang/Hakka cultures?
 - Unity national value is bit OP with 50% of assimilation bonus which means it can assimilate core cultures if you know what i mean.
 - Event for serial killer is popping too many times.
+- Unequal Treaty events for Nanyue, tweak it for Qin
+- Unequal Treaty includes Nanyue VN land
+
+	0.46 (SEA/Indonesia):
+
+- Sikkim's Indian status (probably shouldn't necessarily be a part of India since it's more Himalayan in character and doesn't have the same political forces as OTL)
+- Burma missing a core on Pegu
+- Regions in the Siam-LPBG-LXA-CAM area
+- Competition for colonies in SEA, especially between NAP and HIS in the Malay peninsula
+
 
 Lonca/Argentina (0.66/0.67)
 - Rework/improve southerly expansion (Consider looking at code from HPM or whatever)
+- Mess with the Argentinian Andes. Maybe give Lonca more control over them. That way, Argentina doesn't so easily get a crazy snaky shape up into Inca
 
 Savs, remember that Birth of a Nation is in CleanUp and has the ID 60160
