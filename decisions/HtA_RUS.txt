@@ -489,7 +489,7 @@ political_decisions = {
 			NOT = { has_country_flag = tatar_revolt }
 			RUS = {
 				has_country_flag = ukrainians_incited
-				casus_belli = SML
+				#casus_belli = SML
 			}
 			OR = {
 				year = 1846

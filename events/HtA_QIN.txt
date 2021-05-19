@@ -211,7 +211,7 @@ country_event = {
 	trigger = {
 		tag = GXI 
 		war = no
-		civilized = no
+		#civilized = no
 		NOT = { truce_with = QIN }
 		OR = {
 			AND = {
@@ -757,6 +757,10 @@ country_event = {
 		name = "We are the heirs to China."
 		prestige = 10
 		change_tag = CHI
+		QIN = { 
+			all_core = { add_core = CHI }
+			all_core = { remove_core = QIN }
+		}
 		GXI = { 
 			all_core = { add_core = CHI }
 			all_core = { remove_core = GXI }

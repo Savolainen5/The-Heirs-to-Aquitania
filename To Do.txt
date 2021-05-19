@@ -157,7 +157,7 @@ Other:
 
 - HPM nerfs and other systems
 - China: Demand Concession CB gives 0 infamy when there are no valid targets
-- Punitive expedition mechanic to get trade ports in Qin
+- Punitive expedition mechanic to get trade ports in Qin instead of demand concession CB
 - Readd Mahayana in China, since all Mahayana were changed to Confucian
 - A GP with power in the area can get Hong Kong somehow if they aren't the one that got Macao
 - Maybe the country that buys Macao shouldn't sphere such a huge country as Nanyue?

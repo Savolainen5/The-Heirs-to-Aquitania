@@ -66,7 +66,7 @@ Minor
 - Severely nerfed the OP Gold Rush modifier - now gives an immigrant attract of only 100% instead of ten times that. This needs testing to see if it should be buffed up a bit. Maybe 300%
 - Reorganized African events files
 - Some more starting generals - thanks to MajorMajor
-- Many new flags (both default and alternate) - thanks to Athemos for most of them
+- Many new flags (both default and alternate) - thanks to Athemos and Periares for some
 - Netherlands' Integrate Wallonia decision now gives a core, too
 - French decisions to accept Wallonians, Picards and Bretons will now cost 5% of their prestige instead of a piddly 1 or 2
 - Forming the Scylfiga Woning now gives 30 prestige instead of 120% of what you had.

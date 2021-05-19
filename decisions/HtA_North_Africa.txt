@@ -11,7 +11,7 @@ political_decisions = {
 			exists = MLT
 			MLT = {
 				is_vassal = no
-				NOT = { number_of_ports = 2 }
+				NOT = { num_of_ports = 2 }
 				capital = 854
 			}
 		}
