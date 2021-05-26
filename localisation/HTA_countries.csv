@@ -341,7 +341,16 @@ IRO_liberal_2;Hodidzoniga;;;;;;;;;;;;;;;x
 IRO_conservative_5;Odihnesiioh;;;;;;;;;;;;;;;x
 IRO_liberal_2;De'odijinaindonda;;;;;;;;;;;;;;;x
 IRO_socialist_5;Degaiadahkwa;;;;;;;;;;;;;;;x
-ITA_absolute_monarchy;Kingdom of Italy;;;;;;;;;;x
+IST;Istria;x
+IST_ADJ;Istrian;x
+IST_democracy;Free State of Istria;êx
+IST_anarcho_liberal;Radicali;x
+IST_communist;PartÏo ComunÏsta;x
+IST_conservative;PartÏo Autonomo;x
+IST_fascist;Fascisti;x
+IST_liberal;PartÏo Albes‡n;x
+IST_reactionary;Nazionalisti;x
+IST_socialist;PartÏo Socialista;x
 JAP_hms_government;Imperial Japan;;;;;;;;;;;;x
 JAM_conservative;Bevrijdingspartij;;;;;;;;;;;;;;;x
 JAM_liberal;Volkspartij;;;;;;;;;;;;;;;x

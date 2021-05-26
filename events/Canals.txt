@@ -1441,6 +1441,10 @@ country_event = {
 				factor = 0
 				has_global_flag = refused_canal_treaty_once
 			}
+			modifier = {
+				factor = 0						#Added in 0.37 to avoid buggy event 97932. Savs will go back and sort this out later
+				in_sphere = FROM
+			}
 		}
 	}
 }

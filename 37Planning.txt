@@ -35,6 +35,8 @@ Italy:
 	- Also see what changes need to be made to the relevant decisions in Hta_RomanEmpire in general
 	- Check the form_italy_without decision in NationalUnification
 	- Make sure there aren't pan-nationalist rebels or something
+- PDN civil war between monarchists and republicans
+-Deal with the ITAFlavor event and decision files
 
 -Sicilian party names		
 		

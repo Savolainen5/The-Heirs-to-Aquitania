@@ -178,8 +178,10 @@ QIN reports from https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquit
 - Regions in the Siam-LPBG-LXA-CAM area
 - Competition for colonies in SEA, especially between NAP and HIS in the Malay peninsula
 
+	0.61 (MNK,MDT,HOY)
+- Rework Panaben Canal stuff (especially event 97392)
 
-Lonca/Argentina (0.66/0.67)
+	Lonca/Argentina (0.66/0.67)
 - Rework/improve southerly expansion (Consider looking at code from HPM or whatever)
 - Mess with the Argentinian Andes. Maybe give Lonca more control over them. That way, Argentina doesn't so easily get a crazy snaky shape up into Inca
 

@@ -393,196 +393,64 @@ country_event = {
 	}
 }			
 
-country_event = {
 
-	id = 999542
 
-	trigger = {
-		tag = LUC
-		year = 1847
-		TUS = {
-			war = no
-			neighbour = LUC
-			is_vassal = no
-		}
-		MOD = { ai = yes }
-		NOT = { has_global_flag = inherit_lucca }
-	}
-	
-	fire_only_once = yes
+#country_event = {
+#
+#	id = 999544
+#
+#	trigger = {
+#		owns = 770
+#		OR = {
+#			exists = ITA
+#			year = 1870
+#		}
+#	}
+#	
+#	fire_only_once = yes
+#
+#	title = "Italian Istria"
+#	desc = "With the Italians beginning to unify, Venice's claim on Istria is falling apart."
+#	picture = "Prosper"
+#
+#	option = {
+#		name = "Well that's one less threat to worry about." 
+#		prestige = 2
+#		770 = {
+#			remove_core = VEN
+#		}
+#		778 = {
+#			remove_core = VEN
+#			add_core = FIU
+#		}
+#	}
+#}
 
-	title = "The succession of Charles II"
-	desc = "Now that Marie Louise has died, Charles the II can ascend the throne of Parma and give Lucca back to Tuscany."
-	picture = "theatre"
-
-	option = {
-		name = "Return Lucca to the Tuscans and take over Modena" 
-		prestige = 3
-		inherit = PAR
-		change_tag = PAR
-		746 = {
-			remove_core = LUC
-			remove_core = PAR
-			add_core = TUS
-			secede_province = TUS
-		}
-		set_global_flag = inherit_lucca
-		ai_chance = {
-			factor = 80
-			modifier = {
-				factor = 0
-				PAR = { ai = no }
-			}
-		}
-	}
-	option = {
-		name = "Lucca is mine!" 
-		prestige = 6
-		746 = {
-			remove_core = LUC
-			add_core = TUS
-			add_core = PAR
-		}
-		inherit = PAR
-		change_tag = PAR
-		any_country = {
-			limit = {
-				tag = TUS
-			}
-			relation = {
-				who = THIS
-				value = -400
-			}
-			leave_alliance = THIS
-		}
-		set_global_flag = inherit_lucca
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 0
-				PAR = { ai = no }
-			}
-		}
-	}
-}
-
-country_event = {
-
-	id = 999543
-
-	trigger = {
-		tag = PAR
-		year = 1847
-		PAR = { ai = no }
-		NOT = { has_global_flag = inherit_lucca }
-	}
-	
-	fire_only_once = yes
-
-	title = "The succession of Charles II"
-	desc = "Now that Marie Louise has died, Charles the II can ascend the throne of Parma and give Lucca back to Tuscany."
-	picture = "theatre"
-
-	option = {
-		name = "Return Lucca to the Tuscans" 
-		prestige = 3
-		746 = {
-			remove_core = LUC
-			add_core = TUS
-		}
-		random_country = {
-			limit = {
-				tag = TUS
-			}
-			inherit = LUC
-		}
-		set_global_flag = inherit_lucca
-		ai_chance = {
-			factor = 80
-		}
-	}
-	option = {
-		name = "Lucca is mine!" 
-		prestige = 6
-		746 = {
-			remove_core = LUC
-			add_core = TUS
-			add_core = PAR
-		}
-		inherit = LUC
-		any_country = {
-			limit = {
-				tag = TUS
-			}
-			relation = {
-				who = THIS
-				value = -400
-			}
-			leave_alliance = THIS
-		}
-		set_global_flag = inherit_lucca
-		ai_chance = {
-			factor = 20
-		}
-	}
-}
-
-country_event = {
-
-	id = 999544
-
-	trigger = {
-		owns = 770
-		OR = {
-			exists = ITA
-			year = 1870
-		}
-	}
-	
-	fire_only_once = yes
-
-	title = "Italian Istria"
-	desc = "With the Italians beginning to unify, Venice's claim on Istria is falling apart."
-	picture = "Prosper"
-
-	option = {
-		name = "Well that's one less threat to worry about." 
-		prestige = 2
-		770 = {
-			remove_core = VEN
-		}
-		778 = {
-			remove_core = VEN
-			add_core = FIU
-		}
-	}
-}
-
-country_event = {
-
-	id = 995213
-
-	trigger = {
-		EGY_921 = { owned_by = THIS }
-		tag = PAP
-		NOT = { has_country_flag = jerusalemowned }
-	}
-	
-	fire_only_once = yes
-
-	title = "Jerusalem"
-	desc = "Our conquest is Palestine is complete and once again the Holy City is in Christian hands, we should properly colonize the region to make sure it stays that way."
-	picture = "Prosper"
-
-	option = {
-		name = "Glory to God!" 
-		set_country_flag = jerusalemowned
-		prestige = 20
-		EGY_921 = {
-			add_province_modifier = {
-				name = colonial_recruitment
-				duration = 3650
-			}
-		}
-	}
-}
+#country_event = {
+#
+#	id = 995213
+#
+#	trigger = {
+#		EGY_921 = { owned_by = THIS }
+#		tag = PAP
+#		NOT = { has_country_flag = jerusalemowned }
+#	}
+#	
+#	fire_only_once = yes
+#
+#	title = "Jerusalem"
+#	desc = "Our conquest is Palestine is complete and once again the Holy City is in Christian hands, we should properly colonize the region to make sure it stays that way."
+#	picture = "Prosper"
+#
+#	option = {
+#		name = "Glory to God!" 
+#		set_country_flag = jerusalemowned
+#		prestige = 20
+#		EGY_921 = {
+#			add_province_modifier = {
+#				name = colonial_recruitment
+#				duration = 3650
+#			}
+#		}
+#	}
+#}

@@ -1,4 +1,4 @@
-#Events 50024-50050 reserved for Italy and Daufinat (which are located in HtA_DAU). Lower down in the file we've got IDs 51851-51899 which were introduced in 0.37
+#Events 50024-50050 reserved for PDN, NPL and DAU (which are located in HtA_DAU). Lower down in the file we've got IDs 51851-51899 which were introduced in 0.37
 
 #Fall of Tuscany
 country_event = {
@@ -305,7 +305,391 @@ country_event = {
 		}
 	}
 }
+
+
+#Istriot rebellion chain, probably between AUS and PDN (well, I haven't coded it for anyone except PDN)
+
+#Istriots rebel
+country_event = {
+	id = 51885
+	title = "EVTNAME51885"
+	desc = "EVTDESC51885"
+	picture = "istrian_revolution"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			owns = 736 #Trieste
+			owns = 778 #Fiume
+		}
+		NOT = {
+			primary_culture = north_italian
+		}
+		any_owned_province = {
+			OR = {
+				AND = {
+					province_id = 737
+					any_pop = {
+						has_pop_culture = north_italian
+						consciousness = 6
+						militancy = 6
+					}
+					NOT = { is_core = PDN }
+				}
+				AND = {
+					province_id = 736
+					any_pop = {
+						has_pop_culture = north_italian
+						consciousness = 6
+						militancy = 6
+					}
+					NOT = { is_core = PDN }
+				}
+				AND = {
+					province_id = 770
+					any_pop = {
+						has_pop_culture = north_italian
+						consciousness = 6
+						militancy = 6
+					}
+					NOT = { is_core = PDN }
+				}
+				AND = {
+					province_id = 778
+					any_pop = {
+						has_pop_culture = north_italian
+						consciousness = 6
+						militancy = 6
+					}
+					NOT = { is_core = PDN }
+				}
+			}
+		}
+		year = 1875
+		NOT = {
+			has_country_flag = istriots_rebel
+		}
+		PDN = {
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+		modifier = {
+			factor = 0.5
+			PDN = { nationalism_n_imperialism = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			PDN = { is_greater_power = yes }
+		}
+	}
+	
+	option = {
+		name = "Curse them!"
+		AUS_736 = {
+			add_core = PDN
+		}
+		set_country_flag = istriots_rebel
+		PDN = {
+			country_event = {
+				id = 51886
+				days = 1
+			}
+		}
+	}
+}
+
+#Istriots seek Padanian aid
+country_event = {
+	id = 51886
+	title = "EVTNAME51886"
+	desc = "EVTDESC51886"
+	picture = "istrian_revolution"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will strike at the earliest available opporuntity!"
+		AUS_736 = { 									#Repeated so the player PDN sees they've got a core on the state now
+			add_core = PDN
+		}
+		relation = {
+			who = FROM
+			value = -50
+		}
+		set_country_flag = istriots_acknowledged
 		
+		ai_chance = {
+			factor = 60
+		}
+	}
+	
+	option = {
+		name = "The fate of the Istriots is no concern of ours."
+		AUS_736 = {
+			remove_core = PDN
+		}
+		relation = {
+			who = FROM
+			value = 20
+		}
+		set_country_flag = istriots_ignored
+		
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+#Istriots agitate for independence
+country_event = {
+	id = 51887
+	title = "EVTNAME51887"
+	desc = "EVTDESC51887"
+	picture = "Riot"
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = istriots_rebel
+		any_owned_province = {
+			OR = {
+				AND = {
+					province_id = 737
+					any_pop = {
+						has_pop_culture = north_italian
+						consciousness = 6
+						militancy = 6
+					}
+					NOT = { is_core = PDN }
+				}
+				AND = {
+					province_id = 736
+					any_pop = {
+						has_pop_culture = north_italian
+						consciousness = 6
+						militancy = 6
+					}
+					NOT = { is_core = PDN }
+				}
+				AND = {
+					province_id = 770
+					any_pop = {
+						has_pop_culture = north_italian
+						consciousness = 6
+						militancy = 6
+					}
+					NOT = { is_core = PDN }
+				}
+				AND = {
+					province_id = 778
+					any_pop = {
+						has_pop_culture = north_italian
+						consciousness = 6
+						militancy = 6
+					}
+					NOT = { is_core = PDN }
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	immediate = {
+		AUS_736 = { add_core = IST }
+	}
+	
+	option = {
+		name = "Crack down on this!"
+		AUS_736 = {
+			any_pop = {
+				limit = {
+					has_pop_culture = north_italian
+				}
+				reduce_pop = 0.99
+				militancy = -5
+				consciousness = 3
+			}
+		}
+		set_country_flag = istriot_crackdown
+		
+		ai_chance = {
+			factor = 40
+		}
+	}
+	
+	option = {
+		name = "Win them over."
+		money = -10000
+		AUS_736 = {
+			any_pop = {
+				limit = {
+					has_pop_culture = north_italian
+				}
+				militancy = -3
+				consciousness = -2
+			}
+		}
+		set_country_flag = istriots_courted
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { money = 10000 }
+			}
+		}
+	}
+	
+	option = {
+		name = "Grant them autonomy."
+		prestige = -3
+		badboy = -1
+		release_vassal = IST
+		relation = {
+			who = IST
+			value = 100
+		}
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "Let them go."
+		prestige = -5
+		badboy = -2
+		release = IST
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Istriots Mollified
+country_event = {
+	id = 51888
+	title = "EVTNAME51888"
+	desc = "EVTDESC51888"
+	picture = "zadar"
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 736
+		has_country_flag = istriot_crackdown
+		NOT = { has_country_flag = istriots_revolt }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "I suppose that is the best we could have hoped for."
+		736 = {
+			state_scope = {
+				any_pop = {
+					limit = {
+						has_pop_culture = north_italian
+					}
+					militancy = -6
+					consciousness = -3
+				}
+			}
+		}
+		set_country_flag = istriots_simmer
+	}
+
+}
+#Istria erupts
+country_event = {
+	id = 51889
+	title = "EVTNAME51889"
+	desc = "EVTDESC51889"
+	picture = "Riot"
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 736
+		has_country_flag = istriot_crackdown
+		NOT = { has_country_flag = istriots_simmer }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Put them down!"
+		set_country_flag = istriots_revolt
+		release = IST
+		war = {
+			target = IST
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = no
+		}
+		IST = {
+			country_event = 60160
+			add_country_modifier = {
+				name = small_country_draft
+				duration = 3650
+			}
+		}
+	}
+}
+
+
+#After trying to win them over, things settle down
+country_event = {
+	id = 51890
+	title = "EVTNAME51890"
+	desc = "EVTDESC51890"
+	picture = "zadar"
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 736
+		has_country_flag = istriots_courted
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "The situation is under control. For now."
+		AUS_736 = {
+			any_pop = {
+				limit = {
+					has_pop_culture = north_italian
+				}
+				militancy = -7
+				consciousness = -4
+			}
+		}
+		set_country_flag = istriots_simmer
+	}
+}
+
 
 #Premiere of La Traviata
 country_event = {
@@ -339,3 +723,4 @@ country_event = {
 		}
 	}
 }
+

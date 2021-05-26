@@ -25,5 +25,22 @@ political_decisions = {
 			AUS_652 = { add_core = THIS }
 		}
 	}
+	
+	#If somehow Istria becomes independent through the event chain in HtA_ITA, starting from event 51885, they'll get Slovene and Croatian added as accepteds
+	IST_rapprochement_with_slavs = {
+		picture = ems_dispatch
+		potential = {
+			tag = IST
+			has_country_modifier = small_country_draft
+		}
+		allow = {
+			NOT = { accepted_culture = slovene }
+		}
+		effect = {
+			add_accepted_culture = slovene
+			add_accepted_culture = croat
+		}
+	}
+			
 
 }

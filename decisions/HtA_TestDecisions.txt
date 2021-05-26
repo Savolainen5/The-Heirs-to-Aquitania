@@ -163,5 +163,20 @@ political_decisions = {
 #		}
 #	}
 
+#	b_compare_test = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			PRE = {
+#				brigades_compare = 0.1		#Returns true if PRE has at least 0.1x / 10% of the number of brigades as the country taking the decision
+#			}
+#		}
+#		effect = {
+#			prestige = 1
+#		}
+#	}
+
+
 
 }

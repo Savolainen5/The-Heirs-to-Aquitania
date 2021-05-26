@@ -71,10 +71,11 @@ Minor
 - French decisions to accept Wallonians, Picards and Bretons will now cost 5% of their prestige instead of a piddly 1 or 2
 - Forming the Scylfiga Woning now gives 30 prestige instead of 120% of what you had.
 - Added the Prusai culture, Baltic-speaking remnants of the Old Prussians, to the Polish-Lithuanian border region, along with a country for it - Prusova (tag PRS)
+- Added a tag for Istria (tag IST), a Cisalpine-run confederation of the various cities in the state of Istria, plus some drama for the owner (probably AUS) of it.
+- Added Moravia (tag MRV) as a country. It's mostly there to prevent Czechs from assimilating after the Treaty of Szekesfehervar
 - Added (army) unit files from HFM
 - Changed some country colours: CYR, EGY, MGH, LUZ, LTS, CHI
-- Changed a few culture colours: Guaraní, Lutzan
-- Added Moravia as a country. It's mostly there to prevent Czechs from assimilating after the Treaty of Szekesfehervar
+- Changed some culture colours: Guaraní, Lutzan
 - Also added related decisions and events for dealing with its cores and what happens if it becomes independent
 - Used native names for the Nahua culture, thanks to Komodo
 - Copied over a lot of stuff about cultural tech from HPM, mostly so that the choice modifiers are more complex and so that there isn't so much colonial migration from tech (+0.5 per level before, now ´+0.05)
