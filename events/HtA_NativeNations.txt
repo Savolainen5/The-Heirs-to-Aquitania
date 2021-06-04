@@ -193,6 +193,7 @@ country_event = {
 		}
 		NOT = { war_with = CHE }
 		NOT = { war_with = IRO }
+		tag = SHC
 	}
 	
 	mean_time_to_happen = {

@@ -482,7 +482,6 @@ political_decisions = {
 	}
 
 	## Shawnee Civil War
-	
 	break_free_shc = {
 		picture = "native_man"
 		potential = {
@@ -869,6 +868,24 @@ political_decisions = {
 				factor = 0
 				badboy = 0.8
 			}
+		}
+	}
+	
+	IRO_expand = {
+		picture = native_man
+		potential = {
+			tag = IRO
+			178 = { NOT = { is_core = THIS } }
+		}
+		allow = {
+			war = no
+			is_independant = yes
+			civilized = yes
+		}
+		effect = {
+			prestige = 2
+			180 = { add_core = THIS }
+			178 = { add_core = THIS }
 		}
 	}
 	
