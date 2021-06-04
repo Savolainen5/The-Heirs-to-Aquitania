@@ -314,4 +314,138 @@ political_decisions = {
 			}
 		}
 	}
+	
+# The Future of Nanyue 
+	force_cw_qin = {
+		alert = no
+		picture = organize_indochina
+		potential = {
+			tag = QIN 
+			OR = {
+				AND = {
+					ai = yes
+					year = 1890
+				}
+				ai = no
+			}
+			NOT = {
+				OR = {
+					has_global_flag = gxi_claimed_mandate
+					has_global_flag = nanyue_abandon_china
+				}
+			}
+		}
+		
+		allow = {
+			war = no 
+		}
+		
+		effect = {
+			GXI = { country_event = 53002 }
+		}
+	}
+	
+	#The Future of Nanyue
+	force_cw_gxi = {
+		alert = no 
+		picture = organize_indochina
+		potential = {
+			tag = GXI 
+			ai = no
+			NOT = {
+				has_global_flag = gxi_claimed_mandate
+				has_global_flag = nanyue_abandon_china
+			}
+		}
+		
+		allow = {
+			war = no 
+		}
+		
+		effect = {
+			country_event = 53002
+		}
+	}
+	
+	#Annex Yunnan
+	annex_YNN = {
+		picture = form_china
+		potential = {
+			OR = {
+				tag = QIN 
+				tag = CHI
+			}
+			civilized = yes
+			NOT = { has_country_flag = no_YNN }
+		}
+		
+		allow = {
+			YNN = { vassal_of = THIS }
+		}
+		
+		effect = {
+			inherit = YNN
+			set_country_flag = no_YNN
+			prestige = 5
+		}
+	}
+	
+	# Annex Qinghai
+	annex_XBI = {
+		picture = form_china
+		potential = {
+			OR = {
+				tag = QIN 
+				tag = CHI
+			}
+			civilized = yes
+			NOT = { has_country_flag = no_XBI }
+		}
+		
+		allow = {
+			is_our_vassal = XBI 
+		}
+		
+		effect = {
+			inherit = XBI 
+			set_country_flag = no_XBI
+			prestige = 5
+		}
+	}
+	
+	#Claim Southern China
+	gxi_china_expanse = {
+		picture = unequal_treaty
+		potential = {
+			tag = GXI 
+			has_global_flag = nanyue_abandon_china
+			NOT = { has_country_flag = nanyue_destiny }
+			QIN = { civilized = no }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			war = no 
+			is_disarmed = no
+			nationalism_n_imperialism = 1
+			military_score = 100
+		}
+		
+		effect = {
+			CHI_1610 = { add_core = THIS } # South Zhejiang
+			CHI_1505 = { add_core = THIS } # Guizhou
+			CHI_1601 = { add_core = THIS } # Yunnan 
+			CHI_1524 = { add_core = THIS } # Hunan
+			badboy = 15
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
+	}
+	
 }

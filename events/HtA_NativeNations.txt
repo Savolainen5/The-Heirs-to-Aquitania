@@ -1,8 +1,7 @@
 #Event to set up native nations
 country_event = {
-
 	title = "EVTNAME95599"
-	desc = "EVTDESC95599"
+	desc = "EVTDESC95599" 
 	id = 95599
 
 	picture = "geronimo"
@@ -30,7 +29,7 @@ country_event = {
 	}
 
 	option = {
-		name = "EVTOPTA95599"
+		name = "EVTOPTA95599" 
 		set_country_flag = has_native_societies
 		add_country_modifier = {
 			name = native_societies1
@@ -39,6 +38,341 @@ country_event = {
 		add_country_modifier = {
 			name = native_societies2
 			duration = -1
+		}
+	}
+}
+
+country_event = {
+	title = "EVTNAME95600" ## The New Leader
+	desc = "EVTDESC95600" ## The Shawnee Confederation was established in the 18th century in the wake of the successful defensive wars against Norway. In 1811, the French prince and explorer Henri Tournus wedded Nonhelema, the sister of Chief Hokolesqua, under agreement that their children would take the Chief's family name of Spithotha. After Hokolesqua passed away, a council of elders was convened to select his successor. Among the choices available were Lalawethika, the first born son of Hokolesqua, who favored a traditional relationship with the land and maintaining a hard line against European encroachment. His primary rival was the son of Henri and Honhelema, Tenskwatawa Ulysse, who had received a partial European education and favored modernizing the Confederation. 
+	id = 95600
+	picture = "seattle_1870"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SHC
+		has_country_flag = has_native_societies
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.01
+			year = 1836
+		}
+	}
+	
+	option = {
+		name = "Lalawethika, a man of tradition."
+		prestige = 5
+		define_general = {
+			name = "Lalawethika Spithotha"
+			personality = audacious
+			background = natural_born_leader
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "Tenskwatawa Ulysse, for progress!"
+		set_global_flag = shc_modernizing
+		add_country_modifier = {
+			name = "western_influences"
+			duration = -1
+		}
+		years_of_research = 2
+		any_country = {
+			limit = {
+				OR = {
+					tag = VST
+					tag = MRG
+					tag = NHL
+				}
+			}
+			country_event = 51010 ## The Shawnee Reformer
+		}
+		any_country = {
+			limit = {
+				OR = {
+					tag = IRO
+					tag = CHE
+				}
+			}
+			country_event = 95601 ## Changes Afoot
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	title = "Changes Afoot"
+	desc = "It seems our Shawnee leaders are pursuing a different path from our ancestors. This does not bode well."
+	id = 95601
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Not good!"
+		relation = {
+			who = FROM
+			value = -30
+		}
+	}
+}
+
+country_event = {
+	title = "Rebellion in $FROMCOUNTRY$"
+	desc = "Though we have partnered for generations, $FROMCOUNTRY$ has finally decided our path of modernization runs anathema to their culture and they have severed relations with us!"  
+	id = 95602
+	picture = "rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Restore order!"
+		war = {
+			target = FROM 
+			attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = yes
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+	
+	option = {
+		name = "Let them go."
+		prestige = -5
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	title = "EVTNAME95603" ## Total War Against the White Man
+	desc = "EVTDESC95603" ## $FROMCOUNTRY$ has declared war on us, intervening in our internal matters. It seems they are desperate to ensure the native people of this continent do not stand up to their agression. We must unite now, using their own tactics against them, or our people shall be broken forever.
+	id = 95603
+	picture = "Sioux"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "Everything for victory."
+		iron = 10
+		wool = 10
+		timber = 25
+		small_arms = 10
+		leadership = 20
+		add_country_modifier = {
+			name = small_country_draft
+			duration = 1200
+		}
+		military_reform = yes_foreign_training
+	}
+}
+
+country_event = {
+	title = "EVTNAME95604" ## Tenskwatawa Overthrown
+	desc = "EVTDESC95604" ## Our attempt at modernizing was a failure! Our elders have denounced Tenskwatawa Ulysse and exiled him from Shawnee lands. We must go back to the ways we know best and hope to salvage what we can from our former union.
+	id = 95604
+	
+	picture = "Sioux"
+	
+	trigger = {
+		has_global_flag = shc_modernizing
+		OR = {
+			is_disarmed = yes
+			NOT = { num_of_vassals = 2 }
+		}
+		NOT = { war_with = CHE }
+		NOT = { war_with = IRO }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.5
+			average_militancy = 2
+		}
+	}
+
+	option = {
+		name = "Good riddance."
+		remove_country_modifier = western_influences 
+		military_reform = no_foreign_training
+	}
+}
+
+country_event = {
+	title = "EVTNAME95605" ## End of the Natives
+	desc = "EVTDESC95605" ## With the last of the Native Amerigan tribes having been conquered, their existence on this continent is fast becoming a dim memory. It is time for their people to become integrated into our modern society.
+	id = 95605
+	
+	picture = "geronimo"
+	
+	trigger = {
+		NOT = {
+			exists = SHC
+			exists = IRO
+			exists = CHE
+		}
+		any_owned_province = {
+			OR = {
+				is_core = SHC
+				is_core = IRO
+				is_core = CHE
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 10
+		modifier = {
+			factor = 0.5
+			revolution_n_counterrevolution = 1
+		}
+		modifier = {
+			factor = 0.5
+			biologism = 1
+		}
+	}
+	
+	option = {
+		name = "It is for the best."
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = SHC
+					is_core = IRO
+					is_core = CHE
+				}
+			}
+			remove_core = SHC
+			remove_core = IRO
+			remove_core = CHE
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			consciousness = 0.5
+		}
+	}
+}
+
+country_event = {
+	title = "EVTNAME95606" ## Victory!
+	desc = "EVTDESC95606" ## The white man failed to enforce his will with force of arms, and has acknowledged the right of Shawnee Confederation to exist on its own terms. No more shall they view us as uncivilized savages and force their treaties upon us - we are the original people of this land, and here we shall stay.
+	id = 95606
+	picture = "Sioux"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SHC
+		civilized = no
+		has_global_flag = shc_intervene
+		truce_with = VST
+		is_disarmed = no
+		VST = { has_recently_lost_war = yes }
+		NOT = { has_global_flag = shc_won }
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "The Confederation will persevere!"
+		set_global_flag = shc_won
+		any_owned = {
+			limit = {
+				is_core = THIS
+			}
+			remove_core = VST
+		}
+	}
+}
+
+country_event = {
+	title = "EVTNAME95607" ## The Future of Shawnee
+	desc = "EVTDESC95607" ## Although our ascendence to the ranks of the so-called 'civilized' nations limits the ability of neighboring settler states to impose their will upon us, it is still unclear what kind of future path we should pursue in our relations with them. Some members of our society, particularly those educated outside our borders, believe it is time for our government to reform itself into a state based on the European model and open ourselves up to immigrants - granted that they will obey our laws. Others think that we should pursue vengeance against those who have tried unsuccessfully to oppress us, and that all settlers should be driven into the sea for good.
+	id = 95607
+	##picture = 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Pursue accomodation with the white men."
+		## set_country_flag = shc_peaceful
+		remove_country_modifier = native_societies1
+		remove_country_modifier = native_societies2
+		set_country_flag = new_world_nation
+		any_country = {
+			limit = {
+				capital_scope = { continent = north_america }
+			}
+			relation = {
+				who = THIS
+				value = 100
+			}
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "No quarter was given, and none shall be returned."
+		## set_country_flag = shc_vengeance
+		badboy = 24
+		VST = {	
+			all_core = { add_core = THIS } 
+		}
+		MRG = {	
+			all_core = { add_core = THIS } 
+		}
+		QUE = {	
+			all_core = { add_core = THIS } 
+		}
+		NHL = {	
+			all_core = { add_core = THIS } 
+		}
+		any_country = {
+			limit = {
+				capital_scope = { continent = north_america }
+				NOT = { primary_culture = nahua }
+			}
+			casus_belli = {
+				target = THIS
+				type = cut_down_to_size
+				months = 60
+			}
+			relation = {
+				who = THIS
+				value = -150
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = -150
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				badboy = 1
+			}
 		}
 	}
 }

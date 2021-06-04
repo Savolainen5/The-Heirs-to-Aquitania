@@ -33,7 +33,8 @@ springtime_of_nations = {
 
 global_liberal_agitation = {
 	global_pop_consciousness_modifier = 0.2
-	global_pop_militancy_modifier = 0.01
+	global_pop_militancy_modifier = 0.05
+	prestige = -0.03
 	immigrant_push = 0.25
 	icon = 4
 }
@@ -1167,14 +1168,13 @@ national_confusion = {
 }
 
 nv_tradition_modifier = {
-	research_points_modifier = -0.2
-	research_points = -0.1
+	research_points_modifier = -0.05
 	core_pop_militancy_modifier = -0.01
 	icon = 3
 }
 
 nv_enlightenment_modifier = {
-	research_points_modifier = 0.2
+	research_points_modifier = 0.05
 	core_pop_consciousness_modifier = 0.01
 	icon = 3
 }
@@ -1199,7 +1199,7 @@ nv_loyalty_modifier = {
 nv_independence_modifier = {
 	research_points_modifier = -0.2
 	core_pop_militancy_modifier = -0.01
-	land_unit_start_experience = 10
+	unit_start_experience = 5
 	leadership_modifier = 0.2
 	war_exhaustion = -0.01
 	icon = 3
@@ -1227,8 +1227,7 @@ nv_might_modifier = {
 	mobilisation_size = 0.06
 	war_exhaustion = -0.02
 	leadership_modifier = 0.2
-	land_unit_start_experience = 5
-	naval_unit_start_experience = 5
+	unit_start_experience = 10
 	assimilation_rate = -0.1
 	icon = 3
 }
@@ -1283,8 +1282,7 @@ nv_supremacy_modifier = {
 	global_pop_militancy_modifier = -0.02
 	war_exhaustion = -0.1
 	leadership_modifier = 0.15
-	land_unit_start_experience = 10
-	naval_unit_start_experience = 10
+	unit_start_experience = 10
 	supply_consumption = -0.1
 	assimilation_rate = -0.1
 	global_immigrant_attract = -1
@@ -1334,8 +1332,7 @@ nv_glory_modifier = {
 	rich_everyday_needs = 0.2
 	war_exhaustion = -0.01
 	leadership_modifier = 0.1
-	land_unit_start_experience = 5
-	naval_unit_start_experience = 5
+	unit_start_experience = 5
 	assimilation_rate = -0.1
 	icon = 3
 }
@@ -1344,8 +1341,7 @@ nv_dominion_modifier = {
 	mobilisation_size = 0.06
 	war_exhaustion = -0.02
 	leadership_modifier = 0.2
-	land_unit_start_experience = 5
-	naval_unit_start_experience = 5
+	unit_start_experience = 5
 	assimilation_rate = -0.1
 	factory_owner_cost = -0.1
 	supply_consumption = -0.05
@@ -1839,6 +1835,38 @@ communist_technology = {
 }
 
 #### Heirs to Aquitania HtA####
+
+restless_slaves = {
+	non_accepted_pop_militancy_modifier = 0.02
+	non_accepted_pop_consciousness_modifier = 0.03
+	icon = 18
+}
+
+slave_trade = {
+	tax_efficiency = 0.02
+	RGO_throughput = 0.01
+	prestige = -0.01
+	icon = 18
+}
+
+azt_1 = {
+	non_accepted_pop_militancy_modifier = 0.05
+	assimilation_rate = 5
+	icon = 18
+}
+
+azt_2 = {
+	non_accepted_pop_militancy_modifier = 0.01
+	assimilation_rate = 0.05
+	icon = 17
+}
+gdn_army = {
+	land_organisation = 0.15
+	leadership_modifier = 0.1
+	unit_start_experience = 10
+	icon = 15
+}
+	
 native_societies1 = {
 	global_immigrant_attract = -10
 	icon = 8
@@ -1899,7 +1927,7 @@ pier_moncani = {
 	icon = 17
 }
 
-#PDN/NPL/ITA stuff									¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+#PDN/NPL/ITA stuff									¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ MORE WORK NEEDED
 tax_exemptions = {
 	icon = 12
 }
@@ -1974,7 +2002,8 @@ jacin_ilmunt = {
 #Generic events
 
 active_serial_killer = {
-	pop_militancy_modifier = 0.02
+	pop_militancy_modifier = 0.01
+	pop_consciousness_modifier = 0.01
     immigrant_push = 0.05
     immigrant_attract = -0.05
     local_ruling_party_support = -0.1
@@ -1986,7 +2015,7 @@ great_fire_happened = {
 }
 
 great_fire_recovery = {
-	immigrant_push = 0.25
+	immigrant_push = 0.1
 	local_RGO_output = -0.05
 	population_growth = -0.001
 	poor_income_modifier = -0.05
@@ -1999,7 +2028,7 @@ great_fire_recovery = {
 
 disaster_damage = {
 	local_RGO_output = -0.2
-	immigrant_push = 0.25
+	immigrant_push = 0.15
 	population_growth = -0.02
 	icon = 14
 }
@@ -2012,7 +2041,7 @@ poor_harvest = {
 	rich_income_modifier = -0.02
 	population_growth = -0.001
 	local_RGO_output = -0.05
-	immigrant_push = 0.25
+	immigrant_push = 0.2
 	icon = 14
 }
 

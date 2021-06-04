@@ -217,7 +217,7 @@ country_event = {
 					}
 			}
 			modifier = { 
-				factor = 0.5 
+				factor = .5 
 				is_secondary_power = yes 
 			}
 		}
@@ -328,7 +328,8 @@ country_event = {
 	}
 }
 
-# Portuguese separatists event chain. This causes confrontation between Portugal and Hispania, which could lead to Aquitanian intervention.
+# Portuguese separatists event chain. This causes confrontation between Portugal
+# and Hispania, which could lead to Aquitanian intervention.
 
 country_event = {
 	id = 50307
@@ -341,7 +342,6 @@ country_event = {
 		year = 1870 
 		war = no 
 		is_vassal = no
-		exists = HIS
 		is_disarmed = no 
 		NOT = {
 			alliance_with = HIS 
@@ -362,6 +362,7 @@ country_event = {
 			factor = 0.8
 			invention = separatism
 		}
+		
 		modifier = {
 			factor = 1.5
 			NOT = { invention = national_fraternity }
@@ -456,7 +457,6 @@ country_event = {
 		war = no
 		has_global_flag = portuguese_separatists
 		NOT = { has_country_flag = rebels_discovered }
-		exists = POR
 	}
 	
 	mean_time_to_happen = {
@@ -748,7 +748,7 @@ country_event = {
 	id = 50313
 	title = "EVTNAME50313" # AQT does not support us
 	desc = "EVTDESC50313"
-	picture = Artillery
+	picture = "Artillery"
 	
 	is_triggered_only = yes
 	
@@ -795,6 +795,170 @@ country_event = {
 				factor = 1.5 
 				war_policy = pacifism
 			}
+		}
+	}
+}
+
+### CUBA PURCHASE 
+# Initiate price
+country_event = {
+	id = 50314
+	title = "EVTNAME50314" ## The Price of Cuba
+	desc = "EVTDESC50314" ## Cuba is considered the 'jewel in the crown' of the Hispanian colonial empire. In order for our proposal to be entertained, we need to make a serious offer for it.
+	picture = "Cubanrebels"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "Low ball offer - 5000 for Cuba"
+		HIS = { country_event = 50315 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	option = {
+		name = "Medium offer - 10000 for Cuba"
+		HIS = { country_event = 50316 }
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "Generous offer - 15000 for Cuba!"
+		HIS = { country_event = 50317 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#lowball offer 
+country_event = {
+	id = 50315
+	title = "EVTNAME50315" ## Margaria Offers to Buy Cuba
+	desc = "EVTDESC50315" ## In light of our current distress, Margaria has offered to take Cuba off of our hands for the price of 5000. Our Minister of Finance says this not a good price for the value of Cuba, but considering our dire financial straits, maybe we should consider it anyway.
+	picture = "Cubanrebels"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "Absolutely not!"
+		FROM = { country_event = 50319 }
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "It's useless land anyway"
+		money = 5000
+		FROM = {
+			money = -5000
+			country_event = 50318 
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#medium offer 
+country_event = {
+	id = 50316
+	title = "EVTNAME50316" ## Margaria Offers to Buy Cuba
+	desc = "EVTDESC50316" ## In light of our current distress, Margaria has offered to take Cuba off of our hands for the price of 10000. Our Minister of Finance says this is a fair price for the value of Cuba, and considering our dire financial straits, it may make sense to accept it.
+	picture = "Cubanrebels"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "We're not willing"
+		FROM = { country_event = 50319 }
+		ai_chance = {
+			factor = 40
+		}
+	}
+	
+	option = {
+		name = "The price is right!"
+		money = 10000
+		FROM = {
+			money = -10000
+			country_event = 50318 
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+}
+
+#lowball offer 
+country_event = {
+	id = 50317
+	title = "EVTNAME50317" ## Margaria Offers to Buy Cuba
+	desc = "EVTDESC50317" ## In light of our current distress, Margaria has offered to take Cuba off of our hands for the price of 15000. Our Minister of Finance says this is an excellent price, and encouraged us to accept the offer!
+	picture = "Cubanrebels"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "We simply cannot part with it"
+		FROM = { country_event = 50319 }
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "Absolutely!"
+		money = 15000
+		FROM = {
+			money = -15000
+			country_event = 50318 
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+# HIS agrees 
+country_event = {
+	id = 50318
+	title = "EVTNAME50318" ## Hispania Agrees
+	desc = "EVTDESC50318" ## Hispania has accepted the price we are offering to buy Cuba. Today, the Hispanian colonial government in Havana lowered its flag for the last time and turned over administration of the island to us.
+	picture = "greatpowers"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "Huzzah!"
+		SPA_2209 = { add_core = THIS }
+		FROM = {
+			any_owned = {
+				limit = { is_core = CUB }
+				secede_province = THIS
+			}
+		}
+	}
+}
+
+# HIS refuses 
+country_event = {
+	id = 50319
+	title = "Hispania Refuses" 
+	desc = "Hispania has refused the price we are offering to buy Cuba, stating that the island is simply too valuable to let go for now." 
+	picture = "greatpowers"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "Damn!"
+		relation = {
+			who = HIS
+			value = -50
 		}
 	}
 }

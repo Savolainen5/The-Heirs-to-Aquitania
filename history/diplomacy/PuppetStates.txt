@@ -186,3 +186,25 @@ vassal = {
 	start_date = 1835.1.1
 	end_date = 1949.1.1
 }
+
+#Mexica
+substate = {
+	first = MEX
+	second = OAX
+	start_date = 1835.1.1
+	end_date = 1949.1.1
+}
+
+substate = {
+	first = MEX
+	second = TRS
+	start_date = 1835.1.1
+	end_date = 1949.1.1
+}
+
+substate = {
+	first = MEX
+	second = AZT
+	start_date = 1835.1.1
+	end_date = 1949.1.1
+}

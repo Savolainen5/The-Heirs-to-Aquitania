@@ -477,4 +477,49 @@ political_decisions = {
 		}
 	}
 
+#For situations where, for some reason, a human is TUS and manages to survive the war against NPL at the beginning of the game
+	TUS_form_PDN = {
+		picture = PoBridge
+		potential = {
+			tag = TUS
+			NOT = { year = 1842 }
+			NOT = {
+				exists = PDN
+			}
+		}
+		allow = {
+			NOT = {
+				war_with = NPL
+				war_with = ITA
+			}
+			is_independant = yes
+		}
+		effect = {
+			prestige = 5
+			change_tag = PDN
+			set_global_flag = PDN_created
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = LOM
+						is_core = GEN
+						is_core = MOD
+						is_core = VEN
+						is_core = TUS
+					}
+				}
+				add_core = PDN
+				remove_core = LOM
+				remove_core = GEN
+				remove_core = MOD
+				remove_core = VEN
+				remove_core = TUS
+			}
+			country_event = {
+				id = 50025
+				days = 10
+			}
+		}
+	}	
+
 }

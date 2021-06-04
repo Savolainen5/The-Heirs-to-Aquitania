@@ -55,8 +55,8 @@ on_surrender =
 
 on_new_great_nation = 
 {
-	10 = 19310
-	10 = 19320
+	10 = 19310 #Should fire only for certain Chinese countries. SHOULD
+	10 = 19320 #Should fire only for certain Japanese countries. SHOULD
 }
 
 on_lost_great_nation = 

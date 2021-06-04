@@ -122,6 +122,8 @@ country_event = {
 	title = "EVTNAME51004"
 	desc = "EVTDESC51004" 
 	
+	picture = "pioneer_wagons"
+	
 	trigger = {
 		tag = GNC
 		CLF = {
@@ -323,6 +325,8 @@ country_event = {
 	title = "Dividing Up the Land"
 	desc = "After the war, we promised to apportion the former north of Califiana to Skamisc."
 	picture = "Celebration"
+	
+	fire_only_once = yes 
 
 	trigger = {
 		tag = GNC
@@ -391,6 +395,1328 @@ country_event = {
 				is_core = CLF
 			}
 			add_core = THIS 
+		}
+	}
+}
+
+## Shawnee Modernization
+country_event = {
+	id = 51010
+	title = "EVTNAME51010" ## The Shawnee Reformer
+	desc = "EVTDESC51010" ## Word has reached us that the Shawnee Confederation has selected a successor for its former leader, Chief Hokolesqua. It seems the Chief's French-Shawnee nephew, Tenskwatawa Ulysse, will become the next Chief of the Confederation. It seems he intends to modernize the Confederation...
+	picture = "geronimo"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Restless natives are a threat!"
+		relation = {
+			who = FROM
+			value = -35
+		}
+		ai_chance = {
+			factor = 65
+		}
+	}
+	
+	option = {
+		name = "Perhaps there is opportunity to work with him."
+		relation = {
+			who = FROM
+			value = 50
+		}
+		ai_chance = {
+			factor = 35
+		}
+	}
+}
+
+country_event = {
+	id = 51024
+	title = "EVTNAME51024" ## The Treaty of Tesepikhav
+	desc = "EVTDESC51024" ## The Shawnee savages have taken our capital and sacked the city! This is incredibly embarassing. They demand that we end our intervention and sign a treaty acknowledging their sovereignty. We must let them go... for now.
+	picture = "ambush_army"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "Damn!"
+		end_war = SHC
+		prestige = -15
+		set_global_flag = shc_won
+		relation = {
+			who = FROM
+			value = 50
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "Never! We fight on!"
+		prestige = -30
+		poor_strata = {
+			militancy = 3
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+## New Holland Congress
+country_event = {
+	id = 51011
+	title = "EVTNAME51011" ## The Vestlandic Offer
+	desc = "EVTDESC51011" ## Vestland is the preeminent power in Eastern Ameriga. Their influence in our nation's economy, foreign policy and, increasingly, domestic affairs is now impossible to ignore. While our nations have different cultural roots, we share the same Northern European work ethic, mercantile spirit and nautical prowess. There are many people in both Vestland and New Holland who think that on account of these similarities, we should allow ourselves to be incorporated into Vestland.
+	
+	picture = "senate_debate"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Forwards to Vestland! (Game Over)"
+		VST = { country_event = 51012 }
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.1
+				OR = {
+					VST = { government = fascist_dictatorship }
+					VST = { government = proletarian_dictatorship }
+				}
+				THIS = { government = democracy }
+			}
+		}
+	}
+	
+	option = {
+		name = "We politely refuse"
+		VST = { country_event = 51013 }
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 2
+				NOT = { relation = { who = FROM value = 100 } } 
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 51012
+	title = "New Holland Agrees"
+	desc = "The Nieuwlander people have seen the wisdom in joining our union!"
+	
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		prestige = 15
+		add_accepted_culture = nieuwlander
+		NHL = { all_core = { add_core = THIS } }
+		inherit = NHL 
+	}
+}
+
+country_event = {
+	id = 51013
+	title = "New Holland Refuses"
+	desc = "The Nieuwlander government has put an end to talk of a union between our two nations. Now we must decide whether to let the issue go, or to bring force of arms..." 
+	
+	picture = "senate_debate"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We respect their decision"
+		prestige = -10
+		relation = {
+			who = FROM
+			value = 50
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				war_policy = jingoism
+			}
+		}
+	}
+	
+	option = {
+		name = "A foolish mistake"
+		prestige = -10
+		badboy = 10
+		leave_alliance = FROM
+		relation = {
+			who = FROM
+			value = -100
+		}
+		diplomatic_influence = {
+			who = FROM
+			value = -200
+		}
+		NHL = { all_core = { add_core = THIS } }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+}
+
+## Margaria Slave Revolt
+
+country_event = {
+	id = 51014
+	title = "EVTNAME51014" ## Restless Plantations
+	desc = "EVTDESC51014" ## Today on Sandefjord Plantation on the coast of Fremadland, a group of 15 slaves shot and killed two foremen before attempting to free the other slaves on the plantation, march on the manor and start a local revolt. Luckily, members of the local constabulary were nearby and helped the plantation owner to disarm and apprehend these criminals. During interrogation afterwards, they revealed that they have had contact with a community of free slaves living in the swamp, possibly established by abolitionists from Gidan. It seems this group is spreading their seditious gospel up and down the river, even to natives. While we are trying to track down their hideouts, they have an uncanny ability to fade away into the marshland, evading our pursuers at every turn. 
+	
+	picture = "slaves_freed"
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = MRG
+		has_global_flag = mrg_gdn_slaves
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "We shall maintain order!"
+		add_country_modifier = {
+			name = restless_slaves
+			duration = -1
+		}
+		any_pop = {
+			limit = {
+				type = slaves 
+			}
+			consciousness = 2
+		}
+	}
+}
+
+province_event = {
+	id = 51015
+	title = "EVTNAME51015" ## Revolutionary Circle
+	desc = "EVTDESC51015" ## Our police have discovered a group of slaves advocating revolt in $STATENAME$. It seems they have contacted plantations throughout the area, organizing slaves to take up arms against their owners. While we executed the ringleaders, how should we proceed regarding the other plantations in the area?
+	
+	trigger = {
+		owner = {
+			tag = MRG
+			has_country_modifier = restless_slaves
+		}
+		has_pop_type = slaves 
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+		modifier = {
+			factor = 1.5
+			owner = { war = yes }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { is_core = MRG }
+		}
+	}
+	
+	option = {
+		name = "Hope it blows over"
+		state_scope = {
+			slaves = { consciousness = 4 }
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "Organize a crackdown!"
+		state_scope = {
+			slaves = { 
+				militancy = 2
+				consciousness = 2
+				reduce_pop = .95				
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	id = 51016
+	title = "EVTNAME51016" ## The Margarian Slave Debate
+	desc = "EVTDESC51016" ## Margaria's economy has relied on slavery for generations, and now more than a third of our population is comprised of slaves imported from West Africa. That this enslaved population might one day break its chains and rise up in rebellion has always lurked as the greatest threat to our nation, and there are some thinkers in our country who believe that we should transition away from slavery in order to maintain national stability. Moreover, the Albesan ideology which led to our founding in 1762 advocates a monarchy where every man is equal before the law, an awkward contradiction that has always rested at the heart of our society. Yet until abolitionists can match the political power of Margaria's hereditary nobility, the entrenched plantation class most supportive of the status quo, they are unlikely to change the legality of slavery.
+	
+	picture = "Slavepower"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MRG
+		year = 1836
+		slavery = yes_slavery
+		NOT = { has_country_flag = the_slavery_debate }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "It's just business."
+		set_country_flag = the_slavery_debate
+		any_pop = {
+			dominant_issue = {
+				value = yes_slavery
+				factor = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 51017
+	title = "EVTNAME51017" ## Ringleaders Discovered
+	desc = "EVTDESC51017" ## Good news - after a running battle lasting several days in the swamps, our men have finally tracked down the freedmen community that has been causing us so much trouble! Many in the group were escaped slaves, but it appears the community was founded by abolitionists who speak an Aenglish-Aquitànian creole and come from Gidan. More concerningly however, it seems that these citizens had state support in their mission to rouse rebellion. Many of the plantation-owning nobility believe we should demand that Gidan pay an indemnity for supporting these crimes.
+	
+	picture = "amistad"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MRG
+		has_country_modifier = restless_slaves
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.75
+			average_consciousness = 4
+		}
+		
+		modifier = {
+			factor = 0.5
+			administration_spending = 0.5
+		}
+	}
+	
+	option = {
+		name = "Gidan will pay for this!" 
+		remove_country_modifier = restless_slaves
+		GDN = { country_event = 51204 }
+		ai_chance = {
+			factor = 85
+		}
+	}
+	
+	option = {
+		name = "What's done is done"
+		remove_country_modifier = restless_slaves
+		prestige = -5
+		ai_chance = {
+			factor = 15
+		}
+	}
+}
+
+country_event = { 
+	id = 51018
+	title = "EVTNAME51018" ## The Future of Margaria 
+	desc = "EVTDESC51018" ## As our nation industrializes, capital is starting to flow from slave plantations to burgeoning new industries in the manufacturing sector. What's more, our new class of capitalists increasingly see our agragrian economy as a drain on industrialization, and slaves themselves as an inefficient workforce that could be more productively employed in factories. While there remain many wealthy plantation owners who will certainly fight to maintain the current laws, the national dialogue on slavery has begun to decisively shift against them. The government could use this opportunity to once again allow for a debate on slavery in parliament.
+	
+	picture = "dixie"
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = MRG 
+		year = 1865
+		has_country_flag = the_slavery_debate
+		industrial_score = 25
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.5
+			industrial_score = 50
+		}
+		
+		modifier = {
+			factor = 0.5
+			industrial_score = 75
+		}
+		
+		modifier = {
+			factor = 0.5
+			industrial_score = 100
+		}
+	}
+	
+	option = {
+		name = "Slavery has no place in the modern age."
+		prestige = 10
+		clr_country_flag = the_slavery_debate
+		any_pop = {
+			limit = {
+				type = aristocrats
+			}
+			militancy = 2
+			consciousness = 3
+		}
+		any_pop = {
+			limit = {
+				type = capitalists
+			}
+			militancy = -1
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "Change our way of life? Preposterous!"
+		badboy = 5
+		any_pop = {
+			scaled_militancy = {
+				ideology = liberal
+				factor = 3
+			}
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 4
+			}
+			dominant_issue = {
+				value = yes_slavery
+				factor = 1
+			}
+		}
+		set_country_flag = mrg_slave_continue
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+country_event = {
+	id = 51019
+	title = "The Act of Abolition" 
+	desc = "Owing to our new government's stance on equality between races, a bill has been forced through parliament outlawing slavery and all practices associated with it."  
+	
+	picture = "election_crowd"
+	
+	trigger = {
+		tag = MRG
+		slavery = yes_slavery
+		year = 1875
+		OR = {
+			ruling_party_ideology = socialist
+			ruling_party_ideology = communist
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "The end of an era."
+		political_reform = no_slavery
+		clr_country_flag = the_slavery_debate
+		clr_country_flag = slaver
+		remove_country_modifier = slave_trade
+		badboy = -3
+		prestige = 10
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "Well, that just won't do..."
+		clr_country_flag = the_slavery_debate ## If player doesn't choose dictatorship, should still allow for slavery to be abolished. If dictatorship later falls to rebels, should also then be abolished 
+		country_event = 152009873
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				government = proletarian_dictatorship
+			}
+		}
+	}
+}
+
+country_event = {					############################THIS ONE WILL NEED TO BE WORKED ON AT SOME POINT WHEN THE ABOLITION CB IS IMPLEMENTED PROPERLY
+	id = 51023
+	title = "$FROMCOUNTRY$ Enforces Abolition"
+	desc = "Our peace agreement with $FROMCOUNTRY$ requires us to dismantle the slave trade in our country effective immediately." 
+	picture = "NavioNegreiro"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "Fine!"
+		clr_country_flag = the_slavery_debate
+		clr_country_flag = slaver
+		remove_country_modifier = slave_trade
+	}
+}
+
+## Inheriting HAI events for GDN
+
+country_event = {
+	id = 51020
+	title = "Join Gidan?" 
+	desc = "Gidan has asked if we would like to join their union made largely of African diaspora." 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "We accept!"
+		FROM = { country_event = 51021 }
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 2
+				relation = { who = FROM value = 150 }
+			}
+		}
+	}
+	
+	option = {
+		name = "It is not for us."
+		FROM = { country_event = 51022 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	id = 51021
+	title = "Firgene Accepts!"
+	desc = "The Firgene people overwhelmingly approved a referendum on joining our nation!"
+	
+	picture = "confederation"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "Wonderful!"
+		prestige = 10
+		HAI = { all_core = { add_core = THIS } }
+		inherit = HAI
+	}
+}
+
+country_event = {
+	id = 51022
+	title = "Firgene declines"
+	desc = "Unfortunately, a referendum on joining our nation failed to pass in Firgene."
+	
+	picture = "election_crowd"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "Their consent is not necessary."
+		HAI = { all_core = { add_core = THIS } }
+		badboy = 7
+		prestige = -10
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				badboy = .6
+			}
+		}
+	}
+	
+	option = {
+		name = "It's their right."
+		relation = {
+			who = FROM
+			value = 50
+		}
+		badboy = -2
+		prestige = -5
+		ai_chance = {
+			factor = 66
+		}
+	}
+}
+
+### Mexica centralization events ###
+
+country_event = {
+	id = 51025
+	title = "EVTNAME51025" ## La Constitucion de Mexika
+	desc = "EVTDESC51025" ## Since the arrival of Aquitànian settlers on the coast of Mexika in the early 1700s, our people have always existed in a tenuous balance with the Nahua and Tarascan peoples. Although Aquitànian technology proved sufficient to overcome the Kingdom of Tlaxcala in 1742, the 30 years of colonization prior to independence from the Melgueil crown was insufficient to replace preexisting power structures with new ones from Europe. Thus, while the original Mexican constitution proposed a President elected by all land-owning citizens in the colony, President Guilhelm Fabres dissolved parliament in 1778 to preserve stability in the face of revolts by the Nahua, Tarascan and Zapotec peoples. However, increasing numbers of liberals and natives inspired by European Albesans are now demanding that the original Constitution be reinstated.
+	picture = "confederation"
+	
+	trigger = {
+		tag = MEX
+		has_global_flag = liberal_revolutions_should_now_fire
+		NOT = { has_country_flag = constitution_decided }
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+		modifier = {
+			factor = 0.2 
+			year = 1848
+		}
+		modifier = {
+			factor = 0.2 
+			year = 1849
+		}
+		modifier = {
+			factor = 0.2 
+			year = 1850
+		}
+	}
+	
+	immediate = {
+		set_variable = {
+			which = monarchy_unify
+			value = 0
+		}
+		set_variable = {
+			which = civil_war
+			value = 0
+		}
+		set_country_flag = centralizing
+	}
+	
+	option = {
+		name = "A strong President, for a safe and secure society!"
+		set_country_flag = constitution_decided
+		prestige = 5
+		any_pop = {
+			scaled_militancy = {
+				ideology = liberal
+				factor = 3
+			}
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 4
+			}
+		}
+		change_variable = {
+			which = civil_war
+			value = 1
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "Restore the Constitution of 1776!"
+		set_country_flag = constitution_decided
+		government = democracy
+		ruling_party_ideology = liberal
+		political_reform = landed_voting
+		political_reform = state_equal_weight
+		political_reform = jefferson_method
+		political_reform = yes_meeting
+		political_reform = censored_press
+		political_reform = non_socialist
+		political_reform = non_secret_ballots
+		upper_house = {
+			ideology = liberal
+			value = 0.40
+		}
+		election = yes
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			ideology = {
+				value = liberal
+				factor = 0.2
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = -3
+			}
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 2
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = 3
+			}
+			scaled_consciousness = {
+				ideology = conservative
+				factor = 4
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 4
+			}
+			scaled_consciousness = {
+				ideology = reactionary
+				factor = 6
+			}
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = no
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = -3
+			}
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 2
+			}
+		}
+		change_variable = {
+			which = monarchy_unify
+			value = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+country_event = {
+	id = 51026
+	title = "EVTNAME51026" ## Fòrça Defensa Personala 
+	desc = "EVTDESC51026" ## Mexikan settlers are primarily concentrated on the coasts, but especially during the early years of Aquitanian colonization, many families made the trek inwards to settle lands that are now under the de-facto rule of the Nahua and Tarascan confederations. Away from our rule of law, these farmers are subject to harassment and land seizures by the still dominant indigenous peoples. In many parts of the confederations, they have formed 'Fòrça Defensa Personala' or 'Self-Defense Forces' to protect themselves from the natives. The fact that these forces exist is an awkward point of conflict between our government and the confederations, who have increasingly begun to demand that we condemn these extrajudicial groups. Doing so would certainly calm relations between us and the confederations, but would be seen as a betrayal by our own people.
+
+	picture = "mexico_soldiers"
+	
+	trigger = {
+		tag = MEX
+		exists = AZT
+		has_country_flag = centralizing
+		NOT = { has_country_flag = fdp }
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5 
+			AZT = { average_militancy = 3  }
+		}
+		modifier = {
+			factor = 0.3 
+			AZT = { average_militancy = 4  }
+		}
+	}
+	
+	option = {
+		name = "Proclaim that the forces should disband"
+		set_country_flag = fdp
+		prestige = -3
+		badboy = -2
+		change_variable = {
+			which = monarchy_unify
+			value = 1
+		}
+		relation = {
+			who = AZT
+			value = 50
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					type = soldiers
+					type = officers
+				}
+			}
+			militancy = 2
+			consciousness = 3
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+	
+	option = {
+		name = "Try not to take a stand on the issue"
+		set_country_flag = fdp
+		relation = {
+			who = AZT
+			value = -25
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					type = soldiers
+					type = officers
+				}
+			}
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+	
+	option = {
+		name = "These brave patriots have our full support!"
+		set_country_flag = fdp
+		prestige = 5
+		relation = {
+			who = AZT
+			value = -100
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			dominant_issue = {
+				factor = 0.05
+				value = jingoism
+			}
+		}
+		change_variable = {
+			which = civil_war
+			value = 1
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+country_event = {
+	id = 51027
+	title = "EVTNAME51027" ## The Oaxacan Inheritance
+	desc = "EVTDESC51027" ## A dispute has arisen between the Oaxacan and Tarascan confederacies that requires our attention. It seems that the lineage of the Oaxacan King is intertwined with the nobility of Tarasco such that the recent death of the latter's monarch means Oaxaca stands to inherit the entire kingdom. The laws of our realm are unclear in this situation, and it is likely that we can force the two confederacies to stay divided if we so choose, but doing so might anger the Oaxacan monarchy. On the other hand, a more powerful Oaxaca might be a bigger threat to our rule.
+	picture = "angry_natives"
+	
+	trigger = {
+		tag = MEX
+		has_country_flag = centralizing
+		exists = TRS
+		exists = OAX
+		NOT = { has_country_flag = trs_oax }
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "Allow the inheritance"
+		set_country_flag = trs_oax
+		OAX = { inherit = TRS }
+		relation = {
+			who = OAX
+			value = 50
+		}
+		change_variable = {
+			which = monarchy_unify
+			value = 1
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "Keep them divided"
+		set_country_flag = trs_oax
+		OAX = { set_country_flag = angered }
+		relation = {
+			who = OAX
+			value = 100
+		}
+		relation = {
+			who = TRS
+			value = -25
+		}
+		change_variable = {
+			which = civil_war
+			value = 1
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = {
+	id = 51028
+	title = "EVTNAME51028" ## The Souls of the Nahua
+	desc = "EVTDESC51028" ## The Nahua pagans have always resisted attempts by the Catholic Church to proselytze in their territory, but this has never stopped priests from attempting to convert them. This practice is beginning to cause tensions in Aztlan, who resent incursions by missionaries as breaches of their authority. While we technically have no control of the Church, we could exercise our influence to frustrate these missions - something that would doubtlessly be resented by the priests.
+	picture = "churchmexico"
+	
+	trigger = {
+		tag = MEX 
+		has_country_flag = centralizing
+		NOT = { has_country_flag = azt_church }
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "The rights of the Church are inviolable!"
+		set_country_flag = azt_church
+		prestige = 5
+		relation = {
+			who = AZT
+			value = -30
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			dominant_issue = {
+				factor = 0.05
+				value = moralism
+			}
+		}
+		change_variable = {
+			which = civil_war
+			value = 1
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "Tell the missionaries to scale back their activity"
+		set_country_flag = azt_church
+		prestige = -5
+		change_variable = {
+			which = monarchy_unify
+			value = 1
+		}
+		any_pop = {
+			limit = {
+				type = clergymen
+			}
+			militancy = 2
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			scaled_militancy = {
+				issue = moralism
+				factor = 1
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = {
+	id = 51029
+	title = "EVTNAME51029" ## The Mexikan Civil War
+	desc = "EVTDESC51029" ## Mexika has always been subject to a precarious balance of power between its native confederations and settler-dominated, republican government. Over the past decades, the confederations have slowly weakened in the face of an increasingly modern and industrializing Mexika. It seems that in light of the President's efforts to centralize the government, the Nahua indigenous peoples have finally revolted,  plunging all of Mexika into a civil war. Some observers regard this outcome as an inevitable outcome for the nation's multiethnic country, while others see it as a disappointing end to what have often been genuine attempts at compromise by both sides. The only thing that is certain now is that Mexika's future will be written only by its indigenous people, or its colonizers. The two cannot coexist.
+	major = yes 
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MEX
+		has_country_flag = centralizing
+		has_country_flag = azt_church
+		has_country_flag = trs_oax
+		has_country_flag = fdp
+		check_variable = {
+			which = civil_war
+			value = 1
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.75
+			check_variable = {
+				which = civil_war
+				value = 2
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = civil_war
+				value = 3
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = civil_war
+				value = 4
+			}
+		}
+	}
+	
+	option = {
+		name = "Crush the rebels!"
+		set_global_flag = mex_cw
+		clr_country_flag = centralizing
+		set_country_flag = no_compromise
+		release_vassal = AZT
+		leave_alliance = AZT
+		war = {
+			target = AZT
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			defender_goal = {
+				casus_belli = civil_war
+			}
+			call_ally = no
+		}
+		any_neighbor_country = {
+			limit = {
+				vassal_of = THIS 
+				civilized = no
+			}
+			country_event = 51031
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "Aztlan forever!"
+		set_global_flag = mex_cw
+		clr_country_flag = centralizing
+		set_country_flag = no_compromise
+		release_vassal = AZT
+		war = {
+			target = AZT
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			defender_goal = {
+				casus_belli = civil_war
+			}
+			call_ally = no
+		}
+		any_neighbor_country = {
+			limit = {
+				vassal_of = THIS 
+				civilized = no
+			}
+			country_event = 51031
+		}
+		change_tag_no_core_switch = AZT
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 51030
+	title = "EVTNAME51030" ## The Kingdom of Mexika
+	desc = "EVTDESC51030" ## Our efforts to negotiate in good faith with the Nahua seem to be paying off. Recently, we were approached by a group of indigenous leaders with a compelling offer - marriage between our President and a suitable candidate from among their nobility. Transformation of our nation into a monarchy with a strong Nahua bloodline would knit our peoples together, they argue, moreso than just through representation through the ballot. Dramatically changing our government might finally bring an end to the enmity that has existed between the Meikan and Nahuan people, but it would also anger our own citizens who want a more liberal constitution, and other countries might see us as stooping to the level of savages.
+	
+	picture = "alfonso_xii_bourbon"
+	
+	trigger = {
+		tag = MEX
+		has_country_flag = centralizing
+		has_country_flag = constitution_decided
+		check_variable = {
+			which = monarchy_unify
+			value = 1
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.75
+			check_variable = {
+				which = monarchy_unify
+				value = 2
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = monarchy_unify
+				value = 3
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = monarchy_unify
+				value = 4
+			}
+		}
+	}
+	
+	option = {
+		name = "All hail, el Rei de Mexika!"
+		clr_country_flag = centralizing
+		set_country_flag = yes_compromise
+		prestige = -15
+		government = hms_government
+		add_accepted_culture = nahua
+		inherit = AZT
+		inherit = TRS 
+		inherit = OAX 
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "We will not debase ourselves like this!"
+		relation = {
+			who = AZT
+			value = -100
+		}
+		country_event = {
+			id = 51029
+			days = 5
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+country_event = {
+	id = 51031
+	title = "The Aztlan Revolt" 
+	desc = "To drive out the Meican, we must temporarily put aside our disputes with each other. Alternatively, we could side with the current government."
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Side with Aztlan"
+		end_war = AZT
+		military_access = AZT
+		FROM = {
+			release_vassal = THIS 
+			leave_alliance = THIS
+			relation = {
+				who = THIS
+				value = -150
+			}
+			war = {
+				target = THIS
+				attacker_goal = {
+					casus_belli = civil_war
+				}
+				defender_goal = {
+					casus_belli = status_quo
+				}
+				call_ally = no
+			}			
+		}
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				has_country_flag = angered
+			}	
+		}
+	}
+	
+	option = {
+		name = "It's too risky to fight back!"
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	id = 51032
+	title = "EVTNAME51032" ## The Rise of Aztlan
+	desc = "EVTDESC51032" ## After decades of subjugation beneath European boots, we have finally achieved what foreign powers never thought possible: the return of our lands and the freedom to design our society around the values we hold dear. However, the fall of the Mexikan government does not signal the end of our struggle. The former president and senior military officers have fled our shores, but many other former colonists remain throughout our realm, and we can be assured that they will attempt to challenge our rule at every turn. While some are advocating that we wipe out these interlopers for good, doing so would likely trigger retaliation from other Western powers. Alternatively, we can hope that with time they will assimilate into our society. Whatever we chose, today marks the dawn of a new age for Aztlan.
+	picture = "SAjungle"
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = AZT
+		MEX = { exists = no }
+		2172 = { owned_by = THIS }
+		has_global_flag = mex_cw
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "Try to make peace with the colonists"
+		prestige = 20
+		MEX = {	all_core = { add_core = THIS } }
+		add_country_modifier = {
+			name = azt_2
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "Drive out our former oppressors!"
+		badboy = 27
+		prestige = 10
+		MEX = {	
+			all_core = { add_core = THIS } 
+			all_core = { remove_core = MEX }
+		}
+		add_country_modifier = {
+			name = azt_1
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 51033
+	title = "The Centralization of Mexika"
+	desc = "Now that the Nahua revolt is over, it is time to join the Meikan state."
+	
+	trigger = {
+		OR = {
+			tag = OAX
+			tag = TRS
+		}
+		has_global_flag = mex_cw
+		war = no
+		AZT = { exists = no }
+		is_vassal = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "We had a good run."
+		MEX = { inherit = THIS }
+	}
+}
+
+## End of Mexican Centralization events ##
+
+## MEX - CLF Union
+
+country_event = {
+	id = 51034
+	title = "Offer from Mexika"
+	desc = "Mexika has approached us with an offer to join their nation."
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The Latin people of the new world shall join forces!"
+		FROM = { country_event = 51035 }
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				in_sphere = FROM
+			}
+			modifier = {
+				factor = 100
+				alliance_with = FROM
+			}
+			modifier = {
+				factor = 0
+				truce_with = FROM
+			}
+		}
+	}
+	
+	option = {
+		name = "We value our independence"
+		FROM = { country_event = 51036 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	id = 51035
+	title = "Califiana accepts"
+	desc = "The Califiano people have accepted our offer to form a union of Latin-speaking people."
+	
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		inherit = CLF 
+		add_accepted_culture = califiano
+		prestige = 20
+		badboy = 5
+	}
+}
+
+country_event = {
+	id = 51036
+	title = "Califiana denies us"
+	desc = "The Califiano people politely rejected our offer to form a union."
+	
+	picture = "negotiations"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We're not asking nicely anymore."
+		CLF = { all_core = { add_core = THIS } }
+		relation = {
+			who = FROM
+			value = -200
+		}		
+		prestige = -10
+		badboy = 10
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "Very well."
+		prestige = -10
+		badboy = -2
+		ai_chance = {
+			factor = 25
 		}
 	}
 }

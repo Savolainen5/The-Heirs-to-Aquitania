@@ -1,7 +1,8 @@
-owner = MEX
-controller = MEX
+owner = TRS
+controller = TRS
 add_core = MEX
 add_core = AZT
+add_core = TRS
 trade_goods = grain
 life_rating = 35
 

@@ -178,6 +178,11 @@ QIN reports from https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquit
 - Regions in the Siam-LPBG-LXA-CAM area
 - Competition for colonies in SEA, especially between NAP and HIS in the Malay peninsula
 
+	0.52 (MRG, VST)
+- Union of these two countries
+- Anti-slavery CB against MRG, especially after their decision restart_slave_trade - needs checking, and the war name from this CB might not be localized
+- Rework Afro-American cultural names, and culture in general
+
 	0.61 (MNK,MDT,HOY)
 - Rework Panaben Canal stuff (especially event 97392)
 

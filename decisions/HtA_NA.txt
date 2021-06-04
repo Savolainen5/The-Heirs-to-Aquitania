@@ -19,11 +19,10 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = protect_IRO
-			prestige = 5
-			badboy = 7
+			prestige = 2
+			badboy = 1
 			inherit = IRO
 			IRO = {	all_core = { add_core = THIS } }
-			add_accepted_culture = iroquois
 		}
 	}
 	
@@ -47,11 +46,10 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = protect_CHE
-			prestige = 5
-			badboy = 7
+			prestige = 2
+			badboy = 1
 			inherit = CHE
 			CHE = {	all_core = { add_core = THIS } }
-			add_accepted_culture = cherokee
 		}
 	}
 	
@@ -136,15 +134,13 @@ political_decisions = {
 			}
 			is_greater_power = no
 			NOT = { has_country_flag = come_to_the_new_world }
-			NOT = { has_country_flag = has_native_societies }
 			number_of_states = 2
 			num_of_ports = 1
-			is_vassal = no
-			civilized = yes
 		}
 		
 		allow = {
 			war = no
+			is_vassal = no
 			is_greater_power = no
 			state_n_government = 1
 			slavery = no_slavery
@@ -168,17 +164,18 @@ political_decisions = {
 	}
 	
 
-	##### About the SKM-GNC union nation - Scylfiga Woning SCW  #########
+##### About the SKM-GNC union nation - Scylfiga Woning SCW  #########
 
 	annex_califiana = {
 		picture = marching_soldiers
 		potential = {
 			tag = GNC
 			has_global_flag = sierra_troubles
+			has_country_flag = asked_skm
 			is_disarmed = no
 			war = no
 			NOT = { alliance_with = CLF }
-			NOT = { has_country_flag = annex_califiana }
+			exists = CLF
 		}
 		
 		allow = {
@@ -196,7 +193,7 @@ political_decisions = {
 		effect = {
 			badboy = 10
 			SKM = { country_event = 51005 }
-			set_country_flag = annex_califiana
+			set_country_flag = asked_skm
 		}
 		
 		ai_will_do = {
@@ -207,7 +204,7 @@ political_decisions = {
 			}
 		}
 	}
-		
+	
 	form_scylfiga_woning = { 
 		picture = manifest_destiny
 		potential = {
@@ -221,10 +218,9 @@ political_decisions = {
 					neighbour = GNC
 				}
 			}
+			has_global_flag = sierra_troubles
 			GNC = { has_country_flag = colonisation_finished }
 			SKM = { has_country_flag = colonisation_finished }
-			has_global_flag = sierra_troubles
-			SCW = { exists = no }
 			#CLF = { exists = no } #There's a decision to take it later
 		}
 		
@@ -249,7 +245,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			prestige = 30
+			prestige_factor = 0.3
 			add_accepted_culture = skamisc
 			add_accepted_culture = ginnaecerisc
 			SKM = { all_core = { add_core = SCW } }
@@ -311,7 +307,42 @@ political_decisions = {
 		}
 	}
 
+
 	### End SCW decisions #########
+
+	## Firgene union 
+
+	invite_hai = {
+		picture = haiti
+		potential = {
+			tag = SCW
+			exists = HAI 
+			is_greater_power = yes 
+			NOT = { has_country_flag = invited_HAI }
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			HAI = {
+				in_sphere = THIS
+				war = no
+			}
+			relation = { who = HAI value = 100 }
+			war = no		
+		}
+		
+		effect = {
+			set_country_flag = invited_HAI
+			prestige = 5
+			HAI = {
+				country_event = {
+					id = 51017
+					days = 2
+				}
+			}
+		}
+	}
+
 
 	
 	form_mellomamerika_without = {
@@ -450,5 +481,886 @@ political_decisions = {
 		}
 	}
 
+	## Shawnee Civil War
+	
+	break_free_shc = {
+		picture = "native_man"
+		potential = {
+			OR = {
+				tag = CHE
+				tag = IRO
+			}
+			has_global_flag = shc_modernizing
+			NOT = { has_global_flag = shc_cw }
+			SHC = { civilization_progress = 0.5 }
+			vassal_of = SHC
+		}
+		
+		allow = {
+			NOT = {
+				truce_with = SHC 
+				war = yes
+			}
+		}
+		
+		effect = {
+			set_global_flag = shc_cw
+			relation = {
+				who = SHC
+				value = -100
+			}
+			SHC = {
+				release_vassal = THIS
+				country_event = {
+					id = 95602
+					days = 1
+				}
+			}
+		}
+	}
+	
+	shc_war_intervene = {
+		picture = shermans_march_to_the_sea
+		potential = {
+			has_global_flag = shc_cw
+			tag = VST
+			NOT = { has_global_flag = shc_intervene  }
+		}
+		
+		allow = {
+			war = no
+			NOT = { 
+				truce_with = SHC 
+				relation = { who = SHC value = 50 }
+			}
+		}
+		
+		effect = {
+			badboy = 3
+			set_global_flag = shc_intervene
+			war = {
+				target = SHC 
+				attacker_goal = { casus_belli = cut_down_to_size }
+				call_ally = no
+			}
+			SHC = { country_event = 95603 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.88
+			}
+		}
+	}
+	
+	# Quick end to the war for a savvy SHC player
+	treaty_of_tesepikhav = {
+		picture = sign_treaty_of_london
+		potential = {
+			has_global_flag = shc_intervene
+			tag = SHC
+			war_with = VST 
+			civilized = no
+			NOT = { has_global_flag = shc_won }
+			NOT = { has_country_flag = treaty_of_tes }
+		}
+		
+		allow = {
+			controls = 223
+		}
+		
+		effect = {
+			VST = { country_event = 51024 }
+			prestige = 15
+			set_country_flag = treaty_of_tes
+		}
+	}
+	
+	## Shawnee expansion
+
+	deal_with_euros = {
+		## picture = 
+		potential = {
+			tag = SHC
+			civilized = yes
+			NOT = { has_country_flag = shc_future }
+		}
+		
+		allow = {
+			ideological_thought = 1
+		}
+		
+		effect = {
+			country_event = 95607
+			set_country_flag = shc_future
+		}
+	}
+	
+	
+	
+	refute_westerners = {
+		picture = manifest_destiny
+		potential = {
+			tag = SHC
+			civilized = yes
+			OR = {
+				has_country_flag = protect_CHE
+				CHE = { all_core = { owned_by = THIS } } 
+			}
+			OR = {
+				has_country_flag = protect_IRO
+				IRO = { all_core = { owned_by = THIS } } 
+			}
+			NOT = { has_country_flag = decored_euros }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			war = no
+		}
+		
+		effect = {
+			prestige_factor = 0.25
+			all_core = {
+				limit = {
+					OR = {
+						is_core = VST
+						is_core = QUE
+						is_core = NHL 
+						is_core = MRG 
+					}
+					OR = {
+						owned_by = THIS
+						owned_by = CHE
+						owned_by = IRO
+					}
+				}
+				remove_core = VST
+				remove_core = QUE
+				remove_core = NHL
+				remove_core = MRG 
+			}
+			set_country_flag = decored_euros
+		}
+	}
+	
+	
+	### Carving Up Shawnee ### 
+	
+	conquer_iroquois = {
+		picture = treaty_signing
+		potential = {
+			OR = {
+				tag = VST
+				tag = NHL 
+				tag = QUE
+			}
+			NOT = { has_global_flag = iro_expansion }
+			NOT = { has_global_flag = shc_won }
+			SHC = { civilized = no }
+		}
+		
+		allow = {
+			ideological_thought = 1
+			medicine = 1
+			is_disarmed = no
+			neighbour = IRO
+		}
+		
+		effect = {
+			set_global_flag = iro_expansion
+			set_country_flag = upper_shc
+			IRO = {	all_core = { add_core = THIS } }
+			badboy = 5
+			prestige = 10
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	conquer_cherokee = {
+		picture = trail_of_tears
+		potential = {
+			tag = MRG
+			NOT = { has_country_flag = bye_cherokee }
+			NOT = { has_global_flag = shc_won }
+			SHC = { civilized = no }
+		}
+		
+		allow = {
+			ideological_thought = 1
+			medicine = 1
+			is_disarmed = no
+			neighbour = CHE
+		}
+		
+		effect = {
+			set_country_flag = bye_cherokee
+			CHE = {	all_core = { add_core = THIS } }
+			badboy = 5
+			prestige = 10
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	take_ohio_valley = {
+		picture = trail_of_tears
+		potential = {
+			OR = {
+				has_country_flag = upper_shc
+				AND = {
+					tag = VST								#This might lead to a situation where both VST and another country can take this
+					OR = {
+						owns = 288
+						owns = 227
+					}
+				}
+			}
+			NOT = { has_country_flag = ohio_valley }
+			NOT = { has_global_flag = shc_won }
+			SHC = { civilized = no }
+			170 = { owned_by = SHC }
+			178 = { owned_by = SHC }
+		}
+		
+		allow = {
+			state_n_government = 1
+		}
+		
+		effect = {
+			set_country_flag = ohio_valley
+			USA_170 = {	add_core = THIS } #Shawanwaki
+			USA_178 = {	add_core = THIS } #Yohielen
+			badboy = 3
+			prestige = 5
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	take_upland_south = {
+		picture = custers_expedition
+		potential = {
+			tag = MRG 
+			NOT = { has_country_flag = upland_south }
+			NOT = { has_global_flag = shc_won }
+			has_country_flag = bye_cherokee
+			SHC = { civilized = no }
+			188 = { #Watawaga, state of Tewipi
+				owner = {
+					civilized = no
+				}
+			}
+			190 = { #Kanawha, rest of the state of Setekwi
+				owner = {
+					civilized = no
+				}
+			}
+			210 = { #Diuenai, rest of the state of Temahi
+				owner = {
+					civilized = no
+				}
+			}
+		}
+		
+		allow = {
+			state_n_government = 1
+		}
+		
+		effect = {
+			USA_185 = {	add_core = THIS } #Tewipi
+			USA_188 = {	add_core = THIS } #Setekwi
+			USA_2556 = { add_core = THIS } #Temahi
+			badboy = 3
+			prestige = 5
+			set_country_flag = upland_south
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	take_mid_atlantic = {
+		picture = custers_expedition
+		potential = {
+			tag = VST 
+			NOT = { has_country_flag = mid_atlantic }
+			NOT = { has_global_flag = shc_won }
+			SHC = { civilized = no }
+		}
+		
+		allow = {
+			state_n_government = 1
+		}
+		
+		effect = {
+			SHC_227 = {	add_core = THIS } #Menelenehi
+			USA_218 = {	add_core = THIS } #Skotamewi
+			USA_211 = { add_core = THIS } #Eganulti
+			badboy = 3
+			prestige = 5
+			set_country_flag = mid_atlantic
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	take_west = {
+		picture = native_man
+		potential = {
+			OR = {
+				tag = MRG
+				tag = QUE
+			}
+			has_country_flag = colonisation_finished
+			SHC = { civilized = no }
+			NOT = { has_global_flag = west_sch }
+			NOT = { has_global_flag = shc_won }
+		}
+		
+		allow = {
+			state_n_government = 1
+			inorganic_chemistry = 1
+		}
+		
+		effect = {
+			badboy = 3
+			prestige = 10
+			USA_205 = { add_core = THIS }
+			USA_168 = { add_core = THIS }
+			set_global_flag = west_sch
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	## EXPANSION DECISIONS ##
+	
+	## Mexica - for European dominated government
+	
+	protect_meikan = {
+		picture = our_brothers_the_gauchos
+		potential = {
+			tag = MEX
+			has_country_flag = no_compromise
+			NOT = { has_country_flag = meikan_protected }
+		}
+		
+		allow = {
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			YUC = {	all_core = { add_core = THIS } }
+			badboy = 8
+			prestige = 15
+			set_country_flag = meikan_protected
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+	
+	clf_unite = { # if CLF still around
+		picture = bushire
+		potential = {
+			tag = MEX 
+			exists = CLF 
+			has_global_flag = sierra_troubles
+			has_country_flag = no_compromise
+			NOT = { has_country_flag = clf_yes }
+		}
+		
+		allow = {
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
+			market_structure = 1
+			romanticism = 1
+			relation = {
+				who = CLF
+				value = 150
+			}
+		}
+		
+		effect = {
+			CLF = { country_event = 51034 }
+			set_country_flag = clf_yes
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+	
+	clf_free = { # if CLF gone
+		picture = bushire
+		potential = {
+			tag = MEX 
+			NOT = { exists = CLF }
+			has_global_flag = sierra_troubles
+			has_country_flag = no_compromise
+			NOT = { has_country_flag = clf_yes }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			market_structure = 1
+			romanticism = 1
+			relation = {
+				who = CLF
+				value = 150
+			}
+		}
+		
+		effect = {
+			CLF = { all_core = { add_core = THIS } }
+			add_accepted_culture = califiano
+			set_country_flag = clf_yes
+		}
+	}
+	
+	mare_nostrum_novum = {
+		picture = map_caribbean
+		potential = {
+			tag = MEX 
+			is_greater_power = yes
+			has_country_flag = no_compromise
+			has_country_flag = meikan_protected
+			NOT = { has_country_flag = our_new_sea }
+		}
+		
+		allow = {
+			steel_steamers = 1
+			revolution_n_counterrevolution = 1
+			military_score = 150
+			OR = {
+				war_policy = pro_military
+				war_policy = jingoism
+			}
+		}
+		
+		effect = {
+			set_country_flag = our_new_sea
+			prestige_factor = 0.2
+			SPA_2209 = { add_core = THIS } #Cuba
+			HAI_2213 = { add_core = THIS } #Firgene
+			ENG_2224 = { add_core = THIS } #West Indies
+			badboy = 16
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.2
+			}
+		}
+	}
+	
+	annex_oax = {
+		potential = {
+			tag = MEX
+			2172 = { owned_by = THIS } #Tenochtitlan
+			has_global_flag = mex_cw
+			exists = OAX
+		}
+		
+		allow = {
+			AZT = { exists = no }
+			war = no
+			is_our_vassal = OAX
+		}
+		
+		effect = {
+			inherit = OAX
+			prestige = 2
+		}
+	}
+	
+	annex_trs = {
+		potential = {
+			tag = MEX
+			2172 = { owned_by = THIS } #Tenochtitlan
+			has_global_flag = mex_cw
+			exists = TRS
+		}
+		
+		allow = {
+			AZT = { exists = no }
+			war = no
+			is_our_vassal = TRS
+		}
+		
+		effect = {
+			inherit = TRS
+			prestige = 2
+		}
+	}
+	
+	## Mexica - for compromise government
+	
+	restore_yuc = {
+		picture = map_central_america
+		potential = {
+			tag = MEX 
+			has_country_flag = yes_compromise
+			NOT = { has_country_flag = yuc_retaken }
+		}
+		
+		allow = {
+			is_disarmed = no
+			state_n_government = 1
+		}
+		
+		effect = {
+			badboy = 5
+			prestige = 10
+			YUC = { all_core = { add_core = THIS } }
+			add_accepted_culture = mayan
+			set_country_flag = yuc_retaken
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	minority_languages = {
+		picture = rebellious_minorities
+		potential = {
+			tag = MEX 
+			has_country_flag = yes_compromise
+			NOT = { 
+				accepted_culture = zapotec
+				accepted_culture = tarascan 				
+			}
+		}
+		
+		allow = {
+			functionalism = 1
+		}
+		
+		effect = {
+			prestige = 5
+			add_accepted_culture = zapotec
+			add_accepted_culture = tarascan
+		}
+	}
+	
+	develop_land = {
+		picture = MEX_rancho
+		potential = {
+			tag = MEX 
+			has_country_flag = yes_compromise
+			NOT = { has_country_flag = development }
+		}
+		
+		allow = {
+			biologism = 1
+			early_railroad = 1
+			money = 5000
+		}
+		
+		effect = {
+			prestige = 15
+			2170 = { life_rating = 3 }
+			2161 = { life_rating = 3 }
+			2173 = { life_rating = 3 }
+			2141 = { life_rating = 3 }
+			2146 = { life_rating = 3 }
+			2142 = { life_rating = 3 }
+			set_country_flag = development
+			money = -5000
+		}
+	}
+	
+	## Mexica - Aztlan  
+	
+	azt_revolt = {
+		picture = refute_manifest_destiny
+		alert = no
+		potential = {
+			tag = AZT
+			vassal_of = MEX
+			civilized = no
+			NOT = { has_global_flag = mex_cw }
+			ai = no
+		}
+		
+		allow = {
+			war = no
+			civilization_progress = .5
+		}
+		
+		effect = {
+			MEX = { country_event = 51029 }
+		}
+	}
+	
+	total_war_mex = {
+		picture = support_boxers
+		#alert = yes #unnecessary
+		potential = {
+			OR = {
+				tag = TRS
+				tag = AZT
+				tag = OAX
+			}
+			has_global_flag = mex_cw
+			NOT = { has_country_modifier = taiping_draft }
+			NOT = { has_country_flag = draft_happened }
+		}
+		
+		allow = {
+			war_with = MEX
+		}
+		
+		effect = {
+			iron = 20
+			wool = 20
+			timber = 100
+			small_arms = 20
+			leadership = 40
+			add_country_modifier = {
+				name = taiping_draft
+				duration = 1825
+			}
+			set_country_flag = draft_happened 
+		}
+		#ai_will_do = { #unnecessary
+		#	factor = 1
+		#}
+	}
+	
+	azt_civilize = {
+		picture = westernize_nation
+		potential = {
+			tag = AZT
+			civilized = no
+			MEX = { exists = no }
+			2172 = { owned_by = THIS }
+			has_global_flag = mex_cw
+		}
+		
+		allow = {
+			AZT = { all_core = { owned_by = THIS } }
+			prestige = 25
+			war = no
+		}
+		
+		effect = {
+			prestige = 10
+			civilized = yes
+			remove_country_modifier = native_societies1
+			remove_country_modifier = native_societies2
+		}
+	}
+	
+	integrate_native_states = {
+		potential = {
+			tag = AZT
+			civilized = no
+			MEX = { exists = no }
+			2172 = { owned_by = THIS }
+			has_global_flag = mex_cw
+			OR = { 
+				NOT = { accepted_culture = zapotec }
+				NOT = { accepted_culture = tarascan }
+			}
+		}
+		
+		allow = {
+			OAX = { all_core = { owned_by = THIS } }
+			TRS = { all_core = { owned_by = THIS } }
+		}
+		
+		effect = {
+			add_accepted_culture = zapotec
+			add_accepted_culture = tarascan
+			add_accepted_culture = mayan
+			YUC = { all_core = { add_core = THIS } }
+		}
+	}
+	
+	azt_destiny = {
+		picture = map_central_america
+		potential = {
+			tag = AZT
+			civilized = yes
+			has_global_flag = mex_cw
+			MEX = { exists = no }
+			NOT = { has_country_flag = azt_expand }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+			military_score = 150
+		}
+		
+		effect = {
+			prestige_factor = 0.2
+			badboy = 15
+			MDT = { all_core = { add_core = THIS } }
+			MNK = { all_core = { add_core = THIS } }
+			set_country_flag = azt_expand
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.3
+			}
+		}
+	}
+	
+	
+	## Vestland
+	nhl_congress = {
+		picture = conference1
+		potential = {
+			tag = VST
+			NOT = { has_country_flag = nhl_asked }
+		}
+		
+		allow = {
+			NHL = { in_sphere = THIS }
+			revolution_n_counterrevolution = 1
+		}
+		
+		effect = {
+			NHL = { country_event = 51011 }
+			set_country_flag = nhl_asked
+		}
+	}
+	
+	## Margaria 
+	alvmun_new = {
+		picture = chabahar
+		potential = {
+			tag = MRG 
+			139 = { life_rating = 35 }
+			has_country_flag = colonisation_finished
+		}
+		allow = {
+			practical_steam_engine = 1
+			late_classical_theory = 1
+		}
+		effect = {
+			prestige_factor = 0.1
+			139 = {
+				life_rating = 5
+				add_province_modifier = {
+					name = gateway_to_harbor
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	mrg_civil_rights = {
+		picture = king_cotton
+		potential = {
+			tag = MRG 
+			slavery = no_slavery
+			NOT = { has_country_flag = mrg_slave_continue }
+			NOT = { accepted_culture = afro_american }
+		}
+		
+		allow = {
+			social_science = 1
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = socialist
+				ruling_party_ideology = communist
+			}
+		}
+		
+		effect = {
+			prestige_factor = 0.02
+			add_accepted_culture = afro_american
+		}
+	}
+	
+	purchase_cuba = {
+		picture = cuba
+		potential = {
+			tag = MRG
+			HIS = { 
+				is_greater_power = no
+				is_secondary_power = no
+			}
+			NOT = { has_country_flag = cuba_purchase }
+			2209 = { owned_by = HIS }
+		}
+		
+		allow = {
+			money = 15000
+			relation = { who = HIS value = 100 }
+		}
+		
+		effect = {
+			country_event = 50314
+			set_country_flag = cuba_purchase
+		}
+	}
 }
 	

@@ -1,0 +1,29 @@
+MEX = {
+	value = -20
+}
+
+AQT = {
+	value = -55
+}
+
+army = {
+	name = "Yucatla Army"
+	location = 2184	
+	regiment = {
+		name= "Republican Guard"
+		type = regular
+		home = 2183
+	}
+	regiment = {
+		name= "1st Pathfinders"
+		type = irregular
+		home = 2186
+	}
+	regiment = {
+		name= "2nd Pathfinders"
+		type = irregular
+		home = 2187
+	}
+}
+
+

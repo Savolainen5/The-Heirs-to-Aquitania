@@ -17,7 +17,7 @@ Feel free to use anything from this mod without asking me. Please do attribute i
 
 Thanks to:
 
-- /u/ChortlingGnome, who contributed A LOT for Hispania, China, North Ameriga and other things
+- ChortlingGnome, who contributed A LOT (like seriously a lot) for Hispania, China, North and South Ameriga and other things
 - /u/capitanloco6 / MajorMajor, who wrote events and decisions regarding French ambitions in the Holy Land and the dismantling of Persia, as well as giving some flags and fixing Catalan military/party names
 - /u/Flapjack731 for ideas and content contribution
 - /u/firenine09, /u/1tobedoneX, and /u/Sommern, for being a sounding board and giving many good ideas and flags
@@ -61,6 +61,16 @@ Major
 - Added a decision for RUS to break the truce and just go capture the city of Smolensk if they have basically no military. It costs more infamy, but has the same end result as the other two ways to end the conflict
 - Improvements to Aenglisc-Albannach (and also AEN-IRE) war interactions, how Alba's colonies are handed out (still work to be done here to make it more dynamic) and the AI's ability to conclude the wars
 - Decision for AI countries not to interfere in the Russian wars if both RUS and SML are AI. They will take the decision to leave the war if they are called in and accept it.
+- A lot of stuff by ChortlingGnome in North and South Ameriga:
+	- Shawnee internal conflict and defensive wars against post-colonial countries
+	- Decisions for the aforementioned countries to get cores on native land in NA
+	- Vestland has the possibility to get a union with New Holland
+	- WIP stuff with slave trade for MRG (will get finished in 0.52)
+	- Gidan gets some interaction with MRG over the slave trade and some expansion decisions into the Caribbean and south to the Jordrasc/Amazon river
+	- Mexika begins as a confederation with several native countries under it (will work on POPs in the region in 0.54 unless someone beats me to it)
+	- Mexika civil war (or averting it), possible union with CLF
+	- Mexika interaction with Yucatla and pushing further south
+	- Form Mellomamerika as a puppet if you're a New World GP
 
 Minor
 - Severely nerfed the OP Gold Rush modifier - now gives an immigrant attract of only 100% instead of ten times that. This needs testing to see if it should be buffed up a bit. Maybe 300%

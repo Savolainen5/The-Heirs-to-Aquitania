@@ -28,16 +28,18 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions
 school_reforms = no_schools
 
-ruling_party = YUC_liberal
+ruling_party = YUC_conservative
 upper_house = {
 	fascist = 0
-	liberal = 54
-	conservative = 31
-	reactionary = 15
+	liberal = 14
+	conservative = 51
+	reactionary = 35
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
+
+oob = "YUC_oob.txt"
 
 set_country_flag = new_world_nation
 

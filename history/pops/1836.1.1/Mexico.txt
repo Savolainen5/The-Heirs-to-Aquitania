@@ -2011,14 +2011,13 @@
 	soldiers = {
 		culture = meikan
 		religion = catholic
-		size= 800
-
+		size = 2800
 	}
 
 	farmers = {
 		culture = meikan
 		religion = catholic
-		size = 47250
+		size = 46250
 	}
 
 	clergymen = {
@@ -2042,14 +2041,13 @@
 	soldiers = {
 		culture = nahua
 		religion = catholic
-		size= 500
-
+		size = 1500
 	}
 
 	farmers = {
 		culture = nahua
 		religion = catholic
-		size = 29000
+		size = 28000
 	}
 }
 #Toluca (212000/53000 POPS)
@@ -2134,8 +2132,7 @@
 	soldiers = {
 		culture = meikan
 		religion = catholic
-		size= 200
-
+		size = 1200
 	}
 
 	farmers = {
@@ -2204,8 +2201,7 @@
 	soldiers = {
 		culture = meikan
 		religion = catholic
-		size= 2000
-
+		size = 2300
 	}
 
 	farmers = {
@@ -2229,14 +2225,13 @@
 	soldiers = {
 		culture = nahua
 		religion = catholic
-		size= 750
-
+		size= 2750
 	}
 
 	farmers = {
 		culture = nahua
 		religion = catholic
-		size = 65375
+		size = 64375
 	}
 }
 #Oaxaca Region (452000)

@@ -1,8 +1,7 @@
-owner = MEX
-controller = MEX
-add_core = MEX
-add_core = AZT
+owner = AZT
+controller = AZTadd_core = MEX
+add_core = AZT
 trade_goods = iron
-life_rating = 35
+life_rating = 35
 
 

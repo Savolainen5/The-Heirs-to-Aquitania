@@ -1,64 +1,20 @@
-leader = {
-	name = "Antonio Santa Ana"
-	type = land
-	date="1836.1.1"
-	personality = wrathful
-	background = warmonger
-}
+#leader = {
+#	name = "Antonio Santa Ana"
+#	type = land
+#	date="1836.1.1"
+#	personality = wrathful
+#	background = warmonger
+#}
 
 leader = {
-	name = "Martin de Cos"
+	name = "Martín de Cos"
 	type = land
 	date="1836.1.1"
 	personality = impulsive
 	background = aristocrat
 }
 
-army = {
-	name = "Ejército del Norte"
-	location = 2146
-	regiment = {
-		name= "1.Division Cos"
-		type = irregular
-		home = 2174
-	}
 
-	regiment = {
-		name= "2.Division Cos"
-		type = irregular
-		home = 2174
-	}
-
-	regiment = {
-		name= "3.Division Cos"
-		type = irregular
-		home = 2174
-	}
-
-}
-
-army = {
-	name = "Activo Oajaca"
-	location = 2177
-	regiment = {
-		name= "1.Oajaca y Tlaxcala"
-		type = irregular
-		home = 2177
-	}
-
-	regiment = {
-		name= "2.Oajaca y Tlaxcala"
-		type = irregular
-		home = 2177
-	}
-
-	regiment = {
-		name= "3.Oajaca y Tlaxcala"
-		type = irregular
-		home = 2177
-	}
-
-}
 
 army = {
 	name = "Ejército del Ciudad Mejico"
@@ -66,13 +22,13 @@ army = {
 	regiment = {
 		name= "1.Division Comonfort"
 		type = infantry
-		home = 2176
+		home = 2172
 	}
 
 	regiment = {
 		name= "2.Division Comonfort"
 		type = irregular
-		home = 2176
+		home = 2172
 	}
 
 	regiment = {
@@ -80,14 +36,32 @@ army = {
 		type = irregular
 		home = 2176
 	}
+	
+	regiment = {
+		name= "1.Division Cos"
+		type = irregular
+		home = 2174
+	}
+	
+	regiment = {
+		name= "2.Division Cos"
+		type = irregular
+		home = 2174
+	}
+	
+	regiment = {
+		name= "3.Division Cos"
+		type = irregular
+		home = 2175
+	}
 
 }
 
 navy = {
-	name = "Armada de Mexico"
+	name = "Armada de Mexika"
 	location = 2162
 	ship = {
-		name= "Vencedor del Alamo"
+		name= "Orgulh de Mexika"
 		type = frigate
 	}
 

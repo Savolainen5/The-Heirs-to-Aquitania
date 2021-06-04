@@ -415,21 +415,23 @@ iberian = {
 	}
 	galician = {
 		color = {60 220 130}
-		first_names = { Abel Adriano Afonso Alberto Alexandre Alfredo Álvaro André António Aquilino 
-		Artur Augusto Bartolomeu Bernardo Bruno Caetano Cândido Carlos Christovão Cláudio
-		Damião Daniel David Dinis Diogo Duarte Ernesto Estêvão Eugénio Fernando 
-		Filipe Francisco "Francisco Xavier" Gastão Hermenegildo Ignácio Jerónimo João Joaquim Jorge
-		José Júlio Leopoldo Luís Manuel Mário Miguel Nicolau Nuno Orlando 
-		Óscar Pascoal Paulo Pedro Rafael Raul Roberto Rodrigo Rui Santiago 
-		Sebastião Teodoro Teófilo Tiago Tomé Urbano Vasco Vicente Vitorino Vitório }
+		first_names = { Abel Adriano Alonso Alberto Alexandre Alfredo Álvaro André António "António María" Aquilino Arsenio
+		Artur Augusto Avelino Baldomero Baltasar Bartolomeu Bazán Benito Bernal Bernardino Bernardo  Bruno Caetano Cândido Calixto Carlos Celestino Christovão Cláudio
+		Dámaso Damião Daniel David Dinis Diogo Dionisio Duarte Eduardo Emilio Ernesto Estanislao Estêvão Eugénio Federico Félix Fernán Fernando
+		Filipe Francisco "Francisco Xavier" Gabino Gabriel Gastão Gaspar Genaro Gonzalo Hermenegildo Ignácio Isidro Jorge
+		Leopoldo Luís Manuel Marcelo Mariano Mário Martín Mateo Maximino Melchor Miguel Nicolás Nicolau Nuno Orlando 
+		Óscar Pascual Pablo Paulo Pedro Rafael Raimundo Ramón Raul Ricardo Roberto Rodrigo Rui Santiago 
+		Sebastián Segismundo Sueiro Teodoro Teófilo Tiago Tomé Urbano Valentín Valeriano Vasco Vicente Vitorino Vitório
+		Xácome Xacobe Xelmirio Xeremías Xerónimo Xoan "Xoan Bautista" "Xoan Manuel" Xoaquín Xosé "Xosé Antonio" "Xosé Manuel" "Xosé María" Xoel Xúlio }
 		
-		last_names = { Amaral Barreto Bleck Braga Cabral Capelo Carmona Coelho Correia Coutinho
-		"da Costa" "da Cunha" "da Silva" "de Albuquerque" "de Almeida" "de Arriaga" "de Bragança" "de Bragança-Coburgo" "de Carvalho" 
-		"de Castro" "de Gusmão" "de Lacerda" "de Mesquita" "de Moura" "de Noronha" "de Oliveira" "de Paiva" "de Sousa" "de Vasconcelos"
-		Dias "dos Reis" "dos Santos" Fernandes Ferreira Figueira "Freire de Andrade" Gago Gil Gomes
-		Herculano Ivens Keil Lopes Machado Magalhães Mendes Moniz Mouzinho Nogueira 
-		Nunes Ortigão Pereira Pinheiro Pinto Pires Pomar Pulido Queiroz Quintanilha
-		Ribeiro Rodrigues Salazar Sampaio Sérgio Silveira Tavares Teixeira Vidigal Vieira }	
+		last_names = { Acuña Aguirre Álvarez Asensio Aznar Balduvieco Barradas Barreto Bugallal Cabral Capelo Carmona
+		"Caxigal de Veiga" Cano Carmona Carral "de Casas Novoa" "de Castro" "da Costa" "de Corzón" "de Fonseca" "da Fuente"
+		"de Lalín" "de Novoa" "de Ordes" "de Padrón" "de Ulloa" Días Díaz "Feijóo y Montenegro" Fernández		
+		Ferreira Figueira Freire "Freire de Andrade" Froilaz Fuente García "García da Noceda" Gago Gil Gómez
+		González Heredia Hernández Herrera Hevia Lamas Linares López Losada 
+		Machado Mallo Maroto Márquez "Martínez-Campos" Masiá Maura Méndez Menéndez Miaja Millán-Astray Mina Mola Muñoz Murguía Muros 
+		Narváez Nogueira Nunes Páez Pavía Peláez Pereira Pomar Raimúndez Ramilo Ribeiro Ríos Rodríguez Rojo Ruiz
+		Sáinz Sanjurjo Sampaio Serrano Silvestre Soutomaior Teijeiro Topete Túñez Valdés Varela Vieira Villapol Villar Viñas}	
 	}
 }
 
@@ -2462,21 +2464,23 @@ latin_american_cultures = {
 	}
 	largano = {
 		color = { 100 180 30 }
-		first_names = { Abel Adriano Afonso Alberto Alexandre Alfredo Álvaro André António Aquilino 
-		Artur Augusto Bartolomeu Bernardo Bruno Caetano Cândido Carlos Christovão Cláudio
-		Damião Daniel David Dinis Diogo Duarte Ernesto Estêvão Eugénio Fernando 
-		Filipe Francisco "Francisco Xavier" Gastão Hermenegildo Ignácio Jerónimo João Joaquim Jorge
-		José Júlio Leopoldo Luís Manuel Mário Miguel Nicolau Nuno Orlando 
-		Óscar Pascoal Paulo Pedro Rafael Raul Roberto Rodrigo Rui Santiago 
-		Sebastião Teodoro Teófilo Tiago Tomé Urbano Vasco Vicente Vitorino Vitório }
+		first_names = { Abel Adriano Alonso Alberto Alexandre Alfredo Álvaro André António "António María" Aquilino Arsenio
+		Artur Augusto Avelino Baldomero Baltasar Bartolomeu Bazán Benito Bernal Bernardino Bernardo  Bruno Caetano Cândido Calixto Carlos Celestino Christovão Cláudio
+		Dámaso Damião Daniel David Dinis Diogo Dionisio Duarte Eduardo Emilio Ernesto Estanislao Estêvão Eugénio Federico Félix Fernán Fernando
+		Filipe Francisco "Francisco Xavier" Gabino Gabriel Gastão Gaspar Genaro Gonzalo Hermenegildo Ignácio Isidro Jorge
+		Leopoldo Luís Manuel Marcelo Mariano Mário Martín Mateo Maximino Melchor Miguel Nicolás Nicolau Nuno Orlando 
+		Óscar Pascual Pablo Paulo Pedro Rafael Raimundo Ramón Raul Ricardo Roberto Rodrigo Rui Santiago 
+		Sebastián Segismundo Sueiro Teodoro Teófilo Tiago Tomé Urbano Valentín Valeriano Vasco Vicente Vitorino Vitório
+		Xácome Xacobe Xelmirio Xeremías Xerónimo Xoan "Xoan Bautista" "Xoan Manuel" Xoaquín Xosé "Xosé Antonio" "Xosé Manuel" "Xosé María" Xoel Xúlio }
 		
-		last_names = { Amaral Barreto Bleck Braga Cabral Capelo Carmona Coelho Correia Coutinho
-		"da Costa" "da Cunha" "da Silva" "de Albuquerque" "de Almeida" "de Arriaga" "de Bragança" "de Bragança-Coburgo" "de Carvalho" 
-		"de Castro" "de Gusmão" "de Lacerda" "de Mesquita" "de Moura" "de Noronha" "de Oliveira" "de Paiva" "de Sousa" "de Vasconcelos"
-		Dias "dos Reis" "dos Santos" Fernandes Ferreira Figueira "Freire de Andrade" Gago Gil Gomes
-		Herculano Ivens Keil Lopes Machado Magalhães Mendes Moniz Mouzinho Nogueira 
-		Nunes Ortigão Pereira Pinheiro Pinto Pires Pomar Pulido Queiroz Quintanilha
-		Ribeiro Rodrigues Salazar Sampaio Sérgio Silveira Tavares Teixeira Vidigal Vieira }	
+		last_names = { Acuña Aguirre Álvarez Asensio Aznar Balduvieco Barradas Barreto Bugallal Cabral Capelo Carmona
+		"Caxigal de Veiga" Cano Carmona Carral "de Casas Novoa" "de Castro" "da Costa" "de Corzón" "de Fonseca" "da Fuente"
+		"de Lalín" "de Novoa" "de Ordes" "de Padrón" "de Ulloa" Días Díaz "Feijóo y Montenegro" Fernández		
+		Ferreira Figueira Freire "Freire de Andrade" Froilaz Fuente García "García da Noceda" Gago Gil Gómez
+		González Heredia Hernández Herrera Hevia Lamas Linares López Losada 
+		Machado Mallo Maroto Márquez "Martínez-Campos" Masiá Maura Méndez Menéndez Miaja Millán-Astray Mina Mola Muñoz Murguía Muros 
+		Narváez Nogueira Nunes Páez Pavía Peláez Pereira Pomar Raimúndez Ramilo Ribeiro Ríos Rodríguez Rojo Ruiz
+		Sáinz Sanjurjo Sampaio Serrano Silvestre Soutomaior Teijeiro Topete Túñez Valdés Varela Vieira Villapol Villar Viñas}	
 	}
 }
 

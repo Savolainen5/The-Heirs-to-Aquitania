@@ -177,6 +177,16 @@ political_decisions = {
 #		}
 #	}
 
-
+#	tag_this = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			tag = THIS			#This can be used in a way to emulate IF
+#		}
+#		effect = {
+#			prestige_factor = 0.1
+#		}
+#	}
 
 }

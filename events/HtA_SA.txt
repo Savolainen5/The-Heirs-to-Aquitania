@@ -171,3 +171,102 @@ country_event = {
 		2415 = { remove_core = AQT }
 	}
 }
+
+## Gidan Stuff
+country_event = {
+	id = 51204
+	title = "The Margarian Demand"
+	desc = "Margaria has discovered we supported an expedition to free their slaves. They demand we pay an indemnity or face them at war!"
+	picture = "arrested"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "Give them what they want."
+		MRG = { country_event = 51206 }
+		prestige = -10
+		money = -10000
+	}
+	
+	option = {
+		name = "Let the slavers come for us!"
+		MRG = { country_event = 51205 }
+	}
+}
+
+country_event = {
+	id = 51205
+	title = "Gidan Denies Us"
+	desc = "The Gidanese government denies that they supported the rabblerousers. We must crush their insolence!"
+	
+	picture = "SeaPower"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "To war!"
+		prestige = 10
+		war = {
+			target = GDN
+			attacker_goal = { casus_belli = cut_down_to_size }
+			call_ally = yes
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "It's not worth it."
+		prestige = -5
+		badboy = -2
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 51206
+	title = "Gidan Agrees"
+	desc = "The Gidaners wisely agreed to pay for the damage their citizens inflicted."
+	
+	picture = "Parade"
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "Good."
+		prestige_factor = .1
+		money = 10000
+	}
+}
+
+country_event = {
+	id = 51207
+	title = "EVTDESC51207" ## The Reforms of Jean Marsden
+	desc = "EVTNAME51207" ## The revolt against the French and Aenglish colonial empires at the turn of the century left Gidan with a disorganized military force based on regional militias using outdated equipment and lacking a unified command structure. While this had worked well during the guerilla fight against the colonists, by the mid-19th century, the threat of Uilyscr and Mellomsk encroachments increasingly underlined the need for military modernization. General Jean Marsden, an officer of mixed European and African ancestry, instituted Gidan's first 'état-major,' or general staff, in $YEAR$. Further reforms included the creation of uniform standards, professional officer training based on the European model and a central logistics department. In 1883, French military theorist Pierre Gaillard would later call the Gidanese military 'pound for pound, the finest troops in the Amerigas.'
+	picture = "coloured_troops_line"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GDN 
+		year = 1845
+		is_disarmed = no 
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "C'est jeté!"
+		prestige_factor = 0.1
+		add_country_modifier = {
+			name = gdn_army
+			duration = -1
+		}
+	}
+}

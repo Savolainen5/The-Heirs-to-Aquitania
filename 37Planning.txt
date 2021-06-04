@@ -35,9 +35,9 @@ Italy:
 	- Also see what changes need to be made to the relevant decisions in Hta_RomanEmpire in general
 	- Check the form_italy_without decision in NationalUnification
 	- Make sure there aren't pan-nationalist rebels or something
-- PDN civil war between monarchists and republicans
+- PDN civil war between monarchists and republicans --> the finishing of the provisional government chain
 -Deal with the ITAFlavor event and decision files
-
+- Sicily and the education stuff
 -Sicilian party names		
 		
 Other:
@@ -67,7 +67,8 @@ Other:
 - Look into the Free Latvia CB and who can use it
 - Add the Demand Reparation CB from HPM
 - Make a special CB for the Hungary-BOH war so that there can be a kind of white peace-type outcome for BOH
-	- Also find a way for Saxony to not be annoying 
+	- Also find a way for Saxony to not be annoying
+- Make it so that Bohemian separatists after the peace of szekes don't last forever	
 - Uncivs should not get the First Minister event stuff
 - GNC stays at war forever with CLF for some reason? One reddit user reported that, and because of it they couldn't complete the event chain as SKM with GNC
 - Make some way for BOH to avoid the Partition War

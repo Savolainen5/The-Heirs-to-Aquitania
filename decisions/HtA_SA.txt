@@ -118,6 +118,209 @@ political_decisions = {
 			}
 		}
 	}
+
+## Gidan Slavery Stuff 
+
+	mission_to_mrg = {
+		picture = slave_ship
+		potential = {
+			tag = GDN
+			MRG = { 
+				slavery = yes_slavery 
+				has_country_flag = the_slavery_debate
+			}
+			NOT = { has_global_flag = mrg_gdn_slaves }
+		}
+		
+		allow = {
+			war = no
+			NOT = { alliance_with = MRG }
+			money = 50
+		}
+		
+		effect = {
+			prestige = 5
+			money = -50
+			set_global_flag = mrg_gdn_slaves 
+		}
+	}
+	
+	liberate_antilles = {
+		picture = map_caribbean
+		potential = {
+			tag = GDN
+			NOT = { has_country_flag = free_antilles }
+		}
+		
+		allow = {
+			state_n_government = 1
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			war = no
+		}
+		
+		effect = {
+			prestige = 10
+			badboy = 5
+			ENG_2228 = { add_core = THIS }
+			NET_2235 = { add_core = THIS }
+			set_country_flag = free_antilles
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.88
+			}
+		}
+	}
+	
+	liberate_carribean = {
+		picture = map_caribbean
+		potential = {
+			tag = GDN
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			has_country_flag = free_antilles
+			NOT = { has_country_flag = free_carib }
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			is_disarmed = no
+			OR = {
+				war_policy = pro_military
+				war_policy = jingoism
+			}
+			war = no
+		}
+		
+		effect = {
+			prestige_factor = 1.2
+			badboy = 15
+			ENG_2224 = { add_core = THIS }
+			HAI_2213 = { add_core = THIS }
+			SPA_2209 = { add_core = THIS }
+			ENG_203 = { add_core = THIS }
+			set_country_flag = free_carib
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = .3
+			}
+		}
+	}
+	
+	ask_HAI = {
+		picture = haiti
+		potential = {
+			tag = GDN 
+			exists = HAI 
+			has_country_flag = free_antilles
+			NOT = { has_country_flag = asked_HAI }
+		}
+		
+		allow = {
+			is_greater_power = yes 
+			HAI = {
+				in_sphere = THIS
+				war = no
+			}
+			war = no	
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			prestige = 5 
+			set_country_flag = asked_HAI
+			HAI = { country_event = 51020 }
+		}
+	}
+	
+	liberate_afro_amerigans = {
+		picture = enact_radical_reconstruction
+		potential = {
+			tag = GDN
+			is_greater_power = yes 
+			has_country_flag = free_carib
+			NOT = { has_country_flag = liberate_aa }
+		}
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			biologism = 1
+			war = no 
+			is_disarmed = no
+			GDN = { all_core = { owned_by = THIS } }
+		}
+		
+		effect = {
+			set_country_flag = liberate_aa
+			add_accepted_culture = afro_american
+			199 = { add_core = THIS }
+			200 = { add_core = THIS }
+			prestige = 30
+			badboy = 12
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = .5
+			}
+		}
+	}
+	
+	expand_to_jordrac = {
+		picture = bushire
+		potential = {
+			tag = GDN 
+			NOT = { has_country_flag = jordrac_border }
+		}
+		
+		allow = {
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			nationalism_n_imperialism = 1
+			OR = {
+				war_policy = pro_military
+				war_policy = jingoism
+			}
+			NOT = {
+				relation = {
+					who = USR
+					value = 50
+				}
+			}
+		}
+		
+		effect = {
+			badboy = 5
+			prestige = 10
+			2402 = { add_core = THIS }
+			2403 = { add_core = THIS }
+			2408 = { add_core = THIS }
+			2412 = { add_core = THIS }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = .7
+			}
+		}
+	}
 	
 #Help Gidan get money to buy AQT Selvenkes
 	GDN_ai_selvenkes_purchase = {
@@ -177,7 +380,7 @@ political_decisions = {
 	}
 			
 
-#Hoyekysten claiming Pastaza
+#Hoyekysten claiming Langelvland (Pastaza)
 	inland_claims = {
 		picture = claim_santa_catarina
 		potential = {
@@ -206,7 +409,7 @@ political_decisions = {
 	claim_carapara = {
 		picture = dreams_of_empire
 		potential = {
-			owns = 2280
+			owns = 2280 #Huancavilcas
 			2285 = { empty = yes }
 		}
 		
@@ -226,12 +429,12 @@ political_decisions = {
 	stilhav_naval_base = {
 		picture = valparaiso_harbor
 		potential = {
-			tag = HOY
 			owns = 2253
 			owns = 2258
 			2253 = {
 				NOT = {
 					has_building = naval_base
+					has_building = fort
 				}
 			}
 			2258 = {
@@ -246,6 +449,7 @@ political_decisions = {
 			2253 = {
 				NOT = {
 					has_building = naval_base
+					has_building = fort
 				}
 			}
 			2258 = {
@@ -258,7 +462,8 @@ political_decisions = {
 		effect = {
 			prestige = 2
 			money = -5000
-			2253 = {					#Used to give a fort, but it wasn't working well.
+			2253 =  {
+				fort = 1
 				naval_base = 1
 			}
 		}

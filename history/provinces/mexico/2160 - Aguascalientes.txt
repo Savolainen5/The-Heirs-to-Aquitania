@@ -1,5 +1,5 @@
-owner = MEX
-controller = MEX
+owner = AZT
+controller = AZT
 add_core = MEX
 add_core = AZT
 trade_goods = timber
