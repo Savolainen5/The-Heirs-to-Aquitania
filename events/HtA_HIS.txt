@@ -894,7 +894,7 @@ country_event = {
 	}
 }
 
-#lowball offer 
+#high offer 
 country_event = {
 	id = 50317
 	title = "EVTNAME50317" ## Margaria Offers to Buy Cuba
@@ -907,7 +907,7 @@ country_event = {
 		name = "We simply cannot part with it"
 		FROM = { country_event = 50319 }
 		ai_chance = {
-			factor = 75
+			factor = 25
 		}
 	}
 	
@@ -919,7 +919,7 @@ country_event = {
 			country_event = 50318 
 		}
 		ai_chance = {
-			factor = 25
+			factor = 75
 		}
 	}
 }

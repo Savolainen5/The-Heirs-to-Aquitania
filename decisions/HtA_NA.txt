@@ -23,6 +23,7 @@ political_decisions = {
 			badboy = 1
 			inherit = IRO
 			IRO = {	all_core = { add_core = THIS } }
+			add_accepted_culture = iroquois
 		}
 	}
 	
@@ -50,6 +51,7 @@ political_decisions = {
 			badboy = 1
 			inherit = CHE
 			CHE = {	all_core = { add_core = THIS } }
+			add_accepted_culture = cherokee
 		}
 	}
 	

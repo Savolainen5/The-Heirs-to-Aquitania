@@ -1070,134 +1070,152 @@
 #Zacatecas (340000/85000 POPS)
 2158 = {
 	aristocrats = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 1725
 	}
 
 	bureaucrats = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 325
 	}
 
 	officers = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 75
 	}
 
 	clergymen = {
-		culture = meikan
+		culture = nahua
 		religion = catholic
 		size = 425
 	}
 
 	artisans = {
-		culture = meikan
-		religion = catholic
-		size = 3850
+		culture = nahua
+		religion = animist
+		size = 4925
 	}
 
 	soldiers = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size= 425
 	}
 
 	farmers = {
-		culture = meikan
-		religion = catholic
-		size = 35175
+		culture = nahua
+		religion = animist
+		size = 56175
 	}
 
 	clergymen = {
-		culture = nahua
+		culture = meikan
 		religion = catholic
 		size = 200
 	}
 
 	artisans = {
-		culture = nahua
+		culture = meikan
 		religion = catholic
-		size = 2150
+		size = 1075
 	}
 
 	soldiers = {
-		culture = nahua
+		culture = meikan
 		religion = catholic
 		size= 450
 	}
 
 	farmers = {
-		culture = nahua
+		culture = meikan
 		religion = catholic
-		size = 40200
+		size = 20100
 	}
 }
 #Aguascalientes (152000/38000 POPS)
 2160 = {
 	aristocrats = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 850
 	}
 
 	clergymen = {
-		culture = meikan
+		culture = nahua
 		religion = catholic
 		size = 375
 	}
 
 	artisans = {
-		culture = meikan
+		culture = nahua
 		religion = catholic
-		size = 1525
+		size = 1100
+	}
+	
+	artisans = {
+		culture = nahua
+		religion = catholic
+		size = 425
 	}
 
 	soldiers = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size= 400
 	}
 
 	farmers = {
-		culture = meikan
+		culture = nahua
+		religion = animist
+		size = 34000
+	}
+	
+	farmers = {
+		culture = nahua
 		religion = catholic
-		size = 34850
+		size = 850
 	}
 }
 #Tepic (76000/19000 POPS)
 2161 = {
 	aristocrats = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 425
 	}
 
 	clergymen = {
-		culture = meikan
+		culture = nahua
 		religion = catholic
 		size = 150
 	}
 
 	artisans = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 750
 	}
 
+	farmers = {
+		culture = nahua
+		religion = animist
+		size = 13175
+	}
+	
+	farmers = {
+		culture = meikan
+		religion = catholic
+		size = 2150
+	}
+	
 	soldiers = {
 		culture = meikan
 		religion = catholic
 		size= 150
 
-	}
-
-	farmers = {
-		culture = meikan
-		religion = catholic
-		size = 15175
 	}
 
 	clergymen = {
@@ -1229,56 +1247,50 @@
 #San Luis Potosi (324000/81000 POPS)
 2159 = {
 	aristocrats = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 1625
 	}
 
 	clergymen = {
-		culture = meikan
+		culture = nahua
 		religion = catholic
 		size = 475
 	}
 
 	artisans = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 2400
 	}
 
 	soldiers = {
-		culture = meikan
-		religion = catholic
-		size= 1000
+		culture = nahua
+		religion = animist
+		size= 1350
 
 	}
 
 	farmers = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 47000
 	}
 
 	clergymen = {
-		culture = nahua
+		culture = meikan
 		religion = catholic
 		size = 175
 	}
 
 	artisans = {
-		culture = nahua
+		culture = meikan
 		religion = catholic
 		size = 1650
 	}
 
-	soldiers = {
-		culture = nahua
-		religion = catholic
-		size= 350
-	}
-
 	farmers = {
-		culture = nahua
+		culture = meikan
 		religion = catholic
 		size = 30525
 	}
@@ -1432,49 +1444,31 @@
 	clergymen = {
 		culture = meikan
 		religion = catholic
-		size = 500
+		size = 600
 	}
 
 	artisans = {
 		culture = meikan
 		religion = catholic
-		size = 200
+		size = 1250
 	}
 
 	soldiers = {
 		culture = meikan
 		religion = catholic
-		size= 50
+		size= 275
 	}
 
 	farmers = {
 		culture = meikan
-		religion = catholic
-		size = 1600
-	}
-
-	clergymen = {
-		culture = nahua
-		religion = catholic
-		size = 100
-	}
-
-	artisans = {
-		culture = nahua
-		religion = catholic
-		size = 1050
-	}
-
-	soldiers = {
-		culture = nahua
-		religion = catholic
-		size= 225
-	}
-
-	farmers = {
-		culture = nahua
 		religion = catholic
 		size = 20025
+	}
+
+	farmers = {
+		culture = nahua
+		religion = catholic
+		size = 1600
 	}
 
 	clergymen = {
@@ -1498,7 +1492,13 @@
 	farmers = {
 		culture = native_american_minor
 		religion = catholic
-		size = 9350
+		size = 5350
+	}
+	
+	farmers = {
+		culture = native_american_minor
+		religion = animist
+		size = 5350
 	}
 }
 #Tampico (80000/20000 POPS)
@@ -1574,19 +1574,19 @@
 	artisans = {
 		culture = meikan
 		religion = catholic
-		size = 50
+		size = 550
 	}
 
 	soldiers = {
 		culture = meikan
 		religion = catholic
-		size= 25
+		size= 125
 	}
 
 	farmers = {
 		culture = meikan
 		religion = catholic
-		size = 600
+		size = 10600
 	}
 
 	clergymen = {
@@ -1598,19 +1598,19 @@
 	artisans = {
 		culture = nahua
 		religion = catholic
-		size = 550
+		size = 50
 	}
 
 	soldiers = {
 		culture = nahua
 		religion = catholic
-		size= 125
+		size= 25
 	}
 
 	farmers = {
 		culture = nahua
 		religion = catholic
-		size = 10275
+		size = 275
 	}
 }
 #Villahermosa (60000/15000 POPS)
@@ -1674,33 +1674,45 @@
 #Guadalajara (300000/75000 POPS)
 2166 = {
 	aristocrats = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 1550
 	}
 
 	bureaucrats = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 250
 	}
 
 	officers = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 75
 	}
 
 	clergymen = {
-		culture = meikan
+		culture = nahua
 		religion = catholic
-		size = 650
+		size = 350
 	}
 
 	artisans = {
+		culture = nahua
+		religion = animist
+		size = 11000
+	}
+	
+	farmers = {
+		culture = nahua
+		religion = animist
+		size = 40000
+	}
+	
+	clergymen = {
 		culture = meikan
 		religion = catholic
-		size = 11000
+		size = 300
 	}
 	
 	artisans = {
@@ -1718,7 +1730,7 @@
 	farmers = {
 		culture = meikan
 		religion = catholic
-		size = 48875
+		size = 8875
 	}
 
 	clergymen = {
@@ -1748,33 +1760,33 @@
 #Puerto Vallarta (148000/37000 POPS)
 2168 = {
 	aristocrats = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 750
 	}
 
 	clergymen = {
-		culture = meikan
+		culture = nahua
 		religion = catholic
 		size = 250
 	}
 
 	artisans = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 1200
 	}
 
 	soldiers = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size= 250
 
 	}
 
 	farmers = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 21550
 	}
 
@@ -1786,19 +1798,19 @@
 
 	artisans = {
 		culture = native_american_minor
-		religion = catholic
+		religion = animist
 		size = 650
 	}
 
 	soldiers = {
 		culture = native_american_minor
-		religion = catholic
+		religion = animist
 		size= 150
 	}
 
 	farmers = {
 		culture = native_american_minor
-		religion = catholic
+		religion = animist
 		size = 12125
 	}
 }
@@ -1807,78 +1819,72 @@
 #Colima (108000/27000 POPS)
 2169 = {
 	aristocrats = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 575
 	}
 
 	clergymen = {
-		culture = meikan
+		culture = nahua
 		religion = catholic
 		size = 275
 	}
 
 	artisans = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 1350
 	}
 
 	soldiers = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size= 275
 
 	}
 
 	farmers = {
-		culture = meikan
-		religion = catholic
+		culture = nahua
+		religion = animist
 		size = 24525
 	}
 }
 #Morelia (348000/87000 POPS)
 2170 = {
 	aristocrats = {
-		culture = meikan
-		religion = catholic
+		culture = tarascan
+		religion = animist
 		size = 1750
 	}
 
-	bureaucrats = {
-		culture = meikan
-		religion = catholic
-		size = 325
-	}
-
 	officers = {
-		culture = meikan
-		religion = catholic
+		culture = tarascan
+		religion = animist
 		size = 50
 	}
 
 	clergymen = {
-		culture = meikan
+		culture = tarascan
 		religion = catholic
 		size = 500
 	}
 
 	artisans = {
-		culture = meikan
-		religion = catholic
+		culture = tarascan
+		religion = animist
 		size = 2550
 	}
 
 	soldiers = {
-		culture = meikan
-		religion = catholic
-		size= 525
+		culture = tarascan
+		religion = animist
+		size= 900
 	}
 
 	farmers = {
-		culture = meikan
-		religion = catholic
-		size = 45300
+		culture = tarascan
+		religion = animist
+		size = 78000
 	}
 
 	clergymen = {
@@ -1887,77 +1893,83 @@
 		size = 175
 	}
 
+	bureaucrats = {
+		culture = meikan
+		religion = catholic
+		size = 325
+	}
+
 	artisans = {
-		culture = tarascan
+		culture = meikan
 		religion = catholic
 		size = 1800
 	}
-
-	soldiers = {
-		culture = tarascan
-		religion = catholic
-		size= 375
-	}
-
+	
 	farmers = {
-		culture = tarascan
+		culture = meikan
 		religion = catholic
-		size = 33650
+		size = 950
 	}
 }
 #Los Alaniles (112000/28000 POPS)
 2171 = {
 	aristocrats = {
-		culture = meikan
+		culture = tarascan
+		religion = animist
+		size = 375
+	}
+	
+	aristocrats = {
+		culture = tarascan
 		religion = catholic
-		size = 575
+		size = 200
 	}
 
 	clergymen = {
-		culture = meikan
+		culture = tarascan
 		religion = catholic
 		size = 200
 	}
 
 	artisans = {
-		culture = meikan
-		religion = catholic
+		culture = tarascan
+		religion = animist
 		size = 1100
 	}
 
 	soldiers = {
-		culture = meikan
-		religion = catholic
+		culture = tarascan
+		religion = animist
 		size= 200
 
 	}
 
 	farmers = {
-		culture = meikan
+		culture = tarascan
 		religion = catholic
 		size = 18025
 	}
 
 	clergymen = {
-		culture = tarascan
+		culture = meikan
 		religion = catholic
 		size = 75
 	}
 
 	artisans = {
-		culture = tarascan
+		culture = meikan
 		religion = catholic
 		size = 400
 	}
 
 	soldiers = {
-		culture = tarascan
+		culture = meikan
 		religion = catholic
 		size= 100
 	}
 
 	farmers = {
-		culture = tarascan
+		culture = meikan
 		religion = catholic
 		size = 7425
 	}
@@ -2012,6 +2024,7 @@
 		culture = meikan
 		religion = catholic
 		size = 2800
+
 	}
 
 	farmers = {
@@ -2047,7 +2060,7 @@
 	farmers = {
 		culture = nahua
 		religion = catholic
-		size = 28000
+		size = 29000
 	}
 }
 #Toluca (212000/53000 POPS)
@@ -2126,19 +2139,19 @@
 	artisans = {
 		culture = meikan
 		religion = catholic
-		size = 950
+		size = 1400
 	}
 
 	soldiers = {
 		culture = meikan
 		religion = catholic
-		size = 1200
+		size = 1300
 	}
 
 	farmers = {
 		culture = meikan
 		religion = catholic
-		size = 16700
+		size = 26175
 	}
 
 	clergymen = {
@@ -2149,21 +2162,26 @@
 
 	artisans = {
 		culture = nahua
-		religion = catholic
-		size = 1400
+		religion = animist
+		size = 925
 	}
 
 	soldiers = {
 		culture = nahua
-		religion = catholic
-		size= 300
-
+		religion = animist
+		size= 200
 	}
 
 	farmers = {
 		culture = nahua
+		religion = animist
+		size = 16000
+	}
+	
+	farmers = {
+		culture = nahua
 		religion = catholic
-		size = 26175
+		size = 700
 	}
 }
 #Puebla (504000/126000 POPS)
@@ -2201,13 +2219,13 @@
 	soldiers = {
 		culture = meikan
 		religion = catholic
-		size = 2300
+		size= 2000
 	}
 
 	farmers = {
 		culture = meikan
 		religion = catholic
-		size = 38550
+		size = 65375
 	}
 
 	clergymen = {
@@ -2218,20 +2236,20 @@
 
 	artisans = {
 		culture = nahua
-		religion = catholic
+		religion = animist
 		size = 6500
 	}
 
 	soldiers = {
 		culture = nahua
-		religion = catholic
-		size= 2750
+		religion = animist
+		size= 750
 	}
 
 	farmers = {
 		culture = nahua
-		religion = catholic
-		size = 64375
+		religion = animist
+		size = 38550
 	}
 }
 #Oaxaca Region (452000)
@@ -2369,9 +2387,46 @@
 #Acapulco (156000/44000 POPS)
 2179 = {
 	aristocrats = {
-		culture = meikan
-		religion = catholic
+		culture = tarascan
+		religion = animist
 		size = 900
+	}
+
+	officers = {
+		culture = tarascan
+		religion = animist
+		size = 25
+	}
+
+	clergymen = {
+		culture = tarascan
+		religion = catholic
+		size = 325
+	}
+
+	artisans = {
+		culture = tarascan
+		religion = animist
+		size = 1150
+	}
+
+	soldiers = {
+		culture = tarascan
+		religion = animist
+		size= 250
+
+	}
+
+	farmers = {
+		culture = tarascan
+		religion = animist
+		size = 23250
+	}
+	
+	farmers = {
+		culture = tarascan
+		religion = catholic
+		size = 9000
 	}
 
 	bureaucrats = {
@@ -2380,60 +2435,28 @@
 		size = 125
 	}
 
-	officers = {
-		culture = meikan
-		religion = catholic
-		size = 25
-	}
-
 	clergymen = {
 		culture = meikan
-		religion = catholic
-		size = 325
-	}
-
-	artisans = {
-		culture = meikan
-		religion = catholic
-		size = 1150
-	}
-
-	soldiers = {
-		culture = meikan
-		religion = catholic
-		size= 250
-
-	}
-
-	farmers = {
-		culture = meikan
-		religion = catholic
-		size = 23250
-	}
-
-	clergymen = {
-		culture = tarascan
 		religion = catholic
 		size = 100
 	}
 
 	artisans = {
-		culture = tarascan
+		culture = meikan
 		religion = catholic
 		size = 1050
 	}
 
 	soldiers = {
-		culture = tarascan
+		culture = meikan
 		religion = catholic
 		size= 225
-
 	}
 
 	farmers = {
-		culture = tarascan
+		culture = meikan
 		religion = catholic
-		size = 19625
+		size = 10625
 	}
 }
 #Chilpancingo (80000/20000 POPS)

@@ -186,11 +186,19 @@ country_event = {
 		MRG = { country_event = 51206 }
 		prestige = -10
 		money = -10000
+		
+		ai_chance = {
+			factor = 25
+		}
 	}
 	
 	option = {
 		name = "Let the slavers come for us!"
 		MRG = { country_event = 51205 }
+		
+		ai_chance = {
+			factor = 75
+		}
 	}
 }
 

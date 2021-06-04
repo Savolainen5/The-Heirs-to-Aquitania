@@ -26,12 +26,12 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions
 school_reforms = no_schools
 
-ruling_party = AAA_conservative_3
+ruling_party = AZT_conservative_3
 upper_house = {
 	fascist = 0
-	liberal = 26
+	liberal = 16
 	conservative = 62
-	reactionary = 12
+	reactionary = 22
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0

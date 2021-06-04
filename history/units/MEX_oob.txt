@@ -1,11 +1,3 @@
-#leader = {
-#	name = "Antonio Santa Ana"
-#	type = land
-#	date="1836.1.1"
-#	personality = wrathful
-#	background = warmonger
-#}
-
 leader = {
 	name = "Martín de Cos"
 	type = land
@@ -14,51 +6,43 @@ leader = {
 	background = aristocrat
 }
 
-
-
 army = {
-	name = "Ejército del Ciudad Mejico"
+	name = "Armada de Mexika"
 	location = 2172
 	regiment = {
-		name= "1.Division Comonfort"
+		name= "1. Division d'Enfantariá"
 		type = infantry
 		home = 2172
 	}
 
 	regiment = {
-		name= "2.Division Comonfort"
-		type = irregular
+		name= "2. Division d'Enfantariá"
+		type = infantry
 		home = 2172
 	}
 
 	regiment = {
-		name= "3.Division Comonfort"
-		type = irregular
+		name= "3. Division d'Enfantariá"
+		type = infantry
 		home = 2176
 	}
 	
 	regiment = {
-		name= "1.Division Cos"
-		type = irregular
+		name= "1. Division de Cavalariá"
+		type = cavalry
 		home = 2174
 	}
 	
 	regiment = {
-		name= "2.Division Cos"
-		type = irregular
-		home = 2174
-	}
-	
-	regiment = {
-		name= "3.Division Cos"
-		type = irregular
+		name= "1. Division d'Artilhariá"
+		type = artillery
 		home = 2175
 	}
 
 }
 
 navy = {
-	name = "Armada de Mexika"
+	name = "Flòta de Mexika"
 	location = 2162
 	ship = {
 		name= "Orgulh de Mexika"
@@ -66,7 +50,7 @@ navy = {
 	}
 
 	ship = {
-		name= "Matilda"
+		name= "Senta Maria"
 		type = clipper_transport
 	}
 
