@@ -3,6 +3,7 @@ active_serial_killer;Active Serial Killer;;;;;;;;;x
 active_serial_killer_desc;Some beast of a man (or woman) is murdering citizens in this province. Police have so far failed to apprehend him.;;;;;;;;;x
 anatole_boom;Anatolian Population Boom;;;;;;;;;x
 anti_jacobin_tract;Anti-Albesan Tract;;;;x
+agreed_to_aid_hungary;Agreed to aid Hungary;x
 azt_1;Expulsion of the Meikans;;;;;;;;;x
 azt_2;Meican Assimilation;;;;;;;;;x
 desc_anti_jacobin_tract;A tract arguing the causes of counter-revolution, order, religion and monarchy has received widespread circulation in our country.;x
@@ -11,6 +12,8 @@ bohemian_partisans_desc;Some local Czech-speaking people have taken up arms agai
 buffer_state_spam_reduction;BSSR;x
 buffer_state_spam_reduction_desc;Don't mind me, I'm just reducing spam from the Buffer State event in CBandCores.txt;x
 building_oheskewen_canal;Building the Oheskewen Canal;;;;;;;;;;;x                                                                                                                                                                                                                ,,,
+claimed_by_sweden;Claimed by Sweden;x
+claimed_by_sweden_desc;This province has been claimed by the Swedes, and they will try to take it one way or another.;x
 countrywide_famine;Countrywide Famine;;;;;;;;;;;x,,,
 countrywide_famine_desc;Because of recent events, natural or otherwise, our country is currently experiencing a famine. Many will die or leave for a new home. Many will demand action.;;;;;;;;;;;;;x
 countrywide_famine_immigrant_push;Countrywide Famine;;;;;;;;;;x,,,
@@ -31,11 +34,15 @@ great_fire_happened;Recent Great Fire;;;;;;;;;;x
 great_fire_recovery;Great Fire Recovery;;;;;;;;;;x
 great_fire_recovery_desc;This province is still recovering from the recent devastating great fire which swept through one of its cities.;;;;;;;;;;x
 hate_NPL;Naples: We remember;;;;;;;;;x
+hate_NPL_desc;We will not befriend them, for they are a threat to our existence.;x
 hate_ITA;Italy: We remember;;;;;;;;;x
+hate_ITA_desc;We will not befriend them, for they are a threat to our existence.;x
 hta_dont_sphere_sml;Smolensk is off-limits;x
 hta_dont_sphere_sml_desc;We aren't allowed to sphere Smolensk, lest we incur the wrath of Russia;x
 hungarian_pamphlets;Hungarian Liberal Pamphlets;;;;;;;;;x
 ignore_revolt;Latvian Revolt Ignored;;;;;;;;;;x
+in_recovery;In recovery;x
+in_recovery_desc;This province is recovering from a recent disaster.;x
 jacin_ilmunt;Jacin Ilmunt;;;;;;;;;;;;x
 jacin_ilmunt_desc;The first to serve as First Councilor of the Republic of Aquitània, Ilmunt was famous for his popular support, the reforms undertaken by the government under his leadership, and his ability to inspire the entire country.;;;;;;;;;;;;x
 latvian_fomenters;Latvian Fomenters of Rebellion;;;;;;;;;;x
@@ -63,6 +70,28 @@ pier_moncani;Pier Moncani as First Minister;;;;;;;;;;;x
 pier_moncani_influence1;Pier Moncani's Influence;;;;;;;;;;x
 pier_moncani_influence2;Pier Moncani's Influence;;;;;;;;;;x
 pier_moncani_outrage;Public Outrage over Moncali's Death;;;;;;;;;;;x
+POL_expensive_factories;Poland: Agrarian Economy;x
+POL_expensive_factories_desc;The power of the nobility means that they prefer to keep peasants working on the land. It is harder to build successful factories.;x
+POL_less_army_spending;Poland: Military Spending Limitations;x
+POL_less_army_spending_desc;The amount of money we are able to collect from the nobility means that we are simply unable to spend as much as we would like on our military.;x
+POL_less_diplo;Poland: Fewer Diplomats;x
+POL_less_diplo_desc;As the nobility comprises the majority of those who could serve as diplomats, and they tend to see less value in doing so, we naturally have fewer available than other countries.;x
+POL_less_land_org;Poland: Weaker Military;x
+POL_less_land_org_desc;It is more difficult for us to procure men, equipment and supplies, which means that our troops are not as effective.;x
+POL_less_leadership;Poland: Less Military Leadership;x
+POL_less_leadership_desc;As the nobility prefer to keep to their own lands and personal affairs, they are less willing to join our military as officers, at least as compared to other countries.;x
+POL_less_mobilisation;Poland: Mobilization Difficulties;x
+POL_less_mobilisation_desc;The peasants are tied to the land in a way such that fewer of them can be released from work for military service in times of crisis.;x
+POL_less_output;Poland: Less RGO Output;x
+POL_less_output_desc;The nobility are obliged to give the royal government less of the the fruits of their peasants' labour.;x
+POL_less_prestige;Poland: Less Prestige;x
+POL_less_prestige_desc;Our inability to control our nobility and the consequent weakness of our king and country in comparison to others hurts our international standing.;x
+POL_less_reform_desire;Poland: Maintain the Status Quo;x
+POL_less_reform_desire_desc;The nobility is invested in maintaining their own power and wealth, and the peasantry does not know much better and agitates less for change.;x
+POL_less_tax_efficiency;Poland: Ineffective Taxation;x
+POL_less_tax_efficiency_desc;The nobility are less willing to pay their taxes and consequently less tax revenues enter our coffers.;x
+POL_slower_cbs;Poland: Slower War Justification;x
+POL_slower_cbs_desc;The unwillingness of our nobility to take part in our national diplomatic endeavours has the side effect of making it more difficult for us to quickly formulate plans for justifying wars.;x
 rebellious_minorities;Rebellious Minorities;;;;;;;;;;;;;;x
 rebellious_minorities_desc;For some reason, the minorities in this province are particularly rebellious at the moment.;;;;;;;;;;;;;x
 restless_slaves;Revolutionary Slaves;;;;;;;;;;;;;;x
@@ -79,6 +108,8 @@ sejm;Sejm;;;;;;;;;;;x
 sejm_desc;The power of the king of Poland is checked by the Sejm, a sort of legislature of the nobility, who continue to be the majority landholders in the country. Their willingness to accept royal decrees and rule depends on a number of factors, such as the attitude of the king toward the body and his relationship with them. It is a staunchly conservative body, against liberalism and anything else that threatens the power of the nobility.;;;;;;;;;;;x
 slave_trade;The Slave Trade;;;;;;;;;;;;;;x
 small_immigration_boom;Small Immigration Boom;;;;;;;;;x
+stopped_meetings;Stopped Meetings;x
+stopped_meetings_desc;Hungarian nobility have been forbidden from meeting for their so-called intellectual debates.;x
 study_room_meetings;Study Room Meetings;;;;;;;;;x
 study_room_meetings_desc;Hungarian nobility are holding meetings at their estates to discuss and debate liberal theories. Word about these is spreading and contributing to a rising sense of nationalism among the upper classes. This will surely filter down to the lower classes, too.;;;;;;;;;;x
 successful_ds_reform;Successful Reform;;;;;;;;;x
@@ -94,6 +125,8 @@ tsar_batyushka;Tsar Batyushka;;;;;;;;;;x
 tsar_batyushka_desc;Dear Father Tsar - The Tsar looks over us and protects us, a father to the whole Empire!;;;;;;;;;;x
 unsuccessful_ds_reform;Unsuccessful Reform;;;;;;;;;x
 unsuccessful_ds_reform_desc;In the wake of the publishing of Gogol's "Dead Souls," the government has attempted to make some reforms to improve productivity and reduce corruption. It has largely been unsuccessful.;;;;;;;;;;x
+utility_modifier;HtA Utility Modifier;x
+utility_modifier_desc;This is here for some technical reason. If it isn't gone after about a decade, tell Savs.;x
 very_rebellious_minorities;Very Rebellious Minorities;x
 very_rebellious_minorities_desc;For some reason, the minorities in this province are extremely rebellious at the moment!;x
 vorontsov;Vorontsov Regency;x
@@ -108,6 +141,10 @@ sprawling_empire;Sprawling Empire;;;;;;;;;;;;x
 sprawling_empire_desc;Ours is one of the largest nations in the world, a power to be reckoned with.;;;;;;;;;;;;x
 CANAL_4;Oheskewen Canal;;;;;;;;;;;;;x,,,
 confucian;Confucian;;;;;;;;;;x
+provisional_government_no_election;Provisional Government;x
+provisional_government_no_election_ruler;Councilmen;x
+provisional_government_yes_election;Provisional Government;x
+provisional_government_yes_election_ruler;Councilmen;x
 UNIT_BUILD_TIME_IW;$VAL$ days.;;;;;;;;;;x;
 DIPLOMACY_FILTER_NORTH_AMERICA;North Ameriga;;;;;;;;;;x;;;;
 DIPLOMACY_FILTER_SOUTH_AMERICA;South Ameriga;;;;;;;;;;x;;;;
@@ -123,6 +160,10 @@ abolitionism_cb;Enforce Abolition;;;;;;;;;;;;x
 abolitionism_cb_desc;Demand a country halt the barbaric practice of slavery;;;;;;;;;;;;x
 abolitionism_cb_short;Demand the end of slavery;;;;;;;;;;;;x
 abolitionism_cb_setup;Enforce the abolition of slaves in $RECIPIENT$;;;;;;;;;;;;x
+acquire_core_substate_region;Acquire core substate region;x
+acquire_core_substate_region_desc;Acquire one of your core regions from enemy ?Ysubstate?W;x
+acquire_core_substate_region_short;Acquire $STATE$;x
+acquire_core_substate_region_setup;Acquire your core, $STATE$, from $RECIPIENT$;x
 dismantle_PER;Claim the Holy Land;x
 dismantle_PER_desc;Liberate the Outremer people living in the Persian Empire;x
 dismantle_PER_short;Liberate the Outremer people;x
@@ -130,11 +171,11 @@ dismantle_PER_setup;Triggers peace conference over Persian lands;x
 germany_acquire_state;German Hegemony;;;;;;;;;x
 germany_acquire_state_short;Acquire the German state of $STATE$;;;;;;;;;;;x
 germany_acquire_state_setup;Acquire the German state of $STATE$ from $RECIPIENT$;;;;;;;;;;;;x
-germany_acquire_state_desc;Claim a state belonging to another German ruler and incorporate it into your realm, bringing you one step closer to hegemony in Germany.;;;;;;;;;;x
-germany_conquer;German Hegemony;;;;;;;;;x
-germany_conquer_short;Acquire the German state of $STATE$;;;;;;;;;;;x
-germany_conquer_setup;Acquire the German state of $STATE$ from $RECIPIENT$;;;;;;;;;;;;x
-germany_conquer_desc;Claim the last state belonging to another German ruler and incorporate it into your realm, bringing you one step closer to hegemony in Germany.;;;;;;;;;;x
+germany_acquire_state_desc;Claim a state belonging to another German ruler and incorporate it into our realm, bringing us one step closer to hegemony in Germany.;;;;;;;;;;x
+germany_conquer;German Hegemony - Annex;;;;;;;;;x
+germany_conquer_short;Annex the German state of $RECIPIENT$;;;;;;;;;;;x
+germany_conquer_setup;Annex the German state of $RECIPIENT$;;;;;;;;;;;;x
+germany_conquer_desc;Claim the last state belonging to another German ruler and incorporate it into our realm, bringing us one step closer to hegemony in Germany.;;;;;;;;;;x
 skane_cb;Claim Skåne;;;;;;;;;;;x
 skane_cb_desc;Reclaim this §Ystate§W which rightfully belongs to us!;;;;;;;;;;x
 skane_cb_short;Take Skåne;;;;;;;;;;x

@@ -242,8 +242,8 @@ Occupying the southern borders of the Great Plains, Ginnaecer (derived from olde
 Aengland at the zenith of its power before it was stripped of its glory. It may be that Aengland will seek to reclaim its errant colony, should it ever regain its
 former power.
 
-Califiana, colonised by Hispanians in search of gold and glory, occupies the southwestern corner of the continent. The coastal region is lush, but away into the mountains,
-the land becomes arid and hot.
+Califiana, colonised by Spanish-speaking Hispanians in search of gold and glory, occupies the southwestern corner of the continent. The coastal region is lush, but away into
+the mountains, the land becomes arid and hot.
 
 Along the rainy parts of the western coast of the continent sits the Skamisc nation. A mix of Aenglisc and native peoples, it was settled by pioneers and those seeking
 new opportunities in new parts of the continent. It was thus never truly part of the Aenglisc colonial system, as it was too far removed from Aengland to administrate.
@@ -284,13 +284,17 @@ live in large cities and maintain a distinct identity, and the southeastern coas
 ago. All peoples of today's Uilscyr worked together to free themselves of the Aenglisc yoke, but now without a common enemy, the Uilsc may find themselves in the midst of ethnic strife
 in the coming years.
 
-Altallia
+Altallia:
+Former Hispanian colony, largely settled by Spanish-speaking Hispanians
 
-Ysun
+Ysun:
+Former Hispanian colony (basically Uruguay), largely settled by Spanish-speaking Hispanians
 
-Argentina
+Argentina:
+Former Hispanian colony (basically OTL Argentina, just a less complicated history so far), largely settled by Spanish-speaking Hispanians
 
-Lonko
+Lonko:
+Former Hispanian colony (basically Chile), largely settled by Spanish-speaking Hispanians
 
 --------------------------------------------------------------------------------------------------
 
@@ -312,3 +316,9 @@ Volturnia:
 
 This is the term given to the region comprising the islands of Papua, Teralarga, Naffaroako Berria, and the near Pacific. It is derived from the Latin for "Southeast," and
  first appeared on maps of the Albannach cartographer and explorer, Ealar Cananach, beginning in 1813.
+
+Teralarga:
+Former Hispanian colony, largely settled by Galicians
+
+Naffaroako Berria:
+Former Hispanian colony, largely settled by Basques (who at the time were under Hispanian rule). The name means "New Navarra"

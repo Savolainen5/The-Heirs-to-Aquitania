@@ -2,9 +2,9 @@ color = { 155  45  40 }
 graphical_culture = Generic
 
 party = {
-	name = "AZT_conservative_2" # Centrists
+	name = "AZT_conservative_1" # Itztica Oente
 	start_date = 1830.1.1
-	end_date = 2000.1.1
+	end_date = 1872.1.1
 
 	ideology = conservative
 
@@ -16,8 +16,8 @@ party = {
 }
 
 party = {
-	name = "AZT_conservative_3" # Monarchists
-	start_date = 1830.1.1
+	name = "AZT_conservative_2" # Partit Teicnelilizotl
+	start_date = 1872.1.1
 	end_date = 2000.1.1
 
 	ideology = conservative
@@ -30,22 +30,22 @@ party = {
 }
 
 party = {
-	name = "AZT_liberal_1" # Republican Party
+	name = "AZT_liberal_1" # Partit Albesan
 	start_date = 1830.1.1
-	end_date = 2000.1.1
+	end_date = 1869.1.1
 
 	ideology = liberal
 
 	economic_policy = laissez_faire
 	trade_policy = protectionism
-	religious_policy = pro_atheism
+	religious_policy = pluralism
 	citizenship_policy = limited_citizenship
 	war_policy = pro_military
 }
 
 party = {
-	name = "AZT_liberal_4" # Liberal Democrats
-	start_date = 1830.1.1
+	name = "AZT_liberal_2" # Partit dels Pòbles Indigènos
+	start_date = 1869.1.1
 	end_date = 2000.1.1
 
 	ideology = liberal
@@ -54,39 +54,11 @@ party = {
 	trade_policy = free_trade
 	religious_policy = secularized
 	citizenship_policy = full_citizenship
-	war_policy = pacifism
-}
-
-party = {
-	name = "AZT_socialist_2" # Leftists
-	start_date = 1848.1.1
-	end_date = 2000.1.1
-
-	ideology = socialist
-
-	economic_policy = state_capitalism
-	trade_policy = protectionism
-	religious_policy = pluralism
-	citizenship_policy = limited_citizenship
 	war_policy = anti_military
 }
 
 party = {
-	name = "AZT_socialist_3" # People's Party
-	start_date = 1848.1.1
-	end_date = 2000.1.1
-
-	ideology = socialist
-
-	economic_policy = state_capitalism
-	trade_policy = protectionism
-	religious_policy = pro_atheism
-	citizenship_policy = full_citizenship
-	war_policy = pacifism
-}
-
-party = {
-	name = "AZT_reactionary_2" # Restorationists
+	name = "AZT_reactionary_1" # Anahuac Tlapatilli
 	start_date = 1820.1.1
 	end_date = 2000.1.1
 
@@ -100,7 +72,21 @@ party = {
 }
 
 party = {
-	name = "AZT_anarcho_liberal_1" # Free Trade Party
+	name = "AZT_socialist_1" # Partit dels Macehualtin
+	start_date = 1848.1.1
+	end_date = 2000.1.1
+
+	ideology = socialist
+
+	economic_policy = state_capitalism
+	trade_policy = protectionism
+	religious_policy = pluralism
+	citizenship_policy = limited_citizenship
+	war_policy = pro_military
+}
+
+party = {
+	name = "AZT_anarcho_liberal_1" # Tzincuetin
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
@@ -114,7 +100,7 @@ party = {
 }
 
 party = {
-	name = "AZT_communist_1" # Workers' Party
+	name = "AZT_communist_1" # Nenonotzaliztli Aztla
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
@@ -128,7 +114,7 @@ party = {
 }
 
 party = {
-	name = "AZT_fascist_1" # National Socialists
+	name = "AZT_fascist_1" # Nececetililiztli Nahua
 	start_date = 1905.1.1
 	end_date = 2000.1.1
 

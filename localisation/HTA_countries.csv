@@ -57,18 +57,17 @@ AUS_liberal_2;Party for Democracy;;;;;;;;;;x
 AUS_communist;Austrian Labourer's Party;;;;;;;;;;x
 AUS_anarcho_liberal;Radical Republicans;;;;;;;;;x
 AUS_fascist;Great Austria Party;;;;;;;;;;;x
-AZT;Aztlan;;;;;;;;;;;;;;;x
-AZT_ADJ;Aztli;;;;;;;;;;;;;x
-AZT_conservative_2;Partit dels Macehualtin;;;;;;;;;;;;;;;x
-AZT_conservative_3;Lucha Indigena;;;;;;;;;;;;;;;x
-AZT_liberal_1;Los Republicans Albesanos;;;;;;;;;;;;;;;x
-AZT_liberal_4;Los Indigenes Liberals;;;;;;;;;;;;;;;x
-AZT_socialist_2;Esquerra Republicana;;;;;;;;;;;;;;;x
-AZT_reactionary_2;Partit de Restauracio Anahuac;;;;;;;;;;;;;;;x
-AZT_socialist_3;Partit dels Pobles Indigenes;;;;;;;;;;;;;;;x
-AZT_anarcho_liberal_1;Los Albesanos Radicales;;;;;;;;;;;;;;;x
-AZT_communist_1;Liga Revolucionaria Azteca;;;;;;;;;;;;;;;x
-AZT_fascist_1;Lucha Tolteca;;;;;;;;;;;;;;;x
+AZT;Aztlan;x
+AZT_ADJ;Aztli;x
+AZT_conservative_1;Itztica Oente;x #Looking West
+AZT_conservative_2;Partit Teicnelilizotl;x #Party of Openness
+AZT_liberal_1;Partit Albesan;x
+AZT_liberal_2;Partit dels Pòbles Indigènas;x #Party of the Indigenous Peoples
+AZT_reactionary_1;Anahuac Tlapatilli;x #Anahuac Restore (meant to be like "Restoration of Anahuac"
+AZT_socialist_1;Partit dels Macehualtin;x #Party of the lower class
+AZT_anarcho_liberal_1;Tzincuetin;x #A very weak rendering of "Changes"
+AZT_communist_1;Nenonotzaliztli Aztli;x # Aztli Agreement
+AZT_fascist_1;Nececetililiztli Nahua;x #Nahua Union
 BHN;Bohemia-Hungary;;;;;;;;;;;;;x                                          
 BHN_ADJ;Bohemian;;;;;;;;;;;;;x                                             
 BOH;Bohemia;;;;;;;;;;;;;x
