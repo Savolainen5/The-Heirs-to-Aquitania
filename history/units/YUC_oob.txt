@@ -11,7 +11,7 @@ army = {
 	location = 2184	
 	regiment = {
 		name= "Republican Guard"
-		type = regular
+		type = infantry
 		home = 2183
 	}
 	regiment = {
@@ -25,5 +25,3 @@ army = {
 		home = 2187
 	}
 }
-
-

@@ -161,7 +161,7 @@ country_event = {
 			attacker_goal = {
 				casus_belli = place_in_the_sun
 				state_province_id = 2134
-				}
+			}
 		}
 		
 		ai_chance = {

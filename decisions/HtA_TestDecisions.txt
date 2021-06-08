@@ -189,4 +189,15 @@ political_decisions = {
 #		}
 #	}
 
+#	total_amount_test1 = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			total_amount_of_divisions = 1		#This appears to test for how many armies you have, not how many brigades you've raised, hmmmm
+#		}
+#		effect = {
+#			prestige_factor = 0.1
+#		}
+#	}
 }

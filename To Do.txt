@@ -133,7 +133,7 @@ Other:
 - French general staff?? - special political leader as a buff for them (already added a strong attack general)
 - Give Brabant more land/outposts to explain how they got New Caledonia
 - When Austria is released after dismantlement, it got OTL cores. Why? Fix!
-
+- Where does the AQT royal family go?
 - Springtime of Nations should hit Roman Empire harder?
 - Danubian Federation-thing for Roman Empire
 - Some Autokrator grants a constitution?
@@ -177,6 +177,9 @@ QIN reports from https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquit
 - Burma missing a core on Pegu
 - Regions in the Siam-LPBG-LXA-CAM area
 - Competition for colonies in SEA, especially between NAP and HIS in the Malay peninsula
+
+	0.5x
+- Decisions/events to increase POPs, like HPM's Build a New City (or something like that, I don't know the decision really)
 
 	0.52 (MRG, VST)
 - Union of these two countries

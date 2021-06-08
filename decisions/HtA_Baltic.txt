@@ -424,7 +424,7 @@ political_decisions = {
 					is_secondary_power = yes
 				}
 				OR = {
-					NOT = { total_amount_of_divisions = 20 }
+					NOT = { total_amount_of_divisions = 3 }
 					NOT = { military_score = 10 }
 				}
 			}
@@ -433,7 +433,7 @@ political_decisions = {
 				is_greater_power = no
 				is_secondary_power = no
 				OR = {
-					NOT = { total_amount_of_divisions = 10 }
+					NOT = { total_amount_of_divisions = 2 }
 					NOT = { military_score = 5 }
 				}
 			}
@@ -441,7 +441,7 @@ political_decisions = {
 				factor = 10
 				OR = {
 					FIN = { national_provinces_occupied = 0.05 }
-					FIN = { NOT = { total_amount_of_divisions = 10 } }
+					FIN = { NOT = { total_amount_of_divisions = 2 } }
 				}
 				NOT = {
 					relation = {

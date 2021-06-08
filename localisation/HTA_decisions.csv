@@ -506,6 +506,8 @@ reclaim_catalonia_title;Reclaim Catalonia;;;;;;;;;;x
 reclaim_catalonia_desc;It has been decades since Catalonia was stripped from us in the aftermath of the Liberal Rebellion. We are once more in a position to reclaim all of the territory that we lost, and thus accomplish one of our goals to reunite Iberia. It will involve war, but so be it.;;;;;;;;;x
 reclaim_mandate_title;Reclaim the Mandate of Heaven;;;;;;;;;x
 reclaim_mandate_desc;Our victory against Nanyue proves that we have the Mandate of Heaven once more.;;;;;;;;;x
+reclaim_tuscany_title;Reclaim Tuscany;x
+reclaim_tuscany_desc;Rebels have recently ejected our troops, but this will not do. We must put the rebels down and re-establish order in their land!;x
 reduce_infamy_title;Reduce Infamy;;;;;;;;;;x
 reduce_infamy_desc;So you're playing HtA, and suddenly you come across a buggy situation where you've got more than 25 infamy, eh? It WAS a bug and not your crazy world-conquering ambitions, right? If it's "Yes, Savs, it's your fault," take this and tell me what happened on the forums or on Discord (see the Readme file for links) so I can fix it. You would never abuse this, right?;;;;;;;;;;x
 reform_albina_title;Reform Albina;;;;;;;;;;x

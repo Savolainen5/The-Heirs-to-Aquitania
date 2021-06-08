@@ -498,35 +498,35 @@ NPL_ADJ;Neapolitan;;;;;;;;;;;;;x
 NRM;Normandy;;;;;;;;;;;;;x                                                 
 NRM_ADJ;Normand;;;;;;;;;;;;;x                                              
 NRM_reactionary;Monarchistes;;;;;;;;;;;;;;;x
-OAX_conservative;Partit de lo Ben 'Zaa;;;;;;;;;;;;;;;x
-OAX_liberal;Los Albesanos de Huaxyacac;;;;;;;;;;;;;;;x
-OAX_reactionary;Partit de Restauracio Mexic;;;;;;;;;;;;;;;x
-OAX_anarcho_liberal;Los Albesanos Radicals;;;;;;;;;;;;;;;x
-OAX_socialist;Partit Soucialisto;;;;;;;;;;;;;;;x
-OAX_communist;Partit Radical d'Esquerra;;;;;;;;;;;;;;;x
-OAX_fascist;Moviment per els Ben 'Zaa;;;;;;;;;;;;;;;x
+OAX_conservative;Partit de lo Ben 'Zaa;x
+OAX_liberal;Los Albesanos de Huaxyacac;x
+OAX_reactionary;Partit de Restauracio Mexic;x
+OAX_anarcho_liberal;Los Albesanos Radicals;x
+OAX_socialist;Partit Soucialisto;x
+OAX_communist;Partit Radical d'Esquerra;x
+OAX_fascist;Moviment per els Ben 'Zaa;x
 ORA;Tusstrom;;;;;;;;;;x
 ORA_ADJ;Tusstrommer;;;;;;;;;x
-ORA_conservative;Vorauser Parti;;;;;;;;;;x;;;;
-ORA_conservative_2;Hosmans Parti;;;;;;;;;x;;;;
-ORA_liberal;Freden Parti;;;;;;;;;;;;;x;;;;
-ORA_reactionary;Rektig Parti;;;;;;;;;;;x;;;;
+ORA_conservative;Vorauser Parti;;;;;;;;;;x
+ORA_conservative_2;Hosmans Parti;;;;;;;;;x
+ORA_liberal;Freden Parti;;;;;;;;;;;;;x
+ORA_reactionary;Rektig Parti;;;;;;;;;;;x;
 ORL;Orleans;;;;;;;;;;;;;x                                                  
 ORL_ADJ;Orleanais;;;;;;;;;;;;;x                                            
-ORL_reactionary;Orléanistes;Orléanistes;Orléanistes;;;;;;;;;;;x;       
-ORL_conservative_2;Conservatifs Révolutionaires;;;;;;;;;;;;;x
+ORL_reactionary;Orléanistes;;;;x;       
+ORL_conservative_2;Conservatifs Révolutionaires;;;;x
 PAT;Pattani;x
 PAT_ADJ;Pattani;x
-PDN;Padan Union;;;;;;;;;;x
-PDN_ADJ;Padanese;;;;;;;;;;x
-PDN_anarcho_liberal;Bande Azure;;;;;;;;;x
-PDN_communist;Lavoradori;;;;;;;;;x
-PDN_conservative;Fazziun Nobila;;;;;;;;;x
-PDN_fascist;Supremicisti;;;;;;;;;;;x
-PDN_liberal;Fazziun Republicana;;;;;;;;;;x
-PDN_reactionary;Fazziun Monarchista;;;;;;;;;;x
-PDN_reactionary_2;Partii della Terra;;;;;;;;;x
-PDN_socialist;Partii del Popel;;;;;;;;;;x
+PDN;Padan Union;x
+PDN_ADJ;Padanese;x
+PDN_anarcho_liberal;Bande Azure;x
+PDN_communist;Lavoradori;x
+PDN_conservative;Fazziun Nobila;x
+PDN_fascist;Supremicisti;x
+PDN_liberal;Fazziun Republicana;x
+PDN_reactionary;Fazziun Monarchista;x
+PDN_reactionary_2;Partii della Terra;x
+PDN_socialist;Partii del Popel;x
 PHL;Panaja;;;;;;;;;;;x
 PHL_ADJ;Panajan;;;;;;;;;;x
 POL_anarcho_liberal_1;Zasciankowcy;x

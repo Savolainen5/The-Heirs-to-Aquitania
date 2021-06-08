@@ -1,4 +1,5 @@
 #Events 50024-50050 reserved for PDN, NPL and DAU (which are located in HtA_DAU). Lower down in the file we've got IDs 51851-51899 which were introduced in 0.37
+#Strangely, I didn't make a separate HtA_PDN for events like I did for decisions. Oh well.
 
 #Fall of Tuscany
 country_event = {
@@ -109,6 +110,7 @@ country_event = {
 		}
 		NOT = { vassal_of = NPL }
 		NPL = { NOT = { vassal_of = THIS } }
+		NOT = { war_with = NPL }
 	}
 	
 	mean_time_to_happen = {
@@ -152,6 +154,7 @@ country_event = {
 		}
 		NOT = { vassal_of = ITA }
 		ITA = { NOT = { vassal_of = THIS } }
+		NOT = { war_with = ITA }
 	}
 	
 	mean_time_to_happen = {
@@ -306,8 +309,63 @@ country_event = {
 	}
 }
 
+#51853-65 reserved for Sicilian stuff
 
-#Istriot rebellion chain, probably between AUS and PDN (well, I haven't coded it for anyone except PDN)
+#Event explaining how the provisional_government_yes_election works
+country_event = {
+	id = 51866
+	title = "EVTNAME51866"
+	desc = "EVTDESC51866"
+	picture = "dreddscott_stanford"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PDN
+		government = provisional_government_yes_election
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "We shall see if this arrangement can endure."
+		prestige = 1
+		any_pop = {
+			limit = {
+				OR = {
+					is_primary_culture = yes
+					is_accepted_culture = yes
+				}
+			}
+			consciousness = 1
+		}
+	}
+}
+
+#Event explaining tensions between noblists and republicans
+country_event = {
+	id = 51867
+	title = "EVTNAME51867"
+	desc = "EVTDESC51867"
+	picture = "deliberation"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PDN
+		year = 1839
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "All that matters is Naples."
+	}
+}
+#Event showing rising tensions between noblists/monarchists and republicans
+
+################################################################################################################
+#####Istriot rebellion chain, probably between AUS and PDN (well, I haven't coded it for anyone except PDN)#####
 
 #Istriots rebel
 country_event = {

@@ -64,4 +64,47 @@ political_decisions = {
 			}
 		}
 	}
+	
+	#For situations when TUS breaks free by rebellion
+	reclaim_tuscany = {
+		picture = PoBridge
+		potential = {
+			OR = {
+				tag = NPL
+				tag = ITA
+			}
+			exists = TUS
+			TUS = { is_vassal = no }
+			has_global_flag = TUS_fell
+			NOT = { casus_belli = TUS }
+		}
+		allow = {
+			NOT = { war_with = TUS }
+			stonger_army_than = TUS
+		}
+		effect = {
+			prestige = 2
+			badboy = 2
+			casus_belli = {
+				target = TUS
+				type = conquest
+				months = 120
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.9
+			}
+			modifier = {
+				factor = 0
+				NOT = { military_score = 15 }
+			}
+			modifier = {
+				factor = 0
+				num_of_revolts = 1
+			}
+		}
+	}
 }

@@ -24,6 +24,7 @@ political_decisions = {
 			tag = NPL
 			TUS_744 = { owned_by = THIS }
 			NOT = { has_country_flag = post_war_tuscan_crackdown }
+			year = 1837
 		}
 		
 		allow = {

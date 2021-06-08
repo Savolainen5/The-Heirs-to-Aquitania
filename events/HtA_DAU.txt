@@ -1195,3 +1195,77 @@ country_event = {
 		end_war = DAU
 	}
 }
+
+#Aquitània Lays Claim to the Transalpine Provinces        #For situations where DAU willingly joins PDN on invitation. Triggered by the claim_rose decision in HtA_AQT
+country_event = {
+	id = 51604
+	title = "EVTNAME51604"
+	desc = "EVTDESC51604"
+	picture = "deliberation"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "How dare they?"
+		any_pop = {
+			limit = {
+				location = {
+					continent = europe
+				}
+			}
+			consciousness = 0.5
+			dominant_issue = {
+				value = jingoism
+				factor = 0.15
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				military_score = 30
+			}
+			modifier = {
+				factor = 1.5
+				total_amount_of_divisions = 20
+			}
+			modifier = {
+				factor = 1.1
+				war = no
+			}
+		}
+	}
+	
+	option = {
+		name = "They could have just asked! Give them their claims."
+		FRA_451 = {
+				secede_province = AQT
+				remove_core = THIS
+			}
+		465 = { secede_province = AQT remove_core = THIS }
+		466 = { secede_province = AQT remove_core = THIS }
+		607 = { secede_province = AQT remove_core = THIS }
+		prestige = -5
+		any_pop = {
+			limit = {
+				location = {
+					continent = europe
+				}
+			}
+			militancy = 1
+			dominant_issue = {
+				value = jingoism
+				factor = 0.15
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.1
+				war = yes
+			}
+		}
+	}
+}

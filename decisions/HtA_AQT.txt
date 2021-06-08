@@ -120,6 +120,7 @@ political_decisions = {
 			465 = { add_core = AQT }
 			466 = { add_core = AQT }
 			607 = { add_core = AQT }
+			PDN = { country_event = 51604 }
 			clr_country_flag = claim_rose
 		}
 	}
