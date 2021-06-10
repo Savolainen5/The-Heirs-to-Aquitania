@@ -225,9 +225,14 @@ country_event = {
 
 }
 
+#Madoz's Deamortisation
 country_event = {
-
 	id = 37707
+	title = "EVTNAME37707"
+	desc = "EVTDESC37707"
+	picture = "Administration"
+	
+	fire_only_once = yes
 
 	trigger = {
 		tag = HIS
@@ -237,27 +242,18 @@ country_event = {
 			year = 1858
 		}
 	}
-	
-	fire_only_once = yes
  
 	mean_time_to_happen =  {
 		months = 5
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1855
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1856
 		}
 	}
-
-	title = "EVTNAME37707"
-	desc = "EVTDESC37707"
-	picture = "Administration"
 
 	option = {
 		name = "EVTOPTA37707"
@@ -338,8 +334,12 @@ country_event = {
 
 #Madoz's Deamortisation
 country_event = {
-
 	id = 37708
+	title = "EVTNAME37707"
+	desc = "EVTDESC37707"
+	picture = "Administration"
+	
+	fire_only_once = yes
 
 	trigger = {
 		tag = HIS
@@ -348,26 +348,18 @@ country_event = {
 			year = 1846
 		}
 	}
-	
-	fire_only_once = yes
  
 	mean_time_to_happen =  {
 		months = 5
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1855
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1856
 		}
 	}
-
-	title = "EVTNAME37707"
-	desc = "EVTDESC37707"
-	picture = "Administration"
 
 	option = {
 		name = "EVTOPTA37708"

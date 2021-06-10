@@ -861,7 +861,7 @@ political_decisions = {
 	}
 	
 	#If Moravia somehow becomes independent and Prague exists, MRV will join them
-	rejoin_BOH = {
+	rejoin_PRH = {
 		picture = form_union_nation
 		potential = {
 			tag = MRV
@@ -879,5 +879,24 @@ political_decisions = {
 			}
 		}
 	}
-			
+	
+	#If Moravia somehow becomes independent and Bohemia exists, MRV will join them
+	rejoin_BOH = {
+		picture = form_union_nation
+		potential = {
+			tag = MRV
+			exists = yes
+			is_vassal = no
+			exists = BOH
+		}
+		allow = {}
+		effect = {
+			BOH = {
+				country_event = {
+					id = 50466
+					days = 1
+				}
+			}
+		}
+	}	
 }

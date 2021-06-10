@@ -200,4 +200,5 @@ political_decisions = {
 #			prestige_factor = 0.1
 #		}
 #	}
+
 }

@@ -424,14 +424,14 @@ iberian = {
 		Sebastián Segismundo Sueiro Teodoro Teófilo Tiago Tomé Urbano Valentín Valeriano Vasco Vicente Vitorino Vitório
 		Xácome Xacobe Xelmirio Xeremías Xerónimo Xoan "Xoan Bautista" "Xoan Manuel" Xoaquín Xosé "Xosé Antonio" "Xosé Manuel" "Xosé María" Xoel Xúlio }
 		
-		last_names = { Acuña Aguirre Álvarez Asensio Aznar Balduvieco Barradas Barreto Bugallal Cabral Capelo Carmona
-		"Caxigal de Veiga" Cano Carmona Carral "de Casas Novoa" "de Castro" "da Costa" "de Corzón" "de Fonseca" "da Fuente"
+		last_names = { Acuña Aguirre Álvarez Asensio Aznar Balduvieco Barradas Barreto Bugallal Cabral Cano Capelo Carmona Carral 
+		"Caxigal de Veiga" "de Casas Novoa" "de Castro" "da Costa" "de Corzón" "de Fonseca" "da Fuente"
 		"de Lalín" "de Novoa" "de Ordes" "de Padrón" "de Ulloa" Días Díaz "Feijóo y Montenegro" Fernández		
 		Ferreira Figueira Freire "Freire de Andrade" Froilaz Fuente García "García da Noceda" Gago Gil Gómez
 		González Heredia Hernández Herrera Hevia Lamas Linares López Losada 
 		Machado Mallo Maroto Márquez "Martínez-Campos" Masiá Maura Méndez Menéndez Miaja Millán-Astray Mina Mola Muñoz Murguía Muros 
 		Narváez Nogueira Nunes Páez Pavía Peláez Pereira Pomar Raimúndez Ramilo Ribeiro Ríos Rodríguez Rojo Ruiz
-		Sáinz Sanjurjo Sampaio Serrano Silvestre Soutomaior Teijeiro Topete Túñez Valdés Varela Vieira Villapol Villar Viñas}	
+		Sáinz Sanjurjo Sampaio Serrano Silvestre Soutomaior Teijeiro Topete Túñez Valdés Varela Vieira Villapol Villar Viñas }	
 	}
 }
 
@@ -2473,14 +2473,14 @@ latin_american_cultures = {
 		Sebastián Segismundo Sueiro Teodoro Teófilo Tiago Tomé Urbano Valentín Valeriano Vasco Vicente Vitorino Vitório
 		Xácome Xacobe Xelmirio Xeremías Xerónimo Xoan "Xoan Bautista" "Xoan Manuel" Xoaquín Xosé "Xosé Antonio" "Xosé Manuel" "Xosé María" Xoel Xúlio }
 		
-		last_names = { Acuña Aguirre Álvarez Asensio Aznar Balduvieco Barradas Barreto Bugallal Cabral Capelo Carmona
-		"Caxigal de Veiga" Cano Carmona Carral "de Casas Novoa" "de Castro" "da Costa" "de Corzón" "de Fonseca" "da Fuente"
+		last_names = { Acuña Aguirre Álvarez Asensio Aznar Balduvieco Barradas Barreto Bugallal Cabral Cano Capelo Carmona Carral 
+		"Caxigal de Veiga" "de Casas Novoa" "de Castro" "da Costa" "de Corzón" "de Fonseca" "da Fuente"
 		"de Lalín" "de Novoa" "de Ordes" "de Padrón" "de Ulloa" Días Díaz "Feijóo y Montenegro" Fernández		
 		Ferreira Figueira Freire "Freire de Andrade" Froilaz Fuente García "García da Noceda" Gago Gil Gómez
 		González Heredia Hernández Herrera Hevia Lamas Linares López Losada 
 		Machado Mallo Maroto Márquez "Martínez-Campos" Masiá Maura Méndez Menéndez Miaja Millán-Astray Mina Mola Muñoz Murguía Muros 
 		Narváez Nogueira Nunes Páez Pavía Peláez Pereira Pomar Raimúndez Ramilo Ribeiro Ríos Rodríguez Rojo Ruiz
-		Sáinz Sanjurjo Sampaio Serrano Silvestre Soutomaior Teijeiro Topete Túñez Valdés Varela Vieira Villapol Villar Viñas}	
+		Sáinz Sanjurjo Sampaio Serrano Silvestre Soutomaior Teijeiro Topete Túñez Valdés Varela Vieira Villapol Villar Viñas }	
 	}
 }
 

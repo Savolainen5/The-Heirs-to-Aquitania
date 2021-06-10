@@ -80,7 +80,7 @@ political_decisions = {
 		}
 		allow = {
 			NOT = { war_with = TUS }
-			stonger_army_than = TUS
+			stronger_army_than = TUS
 		}
 		effect = {
 			prestige = 2

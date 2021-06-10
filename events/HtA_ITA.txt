@@ -360,9 +360,38 @@ country_event = {
 	}
 	option = {
 		name = "All that matters is Naples."
+		set_country_flag = PDN_tensions1
 	}
 }
+
 #Event showing rising tensions between noblists/monarchists and republicans
+country_event = {
+	id = 51868
+	title = "EVTNAME51868"
+	desc = "EVTDESC51868"
+	picture = "deliberation"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PDN
+		year = 1841
+		OR = {
+			owns = 744 #Florence
+			owns = 741 #Bologna
+		}
+		government = provisional_government_yes_election
+		has_country_flag = PDN_tensions1
+	}
+	
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+		name = "Keep it together."
+		set_country_flag = PDN_tensions2
+	}
+}
 
 ################################################################################################################
 #####Istriot rebellion chain, probably between AUS and PDN (well, I haven't coded it for anyone except PDN)#####

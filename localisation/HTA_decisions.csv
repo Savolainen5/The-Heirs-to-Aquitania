@@ -226,7 +226,7 @@ fight_for_latvia_desc;It is clear that military intervention is necessary in Lat
 force_cw_gxi_title;The Future of Nanyue;x
 force_cw_gxi_desc;Our nation lies at the crossroads of Southeast Asia and China, influenced by both yet belonging fully to neither. We must firmly choose which direction our future lies in. \n\n§RTaking this decision means going to war with the Qin!;x
 force_cw_qin_title;The Future of Nanyue;x
-force_cw_qin_desc;Nanyue is a remnant of the Ming collapse and has long escaped our attention. It is time to make them decide once and for all where their King's allegiance lies.:x
+force_cw_qin_desc;Nanyue is a remnant of the Ming collapse and has long escaped our attention. It is time to make them decide once and for all where their King's allegiance lies.;x
 form_greater_netherlands_title;Form the Greater Netherlands;;;;;;;;;x
 form_greater_netherlands_desc;Our superiority over Brabant and Wallonia and our elevated position in the world are undisputed. We can use our power to gain political and domestic control over Brabant and Wallonia, and thus form a greater Empire than has been seen in our region for almost a millennium!;;;;;;;;x
 form_mellomamerika_title;Form Mellomamerika;;;;;;;;;;x,,,,
@@ -359,8 +359,8 @@ invite_daufinat_PDN_ai_title;Invite Daufinat into the Padan Union;;;;;;;;;;x
 invite_daufinat_PDN_ai_desc;Daufinat observed the creation of the Union and has always been friendly toward us. They are linguistically and culturally similar to our own people. Inviting them to join our Union would solidify that friendship and make sense for both of our peoples, as well as helping us further against Naples.;;;;;;;;;x
 invite_daufinat_PDN_title;Invite Daufinat into the Padan Union;;;;;;;;;;x
 invite_daufinat_PDN_desc;Daufinat observed the creation of the Union and has always been friendly toward us. They are linguistically and culturally similar to our own people. Inviting them to join our Union would solidify that friendship and make sense for both of our peoples, as well as helping us further against Naples.;;;;;;;;;x
-invite_hai_title;Invitation to Firgene
-invite_hai_desc;Our union of the Aenglisc-speaking peoples in North Ameriga will not be complete until we have embraced Firgene, the second-largest island in the Caribbean. It would also be a strategic location with which to expand our maritime influence.;;;;;;;;;;x
+invite_hai_title;Invitation to Firgene;x
+invite_hai_desc;Our union of the Aenglisc-speaking peoples in North Ameriga will not be complete until we have embraced Firgene, the second-largest island in the Caribbean. It would also be a strategic location with which to expand our maritime influence.;x
 invite_malta_irk_title;Invite Malta into the Republic;;;;;;;;;x
 invite_malta_irk_desc;The people of the islands of Malta are proud and shrewd, and their island occupies a strategic position in the Mediterranean Sea. They would make a fine addition to our republic. Together, we can seek prosperity for all. Let us extend our hand in friendship to them, that they may take it to make a brigther future for all.;;;;;;;;x
 invite_navarra_title;Union with Navarra;;;;;;;;;;;;;x

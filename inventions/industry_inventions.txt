@@ -991,7 +991,7 @@ clinical_thermometers_and_binaural_stethoscopes = {
 		}
 		modifier = {
 			factor = 2
-			organized_factories = 2
+			organized_factories = 1
 		}
 	}
 	effect = {

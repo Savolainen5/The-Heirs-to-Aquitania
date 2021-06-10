@@ -690,9 +690,6 @@ state_n_government = {
             factor = 30
             OR = {
                 year = 1860
-                tag = SAR
-                tag = PRU
-                tag = USA
                 colonial_nation = yes
             }
         }

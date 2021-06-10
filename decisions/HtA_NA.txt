@@ -1318,12 +1318,14 @@ political_decisions = {
 			tag = MRG 
 			139 = { life_rating = 35 }
 			has_country_flag = colonisation_finished
+			NOT = { has_country_flag = alvmun_renovated }
 		}
 		allow = {
 			practical_steam_engine = 1
 			late_classical_theory = 1
 		}
 		effect = {
+			set_country_flag = alvmun_renovated
 			prestige_factor = 0.1
 			139 = {
 				life_rating = 5

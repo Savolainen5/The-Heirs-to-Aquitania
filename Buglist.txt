@@ -9,3 +9,6 @@
 
 Unknown crashes log:
 - Crashed playing as PRH in late 1853
+- Crash in mid-1855, probably related. An event of some sort with an mtth? Doesn't seem to happen in games I start, only in those started by others.
+	- Crash as PDN in 1851 or '52 during June-August
+	- Crash as FRA in 1855 between 23-26 June - The fact that it is always in this suggests a very short MTTH with a modifier that makes it super short.

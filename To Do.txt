@@ -152,6 +152,8 @@ Other:
 	- Focus more on Anatolian expansion
 	- Absorb Georgia?
 
+	0.43 (Middle East):
+- Make it so event 51755 will consistently release SYR. Since it takes 100 warscore to demand SYR's release, perhaps some workaround that will make them be released by event rather than the liberate country wargoal
 
 	0.45 (China):
 
