@@ -260,7 +260,7 @@ political_decisions = {
 	}
 
 #Walloon Societal Integration
-	FRA_embrace_wallonians = {
+	FRA_embrace_walloons = {
 		picture = become_wallonia
 		potential = {
 			tag = FRA

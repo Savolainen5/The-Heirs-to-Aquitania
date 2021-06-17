@@ -1,7 +1,11 @@
-- If you downloaded a .rar (from the official forum, for example): Extract the .mod and the folder to Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod
+If you downloaded a .rar (from the official forum, for example): Extract the .mod and the folder to Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod
 
-- If you downloaded HtA from Github: Put the folder this file is in into your game files' mod folder. Take the .mod file (it might look like a movie file of some kind for you) out and have it also be in the mod file next to the Heirs to Aquitania folder.
-If you're using Steam, the target directory is gonna be Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod. So, to be clear, in the end you'll have an Heirs to Aquitania folder and an Heirs to Aquitania .mod
-file both in your Vic2 mod folder with the aforementioned path. Rename the mod's folder to The Heirs to Aquitania (because it's probably something like The-Heirs-to-Aquitania-...). If the mod's folder is not called (without quotation marks) "The Heirs to Aquitania", the mod will not launch. It's a good idea to just copy that name from right there so there are no problems! ;)
+If you downloaded HtA from Github:
+
+1. Put the folder this file is in (probably called The-Heirs-to-Aquitania-Master) into your game files' mod folder (the Programfiles(x86) path mentioned above).
+2. Rename the folder to The Heirs to Aquitania
+3. Take the .mod file (it might look like a movie file of some kind for you) and put it in the same place as the HtA folder.
+
+In the end, it should look like this: https://imgur.com/a/eKLRl2P
 
 Map modding option: If you want a slightly darker political colormap, go to map/terrain and rename political_colormap_HFMmm to just political_colormap and get rid of (or change the name of) the current political_colormap. The default one looks a bit better in my opinion.

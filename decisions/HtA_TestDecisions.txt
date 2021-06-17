@@ -201,4 +201,22 @@ political_decisions = {
 #		}
 #	}
 
+#	spawn_units_test = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#		}
+#		effect = {
+#			capital_scope = {
+#				sub_unit = { type = infantry value = current }	#draws units from bottom to top in province ID order. If there are enough soldier POPs (more than 500?) then two units will be from the same province. but will still spawn troops out of thin air, essentially, even when there are hardly any base soldier POPs to draw from.
+#				sub_unit = { type = infantry value = current }
+#				sub_unit = { type = infantry value = current }
+#				sub_unit = { type = artillery value = current }
+#				sub_unit = { type = hussar value = current }
+#				sub_unit = { type = cuirassier value = current }
+#			}
+#		}
+#	}
+
 }

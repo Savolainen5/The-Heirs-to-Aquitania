@@ -151,6 +151,7 @@ Other:
 	- Greek accepted OR better assimilation (what would be the policy vis-a-vis Armenians?)
 	- Focus more on Anatolian expansion
 	- Absorb Georgia?
+- Go through Irredentism decisions
 
 	0.43 (Middle East):
 - Make it so event 51755 will consistently release SYR. Since it takes 100 warscore to demand SYR's release, perhaps some workaround that will make them be released by event rather than the liberate country wargoal

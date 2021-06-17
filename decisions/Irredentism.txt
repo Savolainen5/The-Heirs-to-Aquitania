@@ -1727,91 +1727,91 @@ political_decisions = {
 		}		
 	}
 	
-	french_blobmode = {
-		picture = reichsland_elsass
-		potential = {
-			tag = FRA
-			government = fascist_dictatorship
-			NOT = { has_country_flag = french_blobmode }
-		}
-
-		allow = {
-			war = no
-			is_vassal = no
-			prestige = 250
-			is_greater_power = yes
-			military_score = 250
-		}
-
-		effect = {
-			prestige = 25
-			badboy = 12
-			set_country_flag = french_blobmode
-			FRA_412 = {
-				add_core = FRA
-			}
-			397 = {
-				add_core = FRA
-			}
-			BEL_394 = {
-				add_core = FRA
-			}
-			SAR_466 = {
-				add_core = FRA
-			}
-			473 = {
-				add_core = FRA
-			}
-			608 = {
-				add_core = FRA
-			}
-			607 = {
-				add_core = FRA
-			}
-			573 = {
-				add_core = FRA
-			}
-			any_country = {
-				limit = {
-					government = fascist_dictatorship
-				}
-				relation = {
-					who = THIS
-					value = 100
-				}
-			}
-			any_country = {
-				limit = {
-					NOT = {
-						government = fascist_dictatorship
-					}
-				}
-				relation = {
-					who = THIS
-					value = -100
-				}
-			}				
-			any_country = {
-				limit = {
-					NOT = { tag = THIS }
-					any_owned_province = { is_core = FRA }
-				}
-				relation = {
-					who = THIS
-					value = -100
-				}
-				leave_alliance = THIS
-			}							
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				badboy = 0.5
-			}		
-		}		
-	}	
+#	french_blobmode = {
+#		picture = reichsland_elsass
+#		potential = {
+#			tag = FRA
+#			government = fascist_dictatorship
+#			NOT = { has_country_flag = french_blobmode }
+#		}
+#
+#		allow = {
+#			war = no
+#			is_vassal = no
+#			prestige = 250
+#			is_greater_power = yes
+#			military_score = 250
+#		}
+#
+#		effect = {
+#			prestige = 25
+#			badboy = 12
+#			set_country_flag = french_blobmode
+#			FRA_412 = {
+#				add_core = FRA
+#			}
+#			397 = {
+#				add_core = FRA
+#			}
+#			BEL_394 = {
+#				add_core = FRA
+#			}
+#			SAR_466 = {
+#				add_core = FRA
+#			}
+#			473 = {
+#				add_core = FRA
+#			}
+#			608 = {
+#				add_core = FRA
+#			}
+#			607 = {
+#				add_core = FRA
+#			}
+#			573 = {
+#				add_core = FRA
+#			}
+#			any_country = {
+#				limit = {
+#					government = fascist_dictatorship
+#				}
+#				relation = {
+#					who = THIS
+#					value = 100
+#				}
+#			}
+#			any_country = {
+#				limit = {
+#					NOT = {
+#						government = fascist_dictatorship
+#					}
+#				}
+#				relation = {
+#					who = THIS
+#					value = -100
+#				}
+#			}				
+#			any_country = {
+#				limit = {
+#					NOT = { tag = THIS }
+#					any_owned_province = { is_core = FRA }
+#				}
+#				relation = {
+#					who = THIS
+#					value = -100
+#				}
+#				leave_alliance = THIS
+#			}							
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0
+#				badboy = 0.5
+#			}		
+#		}		
+#	}	
 	
 
 	greater_banat = {
