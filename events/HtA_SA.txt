@@ -252,8 +252,8 @@ country_event = {
 
 country_event = {
 	id = 51207
-	title = "EVTDESC51207" ## The Reforms of Jean Marsden
-	desc = "EVTNAME51207" ## The revolt against the French and Aenglish colonial empires at the turn of the century left Gidan with a disorganized military force based on regional militias using outdated equipment and lacking a unified command structure. While this had worked well during the guerilla fight against the colonists, by the mid-19th century, the threat of Uilyscr and Mellomsk encroachments increasingly underlined the need for military modernization. General Jean Marsden, an officer of mixed European and African ancestry, instituted Gidan's first 'état-major,' or general staff, in $YEAR$. Further reforms included the creation of uniform standards, professional officer training based on the European model and a central logistics department. In 1883, French military theorist Pierre Gaillard would later call the Gidanese military 'pound for pound, the finest troops in the Amerigas.'
+	title = "EVTNAME51207" ## The Reforms of Jean Marsden
+	desc = "EVTDESC51207" ## The revolt against the French and Aenglish colonial empires at the turn of the century left Gidan with a disorganized military force based on regional militias using outdated equipment and lacking a unified command structure. While this had worked well during the guerilla fight against the colonists, by the mid-19th century, the threat of Uilyscr and Mellomsk encroachments increasingly underlined the need for military modernization. General Jean Marsden, an officer of mixed European and African ancestry, instituted Gidan's first 'état-major,' or general staff, in $YEAR$. Further reforms included the creation of uniform standards, professional officer training based on the European model and a central logistics department. In 1883, French military theorist Pierre Gaillard would later call the Gidanese military 'pound for pound, the finest troops in the Amerigas.'
 	picture = "coloured_troops_line"
 	
 	fire_only_once = yes
@@ -263,6 +263,7 @@ country_event = {
 		year = 1845
 		is_disarmed = no 
 		war = no
+		army_professionalism = 1
 	}
 	
 	mean_time_to_happen = {

@@ -32,10 +32,14 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 1
+		modifier = {
+			factor = 0.1
+			year = 1836
+		}
 	}
 	
 	option = {
-		name = "Most concerning."
+		name = "Appalling!"
 		any_country = {
 			limit = {
 				OR = {
@@ -101,16 +105,19 @@ country_event = {
 	
 	trigger = {
 		tag = PDN
-		NOT = { has_country_modifier = hate_NPL }
-		NOT = { month = 1 }
+		NOT = {
+			has_country_modifier = hate_NPL
+			has_global_flag = hide_npl_relation_event
+			vassal_of = NPL
+			war_with = NPL
+			month = 1
+		}
 		ITA = { exists = no }
 		OR = {
 			PAP_741 = { owned_by = NPL } 
 			TUS_744 = { owned_by = NPL } 
 		}
-		NOT = { vassal_of = NPL }
 		NPL = { NOT = { vassal_of = THIS } }
-		NOT = { war_with = NPL }
 	}
 	
 	mean_time_to_happen = {
@@ -123,15 +130,55 @@ country_event = {
 			who = NPL
 			value = -100
 		}
+		diplomatic_influence = {
+			who = NPL
+			value = -200
+		}
 		NPL = {
-			diplomatic_influence = {
+			relation = {
 				who = THIS
 				value = -100
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = -200
 			}
 		}
 		add_country_modifier = {
 			name = hate_NPL
 			duration = 31
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = "Don't show me this again. (You won't get any more notifications about this.)"
+		relation = {
+			who = NPL
+			value = -100
+		}
+		diplomatic_influence = {
+			who = NPL
+			value = -200
+		}
+		NPL = {
+			relation = {
+				who = THIS
+				value = -100
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}
+		}
+		add_country_modifier = {
+			name = hate_NPL
+			duration = 31
+		}
+		set_global_flag = hide_npl_relation_event #51891, near the bottom of this file
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
@@ -145,16 +192,19 @@ country_event = {
 	
 	trigger = {
 		tag = PDN
-		NOT = { has_country_modifier = hate_ITA }
-		NOT = { month = 1 }
-		ITA = { exists = yes }
+		NOT = {
+			has_country_modifier = hate_ITA
+			has_global_flag = hide_ita_relation_event
+			vassal_of = ITA
+			war_with = ITA
+			month = 1
+		}
+		NPL = { exists = no }
 		OR = {
 			PAP_741 = { owned_by = ITA } 
 			TUS_744 = { owned_by = ITA } 
 		}
-		NOT = { vassal_of = ITA }
 		ITA = { NOT = { vassal_of = THIS } }
-		NOT = { war_with = ITA }
 	}
 	
 	mean_time_to_happen = {
@@ -165,17 +215,57 @@ country_event = {
 		name = "We will remember."
 		relation = {
 			who = ITA
+			value = -100
+		}
+		diplomatic_influence = {
+			who = ITA
 			value = -200
 		}
 		ITA = {
-			diplomatic_influence = {
+			relation = {
 				who = THIS
 				value = -100
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = -200
 			}
 		}
 		add_country_modifier = {
 			name = hate_ITA
 			duration = 31
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = "Don't show me this again. (You won't get any more notifications about this.)"
+		relation = {
+			who = ITA
+			value = -100
+		}
+		diplomatic_influence = {
+			who = ITA
+			value = -200
+		}
+		ITA = {
+			relation = {
+				who = THIS
+				value = -100
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}
+		}
+		add_country_modifier = {
+			name = hate_ITA
+			duration = 31
+		}
+		set_global_flag = hide_ita_relation_event #51892
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
@@ -242,7 +332,7 @@ country_event = {
 #####################Start events from 0.37#####################################
 # 51851-51899 - Mostly for NPL, but some for PDN
 
-#Milan Conference
+#Milan Conference - AI gets this when invited to form PDN
 country_event = {
 	id = 51851
 	title = "EVTNAME51851"
@@ -286,7 +376,7 @@ country_event = {
 		months = 2
 	}
 	option = {
-		name = "Neapolitan, naturally."
+		name = "Neapolitan, naturally." #OptA
 		set_country_flag = ed_decree_neapolitan
 		ai_chance = {
 			factor = 75
@@ -297,7 +387,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Local speech makes the most sense."
+		name = "Local speech makes the most sense." #OptB
 		set_country_flag = ed_decree_local
 		ai_chance = {
 			factor = 25
@@ -310,6 +400,14 @@ country_event = {
 }
 
 #51853-65 reserved for Sicilian stuff
+
+# 51853 - Some kind of backlash from Sicilians for having their autonomy curtailed I guess? (OptA)
+# 51854 - Province event when literacy (of Sicilian POPs in Sicilian cores) gets to a certain level to increase Sicilian nationalism (OptA)
+# 51855 - Discontent because of growing centralization (OptA)
+# 51856 - Province event to increase literacy (OptB)
+# 51857 - Similar event to 54, but less bad (OptB)
+# 51858 - Event to make Sicilian accepted (OptB)
+# 51859 - Event to remove Sicilian cores (OptB)
 
 #Event explaining how the provisional_government_yes_election works
 country_event = {
@@ -382,6 +480,8 @@ country_event = {
 		}
 		government = provisional_government_yes_election
 		has_country_flag = PDN_tensions1
+		NPL = { is_vassal = no }
+		ITA = { is_vassal = no }
 	}
 	
 	mean_time_to_happen = {
@@ -392,6 +492,8 @@ country_event = {
 		set_country_flag = PDN_tensions2
 	}
 }
+
+#Events 51869-51884 reserved for 
 
 ################################################################################################################
 #####Istriot rebellion chain, probably between AUS and PDN (well, I haven't coded it for anyone except PDN)#####
@@ -774,6 +876,183 @@ country_event = {
 			}
 		}
 		set_country_flag = istriots_simmer
+	}
+}
+##################### END ISTRIA CHAIN ##############################
+
+
+#"Hidden" event that continues to destroy relations between PDN and NPL after the player hides the notification in 50035 and 50036
+country_event = {
+	id = 51891
+	title = "EVTNAME50891"
+	desc = "EVTDESC50891"
+	picture = "meeting"
+	
+	trigger = {
+		ai = yes
+		OR = {
+			tag = PDN
+			tag = NPL
+		}
+		has_global_flag = hide_npl_relation_event
+		NOT = { month = 1 }
+		OR = {
+			PAP_741 = { owned_by = NPL } 
+			TUS_744 = { owned_by = NPL } 
+		}
+		PDN = {
+			NOT = {
+				has_country_modifier = hate_NPL
+				vassal_of = NPL
+				war_with = NPL
+			}
+		}
+		NPL = { NOT = { vassal_of = PDN } }
+		ITA = { exists = no }
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "Relations continue to be awful."
+		PDN = {
+			relation = {
+				who = NPL
+				value = -100
+			}
+			add_country_modifier = {
+				name = hate_NPL
+				duration = 31
+			}
+		}
+		NPL = {
+			diplomatic_influence = {
+				who = PDN
+				value = -100
+			}
+		}
+	}
+}
+
+#"Hidden" event that continues to destroy relations between PDN and ITA after the player hides the notification in 50035 and 50036
+country_event = {
+	id = 51892
+	title = "EVTNAME50891"
+	desc = "EVTDESC50891"
+	picture = "meeting"
+	
+	trigger = {
+		ai = yes
+		tag = NPL
+		has_global_flag = hide_npl_relation_event
+		NOT = { month = 1 }
+		OR = {
+			PAP_741 = { owned_by = NPL } 
+			TUS_744 = { owned_by = NPL } 
+		}
+		PDN = {
+			NOT = {
+				has_country_modifier = hate_NPL
+				vassal_of = NPL
+				war_with = NPL
+			}
+		}
+		NPL = { NOT = { vassal_of = PDN } }
+		ITA = { exists = no }
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "Relations continue to be awful."
+		PDN = {
+			relation = {
+				who = NPL
+				value = -100
+			}
+			diplomatic_influence = {
+				who = NPL
+				value = -200
+			}
+			add_country_modifier = {
+				name = hate_NPL
+				duration = 31
+			}
+		}
+		NPL = {
+			relation = {
+				who = PDN
+				value = -100
+			}
+			diplomatic_influence = {
+				who = PDN
+				value = -100
+			}
+		}
+	}
+}
+
+#"Hidden" event that continues to destroy relations between PDN and ITA after the player hides the notification in 50035 and 50036
+country_event = {
+	id = 50892
+	title = "EVTNAME50892"
+	desc = "EVTDESC50892"
+	picture = "meeting"
+	
+	trigger = {
+		ai = yes
+		tag = ITA
+		has_global_flag = hide_ita_relation_event
+		NOT = { month = 1 }
+		OR = {
+			PAP_741 = { owned_by = ITA } 
+			TUS_744 = { owned_by = ITA } 
+		}
+		PDN = {
+			NOT = {
+				has_country_modifier = hate_ITA
+				vassal_of = ITA
+				war_with = ITA
+			}
+		}
+		ITA = { NOT = { vassal_of = PDN } }
+		NPL = { exists = no }
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "Relations continue to be awful."
+		PDN = {
+			relation = {
+				who = ITA
+				value = -100
+			}
+			diplomatic_influence = {
+				who = ITA
+				value = -200
+			}
+			add_country_modifier = {
+				name = hate_ITA
+				duration = 31
+			}
+		}
+		ITA = {
+			relation = {
+				who = PDN
+				value = -100
+			}
+			diplomatic_influence = {
+				who = PDN
+				value = -200
+			}
+		}
 	}
 }
 

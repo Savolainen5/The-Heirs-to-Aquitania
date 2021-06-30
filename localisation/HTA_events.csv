@@ -56,7 +56,7 @@ EVTNAME50032;Duke Guigues XI chose a successor: de Buonavi!;;;;;;;;;;x
 EVTDESC50032;Because he died unexpectedly and childless, the Duke of Daufinat had to choose his successor from a selection of more distant relatives than usual. Unfortunately, rather than choosing his cousin, Guigues de Mauguio, who is the nephew of King Raimond, he chose his second cousin, Count Aymon de Buonavi of Chambéri, to be his successor. But we still could do something about this. We could press Guigues de Mauguio's claim. What will we do?;;;;;;;;;;;x
 EVTNAME50033;Duke Guigues XI chose a successor: de Buonavi!;;;;;;;;;;x
 EVTDESC50033;Because he died unexpectedly and childless, the Duke of Daufinat had to choose his successor from a selection of more distant relatives than usual. Unfortunately, rather than choosing his nephew, Amedeo Morecini, who is also the nephew of the duke of Lombardy, he chose his second cousin, Count Aymon de Buonavi of Chambéri, to be his successor. But we still could do something about this. We could press Amedeo Morecini's claim. What will we do?;;;;;;;;;;;x
-EVTNAME50034;Remember Our Purpose!;;;;;;;;;;x
+EVTNAME50034;Remember Our Purpose!;x
 EVTDESC50034;Remember that we banded together for one reason: To protect ourselves from Naples. We must not let our guard down, and we must not let the King try to subvert our cause and drive wedges between us. There can be no friendship between us and them until Tuscany and Romagna are free. Remember!;;;;;;;;x
 EVTDESC50035;Remember that we banded together for one reason: To protect ourselves from Naples, even though its King has claimed the title of King of Italy. We must not let our guard down, and we must not let the King try to subvert our cause and drive wedges between us. There can be no friendship between us and them until Tuscany and Romagna are free. Remember!;;;;;;;;x
 EVTNAME50036;La Toscana Vive di Nuovo!;;;;;;;;x
@@ -719,6 +719,8 @@ EVTNAME51202;Aquitània Refuses the Sale;;;;;;;;;;x
 EVTDESC51202;The Aquitànians have decided to not sell their land to us, after all.;;;;;;;;;;x
 EVTNAME51203;We have lost our South Amerigan colonies;;;;;;;;;;x
 EVTDESC51203;Now that we no longer control Porterei and Nova Bordeu, and haven't for years, we cannot maintain our claim on these former colonies.;;;;;;;;;;;;x
+EVTNAME51207;The Reforms of Jean Marsden;x
+EVTDESC51207;The revolt against the French and Aenglisc colonial empires at the turn of the century left Gidan with a disorganized military force based on regional militias using outdated equipment and lacking a unified command structure. While this had worked well during the guerilla fight against the colonists, by the mid-19th century, the threat of Uilsc and Mellomsk encroachments increasingly underlined the need for military modernization. General Jean Marsden, an officer of mixed European and African ancestry, instituted Gidan's first 'état-major,' or general staff, in $YEAR$. Further reforms included the creation of uniform standards, professional officer training based on the European model and a central logistics department. In 1883, French military theorist Pierre Gaillard would later call the Gidanese military 'pound for pound, the finest troops in the Amerigas.';x
 EVTNAME51400;Bar and Lorraine Subjugated;;;;;;;;;;x
 EVTDESC51400;With the defeat of the dukes of Bar and Lorraine, and their territory being returned to us, their power is broken. They will no longer be able to claim independent rule of these lands, which are, of course, rightfully French.;;;;;;;;;;;x
 EVTNAME51450;$FROMCOUNTRY$ and the Window to the West;;;;;;;;;;;;;x
@@ -816,6 +818,10 @@ EVTNAME51889;Istria Erupts;x
 EVTDESC51889;The situation in Istria has been spiralling, despite our attempts to crack down on it - or perhaps because of it. More and more people are joining the insurrectionists, and the cities are increasingly unsafe for our troops. Even the Slovenes and Croats of the region are turning against us. It seems the only action possible is to send in the army.;x
 EVTNAME51890;Istriots Appeased;x
 EVTDESC51890;Our attempts to placate the Istriots have met with success! While they have not given up their dream of independence, they are not at least calling for peace and calm. The situation is not definitively resolved, but at least the violence has stopped, if only temporarily.;x
+EVTNAME50891;Padan-Neapolitan Relations;x
+EVTDESC50891;They sure are bad. I don't think you'll see this, but this is just the yearly event to kill relations between the two countries.;x
+EVTNAME50892;Padan-Italian Relations;x
+EVTDESC50892;They sure are bad. I don't think you'll see this, but this is just the yearly event to kill relations between the two countries.;x
 EVTNAME51895;The Premiere of La Traviata;x
 EVTDESC51895;Verdi's opera premiered on March 6th, 1853, after apparently a mere 6 weeks of work. The work was an instant hit and has since become one of the most popular operas in the world. The performance at the theatre La Fenice in Venice drew massive crowds of the most important people in Venice and $COUNTRY$ as a whole.;x
 EVTNAME52000;The Expansion of Westkaap;;;;;;;;;;;x

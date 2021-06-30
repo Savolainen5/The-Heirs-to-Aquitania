@@ -68,8 +68,14 @@ AZT_socialist_1;Partit dels Macehualtin;x #Party of the lower class
 AZT_anarcho_liberal_1;Tzincuetin;x #A very weak rendering of "Changes"
 AZT_communist_1;Nenonotzaliztli Aztli;x # Aztli Agreement
 AZT_fascist_1;Nececetililiztli Nahua;x #Nahua Union
-BHN;Bohemia-Hungary;;;;;;;;;;;;;x                                          
-BHN_ADJ;Bohemian;;;;;;;;;;;;;x                                             
+BHN;Bohemia-Hungary;x                                          
+BHN_ADJ;Bohemo-Hungarian;x
+BHN_democracy;Carpathia;x
+BHN_democracy_ADJ;Carpathian;x
+BHN_proletarian_dictatorship;Carpathian People's Union;x
+BHN_proletarian_dictatorship_ADJ;Carpathian;x
+BHN_fascist;Carpathia;x
+BHN_fascist_ADJ;Carpathia;x
 BOH;Bohemia;;;;;;;;;;;;;x
 BOH_ADJ;Bohemian;;;;;;;;;x
 BOH_democracy;Czechia;;;;;;;;;x
@@ -212,7 +218,7 @@ GLC_ADJ;Galego;x
 GLC_anarcho_liberal;Partido Minarquista;x
 GLC_communist;Frente Popular Galega;x
 GLC_conservative;Dereita Galeguista;x
-GLC_fascist;FXNS;x#Falanxe das Xuntas Nacional Sindicalistas
+GLC_fascist;FXNS;x               #Falanxe das Xuntas Nacional Sindicalistas
 GLC_liberal;Liga Galega;;x
 GLC_reactionary;Converxencia Nacionalista Galega;x
 GLC_socialist;Esquerda Obrerista Galega;x                                       

@@ -322,7 +322,7 @@ info_german_desc;The big three in Germany are of course the big B's - Bavaria, B
 info_MLT_title;HtA Malta Info;x
 info_MLT_desc;I recommend against playing Malta. It's going to be even more lame than in vanilla, because while there's a little bit of flavour, I didn't really bother to write events for much of the Maltese side of things, and if you're playing railroaded, you're GOING to get puppeted and annexed. So just don't.;x
 info_PDN_title;HtA Padan Union Info;x
-info_PDN_desc;If you didn't already know, within a couple of years of game start, these four countries under the Alps will unite. It will work as any of them, but don't have an MP with more than one person playing among the four countries.;x
+info_PDN_desc;If you didn't already know, within a couple of years of game start, these four countries under the Alps will unite. It will work as any of them, but don't have an MP with more than one person playing among the four countries.\n\nIt's also not a great idea to have a human Padan Union and a human Naples if you want them to cooperate, due to the way some things are written.;x
 info_POL_title;HtA Poland Info;x
 info_POL_desc;There is still work to be done on Poland with regard to the Sejm, coming up on 0.37. You may see that you have a bunch of negative modifiers. These are intended to represent the feudal and Sejm systems, and they're not easily removed at the moment. Just cheat and give yourself 1000 prestige if you don't want to deal with them, so that way you can remove them. Don't sphere Smolensk because you'll mess up the story that's going on there. You'll get a chance to get some land from them with the Treaty of Brest decision.;x
 info_RUS_title;HtA Russia Info;x
@@ -397,7 +397,7 @@ liberate_tuscany_title;Liberate Tuscany;x
 liberate_tuscany_desc;With Romagna safe in our hands and our strength consolidated, it is at last time to free our Tuscan brothers and let them join our union for the common good and defence of the north. Let the Arno flow free!;x
 look_for_a_buyer_for_aqt_s_a_title;Sell Araguari;;;;;;;;;x
 look_for_a_buyer_for_aqt_s_a_desc;In light of the recent banning of slavery in Aquitània, the value of our plantations in our South Amerigan colony of Araguari has crashed. We should consider selling the land - the intendencies of Nova Bordeu and Porterei to Gidan or Uilscyr. The latter, in particular, would probably be interested in the territory, given its proximity to their capital at the mouth of the Jordrac River.;;;;;;;;x
-mare_nostrum_novum_title;;;;;;;;;x
+mare_nostrum_novum_title;Mare Nostrum Novum;;;;;;;;x
 mare_nostrum_novum_desc;In Europe, Aquitània controls the Mediterranean. With our strong position in Ameriga, it is time to declare ourselves the masters of the new world's inland sea.;;;;;;;;;x
 maretans_are_italian_title;The Maretans are Italian!;;;;;;;;;x
 maretans_are_italian_desc;The Maretans of Corsica and Sardinia speak a language quite similar to ours, and have long shared in the cultural and economic life of the Tyrrhenian coast and general Mediterranean sea. Now that we control the north of the peninsula, having brought the Padan Union to heel, there's no reason for them to properly resist us. Gloria per la patria!;;;;;;;;x
@@ -594,6 +594,10 @@ settle_namaqualand_title;Settle Namaqualand;;;;;;;;;;x
 settle_namaqualand_desc;Recent surveys in the region indicate that the Namaqualand region north of the Heeckeren River has some interesting resources, and already some of our people from the Kaap Colony have expressed interest in farming the region. Let us fund an expedition to claim and settle the region.;;;;;;;;;;x
 shc_war_intervene_title;Strike the Shawnee;;;;;;;;;;x
 shc_war_intervene_desc;The native confederation bordering us is in a desperate state. We should ensure they do not recover easily.;;;;;;;;;;x
+show_NPL_relations_title;Show the "Remember Our Purpose" event;x
+show_NPL_relations_desc;You've previously chosen to disable getting that event - you might have noticed that it now fires in Naples. In case you missed it, it still has the same effect as the yearly event, it just doesn't give you that popup and pause your game. If you chose that and there's also a human Naples player, then the event hasn't been firing. Anyways, take this decision to see them on their normal yearly pulse again.;x
+show_ITA_relations_title;Show the "Remember Our Purpose" event;x
+show_ITA_relations_desc;You've previously chosen to disable getting that event - you might have noticed that it now fires in Italy. In case you missed it, it still has the same effect as the yearly event, it just doesn't give you that popup and pause your game. If you chose that and there's also a human Italy player, then the event hasn't been firing. Anyways, take this decision to see them on their normal yearly pulse again.;x
 siak_protectorate_title;The Siak Protectorate;;;;;;;;;;x
 siak_protectorate_desc;With the Sultanate of Atjeh recently being annexed, we now have formal competition on the island of Sumatra for resources and favour. Let's use our contacts in the Sultanate of Siak to bring them closer to us, so as to limit the spread of our rivals on the island.;;;;;;;;;;;x
 sirocco_replacement_title;The Sirocco;x

@@ -76,11 +76,16 @@ political_decisions = {
 			exists = TUS
 			TUS = { is_vassal = no }
 			has_global_flag = TUS_fell
-			NOT = { casus_belli = TUS }
+			NOT = {
+				casus_belli = TUS
+			}
 		}
 		allow = {
-			NOT = { war_with = TUS }
-			stronger_army_than = TUS
+			NOT = {
+				war_with = TUS
+				truce_with = TUS
+			}
+			TUS = { NOT = { brigades_compare = 0.5 } } #TUS must have less than half the army size of THIS
 		}
 		effect = {
 			prestige = 2
@@ -105,6 +110,58 @@ political_decisions = {
 				factor = 0
 				num_of_revolts = 1
 			}
+			modifier = {
+				factor = 0
+				any_owned_province = {
+					continent = europe
+					controlled_by_rebels = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				TUS = { brigades_compare = 0.4 }
+			}
+			modifier = {
+				factor = 0.5
+				TUS = {
+					brigades_compare = 0.3
+					NOT = { brigades_compare = 0.4 }
+				}
+			}
+			modifier = {
+				factor = 0.8
+				TUS = {
+					brigades_compare = 0.2
+					NOT = { brigades_compare = 0.4 }
+				}
+			}
+		}
+	}
+	
+	#Utility decisions if for some reason the player wants to see the events again
+	show_NPL_relations = {
+		alert = no
+		potential = {
+			tag = PDN
+			has_global_flag = hide_npl_relation_event
+			ai = no
+		}
+		allow = {}
+		effect = {
+			clr_global_flag = hide_npl_relation_event
+		}
+	}
+	
+	show_ITA_relations = {
+		alert = no
+		potential = {
+			tag = PDN
+			has_global_flag = hide_ita_relation_event
+			ai = no
+		}
+		allow = {}
+		effect = {
+			clr_global_flag = hide_ita_relation_event
 		}
 	}
 }

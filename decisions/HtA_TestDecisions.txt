@@ -219,4 +219,15 @@ political_decisions = {
 #		}
 #	}
 
+#	stronger_army_cond_test = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			stronger_army_than = HIS		#Doesn't appear to work for any country, independent or no. Tested with Aro, which is unciv and starts with no military, still didn't work, no matter what country I checked with
+#		}
+#		effect = {
+#			prestige = 1
+#		}
+#	}
 }

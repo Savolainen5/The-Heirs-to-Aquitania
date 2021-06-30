@@ -3604,6 +3604,7 @@ country_event = {
 			vassal_of = ITA
 			vassal_of = PDN
 			vassal_of = NOR
+			vassal_of = SCA
 			vassal_of = SCO
 			vassal_of = NET
 			vassal_of = CLT
