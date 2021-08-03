@@ -351,7 +351,7 @@ country_event = {
 	}
 }
 
-#Caserta Education Decree choice
+#Caserta Education Decree choice - leads to a long event tree
 country_event = {
 	id = 51852
 	title = "EVTNAME51852"
@@ -376,7 +376,7 @@ country_event = {
 		months = 2
 	}
 	option = {
-		name = "Neapolitan, naturally." #OptA
+		name = "Neapolitan, naturally. (Finished, needs tweaking probs)" #OptA
 		set_country_flag = ed_decree_neapolitan
 		ai_chance = {
 			factor = 75
@@ -387,7 +387,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Local speech makes the most sense." #OptB
+		name = "Local speech makes the most sense. (Unwritten, don't choose yet)" #OptB
 		set_country_flag = ed_decree_local
 		ai_chance = {
 			factor = 25
@@ -401,13 +401,407 @@ country_event = {
 
 #51853-65 reserved for Sicilian stuff
 
-# 51853 - Some kind of backlash from Sicilians for having their autonomy curtailed I guess? (OptA)
-# 51854 - Province event when literacy (of Sicilian POPs in Sicilian cores) gets to a certain level to increase Sicilian nationalism (OptA)
-# 51855 - Discontent because of growing centralization (OptA)
-# 51856 - Province event to increase literacy (OptB)
-# 51857 - Similar event to 54, but less bad (OptB)
-# 51858 - Event to make Sicilian accepted (OptB)
-# 51859 - Event to remove Sicilian cores (OptB)
+# 51853 - Sicilian Tax Exemptions Revoked (A)
+country_event = {
+	id = 51853
+	title = "EVTNAME51853"
+	desc = "EVTDESC51853"
+	picture = "famine"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NPL
+		SCL = {
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		has_country_flag = ed_decree_neapolitan
+		any_owned_province = {
+			is_core = SCL
+			has_province_modifier = tax_exemptions
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "Surely the Sicilians will stay loyal!"
+		any_owned = {
+			limit = {
+				is_core = SCL
+			}
+			remove_province_modifier = tax_exemptions
+			add_province_modifier = {
+				name = tax_exemptions_ended
+				duration = 3650
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = sicilian
+				}
+				militancy = 1
+				consciousness = 1.5
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = south_italian
+				}
+				militancy = 0.25
+				consciousness = 1
+			}
+		}
+		add_country_modifier = {
+			name = timer
+			duration = 5981
+		}
+	}
+}
+
+# 51854 - Literacy Program Bears Fruit
+province_event = {
+	id = 51854
+	title = "EVTNAME51854"
+	desc = "EVTDESC51854"
+	
+	trigger = {
+		is_core = SCL
+		owner = {
+			primary_culture = south_italian
+			has_country_flag = ed_decree_neapolitan
+		}
+		any_pop = {
+			has_pop_culture = sicilian
+			NOT = {
+				literacy = 0.75
+			}
+		}
+	}
+	
+	mean_time_to_happen = {							# The timing here is probably SUPER off, like wow
+		months = 12
+		modifier = {
+			factor = 1.2
+			any_pop = {
+				has_pop_culture = sicilian
+				NOT = { literacy = 0.55 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			any_pop = {
+				has_pop_culture = sicilian
+				NOT = { literacy = 0.6 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			any_pop = {
+				has_pop_culture = sicilian
+				NOT = { literacy = 0.65 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			any_pop = {
+				has_pop_culture = sicilian
+				NOT = { literacy = 0.7 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			any_pop = {
+				has_pop_culture = sicilian
+				NOT = { literacy = 0.75 }
+			}
+		}
+	}
+	
+	option = {
+		name = "The schooling is coming along nicely."				#These numbers probably need some significant tweaking. Is this a good idea even? Is this even gonna be work?
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				NOT = { literacy = 0.5 }
+			}
+			literacy = 0.05
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				NOT = { literacy = 0.55 }
+			}
+			literacy = 0.045
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				NOT = { literacy = 0.6 }
+			}
+			literacy = 0.04
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				NOT = { literacy = 0.65 }
+			}
+			literacy = 0.35
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				NOT = { literacy = 0.7 }
+			}
+			literacy = 0.03
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				NOT = { literacy = 0.75 }
+			}
+			literacy = 0.25
+		}
+	}
+}
+		
+# 51855 - Province event when literacy (of Sicilian POPs in Sicilian cores) gets to a certain level to increase Sicilian nationalism (A)
+province_event = {
+	id = 51855
+	title = "EVTNAME51855"
+	desc = "EVTDESC51855"
+	
+	trigger = {
+		owner = {
+			tag = NPL
+			NOT = { has_country_flag = literacy_events_done }    #NEED TO MAKE SOMETHING TO SET THIS STILL
+		}
+		is_core = SCL
+		NOT = {
+			has_province_modifier = nationalist_agitation #Maybe it's not going to be this one? Also, is it possible that one of the modifiers will run out before all provinces have one?
+		}
+		literacy = 0.65 #possibly needs adjusting
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Hope for the best!"
+		add_province_modifier = {
+			name = nationalist_agitation
+			duration = 1825
+		}
+		ai_chance = {
+			factor = 20
+			modofier = {
+				factor = 100
+				NOT = { treasury = 1500 }
+			}
+		}
+	}
+	option = {
+		name = "Counter agitators with a campaign of our own."
+		treasury = -1000
+		add_province_modifier = {
+			name = nationalist_agitation
+			duration = 1095
+		}
+		ai_chance = {
+			factor = 80
+			modofier = {
+				factor = 0
+				NOT = { treasury = 1500 }
+			}
+		}
+	}
+}
+
+# 51856 - Event to add the literacy_events_done flag
+country_event = {
+	id = 51856
+	title = "EVTNAME51856"
+	desc = "EVTDESC51856"
+	picture = "italian_school"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		primary_culture = south_italian
+		any_owned_province = {
+			is_core = SCL
+		}
+		NOT = {
+			SCL = {
+				any_core = {
+					NOT = {
+						has_province_modifier = nationalist_agitation
+					}
+				}
+			}
+		}
+		any_owned_province = {
+			is_core = SCL
+			any_pop = {
+				NOT = { literacy = 0.75 }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 9
+	}
+	
+	option = {
+		name = "A suitable start."
+		prestige = 2
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				NOT = { literacy = 0.75 }
+			}
+			literacy = 0.025
+		}
+		set_country_flag = literacy_events_done
+	}
+}
+
+# 51857 - Discontent because of growing centralization (A)
+province_event = {
+	id = 51857
+	title = "EVTNAME51857"
+	desc = "EVTDESC51857"
+	picture = "anarchism"
+	
+	trigger = {
+		owner = {
+			tag = NPL
+			has_country_flag = ed_decree_neapolitan
+			NOT = {
+				has_country_flag = sicilian_assimilation_1  #MAYBE?
+			}
+		}
+		has_province_modifier = tax_exemptions_ended
+		NOT = { has_province_modifier = sicilian_unrest }
+	}
+	
+	mean_time_to_happen = {
+		months = 20
+	}
+	
+	option = {
+		name = "The boors!"
+		add_province_modifier = {
+			name = sicilian_unrest
+			duration = 3650
+		}
+	}
+}
+
+# 51858 - Event to set a slight modifier to increase assimilation (offsetting the penalty from core) (A) sicilian_assimilation_1
+	#Fires after the timer modifier expires
+country_event = {
+	id = 51858
+	title = "EVTNAME51858"
+	desc = "EVTDESC51858"
+	picture = "Merchants"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		primary_culture = south_italian
+		has_country_flag = ed_decree_neapolitan
+		NOT = { has_country_modifier = timer }
+		#PROBABLY NEED SOME YEAR OR TECH OR SOMETHING
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+	}
+	
+	option = {
+		name = "This is how we bring the Sicilians to heel."
+		prestige = 1
+		set_country_flag = sicilian_assimilation_1
+	}
+}
+
+# 51859 - Event to remove Sicilian cores (A)
+country_event = {
+	id = 51859
+	title = "EVTNAME51859"
+	desc = "EVTDESC51859"
+	picture = "Recruits"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		primary_culture = south_italian
+		has_country_flag = ed_decree_neapolitan
+		has_country_flag = sicilian_assimilation_1
+		any_owned_province = {
+			is_core = SCL
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+	}
+	
+	option = {
+		name = "Annanzi!" #DOUBLE CHECK THIS TRANSLATION IN NEAPOLITAN
+		set_country_flag = SCL_cores_removed
+		SCL = {
+			all_core = {
+				remove_core = SCL
+			}
+		}
+	}
+}
+
+# 51660 - Event to set a modifier to further increase assimilation from Sicilian to Italian (A) sicilian_assimilation_2
+country_event = {
+	id = 51860
+	title = "EVTNAME51860"
+	desc = "EVTDESC51860"
+	picture = "italian_decree"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = SCL_cores_removed
+		has_country_flag = sicilian_assimilation_1
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "Let us welcome them into the family."
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+			}
+			militancy = -3
+			consciousness = -2
+		}
+		set_country_flag = sicilian_assimilation_2
+		clr_country_flag = sicilian_assimilation_1
+	}
+}
+
+
+
+# 51861 - Province event to increase literacy (B)
+# 51862 - Similar event to 54, but less bad (B)
+# 51863 - Country/Province modifier for some negative thing for choosing this path - administrative_efficiency_modifier = -0.05
+	#Also add militancy for Italians in SCL cores, and conservative Italians in general
+# 51864 - Event to make Sicilian accepted (B)
+# 51865 - Later event to remove SCL cores (B)
 
 #Event explaining how the provisional_government_yes_election works
 country_event = {

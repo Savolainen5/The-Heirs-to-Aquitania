@@ -164,4 +164,25 @@ political_decisions = {
 			clr_global_flag = hide_ita_relation_event
 		}
 	}
+	
+	#AI-only decision to set the tax_exemptions province modifier on Sicilian provinces at the start of the game
+	SCL_tax_exemptions = {
+		potential = {
+			ai = yes
+			NOT = { year = 1836 }
+			SCL = { any_core = { NOT = { has_province_modifier = tax_exemptions } } }
+		}
+		allow = {
+		}
+		effect = {
+			SCL = {
+				all_core = {
+					add_province_modifier = {
+						name = tax_exemptions
+						duration = -1
+					}
+				}
+			}
+		}
+	}
 }

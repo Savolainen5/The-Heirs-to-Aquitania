@@ -863,7 +863,7 @@ country_event = {
 	}
 }
 
-country_event = {					############################THIS ONE WILL NEED TO BE WORKED ON AT SOME POINT WHEN THE ABOLITION CB IS IMPLEMENTED PROPERLY
+country_event = {					############################THIS ONE WILL NEED TO BE WORKED ON AT SOME POINT WHEN THE ABOLITION CB IS IMPLEMENTED PROPERLY -- DOES NOT CURRENTLY EVER GET CALLED
 	id = 51023
 	title = "$FROMCOUNTRY$ Enforces Abolition"
 	desc = "Our peace agreement with $FROMCOUNTRY$ requires us to dismantle the slave trade in our country effective immediately." 

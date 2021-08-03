@@ -73,3 +73,5 @@ consciousness = 2
 nonstate_consciousness = 0
 
 oob = "NPL_oob.txt"
+
+decision = "SCL_tax_exemptions"

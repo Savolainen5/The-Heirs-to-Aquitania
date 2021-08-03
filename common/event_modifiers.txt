@@ -1927,9 +1927,26 @@ pier_moncani = {
 	icon = 17
 }
 
-#PDN/NPL/ITA stuff									¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ MORE WORK NEEDED
+#PDN/NPL/ITA/SCL stuff									¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ MORE WORK NEEDED
 tax_exemptions = {
+	local_RGO_output = -0.25
+	local_artisan_output = -0.25
+	local_factory_output = -0.25
+	pop_militancy_modifier = -0.01
+	rich_income_modifier = 0.15
+	middle_income_modifier = 0.15
+	poor_income_modifier = 0.15
 	icon = 12
+}
+
+tax_exemptions_ended = {
+	pop_militancy_modifier = 0.01
+	pop_consciousness_modifier = 0.01
+}
+
+sicilian_unrest = {
+	pop_militancy_modifier = 0.025
+	pop_consciousness_modifier = 0.025
 }
 
 #Roman stuff

@@ -270,17 +270,17 @@ political_decisions = {
 		potential = {
 			tag = IRK
 			NOT = { has_country_flag = SIC_invited }
-			SIC = { NOT = { has_country_flag = IRK_invitation } }
+			SCL = { NOT = { has_country_flag = IRK_invitation } }
 		}
 		
 		allow = {
-			SIC = { exists = yes }
+			SCL = { exists = yes }
 			prestige = 35
 			military_score = 15
 		}
 		
 		effect = {
-			SIC = {
+			SCL = {
 				country_event = {
 					id = 50691
 					days = 1
@@ -296,7 +296,7 @@ political_decisions = {
 		potential = {
 			tag = IRK
 			NOT = { has_country_flag = sicily_claimed }
-			SIC = { has_country_flag = refuse_IRK }
+			SCL = { has_country_flag = refuse_IRK }
 		}
 		
 		allow = {
@@ -718,7 +718,7 @@ political_decisions = {
 			ITA = { all_core = { add_core = THIS } }
 			NPL = { all_core = { add_core = THIS } }
 			PAP = { all_core = { add_core = THIS } }
-			SIC = { all_core = { add_core = THIS } }
+			SCL = { all_core = { add_core = THIS } }
 			PRE = { all_core = { add_core = THIS } }
 			MLT = { all_core = { add_core = THIS } }
 			TUS = { all_core = { add_core = THIS } }
@@ -734,7 +734,7 @@ political_decisions = {
 						tag = ITA
 						tag = NPL
 						tag = PAP
-						tag = SIC
+						tag = SCL
 						tag = PRE
 						tag = MLT
 					}
@@ -945,7 +945,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			SIC = {
+			SCL = {
 				all_core = {
 					owned_by = THIS
 				}

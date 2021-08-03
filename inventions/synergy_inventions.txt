@@ -353,7 +353,7 @@ culture_1 = {
 	}
 	effect = {
 		permanent_prestige = 2
-		increase_research = 0.25
+		increase_research = 0.05
 	}
 }
 

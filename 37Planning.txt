@@ -40,7 +40,7 @@ Italy:
 - Sicily and the education stuff
 	- Choosing local language leads to Sicilian accepted
 	- Choosing Neapolitan grants an assimilation bonus to Sicilian provinces --> But why do that when you could just get Sicilian accepted and be done with it?
-		- Because SIC cores get removed!
+		- Because SCL cores get removed!
 -Sicilian party names		
 		
 Other:

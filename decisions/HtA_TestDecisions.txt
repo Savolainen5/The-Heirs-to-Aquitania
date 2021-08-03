@@ -230,4 +230,20 @@ political_decisions = {
 #			prestige = 1
 #		}
 #	}
+
+#	testing_any_country = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			any_country = {						#Just reconfirming that this is not a valid trigger scope
+#				vassal_of = THIS
+#			}
+#		}
+#		effect = {
+#			prestige = 1 
+#		}
+#	}
+
+
 }

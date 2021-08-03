@@ -106,7 +106,8 @@ russian_unrest;Unrest;x
 russian_unrest_desc;The people are angry for various reasons. It is only a matter of time until they take up arms.;x
 sejm;Sejm;;;;;;;;;;;x
 sejm_desc;The power of the king of Poland is checked by the Sejm, a sort of legislature of the nobility, who continue to be the majority landholders in the country. Their willingness to accept royal decrees and rule depends on a number of factors, such as the attitude of the king toward the body and his relationship with them. It is a staunchly conservative body, against liberalism and anything else that threatens the power of the nobility.;;;;;;;;;;;x
-slave_trade;The Slave Trade;;;;;;;;;;;;;;x
+sicilian_unrest;Sicilian Unrest;x
+slave_trade;The Slave Trade;x
 small_immigration_boom;Small Immigration Boom;;;;;;;;;x
 stopped_meetings;Stopped Meetings;x
 stopped_meetings_desc;Hungarian nobility have been forbidden from meeting for their so-called intellectual debates.;x
@@ -117,6 +118,8 @@ successful_ds_reform_desc;In the wake of the publishing of Gogol's "Dead Souls,"
 suppressed;Raid Result;;;;;;;;;;;;x
 suppressed_desc;Pretend this doesn't exist, it's a workaround for code limitations.;;;;;;;;;;;;x
 suppress_revolt;Active Revolt Suppression;;;;;;;;;x
+tax_exemptions;Tax Exemptions;x
+tax_exemptions_ended;Tax Exemptions Ended;x
 technological_assistance;Technological Assistance;;;;;;;;;x
 technological_assistance_desc;We are being provided with European experts in various field of technology to aid our progress in adopting their technology and systems.;;;;;;;;x
 timer;Event Timer;x

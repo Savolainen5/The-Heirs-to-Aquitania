@@ -792,6 +792,43 @@ assimilation_chance = {
 		}
 	}
 	
+	group = {  #Sicilian assimilation for Naples or whoever controls them, probably Naples/Italy
+		modifier = {
+			factor = 3
+			location = {
+				NOT = { is_core = SCL }
+				owner = {
+					has_country_flag = sicilian_assimilation_1
+					NOT = { has_country_flag = sicilian_assimilation_2 }
+				}
+			}
+			has_pop_culture = sicilian
+		}
+		modifier = {
+			factor = 5
+			location = {
+				NOT = { is_core = SCL }
+				owner = {
+					has_country_flag = sicilian_assimilation_2
+				}
+			}
+			has_pop_culture = sicilian
+		}
+	}
+	
+	modifier = {
+    	factor = 10
+		location = {
+       		is_core = SCL
+			owner = {
+				tag = NPL
+				has_country_flag = sicilian_assimilation_1
+				NOT = { has_country_flag = sicilian_assimilation_2 }
+			}
+    	}
+		has_pop_culture = sicilian
+	}
+	
 	group = {
 		modifier = {
 			factor = 0.5

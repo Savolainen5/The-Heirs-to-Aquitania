@@ -122,7 +122,50 @@ country_migration_target =
 				}
 			}
 		}
-	}	
+	}
+
+	modifier = {
+		factor = 1.3
+		OR = {
+			is_culture_group = THIS
+			AND = {
+				THIS = { is_culture_group = iberian }
+				owner = { is_culture_group = latin_american_cultures }
+			}
+			AND = {
+				THIS = { has_pop_culture = dutch }
+				owner = { primary_culture = nieuwlander }
+			}
+			AND = {
+				THIS = { is_culture_group = aquitanian }
+				owner = { primary_culture = meikan }
+			}
+			AND = {
+				THIS = { is_culture_group = germanic }
+				owner = { primary_culture = steenkooler }
+			}			
+			AND = {
+				THIS = { is_culture_group = french }
+				owner = { primary_culture = french_canadian }
+			}			
+			AND = {
+				THIS = { is_culture_group = british }
+				OR = {
+					owner = { primary_culture = skamisc }
+					owner = { primary_culture = uilsc }
+					owner = { primary_culture = ginnaecerisc }
+				}
+			}
+			AND = {
+				THIS = { is_culture_group = scandinavian }
+				OR = { 
+					owner = { primary_culture = margarian }
+					owner = { primary_culture = vestlandic }
+					owner = { primary_culture = mellomsk }	
+				}
+			}			
+		}
+	}
 }
 
 migration_target =
@@ -134,12 +177,13 @@ migration_target =
 		unemployment = 0.1
 		state_scope = {
 			has_factories = no
-			}
+		}
 	}
 	modifier = {
-		factor = 1.2
+		factor = 2.5
 		NOT = { total_pops = 5000 }
 		year = 1850
+		life_rating = 20
 		OR = { 
 			continent = north_america
 			continent = south_america
@@ -240,48 +284,6 @@ migration_target =
 	modifier = {
 		factor = 1.5
 		is_capital = yes
-	}
-	modifier = {
-		factor = 1.3
-		OR = {
-			is_culture_group = THIS
-			AND = {
-				THIS = { is_culture_group = iberian }
-				is_culture_group = latin_american_cultures
-			}
-			AND = {
-				THIS = { has_pop_culture = dutch }
-				primary_culture = nieuwlander
-			}
-			AND = {
-				THIS = { is_culture_group = aquitanian }
-				primary_culture = meikan
-			}
-			AND = {
-				THIS = { is_culture_group = germanic }
-				primary_culture = steenkooler
-			}			
-			AND = {
-				THIS = { is_culture_group = french }
-				primary_culture = french_canadian
-			}			
-			AND = {
-				THIS = { is_culture_group = british }
-				OR = {
-					primary_culture = skamisc
-					primary_culture = uilsc
-					primary_culture = ginnaecerisc
-				}
-			}
-			AND = {
-				THIS = { is_culture_group = scandinavian }
-				OR = {
-					primary_culture = margarian
-					primary_culture = vestlandic
-					primary_culture = mellomsk
-				}
-			}
-		}
 	}
 	
 	modifier = {
