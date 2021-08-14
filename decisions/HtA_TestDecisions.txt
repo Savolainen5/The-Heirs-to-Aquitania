@@ -245,5 +245,18 @@ political_decisions = {
 #		}
 #	}
 
+#	any_sphere_member_test = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			any_sphere_member = {				#This is a valid scope
+#				tag = PRE
+#			}
+#		}
+#		effect = {
+#			prestige = 1
+#		}
+#	}
 
 }
