@@ -387,7 +387,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Local speech makes the most sense. (Unwritten, don't choose yet)" #OptB
+		name = "Local speech makes the most sense. (Unwritten, don't choose yet)" #OptB   #########################################################################################################
 		set_country_flag = ed_decree_local
 		ai_chance = {
 			factor = 25
@@ -577,10 +577,12 @@ province_event = {
 		owner = {
 			tag = NPL
 			NOT = { has_country_flag = literacy_events_done }    #NEED TO MAKE SOMETHING TO SET THIS STILL
+			has_country_flag = ed_decree_neapolitan
 		}
 		is_core = SCL
 		NOT = {
 			has_province_modifier = nationalist_agitation #Maybe it's not going to be this one? Also, is it possible that one of the modifiers will run out before all provinces have one?
+			has_province_modifier = timer
 		}
 		literacy = 0.65 #possibly needs adjusting
 	}
@@ -594,6 +596,10 @@ province_event = {
 		add_province_modifier = {
 			name = nationalist_agitation
 			duration = 1825
+		}
+		add_province_modifier = {
+			name = timer
+			duration = 2800
 		}
 		ai_chance = {
 			factor = 20
@@ -609,6 +615,10 @@ province_event = {
 		add_province_modifier = {
 			name = nationalist_agitation
 			duration = 1095
+		}
+		add_province_modifier = {
+			name = timer
+			duration = 2800
 		}
 		ai_chance = {
 			factor = 80
@@ -796,8 +806,238 @@ country_event = {
 
 
 
-# 51861 - Province event to increase literacy (B)
-# 51862 - Similar event to 54, but less bad (B)
+# 51861 - Province event to increase literacy - "Literacy Program Bears Fruit!" (B)
+province_event = {
+	id = 51861
+	title = "EVTNAME51861"
+	desc = "EVTDESC51861"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		owner = {
+			OR = {
+				tag = NPL
+				tag = ITA
+			}
+			has_country_flag = ed_decree_local
+			SCL = {
+				all_core = {
+					OR = {
+						owned_by = NPL
+						owned_by = ITA
+					}
+				}
+			}
+		}
+		any_owned_province = {
+			is_core = SCL
+			has_province_modifier = tax_exemptions
+			NOT = {
+				has_province_modifier = literacy_program
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+	}
+	
+	option = {
+		name = "A literate populace is a productive populace!"
+		add_province_modifier = {
+			name = literacy_program
+			duration = 1825	#5 years
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				strata = poor
+				NOT = { literacy = 0.5 }
+			}
+			literacy = 0.05
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				strata = poor
+				NOT = { literacy = 0.55 }
+			}
+			literacy = 0.045
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				strata = poor
+				NOT = { literacy = 0.6 }
+			}
+			literacy = 0.04
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				strata = poor
+				NOT = { literacy = 0.65 }
+			}
+			literacy = 0.035
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				strata = poor
+				NOT = { literacy = 0.7 }
+			}
+			literacy = 0.03
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				strata = poor
+				NOT = { literacy = 0.75 }
+			}
+			literacy = 0.025
+		}
+		
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				strata = middle
+				NOT = { literacy = 0.5 }
+			}
+			literacy = 0.06
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				strata = middle
+				NOT = { literacy = 0.55 }
+			}
+			literacy = 0.055
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				strata = middle
+				NOT = { literacy = 0.6 }
+			}
+			literacy = 0.05
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				strata = middle
+				NOT = { literacy = 0.65 }
+			}
+			literacy = 0.045
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				strata = middle
+				NOT = { literacy = 0.7 }
+			}
+			literacy = 0.04
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				strata = middle
+				NOT = { literacy = 0.75 }
+			}
+			literacy = 0.035
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				strata = middle
+				NOT = { literacy = 0.8 }
+			}
+			literacy = 0.03
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				strata = middle
+				NOT = { literacy = 0.85 }
+			}
+			literacy = 0.025
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = sicilian
+				strata = middle
+				NOT = { literacy = 0.9 }
+			}
+			literacy = 0.02
+		}
+	}
+}
+	
+	
+# 51862 - Similar event to 55, but less bad (B)
+province_event = {
+	id = 51862
+	title = "EVTNAME51862"
+	desc = "EVTDESC51862"
+	
+	trigger = {
+		owner = {
+			tag = NPL
+			NOT = { has_country_flag = literacy_events_done }    #NEED TO MAKE SOMETHING TO SET THIS STILL
+			has_country_flag = ed_decree_local
+		}
+		is_core = SCL
+		NOT = {
+			has_province_modifier = nationalist_agitation #Maybe it's not going to be this one? Also, is it possible that one of the modifiers will run out before all provinces have one?
+			has_province_modifier = timer
+		}
+		literacy = 0.65 #possibly needs adjusting
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Hope for the best!"
+		add_province_modifier = {
+			name = nationalist_agitation
+			duration = 730
+		}
+		add_province_modifier = {
+			name = timer
+			duration = 2000
+		}
+		ai_chance = {
+			factor = 20
+			modofier = {
+				factor = 100
+				NOT = { treasury = 1500 }
+			}
+		}
+	}
+	option = {
+		name = "Counter agitators with a campaign of our own."
+		treasury = -1000
+		add_province_modifier = {
+			name = nationalist_agitation
+			duration = 365
+		}
+		add_province_modifier = {
+			name = timer
+			duration = 2000
+		}
+		ai_chance = {
+			factor = 80
+			modofier = {
+				factor = 0
+				NOT = { treasury = 1500 }
+			}
+		}
+	}
+}
+
+
 # 51863 - Country/Province modifier for some negative thing for choosing this path - administrative_efficiency_modifier = -0.05
 	#Also add militancy for Italians in SCL cores, and conservative Italians in general
 # 51864 - Event to make Sicilian accepted (B)

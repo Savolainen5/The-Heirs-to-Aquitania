@@ -53,6 +53,8 @@ leased;This province is leased to the current owner.;;;;;;;;;;x
 liberal_rebels;Albesan Rebels;x
 liberal_rebels_name;Albesan Rebels;;;;;;;;;;x
 liberal_rebels_desc;In an absolute monarchy, Albesans will seek to impose a constitutional monarchy. Otherwise, Albesans will strive to create a democratic government with a liberal ideology and a focus on political reform.;;;;;;;;;;;;;x,
+literacy_program;Literacy Program;x
+literacy_program_desc;The government-run campaign to improve literacy in this province is having knock-on effects on the populace and their productivity!;x
 native_societies1;Rejection of Outsiders;;;;;;;;;;x                                                                                                                                                                                          ,,,
 native_societies1_desc;As survivors and original inhabitants of our land, we do not attract alien immigrants, nor do we want them.;;;;;;;;;;;;;;;;;x                                                                                 ,
 native_societies2;Sons to Defend Our Homes;;;;;;;;;;;x,,,

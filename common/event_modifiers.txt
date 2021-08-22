@@ -1949,6 +1949,14 @@ sicilian_unrest = {
 	pop_consciousness_modifier = 0.025
 }
 
+literacy_program = {
+	pop_militancy_modifier = -0.01
+	pop_consciousness_modifier = 0.01
+	local_RGO_output = 0.01
+	local_artisan_output = 0.01
+	icon = 19
+}
+
 #Roman stuff
 
 anatole_boom = {

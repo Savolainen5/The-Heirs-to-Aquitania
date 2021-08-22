@@ -16,14 +16,14 @@ Europe
 0.34 - Northern Isles part 2
 0.35 - Nordic countries and some of the Baltics
 0.36 - Smolensk vs. Russia
-0.37 - Italy and Poland
+0.37 - Italy and Poland					<---------------------------------- WE ARE HERE
 0.38 - The Balkans: Sort out Hungarians and other cultures
 0.39 - Iberia
-0.40 - Miscellaneous, flavour events
+0.40 - Miscellaneous, flavour events, France & AQT
 
 Asia (Ideas for things to do follow the colon)
 0.41 - Central Asia: More flavour and Russian interaction
-0.42 - Caucasus and Armenia: Russian vs Roman ambitions
+0.42 - Caucasus and Armenia: Russian vs Roman ambitions, Romans look east
 0.43 - Persia, Mesopotamia, and the Levant: Russian-Persian conflict (partly done in 0.36)
 0.44 - Japan and Korea: Pacific Port chain for Russia (Korea/Manchuria)
 0.45 - China (partly done in 0.36)

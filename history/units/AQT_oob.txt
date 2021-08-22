@@ -49,6 +49,22 @@ FRA = { value = -50 }
 YUC = { value = -30 }
 NPL = { value = 5 }
 
+leader = {
+	name = "Marcèu de Nogaret"
+	type = land
+	date = 1836.1.1
+	personality = indifferent
+	background = war_college
+}
+
+leader = {
+	name = "Cassian Buissau"
+	type = sea
+	date = 1836.1.1
+	personality = charismatic
+	background = adventurer
+}
+
 army = {
 	name = "Armada Reial"
 	location = 461
