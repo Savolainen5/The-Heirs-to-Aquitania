@@ -259,20 +259,20 @@ political_decisions = {
 #		}
 #	}
 
-	war_countries_trigger_scope = {
-		potential = {
-			ai = no
-		}
-		allow = {
-			war_countries = {
-				tag = TUS
-			}
-		}
-		effect = {
-			war_countries = {
-				prestige = -1
-			}
-		}
-	}
+#	war_countries_trigger_scope = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			war_countries = {
+#				tag = TUS
+#			}
+#		}
+#		effect = {
+#			war_countries = {
+#				prestige = -1
+#			}
+#		}
+#	}
 
 }
