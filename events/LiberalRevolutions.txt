@@ -4131,7 +4131,11 @@ country_event = {
 					factor = -6
 				}
 			}
-		}			
+		}
+		add_country_modifier = {	
+			name = dutch_constitutional_reform_cooldown
+			duration = 720
+		}	
 	}
 
 	option = {
@@ -4164,6 +4168,10 @@ country_event = {
 					factor = 4
 				}
 			}
+		}
+		add_country_modifier = {	
+			name = dutch_constitutional_reform_cooldown
+			duration = 480
 		}
 	}
 

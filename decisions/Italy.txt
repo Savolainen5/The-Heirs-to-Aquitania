@@ -1,22 +1,22 @@
 political_decisions = {	
-	award_order_of_st_francis = {
-		potential = {
-			tag = NPL
-			government = absolute_monarchy
-			NOT = { has_country_flag = order_awarded }
-		}
-
-		allow = {
-			prestige = 75
-			war = no
-		}
-		
-		effect = {
-			years_of_research = 0.2
-			prestige = 2
-			set_country_flag = order_awarded
-		}
-	}
+#	award_order_of_st_francis = {
+#		potential = {
+#			tag = NPL
+#			government = absolute_monarchy
+#			NOT = { has_country_flag = order_awarded }
+#		}
+#
+#		allow = {
+#			prestige = 75
+#			war = no
+#		}
+#		
+#		effect = {
+#			years_of_research = 0.2
+#			prestige = 2
+#			set_country_flag = order_awarded
+#		}
+#	}
 	
 	suppress_tuscan_resistance = {
 		picture = enslave_albanians
@@ -43,25 +43,25 @@ political_decisions = {
 		}
 	}
 
-	build_vittoriano = {
-		potential = {
-			tag = ITA
-			government = absolute_monarchy
-			NOT = { has_country_flag = vittoriano_built }
-		}
-
-		allow = {
-			realism = 1
-		}
-		
-		effect = {
-			prestige = 5
-			any_pop = {
-				militancy = -1
-			}
-			set_country_flag = vittoriano_built
-		}
-	}
+#	build_vittoriano = {
+#		potential = {
+#			tag = ITA
+#			government = absolute_monarchy
+#			NOT = { has_country_flag = vittoriano_built }
+#		}
+#
+#		allow = {
+#			realism = 1
+#		}
+#		
+#		effect = {
+#			prestige = 5
+#			any_pop = {
+#				militancy = -1
+#			}
+#			set_country_flag = vittoriano_built
+#		}
+#	}
 
 	the_case_of_edgardo_mortara = {
 		potential = {

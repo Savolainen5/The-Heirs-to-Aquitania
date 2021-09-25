@@ -251,13 +251,13 @@ country_event = {
 		name = "He has made a grave mistake."
 		casus_belli = {
 			target = PER
-			type = liberate_country
+			type = special_liberate_country
 			months = 2
 		}
 		war = {
 			target = PER
 			attacker_goal = {
-				casus_belli = liberate_country
+				casus_belli = special_liberate_country
 				country = SYR
 			}
 			defender_goal = {

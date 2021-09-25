@@ -53,6 +53,8 @@ leased;This province is leased to the current owner.;;;;;;;;;;x
 liberal_rebels;Albesan Rebels;x
 liberal_rebels_name;Albesan Rebels;;;;;;;;;;x
 liberal_rebels_desc;In an absolute monarchy, Albesans will seek to impose a constitutional monarchy. Otherwise, Albesans will strive to create a democratic government with a liberal ideology and a focus on political reform.;;;;;;;;;;;;;x,
+literacy_bad_effects;The Costs of Literacy Campaigns;x
+literacy_bad_effects_desc;The literacy programme in Sicily is consuming some valuable administrative resources, but surely it will come out well in the end!;x
 literacy_program;Literacy Program;x
 literacy_program_desc;The government-run campaign to improve literacy in this province is having knock-on effects on the populace and their productivity!;x
 native_societies1;Rejection of Outsiders;;;;;;;;;;x                                                                                                                                                                                          ,,,
@@ -193,11 +195,14 @@ russia_annex;Russian Unification;x
 russia_annex_short;Conquer $RECIPIENT$;x
 russia_annex_setup;Conquer $RECIPIENT$ to unite Russia once and for all.;x
 russia_annex_desc;It is time to unite the Great Russian people and put an end to the centuries-long stalemate between our two countries.;x
-russia_annex;Russian Unification;x
 russia_hegemony;Russian Hegemony;x
 russia_hegemony_short;Russian Hegemony - Conquest of $STATE$;x
 russia_hegemony_setup;Acquire a part of our neighbour and make strides towards their ultimate defeat.;x
 russia_hegemony_desc;It is time to unite the Great Russian people and put an end to the centuries-long stalemate between our two countries. First we must cause their people and rulers to understand that further resistance is futile.;x
+special_liberate_country;Liberate Country (Special);x
+special_liberate_country_desc;If you can see this in game and can justify the CB, please contact Savs on Discord and give him a save.;x
+special_liberate_country_short;Liberate $THIRD$ (Cheaper event CB);x
+special_liberate_country_setup;If you can see this in game and can justify the CB, please contact Savs on Discord and give him a save.;x
 status_quo_levant;Status Quo;x
 status_quo_levant_desc;Defend the current Order in the Levant;x
 status_quo_levant_short;Enforce Status Quo;x

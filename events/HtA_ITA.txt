@@ -92,7 +92,7 @@ country_event = {
 	
 	option = {
 		name = "Excellent!"
-		money = 50000
+		treasury = 50000
 	}
 }
 
@@ -350,8 +350,9 @@ country_event = {
 		}
 	}
 }
-
-#Caserta Education Decree choice - leads to a long event tree
+##################################################################
+###Caserta Education Decree choice - leads to a long event tree###
+##################################################################
 country_event = {
 	id = 51852
 	title = "EVTNAME51852"
@@ -376,7 +377,7 @@ country_event = {
 		months = 2
 	}
 	option = {
-		name = "Neapolitan, naturally. (Finished, needs tweaking probs)" #OptA
+		name = "Neapolitan, naturally." #OptA
 		set_country_flag = ed_decree_neapolitan
 		ai_chance = {
 			factor = 75
@@ -387,7 +388,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Local speech makes the most sense. (Unwritten, don't choose yet)" #OptB   #########################################################################################################
+		name = "Local speech makes the most sense." #OptB
 		set_country_flag = ed_decree_local
 		ai_chance = {
 			factor = 25
@@ -399,9 +400,7 @@ country_event = {
 	}
 }
 
-#51853-65 reserved for Sicilian stuff
-
-# 51853 - Sicilian Tax Exemptions Revoked (A)
+# 51853 - Sicilian Tax Exemptions Revoked (A1)
 country_event = {
 	id = 51853
 	title = "EVTNAME51853"
@@ -461,14 +460,17 @@ country_event = {
 	}
 }
 
-# 51854 - Literacy Program Bears Fruit
+# 51854 - Literacy Program Bears Fruit (A2)
 province_event = {
 	id = 51854
 	title = "EVTNAME51854"
 	desc = "EVTDESC51854"
 	
 	trigger = {
-		is_core = SCL
+		OR = {
+			is_core = SCL
+			province_id = 761 #Putenza
+		}
 		owner = {
 			primary_culture = south_italian
 			has_country_flag = ed_decree_neapolitan
@@ -533,6 +535,7 @@ province_event = {
 			limit = {
 				has_pop_culture = sicilian
 				NOT = { literacy = 0.55 }
+				literacy = 0.5
 			}
 			literacy = 0.045
 		}
@@ -540,6 +543,7 @@ province_event = {
 			limit = {
 				has_pop_culture = sicilian
 				NOT = { literacy = 0.6 }
+				literacy = 0.55
 			}
 			literacy = 0.04
 		}
@@ -547,6 +551,7 @@ province_event = {
 			limit = {
 				has_pop_culture = sicilian
 				NOT = { literacy = 0.65 }
+				literacy = 0.6
 			}
 			literacy = 0.35
 		}
@@ -554,6 +559,7 @@ province_event = {
 			limit = {
 				has_pop_culture = sicilian
 				NOT = { literacy = 0.7 }
+				literacy = 0.65
 			}
 			literacy = 0.03
 		}
@@ -561,13 +567,14 @@ province_event = {
 			limit = {
 				has_pop_culture = sicilian
 				NOT = { literacy = 0.75 }
+				literacy = 0.7
 			}
 			literacy = 0.25
 		}
 	}
 }
 		
-# 51855 - Province event when literacy (of Sicilian POPs in Sicilian cores) gets to a certain level to increase Sicilian nationalism (A)
+# 51855 - Province event when literacy (of Sicilian POPs in Sicilian cores) gets to a certain level to increase Sicilian nationalism (A3)
 province_event = {
 	id = 51855
 	title = "EVTNAME51855"
@@ -576,7 +583,7 @@ province_event = {
 	trigger = {
 		owner = {
 			tag = NPL
-			NOT = { has_country_flag = literacy_events_done }    #NEED TO MAKE SOMETHING TO SET THIS STILL
+			NOT = { has_country_flag = literacy_events_done }
 			has_country_flag = ed_decree_neapolitan
 		}
 		is_core = SCL
@@ -584,7 +591,7 @@ province_event = {
 			has_province_modifier = nationalist_agitation #Maybe it's not going to be this one? Also, is it possible that one of the modifiers will run out before all provinces have one?
 			has_province_modifier = timer
 		}
-		literacy = 0.65 #possibly needs adjusting
+		literacy = 0.5 #possibly needs adjusting
 	}
 	
 	mean_time_to_happen = {
@@ -603,9 +610,9 @@ province_event = {
 		}
 		ai_chance = {
 			factor = 20
-			modofier = {
+			modifier = {
 				factor = 100
-				NOT = { treasury = 1500 }
+				NOT = { money = 1500 }
 			}
 		}
 	}
@@ -622,15 +629,15 @@ province_event = {
 		}
 		ai_chance = {
 			factor = 80
-			modofier = {
+			modifier = {
 				factor = 0
-				NOT = { treasury = 1500 }
+				NOT = { money = 1500 }
 			}
 		}
 	}
 }
 
-# 51856 - Event to add the literacy_events_done flag
+# 51856 - Event to add the literacy_events_done flag (ends both branch A and branch B)
 country_event = {
 	id = 51856
 	title = "EVTNAME51856"
@@ -679,7 +686,7 @@ country_event = {
 	}
 }
 
-# 51857 - Discontent because of growing centralization (A)
+# 51857 - Discontent because of growing centralization (A4)
 province_event = {
 	id = 51857
 	title = "EVTNAME51857"
@@ -711,7 +718,7 @@ province_event = {
 	}
 }
 
-# 51858 - Event to set a slight modifier to increase assimilation (offsetting the penalty from core) (A) sicilian_assimilation_1
+# 51858 - Event to set a slight modifier to increase assimilation (offsetting the penalty from core) (A5) sicilian_assimilation_1
 	#Fires after the timer modifier expires
 country_event = {
 	id = 51858
@@ -739,7 +746,7 @@ country_event = {
 	}
 }
 
-# 51859 - Event to remove Sicilian cores (A)
+# 51859 - Event to remove Sicilian cores (A6)
 country_event = {
 	id = 51859
 	title = "EVTNAME51859"
@@ -749,7 +756,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		primary_culture = south_italian
+		OR = {
+			tag = NPL
+			tag = ITA
+		}
 		has_country_flag = ed_decree_neapolitan
 		has_country_flag = sicilian_assimilation_1
 		any_owned_province = {
@@ -763,7 +773,7 @@ country_event = {
 	
 	option = {
 		name = "Annanzi!" #DOUBLE CHECK THIS TRANSLATION IN NEAPOLITAN
-		set_country_flag = SCL_cores_removed
+		set_global_flag = SCL_cores_removed
 		SCL = {
 			all_core = {
 				remove_core = SCL
@@ -772,7 +782,8 @@ country_event = {
 	}
 }
 
-# 51660 - Event to set a modifier to further increase assimilation from Sicilian to Italian (A) sicilian_assimilation_2
+# 51660 - Event to set a modifier to further increase assimilation from Sicilian to Italian (A7)
+	#sicilian_assimilation_2 - seen in pop_types file
 country_event = {
 	id = 51860
 	title = "EVTNAME51860"
@@ -782,7 +793,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		has_country_flag = SCL_cores_removed
+		has_global_flag = SCL_cores_removed
 		has_country_flag = sicilian_assimilation_1
 	}
 
@@ -806,13 +817,13 @@ country_event = {
 
 
 
-# 51861 - Province event to increase literacy - "Literacy Program Bears Fruit!" (B)
+# 51861 - Province event to increase literacy - "Literacy Program Bears Fruit!" (B1)
 province_event = {
 	id = 51861
 	title = "EVTNAME51861"
 	desc = "EVTDESC51861"
 	
-	fire_only_once = yes
+	#fire_only_once = yes #This would probably apply once ever, not per province
 	
 	trigger = {
 		owner = {
@@ -830,12 +841,10 @@ province_event = {
 				}
 			}
 		}
-		any_owned_province = {
-			is_core = SCL
-			has_province_modifier = tax_exemptions
-			NOT = {
-				has_province_modifier = literacy_program
-			}
+		is_core = SCL
+		has_province_modifier = tax_exemptions
+		NOT = {
+			has_province_modifier = literacy_program
 		}
 	}
 	
@@ -862,6 +871,7 @@ province_event = {
 				has_pop_culture = sicilian
 				strata = poor
 				NOT = { literacy = 0.55 }
+				literacy = 0.5
 			}
 			literacy = 0.045
 		}
@@ -870,6 +880,7 @@ province_event = {
 				has_pop_culture = sicilian
 				strata = poor
 				NOT = { literacy = 0.6 }
+				literacy = 0.55
 			}
 			literacy = 0.04
 		}
@@ -878,6 +889,7 @@ province_event = {
 				has_pop_culture = sicilian
 				strata = poor
 				NOT = { literacy = 0.65 }
+				literacy = 0.6
 			}
 			literacy = 0.035
 		}
@@ -886,6 +898,7 @@ province_event = {
 				has_pop_culture = sicilian
 				strata = poor
 				NOT = { literacy = 0.7 }
+				literacy = 0.65
 			}
 			literacy = 0.03
 		}
@@ -894,6 +907,7 @@ province_event = {
 				has_pop_culture = sicilian
 				strata = poor
 				NOT = { literacy = 0.75 }
+				literacy = 0.7
 			}
 			literacy = 0.025
 		}
@@ -911,6 +925,7 @@ province_event = {
 				has_pop_culture = sicilian
 				strata = middle
 				NOT = { literacy = 0.55 }
+				literacy = 0.5
 			}
 			literacy = 0.055
 		}
@@ -919,6 +934,7 @@ province_event = {
 				has_pop_culture = sicilian
 				strata = middle
 				NOT = { literacy = 0.6 }
+				literacy = 0.55
 			}
 			literacy = 0.05
 		}
@@ -927,6 +943,7 @@ province_event = {
 				has_pop_culture = sicilian
 				strata = middle
 				NOT = { literacy = 0.65 }
+				literacy = 0.6
 			}
 			literacy = 0.045
 		}
@@ -935,6 +952,7 @@ province_event = {
 				has_pop_culture = sicilian
 				strata = middle
 				NOT = { literacy = 0.7 }
+				literacy = 0.65
 			}
 			literacy = 0.04
 		}
@@ -943,6 +961,7 @@ province_event = {
 				has_pop_culture = sicilian
 				strata = middle
 				NOT = { literacy = 0.75 }
+				literacy = 0.7
 			}
 			literacy = 0.035
 		}
@@ -951,6 +970,7 @@ province_event = {
 				has_pop_culture = sicilian
 				strata = middle
 				NOT = { literacy = 0.8 }
+				literacy = 0.75
 			}
 			literacy = 0.03
 		}
@@ -959,6 +979,7 @@ province_event = {
 				has_pop_culture = sicilian
 				strata = middle
 				NOT = { literacy = 0.85 }
+				literacy = 0.8
 			}
 			literacy = 0.025
 		}
@@ -967,6 +988,7 @@ province_event = {
 				has_pop_culture = sicilian
 				strata = middle
 				NOT = { literacy = 0.9 }
+				literacy = 0.85
 			}
 			literacy = 0.02
 		}
@@ -974,7 +996,7 @@ province_event = {
 }
 	
 	
-# 51862 - Similar event to 55, but less bad (B)
+# 51862 - Similar event to 55, but less bad (B2)
 province_event = {
 	id = 51862
 	title = "EVTNAME51862"
@@ -983,7 +1005,7 @@ province_event = {
 	trigger = {
 		owner = {
 			tag = NPL
-			NOT = { has_country_flag = literacy_events_done }    #NEED TO MAKE SOMETHING TO SET THIS STILL
+			NOT = { has_country_flag = literacy_events_done }
 			has_country_flag = ed_decree_local
 		}
 		is_core = SCL
@@ -1010,14 +1032,14 @@ province_event = {
 		}
 		ai_chance = {
 			factor = 20
-			modofier = {
+			modifier = {
 				factor = 100
-				NOT = { treasury = 1500 }
+				NOT = { money = 1500 }					#The Validator thinks this is wrong, but I'm not sure why
 			}
 		}
 	}
 	option = {
-		name = "Counter agitators with a campaign of our own."
+		name = "Counter the agitators with a campaign of our own."
 		treasury = -1000
 		add_province_modifier = {
 			name = nationalist_agitation
@@ -1029,19 +1051,210 @@ province_event = {
 		}
 		ai_chance = {
 			factor = 80
-			modofier = {
+			modifier = {
 				factor = 0
-				NOT = { treasury = 1500 }
+				NOT = { money = 1500 }						#WHY DO YOU THINK THIS IS WRONG?!
 			}
 		}
 	}
 }
 
 
-# 51863 - Country/Province modifier for some negative thing for choosing this path - administrative_efficiency_modifier = -0.05
+# 51863 - Country/Province modifier for some negative thing for choosing this path - administrative_efficiency_modifier = -0.05 (B3)
 	#Also add militancy for Italians in SCL cores, and conservative Italians in general
-# 51864 - Event to make Sicilian accepted (B)
-# 51865 - Later event to remove SCL cores (B)
+country_event = {
+	id = 51863
+	title = "EVTNAME51863"
+	desc = "EVTDESC51863"
+	picture = "italian_decree"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NPL
+		has_country_flag = ed_decree_local
+		NOT = { has_country_flag = literacy_events_done }
+	}
+	
+	mean_time_to_happen = {
+		months = 21
+	}
+	
+	option = {
+		name = "It can never be easy, can it?"
+		add_country_modifier = {
+			name = literacy_bad_effects
+			duration = -1
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = south_italian
+				location = {
+					is_core = SCL
+				}
+			}
+			militancy = 2
+			consciousness = 4
+		}
+		any_pop = {
+			limit = {
+				location = {
+					NOT = {
+						is_core = SCL
+					}
+					is_core = THIS
+					continent = europe
+				}
+				NOT = {
+					has_pop_culture = sicilian
+				}
+			}
+			scaled_militancy = {
+				factor = 4
+				ideology = reactionary
+			}
+			scaled_consciousness = {
+				factor = 4
+				ideology = reactionary
+			}
+			scaled_militancy = {
+				factor = 2
+				ideology = conservative
+			}
+			scaled_consciousness = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		any_pop = {
+			limit = {
+				location = {
+					NOT = {
+						is_core = SCL
+					}
+					is_core = THIS
+					continent = europe
+				}
+				has_pop_culture = sicilian
+			}
+			scaled_militancy = {
+				factor = 1
+				ideology = liberal
+			}
+			scaled_consciousness = {
+				factor = 4
+				ideology = liberal
+			}
+			scaled_militancy = {
+				factor = 4
+				ideology = anarcho_liberal
+			}
+			scaled_consciousness = {
+				factor = 4
+				ideology = anarcho_liberal
+			}
+		}
+	}
+}
+			
+# 51864 - Event to make Sicilian accepted (B4)
+	#Maybe should set literacy_events_done flag?
+country_event = {
+	id = 51864
+	title = "EVTNAME51864"
+	desc = "EVTDESC51864"
+	picture = "sicilians"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = NPL
+			tag = ITA
+		}
+		has_country_flag = ed_decree_local
+		NOT = {
+			any_owned_province = {
+				is_core = SCL
+				has_province_modifier = nationalist_agitation
+			}
+		}
+		OR = {
+			year = 1863
+			any_pop = {
+				location = {
+					OR = {
+						province_id = 762
+						province_id = 763
+						province_id = 764
+					}
+					has_pop_culture = sicilian
+				}
+				literacy = 0.65
+			}
+		}
+		SCL = {
+			all_core = {
+				owned_by = THIS
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 38
+	}
+	
+	option = {
+		name = "Wonderful news!"
+		prestige = 1
+		add_accepted_culture = sicilian
+		remove_country_modifier = literacy_bad_effects
+	}
+}
+# 51865 - Later event to remove SCL cores (B5)
+country_event = {
+	id = 51865
+	title = "EVTNAME51865"
+	desc = "EVTDESC51865"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = NPL
+			tag = ITA
+		}
+		has_country_flag = ed_decree_local
+		has_country_flag = literacy_events_done
+		accepted_culture = sicilian
+		SCL = {
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		year = 1864
+	}
+	
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+		name = "EVTOPTA51865"
+		prestige = 5
+		SCL = {
+			all_core = {
+				remove_core = SCL
+			}
+		}
+	}
+}
+
+#####################################################
+### END SICILY LITERACY / NATIONALISM EVENT CHAIN ###
+#####################################################
+
+
 
 #Event explaining how the provisional_government_yes_election works
 country_event = {
@@ -1127,7 +1340,7 @@ country_event = {
 	}
 }
 
-#Events 51869-51884 reserved for 
+#Events 51869-51884 reserved for idk, something
 
 ################################################################################################################
 #####Istriot rebellion chain, probably between AUS and PDN (well, I haven't coded it for anyone except PDN)#####
@@ -1352,7 +1565,7 @@ country_event = {
 	
 	option = {
 		name = "Win them over."
-		money = -10000
+		treasury = -10000
 		AUS_736 = {
 			any_pop = {
 				limit = {

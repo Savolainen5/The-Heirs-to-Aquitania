@@ -255,10 +255,10 @@ FRA_levant_war_title;War in the Levant;x
 FRA_levant_war_desc;With the Shah having arrogantly dismissed our just demands, now only one recourse remains - war! We will conquer the Levant, as our predecessors did 800 years ago.;x
 FRA_rename_levant_title;Rename the Levantine Provinces;x
 FRA_rename_levant_desc;Now that we have established firm control over the Outremer provinces, it is time to show the world that we are their rightful owners by returning the major settlements to their original French names.;x
-FRA_return_our_colonies_title;The Return of the Iles Bleus;;;;;;;;;;;;;x,,,,
+FRA_return_our_colonies_title;The Return of the Iles Bleus;x
 FRA_return_our_colonies_desc;Now that we once again have access to the sea and a proper navy, we can start reclaiming our former colonies. Let's start with our colony in the Iles Bleus, which is administered by Brittany at the moment.;;;;;;;;;;;;;x
-further_the_revolution_in_DAU_title;Further the Revolution in Daufinat;;;;;;;;x
-further_the_revolution_in_DAU_desc;The monarchists of our cousins in Daufinat are facing serious opposition from their own liberal people, who seek to set up a democracy similar to the one we have been so successful in establishing. By sending a military mission, we may be able to convince the Duke, Guigues de Mauguio, to give up rather than lose his life fighting for a lost cause.;;;;;;;;;x
+further_the_revolution_in_DAU_title;Further the Revolution in Daufinat;x
+further_the_revolution_in_DAU_desc;The monarchists of our cousins in Daufinat are facing serious opposition from their own liberal people, who seek to set up a democracy similar to ours. By sending a diplomatic mission, we may be able to convince the Duke, Guigues de Mauguio, to give up rather than lose his life fighting for a lost cause.;x
 garda_civica_title;Form the Garda Civica;;;;;;;;;;x
 garda_civica_desc;In revolutionary Aquitània, giving the people more say in the maintenance of order was a top priority in securing and legitimising the new, post-royal government. Thus, as a means of restoring order and prosperity to the country, the Garda Civica was formed. Composed of volunteer citizens of both sexes, the GC was meant to bring peace.;;;;;;;;;;x
 GDN_ai_selvenkes_purchase_title;Innocuous Story decision;;;;;;;;;x

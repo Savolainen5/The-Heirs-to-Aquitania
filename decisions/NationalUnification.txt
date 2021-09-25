@@ -911,6 +911,7 @@ political_decisions = {
 				is_culture_group = gallo_romance
 				is_culture_group = italic_isolate
 				exists = ITA
+				has_country_flag = our_western_sea
 			}
 			is_greater_power = yes
 			OR = {

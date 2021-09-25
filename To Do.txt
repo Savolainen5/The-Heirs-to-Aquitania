@@ -92,6 +92,8 @@ Other:
 - Research can be finished well before the end of the game. One player finished in 1924
 - Revamp canals to be more along HPM lines, and get rid of the Dividends events because they're ugly (also need to rename the one that's still called the Panama Canal Dividends)
 
+
+
 	0.38 (Balkans and Hungary and Romania):
 
 - What happens with the Hungarian event chain if Bohemia becomes a democracy?
@@ -154,7 +156,7 @@ Other:
 - Go through Irredentism decisions
 
 	0.43 (Middle East):
-- Make it so event 51755 will consistently release SYR. Since it takes 100 warscore to demand SYR's release, perhaps some workaround that will make them be released by event rather than the liberate country wargoal
+- Should SYR release with that much land? Should it be a primitive democracy if some republic releases it?
 
 	0.45 (China):
 

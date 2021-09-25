@@ -1786,14 +1786,18 @@ country_event = {
 		
 		627 = { secede_province = BRN add_core = BRN } #Karlovy Vary
 		628 = { secede_province = BRN add_core = BRN } #Usti nad Labem
-		any_owned = {# This should clear up any extra territory they happen to own, though it may be weird if they get a chunk of Poland or something. This needs to be dealt with still.
+		
+		any_owned = { # This should clear up any extra territory they happen to own, though it may be weird if they get a chunk of Poland or something. This needs to be dealt with still.
 			limit = {
-				NOT = { is_core = BOH }
+				OR = {
+					NOT = {	is_core = BOH }
+					province_id = 637 #Kosice
+				}
 			}
 			secede_province = HUN
 			add_core = HUN
 		}
-		
+
 		BOH = {
 			country_event = {
 				id = 50450

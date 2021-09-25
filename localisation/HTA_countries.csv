@@ -632,7 +632,7 @@ SHC_communist;Pellewomhsoomi;;;;;;;;;;;;;;;x
 SHC_fascist;Thepatiiwomhsoomi;;;;;;;;;;;;;;;x
 SHC_conservative_2;Petakineethiiwomhsoomi;;;;;;;;;;;;;;;x
 SCL;Sicily;;;;;;;;;;x
-SIC_ADJ;Sicilian;;;;;;;;;;x
+SCL_ADJ;Sicilian;;;;;;;;;;x
 SIC_anarcho_liberal;Liga Indipendente;x
 SIC_communist;Partito dei lavoratori;x
 SIC_conservative;Partito Cristiano;x

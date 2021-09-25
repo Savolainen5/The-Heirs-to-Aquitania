@@ -51,6 +51,11 @@ political_decisions = {
 			}
 			accepted_culture = north_italian
 			744 = { is_core = TUS }
+			TUS = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
 		}
 		allow = {
 			revolution_n_counterrevolution = 1
@@ -59,7 +64,7 @@ political_decisions = {
 		effect = {
 			prestige_factor = -0.2
 			TUS_744 = {
-				remove_core = THIS
+				remove_core = TUS
 				add_core = THIS
 			}
 		}

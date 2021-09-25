@@ -102,3 +102,4 @@ Maghreb
 - AQT gives FRA La Rochèla in exchange for a mutual defence pact (difficult to maintain in-game because the AI is dumb?)
 - CLT can dismantle AEN into some tiny countries to ensure the Aenglisc don't pose them a threat anymore.
 - GDN liberates Afro-Caribbean POPs
+- FRA-GER Gaulish union

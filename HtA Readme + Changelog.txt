@@ -106,6 +106,7 @@ Minor
 - Demand concession CB can now target colonial states/provinces of uncivs
 - Made CBs normally available between RUS and SML when railroading is off
 - Both German Hegemony CBs should fire the Our Cores Returned event normally
+- Added a special event-only Liberate Country CB to allow the liberation of Syria correctly
 - Increased starting experience in national values, so now they are actually kind of useful. This change is also reflected in the demonstration modifiers which you can see in the decision
 - Changed some 1840s revolutions modifiers (global_liberal_agitation, among others) about liberalism to be more in line with HPM, not that I think it'll make much of a difference for the militancy problem
 - Made the National Assimilation event impossible to fire until 1870
@@ -159,6 +160,10 @@ Bugfixes
 - Middag no longer magically becomes Taiwan
 - Readded missing events for the Treaty of Kanagawa
 - Fixed a bunch of errors with names in cultures
+- Fixed Liberation of Syria during the Persian Oriental crisis by adding a new CB that makes it actually possible to liberate the country fully
+- Further the Revolution in Daufinat decision for AQT no longer spammable
+- Should now be possible to take the Mare Nostrum Occidentis decision if SCL and/or NPL/ITA cores have been removed
+- Can no longer unite Italy from without if you've taken the Mare Nostrum Occidentis decision
 
 ----------------------------------------------------------------------------------------------------------
 See the OldChangelogs file for previous version changelogs. You can also see them on the subreddit's wiki.

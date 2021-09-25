@@ -966,7 +966,7 @@ country_event = {
 	}
 }
 
-#Event to inherit DAU if it's a puppet of PDN or AQT
+#Event to inherit DAU if it's a puppet of PDN or AQT							NEEDS TO HAVE DIFFERENT LOCALIZATION FOR WHEN IT'S A REPUBLIC
 country_event = {
 	id = 50048
 	title = "EVTNAME50048"
@@ -1083,7 +1083,19 @@ country_event = {
 		}
 		
 		ai_chance = {
-			factor = 1
+			factor = 60
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+			modifier = {
+				factor = 1.2
+				NOT = { brigades_compare = 0.5 }
+			}
+			modifier = {
+				factor = 1.2
+				NOT = { brigades_compare = 0.75 }
+			}
 		}
 	}
 	
@@ -1101,7 +1113,11 @@ country_event = {
 		}
 		
 		ai_chance = {
-			factor = 0
+			factor = 40
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
 		}
 	}
 }
@@ -1139,7 +1155,13 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "The Revolution will be spread with the sword, then."
+		name = "The Revolution will be spread by the bayonet, then."					
+		release_vassal = DAU
+		leave_alliance = DAU												#Need to work out how to restore relations
+		relation = {														#Also might be nice to have some means of setting a flag/modifier that makes it impossible for other countries to snipe the "rebelling" vassal
+			who = DAU
+			value = -100
+		}
 		add_casus_belli = {
 			target = DAU
 			type = install_democracy

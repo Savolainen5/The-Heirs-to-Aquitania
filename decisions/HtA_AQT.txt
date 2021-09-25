@@ -189,6 +189,7 @@ political_decisions = {
 					controlled_by = REB
 				}
 			}
+			NOT = { has_country_flag = further_revolution_in_DAU }
 		}
 		
 		allow = {
@@ -198,6 +199,7 @@ political_decisions = {
 		
 		effect = {
 			money = -5000
+			set_country_flag = further_revolution_in_DAU
 			DAU = {
 				country_event = {
 					id = 51600 #See HtA_DAU events file for code

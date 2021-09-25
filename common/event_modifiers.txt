@@ -1942,11 +1942,13 @@ tax_exemptions = {
 tax_exemptions_ended = {
 	pop_militancy_modifier = 0.01
 	pop_consciousness_modifier = 0.01
+	icon = 20
 }
 
 sicilian_unrest = {
 	pop_militancy_modifier = 0.025
 	pop_consciousness_modifier = 0.025
+	icon = 20
 }
 
 literacy_program = {
@@ -1955,6 +1957,14 @@ literacy_program = {
 	local_RGO_output = 0.01
 	local_artisan_output = 0.01
 	icon = 19
+}
+
+literacy_bad_effects = {
+	administrative_efficiency_modifier = -0.01
+	tax_efficiency = -0.01
+	core_pop_consciousness_modifier = 0.005
+	leadership_modifier = -0.1
+	icon = 10
 }
 
 #Roman stuff

@@ -32,3 +32,33 @@
 #		}
 #	}
 #}
+
+#country_event = {
+#	id = 97979797979797
+#	title = "Colonize Dakhla"
+#	desc = "Does it work?"				#Yes, yes it does. Obviously
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = "Great!"
+#		1774 = {
+#			secede_province = THIS
+#		}
+#	}
+#}
+#
+#country_event = {
+#	id = 97979797979798
+#	title = "Colonize Tarfaya"
+#	desc = "Does it work with a country that doesn't exist?"				#No, you can't cede uncolonized provinces to countries that don't exist
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = "Great!"
+#		1774 = {
+#			secede_province = EST
+#		}
+#	}
+#}

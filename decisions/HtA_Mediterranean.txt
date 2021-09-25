@@ -881,9 +881,16 @@ political_decisions = {
 		}
 		
 		allow = {
-			NPL = {
-				all_core = {
-					owned_by = THIS
+			OR = {
+				ITA = {
+					all_core = {
+						owned_by = THIS
+					}
+				}
+				NPL = {
+					all_core = {
+						owned_by = THIS
+					}
 				}
 			}
 		}
@@ -945,10 +952,13 @@ political_decisions = {
 		}
 		
 		allow = {
-			SCL = {
-				all_core = {
-					owned_by = THIS
+			OR = {
+				SCL = {
+					all_core = {
+						owned_by = THIS
+					}
 				}
+				has_global_flag = SCL_cores_removed
 			}
 		}
 		
