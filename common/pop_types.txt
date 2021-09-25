@@ -602,6 +602,35 @@ emigration_chance = {
 #general assimilation mtth, same for all pops
 assimilation_chance = {
 	factor = 0.02
+	group = {  #Sicilian assimilation for Naples or whoever controls them, probably Naples/Italy
+		modifier = {
+			factor = 6
+			country = {
+				has_country_flag = sicilian_assimilation_1
+				NOT = { has_country_flag = sicilian_assimilation_2 }
+			}
+			has_pop_culture = sicilian
+		}
+		modifier = {
+			factor = 9
+			country = {
+				has_country_flag = sicilian_assimilation_2
+			}
+			has_pop_culture = sicilian
+		}
+	}
+	
+	modifier = {
+    	factor = 1600
+		country = {
+			primary_culture = south_italian
+			has_country_flag = sicilian_assimilation_1
+			NOT = { has_country_flag = sicilian_assimilation_2 }
+		}
+		has_pop_culture = sicilian
+		has_culture_core = yes
+	}
+	
 	group = {
 		modifier = {
 			factor = 2
@@ -790,43 +819,6 @@ assimilation_chance = {
 			continent = europe
 			continent = asia
 		}
-	}
-	
-	group = {  #Sicilian assimilation for Naples or whoever controls them, probably Naples/Italy
-		modifier = {
-			factor = 3
-			location = {
-				NOT = { is_core = SCL }
-				owner = {
-					has_country_flag = sicilian_assimilation_1
-					NOT = { has_country_flag = sicilian_assimilation_2 }
-				}
-			}
-			has_pop_culture = sicilian
-		}
-		modifier = {
-			factor = 5
-			location = {
-				NOT = { is_core = SCL }
-				owner = {
-					has_country_flag = sicilian_assimilation_2
-				}
-			}
-			has_pop_culture = sicilian
-		}
-	}
-	
-	modifier = {
-    	factor = 10
-		location = {
-       		is_core = SCL
-			owner = {
-				tag = NPL
-				has_country_flag = sicilian_assimilation_1
-				NOT = { has_country_flag = sicilian_assimilation_2 }
-			}
-    	}
-		has_pop_culture = sicilian
 	}
 	
 	group = {

@@ -810,10 +810,10 @@ EVTNAME51855;Sicilian Literacy and Nationalism (A3);x
 EVTDESC51855;While the literacy program has been useful for setting Sicilians on the road to integration into our society, it has also fostered a growing consciousness among them of their own culture. Nationalism is growing in this province, and many prefer an independent Sicily instead of our benevolent rule. Let us hope that we can convince them otherwise before the choose to take up arms!;x
 EVTNAME51856;Literacy Program Hits Milestone (A + B);x
 EVTDESC51856;It has been some time since the initiation of the Sicilian literacy program, and at last a large majority of the populace is literate. While efforts will continue for some time to ensure that Sicilians are truly Italian literate, the bulk of the work is done. Though there have been some setbacks and resistance, the people have been persuaded to see the benefit of literacy.;x
-EVTNAME51857;Discontent over Growing Centralization (A4);x
+EVTNAME51857;Centralization Discontent (A4);x
 EVTDESC51857;People in $PROVINCENAME$ miss their tax exemptions and the previous lack of government interference in their lives. They are naturally unhappy, and violence against Italians and government representatives is increasing.;x
 EVTNAME51858;Sicilian Integration (A5);x
-EVTDESC51858;The Sicilian people are beginning to integrate into our society, with more and more of them preferring Italian over Sicilian. It will be a long process, but surely in time, they will all see themselves as Italians!;x
+EVTDESC51858;The Sicilian people are beginning to integrate into our society, with more and more of them preferring Italian over Sicilian. It will be a long process, but surely in time, they will all see themselves as Italians!\n\nNote to the player: This will increase Sicilian assimilation.;x
 EVTNAME51859;Sicily - The $COUNTRY_ADJ$ Island (A6);x
 EVTDESC51859;Everywhere our officials go, Sicilians are gladly flying our flag. There has been widespread acceptance of our rule, such that all but the most ardent of nationalists have given up any idea of an independent country for Sicilians.;x
 EVTNAME51860;Integration Accelerates (A8 - End);x

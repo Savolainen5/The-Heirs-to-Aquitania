@@ -81,6 +81,7 @@ country_event = {
 	
 	option = {
 		name = "An interesting proposition."
+		leave_alliance = CRS
 		relation = {
 			who = CRS
 			value = -100
