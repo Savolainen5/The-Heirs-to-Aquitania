@@ -623,25 +623,25 @@ political_decisions = {
 				}
 				consciousness = 3
 			}
-			TUR_788 = {
+			TUR_788 = {				#Bosnia
 				add_core = CRO
 			}
-			AUS_780 = {
+			AUS_780 = {				#Dalmatia
 				add_core = CRO
 			}
-			791 = {
+			AUS_2538 = {			#Syrmia
 				add_core = CRO
 			}
-			2538 = {
+			804 = {					#Novi Pazar
 				add_core = CRO
 			}
-			804 = {
+			2569 = {				#Niksic
 				add_core = CRO
 			}
-			2577 = {
+			2577 = {				#Pljevlja
 				add_core = CRO
 			}
-			2582 = {
+			2582 = {				#Kotor
 				add_core = CRO
 			}
 			any_country = {

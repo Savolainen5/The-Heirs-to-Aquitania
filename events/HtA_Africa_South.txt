@@ -392,9 +392,9 @@ country_event = {
 	
 	trigger = {
 		tag = NET
-		owns = 2100
+		owns = 2100 #Umtata
 		has_country_flag = obbites_to_oostkaap
-		2049 = {
+		2049 = { #Maputo/Gosen
 			OR = {
 				empty = yes
 				owned_by = THIS
@@ -1213,15 +1213,18 @@ country_event = {
 #																#
 #################################################################
 
-country_event = {
+country_event = {			#
 	id = 98215
-	title = "EVTNAME98215" #The Orange River Sovereignty
+	title = "EVTNAME98215" #The Orange River Sovereignty / The Obervahl Sovereignty
 	desc = "EVTDESC98215"
 	picture = "pioneer_wagons"
 	
 	trigger = {
 		tag = NET
-		owns = 2093
+		OR = {
+			owns = 2093 #Hantam
+			owns = 2558 #De Aar
+		}
 		year = 1845
 		NOT = {
 			SAF = { exists = yes }

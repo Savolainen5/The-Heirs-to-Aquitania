@@ -421,7 +421,7 @@ AUS_777 = { 772 776 777 } #Slavonia
 
 AUS_780 = { 780 781 782 2582 } #Dalmatia
 
-AUS_2538 = { 2538 779 791 793 } #Vojvodina/Syrm
+AUS_2538 = { 2538 779 791 793 } #Vojvodina/Syrmia
 
 CRO_789 = { 789 784 785 788 } #Krajina
 

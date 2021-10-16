@@ -164,6 +164,11 @@ Bugfixes
 - Further the Revolution in Daufinat decision for AQT no longer spammable
 - Should now be possible to take the Mare Nostrum Occidentis decision if SCL and/or NPL/ITA cores have been removed
 - Can no longer unite Italy from without if you've taken the Mare Nostrum Occidentis decision
+- Made it so that the event to choose a captial fires for Nanyue (GXI) before the event to form CHI
+- Requirements for Bohemian Zadar decision made more specific and doable
+- Fixed The Obervahl sovereignty event
+- Removed accepted cultures from Mexika, since they're supposed to be added by event later
+- Kaapland is no longer a releasable vassal. I don't THINK this will be a problem.
 
 ----------------------------------------------------------------------------------------------------------
 See the OldChangelogs file for previous version changelogs. You can also see them on the subreddit's wiki.

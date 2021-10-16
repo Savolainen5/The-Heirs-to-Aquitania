@@ -621,7 +621,7 @@ assimilation_chance = {
 	}
 	
 	modifier = {
-    	factor = 1600
+    	factor = 1600			#Results in like 30 assimilations per month among farmers/labourers at the start of the game. Probably a bit more when limited_citizenship is a thing
 		country = {
 			primary_culture = south_italian
 			has_country_flag = sicilian_assimilation_1

@@ -1,8 +1,5 @@
 capital = 2172
 primary_culture = meikan
-culture = nahua
-culture = zapotec
-culture = tarascan
 religion = catholic
 government = presidential_dictatorship
 plurality = 25.0

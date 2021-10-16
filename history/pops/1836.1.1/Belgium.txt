@@ -77,7 +77,6 @@
 		culture = flemish
 		religion = catholic
 		size= 3000
-
 	}
 
 	farmers = {

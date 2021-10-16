@@ -90,19 +90,24 @@ political_decisions = {
 	bohemian_zadar = {
 		picture = conference1
 		potential = {
-			OR = { tag = BOH tag = HUN }
+			OR = { tag = BOH tag = HUN tag = BHN}
 			NOT = { has_country_flag = zadar_proposal }
 			781 = { owned_by = CRO }
+			771 = { owned_by = AUS }
+			owns = 640
 			NOT = { has_global_flag = zadar_lease_canceled }
 		}
 		
 		allow = {
 			is_greater_power = yes
 			war = no
-			CRO = { in_sphere = THIS }
-			relation = {
-				who = CRO
-				value = 200
+			OR = {
+				relation = {
+					who = CRO
+					value = 150
+				}
+				CRO = { in_sphere = THIS }
+				alliance_with = CRO
 			}
 			experimental_railroad = 1
 		}

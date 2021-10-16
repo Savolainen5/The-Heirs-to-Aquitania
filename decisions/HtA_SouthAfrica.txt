@@ -108,7 +108,7 @@ political_decisions = {
 		allow = {
 			TRN = {
 				war = no
-				total_amount_of_divisions = 1
+				military_score = 1
 				NOT = { has_country_modifier = trek_boers }
 			}
 		}
@@ -137,7 +137,7 @@ political_decisions = {
 		allow = {
 			ORA = {
 				war = no
-				total_amount_of_divisions = 1
+				military_score = 1
 				NOT = { has_country_modifier = trek_boers }
 			}
 		}

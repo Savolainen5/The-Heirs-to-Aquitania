@@ -639,6 +639,10 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 1
+		modifier = {
+			factor = 0.1
+			NOT = { exists = QIN }
+		}
 	}
 	
 	option = {
@@ -1328,17 +1332,19 @@ country_event = {
 }
 
 country_event = {
-	id = 53022 # Nanyue win - formation of Greater China concept - Pretty much the same as 53010, just for Nanyue instead of GXI
+	id = 53022 # Nanyue win - formation of Greater China concept - Pretty much the same as 53010, just for Nanyue/GXI instead of QIN
 	title = EVTNAME53022
 	desc = EVTDESC53022
-	picture = "taiping"
+	#picture = "taiping"
 	
 	fire_only_once = yes
+	major = yes
 	
 	trigger = {
 		tag = GXI 
 		NOT = { exists = QIN }
 		has_global_flag = qin_civil_war
+		has_country_flag = moved_capital
 		war = no 
 	}
 	
