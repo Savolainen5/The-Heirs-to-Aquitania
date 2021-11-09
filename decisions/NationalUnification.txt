@@ -1033,6 +1033,7 @@ political_decisions = {
 							OR = {
 								is_culture_group = polish_culture_group
 								is_culture_group = czecho_slovak_culture_group
+								primary_culture = prussian #Prusai
 							}
 							relation = { who = THIS value = 100 }
 						}
