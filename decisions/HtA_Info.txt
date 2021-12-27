@@ -44,6 +44,15 @@ political_decisions = {
 		allow =  { }
 		effect = { }
 	}
+	info_NPL = {
+		picture = HtALion1
+		potential = {
+			ai = no
+			is_culture_group = italian
+		}
+		allow = { }
+		effect = { }
+	}
 	info_PDN = {
 		picture = HtALion1
 		potential = {

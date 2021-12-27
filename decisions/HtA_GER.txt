@@ -508,8 +508,16 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 2
+			badboy = 3
 			inherit = SAX
 			set_country_flag = SAX_annexed_postCongress
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.82
+			}
 		}
 	}
 }

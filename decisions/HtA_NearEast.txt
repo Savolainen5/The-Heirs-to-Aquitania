@@ -82,7 +82,29 @@ political_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				badboy = 0.8
+				badboy = 0.82
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					neighbour = PER
+					tag = BYZ
+					total_amount_of_ships = 10
+				}
+			}
+			modifier = {
+				factor = 0
+				tag = BYZ
+				NOT = {
+					neighbour = PER
+					ARM = {
+						vassal_of = THIS
+						in_sphere = THIS
+						military_access = THIS
+					}
+					exists = CLC
+				}
+				896 = { owned_by = ARM }
 			}
 		}
 	}

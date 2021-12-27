@@ -275,4 +275,40 @@ political_decisions = {
 #		}
 #	}
 
+#	money_test = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			money = 100
+#		}
+#		effect = {
+#			money = 100			#Identical to the below
+#		}
+#	}
+#
+#	treasury_test = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			money = 100
+#		}
+#		effect = {
+#			treasury = 100		#Identical to the above
+#		}
+#	}
+
+#	pop_percentage_test = {
+#		potential = {
+#			ai = no
+#		}
+#		allow = {
+#			461 = { artisans = 0.15 }	#At least 15% of POPs in Mauguio are artisans
+#		}
+#		effect = {
+#			prestige = 1
+#		}
+#	}
+
 }

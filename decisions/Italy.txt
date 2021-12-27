@@ -37,7 +37,7 @@ political_decisions = {
 			TUS_744 = {
 				any_pop = {
 					militancy = -4
-					reduce_pop = 0.98
+					reduce_pop = 0.995
 				}
 			}
 		}

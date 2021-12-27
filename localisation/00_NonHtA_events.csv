@@ -121,6 +121,7 @@ EVTOPTA96141;We shall see about that.;Je doute de lui.;Ich bezweifele es.;;;;;;;
 EVTOPTA96136;Never!;Nous refusons!;Wir lehnen ab!;;;;;;;;;;;x,,,,
 EVTOPTA96131;Thanks for the vote of confidence.;Merci pour le vote de confiance.;Dank für die Vertrauensabstimmung.;;;;;;;;;;;x,,,,
 EVTOPTA96130;Just let them try it!;Laissez-les Venir!;Lassen Sie Kommen!;;;;;;;;;;;x,,,,
+EVTOPTA96088;We welcome the return of the King.;x
 EVTOPTA96085;We welcome the new regime.;Nous faisons bon accueil au nouveau régime.;Wir begrüßen das neue Regime.;;;;;;;;;;;x,,,,
 EVTOPTA96071;We will accept control over the colony.;Nous acceptons.;Wir nehmen an.;;;;;;;;;;;x,,,,
 EVTOPTA96070;Time to carve up our empire.;Nous n'avons aucun choix.;Wir haben keine Wahl.;;;;;;;;;;;x,,,,
@@ -646,6 +647,7 @@ EVTNAME96105;End of the Arab Revolt;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME96101;$COUNTRY_ADJ$ Self-Rule;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME96100;The Arab Revolt;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTNAME96090;End of the $COUNTRY_ADJ$ Monarchy;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME96088;The Return of the $COUNTRY_ADJ$ Ruler;x
 EVTNAME96085;The New $COUNTRY_ADJ$ Government;Le Nouveau Gouvernement $COUNTRY_ADJ$;Die Neue $COUNTRY_ADJ$ Regierung;;;;;;;;;;;x,,,,
 EVTNAME96071;Transfer of the $FROMCOUNTRY_ADJ$ Colonies;Les Colonies $FROMCOUNTRY_ADJ$;Das $FROMCOUNTRY_ADJ$ Kolonien;;;;;;;;;;;x,,,,
 EVTNAME96070;The $COUNTRY_ADJ$ Colonies;Les Colonies $COUNTRY_ADJ$;Das $COUNTRY_ADJ$ Kolonien;;;;;;;;;;;x,,,,
@@ -1604,6 +1606,7 @@ EVTDESC96102;The Arab Revolt has begun, and many people in $CAPITAL$ are flying 
 EVTDESC96101;We have been granted self-rule by our $FROMCOUNTRY_ADJ$ rulers.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVTDESC96100;A wave of nationalism has begun to spread among the Mashriqi, fueled by their resentment over $COUNTRY_ADJ$ rule. Our governors in the region are understandably nervous, and report that we can expect major rebellions in the coming years unless we are very careful.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 EVTDESC96090;With the loss of $COUNTRY$ in the recent war, the $COUNTRY_ADJ$ monarchy has received much of the blame, there have already been several assassination attempts, and calls within the government for the monarchy to step down. Sentiment in the public has turned to the notion of $COUNTRY$ becoming a democracy... though some fear this will plunge the nation into even further chaos.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
+EVTDESC96088;As the armies of our former enemy depart $CAPITAL$, they leave behind a newly-reinstalled monarchy government friendly to their nation. How long this government will last is unknown, but many within $COUNTRY$ question whether the monarch is as sovereign as they say.;;;;;;;;;;;;;x,,
 EVTDESC96087;As the armies of our former enemy leave $CAPITAL$, they leave behind a newly-installed communist government friendly to their nation. How long this government will last is unknown, but many within $COUNTRY$ seem already determined to overthrow it in the name of freedom.;;;;;;;;;;;;;x,,
 EVTDESC96086;As the armies of our former enemy leave $CAPITAL$, they leave behind a newly-installed fascist government friendly to their nation. How long this government will last is unknown, but many within $COUNTRY$ seem already determined to overthrow it in the name of freedom.;;;;;;;;;;;;;x,,
 EVTDESC96085;As the armies of our former enemy depart $CAPITAL$, they leave behind a newly-installed democratic government friendly to their nation. How long this government will last is unknown, but many within $COUNTRY$ question whether 'freedom' imposed by a foreign power is truly that.;;;;;;;;;;;;;x,,

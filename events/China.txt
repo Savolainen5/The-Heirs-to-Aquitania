@@ -212,13 +212,13 @@ country_event = {
 		months = 1
 	}
 	
-	effect = {
+	option = {
 		name = "All is right in the world."
 		clr_global_flag = gxi_claimed_mandate
 		add_country_modifier = {
 			name = mandate_of_heaven
 			duration = -1
 		}
-		add_country_flag = mandate
+		set_country_flag = mandate
 	}
 }

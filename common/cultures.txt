@@ -519,7 +519,7 @@ aquitanian = {
 gallo_romance = {
 	leader = european
 	unit = ItalianGC
-	north_italian = { #Cisalpine
+	north_italian = {					#Cisalpine
 		color = { 100 210 90}
 		first_names = { Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Bartolomeo Carlo
 		Cesare Costanzo Davide Domenico Enrico Emanuele Ettore Fabrizio Federico Felice Ferdinando

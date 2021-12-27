@@ -403,27 +403,27 @@ political_decisions = {
 		}
 	}
 	
-#	form_germany_AUS = {
+#	form_germany_AUS = {            #These have been removed in HtA
 #	austria_annex_SGF = {
-# Also removed these ones from HtA
 
+#Can only be formed from Meridion at the moment (as of the end of 2021)
 	form_italy = {
 		news = yes
 		news_desc_long = "form_italy_NEWS_LONG"
 		news_desc_medium = "form_italy_NEWS_MEDIUM"
 		news_desc_short = "form_italy_NEWS_SHORT"
+		picture = map_italy
 		potential = {
-			is_culture_group = italian
+			tag = MER
 			NOT = {
 				has_country_flag = post_colonial_country
 				exists = ITA
-				tag = PAP
 			}
 		}
 		
 		allow = {
 			prestige = 45
-			nationalism_n_imperialism = 1
+			revolution_n_counterrevolution = 1
 			is_greater_power = yes
 			war = no
 			ITA = {
@@ -439,6 +439,62 @@ political_decisions = {
 							war = no
 							is_greater_power = no
 						}
+					}
+				}
+			}
+			744 = { #Florence
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						OR = {
+							is_vassal = no
+							vassal_of = THIS
+						}
+						war = no
+						is_greater_power = no
+					}
+				}
+			}
+			724 = { #Genoa/Zena
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						OR = {
+							is_vassal = no
+							vassal_of = THIS
+						}
+						war = no
+						is_greater_power = no
+					}
+				}
+			}
+			726 = { #Milan
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						OR = {
+							is_vassal = no
+							vassal_of = THIS
+						}
+						war = no
+						is_greater_power = no
+					}
+				}
+			}
+			729 = { #Venice/Venesia
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						OR = {
+							is_vassal = no
+							vassal_of = THIS
+						}
+						war = no
+						is_greater_power = no
 					}
 				}
 			}

@@ -666,8 +666,8 @@ EVTDESC50816;With the recent conclusion of the war between Smolensk and Russia, 
 EVTNAME50817;Eyjafjallajokul erupts!;x
 EVTDESC50817;With the eruption of the volcano in Iceland, it's only a matter of time until the great ash clouds reach us. We are should expect for a bad year or two of harvests because of it. This will make life even more difficult for the peasantry.;x
 EVTNAME50818;Our Lady of Lorda;x
-EVTDESC50818;In 1858 in Lorda, province of Pau, a young Bernadeta Sobir?s witnessed an apparition of the Mother Mary consistently over the course of several months in a grotto in the hills. After much national debate, the Church has finally stepped in and the Pope himself has come and performed a Canonical Coronation, signalling official support for the veneration of Our Lady of Lourdes. The spring which Bernadeta uncovered has been proven to have caused numerous healings among pilgrims to the site;x
-EVTNAME50819;Canonization of Bernadeta Sobir?s;x
+EVTDESC50818;In 1858 in Lorda, province of Pau, a young Bernadeta Sobiràs witnessed an apparition of the Mother Mary consistently over the course of several months in a grotto in the hills. After much national debate, the Church has finally stepped in and the Pope himself has come and performed a Canonical Coronation, signalling official support for the veneration of Our Lady of Lourdes. The spring which Bernadeta uncovered has been proven to have caused numerous healings among pilgrims to the site;x
+EVTNAME50819;Canonization of Bernadeta Sobiràs;x
 EVTDESC50819;On this day, the girl who had visions of the Mother Mary all those years ago in 1858 is declared a Saint. This will only increase the flow of pilgrims to Lorda.;x
 EVTNAME51000;The Iroquois and Cherokee Break Away!;x
 EVTDESC51000;Our long-time friends and brothers to our north and south have seen fit to take advantage of our momentary weakness after fighting against the white man to seek their fortunes without our aid or protection. It is truly a misfortune that they should forsake the friendship our great tribes have had for generations.;x
@@ -835,6 +835,8 @@ EVTNAME51867;A Fragile Union;x
 EVTDESC51867;The states of the Padanian Plain may be united against the threat to the south, but underneath the surface there are many disagreements. The largest and most important is the underlying philosophy of government of the component states. Genoa and Venice, as states with long histories of non-noble rule, stand in almost diametric opposition to the noble-led states of Lombardia and Modena. For now, they can find common ground in the oligarchical nature of their rule, but it is not a long step from the social mobility of merchant families to just any peasant becoming powerful. Indeed, it is said that many prominent and powerful citizens of Venice and Genoa have Albesan leanings. As such, many such people who are involved in politics have come to be called Republicans, while those who prefer the old ways with noble rule are called Noblists.;x
 EVTNAME51868;Tensions Rise in the Senate;x
 EVTDESC51868;With our recent victories over Naples, people in the Union are beginning to feel that the threat is abating. This means that the differences put aside to face the existential threat are coming to the fore again. Debates between noblists and republicans in the Senate are becoming increasingly strident, and it will not be long before threats of violence become commonplace even its hallowed halls.;x
+EVTNAME51884;Intervention in the Papal State;x
+EVTDESC51884;The ungrateful subjects of the Pope have rebelled and forced him to flee, creating their own republic. If not even God's representative on Earth is safe from liberalism, where will they stop? This is an existential threat not only to the existing political order, but to all of Christianity!;x
 EVTNAME51885;Istriots Rebel;x
 EVTDESC51885;The Istriots, who speak a language quite similar to that of the Cisalpines of Venice, have become increasingly radicalized by ideas of nationalism and Padan irredentism. We are seeing the beginnings of this, too, among the Slovenes and Croats in Istria, too, but the Istriots are the greater threat. They have even made overtures to the Padanians, asking for a war against us to "free" them from our just and benevolent rule. There has been fighting between the Istriots, local Slavs and our garrison troops in the cities. It is possible war is around the corner.;x
 EVTNAME51886;Istriots Rebel in $FROMCOUNTRY$$;x
@@ -847,12 +849,16 @@ EVTNAME51889;Istria Erupts;x
 EVTDESC51889;The situation in Istria has been spiralling, despite our attempts to crack down on it - or perhaps because of it. More and more people are joining the insurrectionists, and the cities are increasingly unsafe for our troops. Even the Slovenes and Croats of the region are turning against us. It seems the only action possible is to send in the army.;x
 EVTNAME51890;Istriots Appeased;x
 EVTDESC51890;Our attempts to placate the Istriots have met with success! While they have not given up their dream of independence, they are not at least calling for peace and calm. The situation is not definitively resolved, but at least the violence has stopped, if only temporarily.;x
-EVTNAME50891;Padan-Neapolitan Relations;x
-EVTDESC50891;They sure are bad. I don't think you'll see this, but this is just the yearly event to kill relations between the two countries.;x
-EVTNAME50892;Padan-Italian Relations;x
-EVTDESC50892;They sure are bad. I don't think you'll see this, but this is just the yearly event to kill relations between the two countries.;x
+EVTNAME51891;Padan-Neapolitan Relations;x
+EVTDESC51891;They sure are bad. I don't think you'll see this, but this is just the yearly event to kill relations between the two countries.;x
+EVTNAME51893;Padan-Italian Relations;x
+EVTDESC51893;They sure are bad. I don't think you'll see this, but this is just the yearly event to kill relations between the two countries.;x
+EVTNAME51894;Padan-Meridional Relations;x
+EVTDESC51894;They sure are bad. I don't think you'll see this, but this is just the yearly event to kill relations between the two countries.;x
 EVTNAME51895;The Premiere of La Traviata;x
 EVTDESC51895;Verdi's opera premiered on March 6th, 1853, after apparently a mere 6 weeks of work. The work was an instant hit and has since become one of the most popular operas in the world. The performance at the theatre La Fenice in Venice drew massive crowds of the most important people in Venice and $COUNTRY$ as a whole.;x
+EVTNAME51896;The Cession of Sion;x
+EVTDESC51896;In light of our recent acquisition of Piemont, the Padanese territory around Sion at the headwaters of the Ròse has been completely cut off from the rest of the country. Though it was not part of the original terms, our representatives came to an agreement with their Padanese counterparts to purchase the territory for a nominal fee.;x
 EVTNAME52000;The Expansion of Westkaap;x
 EVTDESC52000;Under the direction of colonial governor Cornelis van der Linden, the Westkaap colony has expanded north, with the ultimate goal of reaching the mighty Heeckeren River.;x
 EVTNAME52001;The Expansion of Middenkaap;x

@@ -2,10 +2,13 @@ political_decisions = {
 	scaglia_decree = {
 		picture = the_rights_of_man
 		potential = {
-			tag = ITA
+			has_country_flag = post_war_tuscan_crackdown
+			OR = {
+				tag = ITA
+				tag = MER
+			}
 			744 = { owned_by = THIS NOT = { is_core = THIS } }
 			743 = { owned_by = THIS NOT = { is_core = THIS } }
-			has_country_flag = post_war_tuscan_crackdown
 		}
 		
 		allow = {
@@ -45,17 +48,18 @@ political_decisions = {
 	install_miravelli_governor = {
 		picture = form_gran_colombia
 		potential = {
-			OR = {
-				tag = NPL
-				tag = ITA
-			}
-			accepted_culture = north_italian
-			744 = { is_core = TUS }
 			TUS = {
 				all_core = {
 					owned_by = THIS
 				}
 			}
+			OR = {
+				tag = NPL
+				tag = MER
+				tag = ITA
+			}
+			accepted_culture = north_italian
+			744 = { is_core = TUS }
 		}
 		allow = {
 			revolution_n_counterrevolution = 1
@@ -74,16 +78,17 @@ political_decisions = {
 	reclaim_tuscany = {
 		picture = PoBridge
 		potential = {
-			OR = {
-				tag = NPL
-				tag = ITA
-			}
-			exists = TUS
-			TUS = { is_vassal = no }
 			has_global_flag = TUS_fell
 			NOT = {
 				casus_belli = TUS
 			}
+			OR = {
+				tag = NPL
+				tag = MER
+				tag = ITA
+			}
+			exists = TUS
+			TUS = { is_vassal = no }
 		}
 		allow = {
 			NOT = {
@@ -147,8 +152,8 @@ political_decisions = {
 	show_NPL_relations = {
 		alert = no
 		potential = {
-			tag = PDN
 			has_global_flag = hide_npl_relation_event
+			tag = PDN
 			ai = no
 		}
 		allow = {}
@@ -160,8 +165,8 @@ political_decisions = {
 	show_ITA_relations = {
 		alert = no
 		potential = {
-			tag = PDN
 			has_global_flag = hide_ita_relation_event
+			tag = PDN
 			ai = no
 		}
 		allow = {}
@@ -188,6 +193,29 @@ political_decisions = {
 					}
 				}
 			}
+		}
+	}
+	
+	#Form Meridion before forming Italy
+	form_meridion = {
+		picture = map_italy_south
+		potential = {
+			state_n_government = 1
+			tag = NPL
+			NOT = { exists = MER }
+		}
+		allow = {
+			is_greater_power = yes
+			749 = { owned_by = THIS }
+			prestige = 100
+			nationalism_n_imperialism = 1
+			war = no
+		}
+		effect = {
+			prestige = 10
+			change_tag = MER
+			NPL = { all_core = { add_core = MER } }
+			PAP_752 = { add_core = MER }
 		}
 	}
 }

@@ -525,5 +525,30 @@ political_decisions = {
 			}
 		}
 	}	
+#For situations where AQT conquers Piemont (cursed) but PDN still holds Sion, which is part of the Savouè state, AI PDN will cede it to AQT
+	cede_sion_ai = {
+		potential = {
+			tag = PDN
+			ai = yes
+			owns = 609
+			720 = { owned_by = AQT } #Turin
+			NOT = { has_country_modifier = timer }
+		}
+		allow = {
+			owns = 609
+			720 = { owned_by = AQT }
+			AQT = { money = 2000 }
+		}
+		effect = {
+			AQT = {
+				country_event = 51896				#As much as I hate instant events, in this case it actually makes sense
+			}										#The event is in HtA_ITA, btw, since there isn't an event file for PDN specifically
+			add_country_modifier = {
+				name = timer
+				duration = 2
+			}
+		}
+	}
+
 
 }

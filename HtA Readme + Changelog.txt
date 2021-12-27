@@ -54,8 +54,10 @@ Verison 0.37 - Poland and Italy
 
 Major
 - Added decisions and events for Poland, the Padan Union and Naples
+	- Added a new tag - Meridion (MER) - as an intermediate step between Naples and Italy
 - Added a new government type, the Provisional Government (which comes in yes_election and no_election forms according to whether elections are allowed, obviously) which is used for PDN initially and can be used for other countries in the future
 	- Also added events to switch between them based on the vote franchise
+- Added an Install Monarchy CB for great/secondary powers against democracies
 - Pan-nationalist rebels will not rise if their cultural union doesn't exist - THIS MAY NEED TO BE ADJUSTED SO THAT ONLY GERMAN ONES WON'T RISE (because I'm OK with French ones, for example)
 - Added an event for SML to lose control of its Black Sea provinces if it's at peace and neither UKR nor DON are its vassals/owned by it (the check is based on four major provinces in different states close to the land)
 - Added a decision for RUS to break the truce and just go capture the city of Smolensk if they have basically no military. It costs more infamy, but has the same end result as the other two ways to end the conflict

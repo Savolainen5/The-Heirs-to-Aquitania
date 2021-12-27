@@ -191,6 +191,10 @@ free_latvia;Free Latvia;;;;;;;;;;;x
 free_latvia_short;Free Latvia;;;;;;;;;;x
 free_latvia_setup;Free Latvia from $RECIPIENT$;;;;;;;;;x
 free_latvia_desc;Release Latvia from the clutches of the Finns, granting you an ally and weakening Finnish power.;;;;;;;;;;;x
+install_monarchy;Install Monarchy;x
+install_monarchy_short;(Re)Install a Monarchy;x
+install_monarchy_setup;(Re)Install a Monarchy in $RECIPIENT$;x
+install_monarchy_desc;There should be a ruler on the throne of this country. Let us reinstall one if there has been one, or else install a new one.;x
 russia_annex;Russian Unification;x
 russia_annex_short;Conquer $RECIPIENT$;x
 russia_annex_setup;Conquer $RECIPIENT$ to unite Russia once and for all.;x
@@ -213,6 +217,9 @@ AGRESSION_CUT_DOWN_TO_SIZE_PERSIA_WAR_NAME;$ORDER$$FIRST$-$SECOND$ Levantine War
 WAR_GERMAN_UNIFICATION;$ORDER$War of German Hegemony;;;;;;;;x
 NORMAL_WAR_GERMAN_UNIFICATION;$ORDER$War of German Hegemony;;;;;;;;x
 AGRESSION_WAR_GERMAN_UNIFICATION;$ORDER$War of German Hegemony;;;;;;;;x
+WAR_INSTALL_MONARCHY_NAME;$ORDER$Intervention in $SECOND_COUNTRY$;x
+NORMAL_WAR_INSTALL_MONARCHY_NAME;$ORDER$Intervention in $SECOND_COUNTRY$;x
+AGRESSION_WAR_INSTALL_MONARCHY_NAME;$ORDER$Intervention in $SECOND_COUNTRY$;x
 NORMAL_WAR_RESTORE_ORDER_NAME;$ORDER$$FIRST$ Reclamation of $SECOND_COUNTRY$;;;;;;;;;;;;x
 AGRESSION_WAR_RESTORE_ORDER_NAME;$ORDER$$FIRST$ Reclamation of $SECOND_COUNTRY$;;;;;;;;;;;;x
 WAR_RUSSIA_HEGEMONY_NAME;$ORDER$Russian War;x

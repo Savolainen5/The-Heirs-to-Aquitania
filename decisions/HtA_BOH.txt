@@ -293,20 +293,25 @@ political_decisions = {
 		picture = negotiations
 		potential = {
 			neighbour = SLS
-			NOT = { tag = SLS }
-			is_greater_power = yes
-			SLS = {
-				NOT = { is_secondary_power = yes }
-				NOT = { is_greater_power = yes }
-				is_vassal = no
+			NOT = {
+				tag = SLS 
+				has_country_flag = silesia_secured
+				has_country_flag = silesia_secured2
 			}
-			NOT = { has_country_flag = silesia_secured }
-			NOT = { has_country_flag = silesia_secured2 }
+			SLS = {
+				NOT = {
+					vassal_of = THIS
+				}
+			}
+			is_greater_power = yes
 		}
 		
 		allow = {
-			SLS = { in_sphere = THIS }
 			nationalism_n_imperialism = 1
+			SLS = {
+				in_sphere = THIS
+				is_vassal = no
+			}
 		}
 		
 		effect = {
@@ -903,5 +908,5 @@ political_decisions = {
 				}
 			}
 		}
-	}	
+	}
 }

@@ -451,6 +451,10 @@ country_event = {
 				days = 1
 			}
 			money = 100000
+			add_country_modifier = { #Used in the decision to try to kickstart them building troops, in case they don't. I don't know if the decision actually does what it's intended to do, though
+				name = timer
+				duration = 180
+			}
 		}
 	}
 	
@@ -670,6 +674,10 @@ country_event = {
 			political_reform = non_socialist
 			political_reform = free_press
 			election = yes
+			add_country_modifier = { #Used in the decision to try to kickstart them building troops, in case they don't. I don't know if the decision actually does what it's intended to do, though
+				name = timer
+				duration = 180
+			}
 		}
 	}
 	
@@ -1818,7 +1826,22 @@ country_event = {
 		set_country_flag = RIP_armenian_anatolia
 	}
 }
+
+#Event which re-vassalizes GRE and ANA after they take the decision to kickstart armies (bottom of the decision file HtA_RomanEmpire
+country_event = {
+	id = 50681
+	title = "EVTNAME50681"
+	desc = "EVTDESC50681"
 	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We must prepare to defend our interests."
+		BYZ = { create_vassal = THIS }
+	}
+}
 	
 
 #Restoration of the pentarchy

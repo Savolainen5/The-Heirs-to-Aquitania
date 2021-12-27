@@ -605,4 +605,32 @@ political_decisions = {
 			}
 		}
 	}
+	
+	#Debug decision/event to try to force ANA and GRE to build armies
+	#The idea is to free them and then instantly puppet them again
+	kickstart_armies = {
+		potential = {
+			OR = {
+				tag = GRE
+				tag = ANA
+			}
+			NOT = {
+				military_score = 1
+				has_country_modifier = timer
+				has_country_flag = armies_kickstarted
+			}
+			ai = yes
+			vassal_of = BYZ
+			war = no
+			BYZ = { has_country_flag = BYZ_coup_attempt }
+		}
+		allow = {
+			NOT = { total_amount_of_divisions = 1 }
+		}
+		effect = {
+			BYZ = { create_vassal = THIS }
+			set_country_flag = armies_kickstarted
+			country_event = 50681
+		}
+	}
 }

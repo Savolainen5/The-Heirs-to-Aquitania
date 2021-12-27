@@ -52,7 +52,7 @@ political_decisions = {
 			research_points = 1000
 			#853 = {
 			#	owner = {
-			#		country_event = {	#52204, should target NPL because in railroaded mode they will puppet MLT
+			#		country_event = {	#Will 52204 when that's written, should target NPL because in railroaded mode they will puppet MLT
 			#			id = 52201
 			#			days = 1
 			#		}

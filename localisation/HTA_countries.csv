@@ -1,62 +1,62 @@
-;;;;;;;;;;;;;x         
-ABN;Albina;;;;;;;;;;;;;x
-ABN_ADJ;Albin;;;;;;;;;;x                                                    
-AEN;Aengland;;;;;;;;;;;;;x                                                 
-AEN_ADJ;Aenglisc;;;;;;;;;;;;;x 
-AEN_anarcho_liberal;Fuletres Gade;;;;;;;;;;x
-AEN_communist;Tilies Heahgade;;;;;;;;;;x
-AEN_conservative;Redbers Meg;;;;;;;;;x
-AEN_fascist;Edniwid Aengland;;;;;;;;;x
-AEN_liberal;Alps Meg;;;;;;;;;x
-AEN_liberal_2;Dores Meg;;;;;;;;;;x
-AEN_reactionary;Sundoranwals Meg;;;;;;;;x    
-AEN_socialist;Bigeneres Gade;;;;;;;;x
-ALB;Arbenon;;;;;;;;x
-ALB_ADJ;Arbeni;;;;;;;;x  
-ANA;Anatole;;;;;;;;x
-ANA_ADJ;Anatolean;;;;;;;;x                              
-AGR;Agra;;;;;;;;;;;;;x                                                     
-AGR_ADJ;Agran;;;;;;;;;;;;;x                                                
-AGR_absolute_monarchy;Suryavamsi Empire;;;;;;;;;;;x
-AQT;Aquit‡nia;;;;;;;;;;;;;x                                                
-AQT_ADJ;Aquit‡nian;;;;;;;;;;;;;x                                           
-AQT_fascist_dictatorship;Empire of the Mediterranean;;;;;;;;;;;;x
-AQT_proletarian_dictatorship;Mediterranean Commune;;;;;;;;;;;;;x
-AQT_presidential_dictatorship;Nova Roma;;;;;;;;;;;;;;x
-AQT_democracy;Aquit‡nian Republic;;;;;;;;;;;x
-AQT_reactionary;Partit Reiau-Alo;;;;;;;;;;;;;;;x
-AQT_liberal;Partit de lo Popolo;;;;;;;;;;;;x
-AQT_conservative;Partit Counservadouro;;;;;;;;;;;;x
-AQT_socialist;Partit Soucialisto;;;;;;;;;;;;x
-AQT_anarcho_liberal;Vinardos;;;;;;;;;;;;x
-AQT_communist;Partit Comunisto;;;;;;;;;;;;x
-AQT_fascist;Partit Faissisto;;;;;;;;;;;;x
-ARG_liberal;Partido Albesano;;;;;;;;;;;;;;;x
-ARG_liberal_2;Partido Albesano Moderado;;;;;;;;;;;;;;;x
-ARG_conservative;Partido Unitario;;;;;;;;;;;;;;;x
-ARG_conservative_2;Union Civica;;;;;;;;;;;;;;;x
-ARG_conservative_3;Union Civica Nacional;;;;;;;;;;;;;;;x
-ARG_conservative_4;Partido Nacionalista;;;;;;;;;;;;;;;x
-ARG_liberal_3;Partido Federal;;;;;;;;;;;;;;;x
-ARG_socialist;Movimiento Laborista;;;;;;;;;;;;;;;x
-ARG_liberal_4;Movimiento Progresista;;;;;;;;;;;;;;;x
-ARG_conservative_5;Alianza para la Justicia;;;;;;;;;;;;;;;x
-ARG_reactionary;Movimiento Realista;;;;;;;;;;;;;;;x
-ARG_anarcho_liberal;Partido Albesano Radical;;;;;;;;;;;;;;;x
-ARG_communist;Vanguardia de Liberacion Nacional;;;;;;;;;;;;;;;x
-ARG_fascist;Frente Para Un Nuevo Estado;;;;;;;;;;;;;;;x
-AUS_conservative;Elswehr's Faction;;;;;;;;;x
-AUS_conservative_2;Hein's Faction;;;;;;;;;;x
-AUS_reactionary;Grand Alliance;;;;;;;;;x
-AUS_socialist;Common Party;;;;;;;;;x
-AUS_liberal;Christian Republican Alliance;;;;;;;;;;x
-AUS_conservative_3;Conservative Party;;;;;;;;x
-AUS_conservative_4;Austrian Conservative Faction;;;;;;;;;;;x
-AUS_reactionary_2;Austrian National Party;;;;;;;;;;x
-AUS_liberal_2;Party for Democracy;;;;;;;;;;x
-AUS_communist;Austrian Labourer's Party;;;;;;;;;;x
-AUS_anarcho_liberal;Radical Republicans;;;;;;;;;x
-AUS_fascist;Great Austria Party;;;;;;;;;;;x
+;x         
+ABN;Albina;x
+ABN_ADJ;Albin;x                                                    
+AEN;Aengland;x                                                 
+AEN_ADJ;Aenglisc;x 
+AEN_anarcho_liberal;Fuletres Gade;x
+AEN_communist;Tilies Heahgade;x
+AEN_conservative;Redbers Meg;x
+AEN_fascist;Edniwid Aengland;x
+AEN_liberal;Alps Meg;x
+AEN_liberal_2;Dores Meg;x
+AEN_reactionary;Sundoranwals Meg;x    
+AEN_socialist;Bigeneres Gade;x
+ALB;Arbenon;x
+ALB_ADJ;Arbeni;x  
+ANA;Anatole;x
+ANA_ADJ;Anatolean;x                              
+AGR;Agra;x                                                     
+AGR_ADJ;Agran;x                                                
+AGR_absolute_monarchy;Suryavamsi Empire;x
+AQT;Aquit‡nia;x                                                
+AQT_ADJ;Aquit‡nian;x                                           
+AQT_fascist_dictatorship;Empire of the Mediterranean;x
+AQT_proletarian_dictatorship;Mediterranean Commune;x
+AQT_presidential_dictatorship;Nova Roma;x
+AQT_democracy;Aquit‡nian Republic;x
+AQT_reactionary;Partit Reiau-Alo;x
+AQT_liberal;Partit de lo Popolo;x
+AQT_conservative;Partit Counservadouro;x
+AQT_socialist;Partit Soucialisto;x
+AQT_anarcho_liberal;Vinardos;x
+AQT_communist;Partit Comunisto;x
+AQT_fascist;Partit Faissisto;x
+ARG_liberal;Partido Albesano;x
+ARG_liberal_2;Partido Albesano Moderado;x
+ARG_conservative;Partido Unitario;x
+ARG_conservative_2;Union Civica;x
+ARG_conservative_3;Union Civica Nacional;x
+ARG_conservative_4;Partido Nacionalista;x
+ARG_liberal_3;Partido Federal;x
+ARG_socialist;Movimiento Laborista;x
+ARG_liberal_4;Movimiento Progresista;x
+ARG_conservative_5;Alianza para la Justicia;x
+ARG_reactionary;Movimiento Realista;x
+ARG_anarcho_liberal;Partido Albesano Radical;x
+ARG_communist;Vanguardia de Liberacion Nacional;x
+ARG_fascist;Frente Para Un Nuevo Estado;x
+AUS_conservative;Elswehr's Faction;x
+AUS_conservative_2;Hein's Faction;x
+AUS_reactionary;Grand Alliance;x
+AUS_socialist;Common Party;x
+AUS_liberal;Christian Republican Alliance;x
+AUS_conservative_3;Conservative Party;x
+AUS_conservative_4;Austrian Conservative Faction;x
+AUS_reactionary_2;Austrian National Party;x
+AUS_liberal_2;Party for Democracy;x
+AUS_communist;Austrian Labourer's Party;x
+AUS_anarcho_liberal;Radical Republicans;x
+AUS_fascist;Great Austria Party;x
 AZT;Aztlan;x
 AZT_ADJ;Aztli;x
 AZT_conservative_1;Itztica Oente;x #Looking West
@@ -76,40 +76,40 @@ BHN_proletarian_dictatorship;Carpathian People's Union;x
 BHN_proletarian_dictatorship_ADJ;Carpathian;x
 BHN_fascist;Carpathia;x
 BHN_fascist_ADJ;Carpathia;x
-BOH;Bohemia;;;;;;;;;;;;;x
-BOH_ADJ;Bohemian;;;;;;;;;x
-BOH_democracy;Czechia;;;;;;;;;x
-BOH_conservative_1;Silver Circle;;;;;;;;;x
-BOH_conservative_2;Beckovsky's Faction;;;;;;;;;x
-BOH_conservative_3;Coalition of Nobles;;;;;;;;;;x
-BOH_liberal_1;Moravian Faction;;;;;;;;;x
-BOH_liberal_2;Representative Liberals;;;;;;;;;;;x
-BOH_liberal_3;Bohemian People's Coalition;;;;;;;;;;x
-BOH_reactionary;Lion & Eagle Party;;;;;;;;;x
-BOH_anarcho_liberal;Czech Popular Front;;;;;;;;;x
-BOH_socialist;Laborer League;;;;;;;;;;x
-BOH_communist;Bohemian Proletarian Party;;;;;;;;;;x
-BOH_fascist;National Fascist Front;;;;;;;;;;x              
-BRB;Brabant;;;;;;;;;;;;;x                                                  
-BRB_ADJ;Brabantian;;;;;;;;;;;;;x                                           
-BRC;Braunschweig Union;;;;;;;;;;;;;x                                       
-BRC_ADJ;Union;;;;;;;;;;;;;x                                                
-BRN;Brandenburg;;;;;;;;;;;x
-BRN_ADJ;Brandenburgish;;;;;;;;;;;;x
-BRR;Bar;;;;;;;;;;;;;x                                                      
-BRR_ADJ;Barrois;;;;;;;;;;;;;x                                              
-BYZ;Roman Empire;;;;;;;;;;;;;;;;;x
-BYZ_ADJ;Roman;;;;;;;;;;;;;;;;x
-BYZ_democracy;Roman Republic;;;;;;;;;;;;;x
-BYZ_proletarian_dictatorship;Simvoulis Federation;;;;;;;;;;;;;x
-BYZ_proletarian_dictatorship_ADJ;Simvoulis;;;;;;;;;;x
-BYZ_liberal;Komma tis Neolaias;;;;;;;;;;x
-BYZ_conservative;Klika tis Avlis;;;;;;;;;x
-BYZ_reactionary;Komma tis Vosporou;;;;;;;;;x
-BYZ_anarcho_liberal;Ispanofiliko Komma;;;;;;;;x
-BYZ_socialist;Simvoulio Ergazomenon;;;;;;;;x
-BYZ_communist;KKES;;;;;;;;;;x #Kommounistiko Komma tis Enosis Symvoulion
-BYZ_fascist;Phoenix Front;;;;;;;;;;;x #**************************************************************************************************************************
+BOH;Bohemia;x
+BOH_ADJ;Bohemian;x
+BOH_democracy;Czechia;x
+BOH_conservative_1;Silver Circle;x
+BOH_conservative_2;Beckovsky's Faction;x
+BOH_conservative_3;Coalition of Nobles;x
+BOH_liberal_1;Moravian Faction;x
+BOH_liberal_2;Representative Liberals;x
+BOH_liberal_3;Bohemian People's Coalition;x
+BOH_reactionary;Lion & Eagle Party;x
+BOH_anarcho_liberal;Czech Popular Front;x
+BOH_socialist;Laborer League;x
+BOH_communist;Bohemian Proletarian Party;x
+BOH_fascist;National Fascist Front;x              
+BRB;Brabant;x                                                  
+BRB_ADJ;Brabantian;x                                           
+BRC;Braunschweig Union;x                                       
+BRC_ADJ;Union;x                                                
+BRN;Brandenburg;x
+BRN_ADJ;Brandenburgish;x
+BRR;Bar;x                                                      
+BRR_ADJ;Barrois;x                                              
+BYZ;Roman Empire;x
+BYZ_ADJ;Roman;;x
+BYZ_democracy;Roman Republic;x
+BYZ_proletarian_dictatorship;Simvoulis Federation;x
+BYZ_proletarian_dictatorship_ADJ;Simvoulis;x
+BYZ_liberal;Komma tis Neolaias;x
+BYZ_conservative;Klika tis Avlis;x
+BYZ_reactionary;Komma tis Vosporou;x
+BYZ_anarcho_liberal;Ispanofiliko Komma;x
+BYZ_socialist;Simvoulio Ergazomenon;x
+BYZ_communist;KKES;x #Kommounistiko Komma tis Enosis Symvoulion
+BYZ_fascist;Phoenix Front;x #**************************************************************************************************************************
 CAT_conservative;RenaixenÁa Catalana;x
 CAT_liberal;Centre Democr‡tic Catal‡;x
 CAT_anarcho_liberal;Patronal Catalana;x
@@ -120,99 +120,99 @@ CAT_liberal_3;Partit Republic‡ Radical;x
 CAT_reactionary;Partit Nacionalista de Catalunya;x
 CAT_communist;Partit Comunista dels PaÔsos Catalans;x
 CAT_fascist;ConfederaciÛ Nac. Sindicalista;x
-CHE_conservative;Anisahoni;;;;;;;;;;;;;;;x
-CHE_liberal;Ahnigilohi;;;;;;;;;;;;;;;x
-CHE_reactionary;Aniawi;;;;;;;;;;;;;;;x
-CHE_anarcho_liberal;Anitsisqua;;;;;;;;;;;;;;;x
-CHE_socialist;Anigadogewi;;;;;;;;;;;;;;;x
-CHE_communist;Aniwodi;;;;;;;;;;;;;;;x
-CHE_fascist;Aniwaya;;;;;;;;;;;;;;;x
-CHP;Champa;;;;;;;;;;;;;x                                       
-CHP_ADJ;Champan;;;;;;;;;;;;;x                              
-CHL;Lonca;;;;;;;;;;;;;x                                                    
-CHL_ADJ;Loncano;;;;;;;;;;;;;x
-CHL_conservative;Union Nacional;;;;;;;;;;;;;;;x
-CHL_liberal;Partido Albesano;;;;;;;;;;;;;;;x
-CHL_conservative_2;Union Conservador;;;;;;;;;;;;;;;x
-CHL_liberal_2;Union Liberal;;;;;;;;;;;;;;;x
-CHL_conservative_3;Alianza Nacional;;;;;;;;;;;;;;;x
-CHL_liberal_3;Partido Progresista;;;;;;;;;;;;;;;x
-CHL_liberal_4;Partido de Liberacion Araucania;;;;;;;;;;;;;;;x
-CHL_reactionary;Partido Restauracionista;;;;;;;;;;;;;;;x
-CHL_anarcho_liberal;Liga Radical;;;;;;;;;;;;;;;x
-CHL_socialist;Fed. de Trabajadores IndÌgenas;;;;;;;;;;;;;;;x
-CHL_communist;Alianza Revolucionaria;;;;;;;;;;;;;;;x
-CHL_fascist;Liga Andina;;;;;;;;;;;;;;;x                                       
-CLF;Califiana;;;;;;;;;;;;;x                                                
-CLF_ADJ;Califiano;;;;;;;;;;;;;x
-CLF_conservative;Partido Nasional;;;;;;;;;;;;;;;x
-CLF_liberal;Partido para la Libertad;;;;;;;;;;;;;;;x
-CLF_reactionary;Guardia Antica;;;;;;;;;;;;;;;x
-CLF_anarcho_liberal;Jeneroismos;;;;;;;;;;;;;;;x
-CLF_socialist;Partido Laboriozos;;;;;;;;;;;;;;;x
-CLF_communist;Peshkadores para la Pas;;;;;;;;;;;;;;;x
-CLF_fascist;Muevo Pais;;;;;;;;;;;;;;;x
-CLF_conservative_2;Partido para la Prosperidad;;;;;;;;;;;;;;;x
-CLF_liberal_2;Union Civica;;;;;;;;;;;;;;;x                  
-CLT;Ceilteach Federation;;;;;;;;x
-CLT_ADJ;Ceilteach;;;;;;;;;;x
-CLT_conservative_92;Conservatives;Conservatives;Conservatives;;;;;;;;;;;x;
-CLT_liberal_79;Liberals;Liberals;Liberals;;;;;;;;;;;x;
-CLT_liberal_87;National Liberals;National Liberals;National Liberals;;;;;;;;;;;x;
-CLT_socialist_85;Socialists;Socialists;Socialists;;;;;;;;;;;x;
-CLT_socialist_99;National Socialists;National Socialists;National Socialists;;;;;;;;;;;x;
-CLT_reactionary_84;Monarchy Leadership;Monarchy Leadership;Monarchy Leadership;;;;;;;;;;;x;
-CLT_anarcho_liberal_93;Radical Liberals;Radical Liberals;Radical Liberals;;;;;;;;;;;x;
-CLT_communist_86;Communists;Communists;Communists;;;;;;;;;;;x;
-CLT_fascist_72;Fascists;Fascists;Fascists;;;;;;;;;;;x;                   
-CMP;Champagne;;;;;;;;;;;;;x                                                
-CMP_ADJ;Champagnois;;;;;;;;;;;;;x                                          
-CMP_conservative;Conseil Ducal;;;;;;;;;;;x
-CMP_conservative_2;Champagnoises;Champagnoises;Champagnoises;;;;;;;;;;;x; 
-CMP_conservative_3;Royalistes;;;;;;;;;;;x
-CMP_liberal;SociÈtÈ Cosmopolitaine;;;;;;;;;;;;x
-CMP_liberal_2;Union DÈmocratique;;;;;;;;;;x
-CMP_socialist;Lys Rouge;Lys Rouge;Lys Rouge;;;;;;;;;;;x;                
-CMP_reactionary;Normands;Normands;Normands;;;;;;;;;;;x;                 
-CMP_anarcho_liberal;Unificateurs;;;;;;;;;;;;x; 
-CMP_communist;Bonnet Phrygien;;;;;;;;;;;;x
-CMP_fascist;Nouvelle France;;;;;;;;;;;;x;
-CRE_conservative;Komma ton Esoterikon Emboron;;;;;;;;;;;x
-CRE_reactionary;Melisurgistes;;;;;;;;;x
-CRE_liberal;Klika tis Ble Portas;;;;;;;;x
-CRE_socialist;Enosi Ergazomenon;;;;;;;;;x
-CRE_communist;Komma tou Kokkinou Katartiou;;;;;;;;;x
-CRE_anarcho_liberal;Dionysioi;;;;;;;;;x
-DAU;Daufinat;;;;;;;;;;;;;x                                                 
-DAU_ADJ;Daufinens;;;;;;;;;;;;;x
-DAU_reactionary;Partit Reiau-Alo;;;;;;;;;;;;;;;x
-DAU_liberal;Partit de lo Popolo;;;;;;;;;;;;x
-DAU_conservative;Partit Counservadouro;;;;;;;;;;;;x
-DAU_socialist;Partit Soucialisto;;;;;;;;;;;;x
-DAU_anarcho_liberal;Vinardos;;;;;;;;;;;;x
-DAU_communist;Partit Comunisto;;;;;;;;;;;;x
-DAU_fascist;Partit Faissisto;;;;;;;;;;;;x
-FIN_conservative_1;Aatelistojen puolue;;;;;;;;;x
-FIN_conservative_2;SYP;;;;;;;;;;x
-FIN_conservative_3;Viljelij‰in puolue;;;;;;;;x
-FIN_liberal_1;Vapaamielinen liitto;;;;;;;;;;x
-FIN_liberal_2;Liberaalinen puolue;;;;;;;;;;x
-FIN_reactionary_1;Kansanpuolue;;;;;;;;;x
-FIN_reactionary_2;Is‰nmaan Kansanliitto;;;;;;;;;x
-FIN_anarcho_liberal;Kansallinen Edistyspuolue;;;;;;;;;;x
-FIN_communist;SKP;;;;;;;;;;;x
-FIN_fascist;SKTP;;;;;;;;;;;;x
-FIN_socialist;Sosialistinen puolue;;;;;;;;x
-FRA_absolute_monarchy;France;;;;;;;;;;;;;x
-GDN;Gidan;;;;;;;;;;;;;x                                                    
-GDN_ADJ;Gidaner;;;;;;;;;;;;;x
-GDN_anarcho_liberal;Brims Gade;;;;;;;;;;x
-GDN_communist;Tilies Heahgade;;;;;;;;;;x
-GDN_conservative;Redbers Meg;;;;;;;;;x
-GDN_fascist;Edniwid Firgene;;;;;;;;;x
-GDN_liberal;Doeres Meg;;;;;;;;;x
-GDN_reactionary;Sundoranwals Meg;;;;;;;;x    
-GDN_socialist;Bigeneres Gade;;;;;;;;x
+CHE_conservative;Anisahoni;x
+CHE_liberal;Ahnigilohi;x
+CHE_reactionary;Aniawi;x
+CHE_anarcho_liberal;Anitsisqua;x
+CHE_socialist;Anigadogewi;x
+CHE_communist;Aniwodi;x
+CHE_fascist;Aniwaya;x
+CHP;Champa;x                                       
+CHP_ADJ;Champan;x                              
+CHL;Lonca;x                                                    
+CHL_ADJ;Loncano;x
+CHL_conservative;Union Nacional;x
+CHL_liberal;Partido Albesano;x
+CHL_conservative_2;Union Conservador;x
+CHL_liberal_2;Union Liberal;x
+CHL_conservative_3;Alianza Nacional;x
+CHL_liberal_3;Partido Progresista;x
+CHL_liberal_4;Partido de Liberacion Araucania;x
+CHL_reactionary;Partido Restauracionista;x
+CHL_anarcho_liberal;Liga Radical;x
+CHL_socialist;Fed. de Trabajadores IndÌgenas;x
+CHL_communist;Alianza Revolucionaria;x
+CHL_fascist;Liga Andina;x                                       
+CLF;Califiana;x                                                
+CLF_ADJ;Califiano;x
+CLF_conservative;Partido Nasional;x
+CLF_liberal;Partido para la Libertad;x
+CLF_reactionary;Guardia Antica;x
+CLF_anarcho_liberal;Jeneroismos;x
+CLF_socialist;Partido Laboriozos;x
+CLF_communist;Peshkadores para la Pas;x
+CLF_fascist;Muevo Pais;x
+CLF_conservative_2;Partido para la Prosperidad;x
+CLF_liberal_2;Union Civica;x                  
+CLT;Ceilteach Federation;x
+CLT_ADJ;Ceilteach;x
+CLT_conservative_92;Conservatives;Conservatives;Conservatives;x;
+CLT_liberal_79;Liberals;Liberals;Liberals;x;
+CLT_liberal_87;National Liberals;National Liberals;National Liberals;x;
+CLT_socialist_85;Socialists;Socialists;Socialists;x;
+CLT_socialist_99;National Socialists;National Socialists;National Socialists;x;
+CLT_reactionary_84;Monarchy Leadership;Monarchy Leadership;Monarchy Leadership;x;
+CLT_anarcho_liberal_93;Radical Liberals;Radical Liberals;Radical Liberals;x;
+CLT_communist_86;Communists;Communists;Communists;x;
+CLT_fascist_72;Fascists;Fascists;Fascists;x;                   
+CMP;Champagne;x                                                
+CMP_ADJ;Champagnois;x                                          
+CMP_conservative;Conseil Ducal;x
+CMP_conservative_2;Champagnoises;Champagnoises;Champagnoises;x; 
+CMP_conservative_3;Royalistes;x
+CMP_liberal;SociÈtÈ Cosmopolitaine;x
+CMP_liberal_2;Union DÈmocratique;x
+CMP_socialist;Lys Rouge;Lys Rouge;Lys Rouge;x;                
+CMP_reactionary;Normands;Normands;Normands;x;                 
+CMP_anarcho_liberal;Unificateurs;x; 
+CMP_communist;Bonnet Phrygien;x
+CMP_fascist;Nouvelle France;x;
+CRE_conservative;Komma ton Esoterikon Emboron;x
+CRE_reactionary;Melisurgistes;x
+CRE_liberal;Klika tis Ble Portas;x
+CRE_socialist;Enosi Ergazomenon;x
+CRE_communist;Komma tou Kokkinou Katartiou;x
+CRE_anarcho_liberal;Dionysioi;x
+DAU;Daufinat;x                                                 
+DAU_ADJ;Daufinens;x
+DAU_reactionary;Partit Reiau-Alo;x
+DAU_liberal;Partit de lo Popolo;x
+DAU_conservative;Partit Counservadouro;x
+DAU_socialist;Partit Soucialisto;x
+DAU_anarcho_liberal;Vinardos;x
+DAU_communist;Partit Comunisto;x
+DAU_fascist;Partit Faissisto;x
+FIN_conservative_1;Aatelistojen puolue;x
+FIN_conservative_2;SYP;x
+FIN_conservative_3;Viljelij‰in puolue;x
+FIN_liberal_1;Vapaamielinen liitto;x
+FIN_liberal_2;Liberaalinen puolue;x
+FIN_reactionary_1;Kansanpuolue;x
+FIN_reactionary_2;Is‰nmaan Kansanliitto;x
+FIN_anarcho_liberal;Kansallinen Edistyspuolue;x
+FIN_communist;SKP;x
+FIN_fascist;SKTP;x
+FIN_socialist;Sosialistinen puolue;x
+FRA_absolute_monarchy;France;x
+GDN;Gidan;x                                                    
+GDN_ADJ;Gidaner;x
+GDN_anarcho_liberal;Brims Gade;x
+GDN_communist;Tilies Heahgade;x
+GDN_conservative;Redbers Meg;x
+GDN_fascist;Edniwid Firgene;x
+GDN_liberal;Doeres Meg;x
+GDN_reactionary;Sundoranwals Meg;x    
+GDN_socialist;Bigeneres Gade;x
 GLC;Galicia;x
 GLC_ADJ;Galego;x
 GLC_anarcho_liberal;Partido Minarquista;x
@@ -222,66 +222,66 @@ GLC_fascist;FXNS;x               #Falanxe das Xuntas Nacional Sindicalistas
 GLC_liberal;Liga Galega;;x
 GLC_reactionary;Converxencia Nacionalista Galega;x
 GLC_socialist;Esquerda Obrerista Galega;x                                       
-GNC;Ginnaecer;;;;;;;;;;;;;x                                                
-GNC_ADJ;Ginnaecerisc;;;;;;;;;;;;;x
-GNC_anarcho_liberal;Bursgade;;;;;;;;;;x
-GNC_communist;Tilies Heahgade;;;;;;;;;;x
-GNC_conservative;Redbers Meg;;;;;;;;;x
-GNC_fascist;Edniwid Ginnaecer;;;;;;;;;x
-GNC_liberal;Doeres Meg;;;;;;;;;x
-GNC_reactionary;Sundoranwals Meg;;;;;;;;x    
-GNC_socialist;Bigeneres Gade;;;;;;;;x
-GOS;Gosen;;;;;;;;;x
-GOS_ADJ;Gosens;;;;;;;;;;x
-GOS_anarcho_liberal;Zilverleukters;;;;;;;;;;;x
-GOS_conservative;Kanaan Parti;;;;;;;;;x
-GOS_liberal;Neuedag Parti;;;;;;;;x
-GOS_socialist;Broodwien Parti;;;;;;;;;;x
-GOS_communist;Communiens Parti;;;;;;;;;;x
-GOS_fascist;Heilig Unien;;;;;;;;;x
-GOS_reactionary;Kreuzzuglers;;;;;;;;;;x
-GRE_anarcho_liberal;Ispanofiloi;;;;;;;;;x
-GRE_conservative;Ortodoxo Komma;;;;;;;;;x
-GRE_liberal;Simvoulio Epanastaton;;;;;;;;;;x
-GRE_socialist;Simvoulio Ergazomenon;;;;;;;;x
-GRE_communist;Kommounistiko Komma Ellados;;;;;;;;;;x
-GRE_reactionary;Palaia Symmachia;;;;;;;;;;x
-GRN_conservative;Inuit Ataqatigiit;;;;;;;;;;;;;;;x
-GRN_liberal;Partii Inuit;;;;;;;;;;;;;;;x
-GRN_reactionary;Atassut;;;;;;;;;;;;;;;x
-GRN_anarcho_liberal;Demokraatit;;;;;;;;;;;;;;;x
-GRN_socialist;Siumut;;;;;;;;;;;;;;;x
-GRN_communist;Sulissartut Partiat;;;;;;;;;;;;;;;x
-GRN_fascist;Issittup Partiia;;;;;;;;;;;;;;;x
-GRN_liberal_2;Norraena Thjodflokkurinn;;;;;;;;;;;;;;;x                    
-GXI;Nanyue;;;;;;;;;;;;;;x
-GXI_ADJ;Nanyuen;;;;;;;;;;;;;;x
-GXI_democracy;Liangguang Republic;;;;;;;;;;;;;;x
-GXI_presidential_dictatorship;Liangguang;;;;;;;;;;;;;;x
-GXI_proletarian_dictatorship;Baiyue Commune;;;;;;;;;;;;;;x
-GXI_fascist_dictatorship;Liangguang State;;;;;;;;;;;;;;x
-HAI;Firgene;;;;;;;;;;;;;x                                                  
-HAI_ADJ;Firgenesc;;;;;;;;;;;;;x
-HAI_anarcho_liberal;Treos Gade;;;;;;;;;;x
-HAI_communist;Tilies Heahgade;;;;;;;;;;x
-HAI_conservative;Redbers Meg;;;;;;;;;x
-HAI_fascist;Edniwid Firgene;;;;;;;;;x
-HAI_liberal;Brims Meg;;;;;;;;;x
-HAI_liberal_2;Dores Meg;;;;;;;;;;x
-HAI_reactionary;Sundoranwals Meg;;;;;;;;x    
-HAI_socialist;Bigeneres Gade;;;;;;;;x   
-HAN;Hannover;;;;;;;;;;;;x
-HAN_ADJ;Hannoverian;;;;;;;;;;;;x
-HAW_conservative;Ali'i Nui;;;;;;;;;;;;;;;x
-HAW_liberal;Na Ho'oponopono;;;;;;;;;;;;;;;x
-HAW_reactionary;Na Hana Ali'i;;;;;;;;;;;;;;;x
-HAW_anarcho_liberal;Na Ho'omalu;;;;;;;;;;;;;;;x
-HAW_socialist;Alahele o ka Unikelike;;;;;;;;;;;;;;;x
-HAW_communist;Na'ao'ao Hope Loa;;;;;;;;;;;;;;;x
-HAW_fascist;'O ke Aupuni Hou;;;;;;;;;;;;;;;x
-HAW_liberal_2;Na Kipi Kipi;;;;;;;;;;;;;;;x                                           
-HIS;Hispania;;;;;;;;;;;;;x                                                 
-HIS_ADJ;Hispanian;;;;;;;;;;;;;x
+GNC;Ginnaecer;x                                                
+GNC_ADJ;Ginnaecerisc;x
+GNC_anarcho_liberal;Bursgade;x
+GNC_communist;Tilies Heahgade;x
+GNC_conservative;Redbers Meg;x
+GNC_fascist;Edniwid Ginnaecer;x
+GNC_liberal;Doeres Meg;x
+GNC_reactionary;Sundoranwals Meg;x    
+GNC_socialist;Bigeneres Gade;x
+GOS;Gosen;x
+GOS_ADJ;Gosens;x
+GOS_anarcho_liberal;Zilverleukters;x
+GOS_conservative;Kanaan Parti;x
+GOS_liberal;Neuedag Parti;x
+GOS_socialist;Broodwien Parti;x
+GOS_communist;Communiens Parti;x
+GOS_fascist;Heilig Unien;x
+GOS_reactionary;Kreuzzuglers;x
+GRE_anarcho_liberal;Ispanofiloi;x
+GRE_conservative;Ortodoxo Komma;x
+GRE_liberal;Simvoulio Epanastaton;x
+GRE_socialist;Simvoulio Ergazomenon;x
+GRE_communist;Kommounistiko Komma Ellados;x
+GRE_reactionary;Palaia Symmachia;x
+GRN_conservative;Inuit Ataqatigiit;x
+GRN_liberal;Partii Inuit;x
+GRN_reactionary;Atassut;x
+GRN_anarcho_liberal;Demokraatit;x
+GRN_socialist;Siumut;x
+GRN_communist;Sulissartut Partiat;x
+GRN_fascist;Issittup Partiia;x
+GRN_liberal_2;Norraena Thjodflokkurinn;x                    
+GXI;Nanyue;x
+GXI_ADJ;Nanyuen;x
+GXI_democracy;Liangguang Republic;x
+GXI_presidential_dictatorship;Liangguang;x
+GXI_proletarian_dictatorship;Baiyue Commune;x
+GXI_fascist_dictatorship;Liangguang State;x
+HAI;Firgene;x                                                  
+HAI_ADJ;Firgenesc;x
+HAI_anarcho_liberal;Treos Gade;x
+HAI_communist;Tilies Heahgade;x
+HAI_conservative;Redbers Meg;x
+HAI_fascist;Edniwid Firgene;x
+HAI_liberal;Brims Meg;x
+HAI_liberal_2;Dores Meg;x
+HAI_reactionary;Sundoranwals Meg;x    
+HAI_socialist;Bigeneres Gade;x   
+HAN;Hannover;x
+HAN_ADJ;Hannoverian;x
+HAW_conservative;Ali'i Nui;x
+HAW_liberal;Na Ho'oponopono;x
+HAW_reactionary;Na Hana Ali'i;x
+HAW_anarcho_liberal;Na Ho'omalu;x
+HAW_socialist;Alahele o ka Unikelike;x
+HAW_communist;Na'ao'ao Hope Loa;x
+HAW_fascist;'O ke Aupuni Hou;x
+HAW_liberal_2;Na Kipi Kipi;x                                           
+HIS;Hispania;x                                                 
+HIS_ADJ;Hispanian;x
 HIS_anarcho_liberal;Partido Radical;x
 HIS_communist;FederaciÛn Regional;x
 HIS_conservative;Partido Moderado;x
@@ -294,58 +294,58 @@ HIS_reactionary;Alianza Azul;x
 HIS_socialist;Partido Socialista;x
 HIS_fascist;LegiÛn IbÈrica;x
 HNG;Hongsawatoi;x
-HNG_ADJ;Mon;;;;;;;;;;;;;;x;
-HNG_proletarian_dictatorship;Mon People's Republic;;;;;;;;;;;;;;;x;
-HNG_bourgeois_dictatorship;Heke;;;;;;;;;;;;;x;
-HNG_democracy;Heke;;;;;;;;;;;;;x;
-HNG_conservative_92;Conservatives;;;;;;;;;;;;;x;
-HNG_liberal_79;Liberals;;;;;;;;;;;;;x;
-HNG_liberal_87;National Liberals;;;;;;;;;;;;;x;
-HNG_socialist_85;Socialists;;;;;;;;;;;;;;x;
-HNG_socialist_99;National Socialists;;;;;;;;;;;x;
-HNG_reactionary_84;Monarchy Leadership;;;;;;;;;;;;;x;
-HNG_anarcho_liberal_93;Radical Liberals;;;;;;;;;;;;;x;
-HNG_communist_86;Communists;;;;;;;;;;;;;x;
-HNG_fascist_72;Fascists;;;;;;;;;;;;;x;
-HOL;Holsten;;;;;;;;;;;;x
-HOL_ADJ;Holstensk;;;;;;;;;;;x
-HOY;H¯yekysten;;;;;;;;;;;;;x                                               
-HOY_ADJ;H¯yekystensk;;;;;;;;;;;;;x
-HOY_conservative;Selvstendighetspartiet;;;;;;;;;;;;;;;x
-HOY_liberal;Fremskrittspartiet;;;;;;;;;;;;;;;x
-HOY_reactionary;Fjellting;;;;;;;;;;;;;;;x
-HOY_anarcho_liberal;Albesanspartiet;;;;;;;;;;;;;;;x
-HOY_socialist;Arbeidernes Reformpartiet;;;;;;;;;;;;;;;x
-HOY_communist;Radikale Arbeiderpartiet;;;;;;;;;;;;;;;x
-HOY_fascist;Fedrelandslaget;;;;;;;;;;;;;;;x                                      
-INC;Inca;;;;;;;;;;;;;x                                                     
-INC_ADJ;Incan;;;;;;;;;;;;;x                                                
-INC_conservative_92;Conservatives;Conservatives;Conservatives;;;;;;;;;;;x; 
-INC_liberal_79;Liberals;Liberals;Liberals;;;;;;;;;;;x;                     
-INC_liberal_87;National Liberals;National Liberals;National Liberals;;;;;;;;;;;;;;;x
-INC_socialist_85;Socialists;Socialists;Socialists;;;;;;;;;;;x;             
-INC_socialist_99;National Socialists;National Socialists;National Socialist;;;;;;;;;;;;;x
-INC_reactionary_84;Monarchy Leadership;Monarchy Leadership;;;;;;;;;;;;;;;;;x
-INC_anarcho_liberal_93;Radical Liberals;Radical Liberals;Radical Liberals;;;;;;;;;;;;;;;;;;;x
-INC_communist_86;Communists;Communists;Communists;;;;;;;;;;;x;             
-INC_fascist_72;Fascists;Fascists;Fascists;;;;;;;;;;;x;                     
-IRE;…ire;;;;;;;;;;;;;x                                                     
-IRE_ADJ;…ireann;;;;;;;;;;;;;x         
-IRK;Irakleio;;;;;;;;;x
-IRK_ADJ;Irakleian;;;;;;;;x                                     
-IRO;Iroquois;;;;;;;;;;x
-IRO_ADJ;Iroquoian;;;;;;;;;;;;x
-IRO_conservative_3;Honotayonih;;;;;;;;;;;;;;;x
-IRO_liberal_1;Hadihnyagwai;;;;;;;;;;;;;;;x
-IRO_reactionary_2;Hanyadenh;;;;;;;;;;;;;;;x
-IRO_anarcho_liberal_2;Tawistawis;;;;;;;;;;;;;;;x
-IRO_socialist_3;Thayuni;;;;;;;;;;;;;;;x
-IRO_communist_1;Ohkwari;;;;;;;;;;;;;;;x
-IRO_fascist_1;Ohgondena;;;;;;;;;;;;;;;x
-IRO_liberal_2;Hodidzoniga;;;;;;;;;;;;;;;x
-IRO_conservative_5;Odihnesiioh;;;;;;;;;;;;;;;x
-IRO_liberal_2;De'odijinaindonda;;;;;;;;;;;;;;;x
-IRO_socialist_5;Degaiadahkwa;;;;;;;;;;;;;;;x
+HNG_ADJ;Mon;x;
+HNG_proletarian_dictatorship;Mon People's Republic;x;
+HNG_bourgeois_dictatorship;Heke;x;
+HNG_democracy;Heke;x;
+HNG_conservative_92;Conservatives;x;
+HNG_liberal_79;Liberals;x;
+HNG_liberal_87;National Liberals;x;
+HNG_socialist_85;Socialists;x;
+HNG_socialist_99;National Socialists;x;
+HNG_reactionary_84;Monarchy Leadership;x;
+HNG_anarcho_liberal_93;Radical Liberals;x;
+HNG_communist_86;Communists;x;
+HNG_fascist_72;Fascists;x;
+HOL;Holsten;x
+HOL_ADJ;Holstensk;x
+HOY;H¯yekysten;x                                               
+HOY_ADJ;H¯yekystensk;x
+HOY_conservative;Selvstendighetspartiet;x
+HOY_liberal;Fremskrittspartiet;x
+HOY_reactionary;Fjellting;x
+HOY_anarcho_liberal;Albesanspartiet;x
+HOY_socialist;Arbeidernes Reformpartiet;x
+HOY_communist;Radikale Arbeiderpartiet;x
+HOY_fascist;Fedrelandslaget;x                                      
+INC;Inca;x                                                     
+INC_ADJ;Incan;x                                                
+INC_conservative_92;Conservatives;Conservatives;Conservatives;x; 
+INC_liberal_79;Liberals;Liberals;Liberals;x;                     
+INC_liberal_87;National Liberals;National Liberals;National Liberals;x
+INC_socialist_85;Socialists;Socialists;Socialists;x;             
+INC_socialist_99;National Socialists;National Socialists;National Socialist;x
+INC_reactionary_84;Monarchy Leadership;Monarchy Leadership;x
+INC_anarcho_liberal_93;Radical Liberals;Radical Liberals;Radical Liberals;x
+INC_communist_86;Communists;Communists;Communists;x;             
+INC_fascist_72;Fascists;Fascists;Fascists;x;                     
+IRE;…ire;x                                                     
+IRE_ADJ;…ireann;x         
+IRK;Irakleio;x
+IRK_ADJ;Irakleian;x                                     
+IRO;Iroquois;x
+IRO_ADJ;Iroquoian;x
+IRO_conservative_3;Honotayonih;x
+IRO_liberal_1;Hadihnyagwai;x
+IRO_reactionary_2;Hanyadenh;x
+IRO_anarcho_liberal_2;Tawistawis;x
+IRO_socialist_3;Thayuni;x
+IRO_communist_1;Ohkwari;x
+IRO_fascist_1;Ohgondena;x
+IRO_liberal_2;Hodidzoniga;x
+IRO_conservative_5;Odihnesiioh;x
+IRO_liberal_2;De'odijinaindonda;x
+IRO_socialist_5;Degaiadahkwa;x
 IST;Istria;x
 IST_ADJ;Istrian;x
 IST_democracy;Free State of Istria;êx
@@ -356,154 +356,158 @@ IST_fascist;Fascisti;x
 IST_liberal;PartÏo Albes‡n;x
 IST_reactionary;Nazionalisti;x
 IST_socialist;PartÏo Socialista;x
-JAP_hms_government;Imperial Japan;;;;;;;;;;;;x
-JAM_conservative;Bevrijdingspartij;;;;;;;;;;;;;;;x
-JAM_liberal;Volkspartij;;;;;;;;;;;;;;;x
-JAM_reactionary;Nationale Partij;;;;;;;;;;;;;;;x
-JAM_anarcho_liberal;Hervormingspartij;;;;;;;;;;;;;;;x
-JAM_socialist;Arbeiderspartij;;;;;;;;;;;;;;;x
-JAM_communist;Algemene Arbeidersunie;;;;;;;;;;;;;;;x
-JAM_fascist;Volksalliantie voor Broederschap;;;;;;;;;;;;;;;x
-JER;Jerusalem;;;;;;;;;x;;;;;;
-JER_ADJ;Outramarin;;;;;;;;;;x;;;;;
-JER_conservative;Royalistes;;;;;;;;;;;;;;;x
-JER_liberal;Union DÈmocratique;;;;;;;;;;;;;;;x
-JER_reactionary;Parti Outremer;;;;;;;;;;;;;;;x
-JER_anarcho_liberal;SociÈtÈ Cosmopolitaine;;;;;;;;;;;;;;;x
-JER_socialist;Parti Socialiste;;;;;;;;;;;;;;;x
-JER_communist;Parti OuvriËre du Levant;;;;;;;;;;;;;;;x
-JER_fascist;Croix d'Or;;;;;;;;;;;;;;;x
-KAR;Karen;;;;;;;;;x
-KAR_ADJ;Karen;;;;;;;;;;x
-KER;Kerno;;;;;;;;;;x
-KER_ADJ;Kernog;;;;;;;;x
-KER_conservative;Conservative Party;;;;;;;;;;;;x
-KER_liberal;Liberal Party;;;;;;;;;;;;;;x
-KER_reactionary;Party Kenethlegek;;;;;;;;;;;;;;x
-KER_socialist;Labour Party;Labour Party;Labour Party;;;;;;;;;;;x
-KER_communist;Workers' Party;;;;;;;;;;;;;;x
-KER_anarcho_liberal;Radical Party;;;;;;;;;;;;;x
-KER_fascist;Mebion Kerno;;;;;;;;;;;;x
-KLO;Klˆterland;;;;;;;;;;;;x
-KLO_ADJ;Klˆterisch;;;;;;;;;;;x
-KZH;Kazakh;;;;;;;;;;;;;x
-KZH_absolute_monarchy;Kazakh Khanate;;;;;;;;;;;;;x
-KZH_ADJ;Kazakh;;;;;;;;;;;;;x
-LPL_liberal;Partido Democratico;;;;;;;;;;;;;;;x
-LPL_liberal_2;Accion Popular;;;;;;;;;;;;;;;x
-LPL_conservative;Partido Popular;;;;;;;;;;;;;;;x
-LPL_conservative_2;Unidad Nacional;;;;;;;;;;;;;;;x
-LPL_conservative_3;Nueva Union;;;;;;;;;;;;;;;x
-LPL_conservative_4;Partido Democratico Moderado;;;;;;;;;;;;;;;x
-LPL_liberal_3;Union para la Libertad;;;;;;;;;;;;;;;x
-LPL_socialist;Fuerza Socialista;;;;;;;;;;;;;;;x
-LPL_liberal_4;Nuevo Pais;;;;;;;;;;;;;;;x
-LPL_conservative_5;Frente Popular;;;;;;;;;;;;;;;x
-LPL_reactionary;Alianza para la Restauracion Nacional;;;;;;;;;;;;;;;x
-LPL_anarcho_liberal;Partido Albesano;;;;;;;;;;;;;;;x
-LPL_communist;Vanguardia de Liberacion Nacional;;;;;;;;;;;;;;;x
-LPL_fascist;Renacimiento Patagonico;;;;;;;;;;;;;;;x
-LSK;Halesca;;;;;;;;;;;x
-LSK_ADJ;Halescano;;;;;;;;;x
-LSK_reactionary;Nationalistas;;;;;;;;;;;;;x
-LSK_conservative;Democratistas;;;;;;;;;;;;;x
-LSK_liberal;Republicanos;;;;;;;;;;;;;x
-LSK_anarcho_liberal;Estelle del Nord;;;;;;;;;;;;;x
-LSK_socialist;Socialist Party;;;;;;;;;;;;;x
-LSK_communist;Communistas;;;;;;;;;;;;;x
-LSK_fascist;Futuristas;;;;;;;;;;;;;x
-LTS;LutËces;;;;;;;;;;;;;x                                                  
-LTS_ADJ;LutËcesan;;;;;;;;;;;;;x
-LTS_conservative_1;Faksyon Lwayalis;;;;;;;;;;;;;;;x
-LTS_conservative_4;Moderes Nasyonal;;;;;;;;;;;;;;;x
-LTS_liberal_1;Zanmi Revolisyon an;;;;;;;;;;;;;;;x
-LTS_liberal_2;Inite Patriyotik;;;;;;;;;;;;;;;x
-LTS_socialist_2;Kite Nasyonal;;;;;;;;;;;;;;;x
-LTS_reactionary_1;Devan Patriyotik;;;;;;;;;;;;;;;x
-LTS_socialist_4;Pati Sosyodemokrat;;;;;;;;;;;;;;;x
-LTS_anarcho_liberal_2;Les Albesans Radicals;;;;;;;;;;;;;;;x
-LTS_communist_2;Pati Travaye;;;;;;;;;;;;;;;x
-LTS_fascist_1;Lumiere du Sud;;;;;;;;;;;;;;;x
+JAP_hms_government;Imperial Japan;x
+JAM_conservative;Bevrijdingspartij;x
+JAM_liberal;Volkspartij;x
+JAM_reactionary;Nationale Partij;x
+JAM_anarcho_liberal;Hervormingspartij;x
+JAM_socialist;Arbeiderspartij;x
+JAM_communist;Algemene Arbeidersunie;x
+JAM_fascist;Volksalliantie voor Broederschap;x
+JER;Jerusalem;x;;;;;;
+JER_ADJ;Outramarin;x;;;;;
+JER_conservative;Royalistes;x
+JER_liberal;Union DÈmocratique;x
+JER_reactionary;Parti Outremer;x
+JER_anarcho_liberal;SociÈtÈ Cosmopolitaine;x
+JER_socialist;Parti Socialiste;x
+JER_communist;Parti OuvriËre du Levant;x
+JER_fascist;Croix d'Or;x
+KAR;Karen;x
+KAR_ADJ;Karen;x
+KER;Kerno;x
+KER_ADJ;Kernog;x
+KER_conservative;Conservative Party;x
+KER_liberal;Liberal Party;x
+KER_reactionary;Party Kenethlegek;x
+KER_socialist;Labour Party;Labour Party;Labour Party;x
+KER_communist;Workers' Party;x
+KER_anarcho_liberal;Radical Party;x
+KER_fascist;Mebion Kerno;x
+KLO;Klˆterland;x
+KLO_ADJ;Klˆterisch;x
+KZH;Kazakh;x
+KZH_absolute_monarchy;Kazakh Khanate;x
+KZH_ADJ;Kazakh;x
+LPL_liberal;Partido Democratico;x
+LPL_liberal_2;Accion Popular;x
+LPL_conservative;Partido Popular;x
+LPL_conservative_2;Unidad Nacional;x
+LPL_conservative_3;Nueva Union;x
+LPL_conservative_4;Partido Democratico Moderado;x
+LPL_liberal_3;Union para la Libertad;x
+LPL_socialist;Fuerza Socialista;x
+LPL_liberal_4;Nuevo Pais;x
+LPL_conservative_5;Frente Popular;x
+LPL_reactionary;Alianza para la Restauracion Nacional;x
+LPL_anarcho_liberal;Partido Albesano;x
+LPL_communist;Vanguardia de Liberacion Nacional;x
+LPL_fascist;Renacimiento Patagonico;x
+LSK;Halesca;x
+LSK_ADJ;Halescano;x
+LSK_reactionary;Nationalistas;x
+LSK_conservative;Democratistas;x
+LSK_liberal;Republicanos;x
+LSK_anarcho_liberal;Estelle del Nord;x
+LSK_socialist;Socialist Party;x
+LSK_communist;Communistas;x
+LSK_fascist;Futuristas;x
+LTS;LutËces;x                                                  
+LTS_ADJ;LutËcesan;x
+LTS_conservative_1;Faksyon Lwayalis;x
+LTS_conservative_4;Moderes Nasyonal;x
+LTS_liberal_1;Zanmi Revolisyon an;x
+LTS_liberal_2;Inite Patriyotik;x
+LTS_socialist_2;Kite Nasyonal;x
+LTS_reactionary_1;Devan Patriyotik;x
+LTS_socialist_4;Pati Sosyodemokrat;x
+LTS_anarcho_liberal_2;Les Albesans Radicals;x
+LTS_communist_2;Pati Travaye;x
+LTS_fascist_1;Lumiere du Sud;x
 LUX;Luxembourg;x
 LUX_ADJ;Luxembourgish;x
-MDT;Midtenland;;;;;;;;;;;;;x                                               
-MDT_ADJ;Midtenlandic;;;;;;;;;;;;;x
-MDT_conservative;Nasjonalsuverenitetpartiet;;;;;;;;;;;;;;;x
-MDT_liberal;Albesanspartiet;;;;;;;;;;;;;;;x
-MDT_reactionary;Kongelige Fraksjon;;;;;;;;;;;;;;;x
-MDT_anarcho_liberal;Radikal Albesanspartiet;;;;;;;;;;;;;;;x
-MDT_socialist;Arbeiderpartiet;;;;;;;;;;;;;;;x
-MDT_communist;Internasjonalistiske Initiativ;;;;;;;;;;;;;;;x
-MDT_fascist;Kystsamling;;;;;;;;;;;;;;;x                                       
-MDG;Middag;;;;;;;;;;;x
-MDG_ADJ;Middag;;;;;;;;;x
-MEL;Mellomamerika;;;;;;;;;;;;;x
-MEL_ADJ;Mellomsk;;;;;;;;;;;;;x
-MEL_conservative;Nasjonalsamlingspartiet;;;;;;;;;;;;;;;x
-MEL_liberal;Trefolkepartiet;;;;;;;;;;;;;;;x
-MEL_reactionary;Adelsalliansen;;;;;;;;;;;;;;;x
-MEL_anarcho_liberal;Samfunnspartiet;;;;;;;;;;;;;;;x
-MEL_socialist;Stor Arbeiderpartiet;;;;;;;;;;;;;;;x
-MEL_communist;Rodtpartiet;;;;;;;;;;;;;;;x
-MEL_fascist;Nasjonal Hoyre;;;;;;;;;;;;;;;x
-MEX;Mexika;;;;;;;;;;;;;x                                                   
-MEX_ADJ;Meikan;;;;;;;;;;;;;x                                             
-MEX_absolute_monarchy;Emperea Meikea;;;;;;;;;;;;;;x
-MEX_conservative;Partit de lo Popolo Meic;;;;;;;;;;;;;;;x
-MEX_liberal;Partit de lo Revolucion;;;;;;;;;;;;;;;x
-MEX_reactionary;Regim Ancian;;;;;;;;;;;;;;;x
-MEX_anarcho_liberal;Los Segadors;;;;;;;;;;;;;;;x
-MEX_socialist;Partit dels Treballadors;;;;;;;;;;;;;;;x
-MEX_communist;Amics de lo Popolo;;;;;;;;;;;;;;;x
-MEX_fascist;Ascendencia Asteca;;;;;;;;;;;;;;;x
-MEX_conservative_2;Liga Meic;;;;;;;;;;;;;;;x
-MEX_liberal_2;Moviment per la Libertat;;;;;;;;;;;;;;;x
-MEX_liberal_3;Los Albesanos Nous;;;;;;;;;;;;;;;x
-MEX_conservative_3;Partit Conservadouro;;;;;;;;;;;;;;;x
-MEX_liberal_4;Partit Liberal;;;;;;;;;;;;;;;x
-MNK;Mankemmark;;;;;;;;;;;;;x                                               
-MNK_ADJ;Mankemsk;;;;;;;;;;;;;x
-MNK_conservative;Ny H¯yre;;;;;;;;;;;;;;;x
-MNK_liberal;Senterpartiet;;;;;;;;;;;;;;;x
-MNK_reactionary;Gammel Vakt;;;;;;;;;;;;;;;x
-MNK_anarcho_liberal;Albesanspartiet;;;;;;;;;;;;;;;x
-MNK_socialist;Ny Venstre;;;;;;;;;;;;;;;x
-MNK_communist;Arbeiderpartiet;;;;;;;;;;;;;;;x
-MNK_fascist;Fremtid til Mankemmark;;;;;;;;;;;;;;;x                                         
-MNR;M¸nster;;;;;;;;;;x
-MNR_ADJ;M¸nsterisch;;;;;;;;;;;x
-MNT;Montenegro;;;;;;;;;x
-MNT_ADJ;Montenegrin;;;;;;;;;;;;;x
-MNZ;Mainz;;;;;;;;;;;;;x
-MNZ_ADJ;Mainzer;;;;;;;;;;;;x
-MRG;Margaria;;;;;;;;;;;;;x                                                 
-MRG_ADJ;Margarian;;;;;;;;;;;;;x
+MDT;Midtenland;x                                               
+MDT_ADJ;Midtenlandic;x
+MDT_conservative;Nasjonalsuverenitetpartiet;x
+MDT_liberal;Albesanspartiet;x
+MDT_reactionary;Kongelige Fraksjon;x
+MDT_anarcho_liberal;Radikal Albesanspartiet;x
+MDT_socialist;Arbeiderpartiet;x
+MDT_communist;Internasjonalistiske Initiativ;x
+MDT_fascist;Kystsamling;x                                       
+MDG;Middag;x
+MDG_ADJ;Middag;x
+MEL;Mellomamerika;x
+MEL_ADJ;Mellomsk;x
+MEL_conservative;Nasjonalsamlingspartiet;x
+MEL_liberal;Trefolkepartiet;x
+MEL_reactionary;Adelsalliansen;x
+MEL_anarcho_liberal;Samfunnspartiet;x
+MEL_socialist;Stor Arbeiderpartiet;x
+MEL_communist;Rodtpartiet;x
+MEL_fascist;Nasjonal Hoyre;x
+MER;Meridion;x
+MER_ADJ;Meridional;x
+MER_monarchy;Meridional Kingdom;x
+MER_proletarian_dictatorship;Peninsular People's Republic;x
+MEX;Mexika;x                                                   
+MEX_ADJ;Meikan;x                                             
+MEX_absolute_monarchy;Emperea Meikea;x
+MEX_conservative;Partit de lo Popolo Meic;x
+MEX_liberal;Partit de lo Revolucion;x
+MEX_reactionary;Regim Ancian;x
+MEX_anarcho_liberal;Los Segadors;x
+MEX_socialist;Partit dels Treballadors;x
+MEX_communist;Amics de lo Popolo;x
+MEX_fascist;Ascendencia Asteca;x
+MEX_conservative_2;Liga Meic;x
+MEX_liberal_2;Moviment per la Libertat;x
+MEX_liberal_3;Los Albesanos Nous;x
+MEX_conservative_3;Partit Conservadouro;x
+MEX_liberal_4;Partit Liberal;x
+MNK;Mankemmark;x                                               
+MNK_ADJ;Mankemsk;x
+MNK_conservative;Ny H¯yre;x
+MNK_liberal;Senterpartiet;x
+MNK_reactionary;Gammel Vakt;x
+MNK_anarcho_liberal;Albesanspartiet;x
+MNK_socialist;Ny Venstre;x
+MNK_communist;Arbeiderpartiet;x
+MNK_fascist;Fremtid til Mankemmark;x                                         
+MNR;M¸nster;x
+MNR_ADJ;M¸nsterisch;x
+MNT;Montenegro;x
+MNT_ADJ;Montenegrin;x
+MNZ;Mainz;x
+MNZ_ADJ;Mainzer;x
+MRG;Margaria;x                                                 
+MRG_ADJ;Margarian;x
 MRV;Moravia;x
 MRV_ADJ;Moravian;x                                         
-NAV;Navarra;;;;;;;;;;;;;x                                                  
-NAV_ADJ;Navarrese;;;;;;;;;;;;;x
-NAL_conservative;Vorauser Parti;;;;;;;;;;x
-NAL_conservative_2;Hosmans Parti;;;;;;;;;x
-NAL_liberal;Freden Parti;;;;;;;;;;;;;x
-NAL_reactionary;Rektig Parti;;;;;;;;;;;x                              
-NFB;Naffaroako Berria;;;;;;;;;;;;;x                                        
-NFB_ADJ; Berrian;;;;;;;;;;;;;x                                             
-NHL;New Holland;;;;;;;;;;;;;x                                              
-NHL_ADJ;New Holland;;;;;;;;;;;;;x                                          
-NHL_conservative_92;Conservatives;Conservatives;Conservatives;;;;;;;;;;;x; 
-NHL_liberal_79;Liberals;Liberals;Liberals;;;;;;;;;;;x;                     
-NHL_liberal_87;National Liberals;National Liberals;National Liberals;;;;;;;;;x
-NHL_socialist_85;Socialists;Socialists;Socialists;;;;;;;;;;;x;             
-NHL_socialist_99;National Socialists;National Socialists;National Socialist;;;;;;;;;;;;;;;x
-NHL_reactionary_84;Monarchists Leadership;Monarchy Leadership;;;;;;;;;;;;;;x
-NHL_anarcho_liberal_93;Radical Liberals;Radical Liberals;Radical Liberals;;;;;;;;;;;;;x
-NHL_communist_86;Communists;Communists;Communists;;;;;;;;;;;x;             
-NHL_fascist_72;Fascists;Fascists;Fascists;;;;;;;;;;;x;                     
-NPL;Naples;;;;;;;;;;;;;x                                                   
-NPL_ADJ;Neapolitan;;;;;;;;;;;;;x                                           
-NRM;Normandy;;;;;;;;;;;;;x                                                 
-NRM_ADJ;Normand;;;;;;;;;;;;;x                                              
-NRM_reactionary;Monarchistes;;;;;;;;;;;;;;;x
+NAV;Navarra;x                                                  
+NAV_ADJ;Navarrese;x
+NAL_conservative;Vorauser Parti;x
+NAL_conservative_2;Hosmans Parti;x
+NAL_liberal;Freden Parti;x
+NAL_reactionary;Rektig Parti;x                              
+NFB;Naffaroako Berria;x                                        
+NFB_ADJ; Berrian;x                                             
+NHL;New Holland;x                                              
+NHL_ADJ;New Holland;x                                          
+NHL_conservative_92;Conservatives;Conservatives;Conservatives;x; 
+NHL_liberal_79;Liberals;Liberals;Liberals;x;                     
+NHL_liberal_87;National Liberals;National Liberals;National Liberals;x
+NHL_socialist_85;Socialists;Socialists;Socialists;x;             
+NHL_socialist_99;National Socialists;National Socialists;National Socialist;x
+NHL_reactionary_84;Monarchists Leadership;Monarchy Leadership;x
+NHL_anarcho_liberal_93;Radical Liberals;Radical Liberals;Radical Liberals;x
+NHL_communist_86;Communists;Communists;Communists;x;             
+NHL_fascist_72;Fascists;Fascists;Fascists;x;                     
+NPL;Naples;x                                                   
+NPL_ADJ;Neapolitan;x                                           
+NRM;Normandy;x                                                 
+NRM_ADJ;Normand;x                                              
+NRM_reactionary;Monarchistes;x
 OAX_conservative;Partit de lo Ben 'Zaa;x
 OAX_liberal;Los Albesanos de Huaxyacac;x
 OAX_reactionary;Partit de Restauracio Mexic;x
@@ -511,16 +515,16 @@ OAX_anarcho_liberal;Los Albesanos Radicals;x
 OAX_socialist;Partit Soucialisto;x
 OAX_communist;Partit Radical d'Esquerra;x
 OAX_fascist;Moviment per els Ben 'Zaa;x
-ORA;Tusstrom;;;;;;;;;;x
-ORA_ADJ;Tusstrommer;;;;;;;;;x
-ORA_conservative;Vorauser Parti;;;;;;;;;;x
-ORA_conservative_2;Hosmans Parti;;;;;;;;;x
-ORA_liberal;Freden Parti;;;;;;;;;;;;;x
-ORA_reactionary;Rektig Parti;;;;;;;;;;;x;
-ORL;Orleans;;;;;;;;;;;;;x                                                  
-ORL_ADJ;Orleanais;;;;;;;;;;;;;x                                            
-ORL_reactionary;OrlÈanistes;;;;x;       
-ORL_conservative_2;Conservatifs RÈvolutionaires;;;;x
+ORA;Tusstrom;x
+ORA_ADJ;Tusstrommer;x
+ORA_conservative;Vorauser Parti;x
+ORA_conservative_2;Hosmans Parti;x
+ORA_liberal;Freden Parti;x
+ORA_reactionary;Rektig Parti;x;
+ORL;Orleans;x                                                  
+ORL_ADJ;Orleanais;x                                            
+ORL_reactionary;OrlÈanistes;x;       
+ORL_conservative_2;Conservatifs RÈvolutionaires;x
 PAT;Pattani;x
 PAT_ADJ;Pattani;x
 PDN;Padan Union;x
@@ -533,8 +537,8 @@ PDN_liberal;Fazziun Republicana;x
 PDN_reactionary;Fazziun Monarchista;x
 PDN_reactionary_2;Partii della Terra;x
 PDN_socialist;Partii del Popel;x
-PHL;Panaja;;;;;;;;;;;x
-PHL_ADJ;Panajan;;;;;;;;;;x
+PHL;Panaja;x
+PHL_ADJ;Panajan;x
 POL_anarcho_liberal_1;Zasciankowcy;x
 POL_anarcho_liberal_2;Ruch AlbesanÛw;x
 POL_communist;KPRP;x
@@ -546,93 +550,93 @@ POL_liberal_2;Ruch Wolnosciowy;x
 POL_reactionary_1;Karmazyni;x
 POL_reactionary_2;Partia Tradycjonalistyczna;x
 POL_socialist;Socjaldemokracja polska;x
-POM;Pomerania;;;;;;;;;x
-POM_ADJ;Pomeranian;;;;;;;;;;x
-PRE;ProuvenÁa;;;;;;;;;;;;;x                                                 
-PRE_ADJ;ProuvenÁal;;;;;;;;;;;;;x
-PRE_reactionary;Partit Reiau-Alo;;;;;;;;;;;;;;;x
-PRE_liberal;Partit de lo Popolo;;;;;;;;;;;;x
-PRE_conservative;Partit Counservadouro;;;;;;;;;;;;x
-PRE_socialist;Partit Soucialisto;;;;;;;;;;;;x
-PRE_anarcho_liberal;Vinardos;;;;;;;;;;;;x
-PRE_communist;Partit Comunisto;;;;;;;;;;;;x
-PRE_fascist;Partit Faissisto;;;;;;;;;;;;x
-PRH;Prague;;;;;;;;;;x
-PRH_ADJ;Praguer;;;;;;;;;x
+POM;Pomerania;x
+POM_ADJ;Pomeranian;x
+PRE;ProuvenÁa;x                                                 
+PRE_ADJ;ProuvenÁal;x
+PRE_reactionary;Partit Reiau-Alo;x
+PRE_liberal;Partit de lo Popolo;x
+PRE_conservative;Partit Counservadouro;x
+PRE_socialist;Partit Soucialisto;x
+PRE_anarcho_liberal;Vinardos;x
+PRE_communist;Partit Comunisto;x
+PRE_fascist;Partit Faissisto;x
+PRH;Prague;x
+PRH_ADJ;Praguer;x
 PRS;Prusova;x
 PRS_ADJ;Prusai;x
-PTG_conservative;Partido Patagonico;;;;;;;;;;;;;;;x
-PTG_liberal;Albesanos Patagonicos;;;;;;;;;;;;;;;x
-PTG_reactionary;Partido para la Restauracion de Argentina ;;;;;;;;;;;;;;;x
-PTG_anarcho_liberal;Frente Albesano;;;;;;;;;;;;;;;x
-PTG_socialist;Partido de los Trabajadores;;;;;;;;;;;;;;;x
-PTG_communist;Frente Radical;;;;;;;;;;;;;;;x
-PTG_fascist;Patagonia Sobre Todo;;;;;;;;;;;;;;;x                                
-QIN;Qin Empire;;;;;;;;;;;;;x
-QIN_ADJ;Qin;;;;;;;;;;;;x
-QIN_prussian_constitutionalism;Chinese Empire;;;;;;;;;;;;x
-QIN_prussian_constitutionalism_ADJ;Chinese;;;;;;;;;;;;x
-QIN_hms_government;Chinese Empire;;;;;;;;;;;;x
-QIN_hms_government_ADJ;Chinese;;;;;;;;;;;;x
-QUE;Dabimon;;;;;;;;;;;;;;;;;;x
-QUE_ADJ;Dabimonais;;;;;;;;;;;;;;x
-RGS;Altallia;;;;;;;;;;;;;x                                                 
-RGS_ADJ;Altano;;;;;;;;;;;;;x
-RGS_conservative;Union para Altallia;;;;;;;;;;;;;;;x
-RGS_liberal;Movimiento Nacional;;;;;;;;;;;;;;;x
-RGS_reactionary;Partido Reelecionista;;;;;;;;;;;;;;;x
-RGS_anarcho_liberal;Frente Albesano;;;;;;;;;;;;;;;x
-RGS_socialist;Partido de los Trabajadores;;;;;;;;;;;;;;;x
-RGS_communist;Frente Radical;;;;;;;;;;;;;;;x
-RGS_fascist;Altallia Sobre Todo;;;;;;;;;;;;;;;x
+PTG_conservative;Partido Patagonico;x
+PTG_liberal;Albesanos Patagonicos;x
+PTG_reactionary;Partido para la Restauracion de Argentina ;x
+PTG_anarcho_liberal;Frente Albesano;x
+PTG_socialist;Partido de los Trabajadores;x
+PTG_communist;Frente Radical;x
+PTG_fascist;Patagonia Sobre Todo;x                                
+QIN;Qin Empire;x
+QIN_ADJ;Qin;x
+QIN_prussian_constitutionalism;Chinese Empire;x
+QIN_prussian_constitutionalism_ADJ;Chinese;x
+QIN_hms_government;Chinese Empire;x
+QIN_hms_government_ADJ;Chinese;x
+QUE;Dabimon;x
+QUE_ADJ;Dabimonais;x
+RGS;Altallia;x                                                 
+RGS_ADJ;Altano;x
+RGS_conservative;Union para Altallia;x
+RGS_liberal;Movimiento Nacional;x
+RGS_reactionary;Partido Reelecionista;x
+RGS_anarcho_liberal;Frente Albesano;x
+RGS_socialist;Partido de los Trabajadores;x
+RGS_communist;Frente Radical;x
+RGS_fascist;Altallia Sobre Todo;x
 RUS;Russia;x
 RUS_absolute_monarchy;The Russian Tsardom;x
 RUS_prussian_constitutionalism;The Russian Tsardom;x
 RUS_proletarian_dictatorship;People's Republic of Russia;x
 RUS_democracy;Russian Republic;x
 RUS_fascist_dictatorship;Great Russia;x
-RUS_conservative;Great Russia Assembly;;;;;;;;;;x
-RUS_conservative_2;Russian People's Union;;;;;;;;;x
-RUS_reactionary;Tsarists;;;;;;;;;;;;x
-RUS_anarcho_liberal;Northern Society;;;;;;;;x
-RUS_liberal;Constitutional Party;;;;;;;;;;;x
-RUS_liberal_2;Equality Party;;;;;;;;;;x
-RUS_socialist;Russian Workers' Party;;;;;;;;;;x
-RUS_socialist_2;Socialist Revolutionary Party;;;;;;;;;;x
-RUS_communist;RSDLP;;;;;;;;;;x
-RUS_communist_2;RCP;;;;;;;;;;;x
-RUS_fascist;Russian Unity Movement;;;;;;;;x
-SAF;Kaapland;;;;;;;;;;x
-SAF_ADJ;Kaapisch;;;;;;;;;x                          
-SAM;Sapmi;;;;;;;;;;;;;x
-SAM_ADJ;Sapmi;;;;;;;;;;;;;;x
-SCO;Alba;;;;;;;;;;;;;x                                                     
-SCO_ADJ;Albannach;;;;;;;;;;;;;x
-SCW;Scylfiga Woning;;;;;;;;;;;;;x 
-SCW_ADJ;Scylfig;;;;;;;;;;;;;x 
-SCW_fascist_dictatorship;Amerigan Free State;;;;;;;;;;;;;x 
-SCW_proletarian_dictatorship;Scylfig People's Republic;;;;;;;;;;;;;x 
-SCW_conservative;Gesamnungs Meg;;;;;;;;;;;;;x 
-SCW_liberal;Cyreceaps Gemaene;;;;;;;;;;;;;x
-SCW_socialist;Freogans Meg;;;;;;;;;;;;;x 
-SCW_reactionary;Niwe Steorra;;;;;;;;;;;;;x 
-SCW_anarcho_liberal;Freogrund Meg;;;;;;;;;;;;;x 
-SCW_communist;Folcisce Cynewise Meg;;;;;;;;;;;;;x 
-SCW_fascist;Gilmraed Meg;;;;;;;;;;;;;x 
-SHC;Shawnee Confederation;;;;;;;;;;;;;x                                    
-SHC_ADJ;Shawnee;;;;;;;;;;;;;x
-SHC_proletarian_dictatorship;IPRA;;;;;;;;;;;x
-SHC_proletarian_dictatorship_ADJ;IPRA;;;;;;;;;;;x
-SHC_conservative;Chalahgawtha;;;;;;;;;;;;;;;x
-SHC_liberal;Hathawekela;;;;;;;;;;;;;;;x
-SHC_reactionary;Kispoko;;;;;;;;;;;;;;;x
-SHC_anarcho_liberal;Mekoche;;;;;;;;;;;;;;;x
-SHC_socialist;Pekowi;;;;;;;;;;;;;;;x
-SHC_communist;Pellewomhsoomi;;;;;;;;;;;;;;;x
-SHC_fascist;Thepatiiwomhsoomi;;;;;;;;;;;;;;;x
-SHC_conservative_2;Petakineethiiwomhsoomi;;;;;;;;;;;;;;;x
-SCL;Sicily;;;;;;;;;;x
-SCL_ADJ;Sicilian;;;;;;;;;;x
+RUS_conservative;Great Russia Assembly;x
+RUS_conservative_2;Russian People's Union;x
+RUS_reactionary;Tsarists;x
+RUS_anarcho_liberal;Northern Society;x
+RUS_liberal;Constitutional Party;x
+RUS_liberal_2;Equality Party;x
+RUS_socialist;Russian Workers' Party;x
+RUS_socialist_2;Socialist Revolutionary Party;x
+RUS_communist;RSDLP;x
+RUS_communist_2;RCP;x
+RUS_fascist;Russian Unity Movement;x
+SAF;Kaapland;x
+SAF_ADJ;Kaapisch;x                          
+SAM;Sapmi;x
+SAM_ADJ;Sapmi;x
+SCO;Alba;x                                                     
+SCO_ADJ;Albannach;x
+SCW;Scylfiga Woning;x 
+SCW_ADJ;Scylfig;x 
+SCW_fascist_dictatorship;Amerigan Free State;x 
+SCW_proletarian_dictatorship;Scylfig People's Republic;x 
+SCW_conservative;Gesamnungs Meg;x 
+SCW_liberal;Cyreceaps Gemaene;x
+SCW_socialist;Freogans Meg;x 
+SCW_reactionary;Niwe Steorra;x 
+SCW_anarcho_liberal;Freogrund Meg;x 
+SCW_communist;Folcisce Cynewise Meg;x 
+SCW_fascist;Gilmraed Meg;x 
+SHC;Shawnee Confederation;x                                    
+SHC_ADJ;Shawnee;x
+SHC_proletarian_dictatorship;IPRA;x
+SHC_proletarian_dictatorship_ADJ;IPRA;x
+SHC_conservative;Chalahgawtha;x
+SHC_liberal;Hathawekela;x
+SHC_reactionary;Kispoko;x
+SHC_anarcho_liberal;Mekoche;x
+SHC_socialist;Pekowi;x
+SHC_communist;Pellewomhsoomi;x
+SHC_fascist;Thepatiiwomhsoomi;x
+SHC_conservative_2;Petakineethiiwomhsoomi;x
+SCL;Sicily;x
+SCL_ADJ;Sicilian;x
 SIC_anarcho_liberal;Liga Indipendente;x
 SIC_communist;Partito dei lavoratori;x
 SIC_conservative;Partito Cristiano;x
@@ -642,33 +646,33 @@ SIC_liberal;Coalizione Albesana;x
 SIC_liberal_2;Democrazia Siciliana;x
 SIC_reactionary;Unione Blu;x
 SIC_socialist;PSS;x
-SKA;Scania;;;;;;;;;;;x
-SKA_ADJ;Scanian;;;;;;;;;x
-SKA_conservative;Hˆjer Partiet;;;;;;;;;;x
-SKA_liberal;Friliberaler;;;;;;;;;;;x      
-SKA_socialist;Socialistik Partiet;;;;;;;;;;x
-SKA_communist;Kommunistika Forbund;;;;;;;;;x
-SKA_reactionary;SkÂnske Folkes Partiet;;;;;;;;x
-SKA_anarcho_liberal;Nationalliberale;;;;;;;;;;x
-SKA_fascist;Fascister;;;;;;;;;;;x             
-SKM;Skamisc;;;;;;;;;;;;;x                                                  
-SKM_ADJ;Skamisc;;;;;;;;;;;;;x    
-SKM_anarcho_liberal;Singrenes;;;;;;;;;;x
-SKM_communist;Tilies Heahgade;;;;;;;;;;x
-SKM_conservative;Redbers Meg;;;;;;;;;x
-SKM_fascist;Elads Meg;;;;;;;;;x
-SKM_liberal;Doeres Meg;;;;;;;;;x
-SKM_reactionary;Sundoranwals Meg;;;;;;;;x    
-SKM_socialist;Bigeneres Gade;;;;;;;;x
-SLS_liberal;Friends of Hispania;;;;;;;;;;x
-SLS_conservative_2;Alliance of Nobles;;;;;;;;;;x
-SLS_reactionary;Halfar's Faction;;;;;;;;;;;x
-SLS_anarcho_liberal;Free Man's Party;;;;;;;;;x
-SLS_liberal_2;Silesian People's Party;;;;;;;;;;x
-SLS_conservative;Catholic Front;;;;;;;;;;x
-SLS_socialist;Common Party of Silesia;;;;;;;;x
-SLS_communist;Silesian Radas;;;;;;;;x
-SLS_fascist;Black Cross Party;;;;;;;;;;x                                           
+SKA;Scania;x
+SKA_ADJ;Scanian;x
+SKA_conservative;Hˆjer Partiet;x
+SKA_liberal;Friliberaler;x      
+SKA_socialist;Socialistik Partiet;x
+SKA_communist;Kommunistika Forbund;x
+SKA_reactionary;SkÂnske Folkes Partiet;x
+SKA_anarcho_liberal;Nationalliberale;x
+SKA_fascist;Fascister;x             
+SKM;Skamisc;x                                                  
+SKM_ADJ;Skamisc;x    
+SKM_anarcho_liberal;Singrenes;x
+SKM_communist;Tilies Heahgade;x
+SKM_conservative;Redbers Meg;x
+SKM_fascist;Elads Meg;x
+SKM_liberal;Doeres Meg;x
+SKM_reactionary;Sundoranwals Meg;x    
+SKM_socialist;Bigeneres Gade;x
+SLS_liberal;Friends of Hispania;x
+SLS_conservative_2;Alliance of Nobles;x
+SLS_reactionary;Halfar's Faction;x
+SLS_anarcho_liberal;Free Man's Party;x
+SLS_liberal_2;Silesian People's Party;x
+SLS_conservative;Catholic Front;x
+SLS_socialist;Common Party of Silesia;x
+SLS_communist;Silesian Radas;x
+SLS_fascist;Black Cross Party;x                                           
 SML;Smolensk;x                                                 
 SML_ADJ;Smolenskii;x
 SML_conservative;Orthodox Party;x
@@ -680,100 +684,100 @@ SML_anarcho_liberal;Freedom Faction;x
 SML_socialist;Socialist People's Party;x
 SML_socialist_2;Farm and Labour Union;x
 SML_socialist_3;Prosperity Party;x
-SML_communist;Promethean Society;;;;;;;;;;;x
-SML_communist_2;Smolensk Communist Party;;;;;;;;;;;;x
-SML_fascist;Fatherland Patriot's Party;;;;;;;;;x
-SOK;Hausa;;;;;;;;;;;x
-SOK_ADJ;Hausa;;;;;;;;;;x           
-SOL;Solelha;;;;;;;;;;x
-SOL_ADJ;Solelhes;;;;;;;;;x  
-SRI;Sri Lanka;;;;;;;;;;;x
-SRI_ADJ;Lankan;;;;;;;;;;;x
+SML_communist;Promethean Society;x
+SML_communist_2;Smolensk Communist Party;x
+SML_fascist;Fatherland Patriot's Party;x
+SOK;Hausa;x
+SOK_ADJ;Hausa;x           
+SOL;Solelha;x
+SOL_ADJ;Solelhes;x  
+SRI;Sri Lanka;x
+SRI_ADJ;Lankan;x
 SRU;The Russian Empire;x
 SRU_ADJ;Russian;x
 SRU_democracy;Russian Republic;x
 SRU_proletarian_dictatorship;Russian Workers' Commonwealth;x
 SRU_fascist_dictatorship;Nationalist Russia;x
-SRM;Syrmia;;;;;;;;;;;x
-SRM_ADJ;Syrmian;;;;;;;;;;;x
-STE;Stellaland;;;;;;;;;;;x
-STE_ADJ;Steller;;;;;;;;;;x          
-SWI;Helvetia;;;;;;;;;;;;;x                                                 
-SWI_ADJ;Helvetian;;;;;;;;;;;;;;;;x                                         
-TCN;Tareconia;;;;;;;;;;;;;x                                                
-TCN_ADJ;Tareconian;;;;;;;;;;;;;x
-TCN_conservative;Guardia Nacional;;;;;;;;;;;;;;;x
-TCN_liberal;Partido de la Independencia;;;;;;;;;;;;;;;x
-TCN_reactionary;Partido para la Restauracion;;;;;;;;;;;;;;;x #de Huelxir
-TCN_anarcho_liberal;Los Amigos de la Revolucion;;;;;;;;;;;;;;;x
-TCN_socialist;Guardia de los Trabajadores;;;;;;;;;;;;;;;x
-TCN_communist;Los Trabajdores Radicales;;;;;;;;;;;;;;;x
-TCN_fascist;Los Hijos Tareconios;;;;;;;;;;;;;;;x
-TCN_conservative_2;Union Nacional;;;;;;;;;;;;;;;x
-TCN_liberal_2;Los Republicanos;;;;;;;;;;;;;;;x
-TCN_conservative_3;Paritido Nacional;;;;;;;;;;;;;;;x
-TCN_liberal_3;Movimiento para la Democracia;;;;;;;;;;;;;;;x
-TCN_socialist_2;Partido de los Trabajadores;;;;;;;;;;;;;;;x                                           
-TER;Teralarga;;;;;;;;;;;;;x                                                
-TER_ADJ;Teralargano;;;;;;;;;;;;;x                                          
-THU;Thuringia;;;;;;;;;;x
-THU_ADJ;Thuringian;;;;;;;;;x
-TRN;Obervahl;;;;;;;;x
-TRN_ADJ;Obervahls;;;;;;;;;x
-TRN_conservative;Vorauser Parti;;;;;;;;;;x;;;;
-TRN_conservative_2;Hosmans Parti;;;;;;;;;x;;;;
-TRN_liberal;Freden Parti;;;;;;;;;;;;;x;;;;
-TRN_reactionary;Rektig Parti;;;;;;;;;;;x;;;;
-TRR;Trier;;;;;;;;;;;x
-TRR_ADJ;Trieish;;;;;;;;;;;x
-URU;Ys˘n;;;;;;;;;;;;;x                                                     
-URU_ADJ;Ys˘no;;;;;;;;;;;;;x
-URU_conservative;Reduccioneros;;;;;;;;;;;;;;;x
-URU_liberal;Antireduccioneros;;;;;;;;;;;;;;;x
-URU_reactionary;Los Encomenderos;;;;;;;;;;;;;;;x
-URU_anarcho_liberal;Federacion de Comercio;;;;;;;;;;;;;;;x
-URU_socialist;FDLT;;;;;;;;;;;;;;;x#Frente de Derechos de Los Trabajadores
-URU_communist;Trabajadores Unidos;;;;;;;;;;;;;;;x
-URU_fascist;Sol de Justicia;;;;;;;;;;;;;;;x
-URU_conservative_2;Union Nacional;;;;;;;;;;;;;;;x
-URU_liberal_2;Los Republicanos;;;;;;;;;;;;;;;x
-URU_conservative_3;Paritido Nacional;;;;;;;;;;;;;;;x
-URU_liberal_3;Movimiento para la Democracia;;;;;;;;;;;;;;;x
-URU_socialist_2;Partido para el Trabajo Libre;;;;;;;;;;;;;;;x                                            
-USR;Uilscyr;;;;;;;;;;;;;x                                                  
-USR_ADJ;Uilsc;;;;;;;;;;;;;x    
-USR_anarcho_liberal;Singrenes;;;;;;;;;;x
-USR_communist;Tilies Heahgade;;;;;;;;;;x
-USR_conservative;Redbers Meg;;;;;;;;;x
-USR_fascist;Beulims Meg;;;;;;;;;x
-USR_liberal;Doeres Meg;;;;;;;;;x
-USR_reactionary;Sundoranwals Meg;;;;;;;;x    
-USR_socialist;Bigeneres Gade;;;;;;;;x
+SRM;Syrmia;x
+SRM_ADJ;Syrmian;x
+STE;Stellaland;x
+STE_ADJ;Steller;x          
+SWI;Helvetia;x                                                 
+SWI_ADJ;Helvetian;;x                                         
+TCN;Tareconia;x                                                
+TCN_ADJ;Tareconian;x
+TCN_conservative;Guardia Nacional;x
+TCN_liberal;Partido de la Independencia;x
+TCN_reactionary;Partido para la Restauracion;x #de Huelxir
+TCN_anarcho_liberal;Los Amigos de la Revolucion;x
+TCN_socialist;Guardia de los Trabajadores;x
+TCN_communist;Los Trabajdores Radicales;x
+TCN_fascist;Los Hijos Tareconios;x
+TCN_conservative_2;Union Nacional;x
+TCN_liberal_2;Los Republicanos;x
+TCN_conservative_3;Paritido Nacional;x
+TCN_liberal_3;Movimiento para la Democracia;x
+TCN_socialist_2;Partido de los Trabajadores;x                                           
+TER;Teralarga;x                                                
+TER_ADJ;Teralargano;x                                          
+THU;Thuringia;x
+THU_ADJ;Thuringian;x
+TRN;Obervahl;x
+TRN_ADJ;Obervahls;x
+TRN_conservative;Vorauser Parti;x;;;;
+TRN_conservative_2;Hosmans Parti;x;;;;
+TRN_liberal;Freden Parti;x;;;;
+TRN_reactionary;Rektig Parti;x;;;;
+TRR;Trier;x
+TRR_ADJ;Trieish;x
+URU;Ys˘n;x                                                     
+URU_ADJ;Ys˘no;x
+URU_conservative;Reduccioneros;x
+URU_liberal;Antireduccioneros;x
+URU_reactionary;Los Encomenderos;x
+URU_anarcho_liberal;Federacion de Comercio;x
+URU_socialist;FDLT;x#Frente de Derechos de Los Trabajadores
+URU_communist;Trabajadores Unidos;x
+URU_fascist;Sol de Justicia;x
+URU_conservative_2;Union Nacional;x
+URU_liberal_2;Los Republicanos;x
+URU_conservative_3;Paritido Nacional;x
+URU_liberal_3;Movimiento para la Democracia;x
+URU_socialist_2;Partido para el Trabajo Libre;x                                            
+USR;Uilscyr;x                                                  
+USR_ADJ;Uilsc;x    
+USR_anarcho_liberal;Singrenes;x
+USR_communist;Tilies Heahgade;x
+USR_conservative;Redbers Meg;x
+USR_fascist;Beulims Meg;x
+USR_liberal;Doeres Meg;x
+USR_reactionary;Sundoranwals Meg;x    
+USR_socialist;Bigeneres Gade;x
 VIT;Vitebsk;x
 VIT_ADJ;Vitebskii;x
-VIT_conservative;Committee for Order;;;;;;;;x
-VIT_reactionary;Boyar Faction;;;;;;;;x
-VIT_liberal;Republicans;;;;;;;;;x
-VIT_anarcho_liberal;Blue Band;;;;;;;;x
-VIT_socialist;Farm and Worker Party;;;;;;;;;x
-VIT_communist;People's Council;;;;;;;;;;;x
-VIT_fascist;White Cross Party;;;;;;;;;x
-VOL;Volasea;;;;;;;;x
-VOL_ADJ;Volasean;;;;;;;;;x                                             
-VST;Vestland;;;;;;;;;;;;;x                                                 
-VST_ADJ;Vestlandic;;;;;;;;;;;;;x
-WHA;Cymru;;;;;;;;;;;;;x                                                    
-WHA_ADJ;Cymraeg;;;;;;;;;;;;;x
-YKT;Yakuts;;;;;;;;;;;x
-YKT_ADJ;Yakut;;;;;;;;;;;;x
-YUC;Yucatla;;;;;;;;;;x
-YUC_ADJ;Yucatlas;;;;;;;;;;x
-YUC_conservative;Federacion dels Kuchkabalob;;;;;;;;;;;;;;;x
-YUC_liberal;Partit de l'Independencia;;;;;;;;;;;;;;;x
-YUC_reactionary;Los Comanadors;;;;;;;;;;;;;;;x
-YUC_anarcho_liberal;Federacion Liure;;;;;;;;;;;;;;;x
-YUC_socialist;Partit dels Treballadors;;;;;;;;;;;;;;;x
-YUC_communist;Partit Socialista Obrier;;;;;;;;;;;;;;;x
-YUC_fascist;Ascendencia Maia;;;;;;;;;;;;;;;x
-ZAC;Zachadia;;;;;;;;;;;x
-ZAC_ADJ;Zachad;;;;;;;;;;;;x
+VIT_conservative;Committee for Order;x
+VIT_reactionary;Boyar Faction;x
+VIT_liberal;Republicans;x
+VIT_anarcho_liberal;Blue Band;x
+VIT_socialist;Farm and Worker Party;x
+VIT_communist;People's Council;x
+VIT_fascist;White Cross Party;x
+VOL;Volasea;x
+VOL_ADJ;Volasean;x                                             
+VST;Vestland;x                                                 
+VST_ADJ;Vestlandic;x
+WHA;Cymru;x                                                    
+WHA_ADJ;Cymraeg;x
+YKT;Yakuts;x
+YKT_ADJ;Yakut;x
+YUC;Yucatla;x
+YUC_ADJ;Yucatlas;x
+YUC_conservative;Federacion dels Kuchkabalob;x
+YUC_liberal;Partit de l'Independencia;x
+YUC_reactionary;Los Comanadors;x
+YUC_anarcho_liberal;Federacion Liure;x
+YUC_socialist;Partit dels Treballadors;x
+YUC_communist;Partit Socialista Obrier;x
+YUC_fascist;Ascendencia Maia;x
+ZAC;Zachadia;x
+ZAC_ADJ;Zachad;x

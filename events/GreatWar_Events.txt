@@ -6816,6 +6816,107 @@ country_event = {
 	}
 }
 
+#Imposition of a monarchy
+country_event = {
+	id = 96088
+	title = "EVTNAME96088" #The Return of the $COUNTRYADJ$ Ruler
+	desc = "EVTDESC96088"
+	picture = "unite"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA96088"
+		government = prussian_constitutionalism
+		ruling_party_ideology = conservative
+		political_reform = landed_voting
+		political_reform = appointed
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = harassment
+		set_country_flag = tory_election_win
+		clr_country_flag = socialist_election_win
+		clr_country_flag = liberal_election_win
+		clr_country_flag = communist_election_win
+		clr_country_flag = fascist_election_win
+		clr_country_flag = reactionary_election_win
+		clr_country_flag = anarcho_liberal_election_win
+		clr_country_flag = social_liberal_election_win
+		remove_country_modifier = expert_diplomat
+		remove_country_modifier = successful_industrialist
+		remove_country_modifier = ivory_tower_intellectual
+		remove_country_modifier = man_of_the_people
+		remove_country_modifier = landed_gentleman
+		remove_country_modifier = military_man
+		remove_country_modifier = lord_admiral
+		remove_country_modifier = raving_loon
+		remove_country_modifier = luddite
+		remove_country_modifier = great_statesman
+		remove_country_modifier = backroom_boy
+		remove_country_modifier = great_reformer
+		remove_country_modifier = gauche_buffoon
+		remove_country_modifier = administrative_genius
+		remove_country_modifier = visionary_thinker
+		remove_country_modifier = competent_placeholder
+		remove_country_modifier = imperious_autocrat
+		remove_country_modifier = prince_of_terror
+		remove_country_modifier = efficient_sociopath
+		remove_country_modifier = pig_headed_isolationist
+		remove_country_modifier = ambitious_union_boss
+		remove_country_modifier = dour_economist
+		random_country = {
+			limit = {
+				is_sphere_leader_of = THIS
+				NOT = { has_country_flag = friendly_monarchy }
+			}
+			diplomatic_influence = { who = THIS value = -100 }
+		}
+		random_country = {
+			limit = {
+				has_country_flag = friendly_monarchy
+				truce_with = THIS
+			}
+			relation = { who = THIS value = 400 }
+			diplomatic_influence = { who = THIS value = 100 }
+			create_alliance = THIS
+			clr_country_flag = friendly_monarchy
+		}
+		capital_scope = {
+			any_pop = {
+				limit = { literacy = 0.2 }
+				ideology = { factor = 0.05 value = liberal }
+			}
+			any_pop = {
+				limit = { literacy = 0.2 }
+				ideology = { factor = 0.1 value = conservative }
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -6
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = -4
+			}
+			scaled_militancy = {
+				ideology = communist
+				factor = 6
+			}
+			scaled_militancy = {
+				ideology = fascist
+				factor = 6
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = 2
+			}
+		}
+	}
+}
+
 country_event = {
 	id = 96090
 	title = "EVTNAME96090" #End of the Monarchy

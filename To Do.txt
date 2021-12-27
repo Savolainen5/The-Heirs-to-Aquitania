@@ -9,12 +9,12 @@ Events:
 - Generic event to annex countries that you have full cores on, as happens with Rome sometimes
 - Give Puppet CBs to owners of territory in India in the mid-late 1800s?
 - Made event 2610 (National Assimilation) in CBsandCores happen only after 1870, but would it be better to find some way to make it so that it doesn't fire when primary culture POPs of the country whose core would be removed are present? I looked into that and did some quick theorycrafting but couldn't come up with a good way to do it
+- Owner of Saorvaile in Africa can get Bopolu by event
 
 Decisions:
 
 - Japan claims Ainu Mosir and the northern islands (the latter decision exists already and has merely been disabled)
 - Imperial ambitions for Georgia
-- Owner of Saorvaile in Africa can get Bopolu by event
 - Owner of Liberia strongarms Mali into giving further inland parts or something. Currently Mali doesn't even hold them
 - check NationalUnification to see if the Arab Union needs to have the relevant culture group excluded in order to be able to form
 - A union of Margaria and Vestland
@@ -22,6 +22,8 @@ Decisions:
 - SHC accepts some neighbouring cultures if they hold their territory?
 - Indian cultures: Accept Dravidians, Assamese, Kashmiri
 - Korea goes after Manchuria
+- Russian ambitions against Finland
+- Roman Empire establishes more direct control over Syria
 
 POPs:
 

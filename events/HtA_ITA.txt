@@ -329,7 +329,8 @@ country_event = {
 	}
 }
 
-#####################Start events from 0.37#####################################
+#####################	Start events from 0.37	#####################################
+
 # 51851-51899 - Mostly for NPL, but some for PDN
 
 #Milan Conference - AI gets this when invited to form PDN
@@ -1342,7 +1343,142 @@ country_event = {
 	}
 }
 
-#Events 51869-51884 reserved for idk, something
+#Events 51869-51883 reserved for idk, something
+
+#Intervention in the Papal States - reimposition of the Pope's control
+country_event = {
+	id = 51884
+	title = "EVTNAME51884"
+	desc = "EVTDESC51884"
+	picture = "storming_palace"
+	
+	trigger = {
+		PAP = {
+			war_exhaustion = 35
+			vote_franschise = universal_weighted_voting
+			has_country_modifier = national_confusion
+			government = democracy
+		}
+		OR = {
+			tag = NPL
+			tag = MER
+		}
+		NOT = { has_country_flag = roman_republic_intervention }
+	}
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 0.1
+			year = 1842
+		}
+	}
+	immediate = {
+		set_country_flag = roman_republic_intervention
+	}
+	option = {
+		name = "We must restore the Pope as sovereign."
+		prestige = 5
+		badboy = 2
+		leave_alliance = PAP
+		casus_belli = {
+			target = PAP
+			type = install_monarchy
+		}
+		war = {
+			target = PAP
+			attacker_goal = { casus_belli = install_monarchy }
+			defender_goal = { casus_belli = status_quo }
+		}
+		
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0.1
+				government = democracy
+				NOT = { has_global_flag = railroading_on }
+			}
+			modifier = {
+				factor = 0.33
+				government = democracy
+				has_global_flag = railroading_on
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.96
+			}
+		}
+	}
+	option = {
+		name = "The Pope is clearly incapable of governing such a large region."
+		prestige = 1
+		badboy = 15
+		leave_alliance = PAP
+		casus_belli = {
+			target = PAP
+			type = conquest
+		}
+		war = {
+			target = PAP
+			attacker_goal = { casus_belli = conquest }
+			defender_goal = { casus_belli = status_quo }
+		}
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.5
+				has_global_flag = railroading_on
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
+	}
+	option = {
+		name = "The Papacy may be a useful puppet."
+		prestige = 2
+		badboy = 10
+		leave_alliance = PAP
+		casus_belli = {
+			target = PAP
+			type = make_puppet
+		}
+		war = {
+			target = PAP
+			attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = status_quo }
+		}
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+	option = {
+		name = "There is no reason to intervene."
+		prestige = -2
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+			modifier = {
+				factor = 100
+				government = democracy
+			}
+		}
+	}
+}
+
 
 ################################################################################################################
 #####Istriot rebellion chain, probably between AUS and PDN (well, I haven't coded it for anyone except PDN)#####
@@ -1733,8 +1869,8 @@ country_event = {
 #"Hidden" event that continues to destroy relations between PDN and NPL after the player hides the notification in 50035 and 50036
 country_event = {
 	id = 51891
-	title = "EVTNAME50891"
-	desc = "EVTDESC50891"
+	title = "EVTNAME51891"
+	desc = "EVTDESC51891"
 	picture = "meeting"
 	
 	trigger = {
@@ -1788,8 +1924,8 @@ country_event = {
 #"Hidden" event that continues to destroy relations between PDN and ITA after the player hides the notification in 50035 and 50036
 country_event = {
 	id = 51892
-	title = "EVTNAME50891"
-	desc = "EVTDESC50891"
+	title = "EVTNAME51891"
+	desc = "EVTDESC51891"
 	picture = "meeting"
 	
 	trigger = {
@@ -1847,9 +1983,9 @@ country_event = {
 
 #"Hidden" event that continues to destroy relations between PDN and ITA after the player hides the notification in 50035 and 50036
 country_event = {
-	id = 50892
-	title = "EVTNAME50892"
-	desc = "EVTDESC50892"
+	id = 51893
+	title = "EVTNAME51893"
+	desc = "EVTDESC51893" 
 	picture = "meeting"
 	
 	trigger = {
@@ -1905,6 +2041,65 @@ country_event = {
 	}
 }
 
+#"Hidden" event that continues to destroy relations between PDN and MER after the player hides the notification in 50035 and 50036
+country_event = {
+	id = 51894
+	title = "EVTNAME51894"
+	desc = "EVTDESC51894"
+	picture = "meeting"
+	
+	trigger = {
+		ai = yes
+		tag = MER
+		has_global_flag = hide_ita_relation_event
+		NOT = { month = 1 }
+		OR = {
+			PAP_741 = { owned_by = MER } 
+			TUS_744 = { owned_by = MER } 
+		}
+		PDN = {
+			NOT = {
+				has_country_modifier = hate_ITA
+				vassal_of = MER
+				war_with = MER
+			}
+		}
+		MER = { NOT = { vassal_of = PDN } }
+		NPL = { exists = no }
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "Relations continue to be awful."
+		PDN = {
+			relation = {
+				who = MER
+				value = -100
+			}
+			diplomatic_influence = {
+				who = MER
+				value = -200
+			}
+			add_country_modifier = {
+				name = hate_ITA
+				duration = 31
+			}
+		}
+		MER = {
+			relation = {
+				who = PDN
+				value = -100
+			}
+			diplomatic_influence = {
+				who = PDN
+				value = -200
+			}
+		}
+	}
+}
 
 #Premiere of La Traviata
 country_event = {
@@ -1939,3 +2134,19 @@ country_event = {
 	}
 }
 
+#Sion ceded to AQT (triggered by cede_sion_ai decision in HtA_PDN)
+country_event = {
+	id = 51896
+	title = "EVTNAME51896"
+	desc = "EVTDESC51896"
+	picture = "Rhineland"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "In the hands of its rightful owners."
+		609 = { secede_province = AQT }
+		money = -2000
+		FROM = { money = 2000 }
+	}
+}

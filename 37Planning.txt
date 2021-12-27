@@ -38,7 +38,7 @@ Italy:
 	- Check the form_italy_without decision in NationalUnification
 	- Make sure there aren't pan-nationalist rebels or something
 - PDN civil war between monarchists and republicans --> the finishing of the provisional government chain
--Deal with the ITAFlavor event and decision files
+- Deal with the ITAFlavor event and decision files
 - Sicily and the education stuff
 	- Choosing local language leads to Sicilian accepted
 	- Choosing Neapolitan grants an assimilation bonus to Sicilian provinces --> But why do that when you could just get Sicilian accepted and be done with it?
@@ -46,7 +46,7 @@ Italy:
 -Sicilian party names
 -Follow-on for the event where you get a Conquest CB on Corsica-Sardinia?
 		
-Other:
+Other: (probably actually for the 0.4 update)
 - Figure out how crazy and stuff the AQT modifiers are. Uncle Sam keeps complaining about there being way too much CON and MIL growth ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
 
 	This is some other stuff that might not be so necessary

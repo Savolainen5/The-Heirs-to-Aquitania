@@ -233,8 +233,12 @@ form_mellomamerika_title;Form Mellomamerika;;;;;;;;;;x,,,,
 form_mellomamerika_desc;Our superiority over our other Mellomsk neighbors puts us in a position to form a powerful union of Mellomamerika. Let us embrace our destiny!;;;;;;;;;x,,,,
 form_mellomamerika_without_title;Unify Mellomamerika;;;;;;;;;;x
 form_mellomamerika_without_desc;The small Mellomsk settler states of Mellomamerika, long abandoned by their former Norwegian colonial overloards, would be a far more useful ally if united - under our guidance, of course.;;;;;;;;;;x
+form_meridion_title;Unite the South;x
+form_meridion_desc;It is time to formally incorporate Rome and Sicily into our kingdom, and with that a better name is needed. The Meridion is the whole southern part of the Italian peninsula - it has been so called in the vernacular throughout Europe for centuries. Let it now enter the formal, too. The Meridion shall be our stepping stone to bringing the whole of the Italian peninsula under our sway!;x
 form_irakleio_title;Declare the Republic of Irakleio;;;;;;;;x
 form_irakleio_desc;The fortunes of our island trade republic continue to rise, and it is necessary that we no longer be confined to an old name and an old way of thinking. We must restructure our country to better ensure our continued survival and prosperity. Let us rebrand ourselves as the Republic of Irakleio, a truly cosmopolitan country where prosperity, not ethnicity or language, is the deciding factor in a man's worth.;;;;;;;;x
+form_italy_title;Avanti Italia!;x
+form_italy_desc;By establishing a dominant position on the Italian peninsula, we can create a national homeland for all its residents by proclaiming ourselves the motive power of a unified Italian state. Such a thing has never before been done, but the Italians have never been conventional people. \n\n§RNB: In addition to Italian cores you must control/puppet Florence, Genoa, Milan and Venice.;x
 form_russian_empire_title;Declare a Great Russian Empire;x
 form_russian_empire_desc;With the final defeat of the backwards, religion-obsessed Tsar in Moscow, it is time to unite all Great Russians in a more Westward-facing empire, under the Imperator in Smolensk, the true capital of all Russia!;x
 form_scylfiga_woning_title;An Amerigan Woning;;;;;;;;;;x
@@ -321,6 +325,8 @@ info_german_title;HtA Germany Info;x
 info_german_desc;The big three in Germany are of course the big B's - Bavaria, Brandenburg and Brunswick (who at the beginning of the game is big on soft power). Once it's time to claim German hegemony (which currently can only be done with those three), you'll take the decision and the others should immediately follow. Then there'll be a major event which will announce the beginning of the wars. Only after that are the CBs available. NB - If you from NGF or SGF, you will lose access to these CBs. I'll rework Germany formation in 0.40 probably and remove NGF/SGF.;x
 info_MLT_title;HtA Malta Info;x
 info_MLT_desc;I recommend against playing Malta. It's going to be even more lame than in vanilla, because while there's a little bit of flavour, I didn't really bother to write events for much of the Maltese side of things, and if you're playing railroaded, you're GOING to get puppeted and annexed. So just don't.;x
+info_NPL_title;HtA Southern Italy Info;x
+info_NPL_desc;In this game, Italy is a geographical term and it will take some BIG work to get to control all of Italy as we know it in our world. First things first, you'll want to form Meridion, a formable which formally incorporates Sicily (not a centralized part of the Kingdom of Naples) and the Papal States. After that you'll have to see what kinds of opportunities arise for targeting the Padan Union, and then form Italy. (As of the end of 2021, there's nothing yet that will let you do anything that conquer them with your own initiative.);x
 info_PDN_title;HtA Padan Union Info;x
 info_PDN_desc;If you didn't already know, within a couple of years of game start, these four countries under the Alps will unite. It will work as any of them, but don't have an MP with more than one person playing among the four countries.\n\nIt's also not a great idea to have a human Padan Union and a human Naples if you want them to cooperate, due to the way some things are written.;x
 info_POL_title;HtA Poland Info;x
