@@ -1331,6 +1331,7 @@ country_event = {
 		government = provisional_government_yes_election
 		has_country_flag = PDN_tensions1
 		NPL = { is_vassal = no }
+		MER = { is_vassal = no }
 		ITA = { is_vassal = no }
 	}
 	
@@ -1343,7 +1344,50 @@ country_event = {
 	}
 }
 
-#Events 51869-51883 reserved for idk, something
+#Event to add cores for PDR
+country_event = {
+	id = 51869
+	title = "EVTNAME51869"
+	desc = "EVTDESC51869"
+	picture = "deliberation"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = PDN_tensions2
+		tag = PDN
+		year = 1844
+	}
+	mean_time_to_happen = {
+		months = 7
+	}
+	option = {
+		name = "It cannot continue like this."
+		set_country_flag = PDN_tensions3
+		SWI_605 = { add_core = PDR } #Liguria
+		AUS_729 = { add_core = PDR } #Venezia
+		PDR = {
+			any_country = {
+				limit = {
+					tag = THIS
+					744 = { owned_by = THIS }  #Florence
+				}
+				TUS_744 = { add_core = PDR } #Tuscany
+			}
+		}
+		PDR = {
+			any_country = {
+				limit = {
+					tag = PDN
+					owns = 736 #Trieste
+				}
+				AUS_736 = { add_core = PDR } #Istria
+			}
+		}
+	}
+}
+
+#Events 51869-51883 reserved for the PDN civil war
 
 #Intervention in the Papal States - reimposition of the Pope's control
 country_event = {

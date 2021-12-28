@@ -835,6 +835,8 @@ EVTNAME51867;A Fragile Union;x
 EVTDESC51867;The states of the Padanian Plain may be united against the threat to the south, but underneath the surface there are many disagreements. The largest and most important is the underlying philosophy of government of the component states. Genoa and Venice, as states with long histories of non-noble rule, stand in almost diametric opposition to the noble-led states of Lombardia and Modena. For now, they can find common ground in the oligarchical nature of their rule, but it is not a long step from the social mobility of merchant families to just any peasant becoming powerful. Indeed, it is said that many prominent and powerful citizens of Venice and Genoa have Albesan leanings. As such, many such people who are involved in politics have come to be called Republicans, while those who prefer the old ways with noble rule are called Noblists.;x
 EVTNAME51868;Tensions Rise in the Senate;x
 EVTDESC51868;With our recent victories over Naples, people in the Union are beginning to feel that the threat is abating. This means that the differences put aside to face the existential threat are coming to the fore again. Debates between noblists and republicans in the Senate are becoming increasingly strident, and it will not be long before threats of violence become commonplace even its hallowed halls.;x
+EVTNAME51869;Open Republican Dissent;x
+EVTDESC51869;With tensions continuing to rise unabated at all levels of society, there are various advocates of a more republican and, even, a democratic system who are speaking out ever more brazenly. Scattered reports of violence and even some small-scale riots have begun to come in, and the tone in the Senate is becoming more heated by the day.;x
 EVTNAME51884;Intervention in the Papal State;x
 EVTDESC51884;The ungrateful subjects of the Pope have rebelled and forced him to flee, creating their own republic. If not even God's representative on Earth is safe from liberalism, where will they stop? This is an existential threat not only to the existing political order, but to all of Christianity!;x
 EVTNAME51885;Istriots Rebel;x
@@ -938,6 +940,12 @@ EVTNAME59800;Election Reforms;x
 EVTDESC59800;This provisional government is taking a more permanent shape. It was recently decided in $CAPITAL$ that elections should be held, so that our government might have a more popular mandate.;x
 EVTNAME59801;No More Elections;x
 EVTDESC59801;The Councilmen in $CAPITAL$ have decided that the provisional government will be able to function more effectively without the needless arguing that comes naturally among elected officials. Starting today there shall be no elections until further notice.;x
+EVTNAME91306;Manage Vassals;x
+EVTDESC91306;This event will cause each of our vassals to send us an event in which we will decide whether to free them or not. Do you want to release some vassals?;x
+EVTNAME91307;Overlord Reviews Vassal Status;
+EVTDESC91307;Dummy description, you shouldn't be able to see this normally.;x
+EVTNAME91308;Release $FROMCOUNTRY$?;x
+EVTDESC91308;Release them from vassalship, or no?;x
 EVTNAME95600;The New Leader;x
 EVTDESC95600;The Shawnee Confederation was established in the 18th century in the wake of the successful defensive wars against Norway. In 1811, the French prince and explorer Henri Tournus wedded Nonhelema, the sister of Chief Hokolesqua, under agreement that their children would take the Chief's family name of Spithotha. After Hokolesqua passed away, a council of elders was convened to select his successor. Among the choices available were Lalawethika, the firstborn son of Hokolesqua, who favored a traditional relationship with the land and maintaining a hard line against European encroachment. His primary rival was the son of Henri and Honhelema, Tenskwatawa Ulysse, who had received a partial European education and favored modernizing the Confederation.;;x 
 EVTNAME95603;Total War Against the White Man;x

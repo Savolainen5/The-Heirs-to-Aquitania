@@ -21,7 +21,7 @@ Poland:
 
 Italy:
 
-- Rework NPL->ITA. Perhaps some sort of Mezzogiorno-like country ---- Meridional Kingdom
+#- Rework NPL->ITA. Perhaps some sort of Mezzogiorno-like country ---- Meridional Kingdom
 - Italy as a formable for the whole peninsula but only under specific circumstances and before a certain time:
 	- NPL falling to Albesan rebels gives a temporary CB to conquer Italy and then form it? (MajorMajor)
 	- PDN breakup gives NPL an opportunity to unite the peninsula
@@ -39,11 +39,11 @@ Italy:
 	- Make sure there aren't pan-nationalist rebels or something
 - PDN civil war between monarchists and republicans --> the finishing of the provisional government chain
 - Deal with the ITAFlavor event and decision files
-- Sicily and the education stuff
-	- Choosing local language leads to Sicilian accepted
-	- Choosing Neapolitan grants an assimilation bonus to Sicilian provinces --> But why do that when you could just get Sicilian accepted and be done with it?
-		- Because SCL cores get removed!
--Sicilian party names
+#- Sicily and the education stuff
+#	- Choosing local language leads to Sicilian accepted
+#	- Choosing Neapolitan grants an assimilation bonus to Sicilian provinces --> But why do that when you could just get Sicilian accepted and be done with it?
+#		- Because SCL cores get removed!
+#-Sicilian party names
 -Follow-on for the event where you get a Conquest CB on Corsica-Sardinia?
 		
 Other: (probably actually for the 0.4 update)

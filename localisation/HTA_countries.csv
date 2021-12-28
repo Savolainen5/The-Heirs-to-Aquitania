@@ -156,24 +156,24 @@ CLF_conservative_2;Partido para la Prosperidad;x
 CLF_liberal_2;Union Civica;x                  
 CLT;Ceilteach Federation;x
 CLT_ADJ;Ceilteach;x
-CLT_conservative_92;Conservatives;Conservatives;Conservatives;x;
-CLT_liberal_79;Liberals;Liberals;Liberals;x;
-CLT_liberal_87;National Liberals;National Liberals;National Liberals;x;
-CLT_socialist_85;Socialists;Socialists;Socialists;x;
-CLT_socialist_99;National Socialists;National Socialists;National Socialists;x;
-CLT_reactionary_84;Monarchy Leadership;Monarchy Leadership;Monarchy Leadership;x;
-CLT_anarcho_liberal_93;Radical Liberals;Radical Liberals;Radical Liberals;x;
-CLT_communist_86;Communists;Communists;Communists;x;
-CLT_fascist_72;Fascists;Fascists;Fascists;x;                   
+CLT_conservative_92;Conservatives;x
+CLT_liberal_79;Liberals;x
+CLT_liberal_87;National Liberals;x
+CLT_socialist_85;Socialists;x
+CLT_socialist_99;National Socialists;x
+CLT_reactionary_84;Monarchy Leadership;x
+CLT_anarcho_liberal_93;Radical Liberals;x
+CLT_communist_86;Communists;x
+CLT_fascist_72;Fascists;x;                   
 CMP;Champagne;x                                                
 CMP_ADJ;Champagnois;x                                          
 CMP_conservative;Conseil Ducal;x
-CMP_conservative_2;Champagnoises;Champagnoises;Champagnoises;x; 
+CMP_conservative_2;Champagnoises;x
 CMP_conservative_3;Royalistes;x
 CMP_liberal;Société Cosmopolitaine;x
 CMP_liberal_2;Union Démocratique;x
-CMP_socialist;Lys Rouge;Lys Rouge;Lys Rouge;x;                
-CMP_reactionary;Normands;Normands;Normands;x;                 
+CMP_socialist;Lys Rouge;Lys Rouge;Lys Rouge;x
+CMP_reactionary;Normands;Normands;Normands;x
 CMP_anarcho_liberal;Unificateurs;x; 
 CMP_communist;Bonnet Phrygien;x
 CMP_fascist;Nouvelle France;x;
@@ -320,19 +320,19 @@ HOY_communist;Radikale Arbeiderpartiet;x
 HOY_fascist;Fedrelandslaget;x                                      
 INC;Inca;x                                                     
 INC_ADJ;Incan;x                                                
-INC_conservative_92;Conservatives;Conservatives;Conservatives;x; 
-INC_liberal_79;Liberals;Liberals;Liberals;x;                     
-INC_liberal_87;National Liberals;National Liberals;National Liberals;x
-INC_socialist_85;Socialists;Socialists;Socialists;x;             
-INC_socialist_99;National Socialists;National Socialists;National Socialist;x
-INC_reactionary_84;Monarchy Leadership;Monarchy Leadership;x
-INC_anarcho_liberal_93;Radical Liberals;Radical Liberals;Radical Liberals;x
-INC_communist_86;Communists;Communists;Communists;x;             
-INC_fascist_72;Fascists;Fascists;Fascists;x;                     
-IRE;Éire;x                                                     
-IRE_ADJ;Éireann;x         
+INC_conservative_92;Conservatives;x
+INC_liberal_79;Liberals;x
+INC_liberal_87;National Liberals;x
+INC_socialist_85;Socialists;x
+INC_socialist_99;National Socialists;x
+INC_reactionary_84;Monarchy Leadership;x
+INC_anarcho_liberal_93;Radical Liberals;x
+INC_communist_86;Communists;x
+INC_fascist_72;Fascists;x
+IRE;Éire;x
+IRE_ADJ;Éireann;x
 IRK;Irakleio;x
-IRK_ADJ;Irakleian;x                                     
+IRK_ADJ;Irakleian;x
 IRO;Iroquois;x
 IRO_ADJ;Iroquoian;x
 IRO_conservative_3;Honotayonih;x
@@ -364,8 +364,8 @@ JAM_anarcho_liberal;Hervormingspartij;x
 JAM_socialist;Arbeiderspartij;x
 JAM_communist;Algemene Arbeidersunie;x
 JAM_fascist;Volksalliantie voor Broederschap;x
-JER;Jerusalem;x;;;;;;
-JER_ADJ;Outramarin;x;;;;;
+JER;Jerusalem;x
+JER_ADJ;Outremarin;x
 JER_conservative;Royalistes;x
 JER_liberal;Union Démocratique;x
 JER_reactionary;Parti Outremer;x
@@ -494,19 +494,19 @@ NFB;Naffaroako Berria;x
 NFB_ADJ; Berrian;x                                             
 NHL;New Holland;x                                              
 NHL_ADJ;New Holland;x                                          
-NHL_conservative_92;Conservatives;Conservatives;Conservatives;x; 
-NHL_liberal_79;Liberals;Liberals;Liberals;x;                     
-NHL_liberal_87;National Liberals;National Liberals;National Liberals;x
-NHL_socialist_85;Socialists;Socialists;Socialists;x;             
-NHL_socialist_99;National Socialists;National Socialists;National Socialist;x
-NHL_reactionary_84;Monarchists Leadership;Monarchy Leadership;x
-NHL_anarcho_liberal_93;Radical Liberals;Radical Liberals;Radical Liberals;x
-NHL_communist_86;Communists;Communists;Communists;x;             
-NHL_fascist_72;Fascists;Fascists;Fascists;x;                     
-NPL;Naples;x                                                   
-NPL_ADJ;Neapolitan;x                                           
-NRM;Normandy;x                                                 
-NRM_ADJ;Normand;x                                              
+NHL_conservative_92;Conservatives;x
+NHL_liberal_79;Liberals;x
+NHL_liberal_87;National Liberals;x
+NHL_socialist_85;Socialists;x
+NHL_socialist_99;National Socialists;x
+NHL_reactionary_84;Monarchists Leadership;x
+NHL_anarcho_liberal_93;Radical Liberals;x
+NHL_communist_86;Communists;x
+NHL_fascist_72;Fascists;x
+NPL;Naples;x
+NPL_ADJ;Neapolitan;x
+NRM;Normandy;x
+NRM_ADJ;Normand;x
 NRM_reactionary;Monarchistes;x
 OAX_conservative;Partit de lo Ben 'Zaa;x
 OAX_liberal;Los Albesanos de Huaxyacac;x
@@ -537,6 +537,8 @@ PDN_liberal;Fazziun Republicana;x
 PDN_reactionary;Fazziun Monarchista;x
 PDN_reactionary_2;Partii della Terra;x
 PDN_socialist;Partii del Popel;x
+PDR;Padan Republican Revolt;x
+PDR_ADJ;Republican;x
 PHL;Panaja;x
 PHL_ADJ;Panajan;x
 POL_anarcho_liberal_1;Zasciankowcy;x
@@ -637,14 +639,14 @@ SHC_fascist;Thepatiiwomhsoomi;x
 SHC_conservative_2;Petakineethiiwomhsoomi;x
 SCL;Sicily;x
 SCL_ADJ;Sicilian;x
-SIC_anarcho_liberal;Liga Indipendente;x
-SIC_communist;Partito dei lavoratori;x
-SIC_conservative;Partito Cristiano;x
-SIC_conservative_2;Reppublicani Cristiani;x
-SIC_fascist;Movemento fascista;x
-SIC_liberal;Coalizione Albesana;x
-SIC_liberal_2;Democrazia Siciliana;x
-SIC_reactionary;Unione Blu;x
+SIC_anarcho_liberal;Lega 'Nnipinnenti;x
+SIC_communist;Partitu dî travagghiaturi;x
+SIC_conservative;Partitu Cristianu;x
+SIC_conservative_2; Ripubblicani Cristiani;x
+SIC_fascist;Muvimentu Fascista;x
+SIC_liberal;Coalizzioni Albesana;x
+SIC_liberal_2;Dimucrazzìa Siciliana;x
+SIC_reactionary;Unioni Blu;x
 SIC_socialist;PSS;x
 SKA;Scania;x
 SKA_ADJ;Scanian;x

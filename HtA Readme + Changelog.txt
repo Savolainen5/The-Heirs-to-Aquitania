@@ -45,6 +45,7 @@ Thanks to:
 - Rennes for showing me how $ORDER$ works in war localization
 - Jorde for testing help
 - zake for pointing out many bugs and things to improve
+- Lastly, the Vic2 Modding server on Discord
 
 NB for the changelog - Anything with lots of # or * after it is something Savs is still working on or hasn't gotten fully/correctly implemented yet
 
@@ -63,6 +64,7 @@ Major
 - Added a decision for RUS to break the truce and just go capture the city of Smolensk if they have basically no military. It costs more infamy, but has the same end result as the other two ways to end the conflict
 - Improvements to Aenglisc-Albannach (and also AEN-IRE) war interactions, how Alba's colonies are handed out (still work to be done here to make it more dynamic) and the AI's ability to conclude the wars
 - Decision for AI countries not to interfere in the Russian wars if both RUS and SML are AI. They will take the decision to leave the war if they are called in and accept it.
+- Incorporated a new system for releasing vassals, with thanks to the Vic2 Modding server on Discord
 - A lot of stuff by ChortlingGnome in North and South Ameriga:
 	- Shawnee internal conflict and defensive wars against post-colonial countries
 	- Decisions for the aforementioned countries to get cores on native land in NA

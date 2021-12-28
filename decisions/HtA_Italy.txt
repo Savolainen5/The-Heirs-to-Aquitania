@@ -2,24 +2,30 @@ political_decisions = {
 	scaglia_decree = {
 		picture = the_rights_of_man
 		potential = {
-			has_country_flag = post_war_tuscan_crackdown
+			NOT = { exists = PAP }
+			nationalism_n_imperialism = 1
 			OR = {
 				tag = ITA
 				tag = MER
 			}
-			744 = { owned_by = THIS NOT = { is_core = THIS } }
-			743 = { owned_by = THIS NOT = { is_core = THIS } }
+			has_country_flag = post_war_tuscan_crackdown
+			744 = { NOT = { is_core = THIS } } #Florence
+			743 = { NOT = { is_core = THIS } } #Ravenna
+			NOT = { government = democracy }
 		}
 		
 		allow = {
-			NOT = { exists = PAP }
-			NOT = { government = democracy }
+			744 = { owned_by = THIS }
+			743 = { owned_by = THIS }
+			749 = { owned_by = THIS }
+			invention = national_fraternity
 		}
 		
 		effect = {
 			prestige = 5
 			add_accepted_culture = north_italian
 			TUS_744 = { add_core = THIS }
+			PAP_741 = { add_core = THIS }
 		}
 	}
 	
