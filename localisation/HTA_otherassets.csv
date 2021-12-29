@@ -152,16 +152,16 @@ provisional_government_no_election;Provisional Government;x
 provisional_government_no_election_ruler;Councilmen;x
 provisional_government_yes_election;Provisional Government;x
 provisional_government_yes_election_ruler;Councilmen;x
-UNIT_BUILD_TIME_IW;$VAL$ days.;;;;;;;;;;x;
-DIPLOMACY_FILTER_NORTH_AMERICA;North Ameriga;;;;;;;;;;x;;;;
-DIPLOMACY_FILTER_SOUTH_AMERICA;South Ameriga;;;;;;;;;;x;;;;
-DIPLOMACY_FILTER_OCEANIA;Volturnia;Oc嶧nie;Ozeanien;;Ocean燰;;;;;;;;;x;;;;
-DIPLOMACY_FILTER_NORTH_AMERICA_TOOLTIP;List 即North Amerigan劬 countries;;;;;;;;;;x;;;;
-DIPLOMACY_FILTER_SOUTH_AMERICA_TOOLTIP;List 即South Amerigan劬 countries;;;;;;;;;;x;;;;
-DIPLOMACY_FILTER_OCEANIA_TOOLTIP;List countries in 即Volturnia劬;;;;;;;;;;x;;;;
-north_america;North Ameriga;;;;;;;;x;;;;
-south_america;South Ameriga;;;;;;;x;;;;
-oceania;Volturnia;;;;;;;;x;;;;
+UNIT_BUILD_TIME_IW;$VAL$ days.;;;;;;;;;;x
+DIPLOMACY_FILTER_NORTH_AMERICA;North Ameriga;;;;;;;;;;x
+DIPLOMACY_FILTER_SOUTH_AMERICA;South Ameriga;;;;;;;;;;x
+DIPLOMACY_FILTER_OCEANIA;Volturnia;Oc嶧nie;Ozeanien;;Ocean燰;;;;;;;;;x
+DIPLOMACY_FILTER_NORTH_AMERICA_TOOLTIP;List 即North Amerigan劬 countries;;;;;;;;;;x
+DIPLOMACY_FILTER_SOUTH_AMERICA_TOOLTIP;List 即South Amerigan劬 countries;;;;;;;;;;x
+DIPLOMACY_FILTER_OCEANIA_TOOLTIP;List countries in 即Volturnia劬;;;;;;;;;;x
+north_america;North Ameriga;;;;;;;;x
+south_america;South Ameriga;;;;;;;x
+oceania;Volturnia;;;;;;;;x
 GC_DESC;This is an era of change. The past two decades of wars and failed revolutions were just the beginning. The Hispanian Revolution of the 1820s hardened the hearts of Europe's royalty against the liberal cause. The Imperial War (1829-1835) saw the dissolution of the Holy Roman Empire, leaving a gaping hole in Europe. The ossified political and social structures of Old Europe will no doubt be swept away as well. No matter who you are, there are riches and glory to be had in this age of upheaval, if only you have the vision to claim them. Choose your nation and guide it to its destiny!;;;;;;;;;;;x
 abolitionism_cb;Enforce Abolition;;;;;;;;;;;;x
 abolitionism_cb_desc;Demand a country halt the barbaric practice of slavery;;;;;;;;;;;;x
@@ -179,7 +179,7 @@ germany_acquire_state;German Hegemony;;;;;;;;;x
 germany_acquire_state_short;Acquire the German state of $STATE$;;;;;;;;;;;x
 germany_acquire_state_setup;Acquire the German state of $STATE$ from $RECIPIENT$;;;;;;;;;;;;x
 germany_acquire_state_desc;Claim a state belonging to another German ruler and incorporate it into our realm, bringing us one step closer to hegemony in Germany.;;;;;;;;;;x
-germany_conquer;German Hegemony - Annex;;;;;;;;;x
+germany_conquer;German Hegemony - Annexx
 germany_conquer_short;Annex the German state of $RECIPIENT$;;;;;;;;;;;x
 germany_conquer_setup;Annex the German state of $RECIPIENT$;;;;;;;;;;;;x
 germany_conquer_desc;Claim the last state belonging to another German ruler and incorporate it into our realm, bringing us one step closer to hegemony in Germany.;;;;;;;;;;x
@@ -195,7 +195,7 @@ install_monarchy;Install Monarchy;x
 install_monarchy_short;(Re)Install a Monarchy;x
 install_monarchy_setup;(Re)Install a Monarchy in $RECIPIENT$;x
 install_monarchy_desc;There should be a ruler on the throne of this country. Let us reinstall one if there has been one, or else install a new one.;x
-russia_annex;Russian Unification;x
+russia_annexRussian Unification;x
 russia_annex_short;Conquer $RECIPIENT$;x
 russia_annex_setup;Conquer $RECIPIENT$ to unite Russia once and for all.;x
 russia_annex_desc;It is time to unite the Great Russian people and put an end to the centuries-long stalemate between our two countries.;x

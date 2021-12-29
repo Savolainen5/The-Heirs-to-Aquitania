@@ -1387,6 +1387,92 @@ country_event = {
 	}
 }
 
+#Event which frees PDR so they can start building an army and stuff
+country_event = {
+	id = 51870
+	title = "EVTNAME51870"
+	desc = "EVTDESC51870"
+	picture = "deliberation"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = PDN_tensions3
+		tag = PDN
+		war = no
+		OR = {
+			754 = { owner = { is_greater_power = no } }
+			AND = {
+				754 = { owner = { is_greater_power = yes } }
+				is_greater_power = yes
+			}
+		}
+		OR = {
+			744 = { owned_by = THIS }
+			741 = { owned_by = THIS }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+	}
+	
+	immediate = {
+		government = absolute_monarchy
+		any_pop = {
+			limit = {
+				NOT = {
+					location = {
+						is_core = PDR
+					}
+				}
+				is_primary_culture = yes
+				pop_majority_ideology = liberal
+			}
+			ideology = {
+				factor = 2
+				value = conservative
+			}
+		}
+		any_pop = {
+			militancy = -7
+			consciousness = -5
+		}
+	}
+	
+	option = {
+		name = "The danger to the union increases."
+		release_vassal = PDR
+		PDR = {
+			country_event = {
+				id = 100040006
+				days = 2
+			}
+			country_event = {
+				id = 60160
+				days = 1
+			}
+			money = 100000
+		}
+	}
+	option = {
+		name = "Prepare the republican revolt."
+		release_vassal = PDR
+		PDR = {
+			country_event = {
+				id = 100040006
+				days = 2
+			}
+			country_event = {
+				id = 60160
+				days = 1
+			}
+			money = 100000
+		}
+		change_tag_no_core_switch = PDR
+		ai_chance = { factor = 0 }
+	}
+}
 #Events 51869-51883 reserved for the PDN civil war
 
 #Intervention in the Papal States - reimposition of the Pope's control
