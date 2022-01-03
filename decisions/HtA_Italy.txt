@@ -87,6 +87,7 @@ political_decisions = {
 			has_global_flag = TUS_fell
 			NOT = {
 				casus_belli = TUS
+				has_country_flag = reconquer_tuscany_maybe
 			}
 			OR = {
 				tag = NPL
@@ -109,8 +110,9 @@ political_decisions = {
 			casus_belli = {
 				target = TUS
 				type = conquest
-				months = 120
+				months = 36
 			}
+			set_country_flag = reconquer_tuscany_maybe
 		}
 		ai_will_do = {
 			factor = 1
@@ -222,6 +224,45 @@ political_decisions = {
 			change_tag = MER
 			NPL = { all_core = { add_core = MER } }
 			PAP_752 = { add_core = MER }
+		}
+	}
+	
+	#Start the Padan Civil War
+	PDN_start_civil_war = {
+		picture = marching_soldiers
+		potential = {
+			tag = PDR
+			exists = PDN
+			vassal_of = PDN
+			war = no
+			PDN = { war = no }
+		}
+		allow = {
+			OR = {
+				military_score = 10
+				AND = {
+					ai = yes
+					NOT = {
+						has_country_modifier = timer
+					}
+				}
+			}
+		}
+		effect = {
+			PDN = {
+				country_event = 51871
+			}
+			add_country_modifier = {
+				name = fighting_civil_war
+				duration = 365
+			}
+		}
+		ai_will_do = {
+			modifier = 0
+			NOT = {
+				military_score = 20
+				year = 1853
+			}
 		}
 	}
 }

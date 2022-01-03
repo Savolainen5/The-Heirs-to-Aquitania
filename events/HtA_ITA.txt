@@ -33,7 +33,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 1
 		modifier = {
-			factor = 0.1
+			factor = 0.01
 			year = 1836
 		}
 	}
@@ -1301,7 +1301,7 @@ country_event = {
 	
 	trigger = {
 		tag = PDN
-		year = 1839
+		year = 1843
 	}
 	mean_time_to_happen = {
 		months = 6
@@ -1323,7 +1323,7 @@ country_event = {
 	
 	trigger = {
 		tag = PDN
-		year = 1841
+		year = 1845
 		OR = {
 			owns = 744 #Florence
 			owns = 741 #Bologna
@@ -1356,7 +1356,7 @@ country_event = {
 	trigger = {
 		has_country_flag = PDN_tensions2
 		tag = PDN
-		year = 1844
+		year = 1847
 	}
 	mean_time_to_happen = {
 		months = 7
@@ -1398,6 +1398,7 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = PDN_tensions3
+		year = 1850
 		tag = PDN
 		war = no
 		OR = {
@@ -1430,7 +1431,7 @@ country_event = {
 				pop_majority_ideology = liberal
 			}
 			ideology = {
-				factor = 2
+				factor = 2									#########DOES THIS WORK? THE VALIDATOR SAYS IT'S WRONG
 				value = conservative
 			}
 		}
@@ -1453,6 +1454,10 @@ country_event = {
 				days = 1
 			}
 			money = 100000
+			add_country_modifier = {
+				name = timer
+				duration = 360
+			}
 		}
 	}
 	option = {
@@ -1468,12 +1473,159 @@ country_event = {
 				days = 1
 			}
 			money = 100000
+			add_country_modifier = {
+				name = timer
+				duration = 360
+			}
 		}
 		change_tag_no_core_switch = PDR
 		ai_chance = { factor = 0 }
 	}
 }
-#Events 51869-51883 reserved for the PDN civil war
+
+#The PDN civil war starts (triggered by a decision named like that in HtA_Italy
+country_event = {
+	id = 51871
+	title = EVTNAME51871
+	desc = EVTDESC51871
+	picture = "map_italy_north"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "To arms!"
+		set_global_flag = PDN_civil_war_fired
+		release_vassal = PDR
+		relation = {
+			who = PDR
+			value = -400
+		}
+		diplomatic_influence = {
+			who = PDR
+			value = -500
+		}
+		war = {
+			target = PDR
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = civil_war }
+		}
+		add_country_modifier = {
+			name = fighting_civil_war
+			duration = 365
+		}
+	}
+}
+
+#PDN (nobilist) victory in civil war
+country_event = {
+	id = 51872
+	title = EVTNAME51872
+	desc = EVTDESC51872
+	picture = "map_italy_north"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = PDN_civil_war_fired
+		tag = PDN
+		NOT = { exists = PDR }
+		any_owned_province = { is_core = PDR }
+	}
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.001
+			NOT = { exists = PDR }
+		}
+	}
+	option = {
+		name = "Peace at last!"
+		prestige = 20
+		PDR = {
+			all_core = {
+				remove_core = PDR
+				add_core = PDN
+			}
+		}
+		any_pop = {
+			limit = {
+				location = {
+					continent = europe
+					is_core = THIS
+				}
+				NOT = {
+					pop_majority_ideology = reactionary
+					pop_majority_ideology = conservative
+				}
+			}
+			ideology = {
+				factor = 3									#########DOES THIS WORK? THE VALIDATOR SAYS IT'S WRONG
+				value = conservative
+			}
+			militancy = -5
+			consciousness = -2
+		}
+		remove_country_modifier = fighting_civil_war
+	}
+}
+
+#PDR (republican) victory in civil war
+country_event = {
+	id = 51873
+	title = EVTNAME51873
+	desc = EVTDESC51873
+	picture = "map_italy_north"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = PDN_civil_war_fired
+		tag = PDR
+		NOT = { exists = PDN }
+		any_owned_province = {
+			is_core = PDN
+			NOT = { is_core = THIS }
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.001
+			NOT = { exists = PDN }
+		}
+	}
+	option = {
+		name = "Peace at last!"
+		prestige = 20
+		change_tag = PDN
+		PDR = {
+			all_core = {
+				remove_core = PDR
+				add_core = PDN
+			}
+		}
+		any_pop = {
+			limit = {
+				location = {
+					continent = europe
+					is_core = THIS
+				}
+				NOT = {
+					pop_majority_ideology = liberal
+				}
+			}
+			ideology = {
+				factor = 4									#########DOES THIS WORK? THE VALIDATOR SAYS IT'S WRONG
+				value = liberal
+			}
+			militancy = -5
+			consciousness = -2
+		}
+		remove_country_modifier = fighting_civil_war
+	}
+}
+
+#Events 51874-51883 reserved for the PDN civil war
 
 #Intervention in the Papal States - reimposition of the Pope's control
 country_event = {
@@ -2241,8 +2393,9 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		729 = { owned_by = THIS }
 		year = 1853
+		729 = { owned_by = THIS }
+		NOT = { tag = PDR }
 	}
 	
 	mean_time_to_happen = {

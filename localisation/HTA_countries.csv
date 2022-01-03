@@ -529,6 +529,13 @@ PAT;Pattani;x
 PAT_ADJ;Pattani;x
 PDN;Padan Union;x
 PDN_ADJ;Padanese;x
+PDN_absolute_monarchy;Padan Kingdom;x
+PDN_prussian_constitutionalism;Padan Kingdom;x
+PDN_hms_government;Padan Kingdom;x
+PDN_democracy;Padan Republic;x
+PDN_presidential_dictatorship;Padan Republic;x
+PDN_proletarian_dictatorship;Democratic Republic of Padania;x
+PDN_fascist_dictatorship;Supremacist Padania;x
 PDN_anarcho_liberal;Bande Azure;x
 PDN_communist;Lavoradori;x
 PDN_conservative;Fazziun Nobila;x

@@ -447,6 +447,16 @@ political_decisions = {
 			OR = {
 				military_score = 20
 				ANA = { war_with = BYZ }
+				OR = {
+					AND = {
+						year = 1864
+						exists = ANA
+					}
+					AND = {
+						year = 1860
+						NOT = { exists = ANA }
+					}
+				}
 			}
 		}
 		
@@ -468,6 +478,7 @@ political_decisions = {
 					}
 					NOT = { war_with = ANA }
 				}
+				NOT = { year = 1860 }
 			}
 		}
 	}

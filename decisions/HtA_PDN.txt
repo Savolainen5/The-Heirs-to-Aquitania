@@ -127,15 +127,16 @@ political_decisions = {
 	PDN_setup = {
 		picture = of_state_n_government
 		potential = {
+			NOT = {
+				has_country_flag = PDN_has_been_set_up
+				year = 1849									#So that PDR, if it wins the civil war, can't take this decision
+			}
 			tag = PDN
 			NOT = {
 				exists = LOM
 				exists = VEN
 				exists = MOD
 				exists = GEN
-			}
-			NOT = {
-				has_country_flag = PDN_has_been_set_up
 			}
 			OR = {
 				NOT = { capital = 726 }
@@ -166,13 +167,13 @@ political_decisions = {
 	claim_venice_PDN = {
 		picture = Venice_panorama
 		potential = {
-			tag = PDN
 			729 = { NOT = { is_core = THIS } }
 			730 = { NOT = { is_core = THIS } }
 			731 = { NOT = { is_core = THIS } }
 			732 = { NOT = { is_core = THIS } }
 			733 = { NOT = { is_core = THIS } }
 			734 = { NOT = { is_core = THIS } }
+			tag = PDN
 			NOT = { has_country_flag = claim_venice_PDN }
 			NOT = { exists = VEN }
 		}
