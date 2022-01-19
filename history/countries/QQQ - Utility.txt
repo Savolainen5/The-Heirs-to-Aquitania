@@ -1,0 +1,41 @@
+#This country doest exist and is really just so that spherelings will be paid for their goods, since apparently being #1 prestige is an issue. This is a proposed fix according to https://www.reddit.com/r/savs/comments/lnf4sv/a_solution_to_the_sphere_market_bug_interesting/
+capital = 999
+primary_culture = ashkenazi
+religion = jewish
+government = hms_government
+plurality = 0.02
+nationalvalue = nv_order
+literacy = 0.1
+civilized = yes
+
+prestige = 9999
+
+# Political reforms
+slavery = yes_slavery
+upper_house_composition = appointed
+vote_franschise = wealth_voting
+public_meetings = yes_meeting
+press_rights = censored_press
+trade_unions = non_socialist
+voting_system = first_past_the_post
+political_parties = non_secret_ballots
+
+# Social Reforms
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
+health_care = no_health_care
+unemployment_subsidies = no_subsidies
+pensions = no_pensions
+school_reforms = no_schools
+
+ruling_party = AKH_conservative
+upper_house = {
+	fascist = 0
+	liberal = 13
+	conservative = 68
+	reactionary = 19
+	anarcho_liberal = 0
+	socialist = 0
+	communist = 0
+}

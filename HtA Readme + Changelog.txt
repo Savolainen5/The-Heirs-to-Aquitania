@@ -78,6 +78,7 @@ Major
 
 Minor
 - Severely nerfed the OP Gold Rush modifier - now gives an immigrant attract of only 100% instead of ten times that. This needs testing to see if it should be buffed up a bit. Maybe 300%
+- Once again slightly reduced the MIL and CON effects of the Eyjafjallajokull eruption in 1837
 - Reorganized African events files
 - Some more starting generals - thanks to MajorMajor
 - Many new flags - thanks to Athemos and Periares
@@ -117,7 +118,7 @@ Minor
 - Improved the event which signals the end of BRB cores, made it specifically for NET (more, kind of), and added one for BRB
 - Tweaked the event announcing the German Hegemony wars so that more countries can do it in case there are some really overzealous conquerors in MP
 - Added decisions for an independent Greece to claim the rest of the state of Thessalonikos and (if jingoist) to claim Crete
-- Added an info decision for the Roman Empire and made the implications of some events/decisions slightly clearer
+- Added a decision for Greece to fight the Roman Empire in the civil war even if for some reason Anatole can't normally
 - Greek party tweaks
 - Study Room Meetings should disappear from all BOH-owned provinces after they defeat the revolution
 - Added a decision for a resurgent Bohemia to lease Zadar again
@@ -142,7 +143,7 @@ Minor
 - Copied some code from HPM for some LiberalRevolutions events
 - There should be a small pull for POPs to migrate to countries which have a similar culture/language (Hispanians and Portuguese to Latin America, Scandinavians to Margaria and other such countries, etc.)
 - Lots of other small stuff not worth mentioning
-- Added a blank province map (current to 0.36.27) for whatever you might want to use it for
+- Added a blank province map (current to 0.36.27) for whatever you might want to use it for. Will update it if it changes
 - Moved most unused event/decision pictures into separate folders (mostly for keeping better track of things)
 
 Bugfixes

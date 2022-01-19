@@ -330,7 +330,7 @@ info_NPL_desc;In this game, Italy is a geographical term and it will take some B
 info_PDN_title;HtA Padan Union Info;x
 info_PDN_desc;If you didn't already know, within a couple of years of game start, these four countries under the Alps will unite. It will work as any of them, but don't have an MP with more than one person playing among the four countries.\n\nIt's also not a great idea to have a human Padan Union and a human Naples if you want them to cooperate, due to the way some things are written.;x
 info_POL_title;HtA Poland Info;x
-info_POL_desc;There is still work to be done on Poland with regard to the Sejm, coming up on 0.37. You may see that you have a bunch of negative modifiers. These are intended to represent the feudal and Sejm systems, and they're not easily removed at the moment. Just cheat and give yourself 1000 prestige if you don't want to deal with them, so that way you can remove them. Don't sphere Smolensk because you'll mess up the story that's going on there. You'll get a chance to get some land from them with the Treaty of Brest decision.;x
+info_POL_desc;There is still work to be done on Poland with regard to the Sejm, coming up on 0.37. You may see that you have a bunch of negative modifiers. These are intended to represent the feudal and Sejm systems. Obviously you can get rid of them with the relevant decisions if you want.\n\nDon't sphere Smolensk because you'll mess up the story that's going on there with Russia, as Poland is intended to be antagonistic toward Smolensk. You'll get a chance to get some land from them with the Treaty of Brest decision.;x
 info_RUS_title;HtA Russia Info;x
 info_RUS_desc;War with Smolensk will come later. You can't fight them right away. Focus on building up your military and getting through the decision chains to sow discontent in their territory, and get allies. Go as far east as possible with colonization. Only after you've taken the decision to incite Ukrainians will the CB to fight the Russian Hegemony war become available for both countries (or if it's after 1850). Railroaded Smolensk can't use it, though, because the AI is dumb. As long as you win one war with that CB (take any state), you will cause an event which will give them tons of militancy. If Russian Unification rebels don't pop up eventually and overthrow them, you can just fight another war to annex them with the Russian Unification CB. You'll eventually get an event to annex Vitebsk. After you get Nationalism and Imperialism, you can consider sphereing the four central Asian countries and then wait for an event to fire which will annex them, or you could just go to war. There's a decision which will allow you to sphere Kazakh after 1854, so you don't HAVE to sphere them with any urgency.;x
 info_SCO_title;HtA Alba Info;x
@@ -532,18 +532,18 @@ remove_expensive_factories_title;Urbanization and Entrepreneurship;x
 remove_expensive_factories_desc;This removes the modifier making factories more expensive. Everything about this decision will still be changed - this is just a work in progress.;x
 remove_less_army_spending_title;Centralize the Army;x
 remove_less_army_spending_desc;This removes the modifier decreasing army spending. Everything about this decision will still be changed - this is just a work in progress.;x
-remove_less_diplo_title;Organize Diplomacy;x
-remove_less_diplo_desc;This removes the modifiergiving your slower diplo point gain. Everything about this decision will still be changed - this is just a work in progress.;x
-remove_less_land_org_title;Institute Modern Training;x
+remove_less_diplo_title;Organize Diplomatic Corps;x
+remove_less_diplo_desc;This removes the modifier giving your slower diplo point gain. Everything about this decision will still be changed - this is just a work in progress.;x
+remove_less_land_org_title;Reorganize Military Logistics;x
 remove_less_land_org_desc;This removes the modifier decreasing land organization. Everything about this decision will still be changed - this is just a work in progress.;x
 remove_less_leadership_title;Educate Officers;x
 remove_less_leadership_desc;This removes the modifier giving you slower leadership gain. Everything about this decision will still be changed - this is just a work in progress.;x
 remove_less_mobilisation_title;Create Mobilization Tables;x
 remove_less_mobilisation_desc;This removes the modifier reducing mobilization potential. Everything about this decision will still be changed - this is just a work in progress.;x
-remove_less_output_title;Remove Oppressive Factory Rules;x
-remove_less_output_desc;This removes the modifier making factories have less output. Everything about this decision will still be changed - this is just a work in progress.;x
+remove_less_output_title;Institute Land Reform;x
+remove_less_output_desc;This removes the modifier reducing RGO output. Everything about this decision will still be changed - this is just a work in progress.;x
 remove_less_prestige_title;Improve our International Image;x
-remove_less_prestige_desc;This removes the modifier reducing your prestige. Everything about this decision will still be changed - this is just a work in progress.;x
+remove_less_prestige_desc;This removes the modifier reducing your prestige. Everything about this decision will still be changed - this is just a work in progress.\n\nDespite our size we are not very well-regarded. Some more radically militaristic politicians in our large neighbours have called for a partition of our country among themselves, even!;x
 remove_less_reform_desire_title;Allow People to Think;x
 remove_less_reform_desire_desc;This removes the modifier reducing reform desire. Honestly, this one should probably be done by event or something. Everything about this decision will still be changed - this is just a work in progress.;x
 remove_less_tax_efficiency_title;Centralize Tax Collection;x

@@ -2239,7 +2239,8 @@ POL_less_mobilisation = {
 }
 
 POL_less_army_spending = {
-	max_military_spending = 0.5
+	max_military_spending = -0.5
+	min_military_spending = -0.5
 	icon = 16
 }
 

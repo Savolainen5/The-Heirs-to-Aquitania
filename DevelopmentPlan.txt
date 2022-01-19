@@ -1,4 +1,8 @@
-The following overall schedule shows what areas will be completed by the version number listed
+The following overall schedule shows what areas will be completed by the version number listed.
+
+See To Do.txt for a slightly more detailed list of what will happen in those updates.
+
+As always, suggestions are welcomed. Ideally give me them in the HtA suggestions channel on Discord (see the readme for a link).
 
 Overall schedule:
 0.40 - Europe
@@ -10,26 +14,26 @@ Overall schedule:
 1.0 - Finishing bits
 
 Europe
-0.31 and earlier - France, Brittany, British Isles (Northern Isles in-game), Roman Empire, Hispania
-0.32 - Bohemia, Ardeal, Austria, Croatia
-0.33 - The Netherlands
-0.34 - Northern Isles part 2
-0.35 - Nordic countries and some of the Baltics
-0.36 - Smolensk vs. Russia
-0.37 - Italy and Poland					<---------------------------------- WE ARE HERE
+0.31 and earlier - France, Brittany, British Isles (Northern Isles in-game), Roman Empire, Hispania - 0.31 released 6.3.2016, previous releases on 24.1.2016, 31.12.2015, 7.12.2015, inital public release on 27.11.2015
+0.32 - Bohemia, Ardeal, Austria, Croatia - Released 16.5.2016
+0.33 - The Netherlands - Released 16.7.2016
+0.34 - Northern Isles part 2 - Released 13.8.2016
+0.35 - Nordic countries and some of the Baltics - Released 31.12.2016
+0.36 - Smolensk vs. Russia - Released 28.10.2020
+0.37 - Italy and Poland							<---------------------------------------------------- WE ARE HERE
 0.38 - The Balkans: Sort out Hungarians and other cultures
 0.39 - Iberia
 0.40 - Miscellaneous, flavour events, France & AQT
 
 Asia (Ideas for things to do follow the colon)
-0.41 - Central Asia: More flavour and Russian interaction
-0.42 - Caucasus and Armenia: Russian vs Roman ambitions, Romans look east
-0.43 - Persia, Mesopotamia, and the Levant: Russian-Persian conflict (partly done in 0.36)
-0.44 - Japan and Korea: Pacific Port chain for Russia (Korea/Manchuria)
+0.41 - Central Asia
+0.42 - Caucasus and Armenia
+0.43 - Persia, Mesopotamia, and the Levant
+0.44 - Japan and Korea
 0.45 - China (partly done in 0.36)
 0.46 - SEA and Indonesia
-0.47 - Arabia
-0.48 - India
+0.47 - India
+0.48 - Arabia
 0.50 - Miscellaneous
 
 North Ameriga
@@ -53,7 +57,7 @@ South Ameriga
 
 Volturnia and the Pacific
 0.71 - Teralarga and Naffaroako Berria
-0.72 - Pacific Islands (interactions with Europeans and colonisers, etc.)
+0.72 - Pacific Islands
 0.73 - Papua New Guinea
 0.74 - Hawaii
 0.80 - Miscellaneous

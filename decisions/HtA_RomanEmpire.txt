@@ -6,7 +6,7 @@ political_decisions = {
 		picture = palais_garnier
 		potential = {
 			tag = BYZ
-			NOT = { has_country_flag = boukoleon_restored }
+			NOT = { has_global_flag = BYZ_boukoleon_restored }
 			owns = 860
 		}
 		
@@ -18,13 +18,14 @@ political_decisions = {
 		effect = {
 			prestige = 5
 			money = -10000
-			set_country_flag = boukoleon_restored
+			set_global_flag = BYZ_boukoleon_restored
 		}
 	}
 	
 	renovate_constantinople = {
 		picture = russian_vladivostok
 		potential = {
+			year = 1863
 			tag = BYZ
 			NOT = { has_country_flag = constantinople_renovated }
 			owns = 860
@@ -50,7 +51,7 @@ political_decisions = {
 		picture = map_crimea
 		potential = {
 			tag = BYZ
-			NOT = { has_country_flag = claim_chersonesus }
+			NOT = { has_global_flag = BYZ_claim_chersonesus }
 		}
 
 		allow = {
@@ -61,7 +62,7 @@ political_decisions = {
 
 		effect = {
 			prestige = 10
-			set_country_flag = claim_chersonesus
+			set_global_flag = BYZ_claim_chersonesus
 			967 = {
 				state_scope = {
 					change_region_name = "Cherson"
@@ -343,9 +344,9 @@ political_decisions = {
 			prestige = 5
 			end_war = BYZ
 			inherit = BYZ
+			remove_country_modifier = fighting_civil_war
 		}
 	}
-
 	
 #Decisions for Bulgaria and Arbenon
 

@@ -115,29 +115,8 @@ Other:
 - Union in Iberia?
 
 	0.40 (Euro misc):
-	
-- Redo states in the low countries as per https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-56#post-27333977
-- Remove unused countries more systematically
-- Event/Decision to try to mediate Germany?
-- Revisit that ability of German states to not attend the Brunswick congress - AI will currently always attend
-- Tweak Bavarian choices for Brunswick Congress so they're better
-- Saxony making problems for Brandenburg when it attends the Brunswick congress and is still a BOH ally.
-- Small event chain to change Wallonia into some other country which accepts Picard (or to separate Wallonia and Picardy)
-- France takes back Challans (La Roche, 437) from AQT
-- AQT decision reclaim SA colonies if they're lost
-- Being puppetmaster of Livonia gives you the possibiltiy to incorporate Estonia into it?
-- Post-revolution Bohemia gets a hold of Syrmia and the Banat
-- Craftsmen in Europe (which is less industrialised than vanilla)
-- Add more Jews throughout Europe! (Partly done, needs more)
-- Add more minorities in Europe on the other side of borders!!!!!!!!!!!!!!!!!!
-- Too many German POPs?
-- Restore monarchy CB?
-- Latvia CB to be unlocked after a certain event
-- Add silk/wine-related industry to PRE
-- French general staff?? - special political leader as a buff for them (already added a strong attack general)
-- Give Brabant more land/outposts to explain how they got New Caledonia
-- When Austria is released after dismantlement, it got OTL cores. Why? Fix!
-- Where does the AQT royal family go?
+
+	Roman stuff
 - Springtime of Nations should hit Roman Empire harder?
 - Danubian Federation-thing for Roman Empire
 - Some Autokrator grants a constitution?
@@ -150,15 +129,60 @@ Other:
 - Greece rejoins a democratic Roman Empire? Buff ANA in that case
 - Or, RCW runs a different course if the Empire is already democratic via Albesans
 	- Romans struggle to keep Greeks and Anatolians in check - regionalism
-- Make sure BYZ revolter tags actually build militaries- ANA stuff:
-	- Move capital to Constantinople
+- Make sure BYZ revolter tags actually build militaries
+- ANA stuff:
 	- Greek accepted OR better assimilation (what would be the policy vis-a-vis Armenians?)
 	- Focus more on Anatolian expansion
 	- Absorb Georgia?
+- ANA victory
+	- Melisurgos can repudiate things Georgios did vis-à-vis GRE, Romania
+	
+	German stuff
+- Event/Decision to try to mediate Germany?
+- Revisit that ability of German states to not attend the Brunswick congress - AI will currently always attend
+- Tweak Bavarian choices for Brunswick Congress so they're better
+- Saxony making problems for Brandenburg when it attends the Brunswick congress and is still a BOH ally.
+- Too many German POPs?
+
+	Stuff in the France/AQT/WLL region
+- Small event chain to change Wallonia into some other country which accepts Picard (or to separate Wallonia and Picardy)
+- France takes back Challans (La Roche, 437) from AQT
+- AQT decision reclaim SA colonies if they're lost
+- Add silk/wine-related industry to PRE
+- French general staff?? - special political leader as a buff for them (already added a strong attack general)
+- Where does the AQT royal family go?
+
+	Low countries stuff
+- Redo states in the low countries as per https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquitania-altervicky-mod.895808/page-56#post-27333977
+- Give Brabant more land/outposts to explain how they got New Caledonia
+
+	Other
+- Remove unused countries more systematically
+- Being puppetmaster of Livonia gives you the possibiltiy to incorporate Estonia into it?
+- Post-revolution Bohemia gets a hold of Syrmia and the Banat
+- Craftsmen in Europe (which is less industrialised than vanilla)
+- Add more Jews throughout Europe! (Partly done, needs more)
+- Add more minorities in Europe on the other side of borders!!!!!!!!!!!!!!!!!!
+- Latvia CB to be unlocked after a certain event
+- When Austria is released after dismantlement, it got OTL cores. Why? Fix!
 - Go through Irredentism decisions
+
+	0.41 (Central Asia):
+	
+- Interaction with Russia, imperialists coming from the south
+- Persia doing stuff
+	
+	0.42 (Caucasus and Armenia):
+- Russians look south, Romans look east
+- Armenians look (further) west, up to the Aegean
+- Armenia vs Hayastan: Rural Christians and urban Muslims
 
 	0.43 (Middle East):
 - Should SYR release with that much land? Should it be a primitive democracy if some republic releases it?
+- Russian-Persian conflict (partly done in 0.36)
+
+	0.44 (Japan and Korea):
+- Pacific port for Russia? Vladivostok perhaps even
 
 	0.45 (China):
 
@@ -177,27 +201,52 @@ QIN reports from https://forum.paradoxplaza.com/forum/threads/the-heirs-to-aquit
 - Event for serial killer is popping too many times.
 - Unequal Treaty events for Nanyue, tweak it for Qin
 - Unequal Treaty includes Nanyue VN land
+- NPL owning Singapore
 
 	0.46 (SEA/Indonesia):
 
-- Sikkim's Indian status (probably shouldn't necessarily be a part of India since it's more Himalayan in character and doesn't have the same political forces as OTL)
 - Burma missing a core on Pegu
 - Regions in the Siam-LPBG-LXA-CAM area
-- Competition for colonies in SEA, especially between NAP and HIS in the Malay peninsula
+- Competition for colonies in SEA, especially between NPL and HIS in the Malay peninsula
+
+	0.47 (India):
+	
+- Sikkim's Indian status (probably shouldn't necessarily be a part of India since it's more Himalayan in character and doesn't have the same political forces as OTL)
+
 
 	0.5x
 - Decisions/events to increase POPs, like HPM's Build a New City (or something like that, I don't know the decision really)
 
-	0.52 (MRG, VST)
+	0.51 (NHL, QUE):
+
+	0.52 (MRG, VST):
+	
 - Union of these two countries
 - Anti-slavery CB against MRG, especially after their decision restart_slave_trade - needs checking, and the war name from this CB might not be localized
 - Rework Afro-American cultural names, and culture in general
 
-	0.61 (MNK,MDT,HOY)
+	0.53 (Shawnee, Iroquois and Cherokee):
+
+	0.61 (MNK,MDT,HOY):
+	
 - Rework Panaben Canal stuff (especially event 97392)
 
-	Lonca/Argentina (0.66/0.67)
+	0.62 (Inca):
+	
+	0.63 (Gidan):
+	
+	0.64 (Uilscyr):
+
+	0.65 (Altallia and Ysun):
+
+	0.66/0.67 (Lonca/Argentina):
+	
 - Rework/improve southerly expansion (Consider looking at code from HPM or whatever)
 - Mess with the Argentinian Andes. Maybe give Lonca more control over them. That way, Argentina doesn't so easily get a crazy snaky shape up into Inca
+
+	0.72 (Pacific Islands)
+
+- European colonization/imperialism
+
 
 Savs, remember that Birth of a Nation is in CleanUp and has the ID 60160
