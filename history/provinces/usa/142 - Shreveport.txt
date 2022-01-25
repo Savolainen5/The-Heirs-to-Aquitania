@@ -1,6 +1,6 @@
-owner = MRG
+owner = MRG
 controller = MRG
-add_core = MRG
+add_core = MRG
 trade_goods = sulphur
-life_rating = 35
+life_rating = 35
 

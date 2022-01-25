@@ -1789,6 +1789,11 @@ southeast_asian = {
 		last_names = { Hongsawati Bayinnuang Konbaung Moksobo Myint-U Baga
 		}
 	}
+}
+
+south_chinese = { #South Chinese, needs a better name
+	leader = asian
+	unit = ChineseGC
 	yue = {
 		color = {89 34 100}
 		first_names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu

@@ -1,4 +1,4 @@
-#Event to set up native nations
+#Event to set up native nations, ends with 95608 below
 country_event = {
 	title = "EVTNAME95599"
 	desc = "EVTDESC95599" 
@@ -15,6 +15,7 @@ country_event = {
 			tag = IRO
 			is_culture_group = native_american
 		}
+		civilized = no
 		NOT = {
 			has_country_flag = has_native_societies
 		}
@@ -32,11 +33,11 @@ country_event = {
 		name = "EVTOPTA95599" 
 		set_country_flag = has_native_societies
 		add_country_modifier = {
-			name = native_societies1
+			name = native_societies1	#immigrant attract -10
 			duration = -1
 		}
 		add_country_modifier = {
-			name = native_societies2
+			name = native_societies2	#population growth +0.025
 			duration = -1
 		}
 	}
@@ -341,6 +342,7 @@ country_event = {
 		name = "No quarter was given, and none shall be returned."
 		## set_country_flag = shc_vengeance
 		badboy = 24
+		remove_country_modifier = native_societies2
 		VST = {	
 			all_core = { add_core = THIS } 
 		}
@@ -376,8 +378,43 @@ country_event = {
 			factor = 10
 			modifier = {
 				factor = 0
-				badboy = 1
+				badboy = 0.01
 			}
 		}
+	}
+}
+
+#Event to end native nations modifiers when civilized
+country_event = {
+	id = 95608
+	title = "EVTNAME95608"
+	desc = "EVTDESC95608" 
+	picture = "geronimo"
+
+	trigger = {
+		OR = {
+			#tag = SHC #handled by the above event
+			tag = AZT
+			tag = INC
+			tag = CHE
+			tag = IRO
+			is_culture_group = native_american
+		}
+		civilized = yes
+		has_country_flag = has_native_societies
+	}
+
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 0.01
+			year = 1836
+		}
+	}
+
+	option = {
+		name = "We will surely stand on our own."
+		remove_country_modifier = native_societies1	#immigrant attract -10
+		remove_country_modifier = native_societies2 #pop growth +0.025
 	}
 }

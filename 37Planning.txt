@@ -5,6 +5,7 @@ Poland:
 	- Liberum veto never crippled Poland like it did OTL (think of some history, do some research)
 	- If there's an elective monarchy, foreign king possible?
 	- Consider adding a reform group: Power of the Nobility
+		- Possible alternative: 
 	- https://en.wikipedia.org/wiki/Executionist_movement
 - Flavour events
 - Black sea stuff?
@@ -12,6 +13,8 @@ Poland:
 - Pressure BYZ to form Romania/Volasea, either as an independent or by attacking Ardeal to make a vassal Volasea?
 - Ruthenians?
 - Make sure that claims are not wonky
+
+- Break Słupsk up from Köslin?
 
 - Homeland for the Jews in the region? - Not sure how much this makes sense, though
 	- Some country declares itself protector?
@@ -37,7 +40,7 @@ Italy:
 	- Also see what changes need to be made to the relevant decisions in Hta_RomanEmpire in general
 	- Check the form_italy_without decision in NationalUnification
 	- Make sure there aren't pan-nationalist rebels or something
-- PDN civil war between monarchists and republicans --> the finishing of the provisional government chain
+#- PDN civil war between monarchists and republicans --> the finishing of the provisional government chain
 #- Deal with the ITAFlavor event and decision files
 #- Sicily and the education stuff
 #	- Choosing local language leads to Sicilian accepted

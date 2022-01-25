@@ -1,5 +1,5 @@
 owner = ARG
-controller = ARG
+controller = ARG
 add_core = ARG
 trade_goods = cattle
 life_rating = 35

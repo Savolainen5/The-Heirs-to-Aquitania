@@ -392,6 +392,9 @@ PROV608;Albi;x
 PROV609;Sion;x
 PROV627;Karlovy Vary;x
 PROV628;Ústí nad Labem;x
+PROV633;Prešporok;x
+PROV634;Trencín;x
+PROV638;Rožnava;x
 PROV674;Constantia;x
 PROV675;Igyssos;x
 PROV678;Smil;x
@@ -405,14 +408,18 @@ PROV690;Gdansk;x
 PROV691;Tuchola;x
 PROV693;Elblag;x
 PROV695;Królewiec;x
-PROV696;Lidzbark;x
-PROV697;Wystruc;x
+PROV696;Biskupiec;x
+PROV697;Goldap;x
 PROV698;Klaipèda;x
 PROV699;Poznan;x
 PROV700;Bydgoszcz;x
 PROV702;Lwów;x
-PROV704;Nowy Sacz;x  
+PROV704;Nowy Sacz;x
+PROV709;Drohiczyn;x
+PROV710;Leczyca;x
 PROV711;Siedlce;x
+PROV712;Sieradz;x
+PROV716;Sandomierz;x
 PROV719;Bialystok;x   
 PROV721;Aoûta;x
 PROV722;Noara;x
@@ -1003,3 +1010,4 @@ PROV3251;Menorca;x
 PROV3252;Eivissa;x
 PROV3253;Kerguelen;x
 PROV3254;Miarritze;x
+PROV3255;Banská Štiavnica;x

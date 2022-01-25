@@ -584,6 +584,7 @@ political_decisions = {
 	deal_with_euros = {
 		## picture = 
 		potential = {
+			has_global_flag = meme_decisions_enabled
 			tag = SHC
 			civilized = yes
 			NOT = { has_country_flag = shc_future }
@@ -604,8 +605,18 @@ political_decisions = {
 	refute_westerners = {
 		picture = manifest_destiny
 		potential = {
+			has_global_flag = meme_decisions_enabled
+			has_country_flag = shc_future
 			tag = SHC
 			civilized = yes
+			any_owned_province = {
+				OR = {
+					is_core = VST
+					is_core = QUE
+					is_core = NHL 
+					is_core = MRG 
+				}
+			}
 			OR = {
 				has_country_flag = protect_CHE
 				CHE = { all_core = { owned_by = THIS } } 
@@ -614,7 +625,12 @@ political_decisions = {
 				has_country_flag = protect_IRO
 				IRO = { all_core = { owned_by = THIS } } 
 			}
-			NOT = { has_country_flag = decored_euros }
+			NOT = {
+				exists = VST
+				exists = QUE
+				exists = NHL
+				exists = MRG
+			}
 		}
 		
 		allow = {
@@ -643,7 +659,6 @@ political_decisions = {
 				remove_core = NHL
 				remove_core = MRG 
 			}
-			set_country_flag = decored_euros
 		}
 	}
 	

@@ -1,5 +1,5 @@
 #Slovakia Region (1588000) 
-#under the rule of Austria in 1836  
+#under the rule of Bohemia in 1836  
 #Bratislava (784000/196000 POPS)
 633 = {
 	bureaucrats = {
@@ -481,6 +481,136 @@
 		size = 2750  
 	}
 }
+
+#Banská Štiavnica (352000/88000 POPS)
+3255 = {
+	clergymen = {
+		culture = slovak
+		religion = catholic
+		size = 190
+	}
+
+	artisans = {
+		culture = slovak
+		religion = catholic
+		size = 1100
+	}
+
+	soldiers = {
+		culture = slovak
+		religion = catholic
+		size = 350
+	}
+
+	labourers = {
+		culture = slovak
+		religion = catholic
+		size = 20300
+	}
+
+	aristocrats = {
+		culture = czech
+		religion = catholic
+		size = 350  
+	}
+
+	clergymen = {
+		culture = czech
+		religion = catholic
+		size = 40
+	}
+
+	artisans = {
+		culture = czech
+		religion = catholic
+		size = 350 
+	}
+
+	soldiers = {
+		culture = czech
+		religion = catholic
+		size = 40
+	}
+
+	labourers = {
+		culture = czech
+		religion = catholic
+		size = 4400 
+	}
+
+	clergymen = {
+		culture = hungarian
+		religion = catholic
+		size = 30
+	}
+
+	labourers = {
+		culture = hungarian
+		religion = catholic
+		size = 1400 
+	}
+
+	clergymen = {
+		culture = hungarian
+		religion = protestant
+		size = 50  
+	}
+
+	artisans = {
+		culture = hungarian
+		religion = protestant
+		size = 200 
+	}
+
+	labourers = {
+		culture = hungarian
+		religion = protestant
+		size = 2175    
+	}
+
+	clergymen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 125  
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 5400 
+	}
+
+	soldiers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 275
+	}
+
+	labourers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 4250    
+	}
+
+	clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 50  
+	}
+
+	artisans = {
+		culture = south_german
+		religion = catholic
+		size = 150 
+	}
+
+	labourers = {
+		culture = south_german
+		religion = catholic
+		size = 2350  
+	}
+}
+
 #Banska Bystrica (224000/56000 POPS)
 636 = {
 	clergymen = {
@@ -582,7 +712,7 @@
 	}
 }
 #Felvidek Region (860000) #see Hungary.txt and Ukraine.txt for balance of Region
-#under the rule of Austria in 1836  
+#under the rule of Poland in 1836  
 #Kosice (712000/178000POPS)
 637 = {
 	bureaucrats = {

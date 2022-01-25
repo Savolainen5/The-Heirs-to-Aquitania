@@ -1,6 +1,6 @@
-owner = VST
-controller = VST
-add_core = VST
+owner = VST
+controller = VST
+add_core = VST
 trade_goods = grain
-life_rating = 35
+life_rating = 35
 

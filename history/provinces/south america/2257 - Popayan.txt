@@ -3,5 +3,5 @@ controller = HOY
 add_core = HOY
 add_core = INC
 trade_goods = grain
-life_rating = 30
+life_rating = 35
 

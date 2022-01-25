@@ -105,6 +105,7 @@ Other:
 - Trans-Hungary for Hungarian-Romanian interaction, particularly in Transylvania
 - Figure out what to do with Ardeal having cores in funny places and then getting annexed to Volasea
 - If necessary, add a Cancel Zadar Lease decision for Hungary with the same effects as that for Bohemia
+- Hungary can get cores on Uzhvar, Kosice and other relevant provinces
 
 	0.39 (Iberia):
 	

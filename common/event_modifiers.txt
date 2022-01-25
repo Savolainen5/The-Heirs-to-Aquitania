@@ -1872,7 +1872,7 @@ native_societies1 = {
 	icon = 8
 }
 native_societies2 = {
-	global_population_growth = 0.025
+	global_population_growth = 0.01
 	icon = 7
 }
 

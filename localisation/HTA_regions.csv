@@ -1,390 +1,393 @@
 ;;;;;;;;;;;x
-USA_1;Halesca;;;;;;;;;x,,,
-ENG_6;Jukuna;;;;;;;;;;x,,,
-ENG_9;Ters d'Auror;;;;;;;;;x,,,
-CAN_13;Iggatlan;;;;;;;;;;x,,,
-CAN_19;Weglast;;;;;;;;;;x,,,
-ENG_22;Drytsiben;;;;;;;;;x,,,
-ENG_30;Rouge-Ues;;;;;;;;;x,,,
-ENG_36;Manitobe;;;;;;;;;x,,,
-CAN_46;Osutsyate;;;;;;;;;;x,,,
+USA_1;Halesca;x
+ENG_6;Jukuna;x
+ENG_9;Ters d'Auror;x
+CAN_13;Iggatlan;x
+CAN_19;Weglast;x
+ENG_22;Drytsiben;x
+ENG_30;Rouge-Ues;x
+ENG_36;Manitobe;x
+CAN_46;Osutsyate;x
 QUE_47;Entreau Nord;x
-CAN_50;Entreau Sud;;;;;;;;;;;;;;;;;x,,,
-CAN_58;Karelsland;;;;;;;;;;;;;;;;;x,,,
-CAN_60;Noordgebieden;;;;;;;;;;;;x,,,
-ENG_68;Nieuw Zeeland;;;;;;;;;;;x,,,
-ENG_74;Landeind;;;;;;;;;;;x,,,
-USA_78;Stanjea;;;;;;;;;;;;x,,,
-USA_81;Cecric;;;;;;;;;;;x,,,
-MEX_85;Costa Verde;;;;;;;;;;x,,,
-USA_91;Ofrahei;;;;;;;;;;x,,,
-MEX_94;Jute;;;;;;;;;;;;x,,,
-MEX_97;Las Cuestas;;;;;;;;;;;x,,,
-MEX_100;Sinaquin;;;;;;;;;;x,,,
-USA_106;Flocse;;;;;;;;;;;;;x,,,
-SKM_110;Necen;;;;;;;;;x,,,
-USA_116;Firfede;;;;;;;;;;x,,,
-USA_118;Hisananth;;;;;;;;;x,,,
-USA_121;Lakotie;;;;;;;;;;x,,,
-USA_124;Niraska;;;;;;;;;;x,,,
-USA_129;Oailand;;;;;;;;;;x,,,
-MRG_130;Oltland;;;;;;;;;;x,,,
-TEX_132;Berdon;;;;;;;;;;x,,,
-GNC_135;Osebigte;;;;;;;;;;x,,,
-USA_138;Odrahef;;;;;;;;;;;;x,,,
-USA_139;Bartemark;;;;;;;;;;x,,,
-USA_148;Wimisu;;;;;;;;;;x,,,
-USA_158;Newea;;;;;;;;;;;x,,,
-USA_162;Surlac;;;;;;;;;x,,,
-USA_168;Irenwe;;;;;;;;;;x,,,
-USA_170;Shawanwaki;;;;;;;;;;;x,,,
-USA_176;Yonutahele;;;;;;;;;;;;;x,,,
-USA_178;Yohielen;;;;;;;;;;;x,,,
-USA_185;Tewipi;;;;;;;;;;x,,,
-USA_188;Setekwi;;;;;;;;;;x,,,
-USA_189;Elmoten;;;;;;;;;x,,,
-USA_194;Hemhavet;;;;;;;;;x,,,
-USA_196;Fremadland;;;;;;;;;;x,,,
-USA_200;Solelha;;;;;;;;;;x,,,
-USA_201;Itseyi;;;;;;;;;x,,,
-USA_205;Miigiska;;;;;;;;;x,,,
-USA_211;Eganulti;;;;;;;;;;x,,,
-USA_218;Skotamewi;;;;;;;;;;x,,,
-USA_219;Høylandet;;;;;;;;;;x
-USA_223;Tesepikhav;;;;;;;;;;x
-SHC_227;Menelenehi;;;;;;;;;;;x,,,
-USA_231;Hertos;;;;;;;;;;;x
-USA_232;Osenhemm;;;;;;;;;;x
-USA_243;Krofylk;;;;;;;;;x
-USA_247;Hillensland;;;;;;;;;;;x,,,
-DEN_251;Greenland;;;;;;;;;;;;;x
-ICL_252;Iceland;;;;;;;;;;;;;x
-NOR_253;North Sea Islands;;;;;;;;;x,,,
-ENG_254;Ulaidh;;;;;;;;;;;x
-ENG_258;Chonnacht;;;;;;;;;x
-ENG_260;Mumhain;;;;;;;;;;x
-ENG_263;Laighin;;;;;;;;;;x
-ENG_266;Ghaideldach;;;;;;;;;;;x
-ENG_271;Ghalldach;;;;;;;;;;;x
-ENG_273;Cymru;;;;;;;;;;;x
-ENG_277;Combre;;;;;;;;;;;x
-ENG_280;Nordumbre;;;;;;;;;;;x
-ENG_284;Mierce;;;;;;;;;;;x
-ENG_291;Essaxe;;;;;;;;;;;x
-ENG_296;Wessaxe;;;;;;;;;;;x
-ENG_300;Sudsaxe;;;;;;;;;;;x
-SWE_329;Göteborg;;;;;;;;;;;;x      
-FIN_307;Lappi;;;;;;;;;;;x,,,
-RUS_336;Savo;;;;;;;;;;;x
-RUS_345;Suomi;;;;;;;;;;;x
-SCH_370;Slesvig & Holsten;;;;;;;;;;;x
-SWE_332;Småland;;;;;;;;;;;x,,,
-SWE_334;Skåne;;;;;;;;;;;x,,,
-RUS_360;Vilna;;;;;;;;;;;;;x
-RUS_361;Lithuania;;;;;;;;;;;;;x
-HOL_369;Holstein;;;;;;;;;;;;x   
-NET_379;Zeeland;;;;;;;;;;;;x       
-BEL_387;Flanders;;;;;;;;;;;;x      
-BEL_394;Wallonia;;;;;;;;;;;;x      
-FRA_411;Bar-Lorraine;;;;;;;;;;;x
-FRA_412;Elsaß;;;;;;;;;;x
-FRA_438;Orléans;;;;;;;;;;;;;;;x,,,
-FRA_442;Peitau;;;;;;;;;;;;;;;x,,,
-FRA_445;Årdene;;;;;;;;;;;;;;;x,,,
-FRA_448;Auvernha;;;;;;;;;;;;;;;x,,,
-FRA_451;Ròse;;;;;;;;;;;;;;x
-FRA_455;Miègjorn;;;;;;;;;;;;;;;x,,,
-FRA_458;Garona;;;;;;;;;;;;;;;x,,,
-FRA_461;Lengadòc;;;;;;;;;;;;;;;x,,,
-SAR_466;Savouè;;;;;;;;;;;;;;;x,,,
-FRA_467;Prouvença;;;;;;;;;;;;;;;x,,,
-SPA_477;León;León;León;;León;;;;;;;;;x
-SPA_481;Castilla;Castilla;Castilla;;Castilla;;;;;;;;x
-SPA_492;Vasconia;Vasconia;Vasconia;;Vasconia;;;;;;;x 
-SPA_496;Aragon;Aragon;Aragon;;Aragon;;;;;;;;;x
-SPA_502;Balearic Islands;;;;;;;;x
+CAN_50;Entreau Sud;x
+CAN_58;Karelsland;x
+CAN_60;Noordgebieden;x
+ENG_68;Nieuw Zeeland;x
+ENG_74;Landeind;x
+USA_78;Stanjea;x
+USA_81;Cecric;x
+MEX_85;Costa Verde;x
+USA_91;Ofrahei;x
+MEX_94;Jute;x
+MEX_97;Las Cuestas;x
+MEX_100;Sinaquin;x
+USA_106;Flocse;x
+SKM_110;Necen;x
+USA_116;Firfede;x
+USA_118;Hisananth;x
+USA_121;Lakotie;x
+USA_124;Niraska;x
+USA_129;Oailand;x
+MRG_130;Oltland;x
+TEX_132;Berdon;x
+GNC_135;Osebigte;x
+USA_138;Odrahef;x
+USA_139;Bartemark;x
+USA_148;Wimisu;x
+USA_158;Newea;x
+USA_162;Surlac;x
+USA_168;Irenwe;x
+USA_170;Shawanwaki;x
+USA_176;Yonutahele;x
+USA_178;Yohielen;x
+USA_185;Tewipi;x
+USA_188;Setekwi;x
+USA_189;Elmoten;x
+USA_194;Hemhavet;x
+USA_196;Fremadland;x
+USA_200;Solelha;x
+USA_201;Itseyi;x
+USA_205;Miigiska;x
+USA_211;Eganulti;x
+USA_218;Skotamewi;x
+USA_219;Høylandet;x
+USA_223;Tesepikhav;x
+SHC_227;Menelenehi;x
+USA_231;Hertos;x
+USA_232;Osenhemm;x
+USA_243;Krofylk;x
+USA_247;Hillensland;x
+DEN_251;Greenland;x
+ICL_252;Iceland;x
+NOR_253;North Sea Islands;x
+ENG_254;Ulaidh;x
+ENG_258;Chonnacht;x
+ENG_260;Mumhain;x
+ENG_263;Laighin;x
+ENG_266;Ghaideldach;x
+ENG_271;Ghalldach;x
+ENG_273;Cymru;x
+ENG_277;Combre;x
+ENG_280;Nordumbre;x
+ENG_284;Mierce;x
+ENG_291;Essaxe;x
+ENG_296;Wessaxe;x
+ENG_300;Sudsaxe;x
+SWE_329;Göteborg;x      
+FIN_307;Lappi;x
+RUS_336;Savo;x
+RUS_345;Suomi;x
+SCH_370;Slesvig & Holsten;x
+SWE_332;Småland;x
+SWE_334;Skåne;x
+RUS_360;Vilna;x
+RUS_361;Lithuania;x
+HOL_369;Holstein;x   
+NET_379;Zeeland;x       
+BEL_387;Flanders;x      
+BEL_394;Wallonia;x      
+FRA_411;Bar-Lorraine;x
+FRA_412;Elsaß;x
+FRA_438;Orléans;x
+FRA_442;Peitau;x
+FRA_445;Årdene;x
+FRA_448;Auvernha;x
+FRA_451;Ròse;x
+FRA_455;Miègjorn;x
+FRA_458;Garona;x
+FRA_461;Lengadòc;x
+SAR_466;Savouè;x
+FRA_467;Prouvença;x
+SPA_477;León;León;León;;León;x
+SPA_481;Castilla;Castilla;Castilla;;Castilla;x
+SPA_492;Vasconia;Vasconia;Vasconia;;Vasconia;x 
+SPA_496;Aragon;Aragon;Aragon;;Aragon;x
+SPA_502;Balearic Islands;x
 POR_521;Beira;x
-HAN_528;Lower Elbe;;;;;;;;;;;;x     
-HAN_534;Oder;;;;;;;;;x
-HAN_540;East Friesland;;;;;;;;;;;;x
-PRU_536;Braunschweig;;;;;;;;;;x,,,
-PRU_544;Mecklenburg;;;;;;;;;;;;x   
-PRU_546;Pomerania;;;;;;;;;;;;x     
-PRU_554;Thuringia;;;;;;;;;;;;x  
-SAX_558;Saxony;;;;;;;;;;;;x        
-GER_565;Hesse;;;;;;;;;;;;x,,,
-GER_566;Kassel;;;;;;;;;;;x,,,
-PRU_570;Palatinate;;;;;;;;;;;;x    
-PRU_575;Northern Rheinland;;;;;;;;;;;;;x,,,
-PRU_578;Southern Rheinland;;;;;;;;;;;x,,,
-BAV_595;Franconia;;;;;;;;;;;;x     
-BAV_599;Upper Bavaria;;;;;;;;;;;;x 
-SWI_603;Helvetia;;;;;;;;;x,,,
-SWI_605;Liguria;;;;;;;;;x,,,
-SPA_610;Caroline Islands;;;;;;;;;;;x
-AUS_652;Banat;;;;;;;;;;;;x         
-AUS_654;Western Transylvania;;;;;;;;;x
-AUS_657;Eastern Transylvania;;;;;;;;;x
-TUR_674;Paristrion;;;;;;;;;;;;x,,,
-MOL_676;Bessarabia;;;;;;;;;;;;x    
-PRU_682;Lower Silesia;;;;;;;;;;;;x 
-PRU_684;Upper Silesia;;;;;;;;;;;;x 
-PRU_690;Pomorze;;;;;;;;;;;x,,,
-PRU_695;Prusy;;;;;;;;;;;x,,,
-AUS_702;Lodomeria;;;;;;;;;x
-RUS_706;Masovia;;;;;;;;;;;;x      
-RUS_715;North Galicia;;;;;;;;;x
-SAR_720;Piemont;;;;;;;;;;x
-AUS_734;South Galicia;;;;;;;;;;;x
-SAR_765;Sardinia & Corsica;;;;;;;;;x
-AUS_771;Old Croatia;;;;;;;;;;x
-CRO_789;Krajina;;;;;;;;;;;;;x,,,
-FRA_801;Tahiti;;;;;;;;;;;;x        
-TUR_805;Thessalonikos;;;;;;;;;x
-TUR_806;Makedonia;;;;;;;;;x
-TUR_809;Paradounavon;;;;;;;;;;;x,,,
-TUR_810;Bulgaria;;;;;;;;;;x,,,
-TUR_823;Nestos;;;;;;;;;;x
-GRE_826;Heptanesa;;;;;;;;;x
-TUR_832;Epirou;;;;;;;;;;x
-GRE_837;Hellas;;;;;;;;;;x
-GRE_839;Peloponnesos;;;;;;;;;;x
-CRE_847;Crete;;;;;;;;;;x
-TUR_853;Arbenon;;;;;;;;;;;x
-TUR_863;Opsikon;;;;;;;;;;;x,,,
-BYZ_867;Thrakesion;;;;;;;;;;;x,,,
-BYZ_869;Samos;;;;;;;;;;;;x,,,
-TUR_873;Anatolikon;;;;;;;;;;;x,,,
-TUR_876;Boukellarion;;;;;;;;;;;x,,,
-TUR_880;Paphlagonia;;;;;;;;;;;x,,,
-TUR_882;Trapizon;;;;;;;;;x,,,
-TUR_885;Ghars;;;;;;;;;;x,,,
-TUR_890;Vana;;;;;;;;;;x,,,
-TUR_893;Tigranakert;;;;;;;;;;x,,,
-TUR_894;Kilikia;;;;;;;;;;x,,,
-RUS_940;Pinsk;;;;;;;;;;;;x         
-RUS_947;Pinsk;;;;;;;;;;;;;x,,,
-RUS_955;Podillia;;;;;;;;;;;;x     
-UKR_963;Poltava;;;;;;;;;;x 
-RUS_968;Transnistria;;;;;;;;;;;;x
-UKR_976;Zaporozhia;;;;;;;;;;x
-RUS_978;Kharkov;;;;;;;;;;;;x       
-RUS_979;Donbass;;;;;;;;;;;;x
-FIN_988;Ääninen;;;;;;;;;;;;x,,,
-RUS_994;Ingeri;;;;;;;;;;x
-RUS_1003;Pskov;;;;;;;;;;;;;x,,,
-RUS_1009;Ryazan;;;;;;;;;x,,,
-AZB_1052;Dagistan;;;;;;;;;;;x
-JAP_1086;Repun Islands;;;;;;;;;;;;x
-JAP_1088;Ezo;;;;;;;;;;;;x
-AST_1097;New Brabant;;;;;;;;;;x
-RUS_1098;Hayastan;;;;;;;;;;x
-PER_1116;Mazandaran;;;;;;;;;;;;x   
-PER_1128;Lorestan;;;;;;;;;;;;x     
-PER_1132;Khuzestan;;;;;;;;;;;;x    
-PER_1136;Fars;;;;;;;;;;;;x         
-PER_1140;Kerman;;;;;;;;;;;;x       
-YEM_1178;Sana'a;;;;;;;;;;;;x 
-RUS_1182;Mezhdumorya;;;;;;;;;;x
-RUS_1185;Zhetsyu;;;;;;;;;x,,,
-AFG_1209;Pashtunistan;;;;;;;;;;;;x 
-KOK_1210;Bandakshan;;;;;;;;;;;;x   
-AFG_1214;Kandahar;;;;;;;;;;;;x     
-PAN_1233;Amritsar;;;;;;;;;;;;x     
-ENG_1243;Bundelkhand;;;;;;;;;;;;x  
-ENG_1244;Awadh;;;;;;;;;;;;x        
-ENG_1321;Lamka;;;;;;;;;x
-MLD_1325;Maldives;;;;;;;;;x
-NEP_1326;Western Himalayas;;;;;;;;;x
-BUR_1334;Upper Irrawady;;;;;;;;;;;x,,,
-SIA_1352;Pattani;;;;;;;;;;;;x      
-SIA_1355;Shan;;;;;;;;;;;;x         
-LUA_1356;Laos;;;;;;;;;;;;x         
-SIA_1358;Isan;;;;;;;;;;;;x
-DAI_1369;Tonkin;;;;;;;;;;;;x       
-DAI_1375;Annam;;;;;;;;;;;;x        
-DAI_1380;Cochinchina;;;;;;;;;;;;x  
-ENG_1384;Southern Malaya;;;;;;;;;;;x
-ENG_1391;Northern Malaya;;;;;;;;;;;x
-SIA_1392;Ayutthaya;;;;;;;;;;;;x    
-BRU_1394;West Borneo;;;;;;;;;;;;x  
-BRU_1396;Sabah;;;;;;;;;;;;x        
-NET_1401;Siak;;;;;;;;;;;;x         
-YEM_1412;Aden;;;;;;;;;;;;x         
-NET_1413;West Java;;;;;;;;;;;;x    
-NET_1417;Central Java;;;;;;;;;;;;x 
-NET_1418;East Java;;;;;;;;;;;;x    
-NET_1423;East Borneo;;;;;;;;;;;;x  
-NET_1426;South Borneo;;;;;;;;;;;;x 
-NET_1446;Timor;;;;;;;;;;;;x        
-NET_1447;Moluccas;;;;;;;;;;;;x     
-NET_1449;Celebes;;;;;;;;;;;;x      
-CHI_1465;Eastern Mongolia;;;;;;;;;;x
-CHI_1468;Western Mongolia;;;;;;;;;;x
-CHI_1470;South Anhui;;;;;;;;;;;;x  
-CHI_1477;North Anhui;;;;;;;;;;;;x  
-CHI_1479;Fengtian;;;;;;;;;;;;x     
-CHI_1482;Fujian;;;;;;;;;;;;x       
-CHI_1485;Formosa;;;;;;;;;;;;x      
-CHI_1490;Gansu;;;;;;;;;;;;x        
-CHI_1493;Canton;;;;;;;;;;;;x       
-CHI_1496;Hong Kong;;;;;;;;;;;;x    
-CHI_1499;Hainan;;;;;;;;;;;;x       
-CHI_1502;Guangxi;;;;;;;;;;;;x      
-CHI_1505;Guizhou;;;;;;;;;;;;x      
-CHI_1508;East Henan;;;;;;;;;;;;x   
-CHI_1510;West Henan;;;;;;;;;;;;x   
-CHI_1519;West Hubei;;;;;;;;;;;;x   
-CHI_1522;East Hubei;;;;;;;;;;;;x
-CHI_1524;Hunan;;;;;;;;;;;;x,,,
-CHI_1532;Inner Mongolia;;;;;;;;;;;;x
-CHI_1540;North Jiangsu;;;;;;;;;;;;x
-CHI_1545;North Jiangxi;;;;;;;;;;;;x
-CHI_1547;South Jiangxi;;;;;;;;;;;;x
-CHI_1552;Heilongjiang;;;;;;;;;;;;x 
-CHI_1555;Kirin;;;;;;;;;;;;x
-CHI_1559;Shaanxi;;;;;;;;;;;;x      
-CHI_1563;West Shandong;;;;;;;;;;;;x
-CHI_1565;East Shandong;;;;;;;;;;;;x
-CHI_1572;Shanxi;;;;;;;;;;;;x       
-CHI_1578;West Sichuan;;;;;;;;;;;;x 
-CHI_1579;East Sichuan;;;;;;;;;;;;x 
-TIB_1587;Eastern Himalayas;;;;;;;;;x
-CHI_1594;Kashgar;;;;;;;;;;;;x
-CHI_1600;Urumqui;;;;;;;;;;;;x      
-CHI_1601;Yunnan;;;;;;;;;;;;x       
-CHI_1604;North Zhejiang;;;;;;;;;;;;x
-CHI_1610;South Zhejiang;;;;;;;;;;;;x
-CHI_1612;Baoding;;;;;;;;;;;;x       
-CHI_1616;Peking;;;;;;;;;;;;x
-JAP_1640;Chugoku;;;;;;;;;;;;x   
-JAP_1649;Kanto;;;;;;;;;;;;x        
-JAP_1654;Bonin Islands;;;;;;;;;;;;x
-JAP_1655;Kansai;;;;;;;;;;;;x       
-JAP_1665;Shikoku;;;;;;;;;;;;x      
-JAP_1660;Kyushu;;;;;;;;;;;;x       
-JAP_1672;Tohoku;;;;;;;;;;;;x       
-JAP_1675;Chubu;;;;;;;;;;;;x
-MOR_1693;Marrakesh;;;;;;;;;;;;x    
-MOR_1694;Agadir;;;;;;;;;;;;x       
-ALD_1704;Oran;;;;;;;;;;;;x         
-ALD_1708;Constantine;;;;;;;;;;;;x
-ALD_1713;North Central Sahara;;;;;;;;;x
-CLM_1723;Panaben;;;;;;;;;;;x
-TRI_1731;Tripolitania;;;;;;;;;;;;x 
-TRI_1735;Cyrenaica;;;;;;;;;;;;x    
-TRI_1740;Fezzan;;;;;;;;;;;;x       
-EGY_1745;Cairo;;;;;;;;;;;;x        
-EGY_1751;Alexandria;;;;;;;;;;;;x   
-EGY_1753;Qattara;;;;;;;;;;;;x      
-EGY_1755;Sinai;;;;;;;;;;;;x
-ENG_1844;Sudd;;;;;;;;;;;;x         
-ETH_1852;Begemder;;;;;;;;;;;;x     
-ETH_1853;Tigray;;;;;;;;;;;;x       
-ETH_1859;Shewa;;;;;;;;;;;;x        
-ETH_1862;Gibe;;;;;;;;;;;;x         
-ETH_1865;Hararghe;;;;;;;;;;;;x
-SOM_1868;South Somaliland;;;;;;;;;;x
-SOM_1872;North Somaliland;;;;;;;;;;x
-FRA_1878;Lower Guinea;;;;;;;;;;;;x 
-FRA_1883;Upper Guinea;;;;;;;;;;;;x
-FRA_1901;Upper Volta;;;;;;;;;;;;x
-ASH_1909;Gold Coast;;;;;;;;;;;;x   
-FRA_1919;Dahomey;;;;;;;;;;;;x      
-SOK_1934;Biafra;;;;;;;;;;;;x       
-SOK_1937;Tukari;;;;;;;;;;;;x       
-SOK_1945;Kano;;;;;;;;;;;;x         
-SPA_1955;Equatorial Guinea;;;;;;;;;x
-ENG_1956;Cameroon;;;;;;;;;;;;x     
-SOK_1963;Adamawa;;;;;;;;;;;;x      
-FRA_1970;Bangassou;;;;;;;;;;;;x
-ENG_1979;Horalan;;;;;;;;;;;x  
-BEL_1990;Kivu;;;;;;;;;;;;x         
-BEL_1996;Inner Congo;;;;;;;;;;;x
-POR_1999;Andongo;;;;;;;;;x
-POR_2003;Ombunduland;;;;;;;;;x
-POR_2006;Undaland;;;;;;;;x
-BEL_2034;Ruanda-Urundi;;;;;;;;;;;;x
-ENG_2036;Zanzibar;;;;;;;;;;;;x     
-ENG_2044;Tanganyika;;;;;;;;;;;;x   
-ENG_2048;Zanzibar;;;;;;;;;;;;x
-POR_2049;Gazaland;;;;;;;;;;;;x  
-POR_2054;Tete;;;;;;;;;;;;x         
-ENG_2067;Nyasaland;;;;;;;;;;;;x    
-ENG_2068;Mashonaland;;;;;;;;;;;;x  
-ENG_2071;Matabeleland;;;;;;;;;;;;x 
-ENG_2074;Bechuanaland;;;;;;;;;;;;x
-ENG_2087;Westkaap;;;;;;;;;;x
-ENG_2092;Xhosaland;;;;;;;;;x
-ENG_2094;Olberia;;;;;;;;;;;;x
-ENG_2096;Middenkaap;;;;;;;;;;;;x
-ORA_2103;Tusstromen;;;;;;;;;;;x
-TRN_2108;Obervahl;;;;;;;;;;x
-ZUL_2113;Zululand;;;;;;;;;;;x
-MEX_2138;Bermejo;;;;;;;;;;;;x
-MEX_2142;Rodora;;;;;;;;;;;;x
-MEX_2145;Nazan;;;;;;;;;;;;x
-MEX_2146;Tamaulipan;;;;;;;;;;;x
-MEX_2151;Cahitala;;;;;;;;;;;x
-MEX_2161;Xalisko;;;;;;;;;;;x
-MEX_2162;Mexika;;;;;;;;;;;x
-MEX_2170;Purepecia;;;;;;;;;;x
-MEX_2173;Argientas;;;;;;;;;;;;x
-MEX_2181;Coyatoc;;;;;;;;;;;x
-MEX_2183;Yucatla;;;;;;;;;;x
-UCA_2186;Zucurhan;;;;;;;;;;;x
-UCA_2191;Roligland;;;;;;;;;;;x
-UCA_2193;Frederiksmark;;;;;;;;;;;x
-UCA_2197;Manken;;;;;;;;;;;x
-UCA_2201;Leirland;;;;;;;;;;;x
-HAI_2213;Firgene;;;;;;;;;;;x
-CHI_2221;South Jiangsu;;;;;;;;;;;;x
-VNZ_2234;Sturlihaf;;;;;;;;;x
-NET_2235;Leeward Antilles;;;;;;;;;;x
-GDN_2240;Selvenkes;;;;;;;;;;x
-CLM_2247;Fløelmark;;;;;;;;;;x
-CLM_2251;Høyekyst;;;;;;;;x
-CLM_2259;Baskalstrip;;;;;;;;;x
-CLM_2262;Inskog;;;;;;;;;;x
-VNZ_2265;Norillan;;;;;;;;;;x
-VNZ_2278;Kilenkes;;;;;;;;;x
-ECU_2279;Huancavilcas;;;;;;;;x
-PEU_2289;Lengelveland;;;;;;;;;x
-PEU_2291;Chinchansuyu;;;;;;;;;;;;x
-PEU_2297;Qusqu;;;;;;;;;;;x
-PEU_2300;Cuntinsuyu;;;;;;;;;;x
-BOL_2305;Likanantai;;;;;;;;x
-BRZ_2306;Selwang;;;;;;;;x
-BOL_2309;Antakapay;;;;;;;;;x
-PEU_2308;Arica;;;;;;;;;;;;x
-BOL_2317;Bronedel;;;;;;;;;;;x   
-BOL_2321;Chuqi Yapu;;;;;;;;;;;x
-PRG_2338;Cempstrel;;;;;;;;;;;x
-PRG_2343;Paragua;;;;;;;;;;;x
-URU_2344;Ysùn;;;;;;;;;;x
-ARG_2360;Entre Rios;;;;;;;;;;;;x 
-ARG_2374;Catamarca;;;;;;;;;;;;x    
-BRZ_2401;Upper Jordracan;;;;;;;;;;x
-BRZ_2408;Lower Jordracan;;;;;;;;;x
-BRZ_2410;Hurupa;;;;;;;;;;;x
-BRZ_2416;Gyrefena;;;;;;;;;x
-BRZ_2421;Cuafeld;;;;;;;;;;;;x
-BRZ_2428;Tareconia;;;;;;;;;;;x
-BRZ_2439;Rimide;;;;;;;;;;x
-BRZ_2446;Helutsa;;;;;;;;;x
-BRZ_2447;Nilutsa;;;;;;;;;;x
-AST_2454;Fiji;;;;;;;;;;;;x
-BRZ_2461;Tupinambia;;;;;;;;;;x
-BRZ_2462;Iguazu;;;;;;;;;;x
-BRZ_2467;Altallia;;;;;;;;;;;x
-SPA_2517;Mariana Islands;;;;;;;;;;;x
-AST_2534;Solomon Islands;;;;;;;;;;;;x
-AST_2535;Melanesian Islands;;;;;;;;;;x
-AUS_2538;Syrmia;;;;;;;;;;;;x    
-TON_2540;Tonga;;;;;;;;;;;;x        
-USA_2543;Samoa;;;;;;;;;;;;x
-HES_2560;Hessen;;;;;;;;;;;;x       
-USA_2556;Temahi;;;;;;;;;;x,,,
-RUS_2587;Kuollanta;;;;;;;;;x
-CHI_2678;Outer Mongolia;;;;;;;;;x
-RUS_2694;Central Siberia;;;;;;;;;;x
+HAN_528;Lower Elbe;x     
+HAN_534;Oder;x
+HAN_540;East Friesland;x
+PRU_536;Braunschweig;x
+PRU_544;Mecklenburg;x   
+PRU_546;Pomerania;x     
+PRU_554;Thuringia;x  
+SAX_558;Saxony;x        
+GER_565;Hesse;x
+GER_566;Kassel;x
+PRU_570;Palatinate;x    
+PRU_575;Northern Rheinland;x
+PRU_578;Southern Rheinland;x
+BAV_595;Franconia;x     
+BAV_599;Upper Bavaria;x 
+SWI_603;Helvetia;x
+SWI_605;Liguria;x
+SPA_610;Caroline Islands;x
+AUS_633;West Slovakia;x
+SLO_635;East Slovakia;x
+AUS_652;Banat;x         
+AUS_654;Western Transylvania;x
+AUS_657;Eastern Transylvania;x
+TUR_674;Paristrion;x
+MOL_676;Bessarabia;x    
+PRU_682;Lower Silesia;x 
+PRU_684;Upper Silesia;x 
+PRU_690;Pomorze;x
+PRU_695;Prusy;x
+PRU_701;Poznan;x
+AUS_702;Lodomeria;x
+RUS_706;Masovia;x
+POL_709;Lubelskie-Podlachia;x
+RUS_715;Lesser Poland;x
+SAR_720;Piemont;x
+SAR_765;Sardinia & Corsica;x
+AUS_771;Old Croatia;x
+CRO_789;Krajina;x
+FRA_801;Tahiti;x        
+TUR_805;Thessalonikos;x
+TUR_806;Makedonia;x
+TUR_809;Paradounavon;x
+TUR_810;Bulgaria;x
+TUR_823;Nestos;x
+GRE_826;Heptanesa;x
+TUR_832;Epirou;x
+GRE_837;Hellas;x
+GRE_839;Peloponnesos;x
+CRE_847;Crete;x
+TUR_853;Arbenon;x
+TUR_863;Opsikon;x
+BYZ_867;Thrakesion;x
+BYZ_869;Samos;x
+TUR_873;Anatolikon;x
+TUR_876;Boukellarion;x
+TUR_880;Paphlagonia;x
+TUR_882;Trapizon;x
+TUR_885;Ghars;x
+TUR_890;Vana;x
+TUR_893;Tigranakert;x
+TUR_894;Kilikia;x
+RUS_940;Pinsk;x         
+RUS_947;Pinsk;x
+RUS_955;Podillia;x     
+UKR_963;Poltava;x 
+RUS_968;Transnistria;x
+UKR_976;Zaporozhia;x
+RUS_978;Kharkov;x       
+RUS_979;Donbass;x
+FIN_988;Ääninen;x
+RUS_994;Ingeri;x
+RUS_1003;Pskov;x
+RUS_1009;Ryazan;x
+AZB_1052;Dagistan;x
+JAP_1086;Repun Islands;x
+JAP_1088;Ezo;x
+AST_1097;New Brabant;x
+RUS_1098;Hayastan;x
+PER_1116;Mazandaran;x   
+PER_1128;Lorestan;x     
+PER_1132;Khuzestan;x    
+PER_1136;Fars;x         
+PER_1140;Kerman;x       
+YEM_1178;Sana'a;x 
+RUS_1182;Mezhdumorya;x
+RUS_1185;Zhetsyu;x
+AFG_1209;Pashtunistan;x 
+KOK_1210;Bandakshan;x   
+AFG_1214;Kandahar;x     
+PAN_1233;Amritsar;x     
+ENG_1243;Bundelkhand;x  
+ENG_1244;Awadh;x        
+ENG_1321;Lamka;x
+MLD_1325;Maldives;x
+NEP_1326;Western Himalayas;x
+BUR_1334;Upper Irrawady;x
+SIA_1352;Pattani;x      
+SIA_1355;Shan;x         
+LUA_1356;Laos;x         
+SIA_1358;Isan;x
+DAI_1369;Tonkin;x       
+DAI_1375;Annam;x        
+DAI_1380;Cochinchina;x  
+ENG_1384;Southern Malaya;x
+ENG_1391;Northern Malaya;x
+SIA_1392;Ayutthaya;x    
+BRU_1394;West Borneo;x  
+BRU_1396;Sabah;x        
+NET_1401;Siak;x         
+YEM_1412;Aden;x         
+NET_1413;West Java;x    
+NET_1417;Central Java;x 
+NET_1418;East Java;x    
+NET_1423;East Borneo;x  
+NET_1426;South Borneo;x 
+NET_1446;Timor;x        
+NET_1447;Moluccas;x     
+NET_1449;Celebes;x      
+CHI_1465;Eastern Mongolia;x
+CHI_1468;Western Mongolia;x
+CHI_1470;South Anhui;x  
+CHI_1477;North Anhui;x  
+CHI_1479;Fengtian;x     
+CHI_1482;Fujian;x       
+CHI_1485;Formosa;x      
+CHI_1490;Gansu;x        
+CHI_1493;Canton;x       
+CHI_1496;Hong Kong;x    
+CHI_1499;Hainan;x       
+CHI_1502;Guangxi;x      
+CHI_1505;Guizhou;x      
+CHI_1508;East Henan;x   
+CHI_1510;West Henan;x   
+CHI_1519;West Hubei;x   
+CHI_1522;East Hubei;x
+CHI_1524;Hunan;x
+CHI_1532;Inner Mongolia;x
+CHI_1540;North Jiangsu;x
+CHI_1545;North Jiangxi;x
+CHI_1547;South Jiangxi;x
+CHI_1552;Heilongjiang;x 
+CHI_1555;Kirin;x
+CHI_1559;Shaanxi;x      
+CHI_1563;West Shandong;x
+CHI_1565;East Shandong;x
+CHI_1572;Shanxi;x       
+CHI_1578;West Sichuan;x 
+CHI_1579;East Sichuan;x 
+TIB_1587;Eastern Himalayas;x
+CHI_1594;Kashgar;x
+CHI_1600;Urumqui;x      
+CHI_1601;Yunnan;x       
+CHI_1604;North Zhejiang;x
+CHI_1610;South Zhejiang;x
+CHI_1612;Baoding;x       
+CHI_1616;Peking;x
+JAP_1640;Chugoku;x   
+JAP_1649;Kanto;x        
+JAP_1654;Bonin Islands;x
+JAP_1655;Kansai;x       
+JAP_1665;Shikoku;x      
+JAP_1660;Kyushu;x       
+JAP_1672;Tohoku;x       
+JAP_1675;Chubu;x
+MOR_1693;Marrakesh;x    
+MOR_1694;Agadir;x       
+ALD_1704;Oran;x         
+ALD_1708;Constantine;x
+ALD_1713;North Central Sahara;x
+CLM_1723;Panaben;x
+TRI_1731;Tripolitania;x 
+TRI_1735;Cyrenaica;x    
+TRI_1740;Fezzan;x       
+EGY_1745;Cairo;x        
+EGY_1751;Alexandria;x   
+EGY_1753;Qattara;x      
+EGY_1755;Sinai;x
+ENG_1844;Sudd;x         
+ETH_1852;Begemder;x     
+ETH_1853;Tigray;x       
+ETH_1859;Shewa;x        
+ETH_1862;Gibe;x         
+ETH_1865;Hararghe;x
+SOM_1868;South Somaliland;x
+SOM_1872;North Somaliland;x
+FRA_1878;Lower Guinea;x 
+FRA_1883;Upper Guinea;x
+FRA_1901;Upper Volta;x
+ASH_1909;Gold Coast;x   
+FRA_1919;Dahomey;x      
+SOK_1934;Biafra;x       
+SOK_1937;Tukari;x       
+SOK_1945;Kano;x         
+SPA_1955;Equatorial Guinea;x
+ENG_1956;Cameroon;x     
+SOK_1963;Adamawa;x      
+FRA_1970;Bangassou;x
+ENG_1979;Horalan;x  
+BEL_1990;Kivu;x         
+BEL_1996;Inner Congo;x
+POR_1999;Andongo;x
+POR_2003;Ombunduland;x
+POR_2006;Undaland;x
+BEL_2034;Ruanda-Urundi;x
+ENG_2036;Zanzibar;x     
+ENG_2044;Tanganyika;x   
+ENG_2048;Zanzibar;x
+POR_2049;Gazaland;x  
+POR_2054;Tete;x         
+ENG_2067;Nyasaland;x    
+ENG_2068;Mashonaland;x  
+ENG_2071;Matabeleland;x 
+ENG_2074;Bechuanaland;x
+ENG_2087;Westkaap;x
+ENG_2092;Xhosaland;x
+ENG_2094;Olberia;x
+ENG_2096;Middenkaap;x
+ORA_2103;Tusstromen;x
+TRN_2108;Obervahl;x
+ZUL_2113;Zululand;x
+MEX_2138;Bermejo;x
+MEX_2142;Rodora;x
+MEX_2145;Nazan;x
+MEX_2146;Tamaulipan;x
+MEX_2151;Cahitala;x
+MEX_2161;Xalisko;x
+MEX_2162;Mexika;x
+MEX_2170;Purepecia;x
+MEX_2173;Argientas;x
+MEX_2181;Coyatoc;x
+MEX_2183;Yucatla;x
+UCA_2186;Zucurhan;x
+UCA_2191;Roligland;x
+UCA_2193;Frederiksmark;x
+UCA_2197;Manken;x
+UCA_2201;Leirland;x
+HAI_2213;Firgene;x
+CHI_2221;South Jiangsu;x
+VNZ_2234;Sturlihaf;x
+NET_2235;Leeward Antilles;x
+GDN_2240;Selvenkes;x
+CLM_2247;Fløelmark;x
+CLM_2251;Høyekyst;x
+CLM_2259;Baskalstrip;x
+CLM_2262;Inskog;x
+VNZ_2265;Norillan;x
+VNZ_2278;Kilenkes;x
+ECU_2279;Huancavilcas;x
+PEU_2289;Lengelveland;x
+PEU_2291;Chinchansuyu;x
+PEU_2297;Qusqu;x
+PEU_2300;Cuntinsuyu;x
+BOL_2305;Likanantai;x
+BRZ_2306;Selwang;x
+BOL_2309;Antakapay;x
+PEU_2308;Arica;x
+BOL_2317;Bronedel;x   
+BOL_2321;Chuqi Yapu;x
+PRG_2338;Cempstrel;x
+PRG_2343;Paragua;x
+URU_2344;Ysùn;x
+ARG_2360;Entre Rios;x 
+ARG_2374;Catamarca;x    
+BRZ_2401;Upper Jordracan;x
+BRZ_2408;Lower Jordracan;x
+BRZ_2410;Hurupa;x
+BRZ_2416;Gyrefena;x
+BRZ_2421;Cuafeld;x
+BRZ_2428;Tareconia;x
+BRZ_2439;Rimide;x
+BRZ_2446;Helutsa;x
+BRZ_2447;Nilutsa;x
+AST_2454;Fiji;x
+BRZ_2461;Tupinambia;x
+BRZ_2462;Iguazu;x
+BRZ_2467;Altallia;x
+SPA_2517;Mariana Islands;x
+AST_2534;Solomon Islands;x
+AST_2535;Melanesian Islands;x
+AUS_2538;Syrmia;x    
+TON_2540;Tonga;x        
+USA_2543;Samoa;x
+HES_2560;Hessen;x       
+USA_2556;Temahi;x
+RUS_2587;Kuollanta;x
+CHI_2678;Outer Mongolia;x
+RUS_2694;Central Siberia;x

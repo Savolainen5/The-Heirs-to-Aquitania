@@ -1,6 +1,6 @@
-owner = MNK
+owner = MNK
 controller = MNK
 add_core = MNK
 trade_goods = coffee
-life_rating = 30
+life_rating = 35
 

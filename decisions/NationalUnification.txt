@@ -982,6 +982,7 @@ political_decisions = {
 			#	LOM = { in_sphere = THIS }
 			#	VEN = { in_sphere = THIS }
 				NPL = { in_sphere = THIS }
+				MER = { in_sphere = THIS }
 				PAP = { in_sphere = THIS }
 			#	CRS = { in_sphere = THIS }
 			#	PDN = { in_sphere = THIS }
@@ -1026,10 +1027,7 @@ political_decisions = {
 			}	
 			any_country = {
 				limit = {
-#					OR = {
-#						primary_culture = north_italian
-						primary_culture = south_italian
-#					}
+					primary_culture = south_italian
 					in_sphere = THIS
 				}
 				annex_to = NPL

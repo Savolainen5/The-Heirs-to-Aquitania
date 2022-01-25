@@ -149,6 +149,8 @@ conquer_cherokee_title;The Cherokee Lands;x
 conquer_cherokee_desc;The time has come for our growing nation to claim the Cherokee territory to our east.;x
 conquer_iroquois_title;Lay Claim to the Iroquois;x
 conquer_iroquois_desc;The Iroquois lands surrounding the Great Lakes are fertile and sparsely populated. We should ensure the other Amerigan powers recognize our claim to these territories as soon as possible.;x
+deal_with_euros_title;The Question of the White Men;x
+deal_with_euros_desc;Despite the best efforts of the foreign interlopers, we have proven our culture is every bit as strong as that of the white men. Yet now we are divided over how our relations with foreigners should progress.\n\n\n§RNB: Your choices in the event are either "Make nice and become a normal country" or "Get cores on like all of your neighbours at the cost of 24 infamy and never getting immigrants." You will lose your POP growth buff (if you still have it) either way.;x
 declaration_of_mantua_ai_title;Promulgate the Declaration of Mantua;x
 declaration_of_mantua_ai_desc;In 1849, the Council of the Union, at the behest of its constituent rulers and in light of the growing strength and cohesion of the Union's armed forces, made a joint proclamation to the world. Considered to be the seeds of a national identity, the Declaration decreed that all states which the Neapolitan kingdom had absorbed must be released by Neapolitan King Giuseppe I Salenino. It further stated the ambition of the Padan Union to annex the Romagna region into its territory, given its proximity to the namesake Po River. By issuing this declaration, war between Naples and the Union was a foregone conclusion.;x
 declaration_of_mantua_title;Promulgate the Declaration of Mantua;x
@@ -522,6 +524,8 @@ reform_albina_title;Reform Albina;x
 reform_albina_desc;Although we have lost the title before, we can once again claim it. With the island of Bryten once more united under our rule, we should take up the mantle of Albina for the good of all its inhabitants!;x
 reform_qin_empire_title;Reform the Qin Empire;x
 reform_qin_empire_desc;Liberal ideas have penetrated China and threaten to disturb the sanctity of the Empire. By drafting a constitution, we can guarantee our position in power while acknowledging the rights of the Chinese people. Qin Diguo, Wan Sui!;x
+refute_westerners_title;Refute Western Claims;x
+refute_westerners_desc;We have ended the European settler states on the western part of this continent, and can permanently erase their illegitimate claims to this land.;x
 rejoin_BOH_title;Rejoin Bohemia;x
 rejoin_BOH_desc;The country to which we used to belong - and which we were PROUD to be a part of - was unjustly put down by its neighbours. We have gained our independence, and let us do our part to restore our great country by joining forces with the resurrected Bohemia!;x
 rejoin_PRH_title;Join ourselves to Prague;x
@@ -646,8 +650,12 @@ treaty_of_tesepikhav_title;The Treaty of Tesepikhav;x
 treaty_of_tesepikhav_desc;By striking deep into the white man's territory and capturing his head city, we can force him to end the war and acknowledge our right to exist!;x
 treaty_of_twist_title;The Treaty of Twist;x
 treaty_of_twist_desc;With the conclusion of the Brunswick Congress, we are now have the very real possibility to unite the Germans under our banner. The matter of Emden, which the Netherlands seized from Oldenburg in 1827, should be settled, as it will create unnecessary friction between our two countries now that we have inherited Oldenburg's claim. We can propose the town of Twist, on the border, to be a meeting ground for negotiations over the territory.;x
+turn_off_meme_decisions_title;Turn Off Meme Decisions;x
+turn_off_meme_decisions_desc;You will no longer see them if your country has any, which it probably doesn't. But if you feel like making an AAR, maybe you can come up with a plausible explanation for some of them.;x
 turn_off_railroading_title;Turn Off Railroading;x
 turn_off_railroading_desc;Select this to disable railroading, which affects the outcomes of some events in the Heirs to Aquitània mod. You can turn it on again whenever you choose.\n\n§RNB: Savs doesn't test non-railroaded, so use it at your own risk. Nothing should crash, but things will be even weirder than HtA already is.;x
+turn_on_meme_decisions_title;Turn on Meme Decisions;x
+turn_on_meme_decisions_desc;These decisions are ones that are OP or that go against Savs' stick-in-the-mud storytelling ways. But you should play this game how you want. Current list (0.36.60):\n-BYZ:Get cores on Armenia, the Levant, Egypt and the Balkans as Melisurgos, winner of the Roman Civil War.\n-SHC:Get cores on neighbouring countries and then remove their cores;x
 turn_on_railroading_title;Turn On Railroading;x
 turn_on_railroading_desc;Select this to reenable railroading, which affects the outcomes of some events in the Heirs to Aquitània mod. You can turn it off again whenever you choose.\n\n§RNB: Savs doesn't test non-railroaded, so use it at your own risk. Nothing should crash, but things will be even weirder than HtA already is.;x
 TUS_form_PDN_title;Unite with the Notherners;x

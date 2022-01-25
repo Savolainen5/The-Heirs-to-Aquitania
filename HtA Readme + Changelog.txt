@@ -106,9 +106,11 @@ Minor
 - Fixed 99% of remaining mismatches between various map files. The Paracel Islands will continue not to exist as land for gameplay purposes (though if you look closely you can see their shadow)
 - Also made a lot rivers fit province borders better - lots more to do still
 - Split Pau off from the Basque province of Miarritze, added two flavour events about Our Lady of Lourdes to the owner
+- Added a new province in Slovakia, Banska Stiavnica. It produces precious metals, being a famous silver mine
 - Made requirements for taking the Intervene in Persia decision more clear to the player
 - Increased Make Puppet CB to 10 max badboy (previously 7)
 - Demand concession CB can now target colonial states/provinces of uncivs
+- Demand Concession CB and Establish Protectorate CB no longer available against CHI, QIN, GXI, MCK
 - Made CBs normally available between RUS and SML when railroading is off
 - Both German Hegemony CBs should fire the Our Cores Returned event normally
 - Added a special event-only Liberate Country CB to allow the liberation of Syria correctly
@@ -132,7 +134,7 @@ Minor
 - Tried to fix the Stilhav Naval Base decision for HOY, wasn't very successful.
 - Brought in the HND country file from HPM with some tweaks and also changed its colour to a kind of bright pink
 - Removed GNG from files and all references to it
-- Tweaked a few LRs
+- Tweaked a few LRs, esp. giving all of central Ameriga 35 LR (instead of 30)
 - Made uncolonized South Amerigan provinces have colonial = 2 in their files so that they will be colonial when annexed by CHL and ARG
 - Tweaked a few RGOs in Aengland
 - Pumped up some starting prestige for important European countries
@@ -142,6 +144,7 @@ Minor
 - Added some debug decisions/events
 - Copied some code from HPM for some LiberalRevolutions events
 - There should be a small pull for POPs to migrate to countries which have a similar culture/language (Hispanians and Portuguese to Latin America, Scandinavians to Margaria and other such countries, etc.)
+- Added a utility tag for future use, and to ensure that sphere/market stuff works properly for GP#1
 - Lots of other small stuff not worth mentioning
 - Added a blank province map (current to 0.36.27) for whatever you might want to use it for. Will update it if it changes
 - Moved most unused event/decision pictures into separate folders (mostly for keeping better track of things)
@@ -174,6 +177,7 @@ Bugfixes
 - Fixed The Obervahl sovereignty event
 - Removed accepted cultures from Mexika, since they're supposed to be added by event later
 - Kaapland is no longer a releasable vassal. I don't THINK this will be a problem.
+- Fixed some flag inconsistencies with Roman Empire decisions when Anatole wins the Civil War
 
 ----------------------------------------------------------------------------------------------------------
 See the OldChangelogs file for previous version changelogs. You can also see them on the subreddit's wiki.

@@ -1,6 +1,6 @@
 owner = IRO
-controller = IRO
-add_core = IRO
+controller = IRO
+add_core = IRO
 trade_goods = timber
 life_rating = 35
 

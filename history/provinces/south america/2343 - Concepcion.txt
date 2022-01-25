@@ -1,6 +1,6 @@
-owner = USR
-controller = USR
-add_core = USR
+owner = USR
+controller = USR
+add_core = USR
 trade_goods = cattle
-life_rating = 30
+life_rating = 35
 

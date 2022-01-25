@@ -353,6 +353,30 @@ political_decisions = {
 			badboy = -3
 		}
 	}
+	turn_on_meme_decisions = {
+		picture = HtALion1
+		alert = no
+		potential = {
+			NOT = { has_global_flag = meme_decisions_enabled }
+			ai = no
+		}
+		allow = {}
+		effect = {
+			set_global_flag = meme_decisions_enabled
+		}
+	}
+	turn_off_meme_decisions = {
+		picture = HtALion1
+		alert = no
+		potential = {
+			has_global_flag = meme_decisions_enabled
+			ai = no
+		}
+		allow = {}
+		effect = {
+			clr_global_flag = meme_decisions_enabled
+		}
+	}
 	end_dead_wars = {
 		potential = {
 			war = yes

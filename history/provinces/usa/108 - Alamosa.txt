@@ -1,4 +1,4 @@
-add_core = CLF
+add_core = CLF
 trade_goods = cattle
 life_rating = 35
 

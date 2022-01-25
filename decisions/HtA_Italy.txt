@@ -258,10 +258,13 @@ political_decisions = {
 			}
 		}
 		ai_will_do = {
-			modifier = 0
-			NOT = {
-				military_score = 20
-				year = 1853
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					military_score = 20
+					year = 1853
+				}
 			}
 		}
 	}
