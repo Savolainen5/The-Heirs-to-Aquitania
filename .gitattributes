@@ -1,2 +1,5 @@
 # Always perform LF normalization or something. I dunno how this really works, I just do with the documentation tells me
 * text eol=lf
+
+# These files are binary and shouldn't be converted
+*.dds binary
