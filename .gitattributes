@@ -5,3 +5,4 @@
 # (binary is a macro for -text -diff)
 
 *.dds binary
+*.tga binary

@@ -1,10 +1,12 @@
 If you downloaded a .rar (from the official forum, for example): Extract the .mod (using a program like Winrar or 7zip) and the folder to Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod
 
 If you downloaded HtA from Github:
-1. Unzip/Extract (using Winrar/7zip) the downloaded folder (it's probably called The-Heirs-to-Aquitania-master) to your game files' mod folder (the Programfiles(x86) path mentioned above).
-2. Rename the folder to The Heirs to Aquitania (Note - make sure you use spaces between the words, not dashes)
-3. Take the .mod file (it might look like a movie file of some kind for you) and put it in the same place as the HtA folder.
+1. Unzip/Extract (using Winrar/7zip) the downloaded folder (it should be called The-Heirs-to-Aquitania-master)
+2. Move the files to Programfiles(x86)/Steam/steamapps/common/Victoria 2/mod
+3. Option: Keep only the folder and the .mod file called The Heirs to Aquitania. You can delete the Readme and the other included files.
 
 In the end, it should look like this: https://imgur.com/a/eKLRl2P
 
 Map modding option: If you want a slightly darker political colormap, go to map/terrain and rename political_colormap_HFMmm to just political_colormap and get rid of (or change the name of) the current political_colormap. The default one looks a bit better in my opinion.
+
+I HIGHLY RECOMMEND READING SOME OF THE TEXT FILES INSIDE THE MOD THAT EXPLAIN THE MOD, ITS PURPOSE AND ITS HISTORY
