@@ -4,5 +4,5 @@
 # These files are binary and shouldn't be converted
 # (binary is a macro for -text -diff)
 
-#*.dds binary
-#*.tga binary
+*.dds binary
+*.tga binary
