@@ -333,52 +333,38 @@ BAV_599 = { 599 592 600 601 602 } #Upper Bavaria
 
 SWI_603 = { 603 604 605 606 } #East Switzerland/Helvetia
 
-
-### Poland
-
-PRU_690 = { 690 691 693 694 } #Westpreu?en/Pomorze
-
-PRU_695 = { 695 696 697 } #Ostpreu?en/Prusy
-
-PRU_701 = { 699 700 701 } #Posen/Poznan
-
-POL_709 = { 715 709 711 } #Lubelskie-Podlachia
-
-AUS_702 = { 702 950 951 952 953 } #Galicia-Lodomeria/Lodomeria
-
-RUS_715 = { 713 716 703 714 704 705 } #West Galicia/Lesser Poland
-
-PRU_682 = { 682 683 687 } #Lower Silesia
-
-PRU_684 = { 684 685 689 2584 688 } #Upper Silesia
-
-
-
-### Bohemia and stuff
-
-AUS_625 = { 625 627 628 629 630 } #Bohemia
-
-AUS_626 = { 626 631 632 } #Moravia
-
-AUS_633 = { 633 634 635 3255 } #West Slovakia
-
-SLO_635 = { 637 636 638 } #East Slovakia
-
-AUS_623 = { 643 623 639 640 642 644 } #Transdanubia
-
-AUS_641 = { 641 645 646 648 649 650 } #Central Hungary
-
+PRU_701 = { 699 700 701 } #Posen
 
 
 ### Austria
-
-AUS_736 = { 736 737 770 778 } #Istria
 
 AUS_612 = { 612 611 614 615 735 } #Tirol
 
 AUS_613 = { 616 613 618 617 } #Kärnten-Steiermark
 
 AUS_619 = { 619 620 621 622 624 } #Österreich
+
+
+#Bohemia
+
+PRU_682 = { 682 683 687 } #Lower Silesia
+
+PRU_684 = { 684 685 689 2584 688 } #Upper Silesia
+
+AUS_625 = { 625 627 628 629 630 } #Bohemia
+
+AUS_626 = { 626 631 632 } #Moravia
+
+AUS_633 = { 633 634 635 3255 } #W Slovakia
+
+SLO_635 = { 636 638 637 } #E Slovakia
+
+
+#Hungary
+
+AUS_623 = { 643 623 639 640 642 644 } #Transdanubia
+
+AUS_641 = { 641 645 646 648 649 650 } #Central Hungary
 
 AUS_652 = { 652 653 792 } #Banat
 
@@ -387,8 +373,26 @@ AUS_654 = { 654 655 656 661 651 647 } #Western Transylvania
 AUS_657 = { 657 659 660 2533 } #Eastern Transylvania
 
 
+#Poland
+
+AUS_702 = { 702  950 951 952 953 } #Lodomeria
+
+POL_709 = { 715 711 709 } #Lubelskie-Podlachia
+
+RUS_715 = { 703 713 716 704 705 714 } #Lesser Poland
+
+RUS_706 = { 706 708 710 717 712 } #Masovia
+
+RUS_707 = { 707 719 936 937 } #Brêst
+
+PRU_690 = { 690 691 693 694 } #Pomorze
+
+PRU_695 = { 695 696 697 } #Prusy
+
 
 ### Italy
+
+AUS_736 = { 736 737 770 778 } #Istria
 
 SAR_720 = { 720 721 722 533 } #Piemonte/Piemont (That five thirty-three is Heligoland/Coni AKA Cuneo - Heligoland is not important in this world)
  
@@ -568,10 +572,6 @@ AFG_1214 = { 1214 1215 1213 1212 1211 } #Kandahar
 
 
 ### Russia
-
-RUS_706 = { 706 708 709 710 717 712 } #Masovia
-
-RUS_707 = { 707 719 936 937 } #Brést
 
 RUS_718 = { 718 945 946 947 948 } #Minsk
 
