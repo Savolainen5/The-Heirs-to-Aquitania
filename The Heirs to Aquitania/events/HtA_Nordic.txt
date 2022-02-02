@@ -712,7 +712,7 @@ country_event = {
 		}
 	}
 	
-	immediate = { clr_country_flag = latvian_revolt clr_country_flag = latvian_nationalism set_country_flag = lativan_rebellion }
+	immediate = { clr_country_flag = latvian_revolt clr_country_flag = latvian_nationalism set_country_flag = latvian_rebellion }
 	
 	option = {
 		name = "Crush them!"
@@ -819,6 +819,7 @@ country_event = {
 		any_pop = {
 			limit = {
 				is_primary_culture = no
+				NOT = { has_pop_culture = latvian }
 			}
 			militancy = 2
 			consciousness = 3
@@ -833,7 +834,7 @@ country_event = {
 		name = "If they don't want to be part of our country, then let them leave!"
 		set_country_flag = latvian_release
 		clr_country_flag = latvian_rebellion
-		prestige = -25
+		prestige = -15
 		release = LAT
 		leave_alliance = LAT
 		relation = {
@@ -850,7 +851,7 @@ country_event = {
 			limit = {
 				is_primary_culture = no
 			}
-			militancy = 2
+			militancy = -1
 			consciousness = 4
 		}
 		
@@ -918,7 +919,6 @@ country_event = {
 						name = suppressed
 						duration = -1
 					}
-					
 				}
 				10 = {
 					add_province_modifier = {
@@ -1190,9 +1190,10 @@ country_event = {
 	}
 	
 #Event to increase relations and such when a free latvia exists with the war declarer
-#50531 50532
-#
 
+#50531 50532
+
+#
 	country_event = {
 		id = 50590
 		title = "EVTNAME50590"

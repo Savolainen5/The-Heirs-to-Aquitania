@@ -142,6 +142,7 @@ Minor
 - Lots of new event and decision pictures
 - Added some info decisions
 - Added some debug decisions/events
+- Added decisions to toggle on/off the Change Tech School decisions
 - Copied some code from HPM for some LiberalRevolutions events
 - There should be a small pull for POPs to migrate to countries which have a similar culture/language (Hispanians and Portuguese to Latin America, Scandinavians to Margaria and other such countries, etc.)
 - Added a utility tag for future use, and to ensure that sphere/market stuff works properly for GP#1

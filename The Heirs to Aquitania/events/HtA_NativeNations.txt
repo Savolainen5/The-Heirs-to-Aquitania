@@ -402,6 +402,10 @@ country_event = {
 		}
 		civilized = yes
 		has_country_flag = has_native_societies
+		OR = {
+			has_country_modifier = native_societies1
+			has_country_modifier = native_societies2
+		}
 	}
 
 	mean_time_to_happen = {
