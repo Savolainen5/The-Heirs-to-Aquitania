@@ -1,6 +1,7 @@
 capital = 860
 primary_culture = roman
 culture = greek
+culture = bulgarian
 culture = anatolian
 religion = orthodox
 government = absolute_monarchy

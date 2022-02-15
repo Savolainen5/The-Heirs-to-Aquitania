@@ -1,7 +1,8 @@
 capital = 809
 primary_culture = bulgarian
+culture = roman
 religion = orthodox
-government = hms_government
+government = absolute_monarchy
 plurality = 0.08
 nationalvalue = nv_order
 literacy = 0.4
@@ -10,12 +11,12 @@ civilized = yes
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
-vote_franschise = landed_voting
-public_meetings = yes_meeting
-press_rights = censored_press
+vote_franschise = none_voting
+public_meetings = no_meeting
+press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = jefferson_method
-political_parties = non_secret_ballots
+political_parties = underground_parties
 
 # Social Reforms
 wage_reform = no_minimum_wage
