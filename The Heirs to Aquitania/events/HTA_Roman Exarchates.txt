@@ -1,0 +1,33 @@
+
+country_event = {
+	id = 00001
+	title = "EVTNAME00001"
+	desc = "EVTDESC00001"
+	picture = "autocracy"
+	fire_only_once = yes
+	trigger = {
+		tag = BYZ
+		owns = 873
+		owns = 878
+		}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = "EVTOPTA00001"
+		prestige = 15
+		set_country_flag = centralizing_empire
+		TUR_876 = { add_core = ANA }
+		TUR_873 = { add_core = ANA }
+		BYZ_867 { add_core = ANA }
+	}
+	option = {
+		name = "EVTOPTB00001"
+		prestige = -15
+		set_country_flag = decentralized_empire
+		TUR_876 = { add_core = ANA }
+		TUR_873 = { add_core = ANA }
+		BYZ_867 = { add_core = ANA }
+		release_vassal = ANA 
+	}
+}
