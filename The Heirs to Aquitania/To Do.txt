@@ -128,6 +128,7 @@ Other:
 	- See the ideas from Crushric - Look in Suggestions.txt
 	- Event/decision for, when it has conquered all of Armenia (make this easier?), crack down on Armenians or risk wrath of military?
 - Greece rejoins a democratic Roman Empire? Buff ANA in that case
+	- Make GRE motivations more clear, especially about what they plan to do with independence
 - Or, RCW runs a different course if the Empire is already democratic via Albesans
 	- Romans struggle to keep Greeks and Anatolians in check - regionalism
 - Make sure BYZ revolter tags actually build militaries
@@ -135,6 +136,8 @@ Other:
 	- Greek accepted OR better assimilation (what would be the policy vis-a-vis Armenians?)
 	- Focus more on Anatolian expansion
 	- Absorb Georgia?
+	- Make it so that ANA is made a puppet upon reconquest from ARM, so as to simulate the kind of transitionary government in the area (this would solve problems of the army not being built by ANA)
+		- So basically either make it a puppet to ease its transition somehow or don't to make it centralized
 - ANA victory
 	- Melisurgos can repudiate things Georgios did vis-à-vis GRE, Romania
 	
@@ -167,6 +170,7 @@ Other:
 - Latvia CB to be unlocked after a certain event
 - When Austria is released after dismantlement, it got OTL cores. Why? Fix!
 - Go through Irredentism decisions
+- Add some starting Steenkooler country for people that just want to wait for them to spawn
 
 	0.41 (Central Asia):
 	
