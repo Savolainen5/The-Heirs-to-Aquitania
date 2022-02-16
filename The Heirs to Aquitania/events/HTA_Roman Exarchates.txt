@@ -171,6 +171,10 @@ country_event = {
 		prestige = 300
 		clr_global_flag = roman_centralization_crisis
 		add_country_flag = roman_golden_era
+		BUL = { all_core = { add_core = BYZ } }
+		GRE = { all_core = { add_core = BYZ } }
+		MCD = { all_core = { add_core = BYZ } }
+		
 	}
 }
 #Rome fails to defeat rebellions, government collapse inevitable

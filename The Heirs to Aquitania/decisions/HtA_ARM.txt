@@ -1,27 +1,79 @@
 political_decisions = {
 	
 	#Reclaim Anatolia
+	expand_anatolian_holdings = {
+		picture = enact_muhammad_alis_reforms
+		potential = {
+			NOT = { has_country_flag = armenia_expand }
+			tag = ARM
+			owns = 876
+			owns = 873
+			}
+		allow = {
+			year = 1860
+			}
+		effect = {
+			set_country_flag = armenia_expand
+			BYZ_679 = { add_core = ARM }
+			TUR_880 = { add_core = ARM }
+			TUR_863 = { add_core = ARM }
+			}
+		}
 	revive_armenian_anatolia = {
 		picture = enact_muhammad_alis_reforms
 		potential = {
 			tag = ARM
-			has_country_flag = RIP_armenian_anatolia
-			873 = { NOT = { is_core = ARM } }
-			876 = { NOT = { is_core = ARM } }
-		}
-		
+			has_global_flag = roman_centralization_crisis
+			}
 		allow = {
-			is_greater_power = yes
-			military_score = 20
-		}
-		
+			is_secondary_power = yes
+		NOT = { has_country_flag = anatolia_war_again 
+			has_country_flag = anatolia_war_won
+			has_country_flag = anatolia_war_lost }
+			}
 		effect = {
-			prestige = 10
-			badboy = 1
-			TUR_873 = { add_core = ARM }
-			TUR_876 = { add_core = ARM }
+			set_country_flag = anatolia_war_again
+			war = {
+				badboy = -8
+				target = BYZ
+				attacker_goal = {
+					casus_belli = cut_down_to_size
+				}
+			}
 		}
 	}
+	treaty_of_aydin = {
+		picture = enact_muhammad_alis_reforms
+		potential = {
+			tag = ARM
+			has_country_flag = anatolia_war_again
+			}
+		allow = {
+			BYZ = {
+				exists = yes
+				is_disarmed = yes
+				truce_with = ARM
+				}
+			}
+		effect = {	
+			clr_country_flag = anatolia_war_again
+			add_country_flag = anatolia_war_won
+			prestige = 100
+			BYZ = {
+				any_owned = {
+				limit = {
+				OR = {
+					is_core = ANA
+					region = BYZ_869
+					region = TUR_880
+					}
+					}
+				add_core = ARM
+				secede_province = ARM
+				}
+			}
+		}
+	}		
 	
 	#Retreat to Hayastan
 	retreat_to_hayastan = {

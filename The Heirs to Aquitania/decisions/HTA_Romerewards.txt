@@ -1,4 +1,4 @@
-#Written by Bismarkingit, categorized as meme/LARP by me.
+#Written by Bismarkingit, categorized as meme/LARP by me. (That's insulting when you have bloody Zapadoslavia and Grossdeutschland every single game)
 political_decisions = {
 	reclaim_armenia = {
 		picture = military_parade
