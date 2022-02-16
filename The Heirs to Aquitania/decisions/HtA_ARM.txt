@@ -27,12 +27,12 @@ political_decisions = {
 			}
 		allow = {
 			is_secondary_power = yes
-		NOT = { has_country_flag = anatolia_war_again 
+		NOT = { has_global_flag = anatolia_war_again 
 			has_country_flag = anatolia_war_won
 			has_country_flag = anatolia_war_lost }
 			}
 		effect = {
-			set_country_flag = anatolia_war_again
+			set_global_flag = anatolia_war_again
 			war = {
 				badboy = -8
 				target = BYZ
@@ -56,8 +56,8 @@ political_decisions = {
 				}
 			}
 		effect = {	
-			clr_country_flag = anatolia_war_again
-			add_country_flag = anatolia_war_won
+			clr_global_flag = anatolia_war_again
+			set_country_flag = anatolia_war_won
 			prestige = 100
 			BYZ = {
 				any_owned = {

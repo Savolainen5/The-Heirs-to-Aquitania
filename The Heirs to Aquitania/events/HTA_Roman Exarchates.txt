@@ -170,7 +170,7 @@ country_event = {
 		name = "EVTOPTA00006"
 		prestige = 300
 		clr_global_flag = roman_centralization_crisis
-		add_country_flag = roman_golden_era
+		set_country_flag = roman_golden_era
 		BUL = { all_core = { add_core = BYZ } }
 		GRE = { all_core = { add_core = BYZ } }
 		MCD = { all_core = { add_core = BYZ } }
@@ -194,6 +194,44 @@ country_event = {
 		name = "EVTOPTA00007"
 		prestige = -300
 		clr_global_flag = roman_centralization_crisis
-		add_country_flag = roman_weakness
+		set_country_flag = roman_weakness
+		release_vassal = ANA
+		release_vassal = GRE
+		release_vassal = BUL
+		release_vassal = MCD
+	}
+}
+#Wins anatolia war, doesnt mean wins the others
+country_event = {
+	id = 00008
+	title = "EVTNAME00008"
+	desc = "EVTDESC00008"
+	mean_time_to_happen = { days = 7 }
+	fire_only_once = yes
+	
+	trigger = {
+	tag = BYZ
+	has_global_flag = roman_centralization_crisis
+	has_global_flag = anatolia_war_again
+	ARM = { NOT = { war_with = THIS } }
+	is_disarmed = no
+	}
+	option = {
+		name = "EVTOPTA00008"
+		prestige = 50
+		ARM = {
+		set_country_flag = anatolia_war_lost
+		any_owned = {
+		limit = {
+			OR = {
+				is_core = BYZ
+				region = TUR_894
+				}
+			}
+		add_core = BYZ
+		add_core = ANA
+		secede_province = BYZ
+		}
+		}
 	}
 }
