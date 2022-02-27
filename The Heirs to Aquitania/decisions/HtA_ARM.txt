@@ -26,7 +26,6 @@ political_decisions = {
 			has_global_flag = roman_centralization_crisis
 			}
 		allow = {
-			is_secondary_power = yes
 		NOT = { has_global_flag = anatolia_war_again 
 			has_country_flag = anatolia_war_won
 			has_country_flag = anatolia_war_lost }
@@ -46,7 +45,7 @@ political_decisions = {
 		picture = enact_muhammad_alis_reforms
 		potential = {
 			tag = ARM
-			has_country_flag = anatolia_war_again
+			has_global_flag = anatolia_war_again
 			}
 		allow = {
 			BYZ = {
