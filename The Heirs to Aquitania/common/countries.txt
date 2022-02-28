@@ -139,6 +139,7 @@ POR		= "countries/Portugal.txt"
 PRE		= "countries/Provence.txt"
 SWI		= "countries/Switzerland.txt"
 WLL		= "countries/Wallonia.txt"
+LTN		= "countries/LatinEmpire.txt"
 
 # Italy
 CRS		= "countries/Corsica.txt"
