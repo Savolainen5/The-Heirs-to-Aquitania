@@ -412,6 +412,11 @@ LSK_anarcho_liberal;Estelle del Nord;x
 LSK_socialist;Socialist Party;x
 LSK_communist;Communistas;x
 LSK_fascist;Futuristas;x
+LTN;Latin Empire;x
+LTN_ADJ;Latin;x
+LTN_democracy;Latin Union;x
+LTN_fascist_dictatorship;Imperio Latino;x
+LTN_proletarian_dictatorship;The Latin Syndicalist Union;x
 LTS;Lutèces;x                                                  
 LTS_ADJ;Lutècesan;x
 LTS_conservative_1;Faksyon Lwayalis;x

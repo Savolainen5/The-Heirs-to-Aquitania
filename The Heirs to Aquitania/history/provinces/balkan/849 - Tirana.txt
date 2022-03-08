@@ -1,6 +1,6 @@
-owner = BYZ
-controller = BYZ
-add_core = BYZ
+owner = MCD
+controller = MCD
+add_core = MCD
 add_core = ALB
 trade_goods = grain
 life_rating = 35

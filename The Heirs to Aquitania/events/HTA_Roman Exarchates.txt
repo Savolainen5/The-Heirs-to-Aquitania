@@ -1,0 +1,300 @@
+
+country_event = {
+	id = 00001
+	title = "EVTNAME00001"
+	desc = "EVTDESC00001"
+	picture = "autocracy"
+	fire_only_once = yes
+	trigger = {
+		tag = BYZ
+		owns = 873
+		owns = 878
+		}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = "EVTOPTA00001"
+		prestige = 15
+		set_country_flag = centralizing_empire
+		TUR_876 = { add_core = ANA }
+		TUR_873 = { add_core = ANA }
+		BYZ_867 { add_core = ANA }
+	}
+	option = {
+		name = "EVTOPTB00001"
+		prestige = -15
+		set_country_flag = decentralized_empire
+		TUR_876 = { add_core = ANA }
+		TUR_873 = { add_core = ANA }
+		BYZ_867 = { add_core = ANA }
+		release_vassal = ANA 
+	}
+}
+#Send notification to the vassals, they will rebel soon
+country_event = {
+	id = 00002
+	title = "EVTNAME00002"
+	desc = "EVTDESC00002"
+	fire_only_once = yes
+	trigger = {
+		tag = BYZ
+		has_country_flag = centralizing_empire
+		}
+	mean_time_to_happen = { months = 5 }
+	option = {
+		name = "EVTOPTA00002"
+		set_global_flag = roman_centralization_crisis
+		BUL = { 
+			country_event = { 
+					id = 00003
+					days = 5
+					 } 
+			}
+		GRE = {
+			country_event = {
+					id = 00004
+					days = 15
+					}
+			}
+		MCD = {
+			country_event = {
+					id = 00005
+					days = 20
+					}
+			}
+				
+	}
+}
+#Bulgaria declares independence	
+country_event = {
+	id = 00003
+	title = "EVTNAME00003"
+	desc = "EVTDESC00003"
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA00003"
+		ai_chance = { factor = 100 }
+		BYZ = {
+			release_vassal = BUL
+			war = {
+				target = BUL
+				attacker_goal = { 
+					casus_belli = annex_core_country
+					}
+				defender_goal = {
+					casus_belli = cut_down_to_size
+					}
+				}
+			}
+	}
+	option = {
+		name = "EVTOPTB00003"
+		prestige = -50
+	}
+}
+#Greece declares independence
+country_event = {
+	id = 00004
+	title = "EVTNAME00004"
+	desc = "EVTDESC00004"
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA00004"
+		ai_chance = { factor = 100 }
+		BYZ = {
+			release_vassal = GRE
+			war = {
+				target = GRE
+				attacker_goal = {
+					casus_belli = annex_core_country
+					}
+				defender_goal = {
+					casus_belli = cut_down_to_size
+					}
+				}
+			}
+	}
+	option = {
+		name = "EVTOPTB00004"
+		prestige = -50
+	}
+}
+#Macedonia declares independence
+country_event = {
+	id = 00005
+	title = "EVTNAME00005"
+	desc = "EVTDESC00005"
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA00005"
+		ai_chance = { factor = 100 }
+		BYZ = {
+			release_vassal = MCD
+			war = {
+				target = MCD
+				attacker_goal = {
+					casus_belli = annex_core_country 
+					}
+				defender_goal = {
+					casus_belli = cut_down_to_size
+					}
+				}
+			}
+	}
+}
+#Roman victory, unlocked advanced expansion path
+country_event = {
+	id = 00006
+	title = "EVTNAME00006"
+	desc = "EVTDESC00006"
+	
+	trigger = {	
+	tag = BYZ
+	has_global_flag = roman_centralization_crisis
+	GRE = { exists = no }
+	BUL = { exists = no }
+	MCD = { exists = no }
+	ANA = { exists = no }
+	owns = 876
+	owns = 873
+	owns = 867
+	owns = 834
+	owns = 809
+	is_disarmed = no
+	war = no
+	}
+	mean_time_to_happen = { months = 2 }
+	
+	option = {
+		name = "EVTOPTA00006"
+		prestige = 300
+		clr_global_flag = roman_centralization_crisis
+		set_country_flag = roman_golden_era
+		BUL = { all_core = { add_core = BYZ } }
+		GRE = { all_core = { add_core = BYZ } }
+		MCD = { all_core = { add_core = BYZ } }
+		
+	}
+}
+#Rome fails to defeat rebellions, government collapse inevitable
+country_event = {
+	id = 00007
+	title = "EVTNAME00007"
+	desc = "EVTDESC00007"
+	
+	trigger = {
+	tag = BYZ
+	has_global_flag = roman_centralization_crisis
+	is_disarmed = yes
+	war = no
+	}
+	mean_time_to_happen = { months = 1 }
+	option = {
+		name = "EVTOPTA00007"
+		prestige = -300
+		clr_global_flag = roman_centralization_crisis
+		set_country_flag = roman_weakness
+		release_vassal = ANA
+		release_vassal = GRE
+		release_vassal = BUL
+		release_vassal = MCD
+	}
+}
+#Wins anatolia war, doesnt mean wins the others
+country_event = {
+	id = 00008
+	title = "EVTNAME00008"
+	desc = "EVTDESC00008"
+	mean_time_to_happen = { days = 7 }
+	fire_only_once = yes
+	
+	trigger = {
+	tag = BYZ
+	has_global_flag = roman_centralization_crisis
+	has_global_flag = anatolia_war_again
+	ARM = { NOT = { war_with = THIS } }
+	is_disarmed = no
+	}
+	option = {
+		name = "EVTOPTA00008"
+		prestige = 50
+		ARM = {
+		set_country_flag = anatolia_war_lost
+		any_owned = {
+		limit = {
+			OR = {
+				is_core = BYZ
+				region = TUR_894
+				}
+			}
+		add_core = BYZ
+		add_core = ANA
+		secede_province = BYZ
+		}
+		}
+	}
+}
+#Naples joins war, will attempt to take islands from the empire, can segue into later war against greece
+country_event = {
+	id = 00009
+	title = "EVTNAME00009"
+	desc = "EVTDESC00009"
+	mean_time_to_happen = { days = 24 }
+	fire_only_once = yes
+	trigger = {
+		OR = {
+		tag = NPL
+		tag = ITA
+		}
+		has_global_flag = roman_centralization_crisis
+		war = no
+		}
+	option = {
+		ai_chance = { factor = 50 }
+		set_global_flag = napoli_roman_war
+		badboy = 7
+		casus_belli = { target = BYZ type = cut_down_to_size months = 12 }
+		war = {
+			target = BYZ
+			attacker_goal = { casus_belli = cut_down_to_size }
+			}
+		}
+	option = {
+		ai_chance = { factor = 50 }
+		badboy = -3
+	}
+}
+country_event = {
+	id = 00010
+	title = "EVTNAME00010"
+	desc = "EVTDESC00010"
+	mean_time_to_happen = { days = 14 }
+	fire_only_once = yes
+	trigger = {
+	tag = BYZ 
+	has_global_flag = roman_centralization_crisis	
+	has_global_flag = napoli_roman_war
+	NPL = { NOT = { war_with = THIS } } 
+	is_disarmed = no
+	}
+	option = {
+		set_country_flag = naples_treaty_port
+		prestige = 20
+		NPL = {
+			any_owned = {
+			limit = {
+			OR = {
+				province_id = 762
+				province_id = 755
+				province_id = 758
+				}
+				}
+			secede_province = BYZ
+			}
+		}
+	}
+}

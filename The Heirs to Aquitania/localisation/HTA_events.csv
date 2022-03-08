@@ -1,4 +1,32 @@
 ;;;;;;;;;;x
+EVTNAME00001;The Anatolian Exarchate;x
+EVTDESC00001;According to the Imperial Governance Edict of 1828, the crownlands of the empire cannot infringe upon the rights of the exarchates of the various provinces, nor can the provinces supersede one another in strength to a "startling degree." What was meant to be a compromise with local officials in response to the loss of much of Anatolia to the Armenians in order to prevent their own growth in power at our expense, has proven to do the exact opposite as intended. With the regaining of much of our anatolian possessions, the Empire has a unique opportunity to strengthen its hand immensely by directly incorporating the province as crownlands of the empire, although this would greatly upset the provinces, and breach the agreement reached by the Edict. (Warning, decentralized route not finished);x
+EVTOPTA00001;Integrate it. Let them whine.;x
+EVTOPTB00001;We must abide by the treaty.;x
+EVTNAME00002;The Vassals;x
+EVTDESC00002;Of course, our move to centralize the province will take some time before it is clear that that is our intention to keep the land. However, we should take this time to prepare as best we can, as their response will likely be nothing short of open rebellion.;x
+EVTOPTA00002;Very well.;x
+EVTNAME00003;Treason!;x
+EVTDESC00003;The traitorous emperor in Constantinople has declared his intention to centralize the lands of Anatolia, in direct violation of its rights to an exarchate. This can only mean that the Emperor intends to do the same to us.;x
+EVTOPTA00003;We must act!;x
+EVTOPTB00003;We must back down.;x
+EVTNAME00004;Tyranny!;x
+EVTDESC00004;The traitorous emperor in Constantinople has declared his intention to centralize the lands of Anatolia, in direct violation of its rights to an exarchate. This can only mean that the Emperor intends to do the same to us.;x
+EVTOPTA00004;WE MUST RISE!;x
+EVTOPTB00004;We will accept fate.;x
+EVTNAME00005;Disaster!;x
+EVTDESC00005;The traitorous emperor in Constantinople has declared his intention to centralize the lands of Anatolia, in direct violation of its rights to an exarchate. This can only mean that the Emperor intends to do the same to us.;x
+EVTOPTA00005;We must restore our glory!;x
+EVTOPTB00005;We will whimper and hide.;x
+EVTNAME00006;Imperial Victory!;x
+EVTDESC00006;The Basileus of the Empire has successfully halted the rebellions of the Exarchates, and forced them to kneel before the Empire. the Edict has been revoked, and the provinces of the Empire once again answer directly to the authority of their Emperor. The rest of the world gazes upon it, stunned at its meteoric recovery, and indeed are intimidated. The Empire has proven itself, and the Mediterranean may soon once again play to the tunes of Constantinople, and the ancient empire that it represents.;x
+EVTOPTA00006;We are victorius!;x
+EVTNAME00007;Imperial Rot;x
+EVTDESC00007;The Empire stands in shambles, its armies exhausted and beaten. The provinces, even those it may have restored order to before, now pick at its rotting, fetid corpse like vultures bearing upon carrion. Woe be to the empire of the Romans, for its days are very clearly numbered from this day on.;x
+EVTOPTA00007;All that is golden and glistening...;x
+EVTNAME00008;Armenia defeated!;x
+EVTDESC00008;Armenia, after its desperate attempt to get back the territories it lost to us oh so recently, has been beaten once again by the Empire. Unfortunately, this does not itself end the wars in our west, nor does it guarantee the safety of the empire itself. Therefore, we can take very little from this deal.;x
+EVTOPTA00008;We'll be back.;x
 EVTNAME31312;Aspiring New Military Leader;x
 EVTDESC31312;A recent graduate from the Helvetian War College in Zurich has caught the eye of our top military brass. This young man, Johan von Habsburg, comes from a minor noble family from the vicinty of Aargau. It is believed that he will make a fine addition to our military staff.;x
 EVTNAME50000;Death of King Raimond;x

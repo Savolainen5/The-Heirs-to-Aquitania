@@ -1,6 +1,5 @@
-owner = BYZ
-controller = BYZ
-add_core = BYZ
+owner = MDC
+controller = MCD
 add_core = SER
 add_core = MCD
 trade_goods = timber
