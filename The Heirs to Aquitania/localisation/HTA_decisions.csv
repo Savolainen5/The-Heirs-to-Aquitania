@@ -1,6 +1,4 @@
 ;;;;;;;;;;x
-expand_anatolian_holdings_title;Expand our territorial holdings.;x
-expand_anatolian_holdings_desc;We have proven ourselves the undisputed masters of Asia Minor. It is only natural that we extend this to the furthest reaches of the subcontinent.;x
 treaty_of_aydin_title;The Treaty of Aydin;x
 treaty_of_audin_desc;We have beaten the Romans from our rightful territory, and with their crumbling empire to the west, it is a prime opportunity for us to force them to cede nearly all of Asia minor to us.;x
 accepting_flemish_people_title;Embracing the Flemish;x
@@ -219,6 +217,8 @@ enlist_tatars_title;The Kazan Pact - Kazanskii Dogovor;x
 enlist_tatars_desc;The more populous crown of Smolensk, which falsely claims to be heir to Russia, has many more soldiers than do we. There is, however, opportunity. The Tatars, the once-feared horselords of the steppe, are divided subjects of both countries. If we curry favour with them, we may be able to destabilize Smolensk, allowing us to defeat them. By accepting the Kazani Tatars as equals, we may gain an important advantage with all of the inhabitants of the steppe. However, stories of their cruelty remain and the other peoples of our empire may not be so happy.;x
 establish_la_guardia_civil_title;El Cuerpo Nacional de Carabineros;x
 establish_la_guardia_civil_desc;’El Cuerpo Nacional de Carabineros', Spanish for 'The National Carabiniers', is the Hispanian gendarmerie corps, established during the reign of Lope II in the aftermath of the bloody Años Rojos. Although foreign intervention crushed the Revolution and restored the Monarchy, Albesan sympathies lingered in the countryside and some cities, with some areas never fully pacified. It is in this context that the Carabiniers were born, a mixed police-military force with far-reaching powers to pacify the restive populace and maintain the monarchical order.;x
+expand_anatolian_holdings_title;Expand our Anatolian Holdings;x
+expand_anatolian_holdings_desc;We have proven ourselves to be the undisputed masters of Asia Minor. It is only natural that we extend this to the furthest reaches of the subcontinent. Push the Romans back to Europe!;x
 expand_BHN_title;Claim Hungary's Historical Borders;x
 expand_BHN_desc;The crown of Hungary once encompassed a much wider area than it does today. We can expand our territory and further earn the loyalty of the Hungarians by helping them reclaim their historical greatness.;x
 expand_halesca_title;Expand Halesca;x

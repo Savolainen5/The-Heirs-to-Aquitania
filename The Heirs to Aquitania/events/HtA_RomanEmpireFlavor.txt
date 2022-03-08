@@ -1,4 +1,4 @@
-#Flavor events for the Roman Empire
+#Flavor events for the Roman Empire, 50690-92 taken from the folder of old events made partially obsolete by Bismarkingit's rework
 
 #History of the Empire
 country_event = {
@@ -48,4 +48,135 @@ country_event = {
 		any_pop = { militancy = -0.25 }
 	}
 }
+
+#Restoration of the pentarchy
+country_event = {
+	id = 50689
+	title = "EVTNAME50689"
+	desc = "EVTDESC50689"
+	picture = "orthodox_priests"
 	
+	major = yes
+	
+	trigger = {
+		tag = BYZ
+		860 = { owned_by = BYZ } #Constantinople
+		749 = { owned_by = BYZ } #Rome
+		900 = { owned_by = BYZ } #Antioch
+		917 = { owned_by = BYZ } #Jerusalem
+		1751 = { owned_by = BYZ } #Alexandria
+		NOT = { has_global_flag = pentarchy_restored }
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "Glory be to God!"
+		set_global_flag = pentarchy_restored
+		prestige = 100
+		any_pop = {
+			limit = {
+				has_pop_religion = orthodox
+			}
+			militancy = -5
+		}
+	}
+}
+
+##############Fun events with a human trade republic on Med islands
+
+#$FROMCOUNTRY$ wishes to join our republic
+country_event = {
+	id = 50690
+	title = "EVTNAME50690"
+	desc = "EVTDESC50690"
+	picture = "map_cyprus"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We welcome them with open arms!"
+		prestige = 5
+		inherit = FROM
+		FROM = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+		set_country_flag = cyp_cre_union
+	}
+}
+
+#Irakleio invites us to join their republic
+country_event = {
+	id = 50691
+	title = "EVTNAME50691"
+	desc = "EVTDESC50691"
+	picture = "map_crete"
+	
+	is_triggered_only = yes
+	
+	immediate = { set_country_flag = IRK_invitation }
+	
+	option = {
+		name = "Join them in prosperity!"
+		IRK = {
+			inherit = THIS
+		}
+		all_core = {
+			add_core = IRK
+		}
+		
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
+		}
+	}
+	
+	option = {
+		name = "Refuse politely."
+		set_country_flag = refuse_IRK
+		IRK = {
+			country_event = {
+				id = 50692
+				days = 2
+			}
+		}
+		
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+#$FROMCOUNTRY$ refuses our offer
+country_event = {
+	id = 50692
+	title = "EVTNAME50692"
+	desc = "EVTDESC50692"
+	picture = "map_crete"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "They will realise their mistake after our troops have landed!"
+		casus_belli = {
+			target = FROM
+			type = conquest
+			months = 60
+		}
+	}
+	
+	option = {
+		name = "Oh well..."
+		relation = {
+			who = FROM
+			value = -50
+		}
+	}
+}

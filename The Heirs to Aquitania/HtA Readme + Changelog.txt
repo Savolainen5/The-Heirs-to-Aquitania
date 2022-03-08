@@ -19,6 +19,7 @@ Thanks to:
 
 - ChortlingGnome, who contributed A LOT (like seriously a lot) for Hispania, China, North and South Ameriga and other things
 - /u/capitanloco6 / MajorMajor, who wrote events and decisions regarding French ambitions in the Holy Land and the dismantling of Persia, as well as giving some flags and fixing Catalan military/party names
+- Bismarkingit for a lot of cool work on the Roman Empire
 - /u/Flapjack731 for ideas and content contribution
 - /u/firenine09, /u/1tobedoneX, and /u/Sommern, for being a sounding board and giving many good ideas and flags
 - /u/_Rosseau_, for the new Norway flags. Incorporated with permission
@@ -49,12 +50,14 @@ Thanks to:
 
 NB for the changelog - Anything with lots of # or * after it is something Savs is still working on or hasn't gotten fully/correctly implemented yet
 
+
 **CHANGELOG**
 
 Verison 0.37 - Poland and Italy
 
 Major
-- Added decisions and events for Poland, the Padan Union and Naples
+- Added more content for Poland **************
+- Added decisions and events for the Padan Union and Naples
 	- Added a new tag - Meridion (MER) - as an intermediate step between Naples and Italy
 - Added a new government type, the Provisional Government (which comes in yes_election and no_election forms according to whether elections are allowed, obviously) which is used for PDN initially and can be used for other countries in the future
 	- Also added events to switch between them based on the vote franchise
@@ -75,6 +78,11 @@ Major
 	- Mexika civil war (or averting it), possible union with CLF
 	- Mexika interaction with Yucatla and pushing further south
 	- Form Mellomamerika as a puppet if you're a New World GP
+- Rework of the Roman Empire start for a different, more believable and interesting story by Bismarkingit
+	- Three exarchates on the European side of the border
+	- A revamped civil war
+	- Armenia and Naples may weigh in
+	- Some other stuff in the area
 
 Minor
 - Severely nerfed the OP Gold Rush modifier - now gives an immigrant attract of only 100% instead of ten times that. This needs testing to see if it should be buffed up a bit. Maybe 300%

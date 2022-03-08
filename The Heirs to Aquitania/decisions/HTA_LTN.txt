@@ -1,15 +1,16 @@
 political_decisions = {
 	form_latin_empire = {
-	potential = {
-		has_country_flag = our_western_sea
-		NOT = { has_country_flag = latin_unification }
+		potential = {
+			has_country_flag = our_western_sea
+			NOT = { has_country_flag = latin_unification }
+		}
 		allow = {
 			prestige = 500
 			revolution_n_counterrevolution = 1
-			}
+		}
 		effect = {
 			change_tag = LTN
 			set_country_flag = latin_unification
-			}
 		}
 	}
+}

@@ -36,10 +36,4 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
-# Starting Consciousness
-consciousness = 0
-nonstate_consciousness= 0
 
-# Technologies
-prestige=0
-oob = "LTN_OOB.txt"

@@ -1,44 +1,59 @@
 political_decisions = {
 	
 	#Reclaim Anatolia
-	expand_anatolian_holdings = {
+	expand_anatolian_holdings = {									#Go back through eventually and make some things work better like adding CBs before the war event
 		picture = enact_muhammad_alis_reforms
 		potential = {
 			NOT = { has_country_flag = armenia_expand }
 			tag = ARM
 			owns = 876
 			owns = 873
-			}
+		}
 		allow = {
 			year = 1860
-			}
+		}
 		effect = {
+			badboy = 12
 			set_country_flag = armenia_expand
-			BYZ_679 = { add_core = ARM }
+			BYZ_869 = { add_core = ARM }
+			BYZ_867 = { add_core = ARM }
 			TUR_880 = { add_core = ARM }
 			TUR_863 = { add_core = ARM }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war_with = BYZ
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.51
 			}
 		}
+	}
 	revive_armenian_anatolia = {
 		picture = enact_muhammad_alis_reforms
 		potential = {
 			tag = ARM
 			has_global_flag = roman_centralization_crisis
-			}
+		}
 		allow = {
-		NOT = { has_global_flag = anatolia_war_again 
-			has_country_flag = anatolia_war_won
-			has_country_flag = anatolia_war_lost }
+			NOT = {
+				has_global_flag = anatolia_war_again 
+				has_country_flag = anatolia_war_won
+				has_country_flag = anatolia_war_lost
 			}
+		}
 		effect = {
 			set_global_flag = anatolia_war_again
 			war = {
-				badboy = -8
 				target = BYZ
 				attacker_goal = {
 					casus_belli = cut_down_to_size
 				}
 			}
+			badboy = -8
 		}
 	}
 	treaty_of_aydin = {
@@ -60,15 +75,15 @@ political_decisions = {
 			prestige = 100
 			BYZ = {
 				any_owned = {
-				limit = {
-				OR = {
-					is_core = ANA
-					region = BYZ_869
-					region = TUR_880
+					limit = {
+						OR = {
+							is_core = ANA
+							region = BYZ_869
+							region = TUR_880
+						}
 					}
-					}
-				add_core = ARM
-				secede_province = ARM
+					add_core = ARM
+					secede_province = ARM
 				}
 			}
 		}

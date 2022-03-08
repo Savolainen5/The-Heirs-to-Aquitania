@@ -175,7 +175,7 @@ country_event = {
 			name = small_country_draft
 			duration = 1200
 		}
-		military_reform = yes_foreign_training
+		foreign_training = yes_foreign_training
 	}
 }
 
@@ -196,7 +196,7 @@ country_event = {
 			war_with = CHE
 			war_with = IRO
 			has_country_flag = tenskwatawa_overthrown
-			military_reform = no_foreign_training
+			foreign_training = no_foreign_training
 		}
 		tag = SHC
 	}
@@ -213,7 +213,7 @@ country_event = {
 		name = "Good riddance."
 		set_country_flag = tenskwatawa_overthrown
 		remove_country_modifier = western_influences 
-		military_reform = no_foreign_training
+		foreign_training = no_foreign_training
 	}
 }
 

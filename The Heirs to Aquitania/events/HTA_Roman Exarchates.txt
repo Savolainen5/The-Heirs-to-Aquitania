@@ -1,4 +1,3 @@
-
 country_event = {
 	id = 00001
 	title = "EVTNAME00001"
@@ -19,7 +18,7 @@ country_event = {
 		set_country_flag = centralizing_empire
 		TUR_876 = { add_core = ANA }
 		TUR_873 = { add_core = ANA }
-		BYZ_867 { add_core = ANA }
+		BYZ_867 = { add_core = ANA }
 	}
 	option = {
 		name = "EVTOPTB00001"
@@ -243,57 +242,80 @@ country_event = {
 	id = 00009
 	title = "EVTNAME00009"
 	desc = "EVTDESC00009"
-	mean_time_to_happen = { days = 24 }
 	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 24 }
+	
 	trigger = {
 		OR = {
-		tag = NPL
-		tag = ITA
+			tag = NPL
+			tag = ITA
+			tag = MER
 		}
 		has_global_flag = roman_centralization_crisis
 		war = no
-		}
+	}
 	option = {
-		ai_chance = { factor = 50 }
+		name = "Carpe diem!"
 		set_global_flag = napoli_roman_war
 		badboy = 7
 		casus_belli = { target = BYZ type = cut_down_to_size months = 12 }
 		war = {
 			target = BYZ
 			attacker_goal = { casus_belli = cut_down_to_size }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				badboy = 0.62
 			}
 		}
+	}
 	option = {
-		ai_chance = { factor = 50 }
+		name = "Who would kick a man while he's down?"
 		badboy = -3
+		ai_chance = { factor = 50 }
 	}
 }
+#Naples Beaten Back
 country_event = {
 	id = 00010
 	title = "EVTNAME00010"
 	desc = "EVTDESC00010"
-	mean_time_to_happen = { days = 14 }
 	fire_only_once = yes
-	trigger = {
-	tag = BYZ 
-	has_global_flag = roman_centralization_crisis	
-	has_global_flag = napoli_roman_war
-	NPL = { NOT = { war_with = THIS } } 
-	is_disarmed = no
+	
+	mean_time_to_happen = { days = 14 }
+	
+	trigger = {	
+		has_global_flag = napoli_roman_war
+		has_global_flag = roman_centralization_crisis
+		tag = BYZ 
+		754 = {
+			owner = {
+				NOT = {
+					war_with = THIS
+				}
+			}
+		}
+		is_disarmed = no
 	}
 	option = {
+		name = "Our just rewards."
 		set_country_flag = naples_treaty_port
 		prestige = 20
-		NPL = {
-			any_owned = {
-			limit = {
-			OR = {
-				province_id = 762
-				province_id = 755
-				province_id = 758
+		754 = {
+			owner = {
+				any_owned = {
+					limit = {
+						OR = {
+							province_id = 762
+							province_id = 755
+							province_id = 758
+						}
+					}
+					secede_province = BYZ
 				}
-				}
-			secede_province = BYZ
 			}
 		}
 	}
