@@ -192,10 +192,13 @@ country_event = {
 			is_disarmed = yes
 			NOT = { num_of_vassals = 2 }
 		}
-		NOT = { war_with = CHE }
-		NOT = { war_with = IRO }
+		NOT = {
+			war_with = CHE
+			war_with = IRO
+			has_country_flag = tenskwatawa_overthrown
+			military_reform = no_foreign_training
+		}
 		tag = SHC
-		NOT = { has_country_flag = tenskwatawa_overthrown }
 	}
 	
 	mean_time_to_happen = {

@@ -93,6 +93,7 @@ Other:
 - Indian accepted cultures: should include Gujarati, should have a way to accept Dravidians
 - Research can be finished well before the end of the game. One player finished in 1924
 - Revamp canals to be more along HPM lines, and get rid of the Dividends events because they're ugly (also need to rename the one that's still called the Panama Canal Dividends)
+- Remove special tech schools like Junkers Herr & Krupp
 
 
 
