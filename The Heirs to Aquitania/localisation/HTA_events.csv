@@ -27,6 +27,16 @@ EVTOPTA00007;All that is golden and glistening...;x
 EVTNAME00008;Armenia defeated!;x
 EVTDESC00008;Armenia, after its desperate attempt to get back the territories it lost to us oh so recently, has been beaten once again by the Empire. Unfortunately, this does not itself end the wars in our west, nor does it guarantee the safety of the empire itself. Therefore, we can take very little from this deal.;x
 EVTOPTA00008;We'll be back.;x
+EVTNAME00009;A Unique Opportunity;x
+EVTDESC00009;The self-proclaimed Romans in the east are currently embroiled in a civil conflict that threatens to tear their empire apart in its entirety. While there is a threat of their possible victory, we may well be able to claim some small parts of the empire for ourselves should we intervene.;x
+EVTOPTA00009;Let us invade.;x
+EVTOPTB00009;We should leave our neighbors be.;x
+EVTNAME00010;Naples Defeated;x
+EVTDESC00010;Naples has been forced out from our territories, and now we can demand any regions deemed critically necessary to the naval defense of the empire be ceded to us.;x
+EVTOPTA00010;One threat dealt with.;x
+EVTNAME00011;The end of the Exarchates;x
+EVTDESC00011;Currently the Empire has slowly been reovering its past capacity for central governance, and now demands we return to the fold. Now, our opportunities for doing so are indeed slim.;x
+EVTOPTA00011;We have no choice.;x
 EVTNAME31312;Aspiring New Military Leader;x
 EVTDESC31312;A recent graduate from the Helvetian War College in Zurich has caught the eye of our top military brass. This young man, Johan von Habsburg, comes from a minor noble family from the vicinty of Aargau. It is believed that he will make a fine addition to our military staff.;x
 EVTNAME50000;Death of King Raimond;x
