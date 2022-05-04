@@ -1770,11 +1770,12 @@ country_event = {
 		name = "Its terms now go into effect."
 		set_global_flag = treaty_of_szekes
 		HUN = { prestige = 25 }
-		633 = { secede_province = HUN add_core = HUN } #Bratislava
+		633 = { secede_province = HUN add_core = HUN } #Bratislava / Presporok
 		635 = { secede_province = HUN add_core = HUN } #Nitra
 		638 = { secede_province = HUN add_core = HUN } #Roznava
+		3255 = { secede_province = HUN add_core = HUN } #Banska Stiavnica
 		
-		626 = { secede_province = SLS add_core = SLS  add_core = MRV} #Hradec Kralove
+		626 = { secede_province = SLS add_core = SLS  add_core = MRV} #Hradec Kralove			add cores to MRV so that it can exist as necessary
 		632 = { secede_province = SLS add_core = SLS  add_core = MRV} #Olomouc
 		634 = { secede_province = SLS add_core = SLS } #Trencin
 		636 = { secede_province = SLS add_core = SLS } #Banska Bystrica
@@ -1790,7 +1791,10 @@ country_event = {
 		any_owned = { # This should clear up any extra territory they happen to own, though it may be weird if they get a chunk of Poland or something. This needs to be dealt with still.
 			limit = {
 				OR = {
-					NOT = {	is_core = BOH }
+					NOT = {
+						is_core = BOH
+						is_core = POL
+					}
 					province_id = 637 #Kosice
 				}
 			}
@@ -1798,7 +1802,19 @@ country_event = {
 			add_core = HUN
 		}
 
-		BOH = {
+		any_owned = { # This should clear up anything they may have gotten from Poland, which happens sometimes.
+			limit = {
+				OR = {
+					NOT = {
+						is_core = BOH
+					}
+					is_core = POL
+				}
+			}
+			secede_province = POL
+		}
+		
+		BOH = { #Post-treaty event to change BOH to PRH
 			country_event = {
 				id = 50450
 				days = 1
