@@ -273,7 +273,7 @@ british = {
 	leader = european
 	unit = EuropeanGC
 	aenglisc = {
-		color = { 247  56  42}
+		color = { 247  56  42 }
 		first_names = {
 		Aelfgar Aelric Aelwold Aethelber Aethelwine Arnolf Azur
 		Bordelm Borthric Bortsige Borwin Boren Bricmer Burghard Byrnod 

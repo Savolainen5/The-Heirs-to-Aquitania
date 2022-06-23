@@ -6,6 +6,7 @@ political_decisions = {
 			civilized = yes
 			tech_school = traditional_academic
 			NOT = { has_country_flag = change_tech_school_menu_open }
+			ai = no
 		}
 		allow = {
 			tech_school = traditional_academic
@@ -21,6 +22,7 @@ political_decisions = {
 		potential = {
 			has_country_flag = change_tech_school_menu_open
 			civilized = yes
+			ai = no
 		}
 		allow = {}
 		effect = {
@@ -31,7 +33,10 @@ political_decisions = {
 	switch_to_army_tech = {
 		alert = no
 		potential = {
-			has_country_flag = change_tech_school_menu_open
+			OR = {
+				has_country_flag = change_tech_school_menu_open
+				ai = yes
+			}
 			civilized = yes
 			tech_school = traditional_academic
 		}
@@ -61,7 +66,10 @@ political_decisions = {
 	switch_to_navy_tech = {
 		alert = no
 		potential = {
-			has_country_flag = change_tech_school_menu_open
+			OR = {
+				has_country_flag = change_tech_school_menu_open
+				ai = yes
+			}
 			civilized = yes
 			tech_school = traditional_academic
 		}
@@ -93,7 +101,10 @@ political_decisions = {
 	switch_to_culture_tech = {
 		alert = no
 		potential = {
-			has_country_flag = change_tech_school_menu_open
+			OR = {
+				has_country_flag = change_tech_school_menu_open
+				ai = yes
+			}
 			civilized = yes
 			tech_school = traditional_academic
 		}
@@ -123,7 +134,10 @@ political_decisions = {
 	switch_to_trade_tech = {
 		alert = no
 		potential = {
-			has_country_flag = change_tech_school_menu_open
+			OR = {
+				has_country_flag = change_tech_school_menu_open
+				ai = yes
+			}
 			civilized = yes
 			tech_school = traditional_academic
 		}
@@ -152,7 +166,10 @@ political_decisions = {
 	switch_to_industry_tech = {
 		alert = no
 		potential = {
-			has_country_flag = change_tech_school_menu_open
+			OR = {
+				has_country_flag = change_tech_school_menu_open
+				ai = yes
+			}
 			civilized = yes
 			tech_school = traditional_academic
 		}
