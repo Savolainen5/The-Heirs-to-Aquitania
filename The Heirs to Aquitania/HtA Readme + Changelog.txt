@@ -30,6 +30,7 @@ Thanks to:
 - Attalus and other developers of Divergences of Darkness for ideas, code, flags
 - Naselus and other PDM folks, from whose mod I took some decisions, events, ideas, and inspiration
 - arkhometha for his Historical Project Mod, from which I have taken many pictures, ideas, a good bit of country information, and some events and decisions
+- Makers of and contributors to GFM, from whom I've taken a little inspiration and some CB code
 - EGaffney for his Rectangular Flag Frames Mod
 - RenatoDS for his RDS mapping project, which creates a more detailed world map (for terrain and rivers)
 - simsulla for his help in sorting out adding canals and for (passively) showing me the crucial last step for adding new provinces - making the default.map file point to your mod's directory. See my copy for more details
@@ -122,6 +123,9 @@ Minor
 - Made CBs normally available between RUS and SML when railroading is off
 - Both German Hegemony CBs should fire the Our Cores Returned event normally
 - Added a special event-only Liberate Country CB to allow the liberation of Syria correctly
+- Added the Take Capital CB from GFM
+- Split the Acquire State CB into pre-1860, 1860-1880 and post-1880 with decreasing infamy (from GFM)
+- Added GFM conquest CBs for small-POP countries
 - Increased starting experience in national values, so now they are actually kind of useful. This change is also reflected in the demonstration modifiers which you can see in the decision
 - Changed some 1840s revolutions modifiers (global_liberal_agitation, among others) about liberalism to be more in line with HPM, not that I think it'll make much of a difference for the militancy problem
 - Made the National Assimilation event impossible to fire until 1870

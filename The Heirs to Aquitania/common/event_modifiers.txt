@@ -2088,6 +2088,10 @@ rebellious_minorities = {
 	icon = 18
 }
 
+recently_lost_war = {
+	icon = 16
+}
+
 very_rebellious_minorities = {
 	pop_militancy_modifier = 0.5
 	pop_consciousness_modifier = 0.5

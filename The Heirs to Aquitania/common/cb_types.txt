@@ -89,6 +89,8 @@ china_acquire_state
 germany_acquire_state
 germany_conquer
 acquire_state
+acquire_state_mid
+acquire_state_late
 acquire_any_state
 acquire_core_substate_region
 acquire_substate_region
@@ -100,8 +102,12 @@ conquest
 conquest_any
 annex_africa
 annex_africa_full
+conquest_low
+conquest_tiny
+conquest_minuscule
 russia_hegemony
 russia_annex
+take_capital
 establish_protectorate_BC_casus_belli
 establish_protectorate_NI_casus_belli
 establish_protectorate_casus_belli
@@ -3426,7 +3432,7 @@ acquire_state = {
 	is_triggered_only = yes
 	months = 12
 	
-	construction_speed = 0.25
+	construction_speed = 0.5
 
 	badboy_factor = 2.2
 	prestige_factor = 2
@@ -3436,7 +3442,7 @@ acquire_state = {
 	break_truce_prestige_factor = 1
 	break_truce_infamy_factor = 2
 	break_truce_militancy_factor = 2
-	truce_months = 0
+	truce_months = 48
 	
 	good_relation_prestige_factor = 1
 	good_relation_infamy_factor = 1
@@ -3444,6 +3450,7 @@ acquire_state = {
 
 	can_use = {
 		is_vassal = no
+		is_substate = no
 		NOT = { 
 			is_our_vassal = THIS
 			has_country_modifier = neutrality
@@ -3454,11 +3461,28 @@ acquire_state = {
 		}
 		OR = {
 			THIS = { civilized = no }
-			civilized = yes
+			NOT = { year = 1860 }
 		}
-		THIS = {
-			NOT = { has_country_modifier = neutrality }
-		}
+        OR = {
+            THIS = { civilized = no }
+            civilized = yes
+        }
+        OR = {
+            AND = {
+                THIS = { total_amount_of_ships = 5 }
+                any_owned_province = { port = yes }
+            }
+            AND = { OR = { any_neighbor_country = { substate_of = THIS } any_neighbor_country = { vassal_of = THIS } } THIS = { ai = no } }
+            neighbour = THIS
+            war_with = THIS
+        }
+        OR = {
+            war_with = THIS
+            THIS = {
+                NOT = { has_country_modifier = neutrality }
+                total_amount_of_divisions = 1
+            }
+        }
 		OR = {
 			war_with = THIS
 			THIS = { NOT = { has_country_modifier = no_more_war } }
@@ -3467,6 +3491,7 @@ acquire_state = {
 		OR = {
 			THIS = { ai = no }
 			THIS = { NOT = { war_policy = anti_military } }
+            war_with = THIS
 		}
 		#AI will not use this CB when duking it out over hegemony
 		OR = {
@@ -3511,120 +3536,166 @@ acquire_state = {
 	}
 	
 	allowed_states = {
-		#AI treats colonial states with only civilized cores as regular states
-		OR = {
-			is_colonial = no
+        #Countries can't take capitals or cores
+        NOT = {
+            any_owned_province = { is_core = THIS }
+            any_owned_province = { is_capital = yes }
+        }
+
+        #AI treats colonial states with only civilized cores as regular states
+        OR = {
+            is_colonial = no
+            AND = {
+                is_colonial = yes
+                THIS = { ai = yes }
+                any_owned_province = { any_core = { civilized = yes } }
+                NOT = { any_owned_province = { any_core = { civilized = no } } }
+            }
+        }
+
+        ###Can only grab neighboring states, coastal if it's a coastal GP
+        OR = {
+            #AI and Player can take a neighboring state
+            any_owned_province = { any_neighbor_province = { owned_by = THIS } }
+
+            #Player can take a neighboring state neighboring a neighboring state
+            AND = {
+                THIS = { ai = no }
+                any_owned_province = {
+                    any_neighbor_province = {
+                        state_scope = { any_owned_province = { any_neighbor_province = { owned_by = THIS } } }
+                    }
+                }
+            }
+
+            #AI/Player can take a coastal state
+            AND = {
+                any_owned_province = { port = yes }
+                THIS = {
+                    any_owned_province = { port = yes }
+                    OR = {
+                        is_greater_power = yes
+                        is_secondary_power = yes
+                        ai = no
+                    }
+                }
+            }
+
+            #Player can take any state neighboring a coastal state
+            AND = {
+                any_owned_province = {
+                    any_neighbor_province = {
+                        state_scope = { any_owned_province = { port = yes } }
+                    }
+                }
+                THIS = {
+                    ai = no
+                    any_owned_province = { port = yes }
+                }
+            }
+			
+			#Player can take any state neighboring their substate
 			AND = {
-				is_colonial = yes
-				THIS = { ai = yes }
-				any_owned_province = {
-					any_core = { civilized = yes }
-				}
-				NOT = {
-					any_owned_province = {
-						any_core = { civilized = no }
-					}
-				}
-			}
-		}
-		NOT = {
-			any_owned_province = { is_core = THIS }
-			any_owned_province = { is_capital = yes }
-		}
-		
-		#AI can only grab neighboring states, coastal if it's a coastal GP
-		OR = {
-			THIS = { ai = no }
-			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
-			AND = {
-				any_owned_province = { port = yes }
-				THIS = {
-					OR = {
-						is_greater_power = yes
-						is_secondary_power = yes
-					}
-					any_owned_province = { port = yes }
-				}
-			}
-		}
-		
-		#AI will not grab cores of allies/spherelings
-		OR = {
-			THIS = { ai = no }
-			NOT = {
-				any_owned_province = {
-					any_core = {
-						exists = yes
-						OR = {
-							alliance_with = THIS
-							in_sphere = THIS
-							vassal_of = THIS
+				any_owned_province = { 
+					any_neighbor_province = { 
+						owner = { 
+							substate_of = THIS 
 						}
 					}
 				}
+				THIS = { ai = no } 
 			}
-		}
-		
-		#AI will not try to grab cores of their union if they're sphere to a GP of their culture group
-		OR = {
-			THIS = { ai = no }
-			NOT = {
-				AND = {
-					THIS = {
-						is_greater_power = no
-						part_of_sphere = yes
-						culture_has_union_tag = yes
-						cultural_union = { exists = no }
-						sphere_owner = { is_culture_group = THIS }
-					}
-					any_owned_province = {
-						any_core = {
-							is_cultural_union = yes
-							this_culture_union = this_union
-						}
-					}
-				}
-			}
-		}
-		
-		#pro-military AI will not grab cores of non-existing, non-union countries
-		#unless they own some cores or it's part of their culture group and they're pro-military
-		#jingoistic countries will also take states with existing cores that they also own some of
-		#fascist & communist countries are exempt from this
-		OR = {
-			THIS = { ai = no }
-			THIS = { government = proletarian_dictatorship }
-			THIS = { government = fascist_dictatorship }
+			
+			#Player can take any state neighboring their satellite
 			AND = {
-				THIS = { war_policy = pro_military }
-				any_owned_province = {
-					any_core = {
-						is_cultural_union = no
-						exists = no
-						OR = {
-							any_core = { owned_by = THIS }
-							is_culture_group = THIS
+				any_owned_province = { 
+					any_neighbor_province = { 
+						owner = { 
+							vassal_of = THIS 
 						}
 					}
 				}
-			}
-			AND = {
-				THIS = { war_policy = jingoism }
-				any_owned_province = {
-					any_core = {
-						OR = {
-							any_core = { owned_by = THIS }
-							AND = {
-								exists = no
-								is_cultural_union = no
-								is_culture_group = THIS
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+				THIS = { ai = no } 
+			} 
+        }
+
+        #AI will not grab cores of allies/spherelings
+        OR = {
+            THIS = { ai = no }
+            NOT = {
+                any_owned_province = {
+                    any_core = {
+                        exists = yes
+                        OR = {
+                            alliance_with = THIS
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+        }
+
+        #AI will not try to grab cores of their union if they're sphere to a GP of their culture group
+        OR = {
+            THIS = { ai = no }
+            NOT = {
+                AND = {
+                    THIS = {
+                        is_greater_power = no
+                        part_of_sphere = yes
+                        culture_has_union_tag = yes
+                        cultural_union = { exists = no }
+                        sphere_owner = { is_culture_group = THIS }
+                    }
+                    any_owned_province = {
+                        any_core = {
+                            is_cultural_union = yes
+                            this_culture_union = this_union
+                        }
+                    }
+                }
+            }
+        }
+
+        #pro-military AI will not grab cores of non-existing, non-union countries
+        #unless they own some cores or it's part of their culture group and they're pro-military
+        #jingoistic countries will also take states with existing cores that they also own some of
+        #fascist & communist countries are exempt from this
+        OR = {
+            THIS = { ai = no }
+            THIS = { government = proletarian_dictatorship }
+            THIS = { government = fascist_dictatorship }
+            AND = {
+                THIS = { war_policy = pro_military }
+                any_owned_province = {
+                    any_core = {
+                        is_cultural_union = no
+                        exists = no
+                        OR = {
+                            any_core = { owned_by = THIS }
+                            is_culture_group = THIS
+                        }
+                    }
+                }
+            }
+            AND = {
+                THIS = { war_policy = jingoism }
+                any_owned_province = {
+                    any_core = {
+                        OR = {
+                            any_core = { owned_by = THIS }
+                            AND = {
+                                exists = no
+                                is_cultural_union = no
+                                is_culture_group = THIS
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 	
 	allowed_states_in_crisis = {
 		NOT = { any_owned_province = { is_capital = yes } }
@@ -3645,6 +3716,607 @@ acquire_state = {
 			to = pro_military
 			value = 0.25
 		}
+	}
+	on_po_accepted = {
+		add_country_modifier = { name = recently_lost_war duration = 1825 }
+	}
+}
+
+# Gain control of State (1860-1880)
+acquire_state_mid = {
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	
+	construction_speed = 0.5
+
+	badboy_factor = 1.5
+	prestige_factor = 2
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		is_vassal = no
+		is_substate = no
+		NOT = { 
+			is_our_vassal = THIS
+			has_country_modifier = neutrality
+		}
+		any_state = {
+			is_colonial = no
+			NOT = { any_owned_province = { is_capital = yes } }
+		}
+		year = 1860
+		NOT = { year = 1880 }
+        THIS = { civilized = yes }
+        civilized = yes
+        any_state = {
+            is_colonial = no
+            NOT = { any_owned_province = { is_capital = yes } }
+        }
+        OR = {
+            AND = {
+                THIS = { total_amount_of_ships = 5 }
+                any_owned_province = { port = yes }
+            }
+            AND = { OR = { any_neighbor_country = { substate_of = THIS } any_neighbor_country = { vassal_of = THIS } } THIS = { ai = no } }
+            neighbour = THIS
+            war_with = THIS
+        }
+        OR = {
+            war_with = THIS
+            THIS = {
+                NOT = { has_country_modifier = neutrality }
+                total_amount_of_divisions = 1
+            }
+        }
+		OR = {
+			war_with = THIS
+			THIS = { NOT = { has_country_modifier = no_more_war } }
+		}
+		#AI anti-military will not use this
+		OR = {
+			THIS = { ai = no }
+			THIS = { NOT = { war_policy = anti_military } }
+            war_with = THIS
+		}
+		#AI will not use this CB when duking it out over hegemony
+		OR = {
+			THIS = { ai = no }
+			NOT = {
+				AND = {
+					culture_has_union_tag = yes
+					is_culture_group = THIS
+					cultural_union = { exists = no }
+					is_greater_power = yes
+					THIS = { is_greater_power = yes }
+				}
+			}
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+				has_global_flag = railroading_on
+			}
+		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
+				}
+			}
+		}
+	}
+	
+	allowed_states = {
+        #Countries can't take capitals or cores
+        NOT = {
+            any_owned_province = { is_core = THIS }
+            any_owned_province = { is_capital = yes }
+        }
+
+        #AI treats colonial states with only civilized cores as regular states
+        OR = {
+            is_colonial = no
+            AND = {
+                is_colonial = yes
+                THIS = { ai = yes }
+                any_owned_province = { any_core = { civilized = yes } }
+                NOT = { any_owned_province = { any_core = { civilized = no } } }
+            }
+        }
+
+        ###Can only grab neighboring states, coastal if it's a coastal GP
+        OR = {
+            #AI and Player can take a neighboring state
+            any_owned_province = { any_neighbor_province = { owned_by = THIS } }
+
+            #Player can take a neighboring state neighboring a neighboring state
+            AND = {
+                THIS = { ai = no }
+                any_owned_province = {
+                    any_neighbor_province = {
+                        state_scope = { any_owned_province = { any_neighbor_province = { owned_by = THIS } } }
+                    }
+                }
+            }
+
+            #AI/Player can take a coastal state
+            AND = {
+                any_owned_province = { port = yes }
+                THIS = {
+                    any_owned_province = { port = yes }
+                    OR = {
+                        is_greater_power = yes
+                        is_secondary_power = yes
+                        ai = no
+                    }
+                }
+            }
+
+            #Player can take any state neighboring a coastal state
+            AND = {
+                any_owned_province = {
+                    any_neighbor_province = {
+                        state_scope = { any_owned_province = { port = yes } }
+                    }
+                }
+                THIS = {
+                    ai = no
+                    any_owned_province = { port = yes }
+                }
+            }
+			
+			#Player can take any state neighboring their substate
+			AND = {
+				any_owned_province = { 
+					any_neighbor_province = { 
+						owner = { 
+							substate_of = THIS 
+						}
+					}
+				}
+				THIS = { ai = no } 
+			}
+			
+			#Player can take any state neighboring their satellite
+			AND = {
+				any_owned_province = { 
+					any_neighbor_province = { 
+						owner = { 
+							vassal_of = THIS 
+						}
+					}
+				}
+				THIS = { ai = no } 
+			} 
+        }
+
+        #AI will not grab cores of allies/spherelings
+        OR = {
+            THIS = { ai = no }
+            NOT = {
+                any_owned_province = {
+                    any_core = {
+                        exists = yes
+                        OR = {
+                            alliance_with = THIS
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+        }
+
+        #AI will not try to grab cores of their union if they're sphere to a GP of their culture group
+        OR = {
+            THIS = { ai = no }
+            NOT = {
+                AND = {
+                    THIS = {
+                        is_greater_power = no
+                        part_of_sphere = yes
+                        culture_has_union_tag = yes
+                        cultural_union = { exists = no }
+                        sphere_owner = { is_culture_group = THIS }
+                    }
+                    any_owned_province = {
+                        any_core = {
+                            is_cultural_union = yes
+                            this_culture_union = this_union
+                        }
+                    }
+                }
+            }
+        }
+
+        #pro-military AI will not grab cores of non-existing, non-union countries
+        #unless they own some cores or it's part of their culture group and they're pro-military
+        #jingoistic countries will also take states with existing cores that they also own some of
+        #fascist & communist countries are exempt from this
+        OR = {
+            THIS = { ai = no }
+            THIS = { government = proletarian_dictatorship }
+            THIS = { government = fascist_dictatorship }
+            AND = {
+                THIS = { war_policy = pro_military }
+                any_owned_province = {
+                    any_core = {
+                        is_cultural_union = no
+                        exists = no
+                        OR = {
+                            any_core = { owned_by = THIS }
+                            is_culture_group = THIS
+                        }
+                    }
+                }
+            }
+            AND = {
+                THIS = { war_policy = jingoism }
+                any_owned_province = {
+                    any_core = {
+                        OR = {
+                            any_core = { owned_by = THIS }
+                            AND = {
+                                exists = no
+                                is_cultural_union = no
+                                is_culture_group = THIS
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+	
+	allowed_states_in_crisis = {
+		NOT = { any_owned_province = { is_capital = yes } }
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { tag = THIS }
+			}
+		}
+	}
+
+	po_demand_state = yes
+	
+	war_name = WAR_TAKE_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+	on_po_accepted = {
+		add_country_modifier = { name = recently_lost_war duration = 1825 }
+	}
+}
+
+# Gain control of State (1880-end)
+acquire_state_late = {
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	
+	construction_speed = 0.5
+
+    badboy_factor = 1.1
+    prestige_factor = 2
+    peace_cost_factor = 0.45
+    penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		is_vassal = no
+		is_substate = no
+		NOT = { 
+			is_our_vassal = THIS
+			has_country_modifier = neutrality
+		}
+		any_state = {
+			is_colonial = no
+			NOT = { any_owned_province = { is_capital = yes } }
+		}
+		year = 1880
+        THIS = { civilized = yes }
+        civilized = yes
+        any_state = {
+            is_colonial = no
+            NOT = { any_owned_province = { is_capital = yes } }
+        }
+        OR = {
+            AND = {
+                THIS = { total_amount_of_ships = 5 }
+                any_owned_province = { port = yes }
+            }
+            AND = { OR = { any_neighbor_country = { substate_of = THIS } any_neighbor_country = { vassal_of = THIS } } THIS = { ai = no } }
+            neighbour = THIS
+            war_with = THIS
+        }
+        OR = {
+            war_with = THIS
+            THIS = {
+                NOT = { has_country_modifier = neutrality }
+                total_amount_of_divisions = 1
+            }
+        }
+		OR = {
+			war_with = THIS
+			THIS = { NOT = { has_country_modifier = no_more_war } }
+		}
+        OR = {
+            THIS = { government = fascist_dictatorship }
+            THIS = { government = proletarian_dictatorship }
+            war_with = THIS
+            NOT = { relation = { who = THIS value = 0 } }
+            THIS = { ai = no }
+        }
+		#AI anti-military will not use this
+		OR = {
+			THIS = { ai = no }
+			THIS = { NOT = { war_policy = anti_military } }
+            war_with = THIS
+		}
+		#AI will not use this CB when duking it out over hegemony
+		OR = {
+			THIS = { ai = no }
+			NOT = {
+				AND = {
+					culture_has_union_tag = yes
+					is_culture_group = THIS
+					cultural_union = { exists = no }
+					is_greater_power = yes
+					THIS = { is_greater_power = yes }
+				}
+			}
+		}
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+				has_global_flag = railroading_on
+			}
+		}
+		#BYZ and ANA can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = BYZ
+					tag = ANA
+				}
+				OR = {
+					THIS = { tag = BYZ }
+					THIS = { tag = ANA }
+				}
+			}
+		}
+	}
+	
+	allowed_states = {
+        #Countries can't take capitals or cores
+        NOT = {
+            any_owned_province = { is_core = THIS }
+            any_owned_province = { is_capital = yes }
+        }
+
+        #AI treats colonial states with only civilized cores as regular states
+        OR = {
+            is_colonial = no
+            AND = {
+                is_colonial = yes
+                THIS = { ai = yes }
+                any_owned_province = { any_core = { civilized = yes } }
+                NOT = { any_owned_province = { any_core = { civilized = no } } }
+            }
+        }
+
+        ###Can only grab neighboring states, coastal if it's a coastal GP
+        OR = {
+            #AI and Player can take a neighboring state
+            any_owned_province = { any_neighbor_province = { owned_by = THIS } }
+
+            #Player can take a neighboring state neighboring a neighboring state
+            AND = {
+                THIS = { ai = no }
+                any_owned_province = {
+                    any_neighbor_province = {
+                        state_scope = { any_owned_province = { any_neighbor_province = { owned_by = THIS } } }
+                    }
+                }
+            }
+
+            #AI/Player can take a coastal state
+            AND = {
+                any_owned_province = { port = yes }
+                THIS = {
+                    any_owned_province = { port = yes }
+                    OR = {
+                        is_greater_power = yes
+                        is_secondary_power = yes
+                        ai = no
+                    }
+                }
+            }
+
+            #Player can take any state neighboring a coastal state
+            AND = {
+                any_owned_province = {
+                    any_neighbor_province = {
+                        state_scope = { any_owned_province = { port = yes } }
+                    }
+                }
+                THIS = {
+                    ai = no
+                    any_owned_province = { port = yes }
+                }
+            }
+			
+			#Player can take any state neighboring their substate
+			AND = {
+				any_owned_province = { 
+					any_neighbor_province = { 
+						owner = { 
+							substate_of = THIS 
+						}
+					}
+				}
+				THIS = { ai = no } 
+			}
+			
+			#Player can take any state neighboring their satellite
+			AND = {
+				any_owned_province = { 
+					any_neighbor_province = { 
+						owner = { 
+							vassal_of = THIS 
+						}
+					}
+				}
+				THIS = { ai = no } 
+			} 
+        }
+
+        #AI will not grab cores of allies/spherelings
+        OR = {
+            THIS = { ai = no }
+            NOT = {
+                any_owned_province = {
+                    any_core = {
+                        exists = yes
+                        OR = {
+                            alliance_with = THIS
+                            in_sphere = THIS
+                            vassal_of = THIS
+                        }
+                    }
+                }
+            }
+        }
+
+        #AI will not try to grab cores of their union if they're sphere to a GP of their culture group
+        OR = {
+            THIS = { ai = no }
+            NOT = {
+                AND = {
+                    THIS = {
+                        is_greater_power = no
+                        part_of_sphere = yes
+                        culture_has_union_tag = yes
+                        cultural_union = { exists = no }
+                        sphere_owner = { is_culture_group = THIS }
+                    }
+                    any_owned_province = {
+                        any_core = {
+                            is_cultural_union = yes
+                            this_culture_union = this_union
+                        }
+                    }
+                }
+            }
+        }
+
+        #pro-military AI will not grab cores of non-existing, non-union countries
+        #unless they own some cores or it's part of their culture group and they're pro-military
+        #jingoistic countries will also take states with existing cores that they also own some of
+        #fascist & communist countries are exempt from this
+        OR = {
+            THIS = { ai = no }
+            THIS = { government = proletarian_dictatorship }
+            THIS = { government = fascist_dictatorship }
+            AND = {
+                THIS = { war_policy = pro_military }
+                any_owned_province = {
+                    any_core = {
+                        is_cultural_union = no
+                        exists = no
+                        OR = {
+                            any_core = { owned_by = THIS }
+                            is_culture_group = THIS
+                        }
+                    }
+                }
+            }
+            AND = {
+                THIS = { war_policy = jingoism }
+                any_owned_province = {
+                    any_core = {
+                        OR = {
+                            any_core = { owned_by = THIS }
+                            AND = {
+                                exists = no
+                                is_cultural_union = no
+                                is_culture_group = THIS
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+	
+	allowed_states_in_crisis = {
+		NOT = { any_owned_province = { is_capital = yes } }
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { tag = THIS }
+			}
+		}
+	}
+
+	po_demand_state = yes
+	
+	war_name = WAR_TAKE_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+	on_po_accepted = {
+		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
 
@@ -4412,6 +5084,133 @@ demand_concession_NI_casus_belli = {
 	}
 }
 
+#Take Capital
+take_capital = {
+    sprite_index = 6
+    is_triggered_only = yes
+    months = 12
+    construction_speed = 0.5
+
+    badboy_factor = 3
+    prestige_factor = 10
+    peace_cost_factor = 1
+    penalty_factor = 1
+
+    break_truce_prestige_factor = 1
+    break_truce_infamy_factor = 2
+    break_truce_militancy_factor = 2
+    truce_months = 36
+
+    good_relation_prestige_factor = 1
+    good_relation_infamy_factor = 1
+    good_relation_militancy_factor = 1
+
+    can_use = {
+        THIS = {
+            NOT = {
+                has_country_flag = in_great_war
+                has_country_modifier = no_more_war
+                has_country_modifier = neutrality
+            }
+        }
+        OR = {
+            war_with = THIS
+            THIS = { total_amount_of_divisions = 1 }
+        }
+        NOT = {
+            is_our_vassal = THIS
+            has_country_modifier = neutrality
+        }
+        number_of_states = 2 # annex if you want their last state
+        any_owned_province = {
+            NOT = { is_core = THIS }
+            is_colonial = no
+        }
+        OR = {
+            neighbour = THIS
+			AND = {
+				OR = {
+					any_neighbor_country = {
+						substate_of = THIS
+					}
+					any_neighbor_country = {
+						vassal_of = THIS
+					}
+				}
+				THIS = {
+					ai = no
+				}
+			}
+            AND = {
+                THIS = { any_owned_province = { port = yes } }
+                THIS = { total_amount_of_ships = 5 }
+                any_owned_province = { port = yes }
+            }
+        }
+        OR = {
+            AND = {
+                civilized = yes
+                THIS = {
+                    civilized = yes
+                }
+            }
+            AND = {
+                civilized = no
+                THIS = {
+                    civilized = no
+                }
+            }
+        }
+        is_vassal = no
+		#RUS and SML can't use fabricate it against each other (can't use either?)
+		NOT = {
+			AND = {
+				OR = {
+					tag = SML
+					tag = RUS
+				}
+				OR = {
+					THIS = { tag = SML }
+					THIS = { tag = RUS }
+				}
+				has_global_flag = railroading_on
+			}
+		}
+    }
+
+    allowed_states = {
+        is_colonial = no
+        any_owned_province = {
+            NOT = { is_core = THIS }
+            is_colonial = no
+        }
+        any_owned_province = { is_capital = yes }
+    }
+
+    allowed_states_in_crisis = {
+        any_owned_province = {
+            any_neighbor_province = {
+                owner = { tag = THIS }
+            }
+        }
+    }
+
+    po_demand_state = yes
+
+    war_name = WAR_TAKE_NAME
+
+    on_add = {
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+    }
+	on_po_accepted = {
+		add_country_modifier = { name = recently_lost_war duration = 1825 }
+	}
+}
+
 demand_concession_BC_casus_belli = {
 	sprite_index = 7
 	is_triggered_only = yes
@@ -4674,6 +5473,7 @@ conquest = {
 				NOT = { number_of_states = 3 }
 			}
 		}
+		#total_pops = 400000 #Countries with less than 400k get a minor conquest
 		is_vassal = no
 		NOT = { has_country_modifier = neutrality }
 		THIS = {
@@ -5028,6 +5828,248 @@ annex_africa_full = {
 			value = 0.1
 		}
 	}
+}
+
+conquest_low = {
+    sprite_index = 2
+    is_triggered_only = yes
+    months = 12
+    crisis = no
+
+    can_use = {
+        THIS = { ai = no }
+        total_pops = 100000
+        NOT = { total_pops = 400000 }
+        NOT = { is_our_vassal = THIS }
+        # only one state or unciv
+        NOT = { number_of_states = 5 }
+		OR = {
+            war_with = THIS
+            THIS = {
+                total_amount_of_divisions = 1
+                NOT = { has_country_modifier = neutrality }
+            }
+        }
+        THIS = {
+            NOT = {
+                has_country_flag = in_great_war
+                has_country_modifier = no_more_war
+                has_country_modifier = neutrality
+            }
+        }
+        OR = {
+            AND = {
+                civilized = yes
+                NOT = { number_of_states = 3 }
+            }
+            AND = {
+                civilized = no
+                THIS = { civilized = no }
+                NOT = { number_of_states = 3 }
+            }
+            AND = {
+                civilized = no
+				NOT = { number_of_states = 3 }
+                THIS = { civilized = yes }
+            }
+        }
+        OR = {
+            any_owned_province = { port = yes }
+            neighbour = THIS
+            AND = { OR = { any_neighbor_country = { substate_of = THIS } any_neighbor_country = { vassal_of = THIS } } THIS = { ai = no } }
+            AND = { war_with = THIS ai = no }
+        }
+    }
+
+    badboy_factor = 1.0
+    prestige_factor = 5
+    peace_cost_factor = 1
+    penalty_factor = 1
+
+    break_truce_prestige_factor = 5
+    break_truce_infamy_factor = 2
+    break_truce_militancy_factor = 2
+    truce_months = 60
+
+    good_relation_prestige_factor = 1
+    good_relation_infamy_factor = 1
+    good_relation_militancy_factor = 1
+
+    construction_speed = 0.5
+
+    on_add = {
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+    }
+
+    po_annex = yes
+
+    war_name = WAR_CONQUEST_LOW_NAME
+}
+
+conquest_tiny = {
+    sprite_index = 2
+    is_triggered_only = yes
+    months = 12
+    crisis = no
+
+    can_use = {
+        THIS = { ai = no }
+        total_pops = 10000
+        NOT = { total_pops = 100000 }
+        NOT = { is_our_vassal = THIS }
+        # only one state or unciv
+        NOT = { number_of_states = 5 }
+		OR = {
+            war_with = THIS
+            THIS = {
+                total_amount_of_divisions = 1
+                NOT = { has_country_modifier = neutrality }
+            }
+        }
+        THIS = {
+            NOT = {
+                has_country_flag = in_great_war
+                has_country_modifier = no_more_war
+                has_country_modifier = neutrality
+            }
+        }
+        OR = {
+            AND = {
+                civilized = yes
+                NOT = { number_of_states = 3 }
+            }
+            AND = {
+                civilized = no
+                THIS = { civilized = no }
+                NOT = { number_of_states = 3 }
+            }
+            AND = {
+                civilized = no
+				NOT = { number_of_states = 3 }
+                THIS = { civilized = yes }
+            }
+        }
+        OR = {
+            any_owned_province = { port = yes }
+            neighbour = THIS
+            AND = { OR = { any_neighbor_country = { substate_of = THIS } any_neighbor_country = { vassal_of = THIS } } THIS = { ai = no } }
+            AND = { war_with = THIS ai = no }
+        }
+    }
+
+    badboy_factor = 0.5
+    prestige_factor = 5
+    peace_cost_factor = 1
+    penalty_factor = 1
+
+    break_truce_prestige_factor = 5
+    break_truce_infamy_factor = 2
+    break_truce_militancy_factor = 2
+    truce_months = 60
+
+    good_relation_prestige_factor = 1
+    good_relation_infamy_factor = 1
+    good_relation_militancy_factor = 1
+
+    construction_speed = 0.5
+
+    on_add = {
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+    }
+
+    po_annex = yes
+
+    war_name = WAR_CONQUEST_TINY_NAME
+}
+
+conquest_minuscule = {
+    sprite_index = 2
+    is_triggered_only = yes
+    months = 12
+    crisis = no
+
+    can_use = {
+		is_vassal = no
+		is_substate = no
+		NOT = { has_country_modifier = neutrality }
+        THIS = { ai = no }
+        NOT = { total_pops = 10000 }
+        NOT = { is_our_vassal = THIS }
+        # only one state or unciv
+        NOT = { number_of_states = 5 }
+		OR = {
+            war_with = THIS
+            THIS = {
+                total_amount_of_divisions = 1
+                NOT = { has_country_modifier = neutrality }
+            }
+        }
+        THIS = {
+            NOT = {
+                has_country_flag = in_great_war
+                has_country_modifier = no_more_war
+                has_country_modifier = neutrality
+            }
+        }
+        OR = {
+            AND = {
+                civilized = yes
+                NOT = { number_of_states = 3 }
+            }
+            AND = {
+                civilized = no
+                THIS = { civilized = no }
+                NOT = { number_of_states = 3 }
+            }
+            AND = {
+                civilized = no
+				NOT = { number_of_states = 3 }
+                THIS = { civilized = yes }
+            }
+        }
+        OR = {
+            any_owned_province = { port = yes }
+            neighbour = THIS
+            AND = { OR = { any_neighbor_country = { substate_of = THIS } any_neighbor_country = { vassal_of = THIS } } THIS = { ai = no } }
+            AND = { war_with = THIS ai = no }
+        }
+    }
+
+    badboy_factor = 0.1
+    prestige_factor = 5
+    peace_cost_factor = 1
+    penalty_factor = 1
+
+    break_truce_prestige_factor = 5
+    break_truce_infamy_factor = 2
+    break_truce_militancy_factor = 2
+    truce_months = 60
+
+    good_relation_prestige_factor = 1
+    good_relation_infamy_factor = 1
+    good_relation_militancy_factor = 1
+
+    construction_speed = 0.5
+
+    on_add = {
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+    }
+
+    po_annex = yes
+
+    war_name = WAR_CONQUEST_MINUSCULE_NAME
 }
 
 # Russia Hegemony - Functionally similar to an acquire core state cb

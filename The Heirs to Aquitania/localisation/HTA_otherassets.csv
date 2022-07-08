@@ -1,4 +1,4 @@
-;;;;;;;;x
+;;;;;;;;;;x
 active_serial_killer;Active Serial Killer;x
 active_serial_killer_desc;Some beast of a man (or woman) is murdering citizens in this province. Police have so far failed to apprehend him.;x
 anatole_boom;Anatolian Population Boom;x
@@ -98,6 +98,8 @@ POL_slower_cbs;Poland: Slower War Justification;x
 POL_slower_cbs_desc;The unwillingness of our nobility to take part in our national diplomatic endeavours has the side effect of making it more difficult for us to quickly formulate plans for justifying wars.;x
 rebellious_minorities;Rebellious Minorities;x
 rebellious_minorities_desc;For some reason, the minorities in this province are particularly rebellious at the moment.;x
+recently_lost_war;Recently Lost War;x
+recently_lost_war_desc;We have lost a war recently. This currently has no effect in this mod, whether on your country or decisions/events.;x
 restless_slaves;Revolutionary Slaves;x
 restless_slaves_desc;Slaves in our country are spreading the idea of revolting against their masters.;x
 russian_rebels_title;Russian Unification Rebels;x
@@ -171,6 +173,30 @@ acquire_core_substate_region;Acquire core substate region;x
 acquire_core_substate_region_desc;Acquire one of your core regions from enemy ?Ysubstate?W;x
 acquire_core_substate_region_short;Acquire $STATE$;x
 acquire_core_substate_region_setup;Acquire your core, $STATE$, from $RECIPIENT$;x
+acquire_state;Acquire State Early;x
+acquire_state_short;Acquire $STATE$;x
+acquire_state_setup;Acquire $STATE$ from $RECIPIENT$;x
+acquire_state_desc;Acquire an enemy §Ystate§W;x
+acquire_state_mid;Acquire State Mid;x
+acquire_state_mid_short;Acquire $STATE$;x
+acquire_state_mid_desc;Acquire an enemy §Ystate§W;x
+acquire_state_mid_setup;Acquire $STATE$ from $RECIPIENT$;x
+acquire_state_late;Acquire State Late;x
+acquire_state_late_short;Acquire $STATE$;x
+acquire_state_late_desc;Acquire an enemy §Ystate§W;x
+acquire_state_late_setup;Acquire $STATE$ from $RECIPIENT$;x
+conquest_low;Minor Conquest;x
+conquest_low_desc;Annex a country of small size and population by conquest;x
+conquest_low_setup;Annex minor nation of $RECIPIENT$;x
+conquest_low_short;Annex $RECIPIENT$;x
+conquest_tiny;Tiny Conquest;x
+conquest_tiny_desc;Annex a country of small size and population by conquest;x
+conquest_tiny_setup;Annex tiny nation of $RECIPIENT$;x
+conquest_tiny_short;Annex $RECIPIENT$;x
+conquest_minuscule;Minuscule Conquest;x
+conquest_minuscule_desc;Annex a country of small size and population by conquest;x
+conquest_minuscule_setup;Annex minuscule nation of $RECIPIENT$;x
+conquest_minuscule_short;Annex $RECIPIENT$;x
 dismantle_PER;Claim the Holy Land;x
 dismantle_PER_desc;Liberate the Outremer people living in the Persian Empire;x
 dismantle_PER_short;Liberate the Outremer people;x
@@ -211,6 +237,10 @@ status_quo_levant;Status Quo;x
 status_quo_levant_desc;Defend the current Order in the Levant;x
 status_quo_levant_short;Enforce Status Quo;x
 status_quo_levant_setup;Forces a white peace;x
+take_capital;Take Capital;x
+take_capital_desc;Take another country's capital state;x
+take_capital_short;Seize capital;x
+take_capital_setup;Seize their capital.;x
 NORMAL_WAR_CONQUEST_NAME;$ORDER$ War of the Conquest of $SECOND_COUNTRY$;x
 NORMAL_CUT_DOWN_TO_SIZE_PERSIA_WAR_NAME;$ORDER$$FIRST$-$SECOND$ Levantine War;x
 AGRESSION_CUT_DOWN_TO_SIZE_PERSIA_WAR_NAME;$ORDER$$FIRST$-$SECOND$ Levantine War;x
