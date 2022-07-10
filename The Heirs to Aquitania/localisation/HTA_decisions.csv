@@ -1,6 +1,4 @@
 ;;;;;;;;;;x
-treaty_of_aydin_title;The Treaty of Aydin;x
-treaty_of_audin_desc;We have beaten the Romans from our rightful territory, and with their crumbling empire to the west, it is a prime opportunity for us to force them to cede nearly all of Asia minor to us.;x
 accepting_flemish_people_title;Embracing the Flemish;x
 accepting_flemish_people_desc;The Flemish of the late Duchy of Brabant are very similar to our own people linguistically and culturally. Really, we are the same people separated for too long by political borders. Let us rectify this by embracing the Flemish as our brothers!;x
 AEN_occupies_SCO_1_title;Enforce Our Demands on Alba;x
@@ -79,6 +77,12 @@ caserta_education_decree_title;The Caserta Education Decree;x
 caserta_education_decree_desc;"A formalized education system must be instituted across the Kingdom. A modern European state cannot hope to succeed without widespread literacy and education." From Caserta, King Giuseppe issued a decree laying out the details of the royal plan for Neapolitcan schooling.;x
 cede_emden_title;Cede Emden;x
 cede_emden_desc;With the failure of the diplomatic option in the proposed Emden Accords with our German neighbour, we are faced with a difficult decision. Tensions over the city will only continue to mount, and we must ask ourselves if we want to risk war to hold such a small region. If we cede the city to German and relinquish our claims, a costly war could be avoided.;x
+centralize_bulgaria_title;Centralize Bulgaria;x
+centralize_bulgaria_desc;Insert description;x
+centralize_greece_title;Centralize Greece;x
+centralize_greece_desc;Insert description;x
+centralize_macedon_title;Centralize Macedon;x
+centralize_macedon_desc;Insert description;x
 change_tech_school_disabled_title;Hide Tech School Changes;x
 change_tech_school_disabled_desc;You can, naturally, change your tech school in the future.;x
 change_tech_school_enabled_title;Change Tech School;x
@@ -606,6 +610,8 @@ secure_silesia_title;Secure Silesia from Foreign Encroachment;x
 secure_silesia_desc;With its vast reserves of coal and other materials vital for fueling a country's industry, Silesia is of great interest to a number of its neighbours. Given the influence $COUNTRY$ exerts in their politics, we could arrange for a "change in leadership" that would ensure the Duchy remains loyal to $COUNTRY$ and $COUNTRY$ alone.;x
 secure_silesia_2_title;Political Integration of Silesia;x
 secure_silesia_2_desc;It has been some time since the country of Silesia "assented" to our hegemony, but they have remained autonomous for all that time. Ours is a prosperous nation, and it would be mutually beneficial for both $COUNTRY$ and Silesia for the latter to be joined. We will now proceed to integrate Silesia into our political structure, and we may all prosper!;x
+seize_aegean_islands_title;Seize the Aegean;x
+seize_aegean_islands_desc;With our recent successes against the Empire and its failures in centralization, they are weaker than ever. It is time to capitalize and strengthen our strategic position in the eastern Mediterranean by laying claim to some of its islands.;x
 sell_alaska_title;Sell Halesca;x
 sell_alaska_desc;With the loss of our colonies in the Amerigas and our current financial situation, it has become quite burdensome to maintain our colony of Halesca. In order to reach it, we have to travel extremely far, either around the Southern Cape of South Ameriga, or by shipping all the way to the East Indies. No, there are others there that may be convinced to buy it and rid us of this burden.;x
 sell_dutch_natal_title;Sell the Natal;x
@@ -652,6 +658,8 @@ take_west_title;Take The Western Great Lakes;x
 take_west_desc;The Shawnee west is barely settled territory, and already our pioneers are pushing into this fertile region by the lakeshore. We should stake our claim to these lands.;x
 total_war_mex_title;Total War Against Mexika;x
 total_war_mex_desc;We must exhort our people to give everything against the European oppressors, or find ourselves crushed for good.;x
+treaty_of_aydin_title;The Treaty of Aydin;x
+treaty_of_aydin_desc;We have beaten the Romans from our rightful territory, and with their crumbling empire to the west, it is a prime opportunity for us to force them to cede nearly all of Asia minor to us.;x
 treaty_of_brest_title;The Treaty of Brest;x
 treaty_of_brest_desc;Ever since our defeat in the Byelorussian War in 1748, we have been waiting for an opportunity to reclaim Brest-Litovsk from Smolensk. At long last, we have our opportunity. With the current situation with Russia, the border is not well-guarded. If we strike quickly, possibly in coordination with the Russians, we may be able to right the wrong done to us a century ago. But that is merely the threat. Let us first see whether Smolensk will return our land peacefully.\n\nHuman Poland only needs State & Government, so Smolensk doesn't HAVE to be at war with Russia.;x
 treaty_of_tesepikhav_title;The Treaty of Tesepikhav;x

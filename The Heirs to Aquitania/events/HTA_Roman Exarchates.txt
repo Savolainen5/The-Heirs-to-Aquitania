@@ -149,7 +149,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB00004"
+		name = "EVTOPTB00005"
 		prestige = -50
 		ai_chance = { factor = 0 }
 	}
@@ -316,8 +316,8 @@ country_event = {
 	}
 	option = {
 		name = "Our just rewards."
-		set_country_flag = naples_treaty_port
-		prestige = 20
+		set_global_flag = naples_treaty_port
+		prestige = 10
 		754 = {
 			owner = {
 				any_owned = {
@@ -329,6 +329,37 @@ country_event = {
 						}
 					}
 					secede_province = BYZ
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 00011
+	title = "EVTNAME00011"
+	desc = "EVTDESC00011"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA00011"
+		annex_to = FROM
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = "EVTOPTB00011"
+		BYZ = {
+			release_vassal = GRE
+			war = {
+				target = GRE
+				attacker_goal = {
+					casus_belli = annex_core_country
+				}
+				defender_goal = {
+					casus_belli = cut_down_to_size
 				}
 			}
 		}

@@ -268,4 +268,41 @@ political_decisions = {
 			}
 		}
 	}
+	#By Bismarkingit
+	seize_aegean_islands = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = MER
+				tag = ITA
+			}
+			has_global_flag = napoli_roman_war
+			NOT = { has_global_flag = naples_treaty_port }
+		}
+		allow = {
+			BYZ =  {
+				exists = yes
+				is_disarmed = yes
+				truce_with = THIS
+			}
+		}
+		effect = {
+			clr_global_flag = napoli_roman_war
+			set_country_flag = claimed_aegean
+			prestige = 20
+			BYZ = {
+				any_owned = {
+				limit = {
+					OR = {
+						region = EGY_843
+						region = CRE_847
+						region = TUR_855
+					}
+				}
+				add_core = THIS
+				secede_province = THIS
+				}
+			}
+		}
+	}
 }

@@ -158,4 +158,75 @@ political_decisions = {
 			}
 		}
 	}
+	
+	#Decisions by Bismarkingit
+	centralize_greece = {
+		picture = "map_aegean"
+		potential = {
+			tag = BYZ
+			has_country_flag = decentralized_empire
+			NOT = { has_country_flag = byz_greece_centralized }
+		}
+		allow = {
+			is_greater_power = yes
+			state_n_government = 1
+			GRE = { vassal_of = THIS }
+		}
+		effect = {
+			set_country_flag = byz_greece_centralized
+			GRE = {
+				country_event = {
+					id = 00011
+					days = 1
+				}
+			}
+		}
+	}
+	centralize_bulgaria = {
+		picture = "map_balkans"
+		potential = {
+			tag = BYZ
+			has_country_flag = decentralized_empire
+			NOT = { has_country_flag = byz_bulgaria_reintegrated }
+		}
+		allow = {
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+			BUL = { vassal_of = THIS }
+		}
+		effect = {
+			set_country_flag = byz_bulgaria_reintegrated 
+			release_vassal = BUL
+			war = {
+				target = BUL
+				attacker_goal = {
+					casus_belli = annex_core_country
+				}
+				defender_goal = {
+					casus_belli = cut_down_to_size
+				}
+			}
+		}
+	}
+	centralize_macedon = {
+		picture = "claim_greater_bosnia"
+		potential = {
+			tag = BYZ
+			has_country_flag = decentralized_empire
+			NOT = { has_country_flag = byz_macedonia_annexed }
+		}
+		allow = {
+			is_greater_power = yes
+			war = no
+			NOT = { exists = BUL }
+			NOT = { exists = GRE }
+			has_country_flag = byz_bulgaria_reintegrated
+			has_country_flag = byz_greece_centralized
+			nationalism_n_imperialism = 1
+		}	
+		effect = {
+			inherit = MCD
+			set_country_flag = byz_macedonia_annexed
+		}
+	}
 }

@@ -61,14 +61,14 @@ political_decisions = {
 		potential = {
 			tag = ARM
 			has_global_flag = anatolia_war_again
-			}
+		}
 		allow = {
 			BYZ = {
 				exists = yes
 				is_disarmed = yes
 				truce_with = ARM
-				}
 			}
+		}
 		effect = {	
 			clr_global_flag = anatolia_war_again
 			set_country_flag = anatolia_war_won
