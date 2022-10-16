@@ -50,6 +50,10 @@ country_event = {
 	option = {
 		name = "EVTOPTA00002"
 		set_global_flag = roman_centralization_crisis
+		add_country_modifier = { #So that Armenia doesn't declare the very next day
+			name = timer
+			duration = 36
+		}
 		BUL = { 
 			country_event = { 
 				id = 00003
@@ -268,6 +272,13 @@ country_event = {
 		}
 		has_global_flag = roman_centralization_crisis
 		war = no
+		OR = {
+			AND = {
+				NOT = { badboy = 0.62 }
+				ai = yes
+			}
+			ai = no
+		}
 	}
 	option = {
 		name = "Carpe diem!"
@@ -284,12 +295,22 @@ country_event = {
 				factor = 0
 				badboy = 0.62
 			}
+			modifier = {
+				factor = 100
+				has_global_flag = railroading_on
+			}
 		}
 	}
 	option = {
 		name = "Who would kick a man while he's down?"
 		badboy = -3
-		ai_chance = { factor = 50 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_global_flag = railroading_on
+			}
+		}
 	}
 }
 #Naples Beaten Back

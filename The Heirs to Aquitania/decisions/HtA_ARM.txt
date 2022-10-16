@@ -35,15 +35,17 @@ political_decisions = {
 	revive_armenian_anatolia = {
 		picture = enact_muhammad_alis_reforms
 		potential = {
-			tag = ARM
 			has_global_flag = roman_centralization_crisis
-		}
-		allow = {
 			NOT = {
 				has_global_flag = anatolia_war_again 
 				has_country_flag = anatolia_war_won
 				has_country_flag = anatolia_war_lost
 			}
+			BYZ = { NOT = { has_country_modifier = timer } }
+			tag = ARM
+		}
+		allow = {
+			war = no
 		}
 		effect = {
 			set_global_flag = anatolia_war_again

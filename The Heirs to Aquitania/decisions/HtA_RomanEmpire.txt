@@ -160,6 +160,7 @@ political_decisions = {
 	}
 	
 	#Decisions by Bismarkingit
+	
 	centralize_greece = {
 		picture = "map_aegean"
 		potential = {
@@ -229,4 +230,74 @@ political_decisions = {
 			set_country_flag = byz_macedonia_annexed
 		}
 	}
+	
+	
+#	ai_stop_fighting_BYZ_vassals = { #If those vassals are rebelling
+#		potential = {
+#			has_global_flag = roman_centralization_crisis
+#			OR = {
+#				exists = ANA
+#				exists = GRE
+#				exists = MCD
+#				exists = BUL
+#			}
+#		}
+#		allow = {
+#			war_with = BYZ				#Savs' note 16.10.2022 - I added this decision to try to make countries not be at war in the case of the title, but then I made some timing changes that made it unnecessary
+#			NOT = {
+#				tag = ANA
+#				tag = GRE
+#				tag = MCD
+#				tag = BUL
+#				tag = BYZ
+#			}
+#			OR = {
+#				ANA = { war_with = BYZ }
+#				GRE = { war_with = BYZ }
+#				MCD = { war_with = BYZ }
+#				BUL = { war_with = BYZ }
+#			}
+#			OR = {
+#				war_with = ANA
+#				war_with = GRE
+#				war_with = MCD
+#				war_with = BUL
+#			}
+#		}
+#		effect = {
+#			random_country = {
+#				limit = {
+#					tag = ANA
+#					war_with = BYZ
+#				}
+#				end_war = ANA
+#			}
+#			random_country = {
+#				limit = {
+#					tag = GRE
+#					war_with = BYZ
+#				}
+#				end_war = GRE
+#			}
+#			random_country = {
+#				limit = {
+#					tag = MCD
+#					war_with = BYZ
+#				}
+#				end_war = MCD
+#			}
+#			random_country = {
+#				limit = {
+#					tag = BUL
+#					war_with = BYZ
+#				}
+#				end_war = BUL
+#			}
+######						# This decision didn't really work in my single relevant test, so I commented out the above effect and tried the bottom one, but that didn't work in the next and last relevant test. Oh well! Hopefully it's not going to be necessary
+#			end_war = ANA
+#			end_war = GRE
+#			end_war = MCD
+#			end_war = BUL
+#		}
+#	}
 }
