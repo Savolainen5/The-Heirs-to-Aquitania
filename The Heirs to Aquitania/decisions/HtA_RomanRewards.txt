@@ -1,12 +1,12 @@
-#Written by Bismarkingit, categorized as meme/LARP by me. (That's insulting when you have bloody Zapadoslavia and Grossdeutschland every single game)
+#Written by Bismarkingit, categorized as meme/LARP by Savs
 political_decisions = {
-	reclaim_armenia = {
+	BYZ_reclaim_armenia = {
 		picture = military_parade
 		potential = {
 			has_global_flag = meme_decisions_enabled
-			has_global_flag = roman_succession_war_finish_ANA
+			has_country_flag = roman_golden_era
 			tag = BYZ
-			NOT = { has_country_flag = reclaim_armenia_rom }
+			NOT = { 882 = { is_core = BYZ } }
 		}
 		allow = {
 			prestige = 100
@@ -21,10 +21,17 @@ political_decisions = {
 			TUR_890 = { add_core = BYZ }
 			TUR_885 = { add_core = BYZ }
 		}
+		ai_will_do = {
+			chance = 100
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
 	}
 	
-	reclaim_levant = {
-		potential = {															#EVERYTHING HERE NEEDS LOCALIZATION
+	BYZ_reclaim_levant = {
+		potential = {
 			has_global_flag = meme_decisions_enabled
 			has_country_flag = reclaim_armenia_rom
 			tag = BYZ
@@ -46,9 +53,16 @@ political_decisions = {
 			EGY_915 = { add_core = BYZ }
 			EGY_921 = { add_core = BYZ }
 		}
+		ai_will_do = {
+			chance = 100
+			modifier = {
+				factor = 0
+				badboy = 0.2
+			}
+		}
 	}
 	
-	reclaim_egypt = {
+	BYZ_reclaim_egypt = {
 		potential = {
 			has_global_flag = meme_decisions_enabled
 			has_country_flag = reclaim_levant_rom
@@ -73,9 +87,16 @@ political_decisions = {
 			EGY_1758 = { add_core = BYZ }
 			EGY_1771 = { add_core = BYZ }
 		}
+		ai_will_do = {
+			chance = 100
+			modifier = {
+				factor = 0
+				badboy = 0.2
+			}
+		}
 	}
 	
-	balkan_reclaim = {
+	BYZ_balkan_reclaim = {
 		potential = {
 			has_global_flag = meme_decisions_enabled
 			has_global_flag = roman_succession_war_finish_ANA
@@ -95,6 +116,13 @@ political_decisions = {
 			CRO_789 = { add_core = BYZ }
 			AUS_771 = { add_core = BYZ }
 			AUS_780 = { add_core = BYZ }
+		}
+		ai_will_do = {
+			chance = 100
+			modifier = {
+				factor = 0
+				badboy = 0.01
+			}
 		}
 	}
 }

@@ -61,6 +61,14 @@ buy_aqt_s_ameriga_title;Offer to buy Aquitània's South Amerigan Colonies;x
 buy_aqt_s_ameriga_desc;Aquitània has recently informed us that they are searching for a buyer for their colony of Araguari, comprised of the two intendencies of Porterei and Nova Bordeu.;x
 buy_dutch_natal_title;Buy Dutch Natal;x
 buy_dutch_natal_desc;After the conclusion of the Emden Accords, the cession of Oostkaap to $COUNTRY$ isolated the former territory of the Steenkooler republic of Natal. The Dutch had difficulty administering this territory as resident Zulus began to make trouble. By offering to buy the land and incorporate it into our colonies in South Africa, we can take this problem off of their hands.;x
+BYZ_balkan_reclaim_title;Reclaim the Balkans;x
+BYZ_balkan_reclaim_desc;With our final conquest of the eastern Mediterranean, it is time to turn our attention to the rest of the Balkan peninsula, to ensure that our position in Europe is strong.;x
+BYZ_reclaim_armenia_title;Reclaim the rest of Anatolia;x
+BYZ_reclaim_armenia_desc;It has been many a long year since we lost control of Anatolia. At long last we are in a position to rectify that. Let us reclaim what is rightfully ours!;x
+BYZ_reclaim_egypt_title;Reclaim Egypt;x
+BYZ_reclaim_egypt_desc;The former breadbasket of the Roman Empire should return to our hands, history and inhabitants be damned. Who will stop us?;x
+BYZ_reclaim_levant_title;Reclaim the Levant;x
+BYZ_reclaim_levant_desc;The eastern end of the Mediterranean, what some refer to as the Holy Land, have long been sundered from the Empire. It is time to rectify that problem. Jerusalem and Syria shall be ours once again.;x
 califiana_cores_title;Our Claims in the Desert;x
 califiana_cores_desc;The land of Califiana is lightly populated, but full of valuable resources that could propel our country to greatness. Let us stake our claim.;x
 call_brunswick_congress_title;Call the Brunswick Congress of Germans;x
@@ -334,7 +342,7 @@ incorporate_brabant_desc;Now that we've claimed Zeeland, why not just get the re
 info_AEN_title;HtA Aengland Info;x
 info_AEN_desc;First of all, if you care, check out the Aenglisc pronunciation guide for a sense of how the language should be pronounced. When you get cores on Alba's homelands, you'll get events to get some of their colonies, and other nearby colonial powers will be able to seize some, too. As shown in Spudgun's HtA series, this can cause frustration for the Alba player, as there's no real way for them NOT to lose all their land if you go and take their cores.;x
 info_BYZ_title;HtA Roman Empire Info;x
-info_BYZ_desc;You start big and have lots of potential to get properly powerful. Info about the Roman Civil War: it will be foreshadowed in the 1840s and 50s and then Anatole and Greece will be released as your vassals around 1858-62. I highly suggest that you don't do silly things like canceling their vassal status and then annexing them, mostly because a) that's not how I test it and you're going to mess up flags and stuff and b) that's lame.\n\nAfter the Civil War you'll get decisions to expand further east and to get back into Italy. The time between reclaiming your cores from Armenia and the civil war is about rebuilding and modernizing.;x
+info_BYZ_desc;You start poised for war against Armenia to recover parts of Anatolia. When you succeed with that, you will choose - do you try to centralize the state and absorb the exarchates under you in Europe (Greece, Makedon, Bulgaria), or do you continue with the decentralized federal model? The centralization route has more content and will involve a bout of (simultaneous) wars, but if you win them all, you'll easily cruise to GP slot 1. For an optimal experience, play with railroading on.;x
 info_german_title;HtA Germany Info;x
 info_german_desc;The big three in Germany are of course the big B's - Bavaria, Brandenburg and Brunswick (who at the beginning of the game is big on soft power). Once it's time to claim German hegemony (which currently can only be done with those three), you'll take the decision and the others should immediately follow. Then there'll be a major event which will announce the beginning of the wars. Only after that are the CBs available. NB - If you from NGF or SGF, you will lose access to these CBs. I'll rework Germany formation in 0.40 probably and remove NGF/SGF.;x
 info_MLT_title;HtA Malta Info;x
@@ -667,11 +675,11 @@ treaty_of_tesepikhav_desc;By striking deep into the white man's territory and ca
 treaty_of_twist_title;The Treaty of Twist;x
 treaty_of_twist_desc;With the conclusion of the Brunswick Congress, we are now have the very real possibility to unite the Germans under our banner. The matter of Emden, which the Netherlands seized from Oldenburg in 1827, should be settled, as it will create unnecessary friction between our two countries now that we have inherited Oldenburg's claim. We can propose the town of Twist, on the border, to be a meeting ground for negotiations over the territory.;x
 turn_off_meme_decisions_title;Turn Off Meme Decisions;x
-turn_off_meme_decisions_desc;You will no longer see them if your country has any, which it probably doesn't. But if you feel like making an AAR, maybe you can come up with a plausible explanation for some of them.;x
+turn_off_meme_decisions_desc;You will no longer see them (if your country has any), which it probably doesn't. But if you feel like making an AAR, maybe you can come up with a plausible explanation for some of them.;x
 turn_off_railroading_title;Turn Off Railroading;x
 turn_off_railroading_desc;Select this to disable railroading, which affects the outcomes of some events in the Heirs to Aquitània mod. You can turn it on again whenever you choose.\n\n§RNB: Savs doesn't test non-railroaded, so use it at your own risk. Nothing should crash, but things will be even weirder than HtA already is.;x
 turn_on_meme_decisions_title;Turn on Meme Decisions;x
-turn_on_meme_decisions_desc;These decisions are ones that are OP or that go against Savs' stick-in-the-mud storytelling ways. But you should play this game how you want. Current list (0.36.60):\n-BYZ:Get cores on Armenia, the Levant, Egypt and the Balkans as Melisurgos, winner of the Roman Civil War.\n-SHC:Get cores on neighbouring countries and then remove their cores;x
+turn_on_meme_decisions_desc;These decisions are ones that are Savs feels are OP or that go against his stick-in-the-mud storytelling ways. But you should play this game how you want. Current list (0.36.64):\n-BYZ:Win everything and get cores on Armenia, the Levant, Egypt and the Balkans.\n-SHC:Get cores on neighbouring countries and then remove their cores;x
 turn_on_railroading_title;Turn On Railroading;x
 turn_on_railroading_desc;Select this to reenable railroading, which affects the outcomes of some events in the Heirs to Aquitània mod. You can turn it off again whenever you choose.\n\n§RNB: Savs doesn't test non-railroaded, so use it at your own risk. Nothing should crash, but things will be even weirder than HtA already is.;x
 TUS_form_PDN_title;Unite with the Notherners;x
