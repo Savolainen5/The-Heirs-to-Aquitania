@@ -1,3 +1,6 @@
+NOTE: THIS IS THE MOD THAT HtA IS BASED ON
+
+
 /gsg/VickyMod 1.06
 By Hisuibro with credit to Finnbro and Rylok
 

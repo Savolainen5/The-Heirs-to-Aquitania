@@ -54,10 +54,10 @@ NB for the changelog - Anything with lots of # or * after it is something Savs i
 
 **CHANGELOG**
 
-Verison 0.37 - Poland and Italy
+Verison 0.36.64 - (Poland and) Italy (but Poland stuff is not finished)
 
 Major
-- Added more content for Poland **************
+- Added more content for Poland **************(but not as much as I had planned)
 - Added decisions and events for the Padan Union and Naples
 	- Added a new tag - Meridion (MER) - as an intermediate step between Naples and Italy
 - Added a new government type, the Provisional Government (which comes in yes_election and no_election forms according to whether elections are allowed, obviously) which is used for PDN initially and can be used for other countries in the future
