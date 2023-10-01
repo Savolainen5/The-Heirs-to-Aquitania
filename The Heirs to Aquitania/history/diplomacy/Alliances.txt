@@ -118,14 +118,6 @@ alliance = {
 	end_date = 1949.1.1
 }
 
-# Aengland-Sri Lamka
-vassal = {
-	first = AEN
-	second = SRI
-	start_date = 1836.1.1
-	end_date = 1949.1.1
-}
-
 # Denmark-Holsten
 alliance = {
 	first = DEN

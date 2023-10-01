@@ -30,7 +30,7 @@ unemployment_subsidies = trinket_subsidies
 pensions = trinket_pensions 
 school_reforms = low_schools
 
-ruling_party = PLC_conservative
+ruling_party = POL_conservative_2
 upper_house = {
 	fascist = 0
 	liberal = 30

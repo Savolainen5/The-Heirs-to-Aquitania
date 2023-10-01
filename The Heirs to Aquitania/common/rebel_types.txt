@@ -3620,10 +3620,10 @@ separatist_rebels = {
 		prestige_factor = -0.2
 		any_owned = {
 			limit = {
+				NOT = { has_province_modifier = patriot_uprising }
 				any_core = {
 					exists = yes
 					NOT = { is_primary_culture = THIS }
-					NOT = { has_province_modifier = patriot_uprising }
 				}
 			}
 			add_province_modifier = {

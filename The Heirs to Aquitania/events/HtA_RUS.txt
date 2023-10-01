@@ -1709,7 +1709,9 @@ province_event = {
 		name = "We will rule the Black Sea!"
 		THIS = {
 			money = -1000
-			prestige = 2
+			owner = {
+				prestige = 2
+			}
 		}
 		naval_base = 1
 		fort = 1

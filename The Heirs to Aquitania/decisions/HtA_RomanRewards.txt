@@ -22,7 +22,7 @@ political_decisions = {
 			TUR_885 = { add_core = BYZ }
 		}
 		ai_will_do = {
-			chance = 100
+			chance = 1
 			modifier = {
 				factor = 0
 				badboy = 0.4
@@ -54,7 +54,7 @@ political_decisions = {
 			EGY_921 = { add_core = BYZ }
 		}
 		ai_will_do = {
-			chance = 100
+			chance = 1
 			modifier = {
 				factor = 0
 				badboy = 0.2
@@ -88,7 +88,7 @@ political_decisions = {
 			EGY_1771 = { add_core = BYZ }
 		}
 		ai_will_do = {
-			chance = 100
+			chance = 1
 			modifier = {
 				factor = 0
 				badboy = 0.2
@@ -118,7 +118,7 @@ political_decisions = {
 			AUS_780 = { add_core = BYZ }
 		}
 		ai_will_do = {
-			chance = 100
+			chance = 1
 			modifier = {
 				factor = 0
 				badboy = 0.01

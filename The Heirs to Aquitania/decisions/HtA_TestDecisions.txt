@@ -311,4 +311,19 @@ political_decisions = {
 #		}
 #	}
 
+	nor_nand_test = {
+		potential = {
+			ai = no
+		}
+		allow = {
+			NOT = {
+				tag = AQT
+				tag = DAU
+			}
+		}
+		effect = {
+			prestige = 1 
+		}
+	}
+
 }

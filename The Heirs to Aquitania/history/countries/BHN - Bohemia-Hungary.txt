@@ -27,7 +27,7 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions 
 school_reforms = no_schools
 
-ruling_party = BOH_conservative
+ruling_party = BOH_conservative_1
 upper_house = {
 	fascist = 0
 	liberal = 28

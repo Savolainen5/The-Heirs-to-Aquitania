@@ -272,7 +272,8 @@ political_decisions = {
 	seize_aegean_islands = {
 		potential = {
 			OR = {
-				tag = SIC
+				tag = SCL
+				tag = NPL
 				tag = MER
 				tag = ITA
 			}

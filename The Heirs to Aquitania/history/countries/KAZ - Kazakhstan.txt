@@ -25,7 +25,7 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions
 school_reforms = no_schools
 
-ruling_party = TRT_conservative
+ruling_party = KAZ_conservative
 upper_house = {
 	fascist = 0
 	liberal = 13
