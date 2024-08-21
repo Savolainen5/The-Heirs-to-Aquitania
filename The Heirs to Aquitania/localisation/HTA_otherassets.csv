@@ -241,6 +241,18 @@ take_capital;Take Capital;x
 take_capital_desc;Take another country's capital state;x
 take_capital_short;Seize capital;x
 take_capital_setup;Seize their capital.;x
+demand_state_for_ally;Acquire State for Ally;x
+demand_state_for_ally_short;$THIRD$ acquires $STATE$;x
+demand_state_for_ally_setup;$THIRD$ acquires $STATE$ from $RECIPIENT$;x
+demand_state_for_ally_desc;Aquire an enemy §Ystate§! for §Yan ally§!;x
+acquire_state_for_ally_mid;Acquire State for Ally Mid;x
+acquire_state_for_ally_mid_short;$THIRD$ acquires $STATE$;x
+acquire_state_for_ally_mid_setup;$THIRD$ acquires $STATE$ from $RECIPIENT$;x
+acquire_state_for_ally_mid_desc;Aquire an enemy §Ystate§! for §Yan ally§!;x
+acquire_state_for_ally_late;Acquire State for Ally Late;x
+acquire_state_for_ally_late_short;$THIRD$ acquires $STATE$;x
+acquire_state_for_ally_late_setup;$THIRD$ acquires $STATE$ from $RECIPIENT$;x
+acquire_state_for_ally_late_desc;Aquire an enemy §Ystate§! for §Yan ally§!;x
 NORMAL_WAR_CONQUEST_NAME;$ORDER$ War of the Conquest of $SECOND_COUNTRY$;x
 NORMAL_CUT_DOWN_TO_SIZE_PERSIA_WAR_NAME;$ORDER$$FIRST$-$SECOND$ Levantine War;x
 AGRESSION_CUT_DOWN_TO_SIZE_PERSIA_WAR_NAME;$ORDER$$FIRST$-$SECOND$ Levantine War;x
