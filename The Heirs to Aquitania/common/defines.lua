@@ -609,7 +609,7 @@ diplomacy = {
 	TWS_FULFILLED_IDLE_SPACE = 0.66, -- How much % the CB fulfillment must done, so TWS starts ticking.
 	TWS_BATTLE_MIN_COUNT = 0, -- At least X battles before the aspect of wins will count
 	TWS_BATTLE_MAX_ASPECT = 50.0, -- Max allowed battle wins aspect for TWS
-	LARGE_POPULATION_INFLUENCE_PENALTY = -0.4
+	LARGE_POPULATION_INFLUENCE_PENALTY = -0.4,
 	LONE_BACKER_PRESTIGE_FACTOR = 0.05 -- prestige boost for being only defender backer in crisis
 },  
 
