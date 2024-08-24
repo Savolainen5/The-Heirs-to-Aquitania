@@ -4736,6 +4736,13 @@ acquire_state_for_ally_mid = {
 	# THIS - us
 	# FROM - country scope is possible match?
 	# war target country of goal is scope
+	allowed_countries = {
+		FROM = { alliance_with = THIS }
+	}
+	
+	# THIS - us
+	# FROM - country scope is possible match?
+	# war target country of goal is scope
 	allowed_states = {
         #Countries can't take capitals or cores
         NOT = {
@@ -5041,6 +5048,13 @@ acquire_state_for_ally_late = {
 				}
 			}
 		}
+	}
+	
+	# THIS - us
+	# FROM - country scope is possible match?
+	# war target country of goal is scope
+	allowed_countries = {
+		FROM = { alliance_with = THIS }
 	}
 	
 	# THIS - us
