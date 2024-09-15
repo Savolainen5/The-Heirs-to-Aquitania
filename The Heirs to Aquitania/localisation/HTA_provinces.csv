@@ -383,6 +383,7 @@ PROV493;Iruñea;x
 PROV499;Girona;x
 PROV500;Lleida;x
 PROV502;Mallorca;x
+PROV520;Covilhã;x
 PROV530;Lybæk;x
 PROV532;Lüneburg;x
 PROV533;Coni;x
@@ -390,10 +391,12 @@ PROV534;Hannover;x
 PROV549;Brandenburg;x
 PROV608;Albi;x
 PROV609;Sion;x
+PROV626;Hradec Králové;x
 PROV627;Karlovy Vary;x
 PROV628;Ústí nad Labem;x
 PROV633;Prešporok;x
 PROV634;Trencín;x
+PROV636;Banská Bystrica;x
 PROV638;Rožnava;x
 PROV674;Constantia;x
 PROV675;Igyssos;x
@@ -760,6 +763,7 @@ PROV2310;Laja;x
 PROV2311;Kochapampa;x
 PROV2312;Chipaya;x
 PROV2313;Charcas;x
+PROV2314;Potosí;x
 PROV2315;Mitimaes;x
 PROV2316;Chane;x
 PROV2317;Moxos;x
@@ -770,6 +774,10 @@ PROV2321;Niuex;x
 PROV2338;Gwaranden;x
 PROV2342;Halgo Petru;x
 PROV2343;Ecnung;x
+PROV2345;Paysandú;x
+PROV2346;Tacuarembó;x
+PROV2357;Curuzú Cuatiá;x
+PROV2360;Paraná;x
 PROV2367;Xolotas;x   
 PROV2401;Sorleir;x
 PROV2402;Gemydes;x
