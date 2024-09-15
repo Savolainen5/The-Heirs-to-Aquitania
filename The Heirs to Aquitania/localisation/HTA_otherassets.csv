@@ -241,10 +241,10 @@ take_capital;Take Capital;x
 take_capital_desc;Take another country's capital state;x
 take_capital_short;Seize capital;x
 take_capital_setup;Seize their capital.;x
-demand_state_for_ally;Acquire State for Ally;x
-demand_state_for_ally_short;$THIRD$ acquires $STATE$;x
-demand_state_for_ally_setup;$THIRD$ acquires $STATE$ from $RECIPIENT$;x
-demand_state_for_ally_desc;Aquire an enemy §Ystate§! for §Yan ally§!;x
+acquire_state_for_ally;Acquire State for Ally;x
+acquire_state_for_ally_short;$THIRD$ acquires $STATE$;x
+acquire_state_for_ally_setup;$THIRD$ acquires $STATE$ from $RECIPIENT$;x
+acquire_state_for_ally_desc;Aquire an enemy §Ystate§! for §Yan ally§!;x
 acquire_state_for_ally_mid;Acquire State for Ally Mid;x
 acquire_state_for_ally_mid_short;$THIRD$ acquires $STATE$;x
 acquire_state_for_ally_mid_setup;$THIRD$ acquires $STATE$ from $RECIPIENT$;x
@@ -339,3 +339,5 @@ NORMAL_WAR_FREE_LATVIA_NAME;$ORDER$Latvian War;x
 AGRESSION_WAR_FREE_LATVIA_NAME;$ORDER$Latvian War;x
 NORMAL_WAR_RESTORE_ORDER_NAME_JAP_MDG;Japanese Invasion of Middag;x
 AGRESSION_WAR_RESTORE_ORDER_NAME_JAP_MDG;Japanese Invasion of Middag;x
+HAS_GOODS_IN_STATE;Producing $GOODS$ in state.;x
+HAS_GOODS;Province RGO is;x
