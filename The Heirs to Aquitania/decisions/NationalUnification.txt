@@ -963,8 +963,8 @@ political_decisions = {
 		picture = form_italy
 		potential = {
 			NOT = {
+				# gallo_romance allowed to GP form Italy because they cannot become it themselves. Ironically enough, to form Italy, it looks like the Cisalpine minors need to be controlled by the Italian country -- that's likely why gallo_romance was originally on the list of culture groups not allowed to form it
 				is_culture_group = italian
-				is_culture_group = gallo_romance
 				is_culture_group = italic_isolate
 				exists = ITA
 				has_country_flag = our_western_sea
