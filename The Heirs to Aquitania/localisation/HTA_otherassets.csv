@@ -11,7 +11,12 @@ bohemian_partisans;Bohemian Partisans;x
 bohemian_partisans_desc;Some local Czech-speaking people have taken up arms against the owners of this province, whom they view as occupiers.;x
 buffer_state_spam_reduction;BSSR;x
 buffer_state_spam_reduction_desc;Don't mind me, I'm just reducing spam from the Buffer State event in CBandCores.txt;x
-building_oheskewen_canal;Building the Oheskewen Canal;x                                                                                                                                                                                                                ,,,
+building_oheskewen_canal;Building the Oheskewen Canal;x
+# Country Flags;x
+HAVE_COUNTRY_FLAG; ;x
+HAVE_NOT_COUNTRY_FLAG;§RNOT§!;x
+zeeland_claimed;We have claimed Zeeland;x
+form_greater_netherlands;We have claimed Greater Netherlands;x
 claimed_by_sweden;Claimed by Sweden;x
 claimed_by_sweden_desc;This province has been claimed by the Swedes, and they will try to take it one way or another.;x
 countrywide_famine;Countrywide Famine;x,,,
