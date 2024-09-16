@@ -254,6 +254,8 @@ acquire_state_for_ally_late_short;$THIRD$ acquires $STATE$;x
 acquire_state_for_ally_late_setup;$THIRD$ acquires $STATE$ from $RECIPIENT$;x
 acquire_state_for_ally_late_desc;Aquire an enemy §Ystate§! for §Yan ally§!;x
 NORMAL_WAR_CONQUEST_NAME;$ORDER$ War of the Conquest of $SECOND_COUNTRY$;x
+NORMAL_WAR_CONQUEST_TINY_NAME;$ORDER$ War of the Conquest of $SECOND_COUNTRY$;x
+NORMAL_WAR_CONQUEST_LOW_NAME;$ORDER$ War of the Conquest of $SECOND_COUNTRY$;x
 NORMAL_CUT_DOWN_TO_SIZE_PERSIA_WAR_NAME;$ORDER$$FIRST$-$SECOND$ Levantine War;x
 AGRESSION_CUT_DOWN_TO_SIZE_PERSIA_WAR_NAME;$ORDER$$FIRST$-$SECOND$ Levantine War;x
 WAR_GERMAN_UNIFICATION;$ORDER$War of German Hegemony;x
