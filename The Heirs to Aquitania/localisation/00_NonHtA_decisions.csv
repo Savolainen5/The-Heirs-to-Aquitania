@@ -34,7 +34,7 @@ accepting_our_brothers_desc;Since we've gained control of our Estonian brothers 
 accepting_our_brothers_title;Accepting Our Brethren;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 accepting_the_slovaks_desc;Accepting the Slovakian minority as Hungarians would go a long way towards fixing our ethnic troubles.;;;;;;;;;;;;;x
 accepting_the_slovaks_title;Accepting the Slovaks;;;;;;;;;;;;;x
-accepting_walloon_people_desc;The Walloonians are restless and desire a say in government, at this point we have little choice but to let them have their way if we want to keep them under our control.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+accepting_walloon_people_desc;The Walloonians are restless and desire a say in government, at this point we have little choice but to let them have their way if we want to keep them under our control.\n\nNOTE! We will also gain a core on Letzebuerg if we own the province;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 accepting_walloon_people_title;Integrating the Walloonian Minority;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 aden_protectorate_desc;With enough influence among the sheiks of southern Yemen, a treaty could be signed that would force them to acknowledge us as their sovereign. We cede them Aden, and in return they would agree enter into no relationships with other nations without our express permission. Our continued influence over the Arabian peninsula would be secured.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 aden_protectorate_title;The Aden Protectorate;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
@@ -493,8 +493,6 @@ ganghwa_treaty_desc;With our superior firepower over the Koreans, it will be pos
 ganghwa_treaty_title;Treaty of Ganghwa;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 garibaldi_redshirts_desc;The revolutionary leader, Giuseppe Garibaldi, has called upon the Italian people to take arms in the name of unification. A volunteer army under Garibaldi's leadership will topple the southern governments and remove the stain of the Bourbon legacy from the peninsula forever.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 garibaldi_redshirts_title;Expedition of the Thousand;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-gold_coast_treaty_desc;We have experienced numerous conflicts with the Dutch government, in regards to their colonial holdings on the Gold Coast and elsewhere. A treaty to solidify our hold on the Gold Coast, and increase our mutual friendship and cooperation, might be beneficial to both our nations.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,
-gold_coast_treaty_title;Gold Coast Treaty;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 greater_afghanistan_desc;We are a power to be reckoned with. It is time that we claimed the lands that are part of our heritage!;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 greater_afghanistan_title;Claim Greater Afghanistan;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 greater_assyria_desc;Our people lie scattered  under the rule of foreign nations-- we must bring them under our banner and reclaim the lands which were once ours.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
@@ -643,7 +641,7 @@ organize_algeria_desc;We should organize the African colonies to better reflect 
 organize_algeria_title;Organize Algeria;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 organize_angola_desc;Angola is becoming a true Portuguese colony. We must create the proper colonial structures, so that it stands on par with our European provinces.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,
 organize_angola_title;Organize the Angolan Colony;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
-organize_bostwana_desc;We should organize the African colonies to better reflect both a local structure, as well as set up the possibility for autonomous rule-- dominated by our benevolent colonial administrators, of course.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
+organize_botswana_desc;We should organize the African colonies to better reflect both a local structure, as well as set up the possibility for autonomous rule-- dominated by our benevolent colonial administrators, of course.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 organize_botswana_title;Organize Bechuanaland;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 organize_burkina_faso_desc;We should organize the African colonies to better reflect both a local structure, as well as set up the possibility for autonomous rule-- dominated by our benevolent colonial administrators, of course.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
 organize_burkina_faso_title;Organize Burkina Faso;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,

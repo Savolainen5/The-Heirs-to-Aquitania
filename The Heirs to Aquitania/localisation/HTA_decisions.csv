@@ -250,7 +250,9 @@ force_cw_gxi_desc;Our nation lies at the crossroads of Southeast Asia and China,
 force_cw_qin_title;The Future of Nanyue;x
 force_cw_qin_desc;Nanyue is a remnant of the Ming collapse and has long escaped our attention. It is time to make them decide once and for all where their King's allegiance lies.;x
 form_greater_netherlands_title;Form the Greater Netherlands;x
-form_greater_netherlands_desc;Our superiority over Brabant and Wallonia and our elevated position in the world are undisputed. We can use our power to gain political and domestic control over Brabant and Wallonia, and thus form a greater Empire than has been seen in our region for almost a millennium!;x
+form_greater_netherlands_desc;Our superiority over Brabant and Wallonia and our elevated position in the world are undisputed. We can use our power to gain political and domestic control over Brabant and Wallonia, and thus form a greater Empire than has been seen in our region for almost a millennium!\n\nNOTE! If we have sphered or puppeted Luxembourg, we will annex them as well;x
+accepting_steenkooler_people_title;Reconcile with the Steenkoolers;x
+accepting_steenkooler_people_desc;After centuries of revolt, ire, war and propaganda, the Steenkoolers are finally ready to be integrated into $COUNTRY_ADJ$ society.;x
 form_mellomamerika_title;Form Mellomamerika;x
 form_mellomamerika_desc;Our superiority over our other Mellomsk neighbors puts us in a position to form a powerful union of Mellomamerika. Let us embrace our destiny!;x
 form_mellomamerika_without_title;Unify Mellomamerika;x
@@ -337,8 +339,6 @@ incite_byelorussians_title;Incite Byelorussians;x
 incite_byelorussians_desc;If we are to continue to weaken our rival in Smolensk, then it will not be on the field of battle, but in the hearts and minds of the downtrodden minorities of their empire. We will stir up local grievances in order to sow chaos in their country.;x
 incite_ukrainians_title;Incite Ukrainians;x
 incite_ukrainians_desc;The Ukrainians have long had a separate identity from the Great Russians, even those of Smolensk. Their culture and language are similar, but their history of fraternization with the Cossacks has institutionalized distrust against them by the ruling elites of the country. We can inflame old tensions to strengthen the Ukrainians and to cause further headaches for Smolensk.;x
-incorporate_brabant_title;Incorporate Brabant into the Netherlands;x
-incorporate_brabant_desc;Now that we've claimed Zeeland, why not just get the rest of the Duchy of Brabant, too? After all, its inhabitants are all Dutch speakers, even if they have a strange dialect. Incorporating the Flemish of Brabant is a natural step in continuing to ensure our greatness.;x
 info_AEN_title;HtA Aengland Info;x
 info_AEN_desc;First of all, if you care, check out the Aenglisc pronunciation guide for a sense of how the language should be pronounced. When you get cores on Alba's homelands, you'll get events to get some of their colonies, and other nearby colonial powers will be able to seize some, too. As shown in Spudgun's HtA series, this can cause frustration for the Alba player, as there's no real way for them NOT to lose all their land if you go and take their cores.;x
 info_BYZ_title;HtA Roman Empire Info;x
@@ -371,8 +371,6 @@ integrate_navarra_title;Integrate Navarra;x
 integrate_navarra_desc;Personal unions and vassal states are an antiquated concept more befitting of the 17th century than the 19th. Let us work to make Navarra a truly intrinsic part of the Hispanian Empire.;x
 integrate_portugal_title;Integrate Portugal;x
 integrate_portugal_desc;By slowly binding the administrators of Portuguese territory to the central government, we can make Portugal an integral part of Hispania once more.;x
-integrate_wallonia_title;Integrate Wallonia;x
-integrate_wallonia_desc;The Walloons are our brothers, even if they speak a strange language. We share a common history and a common fate. There can be no arguing that greater control would be beneficial for all involved! However, other nations will not necessarily look kindly upon this move and may even declare war in an attempt to preserve the local power balance.;x
 intervene_in_banat_title;Intervene in the Banat;x
 intervene_in_banat_desc;The Ardealan authorities are facing a crisis in the Banat and are taking harsh punitive measures against a revolt there. The situation is deteriorating rapidly, and local Hungarian nobles have appealed to us for succour in the form of military assistance.;x
 intervene_in_syrmia_title;Intervene in Syrmia;x
