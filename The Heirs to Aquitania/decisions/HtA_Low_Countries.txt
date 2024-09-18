@@ -74,8 +74,10 @@ political_decisions = {
 					OR = {
 						owned_by = THIS
 						owner = {
-							in_sphere = THIS
-							vassal_of = THIS
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
 							war = no
 						}
 					}
@@ -86,8 +88,10 @@ political_decisions = {
 					OR = {
 						owned_by = THIS
 						owner = {
-							in_sphere = THIS
-							vassal_of = THIS
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
 							war = no
 						}
 					}
@@ -115,7 +119,7 @@ political_decisions = {
 						vassal_of = THIS
 					}
 				}
-				inherit = LUX
+				THIS = { inherit = LUX }
 			}
 			any_pop = {
 				dominant_issue = {
@@ -197,6 +201,7 @@ political_decisions = {
 		
 		allow = {
 			has_country_flag = form_greater_netherlands
+			NOT = { has_country_flag = SAF_independence_accepted }
 			mass_politics = 1
 			war = no
 			is_greater_power = yes
