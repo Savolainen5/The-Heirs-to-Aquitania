@@ -17,6 +17,7 @@ HAVE_COUNTRY_FLAG; ;x
 HAVE_NOT_COUNTRY_FLAG;§RNOT§!;x
 zeeland_claimed;We have claimed Zeeland;x
 form_greater_netherlands;We have claimed Greater Netherlands;x
+SAF_independence_accepted;We have released Kaapland as a puppet;x
 claimed_by_sweden;Claimed by Sweden;x
 claimed_by_sweden_desc;This province has been claimed by the Swedes, and they will try to take it one way or another.;x
 countrywide_famine;Countrywide Famine;x,,,

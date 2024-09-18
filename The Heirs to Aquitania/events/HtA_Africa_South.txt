@@ -14,6 +14,7 @@ country_event = {
 		any_owned_province = { is_core = SAF }
 		NOT = { exists = SAF }
 		is_possible_vassal = SAF
+		NOT = { accepted_culture = steenkooler }
 	}
 
 	mean_time_to_happen = {
@@ -46,6 +47,7 @@ country_event = {
 	option = {
 		name = "This can only be good for the empire."
 		clr_country_flag = SAF_independence_refused
+		set_country_flag = SAF_independence_accepted
 		prestige = -20
 		badboy = -5
 		any_pop = {
@@ -165,6 +167,7 @@ country_event = {
 	option = {
 		name = "Onwards to South Africa!"
 		clr_country_flag = SAF_independence_refused
+		set_country_flag = SAF_independence_accepted
 		prestige = -20
 		badboy = -5
 		any_pop = {
