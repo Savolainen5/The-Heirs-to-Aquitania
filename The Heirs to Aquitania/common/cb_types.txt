@@ -5441,7 +5441,7 @@ germany_acquire_state = {
 			#OR = {											#This removed (temporarily?) in 0.36.37 because even though one of the above tags is screwed if it's below SP, they should still be able to try
 			#	is_greater_power = yes
 			#	is_secondary_power = yes
-			#
+			# }
 			NOT = { has_country_modifier = neutrality }
 			NOT = { war_policy = pacifism }
 			has_global_flag = german_hegemony_wars_start
