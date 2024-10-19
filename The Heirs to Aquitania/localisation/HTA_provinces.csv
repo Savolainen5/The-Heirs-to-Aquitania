@@ -308,6 +308,8 @@ PROV308;Aalesund;x
 PROV313;Anslo;x
 PROV320;Uumaja;x
 PROV321;Luulaja;x
+PROV333;Växjö;x
+PROV334;Malmö;x
 PROV337;Teppala;x
 PROV339;Myräjoki;x
 PROV340;Kymi;x
@@ -327,7 +329,7 @@ PROV368;Ringkøbing;x
 PROV369;Kil;x
 PROV370;Flensborg;x
 PROV371;Åbenrå;x
-PROV381;Limburg;x       
+PROV381;Limburg;x
 PROV388;Brugge;x
 PROV389;Gent;x
 PROV392;Nameur;x
@@ -443,6 +445,7 @@ PROV755;Salierno;x
 PROV758;Brinnese;x
 PROV759;Reggiu Calavria;x
 PROV761;Putenza;x
+PROV798;Niš;x
 PROV806;Skupol;x
 PROV807;Voutelion;x
 PROV808;Deuterus;x
@@ -562,6 +565,7 @@ PROV1523;Xiangyang;x
 PROV1531;Kavieng;x
 PROV1542;Xuzhou;x
 PROV1559;Xian;x
+PROV1600;Díhui;x
 PROV1612;Baoding;x
 PROV1616;Peking;x
 PROV1642;Sikerpe;x

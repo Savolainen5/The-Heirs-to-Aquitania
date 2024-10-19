@@ -253,6 +253,12 @@ country_event = {
 				secede_province = BYZ
 			}
 		}
+		
+		# If BYZ takes TUR_894 before this event fires, the above any_owned will not add the cores in question
+		TUR_894 = {
+			add_core = BYZ
+			add_core = ANA
+		}
 	}
 }
 #Naples joins war, will attempt to take islands from the empire, can segue into later war against greece

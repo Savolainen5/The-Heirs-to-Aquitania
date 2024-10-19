@@ -235,6 +235,12 @@ political_decisions = {
 					value = -50
 				}
 			}
+			VOL = {
+				all_core = {
+					remove_core = WAL # Volasean primary with no accepted cultures -- is mechanically the same as a united Volasea
+					remove_core = MOL # Volasean primary with no accepted cultures -- is mechanically the same as a united Volasea
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -320,6 +326,70 @@ political_decisions = {
 					relation = {
 						who = VOL
 						value = 50
+					}
+				}
+			}
+		}
+	}
+	
+	VOL_accept_hungarians = {
+		picture = create_romania
+		potential = {
+			OR = {
+				AND = {
+					tag = VOL
+					is_vassal = no
+				}
+				is_our_vassal = VOL
+			}
+			NOT = { VOL = { accepted_culture = hungarian } }
+		}
+		
+		allow = {
+			war = no
+			HUN = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							war = no
+							is_greater_power = no
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			HUN = { all_core = { add_core = VOL } }
+			
+			# Splitting the same effect into two different applications to make it look right when VOL takes the decision
+			random_owned = {
+				limit = { owner = { tag = VOL } }
+				owner = {
+					add_accepted_culture = hungarian
+					HUN = { all_core = { secede_province = THIS } }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { NOT = { tag = VOL } } }
+				owner = {
+					HUN = {
+						all_core = {
+							limit = { is_core = THIS }
+							remove_core = VOL
+						}
+						all_core = {
+							limit = { NOT = { is_core = THIS } }
+							secede_province = HUN
+						}
+						release = THIS
+					}
+					VOL = {
+						add_accepted_culture = hungarian
+						inherit = HUN
 					}
 				}
 			}

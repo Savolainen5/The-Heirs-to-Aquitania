@@ -418,11 +418,16 @@ political_decisions = {
 		effect = {
 			set_global_flag = albania_in_yugoslavia
 			prestige = 5
-			ALB = { all_core = { add_core = YUG } }
+			ALB = {
+				all_core = {
+					limit = { NOT = { is_core = THIS } }
+					add_core = YUG
+				}
+			}
 			any_owned = {
 				limit = {
 					is_core = ALB
-					NOT = { owned_by = YUG }
+					NOT = { is_core = THIS }
 				}
 				secede_province = YUG
 			}
