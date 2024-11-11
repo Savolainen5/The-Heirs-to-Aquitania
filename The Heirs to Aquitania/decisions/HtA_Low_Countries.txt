@@ -177,20 +177,6 @@ political_decisions = {
 			}
 			add_accepted_culture = wallonian
 		}
-		
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				factor = 1
-				NOT = {
-					year = 1880
-				}
-			}
-			modifier = {
-				factor = 1
-				average_militancy = 7
-			}
-		}
 	}
 	
 	accepting_steenkooler_people = {
